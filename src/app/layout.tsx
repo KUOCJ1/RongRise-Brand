@@ -1,21 +1,21 @@
 import type { Metadata } from "next";
-import { Noto_Sans_TC, Roboto } from "next/font/google";
+import { Noto_Sans_TC, Noto_Serif_TC } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Script from "next/script";
 
-const notoSansTC = Noto_Sans_TC({
-  variable: "--font-noto-sans-tc",
+const notoSans = Noto_Sans_TC({
+  variable: "--font-noto-sans",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
-const roboto = Roboto({
-  variable: "--font-roboto",
+const notoSerif = Noto_Serif_TC({
+  variable: "--font-noto-serif",
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["400", "600", "700", "900"],
   display: "swap",
 });
 
@@ -73,7 +73,7 @@ export default function RootLayout({
   return (
     <html
       lang="zh-TW"
-      className={`${notoSansTC.variable} ${roboto.variable} h-full antialiased`}
+      className={`${notoSans.variable} ${notoSerif.variable} h-full antialiased`}
     >
       <head>
         <Script
@@ -82,7 +82,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col" style={{ fontFamily: 'var(--font-noto-sans)' }}>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
