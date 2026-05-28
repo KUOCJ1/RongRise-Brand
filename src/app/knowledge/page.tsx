@@ -101,6 +101,15 @@ const articles: Article[] = [
     excerpt: "2026 年台灣政府提供哪些 AI 相關補助？從經濟部、勞動部到數發部，一次整理所有可申請的 AI 轉型資源。",
     tags: ["政府補助", "AI 轉型", "資源整理", "免費資源"],
   },
+  {
+    slug: "ai-transformation-trends-2026",
+    cat: "AI 轉型",
+    title: "2026 AI 轉型四大趨勢：從工具導入到組織變革",
+    date: "2026.05.28",
+    readTime: "10 分鐘",
+    excerpt: "根據最新 TechNews 與 iThome 報導，2026 年 AI 轉型呈現四大趨勢：邊緣 AI 爆發、AI Agent 進入企業日常工作、AI 資安成為首要議題、政府補助全面加速。",
+    tags: ["AI 轉型趨勢", "2026", "邊緣 AI", "AI Agent", "AI 資安"],
+  },
 ];
 
 export default function KnowledgePage() {
