@@ -8,7 +8,7 @@ export interface ChatMessage {
 
 // 從環境變數取得 API 金鑰
 const OPENROUTER_API_KEY = process.env.NEXT_PUBLIC_OPENROUTER_API_KEY || "";
-const OPENROUTER_MODEL = process.env.NEXT_PUBLIC_OPENROUTER_MODEL || "openrouter/auto";
+const OPENROUTER_MODEL = process.env.NEXT_PUBLIC_OPENROUTER_MODEL || "openrouter/owl-alpha";
 const API_URL = "https://openrouter.ai/api/v1/chat/completions";
 
 // System prompt — 定義小幫手的角色與行為
