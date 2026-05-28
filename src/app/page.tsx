@@ -78,6 +78,13 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+
+          {/* CTA */}
+          <div className="text-center mt-10">
+            <Link href="/services" className="btn-secondary">
+              查看完整服務項目 →
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -137,27 +144,30 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {[
               {
+                slug: "ai-transformation-trends-2026",
                 cat: "AI 轉型",
-                title: "2025 企業 AI 導入實戰指南",
-                date: "2025.12.15",
-                excerpt: "從評估組織 AI 成熟度到選擇合適工具，完整解析企業 AI 導入的關鍵步驟與常見陷阱。",
+                title: "2026 AI 轉型四大趨勢",
+                date: "2026.05.28",
+                excerpt: "邊緣 AI 爆發、AI Agent 上工、AI 資安告急、政府補助加速——深度解析今年最關鍵的四大轉型趨勢。",
               },
               {
-                cat: "人才策略",
-                title: "數位時代的人才培訓體系設計",
-                date: "2025.11.28",
-                excerpt: "如何建立持續學習的組織文化？從能力地圖到培訓路徑，打造面向未來的人才發展框架。",
+                slug: "ai-transformation-bootcamp",
+                cat: "AI 轉型",
+                title: "AI 轉型實戰營：從入門到企業落地",
+                date: "2026.05.28",
+                excerpt: "C.J. 老師核心講義精華。涵蓋 AI 演進路徑、RTIF 提示工程架構、企業 AI 成熟度模型與轉型五大要素。",
               },
               {
-                cat: "ESG 永續",
-                title: "中小企業 ESG 實務入門",
-                date: "2025.11.10",
-                excerpt: "ESG 不只是大企業的專利。中小企業如何從日常營運中落實永續，創造差異化競爭優勢。",
+                slug: "service-ai-chatbot-case",
+                cat: "案例分享",
+                title: "服務業 AI 客服導入實戰",
+                date: "2026.05.28",
+                excerpt: "投訴率降 60% 的關鍵：一家中型電商如何透過 AI 客服系統，在六個月內將客戶投訴率降低 60%。",
               },
             ].map((post, i) => (
               <Link
                 key={i}
-                href="/knowledge"
+                href={`/knowledge/${post.slug}`}
                 className="card group no-underline block"
               >
                 <div className="flex items-center justify-between mb-3">

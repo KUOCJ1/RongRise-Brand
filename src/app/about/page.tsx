@@ -66,19 +66,84 @@ export default function AboutPage() {
               <div className="brand-divider mb-6" />
               <div className="space-y-4 text-text-secondary text-body leading-relaxed">
                 <p>
-                  在企業顧問領域深耕多年，我见证過許多企業在轉型浪潮中的掙扎與突破。每一次的輔導經驗都讓我更確信——<strong className="text-dark">真正的轉型不只是技術升級，而是思維的革新</strong>。
+                  <strong className="text-dark">16 年跨國人力資源管理實戰經驗</strong>，歷任 Accenture、Ernst & Young、Watson Wyatt 等國際級管理顧問公司，以及 Chubb Life、Cigna Life 等跨國金融企業人資高階主管。專精於組織人才策略、薪酬獎勵設計、雇主品牌建設及 HR 數位轉型，累計協助雇主榮獲 <strong className="text-dark">8 座國內外優良職場獎項</strong>。
                 </p>
                 <p>
-                  創辦榕耀管顧的初衷，是希望以<strong>專業且務實</strong>的方式，協助中小型企業在 AI 時代中找到屬於自己的轉型路徑。不走捷徑，不談空話，只提供<strong>真正落地可行的方案</strong>。
+                  2024 年起以獨立管理顧問暨企業培訓講師身分，聚焦三大領域：<strong className="text-dark">AI 時代人才戰略與組織轉型</strong>、<strong className="text-dark">企業永續（ESG）治理導入</strong>、以及<strong className="text-dark">中小企業 AI 賦能落地</strong>。
                 </p>
                 <p>
-                  我相信，當<strong>人才、策略與科技</strong>三者對齊，企業就能在變動中創造持續的競爭優勢。這是我一路走來的信念，也是我想與每一位業主分享的價值。
+                  不同於純理論的學院派或純技術的工具派，C.J. Kuo 老師的核心差異化價值在於——從「人」的策略高度出發，結合實際 AI 工具操作與企業落地經驗，為組織設計<strong className="text-dark">可執行的轉型路徑</strong>。
+                </p>
+                <p>
+                  代表客戶涵蓋台積電、仁寶電腦等科技大廠，以及製造、化學、物流、金融控股等產業中小企業，能針對不同規模與產業需求提供客製化課程設計與顧問輔導方案。
                 </p>
               </div>
               <div className="mt-6">
                 <Link href="/assistant" className="btn-ghost text-primary">
                   💬 想更了解我的服務？問問小幫手 →
                 </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Credentials Section */}
+      <section className="section bg-bg-alt">
+        <div className="section-inner">
+          <div className="text-center mb-12">
+            <span className="tag mb-4">經歷與認證</span>
+            <h2 className="heading-section text-dark mt-4">專業背景</h2>
+            <div className="brand-divider brand-divider-center mt-4" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="card">
+              <h3 className="heading-subsection text-dark mb-4 flex items-center gap-2">
+                <span>🏢</span> 企業高階主管經歷
+              </h3>
+              <div className="space-y-4">
+                <div>
+                  <p className="font-semibold text-dark">榕耀管顧 RongRise Consulting</p>
+                  <p className="text-text-secondary text-body-sm">創辦人 / 管理顧問（2024 – 迄今）</p>
+                  <p className="text-text-secondary text-xs mt-1">聚焦 AI 時代人才戰略、企業永續治理、中小企業 AI 賦能</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-dark">美商安達人壽 Chubb Life</p>
+                  <p className="text-text-secondary text-body-sm">人資暨總務部 資深副總裁（2022 – 2023）</p>
+                  <p className="text-text-secondary text-xs mt-1">統籌 30+ 人團隊，推動組織優化與雇主價值主張設計</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-dark">美商康健人壽 Cigna Life</p>
+                  <p className="text-text-secondary text-body-sm">人資長 → 薪酬部處長（2008 – 2022）</p>
+                  <p className="text-text-secondary text-xs mt-1">連續四年 HR Asia Award（2020-2023）；台北市最佳雇主獎</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="card">
+              <h3 className="heading-subsection text-dark mb-4 flex items-center gap-2">
+                <span>🎓</span> 學歷與專業認證
+              </h3>
+              <div className="space-y-4">
+                <div>
+                  <p className="font-semibold text-dark">英國牛津布魯克斯大學</p>
+                  <p className="text-text-secondary text-body-sm">國際商業管理碩士（MSc）、餐旅管理學士（BA）</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-dark">瑞士 ICHA University</p>
+                  <p className="text-text-secondary text-body-sm">餐旅管理理學士（BSc）</p>
+                </div>
+                <div className="border-t border-border pt-3 mt-3">
+                  <p className="text-xs font-semibold text-dark mb-2">專業認證</p>
+                  <ul className="text-text-secondary text-body-sm space-y-1">
+                    <li>✅ 經濟部 iPAS AI 應用規劃師認證</li>
+                    <li>✅ 金管會金融永續人才認證</li>
+                    <li>✅ ESG 永續管理顧問師認證</li>
+                    <li>✅ TCSA 永續報告書獎項志工評審</li>
+                    <li>✅ 協助雇主獲 8 座優良職場獎</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

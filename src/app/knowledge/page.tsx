@@ -110,6 +110,15 @@ const articles: Article[] = [
     excerpt: "根據最新 TechNews 與 iThome 報導，2026 年 AI 轉型呈現四大趨勢：邊緣 AI 爆發、AI Agent 進入企業日常工作、AI 資安成為首要議題、政府補助全面加速。",
     tags: ["AI 轉型趨勢", "2026", "邊緣 AI", "AI Agent", "AI 資安"],
   },
+  {
+    slug: "agentic-ai-transformation-workshop",
+    cat: "AI 轉型",
+    title: "企業 Agentic AI 轉型高階共識營：從願景到落地的完整框架",
+    date: "2026.05.28",
+    readTime: "12 分鐘",
+    excerpt: "如何讓高阶主管在一天內達成 AI 轉型共識？從課前痛點探測、Agent 場景評估畫布、多代理協作劇本，到顧問話術與治理框架。",
+    tags: ["Agentic AI", "企業轉型", "工作坊設計", "高階主管", "AI 治理"],
+  },
 ];
 
 export default function KnowledgePage() {
