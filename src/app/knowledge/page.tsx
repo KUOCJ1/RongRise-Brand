@@ -119,6 +119,15 @@ const articles: Article[] = [
     excerpt: "如何讓高阶主管在一天內達成 AI 轉型共識？從課前痛點探測、Agent 場景評估畫布、多代理協作劇本，到顧問話術與治理框架。",
     tags: ["Agentic AI", "企業轉型", "工作坊設計", "高階主管", "AI 治理"],
   },
+  {
+    slug: "hr-ai-transformation-five-layers",
+    cat: "人才策略",
+    title: "HR 的 AI 轉型五層責任架構：從組織摩擦力到策略影響力",
+    date: "2026.05.29",
+    readTime: "15 分鐘",
+    excerpt: "MIT 研究 300 個企業 AI 案例，95% 沒有產生可衡量的損益影響。問題不在技術，在於組織內部摩擦力。C.J. Kuo 老師提出 HR 五層責任架構。",
+    tags: ["HR", "AI 轉型", "組織變革", "人才策略", "AI 治理", "獎酬設計"],
+  },
 ];
 
 export default function KnowledgePage() {

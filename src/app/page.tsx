@@ -144,6 +144,13 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {[
               {
+                slug: "hr-ai-transformation-five-layers",
+                cat: "人才策略",
+                title: "HR 的 AI 轉型五層責任架構",
+                date: "2026.05.29",
+                excerpt: "MIT 研究 300 個企業案例，95% 的 AI 沒有產生可衡量的損益影響。問題不在技術，在於組織摩擦力。",
+              },
+              {
                 slug: "ai-transformation-trends-2026",
                 cat: "AI 轉型",
                 title: "2026 AI 轉型四大趨勢",
@@ -151,18 +158,11 @@ export default function HomePage() {
                 excerpt: "邊緣 AI 爆發、AI Agent 上工、AI 資安告急、政府補助加速——深度解析今年最關鍵的四大轉型趨勢。",
               },
               {
-                slug: "ai-transformation-bootcamp",
+                slug: "agentic-ai-transformation-workshop",
                 cat: "AI 轉型",
-                title: "AI 轉型實戰營：從入門到企業落地",
+                title: "Agentic AI 轉型高階共識營",
                 date: "2026.05.28",
-                excerpt: "C.J. 老師核心講義精華。涵蓋 AI 演進路徑、RTIF 提示工程架構、企業 AI 成熟度模型與轉型五大要素。",
-              },
-              {
-                slug: "service-ai-chatbot-case",
-                cat: "案例分享",
-                title: "服務業 AI 客服導入實戰",
-                date: "2026.05.28",
-                excerpt: "投訴率降 60% 的關鍵：一家中型電商如何透過 AI 客服系統，在六個月內將客戶投訴率降低 60%。",
+                excerpt: "如何讓高阶主管在一天內達成 AI 轉型共識？從課前痛點探測到 PoC 計畫框架的完整指南。",
               },
             ].map((post, i) => (
               <Link
