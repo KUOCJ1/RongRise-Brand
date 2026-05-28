@@ -17,7 +17,7 @@ interface Article {
   tags: string[];
 }
 
-const categories = ["全部", "AI 轉型", "人才策略", "ESG 永續", "案例分享", "工具資源"];
+const categories = ["全部", "AI 轉型", "人才策略", "ESG 永續", "案例分享", "工具資源", "策略管理"];
 
 const articles: Article[] = [
   {
@@ -127,6 +127,15 @@ const articles: Article[] = [
     readTime: "15 分鐘",
     excerpt: "MIT 研究 300 個企業 AI 案例，95% 沒有產生可衡量的損益影響。問題不在技術，在於組織內部摩擦力。C.J. Kuo 老師提出 HR 五層責任架構。",
     tags: ["HR", "AI 轉型", "組織變革", "人才策略", "AI 治理", "獎酬設計"],
+  },
+  {
+    slug: "strategy-subtraction-traditional-industry",
+    cat: "策略管理",
+    title: "策略是減法：為什麼台灣傳產企業更需要學會「不做事」",
+    date: "2026.05.29",
+    readTime: "18 分鐘",
+    excerpt: "羅傑．馬丁說策略的本質是選擇。但我在傳產現場看到的是——資源已經燒光了，大家還在做加法。從傳統產業的三重壓力到Netflix的關鍵轉折，深度解析為什麼減法這麼難、以及如何做出真正的策略取捨。",
+    tags: ["策略管理", "傳統產業轉型", "二代接班", "家族企業", "組織變革", "資源配置"],
   },
 ];
 

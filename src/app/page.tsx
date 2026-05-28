@@ -158,11 +158,11 @@ export default function HomePage() {
                 excerpt: "邊緣 AI 爆發、AI Agent 上工、AI 資安告急、政府補助加速——深度解析今年最關鍵的四大轉型趨勢。",
               },
               {
-                slug: "agentic-ai-transformation-workshop",
-                cat: "AI 轉型",
-                title: "Agentic AI 轉型高階共識營",
-                date: "2026.05.28",
-                excerpt: "如何讓高阶主管在一天內達成 AI 轉型共識？從課前痛點探測到 PoC 計畫框架的完整指南。",
+                slug: "strategy-subtraction-traditional-industry",
+                cat: "策略管理",
+                title: "策略是減法：為什麼傳產企業更需要學會「不做事」",
+                date: "2026.05.29",
+                excerpt: "資源已經燒光了，大家還在做加法。從傳統產業三重壓力到 Netflix 關鍵轉折，解析為什麼減法這麼難。",
               },
             ].map((post, i) => (
               <Link
