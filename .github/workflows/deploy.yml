@@ -32,6 +32,9 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          NEXT_PUBLIC_OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          NEXT_PUBLIC_OPENROUTER_MODEL: "openrouter/owl-alpha"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
