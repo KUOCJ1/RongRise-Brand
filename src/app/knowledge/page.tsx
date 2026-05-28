@@ -1,13 +1,27 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 
 /* ============================================
-   知識庫 Knowledge Base Page
+   知識庫 Knowledge Base Page (with filter)
    ============================================ */
+
+interface Article {
+  slug: string;
+  cat: string;
+  title: string;
+  date: string;
+  readTime: string;
+  excerpt: string;
+  tags: string[];
+}
 
 const categories = ["全部", "AI 轉型", "人才策略", "ESG 永續", "案例分享", "工具資源"];
 
-const articles = [
+const articles: Article[] = [
   {
+    slug: "ai-transformation-bootcamp",
     cat: "AI 轉型",
     title: "AI 轉型實戰營：從入門到企業落地",
     date: "2026.05.28",
@@ -16,6 +30,7 @@ const articles = [
     tags: ["AI 轉型", "企業落地", "提示工程", "AI 素養"],
   },
   {
+    slug: "hr-ai-course-design",
     cat: "人才策略",
     title: "HR × AI：從認識到落地課程設計",
     date: "2026.05.28",
@@ -24,6 +39,7 @@ const articles = [
     tags: ["HR", "AI 培訓", "人才策略", "課程設計"],
   },
   {
+    slug: "sme-esg-guide",
     cat: "ESG 永續",
     title: "中小企業 ESG 實務入門",
     date: "2025.11.10",
@@ -32,6 +48,7 @@ const articles = [
     tags: ["ESG", "永續經營", "中小企業"],
   },
   {
+    slug: "manufacturing-ai-quality",
     cat: "案例分享",
     title: "製造業 AI 品質檢測導入案例",
     date: "2025.10.22",
@@ -40,6 +57,7 @@ const articles = [
     tags: ["製造業", "AI 應用", "品質管理"],
   },
   {
+    slug: "ai-maturity-assessment",
     cat: "工具資源",
     title: "企業 AI 成熟度自評量表",
     date: "2025.10.05",
@@ -48,6 +66,7 @@ const articles = [
     tags: ["AI 成熟度", "自評工具", "免費資源"],
   },
   {
+    slug: "team-innovation-management",
     cat: "人才策略",
     title: "激發團隊創新動力的管理方法",
     date: "2025.09.18",
@@ -58,6 +77,13 @@ const articles = [
 ];
 
 export default function KnowledgePage() {
+  const [activeCat, setActiveCat] = useState("全部");
+
+  const filtered =
+    activeCat === "全部"
+      ? articles
+      : articles.filter((a) => a.cat === activeCat);
+
   return (
     <>
       {/* Hero */}
@@ -76,11 +102,12 @@ export default function KnowledgePage() {
       <section className="bg-white border-b border-border sticky top-16 z-40">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-3">
           <div className="flex gap-2 overflow-x-auto pb-1">
-            {categories.map((cat, i) => (
+            {categories.map((cat) => (
               <button
                 key={cat}
+                onClick={() => setActiveCat(cat)}
                 className={`flex-shrink-0 px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                  i === 0
+                  activeCat === cat
                     ? "bg-primary text-white"
                     : "bg-bg-alt text-text-secondary hover:bg-primary/10 hover:text-primary"
                 }`}
@@ -95,26 +122,46 @@ export default function KnowledgePage() {
       {/* Articles Grid */}
       <section className="section bg-bg-alt">
         <div className="section-inner">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {articles.map((post, i) => (
-              <article key={i} className="card group no-underline flex flex-col">
-                <div className="flex items-center justify-between mb-3">
-                  <span className="tag">{post.cat}</span>
-                  <span className="text-xs text-text-secondary">{post.readTime}閱讀</span>
-                </div>
-                <h3 className="heading-subsection text-dark group-hover:text-primary transition-colors mb-2">
-                  {post.title}
-                </h3>
-                <p className="text-text-secondary text-body-sm flex-1 mb-4">{post.excerpt}</p>
-                <div className="flex items-center justify-between mt-auto pt-4 border-t border-border-light">
-                  <span className="text-xs text-text-secondary">{post.date}</span>
-                  <span className="text-xs font-medium text-primary group-hover:text-secondary transition-colors">
-                    閱讀更多 →
-                  </span>
-                </div>
-              </article>
-            ))}
-          </div>
+          {filtered.length === 0 ? (
+            <div className="text-center py-16">
+              <p className="text-text-secondary text-lg">此分類暫無文章</p>
+              <button
+                onClick={() => setActiveCat("全部")}
+                className="btn-ghost text-primary mt-4"
+              >
+                查看全部文章
+              </button>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {filtered.map((post, i) => (
+                <Link
+                  key={post.slug}
+                  href={`/knowledge/${post.slug}`}
+                  className="card group no-underline flex flex-col"
+                >
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="tag">{post.cat}</span>
+                    <span className="text-xs text-text-secondary">
+                      {post.readTime}閱讀
+                    </span>
+                  </div>
+                  <h3 className="heading-subsection text-dark group-hover:text-primary transition-colors mb-2">
+                    {post.title}
+                  </h3>
+                  <p className="text-text-secondary text-body-sm flex-1 mb-4">
+                    {post.excerpt}
+                  </p>
+                  <div className="flex items-center justify-between mt-auto pt-4 border-t border-border-light">
+                    <span className="text-xs text-text-secondary">{post.date}</span>
+                    <span className="text-xs font-medium text-primary group-hover:text-secondary transition-colors">
+                      閱讀更多 →
+                    </span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
