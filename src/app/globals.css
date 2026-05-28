@@ -288,6 +288,13 @@ body {
   overflow: hidden;
 }
 
+/* Hero 內標題強制白色 */
+.bg-gradient-hero .heading-hero,
+.bg-gradient-hero .heading-section,
+.bg-gradient-hero h1, .bg-gradient-hero h2, .bg-gradient-hero h3 {
+  color: white;
+}
+
 .bg-gradient-hero::before {
   content: '';
   position: absolute;

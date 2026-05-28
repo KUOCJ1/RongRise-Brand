@@ -104,7 +104,7 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="bg-gradient-hero rounded-2xl p-8 md:p-10 text-white">
-              <blockquote className="text-lg md:text-xl leading-relaxed font-medium mb-6">
+              <blockquote className="text-lg md:text-xl leading-relaxed font-medium mb-6 text-white">
                 「真正的轉型不是技術升級，而是思維的革新。當人才、策略與科技三者對齊，企業就能在變動中創造持續的競爭優勢。」
               </blockquote>
               <div className="flex items-center gap-3">
