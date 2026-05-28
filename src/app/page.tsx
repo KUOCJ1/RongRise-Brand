@@ -108,8 +108,12 @@ export default function HomePage() {
                 「真正的轉型不是技術升級，而是思維的革新。當人才、策略與科技三者對齊，企業就能在變動中創造持續的競爭優勢。」
               </blockquote>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center font-bold">
-                  郭
+                <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white/30 flex-shrink-0">
+                  <img
+                    src="/images/cj-avatar.svg"
+                    alt="郭鎮榕 C.J. Kuo"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <p className="font-semibold text-sm">郭鎮榕 C.J. Kuo</p>

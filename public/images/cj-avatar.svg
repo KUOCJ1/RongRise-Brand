@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#194A8D"/>
+      <stop offset="50%" style="stop-color:#0196EC"/>
+      <stop offset="100%" style="stop-color:#194A8D"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#e8f0fe"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bg)"/>
+
+  <!-- Subtle pattern -->
+  <circle cx="350" cy="50" r="120" fill="white" opacity="0.04"/>
+  <circle cx="50" cy="350" r="80" fill="white" opacity="0.03"/>
+
+  <!-- Body / Shoulders -->
+  <ellipse cx="200" cy="380" rx="130" ry="100" fill="url(#shirt)"/>
+
+  <!-- Neck -->
+  <rect x="175" y="260" width="50" height="60" rx="8" fill="#f0d5c0"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="195" rx="72" ry="85" fill="#f0d5c0"/>
+
+  <!-- Hair -->
+  <ellipse cx="200" cy="145" rx="75" ry="55" fill="#2c2c2c"/>
+  <ellipse cx="200" cy="130" rx="68" ry="45" fill="#1a1a1a"/>
+  <!-- Side hair -->
+  <rect x="128" y="150" width="20" height="40" rx="8" fill="#2c2c2c"/>
+  <rect x="252" y="150" width="20" height="40" rx="8" fill="#2c2c2c"/>
+
+  <!-- Eyebrows -->
+  <rect x="162" y="175" width="28" height="5" rx="2.5" fill="#3d3d3d" transform="rotate(-5 176 177)"/>
+  <rect x="210" y="175" width="28" height="5" rx="2.5" fill="#3d3d3d" transform="rotate(5 224 177)"/>
+
+  <!-- Eyes -->
+  <ellipse cx="176" cy="192" rx="9" ry="8" fill="#1a1a1a"/>
+  <ellipse cx="224" cy="192" rx="9" ry="8" fill="#1a1a1a"/>
+  <circle cx="178" cy="190" r="2.5" fill="white"/>
+  <circle cx="226" cy="190" r="2.5" fill="white"/>
+
+  <!-- Nose -->
+  <path d="M197 205 Q200 218 203 205" stroke="#d4a88a" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Smile -->
+  <path d="M180 225 Q200 242 220 225" stroke="#c0806a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Glasses frame -->
+  <rect x="155" y="180" width="38" height="28" rx="12" fill="none" stroke="#4a4a4a" stroke-width="2.5"/>
+  <rect x="207" y="180" width="38" height="28" rx="12" fill="none" stroke="#4a4a4a" stroke-width="2.5"/>
+  <line x1="193" y1="193" x2="207" y2="193" stroke="#4a4a4a" stroke-width="2"/>
+  <line x1="155" y1="192" x2="140" y2="188" stroke="#4a4a4a" stroke-width="2"/>
+  <line x1="245" y1="192" x2="260" y2="188" stroke="#4a4a4a" stroke-width="2"/>
+
+  <!-- Tie -->
+  <polygon points="200,290 185,310 200,370 215,310" fill="#194A8D"/>
+  <polygon points="200,290 192,305 200,310 208,305" fill="#FF9800"/>
+
+  <!-- Subtle glow on top -->
+  <ellipse cx="200" cy="80" rx="100" ry="20" fill="white" opacity="0.06"/>
+</svg>

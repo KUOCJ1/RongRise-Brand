@@ -48,13 +48,14 @@ export default function AboutPage() {
       <section className="section">
         <div className="section-inner">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            {/* Photo Placeholder */}
+            {/* Photo */}
             <div className="flex justify-center">
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 border-2 border-dashed border-border flex flex-col items-center justify-center gap-3">
-                <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
-                  <span className="text-4xl font-bold text-primary">郭</span>
-                </div>
-                <span className="text-sm text-text-secondary">大頭照</span>
+              <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-4 border-white shadow-xl ring-4 ring-primary/10">
+                <img
+                  src="/images/cj-avatar.svg"
+                  alt="郭鎮榕 C.J. Kuo — 榕耀管顧創辦人"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
