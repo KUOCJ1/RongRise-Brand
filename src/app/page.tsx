@@ -25,10 +25,10 @@ export default function HomePage() {
               在 AI 時代中搶得先機。
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in-up animation-delay-300">
-              <Link href="/about#contact" className="btn-primary bg-white text-primary font-bold hover:bg-white/95">
+              <Link href="/about#contact" className="btn-primary bg-white text-primary font-bold hover:bg-white/95 shadow-lg shadow-white/20">
                 預約諮詢
               </Link>
-              <Link href="/knowledge" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white">
+              <Link href="/knowledge" className="btn-secondary bg-white/15 border-white/50 text-white font-semibold hover:bg-white/25 hover:border-white shadow-md shadow-white/10">
                 探索知識庫
               </Link>
             </div>

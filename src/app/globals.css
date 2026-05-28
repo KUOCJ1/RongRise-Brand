@@ -291,8 +291,24 @@ body {
 /* Hero 內標題強制白色 */
 .bg-gradient-hero .heading-hero,
 .bg-gradient-hero .heading-section,
-.bg-gradient-hero h1, .bg-gradient-hero h2, .bg-gradient-hero h3 {
+.bg-primary .heading-section,
+.bg-gradient-hero h1, .bg-gradient-hero h2, .bg-gradient-hero h3,
+.bg-primary h1, .bg-primary h2, .bg-primary h3 {
   color: white;
+}
+
+/* Hero / 深色區域內 secondary button 加強可見度 */
+.bg-gradient-hero .btn-secondary,
+.bg-primary .btn-secondary {
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.5);
+  color: white;
+  font-weight: 600;
+}
+.bg-gradient-hero .btn-secondary:hover,
+.bg-primary .btn-secondary:hover {
+  background: rgba(255,255,255,0.25);
+  border-color: white;
 }
 
 .bg-gradient-hero::before {
