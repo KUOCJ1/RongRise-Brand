@@ -29,14 +29,14 @@ const downloadCategories: DownloadCategory[] = [
         type: "PDF",
         size: "1.2 MB",
         desc: "完整介紹我們的服務項目、核心優勢與合作方式。",
-        href: "#",
+        href: "https://drive.google.com/file/d/1iFvZsDKs6MjgxaewB161FNFlDG1S1bDX/view?usp=sharing",
       },
       {
         name: "AI 轉型策略白皮書",
         type: "PDF",
         size: "2.8 MB",
         desc: "深入解析企業 AI 導入的策略框架與實務步驟。",
-        href: "#",
+        href: "https://drive.google.com/file/d/1iFvZsDKs6MjgxaewB161FNFlDG1S1bDX/view?usp=sharing",
       },
     ],
   },
@@ -47,25 +47,25 @@ const downloadCategories: DownloadCategory[] = [
       {
         name: "AI 成熟度自評量表",
         type: "PDF",
-        size: "0.5 MB",
+        size: "61 KB",
         desc: "免費下載！五個維度評估企業 AI 成熟度水準。",
-        href: "/knowledge/ai-maturity-assessment",
+        href: "https://drive.google.com/file/d/12L6UmKRu9rURwF3GZSPxIGAzT6EsmyKs/view?usp=sharing",
         isNew: true,
       },
       {
         name: "ESG 現況盤點清單",
         type: "PDF",
-        size: "0.8 MB",
+        size: "75 KB",
         desc: "協助企業盤點目前 ESG 落實狀況的實用清單。",
-        href: "#",
+        href: "https://drive.google.com/file/d/1UxNhLWOJBhoxENHBX8LmzoXH-xSwpBEN/view?usp=sharing",
         isNew: true,
       },
       {
         name: "人才能力評估模板",
         type: "PDF",
-        size: "0.6 MB",
+        size: "78 KB",
         desc: "建立團隊能力地圖的結構化模板。",
-        href: "#",
+        href: "https://drive.google.com/file/d/1VOKnekMAERIpLSAnu0Usv3vKbeWGwpKs/view?usp=sharing",
       },
     ],
   },
@@ -76,16 +76,40 @@ const downloadCategories: DownloadCategory[] = [
       {
         name: "2025 AI 轉型實戰指南",
         type: "PDF",
-        size: "3.5 MB",
+        size: "94 KB",
         desc: "從評估到落地的完整 AI 轉型指南，含案例分享。",
-        href: "/knowledge/ai-transformation-bootcamp",
+        href: "https://drive.google.com/file/d/1iFvZsDKs6MjgxaewB161FNFlDG1S1bDX/view?usp=sharing",
       },
       {
         name: "數位培訓體系設計手冊",
         type: "PDF",
-        size: "1.8 MB",
+        size: "78 KB",
         desc: "建立企業內部培訓體系的完整參考手冊。",
-        href: "/knowledge/hr-ai-course-design",
+        href: "https://drive.google.com/file/d/1VOKnekMAERIpLSAnu0Usv3vKbeWGwpKs/view?usp=sharing",
+      },
+      {
+        name: "企業 AI 工具選型指南",
+        type: "PDF",
+        size: "100 KB",
+        desc: "面對琳瑯滿目的 AI 工具，如何做出明智選擇？",
+        href: "https://drive.google.com/file/d/1GHheU5fgiFNCONbxAtucQaKnEldQg6OU/view?usp=sharing",
+        isNew: true,
+      },
+      {
+        name: "服務業 AI 客服導入實戰",
+        type: "PDF",
+        size: "96 KB",
+        desc: "投訴率降 60% 的關鍵：AI 客服導入完整案例分享。",
+        href: "https://drive.google.com/file/d/1XvrEG36BWpg0S9w5Ho2iO_gQEK_qVrlJ/view?usp=sharing",
+        isNew: true,
+      },
+      {
+        name: "2026 政府 AI 補助資源整理",
+        type: "PDF",
+        size: "94 KB",
+        desc: "從經濟部、勞動部到數發部，一次整理所有可申請的 AI 轉型資源。",
+        href: "https://drive.google.com/file/d/1JCWY5YTSS_gfWvGx8sB7eTsE7QphdGeM/view?usp=sharing",
+        isNew: true,
       },
     ],
   },
@@ -118,12 +142,15 @@ export default function DownloadsPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {cat.items.map((item, ii) => (
-                  <div
+                  <a
                     key={ii}
-                    className={`card flex items-start gap-4 group ${
-                      item.href && item.href !== "#"
-                        ? "cursor-pointer"
-                        : ""
+                    href={item.href || '#'}
+                    target={item.href && item.href.startsWith('http') ? '_blank' : undefined}
+                    rel={item.href && item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    className={`card flex items-start gap-4 group no-underline ${
+                      item.href && item.href !== '#'
+                        ? 'cursor-pointer'
+                        : 'cursor-default opacity-60'
                     }`}
                   >
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -150,20 +177,17 @@ export default function DownloadsPage() {
                           {item.size}
                         </span>
                         {item.href && item.href !== "#" ? (
-                          <Link
-                            href={item.href}
-                            className="text-xs font-medium text-primary group-hover:text-secondary transition-colors"
-                          >
-                            查看 →
-                          </Link>
-                        ) : (
                           <span className="text-xs font-medium text-primary group-hover:text-secondary transition-colors">
-                            下載 ↓
+                            下載 →
+                          </span>
+                        ) : (
+                          <span className="text-xs font-medium text-text-secondary">
+                            即將推出
                           </span>
                         )}
                       </div>
                     </div>
-                  </div>
+                  </a>
                 ))}
               </div>
             </div>
