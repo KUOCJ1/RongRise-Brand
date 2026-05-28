@@ -5,16 +5,16 @@ import Link from "next/link";
    ============================================ */
 
 const timeline = [
-  { year: "發展歷程", title: "深耕企業顧問領域", desc: "累積多年企業管理與顧問實務經驗，服務橫跨製造、科技、服務等多元產業。" },
-  { year: "專業聚焦", title: "AI × 人才 × ESG", desc: "將 AI 轉型策略、人才發展與 ESG 永續三大領域整合，提供企業全方位的轉型顧問服務。" },
-  { year: "展望未來", title: "智慧轉型，創新未來", desc: "持續陪伴中小企業在數位浪潮中穩健前行，共創永續成長的嶄新未來。" },
+  { year: "1999-2008", title: "國際管理顧問公司歷練", desc: "Accenture 商業顧問（服務台積電、仁寶電腦）、EY Pre-Sales 經理、Watson Wyatt 資深顧問——累積薪酬策略與人力資本轉型專業。" },
+  { year: "2008-2023", title: "跨國金融企業人資高階主管", desc: "Cigna Life 人資長領導 HR 全功能團隊，連續四年 HR Asia Award；Chubb Life 資深副總裁統籌 30+ 人團隊。協助雇主獲 8 座優良職場獎。" },
+  { year: "2024-迄今", title: "創辦榕耀管顧 RongRise Consulting", desc: "聚焦 AI 時代人才戰略、企業永續治理、中小企業 AI 賦能。已開設 3+ 梯次 AI 實戰營，服務萬達、穗曄、信男等企業。" },
 ];
 
 const expertise = [
-  { icon: "📊", title: "AI 轉型顧問", desc: "AI 成熟度評估、導入策略規劃、自動化流程設計、AI 人才培訓" },
-  { icon: "🎯", title: "人才發展策略", desc: "組織能力建構、數位人才培訓、接班人計畫、績效管理優化" },
-  { icon: "🌿", title: "ESG 永續諮詢", desc: "ESG 現況評估、永續策略規劃、指標體系建立、社會影響力報告" },
-  { icon: "💡", title: "創新管理輔導", desc: "商業模式創新、數位轉型路徑、變革管理、敏捷組織建構" },
+  { icon: "🤖", title: "AI 轉型顧問", desc: "AI 成熟度評估、Agentic AI 導入策略、人機協作流程設計、AI 治理框架" },
+  { icon: "🎯", title: "人才發展策略", desc: "組織能力建構、數位人才培訓、接班人計畫、績效管理與 GROW 教練" },
+  { icon: "🌿", title: "ESG 永續諮詢", desc: "ESG 現況評估、永續策略規劃、TCSA 報告書輔導、供應鏈碳排追蹤" },
+  { icon: "💡", title: "創新管理輔導", desc: "商業模式創新、數位轉型路徑、變革管理、工作坊設計與引導" },
 ];
 
 const values = [
@@ -236,11 +236,11 @@ export default function AboutPage() {
             <div className="brand-divider brand-divider-center mt-4 bg-white/30" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto text-center">
+          <div className="grid grid-cols-1 md:cols-5 gap-6 max-w-4xl mx-auto text-center">
             <div>
               <div className="text-3xl mb-3">📧</div>
               <h4 className="font-semibold mb-1">Email</h4>
-              <p className="text-white/70 text-sm">info@rongrise.com</p>
+              <a href="mailto:info@rongrise.com" className="text-white/70 text-sm hover:text-white transition-colors">info@rongrise.com</a>
             </div>
             <div>
               <div className="text-3xl mb-3">📱</div>
@@ -251,6 +251,16 @@ export default function AboutPage() {
               <div className="text-3xl mb-3">📍</div>
               <h4 className="font-semibold mb-1">服務地區</h4>
               <p className="text-white/70 text-sm">全台 · 線上諮詢</p>
+            </div>
+            <div>
+              <div className="text-3xl mb-3">💼</div>
+              <h4 className="font-semibold mb-1">LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/c-j-kuo-5629b97b/" target="_blank" rel="noopener noreferrer" className="text-white/70 text-sm hover:text-white transition-colors">C.J. Kuo</a>
+            </div>
+            <div>
+              <div className="text-3xl mb-3">📘</div>
+              <h4 className="font-semibold mb-1">Facebook</h4>
+              <a href="https://www.facebook.com/cj.kuo1" target="_blank" rel="noopener noreferrer" className="text-white/70 text-sm hover:text-white transition-colors">CJ Kuo</a>
             </div>
           </div>
 
