@@ -110,7 +110,7 @@ export default function HomePage() {
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white/30 flex-shrink-0">
                   <img
-                    src="/images/cj-avatar.svg"
+                    src="/images/cj-photo.jpg"
                     alt="郭鎮榕 C.J. Kuo"
                     className="w-full h-full object-cover"
                   />

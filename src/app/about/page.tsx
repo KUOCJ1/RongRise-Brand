@@ -52,7 +52,7 @@ export default function AboutPage() {
             <div className="flex justify-center">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-4 border-white shadow-xl ring-4 ring-primary/10">
                 <img
-                  src="/images/cj-avatar.svg"
+                  src="/images/cj-photo.jpg"
                   alt="郭鎮榕 C.J. Kuo — 榕耀管顧創辦人"
                   className="w-full h-full object-cover"
                 />
