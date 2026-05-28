@@ -3,6 +3,7 @@ import { Noto_Sans_TC, Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 const notoSansTC = Noto_Sans_TC({
   variable: "--font-noto-sans-tc",
@@ -32,6 +33,36 @@ export const metadata: Metadata = {
     type: "website",
     locale: "zh_TW",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "榕耀管顧 RongRise Consulting",
+  alternateName: "RongRise Consulting",
+  description: "從人才策略到 AI 落地，驅動永續成長。智慧轉型，創新未來。",
+  url: "https://rong-rise.com",
+  logo: "https://rong-rise.com/images/cj-photo.jpg",
+  image: "https://rong-rise.com/images/cj-photo.jpg",
+  founder: {
+    "@type": "Person",
+    name: "郭鎮榕 C.J. Kuo",
+    jobTitle: "創辦人 / 企業轉型顧問",
+    url: "https://rong-rise.com/about",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer service",
+    email: "info@rongrise.com",
+    areaServed: "TW",
+    availableLanguage: ["Chinese"],
+  },
+  serviceType: ["AI 轉型策略", "人才發展策略", "ESG 永續諮詢"],
+  sameAs: [],
 };
 
 export default function RootLayout({
@@ -44,6 +75,13 @@ export default function RootLayout({
       lang="zh-TW"
       className={`${notoSansTC.variable} ${roboto.variable} h-full antialiased`}
     >
+      <head>
+        <Script
+          id="json-ld"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>

@@ -507,3 +507,69 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+/* ============================================
+   RWD — Mobile Optimizations
+   ============================================ */
+
+@media (max-width: 768px) {
+  /* Section spacing */
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .section-inner {
+    padding: 0;
+  }
+
+  /* Card padding */
+  .card {
+    padding: 1.25rem;
+  }
+
+  .card:hover {
+    transform: translateY(-2px);
+  }
+
+  /* Button sizing */
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    transform: translateY(-1px);
+  }
+
+  /* Hero section */
+  .bg-gradient-hero::after {
+    height: 30px;
+  }
+
+  /* Tag */
+  .tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 2.5rem 0.75rem;
+  }
+
+  .card {
+    padding: 1rem;
+    border-radius: var(--radius-md);
+  }
+}
+
+/* Safe area for notched devices */
+@supports (padding: env(safe-area-inset-bottom)) {
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
