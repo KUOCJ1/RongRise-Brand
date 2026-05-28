@@ -6,7 +6,8 @@ export interface ChatMessage {
   content: string;
 }
 
-// 從環境變數取得 API 金鑰
+// API 金鍵：優先從環境變數讀取，若無則使用安全的後備方式
+// 注意：此值在 build 時被 NEXT_PUBLIC_OPENROUTER_API_KEY 環境變數取代
 const OPENROUTER_API_KEY = process.env.NEXT_PUBLIC_OPENROUTER_API_KEY || "";
 const OPENROUTER_MODEL = process.env.NEXT_PUBLIC_OPENROUTER_MODEL || "openrouter/owl-alpha";
 const API_URL = "https://openrouter.ai/api/v1/chat/completions";
