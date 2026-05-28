@@ -1,65 +1,201 @@
-import Image from "next/image";
+import Link from "next/link";
 
-export default function Home() {
+/* ============================================
+   首頁 Home Page
+   ============================================ */
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      {/* Hero Section */}
+      <section className="bg-gradient-hero text-white">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-20 md:py-28">
+          <div className="max-w-2xl">
+            <div className="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-1.5 mb-6">
+              <span className="w-2 h-2 rounded-full bg-tertiary animate-pulse" />
+              <span className="text-sm font-medium">智慧轉型，創新未來</span>
+            </div>
+            <h1 className="heading-hero mb-6 animate-fade-in-up">
+              從人才策略到
+              <br />
+              <span className="text-tertiary-light">AI 落地</span>
+            </h1>
+            <p className="text-body-lg text-white/85 mb-8 animate-fade-in-up animation-delay-200">
+              協助企業驅動永續成長，讓前瞻思維與務實方案結合，
+              在 AI 時代中搶得先機。
+            </p>
+            <div className="flex flex-wrap gap-4 animate-fade-in-up animation-delay-300">
+              <Link href="/about#contact" className="btn-primary bg-white text-primary font-bold hover:bg-white/95">
+                預約諮詢
+              </Link>
+              <Link href="/knowledge" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white">
+                探索知識庫
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="section bg-bg-alt">
+        <div className="section-inner">
+          <div className="text-center mb-12">
+            <span className="tag mb-4">核心服務</span>
+            <h2 className="heading-section text-dark mt-4">驅動企業轉型的三大支柱</h2>
+            <div className="brand-divider brand-divider-center mt-4" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                icon: "🤖",
+                title: "AI 轉型策略",
+                desc: "從評估、規劃到落地，打造企業專屬的 AI 轉型藍圖。協助管理層建立 AI 思維，導入自動化流程，提升營運效率。",
+                tag: "AI",
+              },
+              {
+                icon: "👥",
+                title: "人才發展策略",
+                desc: "建構面向未來的人才梯隊，結合數位能力培訓與組織變革管理，讓企業在轉型中不失去核心競爭力。",
+                tag: "人才",
+              },
+              {
+                icon: "🌱",
+                title: "ESG 永續發展",
+                desc: "將永續理念融入企業策略，建立可衡量的 ESG 指標體系，創造企業社會價值與商業效益的雙贏局面。",
+                tag: "ESG",
+              },
+            ].map((service, i) => (
+              <div
+                key={i}
+                className="card group animate-fade-in-up"
+                style={{ animationDelay: `${i * 150}ms` }}
+              >
+                <div className="text-4xl mb-4">{service.icon}</div>
+                <span className="tag mb-3">{service.tag}</span>
+                <h3 className="heading-subsection text-dark mb-3">{service.title}</h3>
+                <p className="text-text-secondary text-body leading-relaxed">{service.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About Preview Section */}
+      <section className="section">
+        <div className="section-inner">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="tag mb-4">關於 C.J. Kuo</span>
+              <h2 className="heading-section mt-4 mb-4">
+                專業、創新、務實的
+                <br />
+                <span className="text-primary">顧問夥伴</span>
+              </h2>
+              <div className="brand-divider mb-6" />
+              <p className="text-text-secondary text-body-lg mb-4">
+                C.J. Kuo 老師擁有多年企業顧問經驗，專注於協助中小型企業在數位浪潮中穩健轉型。
+              </p>
+              <p className="text-text-secondary text-body mb-6">
+                以數據為基礎，以策略為核心，以落地為目標——不只是提出方案，更陪伴企業走完轉型的每一步。
+              </p>
+              <Link href="/about" className="btn-secondary">
+                了解更多 →
+              </Link>
+            </div>
+            <div className="bg-gradient-hero rounded-2xl p-8 md:p-10 text-white">
+              <blockquote className="text-lg md:text-xl leading-relaxed font-medium mb-6">
+                「真正的轉型不是技術升級，而是思維的革新。當人才、策略與科技三者對齊，企業就能在變動中創造持續的競爭優勢。」
+              </blockquote>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center font-bold">
+                  郭
+                </div>
+                <div>
+                  <p className="font-semibold text-sm">郭鎮榕 C.J. Kuo</p>
+                  <p className="text-white/70 text-xs">榕耀管顧創辦人</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Knowledge Preview Section */}
+      <section className="section bg-gradient-subtle">
+        <div className="section-inner">
+          <div className="text-center mb-12">
+            <span className="tag mb-4">精選內容</span>
+            <h2 className="heading-section text-dark mt-4">最新知識分享</h2>
+            <div className="brand-divider brand-divider-center mt-4" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+            {[
+              {
+                cat: "AI 轉型",
+                title: "2025 企業 AI 導入實戰指南",
+                date: "2025.12.15",
+                excerpt: "從評估組織 AI 成熟度到選擇合適工具，完整解析企業 AI 導入的關鍵步驟與常見陷阱。",
+              },
+              {
+                cat: "人才策略",
+                title: "數位時代的人才培訓體系設計",
+                date: "2025.11.28",
+                excerpt: "如何建立持續學習的組織文化？從能力地圖到培訓路徑，打造面向未來的人才發展框架。",
+              },
+              {
+                cat: "ESG 永續",
+                title: "中小企業 ESG 實務入門",
+                date: "2025.11.10",
+                excerpt: "ESG 不只是大企業的專利。中小企業如何從日常營運中落實永續，創造差異化競爭優勢。",
+              },
+            ].map((post, i) => (
+              <Link
+                key={i}
+                href="/knowledge"
+                className="card group no-underline block"
+              >
+                <div className="flex items-center justify-between mb-3">
+                  <span className="tag">{post.cat}</span>
+                  <span className="text-xs text-text-secondary">{post.date}</span>
+                </div>
+                <h3 className="heading-subsection text-dark group-hover:text-primary transition-colors mb-2">
+                  {post.title}
+                </h3>
+                <p className="text-text-secondary text-body-sm">{post.excerpt}</p>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link href="/knowledge" className="btn-secondary">
+              查看全部文章 →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-primary py-16">
+        <div className="max-w-[800px] mx-auto px-4 sm:px-6 text-center">
+          <h2 className="heading-section text-white mb-4">
+            準備好啟動您的轉型之旅了嗎？
+          </h2>
+          <p className="text-white/80 text-body-lg mb-8">
+            無論您正處於轉型的哪個階段，我們都能提供專業且務實的建議。
+            讓我們一起探索適合您企業的最佳路徑。
           </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/about#contact" className="btn-primary">
+              立即預約諮詢
+            </Link>
+            <Link href="/assistant" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white">
+              先問問小幫手
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+    </>
   );
 }
