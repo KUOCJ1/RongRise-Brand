@@ -1,16 +1,33 @@
 // src/lib/chat-api.ts
 // 小幫手 API 呼叫模組 — 直接從前端呼叫 OpenRouter
+//
+// NEXT_PUBLIC_OPENROUTER_API_KEY 在 build time 由 Next.js 自動從環境變數注入。
+// GitHub Actions workflow 透過以下方式注入：
+//   env:
+//     NEXT_PUBLIC_OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
 
 export interface ChatMessage {
   role: "user" | "assistant" | "system";
   content: string;
 }
 
-// API 金鍵：優先從環境變數讀取，若無則使用安全的後備方式
-// 注意：此值在 build 時被 NEXT_PUBLIC_OPENROUTER_API_KEY 環境變數取代
-const OPENROUTER_API_KEY = process.env.NEXT_PUBLIC_OPENROUTER_API_KEY || "";
-const OPENROUTER_MODEL = process.env.NEXT_PUBLIC_OPENROUTER_MODEL || "openrouter/owl-alpha";
 const API_URL = "https://openrouter.ai/api/v1/chat/completions";
+
+// Next.js 在 build time 會將 process.env.NEXT_PUBLIC_* 替換為實際值
+// 使用正規的 process.env 存取方式讓 Next.js 編譯器正確識別並替換
+const OPENROUTER_API_KEY: string =
+  typeof process !== "undefined" &&
+  process.env &&
+  process.env.NEXT_PUBLIC_OPENROUTER_API_KEY
+    ? process.env.NEXT_PUBLIC_OPENROUTER_API_KEY
+    : "";
+
+const OPENROUTER_MODEL: string =
+  typeof process !== "undefined" &&
+  process.env &&
+  process.env.NEXT_PUBLIC_OPENROUTER_MODEL
+    ? process.env.NEXT_PUBLIC_OPENROUTER_MODEL
+    : "openrouter/owl-alpha";
 
 // System prompt — 定義小幫手的角色與行為
 const SYSTEM_PROMPT = `你是「榕耀管顧」的 AI 轉型小幫手，專門協助中小企業主了解 AI 轉型、人才發展、ESG 永續等議題。
@@ -75,7 +92,7 @@ export function buildSystemPrompt(): string {
 export async function callChatAPI(
   messages: ChatMessage[]
 ): Promise<string> {
-  // 如果沒有設定 API 金鑰，回傳錯誤訊息
+  // 如果沒有設定 API 金鑰，回傳 fallback 回應
   if (!OPENROUTER_API_KEY) {
     return getFallbackResponse(messages[messages.length - 1]?.content || "");
   }
@@ -121,7 +138,7 @@ export async function callChatAPI(
   }
 }
 
-// 本地 fallback 回應（當 API 不適用時）
+// 本地 fallback 回應（當 API 不可用時）
 function getFallbackResponse(input: string): string {
   const lower = input.toLowerCase();
 

@@ -6,10 +6,8 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  env: {
-    NEXT_PUBLIC_OPENROUTER_API_KEY: process.env.NEXT_PUBLIC_OPENROUTER_API_KEY || "",
-    NEXT_PUBLIC_OPENROUTER_MODEL: process.env.NEXT_PUBLIC_OPENROUTER_MODEL || "openrouter/owl-alpha",
-  },
+  // NOTE: NEXT_PUBLIC_ env vars are automatically injected by Next.js from process.env at build time.
+  // Do NOT add them to the env block here — that does NOT work with static export.
 };
 
 export default nextConfig;
