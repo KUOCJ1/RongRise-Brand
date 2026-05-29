@@ -65,6 +65,8 @@ const jsonLd = {
   sameAs: [],
 };
 
+const GA4_ID = "G-E4PL80M0BL";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -81,6 +83,22 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {/* GA4 Global Site Tag */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA4_ID}', {
+              page_path: window.location.pathname,
+              send_page_view: true,
+            });
+          `}
+        </Script>
       </head>
       <body className="min-h-full flex flex-col" style={{ fontFamily: 'var(--font-noto-sans)' }}>
         <Header />
