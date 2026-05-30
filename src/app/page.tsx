@@ -1,107 +1,162 @@
 import Link from "next/link";
-import type { Metadata } from "next";
 
-/* ============================================
-   首頁 Home Page
-   ============================================ */
-
-export const metadata: Metadata = {
+export const metadata = {
   title: "AI 轉型 × 人才策略 × ESG 永續",
-  description:
-    "榕耀管顧協助企業從人才策略到 AI 落地，驅動永續成長。C.J. Kuo 老師 16 年跨國企業顧問經驗，提供 AI 轉型策略、人才發展、ESG 永續諮詢。",
+  description: "協助企業從人才策略到 AI 落地，驅動永續成長。C.J. Kuo 老師專業顧問品牌，聚焦 AI 轉型、人才策略、ESG 永續發展。",
   openGraph: {
-    title: "榕耀管顧 RongRise Consulting｜AI 轉型 × 人才策略 × ESG 永續",
-    description:
-      "協助企業從人才策略到 AI 落地，驅動永續成長。C.J. Kuo 老師專業諮詢。",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "榕耀管顧 RongRise Consulting" }],
   },
 };
+
+function FloatingIcon({ children, delay = "0s" }: { children: React.ReactNode; delay?: string }) {
+  return (
+    <div className="animate-float-slow" style={{ animationDelay: delay }}>
+      {children}
+    </div>
+  );
+}
+
+function ServiceCard({ icon, title, desc, tag, delay }: { icon: React.ReactNode; title: string; desc: string; tag: string; delay: number }) {
+  return (
+    <div
+      className="card card-3d group animate-fade-in-up"
+      style={{ animationDelay: `${delay}ms` }}
+    >
+      <div className="card-inner relative">
+        <div className="absolute -top-3 -right-3 w-12 h-12 rounded-xl bg-tertiary/10 flex items-center justify-center text-2xl animate-badge-bounce" style={{ animationDelay: `${delay + 300}ms` }}>
+          {icon}
+        </div>
+        <span className="tag mb-3">{tag}</span>
+        <h3 className="heading-subsection text-dark mb-3 group-hover:text-primary transition-colors">{title}</h3>
+        <div className="brand-divider mb-3" style={{ width: "30px", height: "2px" }} />
+        <p className="text-text-secondary text-body leading-relaxed">{desc}</p>
+      </div>
+    </div>
+  );
+}
 
 export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
       <section className="bg-gradient-hero text-white">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-20 md:py-28">
+        {/* 粒子層 */}
+        <div className="particles" aria-hidden="true">
+          <span className="particle particle-1" />
+          <span className="particle particle-2" />
+          <span className="particle particle-3" />
+          <span className="particle particle-4" />
+          <span className="particle particle-5" />
+          <span className="particle particle-6" />
+        </div>
+
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-20 md:py-28 relative">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-1.5 mb-6">
-              <span className="w-2 h-2 rounded-full bg-tertiary animate-pulse" />
-              <span className="text-sm font-medium">智慧轉型，創新未來</span>
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-5 py-2 mb-8 border border-white/10 animate-fade-in-up">
+              <span className="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse-glow" />
+              <span className="text-sm font-medium tracking-wide">智慧轉型，創新未來</span>
             </div>
-            <h1 className="heading-hero mb-6 animate-fade-in-up">
+            <h1 className="heading-hero mb-6 animate-fade-in-up animation-delay-100">
               從人才策略到
               <br />
-              <span className="text-tertiary-light">AI 落地</span>
+              <span className="hero-highlight">AI 落地</span>
             </h1>
-            <p className="text-body-lg text-white/85 mb-8 animate-fade-in-up animation-delay-200">
+            <p className="text-body-lg text-white/80 mb-10 animate-fade-in-up animation-delay-200 leading-relaxed">
               協助企業驅動永續成長，讓前瞻思維與務實方案結合，
               在 AI 時代中搶得先機。
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in-up animation-delay-300">
-              <Link href="/about#contact" className="btn-primary bg-white text-primary font-bold hover:bg-white/95 shadow-lg shadow-white/20">
-                預約諮詢
+              <Link href="/about#contact" className="btn-primary bg-white text-primary font-bold hover:bg-white/95 shadow-lg shadow-white/20 animate-pulse-glow">
+                預約免費諮詢
               </Link>
-              <Link href="/knowledge" className="btn-secondary bg-white/15 border-white/50 text-white font-semibold hover:bg-white/25 hover:border-white shadow-md shadow-white/10">
+              <Link href="/knowledge" className="btn-secondary bg-white/10 border-white/40 text-white font-semibold hover:bg-white/20 hover:backdrop-blur-sm">
                 探索知識庫
               </Link>
             </div>
           </div>
+
+          {/* 右側裝飾 */}
+          <div className="hidden lg:block absolute right-8 top-1/2 -translate-y-1/2">
+            <FloatingIcon delay="0s">
+              <div className="w-64 h-64 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 p-6 flex flex-col justify-center items-center gap-4 animate-float-slow" style={{ animationDuration: "8s" }}>
+                <HeroStat number="16+" label="年跨國人資經驗" />
+                <div className="w-full h-px bg-white/10" />
+                <HeroStat number="8" label="座優良職場獎" />
+                <div className="w-full h-px bg-white/10" />
+                <HeroStat number="300+" label="家企業服務" />
+              </div>
+            </FloatingIcon>
+          </div>
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* 核心服務 */}
       <section className="section bg-bg-alt">
         <div className="section-inner">
-          <div className="text-center mb-12">
+          <div className="text-center mb-14">
             <span className="tag mb-4">核心服務</span>
             <h2 className="heading-section text-dark mt-4">驅動企業轉型的三大支柱</h2>
             <div className="brand-divider brand-divider-center mt-4" />
+            <p className="text-text-secondary text-body-lg mt-6 max-w-2xl mx-auto">
+              從 AI 策略、人才發展到 ESG 永續，三位一體的轉型框架，協助企業建立持久的競爭優勢。
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                icon: "🤖",
-                title: "AI 轉型策略",
-                desc: "從評估、規劃到落地，打造企業專屬的 AI 轉型藍圖。協助管理層建立 AI 思維，導入自動化流程，提升營運效率。",
-                tag: "AI",
-              },
-              {
-                icon: "👥",
-                title: "人才發展策略",
-                desc: "建構面向未來的人才梯隊，結合數位能力培訓與組織變革管理，讓企業在轉型中不失去核心競爭力。",
-                tag: "人才",
-              },
-              {
-                icon: "🌱",
-                title: "ESG 永續發展",
-                desc: "將永續理念融入企業策略，建立可衡量的 ESG 指標體系，創造企業社會價值與商業效益的雙贏局面。",
-                tag: "ESG",
-              },
-            ].map((service, i) => (
-              <div
-                key={i}
-                className="card group animate-fade-in-up"
-                style={{ animationDelay: `${i * 150}ms` }}
-              >
-                <div className="text-4xl mb-4">{service.icon}</div>
-                <span className="tag mb-3">{service.tag}</span>
-                <h3 className="heading-subsection text-dark mb-3">{service.title}</h3>
-                <p className="text-text-secondary text-body leading-relaxed">{service.desc}</p>
-              </div>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <ServiceCard
+              delay={0}
+              icon={
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-tertiary">
+                  <path d="M12 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
+                  <path d="M12 22a2 2 0 0 1 2-2v-2a2 2 0 0 1-2-2 2 2 0 0 1-2 2v2a2 2 0 0 1 2 2z" />
+                  <path d="M22 12a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2 2 2 0 0 1 2-2h2a2 2 0 0 1 2 2z" />
+                  <path d="M2 12a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z" />
+                  <circle cx="12" cy="12" r="3" />
+                  <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                </svg>
+              }
+              title="AI 轉型策略"
+              desc="從評估、規劃到落地，打造企業專屬的 AI 轉型藍圖。協助管理層建立 AI 思維，導入自動化流程，提升營運效率。"
+              tag="AI"
+            />
+            <ServiceCard
+              delay={150}
+              icon={
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-secondary">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              }
+              title="人才發展策略"
+              desc="建構面向未來的人才梯隊，結合數位能力培訓與組織變革管理，讓企業在轉型中不失去核心競爭力。"
+              tag="人才"
+            />
+            <ServiceCard
+              delay={300}
+              icon={
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                  <path d="M2 17l10 5 10-5" />
+                  <path d="M2 12l10 5 10-5" />
+                </svg>
+              }
+              title="ESG 永續發展"
+              desc="將永續理念融入企業策略，建立可衡量的 ESG 指標體系，創造企業社會價值與商業效益的雙贏局面。"
+              tag="ESG"
+            />
           </div>
 
-          {/* CTA */}
-          <div className="text-center mt-10">
-            <Link href="/services" className="btn-secondary">
+          <div className="text-center mt-12">
+            <Link href="/services" className="btn-primary">
               查看完整服務項目 →
             </Link>
           </div>
         </div>
       </section>
 
-      {/* About Preview Section */}
+      {/* 關於預覽 */}
       <section className="section">
         <div className="section-inner">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -148,7 +203,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Knowledge Preview Section */}
+      {/* 知識預覽 */}
       <section className="section bg-gradient-subtle">
         <div className="section-inner">
           <div className="text-center mb-12">
@@ -184,16 +239,24 @@ export default function HomePage() {
               <Link
                 key={i}
                 href={`/knowledge/${post.slug}`}
-                className="card group no-underline block"
+                className="card card-3d group no-underline block"
               >
-                <div className="flex items-center justify-between mb-3">
-                  <span className="tag">{post.cat}</span>
-                  <span className="text-xs text-text-secondary">{post.date}</span>
+                <div className="card-inner">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="tag">{post.cat}</span>
+                    <span className="text-xs text-text-secondary">{post.date}</span>
+                  </div>
+                  <h3 className="heading-subsection text-dark group-hover:text-primary transition-colors mb-2">
+                    {post.title}
+                  </h3>
+                  <p className="text-text-secondary text-body-sm">{post.excerpt}</p>
+                  <div className="mt-4 flex items-center gap-1 text-sm text-primary font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                    閱讀更多
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                  </div>
                 </div>
-                <h3 className="heading-subsection text-dark group-hover:text-primary transition-colors mb-2">
-                  {post.title}
-                </h3>
-                <p className="text-text-secondary text-body-sm">{post.excerpt}</p>
               </Link>
             ))}
           </div>
@@ -206,9 +269,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-primary py-16">
-        <div className="max-w-[800px] mx-auto px-4 sm:px-6 text-center">
+      {/* CTA */}
+      <section className="bg-primary py-16 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="cta-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="0.5" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#cta-grid)" />
+          </svg>
+        </div>
+        <div className="max-w-[800px] mx-auto px-4 sm:px-6 text-center relative z-10">
           <h2 className="heading-section text-white mb-4">
             準備好啟動您的轉型之旅了嗎？
           </h2>
@@ -227,5 +300,14 @@ export default function HomePage() {
         </div>
       </section>
     </>
+  );
+}
+
+function HeroStat({ number, label }: { number: string; label: string }) {
+  return (
+    <div className="text-center">
+      <div className="text-3xl font-bold text-tertiary">{number}</div>
+      <div className="text-xs text-white/60 mt-1">{label}</div>
+    </div>
   );
 }
