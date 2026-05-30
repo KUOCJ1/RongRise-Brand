@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { callChatAPI, type ChatMessage } from "@/lib/chat-api";
+import { trackAssistantSend, trackAssistantQuickQuestion } from "@/lib/ga4-events";
 
 /* ============================================
    小幫手 Assistant Page — LLM 升級版
@@ -50,16 +51,61 @@ export default function AssistantPage() {
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
   const [error, setError] = useState("");
+  const [isRestored, setIsRestored] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const chatHistoryRef = useRef<ChatMessage[]>([]);
 
+  // 從 localStorage 載入歷史對話
   useEffect(() => {
+    try {
+      const saved = localStorage.getItem("assistant_history");
+      if (saved) {
+        const parsed = JSON.parse(saved) as Message[];
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          setMessages(parsed);
+          // 同步到 chatHistoryRef（assistant 訊息才送入 API context）
+          chatHistoryRef.current = parsed
+            .filter((m) => m.role === "assistant" || m.role === "user")
+            .map((m) => ({ role: m.role, content: m.content }));
+        } else {
+          throw new Error("empty");
+        }
+      } else {
+        throw new Error("no saved");
+      }
+    } catch {
+      // 沒有歷史或解析失敗 → 顯示歡迎訊息
+      const welcomeMsg: Message = {
+        role: "assistant",
+        content:
+          "您好！我是榕耀管顧的<strong>轉型小幫手</strong> 🤖✨\n\n我可以為您解答關於 AI 轉型、人才發展、ESG 永續的任何問題。\n\n也可以直接點擊下方熱門問題，或描述您的需求讓我來協助！",
+      };
+      setMessages([welcomeMsg]);
+    }
+    setIsRestored(true);
+  }, []);
+
+  // 對話更新時儲存到 localStorage
+  useEffect(() => {
+    if (isRestored && messages.length > 0) {
+      localStorage.setItem("assistant_history", JSON.stringify(messages));
+      // 同步 chatHistoryRef（只保留 user/assistant 作為 API context）
+      chatHistoryRef.current = messages
+        .filter((m) => m.role === "user" || m.role === "assistant")
+        .map((m) => ({ role: m.role, content: m.content }));
+    }
+  }, [messages, isRestored]);
+
+  // 清除對話
+  const clearChat = useCallback(() => {
+    localStorage.removeItem("assistant_history");
     const welcomeMsg: Message = {
       role: "assistant",
       content:
-        "您好！我是榕耀管顧的<strong>轉型小幫手</strong> 🤖✨\n\n我可以為您解答關於 AI 轉型、人才發展、ESG 永續的任何問題。\n\n也可以直接點擊下方熱門問題，或描述您的需求讓我來協助！",
+        "對話已清除！有什麼我可以幫您的嗎？😊",
     };
     setMessages([welcomeMsg]);
+    chatHistoryRef.current = [];
   }, []);
 
   useEffect(() => {
@@ -69,6 +115,8 @@ export default function AssistantPage() {
   const sendMessage = useCallback(
     async (text: string) => {
       if (!text.trim() || isTyping) return;
+
+      trackAssistantSend(text.length);
 
       const userMsg: Message = { role: "user", content: text };
       setMessages((prev) => [...prev, userMsg]);
@@ -131,6 +179,21 @@ export default function AssistantPage() {
             className="bg-white rounded-2xl border border-border shadow-lg overflow-hidden flex flex-col"
             style={{ height: "600px" }}
           >
+            {/* Chat Header */}
+            <div className="flex items-center justify-between px-4 py-2.5 border-b border-border-light bg-bg-alt">
+              <div className="flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse" />
+                <span className="text-sm font-medium text-dark">AI 轉型小幫手</span>
+                <span className="text-xs text-text-secondary">● 記憶已啟用</span>
+              </div>
+              <button
+                onClick={clearChat}
+                className="text-xs text-text-secondary hover:text-red-500 transition-colors px-2 py-1 rounded hover:bg-red-50"
+                title="清除對話歷史"
+              >
+                🗑️ 清除對話
+              </button>
+            </div>
             {/* Messages */}
             <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-4">
               {messages.map((msg, i) => (
@@ -207,7 +270,7 @@ export default function AssistantPage() {
                   {quickQuestions.map((q, i) => (
                     <button
                       key={i}
-                      onClick={() => sendMessage(q)}
+                      onClick={() => { trackAssistantQuickQuestion(q); sendMessage(q); }}
                       disabled={isTyping}
                       className="text-xs px-3 py-1.5 rounded-full bg-primary/10 text-primary font-medium hover:bg-primary/20 transition-colors disabled:opacity-50"
                     >

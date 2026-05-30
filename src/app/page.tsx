@@ -1,4 +1,7 @@
 import Link from "next/link";
+import ScrollTracker from "@/components/ScrollTracker";
+import { trackCTALabel } from "@/lib/ga4-events";
+import TrackLink from "@/components/TrackLink";
 
 const COVER_MAP: Record<string, string> = {
   "ai-transformation-bootcamp": "article-ai-bootcamp.jpg",
@@ -58,6 +61,7 @@ function ServiceCard({ icon, title, desc, tag, delay }: { icon: React.ReactNode;
 export default function HomePage() {
   return (
     <>
+      <ScrollTracker />
       {/* Hero Section */}
       <section className="bg-gradient-hero text-white relative overflow-hidden">
         {/* AI 生成 Hero 背景圖 */}
@@ -131,12 +135,12 @@ export default function HomePage() {
               在 AI 時代中搶得先機。
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in-up animation-delay-300">
-              <Link href="/about#contact" className="btn-primary bg-white text-primary font-bold hover:bg-white/95 shadow-lg shadow-white/20 animate-pulse-glow">
+              <TrackLink href="/about#contact" className="btn-primary bg-white text-primary font-bold hover:bg-white/95 shadow-lg shadow-white/20 animate-pulse-glow" trackLabel="預約免費諮詢" trackLocation="hero">
                 預約免費諮詢
-              </Link>
-              <Link href="/knowledge" className="btn-secondary bg-white/10 border-white/40 text-white font-semibold hover:bg-white/20 hover:backdrop-blur-sm">
+              </TrackLink>
+              <TrackLink href="/knowledge" className="btn-secondary bg-white/10 border-white/40 text-white font-semibold hover:bg-white/20 hover:backdrop-blur-sm" trackLabel="探索知識庫" trackLocation="hero">
                 探索知識庫
-              </Link>
+              </TrackLink>
             </div>
           </div>
 
@@ -223,9 +227,9 @@ export default function HomePage() {
           </div>
 
           <div className="text-center mt-12">
-            <Link href="/services" className="btn-primary">
+            <TrackLink href="/services" className="btn-primary" trackLabel="查看完整服務項目" trackLocation="services">
               查看完整服務項目 →
-            </Link>
+            </TrackLink>
           </div>
         </div>
       </section>
@@ -263,9 +267,9 @@ export default function HomePage() {
               <p className="text-text-secondary text-body mb-6">
                 以數據為基礎，以策略為核心，以落地為目標——不只是提出方案，更陪伴企業走完轉型的每一步。
               </p>
-              <Link href="/about" className="btn-secondary">
+              <TrackLink href="/about" className="btn-secondary" trackLabel="了解更多" trackLocation="about_preview">
                 了解更多 →
-              </Link>
+              </TrackLink>
             </div>
             <div className="relative rounded-2xl overflow-hidden p-8 md:p-10 text-white">
               {/* AI 生成引用區背景 */}
@@ -368,8 +372,26 @@ export default function HomePage() {
           </div>
 
           <div className="text-center">
-            <Link href="/knowledge" className="btn-secondary">
+            <TrackLink href="/knowledge" className="btn-secondary" trackLabel="查看全部文章" trackLocation="knowledge_preview">
               查看全部文章 →
+            </TrackLink>
+          </div>
+        </div>
+      </section>
+
+      {/* ESG 自評區塊 */}
+      <section className="section bg-bg-alt">
+        <div className="section-inner text-center">
+          <span className="tag mb-4">互動工具</span>
+          <h2 className="heading-section text-dark mt-4">ESG + AI 轉型自評</h2>
+          <div className="brand-divider brand-divider-center mt-4" />
+          <p className="text-text-secondary text-body-lg mt-6 max-w-2xl mx-auto">
+            25 題快速評估您的企業在 ESG 永續和 AI 轉型的成熟度。
+            涵蓋環境保護、社會責任、公司治理等五大維度，完成後獲得個人化建議。
+          </p>
+          <div className="mt-8">
+            <Link href="/esg-assessment" className="btn-primary text-lg px-8 py-3">
+              🔍 開始免費評估
             </Link>
           </div>
         </div>
@@ -423,12 +445,12 @@ export default function HomePage() {
             讓我們一起探索適合您企業的最佳路徑。
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/about#contact" className="btn-primary">
+            <TrackLink href="/about#contact" className="btn-primary" trackLabel="立即預約諮詢" trackLocation="cta_section">
               立即預約諮詢
-            </Link>
-            <Link href="/assistant" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white">
+            </TrackLink>
+            <TrackLink href="/assistant" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white" trackLabel="先問問小幫手" trackLocation="cta_section">
               先問問小幫手
-            </Link>
+            </TrackLink>
           </div>
         </div>
       </section>

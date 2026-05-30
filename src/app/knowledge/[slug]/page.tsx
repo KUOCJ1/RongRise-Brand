@@ -1,6 +1,8 @@
 import Link from "next/link";
 import articlesData from "@/data/articles.json";
 import type { Metadata } from "next";
+import ArticleTracker from "@/components/ArticleTracker";
+import ArticleToc from "@/components/ArticleToc";
 
 /* ============================================
    知識庫文章單頁 Knowledge Base Article Page
@@ -246,6 +248,8 @@ export default async function ArticlePage({ params }: PageProps) {
 
   return (
     <>
+      <ArticleTracker slug={slug} title={article.title} category={article.cat} />
+
       {/* Article Header */}
       <section className="bg-gradient-hero text-white">
         <div className="max-w-[800px] mx-auto px-4 sm:px-6 py-12 md:py-16">
@@ -286,9 +290,12 @@ export default async function ArticlePage({ params }: PageProps) {
           </div>
 
           {/* Content */}
-          <article>
-            {renderBody(article.body)}
-          </article>
+          <div className="relative">
+            <ArticleToc />
+            <article>
+              {renderBody(article.body)}
+            </article>
+          </div>
 
           {/* Navigation */}
           <div className="mt-12 pt-8 border-t border-border">
@@ -297,10 +304,16 @@ export default async function ArticlePage({ params }: PageProps) {
                 ← 返回知識庫
               </Link>
               <div className="flex gap-3">
-                <Link href="/assistant" className="btn-ghost text-sm text-primary">
+                <Link
+                  href="/assistant"
+                  className="btn-ghost text-sm text-primary"
+                >
                   💬 問問小幫手
                 </Link>
-                <Link href="/about#contact" className="btn-ghost text-sm text-primary">
+                <Link
+                  href="/about#contact"
+                  className="btn-ghost text-sm text-primary"
+                >
                   📧 聯繫顧問
                 </Link>
               </div>
