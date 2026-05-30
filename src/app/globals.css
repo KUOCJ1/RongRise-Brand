@@ -417,7 +417,11 @@ body {
   animation: shimmer 3s linear infinite;
 }
 
-/* Hero 內標題強制白色 */
+/* Hero 內容區 z-index 要高於覆蓋層 */
+.bg-gradient-hero .hero-content {
+  position: relative;
+  z-index: 2;
+}
 .bg-gradient-hero .heading-hero,
 .bg-gradient-hero .heading-section,
 .bg-primary .heading-section,
