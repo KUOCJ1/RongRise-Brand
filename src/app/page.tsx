@@ -40,14 +40,50 @@ export default function HomePage() {
     <>
       {/* Hero Section */}
       <section className="bg-gradient-hero text-white">
-        {/* 粒子層 */}
-        <div className="particles" aria-hidden="true">
-          <span className="particle particle-1" />
-          <span className="particle particle-2" />
-          <span className="particle particle-3" />
-          <span className="particle particle-4" />
-          <span className="particle particle-5" />
-          <span className="particle particle-6" />
+        {/* 動態 SVG 幾何背景 */}
+        <div className="hero-bg-svg" aria-hidden="true">
+          <svg viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            {/* 網格背景 */}
+            <g className="grid-float" opacity="0.06">
+              {Array.from({ length: 13 }, (_, i) => (
+                <line key={`vl-${i}`} x1={i * 100} y1="0" x2={i * 100} y2="600" stroke="white" strokeWidth="1" />
+              ))}
+              {Array.from({ length: 7 }, (_, i) => (
+                <line key={`hl-${i}`} x1="0" y1={i * 100} x2="1200" y2={i * 100} stroke="white" strokeWidth="1" />
+              ))}
+            </g>
+
+            {/* 連線 */}
+            <line className="hero-line hero-line-1" x1="100" y1="150" x2="300" y2="80" stroke="#E8912A" strokeWidth="1.5" />
+            <line className="hero-line hero-line-2" x1="300" y1="80" x2="500" y2="180" stroke="#2EC4B6" strokeWidth="1" />
+            <line className="hero-line hero-line-3" x1="500" y1="180" x2="700" y2="100" stroke="rgba(255,255,255,0.3)" strokeWidth="1" />
+            <line className="hero-line hero-line-4" x1="700" y1="100" x2="900" y2="200" stroke="#E8912A" strokeWidth="1.5" />
+            <line className="hero-line hero-line-5" x1="200" y1="300" x2="600" y2="250" stroke="#2EC4B6" strokeWidth="1" />
+            <line className="hero-line hero-line-1" x1="600" y1="250" x2="1000" y2="350" stroke="rgba(255,255,255,0.2)" strokeWidth="1" />
+            <line className="hero-line hero-line-3" x1="350" y1="400" x2="550" y2="480" stroke="#E8912A" strokeWidth="1" />
+            <line className="hero-line hero-line-5" x1="550" y1="480" x2="850" y2="450" stroke="#2EC4B6" strokeWidth="1" />
+
+            {/* 節點 */}
+            <circle className="hero-node hero-node-1" cx="100" cy="150" r="3" fill="#E8912A" />
+            <circle className="hero-node hero-node-2" cx="300" cy="80" r="4" fill="#2EC4B6" />
+            <circle className="hero-node hero-node-3" cx="500" cy="180" r="3" fill="rgba(255,255,255,0.5)" />
+            <circle className="hero-node hero-node-4" cx="700" cy="100" r="4" fill="#E8912A" />
+            <circle className="hero-node hero-node-5" cx="900" cy="200" r="3" fill="#2EC4B6" />
+            <circle className="hero-node hero-node-6" cx="200" cy="300" r="3" fill="rgba(255,255,255,0.4)" />
+            <circle className="hero-node hero-node-1" cx="600" cy="250" r="4" fill="#E8912A" />
+            <circle className="hero-node hero-node-2" cx="1000" cy="350" r="3" fill="#2EC4B6" />
+            <circle className="hero-node hero-node-3" cx="350" cy="400" r="3" fill="rgba(255,255,255,0.5)" />
+            <circle className="hero-node hero-node-4" cx="550" cy="480" r="4" fill="#E8912A" />
+            <circle className="hero-node hero-node-5" cx="850" cy="450" r="3" fill="#2EC4B6" />
+
+            {/* 六邊形裝飾 */}
+            <polygon className="hero-node hero-node-2" points="1050,400 1080,385 1080,415 1050,430 1020,415 1020,385" fill="none" stroke="#E8912A" strokeWidth="1" opacity="0.4" />
+            <polygon className="hero-node hero-node-4" points="150,500 170,490 170,510 150,520 130,510 130,490" fill="none" stroke="#2EC4B6" strokeWidth="1" opacity="0.3" />
+
+            {/* 虛線圓 */}
+            <circle className="hero-line hero-line-2" cx="400" cy="300" r="120" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="1" strokeDasharray="8 8" />
+            <circle className="hero-line hero-line-4" cx="800" cy="400" r="80" fill="none" stroke="rgba(232,145,42,0.1)" strokeWidth="1" strokeDasharray="6 6" />
+          </svg>
         </div>
 
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-20 md:py-28 relative">
@@ -96,7 +132,7 @@ export default function HomePage() {
           <div className="text-center mb-14">
             <span className="tag mb-4">核心服務</span>
             <h2 className="heading-section text-dark mt-4">驅動企業轉型的三大支柱</h2>
-            <div className="brand-divider brand-divider-center mt-4" />
+            <div className="brand-divider brand-divider-center mt-4 brand-divider-animated" />
             <p className="text-text-secondary text-body-lg mt-6 max-w-2xl mx-auto">
               從 AI 策略、人才發展到 ESG 永續，三位一體的轉型框架，協助企業建立持久的競爭優勢。
             </p>
@@ -155,6 +191,21 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* SVG 分隔線 1 */}
+      <div className="deco-divider" aria-hidden="true">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+          <path className="deco-line" d="M0,40 Q300,10 600,40 Q900,70 1200,40" fill="none" stroke="url(#divider-grad-1)" strokeWidth="2" />
+          <defs>
+            <linearGradient id="divider-grad-1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#E8912A" stopOpacity="0" />
+              <stop offset="30%" stopColor="#E8912A" stopOpacity="0.6" />
+              <stop offset="70%" stopColor="#2EC4B6" stopOpacity="0.6" />
+              <stop offset="100%" stopColor="#2EC4B6" stopOpacity="0" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
 
       {/* 關於預覽 */}
       <section className="section">
@@ -269,18 +320,36 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* SVG 分隔線 2 */}
+      <div className="deco-divider" aria-hidden="true">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+          <path className="deco-line" d="M0,40 C200,70 400,10 600,40 C800,70 1000,10 1200,40" fill="none" stroke="url(#divider-grad-2)" strokeWidth="2" />
+          <defs>
+            <linearGradient id="divider-grad-2" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#2EC4B6" stopOpacity="0" />
+              <stop offset="40%" stopColor="#1A6DB5" stopOpacity="0.5" />
+              <stop offset="60%" stopColor="#E8912A" stopOpacity="0.5" />
+              <stop offset="100%" stopColor="#E8912A" stopOpacity="0" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
       {/* CTA */}
       <section className="bg-primary py-16 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-[0.07]">
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
-              <pattern id="cta-grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="0.5" />
+              <pattern id="cta-grid" width="60" height="60" patternUnits="userSpaceOnUse">
+                <circle cx="30" cy="30" r="1.5" fill="white" />
               </pattern>
             </defs>
             <rect width="100%" height="100%" fill="url(#cta-grid)" />
           </svg>
         </div>
+        {/* 裝飾圓 */}
+        <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-white/[0.03]" />
+        <div className="absolute -left-10 -bottom-10 w-48 h-48 rounded-full bg-white/[0.04]" />
         <div className="max-w-[800px] mx-auto px-4 sm:px-6 text-center relative z-10">
           <h2 className="heading-section text-white mb-4">
             準備好啟動您的轉型之旅了嗎？
