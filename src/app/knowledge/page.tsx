@@ -139,6 +139,26 @@ const articles: Article[] = [
   },
 ];
 
+const COVER_MAP: Record<string, string> = {
+  "ai-transformation-bootcamp": "article-ai-bootcamp.jpg",
+  "hr-ai-course-design": "article-hr-ai-course.jpg",
+  "sme-esg-guide": "article-sme-esg.jpg",
+  "manufacturing-ai-quality": "article-manufacturing-ai.jpg",
+  "ai-maturity-assessment": "article-ai-maturity.jpg",
+  "team-innovation-management": "article-team-innovation.jpg",
+  "ai-tool-selection-guide": "article-ai-tool-selection.jpg",
+  "service-ai-chatbot-case": "article-service-chatbot.jpg",
+  "gov-ai-subsidy-guide": "article-gov-subsidy.jpg",
+  "ai-transformation-trends-2026": "article-ai-trends-2026.jpg",
+  "agentic-ai-transformation-workshop": "article-agentic-ai.jpg",
+  "hr-ai-transformation-five-layers": "article-hr-five-layers.jpg",
+  "strategy-subtraction-traditional-industry": "article-strategy-subtraction.jpg",
+};
+
+function coverImg(slug: string): string {
+  return `/images/${COVER_MAP[slug] || "article-cover.jpg"}`;
+}
+
 export default function KnowledgePage() {
   const [activeCat, setActiveCat] = useState("全部");
 
@@ -201,8 +221,16 @@ export default function KnowledgePage() {
                 <Link
                   key={post.slug}
                   href={`/knowledge/${post.slug}`}
-                  className="card group no-underline flex flex-col"
+                  className="card group no-underline flex flex-col overflow-hidden"
                 >
+                  <div className="h-36 overflow-hidden">
+                    <img
+                      src={coverImg(post.slug)}
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                  </div>
                   <div className="flex items-center justify-between mb-3">
                     <span className="tag">{post.cat}</span>
                     <span className="text-xs text-text-secondary">

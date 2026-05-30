@@ -339,6 +339,23 @@ export default async function ArticlePage({ params }: PageProps) {
   );
 }
 
+// slug → 文章專屬配圖檔名映射
+const COVER_MAP: Record<string, string> = {
+  "ai-transformation-bootcamp": "article-ai-bootcamp.jpg",
+  "hr-ai-course-design": "article-hr-ai-course.jpg",
+  "sme-esg-guide": "article-sme-esg.jpg",
+  "manufacturing-ai-quality": "article-manufacturing-ai.jpg",
+  "ai-maturity-assessment": "article-ai-maturity.jpg",
+  "team-innovation-management": "article-team-innovation.jpg",
+  "ai-tool-selection-guide": "article-ai-tool-selection.jpg",
+  "service-ai-chatbot-case": "article-service-chatbot.jpg",
+  "gov-ai-subsidy-guide": "article-gov-subsidy.jpg",
+  "ai-transformation-trends-2026": "article-ai-trends-2026.jpg",
+  "agentic-ai-transformation-workshop": "article-agentic-ai.jpg",
+  "hr-ai-transformation-five-layers": "article-hr-five-layers.jpg",
+  "strategy-subtraction-traditional-industry": "article-strategy-subtraction.jpg",
+};
+
 // 每篇文章獨立的 SEO metadata
 export function generateMetadata({
   params,
@@ -349,6 +366,7 @@ export function generateMetadata({
   if (!article) {
     return { title: "文章不存在 ｜ 知識庫" };
   }
+  const coverFile = COVER_MAP[params.slug] || "og-image.jpg";
   return {
     title: `${article.title} ｜ ${article.cat}`,
     description: article.excerpt,
@@ -359,9 +377,9 @@ export function generateMetadata({
       url: `${SITE_URL}/knowledge/${article.slug}`,
       images: [
         {
-          url: `${SITE_URL}/images/og-image.jpg`,
-          width: 1200,
-          height: 630,
+          url: `${SITE_URL}/images/${coverFile}`,
+          width: 800,
+          height: 400,
           alt: article.title,
         },
       ],

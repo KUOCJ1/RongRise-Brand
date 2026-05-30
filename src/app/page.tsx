@@ -1,5 +1,25 @@
 import Link from "next/link";
 
+const COVER_MAP: Record<string, string> = {
+  "ai-transformation-bootcamp": "article-ai-bootcamp.jpg",
+  "hr-ai-course-design": "article-hr-ai-course.jpg",
+  "sme-esg-guide": "article-sme-esg.jpg",
+  "manufacturing-ai-quality": "article-manufacturing-ai.jpg",
+  "ai-maturity-assessment": "article-ai-maturity.jpg",
+  "team-innovation-management": "article-team-innovation.jpg",
+  "ai-tool-selection-guide": "article-ai-tool-selection.jpg",
+  "service-ai-chatbot-case": "article-service-chatbot.jpg",
+  "gov-ai-subsidy-guide": "article-gov-subsidy.jpg",
+  "ai-transformation-trends-2026": "article-ai-trends-2026.jpg",
+  "agentic-ai-transformation-workshop": "article-agentic-ai.jpg",
+  "hr-ai-transformation-five-layers": "article-hr-five-layers.jpg",
+  "strategy-subtraction-traditional-industry": "article-strategy-subtraction.jpg",
+};
+
+function coverImg(slug: string): string {
+  return `/images/${COVER_MAP[slug] || "article-cover.jpg"}`;
+}
+
 export const metadata = {
   title: "AI 轉型 × 人才策略 × ESG 永續",
   description: "協助企業從人才策略到 AI 落地，驅動永續成長。C.J. Kuo 老師專業顧問品牌，聚焦 AI 轉型、人才策略、ESG 永續發展。",
@@ -321,8 +341,8 @@ export default function HomePage() {
               >
                 <div className="h-40 overflow-hidden">
                   <img
-                    src="/images/article-cover.jpg"
-                    alt=""
+                    src={coverImg(post.slug)}
+                    alt={post.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
