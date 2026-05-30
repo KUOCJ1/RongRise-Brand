@@ -8,7 +8,7 @@ const SITE_URL = "https://rong-rise.com";
 const SITE_NAME = "榕耀管顧 RongRise Consulting";
 const SITE_DESCRIPTION =
   "協助企業從人才策略到 AI 落地，驅動永續成長。智慧轉型，創新未來。C.J. Kuo 老師專業諮詢品牌，聚焦 AI 轉型、人才策略、ESG 永續發展。";
-const OG_IMAGE = `${SITE_URL}/images/og-image.jpg`;
+const OG_IMAGE = `${SITE_URL}/images/og-image-ai.jpg`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -69,8 +69,8 @@ const jsonLd = {
   description:
     "從人才策略到 AI 落地，驅動永續成長。智慧轉型，創新未來。",
   url: SITE_URL,
-  logo: `${SITE_URL}/images/cj-photo.jpg`,
-  image: `${SITE_URL}/images/cj-photo.jpg`,
+  logo: `${SITE_URL}/images/cj-portrait.jpg`,
+  image: `${SITE_URL}/images/cj-portrait.jpg`,
   founder: {
     "@type": "Person",
     name: "郭鎮榕 C.J. Kuo",

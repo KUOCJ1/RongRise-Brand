@@ -39,26 +39,12 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-hero text-white relative overflow-hidden">
-        {/* AI 生成背景圖 */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/images/hero-bg.jpg"
-            alt=""
-            className="w-full h-full object-cover object-center"
-            loading="eager"
-            width="1280"
-            height="605"
-          />
-          {/* 深色漸層覆蓋層，確保文字可讀性 */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0D2B4E]/90 via-[#0D2B4E]/70 to-[#0D2B4E]/40" />
-        </div>
-
-        {/* 動態 SVG 幾何背景（覆蓋在圖片上方） */}
+      <section className="bg-gradient-hero text-white">
+        {/* 動態 SVG 幾何背景 */}
         <div className="hero-bg-svg" aria-hidden="true">
           <svg viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
             {/* 網格背景 */}
-            <g className="grid-float" opacity="0.08">
+            <g className="grid-float" opacity="0.06">
               {Array.from({ length: 13 }, (_, i) => (
                 <line key={`vl-${i}`} x1={i * 100} y1="0" x2={i * 100} y2="600" stroke="white" strokeWidth="1" />
               ))}
@@ -95,8 +81,8 @@ export default function HomePage() {
             <polygon className="hero-node hero-node-4" points="150,500 170,490 170,510 150,520 130,510 130,490" fill="none" stroke="#2EC4B6" strokeWidth="1" opacity="0.3" />
 
             {/* 虛線圓 */}
-            <circle className="hero-line hero-line-2" cx="400" cy="300" r="120" fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="1" strokeDasharray="8 8" />
-            <circle className="hero-line hero-line-4" cx="800" cy="400" r="80" fill="none" stroke="rgba(232,145,42,0.15)" strokeWidth="1" strokeDasharray="6 6" />
+            <circle className="hero-line hero-line-2" cx="400" cy="300" r="120" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="1" strokeDasharray="8 8" />
+            <circle className="hero-line hero-line-4" cx="800" cy="400" r="80" fill="none" stroke="rgba(232,145,42,0.1)" strokeWidth="1" strokeDasharray="6 6" />
           </svg>
         </div>
 
@@ -141,17 +127,8 @@ export default function HomePage() {
       </section>
 
       {/* 核心服務 */}
-      <section className="section relative overflow-hidden">
-        {/* AI 生成背景圖 */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/images/services-bg.jpg"
-            alt=""
-            className="w-full h-full object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-[#F5F2ED]/85" />
-        </div>
-        <div className="section-inner relative z-10">
+      <section className="section bg-bg-alt">
+        <div className="section-inner">
           <div className="text-center mb-14">
             <span className="tag mb-4">核心服務</span>
             <h2 className="heading-section text-dark mt-4">驅動企業轉型的三大支柱</h2>
@@ -252,23 +229,14 @@ export default function HomePage() {
                 了解更多 →
               </Link>
             </div>
-            <div className="rounded-2xl p-8 md:p-10 text-white relative overflow-hidden">
-              {/* AI 生成背景圖 */}
-              <div className="absolute inset-0 z-0">
-                <img
-                  src="/images/about-quote-bg.jpg"
-                  alt=""
-                  className="w-full h-full object-cover object-center"
-                />
-                <div className="absolute inset-0 bg-[#0D2B4E]/80" />
-              </div>
+            <div className="bg-gradient-hero rounded-2xl p-8 md:p-10 text-white">
               <blockquote className="text-lg md:text-xl leading-relaxed font-medium mb-6 text-white">
                 「真正的轉型不是技術升級，而是思維的革新。當人才、策略與科技三者對齊，企業就能在變動中創造持續的競爭優勢。」
               </blockquote>
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white/30 flex-shrink-0">
                   <img
-                    src="/images/cj-photo.jpg"
+                    src="/images/cj-portrait.jpg"
                     alt="郭鎮榕 C.J. Kuo"
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -287,18 +255,8 @@ export default function HomePage() {
       </section>
 
       {/* 知識預覽 */}
-      <section className="section relative overflow-hidden">
-        {/* AI 生成背景圖 */}
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/images/article-cover.jpg"
-            alt=""
-            className="w-full h-full object-center"
-            style={{ objectPosition: 'center 30%' }}
-          />
-          <div className="absolute inset-0 bg-[#FDFCFA]/80" />
-        </div>
-        <div className="section-inner relative z-10">
+      <section className="section bg-gradient-subtle">
+        <div className="section-inner">
           <div className="text-center mb-12">
             <span className="tag mb-4">精選內容</span>
             <h2 className="heading-section text-dark mt-4">最新知識分享</h2>
@@ -378,7 +336,16 @@ export default function HomePage() {
       </div>
 
       {/* CTA */}
-      <section className="bg-primary py-16 relative overflow-hidden">
+      <section className="py-16 relative overflow-hidden">
+        {/* AI 生成背景圖 */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/cta-bg.jpg"
+            alt=""
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-[#0D2B4E]/85" />
+        </div>
         <div className="absolute inset-0 opacity-[0.07]">
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <defs>
