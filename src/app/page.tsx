@@ -1,8 +1,20 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
 /* ============================================
    首頁 Home Page
    ============================================ */
+
+export const metadata: Metadata = {
+  title: "AI 轉型 × 人才策略 × ESG 永續",
+  description:
+    "榕耀管顧協助企業從人才策略到 AI 落地，驅動永續成長。C.J. Kuo 老師 16 年跨國企業顧問經驗，提供 AI 轉型策略、人才發展、ESG 永續諮詢。",
+  openGraph: {
+    title: "榕耀管顧 RongRise Consulting｜AI 轉型 × 人才策略 × ESG 永續",
+    description:
+      "協助企業從人才策略到 AI 落地，驅動永續成長。C.J. Kuo 老師專業諮詢。",
+  },
+};
 
 export default function HomePage() {
   return (

@@ -19,23 +19,60 @@ const notoSerif = Noto_Serif_TC({
   display: "swap",
 });
 
+const SITE_URL = "https://rong-rise.com";
+const SITE_NAME = "榕耀管顧 RongRise Consulting";
+const SITE_DESCRIPTION =
+  "協助企業從人才策略到 AI 落地，驅動永續成長。智慧轉型，創新未來。C.J. Kuo 老師專業諮詢品牌，聚焦 AI 轉型、人才策略、ESG 永續發展。";
+const OG_IMAGE = `${SITE_URL}/images/og-image.jpg`;
+
 export const metadata: Metadata = {
-  title: "榕耀管顧 RongRise Consulting — 從人才策略到 AI 落地，驅動永續成長",
-  description:
-    "協助企業從人才策略到 AI 落地，驅動永續成長。智慧轉型，創新未來。C.J. Kuo 老師專業諮詢品牌，聚焦 AI 轉型、人才策略、ESG 永續發展。",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${SITE_NAME} — 從人才策略到 AI 落地，驅動永續成長`,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
   keywords: [
-    "AI 轉型", "人才策略", "ESG", "企業顧問", "智慧轉型",
-    "榕耀管顧", "RongRise", "C.J. Kuo",
+    "AI 轉型",
+    "人才策略",
+    "ESG",
+    "企業顧問",
+    "智慧轉型",
+    "榕耀管顧",
+    "RongRise",
+    "C.J. Kuo",
   ],
   openGraph: {
-    title: "榕耀管顧 RongRise Consulting",
-    description: "從人才策略到 AI 落地，驅動永續成長。智慧轉型，創新未來。",
     type: "website",
     locale: "zh_TW",
+    siteName: SITE_NAME,
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    images: [
+      {
+        url: OG_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: SITE_NAME,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    images: [OG_IMAGE],
   },
   robots: {
     index: true,
     follow: true,
+  },
+  alternates: {
+    canonical: SITE_URL,
+  },
+  icons: {
+    icon: "/favicon.ico",
   },
 };
 
@@ -44,15 +81,16 @@ const jsonLd = {
   "@type": "ProfessionalService",
   name: "榕耀管顧 RongRise Consulting",
   alternateName: "RongRise Consulting",
-  description: "從人才策略到 AI 落地，驅動永續成長。智慧轉型，創新未來。",
-  url: "https://rong-rise.com",
-  logo: "https://rong-rise.com/images/cj-photo.jpg",
-  image: "https://rong-rise.com/images/cj-photo.jpg",
+  description:
+    "從人才策略到 AI 落地，驅動永續成長。智慧轉型，創新未來。",
+  url: SITE_URL,
+  logo: `${SITE_URL}/images/cj-photo.jpg`,
+  image: `${SITE_URL}/images/cj-photo.jpg`,
   founder: {
     "@type": "Person",
     name: "郭鎮榕 C.J. Kuo",
     jobTitle: "創辦人 / 企業轉型顧問",
-    url: "https://rong-rise.com/about",
+    url: `${SITE_URL}/about`,
   },
   contactPoint: {
     "@type": "ContactPoint",
@@ -62,7 +100,10 @@ const jsonLd = {
     availableLanguage: ["Chinese"],
   },
   serviceType: ["AI 轉型策略", "人才發展策略", "ESG 永續諮詢"],
-  sameAs: [],
+  sameAs: [
+    "https://www.linkedin.com/in/c-j-kuo-5629b97b/",
+    "https://www.facebook.com/cj.kuo1",
+  ],
 };
 
 const GA4_ID = "G-E4PL80M0BL";
@@ -100,7 +141,10 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className="min-h-full flex flex-col" style={{ fontFamily: 'var(--font-noto-sans)' }}>
+      <body
+        className="min-h-full flex flex-col"
+        style={{ fontFamily: "var(--font-noto-sans)" }}
+      >
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

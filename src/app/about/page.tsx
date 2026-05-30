@@ -1,8 +1,19 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
 /* ============================================
    關於我 About Page
    ============================================ */
+
+export const metadata: Metadata = {
+  title: "關於 C.J. Kuo 老師｜企業 AI 轉型顧問",
+  description:
+    "郭鎮榕 C.J. Kuo 老師，16 年跨國企業高階主管經驗。曾任 Accenture、EY、Chubb Life、Cigna 人資長。創辦榕耀管顧，專注 AI 轉型、人才策略、ESG 永續諮詢。",
+  openGraph: {
+    title: "關於 C.J. Kuo 老師｜榕耀管顧 — 企業 AI 轉型顧問",
+    description: "16 年跨國企業顧問經驗，協助企業從人才策略到 AI 落地。",
+  },
+};
 
 const timeline = [
   { year: "1999-2008", title: "國際管理顧問公司歷練", desc: "Accenture 商業顧問（服務台積電、仁寶電腦）、EY Pre-Sales 經理、Watson Wyatt 資深顧問——累積薪酬策略與人力資本轉型專業。" },

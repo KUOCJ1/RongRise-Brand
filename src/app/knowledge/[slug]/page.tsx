@@ -1,10 +1,13 @@
 import Link from "next/link";
 import articlesData from "@/data/articles.json";
+import type { Metadata } from "next";
 
 /* ============================================
    知識庫文章單頁 Knowledge Base Article Page
    Static Export 相容
    ============================================ */
+
+const SITE_URL = "https://rong-rise.com";
 
 interface Article {
   slug: string;
@@ -215,9 +218,10 @@ function renderBody(body: string): React.ReactNode[] {
   return elements;
 }
 
-// Static Export: generate all slugs at build time
-export async function generateStaticParams() {
-  return (articlesData as Article[]).map((a) => ({ slug: a.slug }));
+// Static export: 產生所有文章頁面的 params
+// 注意：原本是 async，改為 sync 以符合 Next.js 16 static export 要求
+export function generateStaticParams() {
+  return (articlesData as { slug: string }[]).map((a) => ({ slug: a.slug }));
 }
 
 interface PageProps {
@@ -333,4 +337,34 @@ export default async function ArticlePage({ params }: PageProps) {
       )}
     </>
   );
+}
+
+// 每篇文章獨立的 SEO metadata
+export function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Metadata {
+  const article = (articlesData as Article[]).find((a) => a.slug === params.slug);
+  if (!article) {
+    return { title: "文章不存在 ｜ 知識庫" };
+  }
+  return {
+    title: `${article.title} ｜ ${article.cat}`,
+    description: article.excerpt,
+    openGraph: {
+      type: "article",
+      title: `${article.title} — 榕耀管顧`,
+      description: article.excerpt,
+      url: `${SITE_URL}/knowledge/${article.slug}`,
+      images: [
+        {
+          url: `${SITE_URL}/images/og-image.jpg`,
+          width: 1200,
+          height: 630,
+          alt: article.title,
+        },
+      ],
+    },
+  };
 }
