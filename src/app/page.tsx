@@ -39,9 +39,18 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-hero text-white">
+      <section className="bg-gradient-hero text-white relative overflow-hidden">
+        {/* AI 生成 Hero 背景圖 */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/hero-bg.jpg"
+            alt=""
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-[#0D2B4E]/70" />
+        </div>
         {/* 動態 SVG 幾何背景 */}
-        <div className="hero-bg-svg" aria-hidden="true">
+        <div className="hero-bg-svg z-10" aria-hidden="true">
           <svg viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
             {/* 網格背景 */}
             <g className="grid-float" opacity="0.06">
@@ -127,8 +136,17 @@ export default function HomePage() {
       </section>
 
       {/* 核心服務 */}
-      <section className="section bg-bg-alt">
-        <div className="section-inner">
+      <section className="section relative overflow-hidden">
+        {/* AI 生成服務區塊背景 */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/services-bg.jpg"
+            alt=""
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-[#FDFCFA]/85" />
+        </div>
+        <div className="section-inner relative z-10">
           <div className="text-center mb-14">
             <span className="tag mb-4">核心服務</span>
             <h2 className="heading-section text-dark mt-4">驅動企業轉型的三大支柱</h2>
@@ -229,11 +247,20 @@ export default function HomePage() {
                 了解更多 →
               </Link>
             </div>
-            <div className="bg-gradient-hero rounded-2xl p-8 md:p-10 text-white">
-              <blockquote className="text-lg md:text-xl leading-relaxed font-medium mb-6 text-white">
+            <div className="relative rounded-2xl overflow-hidden p-8 md:p-10 text-white">
+              {/* AI 生成引用區背景 */}
+              <div className="absolute inset-0 z-0">
+                <img
+                  src="/images/about-quote-bg.jpg"
+                  alt=""
+                  className="w-full h-full object-cover object-center"
+                />
+                <div className="absolute inset-0 bg-[#0D2B4E]/80" />
+              </div>
+              <blockquote className="relative z-10 text-lg md:text-xl leading-relaxed font-medium mb-6 text-white">
                 「真正的轉型不是技術升級，而是思維的革新。當人才、策略與科技三者對齊，企業就能在變動中創造持續的競爭優勢。」
               </blockquote>
-              <div className="flex items-center gap-3">
+              <div className="relative z-10 flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white/30 flex-shrink-0">
                   <img
                     src="/images/cj-portrait-full.jpg"
@@ -290,8 +317,16 @@ export default function HomePage() {
               <Link
                 key={i}
                 href={`/knowledge/${post.slug}`}
-                className="card card-3d group no-underline block"
+                className="card card-3d group no-underline block overflow-hidden"
               >
+                <div className="h-40 overflow-hidden">
+                  <img
+                    src="/images/article-cover.jpg"
+                    alt=""
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </div>
                 <div className="card-inner">
                   <div className="flex items-center justify-between mb-3">
                     <span className="tag">{post.cat}</span>
