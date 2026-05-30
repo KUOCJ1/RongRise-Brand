@@ -62,14 +62,14 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Photo */}
             <div className="flex justify-center">
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-4 border-white shadow-xl ring-4 ring-primary/10">
+              <div className="w-72 md:w-80 rounded-2xl overflow-hidden border-4 border-white shadow-xl ring-4 ring-primary/10">
                 <img
-                  src="/images/cj-portrait.jpg"
+                  src="/images/cj-portrait-full.jpg"
                   alt="郭鎮榕 C.J. Kuo — 榕耀管顧創辦人"
                   className="w-full h-full object-cover"
                   loading="lazy"
-                  width={320}
-                  height={320}
+                  width={594}
+                  height={884}
                 />
               </div>
             </div>

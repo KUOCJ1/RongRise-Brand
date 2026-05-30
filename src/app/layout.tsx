@@ -69,8 +69,8 @@ const jsonLd = {
   description:
     "從人才策略到 AI 落地，驅動永續成長。智慧轉型，創新未來。",
   url: SITE_URL,
-  logo: `${SITE_URL}/images/cj-portrait.jpg`,
-  image: `${SITE_URL}/images/cj-portrait.jpg`,
+  logo: `${SITE_URL}/images/cj-portrait-full.jpg`,
+  image: `${SITE_URL}/images/cj-portrait-full.jpg`,
   founder: {
     "@type": "Person",
     name: "郭鎮榕 C.J. Kuo",
