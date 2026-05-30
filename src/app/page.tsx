@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     title: "榕耀管顧 RongRise Consulting｜AI 轉型 × 人才策略 × ESG 永續",
     description:
       "協助企業從人才策略到 AI 落地，驅動永續成長。C.J. Kuo 老師專業諮詢。",
+    images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "榕耀管顧 RongRise Consulting" }],
   },
 };
 

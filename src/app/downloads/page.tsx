@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "下載區｜AI 轉型工具包白皮書 — 榕耀管顧",
     description: "免費下載 AI 成熟度自評量表、ESG 盤點清單、轉型白皮書。",
+    images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "榕耀管顧 RongRise Consulting" }],
   },
 };
 

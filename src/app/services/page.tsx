@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "服務項目｜AI 轉型．人才策略．ESG 永續 — 榕耀管顧",
     description: "三大服務支柱，陪伴企業完成轉型每一步。",
+    images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "榕耀管顧 RongRise Consulting" }],
   },
 };
 

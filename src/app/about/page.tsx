@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "關於 C.J. Kuo 老師｜榕耀管顧 — 企業 AI 轉型顧問",
     description: "16 年跨國企業顧問經驗，協助企業從人才策略到 AI 落地。",
+    images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "榕耀管顧 RongRise Consulting" }],
   },
 };
 
