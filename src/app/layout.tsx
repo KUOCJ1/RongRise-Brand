@@ -1,23 +1,8 @@
 import type { Metadata } from "next";
-import { Noto_Sans_TC, Noto_Serif_TC } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Script from "next/script";
-
-const notoSans = Noto_Sans_TC({
-  variable: "--font-noto-sans",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
-
-const notoSerif = Noto_Serif_TC({
-  variable: "--font-noto-serif",
-  subsets: ["latin"],
-  weight: ["400", "600", "700", "900"],
-  display: "swap",
-});
 
 const SITE_URL = "https://rong-rise.com";
 const SITE_NAME = "榕耀管顧 RongRise Consulting";
@@ -114,10 +99,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="zh-TW"
-      className={`${notoSans.variable} ${notoSerif.variable} h-full antialiased`}
-    >
+    <html lang="zh-TW" className="h-full antialiased">
       <head>
         <Script
           id="json-ld"
@@ -141,10 +123,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body
-        className="min-h-full flex flex-col"
-        style={{ fontFamily: "var(--font-noto-sans)" }}
-      >
+      <body className="min-h-full flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

@@ -67,6 +67,9 @@ export default function AboutPage() {
                   src="/images/cj-photo.jpg"
                   alt="郭鎮榕 C.J. Kuo — 榕耀管顧創辦人"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  width={320}
+                  height={320}
                 />
               </div>
             </div>

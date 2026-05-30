@@ -133,6 +133,9 @@ export default function HomePage() {
                     src="/images/cj-photo.jpg"
                     alt="郭鎮榕 C.J. Kuo"
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    width={48}
+                    height={48}
                   />
                 </div>
                 <div>
