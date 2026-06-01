@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import HeaderEn from "@/components/HeaderEn";
+import FooterEn from "@/components/FooterEn";
 import Script from "next/script";
 
 const SITE_URL = "https://rong-rise.com";
@@ -130,9 +130,9 @@ export default function EnLayout({
         </Script>
       </head>
       <body className="min-h-full flex flex-col">
-        <Header />
+        <HeaderEn />
         <main className="flex-1">{children}</main>
-        <Footer />
+        <FooterEn />
       </body>
     </html>
   );

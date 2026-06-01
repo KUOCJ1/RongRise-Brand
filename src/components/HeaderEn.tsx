@@ -4,30 +4,30 @@ import Link from "next/link";
 import { useState } from "react";
 
 const navItems = [
-  { href: "/", label: "首頁" },
-  { href: "/services", label: "服務項目" },
-  { href: "/courses", label: "課程" },
-  { href: "/about", label: "關於我" },
-  { href: "/knowledge", label: "知識庫" },
-  { href: "/downloads", label: "下載區" },
-  { href: "/news", label: "最新消息" },
-  { href: "/assistant", label: "小幫手" },
+  { href: "/en", label: "Home" },
+  { href: "/en/services", label: "Services" },
+  { href: "/en/courses", label: "Courses" },
+  { href: "/en/about", label: "About" },
+  { href: "/en/knowledge", label: "Knowledge" },
+  { href: "/en/downloads", label: "Downloads" },
+  { href: "/en/news", label: "News" },
+  { href: "/en/assistant", label: "Assistant" },
 ];
 
-export default function Header() {
+export default function HeaderEn() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 no-underline">
+        <Link href="/en" className="flex items-center gap-2 no-underline">
           <div className="w-9 h-9 rounded-lg bg-gradient-hero flex items-center justify-center">
             <span className="text-white font-bold text-lg">榕</span>
           </div>
           <div className="flex flex-col leading-tight">
-            <span className="text-[15px] font-bold text-primary">榕耀管顧</span>
-            <span className="text-[10px] text-text-secondary tracking-wider">RongRise Consulting</span>
+            <span className="text-[15px] font-bold text-primary">RongRise</span>
+            <span className="text-[10px] text-text-secondary tracking-wider">Consulting</span>
           </div>
         </Link>
 
@@ -46,13 +46,13 @@ export default function Header() {
           <div className="flex items-center gap-0.5 ml-2 pl-2 border-l border-border">
             <Link
               href="/"
-              className="text-[11px] font-medium px-2 py-1 rounded text-primary bg-primary/5"
+              className="text-[11px] font-medium px-2 py-1 rounded text-text-secondary hover:text-primary hover:bg-primary/5 transition-colors"
             >
               中
             </Link>
             <Link
               href="/en"
-              className="text-[11px] font-medium px-2 py-1 rounded text-text-secondary hover:text-primary hover:bg-primary/5 transition-colors"
+              className="text-[11px] font-medium px-2 py-1 rounded text-primary bg-primary/5"
             >
               EN
             </Link>
@@ -62,16 +62,16 @@ export default function Header() {
         {/* CTA + Language (Desktop) */}
         <div className="hidden md:flex items-center gap-3">
           <Link
-            href="/en"
+            href="/"
             className="text-[13px] font-medium text-text-secondary hover:text-primary transition-colors"
           >
-            English
+            中文
           </Link>
           <Link
-            href="/about#contact"
+            href="/en/about#contact"
             className="btn-primary text-sm py-2 px-5"
           >
-            預約諮詢
+            Book a Consultation
           </Link>
         </div>
 
@@ -79,7 +79,7 @@ export default function Header() {
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className="md:hidden p-2 rounded-md hover:bg-surface-hover transition-colors"
-          aria-label="選單"
+          aria-label="Menu"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
             {mobileOpen ? (
@@ -117,24 +117,24 @@ export default function Header() {
               <Link
                 href="/"
                 onClick={() => setMobileOpen(false)}
-                className="text-[13px] font-medium px-3 py-1.5 rounded bg-primary/5 text-primary"
+                className="text-[13px] font-medium px-3 py-1.5 rounded text-text-secondary hover:bg-surface-hover"
               >
                 中文
               </Link>
               <Link
                 href="/en"
                 onClick={() => setMobileOpen(false)}
-                className="text-[13px] font-medium px-3 py-1.5 rounded text-text-secondary hover:bg-surface-hover"
+                className="text-[13px] font-medium px-3 py-1.5 rounded bg-primary/5 text-primary"
               >
                 English
               </Link>
             </div>
             <Link
-              href="/about#contact"
+              href="/en/about#contact"
               onClick={() => setMobileOpen(false)}
               className="btn-primary text-sm text-center mt-2"
             >
-              預約諮詢
+              Book a Consultation
             </Link>
           </nav>
         </div>

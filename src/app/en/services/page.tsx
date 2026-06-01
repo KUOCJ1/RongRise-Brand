@@ -1,93 +1,58 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
-/* ============================================
-   English Services Page
-   ============================================ */
+export const metadata: Metadata = {
+  title: "Services | AI Transformation · Talent Strategy · ESG Sustainability",
+  description: "RongRise Consulting services: AI Transformation Strategy, Corporate Training, ESG Sustainability Consulting. Customized solutions from diagnosis to implementation.",
+};
 
-interface ServiceItem {
-  icon: string;
-  title: string;
-  tagline: string;
-  desc: string;
-  features: string[];
-  cta: string;
-  ctaHref: string;
-}
-
-const services: ServiceItem[] = [
+const services = [
   {
     icon: "🤖",
-    title: "Advisory Services",
-    tagline: "AI Transformation Strategy × Sustainability Governance",
-    desc: "We create executable transformation blueprints tailored to your enterprise. From current state assessment and strategy planning to implementation, C.J. Kuo leverages 16 years of multinational executive experience to help you find the most suitable development path in the AI era.",
-    features: [
-      "AI transformation maturity assessment and strategy planning",
-      "Human-AI collaboration process design and implementation",
-      "AI governance framework and risk management",
-      "Sustainable supply chain ESG governance implementation",
-      "Organizational change management and change communication",
-      "PoC design, execution, and results tracking",
-    ],
-    cta: "Book a Free 30-Minute Diagnosis",
+    title: "Consulting",
+    tagline: "AI Transformation × Sustainability Governance",
+    desc: "Customized executable transformation blueprints. From assessment to strategy to implementation, C.J. Kuo leverages 16 years of multinational corporate experience.",
+    features: ["AI Maturity Assessment & Strategy Planning", "Human-AI Workflow Design", "AI Governance & Risk Management", "ESG Supply Chain Governance", "Organizational Change Management", "PoC Design & Execution"],
+    cta: "Book Free 30-min Diagnosis",
     ctaHref: "/en/about#contact",
   },
   {
     icon: "🎓",
     title: "Training",
     tagline: "Corporate Training × Workshops",
-    desc: "From one-day workshops to multi-session courses tailored to your enterprise's needs. Balancing theory and practice so participants can immediately apply what they learn in the classroom.",
-    features: [
-      "AI Bootcamp: From Introduction to Enterprise Implementation",
-      "Agentic AI Transformation Executive Alignment Workshop",
-      "RTIF Prompt Engineering Hands-On Workshop",
-      "AI-Era Talent Strategy Mapping",
-      "ESG Sustainability Talent Development Course",
-      "Performance Management and GROW Coaching Techniques",
-    ],
-    cta: "View Course Overview",
+    desc: "From single-day workshops to series courses, customized for your business needs. Theory and practice balanced for immediate workplace application.",
+    features: ["AI Bootcamp: From Basics to Implementation", "Agentic AI Executive Consensus Camp", "RTIF Prompt Engineering Workshop", "AI Talent Strategy Mapping", "ESG Talent Development", "Performance Management & GROW Coaching"],
+    cta: "View Course Schedule",
     ctaHref: "/en/courses",
   },
   {
     icon: "💬",
     title: "Consultation",
-    tagline: "Online Consultation × Instant Response",
-    desc: "Through the website Assistant, you can ask questions about AI transformation, talent development, and ESG sustainability anytime. The Assistant draws on C.J. Kuo's complete knowledge base to provide professional and timely responses. For in-depth advisory services, please contact us to arrange a formal consultation.",
-    features: [
-      "AI tool selection advice and comparison",
-      "Common transformation strategy Q&A",
-      "Government incentive application guidance",
-      "ESG compliance and reporting consultation",
-      "Organizational talent strategy advice",
-      "One-on-one deep advisory booking",
-    ],
+    desc: "Ask the Assistant any questions about AI transformation, talent development, or ESG sustainability. Get professional and instant replies 24/7.",
+    features: ["AI Tool Selection Advice", "Transformation Strategy FAQ", "Government Subsidy Guidance", "ESG Compliance Advisory", "Talent Strategy Recommendations", "One-on-One Deep Consulting"],
     cta: "Ask the Assistant",
     ctaHref: "/en/assistant",
   },
 ];
 
-export default function EnServicesPage() {
+export default function ServicesEnPage() {
   return (
     <>
-      {/* Hero */}
       <section className="bg-gradient-hero text-white">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-16 md:py-20">
           <span className="tag bg-white/15 text-white mb-4">Services</span>
           <h1 className="heading-hero mt-4 mb-4">Three Service Pillars</h1>
           <p className="text-body-lg text-white/85 max-w-2xl">
-            No matter what stage of transformation you&apos;re at, you&apos;ll find the most suitable service model — from in-depth advisory, hands-on workshop training, to instant online consultation.
+            No matter what stage of transformation you are at, find the most suitable service model.
           </p>
         </div>
       </section>
 
-      {/* Services Cards */}
       <section className="section bg-bg-alt">
         <div className="section-inner">
           <div className="space-y-8">
             {services.map((service, i) => (
-              <div
-                key={i}
-                className="card bg-white border border-border rounded-2xl overflow-hidden"
-              >
+              <div key={i} className="card bg-white border border-border rounded-2xl overflow-hidden">
                 <div className="bg-gradient-subtle p-6 md:p-8 border-b border-border-light">
                   <div className="flex items-start gap-4">
                     <div className="w-14 h-14 rounded-xl bg-white shadow-sm flex items-center justify-center flex-shrink-0">
@@ -95,17 +60,13 @@ export default function EnServicesPage() {
                     </div>
                     <div>
                       <h2 className="heading-subsection text-dark">{service.title}</h2>
-                      <p className="text-primary font-medium text-sm mt-1">{service.tagline}</p>
+                      {service.tagline && <p className="text-primary font-medium text-sm mt-1">{service.tagline}</p>}
                     </div>
                   </div>
                 </div>
-
                 <div className="p-6 md:p-8">
-                  <p className="text-text-secondary text-body leading-relaxed mb-6">
-                    {service.desc}
-                  </p>
-
-                  <h3 className="font-semibold text-dark text-sm mb-3">What&apos;s Included</h3>
+                  <p className="text-text-secondary text-body leading-relaxed mb-6">{service.desc}</p>
+                  <h3 className="font-semibold text-dark text-sm mb-3">What We Offer</h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                     {service.features.map((feat, fi) => (
                       <div key={fi} className="flex items-start gap-2">
@@ -118,13 +79,8 @@ export default function EnServicesPage() {
                       </div>
                     ))}
                   </div>
-
-                  <Link
-                    href={service.ctaHref}
-                    className="btn-primary inline-flex items-center gap-2"
-                  >
-                    {service.cta}
-                    <span>→</span>
+                  <Link href={service.ctaHref} className="btn-primary inline-flex items-center gap-2">
+                    {service.cta} <span>→</span>
                   </Link>
                 </div>
               </div>
@@ -133,56 +89,62 @@ export default function EnServicesPage() {
         </div>
       </section>
 
-      {/* Trust Section */}
-      <section className="section">
-        <div className="section-inner">
-          <div className="bg-gradient-hero rounded-2xl p-8 md:p-12">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
-              <div>
-                <div className="text-3xl md:text-4xl font-bold mb-1">16+</div>
-                <div className="text-white/70 text-sm">Years of Multinational Consulting</div>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold mb-1">8</div>
-                <div className="text-white/70 text-sm">Distinguished Workplace Awards</div>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold mb-1">3+</div>
-                <div className="text-white/70 text-sm">Public Course Cohorts Launched</div>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold mb-1">Multi-Industry</div>
-                <div className="text-white/70 text-sm">Cross-Domain Service Experience</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Service Flow */}
-      <section className="section bg-bg-alt">
+      {/* Pricing */}
+      <section className="section bg-gradient-subtle">
         <div className="section-inner">
           <div className="text-center mb-12">
-            <span className="tag mb-4">Service Process</span>
-            <h2 className="heading-section text-dark mt-4">Three Collaboration Models</h2>
+            <span className="tag mb-4">Pricing</span>
+            <h2 className="heading-section text-dark mt-4">Right Plan for Your Scale</h2>
             <div className="brand-divider brand-divider-center mt-4" />
+            <p className="text-text-secondary text-body-lg mt-4 max-w-2xl mx-auto">
+              We believe every business transformation path is different. We provide the most suitable service combination based on your scale, needs, and budget.
+            </p>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            {[
-              { step: "01", title: "Diagnosis", desc: "Through a free 30-minute consultation, understand your enterprise's current situation, challenges, and goals.", icon: "🔍" },
-              { step: "02", title: "Planning", desc: "Based on the diagnosis, customize the most suitable service plan and timeline.", icon: "📋" },
-              { step: "03", title: "Execution", desc: "With professional and pragmatic approaches, walk through every step of transformation alongside you.", icon: "🚀" },
-            ].map((item, i) => (
-              <div key={i} className="text-center p-6 relative">
-                <div className="w-16 h-16 rounded-full bg-white border-2 border-primary/10 flex items-center justify-center mx-auto mb-4 shadow-sm relative z-10">
-                  <span className="text-2xl">{item.icon}</span>
-                </div>
-                <div className="text-xs font-bold text-tertiary mb-1 tracking-wider">STEP {item.step}</div>
-                <h3 className="heading-subsection text-dark mb-2">{item.title}</h3>
-                <p className="text-text-secondary text-body-sm">{item.desc}</p>
-              </div>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div className="card text-center flex flex-col">
+              <div className="text-3xl mb-4">🔍</div>
+              <h3 className="heading-subsection text-dark mb-2">Free Diagnosis</h3>
+              <div className="text-3xl font-bold text-primary mb-1">$0</div>
+              <div className="text-text-secondary text-sm mb-4">30 minutes</div>
+              <ul className="text-left space-y-2 mb-6 flex-1">
+                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-primary">✓</span> Business situation analysis</li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-primary">✓</span> Initial challenge diagnosis</li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-primary">✓</span> Transformation direction advice</li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-primary">✓</span> Service recommendation</li>
+              </ul>
+              <Link href="/en/about#contact" className="btn-secondary w-full text-center">Book Free Diagnosis</Link>
+            </div>
+            <div className="card text-center flex flex-col border-2 border-tertiary relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-tertiary text-white text-xs font-bold px-3 py-1 rounded-full">Most Popular</div>
+              <div className="text-3xl mb-4">🤖</div>
+              <h3 className="heading-subsection text-dark mb-2">Consulting</h3>
+              <div className="text-3xl font-bold text-primary mb-1">Custom</div>
+              <div className="text-text-secondary text-sm mb-4">Tailored Quote</div>
+              <ul className="text-left space-y-2 mb-6 flex-1">
+                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-tertiary">✓</span> AI maturity assessment</li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-tertiary">✓</span> Transformation strategy</li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-tertiary">✓</span> PoC design & execution</li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-tertiary">✓</span> Org change management</li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-tertiary">✓</span> Performance tracking</li>
+              </ul>
+              <Link href="/en/about#contact" className="btn-primary w-full text-center">Discuss Your Needs</Link>
+            </div>
+            <div className="card text-center flex flex-col">
+              <div className="text-3xl mb-4">🎓</div>
+              <h3 className="heading-subsection text-dark mb-2">Training</h3>
+              <div className="text-3xl font-bold text-primary mb-1">Per Person</div>
+              <div className="text-text-secondary text-sm mb-4">Below Market Rate</div>
+              <ul className="text-left space-y-2 mb-6 flex-1">
+                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-accent">✓</span> AI Bootcamp (public)</li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-accent">✓</span> Corporate workshops</li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-accent">✓</span> Executive consensus camp</li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-accent">✓</span> Custom curriculum design</li>
+              </ul>
+              <Link href="/en/courses" className="btn-secondary w-full text-center">View Courses</Link>
+            </div>
+          </div>
+          <div className="text-center mt-8">
+            <p className="text-text-secondary text-sm">💡 All engagements start with a free 30-minute diagnosis. No pressure sales, just professional advice.</p>
           </div>
         </div>
       </section>
@@ -190,19 +152,11 @@ export default function EnServicesPage() {
       {/* CTA */}
       <section className="bg-primary py-16">
         <div className="max-w-[800px] mx-auto px-4 sm:px-6 text-center">
-          <h2 className="heading-section text-white mb-4">
-            Want to Find the Best Service for You?
-          </h2>
-          <p className="text-white/80 text-body-lg mb-8">
-            Book a free 30-minute consultation to let us find the most suitable transformation path together.
-          </p>
+          <h2 className="heading-section text-white mb-4">Ready to Start?</h2>
+          <p className="text-white/80 text-body-lg mb-8">Book a free 30-minute consultation to find the best path for your business.</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/en/about#contact" className="btn-primary bg-white text-primary font-bold hover:bg-white/95">
-              ✉️ Book a Consultation Now
-            </Link>
-            <Link href="/en/assistant" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white">
-              💬 Ask the Assistant First
-            </Link>
+            <Link href="/en/about#contact" className="btn-primary bg-white text-primary font-bold hover:bg-white/95">✉️ Book Consultation</Link>
+            <Link href="/en/assistant" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white">💬 Ask the Assistant</Link>
           </div>
         </div>
       </section>
