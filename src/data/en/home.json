@@ -1,0 +1,82 @@
+{
+  "hero": {
+    "badge": "Innovate Boldly",
+    "title": "From Talent Strategy to",
+    "titleHighlight": "AI Implementation",
+    "subtitle": "Empowering businesses to drive sustainable growth by combining visionary thinking with practical solutions — seizing opportunities in the AI era.",
+    "ctaPrimary": "Book a Consultation",
+    "ctaSecondary": "Explore Knowledge Base"
+  },
+  "services": {
+    "tag": "Core Services",
+    "title": "Three Pillars Driving Business Transformation",
+    "items": [
+      {
+        "icon": "🤖",
+        "title": "AI Transformation Strategy",
+        "tag": "AI",
+        "desc": "From assessment, planning to implementation, we build your enterprise's AI transformation blueprint. Helping leadership develop AI thinking, automate processes, and boost operational efficiency."
+      },
+      {
+        "icon": "👥",
+        "title": "Talent Development Strategy",
+        "tag": "Talent",
+        "desc": "Building a future-ready workforce that combines digital capability training with organizational change management, ensuring your enterprise retains core competitiveness during transformation."
+      },
+      {
+        "icon": "🌱",
+        "title": "ESG Sustainability",
+        "tag": "ESG",
+        "desc": "Integrating sustainability into enterprise strategy, establishing measurable ESG frameworks to create a win-win of social value and business benefits."
+      }
+    ],
+    "cta": "View All Services →"
+  },
+  "about": {
+    "tag": "About C.J. Kuo",
+    "title": "Professional, Innovative, and",
+    "titleHighlight": "Practical Advisory Partner",
+    "p1": "C.J. Kuo brings years of corporate consulting experience, specializing in helping SMEs navigate digital transformation.",
+    "p2": "Data-driven, strategy-focused, execution-oriented — not just proposing solutions, but walking alongside your enterprise through every step of transformation.",
+    "cta": "Learn More →"
+  },
+  "quote": {
+    "text": "\"True transformation is not a technology upgrade — it is a revolution in thinking. When talent, strategy, and technology align, enterprises create lasting competitive advantage in times of change.\"",
+    "name": "C.J. Kuo",
+    "title": "Founder, RongRise Consulting"
+  },
+  "knowledge": {
+    "tag": "Featured Content",
+    "title": "Latest Knowledge Sharing",
+    "items": [
+      {
+        "slug": "hr-ai-transformation-five-layers",
+        "cat": "Talent Strategy",
+        "title": "HR's Five-Layer AI Transformation Responsibility Framework",
+        "date": "2026.05.29",
+        "excerpt": "MIT studied 300 enterprise AI cases — 95% produced no measurable P&L impact. The problem isn't technology; it's organizational friction."
+      },
+      {
+        "slug": "ai-transformation-trends-2026",
+        "cat": "AI Transformation",
+        "title": "2026 AI Transformation: Four Major Trends",
+        "date": "2026.05.28",
+        "excerpt": "Edge AI surge, AI Agents at work, AI security urgency, government incentives accelerating — deep analysis of this year's four critical trends."
+      },
+      {
+        "slug": "strategy-subtraction-traditional-industry",
+        "cat": "Strategy Management",
+        "title": "Strategy is Subtraction: Why Traditional Enterprises Must Learn to 'Stop Doing'",
+        "date": "2026.05.29",
+        "excerpt": "Resources are already depleted, yet everyone keeps adding. From triple pressures on traditional industries to Netflix's pivotal turning point."
+      }
+    ],
+    "cta": "View All Articles →"
+  },
+  "cta": {
+    "title": "Ready to Start Your Transformation Journey?",
+    "subtitle": "No matter what stage of transformation you're at, we provide professional and practical advice. Let's explore the best path for your business together.",
+    "primary": "Book a Consultation Now",
+    "secondary": "Ask the Assistant First"
+  }
+}

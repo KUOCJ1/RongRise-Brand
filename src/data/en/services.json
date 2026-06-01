@@ -1,0 +1,75 @@
+{
+  "hero": {
+    "tag": "Services",
+    "title": "Three Service Pillars",
+    "subtitle": "No matter what stage of transformation you're at, you'll find the most suitable service model — from in-depth advisory, hands-on workshop training, to instant online consultation."
+  },
+  "services": [
+    {
+      "icon": "🤖",
+      "title": "Advisory Services",
+      "tagline": "AI Transformation Strategy × Sustainability Governance",
+      "desc": "We create executable transformation blueprints tailored to your enterprise. From current state assessment and strategy planning to implementation, C.J. Kuo leverages 16 years of multinational executive experience to help you find the most suitable development path in the AI era.",
+      "features": [
+        "AI transformation maturity assessment and strategy planning",
+        "Human-AI collaboration process design and implementation",
+        "AI governance framework and risk management",
+        "Sustainable supply chain ESG governance implementation",
+        "Organizational change management and change communication",
+        "PoC design, execution, and results tracking"
+      ],
+      "cta": "Book a Free 30-Minute Diagnosis"
+    },
+    {
+      "icon": "🎓",
+      "title": "Training",
+      "tagline": "Corporate Training × Workshops",
+      "desc": "From one-day workshops to multi-session courses tailored to your enterprise's needs. Balancing theory and practice so participants can immediately apply what they learn in the classroom.",
+      "features": [
+        "AI Bootcamp: From Introduction to Enterprise Implementation",
+        "Agentic AI Transformation Executive Alignment Workshop",
+        "RTIF Prompt Engineering Hands-On Workshop",
+        "AI-Era Talent Strategy Mapping",
+        "ESG Sustainability Talent Development Course",
+        "Performance Management and GROW Coaching Techniques"
+      ],
+      "cta": "View Course Overview"
+    },
+    {
+      "icon": "💬",
+      "title": "Consultation",
+      "tagline": "Online Consultation × Instant Response",
+      "desc": "Through the website Assistant, you can ask questions about AI transformation, talent development, and ESG sustainability anytime. The Assistant draws on C.J. Kuo's complete knowledge base to provide professional and timely responses. For in-depth advisory services, please contact us to arrange a formal consultation.",
+      "features": [
+        "AI tool selection advice and comparison",
+        "Common transformation strategy Q&A",
+        "Government incentive application guidance",
+        "ESG compliance and reporting consultation",
+        "Organizational talent strategy advice",
+        "One-on-one deep advisory booking"
+      ],
+      "cta": "Ask the Assistant"
+    }
+  ],
+  "stats": [
+    { "number": "16+", "label": "Years of Multinational Consulting" },
+    { "number": "8", "label": "Distinguished Workplace Awards" },
+    { "number": "3+", "label": "Public Course Cohorts Launched" },
+    { "number": "Multi-Industry", "label": "Cross-Domain Service Experience" }
+  ],
+  "process": {
+    "tag": "Service Process",
+    "title": "Three Collaboration Models",
+    "steps": [
+      { "number": "01", "title": "Diagnosis", "desc": "Through a free 30-minute consultation, understand your enterprise's current situation, challenges, and goals.", "icon": "🔍" },
+      { "number": "02", "title": "Planning", "desc": "Based on the diagnosis, customize the most suitable service plan and timeline.", "icon": "📋" },
+      { "number": "03", "title": "Execution", "desc": "With professional and pragmatic approaches, walk alongside you through every step of transformation.", "icon": "🚀" }
+    ]
+  },
+  "cta": {
+    "title": "Want to Find the Best Service for You?",
+    "subtitle": "Book a free 30-minute consultation to let us find the most suitable transformation path together.",
+    "primary": "✉️ Book a Consultation Now",
+    "secondary": "💬 Ask the Assistant First"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "courses": [
+    {
+      "id": "ai-bootcamp-jul-2026",
+      "title": "AI 實戰營：從入門到企業落地",
+      "type": "公開班",
+      "date": "2026-07-15",
+      "endDate": "2026-07-16",
+      "time": "09:00 – 17:00",
+      "location": "台北市（捷運站步行 5 分鐘）",
+      "price": "每人 NT$8,800",
+      "earlyBirdPrice": "NT$7,200（6/30 前）",
+      "promoEnd": "2026-06-30",
+      "seats": 25,
+      "seatsLeft": 12,
+      "status": "open",
+      "tags": ["AI 轉型", "企業落地", "實作"],
+      "description": "兩天實戰課程，涵蓋生成式 AI 底層邏輯、RTIF 提示工程、AI 成熟度評估、企業導入路線圖。",
+      "link": "/knowledge/ai-bootcamp"
+    },
+    {
+      "id": "agentic-aug-2026",
+      "title": "Agentic AI 轉型高階共識營",
+      "type": "企業內訓",
+      "date": "2026-08-08",
+      "time": "09:30 – 16:30",
+      "location": "可議（含企業現場）",
+      "price": "依人數報價",
+      "seats": 15,
+      "seatsLeft": 8,
+      "status": "open",
+      "tags": ["Agentic AI", "高階主管", "共識營"],
+      "description": "專為企業高階主管設計的一天共識課，從願景對齊到落地框架，含 Agent 場景評估畫布實作。",
+      "link": "/knowledge/agentic-ai-transformation-workshop"
+    },
+    {
+      "id": "esg-sep-2026",
+      "title": "ESG 永續管理顧問師培訓班",
+      "type": "公開班",
+      "date": "2026-09-20",
+      "endDate": "2026-09-21",
+      "time": "09:00 – 17:00",
+      "location": "台北市",
+      "price": "每人 NT$9,600",
+      "earlyBirdPrice": "NT$8,000（9/5 前）",
+      "promoEnd": "2026-09-05",
+      "seats": 20,
+      "seatsLeft": 20,
+      "status": "open",
+      "tags": ["ESG 永續", "證照", "進階"],
+      "description": "兩天密集培訓，涵蓋 ESG 法規趨勢、碳盤點實務、永續報告書撰寫、TCSA 評鑑準備。",
+      "link": "/knowledge/sme-esg-guide"
+    },
+    {
+      "id": "hr-ai-nov-2026",
+      "title": "HR × AI 轉型工作坊",
+      "type": "企業內訓",
+      "date": "2026-11-15",
+      "time": "09:30 – 16:30",
+      "location": "可議",
+      "price": "依人數報價",
+      "seats": 30,
+      "seatsLeft": 18,
+      "status": "open",
+      "tags": ["HR", "人才策略", "AI 工具"],
+      "description": "針對 HR 專業人士設計，涵蓋 AI 工具實作、Prompt 工程、人才九宮格 2.0、HR AI 合規治理。",
+      "link": "/knowledge/hr-ai-course-design"
+    }
+  ]
+}

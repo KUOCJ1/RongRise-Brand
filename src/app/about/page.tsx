@@ -84,10 +84,18 @@ export default function AboutPage() {
                   <strong className="text-dark">16 年跨國人力資源管理實戰經驗</strong>，歷任 Accenture、Ernst & Young、Watson Wyatt 等國際級管理顧問公司，以及 Chubb Life、Cigna Life 等跨國金融企業人資高階主管。專精於組織人才策略、薪酬獎勵設計、雇主品牌建設及 HR 數位轉型，累計協助雇主榮獲 <strong className="text-dark">8 座國內外優良職場獎項</strong>。
                 </p>
                 <p>
-                  2024 年起以獨立管理顧問暨企業培訓講師身分，聚焦三大領域：<strong className="text-dark">AI 時代人才戰略與組織轉型</strong>、<strong className="text-dark">企業永續（ESG）治理導入</strong>、以及<strong className="text-dark">中小企業 AI 賦能落地</strong>。
+                  然而，真正讓他決定走出企業舒適圈的，是 2023 年的一次對話——
+                </p>
+                <blockquote className="border-l-4 border-tertiary bg-tertiary/5 rounded-r-lg px-5 py-4 my-6">
+                  <p className="text-text-primary font-medium italic">
+                    「一位製造商老闆跟我說：『老師，我知道 AI 很重要，但我的團隊連 Excel 都不太會用，我該怎麼辦？』那一刻我才發現，轉型最缺的不是技術，而是願意陪企業走完那段路的人。」
+                  </p>
+                </blockquote>
+                <p>
+                  2024 年起以獨立管理顧問暨企業培訓講師身分，聚焦三大領域：<strong className="text-dark">AI 時代人才戰略與組織轉型</strong>、<strong className="text-dark">企業永續（ESG）治理導入</strong>、以及 <strong className="text-dark">中小企業 AI 賦能落地</strong>。
                 </p>
                 <p>
-                  不同於純理論的學院派或純技術的工具派，C.J. Kuo 老師的核心差異化價值在於——從「人」的策略高度出發，結合實際 AI 工具操作與企業落地經驗，為組織設計<strong className="text-dark">可執行的轉型路徑</strong>。
+                  不同於純理論的學院派或純技術的工具派，C.J. Kuo 老師的核心差異化價值在於——從「人」的策略高度出發，結合實際 AI 工具操作與企業落地經驗，為組織設計 <strong className="text-dark">可執行的轉型路徑</strong>。
                 </p>
                 <p>
                   代表客戶涵蓋台積電、仁寶電腦等科技大廠，以及製造、化學、物流、金融控股等產業中小企業，能針對不同規模與產業需求提供客製化課程設計與顧問輔導方案。
@@ -99,6 +107,29 @@ export default function AboutPage() {
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Section */}
+      <section className="section">
+        <div className="section-inner">
+          <div className="text-center mb-8">
+            <span className="tag mb-4">認識 C.J. Kuo</span>
+            <h2 className="heading-section text-dark mt-4">用說的，更直接</h2>
+            <div className="brand-divider brand-divider-center mt-4" />
+            <p className="text-text-secondary text-body-lg mt-4 max-w-xl mx-auto">
+              聽聽 C.J. 老師怎麼看 AI 轉型、人才策略與 ESG 永續。
+            </p>
+          </div>
+          <div className="max-w-3xl mx-auto">
+            <YouTubeEmbed
+              channelId="UCFfz1iDwqqRfjWgR7GhVMGA"
+              title="C.J. Kuo 老師 — 榕耀管顧 YouTube 頻道"
+            />
+            <p className="text-center text-text-secondary text-sm mt-4">
+              📺 更多影片，歡迎訂閱 <a href="https://www.youtube.com/@RongRiseConsulting" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">YouTube 頻道 @RongRiseConsulting</a>
+            </p>
           </div>
         </div>
       </section>

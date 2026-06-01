@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "courses": "Courses",
+    "about": "About",
+    "knowledge": "Knowledge",
+    "downloads": "Downloads",
+    "news": "News",
+    "assistant": "Assistant",
+    "contact": "Contact",
+    "cta": "Book a Consultation"
+  },
+  "footer": {
+    "brand": "RongRise Consulting",
+    "tagline": "From Talent Strategy to AI Implementation. Driving Sustainable Growth.",
+    "quickLinks": "Quick Links",
+    "focusAreas": "Core Services",
+    "copyright": "© {year} RongRise Consulting. All rights reserved.",
+    "designedBy": "Designed with ❤️ by C.J. Kuo"
+  },
+  "common": {
+    "learnMore": "Learn More →",
+    "viewAll": "View All →",
+    "getStarted": "Get Started →",
+    "bookConsultation": "Book a Consultation",
+    "askAssistant": "Ask the Assistant",
+    "free": "Free",
+    "comingSoon": "Coming Soon"
+  },
+  "home": {
+    "hero": {
+      "badge": "Smart Transformation, Innovative Future",
+      "title": "From Talent Strategy to",
+      "titleHighlight": "AI Implementation",
+      "subtitle": "Helping businesses drive sustainable growth by combining forward-thinking strategies with practical solutions in the AI era.",
+      "cta1": "Book a Consultation",
+      "cta2": "Explore Knowledge Base"
+    },
+    "services": {
+      "label": "Core Services",
+      "title": "Three Pillars Driving Business Transformation",
+      "items": [
+        {
+          "icon": "🤖",
+          "title": "AI Transformation Strategy",
+          "desc": "From assessment to implementation, build a customized AI transformation blueprint for your business.",
+          "tag": "AI"
+        },
+        {
+          "icon": "👥",
+          "title": "Talent Development Strategy",
+          "desc": "Build a future-ready workforce with digital capability training and organizational change management.",
+          "tag": "Talent"
+        },
+        {
+          "icon": "🌱",
+          "title": "ESG Sustainability",
+          "desc": "Integrate sustainability into business strategy with measurable ESG metrics.",
+          "tag": "ESG"
+        }
+      ]
+    },
+    "caseStudies": {
+      "label": "Case Studies",
+      "title": "Transformation, Not Just Talk"
+    },
+    "testimonials": {
+      "label": "Testimonials",
+      "title": "What Our Partners Say"
+    },
+    "knowledge": {
+      "label": "Featured Content",
+      "title": "Latest Knowledge Sharing"
+    },
+    "serviceFlow": {
+      "label": "How We Work",
+      "title": "Our Collaboration Approach"
+    },
+    "esgAssessment": {
+      "label": "Interactive Tool",
+      "title": "ESG + AI Transformation Self-Assessment",
+      "desc": "25 questions to quickly assess your business's maturity in ESG sustainability and AI transformation.",
+      "cta": "Start Free Assessment"
+    },
+    "news": {
+      "label": "Latest News",
+      "title": "Courses, Resources & Insights"
+    },
+    "faq": {
+      "label": "FAQ",
+      "title": "You Might Want to Know"
+    },
+    "leadMagnet": {
+      "label": "Free Resources",
+      "title": "Get a Complete Transformation Toolkit",
+      "desc": "AI Maturity Assessment + ESG Checklist + AI Trends Report. All free, no strings attached.",
+      "items": [
+        "AI Maturity Self-Assessment",
+        "ESG Status Checklist",
+        "2026 AI Transformation Trends Report",
+        "AI Tool Selection Guide"
+      ],
+      "cta": "Download Now →"
+    },
+    "cta": {
+      "title": "Ready to Start Your Transformation Journey?",
+      "desc": "No matter what stage of transformation you're at, we can provide professional and practical advice.",
+      "cta1": "Book a Consultation",
+      "cta2": "Ask the Assistant"
+    }
+  }
+}

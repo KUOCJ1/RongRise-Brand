@@ -7,6 +7,11 @@ import TestimonialsSection from "@/components/Testimonials";
 import ServiceFlowSection from "@/components/ServiceFlow";
 import NewsSection from "@/components/NewsSection";
 import FAQSection from "@/components/FAQ";
+import FAQSchema from "@/components/FAQSchema";
+import ReviewSchema from "@/components/ReviewSchema";
+import NewsletterSection from "@/components/Newsletter";
+import coursesData from "@/data/courses.json";
+import faqData from "@/data/faq.json";
 
 const COVER_MAP: Record<string, string> = {
   "ai-transformation-bootcamp": "article-ai-bootcamp.jpg",
@@ -315,6 +320,7 @@ export default function HomePage() {
 
       {/* ===== 2. 客戶推薦 / 證言 ===== */}
       <TestimonialsSection />
+      <ReviewSchema />
 
       {/* 知識預覽 */}
       <section className="section bg-gradient-subtle">
@@ -415,8 +421,45 @@ export default function HomePage() {
       {/* ===== 4. 最新消息 ===== */}
       <NewsSection />
 
+      {/* Upcoming Courses */}
+      <section className="section bg-white">
+        <div className="section-inner">
+          <div className="text-center mb-12">
+            <span className="tag mb-4">近期課程</span>
+            <h2 className="heading-section text-dark mt-4">學習，是最好的轉型投資</h2>
+            <div className="brand-divider brand-divider-center mt-4" />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {coursesData.courses.slice(0, 4).map((course) => (
+              <div key={course.id} className="card flex flex-col">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="tag">{course.type}</span>
+                  <span className="text-xs text-text-secondary">
+                    {new Date(course.date).toLocaleDateString("zh-TW", { month: "long", day: "numeric" })}
+                  </span>
+                </div>
+                <h3 className="heading-subsection text-dark mb-2">{course.title}</h3>
+                <p className="text-text-secondary text-body-sm mb-4 flex-1">{course.description}</p>
+                <div className="flex items-center justify-between pt-4 border-t border-border-light">
+                  <span className="text-sm font-semibold text-primary">{course.price}</span>
+                  <Link href="/courses" className="btn-ghost text-sm text-primary">
+                    查看詳情 →
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/courses" className="btn-secondary">
+              查看所有課程 →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ===== 5. 常見問題 ===== */}
       <FAQSection />
+      <FAQSchema faq={faqData.faq} />
 
       {/* ===== 6. 免費資源 Lead Magnet ===== */}
       <section className="section bg-bg-alt">

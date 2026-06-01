@@ -174,6 +174,110 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Pricing Guide */}
+      <section className="section bg-gradient-subtle">
+        <div className="section-inner">
+          <div className="text-center mb-12">
+            <span className="tag mb-4">服務費用</span>
+            <h2 className="heading-section text-dark mt-4">依企業規模，最適合的方案</h2>
+            <div className="brand-divider brand-divider-center mt-4" />
+            <p className="text-text-secondary text-body-lg mt-4 max-w-2xl mx-auto">
+              我們相信每個企業的轉型路徑都不同。依據您的規模、需求與預算，提供最適合的服務組合。
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {/* 免費診斷 */}
+            <div className="card text-center flex flex-col">
+              <div className="text-3xl mb-4">🔍</div>
+              <h3 className="heading-subsection text-dark mb-2">免費診斷</h3>
+              <div className="text-3xl font-bold text-primary mb-1">$0</div>
+              <div className="text-text-secondary text-sm mb-4">30 分鐘</div>
+              <ul className="text-left space-y-2 mb-6 flex-1">
+                <li className="flex items-start gap-2 text-sm text-text-secondary">
+                  <span className="text-primary">✓</span> 企業現況了解
+                </li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary">
+                  <span className="text-primary">✓</span> 初步挑戰診斷
+                </li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary">
+                  <span className="text-primary">✓</span> 轉型方向建議
+                </li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary">
+                  <span className="text-primary">✓</span> 適合服務推薦
+                </li>
+              </ul>
+              <Link href="/about#contact" className="btn-secondary w-full text-center">
+                預約免費診斷
+              </Link>
+            </div>
+
+            {/* 顧問服務 */}
+            <div className="card text-center flex flex-col border-2 border-tertiary relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-tertiary text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">
+                最受歡迎
+              </div>
+              <div className="text-3xl mb-4">🤖</div>
+              <h3 className="heading-subsection text-dark mb-2">顧問服務</h3>
+              <div className="text-3xl font-bold text-primary mb-1">依需求</div>
+              <div className="text-text-secondary text-sm mb-4">客製化報價</div>
+              <ul className="text-left space-y-2 mb-6 flex-1">
+                <li className="flex items-start gap-2 text-sm text-text-secondary">
+                  <span className="text-tertiary">✓</span> AI 成熟度評估
+                </li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary">
+                  <span className="text-tertiary">✓</span> 轉型策略規劃
+                </li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary">
+                  <span className="text-tertiary">✓</span> PoC 設計與導入
+                </li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary">
+                  <span className="text-tertiary">✓</span> 組織變革管理
+                </li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary">
+                  <span className="text-tertiary">✓</span> 成效追蹤优化
+                </li>
+              </ul>
+              <Link href="/about#contact" className="btn-primary w-full text-center">
+                聯繫討論方案
+              </Link>
+            </div>
+
+            {/* 培訓課程 */}
+            <div className="card text-center flex flex-col">
+              <div className="text-3xl mb-4">🎓</div>
+              <h3 className="heading-subsection text-dark mb-2">培訓課程</h3>
+              <div className="text-3xl font-bold text-primary mb-1">依人數</div>
+              <div className="text-text-secondary text-sm mb-4">遠低於市價</div>
+              <ul className="text-left space-y-2 mb-6 flex-1">
+                <li className="flex items-start gap-2 text-sm text-text-secondary">
+                  <span className="text-accent">✓</span> AI 實戰營（公開班）
+                </li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary">
+                  <span className="text-accent">✓</span> 企業內訓工作坊
+                </li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary">
+                  <span className="text-accent">✓</span> 高階共識營
+                </li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary">
+                  <span className="text-accent">✓</span> 客製化課程設計
+                </li>
+              </ul>
+              <Link href="/knowledge" className="btn-secondary w-full text-center">
+                查看課程資訊
+              </Link>
+            </div>
+          </div>
+
+          {/* 費用說明 */}
+          <div className="text-center mt-8">
+            <p className="text-text-secondary text-sm">
+              💡 所有方案均以免費 30 分鐘診斷作為起點，確認需求後提供正式報價。無壓力推銷，只有專業建議。
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Service Flow */}
       <section className="section bg-bg-alt">
         <div className="section-inner">

@@ -348,6 +348,28 @@ export default async function ArticlePage({ params }: PageProps) {
           </div>
         </section>
       )}
+
+      {/* Article CTA */}
+      <section className="py-12 md:py-16">
+        <div className="max-w-[700px] mx-auto px-4 sm:px-6">
+          <div className="bg-gradient-hero rounded-2xl p-8 md:p-10 text-white text-center">
+            <h3 className="heading-subsection text-white mb-3">
+              有問題想深入討論？
+            </h3>
+            <p className="text-white/80 text-body mb-6">
+              每一篇文章都是轉型的起點。如果您對內容有任何疑問，或想討論如何套用在您的企業情境，歡迎預約免費諮詢。
+            </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link href="/about#contact" className="btn-primary bg-white text-primary font-bold hover:bg-white/95">
+                ✉️ 預約免費諮詢
+              </Link>
+              <Link href="/assistant" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white">
+                💬 問問小幫手
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

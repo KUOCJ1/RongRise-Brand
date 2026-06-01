@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "tag": "About",
+    "title": "C.J. Kuo",
+    "subtitle": "Founder · Business Transformation Consultant",
+    "description": "Empowering businesses from talent strategy to AI implementation, driving sustainable growth."
+  },
+  "story": {
+    "title": "My Story",
+    "p1": "With <strong>16 years of multinational HR management experience</strong>, C.J. Kuo has held senior positions at global consulting firms including Accenture, Ernst & Young, and Watson Wyatt, as well as multinational insurance companies including Chubb Life and Cigna Life. Specializing in organizational talent strategy, compensation & rewards design, employer branding, and HR digital transformation, C.J. has helped employers earn <strong>8 distinguished workplace awards</strong>.",
+    "p2": "Since 2024, as an independent management consultant and corporate trainer, C.J. focuses on three areas: <strong>AI-era talent strategy & organizational transformation</strong>, <strong>corporate sustainability (ESG) governance</strong>, and <strong>SME AI empowerment & implementation</strong>.",
+    "p3": "Unlike purely academic theorists or purely technical tool-focused consultants, C.J. Kuo's core differentiated value lies in starting from the strategic level of \"people,\" combining hands-on AI tool implementation with enterprise deployment experience, to design <strong>executable transformation paths</strong> for organizations.",
+    "p4": "Representative clients span technology giants like TSMC and Compal, as well as SMEs in manufacturing, chemicals, logistics, and financial holding industries. Customized course design and advisory solutions are provided based on the needs of different scales and industries.",
+    "cta": "💬 Want to learn more about our services? Ask the Assistant →"
+  },
+  "credentials": {
+    "tag": "Experience & Certifications",
+    "title": "Professional Background"
+  },
+  "expertise": {
+    "tag": "Areas of Expertise",
+    "title": "Core Competencies",
+    "items": [
+      {
+        "icon": "🤖",
+        "title": "AI Transformation Consulting",
+        "desc": "AI maturity assessment, Agentic AI implementation strategy, human-AI collaboration process design, AI governance framework"
+      },
+      {
+        "icon": "🎯",
+        "title": "Talent Development Strategy",
+        "desc": "Organizational capability building, digital talent development, succession planning, performance management & GROW coaching"
+      },
+      {
+        "icon": "🌿",
+        "title": "ESG Sustainability Consulting",
+        "desc": "ESG status assessment, sustainability strategy planning, TCSA report advisory, supply chain carbon tracking"
+      },
+      {
+        "icon": "💡",
+        "title": "Innovation Management Coaching",
+        "desc": "Business model innovation, digital transformation roadmap, change management, workshop design & facilitation"
+      }
+    ]
+  },
+  "timeline": [
+    { "year": "1999-2008", "title": "International Management Consulting", "desc": "Accenture (serving TSMC, Compal), EY Pre-Sales Manager, Watson Wyatt Senior Consultant — building expertise in compensation strategy and human capital transformation." },
+    { "year": "2008-2023", "title": "Senior HR Executive at Multinational Insurance", "desc": "Cigna Life CHRO leading full-function HR team, four consecutive HR Asia Awards; Chubb Life SVP overseeing 30+ person team. Helped employers earn 8 distinguished workplace awards." },
+    { "year": "2024-Present", "title": "Founded RongRise Consulting", "desc": "Focused on AI-era talent strategy, corporate sustainability governance, SME AI empowerment. Launched 3+ cohorts of AI bootcamp, serving clients including WanDa, SuiYe, and XinNan." }
+  ],
+  "values": {
+    "tag": "Core Values",
+    "title": "My Consulting Philosophy",
+    "items": [
+      { "title": "Professional Rigor", "desc": "Grounded in precise terminology, clear logic, and deep knowledge — ensuring every recommendation is supported by data and theory." },
+      { "title": "Forward-Looking Innovation", "desc": "Embracing new technology, guiding trends, helping enterprises seize opportunities in change rather than playing catch-up." },
+      { "title": "Pragmatic Execution", "desc": "Every solution focuses on executability, creating visible value and benefits for the enterprise." }
+    ]
+  },
+  "contact": {
+    "tag": "Contact",
+    "title": "Get in Touch",
+    "items": [
+      { "icon": "📧", "label": "Email", "value": "info@rongrise.com", "href": "mailto:info@rongrise.com" },
+      { "icon": "💼", "label": "LinkedIn", "value": "C.J. Kuo", "href": "https://www.linkedin.com/in/c-j-kuo-5629b97b/" },
+      { "icon": "📍", "label": "Service Area", "value": "Worldwide · Online Consultation", "href": null }
+    ],
+    "p1": "Ready to start your transformation journey? Get in touch through any of the channels below,",
+    "p2": "and let's explore the most suitable development path for your business together.",
+    "ctaPrimary": "✉️ Send Email",
+    "ctaSecondary": "📄 Download Service Brochure"
+  }
+}

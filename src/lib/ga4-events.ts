@@ -87,3 +87,9 @@ export function trackContactSubmit(method: string) {
     contact_method: method,
   });
 }
+
+// ─── 電子報訂閱 ──────────────────────────────
+export function trackNewsletterSubscribe() {
+  if (!isGtagAvailable()) return;
+  window.gtag("event", "newsletter_subscribe");
+}

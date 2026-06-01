@@ -6,6 +6,7 @@ import { useState } from "react";
 const navItems = [
   { href: "/", label: "首頁" },
   { href: "/services", label: "服務項目" },
+  { href: "/courses", label: "課程" },
   { href: "/about", label: "關於我" },
   { href: "/knowledge", label: "知識庫" },
   { href: "/downloads", label: "下載區" },
