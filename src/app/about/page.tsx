@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 /* ============================================
    關於我 About Page

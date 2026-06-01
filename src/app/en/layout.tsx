@@ -130,9 +130,9 @@ export default function EnLayout({
         </Script>
       </head>
       <body className="min-h-full flex flex-col">
-        <Header locale="en" />
+        <Header />
         <main className="flex-1">{children}</main>
-        <Footer locale="en" />
+        <Footer />
       </body>
     </html>
   );
