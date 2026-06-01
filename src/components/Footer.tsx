@@ -32,6 +32,7 @@ export default function Footer() {
                 { href: "/about", label: "關於我" },
                 { href: "/knowledge", label: "知識庫" },
                 { href: "/downloads", label: "下載區" },
+                { href: "/news", label: "最新消息" },
                 { href: "/assistant", label: "小幫手" },
               ].map((link) => (
                 <li key={link.href}>

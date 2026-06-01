@@ -2,6 +2,11 @@ import Link from "next/link";
 import ScrollTracker from "@/components/ScrollTracker";
 import { trackCTALabel } from "@/lib/ga4-events";
 import TrackLink from "@/components/TrackLink";
+import CaseStudiesSection from "@/components/CaseStudies";
+import TestimonialsSection from "@/components/Testimonials";
+import ServiceFlowSection from "@/components/ServiceFlow";
+import NewsSection from "@/components/NewsSection";
+import FAQSection from "@/components/FAQ";
 
 const COVER_MAP: Record<string, string> = {
   "ai-transformation-bootcamp": "article-ai-bootcamp.jpg",
@@ -249,6 +254,9 @@ export default function HomePage() {
         </svg>
       </div>
 
+      {/* ===== 1. 客戶案例 / 成果展示 ===== */}
+      <CaseStudiesSection />
+
       {/* 關於預覽 */}
       <section className="section">
         <div className="section-inner">
@@ -304,6 +312,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ===== 2. 客戶推薦 / 證言 ===== */}
+      <TestimonialsSection />
 
       {/* 知識預覽 */}
       <section className="section bg-gradient-subtle">
@@ -379,6 +390,9 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ===== 3. 服務流程詳細版 ===== */}
+      <ServiceFlowSection />
+
       {/* ESG 自評區塊 */}
       <section className="section bg-bg-alt">
         <div className="section-inner text-center">
@@ -397,6 +411,75 @@ export default function HomePage() {
         </div>
       </section>
 
+
+      {/* ===== 4. 最新消息 ===== */}
+      <NewsSection />
+
+      {/* ===== 5. 常見問題 ===== */}
+      <FAQSection />
+
+      {/* ===== 6. 免費資源 Lead Magnet ===== */}
+      <section className="section bg-bg-alt">
+        <div className="section-inner">
+          <div className="max-w-3xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Left: Lead Magnet */}
+              <div className="bg-gradient-hero rounded-2xl p-8 text-white flex flex-col justify-between">
+                <div>
+                  <span className="tag bg-white/15 text-white mb-4">免費資源</span>
+                  <h3 className="heading-subsection text-white mt-4 mb-3">
+                    帶走一套完整的轉型工具包
+                  </h3>
+                  <p className="text-white/80 text-body mb-6">
+                    AI 成熟度自評量表 + ESG 現況盤點清單 + AI 轉型趨勢報告。
+                    全部免費，無需留下任何資料。
+                  </p>
+                  <ul className="space-y-2 mb-6">
+                    {[
+                      "企業 AI 成熟度自評量表",
+                      "ESG 現況盤點清單",
+                      "2026 AI 轉型趨勢報告",
+                      "企業 AI 工具選型指南"
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-center gap-2 text-sm text-white/85">
+                        <svg className="w-4 h-4 flex-shrink-0 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <Link href="/downloads" className="btn-primary bg-white text-primary font-bold hover:bg-white/95 text-center">
+                  立即下載 →
+                </Link>
+              </div>
+
+              {/* Right: CTA */}
+              <div className="flex flex-col gap-6">
+                <div className="card flex-1 flex flex-col justify-center">
+                  <h3 className="heading-subsection text-dark mb-3">想有人帶您走？</h3>
+                  <p className="text-text-secondary text-body mb-4">
+                    預約免費 30 分鐘諮詢，C.J. 老師會依據您的企業現況，給出具體可行動的建議。
+                  </p>
+                  <Link href="/about#contact" className="btn-primary text-center">
+                    預約免費諮詢
+                  </Link>
+                </div>
+                <div className="card flex-1 flex flex-col justify-center">
+                  <h3 className="heading-subsection text-dark mb-3">有問題想先問？</h3>
+                  <p className="text-text-secondary text-body mb-4">
+                    小幫手彙整了 C.J. Kuo 老師的完整知識庫，24 小時即時回覆。
+                  </p>
+                  <Link href="/assistant" className="btn-secondary text-center">
+                    問問小幫手 →
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* SVG 分隔線 2 */}
       <div className="deco-divider" aria-hidden="true">
         <svg viewBox="0 0 1200 80" preserveAspectRatio="none">

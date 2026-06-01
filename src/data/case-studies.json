@@ -1,0 +1,46 @@
+{
+  "caseStudies": [
+    {
+      "id": "manufacturing-quality",
+      "industry": "製造業",
+      "title": "AI 品質檢測導入",
+      "challenge": "中部傳統製造廠，人工目檢漏檢率高、不良品流出造成客訴不斷",
+      "solution": "90 天導入 AI 視覺檢測系統，搭配作業流程再造與人員培訓",
+      "results": [
+        { "metric": "40%", "label": "不良率降低" },
+        { "metric": "65%", "label": "檢測速度提升" },
+        { "metric": "3.2x", "label": "投資回報率" }
+      ],
+      "tags": ["AI 轉型", "製造業", "品質管理"],
+      "link": "/knowledge/manufacturing-ai-quality"
+    },
+    {
+      "id": "service-chatbot",
+      "industry": "電商服務業",
+      "title": "AI 客服系統導入",
+      "challenge": "中型電商客服人力成本高昂，重複性問題佔 70%，客戶滿意度持續下滑",
+      "solution": "六個月分階段導入 AI 客服，保留人工升級通道，建立知識庫與轉接機制",
+      "results": [
+        { "metric": "60%", "label": "投訴率降低" },
+        { "metric": "45%", "label": "客服成本節省" },
+        { "metric": "92%", "label": "問題一次解決率" }
+      ],
+      "tags": ["AI 轉型", "服務業", "顧客體驗"],
+      "link": "/knowledge/service-ai-chatbot"
+    },
+    {
+      "id": "esg-sme",
+      "industry": "傳統產業",
+      "title": "中小企業 ESG 起步",
+      "challenge": "供應鏈大廠要求 ESG 報告，企業內部毫無盤點基礎，不知從何開始",
+      "solution": "三個月從碳盤點到社會影響力指標，建立可衡量的 ESG 架構與揭露流程",
+      "results": [
+        { "metric": "100%", "label": "供應鏈合規達標" },
+        { "metric": "6 項", "label": "永續改善行動" },
+        { "metric": "2 家", "label": "新客戶取得（ESG 門檻）" }
+      ],
+      "tags": ["ESG 永續", "中小企業", "供應鏈"],
+      "link": "/knowledge/sme-esg-guide"
+    }
+  ]
+}

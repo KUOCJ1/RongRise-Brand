@@ -1,0 +1,40 @@
+{
+  "news": [
+    {
+      "id": "n1",
+      "date": "2026-06-01",
+      "category": "課程",
+      "title": "【AI 實戰營】7 月班開課 — 從入門到企業落地",
+      "summary": "兩天實戰課程，涵蓋生成式 AI 底層邏輯、提示工程、企業 AI 成熟度評估。早鳥優惠至 6/15。",
+      "link": "/knowledge/ai-bootcamp",
+      "isNew": true
+    },
+    {
+      "id": "n2",
+      "date": "2026-05-28",
+      "category": "媒體",
+      "title": "C.J. Kuo 老師接受專訪：AI 轉型最大的障礙不是技術",
+      "summary": "深入探討台灣中小企業在 AI 轉型過程中面臨的組織摩擦力，以及 HR 在轉型中的關鍵角色。",
+      "link": "/knowledge/hr-ai-transformation-five-layers",
+      "isNew": false
+    },
+    {
+      "id": "n3",
+      "date": "2026-05-20",
+      "category": "資源",
+      "title": "免費下載：2026 政府 AI 補助資源完整整理",
+      "summary": "經濟部、勞動部、數發部三大部會 AI 轉型補助一次整理，含申請資格、金額、時程表。",
+      "link": "/downloads",
+      "isNew": false
+    },
+    {
+      "id": "n4",
+      "date": "2026-05-15",
+      "category": "課程",
+      "title": "Agentic AI 轉型高階共識營 — 第二期開放報名",
+      "summary": "專為企業高阶主管設計的一天共識營，從願景對齊到落地框架，含 Agent 場景評估畫布實作。",
+      "link": "/knowledge/agentic-ai-consensus-camp",
+      "isNew": false
+    }
+  ]
+}
