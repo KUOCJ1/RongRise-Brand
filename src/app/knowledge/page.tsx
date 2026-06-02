@@ -21,6 +21,15 @@ const categories = ["全部", "AI 轉型", "人才策略", "ESG 永續", "案例
 
 const articles: Article[] = [
   {
+    slug: "ai-cost-governance-token-era",
+    cat: "AI 轉型",
+    title: "💰 Token 計價時代：AI 每一問都有價，你的企業用了多少浪費的 Token？",
+    date: "2026.06.02",
+    readTime: "12 分鐘",
+    excerpt: "GitHub Copilot 改採 Token 計價、Alphabet 5 月就燒光全年 AI 預算——AI 的使用成本正從「隱藏成本」變成「可見帳單」。對預算敏感的中小企業來說，這不是壞消息，而是建立 AI 使用治理的契機。",
+    tags: ["AI 成本管控", "Token 計價", "AI 治理", "中小企業", "成本管理"],
+  },
+  {
     slug: "ai-transformation-bootcamp",
     cat: "AI 轉型",
     title: "AI 轉型實戰營：從入門到企業落地",
