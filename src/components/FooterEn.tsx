@@ -48,19 +48,39 @@ export default function FooterEn() {
             </ul>
           </div>
 
-          {/* Focus Areas */}
+          {/* Contact */}
           <div>
-            <h4 className="font-semibold text-sm mb-4 text-gray-300">Core Services</h4>
-            <div className="flex flex-wrap gap-2">
-              {["AI Transformation", "Talent Strategy", "ESG Sustainability", "Smart Transformation", "Innovation Consulting"].map((tag) => (
-                <span
-                  key={tag}
-                  className="text-xs px-3 py-1 rounded-full bg-white/10 text-gray-300"
+            <h4 className="font-semibold text-sm mb-4 text-gray-300">Contact Us</h4>
+            <ul className="space-y-3">
+              <li>
+                <a
+                  href="mailto:kuocj1@gmail.com"
+                  className="text-gray-400 text-sm hover:text-white transition-colors no-underline flex items-center gap-2"
                 >
-                  {tag}
-                </span>
-              ))}
-            </div>
+                  <span>✉️</span> kuocj1@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/c-j-kuo-5629b97b"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 text-sm hover:text-white transition-colors no-underline flex items-center gap-2"
+                >
+                  <span>💼</span> LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/cj.kuo1/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 text-sm hover:text-white transition-colors no-underline flex items-center gap-2"
+                >
+                  <span>📘</span> Facebook
+                </a>
+              </li>
+            </ul>
             <div className="mt-6">
               <p className="text-gray-400 text-sm mb-2">🌐 Language</p>
               <div className="flex gap-2">
