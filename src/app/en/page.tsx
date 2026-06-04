@@ -1,16 +1,16 @@
 import Link from "next/link";
-import CaseStudiesSection from "@/components/CaseStudies";
-import TestimonialsSection from "@/components/Testimonials";
-import ServiceFlowSection from "@/components/ServiceFlow";
-import NewsSection from "@/components/NewsSection";
-import FAQSection from "@/components/FAQ";
+import CaseStudiesEnSection from "@/components/CaseStudiesEn";
+import TestimonialsEnSection from "@/components/TestimonialsEn";
+import ServiceFlowEnSection from "@/components/ServiceFlowEn";
+import NewsEnSection from "@/components/NewsEnSection";
+import FAQEnSection from "@/components/FAQEnSection";
 import FAQSchema from "@/components/FAQSchema";
 import ReviewSchema from "@/components/ReviewSchema";
-import NewsletterSection from "@/components/Newsletter";
+import NewsletterEnSection from "@/components/NewsletterEn";
 import ScrollTracker from "@/components/ScrollTracker";
 import TrackLink from "@/components/TrackLink";
-import faqData from "@/data/faq.json";
-import coursesData from "@/data/courses.json";
+import faqData from "@/data/faq-en.json";
+import coursesData from "@/data/courses-en.json";
 
 export default function EnHomePage() {
   return (
@@ -74,7 +74,7 @@ export default function EnHomePage() {
       </section>
 
       {/* Case Studies */}
-      <CaseStudiesSection />
+      <CaseStudiesEnSection />
 
       {/* About Preview */}
       <section className="section">
@@ -114,7 +114,7 @@ export default function EnHomePage() {
       </section>
 
       {/* Testimonials */}
-      <TestimonialsSection />
+      <TestimonialsEnSection />
       <ReviewSchema />
 
       {/* Knowledge */}
@@ -132,7 +132,7 @@ export default function EnHomePage() {
       </section>
 
       {/* Service Flow */}
-      <ServiceFlowSection />
+      <ServiceFlowEnSection />
 
       {/* ESG Assessment */}
       <section className="bg-primary py-16">
@@ -181,10 +181,10 @@ export default function EnHomePage() {
       </section>
 
       {/* News */}
-      <NewsSection />
+      <NewsEnSection />
 
       {/* FAQ */}
-      <FAQSection />
+      <FAQEnSection />
       <FAQSchema faq={faqData.faq} />
 
       {/* Lead Magnet */}
@@ -228,7 +228,7 @@ export default function EnHomePage() {
       </section>
 
       {/* Newsletter */}
-      <NewsletterSection />
+      <NewsletterEnSection />
 
       {/* Final CTA */}
       <section className="bg-primary py-16">

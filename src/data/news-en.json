@@ -1,0 +1,40 @@
+{
+  "news": [
+    {
+      "id": "n1",
+      "date": "2026-06-01",
+      "category": "Course",
+      "title": "[AI Bootcamp] July Class Open — From Fundamentals to Enterprise Deployment",
+      "summary": "Two-day intensive covering generative AI fundamentals, prompt engineering, and enterprise AI maturity assessment. Early bird pricing until 6/15.",
+      "link": "/knowledge/ai-bootcamp",
+      "isNew": true
+    },
+    {
+      "id": "n2",
+      "date": "2026-05-28",
+      "category": "Media",
+      "title": "C.J. Kuo Interview: The Biggest Barrier to AI Transformation Is Not Technology",
+      "summary": "An in-depth look at the organizational friction SMEs face during AI transformation, and HR's critical role in the process.",
+      "link": "/knowledge/hr-ai-transformation-five-layers",
+      "isNew": false
+    },
+    {
+      "id": "n3",
+      "date": "2026-05-20",
+      "category": "Resource",
+      "title": "Free Download: Complete 2026 Government AI Subsidy Resource Guide",
+      "summary": "AI transformation subsidies from MOEA, MOL, and MODA — all in one guide with eligibility, amounts, and timelines.",
+      "link": "/downloads",
+      "isNew": false
+    },
+    {
+      "id": "n4",
+      "date": "2026-05-15",
+      "category": "Course",
+      "title": "Agentic AI Transformation Executive Alignment Camp — Phase 2 Registration Open",
+      "summary": "One-day executive workshop covering vision alignment to implementation frameworks, including Agent scenario assessment canvas exercises.",
+      "link": "/knowledge/agentic-ai-consensus-camp",
+      "isNew": false
+    }
+  ]
+}

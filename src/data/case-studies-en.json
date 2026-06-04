@@ -1,0 +1,46 @@
+{
+  "caseStudies": [
+    {
+      "id": "manufacturing-quality",
+      "industry": "Manufacturing",
+      "title": "AI Quality Inspection Implementation",
+      "challenge": "A traditional manufacturer in central Taiwan suffered from high miss rates in manual visual inspection, leading to defective products reaching customers and constant complaints.",
+      "solution": "90-day rollout of an AI vision inspection system, paired with process reengineering and staff training.",
+      "results": [
+        { "metric": "40%", "label": "Defect Rate Reduction" },
+        { "metric": "65%", "label": "Inspection Speed Increase" },
+        { "metric": "3.2x", "label": "ROI" }
+      ],
+      "tags": ["AI Transformation", "Manufacturing", "Quality Management"],
+      "link": "/knowledge/manufacturing-ai-quality"
+    },
+    {
+      "id": "service-chatbot",
+      "industry": "E-commerce Services",
+      "title": "AI Customer Service System",
+      "challenge": "A mid-size e-commerce company faced high customer service costs with 70% repetitive inquiries, and declining customer satisfaction scores.",
+      "solution": "Six-month phased AI chatbot rollout with human escalation paths, knowledge base build-out, and seamless handoff mechanisms.",
+      "results": [
+        { "metric": "60%", "label": "Complaint Rate Reduction" },
+        { "metric": "45%", "label": "Service Cost Savings" },
+        { "metric": "92%", "label": "First-Contact Resolution" }
+      ],
+      "tags": ["AI Transformation", "Service Industry", "Customer Experience"],
+      "link": "/knowledge/service-ai-chatbot"
+    },
+    {
+      "id": "esg-sme",
+      "industry": "Traditional Industry",
+      "title": "SME ESG Getting Started",
+      "challenge": "A supply-chain manufacturer received ESG reporting requirements from a major buyer but had no internal baseline or know-how to begin.",
+      "solution": "Three-month engagement covering carbon footprint inventory through social impact metrics, establishing a measurable ESG framework and disclosure process.",
+      "results": [
+        { "metric": "100%", "label": "Supply Chain Compliance" },
+        { "metric": "6", "label": "Sustainability Improvement Actions" },
+        { "metric": "2", "label": "New Clients via ESG Qualification" }
+      ],
+      "tags": ["ESG Sustainability", "SME", "Supply Chain"],
+      "link": "/knowledge/sme-esg-guide"
+    }
+  ]
+}

@@ -1,86 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Chinese (default) pages -->
   <url>
     <loc>https://rong-rise.com/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://rong-rise.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rong-rise.com/en/"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://rong-rise.com/about/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://rong-rise.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://rong-rise.com/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rong-rise.com/en/about"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rong-rise.com/knowledge/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://rong-rise.com/services</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://rong-rise.com/services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rong-rise.com/en/services"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rong-rise.com/courses</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://rong-rise.com/courses"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rong-rise.com/en/courses"/>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://rong-rise.com/knowledge/ai-transformation-bootcamp/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rong-rise.com/knowledge/hr-ai-course-design/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://rong-rise.com/knowledge</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://rong-rise.com/knowledge"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rong-rise.com/en/knowledge"/>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rong-rise.com/knowledge/sme-esg-guide/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://rong-rise.com/knowledge/manufacturing-ai-quality/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://rong-rise.com/knowledge/ai-maturity-assessment/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://rong-rise.com/knowledge/team-innovation-management/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://rong-rise.com/knowledge/ai-tool-selection-guide/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://rong-rise.com/knowledge/service-ai-chatbot-case/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://rong-rise.com/knowledge/gov-ai-subsidy-guide/</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://rong-rise.com/downloads/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://rong-rise.com/downloads</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://rong-rise.com/downloads"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rong-rise.com/en/downloads"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rong-rise.com/assistant/</loc>
-    <lastmod>2026-05-28</lastmod>
+    <loc>https://rong-rise.com/news</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://rong-rise.com/news"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rong-rise.com/en/news"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://rong-rise.com/assistant</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://rong-rise.com/assistant"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rong-rise.com/en/assistant"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://rong-rise.com/esg-assessment</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://rong-rise.com/esg-assessment"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rong-rise.com/en/esg-assessment"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://rong-rise.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://rong-rise.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rong-rise.com/en/contact"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- English pages -->
+  <url>
+    <loc>https://rong-rise.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://rong-rise.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rong-rise.com/en/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://rong-rise.com/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://rong-rise.com/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rong-rise.com/en/about"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rong-rise.com/en/services</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://rong-rise.com/services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rong-rise.com/en/services"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rong-rise.com/en/courses</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://rong-rise.com/courses"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rong-rise.com/en/courses"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rong-rise.com/en/knowledge</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://rong-rise.com/knowledge"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rong-rise.com/en/knowledge"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rong-rise.com/en/downloads</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://rong-rise.com/downloads"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rong-rise.com/en/downloads"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://rong-rise.com/en/news</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://rong-rise.com/news"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rong-rise.com/en/news"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://rong-rise.com/en/assistant</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://rong-rise.com/assistant"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rong-rise.com/en/assistant"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://rong-rise.com/en/esg-assessment</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://rong-rise.com/esg-assessment"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rong-rise.com/en/esg-assessment"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://rong-rise.com/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://rong-rise.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rong-rise.com/en/contact"/>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

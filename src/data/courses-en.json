@@ -1,0 +1,70 @@
+{
+  "courses": [
+    {
+      "id": "ai-bootcamp-jul-2026",
+      "title": "AI Bootcamp: From Fundamentals to Enterprise Deployment",
+      "type": "Public Workshop",
+      "date": "2026-07-15",
+      "endDate": "2026-07-16",
+      "time": "09:00 – 17:00",
+      "location": "Taipei City (5-min walk from MRT)",
+      "price": "NT$8,800 per person",
+      "earlyBirdPrice": "NT$7,200 (before 6/30)",
+      "promoEnd": "2026-06-30",
+      "seats": 25,
+      "seatsLeft": 12,
+      "status": "open",
+      "tags": ["AI Transformation", "Enterprise Deployment", "Hands-on"],
+      "description": "Two-day intensive covering generative AI fundamentals, RTIF prompt engineering, AI maturity assessment, and enterprise implementation roadmaps.",
+      "link": "/knowledge/ai-bootcamp"
+    },
+    {
+      "id": "agentic-aug-2026",
+      "title": "Agentic AI Transformation Executive Alignment Camp",
+      "type": "Corporate Training",
+      "date": "2026-08-08",
+      "time": "09:30 – 16:30",
+      "location": "Flexible (on-site available)",
+      "price": "Custom quote",
+      "seats": 15,
+      "seatsLeft": 8,
+      "status": "open",
+      "tags": ["Agentic AI", "Executive", "Alignment"],
+      "description": "One-day executive alignment workshop covering vision calibration to implementation frameworks, including Agent scenario assessment canvas exercises.",
+      "link": "/knowledge/agentic-ai-transformation-workshop"
+    },
+    {
+      "id": "esg-sep-2026",
+      "title": "ESG Sustainability Consultant Certification Program",
+      "type": "Public Workshop",
+      "date": "2026-09-20",
+      "endDate": "2026-09-21",
+      "time": "09:00 – 17:00",
+      "location": "Taipei City",
+      "price": "NT$9,600 per person",
+      "earlyBirdPrice": "NT$8,000 (before 9/5)",
+      "promoEnd": "2026-09-05",
+      "seats": 20,
+      "seatsLeft": 20,
+      "status": "open",
+      "tags": ["ESG Sustainability", "Certification", "Advanced"],
+      "description": "Two-day intensive covering ESG regulatory trends, carbon inventory practice, sustainability report writing, and TCSA evaluation preparation.",
+      "link": "/knowledge/sme-esg-guide"
+    },
+    {
+      "id": "hr-ai-nov-2026",
+      "title": "HR × AI Transformation Workshop",
+      "type": "Corporate Training",
+      "date": "2026-11-15",
+      "time": "09:30 – 16:30",
+      "location": "Flexible",
+      "price": "Custom quote",
+      "seats": 30,
+      "seatsLeft": 18,
+      "status": "open",
+      "tags": ["HR", "Talent Strategy", "AI Tools"],
+      "description": "Designed for HR professionals: hands-on AI tools, prompt engineering, Talent Grid 2.0, and HR AI compliance governance.",
+      "link": "/knowledge/hr-ai-course-design"
+    }
+  ]
+}

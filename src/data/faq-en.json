@@ -1,0 +1,55 @@
+{
+  "faq": [
+    {
+      "category": "Consultation",
+      "items": [
+        {
+          "q": "How is the consultation fee calculated?",
+          "a": "We offer a free 30-minute initial consultation to understand your needs before providing a customized quote. Fees vary by service type — advisory, training, or consulting."
+        },
+        {
+          "q": "Is AI transformation suitable for small businesses?",
+          "a": "Quite the opposite! SMEs with flat organizations and fast decision-making are often more successful at AI adoption. Our services focus specifically on companies with 50–500 employees."
+        },
+        {
+          "q": "Can I join the courses with zero AI background?",
+          "a": "Absolutely. Our courses start with 'What is AI?' and require no technical background. The focus is on applying AI to your specific work scenarios."
+        },
+        {
+          "q": "Can consulting or training be done remotely?",
+          "a": "Yes. We offer full online consulting and training. On-site workshops are available depending on location."
+        }
+      ]
+    },
+    {
+      "category": "AI Transformation",
+      "items": [
+        {
+          "q": "Does AI transformation have to be expensive?",
+          "a": "Not necessarily. We recommend starting with a 'small steps, fast iteration' approach — pick one high-frequency, repetitive process for a PoC, validate results, then scale. Many free or low-cost AI tools can deliver significant impact."
+        },
+        {
+          "q": "Will employees be replaced by AI?",
+          "a": "AI won't replace people — but it will replace people who don't use AI. Our framework emphasizes 'human-AI collaboration': let AI handle repetitive work so your team can focus on higher-value judgment and creativity."
+        },
+        {
+          "q": "How do I know my company's AI maturity level?",
+          "a": "You can start with our free AI Maturity Self-Assessment (available in Downloads), or book a free 30-minute consultation with C.J. Kuo for a personal evaluation."
+        }
+      ]
+    },
+    {
+      "category": "ESG",
+      "items": [
+        {
+          "q": "Do SMEs really need ESG?",
+          "a": "Increasingly, yes. Whether it's supply-chain requirements, green financing from banks, or client demands, ESG has shifted from a 'nice-to-have' to a 'must-have.' The good news: SMEs can start with a few key metrics — you don't need to do everything at once."
+        },
+        {
+          "q": "Do I need an external consultant for ESG reporting?",
+          "a": "Not necessarily. We offer both 'self-service' and 'consultant-guided' models. If your team has basic capability, we teach you how; if you need deeper support, we provide full consulting."
+        }
+      ]
+    }
+  ]
+}

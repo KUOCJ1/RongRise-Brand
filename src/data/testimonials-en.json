@@ -1,0 +1,40 @@
+{
+  "testimonials": [
+    {
+      "id": "t1",
+      "name": "General Manager Lin",
+      "company": "Central Taiwan Precision Parts Manufacturing",
+      "role": "General Manager",
+      "quote": "What surprised us most about C.J. is that he didn't just teach us to use AI — he first helped us clarify 'why we should use it.' Three months after implementation, our defect rate dropped 40%. We couldn't achieve that in the previous three years.",
+      "rating": 5,
+      "project": "AI Vision Inspection"
+    },
+    {
+      "id": "t2",
+      "name": "CHRO Wang",
+      "company": "Leading Retail E-commerce",
+      "role": "Chief HR Officer",
+      "quote": "We used to treat AI as an IT department thing. C.J. speaks HR's language and designed a complete talent transformation framework for us. Now every manager uses AI tools for daily decisions.",
+      "rating": 5,
+      "project": "HR × AI Transformation Workshop"
+    },
+    {
+      "id": "t3",
+      "name": "COO Chen",
+      "company": "Food Supply Chain",
+      "role": "Chief Operating Officer",
+      "quote": "ESG used to feel like 'another essay competition' to us. C.J. started us with carbon inventory and turned abstract sustainability into actionable plans. We passed the supply-chain audit on the first try.",
+      "rating": 5,
+      "project": "ESG Sustainability Consulting"
+    },
+    {
+      "id": "t4",
+      "name": "Chairman Huang",
+      "company": "Traditional Metal Processing",
+      "role": "Chairman",
+      "quote": "In our traditional industry where 'the boss's word is law,' what we needed most was someone to walk alongside us. C.J. doesn't come to sell slides — he's a true consulting partner who stands with us to solve problems.",
+      "rating": 5,
+      "project": "AI Transformation Strategy Consulting"
+    }
+  ]
+}
