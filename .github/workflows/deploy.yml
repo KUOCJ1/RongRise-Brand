@@ -36,6 +36,9 @@ jobs:
           NEXT_PUBLIC_OPENROUTER_API_KEY: ${{ secrets.NEXT_PUBLIC_OPENROUTER_API_KEY }}
           NEXT_PUBLIC_OPENROUTER_MODEL: "openrouter/owl-alpha"
 
+      - name: Fix English pages (remove double layout)
+        run: python3 scripts/fix-en-build.py
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
