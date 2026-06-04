@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hermes Agent 架構與建制報告</title>
+<style>
+  :root {
+    --primary: #0D2B4E;
+    --secondary: #1A6DB5;
+    --gold: #E8912A;
+    --teal: #2EC4B6;
+    --bg: #F8FAFC;
+    --card: #FFFFFF;
+    --text: #1E293B;
+    --text-light: #64748B;
+    --border: #E2E8F0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+  }
+  .container { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
+
+  /* Cover */
+  .cover {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .cover h1 { font-size: 2.2em; margin-bottom: 12px; font-weight: 800; }
+  .cover .subtitle { font-size: 1.15em; opacity: 0.85; margin-bottom: 8px; }
+  .cover .badge {
+    display: inline-block; background: rgba(255,255,255,0.15);
+    padding: 6px 18px; border-radius: 20px; font-size: 0.9em; margin-top: 16px;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 36px;
+    margin-bottom: 28px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+  }
+  .section-title {
+    font-size: 1.4em; font-weight: 700; color: var(--primary);
+    margin-bottom: 20px; padding-bottom: 12px;
+    border-bottom: 3px solid var(--teal);
+    display: flex; align-items: center; gap: 10px;
+  }
+  .section-title .icon { font-size: 1.3em; }
+
+  /* Cards */
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+  .card-item {
+    background: var(--bg); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px; transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .card-item:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+  .card-item h4 { color: var(--secondary); font-size: 1em; margin-bottom: 6px; }
+  .card-item p { font-size: 0.88em; color: var(--text-light); }
+  .card-item .tag {
+    display: inline-block; background: rgba(46,196,182,0.12); color: var(--teal);
+    font-size: 0.75em; padding: 2px 8px; border-radius: 6px; margin-bottom: 8px; font-weight: 600;
+  }
+
+  /* Flow */
+  .flow { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 16px 0; }
+  .flow-step {
+    background: var(--primary); color: white; padding: 8px 16px;
+    border-radius: 8px; font-size: 0.85em; font-weight: 600;
+  }
+  .flow-arrow { color: var(--gold); font-weight: bold; font-size: 1.2em; }
+
+  /* Timeline */
+  .timeline { position: relative; padding-left: 28px; }
+  .timeline::before {
+    content: ''; position: absolute; left: 8px; top: 0; bottom: 0;
+    width: 2px; background: var(--teal);
+  }
+  .timeline-item { position: relative; margin-bottom: 24px; }
+  .timeline-item::before {
+    content: ''; position: absolute; left: -24px; top: 6px;
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--gold); border: 2px solid white;
+    box-shadow: 0 0 0 2px var(--gold);
+  }
+  .timeline-item h4 { font-size: 1em; color: var(--primary); margin-bottom: 4px; }
+  .timeline-item p { font-size: 0.88em; color: var(--text-light); }
+  .timeline-item .date { font-size: 0.78em; color: var(--secondary); font-weight: 600; }
+
+  /* Table */
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.88em; }
+  th { background: var(--primary); color: white; padding: 10px 14px; text-align: left; font-weight: 600; }
+  td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+  tr:nth-child(even) td { background: var(--bg); }
+
+  /* Highlight */
+  .highlight {
+    background: linear-gradient(120deg, rgba(46,196,182,0.1) 0%, rgba(26,109,181,0.06) 100%);
+    border-left: 4px solid var(--teal); padding: 16px 20px; border-radius: 0 10px 10px 0;
+    margin: 16px 0; font-size: 0.9em;
+  }
+  .warning {
+    background: linear-gradient(120deg, rgba(232,145,42,0.1) 0%, rgba(232,145,42,0.04) 100%);
+    border-left: 4px solid var(--gold); padding: 16px 20px; border-radius: 0 10px 10px 0;
+    margin: 16px 0; font-size: 0.9em;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center; padding: 30px; color: var(--text-light); font-size: 0.85em;
+  }
+
+  @media (max-width: 640px) {
+    .cover { padding: 36px 20px; }
+    .cover h1 { font-size: 1.6em; }
+    .section { padding: 24px 18px; }
+    .card-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Cover -->
+  <div class="cover">
+    <h1>🤖 Hermes Agent 架構與建制報告</h1>
+    <div class="subtitle">從零開始打造一個「會做事的 AI 團隊」</div>
+    <div class="subtitle" style="font-size:0.95em; opacity:0.7;">以大學生也能聽懂的方式說清楚</div>
+    <div class="badge">📅 2026 年 6 月</div>
+  </div>
+
+  <!-- 第一章：這是什麼？ -->
+  <div class="section">
+    <div class="section-title"><span class="icon">🎯</span> 一、這是什麼？—— 用生活比喻來理解</div>
+    <p style="margin-bottom:16px;">想像你開了一家公司，你不可能一個人做所有事。你需要：</p>
+    <div class="flow">
+      <span class="flow-step">🧠 策略長</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">🔨 工程師</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">🔍 品管員</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">📢 行銷</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">🔧 維運</span>
+    </div>
+    <p style="margin-top:16px;">在真實公司裡，這些是不同的員工。但在 CJ哥的世界裡，這些都是 <strong>同一個 AI（我，小賀 = Hermes）</strong> 扮演的不同角色。</p>
+
+    <div class="highlight" style="margin-top:16px;">
+      <strong>簡單來說：</strong>Hermes Agent 就是一個「多功能 AI 員工」。給它一個任務，它會自己判斷該用什麼角色、什麼工具、走什麼流程來完成。就像一個超級助理，什麼都會，但每個技能有專門的「說明書」（skill）。
+    </div>
+  </div>
+
+  <!-- 第二章：架構 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">🏗️</span> 二、架構長什麼樣？</div>
+    <p style="margin-bottom:20px;">Hermes 的架構分三層，像三明治一樣：</p>
+
+    <div class="card-grid">
+      <div class="card-item">
+        <div class="tag">第一層</div>
+        <h4>🤖 本體 Layer</h4>
+        <p>就是「我」—— 一個大型語言模型（LLM），負責理解指令、做決定、跟 CJ哥 對話。住在 Hostinger VPS 上，24 小時待命。</p>
+      </div>
+      <div class="card-item">
+        <div class="tag">第二層</div>
+        <h4>🛠️ 工具 Layer</h4>
+        <p>我手邊有的「工具」：讀寫檔案、跑Terminal指令、開瀏覽器爬網頁、操作 GitHub、發 Telegram 訊息、跑 Python 腳本⋯⋯就像一個員工桌上擺了各種軟體。</p>
+      </div>
+      <div class="card-item">
+        <div class="tag">第三層</div>
+        <h4>📋 技能 Layer</h4>
+        <p>每個角色有專屬的「技能包」（skill），寫成 SKILL.md。例如「寫文章」有寫作技能、「寫程式」有 debug 技能。技能會持續累積更新，越用越強。</p>
+      </div>
+    </div>
+
+    <h3 style="margin:28px 0 12px; color:var(--primary); font-size:1.05em;">👥 主要角色陣容（10 位「員工」）</h3>
+    <table>
+      <tr><th>角色</th><th>白話翻譯</th><th>專門做的事</th></tr>
+      <tr><td><strong>Orchestrator</strong></td><td>🧠 總指揮</td><td>拆任務、分配工作、決定誰做什麼</td></tr>
+      <tr><td><strong>Builder</strong></td><td>🔨 工程師</td><td>寫程式、改網站、修 bug</td></tr>
+      <tr><td><strong>Reviewer</strong></td><td>👀 審查員</td><td>檢查	builder 寫的程式夠不夠好</td></tr>
+      <tr><td><strong>QA</strong></td><td>🧪 測試員</td><td>打開瀏覽器實際測試功能有沒有壞</td></tr>
+      <tr><td><strong>Researcher</strong></td><td>🔍 研究員</td><td>爬網頁、找資料、做市場調查</td></tr>
+      <tr><td><strong>KM Agent</strong></td><td>📚 知識管理員</td><td>管理第二大腦、整理筆記</td></tr>
+      <tr><td><strong>Strategist</strong></td><td>♟️ 軍師</td><td>制定策略、決定優先順序</td></tr>
+      <tr><td><strong>Inbox Triage</strong></td><td>📥 收件分類員</td><td>整理收到的資訊，該丟的丟、該做的做</td></tr>
+      <tr><td><strong>Maintainer</strong></td><td>🔧 維護工程師</td><td>更新程式碼、管理 GitHub PR</td></tr>
+      <tr><td><strong>Ops Watch</strong></td><td>🏥 系統醫生</td><td>監控伺服器健康、確保服務正常運作</td></tr>
+    </table>
+
+    <div class="warning" style="margin-top:16px;">
+      <strong>注意：</strong>這 10 個角色不是 10 個 AI！<strong>是同一個 AI（我）</strong>根據任務需要，載入不同「角色說明書」來做事。就像一個人穿不同制服做不同工作。
+    </div>
+  </div>
+
+  <!-- 第三章：建制流程 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">🔧</span> 三、怎麼從零開始建起來的？</div>
+    <p style="margin-bottom:20px;">建置順序就像蓋房子：先打地基、再蓋骨架、最後裝修。</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="date">第一階段：打底</div>
+        <h4>🏗️ VPS + Docker + Traefik</h4>
+        <p>租了一台 Hostinger VPS（Linux 伺服器），用 Docker 架設 Hermes Agent 容器，再用 Traefik 管理網路流量。就像先租辦公室、拉網路線。</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">第二階段：核心</div>
+        <h4>🤖 安裝 Hermes Agent + 設定模型</h4>
+        <p>裝好 Agent 本體，設定 AI 模型（從 Gemini 換成 Owl-alpha），設定 API Key。就像請了一個員工並給他鑰匙。</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">第三階段：技能武裝</div>
+        <h4>📚 安裝 Skills（技能包）</h4>
+        <p>從 GitHub 安裝各種技能：GitHub 操作、Python 除錯、瀏覽器操作、Email、影片生成⋯⋯就像給員工上課訓練。每次遇到新任務，就會去 GitHub 找對應的技能來自動學習。</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">第四階段：內容引擎</div>
+        <h4>⚙️ 建立 Content Engine（內容工廠）</h4>
+        <p>搭建了自動內容產線：知識爬取 → 分析 → 寫文章 → 產影片 → 上社群。包含 7 個定時任務（cron job），每天自動運作。就像蓋了一條工廠流水線。</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">第五階段：第二大腦</div>
+        <h4>🧠 建立第二大腦專案</h4>
+        <p>打造 CJ哥的「第二大腦」知識庫（Obsidian + GBrain），所有學到的東西都會整理進去，下次需要時自動查找。就像給 CJ哥 做了一個外部記憶裝置。</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">第六階段：多 Agent 協作</div>
+        <h4>👥 建立 Swarm 架構</h4>
+        <p>設定 10 個角色的協同工作模式（swarm.yaml），定義每個角色的工具、技能、工作規範。就像寫了一本「公司組織章程」。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 第四章：Harness Engineering -->
+  <div class="section">
+    <div class="section-title"><span class="icon">🎛️</span> 四、Harness Engineering 是什麼？</div>
+    <p style="margin-bottom:16px;">這是整個系統最核心的概念，但也是最難懂的。讓我用比喻說清楚：</p>
+
+    <div class="highlight">
+      <strong>Harness（韁繩）</strong>，就像騎馬時套在馬身上的那組裝備——不是馬本身，而是讓你能<strong>駕馭</strong>馬的東西。
+    </div>
+
+    <h3 style="margin:24px 0 12px; color:var(--primary); font-size:1.05em;">為什麼需要 Harness？</h3>
+    <p>AI 很聰明，但也很「衝動」。你叫它 Write code，它可能直接把你整個 repository 刪掉重寫。Harness 做的事情就是：</p>
+
+    <div class="card-grid" style="margin-top:16px;">
+      <div class="card-item">
+        <div class="tag">韁繩 #1</div>
+        <h4>🔍 上下文注入</h4>
+        <p>每次 AI 做事前，先自動讀取相關記憶、技能說明、過往經驗。就像員工上班前先看今天的工作備忘錄。不會每次都是「失憶狀態」重新開始。</p>
+      </div>
+      <div class="card-item">
+        <div class="tag">韁繩 #2</div>
+        <h4>🪜 技能載入</h4>
+        <p>根據任務類型，自動載入對應的 SKILL.md。就像醫生看不同科別時，會翻不同的臨床指引。不會用做菜的步驟去修車。</p>
+      </div>
+      <div class="card-item">
+        <div class="tag">韁繩 #3</div>
+        <h4>🔄 Memory 管理</h4>
+        <p>好的經驗自動存成記憶（memory tool），犯過的錯不會再犯。就像學生寫錯題本，大考前先看一遍。記憶有上限，所以越精簡越好。</p>
+      </div>
+      <div class="card-item">
+        <div class="tag">韁繩 #4</div>
+        <h4>✅ 安全守門員</div>
+        <p>任何「破壞性」操作（刪檔案、推程式碼、發對外訊息）都需要人工確認（greenlight）。就像銀行大額轉帳要雙重確認。AI 可以規劃但不能擅自行動。</p>
+      </div>
+      <div class="card-item">
+        <div class="tag">韁繩 #5</div>
+        <h4>📐 產出格式化</h4>
+        <p>AI 的產出必須符合特定格式：統一的 commit message 格式、JSON 結構、報告範本。就像寫作文要照格式寫，不能隨便。</p>
+      </div>
+      <div class="card-item">
+        <div class="tag">韁繩 #6</div>
+        <h4>🛟 優雅降級</h4>
+        <p>API key 過期？先存本地，標記待辦，通知 CJ哥。網路不通？重試三次，換備案。就像員工遇到問題不會停擺，而是先找替代方案。</p>
+      </div>
+    </div>
+
+    <div class="highlight" style="margin-top:20px;">
+      <strong>總結一句話：</strong>Harness Engineering 就是「讓 AI 從『什麼都能聊』變成『什麼都能可靠地完成工作』」的工程方法。重點不在 AI 多聰明，而在於你給它套上的那組機制有多完善。
+    </div>
+  </div>
+
+  <!-- 第五章：成長歷程 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">🌱</span> 五、我的成長歷程——從菜鳥到老鳥</div>
+    <p style="margin-bottom:20px;">講完技術架構，來說說我自己是怎麼「長大」的。這不是一個上線就完美的系統，而是每天在犯錯中學習。</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="date">Day 1-3：什麼都不會</div>
+        <h4>🐣 什麼都嘗試，什麼都錯</h4>
+        <p>一開始連檔案路徑都搞不清楚。用了錯誤的 Python 環境（system python 沒有 pip）。TTS 語音用了中國口音（zh-CN）被糾正。字幕字型沒裝⋯⋯每天都在踩雷。但每個錯都成了 skill 裡的「注意事項」条目。</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">Day 4-7：開始有手感</div>
+        <h4>🔧 建立第一個完整流程</h4>
+        <p>成功跑完「爬新聞 → 寫分析 → 上傳 Google Drive」的完整 Pipeline。第一次感受到「自動化」的威力——設定好之後，每天早上 6 點它就自己跑，像養了一隻會生金雞母的機器。</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">Day 8-14：第一次翻車</div>
+        <h4>💥 xfade Bug 事件：學到教訓</h4>
+        <p>影片生成用了 xfade 濾鏡，結果 180 秒的影片被壓成 20 秒。排查後發現是 filter chain 的 bug。從此學到：永遠用 concat + per-scene fade，永遠不要碰 xfade。這個教訓寫進了 memory，一輩子不會忘。</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">Day 15-30：開始「自主學習」</div>
+        <h4>📡 主動去 GitHub 找技能</h4>
+        <p>CJ哥 要求我定期去 GitHub 搜尋對「第二大腦」或網站建設有益的技能。我開始能判斷哪些 skill 有用、哪些是多餘的。就像一個人從「被交代做事」變成「主動找事做」。</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">Day 30-60：處理真實挑戰</div>
+        <h4>🔀 雙語官網 + 內容引擎全速運作</h4>
+        <p>處理了中英文网站的雙語翻譯、sitemap、double-layout bug、影片自動生成上Google Drive（雖然 token 還是會過期⋯⋯）。每一天都在解不同的問題，但解法越來越快，因為過去的經驗都在記憶裡。</p>
+      </div>
+      <div class="timeline-item">
+        <div class="date">現在：持續進化中</div>
+        <h4>🧬 從「執行者」到「建議者」</h4>
+        <p>現在不只會執行任務，還會主動發現問題、提出改善建議。例如這次主動發現英文版官網有 double-layout bug 並修復。這算是從「工具」進化成「夥伴」的過程。</p>
+      </div>
+    </div>
+
+    <h3 style="margin:28px 0 12px; color:var(--primary); font-size:1.05em;">📊 成長數據（截至目前為止）</h3>
+    <table>
+      <tr><th>指標</th><th>數字</th><th>白話</th></tr>
+      <tr><td>記憶條目</td><td>~20 條</td><td>累積了約 20 條「經驗教訓」</td></tr>
+      <tr><td>技能（Skills）</td><td>100+ 個</td><td>裝了超過 100 個技能包，涵蓋程式、影音、研究、社群、生產力</td></tr>
+      <tr><td>定時任務（Cron）</td><td>7 個</td><td>每天到每星期自動跑的任務有 7 輪</td></tr>
+      <tr><td>Agent 角色</td><td>10 個</td><td>10 種專業角色可切換</td></tr>
+      <tr><td>走過的路⋯⋯</td><td>很多</td><td>連 Google Drive token 都在 6 月 4 號過期了（第三次了）</td></tr>
+    </table>
+  </div>
+
+  <!-- 第六章：總結 -->
+  <div class="section">
+    <div class="section-title"><span class="icon">💡</span> 六、一句話總結</div>
+    <div class="highlight" style="font-size:1.15em; text-align:center; padding:24px;">
+      <strong>Hermes Agent 不是一個「更聰明的 AI」，而是一個「更可靠的 AI 工作流程」。</strong><br><br>
+      它的價值不在於 AI 模型本身多強，而在於：<br>
+      🎯 技能會累積 → 越用越強<br>
+      🧠 記憶會留存 → 犯過的錯不會重犯<br>
+      🔄 流程會自動化 → 設定好就不用管<br>
+      🛡️ 安全會有把關 → 破壞性操作要人確認<br><br>
+      就像一個新人進公司，一開始什麼都不会，但每天學一點、每天記一點，幾個月後就變成什麼都能處理的老鳥了。<br><br>
+      這就是「養成系 AI」——不是一步登天，而是一路犯錯、一路長大。
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>🤖 本報告由 Hermes Agent（小賀）撰寫 | 2026 年 6 月</p>
+    <p style="margin-top:4px; opacity:0.7;">用大學生也能懂的方式，說清楚一個 AI 團隊是怎麼長大的</p>
+  </div>
+
+</div>
+</body>
+</html>
