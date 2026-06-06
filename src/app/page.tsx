@@ -152,6 +152,17 @@ export default function HomePage() {
                 探索知識庫
               </TrackLink>
             </div>
+
+            {/* 電子報訂閱提示 */}
+            <div className="mt-8 animate-fade-in-up animation-delay-400">
+              <p className="text-white/60 text-sm flex items-center gap-2">
+                <span className="text-lg">📬</span>
+                每週收到 AI 轉型快訊？
+                <a href="#newsletter" className="text-accent hover:text-accent/80 underline underline-offset-2 font-medium">
+                  免費訂閱 →
+                </a>
+              </p>
+            </div>
           </div>
 
           {/* 右側裝飾 */}
@@ -457,7 +468,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ===== 5. 常見問題 ===== */}
+      {/* ===== 5. 訂閱電子報 ===== */}
+      <NewsletterSection />
+
+      {/* ===== 6. 常見問題 ===== */}
       <FAQSection />
       <FAQSchema faq={faqData.faq} />
 
