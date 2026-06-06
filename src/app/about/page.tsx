@@ -7,11 +7,11 @@ import YouTubeEmbed from "@/components/YouTubeEmbed";
    ============================================ */
 
 export const metadata: Metadata = {
-  title: "關於 C.J. Kuo 老師｜企業 AI 轉型顧問",
+  title: "關於 CJ哥｜企業 AI 轉型顧問",
   description:
-    "郭鎮榕 C.J. Kuo 老師，16 年跨國企業高階主管經驗。曾任 Accenture、EY、Chubb Life、Cigna 人資長。創辦榕耀管顧，專注 AI 轉型、人才策略、ESG 永續諮詢。",
+    "郭鎮榕 CJ哥，16 年跨國企業高階主管經驗。曾任 Accenture、EY、Chubb Life、Cigna 人資長。創辦榕耀管顧，專注 AI 轉型、人才策略、ESG 永續諮詢。",
   openGraph: {
-    title: "關於 C.J. Kuo 老師｜榕耀管顧 — 企業 AI 轉型顧問",
+    title: "關於 CJ哥｜榕耀管顧 — 企業 AI 轉型顧問",
     description: "16 年跨國企業顧問經驗，協助企業從人才策略到 AI 落地。",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "榕耀管顧 RongRise Consulting" }],
   },
@@ -96,7 +96,7 @@ export default function AboutPage() {
                   2024 年起以獨立管理顧問暨企業培訓講師身分，聚焦三大領域：<strong className="text-dark">AI 時代人才戰略與組織轉型</strong>、<strong className="text-dark">企業永續（ESG）治理導入</strong>、以及 <strong className="text-dark">中小企業 AI 賦能落地</strong>。
                 </p>
                 <p>
-                  不同於純理論的學院派或純技術的工具派，C.J. Kuo 老師的核心差異化價值在於——從「人」的策略高度出發，結合實際 AI 工具操作與企業落地經驗，為組織設計 <strong className="text-dark">可執行的轉型路徑</strong>。
+                  不同於純理論的學院派或純技術的工具派，CJ哥的核心差異化價值在於——從「人」的策略高度出發，結合實際 AI 工具操作與企業落地經驗，為組織設計 <strong className="text-dark">可執行的轉型路徑</strong>。
                 </p>
                 <p>
                   代表客戶涵蓋台積電、仁寶電腦等科技大廠，以及製造、化學、物流、金融控股等產業中小企業，能針對不同規模與產業需求提供客製化課程設計與顧問輔導方案。
@@ -120,13 +120,13 @@ export default function AboutPage() {
             <h2 className="heading-section text-dark mt-4">用說的，更直接</h2>
             <div className="brand-divider brand-divider-center mt-4" />
             <p className="text-text-secondary text-body-lg mt-4 max-w-xl mx-auto">
-              聽聽 C.J. 老師怎麼看 AI 轉型、人才策略與 ESG 永續。
+              聽聽 CJ哥怎麼看 AI 轉型、人才策略與 ESG 永續。
             </p>
           </div>
           <div className="max-w-3xl mx-auto">
             <YouTubeEmbed
               channelId="UCFfz1iDwqqRfjWgR7GhVMGA"
-              title="C.J. Kuo 老師 — 榕耀管顧 YouTube 頻道"
+              title="CJ哥 — 榕耀管顧 YouTube 頻道"
             />
             <p className="text-center text-text-secondary text-sm mt-4">
               📺 更多影片，歡迎訂閱 <a href="https://www.youtube.com/@RongRiseConsulting" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">YouTube 頻道 @RongRiseConsulting</a>

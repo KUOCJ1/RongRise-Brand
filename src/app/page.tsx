@@ -35,7 +35,7 @@ function coverImg(slug: string): string {
 
 export const metadata = {
   title: "AI 轉型 × 人才策略 × ESG 永續",
-  description: "協助企業從人才策略到 AI 落地，驅動永續成長。C.J. Kuo 老師專業顧問品牌，聚焦 AI 轉型、人才策略、ESG 永續發展。",
+  description: "協助企業從人才策略到 AI 落地，驅動永續成長。CJ哥專業顧問品牌，聚焦 AI 轉型、人才策略、ESG 永續發展。",
   openGraph: {
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "榕耀管顧 RongRise Consulting" }],
   },
@@ -299,7 +299,7 @@ export default function HomePage() {
               </h2>
               <div className="brand-divider mb-6" />
               <p className="text-text-secondary text-body-lg mb-4">
-                C.J. Kuo 老師擁有多年企業顧問經驗，專注於協助中小型企業在數位浪潮中穩健轉型。
+                CJ哥擁有多年企業顧問經驗，專注於協助中小型企業在數位浪潮中穩健轉型。
               </p>
               <p className="text-text-secondary text-body mb-6">
                 以數據為基礎，以策略為核心，以落地為目標——不只是提出方案，更陪伴企業走完轉型的每一步。
@@ -530,7 +530,7 @@ export default function HomePage() {
                 <div className="card flex-1 flex flex-col justify-center">
                   <h3 className="heading-subsection text-dark mb-3">想有人帶您走？</h3>
                   <p className="text-text-secondary text-body mb-4">
-                    預約免費 30 分鐘諮詢，C.J. 老師會依據您的企業現況，給出具體可行動的建議。
+                    預約免費 30 分鐘諮詢，CJ哥會依據您的企業現況，給出具體可行動的建議。
                   </p>
                   <Link href="/about#contact" className="btn-primary text-center">
                     預約免費諮詢
@@ -539,7 +539,7 @@ export default function HomePage() {
                 <div className="card flex-1 flex flex-col justify-center">
                   <h3 className="heading-subsection text-dark mb-3">有問題想先問？</h3>
                   <p className="text-text-secondary text-body mb-4">
-                    小幫手彙整了 C.J. Kuo 老師的完整知識庫，24 小時即時回覆。
+                    小幫手彙整了 CJ哥的完整知識庫，24 小時即時回覆。
                   </p>
                   <Link href="/assistant" className="btn-secondary text-center">
                     問問小幫手 →
