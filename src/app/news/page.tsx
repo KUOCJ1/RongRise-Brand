@@ -1,5 +1,17 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import news from "@/data/news.json";
+
+export const metadata: Metadata = {
+  title: "最新消息｜課程、資源、與觀點｜榕耀管顧",
+  description: "掌握榕耀管顧最新課程開課資訊、政府補助資源、與產業洞見。AI 轉型、人才策略、ESG 永續的第一手資訊。",
+  alternates: {
+    canonical: "https://rongrise.com/news",
+    languages: {
+      en: "https://rongrise.com/en/news",
+    },
+  },
+};
 
 const categoryColors: Record<string, string> = {
   "課程": "bg-tertiary/10 text-tertiary",

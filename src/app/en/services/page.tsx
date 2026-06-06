@@ -2,8 +2,11 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services | AI Transformation · Talent Strategy · ESG Sustainability",
+  title: "Services | AI Transformation · Talent Strategy · ESG",
   description: "RongRise Consulting services: AI Transformation Strategy, Corporate Training, ESG Sustainability Consulting. Customized solutions from diagnosis to implementation.",
+  alternates: {
+    canonical: "https://rongrise.com/en/services",
+  },
 };
 
 const services = [

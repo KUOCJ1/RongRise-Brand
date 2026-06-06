@@ -1,8 +1,16 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
-/* ============================================
-   English Downloads Page
-   ============================================ */
+export const metadata: Metadata = {
+  title: "Resource Downloads | Free Tools & Whitepapers | RongRise Consulting",
+  description: "Free downloads of selected tools and resources: AI Maturity Assessment, ESG Checklist, AI Trends Report, and more. Continuously updated.",
+  alternates: {
+    canonical: "https://rongrise.com/en/downloads",
+    languages: {
+      zh: "https://rongrise.com/downloads",
+    },
+  },
+};
 
 interface DownloadItem {
   name: string;

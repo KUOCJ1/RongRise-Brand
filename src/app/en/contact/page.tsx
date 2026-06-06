@@ -1,4 +1,13 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact | Get in Touch | RongRise Consulting",
+  description: "Have questions about our services? Contact RongRise Consulting via email, LINE, or schedule a free consultation with C.J. Kuo.",
+  alternates: {
+    canonical: "https://rongrise.com/en/contact",
+  },
+};
 
 export default function EnContactPage() {
   return (

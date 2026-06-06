@@ -1,5 +1,17 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import coursesData from "@/data/courses.json";
+
+export const metadata: Metadata = {
+  title: "Upcoming Courses & Events | RongRise Consulting",
+  description: "From single-day workshops to series courses. Seats are limited, early registration recommended. AI transformation, talent strategy, and ESG training.",
+  alternates: {
+    canonical: "https://rongrise.com/en/courses",
+    languages: {
+      zh: "https://rongrise.com/courses",
+    },
+  },
+};
 
 const statusLabels = {
   open: { label: "Open", color: "bg-success/10 text-success" },

@@ -1,5 +1,17 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import news from "@/data/news.json";
+
+export const metadata: Metadata = {
+  title: "Latest News | Courses, Resources & Insights | RongRise Consulting",
+  description: "Stay updated on the latest course offerings, government incentive resources, and industry insights from RongRise Consulting.",
+  alternates: {
+    canonical: "https://rongrise.com/en/news",
+    languages: {
+      zh: "https://rongrise.com/news",
+    },
+  },
+};
 
 const categoryColors: Record<string, string> = {
   "課程": "bg-tertiary/10 text-tertiary",
