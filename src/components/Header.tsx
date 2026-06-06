@@ -62,14 +62,20 @@ export default function Header() {
         {/* CTA + Language (Desktop) */}
         <div className="hidden md:flex items-center gap-3">
           <Link
-            href="/en"
+            href="/#newsletter"
             className="text-[13px] font-medium text-text-secondary hover:text-primary transition-colors"
+          >
+            📬 訂閱電子報
+          </Link>
+          <Link
+            href="/en"
+            className="text-[13px] font-medium text-text-secondary hover:text-primary transition-colors hidden lg:inline"
           >
             English
           </Link>
           <Link
             href="/about#contact"
-            className="btn-primary text-sm py-2 px-5"
+            className="btn-primary text-sm py-2 px-4"
           >
             預約諮詢
           </Link>

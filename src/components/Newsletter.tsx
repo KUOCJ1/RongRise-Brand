@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { trackNewsletterSubscribe } from "@/lib/ga4-events";
 
 const API_URL = "https://script.google.com/macros/s/AKfycbyjI34DegVGckRyZVEU0-5PZE24dLJk4s1y25TOCAWTOpySM8Z4hQS09UQuTdnKf1bPJA/exec";
@@ -9,9 +9,17 @@ export default function NewsletterSection() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [confirmed, setConfirmed] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const [successMsg, setSuccessMsg] = useState("");
+
+  // 從 URL 參數檢查是否為確認成功後的導向
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("newsletter") === "confirmed") {
+      setConfirmed(true);
+    }
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -38,7 +46,6 @@ export default function NewsletterSection() {
 
       if (data.success) {
         setSubmitted(true);
-        setSuccessMsg(data.message || "訂閱成功！");
         trackNewsletterSubscribe();
       } else {
         setError(data.error || "訂閱失敗，請稍後再試。");
@@ -49,6 +56,29 @@ export default function NewsletterSection() {
       setLoading(false);
     }
   };
+
+  // 確認成功頁面
+  if (confirmed) {
+    return (
+      <section id="newsletter" className="section bg-gradient-subtle">
+        <div className="section-inner">
+          <div className="max-w-2xl mx-auto text-center">
+            <div className="bg-success/10 border border-success/20 rounded-2xl p-10">
+              <div className="text-5xl mb-4">🎉</div>
+              <h2 className="heading-section text-dark mb-3">訂閱確認成功！</h2>
+              <p className="text-text-secondary text-body-lg leading-relaxed mb-4">
+                感謝你訂閱<strong className="text-primary">榕賀觀點 AI 週報</strong>！<br />
+                小賀每週會為你整理最重要的 AI 轉型趨勢、ESG 實務攻略、以及課程優惠。
+              </p>
+              <p className="text-text-secondary text-sm">
+                請留意你的 Email 信箱，每週定期收到最新的轉型快訊 📬
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="newsletter" className="section bg-gradient-subtle">
@@ -74,11 +104,14 @@ export default function NewsletterSection() {
           </p>
 
           {submitted ? (
-            <div className="bg-success/10 border border-success/20 rounded-xl p-6">
-              <div className="text-3xl mb-2">🎉</div>
-              <h3 className="heading-subsection text-dark mb-2">訂閱成功！</h3>
-              <p className="text-text-secondary">
-                {successMsg}請確認你的 Email 信箱，完成驗證。
+            <div className="bg-success/10 border border-success/20 rounded-2xl p-8">
+              <div className="text-4xl mb-3">✉️</div>
+              <h3 className="heading-subsection text-dark mb-3">確認信已送出！</h3>
+              <p className="text-text-secondary text-body leading-relaxed">
+                請檢查你的 Email 信箱，點擊確認連結完成訂閱。
+              </p>
+              <p className="text-text-secondary text-sm mt-4">
+                沒收到信？請檢查垃圾郵件信箱，或重新提交一次。
               </p>
             </div>
           ) : (

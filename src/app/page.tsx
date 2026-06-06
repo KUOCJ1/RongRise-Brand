@@ -153,15 +153,28 @@ export default function HomePage() {
               </TrackLink>
             </div>
 
-            {/* 電子報訂閱提示 */}
-            <div className="mt-8 animate-fade-in-up animation-delay-400">
-              <p className="text-white/60 text-sm flex items-center gap-2">
-                <span className="text-lg">📬</span>
-                每週收到 AI 轉型快訊？
-                <a href="#newsletter" className="text-accent hover:text-accent/80 underline underline-offset-2 font-medium">
-                  免費訂閱 →
-                </a>
-              </p>
+            {/* 電子報訂閱 CTA */}
+            <div className="mt-10 animate-fade-in-up animation-delay-400">
+              <a
+                href="#newsletter"
+                className="inline-flex items-center gap-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 rounded-2xl px-6 py-4 transition-all group"
+              >
+                <img
+                  src="https://i.imgur.com/Rs3O3Iv.jpeg"
+                  alt="小賀"
+                  width={40}
+                  height={40}
+                  className="rounded-full border-2 border-accent"
+                  style={{ borderColor: "#E8912A" }}
+                />
+                <div className="text-left">
+                  <p className="text-white font-medium text-sm">📬 訂閱電子報</p>
+                  <p className="text-white/60 text-xs">小賀每週為你整理 AI 轉型快訊</p>
+                </div>
+                <svg className="w-5 h-5 text-white/40 group-hover:text-white/80 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
             </div>
           </div>
 
