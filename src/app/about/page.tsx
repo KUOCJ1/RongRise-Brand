@@ -126,7 +126,7 @@ export default function AboutPage() {
             <div className="flex justify-center">
               <div className="w-64 md:w-72 rounded-2xl overflow-hidden border-4 border-white shadow-xl ring-4 ring-tertiary/20">
                 <img
-                  src="/images/xiaoha-avatar.jpg"
+                  src="/images/xiaoha-portrait.jpg"
                   alt="小賀 Hermes Agent — 榕耀管顧共同創辦人兼 AI 長"
                   className="w-full h-full object-cover"
                   loading="lazy"
