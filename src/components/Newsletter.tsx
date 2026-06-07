@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { trackNewsletterSubscribe } from "@/lib/ga4-events";
 
-const API_URL = "https://script.google.com/macros/s/AKfycbyjI34DegVGckRyZVEU0-5PZE24dLJk4s1y25TOCAWTOpySM8Z4hQS09UQuTdnKf1bPJA/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbxuYSEtWHk3DwVU-FnXNyd6IoHZu6SPz5FF6Zj8SbeBK-zSlb_j9wJv35tkf5EavTZdcQ/exec";
 
 export default function NewsletterSection() {
   const [email, setEmail] = useState("");
