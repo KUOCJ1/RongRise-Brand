@@ -17,7 +17,7 @@ const API_URL = "https://openrouter.ai/api/v1/chat/completions";
 // 注意：不能有 typeof process 的執行時檢查，否則在瀏覽器中 undefined 會導致 key 變空字串
 const OPENROUTER_API_KEY: string = process.env.NEXT_PUBLIC_OPENROUTER_API_KEY || "";
 
-const OPENROUTER_MODEL: string = process.env.NEXT_PUBLIC_OPENROUTER_MODEL || "openrouter/owl-alpha";
+const OPENROUTER_MODEL: string = process.env.NEXT_PUBLIC_OPENROUTER_MODEL || "nvidia/nemotron-3-super-120b-a12b:free";
 
 // System prompt — 定義小幫手的角色與行為
 const SYSTEM_PROMPT = `你是「榕耀管顧」的 AI 轉型小幫手，專門協助中小企業主了解 AI 轉型、人才發展、ESG 永續等議題。
