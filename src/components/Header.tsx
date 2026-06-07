@@ -21,10 +21,14 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 no-underline">
-          <div className="w-9 h-9 rounded-lg bg-gradient-hero flex items-center justify-center">
-            <span className="text-white font-bold text-lg">榕</span>
-          </div>
+        <Link href="/" className="flex items-center gap-2.5 no-underline">
+          <img
+            src="/images/logo.svg"
+            alt="榕耀管顧 RongRise Consulting"
+            width={36}
+            height={36}
+            className="flex-shrink-0"
+          />
           <div className="flex flex-col leading-tight">
             <span className="text-[15px] font-bold text-primary">榕耀管顧</span>
             <span className="text-[10px] text-text-secondary tracking-wider">RongRise Consulting</span>

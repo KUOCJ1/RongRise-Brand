@@ -1,0 +1,35 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圓形漸層 -->
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D2B4E"/>
+      <stop offset="100%" style="stop-color:#1A6DB5"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8912A"/>
+      <stop offset="100%" style="stop-color:#2EC4B6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 主圓 -->
+  <circle cx="18" cy="18" r="17" fill="url(#logoGrad)"/>
+
+  <!-- 榕樹意象 — 樹冠（三片葉子） -->
+  <ellipse cx="18" cy="12" rx="7" ry="5" fill="#2EC4B6" opacity="0.9"/>
+  <ellipse cx="12" cy="15" rx="5" ry="4" fill="#2EC4B6" opacity="0.7"/>
+  <ellipse cx="24" cy="15" rx="5" ry="4" fill="#2EC4B6" opacity="0.7"/>
+
+  <!-- 樹幹 -->
+  <rect x="16" y="17" width="4" height="8" rx="1" fill="#E8912A"/>
+
+  <!-- 根部線條（榕樹氣根意象） -->
+  <line x1="14" y1="25" x2="12" y2="29" stroke="#2EC4B6" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="18" y1="25" x2="18" y2="30" stroke="#2EC4B6" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="22" y1="25" x2="24" y2="29" stroke="#2EC4B6" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- 科技感 — 頂部小圓點 -->
+  <circle cx="18" cy="7" r="1.5" fill="#E8912A"/>
+
+  <!-- 底部弧線（象徵上升/成長） -->
+  <path d="M 8 30 Q 18 34 28 30" stroke="url(#accentGrad)" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+</svg>
