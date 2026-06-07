@@ -116,7 +116,7 @@ export async function callChatAPI(
       body: JSON.stringify({
         model: OPENROUTER_MODEL,
         messages: allMessages,
-        max_tokens: 300,
+        max_tokens: 350,
         temperature: 0.7,
       }),
     });
