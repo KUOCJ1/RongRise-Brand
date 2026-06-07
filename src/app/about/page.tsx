@@ -352,7 +352,7 @@ export default function AboutPage() {
             <div>
               <div className="text-3xl mb-3">📱</div>
               <h4 className="font-semibold mb-1">LINE 官方</h4>
-              <p className="text-white/70 text-sm">@RongRise</p>
+              <p className="text-white/70 text-sm">@954qxhhe</p>
             </div>
             <div>
               <div className="text-3xl mb-3">📍</div>

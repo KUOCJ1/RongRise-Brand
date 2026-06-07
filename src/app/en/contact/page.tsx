@@ -63,7 +63,7 @@ export default function EnContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-dark mb-1">LINE Official</h3>
-                      <p className="text-text-secondary">@RongRise</p>
+                      <p className="text-text-secondary">@954qxhhe</p>
                       <p className="text-text-secondary text-sm mt-1">Available for quick questions and scheduling</p>
                     </div>
                   </div>
