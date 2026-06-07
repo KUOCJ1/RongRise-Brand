@@ -26,20 +26,14 @@ const quickQuestions = [
 ];
 
 function formatMessage(content: string): string {
-  // 處理 Markdown 格式的連結 [text](url) → <a href="url">text</a>
   let html = content
-    // 處理 Markdown 連結
     .replace(
       /\[([^\]]+)\]\(([^)]+)\)/g,
       '<a href="$2" class="text-primary font-medium hover:underline" target="_blank" rel="noopener">$1</a>'
     )
-    // 處理換行
     .replace(/\n/g, "<br/>")
-    // 處理 Bold
     .replace(/\*\*(.+?)\*\*/g, '<strong class="text-dark">$1</strong>')
-    // 處理 Italic
     .replace(/\*(.+?)\*/g, '<em>$1</em>')
-    // 處理標題
     .replace(/^###\s+(.+)$/gm, '<h4 class="font-semibold text-dark mt-2 mb-1">$1</h4>')
     .replace(/^##\s+(.+)$/gm, '<h3 class="font-semibold text-dark mt-3 mb-2">$1</h3>');
 
@@ -52,8 +46,8 @@ export default function AssistantPage() {
   const [isTyping, setIsTyping] = useState(false);
   const [error, setError] = useState("");
   const [isRestored, setIsRestored] = useState(false);
-  const messagesEndRef = useRef<HTMLDivElement>(null);
   const chatHistoryRef = useRef<ChatMessage[]>([]);
+  const messagesContainerRef = useRef<HTMLDivElement>(null);
 
   // 從 localStorage 載入歷史對話
   useEffect(() => {
@@ -63,7 +57,6 @@ export default function AssistantPage() {
         const parsed = JSON.parse(saved) as Message[];
         if (Array.isArray(parsed) && parsed.length > 0) {
           setMessages(parsed);
-          // 同步到 chatHistoryRef（assistant 訊息才送入 API context）
           chatHistoryRef.current = parsed
             .filter((m) => m.role === "assistant" || m.role === "user")
             .map((m) => ({ role: m.role, content: m.content }));
@@ -74,7 +67,6 @@ export default function AssistantPage() {
         throw new Error("no saved");
       }
     } catch {
-      // 沒有歷史或解析失敗 → 顯示歡迎訊息
       const welcomeMsg: Message = {
         role: "assistant",
         content:
@@ -89,7 +81,6 @@ export default function AssistantPage() {
   useEffect(() => {
     if (isRestored && messages.length > 0) {
       localStorage.setItem("assistant_history", JSON.stringify(messages));
-      // 同步 chatHistoryRef（只保留 user/assistant 作為 API context）
       chatHistoryRef.current = messages
         .filter((m) => m.role === "user" || m.role === "assistant")
         .map((m) => ({ role: m.role, content: m.content }));
@@ -101,16 +92,21 @@ export default function AssistantPage() {
     localStorage.removeItem("assistant_history");
     const welcomeMsg: Message = {
       role: "assistant",
-      content:
-        "對話已清除！有什麼我可以幫您的嗎？😊",
+      content: "對話已清除！有什麼我可以幫您的嗎？😊",
     };
     setMessages([welcomeMsg]);
     chatHistoryRef.current = [];
   }, []);
 
+  // 新訊息時只在容器內滾動到底部，不影響外層頁面
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+    const container = messagesContainerRef.current;
+    if (container) {
+      requestAnimationFrame(() => {
+        container.scrollTop = container.scrollHeight;
+      });
+    }
+  }, [messages, isTyping]);
 
   const sendMessage = useCallback(
     async (text: string) => {
@@ -124,17 +120,12 @@ export default function AssistantPage() {
       setIsTyping(true);
       setError("");
 
-      // 更新 chat history（給 API 的上下文）
       chatHistoryRef.current.push({ role: "user", content: text });
 
       try {
-        // 呼叫 OpenRouter API
         const reply = await callChatAPI(chatHistoryRef.current);
-
-        // 更新 chat history
         chatHistoryRef.current.push({ role: "assistant", content: reply });
 
-        // 只保留最近 10 輪對話（避免 token 過長）
         if (chatHistoryRef.current.length > 20) {
           chatHistoryRef.current = chatHistoryRef.current.slice(-20);
         }
@@ -143,7 +134,6 @@ export default function AssistantPage() {
       } catch (err) {
         console.error("Chat error:", err);
         setError("抱歉，目前無法連線到 AI 服務，請稍後再試。");
-        // 移除失敗的 user message from history
         chatHistoryRef.current.pop();
       } finally {
         setIsTyping(false);
@@ -158,164 +148,147 @@ export default function AssistantPage() {
   };
 
   return (
-    <>
-      {/* Hero */}
-      <section className="bg-gradient-hero text-white">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-16 md:py-20">
-          <span className="tag bg-white/15 text-white mb-4">小幫手</span>
-          <h1 className="heading-hero mt-4 mb-4">轉型小幫手</h1>
-          <p className="text-body-lg text-white/85 max-w-2xl">
-            有任何關於 AI 轉型、人才發展、ESG 永續的問題？
-            讓我來為您解答。
-          </p>
-        </div>
-      </section>
-
-      {/* Chat Interface */}
-      <section className="section bg-bg-alt flex-1">
-        <div className="max-w-[800px] mx-auto">
-          {/* Chat Card */}
-          <div
-            className="bg-white rounded-2xl border border-border shadow-lg overflow-hidden flex flex-col"
-            style={{ height: "600px" }}
-          >
-            {/* Chat Header */}
-            <div className="flex items-center justify-between px-4 py-2.5 border-b border-border-light bg-bg-alt">
-              <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse" />
-                <span className="text-sm font-medium text-dark">AI 轉型小幫手</span>
-                <span className="text-xs text-text-secondary">● 記憶已啟用</span>
-              </div>
-              <button
-                onClick={clearChat}
-                className="text-xs text-text-secondary hover:text-red-500 transition-colors px-2 py-1 rounded hover:bg-red-50"
-                title="清除對話歷史"
-              >
-                🗑️ 清除對話
-              </button>
+    <section className="min-h-[calc(100vh-64px)] bg-bg-alt flex flex-col">
+      <div className="max-w-[800px] w-full mx-auto px-4 sm:px-6 py-6 flex-1 flex flex-col min-h-0">
+        {/* Chat Card — 固定高度，內部滾動 */}
+        <div
+          className="bg-white rounded-2xl border border-border shadow-lg overflow-hidden flex flex-col flex-1 min-h-0"
+          style={{ maxHeight: "calc(100vh - 160px)" }}
+        >
+          {/* Chat Header */}
+          <div className="flex items-center justify-between px-4 py-2.5 border-b border-border-light bg-bg-alt flex-shrink-0">
+            <div className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse" />
+              <span className="text-sm font-medium text-dark">AI 轉型小幫手</span>
+              <span className="text-xs text-text-secondary">● 記憶已啟用</span>
             </div>
-            {/* Messages */}
-            <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-4">
-              {messages.map((msg, i) => (
-                <div
-                  key={i}
-                  className={`flex ${
-                    msg.role === "user" ? "justify-end" : "justify-start"
-                  }`}
-                >
-                  {/* Avatar */}
-                  {msg.role === "assistant" && (
-                    <div className="w-8 h-8 rounded-full bg-gradient-hero flex items-center justify-center flex-shrink-0 mr-2 mt-1">
-                      <span className="text-white text-xs font-bold">AI</span>
-                    </div>
-                  )}
-                  <div
-                    className={`max-w-[85%] rounded-2xl px-4 py-3 text-[15px] leading-relaxed ${
-                      msg.role === "user"
-                        ? "bg-primary text-white"
-                        : "bg-bg-alt text-text-primary border border-border-light"
-                    }`}
-                    dangerouslySetInnerHTML={{
-                      __html: formatMessage(msg.content),
-                    }}
-                  />
-                  {msg.role === "user" && (
-                    <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0 ml-2 mt-1">
-                      <span className="text-gray-500 text-xs">您</span>
-                    </div>
-                  )}
-                </div>
-              ))}
+            <button
+              onClick={clearChat}
+              className="text-xs text-text-secondary hover:text-red-500 transition-colors px-2 py-1 rounded hover:bg-red-50"
+              title="清除對話歷史"
+            >
+              🗑️ 清除對話
+            </button>
+          </div>
 
-              {isTyping && (
-                <div className="flex justify-start">
+          {/* Messages — 可滾動區域 */}
+          <div ref={messagesContainerRef} className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-4 min-h-0">
+            {messages.map((msg, i) => (
+              <div
+                key={i}
+                className={`flex ${
+                  msg.role === "user" ? "justify-end" : "justify-start"
+                }`}
+              >
+                {msg.role === "assistant" && (
                   <div className="w-8 h-8 rounded-full bg-gradient-hero flex items-center justify-center flex-shrink-0 mr-2 mt-1">
                     <span className="text-white text-xs font-bold">AI</span>
                   </div>
-                  <div className="bg-bg-alt border border-border-light rounded-2xl px-4 py-3">
-                    <div className="flex gap-1.5">
-                      <span
-                        className="w-2 h-2 rounded-full bg-gray-400 animate-bounce"
-                        style={{ animationDelay: "0ms" }}
-                      />
-                      <span
-                        className="w-2 h-2 rounded-full bg-gray-400 animate-bounce"
-                        style={{ animationDelay: "150ms" }}
-                      />
-                      <span
-                        className="w-2 h-2 rounded-full bg-gray-400 animate-bounce"
-                        style={{ animationDelay: "300ms" }}
-                      />
-                    </div>
+                )}
+                <div
+                  className={`max-w-[85%] rounded-2xl px-4 py-3 text-[15px] leading-relaxed ${
+                    msg.role === "user"
+                      ? "bg-primary text-white"
+                      : "bg-bg-alt text-text-primary border border-border-light"
+                  }`}
+                  dangerouslySetInnerHTML={{
+                    __html: formatMessage(msg.content),
+                  }}
+                />
+                {msg.role === "user" && (
+                  <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0 ml-2 mt-1">
+                    <span className="text-gray-500 text-xs">您</span>
                   </div>
-                </div>
-              )}
+                )}
+              </div>
+            ))}
 
-              {error && (
-                <div className="flex justify-center">
-                  <div className="bg-red-50 border border-red-200 rounded-lg px-4 py-2 text-red-600 text-sm">
-                    {error}
+            {isTyping && (
+              <div className="flex justify-start">
+                <div className="w-8 h-8 rounded-full bg-gradient-hero flex items-center justify-center flex-shrink-0 mr-2 mt-1">
+                  <span className="text-white text-xs font-bold">AI</span>
+                </div>
+                <div className="bg-bg-alt border border-border-light rounded-2xl px-4 py-3">
+                  <div className="flex gap-1.5">
+                    <span
+                      className="w-2 h-2 rounded-full bg-gray-400 animate-bounce"
+                      style={{ animationDelay: "0ms" }}
+                    />
+                    <span
+                      className="w-2 h-2 rounded-full bg-gray-400 animate-bounce"
+                      style={{ animationDelay: "150ms" }}
+                    />
+                    <span
+                      className="w-2 h-2 rounded-full bg-gray-400 animate-bounce"
+                      style={{ animationDelay: "300ms" }}
+                    />
                   </div>
-                </div>
-              )}
-
-              <div ref={messagesEndRef} />
-            </div>
-
-            {/* Quick Questions */}
-            {messages.length <= 1 && (
-              <div className="px-4 sm:px-6 pb-3">
-                <p className="text-xs text-text-secondary mb-2">熱門問題：</p>
-                <div className="flex flex-wrap gap-2">
-                  {quickQuestions.map((q, i) => (
-                    <button
-                      key={i}
-                      onClick={() => { trackAssistantQuickQuestion(q); sendMessage(q); }}
-                      disabled={isTyping}
-                      className="text-xs px-3 py-1.5 rounded-full bg-primary/10 text-primary font-medium hover:bg-primary/20 transition-colors disabled:opacity-50"
-                    >
-                      {q}
-                    </button>
-                  ))}
                 </div>
               </div>
             )}
 
-            {/* Input */}
-            <form
-              onSubmit={handleSubmit}
-              className="border-t border-border p-3 sm:p-4"
-            >
-              <div className="flex gap-2">
-                <input
-                  type="text"
-                  value={input}
-                  onChange={(e) => setInput(e.target.value)}
-                  placeholder="輸入您的問題..."
-                  disabled={isTyping}
-                  className="flex-1 px-4 py-2.5 rounded-xl border border-border bg-bg-alt text-[15px] focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all disabled:opacity-50"
-                />
-                <button
-                  type="submit"
-                  disabled={!input.trim() || isTyping}
-                  className="btn-primary px-5 py-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  {isTyping ? "..." : "發送"}
-                </button>
+            {error && (
+              <div className="flex justify-center">
+                <div className="bg-red-50 border border-red-200 rounded-lg px-4 py-2 text-red-600 text-sm">
+                  {error}
+                </div>
               </div>
-            </form>
+            )}
           </div>
 
-          {/* Disclaimer */}
-          <p className="text-center text-xs text-text-secondary mt-4">
-            小幫手由 AI 驅動，提供的資訊僅供參考，如需專業建議請
-            <Link href="/about#contact" className="text-primary hover:underline">
-              聯繫我們
-            </Link>
-            安排正式諮詢。
-          </p>
+          {/* Quick Questions */}
+          {messages.length <= 1 && (
+            <div className="px-4 sm:px-6 pb-3 flex-shrink-0">
+              <p className="text-xs text-text-secondary mb-2">熱門問題：</p>
+              <div className="flex flex-wrap gap-2">
+                {quickQuestions.map((q, i) => (
+                  <button
+                    key={i}
+                    onClick={() => { trackAssistantQuickQuestion(q); sendMessage(q); }}
+                    disabled={isTyping}
+                    className="text-xs px-3 py-1.5 rounded-full bg-primary/10 text-primary font-medium hover:bg-primary/20 transition-colors disabled:opacity-50"
+                  >
+                    {q}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Input */}
+          <form
+            onSubmit={handleSubmit}
+            className="border-t border-border p-3 sm:p-4 flex-shrink-0"
+          >
+            <div className="flex gap-2">
+              <input
+                type="text"
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                placeholder="輸入您的問題..."
+                disabled={isTyping}
+                className="flex-1 px-4 py-2.5 rounded-xl border border-border bg-bg-alt text-[15px] focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all disabled:opacity-50"
+              />
+              <button
+                type="submit"
+                disabled={!input.trim() || isTyping}
+                className="btn-primary px-5 py-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {isTyping ? "..." : "發送"}
+              </button>
+            </div>
+          </form>
         </div>
-      </section>
-    </>
+
+        {/* Disclaimer */}
+        <p className="text-center text-xs text-text-secondary mt-4 flex-shrink-0">
+          小幫手由 AI 驅動，提供的資訊僅供參考，如需專業建議請
+          <Link href="/about#contact" className="text-primary hover:underline">
+            聯繫我們
+          </Link>
+          安排正式諮詢。
+        </p>
+      </div>
+    </section>
   );
 }
