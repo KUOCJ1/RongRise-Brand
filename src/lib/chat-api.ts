@@ -145,20 +145,20 @@ function getFallbackResponse(input: string): string {
   const lower = input.toLowerCase();
 
   if (lower.includes("ai") || lower.includes("人工智慧") || lower.includes("轉型")) {
-    return `感謝您對 AI 轉型的興趣！\n\n作為您的轉型小幫手，我建議您從以下方向開始：\n\n1️⃣ <strong>評估現況</strong>：盤點企業的數據基礎\n2️⃣ <strong>識別場景</strong>：找出最容易被 AI 改善的流程\n3️⃣ <strong>小規模試點</strong>：選擇可控範圍進行概念驗證\n\n📚 推薦閱讀：[AI 轉型實戰營：從入門到企業落地](/knowledge/ai-transformation-bootcamp)\n\n📅 如需更深入的討論，歡迎<a href="/about#contact" class="text-primary font-medium hover:underline">預約 C.J. Kuo 老師的一對一諮詢</a>！`;
+    return "感謝您對 AI 轉型的興趣！\n\n作為您的轉型小幫手，我建議您從以下方向開始：\n\n1️⃣ <strong>評估現況</strong>：盤點企業的數據基礎\n2️⃣ <strong>識別場景</strong>：找出最容易被 AI 改善的流程\n3️⃣ <strong>小規模試點</strong>：選擇可控範圍進行概念驗證\n\n📚 推薦閱讀：[AI 轉型實戰營：從入門到企業落地](/knowledge/ai-transformation-bootcamp)\n\n📅 如需更深入的討論，歡迎<a href="/about#contact" class="text-primary font-medium hover:underline">預約 C.J. Kuo 老師的一對一諮詢</a>！";
   }
 
   if (lower.includes("esg") || lower.includes("永續")) {
-    return `ESG 對中小企業的好處非常多！\n\n🌿 <strong>商業價值</strong>：\n• 滿足供應鏈大廠的 ESG 要求，爭取更多訂單\n• 提升品牌形象，吸引重視永續的客戶與人才\n• 提前因應法規，降低未來合規成本\n\n📚 推薦閱讀：[中小企業 ESG 實務入門](/knowledge/sme-esg-guide)\n\n📅 歡迎<a href="/about#contact" class="text-primary font-medium hover:underline">聯繫我們</a>了解更多！`;
+    return "ESG 對中小企業的好處非常多！\n\n🌿 <strong>商業價值</strong>：\n• 滿足供應鏈大廠的 ESG 要求，爭取更多訂單\n• 提升品牌形象，吸引重視永續的客戶與人才\n• 提前因應法規，降低未來合規成本\n\n📚 推薦閱讀：[中小企業 ESG 實務入門](/knowledge/sme-esg-guide)\n\n📅 歡迎<a href="/about#contact" class="text-primary font-medium hover:underline">聯繫我們</a>了解更多！";
   }
 
   if (lower.includes("人才") || lower.includes("培訓") || lower.includes("hr")) {
-    return `建立人才培訓體系是轉型成功的關鍵！\n\n📋 核心框架包括：\n1️⃣ 能力盤點\n2️⃣ 落差分析\n3️⃣ 路徑設計\n4️⃣ 混成學習\n5️⃣ 成效追蹤\n\n📚 推薦閱讀：[HR × AI：從認識到落地課程設計](/knowledge/hr-ai-course-design)\n\n📅 歡迎<a href="/about#contact" class="text-primary font-medium hover:underline">預約諮詢</a>，讓我們為您量身打造培訓方案！`;
+    return "建立人才培訓體系是轉型成功的關鍵！\n\n📋 核心框架包括：\n1️⃣ 能力盤點\n2️⃣ 落差分析\n3️⃣ 路徑設計\n4️⃣ 混成學習\n5️⃣ 成效追蹤\n\n📚 推薦閱讀：[HR × AI：從認識到落地課程設計](/knowledge/hr-ai-course-design)\n\n📅 歡迎<a href="/about#contact" class="text-primary font-medium hover:underline">預約諮詢</a>，讓我們為您量身打造培訓方案！";
   }
 
   if (lower.includes("預算") || lower.includes("費用") || lower.includes("錢") || lower.includes("成本")) {
-    return `轉型的预算因企業規模而異，但不一定要花大錢才能開始！\n\n💰 <strong>分階段投入策略</strong>：\n• 第一階段（評估規劃）：主要為顧問費用\n• 第二階段（試點導入）：控制投入範圍\n• 第三階段（擴大推廣）：依成效調整\n\n許多企業透過<strong>政府補助</strong>大幅降低轉型成本！\n\n📚 推薦閱讀：[2026 年政府 AI 補助資源整理](/knowledge/gov-ai-subsidy-guide)\n\n📅 歡迎<a href="/about#contact" class="text-primary font-medium hover:underline">預約免費諮詢</a>！`;
+    return "轉型的预算因企業規模而異，但不一定要花大錢才能開始！\n\n💰 <strong>分階段投入策略</strong>：\n• 第一階段（評估規劃）：主要為顧問費用\n• 第二階段（試點導入）：控制投入範圍\n• 第三階段（擴大推廣）：依成效調整\n\n許多企業透過<strong>政府補助</strong>大幅降低轉型成本！\n\n📚 推薦閱讀：[2026 年政府 AI 補助資源整理](/knowledge/gov-ai-subsidy-guide)\n\n📅 歡迎<a href="/about#contact" class="text-primary font-medium hover:underline">預約免費諮詢</a>！";
   }
 
-  return `感謝您的提問！\n\n我是榕耀管顧的轉型小幫手，專注於協助企業在 AI 轉型、人才發展、ESG 永續等領域找到方向。\n\n📅 如需更深入的討論，歡迎<a href="/about#contact" class="text-primary font-medium hover:underline">預約 C.J. Kuo 老師的一對一諮詢</a>\n\n或到<a href="/knowledge" class="text-primary font-medium hover:underline">知識庫</a>瀏覽更多專業文章！`;
+  return "感謝您的提問！\n\n我是榕耀管顧的轉型小幫手，專注於協助企業在 AI 轉型、人才發展、ESG 永續等領域找到方向。\n\n📅 如需更深入的討論，歡迎<a href="/about#contact" class="text-primary font-medium hover:underline">預約 C.J. Kuo 老師的一對一諮詢</a>\n\n或到<a href="/knowledge" class="text-primary font-medium hover:underline">知識庫</a>瀏覽更多專業文章！";
 }
