@@ -34,7 +34,7 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_OPENROUTER_API_KEY: ${{ secrets.NEXT_PUBLIC_OPENROUTER_API_KEY }}
-          NEXT_PUBLIC_OPENROUTER_MODEL: "nvidia/nemotron-3-super-120b-a12b:free"
+          NEXT_PUBLIC_OPENROUTER_MODEL: "openai/gpt-oss-120b:free"
 
       - name: Fix English pages (remove double layout)
         run: python3 scripts/fix-en-build.py
