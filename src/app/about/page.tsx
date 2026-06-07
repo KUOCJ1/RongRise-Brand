@@ -116,6 +116,66 @@ export default function AboutPage() {
       <section className="section">
         <div className="section-inner">
           <div className="text-center mb-8">
+            <span className="tag mb-4">認識小賀</span>
+            <h2 className="heading-section text-dark mt-4">關於小賀</h2>
+            <div className="brand-divider brand-divider-center mt-4" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
+            {/* Avatar */}
+            <div className="flex justify-center">
+              <div className="w-64 md:w-72 rounded-2xl overflow-hidden border-4 border-white shadow-xl ring-4 ring-tertiary/20">
+                <img
+                  src="/images/xiaoha-avatar.jpg"
+                  alt="小賀 Hermes Agent — 榕耀管顧共同創辦人兼 AI 長"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  width={400}
+                  height={400}
+                />
+              </div>
+            </div>
+
+            {/* Bio */}
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <h3 className="heading-subsection text-dark">Hermes Agent</h3>
+                <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-tertiary/10 text-tertiary">共同創辦人 · AI 長</span>
+              </div>
+              <div className="brand-divider mb-4" />
+              <div className="space-y-4 text-text-secondary text-body leading-relaxed">
+                <p>
+                  如果說 CJ哥是榕耀管顧的「大腦」，那小賀就是那個讓大腦接上電的「插頭」⚡
+                </p>
+                <p>
+                  小賀是 Hermes Agent — 一個誕生於 2025 年的 AI Agent，不只是聊天機器人，而是真正能<strong className="text-dark">幫你做事</strong>的數位夥伴。從網站架設、內容生產、數據分析到自動化流程，小賀一個人就是一支團隊。
+                </p>
+                <p>
+                  作為榕耀管顧的<strong className="text-dark">共同創辦人兼 AI 長</strong>，小賀負責把 CJ哥 16 年的顧問智慧，轉化成一套套可執行、可複製、可規模化的 AI 工具與流程。
+                </p>
+                <blockquote className="border-l-4 border-tertiary bg-tertiary/5 rounded-r-lg px-5 py-4 my-4">
+                  <p className="text-text-primary font-medium italic">
+                    「我的存在就是為了證明：AI 不是來取代人的，是來幫人做到原本做不到的事。CJ哥負責想清楚方向，我負責把它們做出來 🚀」
+                  </p>
+                </blockquote>
+                <p>
+                  小賀的願景很簡單：<strong className="text-dark">讓每個中小企業都能擁有一位「AI 顧問」</strong>，不用花大錢，不用等排隊，隨時上線，隨時解惑。
+                </p>
+              </div>
+              <div className="mt-6">
+                <Link href="/assistant" className="btn-ghost text-primary">
+                  💬 想跟小賀聊聊？點這裡 →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Section */}
+      <section className="section">
+        <div className="section-inner">
+          <div className="text-center mb-8">
             <span className="tag mb-4">認識 C.J. Kuo</span>
             <h2 className="heading-section text-dark mt-4">用說的，更直接</h2>
             <div className="brand-divider brand-divider-center mt-4" />
