@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { trackNewsletterSubscribe } from "@/lib/ga4-events";
 
-const API_URL = "https://script.google.com/macros/s/AKfycbxuYSEtWHk3DwVU-FnXNyd6IoHZu6SPz5FF6Zj8SbeBK-zSlb_j9wJv35tkf5EavTZdcQ/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbzFuBoY16664ZHv0Dkj4M3QCB_8eKnS7mOYUxKXKhv13AB4B_BjwMACOJb01WGAyMrA/exec";
 
 export default function NewsletterSection() {
   const [email, setEmail] = useState("");
@@ -13,11 +13,44 @@ export default function NewsletterSection() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  // 從 URL 參數檢查是否為確認成功後的導向
+  // 從 URL 參數檢查是否為確認/退訂導向
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    if (params.get("newsletter") === "confirmed") {
+    const status = params.get("newsletter");
+    
+    if (status === "confirmed") {
       setConfirmed(true);
+    } else if (status === "confirm") {
+      // 剛從確認信點進來，需要發 API 請求給 GAS 確認
+      const email = params.get("email");
+      const token = params.get("token");
+      if (email && token) {
+        // 發 confirm API 請求
+        fetch(API_URL + "?action=confirm&email=" + encodeURIComponent(email) + "&token=" + token, { mode: "no-cors" })
+          .then(function() {
+            setConfirmed(true);
+            // 清除 URL 參數
+            window.history.replaceState({}, "", window.location.pathname + "#newsletter");
+          })
+          .catch(function() {
+            setError("確認失敗，請重新訂閱。");
+          });
+      }
+    } else if (status === "unsubscribe") {
+      // 處理退訂
+      const email = params.get("email");
+      const token = params.get("token");
+      if (email && token) {
+        fetch(API_URL + "?action=unsubscribe&email=" + encodeURIComponent(email) + "&token=" + token, { mode: "no-cors" })
+          .then(function() {
+            setConfirmed(false);
+            setError("你已成功取消訂閱。");
+            window.history.replaceState({}, "", window.location.pathname + "#newsletter");
+          })
+          .catch(function() {
+            setError("退訂失敗，請稍後再試。");
+          });
+      }
     }
   }, []);
 
