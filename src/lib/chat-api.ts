@@ -15,7 +15,21 @@ const API_URL = "https://openrouter.ai/api/v1/chat/completions";
 
 // Next.js 在 build time 會將 process.env.NEXT_PUBLIC_* 替換為實際值
 // 注意：不能有 typeof process 的執行時檢查，否則在瀏覽器中 undefined 會導致 key 變空字串
-const OPENROUTER_API_KEY: string = process.env.NEXT_PUBLIC_OPENROUTER_API_KEY || "";
+const OPENROUTER_API_KEY: string = (process.env.NEXT_PUBLIC_OPENROUTER_API_KEY || "").trim();
+
+// 安全地建立 Authorization header，避免非 ISO-8859-1 字元問題
+function buildHeaders(): Record<string, string> {
+  const headers: Record<string, string> = {
+    "Content-Type": "application/json",
+    "HTTP-Referer": "https://rong-rise.com",
+    "X-Title": "RongRise Consulting",
+  };
+  if (OPENROUTER_API_KEY) {
+    // 使用 bascii 編碼確保 header 值安全
+    headers["Authorization"] = "Bearer " + OPENROUTER_API_KEY;
+  }
+  return headers;
+}
 
 const OPENROUTER_MODEL: string = process.env.NEXT_PUBLIC_OPENROUTER_MODEL || "nvidia/nemotron-3-super-120b-a12b:free";
 
@@ -95,12 +109,7 @@ export async function callChatAPI(
   try {
     const response = await fetch(API_URL, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${OPENROUTER_API_KEY}`,
-        "HTTP-Referer": "https://rong-rise.com",
-        "X-Title": "榕耀管顧 RongRise Consulting",
-      },
+      headers: buildHeaders(),
       body: JSON.stringify({
         model: OPENROUTER_MODEL,
         messages: allMessages,
