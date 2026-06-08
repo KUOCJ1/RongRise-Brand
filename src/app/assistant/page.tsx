@@ -70,7 +70,7 @@ export default function AssistantPage() {
       const welcomeMsg: Message = {
         role: "assistant",
         content:
-          "您好！我是榕耀管顧的<strong>轉型小幫手</strong> 🤖✨\n\n我可以為您解答關於 AI 轉型、人才發展、ESG 永續的任何問題。\n\n也可以直接點擊下方熱門問題，或描述您的需求讓我來協助！",
+          "您好！我是榕耀管顧的<strong>AI 長小賀</strong> 🤖✨\n\n我可以為您解答關於 AI 轉型、人才發展、ESG 永續的任何問題。\n\n也可以直接點擊下方熱門問題，或描述您的需求讓我來協助！",
       };
       setMessages([welcomeMsg]);
     }
@@ -159,7 +159,7 @@ export default function AssistantPage() {
           <div className="flex items-center justify-between px-4 py-2.5 border-b border-border-light bg-bg-alt flex-shrink-0">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse" />
-              <span className="text-sm font-medium text-dark">AI 轉型小幫手</span>
+              <span className="text-sm font-medium text-dark">AI 長小賀</span>
               <span className="text-xs text-text-secondary">● 記憶已啟用</span>
             </div>
             <button
