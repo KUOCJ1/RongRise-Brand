@@ -138,6 +138,15 @@ const articles: Article[] = [
     tags: ["HR", "AI 轉型", "組織變革", "人才策略", "AI 治理", "獎酬設計"],
   },
   {
+    slug: "ai-layoffs-narrative-dead",
+    cat: "AI 轉型",
+    title: "別再 AI 洗白了！56% 企業裁員後股價反跌 25%，2026 年投資人只看這件事",
+    date: "2026.06.10",
+    readTime: "14 分鐘",
+    excerpt: "CNBC 統計 23 家標普 500 企業：宣布因 AI 裁員後，56% 股價反而下跌、平均跌幅 25%。Nike 砍 800 人後跌 35%、Salesforce 砍 4000 人後跌 32%。AI 裁員敘事已破產，中小企業該學什麼？",
+    tags: ["AI 轉型", "裁員", "企業策略", "AI 治理", "中小企業", "組織變革"],
+  },
+  {
     slug: "strategy-subtraction-traditional-industry",
     cat: "策略管理",
     title: "策略是減法：為什麼台灣傳產企業更需要學會「不做事」",
@@ -145,7 +154,7 @@ const articles: Article[] = [
     readTime: "18 分鐘",
     excerpt: "羅傑．馬丁說策略的本質是選擇。但我在傳產現場看到的是——資源已經燒光了，大家還在做加法。從傳統產業的三重壓力到Netflix的關鍵轉折，深度解析為什麼減法這麼難、以及如何做出真正的策略取捨。",
     tags: ["策略管理", "傳統產業轉型", "二代接班", "家族企業", "組織變革", "資源配置"],
-  },
+  }
 ];
 
 const COVER_MAP: Record<string, string> = {
@@ -161,6 +170,7 @@ const COVER_MAP: Record<string, string> = {
   "ai-transformation-trends-2026": "article-ai-trends-2026.jpg",
   "agentic-ai-transformation-workshop": "article-agentic-ai.jpg",
   "hr-ai-transformation-five-layers": "article-hr-five-layers.jpg",
+  "ai-layoffs-narrative-dead": "article-ai-layoffs.jpg",
   "strategy-subtraction-traditional-industry": "article-strategy-subtraction.jpg",
 };
 
