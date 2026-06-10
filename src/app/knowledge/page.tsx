@@ -21,6 +21,15 @@ const categories = ["全部", "AI 轉型", "課程設計", "人才策略", "ESG 
 
 const articles: Article[] = [
   {
+    slug: "ai-agent-management-era",
+    cat: "AI 轉型",
+    title: "🤖 AI Agent 來了：企業如何從「用 AI」升級為「管 AI」",
+    date: "2026.06.10",
+    readTime: "15 分鐘",
+    excerpt: "微軟報告顯示企業 AI 代理數量年增 15 倍，黃仁勳宣示 AI 已從生成式 AI 走向 Agent AI。當 AI 從「被動工具」變成「主動執行者」，企業面臨的核心問題不再是「如何用 AI」，而是「如何管理 AI 代理」。",
+    tags: ["AI Agent", "Agentic AI", "AI 管理", "企業轉型", "AI 治理", "中小企業"],
+  },
+  {
     slug: "ai-token-cost-management",
     cat: "AI 轉型",
     title: "💰 Token 計價時代：AI 每一問都有價，你的企業用了多少浪費的 Token？",
@@ -171,6 +180,7 @@ const COVER_MAP: Record<string, string> = {
   "agentic-ai-transformation-workshop": "article-agentic-ai.jpg",
   "hr-ai-transformation-five-layers": "article-hr-five-layers.jpg",
   "ai-layoffs-narrative-dead": "article-ai-layoffs.jpg",
+  "ai-agent-management-era": "article-ai-agent-mgmt.jpg",
   "strategy-subtraction-traditional-industry": "article-strategy-subtraction.jpg",
 };
 
