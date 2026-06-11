@@ -21,6 +21,15 @@ const categories = ["全部", "AI 轉型", "課程設計", "人才策略", "ESG 
 
 const articles: Article[] = [
   {
+    slug: "shadow-ai-enterprise-security-risk",
+    cat: "AI 轉型",
+    title: "🕵️ Shadow AI 正在你家企業裡爆炸：你最大的資安風險不是駭客，是員工",
+    date: "2026.06.11",
+    readTime: "14 分鐘",
+    excerpt: "Claude 惡意濫用比率一年內從 33% 飆升至 56%、Meta AI 客服被駭導致 2 萬 Instagram 帳號外洩。當每個員工都能自己「Vibe Code」出一個 AI 工具，企業資安邊界正在從「網路 perimeter」變成「人心」。",
+    tags: ["Shadow AI", "AI 資安", "AI 治理", "中小企業", "資安風險", "AI 政策", "Vibe Coding", "影子 IT"],
+  },
+  {
     slug: "ai-agent-management-era",
     cat: "AI 轉型",
     title: "🤖 AI Agent 來了：企業如何從「用 AI」升級為「管 AI」",
