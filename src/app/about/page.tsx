@@ -183,15 +183,46 @@ export default function AboutPage() {
               聽聽 CJ哥怎麼看 AI 轉型、人才策略與 ESG 永續。
             </p>
           </div>
-          <div className="max-w-3xl mx-auto">
-            <YouTubeEmbed
-              channelId="UCFfz1iDwqqRfjWgR7GhVMGA"
-              title="CJ哥 — 榕耀管顧 YouTube 頻道"
-            />
-            <p className="text-center text-text-secondary text-sm mt-4">
-              📺 更多影片，歡迎訂閱 <a href="https://www.youtube.com/@RongRiseConsulting" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">YouTube 頻道 @RongRiseConsulting</a>
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {[
+              { id: "-Lp7k92d7C8", title: "AI 時代的人才策略：從焦慮到賦能", date: "2026.06.04" },
+              { id: "UoR9Jd4Ks5I", title: "中小企業 ESG 轉型實務攻略", date: "2026.06.02" },
+              { id: "AsyKniCNofU", title: "AI 轉型不是口號：從策略到落地的完整路徑", date: "2026.06.01" },
+            ].map((video) => (
+              <a
+                key={video.id}
+                href={`https://www.youtube.com/watch?v=${video.id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="card group no-underline overflow-hidden"
+              >
+                <div className="relative aspect-video overflow-hidden bg-dark/5">
+                  <img
+                    src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
+                    alt={video.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-dark/0 group-hover:bg-dark/20 transition-colors flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-accent/90 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <h3 className="font-semibold text-dark group-hover:text-primary transition-colors text-sm leading-relaxed line-clamp-2">
+                    {video.title}
+                  </h3>
+                  <p className="text-xs text-text-secondary mt-2">{video.date}</p>
+                </div>
+              </a>
+            ))}
           </div>
+          <p className="text-center text-text-secondary text-sm mt-6">
+            📺 更多影片，歡迎訂閱 <a href="https://www.youtube.com/@RongRiseConsulting" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">YouTube 頻道 @RongRiseConsulting</a>
+          </p>
         </div>
       </section>
 

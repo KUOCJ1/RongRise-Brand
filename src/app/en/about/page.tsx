@@ -89,12 +89,46 @@ export default function AboutEnPage() {
             <h2 className="heading-section text-dark mt-4">Hear It Directly</h2>
             <div className="brand-divider brand-divider-center mt-4" />
           </div>
-          <div className="max-w-3xl mx-auto">
-            <YouTubeEmbed channelId="UCFfz1iDwqqRfjWgR7GhVMGA" title="C.J. Kuo — RongRise Consulting YouTube" />
-            <p className="text-center text-text-secondary text-sm mt-4">
-              📺 Subscribe to <a href="https://www.youtube.com/@RongRiseConsulting" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">YouTube Channel @RongRiseConsulting</a>
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {[
+              { id: "-Lp7k92d7C8", title: "AI Talent Strategy: From Anxiety to Empowerment", date: "2026.06.04" },
+              { id: "UoR9Jd4Ks5I", title: "SME ESG Transformation: A Practical Guide", date: "2026.06.02" },
+              { id: "AsyKniCNofU", title: "AI Transformation: From Strategy to Execution", date: "2026.06.01" },
+            ].map((video) => (
+              <a
+                key={video.id}
+                href={`https://www.youtube.com/watch?v=${video.id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="card group no-underline overflow-hidden"
+              >
+                <div className="relative aspect-video overflow-hidden bg-dark/5">
+                  <img
+                    src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
+                    alt={video.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-dark/0 group-hover:bg-dark/20 transition-colors flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full bg-accent/90 flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <h3 className="font-semibold text-dark group-hover:text-primary transition-colors text-sm leading-relaxed line-clamp-2">
+                    {video.title}
+                  </h3>
+                  <p className="text-xs text-text-secondary mt-2">{video.date}</p>
+                </div>
+              </a>
+            ))}
           </div>
+          <p className="text-center text-text-secondary text-sm mt-6">
+            📺 Subscribe to <a href="https://www.youtube.com/@RongRiseConsulting" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">YouTube Channel @RongRiseConsulting</a>
+          </p>
         </div>
       </section>
 

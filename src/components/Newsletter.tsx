@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { trackNewsletterSubscribe } from "@/lib/ga4-events";
 
-const API_URL = "https://script.google.com/macros/s/AKfycbxhe4JDF6YAFEFTkHfIwukE2APB3l4RMPmoFfx-gfCSEXXEa8f-oXYU3Ir8kw0SX2psLg/exec";
+const API_URL = "/api/newsletter";
 
 export default function NewsletterSection() {
   const [email, setEmail] = useState("");
@@ -21,15 +21,14 @@ export default function NewsletterSection() {
     if (status === "confirmed") {
       setConfirmed(true);
     } else if (status === "confirm") {
-      // 剛從確認信點進來，需要發 API 請求給 GAS 確認
+      // 剛從確認信點進來，需要發 API 請求確認
       const email = params.get("email");
       const token = params.get("token");
       if (email && token) {
-        // 發 confirm API 請求
-        fetch(API_URL + "?action=confirm&email=" + encodeURIComponent(email) + "&token=" + token, { mode: "no-cors" })
+        fetch(API_URL + "/confirm?email=" + encodeURIComponent(email) + "&token=" + token)
+          .then(function(r) { return r.json(); })
           .then(function() {
             setConfirmed(true);
-            // 清除 URL 參數
             window.history.replaceState({}, "", window.location.pathname + "#newsletter");
           })
           .catch(function() {
@@ -41,7 +40,8 @@ export default function NewsletterSection() {
       const email = params.get("email");
       const token = params.get("token");
       if (email && token) {
-        fetch(API_URL + "?action=unsubscribe&email=" + encodeURIComponent(email) + "&token=" + token, { mode: "no-cors" })
+        fetch(API_URL + "/unsubscribe?email=" + encodeURIComponent(email) + "&token=" + token)
+          .then(function(r) { return r.json(); })
           .then(function() {
             setConfirmed(false);
             setError("你已成功取消訂閱。");
@@ -64,11 +64,10 @@ export default function NewsletterSection() {
     setLoading(true);
 
     try {
-      const res = await fetch(API_URL, {
+      const res = await fetch(API_URL + "/subscribe", {
         method: "POST",
-        headers: { "Content-Type": "text/plain" },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          action: "subscribe",
           email,
           name,
           source: "website",

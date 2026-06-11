@@ -5,6 +5,7 @@ import TrackLink from "@/components/TrackLink";
 import CaseStudiesSection from "@/components/CaseStudies";
 import TestimonialsSection from "@/components/Testimonials";
 import ServiceFlowSection from "@/components/ServiceFlow";
+import VideoShowcaseSection from "@/components/VideoShowcase";
 import NewsSection from "@/components/NewsSection";
 import FAQSection from "@/components/FAQ";
 import FAQSchema from "@/components/FAQSchema";
@@ -345,6 +346,9 @@ export default function HomePage() {
       {/* ===== 2. 客戶推薦 / 證言 ===== */}
       <TestimonialsSection />
       <ReviewSchema />
+
+      {/* ===== 影片展示 ===== */}
+      <VideoShowcaseSection />
 
       {/* 知識預覽 */}
       <section className="section bg-gradient-subtle">
