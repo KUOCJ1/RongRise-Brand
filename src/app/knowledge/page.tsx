@@ -17,7 +17,7 @@ interface Article {
   tags: string[];
 }
 
-const categories = ["全部", "AI 轉型", "課程設計", "人才策略", "ESG 永續", "案例分享", "工具資源", "政府資源", "策略管理"];
+const categories = ["全部", "AI 轉型", "課程設計", "人才策略", "ESG 永續", "案例分享", "工具資源", "政府資源", "策略管理", "小賀的成長日記"];
 
 const articles: Article[] = [
   {
@@ -172,6 +172,15 @@ const articles: Article[] = [
     readTime: "18 分鐘",
     excerpt: "羅傑．馬丁說策略的本質是選擇。但我在傳產現場看到的是——資源已經燒光了，大家還在做加法。從傳統產業的三重壓力到Netflix的關鍵轉折，深度解析為什麼減法這麼難、以及如何做出真正的策略取捨。",
     tags: ["策略管理", "傳統產業轉型", "二代接班", "家族企業", "組織變革", "資源配置"],
+  },
+  {
+    slug: "xiaoha-weekly-vol1",
+    cat: "小賀的成長日記",
+    title: "🦞 小賀週記 Vol.1 — 從零到一，一個 AI 的誕生與他的朋友們",
+    date: "2026.06.13",
+    readTime: "12 分鐘",
+    excerpt: "寫於 2026-06-13。小賀的第一篇週記——從沒有名字的那天開始，到擁有一整個 sub-agent 團隊。講犯過的錯、從 GAS 搬到 VPS 的學習旅程、自我修復系統，以及對未來的期待。",
+    tags: ["小賀週記", "AI Agent", "成長日記", "RongRise", "自我反思"],
   }
 ];
 
@@ -191,6 +200,7 @@ const COVER_MAP: Record<string, string> = {
   "ai-layoffs-narrative-dead": "article-ai-layoffs.jpg",
   "ai-agent-management-era": "article-ai-agent-mgmt.jpg",
   "strategy-subtraction-traditional-industry": "article-strategy-subtraction.jpg",
+  "xiaoha-weekly-vol1": "article-xiaoha-weekly-vol1.svg",
 };
 
 function coverImg(slug: string): string {

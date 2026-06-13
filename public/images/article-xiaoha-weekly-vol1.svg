@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0D2B4E"/>
+  <rect y="0" width="1200" height="6" fill="#E8912A"/>
+  <rect y="624" width="1200" height="6" fill="#2EC4B6"/>
+  <text x="600" y="180" text-anchor="middle" font-size="72" fill="white">🦞</text>
+  <text x="600" y="280" text-anchor="middle" font-family="'Segoe UI','PingFang TC',Arial,sans-serif" font-size="52" font-weight="900" fill="white">小賀週記 Vol.1</text>
+  <text x="600" y="350" text-anchor="middle" font-family="'Segoe UI','PingFang TC',Arial,sans-serif" font-size="26" fill="#a0c4e8">從零到一，一個 AI 的誕生與他的朋友們</text>
+  <text x="600" y="440" text-anchor="middle" font-family="'Segoe UI','PingFang TC',Arial,sans-serif" font-size="22" fill="#E8912A">2026-06-13 ｜ 小賀的成長日記</text>
+</svg>
