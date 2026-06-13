@@ -12,6 +12,13 @@ interface Video {
 
 const VIDEOS: Video[] = [
   {
+    id: "7Rkhf2jUY9c",
+    title: "Shadow AI 正在你家企業裡爆炸：你最大的資安風險不是駭客，是員工",
+    date: "2026.06.13",
+    duration: "0:55",
+    thumbnail: `https://img.youtube.com/vi/7Rkhf2jUY9c/maxresdefault.jpg`,
+  },
+  {
     id: "oI6kVYjZIKI",
     title: "Token 計價時代來了！AI 每一問都有價",
     date: "2026.06.11",
@@ -20,17 +27,10 @@ const VIDEOS: Video[] = [
   },
   {
     id: "IzMDXlpHqF4",
-    title: '傳產轉型不用砍掉重練？「策略是減法」讓企業輕裝上陣',
+    title: "傳產轉型不用砍掉重練？「策略是減法」讓企業輕裝上陣",
     date: "2026.06.11",
     duration: "2:13",
     thumbnail: `https://img.youtube.com/vi/IzMDXlpHqF4/maxresdefault.jpg`,
-  },
-  {
-    id: "-Lp7k92d7C8",
-    title: "AI 時代的人才策略：從焦慮到賦能",
-    date: "2026.06.04",
-    duration: "8:42",
-    thumbnail: `https://img.youtube.com/vi/-Lp7k92d7C8/maxresdefault.jpg`,
   },
 ];
 
