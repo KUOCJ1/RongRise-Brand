@@ -10,6 +10,12 @@ export const metadata: Metadata = {
   title: "關於 CJ哥｜企業 AI 轉型顧問",
   description:
     "郭鎮榕 CJ哥，16 年跨國企業高階主管經驗。曾任 Accenture、EY、Chubb Life、Cigna 人資長。創辦榕耀管顧，專注 AI 轉型、人才策略、ESG 永續諮詢。",
+  alternates: {
+    canonical: "https://rongrise.com/about",
+    languages: {
+      en: "https://rongrise.com/en/about",
+    },
+  },
   openGraph: {
     title: "關於 CJ哥｜榕耀管顧 — 企業 AI 轉型顧問",
     description: "16 年跨國企業顧問經驗，協助企業從人才策略到 AI 落地。",

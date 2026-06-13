@@ -405,6 +405,9 @@ export function generateMetadata({
   return {
     title: `${article.title} ｜ ${article.cat}`,
     description: article.excerpt,
+    alternates: {
+      canonical: `${SITE_URL}/knowledge/${article.slug}`,
+    },
     openGraph: {
       type: "article",
       title: `${article.title} — 榕耀管顧`,

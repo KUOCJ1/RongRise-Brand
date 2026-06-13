@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: "服務項目｜AI 轉型．人才策略．ESG 永續",
   description:
     "榕耀管顧三大服務：AI 轉型策略規劃、企業培訓工作坊、ESG 永續諮詢。依據企業需求客製化，從診斷到落地全程陪伴。",
+  alternates: {
+    canonical: "https://rongrise.com/services",
+    languages: {
+      en: "https://rongrise.com/en/services",
+    },
+  },
   openGraph: {
     title: "服務項目｜AI 轉型．人才策略．ESG 永續 — 榕耀管顧",
     description: "三大服務支柱，陪伴企業完成轉型每一步。",

@@ -11,6 +11,11 @@ export const metadata: Metadata = {
       en: "https://rongrise.com/en/news",
     },
   },
+  openGraph: {
+    title: "最新消息｜課程、資源、與觀點 — 榕耀管顧",
+    description: "掌握榕耀管顧最新課程開課資訊、政府補助資源、與產業洞見。",
+    images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "榕耀管顧 RongRise Consulting" }],
+  },
 };
 
 const categoryColors: Record<string, string> = {

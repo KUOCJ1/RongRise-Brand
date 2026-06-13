@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: "下載區｜AI 轉型工具包與白皮書",
   description:
     "免費下載榕耀管顧精選資源：AI 成熟度自評量表、ESG 盤點清單、AI 轉型策略白皮書、政府補助指南。持續更新中。",
+  alternates: {
+    canonical: "https://rongrise.com/downloads",
+    languages: {
+      en: "https://rongrise.com/en/downloads",
+    },
+  },
   openGraph: {
     title: "下載區｜AI 轉型工具包白皮書 — 榕耀管顧",
     description: "免費下載 AI 成熟度自評量表、ESG 盤點清單、轉型白皮書。",

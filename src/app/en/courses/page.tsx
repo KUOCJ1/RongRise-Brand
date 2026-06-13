@@ -11,6 +11,11 @@ export const metadata: Metadata = {
       zh: "https://rongrise.com/courses",
     },
   },
+  openGraph: {
+    title: "Upcoming Courses & Events — RongRise Consulting",
+    description: "From single-day workshops to series courses. AI transformation, talent strategy, and ESG training.",
+    images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "RongRise Consulting" }],
+  },
 };
 
 const statusLabels = {

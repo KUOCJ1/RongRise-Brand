@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://rongrise.com/en/contact",
   },
+  openGraph: {
+    title: "Contact | Get in Touch — RongRise Consulting",
+    description: "Have questions? Contact RongRise Consulting via email, LINE, or schedule a free consultation.",
+    images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "RongRise Consulting" }],
+  },
 };
 
 export default function EnContactPage() {

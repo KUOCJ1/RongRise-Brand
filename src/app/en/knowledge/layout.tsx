@@ -9,6 +9,11 @@ export const metadata: Metadata = {
       zh: "https://rongrise.com/knowledge",
     },
   },
+  openGraph: {
+    title: "Knowledge Base | AI Transformation, Talent Strategy, ESG — RongRise",
+    description: "Practical insights on AI transformation, talent strategy, and ESG sustainability by C.J. Kuo.",
+    images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "RongRise Consulting" }],
+  },
 };
 
 export default function EnKnowledgeLayout({
