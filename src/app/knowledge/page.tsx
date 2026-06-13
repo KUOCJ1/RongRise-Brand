@@ -209,11 +209,24 @@ function coverImg(slug: string): string {
 
 export default function KnowledgePage() {
   const [activeCat, setActiveCat] = useState("全部");
+  const [searchQuery, setSearchQuery] = useState("");
 
   const filtered =
     activeCat === "全部"
       ? articles
       : articles.filter((a) => a.cat === activeCat);
+
+  // 全文檢索（依標題、摘要、標籤）
+  const searched = searchQuery.trim()
+    ? filtered.filter((a) => {
+        const q = searchQuery.toLowerCase();
+        return (
+          a.title.toLowerCase().includes(q) ||
+          a.excerpt.toLowerCase().includes(q) ||
+          a.tags.some((t) => t.toLowerCase().includes(q))
+        );
+      })
+    : filtered;
 
   return (
     <>
@@ -232,6 +245,25 @@ export default function KnowledgePage() {
       {/* Category Filter */}
       <section className="bg-white border-b border-border sticky top-16 z-40">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-3">
+          {/* Search Bar */}
+          <div className="relative mb-3">
+            <input
+              type="text"
+              placeholder="搜尋文章標題、摘要或標籤…"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-bg-alt border border-border focus:border-primary/50 focus:outline-none text-sm text-dark placeholder:text-text-secondary/60 transition-colors"
+            />
+            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-text-secondary/60 text-lg">🔍</span>
+            {searchQuery && (
+              <button
+                onClick={() => setSearchQuery("")}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-text-secondary/60 hover:text-text-secondary text-sm"
+              >
+                ✕
+              </button>
+            )}
+          </div>
           <div className="flex gap-2 overflow-x-auto pb-1">
             {categories.map((cat) => (
               <button
@@ -253,7 +285,7 @@ export default function KnowledgePage() {
       {/* Articles Grid */}
       <section className="section bg-bg-alt">
         <div className="section-inner">
-          {filtered.length === 0 ? (
+          {searched.length === 0 ? (
             <div className="text-center py-16">
               <p className="text-text-secondary text-lg">此分類暫無文章</p>
               <button
@@ -265,7 +297,7 @@ export default function KnowledgePage() {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filtered.map((post, i) => (
+              {searched.map((post, i) => (
                 <Link
                   key={post.slug}
                   href={`/knowledge/${post.slug}`}

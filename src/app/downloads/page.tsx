@@ -79,6 +79,14 @@ const downloadCategories: DownloadCategory[] = [
         isNew: true,
       },
       {
+        name: "AI 能力評估框架",
+        type: "PDF",
+        size: "590 KB",
+        desc: "完整 AI 能力評估與分析框架，幫助企業從五個維度診斷 AI 準備度。",
+        href: "/resources/ai-capability-assessment-framework.pdf",
+        isNew: true,
+      },
+      {
         name: "人才能力評估模板",
         type: "PDF",
         size: "78 KB",

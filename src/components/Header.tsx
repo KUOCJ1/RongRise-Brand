@@ -8,6 +8,7 @@ const navItems = [
   { href: "/services", label: "服務項目" },
   { href: "/courses", label: "課程" },
   { href: "/about", label: "關於我" },
+  { href: "/about/xiaoha", label: "小賀" },
   { href: "/knowledge", label: "知識庫" },
   { href: "/downloads", label: "下載區" },
   { href: "/news", label: "最新消息" },
