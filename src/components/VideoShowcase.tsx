@@ -12,11 +12,11 @@ interface Video {
 
 const VIDEOS: Video[] = [
   {
-    id: "7Rkhf2jUY9c",
+    id: "VZpgwyuDVMQ",
     title: "Shadow AI 正在你家企業裡爆炸：你最大的資安風險不是駭客，是員工",
     date: "2026.06.13",
-    duration: "0:55",
-    thumbnail: `https://img.youtube.com/vi/7Rkhf2jUY9c/maxresdefault.jpg`,
+    duration: "1:23",
+    thumbnail: `https://img.youtube.com/vi/VZpgwyuDVMQ/maxresdefault.jpg`,
   },
   {
     id: "oI6kVYjZIKI",
