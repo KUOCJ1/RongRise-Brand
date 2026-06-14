@@ -424,6 +424,11 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <Link href="/team" className="btn-secondary">
+            認識專業團隊 →
+          </Link>
+        </div>
       </section>
     </>
   );

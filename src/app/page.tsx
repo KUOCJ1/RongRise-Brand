@@ -154,11 +154,11 @@ export default function HomePage() {
               </TrackLink>
             </div>
 
-            {/* 電子報訂閱 CTA */}
+            {/* 電子報訂閱 CTA — 加強版 */}
             <div className="mt-10 animate-fade-in-up animation-delay-400">
               <a
                 href="#newsletter"
-                className="inline-flex items-center gap-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 rounded-2xl px-6 py-4 transition-all group"
+                className="inline-flex items-center gap-3 bg-tertiary/20 hover:bg-tertiary/30 backdrop-blur-sm border-2 border-accent rounded-2xl px-6 py-4 transition-all group shadow-lg shadow-accent/20 hover:shadow-accent/40"
               >
                 <img
                   src="https://i.imgur.com/Rs3O3Iv.jpeg"
@@ -169,12 +169,12 @@ export default function HomePage() {
                   style={{ borderColor: "#E8912A" }}
                 />
                 <div className="text-left">
-                  <p className="text-white font-medium text-sm">📬 訂閱電子報</p>
-                  <p className="text-white/60 text-xs">小賀每週為你整理 AI 轉型快訊</p>
+                  <p className="text-white font-semibold text-sm">📬 免費訂閱電子報</p>
+                  <p className="text-white/70 text-xs">小賀每週為你整理 AI 轉型快訊</p>
                 </div>
-                <svg className="w-5 h-5 text-white/40 group-hover:text-white/80 group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
+                <span className="inline-flex items-center gap-1 bg-accent text-white text-xs font-bold px-3 py-1.5 rounded-full group-hover:bg-white group-hover:text-primary transition-all">
+                  立即訂閱 →
+                </span>
               </a>
             </div>
           </div>
