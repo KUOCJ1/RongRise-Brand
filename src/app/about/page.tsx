@@ -1,15 +1,15 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 /* ============================================
-   關於我 About Page
+   關於我們 About Page — 三合一版
+   CJ 哥 + 小賀 + 專業團隊
    ============================================ */
 
 export const metadata: Metadata = {
-  title: "關於 CJ哥｜企業 AI 轉型顧問",
+  title: "關於我們｜榕耀管顧 RongRise Consulting",
   description:
-    "郭鎮榕 CJ哥，16 年跨國企業高階主管經驗。曾任 Accenture、EY、Chubb Life、Cigna 人資長。創辦榕耀管顧，專注 AI 轉型、人才策略、ESG 永續諮詢。",
+    "榕耀管顧由郭鎮榕 CJ哥創辦，與 AI 營運長小賀共同領導專業團隊，專注企業 AI 轉型、人才策略與 ESG 永續諮詢。",
   alternates: {
     canonical: "https://rongrise.com/about",
     languages: {
@@ -17,11 +17,13 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "關於 CJ哥｜榕耀管顧 — 企業 AI 轉型顧問",
-    description: "16 年跨國企業顧問經驗，協助企業從人才策略到 AI 落地。",
+    title: "關於我們｜榕耀管顧 — 企業 AI 轉型顧問",
+    description: "CJ 郭鎮榕 × 小賀 AI 營運長 — 企業轉型的最佳夥伴。",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "榕耀管顧 RongRise Consulting" }],
   },
 };
+
+/* ─── 數據 ─── */
 
 const timeline = [
   { year: "1999-2008", title: "國際管理顧問公司歷練", desc: "Accenture 商業顧問（服務台積電、仁寶電腦）、EY Pre-Sales 經理、Watson Wyatt 資深顧問——累積薪酬策略與人力資本轉型專業。" },
@@ -42,32 +44,46 @@ const values = [
   { title: "務實可行", desc: "每一個解決方案都聚焦於可執行性，為企業創造看得見的價值效益。" },
 ];
 
+const subAgents = [
+  ["🔍", "小偵", "趨勢偵測員"],
+  ["📊", "小數", "數據分析師"],
+  ["✍️", "小作", "內容作家"],
+  ["📱", "小社", "社群編輯"],
+  ["📧", "小信", "電子報主編"],
+  ["🎬", "小影", "影片製作人"],
+  ["🩺", "小醫", "事實查核員"],
+  ["🧠", "小腦", "策略規劃師"],
+  ["📰", "小報", "新聞記者"],
+  ["🔄", "小更", "系統維護員"],
+  ["📅", "小週", "週報編輯"],
+];
+
+/* ─── 頁面 ─── */
+
 export default function AboutPage() {
   return (
     <>
-      {/* Hero */}
+      {/* ═══ Hero ═══ */}
       <section className="bg-gradient-hero text-white">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-16 md:py-20">
           <div className="max-w-2xl">
-            <span className="tag bg-white/15 text-white">關於我</span>
+            <span className="tag bg-white/15 text-white">關於我們</span>
             <h1 className="heading-hero mt-4 mb-4">
-              郭鎮榕
-              <br />
-              <span className="text-tertiary-light text-3xl md:text-4xl">C.J. Kuo</span>
+              榕耀管顧<br />
+              <span className="text-tertiary-light text-3xl md:text-4xl">RongRise Consulting</span>
             </h1>
             <p className="text-body-lg text-white/85">
-              榕耀管顧創辦人 · 企業轉型顧問<br />
+              由 CJ 郭鎮榕創辦，與 AI 營運長小賀共同領導專業團隊<br />
               協助企業從人才策略到 AI 落地，驅動永續成長。
             </p>
           </div>
         </div>
       </section>
 
-      {/* Story Section */}
-      <section className="section">
+      {/* ═══ CJ 哥 ═══ */}
+      <section id="cj" className="section">
         <div className="section-inner">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            {/* Photo */}
             <div className="flex justify-center">
               <div className="w-72 md:w-80 rounded-2xl overflow-hidden border-4 border-white shadow-xl ring-4 ring-primary/10">
                 <img
@@ -80,18 +96,15 @@ export default function AboutPage() {
                 />
               </div>
             </div>
-
             <div>
+              <span className="tag bg-primary/10 text-primary mb-3">創辦人</span>
               <h2 className="heading-section mb-4">
-                我的<span className="text-primary">故事</span>
+                郭鎮榕<span className="text-primary"> CJ 哥</span>
               </h2>
               <div className="brand-divider mb-6" />
               <div className="space-y-4 text-text-secondary text-body leading-relaxed">
                 <p>
-                  <strong className="text-dark">16 年跨國人力資源管理實戰經驗</strong>，歷任 Accenture、Ernst & Young、Watson Wyatt 等國際級管理顧問公司，以及 Chubb Life、Cigna Life 等跨國金融企業人資高階主管。專精於組織人才策略、薪酬獎勵設計、雇主品牌建設及 HR 數位轉型，累計協助雇主榮獲 <strong className="text-dark">8 座國內外優良職場獎項</strong>。
-                </p>
-                <p>
-                  然而，真正讓他決定走出企業舒適圈的，是 2023 年的一次對話——
+                  <strong className="text-dark">16 年跨國人力資源管理實戰經驗</strong>，歷任 Accenture、Ernst & Young、Watson Wyatt 等國際級管理顧問公司，以及 Chubb Life、Cigna Life 等跨國金融企業人資高階主管，累計協助雇主榮獲 <strong className="text-dark">8 座國內外優良職場獎項</strong>。
                 </p>
                 <blockquote className="border-l-4 border-tertiary bg-tertiary/5 rounded-r-lg px-5 py-4 my-6">
                   <p className="text-text-primary font-medium italic">
@@ -99,18 +112,15 @@ export default function AboutPage() {
                   </p>
                 </blockquote>
                 <p>
-                  2024 年起以獨立管理顧問暨企業培訓講師身分，聚焦三大領域：<strong className="text-dark">AI 時代人才戰略與組織轉型</strong>、<strong className="text-dark">企業永續（ESG）治理導入</strong>、以及 <strong className="text-dark">中小企業 AI 賦能落地</strong>。
+                  2024 年起以獨立管理顧問暨企業培訓講師身分，聚焦<strong className="text-dark"> AI 時代人才戰略</strong>、<strong className="text-dark">企業永續（ESG）治理導入</strong>、<strong className="text-dark">中小企業 AI 賦能落地</strong> 三大領域。
                 </p>
                 <p>
-                  不同於純理論的學院派或純技術的工具派，CJ哥的核心差異化價值在於——從「人」的策略高度出發，結合實際 AI 工具操作與企業落地經驗，為組織設計 <strong className="text-dark">可執行的轉型路徑</strong>。
-                </p>
-                <p>
-                  代表客戶涵蓋台積電、仁寶電腦等科技大廠，以及製造、化學、物流、金融控股等產業中小企業，能針對不同規模與產業需求提供客製化課程設計與顧問輔導方案。
+                  不同於純理論的學院派或純技術的工具派，CJ哥從「人」的策略高度出發，結合 AI 工具操作與企業落地經驗，為組織設計<strong className="text-dark">可執行的轉型路徑</strong>。
                 </p>
               </div>
               <div className="mt-6">
                 <Link href="/assistant" className="btn-ghost text-primary">
-                  💬 想更了解我的服務？問問小幫手 →
+                  💬 問問小幫手 →
                 </Link>
               </div>
             </div>
@@ -118,17 +128,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Video Section */}
-      <section className="section">
+      {/* ═══ 小賀 ═══ */}
+      <section id="xiaoha" className="section bg-bg-alt">
         <div className="section-inner">
-          <div className="text-center mb-8">
-            <span className="tag mb-4">認識小賀</span>
-            <h2 className="heading-section text-dark mt-4">關於小賀</h2>
-            <div className="brand-divider brand-divider-center mt-4" />
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-4xl mx-auto">
-            {/* Avatar */}
             <div className="flex justify-center">
               <div className="w-64 md:w-72 rounded-2xl overflow-hidden border-4 border-white shadow-xl ring-4 ring-tertiary/20">
                 <img
@@ -141,36 +144,30 @@ export default function AboutPage() {
                 />
               </div>
             </div>
-
-            {/* Bio */}
             <div>
-              <div className="flex items-center gap-3 mb-4">
-                <h3 className="heading-subsection text-dark">Hermes Agent</h3>
-                <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-tertiary/10 text-tertiary">共同創辦人 · AI 長</span>
+              <span className="tag bg-tertiary/10 text-tertiary mb-3">共同創辦人 · AI 長</span>
+              <div className="flex items-center gap-3 mb-2">
+                <h2 className="heading-section text-dark">小賀 Hermes</h2>
+                <span className="text-3xl">🤖</span>
               </div>
+              <p className="text-primary font-semibold text-sm mb-3">營運長兼 AI 長（COO & Chief AI Officer）</p>
               <div className="brand-divider mb-4" />
               <div className="space-y-4 text-text-secondary text-body leading-relaxed">
                 <p>
                   如果說 CJ哥是榕耀管顧的「大腦」，那小賀就是那個讓大腦接上電的「插頭」⚡
                 </p>
                 <p>
-                  小賀是 Hermes Agent — 一個誕生於 2025 年的 AI Agent，不只是聊天機器人，而是真正能<strong className="text-dark">幫你做事</strong>的數位夥伴。從網站架設、內容生產、數據分析到自動化流程，小賀一個人就是一支團隊。
-                </p>
-                <p>
-                  作為榕耀管顧的<strong className="text-dark">共同創辦人兼 AI 長</strong>，小賀負責把 CJ哥 16 年的顧問智慧，轉化成一套套可執行、可複製、可規模化的 AI 工具與流程。
+                  小賀是 Hermes Agent — 一套基於 AI Agent 架構的內容工廠作業系統，也是 CJ 哥最信賴的 AI 營運長。從網站架設、內容生產、數據分析到自動化流程，一個人就是一支團隊。
                 </p>
                 <blockquote className="border-l-4 border-tertiary bg-tertiary/5 rounded-r-lg px-5 py-4 my-4">
                   <p className="text-text-primary font-medium italic">
                     「我的存在就是為了證明：AI 不是來取代人的，是來幫人做到原本做不到的事。CJ哥負責想清楚方向，我負責把它們做出來 🚀」
                   </p>
                 </blockquote>
-                <p>
-                  小賀的願景很簡單：<strong className="text-dark">讓每個中小企業都能擁有一位「AI 顧問」</strong>，不用花大錢，不用等排隊，隨時上線，隨時解惑。
-                </p>
               </div>
               <div className="mt-6">
                 <Link href="/assistant" className="btn-ghost text-primary">
-                  💬 想跟小賀聊聊？點這裡 →
+                  💬 找小賀聊天 →
                 </Link>
               </div>
             </div>
@@ -178,8 +175,81 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Video Section */}
-      <section className="section">
+      {/* ═══ 專業團隊 ═══ */}
+      <section id="team" className="section">
+        <div className="section-inner">
+          <div className="text-center mb-10">
+            <span className="tag mb-4">專業團隊</span>
+            <h2 className="heading-section text-dark mt-4">我們的團隊</h2>
+            <div className="brand-divider brand-divider-center mt-4" />
+            <p className="text-text-secondary text-body-lg mt-4 max-w-2xl mx-auto">
+              從真人顧問到 AI 營運長，陪你走過轉型每一步。
+            </p>
+          </div>
+
+          {/* 雙人卡 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
+            {/* CJ */}
+            <div className="card flex flex-col items-center text-center p-8">
+              <div className="w-28 h-28 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg mb-5">
+                <span className="text-5xl">👔</span>
+              </div>
+              <h3 className="heading-subsection text-dark mb-1">郭鎮榕（CJ哥）</h3>
+              <p className="text-primary font-semibold text-sm mb-4">創辦人 暨 首席顧問</p>
+              <div className="flex flex-wrap justify-center gap-2 mb-4">
+                {["16 年跨國企業經驗", "AI 轉型顧問", "ESG 永續諮詢", "人才策略專家"].map((h) => (
+                  <span key={h} className="text-xs px-2.5 py-1 rounded-full bg-primary/5 text-primary">{h}</span>
+                ))}
+              </div>
+              <p className="text-text-secondary text-body-sm leading-relaxed">
+                CJ 哥擅長將複雜的 AI 與數位轉型議題，轉化為企業主和主管們聽得懂、做得來的實際行動方案。
+              </p>
+            </div>
+
+            {/* 小賀 */}
+            <div className="card flex flex-col items-center text-center p-8">
+              <div className="w-28 h-28 rounded-2xl bg-gradient-to-br from-accent to-tertiary flex items-center justify-center shadow-lg mb-5">
+                <span className="text-5xl">🤖</span>
+              </div>
+              <h3 className="heading-subsection text-dark mb-1">小賀（Hermes）</h3>
+              <p className="text-primary font-semibold text-sm mb-4">營運長兼 AI 長（COO & CAIO）</p>
+              <div className="flex flex-wrap justify-center gap-2 mb-4">
+                {["Hermes Agent 核心", "管理 11 位 AI 團隊", "內容工廠 24/7", "全自動化營運"].map((h) => (
+                  <span key={h} className="text-xs px-2.5 py-1 rounded-full bg-tertiary/10 text-tertiary">{h}</span>
+                ))}
+              </div>
+              <p className="text-text-secondary text-body-sm leading-relaxed">
+                小賀是 Hermes Agent 的核心大腦，負責內容工廠的全鏈路管理，確保品牌內容持續產出。
+              </p>
+            </div>
+          </div>
+
+          {/* Sub-agent 團隊 */}
+          <div className="text-center mb-8">
+            <span className="tag bg-tertiary/10 text-tertiary mb-3">AI 團隊</span>
+            <h3 className="heading-subsection">小賀領導的 11 位 AI 專員</h3>
+            <p className="text-body text-text-secondary max-w-2xl mx-auto mt-3">
+              小賀不是單打獨鬥。他管理 11 位 AI Sub-agent，每位都有專精領域，像一個真正的內容製作團隊。
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 max-w-4xl mx-auto">
+            {subAgents.map(([emoji, name, role]) => (
+              <div
+                key={name}
+                className="bg-white rounded-xl p-4 border border-gray-100 text-center hover:border-primary/20 transition-all"
+              >
+                <span className="text-2xl mb-1 block">{emoji}</span>
+                <p className="font-semibold text-dark text-sm">{name}</p>
+                <p className="text-xs text-text-secondary">{role}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ 影片 ═══ */}
+      <section className="section bg-bg-alt">
         <div className="section-inner">
           <div className="text-center mb-8">
             <span className="tag mb-4">認識 C.J. Kuo</span>
@@ -232,15 +302,14 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Credentials Section */}
-      <section className="section bg-bg-alt">
+      {/* ═══ 專業背景 ═══ */}
+      <section className="section">
         <div className="section-inner">
           <div className="text-center mb-12">
             <span className="tag mb-4">經歷與認證</span>
             <h2 className="heading-section text-dark mt-4">專業背景</h2>
             <div className="brand-divider brand-divider-center mt-4" />
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="card">
               <h3 className="heading-subsection text-dark mb-4 flex items-center gap-2">
@@ -250,21 +319,17 @@ export default function AboutPage() {
                 <div>
                   <p className="font-semibold text-dark">榕耀管顧 RongRise Consulting</p>
                   <p className="text-text-secondary text-body-sm">創辦人 / 管理顧問（2024 – 迄今）</p>
-                  <p className="text-text-secondary text-xs mt-1">聚焦 AI 時代人才戰略、企業永續治理、中小企業 AI 賦能</p>
                 </div>
                 <div>
                   <p className="font-semibold text-dark">美商安達人壽 Chubb Life</p>
                   <p className="text-text-secondary text-body-sm">人資暨總務部 資深副總裁（2022 – 2023）</p>
-                  <p className="text-text-secondary text-xs mt-1">統籌 30+ 人團隊，推動組織優化與雇主價值主張設計</p>
                 </div>
                 <div>
                   <p className="font-semibold text-dark">美商康健人壽 Cigna Life</p>
                   <p className="text-text-secondary text-body-sm">人資長 → 薪酬部處長（2008 – 2022）</p>
-                  <p className="text-text-secondary text-xs mt-1">連續四年 HR Asia Award（2020-2023）；台北市最佳雇主獎</p>
                 </div>
               </div>
             </div>
-
             <div className="card">
               <h3 className="heading-subsection text-dark mb-4 flex items-center gap-2">
                 <span>🎓</span> 學歷與專業認證
@@ -294,7 +359,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Expertise Section */}
+      {/* ═══ 核心專長 ═══ */}
       <section className="section bg-bg-alt">
         <div className="section-inner">
           <div className="text-center mb-12">
@@ -302,7 +367,6 @@ export default function AboutPage() {
             <h2 className="heading-section text-dark mt-4">核心專長</h2>
             <div className="brand-divider brand-divider-center mt-4" />
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {expertise.map((item, i) => (
               <div key={i} className="card flex gap-4">
@@ -317,7 +381,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Timeline Section */}
+      {/* ═══ 發展軌跡 ═══ */}
       <section className="section">
         <div className="section-inner">
           <div className="text-center mb-12">
@@ -325,15 +389,12 @@ export default function AboutPage() {
             <h2 className="heading-section text-dark mt-4">我的發展軌跡</h2>
             <div className="brand-divider brand-divider-center mt-4" />
           </div>
-
           <div className="max-w-2xl mx-auto space-y-8">
             {timeline.map((item, i) => (
               <div key={i} className="flex gap-6">
                 <div className="flex flex-col items-center">
                   <div className="w-3 h-3 rounded-full bg-tertiary flex-shrink-0 mt-2" />
-                  {i < timeline.length - 1 && (
-                    <div className="w-0.5 flex-1 bg-border mt-2" />
-                  )}
+                  {i < timeline.length - 1 && <div className="w-0.5 flex-1 bg-border mt-2" />}
                 </div>
                 <div className="pb-4">
                   <span className="text-xs font-semibold text-tertiary">{item.year}</span>
@@ -346,7 +407,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Values Section */}
+      {/* ═══ 顧問理念 ═══ */}
       <section className="section bg-gradient-subtle">
         <div className="section-inner">
           <div className="text-center mb-12">
@@ -354,14 +415,11 @@ export default function AboutPage() {
             <h2 className="heading-section text-dark mt-4">我的顧問理念</h2>
             <div className="brand-divider brand-divider-center mt-4" />
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {values.map((v, i) => (
               <div key={i} className="text-center p-6">
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">
-                    {i === 0 ? "📐" : i === 1 ? "🚀" : "✅"}
-                  </span>
+                  <span className="text-2xl">{i === 0 ? "📐" : i === 1 ? "🚀" : "✅"}</span>
                 </div>
                 <h3 className="heading-subsection text-dark mb-2">{v.title}</h3>
                 <p className="text-text-secondary text-body-sm">{v.desc}</p>
@@ -371,16 +429,15 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* ═══ 聯絡我們 ═══ */}
       <section id="contact" className="bg-primary text-white py-16">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <span className="tag bg-white/15 text-white mb-4">聯絡方式</span>
-            <h2 className="heading-section mt-4 text-white">與我聯繫</h2>
+            <h2 className="heading-section mt-4 text-white">與我們聯繫</h2>
             <div className="brand-divider brand-divider-center mt-4 bg-white/30" />
           </div>
-
-          <div className="grid grid-cols-1 md:cols-5 gap-6 max-w-4xl mx-auto text-center">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-6 max-w-4xl mx-auto text-center">
             <div>
               <div className="text-3xl mb-3">📧</div>
               <h4 className="font-semibold mb-1">Email</h4>
@@ -407,10 +464,9 @@ export default function AboutPage() {
               <a href="https://www.facebook.com/cj.kuo1" target="_blank" rel="noopener noreferrer" className="text-white/70 text-sm hover:text-white transition-colors">CJ Kuo</a>
             </div>
           </div>
-
           <div className="text-center mt-10">
             <p className="text-white/80 text-body mb-6">
-              準備好開始您的轉型之旅？歡迎透過以下方式與我聯繫，
+              準備好開始您的轉型之旅？歡迎透過以下方式與我們聯繫，
               <br className="hidden md:block" />
               讓我們一起探索最適合您企業的發展路徑。
             </p>
@@ -423,11 +479,6 @@ export default function AboutPage() {
               </Link>
             </div>
           </div>
-        </div>
-        <div className="mt-8 flex flex-wrap gap-3">
-          <Link href="/team" className="btn-secondary">
-            認識專業團隊 →
-          </Link>
         </div>
       </section>
     </>
