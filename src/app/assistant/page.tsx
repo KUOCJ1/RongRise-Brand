@@ -148,7 +148,9 @@ export default function AssistantPage() {
   };
 
   return (
-    <section className="min-h-[calc(100vh-64px)] bg-bg-alt flex flex-col">
+    <>
+      <h1 className="sr-only">AI 長小賀 — 問答助手</h1>
+      <section className="min-h-[calc(100vh-64px)] bg-bg-alt flex flex-col">
       <div className="max-w-[800px] w-full mx-auto px-4 sm:px-6 py-6 flex-1 flex flex-col min-h-0">
         {/* Chat Card — 固定高度，內部滾動 */}
         <div
@@ -290,5 +292,6 @@ export default function AssistantPage() {
         </p>
       </div>
     </section>
+    </>
   );
 }

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import coursesData from "@/data/courses.json";
 
 export const metadata: Metadata = {
-  title: "課程行事曆｜近期課程與活動｜榕耀管顧",
+  title: "課程行事曆｜近期課程與活動",
   description: "從單日工作坊到系列課程，找到最適合您的學習路徑。AI 轉型、人才策略、ESG 永續專業培訓，名額有限建議提早報名。",
   alternates: {
     canonical: "https://rongrise.com/courses",
@@ -48,6 +48,7 @@ export default function CoursesPage() {
       {/* Course List */}
       <section className="section">
         <div className="section-inner">
+          <h2 className="sr-only">近期開課</h2>
           <div className="max-w-4xl mx-auto space-y-6">
             {courses.length === 0 && (
               <div className="text-center py-12 text-text-secondary">
