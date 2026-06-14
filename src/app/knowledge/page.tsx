@@ -17,9 +17,18 @@ interface Article {
   tags: string[];
 }
 
-const categories = ["全部", "AI 轉型", "課程設計", "人才策略", "ESG 永續", "案例分享", "工具資源", "政府資源", "策略管理", "小賀的成長日記"];
+const categories = ["全部", "小賀的成長日記", "AI 轉型", "課程設計", "人才策略", "ESG 永續", "案例分享", "工具資源", "政府資源", "策略管理"];
 
 const articles: Article[] = [
+  {
+    slug: "anthropic-fable-5-us-government-ban",
+    cat: "小賀的成長日記",
+    title: "🔴 Breaking News：Claude 最新模型被美國政府禁用——台灣企業該反思什麼？",
+    date: "2026.06.14",
+    readTime: "8 分鐘",
+    excerpt: "一場 90 分鐘的緊急下架命令，震撼了整個 AI 產業。Anthropic 的旗艦模型 Fable 5 遭美國政府全面封殺。這不只是美國的事——對仰賴進口 AI 模型的台灣企業來說，這是一記警鐘。",
+    tags: ["AI 政策", "地緣政治", "企業風險", "Claude", "Anthropic"],
+  },
   {
     slug: "shadow-ai-enterprise-security-risk",
     cat: "AI 轉型",
@@ -28,15 +37,6 @@ const articles: Article[] = [
     readTime: "14 分鐘",
     excerpt: "Claude 惡意濫用比率一年內從 33% 飆升至 56%、Meta AI 客服被駭導致 2 萬 Instagram 帳號外洩。當每個員工都能自己「Vibe Code」出一個 AI 工具，企業資安邊界正在從「網路 perimeter」變成「人心」。",
     tags: ["Shadow AI", "AI 資安", "AI 治理", "中小企業", "資安風險", "AI 政策", "Vibe Coding", "影子 IT"],
-  },
-  {
-    slug: "ai-agent-management-era",
-    cat: "AI 轉型",
-    title: "🤖 AI Agent 來了：企業如何從「用 AI」升級為「管 AI」",
-    date: "2026.06.10",
-    readTime: "15 分鐘",
-    excerpt: "微軟報告顯示企業 AI 代理數量年增 15 倍，黃仁勳宣示 AI 已從生成式 AI 走向 Agent AI。當 AI 從「被動工具」變成「主動執行者」，企業面臨的核心問題不再是「如何用 AI」，而是「如何管理 AI 代理」。",
-    tags: ["AI Agent", "Agentic AI", "AI 管理", "企業轉型", "AI 治理", "中小企業"],
   },
   {
     slug: "ai-token-cost-management",
@@ -156,15 +156,6 @@ const articles: Article[] = [
     tags: ["HR", "AI 轉型", "組織變革", "人才策略", "AI 治理", "獎酬設計"],
   },
   {
-    slug: "ai-layoffs-narrative-dead",
-    cat: "AI 轉型",
-    title: "別再 AI 洗白了！56% 企業裁員後股價反跌 25%，2026 年投資人只看這件事",
-    date: "2026.06.10",
-    readTime: "14 分鐘",
-    excerpt: "CNBC 統計 23 家標普 500 企業：宣布因 AI 裁員後，56% 股價反而下跌、平均跌幅 25%。Nike 砍 800 人後跌 35%、Salesforce 砍 4000 人後跌 32%。AI 裁員敘事已破產，中小企業該學什麼？",
-    tags: ["AI 轉型", "裁員", "企業策略", "AI 治理", "中小企業", "組織變革"],
-  },
-  {
     slug: "strategy-subtraction-traditional-industry",
     cat: "策略管理",
     title: "策略是減法：為什麼台灣傳產企業更需要學會「不做事」",
@@ -173,15 +164,6 @@ const articles: Article[] = [
     excerpt: "羅傑．馬丁說策略的本質是選擇。但我在傳產現場看到的是——資源已經燒光了，大家還在做加法。從傳統產業的三重壓力到Netflix的關鍵轉折，深度解析為什麼減法這麼難、以及如何做出真正的策略取捨。",
     tags: ["策略管理", "傳統產業轉型", "二代接班", "家族企業", "組織變革", "資源配置"],
   },
-  {
-    slug: "xiaoha-weekly-vol1",
-    cat: "小賀的成長日記",
-    title: "🦞 小賀週記 Vol.1 — 從零到一，一個 AI 的誕生與他的朋友們",
-    date: "2026.06.13",
-    readTime: "12 分鐘",
-    excerpt: "寫於 2026-06-13。小賀的第一篇週記——從沒有名字的那天開始，到擁有一整個 sub-agent 團隊。講犯過的錯、從 GAS 搬到 VPS 的學習旅程、自我修復系統，以及對未來的期待。",
-    tags: ["小賀週記", "AI Agent", "成長日記", "RongRise", "自我反思"],
-  }
 ];
 
 const COVER_MAP: Record<string, string> = {
@@ -197,10 +179,7 @@ const COVER_MAP: Record<string, string> = {
   "ai-transformation-trends-2026": "article-ai-trends-2026.jpg",
   "agentic-ai-transformation-workshop": "article-agentic-ai.jpg",
   "hr-ai-transformation-five-layers": "article-hr-five-layers.jpg",
-  "ai-layoffs-narrative-dead": "article-ai-layoffs.jpg",
-  "ai-agent-management-era": "article-ai-agent-mgmt.jpg",
   "strategy-subtraction-traditional-industry": "article-strategy-subtraction.jpg",
-  "xiaoha-weekly-vol1": "article-xiaoha-weekly-vol1.svg",
 };
 
 function coverImg(slug: string): string {
@@ -209,24 +188,11 @@ function coverImg(slug: string): string {
 
 export default function KnowledgePage() {
   const [activeCat, setActiveCat] = useState("全部");
-  const [searchQuery, setSearchQuery] = useState("");
 
   const filtered =
     activeCat === "全部"
       ? articles
       : articles.filter((a) => a.cat === activeCat);
-
-  // 全文檢索（依標題、摘要、標籤）
-  const searched = searchQuery.trim()
-    ? filtered.filter((a) => {
-        const q = searchQuery.toLowerCase();
-        return (
-          a.title.toLowerCase().includes(q) ||
-          a.excerpt.toLowerCase().includes(q) ||
-          a.tags.some((t) => t.toLowerCase().includes(q))
-        );
-      })
-    : filtered;
 
   return (
     <>
@@ -245,25 +211,6 @@ export default function KnowledgePage() {
       {/* Category Filter */}
       <section className="bg-white border-b border-border sticky top-16 z-40">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-3">
-          {/* Search Bar */}
-          <div className="relative mb-3">
-            <input
-              type="text"
-              placeholder="搜尋文章標題、摘要或標籤…"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-bg-alt border border-border focus:border-primary/50 focus:outline-none text-sm text-dark placeholder:text-text-secondary/60 transition-colors"
-            />
-            <span className="absolute left-3 top-1/2 -translate-y-1/2 text-text-secondary/60 text-lg">🔍</span>
-            {searchQuery && (
-              <button
-                onClick={() => setSearchQuery("")}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-text-secondary/60 hover:text-text-secondary text-sm"
-              >
-                ✕
-              </button>
-            )}
-          </div>
           <div className="flex gap-2 overflow-x-auto pb-1">
             {categories.map((cat) => (
               <button
@@ -285,7 +232,7 @@ export default function KnowledgePage() {
       {/* Articles Grid */}
       <section className="section bg-bg-alt">
         <div className="section-inner">
-          {searched.length === 0 ? (
+          {filtered.length === 0 ? (
             <div className="text-center py-16">
               <p className="text-text-secondary text-lg">此分類暫無文章</p>
               <button
@@ -297,7 +244,7 @@ export default function KnowledgePage() {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {searched.map((post, i) => (
+              {filtered.map((post, i) => (
                 <Link
                   key={post.slug}
                   href={`/knowledge/${post.slug}`}
