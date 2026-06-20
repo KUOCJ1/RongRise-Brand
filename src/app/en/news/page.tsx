@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import news from "@/data/news.json";
 
 export const metadata: Metadata = {
-  title: "Latest News | Courses, Resources & Insights | RongRise Consulting",
+  title: "Latest News | Courses & Insights | RongRise",
   description: "Stay updated on the latest course offerings, government incentive resources, and industry insights from RongRise Consulting.",
   alternates: {
     canonical: "https://rongrise.com/en/news",

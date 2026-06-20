@@ -37,6 +37,12 @@ function coverImg(slug: string): string {
 export const metadata = {
   title: "AI 轉型 × 人才策略 × ESG 永續",
   description: "協助企業從人才策略到 AI 落地，驅動永續成長。CJ哥專業顧問品牌，聚焦 AI 轉型、人才策略、ESG 永續發展。",
+  alternates: {
+    canonical: "https://rong-rise.com",
+    languages: {
+      en: "https://rong-rise.com/en",
+    },
+  },
   openGraph: {
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "榕耀管顧 RongRise Consulting" }],
   },

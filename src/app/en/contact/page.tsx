@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   description: "Have questions about our services? Contact RongRise Consulting via email, LINE, or schedule a free consultation with C.J. Kuo.",
   alternates: {
     canonical: "https://rongrise.com/en/contact",
+    languages: {
+      zh: "https://rongrise.com/contact",
+    },
   },
   openGraph: {
     title: "Contact | Get in Touch — RongRise Consulting",
