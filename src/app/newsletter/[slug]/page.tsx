@@ -149,7 +149,8 @@ export default async function NewsletterDetailPage({
   const path = await import("path");
 
   const mdPath = path.join(
-    "/opt",
+    "/docker",
+    "hermes-agent-pnka",
     "data",
     "content-engine",
     "newsletters",
