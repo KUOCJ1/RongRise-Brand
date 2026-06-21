@@ -1,6 +1,17 @@
 {
   "newsletters": [
     {
+      "id": "2026-W25",
+      "slug": "2026-W25",
+      "title": "📬 榕賀觀點 第 2 期 — 2026 第 25 週",
+      "date": "2026-06-21",
+      "week": "W25",
+      "summary": "Agentic AI 進入企業級深水區、台灣 AI 轉型政策全面啟動、電力與氫能成為 AI 基礎設施新戰場。",
+      "htmlFile": null,
+      "mdFile": "2026-W25.md",
+      "isPublished": true
+    },
+    {
       "id": "2026-W24",
       "slug": "2026-W24-inaugural",
       "title": "📬 榕賀觀點 創刊號",
