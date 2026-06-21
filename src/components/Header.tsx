@@ -9,8 +9,9 @@ const navItems = [
   { href: "/courses", label: "課程" },
   { href: "/about", label: "關於我們" },
   { href: "/knowledge", label: "知識庫" },
-  { href: "/downloads", label: "下載區" },
+  { href: "/newsletter", label: "電子報" },
   { href: "/news", label: "最新消息" },
+  { href: "/downloads", label: "下載區" },
   { href: "/assistant", label: "小幫手" },
 ];
 
@@ -66,7 +67,7 @@ export default function Header() {
         {/* CTA + Language (Desktop) */}
         <div className="hidden md:flex items-center gap-4">
           <Link
-            href="/#newsletter"
+            href="/newsletter"
             className="text-[14px] font-medium text-text-secondary hover:text-primary transition-colors"
           >
             📬 訂閱電子報

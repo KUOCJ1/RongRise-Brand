@@ -1,0 +1,37 @@
+{
+  "newsletters": [
+    {
+      "id": "2026-W24",
+      "slug": "2026-W24-inaugural",
+      "title": "📬 榕賀觀點 創刊號",
+      "date": "2026-06-12",
+      "week": "W24",
+      "summary": "AI 降本裁員敘事破產、Agentic AI 全面落地、AI 資安威脅範式轉移——創刊號帶你一次看懂三大趨勢。",
+      "htmlFile": "2026-W24-inaugural.html",
+      "mdFile": "2026-W24-inaugural.md",
+      "isPublished": true
+    },
+    {
+      "id": "2026-W23",
+      "slug": "2026-W23",
+      "title": "🐾 RongRise 週報 — 2026 第 23 週",
+      "date": "2026-06-07",
+      "week": "W23",
+      "summary": "AI 降本裁員敘事破產、Agentic AI 從概念走向實戰、AI 基礎設施競賽全面升級——三大趨勢深度解析。",
+      "htmlFile": null,
+      "mdFile": "2026-W23.md",
+      "isPublished": true
+    },
+    {
+      "id": "2026-W22",
+      "slug": "2026-W22",
+      "title": "🚀 榕耀管顧 AI 轉型週報 — 2026 第 22 週",
+      "date": "2026-05-31",
+      "week": "W22",
+      "summary": "AI 供應鏈戰爭從晶片戰打到材料戰、AI 從進化論變生存論、AI 時代人才文化從績效驅動轉為使命驅動。",
+      "htmlFile": null,
+      "mdFile": "2026-W22.md",
+      "isPublished": true
+    }
+  ]
+}
