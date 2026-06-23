@@ -21,6 +21,15 @@ const categories = ["全部", "AI 轉型", "課程設計", "人才策略", "ESG 
 
 const articles: Article[] = [
   {
+    slug: "tacit-knowledge-ai-workflow",
+    cat: "AI 轉型",
+    title: "老師傅要退休了，他的經驗怎麼變成 AI 的工作流程？",
+    date: "2026-06-25",
+    readTime: "15 分鐘",
+    excerpt: "彭博專欄連續兩週指出：企業導入 AI 的真正難題已從「買不買得起」轉向「能不能把員工腦中的隱形知識挖出來」。對中小企業來說，老師傅的經驗、業務員的客戶直覺、老闆的決策邏輯——這些從未被「存檔」的知識，才是 AI 時代最值錢的資產。",
+    tags: ["隱性知識", "知識管理", "AI 轉型", "中小企業", "AI 落地", "組織變革", "老師傅", "工作流程"],
+  },
+  {
     slug: "ai-data-center-water-esg",
     cat: "ESG 永續",
     title: "AI 的隱形帳單：為什麼你的企業該關心資料中心用多少水",
