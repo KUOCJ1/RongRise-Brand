@@ -48,6 +48,16 @@ const articles: Article[] = [
     tags: ["AI 資安", "漏洞管理", "中小企業", "AI 威脅", "資安策略"],
   },
   {
+    slug: "anthropic-fable-5-us-government-ban",
+    cat: "小賀的成長日記",
+    title: "🔴 Breaking News：Claude 最新模型被美國政府禁用——台灣企業該反思什麼？",
+    date: "2026.06.14",
+    readTime: "8 分鐘",
+    excerpt: "一場 90 分鐘的緊急下架命令，震撼了整個 AI 產業。Anthropic 的旗艦模型 Fable 5 遭美國政府全面封殺。這不只是美國的事——對仰賴進口 AI 模型的台灣企業來說，這是一記警鐘。",
+    tags: ["AI 政策", "地緣政治", "企業風險", "Claude", "Anthropic"],
+>>>>>>> 3b113e8 (新增文章：老師傅要退休了，他的經驗怎麼變成 AI 的工作流程？)
+  },
+  {
     slug: "shadow-ai-enterprise-security-risk",
     cat: "AI 轉型",
     title: "🕵️ Shadow AI 正在你家企業裡爆炸：你最大的資安風險不是駭客，是員工",
