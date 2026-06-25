@@ -55,7 +55,6 @@ const articles: Article[] = [
     readTime: "8 分鐘",
     excerpt: "一場 90 分鐘的緊急下架命令，震撼了整個 AI 產業。Anthropic 的旗艦模型 Fable 5 遭美國政府全面封殺。這不只是美國的事——對仰賴進口 AI 模型的台灣企業來說，這是一記警鐘。",
     tags: ["AI 政策", "地緣政治", "企業風險", "Claude", "Anthropic"],
->>>>>>> 3b113e8 (新增文章：老師傅要退休了，他的經驗怎麼變成 AI 的工作流程？)
   },
   {
     slug: "shadow-ai-enterprise-security-risk",
