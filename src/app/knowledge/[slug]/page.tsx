@@ -399,7 +399,11 @@ export function generateMetadata({
 }): Metadata {
   const article = (articlesData as Article[]).find((a) => a.slug === params.slug);
   if (!article) {
-    return { title: "文章不存在 ｜ 知識庫" };
+    return {
+      title: "文章不存在 ｜ 知識庫 ｜ 榕耀管顧",
+      description: "您要找的文章不存在或已被移除。請返回知識庫瀏覽更多 AI 轉型、人才策略、ESG 永續相關文章。",
+      alternates: { canonical: `${SITE_URL}/knowledge` },
+    };
   }
   const coverFile = COVER_MAP[params.slug] || "og-image.jpg";
   return {

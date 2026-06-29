@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import newsletters from "@/data/newsletters.json";
 
 export const metadata: Metadata = {
-  title: "電子報｜榕賀觀點 AI 週報",
-  description: "小賀每週為你整理最重要的 AI 轉型趨勢、ESG 實務攻略、課程優惠。所有期數一次看。",
+  title: "電子報｜榕賀觀點 AI 週報｜榕耀管顧",
+  description: "小賀每週為你整理最重要的 AI 轉型趨勢、ESG 實務攻略、課程優惠。所有期數一次看，掌握企業 AI 落地最新動態。",
   alternates: {
     canonical: "https://rong-rise.com/newsletter",
   },

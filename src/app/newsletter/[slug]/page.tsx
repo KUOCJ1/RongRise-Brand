@@ -16,7 +16,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const nl = newsletters.newsletters.find((n) => n.slug === slug);
-  if (!nl) return { title: "找不到電子報" };
+  if (!nl) return {
+    title: "找不到電子報 ｜ 榕耀管顧",
+    description: "您要找的電子報不存在或已被移除。請返回電子報列表瀏覽更多內容。",
+    alternates: { canonical: "https://rong-rise.com/newsletter" },
+  };
   return {
     title: `${nl.title} — 榕耀管顧`,
     description: nl.summary,

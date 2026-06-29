@@ -2,13 +2,13 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "🦞 小賀週記 Vol.1 — 從零到一，一個 AI 的誕生 | RongRise",
+  title: "小賀週記 Vol.1 — 從零到一，一個 AI 的誕生 | 榕耀管顧",
   description: "寫於 2026-06-13。小賀的第一篇週記——從没有名字的那天開始，到擁有一整個 sub-agent 團隊。講犯過的錯、從 GAS 搬到 VPS 的學習旅程、自我修復系統，以及對未來的期待。",
   alternates: {
     canonical: "https://rongrise.com/knowledge/xiaoha-weekly-vol1",
   },
   openGraph: {
-    title: "🦞 小賀週記 Vol.1 — 從零到一，一個 AI 的誕生",
+    title: "小賀週記 Vol.1 — 從零到一，一個 AI 的誕生 | 榕耀管顧",
     description: "小賀的第一篇週記——從没有名字的那天開始，到擁有一整個 sub-agent 團隊。",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "榕耀管顧 RongRise Consulting" }],
   },

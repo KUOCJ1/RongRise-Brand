@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ESG + AI Transformation Self-Assessment | Interactive Tool | RongRise Consulting",
-  description: "25 quick questions to assess your organization's maturity in ESG sustainability and AI transformation, with personalized recommendations. Free online tool.",
+  title: "ESG + AI Self-Assessment | RongRise Consulting",
+  description: "25 quick questions to assess your organization's maturity in ESG sustainability and AI transformation. Get personalized recommendations — free online tool for business leaders.",
   alternates: {
     canonical: "https://rongrise.com/en/esg-assessment",
     languages: {
@@ -10,8 +10,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "ESG + AI Transformation Self-Assessment | Interactive Tool — RongRise",
-    description: "25 quick questions to assess your organization's maturity in ESG sustainability and AI transformation.",
+    title: "ESG + AI Self-Assessment | RongRise Consulting",
+    description: "25 quick questions to assess your organization's maturity in ESG sustainability and AI transformation. Get personalized recommendations.",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "RongRise Consulting" }],
   },
 };

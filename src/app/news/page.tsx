@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import news from "@/data/news.json";
 
 export const metadata: Metadata = {
-  title: "最新消息｜課程、資源、與觀點",
+  title: "最新消息｜AI 轉型課程與產業洞見｜榕耀管顧",
   description: "掌握榕耀管顧最新課程開課資訊、政府補助資源、與產業洞見。AI 轉型、人才策略、ESG 永續的第一手資訊。",
   alternates: {
     canonical: "https://rongrise.com/news",

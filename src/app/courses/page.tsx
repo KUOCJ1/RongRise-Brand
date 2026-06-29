@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import coursesData from "@/data/courses.json";
 
 export const metadata: Metadata = {
-  title: "課程行事曆｜近期課程與活動",
+  title: "課程行事曆｜AI 轉型與 ESG 永續課程｜榕耀管顧",
   description: "從單日工作坊到系列課程，找到最適合您的學習路徑。AI 轉型、人才策略、ESG 永續專業培訓，名額有限建議提早報名。",
   alternates: {
     canonical: "https://rongrise.com/courses",

@@ -21,6 +21,33 @@ const categories = ["全部", "AI 轉型", "課程設計", "人才策略", "ESG 
 
 const articles: Article[] = [
   {
+    slug: "ai-landing-trilogy-3-90-day-escort",
+    cat: "AI 轉型",
+    title: "陪跑 90 天：克服摩擦力的最後一哩",
+    date: "2026-06-29",
+    readTime: "14 分鐘",
+    excerpt: "四種摩擦力，對應四種陪跑解法：跨部門陪跑破地盤、主管示範破恐懼、SOP 迭代破顆粒度、定期複盤破權力阻力。90 天從啟動到固化，讓組織從靜摩擦變成動摩擦，自己動起來。",
+    tags: ["陪跑", "AI 落地", "顧問輔導", "SOP 迭代", "90 天", "摩擦力", "組織變革", "Tier A"],
+  },
+  {
+    slug: "ai-landing-trilogy-2-friction-tax",
+    cat: "AI 轉型",
+    title: "摩擦力稅：AI 落地最隱形的成本",
+    date: "2026-06-29",
+    readTime: "15 分鐘",
+    excerpt: "你導入 AI 編了 200 萬預算，但摩擦力稅悄悄吃掉 150 萬隱性成本。四種摩擦力：部門地盤、員工恐懼、SOP 顆粒度太粗、中階主管消極抵抗。靜摩擦大於動摩擦，POC 一放手就彈回去。",
+    tags: ["摩擦力", "AI 落地", "組織變革", "隱性成本", "SOP", "變革管理", "製造業", "服務業"],
+  },
+  {
+    slug: "ai-landing-trilogy-1-three-illusions",
+    cat: "AI 轉型",
+    title: "AI 落地的三個幻覺：為什麼你以為在前進，其實原地踏步",
+    date: "2026-06-29",
+    readTime: "12 分鐘",
+    excerpt: "台灣企業導入 AI 的比例從 12% 躍升到 34%，但投產率只有 11%。買了工具不等於用了、上完課不等於會了、一個 POC 成功不等於全部能做。95% 的企業死在死亡谷裡——一段沒有商業模式的路。",
+    tags: ["AI 落地", "AI 轉型", "組織變革", "死亡谷", "幻覺框架", "中小企業", "BCG", "Gartner"],
+  },
+  {
     slug: "tacit-knowledge-ai-workflow",
     cat: "AI 轉型",
     title: "老師傅要退休了，他的經驗怎麼變成 AI 的工作流程？",

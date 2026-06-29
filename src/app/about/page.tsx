@@ -7,7 +7,7 @@ import type { Metadata } from "next";
    ============================================ */
 
 export const metadata: Metadata = {
-  title: "關於我們",
+  title: "關於我們｜榕耀管顧 — 企業 AI 轉型顧問",
   description:
     "榕耀管顧由郭鎮榕 CJ哥創辦，與 AI 營運長小賀共同領導專業團隊，專注企業 AI 轉型、人才策略與 ESG 永續諮詢。",
   alternates: {

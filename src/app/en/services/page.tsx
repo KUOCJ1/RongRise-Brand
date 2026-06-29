@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Services | AI Transformation · Talent Strategy · ESG",
-  description: "RongRise Consulting services: AI Transformation Strategy, Corporate Training, ESG Sustainability Consulting. Customized solutions from diagnosis to implementation.",
+  description: "RongRise Consulting services: AI Transformation, Corporate Training, ESG Sustainability. Customized solutions from diagnosis to implementation.",
   alternates: {
     canonical: "https://rongrise.com/en/services",
     languages: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Services | AI Transformation · Talent Strategy · ESG — RongRise",
-    description: "AI Transformation Strategy, Corporate Training, ESG Sustainability Consulting. Customized solutions.",
+    description: "AI Transformation, Corporate Training, ESG Sustainability. Customized solutions from diagnosis to implementation.",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "RongRise Consulting" }],
   },
 };

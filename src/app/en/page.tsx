@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import CaseStudiesEnSection from "@/components/CaseStudiesEn";
 
 export const metadata: Metadata = {
-  title: "RongRise Consulting | AI Transformation × Talent Strategy × ESG",
+  title: "RongRise Consulting | AI Transformation × Talent × ESG",
   description: "Helping businesses drive sustainable growth through AI Transformation, Talent Strategy, and ESG Sustainability. Founded by C.J. Kuo with 16+ years of experience.",
   alternates: {
     canonical: "https://rongrise.com/en",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "RongRise Consulting | AI Transformation × Talent Strategy × ESG",
+    title: "RongRise Consulting | AI Transformation × Talent × ESG",
     description: "Helping businesses drive sustainable growth. AI Transformation, Talent Strategy, ESG Sustainability.",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "RongRise Consulting" }],
   },
