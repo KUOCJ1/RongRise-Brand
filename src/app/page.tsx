@@ -4,16 +4,10 @@ import { trackCTALabel } from "@/lib/ga4-events";
 import TrackLink from "@/components/TrackLink";
 import CaseStudiesSection from "@/components/CaseStudies";
 import TestimonialsSection from "@/components/Testimonials";
-import ServiceFlowSection from "@/components/ServiceFlow";
 import VideoShowcaseSection from "@/components/VideoShowcase";
-import NewsSection from "@/components/NewsSection";
-import FAQSection from "@/components/FAQ";
-import FAQSchema from "@/components/FAQSchema";
-import ReviewSchema from "@/components/ReviewSchema";
 import NewsletterSection from "@/components/Newsletter";
+import ReviewSchema from "@/components/ReviewSchema";
 import { coverImg } from "@/lib/cover-map";
-import coursesData from "@/data/courses.json";
-import faqData from "@/data/faq.json";
 
 export const metadata = {
   title: "榕耀管顧 RongRise Consulting｜AI 轉型 × 人才策略 × ESG 永續",
@@ -52,21 +46,15 @@ export default function HomePage() {
   return (
     <>
       <ScrollTracker />
-      {/* Hero Section */}
+
+      {/* ═══ 1. Hero Section ═══ */}
       <section className="bg-gradient-hero text-white relative overflow-hidden">
-        {/* AI 生成 Hero 背景圖 */}
         <div className="absolute inset-0 z-0">
-          <img
-            src="/images/hero-bg.jpg"
-            alt=""
-            className="w-full h-full object-cover object-center"
-          />
+          <img src="/images/hero-bg.jpg" alt="" className="w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-[#0D2B4E]/70" />
         </div>
-        {/* 動態 SVG 幾何背景 */}
         <div className="hero-bg-svg z-10" aria-hidden="true">
           <svg viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            {/* 網格背景 */}
             <g className="grid-float" opacity="0.06">
               {Array.from({ length: 13 }, (_, i) => (
                 <line key={`vl-${i}`} x1={i * 100} y1="0" x2={i * 100} y2="600" stroke="white" strokeWidth="1" />
@@ -75,8 +63,6 @@ export default function HomePage() {
                 <line key={`hl-${i}`} x1="0" y1={i * 100} x2="1200" y2={i * 100} stroke="white" strokeWidth="1" />
               ))}
             </g>
-
-            {/* 連線 */}
             <line className="hero-line hero-line-1" x1="100" y1="150" x2="300" y2="80" stroke="#E8912A" strokeWidth="1.5" />
             <line className="hero-line hero-line-2" x1="300" y1="80" x2="500" y2="180" stroke="#2EC4B6" strokeWidth="1" />
             <line className="hero-line hero-line-3" x1="500" y1="180" x2="700" y2="100" stroke="rgba(255,255,255,0.3)" strokeWidth="1" />
@@ -85,8 +71,6 @@ export default function HomePage() {
             <line className="hero-line hero-line-1" x1="600" y1="250" x2="1000" y2="350" stroke="rgba(255,255,255,0.2)" strokeWidth="1" />
             <line className="hero-line hero-line-3" x1="350" y1="400" x2="550" y2="480" stroke="#E8912A" strokeWidth="1" />
             <line className="hero-line hero-line-5" x1="550" y1="480" x2="850" y2="450" stroke="#2EC4B6" strokeWidth="1" />
-
-            {/* 節點 */}
             <circle className="hero-node hero-node-1" cx="100" cy="150" r="3" fill="#E8912A" />
             <circle className="hero-node hero-node-2" cx="300" cy="80" r="4" fill="#2EC4B6" />
             <circle className="hero-node hero-node-3" cx="500" cy="180" r="3" fill="rgba(255,255,255,0.5)" />
@@ -98,12 +82,8 @@ export default function HomePage() {
             <circle className="hero-node hero-node-3" cx="350" cy="400" r="3" fill="rgba(255,255,255,0.5)" />
             <circle className="hero-node hero-node-4" cx="550" cy="480" r="4" fill="#E8912A" />
             <circle className="hero-node hero-node-5" cx="850" cy="450" r="3" fill="#2EC4B6" />
-
-            {/* 六邊形裝飾 */}
             <polygon className="hero-node hero-node-2" points="1050,400 1080,385 1080,415 1050,430 1020,415 1020,385" fill="none" stroke="#E8912A" strokeWidth="1" opacity="0.4" />
             <polygon className="hero-node hero-node-4" points="150,500 170,490 170,510 150,520 130,510 130,490" fill="none" stroke="#2EC4B6" strokeWidth="1" opacity="0.3" />
-
-            {/* 虛線圓 */}
             <circle className="hero-line hero-line-2" cx="400" cy="300" r="120" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="1" strokeDasharray="8 8" />
             <circle className="hero-line hero-line-4" cx="800" cy="400" r="80" fill="none" stroke="rgba(232,145,42,0.1)" strokeWidth="1" strokeDasharray="6 6" />
           </svg>
@@ -134,7 +114,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* 數據指標 — mobile 可見，desktop 右側浮動 */}
+          {/* 數據指標 */}
           <div className="mt-12 lg:absolute lg:right-8 lg:top-1/2 lg:-translate-y-1/2 lg:mt-0">
             <div className="flex items-center gap-4 sm:gap-6 lg:flex-col lg:gap-4 lg:w-56">
               <HeroStat number="16+" label="年跨國人資經驗" dark />
@@ -147,15 +127,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 核心服務 */}
+      {/* ═══ 2. 服務 + 流程（合併）═══ */}
       <section className="section relative overflow-hidden">
-        {/* AI 生成服務區塊背景 */}
         <div className="absolute inset-0 z-0">
-          <img
-            src="/images/services-bg.jpg"
-            alt=""
-            className="w-full h-full object-cover object-center"
-          />
+          <img src="/images/services-bg.jpg" alt="" className="w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-[#FDFCFA]/85" />
         </div>
         <div className="section-inner relative z-10">
@@ -168,50 +143,37 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <ServiceCard
-              delay={0}
-              icon={
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-tertiary">
-                  <path d="M12 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" />
-                  <path d="M12 22a2 2 0 0 1 2-2v-2a2 2 0 0 1-2-2 2 2 0 0 1-2 2v2a2 2 0 0 1 2 2z" />
-                  <path d="M22 12a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2 2 2 0 0 1 2-2h2a2 2 0 0 1 2 2z" />
-                  <path d="M2 12a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z" />
-                  <circle cx="12" cy="12" r="3" />
-                  <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
-                </svg>
-              }
-              title="AI 轉型策略"
-              desc="從評估、規劃到落地，打造企業專屬的 AI 轉型藍圖。協助管理層建立 AI 思維，導入自動化流程，提升營運效率。"
-              tag="AI"
-            />
-            <ServiceCard
-              delay={150}
-              icon={
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-secondary">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                </svg>
-              }
-              title="人才發展策略"
-              desc="建構面向未來的人才梯隊，結合數位能力培訓與組織變革管理，讓企業在轉型中不失去核心競爭力。"
-              tag="人才"
-            />
-            <ServiceCard
-              delay={300}
-              icon={
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent">
-                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                  <path d="M2 17l10 5 10-5" />
-                  <path d="M2 12l10 5 10-5" />
-                </svg>
-              }
-              title="ESG 永續發展"
-              desc="將永續理念融入企業策略，建立可衡量的 ESG 指標體系，創造企業社會價值與商業效益的雙贏局面。"
-              tag="ESG"
-            />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <ServiceCard delay={0} icon={<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-tertiary"><path d="M12 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" /><path d="M12 22a2 2 0 0 1 2-2v-2a2 2 0 0 1-2-2 2 2 0 0 1-2 2v2a2 2 0 0 1 2 2z" /><path d="M22 12a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2 2 2 0 0 1 2-2h2a2 2 0 0 1 2 2z" /><path d="M2 12a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z" /><circle cx="12" cy="12" r="3" /><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" /></svg>} title="AI 轉型策略" desc="從評估、規劃到落地，打造企業專屬的 AI 轉型藍圖。協助管理層建立 AI 思維，導入自動化流程，提升營運效率。" tag="AI" />
+            <ServiceCard delay={150} icon={<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-secondary"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>} title="人才發展策略" desc="建構面向未來的人才梯隊，結合數位能力培訓與組織變革管理，讓企業在轉型中不失去核心競爭力。" tag="人才" />
+            <ServiceCard delay={300} icon={<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent"><path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" /></svg>} title="ESG 永續發展" desc="將永續理念融入企業策略，建立可衡量的 ESG 指標體系，創造企業社會價值與商業效益的雙贏局面。" tag="ESG" />
+          </div>
+
+          {/* 服務流程 */}
+          <div className="max-w-3xl mx-auto">
+            <h3 className="heading-subsection text-dark text-center mb-8">我們的合作方式</h3>
+            <div className="space-y-6">
+              {[
+                { step: "01", icon: "🔍", title: "免費診斷", desc: "30 分鐘深度對談，了解企業現況與目標" },
+                { step: "02", icon: "📊", title: "現況評估", desc: "全面盤點組織能力、AI 成熟度、ESG 差距" },
+                { step: "03", icon: "📋", title: "策略規劃", desc: "客製化轉型藍圖 + 導入路線圖" },
+                { step: "04", icon: "🚀", title: "落地執行", desc: "陪伴式導入，從 PoC 到全面落地" },
+                { step: "05", icon: "📈", title: "成效追蹤", desc: "KPI 體系 + 持續優化" },
+              ].map((item, i) => (
+                <div key={i} className="flex gap-4 items-start">
+                  <div className="w-12 h-12 rounded-full bg-white border-2 border-primary/10 flex items-center justify-center flex-shrink-0 shadow-sm text-xl">
+                    {item.icon}
+                  </div>
+                  <div className="pt-1">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="text-xs font-bold text-tertiary tracking-wider">STEP {item.step}</span>
+                      <span className="font-semibold text-dark">{item.title}</span>
+                    </div>
+                    <p className="text-text-secondary text-body-sm">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="text-center mt-12">
@@ -222,25 +184,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SVG 分隔線 1 */}
-      <div className="deco-divider" aria-hidden="true">
-        <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
-          <path className="deco-line" d="M0,40 Q300,10 600,40 Q900,70 1200,40" fill="none" stroke="url(#divider-grad-1)" strokeWidth="2" />
-          <defs>
-            <linearGradient id="divider-grad-1" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#E8912A" stopOpacity="0" />
-              <stop offset="30%" stopColor="#E8912A" stopOpacity="0.6" />
-              <stop offset="70%" stopColor="#2EC4B6" stopOpacity="0.6" />
-              <stop offset="100%" stopColor="#2EC4B6" stopOpacity="0" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
-
-      {/* ===== 1. 客戶案例 / 成果展示 ===== */}
+      {/* ═══ 3. 客戶案例 ═══ */}
       <CaseStudiesSection />
 
-      {/* 關於預覽 */}
+      {/* ═══ 4. 關於 + 推薦（合併）═══ */}
       <section className="section">
         <div className="section-inner">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -258,18 +205,16 @@ export default function HomePage() {
               <p className="text-text-secondary text-body mb-6">
                 以數據為基礎，以策略為核心，以落地為目標——不只是提出方案，更陪伴企業走完轉型的每一步。
               </p>
-              <TrackLink href="/about" className="btn-secondary" trackLabel="了解更多" trackLocation="about_preview">
-                了解更多 →
-              </TrackLink>
+              <div className="flex flex-wrap gap-3">
+                <TrackLink href="/about" className="btn-secondary" trackLabel="了解更多" trackLocation="about_preview">
+                  了解更多 →
+                </TrackLink>
+                <TestimonialsSection />
+              </div>
             </div>
             <div className="relative rounded-2xl overflow-hidden p-8 md:p-10 text-white">
-              {/* AI 生成引用區背景 */}
               <div className="absolute inset-0 z-0">
-                <img
-                  src="/images/about-quote-bg.jpg"
-                  alt=""
-                  className="w-full h-full object-cover object-center"
-                />
+                <img src="/images/about-quote-bg.jpg" alt="" className="w-full h-full object-cover object-center" />
                 <div className="absolute inset-0 bg-[#0D2B4E]/80" />
               </div>
               <blockquote className="relative z-10 text-lg md:text-xl leading-relaxed font-medium mb-6 text-white">
@@ -277,14 +222,7 @@ export default function HomePage() {
               </blockquote>
               <div className="relative z-10 flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white/30 flex-shrink-0">
-                  <img
-                    src="/images/cj-portrait-full.jpg"
-                    alt="郭鎮榕 C.J. Kuo"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                    width={48}
-                    height={48}
-                  />
+                  <img src="/images/cj-portrait-full.jpg" alt="郭鎮榕 C.J. Kuo" className="w-full h-full object-cover" loading="lazy" width={48} height={48} />
                 </div>
                 <div>
                   <p className="font-semibold text-sm">郭鎮榕 C.J. Kuo</p>
@@ -295,15 +233,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* ===== 2. 客戶推薦 / 證言 ===== */}
-      <TestimonialsSection />
       <ReviewSchema />
 
-      {/* ===== 影片展示 ===== */}
-      <VideoShowcaseSection />
-
-      {/* 知識預覽 */}
+      {/* ═══ 5. 知識預覽 ═══ */}
       <section className="section bg-gradient-subtle">
         <div className="section-inner">
           <div className="text-center mb-12">
@@ -314,55 +246,24 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {[
-              {
-                slug: "hr-ai-transformation-five-layers",
-                cat: "人才策略",
-                title: "HR 的 AI 轉型五層責任架構",
-                date: "2026.05.29",
-                excerpt: "MIT 研究 300 個企業案例，95% 的 AI 沒有產生可衡量的損益影響。問題不在技術，在於組織摩擦力。",
-              },
-              {
-                slug: "ai-transformation-trends-2026",
-                cat: "AI 轉型",
-                title: "2026 AI 轉型四大趨勢",
-                date: "2026.05.28",
-                excerpt: "邊緣 AI 爆發、AI Agent 上工、AI 資安告急、政府補助加速——深度解析今年最關鍵的四大轉型趨勢。",
-              },
-              {
-                slug: "strategy-subtraction-traditional-industry",
-                cat: "策略管理",
-                title: "策略是減法：為什麼傳產企業更需要學會「不做事」",
-                date: "2026.05.29",
-                excerpt: "資源已經燒光了，大家還在做加法。從傳統產業三重壓力到 Netflix 關鍵轉折，解析為什麼減法這麼難。",
-              },
+              { slug: "hr-ai-transformation-five-layers", cat: "人才策略", title: "HR 的 AI 轉型五層責任架構", date: "2026.05.29", excerpt: "MIT 研究 300 個企業案例，95% 的 AI 沒有產生可衡量的損益影響。問題不在技術，在於組織摩擦力。" },
+              { slug: "ai-transformation-trends-2026", cat: "AI 轉型", title: "2026 AI 轉型四大趨勢", date: "2026.05.28", excerpt: "邊緣 AI 爆發、AI Agent 上工、AI 資安告急、政府補助加速——深度解析今年最關鍵的四大轉型趨勢。" },
+              { slug: "strategy-subtraction-traditional-industry", cat: "策略管理", title: "策略是減法：為什麼傳產企業更需要學會「不做事」", date: "2026.05.29", excerpt: "資源已經燒光了，大家還在做加法。從傳統產業三重壓力到 Netflix 關鍵轉折，解析為什麼減法這麼難。" },
             ].map((post, i) => (
-              <Link
-                key={i}
-                href={`/knowledge/${post.slug}`}
-                className="card card-3d group no-underline block overflow-hidden"
-              >
+              <Link key={i} href={`/knowledge/${post.slug}`} className="card card-3d group no-underline block overflow-hidden">
                 <div className="h-40 overflow-hidden">
-                  <img
-                    src={coverImg(post.slug)}
-                    alt={post.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
+                  <img src={coverImg(post.slug)} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                 </div>
                 <div className="card-inner">
                   <div className="flex items-center justify-between mb-3">
                     <span className="tag">{post.cat}</span>
                     <span className="text-xs text-text-secondary">{post.date}</span>
                   </div>
-                  <h3 className="heading-subsection text-dark group-hover:text-primary transition-colors mb-2">
-                    {post.title}
-                  </h3>
+                  <h3 className="heading-subsection text-dark group-hover:text-primary transition-colors mb-2">{post.title}</h3>
                   <p className="text-text-secondary text-body-sm">{post.excerpt}</p>
                   <div className="mt-4 flex items-center gap-1 text-sm text-primary font-medium opacity-0 group-hover:opacity-100 transition-opacity">
                     閱讀更多
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                   </div>
                 </div>
               </Link>
@@ -377,160 +278,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ===== 3. 服務流程詳細版 ===== */}
-      <ServiceFlowSection />
+      {/* ═══ 6. 影片展示 ═══ */}
+      <VideoShowcaseSection />
 
-      {/* ESG 自評區塊 */}
-      <section className="section bg-bg-alt">
-        <div className="section-inner text-center">
-          <span className="tag mb-4">互動工具</span>
-          <h2 className="heading-section text-dark mt-4">ESG + AI 轉型自評</h2>
-          <div className="brand-divider brand-divider-center mt-4" />
-          <p className="text-text-secondary text-body-lg mt-6 max-w-2xl mx-auto">
-            25 題快速評估您的企業在 ESG 永續和 AI 轉型的成熟度。
-            涵蓋環境保護、社會責任、公司治理等五大維度，完成後獲得個人化建議。
-          </p>
-          <div className="mt-8">
-            <Link href="/esg-assessment" className="btn-primary text-lg px-8 py-3">
-              🔍 開始免費評估
-            </Link>
-          </div>
-        </div>
-      </section>
-
-
-      {/* ===== 4. 最新消息 ===== */}
-      <NewsSection />
-
-      {/* Upcoming Courses */}
-      <section className="section bg-white">
-        <div className="section-inner">
-          <div className="text-center mb-12">
-            <span className="tag mb-4">近期課程</span>
-            <h2 className="heading-section text-dark mt-4">學習，是最好的轉型投資</h2>
-            <div className="brand-divider brand-divider-center mt-4" />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {coursesData.courses.slice(0, 4).map((course) => (
-              <div key={course.id} className="card flex flex-col">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="tag">{course.type}</span>
-                  <span className="text-xs text-text-secondary">
-                    {new Date(course.date).toLocaleDateString("zh-TW", { month: "long", day: "numeric" })}
-                  </span>
-                </div>
-                <h3 className="heading-subsection text-dark mb-2">{course.title}</h3>
-                <p className="text-text-secondary text-body-sm mb-4 flex-1">{course.description}</p>
-                <div className="flex items-center justify-between pt-4 border-t border-border-light">
-                  <span className="text-sm font-semibold text-primary">{course.price}</span>
-                  <Link href="/courses" className="btn-ghost text-sm text-primary">
-                    查看詳情 →
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-8">
-            <Link href="/courses" className="btn-secondary">
-              查看所有課程 →
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== 5. 訂閱電子報 ===== */}
+      {/* ═══ 7. 訂閱電子報 ═══ */}
       <NewsletterSection />
 
-      {/* ===== 6. 常見問題 ===== */}
-      <FAQSection />
-      <FAQSchema faq={faqData.faq} />
-
-      {/* ===== 6. 免費資源 Lead Magnet ===== */}
-      <section className="section bg-bg-alt">
-        <div className="section-inner">
-          <div className="max-w-3xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Left: Lead Magnet */}
-              <div className="bg-gradient-hero rounded-2xl p-8 text-white flex flex-col justify-between">
-                <div>
-                  <span className="tag bg-white/15 text-white mb-4">免費資源</span>
-                  <h3 className="heading-subsection text-white mt-4 mb-3">
-                    帶走一套完整的轉型工具包
-                  </h3>
-                  <p className="text-white/80 text-body mb-6">
-                    AI 成熟度自評量表 + ESG 現況盤點清單 + AI 轉型趨勢報告。
-                    全部免費，無需留下任何資料。
-                  </p>
-                  <ul className="space-y-2 mb-6">
-                    {[
-                      "企業 AI 成熟度自評量表",
-                      "ESG 現況盤點清單",
-                      "2026 AI 轉型趨勢報告",
-                      "企業 AI 工具選型指南"
-                    ].map((item, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm text-white/85">
-                        <svg className="w-4 h-4 flex-shrink-0 text-accent" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <Link href="/downloads" className="btn-primary bg-white text-primary font-bold hover:bg-white/95 text-center">
-                  立即下載 →
-                </Link>
-              </div>
-
-              {/* Right: CTA */}
-              <div className="flex flex-col gap-6">
-                <div className="card flex-1 flex flex-col justify-center">
-                  <h3 className="heading-subsection text-dark mb-3">想有人帶您走？</h3>
-                  <p className="text-text-secondary text-body mb-4">
-                    預約免費 30 分鐘諮詢，CJ哥會依據您的企業現況，給出具體可行動的建議。
-                  </p>
-                  <Link href="/about#contact" className="btn-primary text-center">
-                    預約免費諮詢
-                  </Link>
-                </div>
-                <div className="card flex-1 flex flex-col justify-center">
-                  <h3 className="heading-subsection text-dark mb-3">有問題想先問？</h3>
-                  <p className="text-text-secondary text-body mb-4">
-                    小幫手彙整了 CJ哥的完整知識庫，24 小時即時回覆。
-                  </p>
-                  <Link href="/assistant" className="btn-secondary text-center">
-                    問問小幫手 →
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* SVG 分隔線 2 */}
-      <div className="deco-divider" aria-hidden="true">
-        <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
-          <path className="deco-line" d="M0,40 C200,70 400,10 600,40 C800,70 1000,10 1200,40" fill="none" stroke="url(#divider-grad-2)" strokeWidth="2" />
-          <defs>
-            <linearGradient id="divider-grad-2" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#2EC4B6" stopOpacity="0" />
-              <stop offset="40%" stopColor="#1A6DB5" stopOpacity="0.5" />
-              <stop offset="60%" stopColor="#E8912A" stopOpacity="0.5" />
-              <stop offset="100%" stopColor="#E8912A" stopOpacity="0" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
-
-      {/* CTA */}
+      {/* ═══ 8. CTA（最終轉換）═══ */}
       <section className="py-16 relative overflow-hidden">
-        {/* AI 生成背景圖 */}
         <div className="absolute inset-0 z-0">
-          <img
-            src="/images/cta-bg.jpg"
-            alt=""
-            className="w-full h-full object-cover object-center"
-          />
+          <img src="/images/cta-bg.jpg" alt="" className="w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-[#0D2B4E]/85" />
         </div>
         <div className="absolute inset-0 opacity-[0.07]">
@@ -543,13 +300,8 @@ export default function HomePage() {
             <rect width="100%" height="100%" fill="url(#cta-grid)" />
           </svg>
         </div>
-        {/* 裝飾圓 */}
-        <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-white/[0.03]" />
-        <div className="absolute -left-10 -bottom-10 w-48 h-48 rounded-full bg-white/[0.04]" />
         <div className="max-w-[800px] mx-auto px-4 sm:px-6 text-center relative z-10">
-          <h2 className="heading-section text-white mb-4">
-            準備好啟動您的轉型之旅了嗎？
-          </h2>
+          <h2 className="heading-section text-white mb-4">準備好啟動您的轉型之旅了嗎？</h2>
           <p className="text-white/80 text-body-lg mb-8">
             無論您正處於轉型的哪個階段，我們都能提供專業且務實的建議。
             讓我們一起探索適合您企業的最佳路徑。
@@ -572,7 +324,7 @@ function HeroStat({ number, label, dark = false }: { number: string; label: stri
   return (
     <div className="text-center">
       <div className={`text-2xl sm:text-3xl font-bold ${dark ? "text-tertiary" : "text-white"}`}>{number}</div>
-      <div className={`text-xs mt-1 ${dark ? "text-white/60" : "text-white/60"}`}>{label}</div>
+      <div className="text-xs mt-1 text-white/60">{label}</div>
     </div>
   );
 }

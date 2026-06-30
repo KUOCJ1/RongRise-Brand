@@ -1,0 +1,21 @@
+/* ============================================
+   07 — RWD
+   ============================================ */
+
+@media (max-width: 768px) {
+  .section { padding: 3rem 1rem; }
+  .card { padding: 1.25rem; }
+  .card:hover { transform: translateY(-1px); }
+  .btn-primary, .btn-secondary { padding: 0.7rem 1.5rem; font-size: 0.88rem; }
+  .bg-gradient-hero::after { height: 30px; }
+  .tag { font-size: 0.68rem; padding: 0.15rem 0.55rem; }
+}
+
+@media (max-width: 480px) {
+  .section { padding: 2.5rem 0.75rem; }
+  .card { padding: 1rem; border-radius: var(--radius-md); }
+}
+
+@supports (padding: env(safe-area-inset-bottom)) {
+  body { padding-bottom: env(safe-area-inset-bottom); }
+}

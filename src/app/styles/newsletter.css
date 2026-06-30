@@ -1,0 +1,132 @@
+/* ============================================
+   06 — Newsletter Content Styles
+   ============================================ */
+
+.newsletter-content {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--color-text-primary);
+}
+
+.newsletter-content .newsletter-h1 {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--color-text-primary);
+  margin: 2rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-tertiary);
+}
+
+.newsletter-content .newsletter-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--color-primary);
+  margin: 2rem 0 0.75rem;
+}
+
+.newsletter-content .newsletter-h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-text-primary);
+  margin: 1.5rem 0 0.5rem;
+}
+
+.newsletter-content .newsletter-p {
+  margin: 0.75rem 0;
+  line-height: 1.85;
+}
+
+.newsletter-content .newsletter-hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 2rem 0;
+}
+
+.newsletter-content .newsletter-blockquote {
+  margin: 1rem 0;
+  padding: 0.75rem 1.25rem;
+  border-left: 3px solid var(--color-tertiary);
+  background: var(--color-warm-50);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-style: italic;
+  color: var(--color-text-secondary);
+}
+
+.newsletter-content .newsletter-ul {
+  margin: 0.75rem 0;
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+.newsletter-content .newsletter-li {
+  margin: 0.35rem 0;
+  line-height: 1.75;
+}
+
+.newsletter-content .newsletter-li-ordered {
+  margin: 0.35rem 0;
+  line-height: 1.75;
+  list-style: decimal;
+}
+
+.newsletter-content .newsletter-link {
+  color: var(--color-secondary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color var(--transition-fast);
+}
+
+.newsletter-content .newsletter-link:hover {
+  color: var(--color-primary);
+}
+
+.newsletter-content .newsletter-table-wrap {
+  overflow-x: auto;
+  margin: 1rem 0;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.newsletter-content .newsletter-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.newsletter-content .newsletter-table th {
+  background: var(--color-primary);
+  color: white;
+  padding: 0.6rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.newsletter-content .newsletter-table td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--color-border-light);
+  line-height: 1.6;
+}
+
+.newsletter-content .newsletter-table tr:last-child td {
+  border-bottom: none;
+}
+
+.newsletter-content .newsletter-table tr:nth-child(even) td {
+  background: var(--color-warm-50);
+}
+
+.newsletter-content strong {
+  color: var(--color-text-primary);
+  font-weight: 700;
+}
+
+.newsletter-content em {
+  color: var(--color-text-secondary);
+}

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import DarkModeToggle from "@/components/DarkModeToggle";
 
 const navItems = [
   { href: "/", label: "首頁" },
@@ -61,6 +62,9 @@ export default function Header() {
             >
               EN
             </Link>
+            <div className="ml-2 pl-2 border-l border-border">
+              <DarkModeToggle />
+            </div>
           </div>
         </nav>
 
@@ -141,6 +145,9 @@ export default function Header() {
               >
                 English
               </Link>
+              <div className="ml-auto">
+                <DarkModeToggle />
+              </div>
             </div>
             <Link
               href="/about#contact"

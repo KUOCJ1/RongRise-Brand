@@ -1,12 +1,6 @@
-# robots.txt for RongRise Consulting
-# https://www.robotstxt.org/
-
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /admin/
 
-# Sitemap
 Sitemap: https://rong-rise.com/sitemap.xml
-
-# Disallow admin or private paths (if any)
-# Disallow: /admin/
-# Disallow: /private/

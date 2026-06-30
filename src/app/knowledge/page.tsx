@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo, useCallback } from "react";
 import Link from "next/link";
+import Fuse from "fuse.js";
 import { coverImg } from "@/lib/cover-map";
 
 /* ============================================
-   知識庫 Knowledge Base Page (with filter)
+   知識庫 Knowledge Base Page (with search + filter)
    ============================================ */
 
 interface Article {
@@ -21,6 +22,15 @@ interface Article {
 const categories = ["全部", "AI 轉型", "課程設計", "人才策略", "ESG 永續", "案例分享", "工具資源", "政府資源", "策略管理", "小賀的成長日記"];
 
 const articles: Article[] = [
+  {
+    slug: "ai-ownership-inversion-non-it-lead",
+    cat: "AI 轉型",
+    title: "80% 的 AI 專案不是 IT 做的：AI 所有權反轉的時代來了",
+    date: "2026-07-02",
+    readTime: "14 分鐘",
+    excerpt: "緯創軟體在兩年內跑出超過 100 個 AI 落地場景，其中 80% 不是 IT 部門主導——而是由業務、客服、財會這些「第一線」發動。AI 導入的成敗，跟你的技術多強無關，跟「誰擁有這個 AI」有關。",
+    tags: ["AI 所有權", "組織設計", "AI 落地", "非 IT 主導", "緯創軟體", "AI 翻譯員", "中小企業", "AI 轉型"],
+  },
   {
     slug: "ai-landing-trilogy-3-90-day-escort",
     cat: "AI 轉型",
@@ -250,11 +260,46 @@ const articles: Article[] = [
 
 export default function KnowledgePage() {
   const [activeCat, setActiveCat] = useState("全部");
+  const [searchQuery, setSearchQuery] = useState("");
 
-  const filtered =
-    activeCat === "全部"
-      ? articles
-      : articles.filter((a) => a.cat === activeCat);
+  // Fuse.js fuzzy search
+  const fuse = useMemo(() => {
+    return new Fuse(articles, {
+      keys: [
+        { name: "title", weight: 0.4 },
+        { name: "excerpt", weight: 0.3 },
+        { name: "tags", weight: 0.2 },
+        { name: "cat", weight: 0.1 },
+      ],
+      threshold: 0.3,
+      includeScore: true,
+      ignoreLocation: true,
+    });
+  }, []);
+
+  const filtered = useMemo(() => {
+    // Step 1: Filter by category
+    const catFiltered =
+      activeCat === "全部"
+        ? articles
+        : articles.filter((a) => a.cat === activeCat);
+
+    // Step 2: If no search, return category-filtered
+    if (!searchQuery.trim()) return catFiltered;
+
+    // Step 3: Fuse search on category-filtered results
+    const searchResults = fuse.search(searchQuery);
+    const searchSlugs = new Set(searchResults.map((r) => r.item.slug));
+    return catFiltered.filter((a) => searchSlugs.has(a.slug));
+  }, [activeCat, searchQuery, fuse]);
+
+  const handleSearch = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(e.target.value);
+  }, []);
+
+  const clearSearch = useCallback(() => {
+    setSearchQuery("");
+  }, []);
 
   return (
     <>
@@ -270,9 +315,38 @@ export default function KnowledgePage() {
         </div>
       </section>
 
-      {/* Category Filter */}
+      {/* Search + Category Filter */}
       <section className="bg-white border-b border-border sticky top-16 z-40">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-3">
+          {/* Search Bar */}
+          <div className="relative mb-3">
+            <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={handleSearch}
+              placeholder="搜尋文章標題、內容、標籤..."
+              className="w-full pl-10 pr-10 py-2.5 rounded-lg border border-border bg-bg-alt text-sm text-dark placeholder:text-text-secondary focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
+              aria-label="搜尋文章"
+            />
+            {searchQuery && (
+              <button
+                onClick={clearSearch}
+                className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center transition-colors"
+                aria-label="清除搜尋"
+              >
+                <svg className="w-3 h-3 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5" strokeLinecap="round">
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </button>
+            )}
+          </div>
+
+          {/* Category Pills */}
           <div className="flex gap-2 overflow-x-auto pb-1">
             {categories.map((cat) => (
               <button
@@ -294,12 +368,39 @@ export default function KnowledgePage() {
       {/* Articles Grid */}
       <section className="section bg-bg-alt">
         <div className="section-inner">
+          {/* Results count */}
+          {(searchQuery || activeCat !== "全部") && (
+            <div className="mb-6 flex items-center gap-2 text-sm text-text-secondary">
+              <span>
+                {searchQuery
+                  ? `找到 ${filtered.length} 篇符合「${searchQuery}」的文章`
+                  : `${activeCat} 共 ${filtered.length} 篇文章`}
+              </span>
+              {(searchQuery || activeCat !== "全部") && (
+                <button
+                  onClick={() => { setSearchQuery(""); setActiveCat("全部"); }}
+                  className="text-primary hover:underline text-xs"
+                >
+                  清除篩選
+                </button>
+              )}
+            </div>
+          )}
+
           {filtered.length === 0 ? (
             <div className="text-center py-16">
-              <p className="text-text-secondary text-lg">此分類暫無文章</p>
+              <div className="text-5xl mb-4">🔍</div>
+              <p className="text-text-secondary text-lg mb-2">
+                {searchQuery
+                  ? `找不到符合「${searchQuery}」的文章`
+                  : "此分類暫無文章"}
+              </p>
+              <p className="text-text-secondary text-sm mb-6">
+                試試其他關鍵字，或清除篩選條件
+              </p>
               <button
-                onClick={() => setActiveCat("全部")}
-                className="btn-ghost text-primary mt-4"
+                onClick={() => { setSearchQuery(""); setActiveCat("全部"); }}
+                className="btn-ghost text-primary"
               >
                 查看全部文章
               </button>

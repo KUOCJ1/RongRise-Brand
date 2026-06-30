@@ -3,7 +3,10 @@ import articlesData from "@/data/articles.json";
 import type { Metadata } from "next";
 import ArticleTracker from "@/components/ArticleTracker";
 import ArticleToc from "@/components/ArticleToc";
+import ReadingProgress from "@/components/ReadingProgress";
 import { COVER_MAP } from "@/lib/cover-map";
+
+import Script from "next/script";
 
 /* ============================================
    知識庫文章單頁 Knowledge Base Article Page
@@ -52,15 +55,12 @@ function renderBody(body: string): React.ReactNode[] {
       const headers = tableRows[0];
       const dataRows = tableRows.slice(2);
       elements.push(
-        <div key={`t-${tableKey++}`} className="overflow-x-auto my-6">
+        <div key={`t-${tableKey++}`} className="overflow-x-auto my-8 rounded-xl border border-border">
           <table className="w-full text-sm border-collapse">
             <thead>
               <tr className="bg-primary/5">
                 {headers.map((h, i) => (
-                  <th
-                    key={i}
-                    className="px-4 py-2.5 text-left font-semibold text-primary border-b-2 border-primary/20"
-                  >
+                  <th key={i} className="px-4 py-3 text-left font-semibold text-primary border-b border-primary/10">
                     {h.trim()}
                   </th>
                 ))}
@@ -68,12 +68,9 @@ function renderBody(body: string): React.ReactNode[] {
             </thead>
             <tbody>
               {dataRows.map((row, ri) => (
-                <tr
-                  key={ri}
-                  className="border-b border-border-light hover:bg-bg-alt transition-colors"
-                >
+                <tr key={ri} className="border-b border-border-light hover:bg-bg-alt/50 transition-colors">
                   {row.map((cell, ci) => (
-                    <td key={ci} className="px-4 py-2.5 text-text-secondary">
+                    <td key={ci} className="px-4 py-3 text-text-secondary">
                       {cell.trim()}
                     </td>
                   ))}
@@ -110,7 +107,7 @@ function renderBody(body: string): React.ReactNode[] {
     // H2
     if (line.startsWith("## ")) {
       elements.push(
-        <h2 key={`h2-${i}`} className="heading-subsection text-dark mt-10 mb-4 pb-2 border-b border-border-light">
+        <h2 key={`h2-${i}`} className="heading-subsection text-dark mt-14 mb-5 pb-2 border-b border-border-light">
           {line.slice(3)}
         </h2>
       );
@@ -120,7 +117,7 @@ function renderBody(body: string): React.ReactNode[] {
     // H3
     if (line.startsWith("### ")) {
       elements.push(
-        <h3 key={`h3-${i}`} className="text-lg font-semibold text-dark mt-8 mb-3">
+        <h3 key={`h3-${i}`} className="text-lg font-semibold text-dark mt-10 mb-4">
           {line.slice(4)}
         </h3>
       );
@@ -129,7 +126,7 @@ function renderBody(body: string): React.ReactNode[] {
 
     // Horizontal rule
     if (line.trim() === "---") {
-      elements.push(<hr key={`hr-${i}`} className="my-8 border-border-light" />);
+      elements.push(<hr key={`hr-${i}`} className="my-10 border-border-light" />);
       continue;
     }
 
@@ -142,9 +139,9 @@ function renderBody(body: string): React.ReactNode[] {
       }
       i--;
       elements.push(
-        <ul key={`ul-${i}`} className="space-y-2 my-4 ml-1">
+        <ul key={`ul-${i}`} className="space-y-2 my-6 ml-1">
           {items.map((item, ii) => (
-            <li key={ii} className="flex items-start gap-2 text-text-secondary">
+            <li key={ii} className="flex items-start gap-2 text-text-secondary leading-relaxed">
               <span className="text-tertiary mt-1.5 flex-shrink-0">•</span>
               <span dangerouslySetInnerHTML={{ __html: formatInline(item) }} />
             </li>
@@ -163,9 +160,9 @@ function renderBody(body: string): React.ReactNode[] {
       }
       i--;
       elements.push(
-        <ol key={`ol-${i}`} className="space-y-3 my-4 ml-1">
+        <ol key={`ol-${i}`} className="space-y-3 my-6 ml-1">
           {items.map((item, ii) => (
-            <li key={ii} className="flex items-start gap-3 text-text-secondary">
+            <li key={ii} className="flex items-start gap-3 text-text-secondary leading-relaxed">
               <span className="w-7 h-7 rounded-full bg-primary/10 text-primary font-semibold text-sm flex items-center justify-center flex-shrink-0 mt-0.5">
                 {ii + 1}
               </span>
@@ -187,13 +184,20 @@ function renderBody(body: string): React.ReactNode[] {
         i++;
       }
       elements.push(
-        <div key={`code-${i}`} className="my-6 rounded-xl overflow-hidden border border-border">
+        <div key={`code-${i}`} className="my-8 rounded-xl overflow-hidden border border-border">
           {lang && (
-            <div className="bg-bg-dark text-white/70 text-xs px-4 py-2 font-mono">
-              {lang}
+            <div className="bg-bg-dark text-white/70 text-xs px-4 py-2 font-mono flex items-center justify-between">
+              <span>{lang}</span>
+              <button
+                onClick={() => navigator.clipboard?.writeText(codeLines.join("\n"))}
+                className="text-white/50 hover:text-white/90 transition-colors text-xs"
+                aria-label="複製程式碼"
+              >
+                Copy
+              </button>
             </div>
           )}
-          <pre className="bg-[#1e1e2e] text-[#cdd6f4] p-4 overflow-x-auto text-sm leading-relaxed">
+          <pre className="bg-[#1e1e2e] text-[#cdd6f4] p-5 overflow-x-auto text-sm leading-relaxed">
             <code>{codeLines.join("\n")}</code>
           </pre>
         </div>
@@ -204,7 +208,7 @@ function renderBody(body: string): React.ReactNode[] {
     // Blockquote
     if (line.startsWith("> ")) {
       elements.push(
-        <blockquote key={`bq-${i}`} className="border-l-4 border-tertiary bg-tertiary/5 rounded-r-lg px-5 py-4 my-6">
+        <blockquote key={`bq-${i}`} className="border-l-4 border-tertiary bg-tertiary/5 rounded-r-lg px-5 py-4 my-8">
           <p className="text-text-primary font-medium italic" dangerouslySetInnerHTML={{ __html: formatInline(line.slice(2)) }} />
         </blockquote>
       );
@@ -213,7 +217,7 @@ function renderBody(body: string): React.ReactNode[] {
 
     // Paragraph
     elements.push(
-      <p key={`p-${i}`} className="text-text-secondary leading-relaxed my-4" dangerouslySetInnerHTML={{ __html: formatInline(line) }} />
+      <p key={`p-${i}`} className="text-text-secondary leading-[1.85] my-6" dangerouslySetInnerHTML={{ __html: formatInline(line) }} />
     );
   }
 
@@ -249,6 +253,41 @@ export default async function ArticlePage({ params }: PageProps) {
 
   return (
     <>
+      {/* Article JSON-LD Schema */}
+      <Script
+        id={`jsonld-${article.slug}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: article.title,
+            description: article.excerpt,
+            author: {
+              "@type": "Person",
+              name: "郭鎮榕 C.J. Kuo",
+              url: `${SITE_URL}/about`,
+            },
+            datePublished: article.date,
+            dateModified: article.date,
+            image: `${SITE_URL}/images/${COVER_MAP[article.slug] || "og-image.jpg"}`,
+            publisher: {
+              "@type": "Organization",
+              name: "榕耀管顧 RongRise Consulting",
+              logo: {
+                "@type": "ImageObject",
+                url: `${SITE_URL}/images/logo.svg`,
+              },
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": `${SITE_URL}/knowledge/${article.slug}`,
+            },
+            keywords: article.tags,
+            articleSection: article.cat,
+          }),
+        }}
+      />
       <ArticleTracker slug={slug} title={article.title} category={article.cat} />
 
       {/* Article Header */}
@@ -278,6 +317,8 @@ export default async function ArticlePage({ params }: PageProps) {
       {/* Article Body */}
       <section className="py-8 md:py-12">
         <div className="max-w-[800px] mx-auto px-4 sm:px-6">
+          {/* Reading Progress Bar */}
+          <ReadingProgress />
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mb-8">
             {article.tags.map((tag, i) => (
