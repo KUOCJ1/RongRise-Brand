@@ -41,6 +41,9 @@ export default function FAQSection() {
                       <button
                         onClick={() => toggle(key)}
                         className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left hover:bg-surface-hover transition-colors"
+                        aria-expanded={isOpen}
+                        aria-controls={`faq-panel-${key}`}
+                        id={`faq-btn-${key}`}
                       >
                         <span className={`font-medium text-[15px] transition-colors ${isOpen ? 'text-primary' : 'text-dark'}`}>
                           {item.q}
@@ -56,7 +59,12 @@ export default function FAQSection() {
                         </svg>
                       </button>
                       {isOpen && (
-                        <div className="px-5 pb-4 pt-0">
+                        <div
+                          id={`faq-panel-${key}`}
+                          role="region"
+                          aria-labelledby={`faq-btn-${key}`}
+                          className="px-5 pb-4 pt-0"
+                        >
                           <p className="text-text-secondary text-body leading-relaxed">
                             {item.a}
                           </p>

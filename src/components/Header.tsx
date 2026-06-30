@@ -22,7 +22,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5 no-underline">
+        <Link href="/" className="flex items-center gap-2.5 no-underline" aria-label="榕耀管顧首頁">
           <img
             src="/images/logo.svg"
             alt="榕耀管顧 RongRise Consulting"
@@ -91,6 +91,8 @@ export default function Header() {
           onClick={() => setMobileOpen(!mobileOpen)}
           className="md:hidden p-2 rounded-md hover:bg-surface-hover transition-colors"
           aria-label="選單"
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-nav"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
             {mobileOpen ? (
@@ -111,8 +113,8 @@ export default function Header() {
 
       {/* Mobile Nav */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-border bg-white">
-          <nav className="flex flex-col px-4 py-3 gap-1">
+        <nav id="mobile-nav" className="md:hidden border-t border-border bg-white" aria-label="手機選單">
+          <div className="flex flex-col px-4 py-3 gap-1">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -147,8 +149,8 @@ export default function Header() {
             >
               預約諮詢
             </Link>
-          </nav>
-        </div>
+          </div>
+        </nav>
       )}
     </header>
   );

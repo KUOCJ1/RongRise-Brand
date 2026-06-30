@@ -148,22 +148,30 @@ export default function NewsletterSection() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-3 max-w-md mx-auto">
-              <input
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                placeholder="你的名字（選填）"
-                className="w-full px-4 py-3 rounded-xl border border-border bg-white text-dark placeholder:text-text-secondary focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
-              />
-              <div className="flex flex-col sm:flex-row gap-3">
+              <div>
+                <label htmlFor="newsletter-name" className="sr-only">姓名（選填）</label>
                 <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="your@email.com"
-                  className="flex-1 px-4 py-3 rounded-xl border border-border bg-white text-dark placeholder:text-text-secondary focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
-                  required
+                  id="newsletter-name"
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  placeholder="你的名字（選填）"
+                  className="w-full px-4 py-3 rounded-xl border border-border bg-white text-dark placeholder:text-text-secondary focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
                 />
+              </div>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <div className="flex-1">
+                  <label htmlFor="newsletter-email" className="sr-only">Email 地址</label>
+                  <input
+                    id="newsletter-email"
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="your@email.com"
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-white text-dark placeholder:text-text-secondary focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
+                    required
+                  />
+                </div>
                 <button
                   type="submit"
                   disabled={loading}

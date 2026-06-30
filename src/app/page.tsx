@@ -11,28 +11,9 @@ import FAQSection from "@/components/FAQ";
 import FAQSchema from "@/components/FAQSchema";
 import ReviewSchema from "@/components/ReviewSchema";
 import NewsletterSection from "@/components/Newsletter";
+import { coverImg } from "@/lib/cover-map";
 import coursesData from "@/data/courses.json";
 import faqData from "@/data/faq.json";
-
-const COVER_MAP: Record<string, string> = {
-  "ai-transformation-bootcamp": "article-ai-bootcamp.jpg",
-  "hr-ai-course-design": "article-hr-ai-course.jpg",
-  "sme-esg-guide": "article-sme-esg.jpg",
-  "manufacturing-ai-quality": "article-manufacturing-ai.jpg",
-  "ai-maturity-assessment": "article-ai-maturity.jpg",
-  "team-innovation-management": "article-team-innovation.jpg",
-  "ai-tool-selection-guide": "article-ai-tool-selection.jpg",
-  "service-ai-chatbot-case": "article-service-chatbot.jpg",
-  "gov-ai-subsidy-guide": "article-gov-subsidy.jpg",
-  "ai-transformation-trends-2026": "article-ai-trends-2026.jpg",
-  "agentic-ai-transformation-workshop": "article-agentic-ai.jpg",
-  "hr-ai-transformation-five-layers": "article-hr-five-layers.jpg",
-  "strategy-subtraction-traditional-industry": "article-strategy-subtraction.jpg",
-};
-
-function coverImg(slug: string): string {
-  return `/images/${COVER_MAP[slug] || "article-cover.jpg"}`;
-}
 
 export const metadata = {
   title: "榕耀管顧 RongRise Consulting｜AI 轉型 × 人才策略 × ESG 永續",
@@ -47,14 +28,6 @@ export const metadata = {
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "榕耀管顧 RongRise Consulting" }],
   },
 };
-
-function FloatingIcon({ children, delay = "0s" }: { children: React.ReactNode; delay?: string }) {
-  return (
-    <div className="animate-float-slow" style={{ animationDelay: delay }}>
-      {children}
-    </div>
-  );
-}
 
 function ServiceCard({ icon, title, desc, tag, delay }: { icon: React.ReactNode; title: string; desc: string; tag: string; delay: number }) {
   return (
@@ -159,43 +132,17 @@ export default function HomePage() {
                 探索知識庫
               </TrackLink>
             </div>
-
-            {/* 電子報訂閱 CTA — 加強版 */}
-            <div className="mt-10 animate-fade-in-up animation-delay-400">
-              <a
-                href="#newsletter"
-                className="inline-flex items-center gap-3 bg-tertiary/20 hover:bg-tertiary/30 backdrop-blur-sm border-2 border-accent rounded-2xl px-6 py-4 transition-all group shadow-lg shadow-accent/20 hover:shadow-accent/40"
-              >
-                <img
-                  src="https://i.imgur.com/Rs3O3Iv.jpeg"
-                  alt="小賀"
-                  width={40}
-                  height={40}
-                  className="rounded-full border-2 border-accent"
-                  style={{ borderColor: "#E8912A" }}
-                />
-                <div className="text-left">
-                  <p className="text-white font-semibold text-sm">📬 免費訂閱電子報</p>
-                  <p className="text-white/70 text-xs">小賀每週為你整理 AI 轉型快訊</p>
-                </div>
-                <span className="inline-flex items-center gap-1 bg-accent text-white text-xs font-bold px-3 py-1.5 rounded-full group-hover:bg-white group-hover:text-primary transition-all">
-                  立即訂閱 →
-                </span>
-              </a>
-            </div>
           </div>
 
-          {/* 右側裝飾 */}
-          <div className="hidden lg:block absolute right-8 top-1/2 -translate-y-1/2">
-            <FloatingIcon delay="0s">
-              <div className="w-64 h-64 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 p-6 flex flex-col justify-center items-center gap-4 animate-float-slow" style={{ animationDuration: "8s" }}>
-                <HeroStat number="16+" label="年跨國人資經驗" />
-                <div className="w-full h-px bg-white/10" />
-                <HeroStat number="8" label="座優良職場獎" />
-                <div className="w-full h-px bg-white/10" />
-                <HeroStat number="300+" label="家企業服務" />
-              </div>
-            </FloatingIcon>
+          {/* 數據指標 — mobile 可見，desktop 右側浮動 */}
+          <div className="mt-12 lg:absolute lg:right-8 lg:top-1/2 lg:-translate-y-1/2 lg:mt-0">
+            <div className="flex items-center gap-4 sm:gap-6 lg:flex-col lg:gap-4 lg:w-56">
+              <HeroStat number="16+" label="年跨國人資經驗" dark />
+              <div className="w-px h-8 bg-white/20 lg:w-full lg:h-px" />
+              <HeroStat number="8" label="座優良職場獎" dark />
+              <div className="w-px h-8 bg-white/20 lg:w-full lg:h-px" />
+              <HeroStat number="300+" label="家企業服務" dark />
+            </div>
           </div>
         </div>
       </section>
@@ -621,11 +568,11 @@ export default function HomePage() {
   );
 }
 
-function HeroStat({ number, label }: { number: string; label: string }) {
+function HeroStat({ number, label, dark = false }: { number: string; label: string; dark?: boolean }) {
   return (
     <div className="text-center">
-      <div className="text-3xl font-bold text-tertiary">{number}</div>
-      <div className="text-xs text-white/60 mt-1">{label}</div>
+      <div className={`text-2xl sm:text-3xl font-bold ${dark ? "text-tertiary" : "text-white"}`}>{number}</div>
+      <div className={`text-xs mt-1 ${dark ? "text-white/60" : "text-white/60"}`}>{label}</div>
     </div>
   );
 }

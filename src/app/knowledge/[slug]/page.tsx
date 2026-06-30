@@ -3,6 +3,7 @@ import articlesData from "@/data/articles.json";
 import type { Metadata } from "next";
 import ArticleTracker from "@/components/ArticleTracker";
 import ArticleToc from "@/components/ArticleToc";
+import { COVER_MAP } from "@/lib/cover-map";
 
 /* ============================================
    知識庫文章單頁 Knowledge Base Article Page
@@ -373,23 +374,6 @@ export default async function ArticlePage({ params }: PageProps) {
     </>
   );
 }
-
-// slug → 文章專屬配圖檔名映射
-const COVER_MAP: Record<string, string> = {
-  "ai-transformation-bootcamp": "article-ai-bootcamp.jpg",
-  "hr-ai-course-design": "article-hr-ai-course.jpg",
-  "sme-esg-guide": "article-sme-esg.jpg",
-  "manufacturing-ai-quality": "article-manufacturing-ai.jpg",
-  "ai-maturity-assessment": "article-ai-maturity.jpg",
-  "team-innovation-management": "article-team-innovation.jpg",
-  "ai-tool-selection-guide": "article-ai-tool-selection.jpg",
-  "service-ai-chatbot-case": "article-service-chatbot.jpg",
-  "gov-ai-subsidy-guide": "article-gov-subsidy.jpg",
-  "ai-transformation-trends-2026": "article-ai-trends-2026.jpg",
-  "agentic-ai-transformation-workshop": "article-agentic-ai.jpg",
-  "hr-ai-transformation-five-layers": "article-hr-five-layers.jpg",
-  "strategy-subtraction-traditional-industry": "article-strategy-subtraction.jpg",
-};
 
 // 每篇文章獨立的 SEO metadata
 export function generateMetadata({
