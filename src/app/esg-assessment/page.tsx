@@ -164,17 +164,17 @@ export default function EsgAssessment() {
           {currentStep === 0 && (
             <div className="text-center py-8">
               <div className="text-6xl mb-6">🌿🤖📊</div>
-              <h2 className="heading-section text-dark mb-4">5 大維度 · 25 題 · 3 分鐘</h2>
+              <h2 className="heading-section text-text-primary mb-4">5 大維度 · 25 題 · 3 分鐘</h2>
               <div className="grid grid-cols-5 gap-3 mb-8">
                 {DIMENSION_ORDER.map((dim) => (
                   <div key={dim} className="text-center p-3 bg-bg-alt rounded-xl">
                     <div className="text-2xl mb-1">{DIMENSION_ICONS[dim]}</div>
-                    <div className="text-xs font-medium text-dark">{dim}</div>
+                    <div className="text-xs font-medium text-text-primary">{dim}</div>
                   </div>
                 ))}
               </div>
               <div className="bg-bg-alt rounded-xl p-6 mb-8 text-left">
-                <h3 className="font-semibold text-dark mb-3">📋 評估說明</h3>
+                <h3 className="font-semibold text-text-primary mb-3">📋 評估說明</h3>
                 <ul className="space-y-2 text-sm text-text-secondary">
                   <li>• 每個維度 5 題，共 25 題</li>
                   <li>• 根據您企业的實際狀況勾選最符合的選項</li>
@@ -211,7 +211,7 @@ export default function EsgAssessment() {
 
               {/* 題目 */}
               <div className="bg-white rounded-2xl border border-border p-6 md:p-8 mb-6">
-                <h3 className="heading-subsection text-dark mb-6 leading-relaxed">
+                <h3 className="heading-subsection text-text-primary mb-6 leading-relaxed">
                   {currentQuestion.text}
                 </h3>
                 <div className="space-y-3">
@@ -226,7 +226,7 @@ export default function EsgAssessment() {
                       }`}
                     >
                       <span className="text-2xl w-10 text-center">{opt.emoji}</span>
-                      <span className="text-left font-medium text-dark">{opt.label}</span>
+                      <span className="text-left font-medium text-text-primary">{opt.label}</span>
                     </button>
                   ))}
                 </div>
@@ -252,7 +252,7 @@ export default function EsgAssessment() {
               <div className="py-8">
                 <div className="text-center mb-8">
                   <div className="text-5xl mb-4">{pct >= 60 ? "🎉" : "💪"}</div>
-                  <h2 className="heading-section text-dark mb-2">評估完成！</h2>
+                  <h2 className="heading-section text-text-primary mb-2">評估完成！</h2>
                   <p className="text-text-secondary">{levelDesc}</p>
                 </div>
 
@@ -265,7 +265,7 @@ export default function EsgAssessment() {
 
                 {/* 各維度得分 */}
                 <div className="bg-white rounded-2xl border border-border p-6 md:p-8 mb-6">
-                  <h3 className="heading-subsection text-dark mb-4">各維度得分</h3>
+                  <h3 className="heading-subsection text-text-primary mb-4">各維度得分</h3>
                   <div className="space-y-4">
                     {DIMENSION_ORDER.map((dim) => {
                       const ds = dimensionScores[dim];
@@ -273,7 +273,7 @@ export default function EsgAssessment() {
                       return (
                         <div key={dim}>
                           <div className="flex items-center justify-between mb-1">
-                            <span className="text-sm font-medium text-dark">
+                            <span className="text-sm font-medium text-text-primary">
                               {DIMENSION_ICONS[dim]} {dim}
                             </span>
                             <span className="text-sm text-text-secondary">{ds.total}/{ds.max} ({pct}%)</span>
@@ -295,7 +295,7 @@ export default function EsgAssessment() {
 
                 {/* CTA */}
                 <div className="bg-bg-alt rounded-2xl p-6 md:p-8 text-center mb-6">
-                  <h3 className="heading-subsection text-dark mb-3">想要制定專屬的轉型策略？</h3>
+                  <h3 className="heading-subsection text-text-primary mb-3">想要制定專屬的轉型策略？</h3>
                   <p className="text-text-secondary text-body mb-4">
                     C.J. Kuo 老師提供一對一 ESG + AI 轉型顧問服務，針對您的企業現況提供具體建議。
                   </p>

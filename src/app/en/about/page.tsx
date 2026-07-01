@@ -70,16 +70,16 @@ export default function AboutEnPage() {
               <div className="brand-divider mb-6" />
               <div className="space-y-4 text-text-secondary text-body leading-relaxed">
                 <p>
-                  <strong className="text-dark">16+ years of multinational HR management experience</strong>, including Accenture, Ernst & Young, Watson Wyatt, Chubb Life, and Cigna Life. Specialized in organizational talent strategy, rewards design, employer brand, and HR digital transformation — helping employers win <strong className="text-dark">8 workplace excellence awards</strong>.
+                  <strong className="text-text-primary">16+ years of multinational HR management experience</strong>, including Accenture, Ernst & Young, Watson Wyatt, Chubb Life, and Cigna Life. Specialized in organizational talent strategy, rewards design, employer brand, and HR digital transformation — helping employers win <strong className="text-text-primary">8 workplace excellence awards</strong>.
                 </p>
                 <p>
                   However, the moment that truly pushed him to leave the corporate world was a conversation with a manufacturing business owner who said: <em>"I know AI is important, but my team can barely use Excel. What should I do?"</em> That was when he realized — transformation lacks technology, but more importantly, someone willing to walk the journey with businesses.
                 </p>
                 <p>
-                  Since 2024, as an independent consultant and trainer, focusing on <strong className="text-dark">AI-era talent strategy</strong>, <strong className="text-dark">ESG governance</strong>, and <strong className="text-dark">SME AI empowerment</strong>.
+                  Since 2024, as an independent consultant and trainer, focusing on <strong className="text-text-primary">AI-era talent strategy</strong>, <strong className="text-text-primary">ESG governance</strong>, and <strong className="text-text-primary">SME AI empowerment</strong>.
                 </p>
                 <p>
-                  Different from pure theorists or pure tool-focused vendors, C.J. Kuo's core value is — combining real AI tools and implementation experience from a human strategy perspective, designing <strong className="text-dark">executable transformation paths</strong>.
+                  Different from pure theorists or pure tool-focused vendors, C.J. Kuo's core value is — combining real AI tools and implementation experience from a human strategy perspective, designing <strong className="text-text-primary">executable transformation paths</strong>.
                 </p>
               </div>
               <div className="mt-6">
@@ -97,7 +97,7 @@ export default function AboutEnPage() {
         <div className="section-inner">
           <div className="text-center mb-8">
             <span className="tag mb-4">Meet C.J. Kuo</span>
-            <h2 className="heading-section text-dark mt-4">Hear It Directly</h2>
+            <h2 className="heading-section text-text-primary mt-4">Hear It Directly</h2>
             <div className="brand-divider brand-divider-center mt-4" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -129,7 +129,7 @@ export default function AboutEnPage() {
                   </div>
                 </div>
                 <div className="p-4">
-                  <h3 className="font-semibold text-dark group-hover:text-primary transition-colors text-sm leading-relaxed line-clamp-2">
+                  <h3 className="font-semibold text-text-primary group-hover:text-primary transition-colors text-sm leading-relaxed line-clamp-2">
                     {video.title}
                   </h3>
                   <p className="text-xs text-text-secondary mt-2">{video.date}</p>
@@ -148,7 +148,7 @@ export default function AboutEnPage() {
         <div className="section-inner">
           <div className="text-center mb-12">
             <span className="tag mb-4">Expertise</span>
-            <h2 className="heading-section text-dark mt-4">Core Competencies</h2>
+            <h2 className="heading-section text-text-primary mt-4">Core Competencies</h2>
             <div className="brand-divider brand-divider-center mt-4" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -156,7 +156,7 @@ export default function AboutEnPage() {
               <div key={i} className="card flex gap-4">
                 <div className="text-3xl flex-shrink-0 mt-1">{item.icon}</div>
                 <div>
-                  <h3 className="heading-subsection text-dark mb-2">{item.title}</h3>
+                  <h3 className="heading-subsection text-text-primary mb-2">{item.title}</h3>
                   <p className="text-text-secondary text-body-sm">{item.desc}</p>
                 </div>
               </div>
@@ -170,7 +170,7 @@ export default function AboutEnPage() {
         <div className="section-inner">
           <div className="text-center mb-12">
             <span className="tag mb-4">Journey</span>
-            <h2 className="heading-section text-dark mt-4">My Career Trajectory</h2>
+            <h2 className="heading-section text-text-primary mt-4">My Career Trajectory</h2>
             <div className="brand-divider brand-divider-center mt-4" />
           </div>
           <div className="max-w-2xl mx-auto space-y-8">
@@ -182,7 +182,7 @@ export default function AboutEnPage() {
                 </div>
                 <div className="pb-4">
                   <span className="text-xs font-semibold text-tertiary">{item.year}</span>
-                  <h3 className="heading-subsection text-dark mb-1">{item.title}</h3>
+                  <h3 className="heading-subsection text-text-primary mb-1">{item.title}</h3>
                   <p className="text-text-secondary text-body-sm">{item.desc}</p>
                 </div>
               </div>
@@ -196,7 +196,7 @@ export default function AboutEnPage() {
         <div className="section-inner">
           <div className="text-center mb-12">
             <span className="tag mb-4">Values</span>
-            <h2 className="heading-section text-dark mt-4">My Consulting Philosophy</h2>
+            <h2 className="heading-section text-text-primary mt-4">My Consulting Philosophy</h2>
             <div className="brand-divider brand-divider-center mt-4" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -205,7 +205,7 @@ export default function AboutEnPage() {
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">{i === 0 ? "📐" : i === 1 ? "🚀" : "✅"}</span>
                 </div>
-                <h3 className="heading-subsection text-dark mb-2">{v.title}</h3>
+                <h3 className="heading-subsection text-text-primary mb-2">{v.title}</h3>
                 <p className="text-text-secondary text-body-sm">{v.desc}</p>
               </div>
             ))}

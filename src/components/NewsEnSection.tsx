@@ -16,7 +16,7 @@ export default function NewsEnSection() {
       <div className="section-inner">
         <div className="text-center mb-12">
           <span className="tag mb-4">Latest News</span>
-          <h2 className="heading-section text-dark mt-4">Courses, Resources & Insights</h2>
+          <h2 className="heading-section text-text-primary mt-4">Courses, Resources & Insights</h2>
           <div className="brand-divider brand-divider-center mt-4" />
         </div>
 
@@ -51,7 +51,7 @@ export default function NewsEnSection() {
                       </span>
                     )}
                   </div>
-                  <h3 className="text-[15px] font-semibold text-dark group-hover:text-primary transition-colors mb-1 leading-snug">
+                  <h3 className="text-[15px] font-semibold text-text-primary group-hover:text-primary transition-colors mb-1 leading-snug">
                     {item.title}
                   </h3>
                   <p className="text-text-secondary text-body-sm line-clamp-2">

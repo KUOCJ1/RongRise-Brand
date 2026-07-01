@@ -97,7 +97,7 @@ export default function NewsletterSection() {
           <div className="max-w-2xl mx-auto text-center">
             <div className="bg-success/10 border border-success/20 rounded-2xl p-10">
               <div className="text-5xl mb-4">🎉</div>
-              <h2 className="heading-section text-dark mb-3">訂閱確認成功！</h2>
+              <h2 className="heading-section text-text-primary mb-3">訂閱確認成功！</h2>
               <p className="text-text-secondary text-body-lg leading-relaxed mb-4">
                 感謝你訂閱<strong className="text-primary">榕賀觀點 AI 週報</strong>！<br />
                 小賀每週會為你整理最重要的 AI 轉型趨勢、ESG 實務攻略、以及課程優惠。
@@ -127,7 +127,7 @@ export default function NewsletterSection() {
             />
           </div>
 
-          <h2 className="heading-section text-dark mb-2">訂閱轉型快訊</h2>
+          <h2 className="heading-section text-text-primary mb-2">訂閱轉型快訊</h2>
           <p className="text-text-secondary text-body-lg mb-2">
             小賀每週為你整理 AI 轉型趨勢、ESG 實務攻略、課程優惠。
           </p>
@@ -138,7 +138,7 @@ export default function NewsletterSection() {
           {submitted ? (
             <div className="bg-success/10 border border-success/20 rounded-2xl p-8">
               <div className="text-4xl mb-3">✉️</div>
-              <h3 className="heading-subsection text-dark mb-3">確認信已送出！</h3>
+              <h3 className="heading-subsection text-text-primary mb-3">確認信已送出！</h3>
               <p className="text-text-secondary text-body leading-relaxed">
                 請檢查你的 Email 信箱，點擊確認連結完成訂閱。
               </p>
@@ -156,7 +156,7 @@ export default function NewsletterSection() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="你的名字（選填）"
-                  className="w-full px-4 py-3 rounded-xl border border-border bg-white text-dark placeholder:text-text-secondary focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
+                  className="w-full px-4 py-3 rounded-xl border border-border bg-white text-text-primary placeholder:text-text-secondary focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
                 />
               </div>
               <div className="flex flex-col sm:flex-row gap-3">
@@ -168,7 +168,7 @@ export default function NewsletterSection() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="your@email.com"
-                    className="w-full px-4 py-3 rounded-xl border border-border bg-white text-dark placeholder:text-text-secondary focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-white text-text-primary placeholder:text-text-secondary focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
                     required
                   />
                 </div>

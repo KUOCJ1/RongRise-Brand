@@ -38,7 +38,7 @@ function getRelatedArticles(currentSlug: string, cat: string): Article[] {
 
 function formatInline(text: string): string {
   return text
-    .replace(/\*\*(.+?)\*\*/g, '<strong class="text-dark font-semibold">$1</strong>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong class="text-text-primary font-semibold">$1</strong>')
     .replace(/`(.+?)`/g, '<code class="bg-bg-alt px-1.5 py-0.5 rounded text-sm font-mono text-primary">$1</code>')
     .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" class="text-primary hover:underline font-medium">$1</a>');
 }
@@ -107,7 +107,7 @@ function renderBody(body: string): React.ReactNode[] {
     // H2
     if (line.startsWith("## ")) {
       elements.push(
-        <h2 key={`h2-${i}`} className="heading-subsection text-dark mt-14 mb-5 pb-2 border-b border-border-light">
+        <h2 key={`h2-${i}`} className="heading-subsection text-text-primary mt-14 mb-5 pb-2 border-b border-border-light">
           {line.slice(3)}
         </h2>
       );
@@ -117,7 +117,7 @@ function renderBody(body: string): React.ReactNode[] {
     // H3
     if (line.startsWith("### ")) {
       elements.push(
-        <h3 key={`h3-${i}`} className="text-lg font-semibold text-dark mt-10 mb-4">
+        <h3 key={`h3-${i}`} className="text-lg font-semibold text-text-primary mt-10 mb-4">
           {line.slice(4)}
         </h3>
       );
@@ -242,7 +242,7 @@ export default async function ArticlePage({ params }: PageProps) {
   if (!article) {
     return (
       <div className="section text-center py-20">
-        <h1 className="heading-section text-dark mb-4">找不到這篇文章</h1>
+        <h1 className="heading-section text-text-primary mb-4">找不到這篇文章</h1>
         <p className="text-text-secondary mb-6">請確認網址是否正確，或返回知識庫瀏覽其他文章。</p>
         <Link href="/knowledge" className="btn-secondary">返回知識庫</Link>
       </div>
@@ -368,7 +368,7 @@ export default async function ArticlePage({ params }: PageProps) {
       {related.length > 0 && (
         <section className="bg-bg-alt py-12 md:py-16">
           <div className="max-w-[800px] mx-auto px-4 sm:px-6">
-            <h2 className="heading-subsection text-dark mb-6">相關閱讀</h2>
+            <h2 className="heading-subsection text-text-primary mb-6">相關閱讀</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {related.map((r, i) => (
                 <Link
@@ -377,7 +377,7 @@ export default async function ArticlePage({ params }: PageProps) {
                   className="card group no-underline block"
                 >
                   <span className="tag mb-2">{r.cat}</span>
-                  <h3 className="font-semibold text-dark group-hover:text-primary transition-colors mb-2">
+                  <h3 className="font-semibold text-text-primary group-hover:text-primary transition-colors mb-2">
                     {r.title}
                   </h3>
                   <p className="text-text-secondary text-sm line-clamp-2">

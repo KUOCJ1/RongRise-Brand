@@ -42,7 +42,7 @@ export default function VideoShowcaseSection() {
       <div className="section-inner">
         <div className="text-center mb-12">
           <span className="tag mb-4">影音內容</span>
-          <h2 className="heading-section text-dark mt-4">CJ哥的轉型觀點</h2>
+          <h2 className="heading-section text-text-primary mt-4">CJ哥的轉型觀點</h2>
           <div className="brand-divider brand-divider-center mt-4" />
           <p className="text-text-secondary text-body-lg mt-6 max-w-2xl mx-auto">
             用看的，更快吸收。CJ哥在 YouTube 頻道分享 AI 轉型、人才策略與 ESG 永續的實戰經驗。
@@ -101,7 +101,7 @@ export default function VideoShowcaseSection() {
                 </span>
               </div>
               <div className="p-4">
-                <h3 className="font-semibold text-dark group-hover:text-primary transition-colors text-sm leading-relaxed line-clamp-2">
+                <h3 className="font-semibold text-text-primary group-hover:text-primary transition-colors text-sm leading-relaxed line-clamp-2">
                   {video.title}
                 </h3>
                 <p className="text-xs text-text-secondary mt-2">{video.date}</p>

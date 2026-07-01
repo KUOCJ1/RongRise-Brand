@@ -82,7 +82,7 @@ export default function EnNewsPage() {
                         </span>
                       )}
                     </div>
-                    <h3 className="heading-subsection text-dark group-hover:text-primary transition-colors mb-2">
+                    <h3 className="heading-subsection text-text-primary group-hover:text-primary transition-colors mb-2">
                       {item.title}
                     </h3>
                     <p className="text-text-secondary text-body leading-relaxed">

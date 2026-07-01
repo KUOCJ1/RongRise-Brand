@@ -64,7 +64,7 @@ export default function NewsletterPage() {
                         {nl.id === "2026-W24" ? "創刊號" : "正式期"}
                       </span>
                     </div>
-                    <h3 className="heading-subsection text-dark group-hover:text-primary transition-colors mb-2">
+                    <h3 className="heading-subsection text-text-primary group-hover:text-primary transition-colors mb-2">
                       {nl.title}
                     </h3>
                     <p className="text-text-secondary text-body leading-relaxed">
@@ -87,7 +87,7 @@ export default function NewsletterPage() {
           <div className="text-center mt-12">
             <div className="bg-gradient-subtle rounded-2xl p-8 max-w-2xl mx-auto">
               <div className="text-3xl mb-3">📬</div>
-              <h3 className="heading-subsection text-dark mb-2">還沒訂閱？</h3>
+              <h3 className="heading-subsection text-text-primary mb-2">還沒訂閱？</h3>
               <p className="text-text-secondary text-body mb-4">
                 每週日晚上 6 點，小賀直接把最新趨勢送到你的信箱。
               </p>

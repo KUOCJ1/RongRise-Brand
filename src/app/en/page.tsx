@@ -67,7 +67,7 @@ export default function EnHomePage() {
         <div className="section-inner">
           <div className="text-center mb-12">
             <span className="tag mb-4">Core Services</span>
-            <h2 className="heading-section text-dark mt-4">Three Pillars Driving Business Transformation</h2>
+            <h2 className="heading-section text-text-primary mt-4">Three Pillars Driving Business Transformation</h2>
             <div className="brand-divider brand-divider-center mt-4" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -79,7 +79,7 @@ export default function EnHomePage() {
               <div key={i} className="card group animate-fade-in-up" style={{ animationDelay: `${i * 150}ms` }}>
                 <div className="text-4xl mb-4">{s.icon}</div>
                 <span className="tag mb-3">{s.tag}</span>
-                <h3 className="heading-subsection text-dark mb-3">{s.title}</h3>
+                <h3 className="heading-subsection text-text-primary mb-3">{s.title}</h3>
                 <p className="text-text-secondary text-body leading-relaxed">{s.desc}</p>
               </div>
             ))}
@@ -139,7 +139,7 @@ export default function EnHomePage() {
         <div className="section-inner">
           <div className="text-center mb-12">
             <span className="tag mb-4">Featured Content</span>
-            <h2 className="heading-section text-dark mt-4">Latest Knowledge Sharing</h2>
+            <h2 className="heading-section text-text-primary mt-4">Latest Knowledge Sharing</h2>
             <div className="brand-divider brand-divider-center mt-4" />
           </div>
           <div className="text-center">
@@ -170,7 +170,7 @@ export default function EnHomePage() {
         <div className="section-inner">
           <div className="text-center mb-12">
             <span className="tag mb-4">Upcoming Courses</span>
-            <h2 className="heading-section text-dark mt-4">Learning Is the Best Transformation Investment</h2>
+            <h2 className="heading-section text-text-primary mt-4">Learning Is the Best Transformation Investment</h2>
             <div className="brand-divider brand-divider-center mt-4" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -182,7 +182,7 @@ export default function EnHomePage() {
                     {new Date(course.date).toLocaleDateString("en-US", { month: "long", day: "numeric" })}
                   </span>
                 </div>
-                <h3 className="heading-subsection text-dark mb-2">{course.title}</h3>
+                <h3 className="heading-subsection text-text-primary mb-2">{course.title}</h3>
                 <p className="text-text-secondary text-body-sm mb-4 flex-1">{course.description}</p>
                 <div className="flex items-center justify-between pt-4 border-t border-border-light">
                   <span className="text-sm font-semibold text-primary">{course.price}</span>
@@ -229,12 +229,12 @@ export default function EnHomePage() {
               </div>
               <div className="flex flex-col gap-6">
                 <div className="card flex-1 flex flex-col justify-center">
-                  <h3 className="heading-subsection text-dark mb-3">Want Someone to Guide You?</h3>
+                  <h3 className="heading-subsection text-text-primary mb-3">Want Someone to Guide You?</h3>
                   <p className="text-text-secondary text-body mb-4">Book a free 30-minute consultation. C.J. Kuo will provide actionable advice based on your business situation.</p>
                   <Link href="/en/about#contact" className="btn-primary text-center">Book Free Consultation</Link>
                 </div>
                 <div className="card flex-1 flex flex-col justify-center">
-                  <h3 className="heading-subsection text-dark mb-3">Have Questions First?</h3>
+                  <h3 className="heading-subsection text-text-primary mb-3">Have Questions First?</h3>
                   <p className="text-text-secondary text-body mb-4">The Assistant is available 24/7 with C.J. Kuo's complete knowledge base.</p>
                   <Link href="/en/assistant" className="btn-secondary text-center">Ask the Assistant →</Link>
                 </div>

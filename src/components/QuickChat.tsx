@@ -25,7 +25,7 @@ function formatMessage(content: string): string {
   let html = content
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-primary font-medium hover:underline" target="_blank" rel="noopener">$1</a>')
     .replace(/\n/g, "<br/>")
-    .replace(/\*\*(.+?)\*\*/g, '<strong class="text-dark">$1</strong>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong class="text-text-primary">$1</strong>')
     .replace(/\*(.+?)\*/g, '<em>$1</em>');
   return html;
 }

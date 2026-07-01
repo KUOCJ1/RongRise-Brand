@@ -114,7 +114,7 @@ export default function ServicesPage() {
                       <span className="text-3xl">{service.icon}</span>
                     </div>
                     <div>
-                      <h2 className="heading-subsection text-dark">{service.title}</h2>
+                      <h2 className="heading-subsection text-text-primary">{service.title}</h2>
                       <p className="text-primary font-medium text-sm mt-1">{service.tagline}</p>
                     </div>
                   </div>
@@ -126,7 +126,7 @@ export default function ServicesPage() {
                     {service.desc}
                   </p>
 
-                  <h3 className="font-semibold text-dark text-sm mb-3">服務內容</h3>
+                  <h3 className="font-semibold text-text-primary text-sm mb-3">服務內容</h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                     {service.features.map((feat, fi) => (
                       <div key={fi} className="flex items-start gap-2">
@@ -185,7 +185,7 @@ export default function ServicesPage() {
         <div className="section-inner">
           <div className="text-center mb-12">
             <span className="tag mb-4">服務費用</span>
-            <h2 className="heading-section text-dark mt-4">依企業規模，最適合的方案</h2>
+            <h2 className="heading-section text-text-primary mt-4">依企業規模，最適合的方案</h2>
             <div className="brand-divider brand-divider-center mt-4" />
             <p className="text-text-secondary text-body-lg mt-4 max-w-2xl mx-auto">
               我們相信每個企業的轉型路徑都不同。依據您的規模、需求與預算，提供最適合的服務組合。
@@ -196,7 +196,7 @@ export default function ServicesPage() {
             {/* 免費診斷 */}
             <div className="card text-center flex flex-col">
               <div className="text-3xl mb-4">🔍</div>
-              <h3 className="heading-subsection text-dark mb-2">免費診斷</h3>
+              <h3 className="heading-subsection text-text-primary mb-2">免費診斷</h3>
               <div className="text-3xl font-bold text-primary mb-1">$0</div>
               <div className="text-text-secondary text-sm mb-4">30 分鐘</div>
               <ul className="text-left space-y-2 mb-6 flex-1">
@@ -224,7 +224,7 @@ export default function ServicesPage() {
                 最受歡迎
               </div>
               <div className="text-3xl mb-4">🤖</div>
-              <h3 className="heading-subsection text-dark mb-2">顧問服務</h3>
+              <h3 className="heading-subsection text-text-primary mb-2">顧問服務</h3>
               <div className="text-3xl font-bold text-primary mb-1">依需求</div>
               <div className="text-text-secondary text-sm mb-4">客製化報價</div>
               <ul className="text-left space-y-2 mb-6 flex-1">
@@ -252,7 +252,7 @@ export default function ServicesPage() {
             {/* 培訓課程 */}
             <div className="card text-center flex flex-col">
               <div className="text-3xl mb-4">🎓</div>
-              <h3 className="heading-subsection text-dark mb-2">培訓課程</h3>
+              <h3 className="heading-subsection text-text-primary mb-2">培訓課程</h3>
               <div className="text-3xl font-bold text-primary mb-1">依人數</div>
               <div className="text-text-secondary text-sm mb-4">遠低於市價</div>
               <ul className="text-left space-y-2 mb-6 flex-1">
@@ -289,7 +289,7 @@ export default function ServicesPage() {
         <div className="section-inner">
           <div className="text-center mb-12">
             <span className="tag mb-4">服務流程</span>
-            <h2 className="heading-section text-dark mt-4">三種合作模式</h2>
+            <h2 className="heading-section text-text-primary mt-4">三種合作模式</h2>
             <div className="brand-divider brand-divider-center mt-4" />
           </div>
 
@@ -322,7 +322,7 @@ export default function ServicesPage() {
                   <span className="text-2xl">{item.icon}</span>
                 </div>
                 <div className="text-xs font-bold text-tertiary mb-1 tracking-wider">STEP {item.step}</div>
-                <h3 className="heading-subsection text-dark mb-2">{item.title}</h3>
+                <h3 className="heading-subsection text-text-primary mb-2">{item.title}</h3>
                 <p className="text-text-secondary text-body-sm">{item.desc}</p>
               </div>
             ))}

@@ -4,11 +4,11 @@ import testimonials from "@/data/testimonials-en.json";
 
 export default function TestimonialsEnSection() {
   return (
-    <section className="section bg-white">
+    <section className="section bg-surface">
       <div className="section-inner">
         <div className="text-center mb-12">
           <span className="tag mb-4">Client Testimonials</span>
-          <h2 className="heading-section text-dark mt-4">What Our Partners Say</h2>
+          <h2 className="heading-section text-text-primary mt-4">What Our Partners Say</h2>
           <div className="brand-divider brand-divider-center mt-4" />
         </div>
 
@@ -39,7 +39,7 @@ export default function TestimonialsEnSection() {
                   </span>
                 </div>
                 <div>
-                  <p className="font-semibold text-dark text-sm">{item.name}</p>
+                  <p className="font-semibold text-text-primary text-sm">{item.name}</p>
                   <p className="text-text-secondary text-xs">{item.role} · {item.company}</p>
                 </div>
                 <div className="ml-auto">

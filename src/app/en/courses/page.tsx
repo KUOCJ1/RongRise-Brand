@@ -72,7 +72,7 @@ export default function CoursesEnPage() {
                             <span className="tag">{course.type}</span>
                             <span className={`text-[10px] px-2 py-0.5 rounded-full font-semibold ${status.color}`}>{status.label}</span>
                           </div>
-                          <h3 className="heading-subsection text-dark">{course.title}</h3>
+                          <h3 className="heading-subsection text-text-primary">{course.title}</h3>
                         </div>
                       </div>
                       <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-text-secondary mb-3">

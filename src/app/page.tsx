@@ -5,9 +5,12 @@ import TrackLink from "@/components/TrackLink";
 import CaseStudiesSection from "@/components/CaseStudies";
 import TestimonialsSection from "@/components/Testimonials";
 import VideoShowcaseSection from "@/components/VideoShowcase";
+import VideoCarousel from "@/components/VideoCarousel";
 import NewsletterSection from "@/components/Newsletter";
+import QuickChat from "@/components/QuickChat";
 import ReviewSchema from "@/components/ReviewSchema";
 import { coverImg } from "@/lib/cover-map";
+import newsData from "@/data/news.json";
 
 export const metadata = {
   title: "榕耀管顧 RongRise Consulting｜AI 轉型 × 人才策略 × ESG 永續",
@@ -34,7 +37,7 @@ function ServiceCard({ icon, title, desc, tag, delay }: { icon: React.ReactNode;
           {icon}
         </div>
         <span className="tag mb-3">{tag}</span>
-        <h3 className="heading-subsection text-dark mb-3 group-hover:text-primary transition-colors">{title}</h3>
+        <h3 className="heading-subsection text-text-primary mb-3 group-hover:text-primary transition-colors">{title}</h3>
         <div className="brand-divider mb-3" style={{ width: "30px", height: "2px" }} />
         <p className="text-text-secondary text-body leading-relaxed">{desc}</p>
       </div>
@@ -112,38 +115,86 @@ export default function HomePage() {
                 探索知識庫
               </TrackLink>
             </div>
-          </div>
-
-          {/* 數據指標 */}
-          <div className="mt-12 lg:absolute lg:right-8 lg:top-1/2 lg:-translate-y-1/2 lg:mt-0">
-            <div className="flex items-center gap-4 sm:gap-6 lg:flex-col lg:gap-4 lg:w-56">
-              <HeroStat number="16+" label="年跨國人資經驗" dark />
-              <div className="w-px h-8 bg-white/20 lg:w-full lg:h-px" />
-              <HeroStat number="8" label="座優良職場獎" dark />
-              <div className="w-px h-8 bg-white/20 lg:w-full lg:h-px" />
-              <HeroStat number="300+" label="家企業服務" dark />
             </div>
+
+            {/* 數據指標 + 問小賀 */}
+            <div className="mt-12 lg:absolute lg:right-8 lg:top-1/2 lg:-translate-y-1/2 lg:mt-0">
+            <div className="flex items-center gap-4 sm:gap-6 lg:flex-col lg:gap-4 lg:w-72">
+              <div className="flex items-center gap-4 sm:gap-6">
+                <HeroStat number="16+" label="年跨國人資經驗" dark />
+                <div className="w-px h-8 bg-white/20 lg:w-full lg:h-px" />
+                <HeroStat number="8" label="座優良職場獎" dark />
+                <div className="w-px h-8 bg-white/20 lg:w-full lg:h-px" />
+                <HeroStat number="300+" label="家企業服務" dark />
+              </div>
+              <QuickChat />
+            </div>
+            </div>
+        </div>
+      </section>
+
+      {/* ═══ 最新消息 ═══ */}
+      <section className="section bg-gradient-subtle">
+        <div className="section-inner">
+          <div className="text-center mb-10">
+            <span className="tag mb-4">最新消息</span>
+            <h2 className="heading-section text-text-primary mt-4">即時動態</h2>
+            <div className="brand-divider brand-divider-center mt-4" />
+          </div>
+          <div className="max-w-4xl mx-auto space-y-4">
+            {newsData.news.slice(0, 4).map((item) => (
+              <Link key={item.id} href={item.link} className="card no-underline block group hover:shadow-md transition-shadow">
+                <div className="card-inner flex items-start gap-4">
+                  <div className="flex-shrink-0 text-center min-w-[60px]">
+                    <div className="text-xs text-text-secondary font-medium">
+                      {new Date(item.date).toLocaleDateString('zh-TW', { month: 'long' })}
+                    </div>
+                    <div className="text-2xl font-bold text-primary">
+                      {new Date(item.date).getDate()}
+                    </div>
+                    <div className="text-[10px] text-text-secondary">
+                      {new Date(item.date).getFullYear()}
+                    </div>
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <div className="flex items-center gap-2 mb-1 flex-wrap">
+                      <span className="text-[10px] px-2 py-0.5 rounded-full bg-tertiary/10 text-tertiary font-semibold">
+                        {item.category}
+                      </span>
+                      {item.isNew && (
+                        <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-tertiary text-white font-bold">NEW</span>
+                      )}
+                    </div>
+                    <h3 className="font-semibold text-text-primary group-hover:text-primary transition-colors text-sm leading-relaxed">
+                      {item.title}
+                    </h3>
+                    <p className="text-text-secondary text-xs mt-1 line-clamp-2">{item.summary}</p>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/news" className="btn-secondary text-sm">
+              查看全部消息 →
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* ═══ 2. 服務 + 流程（合併）═══ */}
-      <section className="section relative overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img src="/images/services-bg.jpg" alt="" className="w-full h-full object-cover object-center" />
-          <div className="absolute inset-0 bg-[#FDFCFA]/85" />
-        </div>
-        <div className="section-inner relative z-10">
+      {/* ═══ 2. 核心服務 ═══ */}
+      <section className="section relative overflow-hidden max-w-screen-xl mx-auto bg-bg-alt">
+        <div className="section-inner relative">
           <div className="text-center mb-14">
             <span className="tag mb-4">核心服務</span>
-            <h2 className="heading-section text-dark mt-4">驅動企業轉型的三大支柱</h2>
+            <h2 className="heading-section text-text-primary mt-4">驅動企業轉型的三大支柱</h2>
             <div className="brand-divider brand-divider-center mt-4 brand-divider-animated" />
             <p className="text-text-secondary text-body-lg mt-6 max-w-2xl mx-auto">
               從 AI 策略、人才發展到 ESG 永續，三位一體的轉型框架，協助企業建立持久的競爭優勢。
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 lg:gap-12">
             <ServiceCard delay={0} icon={<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-tertiary"><path d="M12 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" /><path d="M12 22a2 2 0 0 1 2-2v-2a2 2 0 0 1-2-2 2 2 0 0 1-2 2v2a2 2 0 0 1 2 2z" /><path d="M22 12a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2 2 2 0 0 1 2-2h2a2 2 0 0 1 2 2z" /><path d="M2 12a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z" /><circle cx="12" cy="12" r="3" /><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" /></svg>} title="AI 轉型策略" desc="從評估、規劃到落地，打造企業專屬的 AI 轉型藍圖。協助管理層建立 AI 思維，導入自動化流程，提升營運效率。" tag="AI" />
             <ServiceCard delay={150} icon={<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-secondary"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>} title="人才發展策略" desc="建構面向未來的人才梯隊，結合數位能力培訓與組織變革管理，讓企業在轉型中不失去核心競爭力。" tag="人才" />
             <ServiceCard delay={300} icon={<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent"><path d="M12 2L2 7l10 5 10-5-10-5z" /><path d="M2 17l10 5 10-5" /><path d="M2 12l10 5 10-5" /></svg>} title="ESG 永續發展" desc="將永續理念融入企業策略，建立可衡量的 ESG 指標體系，創造企業社會價值與商業效益的雙贏局面。" tag="ESG" />
@@ -151,7 +202,7 @@ export default function HomePage() {
 
           {/* 服務流程 */}
           <div className="max-w-3xl mx-auto">
-            <h3 className="heading-subsection text-dark text-center mb-8">我們的合作方式</h3>
+            <h3 className="heading-subsection text-text-primary text-center mb-8">我們的合作方式</h3>
             <div className="space-y-6">
               {[
                 { step: "01", icon: "🔍", title: "免費診斷", desc: "30 分鐘深度對談，了解企業現況與目標" },
@@ -161,13 +212,13 @@ export default function HomePage() {
                 { step: "05", icon: "📈", title: "成效追蹤", desc: "KPI 體系 + 持續優化" },
               ].map((item, i) => (
                 <div key={i} className="flex gap-4 items-start">
-                  <div className="w-12 h-12 rounded-full bg-white border-2 border-primary/10 flex items-center justify-center flex-shrink-0 shadow-sm text-xl">
+                  <div className="w-12 h-12 rounded-full bg-surface border-2 border-border-light flex items-center justify-center flex-shrink-0 shadow-sm text-xl">
                     {item.icon}
                   </div>
                   <div className="pt-1">
                     <div className="flex items-center gap-2 mb-1">
                       <span className="text-xs font-bold text-tertiary tracking-wider">STEP {item.step}</span>
-                      <span className="font-semibold text-dark">{item.title}</span>
+                      <span className="font-semibold text-text-primary">{item.title}</span>
                     </div>
                     <p className="text-text-secondary text-body-sm">{item.desc}</p>
                   </div>
@@ -190,7 +241,7 @@ export default function HomePage() {
       {/* ═══ 4. 關於 + 推薦（合併）═══ */}
       <section className="section">
         <div className="section-inner">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 gap-12 items-center">
             <div>
               <span className="tag mb-4">關於 C.J. Kuo</span>
               <h2 className="heading-section mt-4 mb-4">
@@ -240,7 +291,7 @@ export default function HomePage() {
         <div className="section-inner">
           <div className="text-center mb-12">
             <span className="tag mb-4">精選內容</span>
-            <h2 className="heading-section text-dark mt-4">最新知識分享</h2>
+            <h2 className="heading-section text-text-primary mt-4">最新知識分享</h2>
             <div className="brand-divider brand-divider-center mt-4" />
           </div>
 
@@ -259,7 +310,7 @@ export default function HomePage() {
                     <span className="tag">{post.cat}</span>
                     <span className="text-xs text-text-secondary">{post.date}</span>
                   </div>
-                  <h3 className="heading-subsection text-dark group-hover:text-primary transition-colors mb-2">{post.title}</h3>
+                  <h3 className="heading-subsection text-text-primary group-hover:text-primary transition-colors mb-2">{post.title}</h3>
                   <p className="text-text-secondary text-body-sm">{post.excerpt}</p>
                   <div className="mt-4 flex items-center gap-1 text-sm text-primary font-medium opacity-0 group-hover:opacity-100 transition-opacity">
                     閱讀更多
@@ -279,7 +330,31 @@ export default function HomePage() {
       </section>
 
       {/* ═══ 6. 影片展示 ═══ */}
-      <VideoShowcaseSection />
+      <section className="section">
+        <div className="section-inner">
+          <div className="text-center mb-10">
+            <span className="tag mb-4">最新影片輪播</span>
+            <h2 className="heading-section text-text-primary mt-4">小賀的 YouTube 頻道</h2>
+            <div className="brand-divider brand-divider-center mt-4" />
+          </div>
+          <div className="max-w-2xl mx-auto">
+            <VideoCarousel />
+          </div>
+          <div className="text-center mt-8">
+            <a
+              href="https://www.youtube.com/@RongRiseConsulting"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary inline-flex items-center gap-2"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+              訂閱頻道 @RongRiseConsulting
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* ═══ 7. 訂閱電子報 ═══ */}
       <NewsletterSection />

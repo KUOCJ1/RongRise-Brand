@@ -7,7 +7,7 @@ export default function CaseStudiesEnSection() {
       <div className="section-inner">
         <div className="text-center mb-12">
           <span className="tag mb-4">Client Stories</span>
-          <h2 className="heading-section text-dark mt-4">Transformation, Not Just Talk</h2>
+          <h2 className="heading-section text-text-primary mt-4">Transformation, Not Just Talk</h2>
           <div className="brand-divider brand-divider-center mt-4" />
           <p className="text-text-secondary text-body-lg mt-4 max-w-2xl mx-auto">
             From manufacturing to services, we let the data speak — these companies' stories could be your tomorrow.
@@ -30,7 +30,7 @@ export default function CaseStudiesEnSection() {
                 ))}
               </div>
 
-              <h3 className="heading-subsection text-dark mb-3 group-hover:text-primary transition-colors">
+              <h3 className="heading-subsection text-text-primary mb-3 group-hover:text-primary transition-colors">
                 {study.title}
               </h3>
 

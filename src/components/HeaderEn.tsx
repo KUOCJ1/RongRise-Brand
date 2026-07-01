@@ -18,7 +18,7 @@ export default function HeaderEn() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
+    <header className="sticky top-0 z-50 bg-surface/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo */}
         <Link href="/en" className="flex items-center gap-2 no-underline">
@@ -100,7 +100,7 @@ export default function HeaderEn() {
 
       {/* Mobile Nav */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-border bg-white">
+        <div className="md:hidden border-t border-border bg-surface">
           <nav className="flex flex-col px-4 py-3 gap-1">
             {navItems.map((item) => (
               <Link

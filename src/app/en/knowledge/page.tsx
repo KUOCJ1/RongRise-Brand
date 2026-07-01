@@ -206,7 +206,7 @@ export default function EnKnowledgePage() {
                     <span className="tag">{post.cat}</span>
                     <span className="text-xs text-text-secondary">{post.readTime} read</span>
                   </div>
-                  <h3 className="heading-subsection text-dark group-hover:text-primary transition-colors mb-2">
+                  <h3 className="heading-subsection text-text-primary group-hover:text-primary transition-colors mb-2">
                     {post.title}
                   </h3>
                   <p className="text-text-secondary text-body-sm flex-1 mb-4">

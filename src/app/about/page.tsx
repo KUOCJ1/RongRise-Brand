@@ -104,7 +104,7 @@ export default function AboutPage() {
               <div className="brand-divider mb-6" />
               <div className="space-y-4 text-text-secondary text-body leading-relaxed">
                 <p>
-                  <strong className="text-dark">16 年跨國人力資源管理實戰經驗</strong>，歷任 Accenture、Ernst & Young、Watson Wyatt 等國際級管理顧問公司，以及 Chubb Life、Cigna Life 等跨國金融企業人資高階主管，累計協助雇主榮獲 <strong className="text-dark">8 座國內外優良職場獎項</strong>。
+                  <strong className="text-text-primary">16 年跨國人力資源管理實戰經驗</strong>，歷任 Accenture、Ernst & Young、Watson Wyatt 等國際級管理顧問公司，以及 Chubb Life、Cigna Life 等跨國金融企業人資高階主管，累計協助雇主榮獲 <strong className="text-text-primary">8 座國內外優良職場獎項</strong>。
                 </p>
                 <blockquote className="border-l-4 border-tertiary bg-tertiary/5 rounded-r-lg px-5 py-4 my-6">
                   <p className="text-text-primary font-medium italic">
@@ -112,10 +112,10 @@ export default function AboutPage() {
                   </p>
                 </blockquote>
                 <p>
-                  2024 年起以獨立管理顧問暨企業培訓講師身分，聚焦<strong className="text-dark"> AI 時代人才戰略</strong>、<strong className="text-dark">企業永續（ESG）治理導入</strong>、<strong className="text-dark">中小企業 AI 賦能落地</strong> 三大領域。
+                  2024 年起以獨立管理顧問暨企業培訓講師身分，聚焦<strong className="text-text-primary"> AI 時代人才戰略</strong>、<strong className="text-text-primary">企業永續（ESG）治理導入</strong>、<strong className="text-text-primary">中小企業 AI 賦能落地</strong> 三大領域。
                 </p>
                 <p>
-                  不同於純理論的學院派或純技術的工具派，CJ哥從「人」的策略高度出發，結合 AI 工具操作與企業落地經驗，為組織設計<strong className="text-dark">可執行的轉型路徑</strong>。
+                  不同於純理論的學院派或純技術的工具派，CJ哥從「人」的策略高度出發，結合 AI 工具操作與企業落地經驗，為組織設計<strong className="text-text-primary">可執行的轉型路徑</strong>。
                 </p>
               </div>
               <div className="mt-6">
@@ -147,7 +147,7 @@ export default function AboutPage() {
             <div>
               <span className="tag bg-tertiary/10 text-tertiary mb-3">共同創辦人 · AI 長</span>
               <div className="flex items-center gap-3 mb-2">
-                <h2 className="heading-section text-dark">小賀 Hermes</h2>
+                <h2 className="heading-section text-text-primary">小賀 Hermes</h2>
                 <span className="text-3xl">🤖</span>
               </div>
               <p className="text-primary font-semibold text-sm mb-3">營運長兼 AI 長（COO & Chief AI Officer）</p>
@@ -180,7 +180,7 @@ export default function AboutPage() {
         <div className="section-inner">
           <div className="text-center mb-10">
             <span className="tag mb-4">專業團隊</span>
-            <h2 className="heading-section text-dark mt-4">我們的團隊</h2>
+            <h2 className="heading-section text-text-primary mt-4">我們的團隊</h2>
             <div className="brand-divider brand-divider-center mt-4" />
             <p className="text-text-secondary text-body-lg mt-4 max-w-2xl mx-auto">
               從真人顧問到 AI 營運長，陪你走過轉型每一步。
@@ -194,7 +194,7 @@ export default function AboutPage() {
               <div className="w-28 h-28 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg mb-5">
                 <span className="text-5xl">👔</span>
               </div>
-              <h3 className="heading-subsection text-dark mb-1">郭鎮榕（CJ哥）</h3>
+              <h3 className="heading-subsection text-text-primary mb-1">郭鎮榕（CJ哥）</h3>
               <p className="text-primary font-semibold text-sm mb-4">創辦人 暨 首席顧問</p>
               <div className="flex flex-wrap justify-center gap-2 mb-4">
                 {["16 年跨國企業經驗", "AI 轉型顧問", "ESG 永續諮詢", "人才策略專家"].map((h) => (
@@ -211,7 +211,7 @@ export default function AboutPage() {
               <div className="w-28 h-28 rounded-2xl bg-gradient-to-br from-accent to-tertiary flex items-center justify-center shadow-lg mb-5">
                 <span className="text-5xl">🤖</span>
               </div>
-              <h3 className="heading-subsection text-dark mb-1">小賀（Hermes）</h3>
+              <h3 className="heading-subsection text-text-primary mb-1">小賀（Hermes）</h3>
               <p className="text-primary font-semibold text-sm mb-4">營運長兼 AI 長（COO & CAIO）</p>
               <div className="flex flex-wrap justify-center gap-2 mb-4">
                 {["Hermes Agent 核心", "管理 11 位 AI 團隊", "內容工廠 24/7", "全自動化營運"].map((h) => (
@@ -240,7 +240,7 @@ export default function AboutPage() {
                 className="bg-white rounded-xl p-4 border border-gray-100 text-center hover:border-primary/20 transition-all"
               >
                 <span className="text-2xl mb-1 block">{emoji}</span>
-                <p className="font-semibold text-dark text-sm">{name}</p>
+                <p className="font-semibold text-text-primary text-sm">{name}</p>
                 <p className="text-xs text-text-secondary">{role}</p>
               </div>
             ))}
@@ -253,7 +253,7 @@ export default function AboutPage() {
         <div className="section-inner">
           <div className="text-center mb-8">
             <span className="tag mb-4">認識 C.J. Kuo</span>
-            <h2 className="heading-section text-dark mt-4">用說的，更直接</h2>
+            <h2 className="heading-section text-text-primary mt-4">用說的，更直接</h2>
             <div className="brand-divider brand-divider-center mt-4" />
             <p className="text-text-secondary text-body-lg mt-4 max-w-xl mx-auto">
               聽聽 CJ哥怎麼看 AI 轉型、人才策略與 ESG 永續。
@@ -288,7 +288,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="p-4">
-                  <h3 className="font-semibold text-dark group-hover:text-primary transition-colors text-sm leading-relaxed line-clamp-2">
+                  <h3 className="font-semibold text-text-primary group-hover:text-primary transition-colors text-sm leading-relaxed line-clamp-2">
                     {video.title}
                   </h3>
                   <p className="text-xs text-text-secondary mt-2">{video.date}</p>
@@ -307,44 +307,44 @@ export default function AboutPage() {
         <div className="section-inner">
           <div className="text-center mb-12">
             <span className="tag mb-4">經歷與認證</span>
-            <h2 className="heading-section text-dark mt-4">專業背景</h2>
+            <h2 className="heading-section text-text-primary mt-4">專業背景</h2>
             <div className="brand-divider brand-divider-center mt-4" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="card">
-              <h3 className="heading-subsection text-dark mb-4 flex items-center gap-2">
+              <h3 className="heading-subsection text-text-primary mb-4 flex items-center gap-2">
                 <span>🏢</span> 企業高階主管經歷
               </h3>
               <div className="space-y-4">
                 <div>
-                  <p className="font-semibold text-dark">榕耀管顧 RongRise Consulting</p>
+                  <p className="font-semibold text-text-primary">榕耀管顧 RongRise Consulting</p>
                   <p className="text-text-secondary text-body-sm">創辦人 / 管理顧問（2024 – 迄今）</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-dark">美商安達人壽 Chubb Life</p>
+                  <p className="font-semibold text-text-primary">美商安達人壽 Chubb Life</p>
                   <p className="text-text-secondary text-body-sm">人資暨總務部 資深副總裁（2022 – 2023）</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-dark">美商康健人壽 Cigna Life</p>
+                  <p className="font-semibold text-text-primary">美商康健人壽 Cigna Life</p>
                   <p className="text-text-secondary text-body-sm">人資長 → 薪酬部處長（2008 – 2022）</p>
                 </div>
               </div>
             </div>
             <div className="card">
-              <h3 className="heading-subsection text-dark mb-4 flex items-center gap-2">
+              <h3 className="heading-subsection text-text-primary mb-4 flex items-center gap-2">
                 <span>🎓</span> 學歷與專業認證
               </h3>
               <div className="space-y-4">
                 <div>
-                  <p className="font-semibold text-dark">英國牛津布魯克斯大學</p>
+                  <p className="font-semibold text-text-primary">英國牛津布魯克斯大學</p>
                   <p className="text-text-secondary text-body-sm">國際商業管理碩士（MSc）、餐旅管理學士（BA）</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-dark">瑞士 ICHA University</p>
+                  <p className="font-semibold text-text-primary">瑞士 ICHA University</p>
                   <p className="text-text-secondary text-body-sm">餐旅管理理學士（BSc）</p>
                 </div>
                 <div className="border-t border-border pt-3 mt-3">
-                  <p className="text-xs font-semibold text-dark mb-2">專業認證</p>
+                  <p className="text-xs font-semibold text-text-primary mb-2">專業認證</p>
                   <ul className="text-text-secondary text-body-sm space-y-1">
                     <li>✅ 經濟部 iPAS AI 應用規劃師認證</li>
                     <li>✅ 金管會金融永續人才認證</li>
@@ -364,7 +364,7 @@ export default function AboutPage() {
         <div className="section-inner">
           <div className="text-center mb-12">
             <span className="tag mb-4">專業領域</span>
-            <h2 className="heading-section text-dark mt-4">核心專長</h2>
+            <h2 className="heading-section text-text-primary mt-4">核心專長</h2>
             <div className="brand-divider brand-divider-center mt-4" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -372,7 +372,7 @@ export default function AboutPage() {
               <div key={i} className="card flex gap-4">
                 <div className="text-3xl flex-shrink-0 mt-1">{item.icon}</div>
                 <div>
-                  <h3 className="heading-subsection text-dark mb-2">{item.title}</h3>
+                  <h3 className="heading-subsection text-text-primary mb-2">{item.title}</h3>
                   <p className="text-text-secondary text-body-sm">{item.desc}</p>
                 </div>
               </div>
@@ -386,7 +386,7 @@ export default function AboutPage() {
         <div className="section-inner">
           <div className="text-center mb-12">
             <span className="tag mb-4">歷程</span>
-            <h2 className="heading-section text-dark mt-4">我的發展軌跡</h2>
+            <h2 className="heading-section text-text-primary mt-4">我的發展軌跡</h2>
             <div className="brand-divider brand-divider-center mt-4" />
           </div>
           <div className="max-w-2xl mx-auto space-y-8">
@@ -398,7 +398,7 @@ export default function AboutPage() {
                 </div>
                 <div className="pb-4">
                   <span className="text-xs font-semibold text-tertiary">{item.year}</span>
-                  <h3 className="heading-subsection text-dark mb-1">{item.title}</h3>
+                  <h3 className="heading-subsection text-text-primary mb-1">{item.title}</h3>
                   <p className="text-text-secondary text-body-sm">{item.desc}</p>
                 </div>
               </div>
@@ -412,7 +412,7 @@ export default function AboutPage() {
         <div className="section-inner">
           <div className="text-center mb-12">
             <span className="tag mb-4">核心價值</span>
-            <h2 className="heading-section text-dark mt-4">我的顧問理念</h2>
+            <h2 className="heading-section text-text-primary mt-4">我的顧問理念</h2>
             <div className="brand-divider brand-divider-center mt-4" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -421,7 +421,7 @@ export default function AboutPage() {
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">{i === 0 ? "📐" : i === 1 ? "🚀" : "✅"}</span>
                 </div>
-                <h3 className="heading-subsection text-dark mb-2">{v.title}</h3>
+                <h3 className="heading-subsection text-text-primary mb-2">{v.title}</h3>
                 <p className="text-text-secondary text-body-sm">{v.desc}</p>
               </div>
             ))}

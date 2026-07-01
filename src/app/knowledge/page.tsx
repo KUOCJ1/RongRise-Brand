@@ -329,7 +329,7 @@ export default function KnowledgePage() {
               value={searchQuery}
               onChange={handleSearch}
               placeholder="搜尋文章標題、內容、標籤..."
-              className="w-full pl-10 pr-10 py-2.5 rounded-lg border border-border bg-bg-alt text-sm text-dark placeholder:text-text-secondary focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
+              className="w-full pl-10 pr-10 py-2.5 rounded-lg border border-border bg-bg-alt text-sm text-text-primary placeholder:text-text-secondary focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
               aria-label="搜尋文章"
             />
             {searchQuery && (
@@ -427,7 +427,7 @@ export default function KnowledgePage() {
                       {post.readTime}閱讀
                     </span>
                   </div>
-                  <h3 className="heading-subsection text-dark group-hover:text-primary transition-colors mb-2">
+                  <h3 className="heading-subsection text-text-primary group-hover:text-primary transition-colors mb-2">
                     {post.title}
                   </h3>
                   <p className="text-text-secondary text-body-sm flex-1 mb-4">

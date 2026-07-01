@@ -136,7 +136,7 @@ export default function EnDownloadsPage() {
             <div key={ci} className="mb-12 last:mb-0">
               <div className="flex items-center gap-3 mb-6">
                 <span className="text-3xl">{cat.icon}</span>
-                <h2 className="heading-subsection text-dark">{cat.title}</h2>
+                <h2 className="heading-subsection text-text-primary">{cat.title}</h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -157,7 +157,7 @@ export default function EnDownloadsPage() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-1">
-                        <h3 className="font-semibold text-dark text-[15px] group-hover:text-primary transition-colors">
+                        <h3 className="font-semibold text-text-primary text-[15px] group-hover:text-primary transition-colors">
                           {item.name}
                         </h3>
                         {item.isNew && (

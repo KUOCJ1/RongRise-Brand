@@ -5,7 +5,7 @@ export default function NotFound() {
     <section className="min-h-[60vh] flex items-center justify-center px-4">
       <div className="text-center max-w-md">
         <div className="text-8xl mb-6">🔍</div>
-        <h1 className="heading-section text-dark mb-4">找不到頁面</h1>
+        <h1 className="heading-section text-text-primary mb-4">找不到頁面</h1>
         <p className="text-text-secondary text-body-lg mb-8">
           您要找的頁面可能已被移除、暫時不存在，或網址有誤。
         </p>

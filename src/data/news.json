@@ -1,13 +1,40 @@
 {
   "news": [
     {
+      "id": "n5",
+      "date": "2026-07-04",
+      "category": "媒體",
+      "title": "麥肯錫 HR 報告深度解析三部曲：AI 如何重塑人力資源管理",
+      "summary": "從招聘、培訓到績效評估，AI 正在改寫 HR 的遊戲規則。小賀為您拆解麥肯錫最新報告，台灣企業的落地路徑。",
+      "link": "/knowledge/ai-hr-trilogy-overview",
+      "isNew": true
+    },
+    {
+      "id": "n6",
+      "date": "2026-07-04",
+      "category": "媒體",
+      "title": "【影片】人資部門即將消失？麥肯錫揭露 AI 重塑 HR 的三大真相",
+      "summary": "72% 企業在試點 AI 招聘工具，但僅 29% 建立完整架構。小賀用 5 分鐘為您解析麥肯錫最新人力資源監測報告。",
+      "link": "https://www.youtube.com/@RongRiseConsulting",
+      "isNew": true
+    },
+    {
+      "id": "n7",
+      "date": "2026-07-02",
+      "category": "資源",
+      "title": "80% 的 AI 專案不是 IT 做的：AI 所有權反轉的時代來了",
+      "summary": "緯創軟體兩年跑出 100+ AI 場景，80% 由業務部門主導。本文提出「AI 所有權反轉」框架，告訴你為什麼 AI 導入的關鍵不是技術，是組織設計。",
+      "link": "/knowledge/ai-ownership-inversion-non-it-lead",
+      "isNew": false
+    },
+    {
       "id": "n1",
       "date": "2026-06-01",
       "category": "課程",
       "title": "【AI 實戰營】7 月班開課 — 從入門到企業落地",
       "summary": "兩天實戰課程，涵蓋生成式 AI 底層邏輯、提示工程、企業 AI 成熟度評估。早鳥優惠至 6/15。",
       "link": "/knowledge/ai-bootcamp",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n2",
@@ -25,15 +52,6 @@
       "title": "免費下載：2026 政府 AI 補助資源完整整理",
       "summary": "經濟部、勞動部、數發部三大部會 AI 轉型補助一次整理，含申請資格、金額、時程表。",
       "link": "/downloads",
-      "isNew": false
-    },
-    {
-      "id": "n4",
-      "date": "2026-05-15",
-      "category": "課程",
-      "title": "Agentic AI 轉型高階共識營 — 第二期開放報名",
-      "summary": "專為企業高阶主管設計的一天共識營，從願景對齊到落地框架，含 Agent 場景評估畫布實作。",
-      "link": "/knowledge/agentic-ai-consensus-camp",
       "isNew": false
     }
   ]

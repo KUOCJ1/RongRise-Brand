@@ -17,11 +17,11 @@ export default function NewsletterEnSection() {
   };
 
   return (
-    <section className="section bg-white">
+    <section className="section bg-surface">
       <div className="section-inner">
         <div className="max-w-2xl mx-auto text-center">
           <span className="tag mb-4">Newsletter</span>
-          <h2 className="heading-section text-dark mt-4">Stay Updated on AI & ESG Trends</h2>
+          <h2 className="heading-section text-text-primary mt-4">Stay Updated on AI & ESG Trends</h2>
           <div className="brand-divider brand-divider-center mt-4" />
           <p className="text-text-secondary text-body-lg mt-4 mb-8">
             Get curated insights on AI transformation, talent strategy, and ESG sustainability delivered to your inbox. No spam, unsubscribe anytime.

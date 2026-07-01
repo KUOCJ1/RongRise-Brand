@@ -44,7 +44,7 @@ export default function ServiceFlowEnSection() {
       <div className="section-inner">
         <div className="text-center mb-12">
           <span className="tag mb-4">How We Work</span>
-          <h2 className="heading-section text-dark mt-4">Our Engagement Model</h2>
+          <h2 className="heading-section text-text-primary mt-4">Our Engagement Model</h2>
           <div className="brand-divider brand-divider-center mt-4" />
           <p className="text-text-secondary text-body-lg mt-4 max-w-2xl mx-auto">
             From first conversation to transformation at scale, every step has clear goals and deliverables.
@@ -67,7 +67,7 @@ export default function ServiceFlowEnSection() {
               <div className="pb-2">
                 <div className="flex items-center gap-3 mb-2">
                   <span className="text-xs font-bold text-tertiary tracking-wider">STEP {item.step}</span>
-                  <h3 className="heading-subsection text-dark text-[1.1rem]">{item.title}</h3>
+                  <h3 className="heading-subsection text-text-primary text-[1.1rem]">{item.title}</h3>
                 </div>
                 <p className="text-text-secondary text-body leading-relaxed mb-2">{item.desc}</p>
                 <p className="text-xs text-text-secondary flex items-center gap-1">

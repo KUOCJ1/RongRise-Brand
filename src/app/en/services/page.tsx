@@ -70,14 +70,14 @@ export default function ServicesEnPage() {
                       <span className="text-3xl">{service.icon}</span>
                     </div>
                     <div>
-                      <h2 className="heading-subsection text-dark">{service.title}</h2>
+                      <h2 className="heading-subsection text-text-primary">{service.title}</h2>
                       {service.tagline && <p className="text-primary font-medium text-sm mt-1">{service.tagline}</p>}
                     </div>
                   </div>
                 </div>
                 <div className="p-6 md:p-8">
                   <p className="text-text-secondary text-body leading-relaxed mb-6">{service.desc}</p>
-                  <h3 className="font-semibold text-dark text-sm mb-3">What We Offer</h3>
+                  <h3 className="font-semibold text-text-primary text-sm mb-3">What We Offer</h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
                     {service.features.map((feat, fi) => (
                       <div key={fi} className="flex items-start gap-2">
@@ -105,7 +105,7 @@ export default function ServicesEnPage() {
         <div className="section-inner">
           <div className="text-center mb-12">
             <span className="tag mb-4">Pricing</span>
-            <h2 className="heading-section text-dark mt-4">Right Plan for Your Scale</h2>
+            <h2 className="heading-section text-text-primary mt-4">Right Plan for Your Scale</h2>
             <div className="brand-divider brand-divider-center mt-4" />
             <p className="text-text-secondary text-body-lg mt-4 max-w-2xl mx-auto">
               We believe every business transformation path is different. We provide the most suitable service combination based on your scale, needs, and budget.
@@ -114,7 +114,7 @@ export default function ServicesEnPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <div className="card text-center flex flex-col">
               <div className="text-3xl mb-4">🔍</div>
-              <h3 className="heading-subsection text-dark mb-2">Free Diagnosis</h3>
+              <h3 className="heading-subsection text-text-primary mb-2">Free Diagnosis</h3>
               <div className="text-3xl font-bold text-primary mb-1">$0</div>
               <div className="text-text-secondary text-sm mb-4">30 minutes</div>
               <ul className="text-left space-y-2 mb-6 flex-1">
@@ -128,7 +128,7 @@ export default function ServicesEnPage() {
             <div className="card text-center flex flex-col border-2 border-tertiary relative">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-tertiary text-white text-xs font-bold px-3 py-1 rounded-full">Most Popular</div>
               <div className="text-3xl mb-4">🤖</div>
-              <h3 className="heading-subsection text-dark mb-2">Consulting</h3>
+              <h3 className="heading-subsection text-text-primary mb-2">Consulting</h3>
               <div className="text-3xl font-bold text-primary mb-1">Custom</div>
               <div className="text-text-secondary text-sm mb-4">Tailored Quote</div>
               <ul className="text-left space-y-2 mb-6 flex-1">
@@ -142,7 +142,7 @@ export default function ServicesEnPage() {
             </div>
             <div className="card text-center flex flex-col">
               <div className="text-3xl mb-4">🎓</div>
-              <h3 className="heading-subsection text-dark mb-2">Training</h3>
+              <h3 className="heading-subsection text-text-primary mb-2">Training</h3>
               <div className="text-3xl font-bold text-primary mb-1">Per Person</div>
               <div className="text-text-secondary text-sm mb-4">Below Market Rate</div>
               <ul className="text-left space-y-2 mb-6 flex-1">

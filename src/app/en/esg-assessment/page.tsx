@@ -160,17 +160,17 @@ export default function EnEsgAssessment() {
           {currentStep === 0 && (
             <div className="text-center py-8">
               <div className="text-6xl mb-6">🌿🤖📊</div>
-              <h2 className="heading-section text-dark mb-4">5 Dimensions · 25 Questions · 3 Minutes</h2>
+              <h2 className="heading-section text-text-primary mb-4">5 Dimensions · 25 Questions · 3 Minutes</h2>
               <div className="grid grid-cols-5 gap-3 mb-8">
                 {DIMENSION_ORDER.map((dim) => (
                   <div key={dim} className="text-center p-3 bg-bg-alt rounded-xl">
                     <div className="text-2xl mb-1">{DIMENSION_ICONS[dim]}</div>
-                    <div className="text-xs font-medium text-dark">{dim}</div>
+                    <div className="text-xs font-medium text-text-primary">{dim}</div>
                   </div>
                 ))}
               </div>
               <div className="bg-bg-alt rounded-xl p-6 mb-8 text-left">
-                <h3 className="font-semibold text-dark mb-3">📋 Assessment Instructions</h3>
+                <h3 className="font-semibold text-text-primary mb-3">📋 Assessment Instructions</h3>
                 <ul className="space-y-2 text-sm text-text-secondary">
                   <li>• 5 questions per dimension, 25 questions total</li>
                   <li>• Select the option that best matches your organization&apos;s actual situation</li>
@@ -207,7 +207,7 @@ export default function EnEsgAssessment() {
 
               {/* Question */}
               <div className="bg-white rounded-2xl border border-border p-6 md:p-8 mb-6">
-                <h3 className="heading-subsection text-dark mb-6 leading-relaxed">
+                <h3 className="heading-subsection text-text-primary mb-6 leading-relaxed">
                   {currentQuestion.text}
                 </h3>
                 <div className="space-y-3">
@@ -222,7 +222,7 @@ export default function EnEsgAssessment() {
                       }`}
                     >
                       <span className="text-2xl w-10 text-center">{opt.emoji}</span>
-                      <span className="text-left font-medium text-dark">{opt.label}</span>
+                      <span className="text-left font-medium text-text-primary">{opt.label}</span>
                     </button>
                   ))}
                 </div>
@@ -248,7 +248,7 @@ export default function EnEsgAssessment() {
               <div className="py-8">
                 <div className="text-center mb-8">
                   <div className="text-5xl mb-4">{pct >= 60 ? "🎉" : "💪"}</div>
-                  <h2 className="heading-section text-dark mb-2">Assessment Complete!</h2>
+                  <h2 className="heading-section text-text-primary mb-2">Assessment Complete!</h2>
                   <p className="text-text-secondary">{levelDesc}</p>
                 </div>
 
@@ -261,7 +261,7 @@ export default function EnEsgAssessment() {
 
                 {/* Dimension Scores */}
                 <div className="bg-white rounded-2xl border border-border p-6 md:p-8 mb-6">
-                  <h3 className="heading-subsection text-dark mb-4">Dimension Scores</h3>
+                  <h3 className="heading-subsection text-text-primary mb-4">Dimension Scores</h3>
                   <div className="space-y-4">
                     {DIMENSION_ORDER.map((dim) => {
                       const ds = dimensionScores[dim];
@@ -269,7 +269,7 @@ export default function EnEsgAssessment() {
                       return (
                         <div key={dim}>
                           <div className="flex items-center justify-between mb-1">
-                            <span className="text-sm font-medium text-dark">
+                            <span className="text-sm font-medium text-text-primary">
                               {DIMENSION_ICONS[dim]} {dim}
                             </span>
                             <span className="text-sm text-text-secondary">{ds.total}/{ds.max} ({pct}%)</span>
@@ -291,7 +291,7 @@ export default function EnEsgAssessment() {
 
                 {/* CTA */}
                 <div className="bg-bg-alt rounded-2xl p-6 md:p-8 text-center mb-6">
-                  <h3 className="heading-subsection text-dark mb-3">Want to Develop a Customized Transformation Strategy?</h3>
+                  <h3 className="heading-subsection text-text-primary mb-3">Want to Develop a Customized Transformation Strategy?</h3>
                   <p className="text-text-secondary text-body mb-4">
                     C.J. Kuo offers one-on-one ESG + AI transformation advisory services, providing specific recommendations tailored to your organization.
                   </p>

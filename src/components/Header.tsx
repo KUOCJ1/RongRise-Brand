@@ -20,7 +20,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
+    <header className="sticky top-0 z-50 bg-surface/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2.5 no-underline" aria-label="榕耀管顧首頁">
@@ -117,7 +117,7 @@ export default function Header() {
 
       {/* Mobile Nav */}
       {mobileOpen && (
-        <nav id="mobile-nav" className="md:hidden border-t border-border bg-white" aria-label="手機選單">
+        <nav id="mobile-nav" className="md:hidden border-t border-border bg-surface" aria-label="手機選單">
           <div className="flex flex-col px-4 py-3 gap-1">
             {navItems.map((item) => (
               <Link

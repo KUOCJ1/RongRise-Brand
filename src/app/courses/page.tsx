@@ -89,7 +89,7 @@ export default function CoursesPage() {
                               {status.label}
                             </span>
                           </div>
-                          <h3 className="heading-subsection text-dark">{course.title}</h3>
+                          <h3 className="heading-subsection text-text-primary">{course.title}</h3>
                         </div>
                       </div>
 
@@ -139,7 +139,7 @@ export default function CoursesPage() {
       {/* Newsletter */}
       <section className="bg-gradient-subtle py-12">
         <div className="max-w-[600px] mx-auto px-4 text-center">
-          <h3 className="heading-subsection text-dark mb-3">不想錯過開課通知？</h3>
+          <h3 className="heading-subsection text-text-primary mb-3">不想錯過開課通知？</h3>
           <p className="text-text-secondary text-body mb-4">
             訂閱轉型快訊，第一時間收到新課程公告與早鳥優惠。
           </p>

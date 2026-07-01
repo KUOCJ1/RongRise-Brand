@@ -32,10 +32,10 @@ function formatMessage(content: string): string {
       '<a href="$2" class="text-primary font-medium hover:underline" target="_blank" rel="noopener">$1</a>'
     )
     .replace(/\n/g, "<br/>")
-    .replace(/\*\*(.+?)\*\*/g, '<strong class="text-dark">$1</strong>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong class="text-text-primary">$1</strong>')
     .replace(/\*(.+?)\*/g, '<em>$1</em>')
-    .replace(/^###\s+(.+)$/gm, '<h4 class="font-semibold text-dark mt-2 mb-1">$1</h4>')
-    .replace(/^##\s+(.+)$/gm, '<h3 class="font-semibold text-dark mt-3 mb-2">$1</h3>');
+    .replace(/^###\s+(.+)$/gm, '<h4 class="font-semibold text-text-primary mt-2 mb-1">$1</h4>')
+    .replace(/^##\s+(.+)$/gm, '<h3 class="font-semibold text-text-primary mt-3 mb-2">$1</h3>');
 
   return html;
 }
@@ -161,7 +161,7 @@ export default function AssistantPage() {
           <div className="flex items-center justify-between px-4 py-2.5 border-b border-border-light bg-bg-alt flex-shrink-0">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse" />
-              <span className="text-sm font-medium text-dark">AI 長小賀</span>
+              <span className="text-sm font-medium text-text-primary">AI 長小賀</span>
               <span className="text-xs text-text-secondary">● 記憶已啟用</span>
             </div>
             <button

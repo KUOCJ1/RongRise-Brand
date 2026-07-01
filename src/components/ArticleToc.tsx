@@ -112,7 +112,7 @@ export default function ArticleToc() {
         <div className="hidden xl:block fixed right-4 top-1/3 -translate-y-1/2 z-40">
           <div className="bg-white/95 backdrop-blur-sm rounded-xl border border-border p-4 shadow-lg max-w-[180px]">
             <div className="flex items-center gap-2 mb-3 pb-2 border-b border-border-light">
-              <span className="text-sm font-semibold text-dark">📑 目錄</span>
+              <span className="text-sm font-semibold text-text-primary">📑 目錄</span>
               <span className="text-xs text-text-secondary ml-auto">{readProgress}%</span>
             </div>
             <nav className="space-y-1.5 max-h-[300px] overflow-y-auto">

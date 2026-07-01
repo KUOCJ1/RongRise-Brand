@@ -39,14 +39,14 @@ export default function EnContactPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Left: Contact Details */}
               <div>
-                <h2 className="heading-section text-dark mb-6">Contact Information</h2>
+                <h2 className="heading-section text-text-primary mb-6">Contact Information</h2>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <span className="text-2xl">📧</span>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-dark mb-1">Email</h3>
+                      <h3 className="font-semibold text-text-primary mb-1">Email</h3>
                       <a href="mailto:info@rongrise.com" className="text-text-secondary hover:text-primary transition-colors">
                         info@rongrise.com
                       </a>
@@ -59,7 +59,7 @@ export default function EnContactPage() {
                       <span className="text-2xl">📍</span>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-dark mb-1">Service Area</h3>
+                      <h3 className="font-semibold text-text-primary mb-1">Service Area</h3>
                       <p className="text-text-secondary">Worldwide · Online Consultation Available</p>
                       <p className="text-text-secondary text-sm mt-1">Based in Taiwan, serving clients globally</p>
                     </div>
@@ -70,7 +70,7 @@ export default function EnContactPage() {
                       <span className="text-2xl">💬</span>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-dark mb-1">LINE Official</h3>
+                      <h3 className="font-semibold text-text-primary mb-1">LINE Official</h3>
                       <p className="text-text-secondary">@954qxhhe</p>
                       <p className="text-text-secondary text-sm mt-1">Available for quick questions and scheduling</p>
                     </div>
@@ -81,7 +81,7 @@ export default function EnContactPage() {
                       <span className="text-2xl">🕐</span>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-dark mb-1">Consultation Hours</h3>
+                      <h3 className="font-semibold text-text-primary mb-1">Consultation Hours</h3>
                       <p className="text-text-secondary">Monday – Friday: 9:00 AM – 6:00 PM (GMT+8)</p>
                       <p className="text-text-secondary text-sm mt-1">Other times available by appointment</p>
                     </div>
@@ -91,10 +91,10 @@ export default function EnContactPage() {
 
               {/* Right: Quick Actions */}
               <div>
-                <h2 className="heading-section text-dark mb-6">Quick Actions</h2>
+                <h2 className="heading-section text-text-primary mb-6">Quick Actions</h2>
                 <div className="space-y-4">
                   <div className="card">
-                    <h3 className="heading-subsection text-dark mb-2">Book a Free Consultation</h3>
+                    <h3 className="heading-subsection text-text-primary mb-2">Book a Free Consultation</h3>
                     <p className="text-text-secondary text-body-sm mb-4">
                       Schedule a free 30-minute consultation with C.J. Kuo to discuss your business transformation needs.
                     </p>
@@ -107,7 +107,7 @@ export default function EnContactPage() {
                   </div>
 
                   <div className="card">
-                    <h3 className="heading-subsection text-dark mb-2">Ask the Assistant</h3>
+                    <h3 className="heading-subsection text-text-primary mb-2">Ask the Assistant</h3>
                     <p className="text-text-secondary text-body-sm mb-4">
                       Our AI Assistant is available 24/7 with C.J. Kuo&apos;s complete knowledge base.
                     </p>
@@ -117,7 +117,7 @@ export default function EnContactPage() {
                   </div>
 
                   <div className="card">
-                    <h3 className="heading-subsection text-dark mb-2">Download Resources</h3>
+                    <h3 className="heading-subsection text-text-primary mb-2">Download Resources</h3>
                     <p className="text-text-secondary text-body-sm mb-4">
                       Get our service brochure, AI maturity assessment, ESG checklist, and more.
                     </p>
@@ -136,7 +136,7 @@ export default function EnContactPage() {
       <section className="section bg-bg-alt">
         <div className="section-inner">
           <div className="text-center mb-8">
-            <h2 className="heading-section text-dark mb-2">Connect on Social Media</h2>
+            <h2 className="heading-section text-text-primary mb-2">Connect on Social Media</h2>
             <p className="text-text-secondary">Follow us for the latest insights and updates</p>
           </div>
 
@@ -149,7 +149,7 @@ export default function EnContactPage() {
             >
               <span className="text-2xl">💼</span>
               <div>
-                <p className="font-semibold text-dark group-hover:text-primary transition-colors">LinkedIn</p>
+                <p className="font-semibold text-text-primary group-hover:text-primary transition-colors">LinkedIn</p>
                 <p className="text-text-secondary text-sm">C.J. Kuo</p>
               </div>
             </a>
@@ -162,7 +162,7 @@ export default function EnContactPage() {
             >
               <span className="text-2xl">📘</span>
               <div>
-                <p className="font-semibold text-dark group-hover:text-primary transition-colors">Facebook</p>
+                <p className="font-semibold text-text-primary group-hover:text-primary transition-colors">Facebook</p>
                 <p className="text-text-secondary text-sm">CJ Kuo</p>
               </div>
             </a>
@@ -175,7 +175,7 @@ export default function EnContactPage() {
             >
               <span className="text-2xl">📺</span>
               <div>
-                <p className="font-semibold text-dark group-hover:text-primary transition-colors">YouTube</p>
+                <p className="font-semibold text-text-primary group-hover:text-primary transition-colors">YouTube</p>
                 <p className="text-text-secondary text-sm">@RongRiseConsulting</p>
               </div>
             </a>

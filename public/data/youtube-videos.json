@@ -1,0 +1,32 @@
+{
+  "videos": [
+    {
+      "id": "eOEfj96C68M",
+      "title": "隱性知識管理｜AI 轉型最被忽略的關鍵步驟",
+      "date": "2026-06-24",
+      "description": "你知道為什麼很多公司用了AI，效率卻完全沒有提升？ 問題往往不在技術，在一個你看不到的地方——老師傅腦袋裡的經驗。 在這支 ...",
+      "thumbnail": "https://img.youtube.com/vi/eOEfj96C68M/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/eOEfj96C68M/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=eOEfj96C68M"
+    },
+    {
+      "id": "zPR4dwzJpys",
+      "title": "太空 AI 中心 - AGI 時代最重要的基礎設施",
+      "date": "2026-06-22",
+      "description": "訂閱：https://www.youtube.com/@RongRiseConsulting 官網：https://rong-rise.com #AI轉型#太空AI #AGI.",
+      "thumbnail": "https://img.youtube.com/vi/zPR4dwzJpys/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/zPR4dwzJpys/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=zPR4dwzJpys"
+    },
+    {
+      "id": "IEZqM-SqIFk",
+      "title": "🕵️ Shadow AI 正在你家企業裡爆炸：你最大的資安風險不是駭客，是員工",
+      "date": "2026-06-13",
+      "description": "2026年6月，Claude 惡意濫用比率從33%飆升到56%。當每個員工都能自己「Vibe Code」出AI 工具，企業資安邊界從網 ...",
+      "thumbnail": "https://img.youtube.com/vi/IEZqM-SqIFk/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/IEZqM-SqIFk/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=IEZqM-SqIFk"
+    }
+  ],
+  "fetchedAt": "2026-06-13T07:13:15Z"
+}

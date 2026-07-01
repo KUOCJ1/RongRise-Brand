@@ -11,11 +11,11 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="section bg-white">
+    <section className="section bg-surface">
       <div className="section-inner">
         <div className="text-center mb-12">
           <span className="tag mb-4">常見問題</span>
-          <h2 className="heading-section text-dark mt-4">您可能想知道的</h2>
+          <h2 className="heading-section text-text-primary mt-4">您可能想知道的</h2>
           <div className="brand-divider brand-divider-center mt-4" />
           <p className="text-text-secondary text-body-lg mt-4 max-w-xl mx-auto">
             整理了最常被問到的問題。如果這裡沒有您的答案，隨時問問小幫手。
@@ -25,7 +25,7 @@ export default function FAQSection() {
         <div className="max-w-3xl mx-auto space-y-8">
           {faq.faq.map((cat) => (
             <div key={cat.category}>
-              <h3 className="font-semibold text-dark text-sm mb-4 flex items-center gap-2">
+              <h3 className="font-semibold text-text-primary text-sm mb-4 flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                 {cat.category}
               </h3>
@@ -45,7 +45,7 @@ export default function FAQSection() {
                         aria-controls={`faq-panel-${key}`}
                         id={`faq-btn-${key}`}
                       >
-                        <span className={`font-medium text-[15px] transition-colors ${isOpen ? 'text-primary' : 'text-dark'}`}>
+                        <span className={`font-medium text-[15px] transition-colors ${isOpen ? 'text-primary' : 'text-text-primary'}`}>
                           {item.q}
                         </span>
                         <svg

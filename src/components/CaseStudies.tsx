@@ -7,7 +7,7 @@ export default function CaseStudiesSection() {
       <div className="section-inner">
         <div className="text-center mb-12">
           <span className="tag mb-4">客戶案例</span>
-          <h2 className="heading-section text-dark mt-4">轉型，不只是說說而已</h2>
+          <h2 className="heading-section text-text-primary mt-4">轉型，不只是說說而已</h2>
           <div className="brand-divider brand-divider-center mt-4" />
           <p className="text-text-secondary text-body-lg mt-4 max-w-2xl mx-auto">
             從製造業到服務業，我們用數據說話——這些企業的故事，也許就是您明日的場景。
@@ -32,7 +32,7 @@ export default function CaseStudiesSection() {
               </div>
 
               {/* Title */}
-              <h3 className="heading-subsection text-dark mb-3 group-hover:text-primary transition-colors">
+              <h3 className="heading-subsection text-text-primary mb-3 group-hover:text-primary transition-colors">
                 {study.title}
               </h3>
 
