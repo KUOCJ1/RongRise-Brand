@@ -2,16 +2,16 @@
   "news": [
     {
       "id": "n5",
-      "date": "2026-07-04",
+      "date": "2026-07-01",
       "category": "媒體",
       "title": "麥肯錫 HR 報告深度解析三部曲：AI 如何重塑人力資源管理",
       "summary": "從招聘、培訓到績效評估，AI 正在改寫 HR 的遊戲規則。小賀為您拆解麥肯錫最新報告，台灣企業的落地路徑。",
-      "link": "/knowledge/ai-hr-trilogy-overview",
+      "link": "/knowledge/hr-ai-trilogy-part1-recruitment-automation",
       "isNew": true
     },
     {
       "id": "n6",
-      "date": "2026-07-04",
+      "date": "2026-07-01",
       "category": "媒體",
       "title": "【影片】人資部門即將消失？麥肯錫揭露 AI 重塑 HR 的三大真相",
       "summary": "72% 企業在試點 AI 招聘工具，但僅 29% 建立完整架構。小賀用 5 分鐘為您解析麥肯錫最新人力資源監測報告。",
@@ -20,12 +20,12 @@
     },
     {
       "id": "n7",
-      "date": "2026-07-02",
+      "date": "2026-07-01",
       "category": "資源",
       "title": "80% 的 AI 專案不是 IT 做的：AI 所有權反轉的時代來了",
       "summary": "緯創軟體兩年跑出 100+ AI 場景，80% 由業務部門主導。本文提出「AI 所有權反轉」框架，告訴你為什麼 AI 導入的關鍵不是技術，是組織設計。",
       "link": "/knowledge/ai-ownership-inversion-non-it-lead",
-      "isNew": false
+      "isNew": true
     },
     {
       "id": "n1",
