@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import QuickChat from "@/components/QuickChat";
 import Script from "next/script";
 
 const SITE_URL = "https://rong-rise.com";
@@ -127,6 +128,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <QuickChat />
       </body>
     </html>
   );

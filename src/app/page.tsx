@@ -117,20 +117,19 @@ export default function HomePage() {
             </div>
             </div>
 
-            {/* 數據指標 + 問小賀 */}
+            {/* 數據指標 */}
             <div className="mt-12 lg:absolute lg:right-8 lg:top-1/2 lg:-translate-y-1/2 lg:mt-0">
-            <div className="flex items-center gap-4 sm:gap-6 lg:flex-col lg:gap-4 lg:w-72">
-              <div className="flex items-center gap-4 sm:gap-6">
-                <HeroStat number="16+" label="年跨國人資經驗" dark />
-                <div className="w-px h-8 bg-white/20 lg:w-full lg:h-px" />
-                <HeroStat number="8" label="座優良職場獎" dark />
-                <div className="w-px h-8 bg-white/20 lg:w-full lg:h-px" />
-                <HeroStat number="300+" label="家企業服務" dark />
+              <div className="flex items-center gap-4 sm:gap-6 lg:flex-col lg:gap-4 lg:w-72">
+                <div className="flex items-center gap-4 sm:gap-6">
+                  <HeroStat number="16+" label="年跨國人資經驗" dark />
+                  <div className="w-px h-8 bg-white/20 lg:w-full lg:h-px" />
+                  <HeroStat number="8" label="座優良職場獎" dark />
+                  <div className="w-px h-8 bg-white/20 lg:w-full lg:h-px" />
+                  <HeroStat number="300+" label="家企業服務" dark />
+                </div>
               </div>
-              <QuickChat />
             </div>
-            </div>
-        </div>
+          </div>
       </section>
 
       {/* ═══ 最新消息 ═══ */}
