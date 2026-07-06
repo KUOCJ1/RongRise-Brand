@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n8",
+      "date": "2026-07-06",
+      "category": "資源",
+      "title": "矽谷正在用 AI 消滅「純管理職」——工作者如何避免終身困在基層？",
+      "summary": "Block 裁 4,000 人、Amazon 裁 30,000 人、Google 管理層縮減 35%——這是組織結構的根本性重構。Jack Dorsey 的「智慧層」取代中階主管，四條生存路徑讓你不再困在基層。",
+      "link": "/knowledge/ai-eliminating-middle-management-worker-survival-guide",
+      "isNew": true
+    },
+    {
       "id": "n5",
       "date": "2026-07-01",
       "category": "媒體",
@@ -25,7 +34,7 @@
       "title": "80% 的 AI 專案不是 IT 做的：AI 所有權反轉的時代來了",
       "summary": "緯創軟體兩年跑出 100+ AI 場景，80% 由業務部門主導。本文提出「AI 所有權反轉」框架，告訴你為什麼 AI 導入的關鍵不是技術，是組織設計。",
       "link": "/knowledge/ai-ownership-inversion-non-it-lead",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n1",
