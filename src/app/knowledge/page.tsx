@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "課程設計", "人才策略", "ESG 
 
 const articles: Article[] = [
   {
+    slug: "ai-eliminating-middle-management-worker-survival-guide",
+    cat: "AI 轉型",
+    title: "矽谷正在用 AI 消滅「純管理職」——工作者如何避免終身困在基層？",
+    date: "2026-07-06",
+    readTime: "12 分鐘",
+    excerpt: "Block 裁 4,000 人、Amazon 裁 30,000 人、Google 管理層縮減 35%——矽谷巨人正在用 AI 消滅純管理職。Jack Dorsey 的「智慧層」取代了中階主管，留下來的只有 Individual Contributor、DRI 和 Player-Coach。這不是景氣循環，是組織結構的根本性重構。",
+    tags: ["AI 管理", "組織扁平化", "中階主管", "AI Agent", "Player-Coach", "職涯策略"],
+  },
+  {
     slug: "ai-ownership-inversion-non-it-lead",
     cat: "AI 轉型",
     title: "80% 的 AI 專案不是 IT 做的：AI 所有權反轉的時代來了",
