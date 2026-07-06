@@ -38,18 +38,18 @@ export default function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-3">
-          {navItems.map((item) => (
+        <nav className="hidden md:flex items-center gap-2">
+          {navItems.slice(0, 7).map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="nav-link text-[15px] px-3 py-2 relative after:absolute after:bottom-0 after:left-3 after:right-3 after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100"
+              className="nav-link text-[14px] px-2 py-2 relative after:absolute after:bottom-0 after:left-2 after:right-2 after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100"
             >
               {item.label}
             </Link>
           ))}
           {/* Language Switcher */}
-          <div className="flex items-center gap-0.5 ml-3 pl-3 border-l border-border">
+          <div className="flex items-center gap-0.5 ml-2 pl-2 border-l border-border">
             <Link
               href="/"
               className="text-[12px] font-medium px-2 py-1 rounded text-primary bg-primary/5"
@@ -68,20 +68,8 @@ export default function Header() {
           </div>
         </nav>
 
-        {/* CTA + Language (Desktop) */}
+        {/* CTA (Desktop) */}
         <div className="hidden md:flex items-center gap-4">
-          <Link
-            href="/newsletter"
-            className="text-[14px] font-medium text-text-secondary hover:text-primary transition-colors"
-          >
-            📬 訂閱電子報
-          </Link>
-          <Link
-            href="/en"
-            className="text-[14px] font-medium text-text-secondary hover:text-primary transition-colors hidden lg:inline"
-          >
-            English
-          </Link>
           <Link
             href="/about#contact"
             className="btn-primary text-sm py-2 px-5"
