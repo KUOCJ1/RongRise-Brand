@@ -2,6 +2,8 @@ import { MetadataRoute } from "next";
 import articlesData from "@/data/articles.json";
 import newsletters from "@/data/newsletters.json";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://rong-rise.com";
 
