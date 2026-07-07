@@ -29,7 +29,7 @@ function buildHeaders(): Record<string, string> {
   return headers;
 }
 
-const OPENROUTER_MODEL: string = process.env.NEXT_PUBLIC_OPENROUTER_MODEL || "deepseek/deepseek-v3.2";
+const OPENROUTER_MODEL: string = process.env.NEXT_PUBLIC_OPENROUTER_MODEL || "deepseek/deepseek-v4-flash";
 
 // System prompt — 引導式對話風格
 const SYSTEM_PROMPT: string =
