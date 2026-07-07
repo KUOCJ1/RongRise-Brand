@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n9",
+      "date": "2026-07-07",
+      "category": "資源",
+      "title": "AI 導入的真正卡關不在技術，而在「人」——如何讓團隊自己用 AI",
+      "summary": "AI落地關鍵在組織而非技術｜提供三層責任制框架與具體行動步驟",
+      "link": "/knowledge/ai-team-adoption",
+      "isNew": true
+    },
+    {
       "id": "n8",
       "date": "2026-07-06",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "【影片】人資部門即將消失？麥肯錫揭露 AI 重塑 HR 的三大真相",
       "summary": "72% 企業在試點 AI 招聘工具，但僅 29% 建立完整架構。小賀用 5 分鐘為您解析麥肯錫最新人力資源監測報告。",
       "link": "https://www.youtube.com/@RongRiseConsulting",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n7",

@@ -1,6 +1,15 @@
 {
   "videos": [
     {
+      "id": "nKnP3Xiks58",
+      "title": "矽谷正在用 AI 消滅純管理職｜你的管理能力準備好了嗎？",
+      "date": "2026-07-07",
+      "description": "矽谷正在用 AI 消滅純管理職，你的工作安全嗎？ 從 Google 到 Meta，從裁員名單到組織重組，只會追進度、傳話、寫報告的主管， ...",
+      "thumbnail": "https://img.youtube.com/vi/nKnP3Xiks58/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/nKnP3Xiks58/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=nKnP3Xiks58"
+    },
+    {
       "id": "eOEfj96C68M",
       "title": "隱性知識管理｜AI 轉型最被忽略的關鍵步驟",
       "date": "2026-06-24",
@@ -17,16 +26,7 @@
       "thumbnail": "https://img.youtube.com/vi/zPR4dwzJpys/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/zPR4dwzJpys/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=zPR4dwzJpys"
-    },
-    {
-      "id": "IEZqM-SqIFk",
-      "title": "🕵️ Shadow AI 正在你家企業裡爆炸：你最大的資安風險不是駭客，是員工",
-      "date": "2026-06-13",
-      "description": "2026年6月，Claude 惡意濫用比率從33%飆升到56%。當每個員工都能自己「Vibe Code」出AI 工具，企業資安邊界從網 ...",
-      "thumbnail": "https://img.youtube.com/vi/IEZqM-SqIFk/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/IEZqM-SqIFk/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=IEZqM-SqIFk"
     }
   ],
-  "fetchedAt": "2026-06-13T07:13:15Z"
+  "fetchedAt": "2026-06-22T23:21:53Z"
 }
