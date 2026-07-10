@@ -7,6 +7,7 @@ import TestimonialsSection from "@/components/Testimonials";
 import VideoShowcaseSection from "@/components/VideoShowcase";
 import VideoCarousel from "@/components/VideoCarousel";
 import NewsletterSection from "@/components/Newsletter";
+import FAQSection from "@/components/FAQ";
 import QuickChat from "@/components/QuickChat";
 import ReviewSchema from "@/components/ReviewSchema";
 import { coverImg } from "@/lib/cover-map";
@@ -113,6 +114,18 @@ export default function HomePage() {
               </TrackLink>
               <TrackLink href="/knowledge" className="btn-secondary bg-white/10 border-white/40 text-white font-semibold hover:bg-white/20 hover:backdrop-blur-sm" trackLabel="探索知識庫" trackLocation="hero">
                 探索知識庫
+              </TrackLink>
+            </div>
+            <div className="mt-5 animate-fade-in-up animation-delay-400">
+              <TrackLink
+                href="/downloads"
+                className="inline-flex items-center gap-2 text-white/80 hover:text-white text-sm font-medium transition-colors group"
+                trackLabel="免費AI成熟度自評"
+                trackLocation="hero"
+              >
+                <span className="w-5 h-5 rounded-full bg-tertiary/20 flex items-center justify-center text-xs group-hover:bg-tertiary/30 transition-colors">🎁</span>
+                免費下載：企業 AI 成熟度自評量表
+                <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" /></svg>
               </TrackLink>
             </div>
             </div>
@@ -236,6 +249,9 @@ export default function HomePage() {
 
       {/* ═══ 3. 客戶案例 ═══ */}
       <CaseStudiesSection />
+
+      {/* ═══ 3.5 FAQ（消除最後疑慮）═══ */}
+      <FAQSection />
 
       {/* ═══ 4. 關於 + 推薦（合併）═══ */}
       <section className="section">

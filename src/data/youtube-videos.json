@@ -1,32 +1,32 @@
 {
   "videos": [
     {
-      "id": "nKnP3Xiks58",
+      "id": "3gbfSoR8c34",
+      "title": "找人，還是建一個 Agent？你可能問錯重點了｜Coase 定理的現代解答",
+      "date": "2026-07-09",
+      "description": "每次評估一個職缺，你的直覺是先算人頭，還是先算任務？ 這不是哲學問題，是 Coase 八十年前就問過的。不同的是，現在市場換 ...",
+      "thumbnail": "https://img.youtube.com/vi/3gbfSoR8c34/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/3gbfSoR8c34/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=3gbfSoR8c34"
+    },
+    {
+      "id": "P2TynaRjoGo",
+      "title": "找人，還是建一個 Agent？你可能問錯重點了｜Coase 定理的現代解答",
+      "date": "2026-07-09",
+      "description": "每次評估一個職缺，你的直覺是先算人頭，還是先算任務？ 這不是哲學問題，是Coase 八十年前就問過的。不同的是，現在市場換成 ...",
+      "thumbnail": "https://img.youtube.com/vi/P2TynaRjoGo/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/P2TynaRjoGo/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=P2TynaRjoGo"
+    },
+    {
+      "id": "b-eTXXyUirI",
       "title": "矽谷正在用 AI 消滅純管理職｜你的管理能力準備好了嗎？",
       "date": "2026-07-07",
-      "description": "矽谷正在用 AI 消滅純管理職，你的工作安全嗎？ 從 Google 到 Meta，從裁員名單到組織重組，只會追進度、傳話、寫報告的主管， ...",
-      "thumbnail": "https://img.youtube.com/vi/nKnP3Xiks58/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/nKnP3Xiks58/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=nKnP3Xiks58"
-    },
-    {
-      "id": "eOEfj96C68M",
-      "title": "隱性知識管理｜AI 轉型最被忽略的關鍵步驟",
-      "date": "2026-06-24",
-      "description": "你知道為什麼很多公司用了AI，效率卻完全沒有提升？ 問題往往不在技術，在一個你看不到的地方——老師傅腦袋裡的經驗。 在這支 ...",
-      "thumbnail": "https://img.youtube.com/vi/eOEfj96C68M/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/eOEfj96C68M/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=eOEfj96C68M"
-    },
-    {
-      "id": "zPR4dwzJpys",
-      "title": "太空 AI 中心 - AGI 時代最重要的基礎設施",
-      "date": "2026-06-22",
-      "description": "訂閱：https://www.youtube.com/@RongRiseConsulting 官網：https://rong-rise.com #AI轉型#太空AI #AGI.",
-      "thumbnail": "https://img.youtube.com/vi/zPR4dwzJpys/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/zPR4dwzJpys/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=zPR4dwzJpys"
+      "description": "矽谷正在用AI 消滅純管理職，你的工作安全嗎？ 從Google 到Meta，從裁員名單到組織重組，只會追進度、傳話、寫報告的主管， ...",
+      "thumbnail": "https://img.youtube.com/vi/b-eTXXyUirI/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/b-eTXXyUirI/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=b-eTXXyUirI"
     }
   ],
-  "fetchedAt": "2026-06-22T23:21:53Z"
+  "fetchedAt": "2026-07-07T06:06:41Z"
 }
