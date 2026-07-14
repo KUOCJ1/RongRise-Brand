@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n14",
+      "date": "2026-07-14",
+      "category": "管理心理",
+      "title": "管理者必修的10堂心理學課——從馬斯洛到皮格馬利翁",
+      "summary": "馬斯洛、赫茲伯格、認知失調、社會懈怠…10個經典心理學理論的管理應用，不談學術空話，直接給實戰與顧問觀點",
+      "link": "/knowledge/10-management-psychology-theories",
+      "isNew": true
+    },
+    {
       "id": "n9",
       "date": "2026-07-07",
       "category": "資源",
@@ -71,6 +80,42 @@
       "summary": "經濟部、勞動部、數發部三大部會 AI 轉型補助一次整理，含申請資格、金額、時程表。",
       "link": "/downloads",
       "isNew": false
+    },
+    {
+      "id": "n10",
+      "date": "2026-07-11",
+      "category": "管理心理",
+      "title": "心理安全感不是「讓大家舒服」——職場心理安全感真正的定義與實踐",
+      "summary": "Amy Edmondson 定義、4 層級模型、Google Aristotle 研究——中小企業如何培養心理安全感",
+      "link": "/knowledge/psychological-safety-truth",
+      "isNew": true
+    },
+    {
+      "id": "n11",
+      "date": "2026-07-11",
+      "category": "管理心理",
+      "title": "你的管理決策被多少認知偏誤綁架？——從確認偏誤到群體思維",
+      "summary": "管理現場最常見的 10 個認知偏誤，以及一套決策前必看的檢查清單",
+      "link": "/knowledge/cognitive-biases-management",
+      "isNew": true
+    },
+    {
+      "id": "n12",
+      "date": "2026-07-11",
+      "category": "管理心理",
+      "title": "為什麼員工抗拒改變？——變革管理的心理學視角",
+      "summary": "80% 變革失敗是心理問題不是策略問題——Kübler-Ross 變革曲線與 Beckhard 公式",
+      "link": "/knowledge/change-psychology-perspective",
+      "isNew": true
+    },
+    {
+      "id": "n13",
+      "date": "2026-07-11",
+      "category": "管理心理",
+      "title": "教練式領導不是心靈雞湯——從神經科學到心理資本的實證基礎",
+      "summary": "心理資本 PsyCap 提升 2% = 績效提升 20%——GROW 模型與科學實證",
+      "link": "/knowledge/coaching-leadership-science",
+      "isNew": true
     }
   ]
 }

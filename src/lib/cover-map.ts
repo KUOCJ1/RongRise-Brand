@@ -20,6 +20,7 @@ export const COVER_MAP: Record<string, string> = {
   "ai-agent-management-era": "article-ai-agent-mgmt.jpg",
   "strategy-subtraction-traditional-industry": "article-strategy-subtraction.jpg",
   "xiaoha-weekly-vol1": "article-xiaoha-weekly-vol1.svg",
+  "10-management-psychology-theories": "article-cover.jpg",
 };
 
 export function coverImg(slug: string): string {
