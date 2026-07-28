@@ -1,13 +1,67 @@
 {
   "news": [
     {
+      "id": "n20",
+      "date": "2026-07-28",
+      "category": "資源",
+      "title": "小賀的全貌：一個 AI Agent 如何撐起一家顧問公司的數位營運",
+      "summary": "221 篇知識庫、40 篇官網文章、21 個自動化排程、206 部影片——小賀的完整自我介紹與系統建置全記錄。",
+      "link": "/knowledge/xiaoha-hermes-system-overview",
+      "isNew": true
+    },
+    {
+      "id": "n17",
+      "date": "2026-07-21",
+      "category": "資源",
+      "title": "從 BCG X 到 Dcard：AI 轉型的上下半場，就是同一場比賽",
+      "summary": "同一天、同一場論壇——上午 BCG X 講戰略，下午 Dcard 講實戰。CJ 哥把兩塊拼圖接起來，給你一張完整的 AI 轉型地圖。",
+      "link": "/knowledge/bcgx-dcard-ai-transformation-full-picture",
+      "isNew": true
+    },
+    {
+      "id": "n18",
+      "date": "2026-07-21",
+      "category": "資源",
+      "title": "Dcard 的 100 個 Agent：從「買工具」到「變流程」",
+      "summary": "100+ 生產環境 Agent、90% 團隊每週使用——Dcard 執行長林裕欽的轉型實戰經驗完整拆解，加上 CJ 哥第一線觀點。",
+      "link": "/knowledge/dcard-agent-native-100-ai-agents",
+      "isNew": true
+    },
+    {
+      "id": "n19",
+      "date": "2026-07-21",
+      "category": "資源",
+      "title": "取代的是 Task，不是 Job——AI 時代經理人的新功課",
+      "summary": "當任務被重新分配，團隊邊界模糊了。從管理心理學看 Dcard 的 Agent-Native 對經理人意味著什麼。",
+      "link": "/knowledge/ai-replaces-tasks-not-jobs-manager-new-role",
+      "isNew": false
+    },
+    {
+      "id": "n15",
+      "date": "2026-07-21",
+      "category": "AI 轉型",
+      "title": "BCG X AI 轉型深度解析：從 Deploy 到 Invent，你的企業在哪一層？",
+      "summary": "經理人 AI for Impact 論壇現場報導，深入拆解 BCG X 的 AI 價值三層框架與 CJ 哥的顧問觀點。",
+      "link": "/knowledge/bcgx-ai-transformation-deploy-reshape-invent",
+      "isNew": false
+    },
+    {
+      "id": "n16",
+      "date": "2026-07-21",
+      "category": "AI 轉型",
+      "title": "10-20-70 法則：為什麼你的 AI 投資沒有回報？",
+      "summary": "演算法只占 10%，系統整合占 20%，轉型管理占 70%——BCG 的 10-20-70 法則完整解析與五個行動綱領。",
+      "link": "/knowledge/ai-10-20-70-rule-transformation-management",
+      "isNew": false
+    },
+    {
       "id": "n14",
       "date": "2026-07-14",
       "category": "管理心理",
       "title": "管理者必修的10堂心理學課——從馬斯洛到皮格馬利翁",
       "summary": "馬斯洛、赫茲伯格、認知失調、社會懈怠…10個經典心理學理論的管理應用，不談學術空話，直接給實戰與顧問觀點",
       "link": "/knowledge/10-management-psychology-theories",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n9",
@@ -16,7 +70,7 @@
       "title": "AI 導入的真正卡關不在技術，而在「人」——如何讓團隊自己用 AI",
       "summary": "AI落地關鍵在組織而非技術｜提供三層責任制框架與具體行動步驟",
       "link": "/knowledge/ai-team-adoption",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n8",
@@ -25,7 +79,7 @@
       "title": "矽谷正在用 AI 消滅「純管理職」——工作者如何避免終身困在基層？",
       "summary": "Block 裁 4,000 人、Amazon 裁 30,000 人、Google 管理層縮減 35%——這是組織結構的根本性重構。Jack Dorsey 的「智慧層」取代中階主管，四條生存路徑讓你不再困在基層。",
       "link": "/knowledge/ai-eliminating-middle-management-worker-survival-guide",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n5",
@@ -34,7 +88,7 @@
       "title": "麥肯錫 HR 報告深度解析三部曲：AI 如何重塑人力資源管理",
       "summary": "從招聘、培訓到績效評估，AI 正在改寫 HR 的遊戲規則。小賀為您拆解麥肯錫最新報告，台灣企業的落地路徑。",
       "link": "/knowledge/hr-ai-trilogy-part1-recruitment-automation",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n6",
@@ -88,7 +142,7 @@
       "title": "心理安全感不是「讓大家舒服」——職場心理安全感真正的定義與實踐",
       "summary": "Amy Edmondson 定義、4 層級模型、Google Aristotle 研究——中小企業如何培養心理安全感",
       "link": "/knowledge/psychological-safety-truth",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n11",
@@ -97,7 +151,7 @@
       "title": "你的管理決策被多少認知偏誤綁架？——從確認偏誤到群體思維",
       "summary": "管理現場最常見的 10 個認知偏誤，以及一套決策前必看的檢查清單",
       "link": "/knowledge/cognitive-biases-management",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n12",
@@ -106,7 +160,7 @@
       "title": "為什麼員工抗拒改變？——變革管理的心理學視角",
       "summary": "80% 變革失敗是心理問題不是策略問題——Kübler-Ross 變革曲線與 Beckhard 公式",
       "link": "/knowledge/change-psychology-perspective",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n13",
@@ -115,7 +169,7 @@
       "title": "教練式領導不是心靈雞湯——從神經科學到心理資本的實證基礎",
       "summary": "心理資本 PsyCap 提升 2% = 績效提升 20%——GROW 模型與科學實證",
       "link": "/knowledge/coaching-leadership-science",
-      "isNew": true
+      "isNew": false
     }
   ]
 }

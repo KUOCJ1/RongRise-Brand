@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import ArticleTracker from "@/components/ArticleTracker";
 import ArticleToc from "@/components/ArticleToc";
 import ReadingProgress from "@/components/ReadingProgress";
+import ArticleActions from "@/components/ArticleActions";
 import { COVER_MAP } from "@/lib/cover-map";
 
 import Script from "next/script";
@@ -319,6 +320,7 @@ export default async function ArticlePage({ params }: PageProps) {
         <div className="max-w-[800px] mx-auto px-4 sm:px-6">
           {/* Reading Progress Bar */}
           <ReadingProgress />
+          <ArticleActions slug={slug} title={article.title} />
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mb-8">
             {article.tags.map((tag, i) => (
@@ -417,12 +419,13 @@ export default async function ArticlePage({ params }: PageProps) {
 }
 
 // 每篇文章獨立的 SEO metadata
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
-}): Metadata {
-  const article = (articlesData as Article[]).find((a) => a.slug === params.slug);
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const article = (articlesData as Article[]).find((a) => a.slug === slug);
   if (!article) {
     return {
       title: "文章不存在 ｜ 知識庫 ｜ 榕耀管顧",
@@ -430,7 +433,7 @@ export function generateMetadata({
       alternates: { canonical: `${SITE_URL}/knowledge` },
     };
   }
-  const coverFile = COVER_MAP[params.slug] || "og-image.jpg";
+  const coverFile = COVER_MAP[slug] || "og-image.jpg";
   return {
     title: `${article.title} ｜ ${article.cat}`,
     description: article.excerpt,

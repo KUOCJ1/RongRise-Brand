@@ -385,11 +385,6 @@
   -webkit-backdrop-filter: blur(16px);
 }
 
-.dark .glass {
-  background: rgba(15, 23, 42, 0.8);
-  border-color: rgba(51, 65, 85, 0.5);
-}
-
 /* ── Noise Texture ── */
 .noise::before {
   content: '';
@@ -419,4 +414,33 @@
 /* ── Stat Number Animation ── */
 .stat-number {
   animation: count-up 0.6s ease-out forwards;
+}
+
+/* ── Background Image Sections (RSC-safe: images via CSS, not JS) ── */
+.bg-about-quote {
+  background-image: url('/images/about-quote-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.bg-about-quote::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(13, 43, 78, 0.65);
+  z-index: 0;
+}
+
+.bg-cta {
+  background-image: url('/images/cta-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.bg-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(13, 43, 78, 0.65);
+  z-index: 0;
 }

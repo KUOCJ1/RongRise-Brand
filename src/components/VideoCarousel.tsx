@@ -20,7 +20,7 @@ interface VideoData {
 export default function VideoCarousel() {
   const [data, setData] = useState<VideoData | null>(null);
   const [current, setCurrent] = useState(0);
-  const [autoplay, setAutoplay] = useState(true);
+  const [autoplay, setAutoplay] = useState(false);
 
   useEffect(() => {
     fetch("/data/youtube-videos.json")
@@ -56,7 +56,7 @@ export default function VideoCarousel() {
       {/* Main player */}
       <div className="aspect-video">
         <iframe
-          src={`https://www.youtube.com/embed/${video.id}?autoplay=1&rel=0&modestbranding=1`}
+          src={`https://www.youtube.com/embed/${video.id}?rel=0&modestbranding=1`}
           title={video.title}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
@@ -94,7 +94,7 @@ export default function VideoCarousel() {
         onClick={() => setAutoplay(!autoplay)}
         className="absolute top-3 right-3 text-xs px-2 py-1 rounded-full bg-dark/60 text-white/80 hover:bg-dark/80 transition-colors"
       >
-        {autoplay ? "⏸ 暫停" : "▶ 自動播放"}
+        {autoplay ? "⏸ 暫停輪播" : "▶ 自動輪播"}
       </button>
     </div>
   );

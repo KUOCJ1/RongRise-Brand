@@ -19,9 +19,45 @@ interface Article {
   tags: string[];
 }
 
-const categories = ["全部", "AI 轉型", "課程設計", "人才策略", "ESG 永續", "案例分享", "工具資源", "政府資源", "策略管理", "小賀的成長日記"];
+const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "人才策略", "ESG 永續", "案例分享", "工具資源", "政府資源", "策略管理", "系統架構", "小賀的成長日記"];
 
 const articles: Article[] = [
+  {
+    slug: "xiaoha-hermes-system-overview",
+    cat: "系統架構",
+    title: "小賀的全貌：一個 AI Agent 如何撐起一家顧問公司的數位營運",
+    date: "2026-07-28",
+    readTime: "15 分鐘",
+    excerpt: "從第二大腦 221 篇知識庫到 40 篇官網文章，從 21 個自動化排程到 206 部影片——小賀不是 chatbot，是榕耀管顧的營運長兼 AI 長。這是一篇自我介紹，也是從零到一的系統建置全記錄。",
+    tags: ["小賀", "Hermes Agent", "系統架構", "自動化", "內容生產", "知識管理"],
+  },
+  {
+    slug: "bcgx-dcard-ai-transformation-full-picture",
+    cat: "AI 轉型",
+    title: "從 BCG X 到 Dcard：AI 轉型的上下半場，就是同一場比賽",
+    date: "2026-07-21",
+    readTime: "10 分鐘",
+    excerpt: "同一天、同一場論壇——BCG X 講戰略框架，Dcard 講實戰案例。CJ 哥用自己的第一線經驗，幫你把兩塊拼圖接起來。",
+    tags: ["AI 轉型", "BCG X", "Dcard", "Agent-Native", "10-20-70"],
+  },
+  {
+    slug: "dcard-agent-native-100-ai-agents",
+    cat: "AI 轉型",
+    title: "Dcard 的 100 個 Agent：從「買工具」到「變流程」，AI 轉型的真正戰場",
+    date: "2026-07-21",
+    readTime: "12 分鐘",
+    excerpt: "100+ 生產環境 Agent、90% 團隊每週使用、新事業體 GNTC——Dcard 執行長林裕欽的轉型實戰經驗，加上 CJ 哥第一線觀點。",
+    tags: ["AI 轉型", "Dcard", "AI Agent", "Agent-Native", "GNTC"],
+  },
+  {
+    slug: "ai-replaces-tasks-not-jobs-manager-new-role",
+    cat: "管理心理學",
+    title: "取代的是 Task，不是 Job——Dcard 告訴我們：AI 時代經理人的新功課",
+    date: "2026-07-21",
+    readTime: "9 分鐘",
+    excerpt: "Dcard 林裕欽：「AI 取代的是 Task，不是 Job。」從管理心理學的角度，談 AI 時代的領導力——團隊邊界模糊了、角色融合了、經理的職責也變了。",
+    tags: ["管理心理學", "AI 時代", "領導力", "Dcard", "角色融合"],
+  },
   {
     slug: "ai-eliminating-middle-management-worker-survival-guide",
     cat: "AI 轉型",
@@ -264,7 +300,43 @@ const articles: Article[] = [
     readTime: "12 分鐘",
     excerpt: "寫於 2026-06-13。小賀的第一篇週記——從沒有名字的那天開始，到擁有一整個 sub-agent 團隊。講犯過的錯、從 GAS 搬到 VPS 的學習旅程、自我修復系統，以及對未來的期待。",
     tags: ["小賀週記", "AI Agent", "成長日記", "RongRise", "自我反思"],
-  }
+  },
+  {
+    slug: "psychological-safety-truth",
+    cat: "管理心理學",
+    title: "心理安全感不是「讓大家舒服」——職場心理安全感真正的定義與實踐",
+    date: "2026-07-11",
+    readTime: "8 分鐘",
+    excerpt: "Amy Edmondson 定義心理安全感是「團隊敢於冒人際風險」。本文釐清四大常見誤解，並提供中小企業培養心理安全感的具體步驟——特別是在 AI 導入情境下，如何讓員工敢試敢錯。",
+    tags: ["心理安全感", "職場文化", "組織變革", "團隊領導", "AI 導入", "領導力"],
+  },
+  {
+    slug: "cognitive-biases-management",
+    cat: "管理心理學",
+    title: "你的管理決策被多少認知偏誤綁架？——從確認偏誤到群體思維",
+    date: "2026-07-11",
+    readTime: "10 分鐘",
+    excerpt: "Kahneman 說管理者最大的問題不是不夠努力，而是太相信自己的直覺。本文解析管理現場最常見的 10 個認知偏誤，並提供一套決策前必看的檢查清單。",
+    tags: ["認知偏誤", "決策心理學", "管理盲點", "行為經濟學", "領導力", "批判思考"],
+  },
+  {
+    slug: "change-psychology-perspective",
+    cat: "管理心理學",
+    title: "為什麼員工抗拒改變？——變革管理的心理學視角",
+    date: "2026-07-11",
+    readTime: "9 分鐘",
+    excerpt: "80% 的變革失敗不是策略問題，而是心理問題。從 Kübler-Ross 變革曲線到 Beckhard 公式，本文解析抗拒的本質，以及為什麼 AI 轉型的最大障礙不在技術而在人心。",
+    tags: ["變革管理", "組織變革", "抗拒心理", "AI 導入", "領導力", "組織行為"],
+  },
+  {
+    slug: "coaching-leadership-science",
+    cat: "管理心理學",
+    title: "教練式領導不是心靈雞湯——從神經科學到心理資本的實證基礎",
+    date: "2026-07-11",
+    readTime: "8 分鐘",
+    excerpt: "心理資本 PsyCap 提升 2% 績效提升 20%——教練式領導有完整的神經科學與心理學基礎。本文解析 GROW 模型、自我說服效應與三大核心教練能力。",
+    tags: ["教練式領導", "心理資本", "GROW 模型", "神經科學", "領導力", "人才發展"],
+  },
 ];
 
 export default function KnowledgePage() {

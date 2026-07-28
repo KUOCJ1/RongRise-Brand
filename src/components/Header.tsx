@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import DarkModeToggle from "@/components/DarkModeToggle";
 
 const navItems = [
   { href: "/", label: "首頁" },
@@ -62,90 +61,57 @@ export default function Header() {
             >
               EN
             </Link>
-            <div className="ml-2 pl-2 border-l border-border">
-              <DarkModeToggle />
-            </div>
           </div>
         </nav>
 
-        {/* CTA (Desktop) */}
-        <div className="hidden md:flex items-center gap-4">
-          <Link
-            href="/about#contact"
-            className="btn-primary text-sm py-2 px-5"
-          >
-            預約諮詢
-          </Link>
-        </div>
-
-        {/* Mobile Menu Button */}
+        {/* Mobile menu button */}
         <button
-          onClick={() => setMobileOpen(!mobileOpen)}
           className="md:hidden p-2 rounded-md hover:bg-surface-hover transition-colors"
           aria-label="選單"
           aria-expanded={mobileOpen}
           aria-controls="mobile-nav"
+          onClick={() => setMobileOpen(!mobileOpen)}
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-            {mobileOpen ? (
-              <>
-                <line x1="18" y1="6" x2="6" y2="18" />
-                <line x1="6" y1="6" x2="18" y2="18" />
-              </>
-            ) : (
-              <>
-                <line x1="3" y1="6" x2="21" y2="6" />
-                <line x1="3" y1="12" x2="21" y2="12" />
-                <line x1="3" y1="18" x2="21" y2="18" />
-              </>
-            )}
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
           </svg>
         </button>
+
+        {/* CTA - Desktop only */}
+        <div className="hidden md:flex items-center gap-4">
+          <Link href="/about/#contact" className="btn-primary text-sm py-2 px-5">
+            預約諮詢
+          </Link>
+        </div>
       </div>
 
       {/* Mobile Nav */}
       {mobileOpen && (
-        <nav id="mobile-nav" className="md:hidden border-t border-border bg-surface" aria-label="手機選單">
-          <div className="flex flex-col px-4 py-3 gap-1">
+        <div id="mobile-nav" className="md:hidden border-t border-border bg-surface">
+          <div className="px-4 py-3 space-y-1">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
+                className="mobile-nav-link block px-3 py-2 rounded-lg text-sm"
                 onClick={() => setMobileOpen(false)}
-                className="text-[15px] font-medium py-2.5 px-3 rounded-md hover:bg-surface-hover text-text-primary no-underline transition-colors"
               >
                 {item.label}
               </Link>
             ))}
-            {/* Mobile Language Switcher */}
-            <div className="flex items-center gap-2 pt-2 mt-2 border-t border-border">
-              <Link
-                href="/"
-                onClick={() => setMobileOpen(false)}
-                className="text-[13px] font-medium px-3 py-1.5 rounded bg-primary/5 text-primary"
-              >
-                中文
-              </Link>
-              <Link
-                href="/en"
-                onClick={() => setMobileOpen(false)}
-                className="text-[13px] font-medium px-3 py-1.5 rounded text-text-secondary hover:bg-surface-hover"
-              >
-                English
-              </Link>
-              <div className="ml-auto">
-                <DarkModeToggle />
-              </div>
+            <div className="flex items-center gap-2 px-3 pt-3 mt-3 border-t border-border">
+              <Link href="/" className="text-xs px-2 py-1 rounded text-primary bg-primary/5">中</Link>
+              <Link href="/en" className="text-xs px-2 py-1 rounded text-text-secondary hover:text-primary">EN</Link>
             </div>
-            <Link
-              href="/about#contact"
-              onClick={() => setMobileOpen(false)}
-              className="btn-primary text-sm text-center mt-2"
-            >
-              預約諮詢
-            </Link>
+            <div className="px-3 pt-3">
+              <Link href="/about/#contact" className="btn-primary text-sm block text-center py-2.5" onClick={() => setMobileOpen(false)}>
+                預約諮詢
+              </Link>
+            </div>
           </div>
-        </nav>
+        </div>
       )}
     </header>
   );

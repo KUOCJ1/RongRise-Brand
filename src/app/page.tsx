@@ -55,7 +55,7 @@ export default function HomePage() {
       <section className="bg-gradient-hero text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img src="/images/hero-bg.jpg" alt="" className="w-full h-full object-cover object-center" />
-          <div className="absolute inset-0 bg-[#0D2B4E]/70" />
+          <div className="absolute inset-0 bg-[#0D2B4E]/60" />
         </div>
         <div className="hero-bg-svg z-10" aria-hidden="true">
           <svg viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
@@ -247,13 +247,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═══ 3. 客戶案例 ═══ */}
-      <CaseStudiesSection />
-
-      {/* ═══ 3.5 FAQ（消除最後疑慮）═══ */}
-      <FAQSection />
-
-      {/* ═══ 4. 關於 + 推薦（合併）═══ */}
+      {/* ═══ 3.5 關於預覽（移至 client 邊界之前）═══ */}
       <section className="section">
         <div className="section-inner">
           <div className="grid grid-cols-1 gap-12 items-center">
@@ -278,11 +272,7 @@ export default function HomePage() {
                 <TestimonialsSection />
               </div>
             </div>
-            <div className="relative rounded-2xl overflow-hidden p-8 md:p-10 text-white">
-              <div className="absolute inset-0 z-0">
-                <img src="/images/about-quote-bg.jpg" alt="" className="w-full h-full object-cover object-center" />
-                <div className="absolute inset-0 bg-[#0D2B4E]/80" />
-              </div>
+            <div className="relative rounded-2xl overflow-hidden p-8 md:p-10 text-white bg-about-quote">
               <blockquote className="relative z-10 text-lg md:text-xl leading-relaxed font-medium mb-6 text-white">
                 「真正的轉型不是技術升級，而是思維的革新。當人才、策略與科技三者對齊，企業就能在變動中創造持續的競爭優勢。」
               </blockquote>
@@ -300,6 +290,41 @@ export default function HomePage() {
         </div>
       </section>
       <ReviewSchema />
+
+      {/* ═══ 3.6 CTA（移至 client 邊界之前）═══ */}
+      <section className="py-16 relative overflow-hidden bg-cta">
+        <div className="absolute inset-0 opacity-[0.07]">
+          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="cta-grid" width="60" height="60" patternUnits="userSpaceOnUse">
+                <circle cx="30" cy="30" r="1.5" fill="white" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#cta-grid)" />
+          </svg>
+        </div>
+        <div className="max-w-[800px] mx-auto px-4 sm:px-6 text-center relative z-10">
+          <h2 className="heading-section text-white mb-4">準備好啟動您的轉型之旅了嗎？</h2>
+          <p className="text-white/80 text-body-lg mb-8">
+            無論您正處於轉型的哪個階段，我們都能提供專業且務實的建議。
+            讓我們一起探索適合您企業的最佳路徑。
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <TrackLink href="/about#contact" className="btn-primary" trackLabel="立即預約諮詢" trackLocation="cta_section">
+              立即預約諮詢
+            </TrackLink>
+            <TrackLink href="/assistant" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white" trackLabel="先問問小幫手" trackLocation="cta_section">
+              先問問小幫手
+            </TrackLink>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ 3. 客戶案例 ═══ */}
+      <CaseStudiesSection />
+
+      {/* ═══ 3.7 FAQ ═══ */}
+      <FAQSection />
 
       {/* ═══ 5. 知識預覽 ═══ */}
       <section className="section bg-gradient-subtle">
@@ -374,38 +399,6 @@ export default function HomePage() {
       {/* ═══ 7. 訂閱電子報 ═══ */}
       <NewsletterSection />
 
-      {/* ═══ 8. CTA（最終轉換）═══ */}
-      <section className="py-16 relative overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img src="/images/cta-bg.jpg" alt="" className="w-full h-full object-cover object-center" />
-          <div className="absolute inset-0 bg-[#0D2B4E]/85" />
-        </div>
-        <div className="absolute inset-0 opacity-[0.07]">
-          <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="cta-grid" width="60" height="60" patternUnits="userSpaceOnUse">
-                <circle cx="30" cy="30" r="1.5" fill="white" />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#cta-grid)" />
-          </svg>
-        </div>
-        <div className="max-w-[800px] mx-auto px-4 sm:px-6 text-center relative z-10">
-          <h2 className="heading-section text-white mb-4">準備好啟動您的轉型之旅了嗎？</h2>
-          <p className="text-white/80 text-body-lg mb-8">
-            無論您正處於轉型的哪個階段，我們都能提供專業且務實的建議。
-            讓我們一起探索適合您企業的最佳路徑。
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <TrackLink href="/about#contact" className="btn-primary" trackLabel="立即預約諮詢" trackLocation="cta_section">
-              立即預約諮詢
-            </TrackLink>
-            <TrackLink href="/assistant" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white" trackLabel="先問問小幫手" trackLocation="cta_section">
-              先問問小幫手
-            </TrackLink>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

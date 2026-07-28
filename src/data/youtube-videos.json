@@ -1,32 +1,32 @@
 {
   "videos": [
     {
-      "id": "3gbfSoR8c34",
-      "title": "找人，還是建一個 Agent？你可能問錯重點了｜Coase 定理的現代解答",
-      "date": "2026-07-09",
-      "description": "每次評估一個職缺，你的直覺是先算人頭，還是先算任務？ 這不是哲學問題，是 Coase 八十年前就問過的。不同的是，現在市場換 ...",
-      "thumbnail": "https://img.youtube.com/vi/3gbfSoR8c34/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/3gbfSoR8c34/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=3gbfSoR8c34"
+      "id": "wBCekq-2h9Q",
+      "title": "AI 落地的三個實戰啟示｜中信金・漢翔・U-Space・和泰｜未來經理人論壇精華",
+      "date": "2026-07-22",
+      "description": "從中國信託的三層防護、漢翔航空的隱性知識數據化、U-Space 的AI 門診、和泰的翻譯員角色，到高盛的人機協作——五個真實的AI ...",
+      "thumbnail": "https://img.youtube.com/vi/wBCekq-2h9Q/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/wBCekq-2h9Q/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=wBCekq-2h9Q"
     },
     {
-      "id": "P2TynaRjoGo",
-      "title": "找人，還是建一個 Agent？你可能問錯重點了｜Coase 定理的現代解答",
-      "date": "2026-07-09",
-      "description": "每次評估一個職缺，你的直覺是先算人頭，還是先算任務？ 這不是哲學問題，是Coase 八十年前就問過的。不同的是，現在市場換成 ...",
-      "thumbnail": "https://img.youtube.com/vi/P2TynaRjoGo/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/P2TynaRjoGo/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=P2TynaRjoGo"
+      "id": "Li0JXa07aTc",
+      "title": "Dcard 的 100 個 Agent｜AI 轉型不是買工具，是重寫流程｜林裕欽 未來經理人年會",
+      "date": "2026-07-21",
+      "description": "Dcard 執行長林裕欽（Kytu Lin）在未來經理人年會分享Dcard 如何轉型為Agent-Native 公司。 100+ AI Agent 在生產環境運行   ...",
+      "thumbnail": "https://img.youtube.com/vi/Li0JXa07aTc/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/Li0JXa07aTc/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=Li0JXa07aTc"
     },
     {
-      "id": "b-eTXXyUirI",
-      "title": "矽谷正在用 AI 消滅純管理職｜你的管理能力準備好了嗎？",
-      "date": "2026-07-07",
-      "description": "矽谷正在用AI 消滅純管理職，你的工作安全嗎？ 從Google 到Meta，從裁員名單到組織重組，只會追進度、傳話、寫報告的主管， ...",
-      "thumbnail": "https://img.youtube.com/vi/b-eTXXyUirI/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/b-eTXXyUirI/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=b-eTXXyUirI"
+      "id": "qQ2mV23rPNM",
+      "title": "AI 投資翻倍但 95% 企業沒賺到錢｜BCG X 吳學林在 AI for Impact 論壇的三個啟發（V2）",
+      "date": "2026-07-21",
+      "description": "昨天參加《經理人》AI for Impact 論壇，BCG X 大中華區負責人吳學林Jeffrey Wu 的分享讓我整場都在筆記。 94% 的CEO 持續 ...",
+      "thumbnail": "https://img.youtube.com/vi/qQ2mV23rPNM/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/qQ2mV23rPNM/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=qQ2mV23rPNM"
     }
   ],
-  "fetchedAt": "2026-07-07T06:06:41Z"
+  "fetchedAt": "2026-07-21T06:21:25Z"
 }
