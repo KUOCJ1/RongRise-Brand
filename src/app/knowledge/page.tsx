@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "fear-tax-ai-landing",
+    cat: "AI 轉型",
+    title: "恐懼稅：你的 AI 專案，死在員工不敢說出口的三句話",
+    date: "2026-07-31",
+    readTime: "8 分鐘",
+    excerpt: "Gartner 預測 2027 年前超過一半的生成式 AI 專案會被取消。你的 AI 專案不是死在技術，而是死在員工不敢說出口的三句話：我不會、AI 算錯了、流程該改。本文用「三個沉默時刻」框架解析，為什麼沒有心理安全感，AI 投資只是在為沉默付費。",
+    tags: ["AI 轉型", "心理安全感", "組織文化", "變革管理"],
+  },
+  {
     slug: "xiaoha-hermes-system-overview",
     cat: "系統架構",
     title: "小賀的全貌：一個 AI Agent 如何撐起一家顧問公司的數位營運",

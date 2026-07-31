@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n21",
+      "date": "2026-07-31",
+      "category": "資源",
+      "title": "恐懼稅：你的 AI 專案，死在員工不敢說出口的三句話",
+      "summary": "三個沉默時刻：不敢說我不會、不敢說 AI 算錯了、不敢說流程該改。沒有心理安全感，再強的 AI 也只是辦公室的裝飾品。",
+      "link": "/knowledge/fear-tax-ai-landing",
+      "isNew": true
+    },
+    {
       "id": "n20",
       "date": "2026-07-28",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "Dcard 的 100 個 Agent：從「買工具」到「變流程」",
       "summary": "100+ 生產環境 Agent、90% 團隊每週使用——Dcard 執行長林裕欽的轉型實戰經驗完整拆解，加上 CJ 哥第一線觀點。",
       "link": "/knowledge/dcard-agent-native-100-ai-agents",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n19",
