@@ -5,9 +5,9 @@ export const metadata: Metadata = {
   title: "Services | AI Transformation · Talent Strategy · ESG",
   description: "RongRise Consulting services: AI Transformation, Corporate Training, ESG Sustainability. Customized solutions from diagnosis to implementation.",
   alternates: {
-    canonical: "https://rongrise.com/en/services",
+    canonical: "https://rong-rise.com/en/services",
     languages: {
-      zh: "https://rongrise.com/services",
+      zh: "https://rong-rise.com/services",
     },
   },
   openGraph: {

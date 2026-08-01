@@ -5,9 +5,9 @@ export const metadata: Metadata = {
   title: "Downloads | Free Tools & Whitepapers | RongRise",
   description: "Free downloads of selected tools and resources: AI Maturity Assessment, ESG Checklist, AI Trends Report, and more. Continuously updated.",
   alternates: {
-    canonical: "https://rongrise.com/en/downloads",
+    canonical: "https://rong-rise.com/en/downloads",
     languages: {
-      zh: "https://rongrise.com/downloads",
+      zh: "https://rong-rise.com/downloads",
     },
   },
   openGraph: {

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "小賀週記 Vol.1 — 從零到一，一個 AI 的誕生 | 榕耀管顧",
   description: "寫於 2026-06-13。小賀的第一篇週記——從没有名字的那天開始，到擁有一整個 sub-agent 團隊。講犯過的錯、從 GAS 搬到 VPS 的學習旅程、自我修復系統，以及對未來的期待。",
   alternates: {
-    canonical: "https://rongrise.com/knowledge/xiaoha-weekly-vol1",
+    canonical: "https://rong-rise.com/knowledge/xiaoha-weekly-vol1",
   },
   openGraph: {
     title: "小賀週記 Vol.1 — 從零到一，一個 AI 的誕生 | 榕耀管顧",

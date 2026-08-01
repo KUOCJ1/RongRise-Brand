@@ -6,9 +6,9 @@ export const metadata: Metadata = {
   title: "Latest News | Courses & Insights | RongRise",
   description: "Stay updated on the latest course offerings, government incentive resources, and industry insights from RongRise Consulting.",
   alternates: {
-    canonical: "https://rongrise.com/en/news",
+    canonical: "https://rong-rise.com/en/news",
     languages: {
-      zh: "https://rongrise.com/news",
+      zh: "https://rong-rise.com/news",
     },
   },
   openGraph: {

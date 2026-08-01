@@ -6,9 +6,9 @@ export const metadata: Metadata = {
   title: "About C.J. Kuo | AI Transformation Consultant",
   description: "C.J. Kuo — 16+ years of multinational corporate experience. Former HR executive at Chubb Life, Cigna Life. Founder of RongRise Consulting.",
   alternates: {
-    canonical: "https://rongrise.com/en/about",
+    canonical: "https://rong-rise.com/en/about",
     languages: {
-      zh: "https://rongrise.com/about",
+      zh: "https://rong-rise.com/about",
     },
   },
   openGraph: {

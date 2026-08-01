@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   description:
     "榕耀管顧由郭鎮榕 CJ哥創辦，與 AI 營運長小賀共同領導專業團隊，專注企業 AI 轉型、人才策略與 ESG 永續諮詢。",
   alternates: {
-    canonical: "https://rongrise.com/about",
+    canonical: "https://rong-rise.com/about",
     languages: {
-      en: "https://rongrise.com/en/about",
+      en: "https://rong-rise.com/en/about",
     },
   },
   openGraph: {

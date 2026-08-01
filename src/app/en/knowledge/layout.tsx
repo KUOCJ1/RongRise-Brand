@@ -4,9 +4,9 @@ export const metadata: Metadata = {
   title: "Knowledge Base | AI Transformation & ESG | RongRise",
   description: "Practical insights on AI transformation, talent strategy, and ESG sustainability to help you navigate the transformation journey. By C.J. Kuo.",
   alternates: {
-    canonical: "https://rongrise.com/en/knowledge",
+    canonical: "https://rong-rise.com/en/knowledge",
     languages: {
-      zh: "https://rongrise.com/knowledge",
+      zh: "https://rong-rise.com/knowledge",
     },
   },
   openGraph: {

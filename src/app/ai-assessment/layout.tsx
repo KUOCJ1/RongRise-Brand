@@ -4,9 +4,9 @@ export const metadata: Metadata = {
   title: "AI Transformation Self-Assessment | RongRise Consulting",
   description: "Take a 3-minute AI transformation maturity assessment and get personalized recommendations. Free online tool for business leaders.",
   alternates: {
-    canonical: "https://rongrise.com/ai-assessment",
+    canonical: "https://rong-rise.com/ai-assessment",
     languages: {
-      zh: "https://rongrise.com/ai-assessment",
+      zh: "https://rong-rise.com/ai-assessment",
     },
   },
   openGraph: {

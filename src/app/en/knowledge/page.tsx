@@ -14,7 +14,7 @@ const articles = [
     slug: "tacit-knowledge-ai-workflow",
     cat: "AI Transformation",
     title: "When the Master Retires: How to Turn Tacit Knowledge into AI Workflows",
-    date: "2026.06.25",
+    date: "2026-06-25",
     readTime: "15 min",
     excerpt: "Bloomberg analysis points out: the real bottleneck of AI adoption is no longer technology—it's tacit knowledge. The intuition living in your experienced employees' minds has never been documented. This article provides an actionable framework for extracting tacit knowledge.",
     tags: ["Tacit Knowledge", "Knowledge Management", "AI Transformation", "SME", "AI Implementation", "Organizational Change", "Workflow"],

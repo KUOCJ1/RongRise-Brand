@@ -6,9 +6,9 @@ export const metadata: Metadata = {
   title: "Upcoming Courses & Events | RongRise Consulting",
   description: "From single-day workshops to series courses. Seats are limited, early registration recommended. AI transformation, talent strategy, and ESG training.",
   alternates: {
-    canonical: "https://rongrise.com/en/courses",
+    canonical: "https://rong-rise.com/en/courses",
     languages: {
-      zh: "https://rongrise.com/courses",
+      zh: "https://rong-rise.com/courses",
     },
   },
   openGraph: {
