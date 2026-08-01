@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "false-alignment-ai-transformation",
+    cat: "管理心理學",
+    title: "AI 轉型死在假一致：會議上點頭的高階主管，心裡想的根本不是同一件事",
+    date: "2026-08-01",
+    readTime: "12 分鐘",
+    excerpt: "BCG 追蹤 2,000 家企業發現，逾 70% 的變革失敗源於高階主管的「假一致」——以為有共識，其實每個人想的都不同。AI 轉型更是重災區：五個高階主管用同一個詞，描述五件不同的事。本文拆解假一致陷阱，提供 AI 轉型版的真共識五步驟。",
+    tags: ["假一致", "變革管理", "AI 轉型", "高階主管", "共識", "虛假共識效應"],
+  },
+  {
     slug: "fear-tax-ai-landing",
     cat: "AI 轉型",
     title: "恐懼稅：你的 AI 專案，死在員工不敢說出口的三句話",

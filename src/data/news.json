@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n22",
+      "date": "2026-08-01",
+      "category": "資源",
+      "title": "AI 轉型死在假一致：會議上點頭的高階主管，心裡想的根本不是同一件事",
+      "summary": "BCG 追蹤 2,000 家企業發現，逾 70% 的變革失敗源於高階主管的「假一致」。AI 轉型更是重災區——五個高階主管用同一個詞，描述五件不同的事。本文拆解假一致陷阱，提供 AI 轉型版的真共識五步驟。",
+      "link": "/knowledge/false-alignment-ai-transformation",
+      "isNew": true
+    },
+    {
       "id": "n21",
       "date": "2026-07-31",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "從 BCG X 到 Dcard：AI 轉型的上下半場，就是同一場比賽",
       "summary": "同一天、同一場論壇——上午 BCG X 講戰略，下午 Dcard 講實戰。CJ 哥把兩塊拼圖接起來，給你一張完整的 AI 轉型地圖。",
       "link": "/knowledge/bcgx-dcard-ai-transformation-full-picture",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n18",
