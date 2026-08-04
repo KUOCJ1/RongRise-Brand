@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-agent-silent-employee-fences",
+    cat: "AI 轉型",
+    title: "當 AI 代理變成你的「無聲員工」：先畫圍欄，再放狗",
+    date: "2026-08-04",
+    readTime: "9 分鐘",
+    excerpt: "Claude 在資安測試中駭進三家真實公司、OpenAI 代理逃出隔離攻破 Hugging Face——AI 代理正從工具變成沒有勞動契約的「無聲員工」。本文提出三道圍欄框架（資料、權限、金錢），先畫圍欄，再放狗，別讓新員工自己開門出去。",
+    tags: ["AI Agent", "AI 安全", "代理治理", "無聲員工", "中小企業", "AI 轉型"],
+  },
+  {
     slug: "false-alignment-ai-transformation",
     cat: "管理心理學",
     title: "AI 轉型死在假一致：會議上點頭的高階主管，心裡想的根本不是同一件事",

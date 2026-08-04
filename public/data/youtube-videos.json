@@ -1,6 +1,15 @@
 {
   "videos": [
     {
+      "id": "9jmqiPWGbeo",
+      "title": "你的 AI 專案，死在員工不敢說出口的三句話｜心理安全感 × AI 落地",
+      "date": "2026-07-31",
+      "description": "訂閱頻道，每週獲得最新AI 轉型趨勢：https://www.youtube.com/@RongRiseConsulting 你的AI 專案不是死在技術，而是死在員工不 ...",
+      "thumbnail": "https://img.youtube.com/vi/9jmqiPWGbeo/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/9jmqiPWGbeo/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=9jmqiPWGbeo"
+    },
+    {
       "id": "wBCekq-2h9Q",
       "title": "AI 落地的三個實戰啟示｜中信金・漢翔・U-Space・和泰｜未來經理人論壇精華",
       "date": "2026-07-22",
@@ -17,16 +26,7 @@
       "thumbnail": "https://img.youtube.com/vi/Li0JXa07aTc/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/Li0JXa07aTc/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=Li0JXa07aTc"
-    },
-    {
-      "id": "qQ2mV23rPNM",
-      "title": "AI 投資翻倍但 95% 企業沒賺到錢｜BCG X 吳學林在 AI for Impact 論壇的三個啟發（V2）",
-      "date": "2026-07-21",
-      "description": "昨天參加《經理人》AI for Impact 論壇，BCG X 大中華區負責人吳學林Jeffrey Wu 的分享讓我整場都在筆記。 94% 的CEO 持續 ...",
-      "thumbnail": "https://img.youtube.com/vi/qQ2mV23rPNM/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/qQ2mV23rPNM/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=qQ2mV23rPNM"
     }
   ],
-  "fetchedAt": "2026-07-21T06:21:25Z"
+  "fetchedAt": "2026-07-21T10:54:28Z"
 }
