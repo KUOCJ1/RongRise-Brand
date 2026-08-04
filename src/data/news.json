@@ -1,6 +1,24 @@
 {
   "news": [
     {
+      "id": "n24",
+      "date": "2026-08-04",
+      "category": "資源",
+      "title": "納瓦爾寶典的「槓桿論」：AI 時代，管理者的工作從管人變成設計槓桿",
+      "summary": "從《納瓦爾寶典》的槓桿論出發，拆解 AI 時代管理者的角色轉變：財富＝特定知識 × 槓桿 × 判斷力，純監督型管理者正在被取代，未來的工作是設計槓桿組合。",
+      "link": "/knowledge/naval-leverage-ai-management",
+      "isNew": true
+    },
+    {
+      "id": "n25",
+      "date": "2026-08-04",
+      "category": "資源",
+      "title": "納瓦爾說「欲望是與現狀的契約」：給管理者的 5 個績效設計，別讓員工簽下受苦契約",
+      "summary": "把納瓦爾的欲望契約觀點放進績效管理：KPI 就是幫員工簽的契約，問題是履不履約得起。提供 5 個可執行的績效設計原則，對抗職場倦怠與 AI 焦慮。",
+      "link": "/knowledge/naval-desire-contract-performance",
+      "isNew": true
+    },
+    {
       "id": "n23",
       "date": "2026-08-04",
       "category": "資源",
@@ -16,7 +34,7 @@
       "title": "AI 轉型死在假一致：會議上點頭的高階主管，心裡想的根本不是同一件事",
       "summary": "BCG 追蹤 2,000 家企業發現，逾 70% 的變革失敗源於高階主管的「假一致」。AI 轉型更是重災區——五個高階主管用同一個詞，描述五件不同的事。本文拆解假一致陷阱，提供 AI 轉型版的真共識五步驟。",
       "link": "/knowledge/false-alignment-ai-transformation",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n21",
@@ -25,7 +43,7 @@
       "title": "恐懼稅：你的 AI 專案，死在員工不敢說出口的三句話",
       "summary": "三個沉默時刻：不敢說我不會、不敢說 AI 算錯了、不敢說流程該改。沒有心理安全感，再強的 AI 也只是辦公室的裝飾品。",
       "link": "/knowledge/fear-tax-ai-landing",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n20",
