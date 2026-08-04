@@ -20,6 +20,13 @@ body {
   color: white;
 }
 
+/* 鍵盤導覽 focus ring（無障礙） */
+:focus-visible {
+  outline: 2px solid var(--color-tertiary);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--color-gray-300); border-radius: 3px; }

@@ -9,6 +9,7 @@
   line-height: 1.15;
   letter-spacing: -0.01em;
   color: var(--color-text-primary);
+  text-wrap: balance;
 }
 
 .heading-section {
@@ -18,6 +19,7 @@
   line-height: 1.25;
   letter-spacing: -0.005em;
   color: var(--color-text-primary);
+  text-wrap: balance;
 }
 
 .heading-subsection {
@@ -26,6 +28,7 @@
   font-weight: 600;
   line-height: 1.35;
   color: var(--color-text-primary);
+  text-wrap: balance;
 }
 
 .text-body-lg { font-size: 1.125rem; line-height: 1.85; }

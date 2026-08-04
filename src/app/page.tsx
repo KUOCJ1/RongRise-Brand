@@ -406,7 +406,7 @@ export default function HomePage() {
 function HeroStat({ number, label, dark = false }: { number: string; label: string; dark?: boolean }) {
   return (
     <div className="text-center">
-      <div className={`text-2xl sm:text-3xl font-bold ${dark ? "text-tertiary" : "text-white"}`}>{number}</div>
+      <div className={`text-2xl sm:text-3xl font-bold tabular-nums ${dark ? "text-tertiary" : "text-white"}`}>{number}</div>
       <div className="text-xs mt-1 text-white/60">{label}</div>
     </div>
   );

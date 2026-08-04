@@ -107,6 +107,13 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {/* 字體：Noto Serif TC（標題襯線）+ Noto Sans TC（內文） */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap"
+          rel="stylesheet"
+        />
         {/* GA4 Global Site Tag */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}
