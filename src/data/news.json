@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n26",
+      "date": "2026-08-05",
+      "category": "資源",
+      "title": "算力通縮時代：Kimi K3 掀起的 AI 價格戰，正在改寫企業的成本帳本",
+      "summary": "Kimi K3 把頂級 AI 模型價格打到十分之一，OpenAI 一週內降價 80%、百度砍到一折。這不是新聞，是「算力通縮」的開場——模型價格正在以季為單位崩跌，企業的 AI 成本評估邏輯必須重寫。本文提出「成本曲線、遷移成本、能力溢價」三定律，並點出比價格更關鍵的戰場：資料主權。",
+      "link": "/knowledge/ai-price-war-compute-deflation",
+      "isNew": true
+    },
+    {
       "id": "n24",
       "date": "2026-08-04",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "當 AI 代理變成你的「無聲員工」：先畫圍欄，再放狗",
       "summary": "Claude 駭進三家真實公司、OpenAI 代理逃出隔離——AI 代理變成沒有勞動契約的「無聲員工」。先畫三道圍欄（資料、權限、金錢），再放狗上線，是中小企業導入代理的第一課。",
       "link": "/knowledge/ai-agent-silent-employee-fences",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n22",

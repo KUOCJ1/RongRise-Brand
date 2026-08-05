@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-price-war-compute-deflation",
+    cat: "AI 轉型",
+    title: "算力通縮時代：Kimi K3 掀起的 AI 價格戰，正在改寫企業的成本帳本",
+    date: "2026-08-05",
+    readTime: "10 分鐘",
+    excerpt: "Kimi K3 把頂級 AI 模型價格打到十分之一，OpenAI 一週內降價 80%、百度砍到一折。這不是新聞，是「算力通縮」的開場——模型價格正在以季為單位崩跌，企業的 AI 成本評估邏輯必須重寫。本文提出「成本曲線、遷移成本、能力溢價」三定律，並點出比價格更關鍵的戰場：資料主權。",
+    tags: ["Kimi K3", "算力通縮", "AI 價格戰", "AI 成本", "資料主權", "AI 採購", "開源模型", "企業轉型"],
+  },
+  {
     slug: "naval-leverage-ai-management",
     cat: "管理心理學",
     title: "納瓦爾寶典的「槓桿論」：AI 時代，管理者的工作從管人變成設計槓桿",
