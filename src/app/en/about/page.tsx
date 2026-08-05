@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const timeline = [
   { year: "1999-2008", title: "International Management Consulting", desc: "Accenture (serving TSMC, Compal), EY Pre-Sales Manager, Watson Wyatt Senior Consultant — expertise in rewards strategy and human capital transformation." },
   { year: "2008-2023", title: "Multinational Financial Corporate HR Executive", desc: "CHUBB Life HR SVP leading 30+ team; Cigna Life CHRO with 4 consecutive HR Asia Awards. Helped employers win 8 workplace excellence awards." },
-  { year: "2024-Present", title: "Founded RongRise Consulting", desc: "Focused on AI-era talent strategy, ESG governance, and SME AI empowerment. Served 300+ enterprises." },
+  { year: "2024-Present", title: "Founded RongRise Consulting", desc: "Focused on AI-era talent strategy, ESG governance, and SME AI empowerment. Served 100+ enterprises." },
 ];
 
 const expertise = [
