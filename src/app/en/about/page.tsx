@@ -4,7 +4,7 @@ import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 export const metadata: Metadata = {
   title: "About C.J. Kuo | AI Transformation Consultant",
-  description: "C.J. Kuo — 16+ years of multinational corporate experience. Former HR executive at Chubb Life, Cigna Life. Founder of RongRise Consulting.",
+  description: "C.J. Kuo — 20+ years of multinational corporate experience. Former HR executive at Chubb Life, Cigna Life. Founder of RongRise Consulting.",
   alternates: {
     canonical: "https://rong-rise.com/en/about",
     languages: {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "About C.J. Kuo | AI Transformation Consultant — RongRise",
-    description: "16+ years of multinational corporate experience. Founder of RongRise Consulting.",
+    description: "20+ years of multinational corporate experience. Founder of RongRise Consulting.",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "RongRise Consulting" }],
   },
 };
@@ -70,7 +70,7 @@ export default function AboutEnPage() {
               <div className="brand-divider mb-6" />
               <div className="space-y-4 text-text-secondary text-body leading-relaxed">
                 <p>
-                  <strong className="text-text-primary">16+ years of multinational HR management experience</strong>, including Accenture, Ernst & Young, Watson Wyatt, Chubb Life, and Cigna Life. Specialized in organizational talent strategy, rewards design, employer brand, and HR digital transformation — helping employers win <strong className="text-text-primary">8 workplace excellence awards</strong>.
+                  <strong className="text-text-primary">20+ years of multinational HR management experience</strong>, including Accenture, Ernst & Young, Watson Wyatt, Chubb Life, and Cigna Life. Specialized in organizational talent strategy, rewards design, employer brand, and HR digital transformation — helping employers win <strong className="text-text-primary">8 workplace excellence awards</strong>.
                 </p>
                 <p>
                   However, the moment that truly pushed him to leave the corporate world was a conversation with a manufacturing business owner who said: <em>"I know AI is important, but my team can barely use Excel. What should I do?"</em> That was when he realized — transformation lacks technology, but more importantly, someone willing to walk the journey with businesses.

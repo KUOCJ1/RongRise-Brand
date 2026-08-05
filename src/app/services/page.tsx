@@ -160,7 +160,7 @@ export default function ServicesPage() {
           <div className="bg-gradient-hero rounded-2xl p-8 md:p-12">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
               <div>
-                <div className="text-3xl md:text-4xl font-bold mb-1">16+</div>
+                <div className="text-3xl md:text-4xl font-bold mb-1">20+</div>
                 <div className="text-white/70 text-sm">年跨國顧問經驗</div>
               </div>
               <div>
