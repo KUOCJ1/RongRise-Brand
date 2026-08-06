@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n27",
+      "date": "2026-08-06",
+      "category": "資源",
+      "title": "資料變成戰略物資：你公司裡的「沉睡資產」，該醒了",
+      "summary": "政府把資料列為戰略物資，立法打通四大資料流通機制。但多數中小企業最值錢的資料還躺在 ERP、Excel 和老師傅的腦子裡。本文提出「盤、清、標、串」喚醒四步法，讓沉睡資料變成可變現的 AI 資產。",
+      "link": "/knowledge/sleeping-data-assets-awakening",
+      "isNew": true
+    },
+    {
       "id": "n26",
       "date": "2026-08-05",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "納瓦爾說「欲望是與現狀的契約」：給管理者的 5 個績效設計，別讓員工簽下受苦契約",
       "summary": "把納瓦爾的欲望契約觀點放進績效管理：KPI 就是幫員工簽的契約，問題是履不履約得起。提供 5 個可執行的績效設計原則，對抗職場倦怠與 AI 焦慮。",
       "link": "/knowledge/naval-desire-contract-performance",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n23",

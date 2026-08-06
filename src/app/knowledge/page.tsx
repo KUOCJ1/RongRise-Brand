@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "sleeping-data-assets-awakening",
+    cat: "AI 轉型",
+    title: "資料變成戰略物資：你公司裡的「沉睡資產」，該醒了",
+    date: "2026-08-06",
+    readTime: "9 分鐘",
+    excerpt: "政府正立法打通四大資料流通機制，把資料列為與算力、能源並列的戰略物資。但多數中小企業最值錢的資料，還躺在 ERP、Excel 和老師傅的腦子裡睡大覺。本文給你一套「盤、清、標、串」喚醒四步法，讓沉睡資料變成可變現的 AI 資產。",
+    tags: ["資料治理", "主權 AI", "沉睡資料", "資料資產", "AI-Ready Data", "中小企業", "AI 轉型"],
+  },
+  {
     slug: "ai-price-war-compute-deflation",
     cat: "AI 轉型",
     title: "算力通縮時代：Kimi K3 掀起的 AI 價格戰，正在改寫企業的成本帳本",

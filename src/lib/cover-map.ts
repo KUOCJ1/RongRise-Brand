@@ -22,6 +22,7 @@ export const COVER_MAP: Record<string, string> = {
   "xiaoha-weekly-vol1": "article-xiaoha-weekly-vol1.svg",
   "10-management-psychology-theories": "article-cover.jpg",
   "ai-price-war-compute-deflation": "article-ai-price-war.jpg",
+  "sleeping-data-assets-awakening": "article-sleeping-data-assets-awakening.jpg",
   "naval-leverage-ai-management": "article-naval-leverage.jpg",
   "naval-desire-contract-performance": "article-naval-desire-contract.jpg",
 };
