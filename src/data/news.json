@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n28",
+      "date": "2026-08-06",
+      "category": "資源",
+      "title": "任務變形蟲：AI 成熟之後，組織設計重回戰略主軸（研究專刊）",
+      "summary": "當 AI 工具像水電瓦斯一樣便宜，競爭優勢不再來自「買得起什麼」，而是「組織怎麼長出來」。本專刊提出任務變形蟲模型（Task Amoeba Model），並提供三階段落地路徑。",
+      "link": "/research/task-amoeba/",
+      "isNew": true
+    },
+    {
       "id": "n27",
       "date": "2026-08-06",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "納瓦爾寶典的「槓桿論」：AI 時代，管理者的工作從管人變成設計槓桿",
       "summary": "從《納瓦爾寶典》的槓桿論出發，拆解 AI 時代管理者的角色轉變：財富＝特定知識 × 槓桿 × 判斷力，純監督型管理者正在被取代，未來的工作是設計槓桿組合。",
       "link": "/knowledge/naval-leverage-ai-management",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n25",

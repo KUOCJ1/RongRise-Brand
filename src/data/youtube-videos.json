@@ -1,6 +1,24 @@
 {
   "videos": [
     {
+      "id": "M4N2pf8UF5Y",
+      "title": "63% 員工假裝懂 AI：你的團隊在「演」還是在「用」？｜榕賀觀點",
+      "date": "2026-08-05",
+      "description": "調查發現，63% 的美國員工承認會誇大自己的 AI 能力——每三個人，就有兩個在「演」很會用 AI。 這不是員工品德問題，是管理 ...",
+      "thumbnail": "https://img.youtube.com/vi/M4N2pf8UF5Y/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/M4N2pf8UF5Y/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=M4N2pf8UF5Y"
+    },
+    {
+      "id": "zTPd5PL5YvQ",
+      "title": "中美模型價格戰打到2027：台灣企業的AI採購策略該怎麼下注？｜榕賀觀點",
+      "date": "2026-08-05",
+      "description": "2026年7月，中國Moonshot AI發布2.8兆參數的開源模型Kimi K3，API價格只要美國模型的十分之一。一週內OpenAI ...",
+      "thumbnail": "https://img.youtube.com/vi/zTPd5PL5YvQ/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/zTPd5PL5YvQ/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=zTPd5PL5YvQ"
+    },
+    {
       "id": "9jmqiPWGbeo",
       "title": "你的 AI 專案，死在員工不敢說出口的三句話｜心理安全感 × AI 落地",
       "date": "2026-07-31",
@@ -8,25 +26,7 @@
       "thumbnail": "https://img.youtube.com/vi/9jmqiPWGbeo/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/9jmqiPWGbeo/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=9jmqiPWGbeo"
-    },
-    {
-      "id": "wBCekq-2h9Q",
-      "title": "AI 落地的三個實戰啟示｜中信金・漢翔・U-Space・和泰｜未來經理人論壇精華",
-      "date": "2026-07-22",
-      "description": "從中國信託的三層防護、漢翔航空的隱性知識數據化、U-Space 的AI 門診、和泰的翻譯員角色，到高盛的人機協作——五個真實的AI ...",
-      "thumbnail": "https://img.youtube.com/vi/wBCekq-2h9Q/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/wBCekq-2h9Q/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=wBCekq-2h9Q"
-    },
-    {
-      "id": "Li0JXa07aTc",
-      "title": "Dcard 的 100 個 Agent｜AI 轉型不是買工具，是重寫流程｜林裕欽 未來經理人年會",
-      "date": "2026-07-21",
-      "description": "Dcard 執行長林裕欽（Kytu Lin）在未來經理人年會分享Dcard 如何轉型為Agent-Native 公司。 100+ AI Agent 在生產環境運行   ...",
-      "thumbnail": "https://img.youtube.com/vi/Li0JXa07aTc/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/Li0JXa07aTc/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=Li0JXa07aTc"
     }
   ],
-  "fetchedAt": "2026-07-21T10:54:28Z"
+  "fetchedAt": "2026-07-31T15:59:04Z"
 }
