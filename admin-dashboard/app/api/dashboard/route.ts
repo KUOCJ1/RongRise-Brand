@@ -12,26 +12,40 @@ function run(cmd: string): string {
   }
 }
 
-export async function GET() {
-  const checkPort = (port: number) =>
-    run(`curl -s -o /dev/null -w "%{http_code}" --max-time 3 http://localhost:${port}`) || "000";
+// ⚠️ 不要用 execSync+curl 檢查埠：本 VPS 上 node spawn curl/wget 會掛（ETIMEDOUT），
+// 用 Node 內建 fetch（AbortSignal.timeout）才是可靠做法。
+async function checkPort(port: number): Promise<string> {
+  try {
+    const res = await fetch(`http://127.0.0.1:${port}`, {
+      signal: AbortSignal.timeout(2500),
+      redirect: "manual",
+    });
+    return String(res.status);
+  } catch {
+    return "000";
+  }
+}
 
+export async function GET() {
   // 第二大腦（VPS git clone）
   const brainFiles = run(`find /root/second-brain -name '*.md' -not -path '*/.git/*' | wc -l`);
   const brainRecent = run(`cd /root/second-brain && git log --since='7 days' --oneline | wc -l`);
   const brainUncommitted = run(`cd /root/second-brain && git status --porcelain | wc -l`);
 
   // 服務狀態
-  const services = [
-    { name: "rongrise-site", port: 3001, code: checkPort(3001) },
-    { name: "calendar", port: 3002, code: checkPort(3002) },
-    { name: "newsletter", port: 3003, code: checkPort(3003) },
-    { name: "admin-dashboard", port: 3004, code: checkPort(3004) },
-    { name: "brain-portal", port: 3005, code: checkPort(3005) },
-    { name: "iss-monitor", port: 3006, code: checkPort(3006) },
-    { name: "brain-api", port: 3007, code: checkPort(3007) },
-    { name: "ai-landing", port: 8091, code: checkPort(8091) },
+  const ports: [string, number][] = [
+    ["rongrise-site", 3001],
+    ["calendar", 3002],
+    ["newsletter", 3003],
+    ["admin-dashboard", 3004],
+    ["brain-portal", 3005],
+    ["iss-monitor", 3006],
+    ["brain-api", 3007],
+    ["ai-landing", 8091],
   ];
+  const services = await Promise.all(
+    ports.map(async ([name, port]) => ({ name, port, code: await checkPort(port) }))
+  );
 
   // 系統資源
   const disk = run(`df -h / | tail -1 | awk '{print $5}'`);
