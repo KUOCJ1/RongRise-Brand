@@ -40,7 +40,7 @@ export async function GET() {
   // 電子報訂閱數（從 newsletter-api .env 取值）
   const subscribers =
     run(
-      `bash -c 'set -a; source /root/newsletter-api/.env 2>/dev/null; set +a; psql -tAc "SELECT count(*) FROM subscribers" 2>/dev/null || echo 0'`
+      `bash -c 'set -a; source /root/newsletter-api/.env 2>/dev/null; set +a; psql -tAc "SELECT count(*) FROM newsletter_subscribers" 2>/dev/null || echo 0'`
     ) || "0";
 
   // PM2 重啟次數異常偵測
