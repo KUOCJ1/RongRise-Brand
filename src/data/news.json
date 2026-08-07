@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n29",
+      "date": "2026-08-07",
+      "category": "資源",
+      "title": "AI 能力虛胖症：63% 員工裝會 AI，你的團隊在演還是在用？",
+      "summary": "63% 的美國員工會誇大自己的 AI 熟練度——每三個人就有兩個在「裝會」。CJ 哥提出「AI 能力虛胖症」診斷框架：術語型、複製型、報喜型三種症狀，配上拆穿三問與解方三招，把團隊從裝會改造成會用。",
+      "link": "/knowledge/ai-skill-inflation-workforce",
+      "isNew": true
+    },
+    {
       "id": "n28",
       "date": "2026-08-06",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "算力通縮時代：Kimi K3 掀起的 AI 價格戰，正在改寫企業的成本帳本",
       "summary": "Kimi K3 把頂級 AI 模型價格打到十分之一，OpenAI 一週內降價 80%、百度砍到一折。這不是新聞，是「算力通縮」的開場——模型價格正在以季為單位崩跌，企業的 AI 成本評估邏輯必須重寫。本文提出「成本曲線、遷移成本、能力溢價」三定律，並點出比價格更關鍵的戰場：資料主權。",
       "link": "/knowledge/ai-price-war-compute-deflation",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n24",

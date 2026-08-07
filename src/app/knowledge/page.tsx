@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-skill-inflation-workforce",
+    cat: "人才策略",
+    title: "AI 能力虛胖症：63% 員工裝會 AI，你的團隊在演還是在用？",
+    date: "2026-08-07",
+    readTime: "9 分鐘",
+    excerpt: "美國職場調查顯示 63% 的員工會誇大自己的 AI 熟練度——每三個人就有兩個在「裝會」。對中小企業主，這是風險黑洞：無人驗證的 AI 輸出，錯誤會直接流進客戶端與決策鏈。本文提出「AI 能力虛胖症」診斷框架：術語型、複製型、報喜型三種症狀，配上拆穿三問與解方三招。",
+    tags: ["AI 素養", "人才策略", "職場文化", "心理安全感", "AI 轉型", "能力虛胖症"],
+  },
+  {
     slug: "sleeping-data-assets-awakening",
     cat: "AI 轉型",
     title: "資料變成戰略物資：你公司裡的「沉睡資產」，該醒了",
