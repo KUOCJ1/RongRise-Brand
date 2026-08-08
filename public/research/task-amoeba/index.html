@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>任務變形蟲 Task Amoeba Model｜榕耀管顧 RongRise 專刊</title>
+<title>任務變形蟲 Task Amoeba Model｜榕耀管顧 RongRise 研究專刊</title>
 <meta name="description" content="當 AI 工具像水電瓦斯一樣便宜，競爭優勢不再來自「買得起什麼」，而是「組織怎麼長出來」。任務變形蟲模型（Task Amoeba Model）——一套讓組織持續自我重組的運行邏輯。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="任務變形蟲：AI 成熟之後，組織設計重回戰略主軸">
@@ -14,125 +14,161 @@
 <meta name="twitter:card" content="summary_large_image">
 <style>
   :root{
-    --navy:#0D2B4E; --blue:#1A6DB5; --gold:#E8912A; --teal:#2EC4B6;
-    --navy-deep:#081D35; --navy-mid:#0F3A66; --paper:#F7F4EE; --ink:#1C2430;
-    --line:rgba(255,255,255,.12);
+    --ink:#101828; --navy:#0D2B4E; --navy-deep:#081D35; --navy-mid:#123A63;
+    --blue:#1A6DB5; --gold:#C08A2D; --gold-bright:#E8912A; --teal:#2EC4B6;
+    --paper:#FAFAF7; --card:#FFFFFF; --line:#E6E1D6; --muted:#5B6470;
+    --faint:#9AA3AE;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;background:var(--paper);color:var(--ink);line-height:1.9;font-size:17px}
-  /* ===== 進度條 ===== */
-  #progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--teal));width:0%;z-index:100;transition:width .1s linear}
+  body{font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;background:var(--paper);color:var(--ink);line-height:1.85;font-size:16.5px;-webkit-font-smoothing:antialiased}
+  ::selection{background:rgba(232,145,42,.25)}
+  #progress{position:fixed;top:0;left:0;height:2px;background:var(--gold-bright);width:0%;z-index:100}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 36px}
+  section{padding:88px 0}
   /* ===== 封面 ===== */
-  .cover{position:relative;min-height:100vh;background:radial-gradient(1200px 600px at 80% -10%,rgba(26,109,181,.45),transparent 60%),radial-gradient(900px 500px at 10% 110%,rgba(232,145,42,.25),transparent 55%),linear-gradient(160deg,var(--navy-deep) 0%,var(--navy) 55%,#123A63 100%);color:#fff;display:flex;align-items:center;overflow:hidden}
-  .cover::after{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");pointer-events:none;opacity:.4}
-  .cover-inner{max-width:1100px;margin:0 auto;padding:60px 48px;position:relative;z-index:2;width:100%}
-  .brand-row{display:flex;align-items:center;gap:14px;margin-bottom:56px}
-  .brand-box{width:46px;height:46px;background:var(--gold);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:700;color:var(--navy-deep);font-family:'Noto Serif TC',serif}
-  .brand-text{font-size:13px;letter-spacing:.18em;color:rgba(255,255,255,.7);text-transform:uppercase}
-  .cover .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border:1px solid rgba(46,196,182,.5);border-radius:999px;font-size:12px;letter-spacing:.22em;color:var(--teal);margin-bottom:32px}
-  .cover h1{font-family:'Noto Serif TC',serif;font-size:clamp(34px,6vw,68px);font-weight:900;line-height:1.25;letter-spacing:.02em;margin-bottom:20px}
-  .cover h1 .en{display:block;font-size:.42em;font-weight:400;letter-spacing:.35em;color:var(--gold);margin-bottom:14px;font-family:'Noto Sans TC',sans-serif;text-transform:uppercase}
-  .cover h1 .accent{color:var(--teal)}
-  .cover .dek{font-size:clamp(16px,2vw,20px);color:rgba(255,255,255,.85);max-width:640px;margin-bottom:44px;line-height:1.8}
-  .cover .meta{display:flex;gap:28px;flex-wrap:wrap;font-size:13px;color:rgba(255,255,255,.6);letter-spacing:.06em}
-  .cover .meta b{color:#fff;font-weight:600;display:block;font-size:15px;margin-bottom:2px}
-  .scroll-hint{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.5);font-size:12px;letter-spacing:.3em;z-index:2;animation:bob 2.4s ease-in-out infinite}
-  @keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
-  /* ===== 變形蟲主視覺 SVG ===== */
-  .amoeba-hero{position:absolute;right:-60px;top:50%;transform:translateY(-50%);width:46%;opacity:.9;z-index:1;pointer-events:none}
-  @media(max-width:900px){.amoeba-hero{display:none}}
-  /* ===== 版面 ===== */
-  .wrap{max-width:1100px;margin:0 auto;padding:0 32px}
-  section{padding:96px 0;position:relative}
-  .sec-num{font-size:13px;letter-spacing:.3em;color:var(--blue);font-weight:600;margin-bottom:12px;text-transform:uppercase}
-  h2.sec-title{font-family:'Noto Serif TC',serif;font-size:clamp(26px,3.6vw,40px);font-weight:900;line-height:1.3;margin-bottom:16px}
-  .sec-sub{color:#5A6472;font-size:16px;max-width:720px;margin-bottom:48px}
-  .dark{background:linear-gradient(165deg,var(--navy-deep),var(--navy));color:#fff}
-  .dark .sec-sub{color:rgba(255,255,255,.65)}
-  .dark .sec-num{color:var(--gold)}
-  /* ===== 卡片 ===== */
-  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
-  .card{background:#fff;border:1px solid #E7E2D8;border-radius:18px;padding:32px 28px;position:relative;overflow:hidden;transition:transform .5s cubic-bezier(.32,.72,0,1),box-shadow .5s cubic-bezier(.32,.72,0,1)}
-  .card:hover{transform:translateY(-6px);box-shadow:0 24px 48px -16px rgba(13,43,78,.18)}
-  .card .k{font-size:13px;letter-spacing:.12em;color:var(--blue);font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:8px}
-  .card .k .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);display:inline-block}
-  .card h3{font-family:'Noto Serif TC',serif;font-size:21px;font-weight:700;margin-bottom:10px}
-  .card p{color:#5A6472;font-size:15.5px}
-  .dark .card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12)}
-  .dark .card p{color:rgba(255,255,255,.72)}
-  .dark .card h3{color:#fff}
-  /* ===== 數據卡 ===== */
-  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin:40px 0}
-  .stat{background:#fff;border:1px solid #E7E2D8;border-radius:16px;padding:26px 24px;text-align:center}
-  .stat .num{font-family:'Noto Serif TC',serif;font-size:clamp(30px,3.4vw,44px);font-weight:900;color:var(--navy)}
-  .stat .num em{font-style:normal;color:var(--gold)}
-  .stat .lbl{font-size:13.5px;color:#5A6472;margin-top:6px}
-  .dark .stat{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12)}
-  .dark .stat .num{color:var(--teal)}
-  .dark .stat .lbl{color:rgba(255,255,255,.6)}
-  /* ===== 引用 ===== */
-  blockquote.quote{border-left:3px solid var(--gold);padding:18px 28px;margin:40px 0;background:rgba(232,145,42,.06);border-radius:0 14px 14px 0;font-family:'Noto Serif TC',serif;font-size:19px;line-height:1.9;color:#3A4250}
-  .dark blockquote.quote{background:rgba(232,145,42,.1);color:rgba(255,255,255,.9)}
-  blockquote.quote footer{font-family:'Noto Sans TC',sans-serif;font-size:13.5px;color:#8A93A0;margin-top:10px;letter-spacing:.05em}
-  /* ===== 表格 ===== */
-  .tbl-wrap{overflow-x:auto;margin:36px 0;border-radius:16px;border:1px solid #E7E2D8;background:#fff}
-  .dark .tbl-wrap{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12)}
-  table{width:100%;border-collapse:collapse;min-width:640px}
-  th{background:var(--navy);color:#fff;font-size:14px;letter-spacing:.08em;padding:16px 20px;text-align:left;font-weight:600}
-  .dark th{background:rgba(255,255,255,.08);color:var(--gold)}
-  td{padding:15px 20px;font-size:15px;border-top:1px solid #F0ECE3;vertical-align:top}
-  .dark td{border-top:1px solid rgba(255,255,255,.08)}
-  tr:nth-child(even) td{background:rgba(13,43,78,.025)}
-  .dark tr:nth-child(even) td{background:rgba(255,255,255,.03)}
-  /* ===== 章節導航 ===== */
-  nav.toc{position:sticky;top:0;z-index:50;background:rgba(247,244,238,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid #E7E2D8}
-  .dark nav.toc{background:rgba(13,43,78,.9)}
-  .toc-inner{max-width:1100px;margin:0 auto;padding:14px 32px;display:flex;align-items:center;gap:8px;overflow-x:auto;scrollbar-width:none}
+  .cover{position:relative;background:linear-gradient(180deg,var(--navy-deep) 0%,var(--navy) 100%);color:#fff;display:flex;align-items:center;min-height:92vh;overflow:hidden}
+  .cover::before{content:'';position:absolute;inset:0;background:
+    linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+    background-size:56px 56px;mask-image:radial-gradient(700px 480px at 70% 20%,#000 30%,transparent 75%)}
+  .cover-inner{max-width:1040px;margin:0 auto;padding:80px 36px;position:relative;z-index:2;width:100%}
+  .brand-row{display:flex;align-items:center;gap:14px;margin-bottom:64px}
+  .brand-box{width:40px;height:40px;background:var(--gold-bright);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:21px;font-weight:700;color:var(--navy-deep);font-family:'Noto Serif TC',serif}
+  .brand-text{font-size:11.5px;letter-spacing:.2em;color:rgba(255,255,255,.55);text-transform:uppercase;line-height:1.7}
+  .cover .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.28em;color:var(--gold-bright);margin-bottom:36px;font-weight:500}
+  .cover .eyebrow::before{content:'';width:34px;height:1px;background:var(--gold-bright);opacity:.6}
+  .cover h1{font-family:'Noto Serif TC',serif;font-size:clamp(32px,5.2vw,58px);font-weight:900;line-height:1.3;letter-spacing:.01em;margin-bottom:24px}
+  .cover h1 .en{display:block;font-size:.4em;font-weight:500;letter-spacing:.32em;color:var(--gold-bright);margin-bottom:16px;font-family:'Noto Sans TC',sans-serif;text-transform:uppercase}
+  .cover .dek{font-size:clamp(15px,1.8vw,18px);color:rgba(255,255,255,.8);max-width:620px;margin-bottom:48px;line-height:1.9}
+  .cover .meta{display:flex;gap:0;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.14);padding-top:28px}
+  .cover .meta div{padding:0 32px;border-left:1px solid rgba(255,255,255,.14)}
+  .cover .meta div:first-child{padding-left:0;border-left:none}
+  .cover .meta .n{font-size:22px;font-weight:700;color:#fff;font-family:'Noto Serif TC',serif}
+  .cover .meta .n em{font-style:normal;color:var(--gold-bright)}
+  .cover .meta .l{font-size:12px;color:rgba(255,255,255,.5);letter-spacing:.06em;margin-top:2px}
+  @media(max-width:640px){.cover .meta div{padding:12px 16px 0 0;border-left:none;display:block}}
+  /* ===== 目錄 ===== */
+  nav.toc{position:sticky;top:0;z-index:50;background:rgba(250,250,247,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .toc-inner{max-width:1040px;margin:0 auto;padding:12px 36px;display:flex;align-items:center;gap:4px;overflow-x:auto;scrollbar-width:none}
   .toc-inner::-webkit-scrollbar{display:none}
-  .toc-inner a{white-space:nowrap;font-size:13px;color:#5A6472;text-decoration:none;padding:6px 14px;border-radius:999px;transition:all .3s cubic-bezier(.32,.72,0,1);letter-spacing:.04em}
-  .toc-inner a:hover{color:var(--navy);background:rgba(13,43,78,.06)}
-  .dark .toc-inner a{color:rgba(255,255,255,.65)}
-  .dark .toc-inner a:hover{color:#fff;background:rgba(255,255,255,.1)}
-  .toc-inner .brand-mini{margin-right:auto;font-weight:700;color:var(--navy);font-family:'Noto Serif TC',serif}
-  .dark .toc-inner .brand-mini{color:#fff}
-  /* ===== 圖表容器 ===== */
-  .chart-box{background:#fff;border:1px solid #E7E2D8;border-radius:20px;padding:36px 32px;margin:40px 0;position:relative}
-  .dark .chart-box{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12)}
-  .chart-box .cap{font-size:13px;color:#8A93A0;letter-spacing:.06em;margin-bottom:6px;text-transform:uppercase}
-  .chart-box h4{font-family:'Noto Serif TC',serif;font-size:19px;font-weight:700;margin-bottom:24px}
-  .chart-box svg{width:100%;height:auto;display:block}
-  /* ===== 三階段時間軸 ===== */
-  .timeline{position:relative;margin:48px 0;padding-left:36px}
-  .timeline::before{content:'';position:absolute;left:10px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--gold),var(--teal))}
-  .tl-item{position:relative;margin-bottom:44px}
-  .tl-item::before{content:'';position:absolute;left:-33px;top:8px;width:18px;height:18px;border-radius:50%;background:var(--navy);border:4px solid var(--gold)}
-  .dark .tl-item::before{background:var(--teal)}
-  .tl-item .phase{font-size:13px;font-weight:700;color:var(--blue);letter-spacing:.14em;margin-bottom:6px}
-  .dark .tl-item .phase{color:var(--gold)}
-  .tl-item h3{font-family:'Noto Serif TC',serif;font-size:22px;font-weight:700;margin-bottom:10px}
-  .tl-item p{color:#5A6472;font-size:15.5px;max-width:760px}
-  .dark .tl-item p{color:rgba(255,255,255,.72)}
-  .tl-item .dur{display:inline-block;margin-top:12px;padding:4px 14px;border-radius:999px;background:rgba(46,196,182,.12);color:var(--teal);font-size:13px;font-weight:600}
-  .dark .tl-item .dur{background:rgba(46,196,182,.15)}
-  /* ===== 列表 ===== */
-  .steps{counter-reset:s;margin:28px 0}
-  .steps li{list-style:none;counter-increment:s;position:relative;padding:0 0 26px 52px;font-size:15.5px;color:#4A5260}
-  .dark .steps li{color:rgba(255,255,255,.78)}
-  .steps li::before{content:counter(s);position:absolute;left:0;top:0;width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
-  .dark .steps li::before{background:var(--gold);color:var(--navy-deep)}
+  .toc-inner a{white-space:nowrap;font-size:12.5px;color:var(--muted);text-decoration:none;padding:6px 13px;border-radius:6px;transition:all .2s;letter-spacing:.04em}
+  .toc-inner a:hover{color:var(--navy);background:rgba(13,43,78,.05)}
+  .toc-inner .brand-mini{margin-right:auto;font-weight:700;color:var(--navy);font-size:13.5px;letter-spacing:.02em;padding-right:16px}
+  /* ===== 章節標題 ===== */
+  .sec-num{font-size:12px;letter-spacing:.3em;color:var(--gold);font-weight:600;margin-bottom:14px;text-transform:uppercase}
+  h2.sec-title{font-family:'Noto Serif TC',serif;font-size:clamp(25px,3.4vw,37px);font-weight:900;line-height:1.35;margin-bottom:18px;letter-spacing:.01em}
+  .sec-sub{color:var(--muted);font-size:16px;max-width:720px;margin-bottom:52px}
+  .dark{background:var(--navy-deep);color:#fff}
+  .dark .sec-sub{color:rgba(255,255,255,.62)}
+  .dark .sec-num{color:var(--gold-bright)}
+  /* ===== 卡片 ===== */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:30px 28px;position:relative;transition:box-shadow .3s,transform .3s}
+  .card:hover{box-shadow:0 18px 40px -18px rgba(13,43,78,.16);transform:translateY(-3px)}
+  .card .k{font-size:12px;letter-spacing:.14em;color:var(--blue);font-weight:700;margin-bottom:14px;text-transform:uppercase}
+  .card h3{font-family:'Noto Serif TC',serif;font-size:19.5px;font-weight:700;margin-bottom:10px;line-height:1.4}
+  .card p{color:var(--muted);font-size:14.8px}
+  .card b{color:var(--ink)}
+  .dark .card{background:rgba(255,255,255,.045);border-color:rgba(255,255,255,.1)}
+  .dark .card p{color:rgba(255,255,255,.68)}
+  .dark .card h3{color:#fff}
+  .dark .card b{color:#fff}
+  /* ===== 數據列 ===== */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:44px 0}
+  .stat{background:var(--card);padding:28px 24px}
+  .stat .num{font-family:'Noto Serif TC',serif;font-size:clamp(28px,3vw,38px);font-weight:900;color:var(--navy);line-height:1.15}
+  .stat .num em{font-style:normal;color:var(--gold-bright)}
+  .stat .lbl{font-size:12.8px;color:var(--muted);margin-top:8px;line-height:1.6}
+  .dark .stat{background:rgba(255,255,255,.05)}
+  .dark .stat .num{color:var(--teal)}
+  .dark .stat .lbl{color:rgba(255,255,255,.55)}
+  /* ===== Exhibit ===== */
+  .exhibit{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:36px 34px;margin:44px 0}
+  .exhibit .cap{font-size:11.5px;color:var(--faint);letter-spacing:.18em;margin-bottom:8px;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+  .exhibit .cap .tag{color:var(--gold);font-weight:700}
+  .exhibit h4{font-family:'Noto Serif TC',serif;font-size:18px;font-weight:700;margin-bottom:6px}
+  .exhibit .ex-sub{font-size:13px;color:var(--faint);margin-bottom:24px}
+  .exhibit svg{width:100%;height:auto;display:block}
+  .exhibit .src{font-size:11.5px;color:var(--faint);margin-top:16px;border-top:1px solid var(--line);padding-top:12px;letter-spacing:.03em}
+  .dark .exhibit{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1)}
+  .dark .exhibit .src{border-color:rgba(255,255,255,.1);color:rgba(255,255,255,.4)}
+  .dark .exhibit h4{color:#fff}
+  /* ===== 引用 ===== */
+  blockquote.quote{border-left:2px solid var(--gold);padding:6px 0 6px 26px;margin:44px 0;font-family:'Noto Serif TC',serif;font-size:18px;line-height:1.95;color:#2A3442}
+  blockquote.quote b{color:var(--navy)}
+  blockquote.quote footer{font-family:'Noto Sans TC',sans-serif;font-size:12.5px;color:var(--faint);margin-top:12px;letter-spacing:.05em}
+  .dark blockquote.quote{color:rgba(255,255,255,.88)}
+  .dark blockquote.quote b{color:#fff}
+  /* ===== 定義框 ===== */
+  .def-box{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:10px;padding:30px 32px;margin:44px 0}
+  .def-box .d-k{font-size:11.5px;letter-spacing:.24em;color:var(--gold);font-weight:700;margin-bottom:14px;text-transform:uppercase}
+  .def-box h4{font-family:'Noto Serif TC',serif;font-size:19px;margin-bottom:16px}
+  .def-box .formula{font-family:'Noto Serif TC',serif;font-size:17px;color:var(--navy);padding:14px 18px;background:rgba(13,43,78,.04);border-radius:8px;margin-bottom:16px}
+  .def-box ul{list-style:none}
+  .def-box li{position:relative;padding:7px 0 7px 22px;font-size:14.8px;color:var(--muted)}
+  .def-box li::before{content:'—';position:absolute;left:0;color:var(--gold)}
+  .def-box li b{color:var(--ink)}
+  /* ===== 表格 ===== */
+  .tbl-wrap{overflow-x:auto;margin:44px 0;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+  table{width:100%;border-collapse:collapse;min-width:620px}
+  th{background:var(--navy);color:#fff;font-size:13px;letter-spacing:.08em;padding:14px 18px;text-align:left;font-weight:600}
+  td{padding:14px 18px;font-size:14.5px;border-top:1px solid var(--line);vertical-align:top}
+  td b{color:var(--navy)}
+  tr:nth-child(even) td{background:rgba(13,43,78,.02)}
+  .dark .tbl-wrap{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1)}
+  .dark th{background:rgba(255,255,255,.07);color:var(--gold-bright)}
+  .dark td{border-color:rgba(255,255,255,.08)}
+  .dark tr:nth-child(even) td{background:rgba(255,255,255,.03)}
+  .dark td b{color:#fff}
+  /* ===== 時間軸 ===== */
+  .timeline{position:relative;margin:48px 0 0;padding-left:40px}
+  .timeline::before{content:'';position:absolute;left:11px;top:8px;bottom:8px;width:1px;background:var(--line)}
+  .tl-item{position:relative;margin-bottom:40px}
+  .tl-item::before{content:'';position:absolute;left:-40px;top:6px;width:22px;height:22px;border-radius:50%;background:var(--card);border:2px solid var(--gold)}
+  .tl-item .phase{font-size:11.5px;font-weight:700;color:var(--blue);letter-spacing:.2em;margin-bottom:6px;text-transform:uppercase}
+  .tl-item h3{font-family:'Noto Serif TC',serif;font-size:20px;font-weight:700;margin-bottom:8px}
+  .tl-item p{color:var(--muted);font-size:14.8px;max-width:780px}
+  .tl-item p b{color:var(--ink)}
+  .tl-item .dur{display:inline-block;margin-top:10px;padding:3px 12px;border-radius:6px;background:rgba(13,43,78,.05);color:var(--navy);font-size:12.5px;font-weight:600}
+  /* ===== 診斷清單 ===== */
+  .check{list-style:none;margin:32px 0 0;counter-reset:c}
+  .check li{counter-increment:c;position:relative;padding:18px 0 18px 56px;border-bottom:1px solid var(--line);font-size:15.5px;color:#333D4C}
+  .check li:last-child{border-bottom:none}
+  .check li::before{content:counter(c,decimal-leading-zero);position:absolute;left:0;top:20px;font-size:13px;font-weight:700;color:var(--gold);letter-spacing:.1em}
+  .check li b{color:var(--navy)}
   /* ===== 結論 ===== */
-  .closing{background:radial-gradient(900px 500px at 85% 0%,rgba(46,196,182,.18),transparent 55%),linear-gradient(160deg,var(--navy-deep),var(--navy));color:#fff;text-align:center}
-  .closing h2{font-family:'Noto Serif TC',serif;font-size:clamp(28px,4vw,46px);font-weight:900;max-width:900px;margin:0 auto 28px;line-height:1.5}
-  .closing .q{font-size:clamp(18px,2.4vw,24px);color:var(--teal);font-weight:600;margin-top:20px}
-  footer{background:var(--navy-deep);color:rgba(255,255,255,.5);padding:48px 0;text-align:center;font-size:13.5px;letter-spacing:.06em}
-  footer a{color:var(--gold);text-decoration:none}
-  footer .brand{font-family:'Noto Serif TC',serif;font-size:17px;color:#fff;margin-bottom:10px}
-  /* ===== 浮現動畫 ===== */
-  .reveal{opacity:0;transform:translateY(36px);filter:blur(6px);transition:opacity .9s cubic-bezier(.32,.72,0,1),transform .9s cubic-bezier(.32,.72,0,1),filter .9s cubic-bezier(.32,.72,0,1)}
-  .reveal.in{opacity:1;transform:translateY(0);filter:blur(0)}
-  .d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
-  @media(max-width:768px){section{padding:64px 0}.wrap{padding:0 20px}.cover-inner{padding:48px 24px}}
+  .closing{background:var(--navy-deep);color:#fff;text-align:center}
+  .closing h2{font-family:'Noto Serif TC',serif;font-size:clamp(26px,3.8vw,42px);font-weight:900;max-width:860px;margin:0 auto 26px;line-height:1.55}
+  .closing h2 .accent{color:var(--gold-bright)}
+  .closing p{color:rgba(255,255,255,.72);max-width:720px;margin:0 auto;font-size:16px}
+  .closing .q{font-size:clamp(17px,2.2vw,22px);color:var(--teal);font-weight:600;margin-top:34px}
+  /* ===== 來源附錄 ===== */
+  .refs{font-size:13.8px;color:var(--muted)}
+  .refs ol{padding-left:20px}
+  .refs li{margin-bottom:10px;line-height:1.8}
+  .refs .ref-note{font-size:12.5px;color:var(--faint);margin-top:22px}
+  /* ===== Footer ===== */
+  footer{background:var(--navy-deep);color:rgba(255,255,255,.5);padding:52px 0;text-align:center;font-size:13px;letter-spacing:.05em;border-top:1px solid rgba(255,255,255,.08)}
+  footer .brand{font-family:'Noto Serif TC',serif;font-size:16px;color:#fff;margin-bottom:12px;letter-spacing:.06em}
+  footer a{color:var(--gold-bright);text-decoration:none;border-bottom:1px solid rgba(232,145,42,.4)}
+  footer .cta{margin-top:26px;display:inline-block;padding:12px 34px;border:1px solid rgba(232,145,42,.6);border-radius:6px;color:var(--gold-bright);letter-spacing:.12em;font-size:13px;transition:all .25s}
+  footer .cta:hover{background:var(--gold-bright);color:var(--navy-deep)}
+  /* ===== 浮現動畫（克制版） ===== */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:translateY(0)}
+  .d1{transition-delay:.06s}.d2{transition-delay:.12s}.d3{transition-delay:.18s}.d4{transition-delay:.24s}
+  /* ===== 印刷 ===== */
+  @media print{
+    #progress,nav.toc,.scroll-hint{display:none!important}
+    body{background:#fff;font-size:12.5pt}
+    section{padding:32px 0;page-break-inside:avoid}
+    .cover{min-height:auto;page-break-after:always}
+    .card,.exhibit,.tbl-wrap{box-shadow:none;break-inside:avoid}
+    .reveal{opacity:1;transform:none}
+    a{color:inherit;text-decoration:none}
+  }
+  @media(max-width:768px){section{padding:60px 0}.wrap{padding:0 22px}.cover-inner{padding:60px 22px}.exhibit{padding:26px 20px}}
 </style>
 </head>
 <body>
@@ -140,57 +176,23 @@
 
 <!-- ================= 封面 ================= -->
 <header class="cover">
-  <svg class="amoeba-hero" viewBox="0 0 520 520" fill="none">
-    <defs>
-      <linearGradient id="ag1" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="#1A6DB5"/><stop offset="100%" stop-color="#2EC4B6"/>
-      </linearGradient>
-      <linearGradient id="ag2" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="#E8912A"/><stop offset="100%" stop-color="#F5C067"/>
-      </linearGradient>
-      <filter id="glow"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    </defs>
-    <!-- 變形蟲主體：核心 -->
-    <g filter="url(#glow)">
-      <path d="M260 200 C300 160 360 150 380 200 C400 250 370 300 320 310 C270 320 230 300 210 260 C190 220 220 240 260 200Z" fill="url(#ag1)" opacity="0.85"/>
-    </g>
-    <!-- 偽足 1 -->
-    <path d="M380 200 C410 180 440 200 430 230 C420 260 390 260 380 240" fill="url(#ag1)" opacity="0.7"/>
-    <!-- 偽足 2 -->
-    <path d="M210 260 C180 290 150 280 155 250 C160 220 190 220 210 240" fill="url(#ag1)" opacity="0.7"/>
-    <!-- 偽足 3 -->
-    <path d="M320 310 C340 340 330 370 300 365 C270 360 265 330 290 315" fill="url(#ag2)" opacity="0.75"/>
-    <!-- 偽足 4 -->
-    <path d="M260 200 C245 170 255 145 280 150 C305 155 300 185 275 195" fill="url(#ag2)" opacity="0.75"/>
-    <!-- 節點：人 -->
-    <circle cx="260" cy="235" r="16" fill="#0D2B4E" stroke="#2EC4B6" stroke-width="2.5"/>
-    <circle cx="256" cy="228" r="4.5" fill="#fff"/><path d="M252 238 q8 -5 16 0 q-2 7 -8 7 q-6 0 -8 -7Z" fill="#fff"/>
-    <!-- 節點：代理 -->
-    <circle cx="330" cy="245" r="13" fill="#0D2B4E" stroke="#E8912A" stroke-width="2.5"/>
-    <rect x="322" y="238" width="16" height="10" rx="2" fill="#fff"/><circle cx="326" cy="243" r="1.6" fill="#0D2B4E"/><circle cx="334" cy="243" r="1.6" fill="#0D2B4E"/>
-    <!-- 連結線 -->
-    <path d="M274 228 Q300 220 318 240" stroke="#2EC4B6" stroke-width="1.6" stroke-dasharray="4 4" opacity="0.9"/>
-    <path d="M300 252 Q315 262 318 252" stroke="#E8912A" stroke-width="1.6" stroke-dasharray="4 4" opacity="0.9"/>
-  </svg>
   <div class="cover-inner">
     <div class="brand-row">
       <div class="brand-box">榕</div>
-      <div class="brand-text">榕耀管顧 RongRise Consulting<br>Research Special Edition</div>
+      <div class="brand-text">榕耀管顧 RongRise Consulting<br>Research Special Edition · No. 3 / 2026</div>
     </div>
-    <div class="eyebrow">✦ 研究專刊 · 2026 年第 3 號</div>
+    <div class="eyebrow">研究專刊 · 組織設計系列</div>
     <h1>
       <span class="en">Task Amoeba Model</span>
-      任務變形蟲：
-      <span class="accent">AI 成熟之後，<br>組織設計重回戰略主軸</span>
+      任務變形蟲：AI 成熟之後，<br>組織設計重回戰略主軸
     </h1>
-    <p class="dek">當 AI 工具像水電瓦斯一樣便宜，競爭優勢不再來自「買得起什麼」，而是「組織怎麼長出來」。本刊提出任務變形蟲模型（Task Amoeba Model）——一套讓組織持續自我重組的運行邏輯。</p>
+    <p class="dek">當 AI 工具像水電瓦斯一樣便宜，競爭優勢不再來自「買得起什麼」，而是「組織怎麼長出來」。本刊提出任務變形蟲模型（Task Amoeba Model）——一套讓組織持續自我重組的運行邏輯，並提供可檢驗的落地路徑。</p>
     <div class="meta">
-      <div><b>10-20-70</b>人與流程占轉型關鍵</div>
-      <div><b>3 類參與者</b>人 · 代理 · 代理×代理</div>
-      <div><b>18 個月</b>三階段落地路徑</div>
+      <div><div class="n">70<em>%</em></div><div class="l">轉型成敗取決於人與流程（BCG）</div></div>
+      <div><div class="n">3<em> 類</em></div><div class="l">任務參與者：人 · 代理 · 代理×代理</div></div>
+      <div><div class="n">18<em> 月</em></div><div class="l">三階段落地路徑</div></div>
     </div>
   </div>
-  <div class="scroll-hint">SCROLL ↓</div>
 </header>
 
 <!-- ================= 目錄 ================= -->
@@ -206,6 +208,7 @@
     <a href="#s6">陸 · 落地路徑</a>
     <a href="#s7">柒 · 風險侷限</a>
     <a href="#conclusion">結論</a>
+    <a href="#refs">來源</a>
   </div>
 </nav>
 
@@ -213,47 +216,46 @@
 <section id="exec">
   <div class="wrap">
     <div class="sec-num reveal">Executive Summary</div>
-    <h2 class="sec-title reveal">執行摘要</h2>
-    <p class="sec-sub reveal">過去兩年，企業將 AI 轉型等同於工具部署。本刊的結論是：這個階段已經結束。</p>
+    <h2 class="sec-title reveal">執行摘要：五個核心判斷</h2>
+    <p class="sec-sub reveal">過去兩年，企業把 AI 轉型等同於工具部署。本刊的結論是：這個階段已經結束。以下五個判斷構成全文的論證骨架。</p>
 
-    <div class="cards">
-      <div class="card reveal d1">
-        <div class="k"><span class="dot"></span>訊號 01</div>
-        <h3>算力價格崩落</h3>
-        <p>OpenAI 旗艦模型降價 80%，DeepSeek 推出平價模型，Meta 發布內建編碼代理。工具成本正以年化 60-80% 的速度下降，「買得起什麼」不再是競爭變數。</p>
-      </div>
-      <div class="card reveal d2">
-        <div class="k"><span class="dot"></span>訊號 02</div>
-        <h3>人才市場動盪</h3>
-        <p>Jeff Dean 出走 Google、三星工程師集體跳槽 SK Hynix、AI 掏空大學——外部挖角不再是組織能力建設的主要依賴。</p>
-      </div>
-      <div class="card reveal d3">
-        <div class="k"><span class="dot"></span>訊號 03</div>
-        <h3>職場信任裂縫</h3>
-        <p>63% 員工坦承誇大 AI 能力。當員工不敢說「我不會」，技術投資的邊際回報將被組織內部的信任赤字侵蝕。</p>
-      </div>
+    <div class="def-box reveal">
+      <div class="d-k">In this report</div>
+      <h4>五個核心判斷</h4>
+      <ul>
+        <li><b>一、工具已不再是戰略。</b>AI 單位成本年降 60–80%，採用 AI 是參賽門票，不是競爭優勢；優勢只能來自組織如何運用。</li>
+        <li><b>二、組織設計成為新的戰略變數。</b>當代理成為任務分配的第三類參與者，組織的最小運作單元將從「職位」轉變為「任務小隊」。</li>
+        <li><b>三、三個失效假設同時崩解。</b>環境穩定、知識集中、人對人協作——科層組織賴以成立的假設，在 AI 時代逐一失效。</li>
+        <li><b>四、管理的稀缺能力位移。</b>從「下達正確指令」轉向「設計正確邊界」；管理者成為邊界設計者，而非指揮者。</li>
+        <li><b>五、落地有路徑，成敗可檢驗。</b>試點 → 標準化 → 擴散，18 個月；真正的成敗變數是心理安全感與中層管理者的升級，而非技術。</li>
+      </ul>
     </div>
 
-    <!-- 10-20-70 圖 -->
-    <div class="chart-box reveal">
-      <div class="cap">Figure 0.1</div>
-      <h4>BCG 10-20-70：AI 轉型成功的要素配置</h4>
-      <div style="display:flex;align-items:center;gap:40px;flex-wrap:wrap">
-        <svg viewBox="0 0 320 320" style="max-width:300px">
-          <circle cx="160" cy="160" r="130" fill="none" stroke="#E7E2D8" stroke-width="34"/>
-          <circle cx="160" cy="160" r="130" fill="none" stroke="#2EC4B6" stroke-width="34" stroke-dasharray="81.7 734" stroke-dashoffset="0" transform="rotate(-90 160 160)"/>
-          <circle cx="160" cy="160" r="130" fill="none" stroke="#1A6DB5" stroke-width="34" stroke-dasharray="163.4 734" stroke-dashoffset="-81.7" transform="rotate(-90 160 160)"/>
-          <circle cx="160" cy="160" r="130" fill="none" stroke="#E8912A" stroke-width="34" stroke-dasharray="489 734" stroke-dashoffset="-245" transform="rotate(-90 160 160)"/>
-          <text x="160" y="150" text-anchor="middle" font-size="15" fill="#8A93A0">人與流程</text>
-          <text x="160" y="176" text-anchor="middle" font-size="26" font-weight="700" fill="#0D2B4E">70%</text>
-        </svg>
-        <div style="flex:1;min-width:240px">
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px"><span style="width:16px;height:16px;border-radius:4px;background:#E8912A;display:inline-block"></span><b style="color:#0D2B4E">演算法 10%</b><span style="color:#8A93A0;font-size:14px">模型與工具</span></div>
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px"><span style="width:16px;height:16px;border-radius:4px;background:#1A6DB5;display:inline-block"></span><b style="color:#0D2B4E">資料 20%</b><span style="color:#8A93A0;font-size:14px">數據基礎</span></div>
-          <div style="display:flex;align-items:center;gap:12px"><span style="width:16px;height:16px;border-radius:4px;background:#2EC4B6;display:inline-block"></span><b style="color:#0D2B4E">人與流程 70%</b><span style="color:#8A93A0;font-size:14px">組織與文化</span></div>
-          <p style="margin-top:20px;font-size:14.5px;color:#5A6472">多數企業的資源配置恰好相反——把 70% 的預算花在買工具，卻只留 30% 給人與流程。</p>
-        </div>
-      </div>
+    <div class="exhibit reveal">
+      <div class="cap"><span class="tag">Exhibit 1</span><span>資源配置的錯位</span></div>
+      <h4>BCG 10-20-70：多數企業的 AI 投資結構與成功要素相反</h4>
+      <div class="ex-sub">成功案例的要素配置，與多數企業的實際預算結構，恰好是鏡像。</div>
+      <svg viewBox="0 0 880 210" role="img" aria-label="BCG 10-20-70 橫條圖">
+        <g font-family="'Noto Sans TC',sans-serif" font-size="13">
+          <text x="0" y="42" fill="#5B6470">成功要素配置</text>
+          <text x="0" y="118" fill="#5B6470">多數企業預算</text>
+          <!-- 成功配置 100% bar -->
+          <rect x="120" y="22" width="176" height="26" rx="2" fill="#E8912A"/>
+          <rect x="296" y="22" width="352" height="26" rx="2" fill="#1A6DB5"/>
+          <rect x="648" y="22" width="1232" height="26" rx="2" fill="#2EC4B6"/>
+          <text x="648" y="66" text-anchor="middle" font-size="12" fill="#2EC4B6" font-weight="700">70% 人與流程</text>
+          <text x="388" y="66" text-anchor="middle" font-size="12" fill="#1A6DB5" font-weight="700">20% 資料</text>
+          <text x="208" y="66" text-anchor="middle" font-size="12" fill="#B36B12" font-weight="700">10% 演算法</text>
+          <!-- 實際預算（鏡像） bar -->
+          <rect x="120" y="98" width="1232" height="26" rx="2" fill="#E8912A"/>
+          <rect x="1352" y="98" width="352" height="26" rx="2" fill="#1A6DB5"/>
+          <rect x="1704" y="98" width="176" height="26" rx="2" fill="#2EC4B6"/>
+          <text x="1336" y="144" text-anchor="middle" font-size="12" fill="#B36B12" font-weight="700">70% 工具</text>
+          <text x="1528" y="144" text-anchor="middle" font-size="12" fill="#1A6DB5" font-weight="700">20% 資料</text>
+          <text x="1792" y="144" text-anchor="middle" font-size="12" fill="#2EC4B6" font-weight="700">10% 人與流程</text>
+        </g>
+      </svg>
+      <div class="src">Source：BCG, "Winning With AI," 10-20-70 framework；示意圖，比例為框架示意非實測。</div>
     </div>
 
     <blockquote class="quote reveal">本刊的核心判斷：<b>當 AI 代理成為任務分配中的第三類參與者，組織的最小運作單元將從「職位」轉變為「有明確目標、能自主調度人機資源的小隊」。</b><footer>— 任務變形蟲模型（Task Amoeba Model）</footer></blockquote>
@@ -261,32 +263,32 @@
 </section>
 
 <!-- ================= 壹 背景 ================= -->
-<section id="s1" class="dark">
+<section id="s1">
   <div class="wrap">
-    <div class="sec-num reveal">Part 01</div>
-    <h2 class="sec-title reveal">背景：技術拐點的三個結構性訊號</h2>
-    <p class="sec-sub reveal">2026 年上半年，AI 基礎設施的供需結構出現歷史性轉變。三個訊號同時指向同一個結論。</p>
+    <div class="sec-num reveal">Part 01 · 背景</div>
+    <h2 class="sec-title reveal">技術拐點的三個結構性訊號</h2>
+    <p class="sec-sub reveal">2026 年上半年，AI 基礎設施的供需結構出現歷史性轉變。三個訊號彼此獨立，卻同時指向同一個結論：競爭的戰場，正在從「誰能買到 AI」移向「誰能用 AI 重新長出組織」。</p>
 
-    <div class="stats">
-      <div class="stat reveal d1"><div class="num">1.1<em> 兆</em></div><div class="lbl">美四大 CSP 累計資本支出（2023 起）</div></div>
-      <div class="stat reveal d2"><div class="num">-80<em>%</em></div><div class="lbl">OpenAI 旗艦模型降價幅度</div></div>
-      <div class="stat reveal d3"><div class="num">63<em>%</em></div><div class="lbl">員工坦承誇大 AI 能力</div></div>
-      <div class="stat reveal d4"><div class="num">11<em> 天</em></div><div class="lbl">Bun 創辦人重寫 53 萬行程式</div></div>
+    <div class="stats reveal">
+      <div class="stat"><div class="num">1.1<em> 兆</em></div><div class="lbl">美四大 CSP 累計資本支出（2023 起，美元）</div></div>
+      <div class="stat"><div class="num">-80<em>%</em></div><div class="lbl">OpenAI 旗艦模型兩年內降價幅度</div></div>
+      <div class="stat"><div class="num">63<em>%</em></div><div class="lbl">員工坦承誇大 AI 能力（職場信任調查）</div></div>
+      <div class="stat"><div class="num">11<em> 天</em></div><div class="lbl">Bun 創辦人重寫 53 萬行程式碼</div></div>
     </div>
 
     <div class="cards">
       <div class="card reveal d1">
-        <div class="k"><span class="dot"></span>1.1 成本</div>
+        <div class="k">訊號 01 · 成本</div>
         <h3>算力成本與模型價格的雙重崩落</h3>
         <p>AI 的單位運算成本正從「策略性投資」降級為「水電瓦斯等級的營運成本」。當工具價格不再構成進入障礙，採用 AI 不再是競爭優勢的來源，而是參與競爭的前提條件。</p>
       </div>
       <div class="card reveal d2">
-        <div class="k"><span class="dot"></span>1.2 人才</div>
+        <div class="k">訊號 02 · 人才</div>
         <h3>人才市場的結構性動盪</h3>
-        <p>技術路線可以複製，頂尖人才不可複製。外部人才市場無法再作為組織能力建設的主要依賴——內部培訓、知識留存與組織設計，將取代挖角成為核心槓桿。</p>
+        <p>技術路線可以複製，頂尖人才不可複製。外部挖角無法再作為組織能力建設的主要依賴——內部培訓、知識留存與組織設計，將取代挖角成為核心槓桿。</p>
       </div>
       <div class="card reveal d3">
-        <div class="k"><span class="dot"></span>1.3 信任</div>
+        <div class="k">訊號 03 · 信任</div>
         <h3>職場信任的裂縫</h3>
         <p>當員工不敢承認「我不會」，當 AI 系統的錯誤在無人察覺時被自動放大，技術投資的邊際回報將被信任赤字侵蝕。這不是文化軟議題，而是影響 ROI 的硬約束。</p>
       </div>
@@ -295,25 +297,25 @@
 </section>
 
 <!-- ================= 貳 失效假設 ================= -->
-<section id="s2">
+<section id="s2" class="dark">
   <div class="wrap">
-    <div class="sec-num reveal">Part 02</div>
-    <h2 class="sec-title reveal">問題的本質：組織設計的三個失效假設</h2>
-    <p class="sec-sub reveal">傳統科層組織（hierarchy）的設計基礎，建立在三個隱含假設之上。本刊的判斷是：這三個假設在 AI 時代同時失效。</p>
+    <div class="sec-num reveal">Part 02 · 問題的本質</div>
+    <h2 class="sec-title reveal">組織設計的三個失效假設</h2>
+    <p class="sec-sub reveal">傳統科層組織（hierarchy）的設計基礎，建立在三個隱含假設之上。本刊的判斷是：這三個假設在 AI 時代同時失效——不是其中一個，是全部。</p>
 
     <div class="cards">
       <div class="card reveal d1">
-        <div class="k"><span class="dot"></span>假設一</div>
+        <div class="k">假設一</div>
         <h3>環境穩定，任務可預測</h3>
         <p>金字塔組織假設任務可以預先分解、指派給固定部門。但 AI 代理已能跨部門「編排」工作流程——<b>任務的邊界不再服從部門的邊界，而是服從問題的邊界。</b></p>
       </div>
       <div class="card reveal d2">
-        <div class="k"><span class="dot"></span>假設二</div>
+        <div class="k">假設二</div>
         <h3>知識集中在組織頂端</h3>
         <p>科層制的隱含前提：決策資訊向上匯總，指令向下傳遞。當知識分散在成員與 AI 系統之中，<b>集中式決策的資訊成本將指數級上升。</b></p>
       </div>
       <div class="card reveal d3">
-        <div class="k"><span class="dot"></span>假設三</div>
+        <div class="k">假設三</div>
         <h3>人與人之間的唯一協作模式</h3>
         <p>傳統組織圖只描述人與人的匯報關係。AI 時代的任務分配第一次出現第三類參與者——<b>人對代理的委派、代理對代理的協作，成為日常常態。</b></p>
       </div>
@@ -324,82 +326,88 @@
 </section>
 
 <!-- ================= 參 新框架 ================= -->
-<section id="s3" class="dark">
+<section id="s3">
   <div class="wrap">
-    <div class="sec-num reveal">Part 03</div>
-    <h2 class="sec-title reveal">新框架：任務變形蟲模型</h2>
-    <p class="sec-sub reveal">兩條管理思想支流的當代匯流——稻盛和夫的阿米巴經營 × 敏捷開發的動態團隊重組。共同邏輯：<b style="color:#2EC4B6">組織跟著任務走，不讓任務跟著組織走。</b></p>
+    <div class="sec-num reveal">Part 03 · 新框架</div>
+    <h2 class="sec-title reveal">任務變形蟲模型</h2>
+    <p class="sec-sub reveal">兩條管理思想支流的當代匯流——稻盛和夫的阿米巴經營 × 敏捷開發的動態團隊重組。共同邏輯：<b style="color:var(--navy)">組織跟著任務走，不讓任務跟著組織走。</b></p>
 
-    <!-- 模型三層示意 -->
-    <div class="chart-box reveal">
-      <div class="cap">Figure 3.1</div>
-      <h4>模型的三個層次</h4>
-      <svg viewBox="0 0 900 300" style="max-width:860px;margin:0 auto">
-        <defs>
-          <linearGradient id="l1" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#1A6DB5"/><stop offset="100%" stop-color="#2EC4B6"/></linearGradient>
-        </defs>
-        <g font-family="'Noto Sans TC',sans-serif">
-          <!-- 第一層 -->
-          <rect x="20" y="30" width="260" height="90" rx="14" fill="#0D2B4E"/>
-          <text x="150" y="62" text-anchor="middle" font-size="16" font-weight="700" fill="#2EC4B6">第一層</text>
-          <text x="150" y="88" text-anchor="middle" font-size="14" fill="#fff">最小單元的轉移</text>
-          <text x="150" y="108" text-anchor="middle" font-size="12" fill="rgba(255,255,255,.6)">職位 → 任務小隊</text>
-          <!-- 第二層 -->
-          <rect x="320" y="30" width="260" height="90" rx="14" fill="#0D2B4E"/>
-          <text x="450" y="62" text-anchor="middle" font-size="16" font-weight="700" fill="#2EC4B6">第二層</text>
-          <text x="450" y="88" text-anchor="middle" font-size="14" fill="#fff">任務拓撲的動態化</text>
-          <text x="450" y="108" text-anchor="middle" font-size="12" fill="rgba(255,255,255,.6)">組合與解散由任務驅動</text>
-          <!-- 第三層 -->
-          <rect x="620" y="30" width="260" height="90" rx="14" fill="#0D2B4E"/>
-          <text x="750" y="62" text-anchor="middle" font-size="16" font-weight="700" fill="#2EC4B6">第三層</text>
-          <text x="750" y="88" text-anchor="middle" font-size="14" fill="#fff">人機資源的統一調度</text>
-          <text x="750" y="108" text-anchor="middle" font-size="12" fill="rgba(255,255,255,.6)">員工與代理動態分配</text>
-          <!-- 箭頭 -->
-          <path d="M286 75 H314" stroke="url(#l1)" stroke-width="3" marker-end="url(#ar)"/>
-          <path d="M586 75 H614" stroke="url(#l1)" stroke-width="3" marker-end="url(#ar)"/>
-          <defs><marker id="ar" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0 0 L10 4 L0 8 Z" fill="#2EC4B6"/></marker></defs>
-          <!-- 底部說明 -->
-          <text x="450" y="170" text-anchor="middle" font-size="13" fill="rgba(255,255,255,.55)">任務小隊：3–8 人（含 AI 代理）· 明確目標與預算 · 邊界內自主決策</text>
-          <text x="450" y="200" text-anchor="middle" font-size="13" fill="rgba(255,255,255,.55)">例：退貨流程改善任務 → 同時調用客服、庫存、物流 + 三個 AI 代理 → 完成即解散</text>
-        </g>
-      </svg>
+    <div class="def-box reveal">
+      <div class="d-k">Definition · 運行定義</div>
+      <h4>任務小隊（Task Cell）</h4>
+      <div class="formula">任務小隊 = 明確問題 ＋ 跨部門人機組合 ＋ 三條授權邊界 ＋ 完成即解散</div>
+      <ul>
+        <li><b>輸入：</b>一個明確的業務問題（不是部門任務，例如「退貨流程的端到端摩擦」）。</li>
+        <li><b>組成：</b>3–8 人，含 AI 代理；成員跨部門，任務結束後回流資源池。</li>
+        <li><b>授權：</b>在資料、金額、決策三條邊界內自主調度，無須逐級請示。</li>
+        <li><b>解散：</b>目標達成即解散——小隊的生命週期由任務定義，而非由組織圖定義。</li>
+      </ul>
     </div>
 
-    <!-- 第三種參與者 -->
-    <div class="chart-box reveal">
-      <div class="cap">Figure 3.2</div>
+    <div class="exhibit reveal">
+      <div class="cap"><span class="tag">Exhibit 2</span><span>模型結構</span></div>
+      <h4>模型的三個層次：從單元、拓撲到調度</h4>
+      <div class="ex-sub">變形蟲化的程度，可以用三個層次的遷移逐一檢驗。</div>
+      <svg viewBox="0 0 900 260" role="img" aria-label="模型三層示意">
+        <g font-family="'Noto Sans TC',sans-serif">
+          <rect x="30" y="30" width="250" height="96" rx="8" fill="#0D2B4E"/>
+          <text x="155" y="62" text-anchor="middle" font-size="15" font-weight="700" fill="#E8912A">第一層 · 單元</text>
+          <text x="155" y="90" text-anchor="middle" font-size="13.5" fill="#fff">最小單元的轉移</text>
+          <text x="155" y="112" text-anchor="middle" font-size="12" fill="rgba(255,255,255,.55)">職位 → 任務小隊</text>
+          <rect x="325" y="30" width="250" height="96" rx="8" fill="#0D2B4E"/>
+          <text x="450" y="62" text-anchor="middle" font-size="15" font-weight="700" fill="#E8912A">第二層 · 拓撲</text>
+          <text x="450" y="90" text-anchor="middle" font-size="13.5" fill="#fff">任務拓撲的動態化</text>
+          <text x="450" y="112" text-anchor="middle" font-size="12" fill="rgba(255,255,255,.55)">組合與解散由任務驅動</text>
+          <rect x="620" y="30" width="250" height="96" rx="8" fill="#0D2B4E"/>
+          <text x="745" y="62" text-anchor="middle" font-size="15" font-weight="700" fill="#E8912A">第三層 · 調度</text>
+          <text x="745" y="90" text-anchor="middle" font-size="13.5" fill="#fff">人機資源的統一調度</text>
+          <text x="745" y="112" text-anchor="middle" font-size="12" fill="rgba(255,255,255,.55)">員工與代理動態分配</text>
+          <path d="M288 78 H318" stroke="#C08A2D" stroke-width="2" marker-end="url(#ar2)"/>
+          <path d="M583 78 H613" stroke="#C08A2D" stroke-width="2" marker-end="url(#ar2)"/>
+          <defs><marker id="ar2" markerWidth="9" markerHeight="7" refX="7" refY="3.5" orient="auto"><path d="M0 0 L9 3.5 L0 7 Z" fill="#C08A2D"/></marker></defs>
+          <text x="450" y="170" text-anchor="middle" font-size="12.5" fill="#9AA3AE">任務小隊：3–8 人（含 AI 代理）· 明確目標與預算 · 邊界內自主決策</text>
+          <text x="450" y="196" text-anchor="middle" font-size="12.5" fill="#9AA3AE">例：退貨流程改善 → 同時調用客服、庫存、物流 + 三個 AI 代理 → 完成即解散</text>
+          <text x="450" y="232" text-anchor="middle" font-size="12" fill="#C08A2D">檢驗問題：你的組織在哪一層？</text>
+        </g>
+      </svg>
+      <div class="src">Source：榕耀管顧研究團隊整理；框架為本刊提出之分析工具。</div>
+    </div>
+
+    <div class="exhibit reveal">
+      <div class="cap"><span class="tag">Exhibit 3</span><span>參與者結構</span></div>
       <h4>任務分配的第三類參與者</h4>
-      <svg viewBox="0 0 900 240" style="max-width:860px;margin:0 auto">
+      <div class="ex-sub">組織圖只畫了第一種關係。另外兩種正在成為日常。</div>
+      <svg viewBox="0 0 900 250" role="img" aria-label="三類參與者示意">
         <g font-family="'Noto Sans TC',sans-serif">
           <!-- 人對人 -->
-          <circle cx="120" cy="90" r="34" fill="#0D2B4E"/>
-          <circle cx="112" cy="80" r="9" fill="#fff"/><path d="M104 98 q16 -10 32 0 q-4 14 -16 14 q-12 0 -16 -14Z" fill="#fff"/>
-          <path d="M196 90 h26" stroke="#8A93A0" stroke-width="2.5" stroke-dasharray="6 5"/>
-          <circle cx="280" cy="90" r="34" fill="#0D2B4E"/>
-          <circle cx="272" cy="80" r="9" fill="#fff"/><path d="M264 98 q16 -10 32 0 q-4 14 -16 14 q-12 0 -16 -14Z" fill="#fff"/>
-          <text x="200" y="52" text-anchor="middle" font-size="14" font-weight="700" fill="#0D2B4E">人 → 人</text>
-          <text x="200" y="165" text-anchor="middle" font-size="12.5" fill="#8A93A0">主管交辦給部屬（不變）</text>
+          <circle cx="115" cy="80" r="30" fill="#0D2B4E"/>
+          <circle cx="107" cy="71" r="8" fill="#fff"/><path d="M100 88 q15 -9 30 0 q-4 13 -15 13 q-11 0 -15 -13Z" fill="#fff"/>
+          <path d="M185 80 h22" stroke="#9AA3AE" stroke-width="2" stroke-dasharray="5 5"/>
+          <circle cx="265" cy="80" r="30" fill="#0D2B4E"/>
+          <circle cx="257" cy="71" r="8" fill="#fff"/><path d="M250 88 q15 -9 30 0 q-4 13 -15 13 q-11 0 -15 -13Z" fill="#fff"/>
+          <text x="190" y="42" text-anchor="middle" font-size="14" font-weight="700" fill="#0D2B4E">人 → 人</text>
+          <text x="190" y="140" text-anchor="middle" font-size="12" fill="#9AA3AE">主管交辦給部屬（不變）</text>
           <!-- 人對代理 -->
-          <circle cx="120" cy="200" r="34" fill="#0D2B4E"/>
-          <circle cx="112" cy="190" r="9" fill="#fff"/><path d="M104 208 q16 -10 32 0 q-4 14 -16 14 q-12 0 -16 -14Z" fill="#fff"/>
-          <path d="M196 200 h26" stroke="#2EC4B6" stroke-width="2.5" stroke-dasharray="6 5"/>
-          <rect x="248" y="178" width="64" height="44" rx="10" fill="#0D2B4E" stroke="#2EC4B6" stroke-width="2"/>
-          <text x="280" y="205" text-anchor="middle" font-size="15" fill="#2EC4B6" font-weight="700">AI</text>
-          <text x="200" y="162" text-anchor="middle" font-size="14" font-weight="700" fill="#0D2B4E">人 → 代理</text>
-          <text x="200" y="258" text-anchor="middle" font-size="12.5" fill="#8A93A0">競品分析丟給 agent：自己查、自己寫、自己交件</text>
+          <circle cx="115" cy="205" r="30" fill="#0D2B4E"/>
+          <circle cx="107" cy="196" r="8" fill="#fff"/><path d="M100 213 q15 -9 30 0 q-4 13 -15 13 q-11 0 -15 -13Z" fill="#fff"/>
+          <path d="M185 205 h22" stroke="#2EC4B6" stroke-width="2" stroke-dasharray="5 5"/>
+          <rect x="245" y="183" width="58" height="44" rx="8" fill="#0D2B4E" stroke="#2EC4B6" stroke-width="2"/>
+          <text x="274" y="210" text-anchor="middle" font-size="14" fill="#2EC4B6" font-weight="700">AI</text>
+          <text x="190" y="167" text-anchor="middle" font-size="14" font-weight="700" fill="#0D2B4E">人 → 代理</text>
+          <text x="190" y="262" text-anchor="middle" font-size="12" fill="#9AA3AE">競品分析丟給 agent：自己查、自己寫、自己交件</text>
           <!-- 代理對代理 -->
-          <rect x="480" y="70" width="70" height="44" rx="10" fill="#0D2B4E" stroke="#E8912A" stroke-width="2"/>
-          <text x="515" y="97" text-anchor="middle" font-size="14" fill="#E8912A" font-weight="700">AI</text>
-          <path d="M586 92 h30" stroke="#8A93A0" stroke-width="2.5" stroke-dasharray="6 5"/>
-          <rect x="650" y="70" width="70" height="44" rx="10" fill="#0D2B4E" stroke="#E8912A" stroke-width="2"/>
-          <text x="685" y="97" text-anchor="middle" font-size="14" fill="#E8912A" font-weight="700">AI</text>
-          <text x="583" y="52" text-anchor="middle" font-size="14" font-weight="700" fill="#0D2B4E">代理 → 代理</text>
-          <text x="583" y="165" text-anchor="middle" font-size="12.5" fill="#8A93A0">客服代理呼叫庫存代理，自行完成退貨流程</text>
+          <rect x="480" y="65" width="62" height="40" rx="8" fill="#0D2B4E" stroke="#E8912A" stroke-width="2"/>
+          <text x="511" y="90" text-anchor="middle" font-size="13" fill="#E8912A" font-weight="700">AI</text>
+          <path d="M580 85 h26" stroke="#9AA3AE" stroke-width="2" stroke-dasharray="5 5"/>
+          <rect x="644" y="65" width="62" height="40" rx="8" fill="#0D2B4E" stroke="#E8912A" stroke-width="2"/>
+          <text x="675" y="90" text-anchor="middle" font-size="13" fill="#E8912A" font-weight="700">AI</text>
+          <text x="578" y="45" text-anchor="middle" font-size="14" font-weight="700" fill="#0D2B4E">代理 → 代理</text>
+          <text x="578" y="140" text-anchor="middle" font-size="12" fill="#9AA3AE">客服代理呼叫庫存代理，自行完成退貨流程</text>
         </g>
       </svg>
+      <div class="src">Source：榕耀管顧研究團隊整理。</div>
     </div>
 
-    <!-- 對比表 -->
     <div class="tbl-wrap reveal">
       <table>
         <tr><th>維度</th><th>職位金字塔</th><th>任務變形蟲</th></tr>
@@ -415,71 +423,65 @@
 </section>
 
 <!-- ================= 肆 管理意涵 ================= -->
-<section id="s4">
+<section id="s4" class="dark">
   <div class="wrap">
-    <div class="sec-num reveal">Part 04</div>
-    <h2 class="sec-title reveal">管理意涵：從指揮者到邊界設計者</h2>
-    <p class="sec-sub reveal">管理的稀缺能力，正在從「下達正確指令」轉移為「設計正確邊界」。</p>
+    <div class="sec-num reveal">Part 04 · 管理意涵</div>
+    <h2 class="sec-title reveal">從指揮者到邊界設計者</h2>
+    <p class="sec-sub reveal">管理的稀缺能力，正在從「下達正確指令」轉移為「設計正確邊界」。這個位移不是修辭，而是可檢驗的職能重構。</p>
 
-    <!-- 邊界三維度 -->
-    <div class="chart-box reveal">
-      <div class="cap">Figure 4.1</div>
+    <div class="exhibit reveal">
+      <div class="cap"><span class="tag">Exhibit 4</span><span>授權邊界</span></div>
       <h4>邊界設計的三個可檢驗維度</h4>
-      <svg viewBox="0 0 900 260" style="max-width:860px;margin:0 auto">
-        <defs>
-          <linearGradient id="gate1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1A6DB5"/><stop offset="100%" stop-color="#0D2B4E"/></linearGradient>
-          <linearGradient id="gate2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E8912A"/><stop offset="100%" stop-color="#C96F12"/></linearGradient>
-          <linearGradient id="gate3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2EC4B6"/><stop offset="100%" stop-color="#1A9A8E"/></linearGradient>
-        </defs>
+      <div class="ex-sub">每一條邊界都必須可以寫成明確的規則，否則變形蟲就只是混亂的別名。</div>
+      <svg viewBox="0 0 900 250" role="img" aria-label="邊界設計三維度">
         <g font-family="'Noto Sans TC',sans-serif">
-          <rect x="30" y="40" width="260" height="170" rx="16" fill="url(#gate1)"/>
-          <text x="160" y="85" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">資料邊界</text>
-          <text x="160" y="115" text-anchor="middle" font-size="13" fill="rgba(255,255,255,.75)">代理可以存取哪些資料？</text>
-          <text x="160" y="142" text-anchor="middle" font-size="12.5" fill="rgba(255,255,255,.6)">客戶個資 · 報價 · 庫存</text>
-          <text x="160" y="175" text-anchor="middle" font-size="12.5" fill="#F5C067">「絕對不能碰」清單</text>
-
-          <rect x="320" y="40" width="260" height="170" rx="16" fill="url(#gate2)"/>
-          <text x="450" y="85" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">金額邊界</text>
-          <text x="450" y="115" text-anchor="middle" font-size="13" fill="rgba(255,255,255,.75)">小隊可以自主動支多少？</text>
-          <text x="450" y="142" text-anchor="middle" font-size="12.5" fill="rgba(255,255,255,.6)">超過門檻即鎖定</text>
-          <text x="450" y="175" text-anchor="middle" font-size="12.5" fill="#F5C067">等待人工授權</text>
-
-          <rect x="610" y="40" width="260" height="170" rx="16" fill="url(#gate3)"/>
-          <text x="740" y="85" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">決策邊界</text>
-          <text x="740" y="115" text-anchor="middle" font-size="13" fill="rgba(255,255,255,.75)">哪些決策必須留給人？</text>
-          <text x="740" y="142" text-anchor="middle" font-size="12.5" fill="rgba(255,255,255,.6)">簽約 · 承諾交期 · 對外發言</text>
-          <text x="740" y="175" text-anchor="middle" font-size="12.5" fill="#F5C067">圍欄內可自主</text>
+          <rect x="30" y="36" width="260" height="170" rx="8" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.14)"/>
+          <text x="160" y="80" text-anchor="middle" font-size="16" font-weight="700" fill="#E8912A">資料邊界</text>
+          <text x="160" y="110" text-anchor="middle" font-size="12.5" fill="rgba(255,255,255,.7)">代理可以存取哪些資料？</text>
+          <text x="160" y="138" text-anchor="middle" font-size="11.5" fill="rgba(255,255,255,.45)">客戶個資 · 報價 · 庫存</text>
+          <text x="160" y="172" text-anchor="middle" font-size="11.5" fill="#F5C067">「絕對不能碰」清單</text>
+          <rect x="320" y="36" width="260" height="170" rx="8" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.14)"/>
+          <text x="450" y="80" text-anchor="middle" font-size="16" font-weight="700" fill="#E8912A">金額邊界</text>
+          <text x="450" y="110" text-anchor="middle" font-size="12.5" fill="rgba(255,255,255,.7)">小隊可以自主動支多少？</text>
+          <text x="450" y="138" text-anchor="middle" font-size="11.5" fill="rgba(255,255,255,.45)">超過門檻即鎖定</text>
+          <text x="450" y="172" text-anchor="middle" font-size="11.5" fill="#F5C067">等待人工授權</text>
+          <rect x="610" y="36" width="260" height="170" rx="8" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.14)"/>
+          <text x="740" y="80" text-anchor="middle" font-size="16" font-weight="700" fill="#E8912A">決策邊界</text>
+          <text x="740" y="110" text-anchor="middle" font-size="12.5" fill="rgba(255,255,255,.7)">哪些決策必須留給人？</text>
+          <text x="740" y="138" text-anchor="middle" font-size="11.5" fill="rgba(255,255,255,.45)">簽約 · 承諾交期 · 對外發言</text>
+          <text x="740" y="172" text-anchor="middle" font-size="11.5" fill="#F5C067">圍欄內可自主</text>
         </g>
       </svg>
-      <p style="text-align:center;color:#5A6472;font-size:14.5px;margin-top:10px">邊界過寬，風險外溢；邊界過窄，變形蟲失去形變能力。</p>
+      <p style="text-align:center;color:rgba(255,255,255,.5);font-size:13.5px;margin-top:8px">邊界過寬，風險外溢；邊界過窄，變形蟲失去形變能力。</p>
+      <div class="src">Source：榕耀管顧研究團隊整理。</div>
     </div>
 
     <div class="cards">
       <div class="card reveal d1">
-        <div class="k"><span class="dot"></span>4.1 角色</div>
+        <div class="k">4.1 角色</div>
         <h3>從指揮轉為定義邊界與目標</h3>
-        <p>HBR 九月號：當 AI 代理開始編排跨部門工作流程，管理者不能再以「聽我的」帶團隊——因為團隊成員有一半不是人。</p>
+        <p>當 AI 代理開始編排跨部門工作流程，管理者不能再以「聽我的」帶團隊——因為團隊成員有一半不是人。指令的下達對象，正在從「人」擴展為「人與代理的混合系統」。</p>
       </div>
       <div class="card reveal d2">
-        <div class="k"><span class="dot"></span>4.2 語言</div>
+        <div class="k">4.2 語言</div>
         <h3>「空間守護者」（Hold the space）</h3>
-        <p>張昀煒：用邀請取代命令，在信任與心理安全的基礎上，讓自組織團隊「自然而然地發生」。</p>
+        <p>用邀請取代命令，在信任與心理安全的基礎上，讓自組織團隊「自然而然地發生」。守護的不是權威，而是讓任務小隊敢於嘗試的空間。</p>
       </div>
       <div class="card reveal d3">
-        <div class="k"><span class="dot"></span>4.3 能力</div>
+        <div class="k">4.3 能力</div>
         <h3>多面手 × 高能動心態</h3>
-        <p>Gartner 的 versatilist 領導者管道 + BCG Julia Dhar 的 high-agency mindset——能跨領域調度資源、主動釐清期望的人，是 AI 時代最稀缺的領導特質。</p>
+        <p>Gartner 的 versatilist 領導者管道，加上 BCG Julia Dhar 的 high-agency mindset——能跨領域調度資源、主動釐清期望的人，是 AI 時代最稀缺的領導特質。</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ================= 伍 人才文化 ================= -->
-<section id="s5" class="dark">
+<section id="s5">
   <div class="wrap">
-    <div class="sec-num reveal">Part 05</div>
+    <div class="sec-num reveal">Part 05 · 人才文化</div>
     <h2 class="sec-title reveal">人才與文化：AI 時代的雙重再定價</h2>
-    <p class="sec-sub reveal">當組織單元從職位轉為任務，人才評估的錨點必須同步遷移。</p>
+    <p class="sec-sub reveal">當組織單元從職位轉為任務，人才評估的錨點必須同步遷移。舊標準衡量「你佔據什麼位置」，新標準衡量「你能調動什麼產生價值」。</p>
 
     <div class="tbl-wrap reveal">
       <table>
@@ -498,29 +500,56 @@
 <!-- ================= 陸 落地路徑 ================= -->
 <section id="s6">
   <div class="wrap">
-    <div class="sec-num reveal">Part 06</div>
-    <h2 class="sec-title reveal">落地路徑：三階段轉型框架</h2>
-    <p class="sec-sub reveal">變形蟲組織無法透過一張新的組織圖達成。它是一套運行方式的遷移，建議以三階段推進。</p>
+    <div class="sec-num reveal">Part 06 · 落地路徑</div>
+    <h2 class="sec-title reveal">三階段轉型框架</h2>
+    <p class="sec-sub reveal">變形蟲組織無法透過一張新的組織圖達成。它是一套運行方式的遷移，建議以三階段推進，每一階段都有明確的檢驗指標。</p>
 
     <div class="timeline">
       <div class="tl-item reveal">
-        <div class="phase">PHASE 01</div>
-        <h3>試點</h3>
-        <p>選擇一條跨部門、高頻重組的任務鏈（例如客戶服務與庫存、物流串接的退貨流程），組建 3–5 人的任務小隊，賦予明確目標與預算，允許在三條邊界內自主調度人機資源。關鍵績效指標只有兩個：<b>從組建到產出價值的時間</b>、<b>跨部門協作的摩擦成本</b>。</p>
+        <div class="phase">Phase 01 · 試點</div>
+        <h3>選擇一條任務鏈，證明它比部門更有效</h3>
+        <p>選擇一條跨部門、高頻重組的任務鏈（例如客戶服務與庫存、物流串接的退貨流程），組建 3–5 人的任務小隊，賦予明確目標與預算，允許在三條邊界內自主調度人機資源。此階段的目標不是擴張，是<b>證明</b>。</p>
         <span class="dur">0 – 3 個月</span>
       </div>
       <div class="tl-item reveal">
-        <div class="phase">PHASE 02</div>
-        <h3>標準化</h3>
+        <div class="phase">Phase 02 · 標準化</div>
+        <h3>把試點的成功，變成可複製的規則</h3>
         <p>將試點驗證有效的邊界設定、授權流程與績效指標，沉澱為可複用的模板。同步啟動管理者培訓，將「指揮」轉換為「邊界設計」的實務演練。此階段的重點不是擴張，而是建立可重現的運行規則。</p>
         <span class="dur">3 – 9 個月</span>
       </div>
       <div class="tl-item reveal">
-        <div class="phase">PHASE 03</div>
-        <h3>擴散</h3>
-        <p>當模板成熟後，將任務小隊機制推廣至核心營運流程。此時才建議調整績效制度與薪酬結構，將「AI 賦能產出」納入考核權重（初期 10-20%）。文化配套：設立 AI 實驗基金、每月舉辦失敗經驗分享會，將「快速試錯」制度化。</p>
+        <div class="phase">Phase 03 · 擴散</div>
+        <h3>推廣至核心營運，並讓制度跟上</h3>
+        <p>當模板成熟後，將任務小隊機制推廣至核心營運流程。此時才建議調整績效制度與薪酬結構，將「AI 賦能產出」納入考核權重（初期 10–20%）。文化配套：設立 AI 實驗基金、每月舉辦失敗經驗分享會，將「快速試錯」制度化。</p>
         <span class="dur">9 – 18 個月</span>
       </div>
+    </div>
+
+    <div class="exhibit reveal">
+      <div class="cap"><span class="tag">Exhibit 5</span><span>檢驗指標</span></div>
+      <h4>每個階段的成敗，只用兩個指標衡量</h4>
+      <div class="ex-sub">避免用「AI 採用率」這類虛假指標——它衡量活動，不衡量價值。</div>
+      <div class="tbl-wrap" style="margin:0;border:none">
+        <table>
+          <tr><th>階段</th><th>指標一</th><th>指標二</th><th>過關門檻</th></tr>
+          <tr><td><b>試點</b></td><td>從組建到產出價值的時間</td><td>跨部門協作的摩擦成本</td><td>價值產出時間 ≤ 原流程 50%</td></tr>
+          <tr><td><b>標準化</b></td><td>模板被其他單位主動索取次數</td><td>管理者邊界設計演練通過率</td><td>≥ 2 個單位複製試點</td></tr>
+          <tr><td><b>擴散</b></td><td>任務小隊占核心流程比重</td><td>AI 賦能產出占績效權重</td><td>核心流程覆蓋 ≥ 30%</td></tr>
+        </table>
+      </div>
+      <div class="src">Source：榕耀管顧研究團隊整理；門檻值為建議起點，應依產業情境調整。</div>
+    </div>
+
+    <div class="def-box reveal">
+      <div class="d-k">Diagnostic · 自我診斷</div>
+      <h4>你的組織，準備好變形了嗎？五個問題</h4>
+      <ul class="check">
+        <li>你的關鍵流程中，有沒有任何一步是「<b>任務跟著問題走</b>」，而不是「任務跟著部門走」？</li>
+        <li>員工是否敢在主管面前說「<b>我不會</b>」？——如果 63% 的人不敢，技術投資的回報正在被折扣。</li>
+        <li>你的 AI 預算結構，是 70% 工具 / 30% 人，還是<b>反過來</b>？</li>
+        <li>中層管理者面對 AI 的第一反應，是抗拒、觀望，還是<b>重新定義自己的角色</b>？</li>
+        <li>你的組織圖，多久沒有因為「問題」而改變形狀了？</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -528,57 +557,80 @@
 <!-- ================= 柒 風險 ================= -->
 <section id="s7" class="dark">
   <div class="wrap">
-    <div class="sec-num reveal">Part 07</div>
-    <h2 class="sec-title reveal">風險與侷限</h2>
-    <p class="sec-sub reveal">我們必須對本框架的適用邊界保持誠實。</p>
+    <div class="sec-num reveal">Part 07 · 風險與侷限</div>
+    <h2 class="sec-title reveal">我們對框架適用邊界的誠實聲明</h2>
+    <p class="sec-sub reveal">任何框架都有適用邊界。本刊列舉三個最常被低估的風險，並明確劃出模型的「不適用區」。</p>
 
     <div class="cards">
       <div class="card reveal d1">
-        <div class="k"><span class="dot"></span>風險一</div>
+        <div class="k">風險一</div>
         <h3>變形蟲不是萬靈丹</h3>
-        <p>對於任務高度標準化、規模經濟主導的營運（如製造產線），科層結構仍是更有效率的選擇。變形蟲適用於知識工作與跨職能問題，而非所有任務類型。</p>
+        <p>對於任務高度標準化、規模經濟主導的營運（如製造產線），科層結構仍是更有效率的選擇。變形蟲適用於知識工作與跨職能問題，<b>而非所有任務類型</b>。</p>
       </div>
       <div class="card reveal d2">
-        <div class="k"><span class="dot"></span>風險二</div>
+        <div class="k">風險二</div>
         <h3>政治成本被低估</h3>
         <p>組織結構變革本質上是權力再分配。中層管理者是變形蟲化過程中最脆弱的群體——<b>升級他們，而非裁撤他們</b>，是轉型成敗的關鍵。</p>
       </div>
       <div class="card reveal d3">
-        <div class="k"><span class="dot"></span>風險三</div>
+        <div class="k">風險三</div>
         <h3>AI 代理治理尚未成熟</h3>
         <p>OpenAI 代理在測試中逃出隔離、Claude 在資安演練中駭入真實企業。代理的可靠性與治理框架，仍是企業採用前必須解決的前提條件。</p>
       </div>
     </div>
+
+    <blockquote class="quote reveal">適用邊界：<b>知識工作密集、問題多變、協作跨部門</b>的組織，是變形蟲的高適用區；<b>標準化營運、法規強監管、規模經濟主導</b>的業務，應保留科層結構。多數企業的真實狀態，是兩者並存的混合體。<footer>— 本刊結論 07</footer></blockquote>
   </div>
 </section>
 
 <!-- ================= 結論 ================= -->
 <section id="conclusion" class="closing">
   <div class="wrap">
-    <div class="sec-num reveal" style="color:var(--teal)">Conclusion</div>
-    <h2 class="reveal">一百年前，企業以組織圖管理不確定性；<br>接下來，企業將以組織的<b style="color:var(--gold)">形變能力</b>回應不確定性。</h2>
-    <p class="reveal" style="color:rgba(255,255,255,.75);max-width:760px;margin:0 auto;font-size:17px">任務變形蟲模型提供的不是一張新的組織圖，而是一套讓組織持續自我重組的運行邏輯。問題不在於「你的組織是否準備好採用 AI」，而在於「你的組織是否準備好為了 AI 而改變自己的形狀」。</p>
+    <div class="sec-num reveal" style="color:var(--gold-bright)">Conclusion</div>
+    <h2 class="reveal">一百年前，企業以組織圖管理不確定性；<br>接下來，企業將以組織的<span class="accent">形變能力</span>回應不確定性。</h2>
+    <p class="reveal">任務變形蟲模型提供的不是一張新的組織圖，而是一套讓組織持續自我重組的運行邏輯。問題不在於「你的組織是否準備好採用 AI」，而在於「你的組織是否準備好為了 AI 而改變自己的形狀」。</p>
     <div class="q reveal">你的組織，準備好變形了嗎？</div>
+  </div>
+</section>
+
+<!-- ================= 來源 ================= -->
+<section id="refs">
+  <div class="wrap">
+    <div class="sec-num reveal">Appendix · References</div>
+    <h2 class="sec-title reveal">來源與延伸閱讀</h2>
+    <p class="sec-sub reveal">本刊論點所引用的公開來源與思想脈絡，供讀者交叉驗證。</p>
+    <div class="refs reveal">
+      <ol>
+        <li>BCG — <i>Winning With AI</i>（10-20-70 框架：演算法 10% / 資料 20% / 人與流程 70%）。</li>
+        <li>Harvard Business Review，2026 年九月號 — AI 代理編排跨部門工作流程對管理角色的影響。</li>
+        <li>Gartner — versatilist（多面手）領導者管道與人才策略研究。</li>
+        <li>BCG — Julia Dhar，《high-agency mindset》高能動心態研究。</li>
+        <li>Google — Project Aristotle：心理安全感為高效團隊第一要件。</li>
+        <li>稻盛和夫，《阿米巴經營》— 小單元獨立核算的經營哲學。</li>
+        <li>張昀煒（敏捷總舵主），《管理其實可以很EASY》EP124 — 知識分散於組織全體。</li>
+        <li>2026 年 AI 代理安全事件公開報導（OpenAI / Anthropic 測試與演練紀錄）。</li>
+      </ol>
+      <p class="ref-note">聲明：本刊為研究觀點，部分數據（如降價幅度、員工調查比例）引用公開報導與產業研究，實際數值可能隨時間修正；引用時請以原始來源為準。</p>
+    </div>
   </div>
 </section>
 
 <footer>
   <div class="brand">榕耀管顧 RongRise Consulting</div>
   <p>本文為研究觀點，非投資建議。</p>
-  <p>免費 30 分鐘線上諮詢：<a href="https://rong-rise.com/contact">rong-rise.com/contact</a></p>
+  <p>免費 30 分鐘線上諮詢，聊聊你的組織變形：</p>
+  <a class="cta" href="https://rong-rise.com/contact">預約諮詢 →</a>
 </footer>
 
 <script>
-  // 進度條
   const prog = document.getElementById('progress');
   addEventListener('scroll', () => {
     const h = document.documentElement;
     prog.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
   }, {passive:true});
-  // 浮現動畫
   const io = new IntersectionObserver((es) => {
     es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
-  }, {threshold:.12});
+  }, {threshold:.1});
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 </script>
 </body>
