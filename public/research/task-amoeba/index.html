@@ -40,7 +40,12 @@
   .cover .eyebrow::before{content:'';width:34px;height:1px;background:var(--gold-bright);opacity:.6}
   .cover h1{font-family:'Noto Serif TC',serif;font-size:clamp(32px,5.2vw,58px);font-weight:900;line-height:1.3;letter-spacing:.01em;margin-bottom:24px}
   .cover h1 .en{display:block;font-size:.4em;font-weight:500;letter-spacing:.32em;color:var(--gold-bright);margin-bottom:16px;font-family:'Noto Sans TC',sans-serif;text-transform:uppercase}
-  .cover .dek{font-size:clamp(15px,1.8vw,18px);color:rgba(255,255,255,.8);max-width:620px;margin-bottom:48px;line-height:1.9}
+  .cover .dek{font-size:clamp(15px,1.8vw,18px);color:rgba(255,255,255,.8);max-width:620px;margin-bottom:40px;line-height:1.9}
+  /* ===== 下載按鈕 ===== */
+  .dl-row{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:44px}
+  .dl-btn{display:inline-block;background:var(--gold-bright);color:var(--navy-deep);font-weight:700;font-size:14.5px;letter-spacing:.06em;padding:13px 30px;border-radius:8px;text-decoration:none;transition:all .25s;box-shadow:0 6px 20px -8px rgba(232,145,42,.5)}
+  .dl-btn:hover{background:#F5A53E;transform:translateY(-1px)}
+  .dl-note{font-size:12.5px;color:rgba(255,255,255,.5);letter-spacing:.03em}
   .cover .meta{display:flex;gap:0;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.14);padding-top:28px}
   .cover .meta div{padding:0 32px;border-left:1px solid rgba(255,255,255,.14)}
   .cover .meta div:first-child{padding-left:0;border-left:none}
@@ -160,7 +165,7 @@
   .d1{transition-delay:.06s}.d2{transition-delay:.12s}.d3{transition-delay:.18s}.d4{transition-delay:.24s}
   /* ===== 印刷 ===== */
   @media print{
-    #progress,nav.toc,.scroll-hint{display:none!important}
+    #progress,nav.toc,.scroll-hint,.dl-row{display:none!important}
     body{background:#fff;font-size:12.5pt}
     section{padding:32px 0;page-break-inside:avoid}
     .cover{min-height:auto;page-break-after:always}
@@ -187,6 +192,10 @@
       任務變形蟲：AI 成熟之後，<br>組織設計重回戰略主軸
     </h1>
     <p class="dek">當 AI 工具像水電瓦斯一樣便宜，競爭優勢不再來自「買得起什麼」，而是「組織怎麼長出來」。本刊提出任務變形蟲模型（Task Amoeba Model）——一套讓組織持續自我重組的運行邏輯，並提供可檢驗的落地路徑。</p>
+    <div class="dl-row">
+      <a class="dl-btn" href="task-amoeba.pdf" download>⬇ 下載白皮書 PDF</a>
+      <span class="dl-note">PDF 版 · 適合列印與內部傳閱</span>
+    </div>
     <div class="meta">
       <div><div class="n">70<em>%</em></div><div class="l">轉型成敗取決於人與流程（BCG）</div></div>
       <div><div class="n">3<em> 類</em></div><div class="l">任務參與者：人 · 代理 · 代理×代理</div></div>
