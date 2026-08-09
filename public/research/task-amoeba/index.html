@@ -173,6 +173,42 @@
     .reveal{opacity:1;transform:none}
     a{color:inherit;text-decoration:none}
   }
+  /* ===== 判斷卡（執行摘要強化） ===== */
+  .judge-list{display:grid;gap:14px;margin:40px 0}
+  .judge-card{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:10px;padding:22px 70px 22px 26px;transition:box-shadow .3s,transform .3s;position:relative}
+  .judge-card:hover{box-shadow:0 16px 36px -18px rgba(13,43,78,.2);transform:translateX(4px)}
+  .judge-card .j-no{position:absolute;right:24px;top:14px;font-family:'Noto Serif TC',serif;font-size:40px;font-weight:900;color:rgba(13,43,78,.07);line-height:1}
+  .judge-card .j-lead{font-family:'Noto Serif TC',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:6px}
+  .judge-card .j-detail{font-size:14.5px;color:var(--muted);line-height:1.8}
+  .judge-card .j-detail b{color:var(--ink)}
+  /* ===== 數據卡強化 ===== */
+  .stats{border-radius:14px;box-shadow:0 14px 34px -20px rgba(13,43,78,.3)}
+  .stat{position:relative;overflow:hidden;transition:transform .25s}
+  .stat:hover{transform:translateY(-3px)}
+  .stat::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--gold-bright),rgba(232,145,42,0))}
+  .stat .num{font-size:clamp(32px,3.4vw,44px)}
+  .stat .num em{font-size:.6em;margin-left:1px}
+  /* ===== 數字等寬 ===== */
+  .stat .num,.cover .meta .n,td b,.stats .num{font-variant-numeric:tabular-nums}
+  /* ===== 表格 hover ===== */
+  table tr:hover td{background:rgba(232,145,42,.06)}
+  /* ===== 引用強化 ===== */
+  blockquote.quote{border-left:3px solid var(--gold-bright);font-size:19px;padding:10px 0 10px 30px;background:linear-gradient(90deg,rgba(232,145,42,.07),transparent 70%);border-radius:0 12px 12px 0}
+  blockquote.quote footer{font-size:13px}
+  /* ===== Exhibit 強化 ===== */
+  .exhibit{box-shadow:0 12px 32px -22px rgba(13,43,78,.18)}
+  .exhibit .cap .tag{background:var(--gold);color:#fff;padding:3px 11px;border-radius:5px;letter-spacing:.08em;font-size:10.5px}
+  .exhibit h4{font-size:19px}
+  /* ===== 時間軸強化 ===== */
+  .tl-item .dur{background:rgba(232,145,42,.1);color:#8A5A13;border:1px solid rgba(232,145,42,.25)}
+  .tl-item h3{font-size:21px}
+  /* ===== 診斷清單強化 ===== */
+  .check li{font-size:16px;padding:20px 0 20px 60px}
+  .check li::before{font-size:15px;top:24px}
+  /* ===== 定義框強化 ===== */
+  .def-box .formula{font-size:18px;border:1px solid rgba(232,145,42,.3)}
+  /* ===== 表格 th 強化 ===== */
+  th{font-size:13.5px;letter-spacing:.1em}
   @media(max-width:768px){section{padding:60px 0}.wrap{padding:0 22px}.cover-inner{padding:60px 22px}.exhibit{padding:26px 20px}}
 </style>
 </head>
@@ -228,16 +264,12 @@
     <h2 class="sec-title reveal">執行摘要：五個核心判斷</h2>
     <p class="sec-sub reveal">過去兩年，企業把 AI 轉型等同於工具部署。本刊的結論是：這個階段已經結束。以下五個判斷構成全文的論證骨架。</p>
 
-    <div class="def-box reveal">
-      <div class="d-k">In this report</div>
-      <h4>五個核心判斷</h4>
-      <ul>
-        <li><b>一、工具已不再是戰略。</b>AI 單位成本年降 60–80%，採用 AI 是參賽門票，不是競爭優勢；優勢只能來自組織如何運用。</li>
-        <li><b>二、組織設計成為新的戰略變數。</b>當代理成為任務分配的第三類參與者，組織的最小運作單元將從「職位」轉變為「任務小隊」。</li>
-        <li><b>三、三個失效假設同時崩解。</b>環境穩定、知識集中、人對人協作——科層組織賴以成立的假設，在 AI 時代逐一失效。</li>
-        <li><b>四、管理的稀缺能力位移。</b>從「下達正確指令」轉向「設計正確邊界」；管理者成為邊界設計者，而非指揮者。</li>
-        <li><b>五、落地有路徑，成敗可檢驗。</b>試點 → 標準化 → 擴散，18 個月；真正的成敗變數是心理安全感與中層管理者的升級，而非技術。</li>
-      </ul>
+    <div class="judge-list">
+      <div class="judge-card reveal"><span class="j-no">01</span><div class="j-lead">工具已不再是戰略。</div><div class="j-detail">AI 單位成本年降 60–80%，採用 AI 是參賽門票，不是競爭優勢；<b>優勢只能來自組織如何運用。</b></div></div>
+      <div class="judge-card reveal"><span class="j-no">02</span><div class="j-lead">組織設計成為新的戰略變數。</div><div class="j-detail">當代理成為任務分配的第三類參與者，組織的最小運作單元將從「職位」轉變為「任務小隊」。</div></div>
+      <div class="judge-card reveal"><span class="j-no">03</span><div class="j-lead">三個失效假設同時崩解。</div><div class="j-detail">環境穩定、知識集中、人對人協作——<b>科層組織賴以成立的假設，在 AI 時代逐一失效。</b></div></div>
+      <div class="judge-card reveal"><span class="j-no">04</span><div class="j-lead">管理的稀缺能力位移。</div><div class="j-detail">從「下達正確指令」轉向「設計正確邊界」；管理者成為<b>邊界設計者</b>，而非指揮者。</div></div>
+      <div class="judge-card reveal"><span class="j-no">05</span><div class="j-lead">落地有路徑，成敗可檢驗。</div><div class="j-detail">試點 → 標準化 → 擴散，18 個月；真正的成敗變數是<b>心理安全感與中層管理者的升級</b>，而非技術。</div></div>
     </div>
 
     <div class="exhibit reveal">
