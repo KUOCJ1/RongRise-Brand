@@ -25,7 +25,7 @@ export const COVER_MAP: Record<string, string> = {
   "sleeping-data-assets-awakening": "article-sleeping-data-assets-awakening.jpg",
   "naval-leverage-ai-management": "article-naval-leverage.jpg",
   "naval-desire-contract-performance": "article-naval-desire-contract.jpg",
-  "ai-memory-three-tier-ladder": "article-cover.jpg",
+  "ai-memory-three-tier-ladder": "article-ai-memory.jpg",
 };
 
 export function coverImg(slug: string): string {
