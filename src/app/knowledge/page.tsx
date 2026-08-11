@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-hiring-invented-bias",
+    cat: "人才策略",
+    title: "AI 會「發明」新偏見：你的招募工具，正在用幾個樣本淘汰千里馬",
+    date: "2026-08-11",
+    readTime: "9 分鐘",
+    excerpt: "MIT 報導的最新研究：AI 招募不只複製人類偏見，還會憑少數樣本「發明」新歧視——一個人當醫生失敗，整個族群被調去當清潔工，越聰明的模型偏見越強。本文提出「冷啟動歧視」框架與三道稽核關卡，替中小企業守住招募公平。",
+    tags: ["AI 招募", "演算法偏誤", "冷啟動歧視", "人才策略", "AI 治理", "中小企業", "HR"],
+  },
+  {
     slug: "ai-skill-inflation-workforce",
     cat: "人才策略",
     title: "AI 能力虛胖症：63% 員工裝會 AI，你的團隊在演還是在用？",

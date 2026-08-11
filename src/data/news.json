@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n30",
+      "date": "2026-08-11",
+      "category": "資源",
+      "title": "AI 會「發明」新偏見：你的招募工具，正在用幾個樣本淘汰千里馬",
+      "summary": "MIT 報導的最新研究發現，AI 招募工具不只複製人類偏見，還會憑著極少數樣本「發明」新歧視。CJ 哥提出「冷啟動歧視」框架：公司規模越小、樣本越少，AI 越容易把一兩個人的表現變成對整類人的標籤，並給出人機雙軌、抽樣比對、偏誤稽核三道關卡。",
+      "link": "/knowledge/ai-hiring-invented-bias",
+      "isNew": true
+    },
+    {
       "id": "n29",
       "date": "2026-08-07",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "資料變成戰略物資：你公司裡的「沉睡資產」，該醒了",
       "summary": "政府把資料列為戰略物資，立法打通四大資料流通機制。但多數中小企業最值錢的資料還躺在 ERP、Excel 和老師傅的腦子裡。本文提出「盤、清、標、串」喚醒四步法，讓沉睡資料變成可變現的 AI 資產。",
       "link": "/knowledge/sleeping-data-assets-awakening",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n26",
