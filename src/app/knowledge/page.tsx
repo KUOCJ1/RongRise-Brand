@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-memory-three-tier-ladder",
+    cat: "AI 轉型",
+    title: "你的 AI 每次都像「新來的」？——AI 記憶管理，是 2026 年企業 AI 的分水嶺",
+    date: "2026-08-11",
+    readTime: "9 分鐘",
+    excerpt: "你的 AI 每次都要重新自我介紹嗎？Anthropic 實測：有記憶的 AI 多輪準確度提升 30-50%、資源省近半。本文提出「AI 記憶三層階梯」框架——對話記憶、知識記憶、關係記憶，配上「失憶稅」診斷與寫管讀三步管理法，讓你的 AI 從新進員工變成十年老臣。",
+    tags: ["AI 記憶", "AI 轉型", "數位員工", "知識管理", "Context Engineering", "中小企業"],
+  },
+  {
     slug: "ai-hiring-invented-bias",
     cat: "人才策略",
     title: "AI 會「發明」新偏見：你的招募工具，正在用幾個樣本淘汰千里馬",

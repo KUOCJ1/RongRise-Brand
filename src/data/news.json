@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n31",
+      "date": "2026-08-11",
+      "category": "資源",
+      "title": "你的 AI 每次都像「新來的」？——AI 記憶管理，是 2026 年企業 AI 的分水嶺",
+      "summary": "AI 記憶管理將是 2026 年企業 AI 的分水嶺：「AI 記憶三層階梯」框架 + 失憶稅診斷 + 寫管讀三步管理法，讓 AI 從新進員工變成十年老臣。",
+      "link": "/knowledge/ai-memory-three-tier-ladder",
+      "isNew": true
+    },
+    {
       "id": "n30",
       "date": "2026-08-11",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "任務變形蟲：AI 成熟之後，組織設計重回戰略主軸（研究專刊）",
       "summary": "當 AI 工具像水電瓦斯一樣便宜，競爭優勢不再來自「買得起什麼」，而是「組織怎麼長出來」。本專刊提出任務變形蟲模型（Task Amoeba Model），並提供三階段落地路徑。",
       "link": "/research/task-amoeba/",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n27",
