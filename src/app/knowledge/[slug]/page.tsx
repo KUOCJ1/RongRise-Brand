@@ -54,7 +54,9 @@ function renderBody(body: string): React.ReactNode[] {
   const flushTable = () => {
     if (tableRows.length > 0) {
       const headers = tableRows[0];
-      const dataRows = tableRows.slice(2);
+      // 分隔列（|---|---|）在偵測時被 continue 跳過、未 push 進 tableRows，
+      // 所以 dataRows 從 index 1 開始（slice(2) 會吃掉第一列資料——2026-08-11 全站 bug 修復）
+      const dataRows = tableRows.slice(1);
       elements.push(
         <div key={`t-${tableKey++}`} className="overflow-x-auto my-8 rounded-xl border border-border">
           <table className="w-full text-sm border-collapse">
