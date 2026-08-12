@@ -26,6 +26,22 @@ async function checkPort(port: number): Promise<string> {
   }
 }
 
+// 電子報訂閱數：VPS host 沒有 psql（PostgreSQL 在 Docker 容器內），
+// 直接呼叫 newsletter-api 的 stats 端點取 total。
+async function getNewsletterSubscribers(): Promise<string> {
+  try {
+    const res = await fetch(
+      `http://127.0.0.1:3003/api/newsletter/stats?key=rongrise-admin-2026`,
+      { signal: AbortSignal.timeout(2500) }
+    );
+    if (!res.ok) return "0";
+    const data = await res.json();
+    return String(data.total ?? "0");
+  } catch {
+    return "0";
+  }
+}
+
 export async function GET() {
   // 第二大腦（VPS git clone）
   const brainFiles = run(`find /root/second-brain -name '*.md' -not -path '*/.git/*' | wc -l`);
@@ -51,11 +67,8 @@ export async function GET() {
   const disk = run(`df -h / | tail -1 | awk '{print $5}'`);
   const mem = run(`free -m | awk 'NR==2{printf "%.0f", $3/$2*100}'`);
 
-  // 電子報訂閱數（從 newsletter-api .env 取值）
-  const subscribers =
-    run(
-      `bash -c 'set -a; source /root/newsletter-api/.env 2>/dev/null; set +a; psql -tAc "SELECT count(*) FROM newsletter_subscribers" 2>/dev/null || echo 0'`
-    ) || "0";
+  // 電子報訂閱數（newsletter-api stats 端點）
+  const subscribers = await getNewsletterSubscribers();
 
   // PM2 重啟次數異常偵測
   const pm2Restarts = run(`pm2 jlist 2>/dev/null | python3 -c "import sys,json; d=json.load(sys.stdin); print(','.join(f'{a[\\\"name\\\"]}:{a[\\\"pm2_env\\\"][\\\"restart_time\\\"]}' for a in d))"`);
