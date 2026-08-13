@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-bill-three-checks",
+    cat: "AI 轉型",
+    title: "你的 AI 訂閱費，換回了什麼？Rippling 燒掉數百萬美元後的「帳單三看」",
+    date: "2026-08-13",
+    readTime: "8 分鐘",
+    excerpt: "Rippling 把研發部門四成的薪資預算燒在 AI token 上，每個月還以 80% 成長；Canva 因此下修全年營收預測。AI 支出進入「會計時刻」——本文提出「帳單三看」框架：看科目、看人、看產出，一個下午，把你的 AI 訂閱費從黑洞變成儀表板。",
+    tags: ["AI 轉型", "成本管理", "AI 帳單", "TaaS", "數位工具", "中小企業"],
+  },
+  {
     slug: "ai-memory-three-tier-ladder",
     cat: "AI 轉型",
     title: "你的 AI 每次都像「新來的」？——AI 記憶管理，是 2026 年企業 AI 的分水嶺",

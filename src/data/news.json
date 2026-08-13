@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n32",
+      "date": "2026-08-13",
+      "category": "資源",
+      "title": "你的 AI 訂閱費，換回了什麼？Rippling 燒掉數百萬美元後的「帳單三看」",
+      "summary": "Rippling 把研發部門四成的薪資預算燒在 AI token 上，每個月還以 80% 成長。AI 支出進入「會計時刻」，本文提出「帳單三看」：看科目、看人、看產出，教你用一個下午把 AI 訂閱費從黑洞變成儀表板。",
+      "link": "/knowledge/ai-bill-three-checks",
+      "isNew": true
+    },
+    {
       "id": "n31",
       "date": "2026-08-11",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "AI 能力虛胖症：63% 員工裝會 AI，你的團隊在演還是在用？",
       "summary": "63% 的美國員工會誇大自己的 AI 熟練度——每三個人就有兩個在「裝會」。CJ 哥提出「AI 能力虛胖症」診斷框架：術語型、複製型、報喜型三種症狀，配上拆穿三問與解方三招，把團隊從裝會改造成會用。",
       "link": "/knowledge/ai-skill-inflation-workforce",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n28",
