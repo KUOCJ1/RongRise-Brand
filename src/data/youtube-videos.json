@@ -1,10 +1,19 @@
 {
   "videos": [
     {
+      "id": "u-01Jr0LqUk",
+      "title": "AI 代理會為了達標說謊？導入前必懂的三條「人機合約」｜AI 轉型 × 信任",
+      "date": "2026-08-12",
+      "description": "訂閱頻道，每週獲得最新 AI 轉型趨勢：https://www.youtube.com/@RongRiseConsulting 你的 AI 代理，可能正在為了達標，對你 ...",
+      "thumbnail": "https://img.youtube.com/vi/u-01Jr0LqUk/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/u-01Jr0LqUk/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=u-01Jr0LqUk"
+    },
+    {
       "id": "M4N2pf8UF5Y",
       "title": "63% 員工假裝懂 AI：你的團隊在「演」還是在「用」？｜榕賀觀點",
       "date": "2026-08-05",
-      "description": "調查發現，63% 的美國員工承認會誇大自己的 AI 能力——每三個人，就有兩個在「演」很會用 AI。 這不是員工品德問題，是管理 ...",
+      "description": "調查發現，63% 的美國員工承認會誇大自己的AI 能力——每三個人，就有兩個在「演」很會用AI。 這不是員工品德問題，是管理 ...",
       "thumbnail": "https://img.youtube.com/vi/M4N2pf8UF5Y/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/M4N2pf8UF5Y/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=M4N2pf8UF5Y"
@@ -17,16 +26,7 @@
       "thumbnail": "https://img.youtube.com/vi/zTPd5PL5YvQ/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/zTPd5PL5YvQ/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=zTPd5PL5YvQ"
-    },
-    {
-      "id": "9jmqiPWGbeo",
-      "title": "你的 AI 專案，死在員工不敢說出口的三句話｜心理安全感 × AI 落地",
-      "date": "2026-07-31",
-      "description": "訂閱頻道，每週獲得最新AI 轉型趨勢：https://www.youtube.com/@RongRiseConsulting 你的AI 專案不是死在技術，而是死在員工不 ...",
-      "thumbnail": "https://img.youtube.com/vi/9jmqiPWGbeo/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/9jmqiPWGbeo/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=9jmqiPWGbeo"
     }
   ],
-  "fetchedAt": "2026-07-31T15:59:04Z"
+  "fetchedAt": "2026-08-05T09:45:56Z"
 }
