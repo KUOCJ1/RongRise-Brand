@@ -101,7 +101,7 @@ export default function AIAssessmentLanding() {
     setSubmitting(true);
     setError("");
     try {
-      const res = await fetch("/api/newsletter/subscribe", {
+      const res = await fetch("https://n8n.rong-rise.com/webhook/quick-assessment", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
