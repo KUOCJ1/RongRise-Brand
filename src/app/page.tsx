@@ -127,6 +127,16 @@ export default function HomePage() {
                 免費下載：企業 AI 成熟度自評量表
                 <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" /></svg>
               </TrackLink>
+              <TrackLink
+                href="https://n8n.rong-rise.com/form/ai-maturity"
+                className="inline-flex items-center gap-2 text-white/80 hover:text-white text-sm font-medium transition-colors group ml-5"
+                trackLabel="免費AI成熟度線上評估"
+                trackLocation="hero"
+              >
+                <span className="w-5 h-5 rounded-full bg-tertiary/20 flex items-center justify-center text-xs group-hover:bg-tertiary/30 transition-colors">⚡</span>
+                線上深度評估：25 題立即出報告
+                <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              </TrackLink>
             </div>
             </div>
 
@@ -312,6 +322,9 @@ export default function HomePage() {
           <div className="flex flex-wrap justify-center gap-4">
             <TrackLink href="/about#contact" className="btn-primary" trackLabel="立即預約諮詢" trackLocation="cta_section">
               立即預約諮詢
+            </TrackLink>
+            <TrackLink href="https://n8n.rong-rise.com/form/ai-maturity" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white" trackLabel="免費AI成熟度評估" trackLocation="cta_section">
+              免費 AI 成熟度評估
             </TrackLink>
             <TrackLink href="/assistant" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white" trackLabel="先問問小幫手" trackLocation="cta_section">
               先問問小幫手

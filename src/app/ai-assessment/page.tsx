@@ -162,14 +162,25 @@ export default function AIAssessmentLanding() {
                 超過 200 家中小企業主已經透過這份評估找到方向。
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
                 <button
                   onClick={() => setStep(1)}
                   className="px-8 py-4 bg-[#E8912A] hover:bg-[#F5B84A] text-[#0D1B2A] font-bold rounded-xl text-lg transition-all shadow-lg shadow-[#E8912A]/20 hover:shadow-[#E8912A]/40"
                 >
                   開始免費評估 →
                 </button>
+                <a
+                  href="https://n8n.rong-rise.com/form/ai-maturity"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-4 bg-[#1A6DB5] hover:bg-[#2EC4B6] text-white font-bold rounded-xl text-lg transition-all shadow-lg shadow-[#1A6DB5]/30"
+                >
+                  深度完整評估（25 題）→
+                </a>
               </div>
+              <p className="text-sm text-gray-400 mb-12">
+                想更精準？花 5 分鐘完成 <span className="text-[#2EC4B6]">25 題深度評估</span>，立即獲得 5 大構面評分與個人化報告。
+              </p>
 
               {/* Trust badges */}
               <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
@@ -404,12 +415,22 @@ export default function AIAssessmentLanding() {
               </div>
             </div>
 
-            <a
-              href="/knowledge"
-              className="inline-block px-6 py-3 border border-white/20 rounded-xl text-gray-300 hover:text-white hover:border-white/40 transition-all"
-            >
-              先看看知識庫文章 →
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://n8n.rong-rise.com/form/ai-maturity"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-3 bg-[#1A6DB5] hover:bg-[#2EC4B6] rounded-xl text-white font-medium transition-all"
+              >
+                挑戰 25 題深度評估，獲得完整評分報告 →
+              </a>
+              <a
+                href="/knowledge"
+                className="inline-block px-6 py-3 border border-white/20 rounded-xl text-gray-300 hover:text-white hover:border-white/40 transition-all"
+              >
+                先看看知識庫文章 →
+              </a>
+            </div>
           </section>
         )}
 
