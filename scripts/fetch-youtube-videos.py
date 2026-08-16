@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Fetch latest videos from CJ哥's YouTube channel and save to JSON."""
 import json, urllib.request, os, shutil
+from datetime import datetime, timezone
 
 API_KEY_PATH = "/opt/data/home/.secrets/youtube-api-key"
 CHANNEL_ID = "UCFfz1iDwqqRfjWgR7GhVMGA"
@@ -30,7 +31,7 @@ try:
             "url": f"https://www.youtube.com/watch?v={vid}"
         })
     with open(OUTPUT, 'w', encoding='utf-8') as f:
-        json.dump({"videos": videos, "fetchedAt": snippet["publishedAt"]}, f, ensure_ascii=False, indent=2)
+        json.dump({"videos": videos, "fetchedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")}, f, ensure_ascii=False, indent=2)
     # Also copy to public/ for static site access
     public_dir = OUTPUT.replace("src/data/", "public/data/")
     os.makedirs(os.path.dirname(public_dir), exist_ok=True)
