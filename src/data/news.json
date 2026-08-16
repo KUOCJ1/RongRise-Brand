@@ -1,6 +1,24 @@
 {
   "news": [
     {
+      "id": "n34",
+      "date": "2026-08-16",
+      "category": "資源",
+      "title": "搶不到 AI 人才？別再參加薪水拍賣，學會當「人才磁場」",
+      "summary": "HBR 分析百萬次互動數據：AI 人才追的不是高薪，是「正在發生的事」。本文提出人才磁場框架——動量、互補能力、可信後的彈性三塊磁鐵，中小企業照樣搶得到人。",
+      "link": "/knowledge/ai-talent-magnet",
+      "isNew": true
+    },
+    {
+      "id": "n33",
+      "date": "2026-08-16",
+      "category": "資源",
+      "title": "AI 印鈔時代來臨：內容大通膨，只有「信任」不貶值",
+      "summary": "麥肯錫高層罕見呼籲「少做像樣內容」、微軟同月砍功能——供應端收縮是內容泡沫見頂訊號。AI 印鈔時代，本文提出「內容通膨」框架與信任三道防線，守住唯一不貶值的資產。",
+      "link": "/knowledge/ai-content-inflation-trust",
+      "isNew": true
+    },
+    {
       "id": "n32",
       "date": "2026-08-13",
       "category": "資源",
@@ -16,7 +34,7 @@
       "title": "你的 AI 每次都像「新來的」？——AI 記憶管理，是 2026 年企業 AI 的分水嶺",
       "summary": "AI 記憶管理將是 2026 年企業 AI 的分水嶺：「AI 記憶三層階梯」框架 + 失憶稅診斷 + 寫管讀三步管理法，讓 AI 從新進員工變成十年老臣。",
       "link": "/knowledge/ai-memory-three-tier-ladder",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n30",
@@ -25,7 +43,7 @@
       "title": "AI 會「發明」新偏見：你的招募工具，正在用幾個樣本淘汰千里馬",
       "summary": "MIT 報導的最新研究發現，AI 招募工具不只複製人類偏見，還會憑著極少數樣本「發明」新歧視。CJ 哥提出「冷啟動歧視」框架：公司規模越小、樣本越少，AI 越容易把一兩個人的表現變成對整類人的標籤，並給出人機雙軌、抽樣比對、偏誤稽核三道關卡。",
       "link": "/knowledge/ai-hiring-invented-bias",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n29",
