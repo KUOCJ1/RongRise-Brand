@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n35",
+      "date": "2026-08-16",
+      "category": "資源",
+      "title": "AI 巨頭告別個人化小助手：從「養寵物」到「雇員工」的時代轉折",
+      "summary": "OpenAI 停用企業版 Custom GPTs、Google 淡出 Gems——角色型助手為何被巨頭收攤？「養寵物 vs 雇員工」框架帶你看懂 AI 從角色經濟走向工作流經濟的轉折。",
+      "link": "/knowledge/ai-role-to-workflow-economy",
+      "isNew": true
+    },
+    {
       "id": "n34",
       "date": "2026-08-16",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "你的 AI 訂閱費，換回了什麼？Rippling 燒掉數百萬美元後的「帳單三看」",
       "summary": "Rippling 把研發部門四成的薪資預算燒在 AI token 上，每個月還以 80% 成長。AI 支出進入「會計時刻」，本文提出「帳單三看」：看科目、看人、看產出，教你用一個下午把 AI 訂閱費從黑洞變成儀表板。",
       "link": "/knowledge/ai-bill-three-checks",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n31",

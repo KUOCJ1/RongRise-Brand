@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-role-to-workflow-economy",
+    cat: "AI 轉型",
+    title: "AI 巨頭告別個人化小助手：從「養寵物」到「雇員工」的時代轉折",
+    date: "2026-08-16",
+    readTime: "8 分鐘",
+    excerpt: "OpenAI 停用企業版 Custom GPTs、Google 淡出 Gemini Gems——兩年前被寄予「AI 版 App Store」厚望的角色型助手，為何被兩大巨頭悄悄收攤？本文提出「養寵物 vs 雇員工」框架：AI 已從角色經濟走進工作流經濟，中小企業的選型標準必須跟著改。",
+    tags: ["Agentic AI", "AI 策略", "數位員工", "生成式 AI", "中小企業", "AI 轉型"],
+  },
+  {
     slug: "ai-content-inflation-trust",
     cat: "AI 轉型",
     title: "AI 印鈔時代來臨：內容大通膨，只有「信任」不貶值",
