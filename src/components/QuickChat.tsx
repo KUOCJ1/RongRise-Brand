@@ -2,16 +2,18 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import Link from "next/link";
-import { callChatAPI, type ChatMessage } from "@/lib/chat-api";
+import { callChatAPI, type ChatMessage, type ChatSource } from "@/lib/chat-api";
 
 /* ============================================
    浮動式 QuickChat — 漂浮小賀頭像
    所有頁面右下角固定，點開可對話
+   P0-3 升級：回答附「資料來源」引用（RAG 知識庫）
    ============================================ */
 
 interface Message {
   role: "user" | "assistant";
   content: string;
+  sources?: ChatSource[];
 }
 
 // 引導式開場問題
@@ -84,8 +86,8 @@ export default function QuickChat() {
           content: m.content,
         }));
         const reply = await callChatAPI(chatHistory);
-        setMessages((prev) => [...prev, { role: "assistant", content: reply }]);
-        chatHistoryRef.current.push({ role: "assistant", content: reply });
+        setMessages((prev) => [...prev, { role: "assistant", content: reply.content, sources: reply.sources }]);
+        chatHistoryRef.current.push({ role: "assistant", content: reply.content });
       } catch {
         setMessages((prev) => [
           ...prev,
@@ -256,15 +258,35 @@ export default function QuickChat() {
                           className="rounded-full flex-shrink-0 mr-2 mt-1"
                         />
                       )}
-                      <div
-                        className={`max-w-[80%] rounded-2xl px-3 py-2 text-sm leading-relaxed ${
-                          msg.role === "user"
-                            ? "bg-accent text-white"
-                            : "bg-bg-alt text-text-primary border border-border"
-                        }`}
-                        style={msg.role === "user" ? { backgroundColor: "#E8912A" } : {}}
-                        dangerouslySetInnerHTML={{ __html: formatMessage(msg.content) }}
-                      />
+                      <div className="max-w-[80%]">
+                        <div
+                          className={`rounded-2xl px-3 py-2 text-sm leading-relaxed ${
+                            msg.role === "user"
+                              ? "bg-accent text-white"
+                              : "bg-bg-alt text-text-primary border border-border"
+                          }`}
+                          style={msg.role === "user" ? { backgroundColor: "#E8912A" } : {}}
+                          dangerouslySetInnerHTML={{ __html: formatMessage(msg.content) }}
+                        />
+                        {msg.role === "assistant" && msg.sources && msg.sources.length > 0 && (
+                          <div className="mt-1.5 rounded-xl bg-primary/5 border border-primary/10 px-3 py-2">
+                            <p className="text-[10px] text-text-secondary mb-1">📚 資料來源</p>
+                            <div className="flex flex-col gap-0.5">
+                              {msg.sources.map((s) => (
+                                <a
+                                  key={s.url}
+                                  href={s.url}
+                                  target="_blank"
+                                  rel="noopener"
+                                  className="text-[11px] text-primary hover:underline leading-snug truncate"
+                                >
+                                  [{s.index}] {s.title}
+                                </a>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                      </div>
                     </div>
                   ))}
 

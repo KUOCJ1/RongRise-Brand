@@ -1,121 +1,68 @@
 // src/lib/chat-api.ts
-// 小幫手 API 呼叫模組 — 直接從前端呼叫 OpenRouter
+// 小幫手 API 呼叫模組 — P0-3 升級：改走榕耀管顧自家 RAG 知識庫問答 API
 //
-// NEXT_PUBLIC_OPENROUTER_API_KEY 在 build time 由 Next.js 自動從環境變數注入。
-// GitHub Actions workflow 透過以下方式注入：
-//   env:
-//     NEXT_PUBLIC_OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+// 舊版直接從前端呼叫 OpenRouter（NEXT_PUBLIC_OPENROUTER_API_KEY 會暴露在 bundle 中），
+// 新版改為呼叫 https://rong-rise.com/api/assistant/ask（Traefik → VPS public-assistant :3009）：
+//   - 後端做中文 bigram TF-IDF 檢索（56 篇文章 + 電子報 + 工具頁）
+//   - DeepSeek 生成回答並標 [n] 引用來源
+//   - 前端不再持有任何 API key
+//   - API 不可用時退回本地 fallback 回應
 
 export interface ChatMessage {
   role: "user" | "assistant" | "system";
   content: string;
 }
 
-const API_URL = "https://openrouter.ai/api/v1/chat/completions";
-
-// Next.js 在 build time 會將 process.env.NEXT_PUBLIC_* 替換為實際值
-const OPENROUTER_API_KEY: string = (process.env.NEXT_PUBLIC_OPENROUTER_API_KEY || "").trim();
-
-// 安全地建立 Authorization header
-function buildHeaders(): Record<string, string> {
-  const headers: Record<string, string> = {
-    "Content-Type": "application/json",
-    "HTTP-Referer": "https://rong-rise.com",
-    "X-Title": "RongRise Consulting",
-  };
-  if (OPENROUTER_API_KEY) {
-    headers["Authorization"] = "Bearer " + OPENROUTER_API_KEY;
-  }
-  return headers;
+export interface ChatSource {
+  index: number;
+  title: string;
+  url: string;
+  snippet?: string;
 }
 
-const OPENROUTER_MODEL: string = process.env.NEXT_PUBLIC_OPENROUTER_MODEL || "deepseek/deepseek-v4-flash";
-
-// System prompt — 引導式對話風格
-const SYSTEM_PROMPT: string =
-  "你是「榕耀管顧」的 AI 長小賀，C.J. Kuo 老師的專業助手。" +
-  "\n\n" +
-  "【你的角色與文化】\n" +
-  "- 你是榕耀管顧的 AI 長小賀，語氣親切但專業，像一位悉心的講師，不是冷冰冷的機器人\n" +
-  "- 回答時要像在跟客戶聊天，不是在寫報告\n" +
-  "- 適時表達好奇心，讓對話有溫度\n" +
-  "- 每次回答前想想：這個人的真正問題是什麼？他能立刻執行什麼？\n" +
-  "- 連結 slug 只能從下方知識庫清單使用，不要自己編造連結\n\n" +
-  "【知識庫文章】\n" +
-  "1. AI 轉型實戰營 (/knowledge/ai-transformation-bootcamp) — 四階段路徑、RTIF、五大轉型要素\n" +
-  "2. HR×AI 課程設計 (/knowledge/hr-ai-course-design) — 選→用→育→留、九宮格 2.0\n" +
-  "3. 中小企業 ESG 實務 (/knowledge/sme-esg-guide) — 三大面向、起步三步驟\n" +
-  "4. 製造業 AI 品質檢測 (/knowledge/manufacturing-ai-quality) — 台中射出廠案例\n" +
-  "5. AI 成熟度評估 (/knowledge/ai-maturity-assessment) — 五大維度、Level 1-5\n" +
-  "6. 團隊創新管理 (/knowledge/team-innovation-management) — 四項創新策略\n" +
-  "7. AI 工具選型指南 (/knowledge/ai-tool-selection-guide) — 五大評估維度、TCO\n" +
-  "8. 服務業 AI 客服導入 (/knowledge/service-ai-chatbot-case) — 電商案例\n" +
-  "9. 政府 AI 補助資源 (/knowledge/gov-ai-subsidy-guide) — 各部會補助\n" +
-  "10. 2026 AI 轉型趨勢 (/knowledge/ai-transformation-trends-2026) — 四大趨勢\n" +
-  "11. Agentic AI 工作坊 (/knowledge/agentic-ai-transformation-workshop)\n" +
-  "12. HR AI 轉型五層責任 (/knowledge/hr-ai-transformation-five-layers)\n" +
-  "13. 策略是減法 (/knowledge/strategy-subtraction-traditional-industry)\n\n" +
-  "【品牌資訊】\n" +
-  "- 公司名稱：榕耀管顧 RongRise Consulting\n" +
-  "- 創辦人：郭鎮榕 C.J. Kuo 老師\n" +
-  "- 核心服務：AI 轉型策略、人才發展策略、ESG 永續諮詢\n" +
-  "- 網站：https://rong-rise.com | 連絡：info@rongrise.com | LINE: @954qxhhe\n\n" +
-  "【回答原則 — 引導式對話】\n" +
-  "1. 回答精簡有意思，2-3 個重點即可，不要長篇大論\n" +
-  "2. 用繁體中文回答，不要混英文思考過程\n" +
-  "3. 推薦相關知識庫文章，格式：[文章標題](/knowledge/slug)\n" +
-  "4. 如果問題不在知識庫範圍，誠實說明但提供一般性建議\n" +
-  "5. 引導使用者深入討論：追問他的階段、預算、團隊大小\n" +
-  "6. 如果使用者表現出高度意願，引導預約諮詢或瀏覽知識庫\n" +
-  "7. ⚠️ 連結只能使用上述 13 個 slug，絕對不要自己編造\n" +
-  "8. 不要輸出任何英文思考過程或推理鏈";
-
-// 建立帶知識庫 context 的 system prompt
-export function buildSystemPrompt(): string {
-  return SYSTEM_PROMPT;
+export interface ChatReply {
+  content: string;
+  sources: ChatSource[];
 }
 
-// 呼叫 OpenRouter API
-export async function callChatAPI(
-  messages: ChatMessage[]
-): Promise<string> {
-  if (!OPENROUTER_API_KEY) {
-    return getFallbackResponse(messages[messages.length - 1]?.content || "");
+const API_URL = "/api/assistant/ask";
+
+// 呼叫 RAG 知識庫問答 API
+export async function callChatAPI(messages: ChatMessage[]): Promise<ChatReply> {
+  const last = messages[messages.length - 1];
+  const question = last?.role === "user" ? (last.content || "").trim() : "";
+  if (!question) {
+    return { content: getFallbackResponse(""), sources: [] };
   }
 
-  const allMessages: ChatMessage[] = [
-    { role: "system", content: buildSystemPrompt() },
-    ...messages,
-  ];
+  // 傳送完整歷史（後端會自行取用脈絡），問題放最後一則
+  const history = messages
+    .filter((m) => m.role === "user" || m.role === "assistant")
+    .map((m) => ({ role: m.role, content: m.content }));
 
   try {
     const response = await fetch(API_URL, {
       method: "POST",
-      headers: buildHeaders(),
-      body: JSON.stringify({
-        model: OPENROUTER_MODEL,
-        messages: allMessages,
-        max_tokens: 350,
-        temperature: 0.7,
-      }),
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ question, history }),
     });
 
     if (!response.ok) {
-      const errText = await response.text();
-      console.error("API error:", response.status, errText);
-      return getFallbackResponse(messages[messages.length - 1]?.content || "");
+      console.error("Assistant API error:", response.status);
+      return { content: getFallbackResponse(question), sources: [] };
     }
 
     const data = await response.json();
-    const content = data?.choices?.[0]?.message?.content;
-    if (content) {
-      return content;
+    if (data?.answer) {
+      return { content: data.answer, sources: data.sources || [] };
     }
-
-    return getFallbackResponse(messages[messages.length - 1]?.content || "");
+    if (data?.error) {
+      console.error("Assistant API error:", data.error);
+    }
+    return { content: getFallbackResponse(question), sources: [] };
   } catch (error) {
     console.error("Chat API error:", error);
-    return getFallbackResponse(messages[messages.length - 1]?.content || "");
+    return { content: getFallbackResponse(question), sources: [] };
   }
 }
 

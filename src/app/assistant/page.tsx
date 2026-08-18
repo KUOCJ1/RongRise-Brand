@@ -2,16 +2,18 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import Link from "next/link";
-import { callChatAPI, type ChatMessage } from "@/lib/chat-api";
+import { callChatAPI, type ChatMessage, type ChatSource } from "@/lib/chat-api";
 import { trackAssistantSend, trackAssistantQuickQuestion } from "@/lib/ga4-events";
 
 /* ============================================
-   小幫手 Assistant Page — LLM 升級版
+   小幫手 Assistant Page — RAG 知識庫問答版（P0-3）
+   回答附「資料來源」引用，點擊可驗證
    ============================================ */
 
 interface Message {
   role: "user" | "assistant";
   content: string;
+  sources?: ChatSource[];
 }
 
 const quickQuestions = [
@@ -124,13 +126,13 @@ export default function AssistantPage() {
 
       try {
         const reply = await callChatAPI(chatHistoryRef.current);
-        chatHistoryRef.current.push({ role: "assistant", content: reply });
+        chatHistoryRef.current.push({ role: "assistant", content: reply.content });
 
         if (chatHistoryRef.current.length > 20) {
           chatHistoryRef.current = chatHistoryRef.current.slice(-20);
         }
 
-        setMessages((prev) => [...prev, { role: "assistant", content: reply }]);
+        setMessages((prev) => [...prev, { role: "assistant", content: reply.content, sources: reply.sources }]);
       } catch (err) {
         console.error("Chat error:", err);
         setError("抱歉，目前無法連線到 AI 服務，請稍後再試。");
@@ -187,16 +189,36 @@ export default function AssistantPage() {
                     <span className="text-white text-xs font-bold">AI</span>
                   </div>
                 )}
-                <div
-                  className={`max-w-[85%] rounded-2xl px-4 py-3 text-[15px] leading-relaxed ${
-                    msg.role === "user"
-                      ? "bg-primary text-white"
-                      : "bg-bg-alt text-text-primary border border-border-light"
-                  }`}
-                  dangerouslySetInnerHTML={{
-                    __html: formatMessage(msg.content),
-                  }}
-                />
+                <div className="max-w-[85%]">
+                  <div
+                    className={`rounded-2xl px-4 py-3 text-[15px] leading-relaxed ${
+                      msg.role === "user"
+                        ? "bg-primary text-white"
+                        : "bg-bg-alt text-text-primary border border-border-light"
+                    }`}
+                    dangerouslySetInnerHTML={{
+                      __html: formatMessage(msg.content),
+                    }}
+                  />
+                  {msg.role === "assistant" && msg.sources && msg.sources.length > 0 && (
+                    <div className="mt-2 rounded-xl bg-white border border-border-light px-3 py-2">
+                      <p className="text-[11px] text-text-secondary mb-1">📚 資料來源（點擊驗證）</p>
+                      <div className="flex flex-col gap-0.5">
+                        {msg.sources.map((s) => (
+                          <a
+                            key={s.url}
+                            href={s.url}
+                            target="_blank"
+                            rel="noopener"
+                            className="text-xs text-primary hover:underline leading-snug truncate"
+                          >
+                            [{s.index}] {s.title}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
                 {msg.role === "user" && (
                   <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center flex-shrink-0 ml-2 mt-1">
                     <span className="text-gray-500 text-xs">您</span>
