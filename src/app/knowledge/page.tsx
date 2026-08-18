@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-model-routing-power-grid",
+    cat: "AI 轉型",
+    title: "買 AI 像買電：NVIDIA 的「模型路由」，正在幫企業省下 74% 的 AI 成本",
+    date: "2026-08-18",
+    readTime: "8 分鐘",
+    excerpt: "NVIDIA 用「模型路由」實測：只有 7% 的 AI 請求需要旗艦模型，分流之後成本省下 74%、準確度幾乎不損。買 AI 正在變成買電力，本文提出「AI 用電四級」框架，教你用一個下午盤點任務分級，不換供應商也能把帳單砍半。",
+    tags: ["模型路由", "AI 採購", "AI 成本", "開源模型", "中小企業", "AI 轉型"],
+  },
+  {
     slug: "ai-role-to-workflow-economy",
     cat: "AI 轉型",
     title: "AI 巨頭告別個人化小助手：從「養寵物」到「雇員工」的時代轉折",

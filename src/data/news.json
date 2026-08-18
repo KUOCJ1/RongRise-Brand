@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n36",
+      "date": "2026-08-18",
+      "category": "資源",
+      "title": "買 AI 像買電：NVIDIA 的「模型路由」，正在幫企業省下 74% 的 AI 成本",
+      "summary": "NVIDIA「模型路由」實測：只有 7% 的請求需要旗艦模型，分流後成本省 74%。買 AI 正在變成買電力——「AI 用電四級」框架，教你一個下午盤點任務分級，不換供應商也能把帳單砍半。",
+      "link": "/knowledge/ai-model-routing-power-grid",
+      "isNew": true
+    },
+    {
       "id": "n35",
       "date": "2026-08-16",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "AI 印鈔時代來臨：內容大通膨，只有「信任」不貶值",
       "summary": "麥肯錫高層罕見呼籲「少做像樣內容」、微軟同月砍功能——供應端收縮是內容泡沫見頂訊號。AI 印鈔時代，本文提出「內容通膨」框架與信任三道防線，守住唯一不貶值的資產。",
       "link": "/knowledge/ai-content-inflation-trust",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n32",
