@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "shadow-ai-governance-traffic-light",
+    cat: "AI 轉型",
+    title: "員工偷偷用 AI、連高階主管都在繞道：影子 AI 治理的「紅綠燈」",
+    date: "2026-08-18",
+    readTime: "7 分鐘",
+    excerpt: "PagerDuty 調查：66% 員工用過明知不被允許的 AI，81% 認為主管用另一套規則——影子 AI 不是員工不聽話，是政策跟不上生產力。本文提出「AI 治理紅綠燈」＋HBR「領導漂移」診斷，三週讓 AI 從暗處走回檯面。",
+    tags: ["影子 AI", "AI 治理", "領導漂移", "AI 政策", "中小企業", "AI 轉型"],
+  },
+  {
     slug: "ai-model-routing-power-grid",
     cat: "AI 轉型",
     title: "買 AI 像買電：NVIDIA 的「模型路由」，正在幫企業省下 74% 的 AI 成本",

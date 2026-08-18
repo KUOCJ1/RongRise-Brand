@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n37",
+      "date": "2026-08-18",
+      "category": "資源",
+      "title": "員工偷偷用 AI、連高階主管都在繞道：影子 AI 治理的「紅綠燈」",
+      "summary": "PagerDuty 調查：66% 員工用過明知不被允許的 AI，81% 認為主管用另一套規則。影子 AI 不是員工不聽話，是政策跟不上生產力。本文提出「AI 治理紅綠燈」框架＋HBR「領導漂移」診斷，三週讓 AI 從暗處走回檯面。",
+      "link": "/knowledge/shadow-ai-governance-traffic-light",
+      "isNew": true
+    },
+    {
       "id": "n36",
       "date": "2026-08-18",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "搶不到 AI 人才？別再參加薪水拍賣，學會當「人才磁場」",
       "summary": "HBR 分析百萬次互動數據：AI 人才追的不是高薪，是「正在發生的事」。本文提出人才磁場框架——動量、互補能力、可信後的彈性三塊磁鐵，中小企業照樣搶得到人。",
       "link": "/knowledge/ai-talent-magnet",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n33",
