@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "managing-31-ai-agents",
+    cat: "AI 轉型",
+    title: "我們公司有 31 個 AI 員工。他們幾乎把公司弄掛了",
+    date: "2026-08-20",
+    readTime: "9 分鐘",
+    excerpt: "31 個自動化 agent 同時上線，卻沒有一個像樣的管理層。從一次把公司弄掛的故障開始，我們把踩過的坑整理成五個檢查項目：鋪路還是硬化、有無 owner、可否審計、划不划算、該不該退役。",
+    tags: ["AI 治理", "Agent", "自動化", "Pilot Trap", "中小企業"],
+  },
+  {
     slug: "ai-energy-arms-race-cloud-bill",
     cat: "AI 轉型",
     title: "AI 巨頭開始買電廠了：你的雲端帳單，即將變貴的三個理由",
