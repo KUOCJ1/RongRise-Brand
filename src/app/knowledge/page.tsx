@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "pilot-trap-self-check",
+    cat: "AI 轉型",
+    title: "你的 AI 部隊健康嗎？五分鐘測出「Pilot Trap 陷阱深度」",
+    date: "2026-08-20",
+    readTime: "6 分鐘",
+    excerpt: "AI 用得滿好，跟用得健康是兩件事。五個維度快速檢驗你的 AI 部隊體質，附 25 題免費線上診斷量表。",
+    tags: ["Pilot Trap", "AI 治理", "Agent", "診斷", "中小企業"],
+  },
+  {
     slug: "managing-31-ai-agents",
     cat: "AI 轉型",
     title: "我們公司有 31 個 AI 員工。他們幾乎把公司弄掛了",

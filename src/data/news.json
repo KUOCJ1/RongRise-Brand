@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n40",
+      "date": "2026-08-20",
+      "category": "資源",
+      "title": "你的 AI 部隊健康嗎？五分鐘測出「Pilot Trap 陷阱深度」",
+      "summary": "五個維度（平台歸屬／員工信任／人才培養／治理成熟／Pilot 陷阱）快速檢驗 AI 部隊體質，附 25 題免費線上診斷量表。",
+      "link": "/knowledge/pilot-trap-self-check",
+      "isNew": true
+    },
+    {
       "id": "n39",
       "date": "2026-08-20",
       "category": "資源",
