@@ -11,7 +11,7 @@ const ITEMS = [
   {
     icon: "📖",
     tag: "實戰紀錄",
-    title: "我們公司有 31 個 AI 員工。他們幾乎把公司弄掛了",
+    title: "我們公司有 31 個員工，上個月他們把公司給弄掛了。",
     desc: "榕耀管顧自己的 agent 治理實錄：資產盤點、五檢查、月檢機制、16 筆事故教訓，全部從真實踩坑中長出來。",
     href: "/knowledge/managing-31-ai-agents/",
     cta: "閱讀實錄 →",

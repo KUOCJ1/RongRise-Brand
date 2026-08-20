@@ -34,7 +34,7 @@ const articles: Article[] = [
   {
     slug: "managing-31-ai-agents",
     cat: "AI 轉型",
-    title: "我們公司有 31 個 AI 員工。他們幾乎把公司弄掛了",
+    title: "我們公司有 31 個員工，上個月他們把公司給弄掛了。",
     date: "2026-08-20",
     readTime: "9 分鐘",
     excerpt: "31 個自動化 agent 同時上線，卻沒有一個像樣的管理層。從一次把公司弄掛的故障開始，我們把踩過的坑整理成五個檢查項目：鋪路還是硬化、有無 owner、可否審計、划不划算、該不該退役。",
