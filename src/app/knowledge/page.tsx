@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-energy-arms-race-cloud-bill",
+    cat: "AI 轉型",
+    title: "AI 巨頭開始買電廠了：你的雲端帳單，即將變貴的三個理由",
+    date: "2026-08-20",
+    readTime: "8 分鐘",
+    excerpt: "輝達 8 月 17 日宣布投資綠能公司 SB Energy 15 億美元、為 OpenAI 俄亥俄資料中心擔保最高 1,050 億美元——AI 巨頭從「租電網」變成「買電廠」。能源成為 AI 軍備競賽的戰略資產，綠電溢價將沿供應鏈傳導到你的雲端帳單。本文拆解「能源帳單三層結構」與三個務實動作。",
+    tags: ["AI 能源", "雲端成本", "綠電", "資料中心", "中小企業", "AI 轉型"],
+  },
+  {
     slug: "shadow-ai-governance-traffic-light",
     cat: "AI 轉型",
     title: "員工偷偷用 AI、連高階主管都在繞道：影子 AI 治理的「紅綠燈」",

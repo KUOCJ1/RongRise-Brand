@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n38",
+      "date": "2026-08-20",
+      "category": "資源",
+      "title": "AI 巨頭開始買電廠了：你的雲端帳單，即將變貴的三個理由",
+      "summary": "輝達投資綠能公司 SB Energy 15 億美元、為 OpenAI 資料中心擔保 1,050 億美元——AI 巨頭開始「買電廠」。綠電溢價將沿供應鏈傳導，你的雲端帳單遲早變貴。本文拆解能源帳單三層結構，教你現在就重算 AI 成本。",
+      "link": "/knowledge/ai-energy-arms-race-cloud-bill",
+      "isNew": true
+    },
+    {
       "id": "n37",
       "date": "2026-08-18",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "AI 巨頭告別個人化小助手：從「養寵物」到「雇員工」的時代轉折",
       "summary": "OpenAI 停用企業版 Custom GPTs、Google 淡出 Gems——角色型助手為何被巨頭收攤？「養寵物 vs 雇員工」框架帶你看懂 AI 從角色經濟走向工作流經濟的轉折。",
       "link": "/knowledge/ai-role-to-workflow-economy",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n34",
