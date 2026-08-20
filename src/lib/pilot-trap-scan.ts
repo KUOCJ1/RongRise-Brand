@@ -242,9 +242,11 @@ export function computeResult(answers: Record<string, number>): PilotTrapResult 
     (scores.platform + scores.trust + scores.apprentice + scores.governance + scores.pilotTrap) / 5
   );
   const pilotRisk = 100 - scores.pilotTrap;
-  const level = overall >= 80 ? "stable" : overall >= 60 ? "attention" : "red";
-
   const lowDimensions = (Object.keys(DIMENSIONS) as DimensionKey[]).filter((d) => scores[d] < 60);
+  let level: "stable" | "attention" | "red";
+  if (lowDimensions.length === 0 && overall >= 80) level = "stable";
+  else if (lowDimensions.length >= 3 || overall < 60) level = "red";
+  else level = "attention";
   const advice: string[] = [];
   if (lowDimensions.length === 0) {
     advice.push("五個維度都在健康線以上，你們的 agent 部隊治理已經贏過大多數企業。下一步是維持月檢紀律，並把經驗複製到新導入的 AI 應用。");
