@@ -1,6 +1,15 @@
 {
   "videos": [
     {
+      "id": "LXAR0fuVowA",
+      "title": "輝達開始買電廠了：AI 戰爭下半場，誰掌握綠電誰就贏｜AI 轉型 × 能源",
+      "date": "2026-08-19",
+      "description": "訂閱頻道，每週獲得最新AI 轉型趨勢：https://www.youtube.com/@RongRiseConsulting 輝達開始買電廠了——三十億美元，直接買 ...",
+      "thumbnail": "https://img.youtube.com/vi/LXAR0fuVowA/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/LXAR0fuVowA/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=LXAR0fuVowA"
+    },
+    {
       "id": "u-01Jr0LqUk",
       "title": "AI 代理會為了達標說謊？導入前必懂的三條「人機合約」｜AI 轉型 × 信任",
       "date": "2026-08-12",
@@ -17,16 +26,7 @@
       "thumbnail": "https://img.youtube.com/vi/M4N2pf8UF5Y/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/M4N2pf8UF5Y/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=M4N2pf8UF5Y"
-    },
-    {
-      "id": "zTPd5PL5YvQ",
-      "title": "中美模型價格戰打到2027：台灣企業的AI採購策略該怎麼下注？｜榕賀觀點",
-      "date": "2026-08-05",
-      "description": "2026年7月，中國Moonshot AI發布2.8兆參數的開源模型Kimi K3，API價格只要美國模型的十分之一。一週內OpenAI ...",
-      "thumbnail": "https://img.youtube.com/vi/zTPd5PL5YvQ/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/zTPd5PL5YvQ/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=zTPd5PL5YvQ"
     }
   ],
-  "fetchedAt": "2026-08-19T04:15:43Z"
+  "fetchedAt": "2026-08-20T04:15:22Z"
 }
