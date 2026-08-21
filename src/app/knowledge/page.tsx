@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-strategy-planning-collaboration",
+    cat: "策略管理",
+    title: "策略會議兩天只產出三個選項？不是市場的錯，是腦力的錯",
+    date: "2026.08.21",
+    readTime: "12 分鐘",
+    excerpt: "從有限理性到 AI 鬆綁：榕耀的四階段 AI 協作戰略規劃方法論——研究診斷、共識凝聚、戰略定案、治理交付，附四個客戶現場案例，並與 HBR 九月號研究互證。",
+    tags: ["AI 協作", "戰略規劃", "有限理性", "策略管理", "治理機制", "HBR"],
+  },
+  {
     slug: "pilot-trap-self-check",
     cat: "AI 轉型",
     title: "你的 AI 部隊健康嗎？五分鐘測出「Pilot Trap 陷阱深度」",

@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n5",
+      "date": "2026-08-21",
+      "category": "媒體",
+      "title": "新文章：策略會議兩天只產出三個選項？不是市場的錯，是腦力的錯",
+      "summary": "榕耀四階段 AI 協作戰略規劃方法論：四個客戶現場案例，從事實到治理的完整路徑。",
+      "link": "/knowledge/ai-strategy-planning-collaboration",
+      "isNew": true
+    },
+    {
       "id": "n40",
       "date": "2026-08-20",
       "category": "資源",
@@ -259,15 +268,6 @@
       "title": "矽谷正在用 AI 消滅「純管理職」——工作者如何避免終身困在基層？",
       "summary": "Block 裁 4,000 人、Amazon 裁 30,000 人、Google 管理層縮減 35%——這是組織結構的根本性重構。Jack Dorsey 的「智慧層」取代中階主管，四條生存路徑讓你不再困在基層。",
       "link": "/knowledge/ai-eliminating-middle-management-worker-survival-guide",
-      "isNew": false
-    },
-    {
-      "id": "n5",
-      "date": "2026-07-01",
-      "category": "媒體",
-      "title": "麥肯錫 HR 報告深度解析三部曲：AI 如何重塑人力資源管理",
-      "summary": "從招聘、培訓到績效評估，AI 正在改寫 HR 的遊戲規則。小賀為您拆解麥肯錫最新報告，台灣企業的落地路徑。",
-      "link": "/knowledge/hr-ai-trilogy-part1-recruitment-automation",
       "isNew": false
     },
     {
