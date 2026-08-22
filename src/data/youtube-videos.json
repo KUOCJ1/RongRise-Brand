@@ -1,6 +1,15 @@
 {
   "videos": [
     {
+      "id": "GkR3vZ0PwJs",
+      "title": "策略會議兩天只產出三個選項？不是市場的錯，是腦力的錯",
+      "date": "2026-08-21",
+      "description": "你上次的策略會議，開完兩天，拿到幾個選項？三個？四個？ 不是市場的錯，是腦力的錯——學者叫它「有限理性」。 這支影片分享 ...",
+      "thumbnail": "https://img.youtube.com/vi/GkR3vZ0PwJs/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/GkR3vZ0PwJs/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=GkR3vZ0PwJs"
+    },
+    {
       "id": "LXAR0fuVowA",
       "title": "輝達開始買電廠了：AI 戰爭下半場，誰掌握綠電誰就贏｜AI 轉型 × 能源",
       "date": "2026-08-19",
@@ -17,16 +26,7 @@
       "thumbnail": "https://img.youtube.com/vi/u-01Jr0LqUk/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/u-01Jr0LqUk/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=u-01Jr0LqUk"
-    },
-    {
-      "id": "M4N2pf8UF5Y",
-      "title": "63% 員工假裝懂 AI：你的團隊在「演」還是在「用」？｜榕賀觀點",
-      "date": "2026-08-05",
-      "description": "調查發現，63% 的美國員工承認會誇大自己的AI 能力——每三個人，就有兩個在「演」很會用AI。 這不是員工品德問題，是管理 ...",
-      "thumbnail": "https://img.youtube.com/vi/M4N2pf8UF5Y/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/M4N2pf8UF5Y/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=M4N2pf8UF5Y"
     }
   ],
-  "fetchedAt": "2026-08-20T04:15:22Z"
+  "fetchedAt": "2026-08-22T04:15:52Z"
 }
