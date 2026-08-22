@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Contact | Get in Touch — RongRise Consulting",
+    title: "Contact | Get in Touch",
     description: "Have questions? Contact RongRise Consulting via email, LINE, or schedule a free consultation.",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "RongRise Consulting" }],
   },

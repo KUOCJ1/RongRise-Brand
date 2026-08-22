@@ -5,12 +5,9 @@ export const metadata: Metadata = {
   description: "Take a 3-minute AI transformation maturity assessment and get personalized recommendations. Free online tool for business leaders.",
   alternates: {
     canonical: "https://rong-rise.com/ai-assessment",
-    languages: {
-      zh: "https://rong-rise.com/ai-assessment",
-    },
   },
   openGraph: {
-    title: "AI Transformation Self-Assessment — RongRise Consulting",
+    title: "AI Transformation Self-Assessment",
     description: "Take a 3-minute AI transformation maturity assessment and get personalized recommendations.",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "RongRise Consulting" }],
   },

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Services | AI Transformation · Talent Strategy · ESG — RongRise",
+    title: "Services | AI Transformation · Talent Strategy · ESG",
     description: "AI Transformation, Corporate Training, ESG Sustainability. Customized solutions from diagnosis to implementation.",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "RongRise Consulting" }],
   },

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
       "實錄、診斷、量表、工作坊：把 AI 治理從抽象名詞變成可以檢查、可以計分、可以行動的方法。",
     url: "https://rong-rise.com/ai-governance",
     type: "website",
-    images: [{ url: "https://rong-rise.com/images/article-managing-agents.jpg" }],
+    images: [{ url: "https://rong-rise.com/images/article-managing-agents.jpg", width: 1200, height: 630, alt: "榕耀管顧 AI 治理" }],
   },
 };
 

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "課程行事曆｜近期課程與活動 — 榕耀管顧",
+    title: "課程行事曆｜AI 轉型與 ESG 永續課程",
     description: "從單日工作坊到系列課程，找到最適合您的學習路徑。AI 轉型、人才策略、ESG 永續專業培訓。",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "榕耀管顧 RongRise Consulting" }],
   },

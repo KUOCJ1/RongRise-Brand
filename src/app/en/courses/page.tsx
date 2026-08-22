@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Upcoming Courses & Events — RongRise Consulting",
+    title: "Upcoming Courses & Events",
     description: "From single-day workshops to series courses. AI transformation, talent strategy, and ESG training.",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "RongRise Consulting" }],
   },

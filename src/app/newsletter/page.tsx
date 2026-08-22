@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: "https://rong-rise.com/newsletter",
   },
   openGraph: {
-    title: "電子報｜榕賀觀點 AI 週報 — 榕耀管顧",
+    title: "電子報｜榕賀觀點 AI 週報",
     description: "小賀每週為你整理最重要的 AI 轉型趨勢、ESG 實務攻略、課程優惠。",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "榕耀管顧 RongRise Consulting" }],
   },

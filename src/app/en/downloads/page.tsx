@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Resource Downloads | Free Tools & Whitepapers — RongRise",
+    title: "Downloads | Free Tools & Whitepapers",
     description: "Free downloads: AI Maturity Assessment, ESG Checklist, AI Trends Report, and more.",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "RongRise Consulting" }],
   },

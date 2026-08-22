@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Latest News | Courses, Resources & Insights — RongRise",
+    title: "Latest News | Courses & Insights",
     description: "Stay updated on the latest course offerings, government incentive resources, and industry insights.",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "RongRise Consulting" }],
   },
