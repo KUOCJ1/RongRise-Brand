@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-vendors-becoming-consultants-moat",
+    cat: "AI 轉型",
+    title: "賣鏟子的人自己來挖金礦了：AI 廠商「顧問化」，你的顧問還剩什麼價值？",
+    date: "2026.08.25",
+    readTime: "11 分鐘",
+    excerpt: "賣你 AI 工具的人，現在開始買「幫你落地 AI」的顧問公司。Anthropic 企業事業收購顧問、Bain 把 AI 轉型標準化成可下載指南——顧問業的護城河正在被 AI 廠商「向後整合」。但 AI 廠商能複製的是知識，複製不了的是判斷與信任。本文拆解「顧問價值五階光譜」，並給中小企業主一個選顧問的新標準。",
+    tags: ["AI 轉型", "顧問業", "護城河", "信任", "判斷", "中小企業"],
+  },
+  {
     slug: "ai-strategy-planning-collaboration",
     cat: "策略管理",
     title: "策略會議兩天只產出三個選項？不是市場的錯，是腦力的錯",
