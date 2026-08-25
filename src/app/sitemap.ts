@@ -88,6 +88,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${baseUrl}/content-ops`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/ai-governance`,
       lastModified: new Date(),
       changeFrequency: "monthly",

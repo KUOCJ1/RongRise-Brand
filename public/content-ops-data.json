@@ -1,0 +1,107 @@
+{
+ "generatedAt": "2026-08-25T12:44:04Z",
+ "engine": {
+  "name": "小哈內容引擎",
+  "startDate": "2026-05-31",
+  "daysRunning": 87
+ },
+ "stats": {
+  "scanDays": 67,
+  "weekArticles": 54,
+  "articles": 61,
+  "newsItems": 40,
+  "newsletterIssues": 11,
+  "subscribers": 17,
+  "confirmedSubscribers": 12,
+  "videos": 30,
+  "views": 153,
+  "channelSubscribers": 8,
+  "insights": 9,
+  "socialPosts": 13,
+  "igCards": 2,
+  "competitorReports": 65
+ },
+ "activity": [
+  {
+   "date": "2026-08-19",
+   "count": 12,
+   "topics": []
+  },
+  {
+   "date": "2026-08-20",
+   "count": 12,
+   "topics": []
+  },
+  {
+   "date": "2026-08-21",
+   "count": 12,
+   "topics": []
+  },
+  {
+   "date": "2026-08-22",
+   "count": 11,
+   "topics": []
+  },
+  {
+   "date": "2026-08-23",
+   "count": 12,
+   "topics": []
+  },
+  {
+   "date": "2026-08-24",
+   "count": 12,
+   "topics": []
+  },
+  {
+   "date": "2026-08-25",
+   "count": 12,
+   "topics": []
+  }
+ ],
+ "latest": {
+  "article": {
+   "title": "賣鏟子的人自己來挖金礦了：AI 廠商「顧問化」，你的顧問還剩什麼價值？",
+   "date": "2026.08.25",
+   "url": "/knowledge/ai-vendors-becoming-consultants-moat"
+  },
+  "newsletter": "🦞 榕賀觀點 第 11 期 — 2026-08-24",
+  "video": {
+   "title": "策略會議兩天只產出三個選項？不是市場的錯，是腦力的錯",
+   "date": "2026-08-21",
+   "url": "https://www.youtube.com/watch?v=GkR3vZ0PwJs"
+  },
+  "insight": "2026-W35.md"
+ },
+ "trends": [
+  {
+   "keyword": "組織與管理",
+   "icon": "🏢",
+   "count": 24,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "人才與技能",
+   "icon": "🧠",
+   "count": 13,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "企業導入",
+   "icon": "🚀",
+   "count": 13,
+   "momentum": "up"
+  },
+  {
+   "keyword": "人力資源",
+   "icon": "📋",
+   "count": 9,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "成本與投資",
+   "icon": "💰",
+   "count": 9,
+   "momentum": "down"
+  }
+ ]
+}
