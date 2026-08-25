@@ -11,6 +11,7 @@ const navItems = [
   { href: "/knowledge", label: "知識庫" },
   { href: "/roi-calculator", label: "ROI 估算" },
   { href: "/amoeba-scan", label: "任務盤點" },
+  { href: "/trend-radar", label: "趨勢雷達" },
   { href: "/newsletter", label: "電子報" },
   { href: "/news", label: "最新消息" },
   { href: "/downloads", label: "下載區" },
@@ -40,7 +41,7 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-2">
-          {navItems.slice(0, 9).map((item) => (
+          {navItems.slice(0, 10).map((item) => (
             <Link
               key={item.href}
               href={item.href}
