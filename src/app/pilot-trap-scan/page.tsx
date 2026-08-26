@@ -8,6 +8,7 @@ import {
   type DimensionKey,
   type PilotTrapResult,
 } from "@/lib/pilot-trap-scan";
+import { encodeScoreCode } from "@/lib/pilot-trap-workshop";
 
 /* ============================================
    Pilot Trap 診斷量表（Pilot Trap Scanner）
@@ -126,6 +127,7 @@ export default function PilotTrapScanPage() {
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState("");
   const [submitting, setSubmitting] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   const answeredCount = useMemo(() => Object.keys(answers).length, [answers]);
   const progress = Math.round((answeredCount / QUESTIONS.length) * 100);
@@ -226,6 +228,14 @@ export default function PilotTrapScanPage() {
             >
               開始診斷 →
             </button>
+            <div className="mt-4">
+              <a
+                href="/pilot-trap-workshop/"
+                className="inline-block px-8 py-3 rounded-full border border-[#2EC4B6]/40 text-[#2EC4B6] hover:bg-[#2EC4B6]/10 transition-colors text-sm font-semibold"
+              >
+                🏢 團隊工作坊模式（主持人彙總）→
+              </a>
+            </div>
             <p className="text-xs text-[#5A7A9E] mt-6">
               方法論源自 McKinsey《逃離 Pilot 陷阱》與榕耀管顧
               <a href="/knowledge/managing-31-ai-agents/" className="text-[#2EC4B6] hover:underline mx-1">
@@ -394,6 +404,50 @@ export default function PilotTrapScanPage() {
                   </li>
                 ))}
               </ol>
+            </div>
+
+            <div className="bg-gradient-to-r from-[#1A6DB5]/15 to-[#2EC4B6]/10 border border-[#2EC4B6]/25 rounded-2xl p-6 md:p-8 mb-10">
+              <div className="flex items-center gap-3 mb-3">
+                <span className="text-2xl">🏢</span>
+                <div>
+                  <h2 className="text-lg md:text-xl font-bold">團隊工作坊模式</h2>
+                  <p className="text-sm text-[#A0C4E8]">
+                    正在參加公司的工作坊？把這串分數碼複製給主持人，他會在彙總頁即時產生團隊雷達圖與診斷報告。
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col md:flex-row gap-3 items-stretch">
+                <code className="flex-1 bg-[#0A1F3A] border border-white/15 rounded-xl px-4 py-3 text-sm text-[#2EC4B6] font-mono break-all">
+                  {encodeScoreCode(name, result.scores)}
+                </code>
+                <button
+                  onClick={async () => {
+                    const code = encodeScoreCode(name, result.scores);
+                    try {
+                      await navigator.clipboard.writeText(code);
+                      setCopied(true);
+                    } catch {
+                      const ta = document.createElement("textarea");
+                      ta.value = code;
+                      document.body.appendChild(ta);
+                      ta.select();
+                      document.execCommand("copy");
+                      document.body.removeChild(ta);
+                      setCopied(true);
+                    }
+                    setTimeout(() => setCopied(false), 2000);
+                  }}
+                  className="bg-[#E8912A] hover:bg-[#F0A040] text-[#0D2B4E] font-bold px-6 py-3 rounded-xl transition-colors whitespace-nowrap"
+                >
+                  {copied ? "✅ 已複製" : "📋 複製分數碼"}
+                </button>
+              </div>
+              <a
+                href="/pilot-trap-workshop/"
+                className="inline-block mt-4 text-sm text-[#2EC4B6] hover:underline"
+              >
+                ← 我主持人，前往工作坊彙總頁 →
+              </a>
             </div>
 
             <div className="text-center bg-gradient-to-br from-[#1A6DB5]/20 to-[#2EC4B6]/10 border border-[#2EC4B6]/30 rounded-2xl p-8 mb-8">
