@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-one-person-scrum-team",
+    cat: "AI 轉型",
+    title: "一人 Scrum Team：AI 落地最短的捷徑，是讓員工自己當產品經理",
+    date: "2026.08.26",
+    readTime: "9 分鐘",
+    excerpt: "Google 與史丹佛研究發現：AI 落地的關鍵不是提示詞，而是產品經理的能力。榕耀提出的解法是「一人 Scrum Team」——用產品負責人（PO）的思維定義問題、Scrum 的節奏迭代實驗、Vibe Coding 工具內建的 Builder 負責執行。不需要組織改造，每個人自己就是一支完整的團隊。",
+    tags: ["AI 轉型", "敏捷開發", "產品思維", "AI 落地", "Scrum"],
+  },
+  {
     slug: "ai-vendors-becoming-consultants-moat",
     cat: "AI 轉型",
     title: "賣鏟子的人自己來挖金礦了：AI 廠商「顧問化」，你的顧問還剩什麼價值？",

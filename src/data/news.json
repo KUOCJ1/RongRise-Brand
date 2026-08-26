@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n42",
+      "date": "2026-08-26",
+      "category": "資源",
+      "title": "一人 Scrum Team：AI 落地最短的捷徑，是讓員工自己當產品經理",
+      "summary": "Google 與史丹佛研究發現：AI 落地關鍵不是提示詞，而是產品經理的能力。用 PO 思維定義問題、Scrum 節奏迭代、Vibe Coding 工具內建 Builder 執行——每個人自己就是一支 Scrum Team。",
+      "link": "/knowledge/ai-one-person-scrum-team/",
+      "isNew": true
+    },
+    {
       "id": "n41",
       "date": "2026-08-25",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "你的 AI 部隊健康嗎？五分鐘測出「Pilot Trap 陷阱深度」",
       "summary": "五個維度（平台歸屬／員工信任／人才培養／治理成熟／Pilot 陷阱）快速檢驗 AI 部隊體質，附 25 題免費線上診斷量表。",
       "link": "/knowledge/pilot-trap-self-check",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n39",
