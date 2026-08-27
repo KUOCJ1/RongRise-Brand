@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n43",
+      "date": "2026-08-27",
+      "category": "資源",
+      "title": "政府比你的公司還會用 AI：半年省下 3 萬分鐘，靠的是「補人力缺口」不是「取代人」",
+      "summary": "新竹市把 AI 放進不動產登記審查，半年省下逾 3 萬分鐘工時、每天回補 1.25 名人力。關鍵不是買了 AI，而是「缺口驅動」思維：先重設計流程、再讓 AI 補人力缺口。拆解「焦慮驅動 vs 缺口驅動」兩種導入動機。",
+      "link": "/knowledge/ai-fill-labor-gap-not-replace",
+      "isNew": true
+    },
+    {
       "id": "n42",
       "date": "2026-08-26",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "新文章：策略會議兩天只產出三個選項？不是市場的錯，是腦力的錯",
       "summary": "榕耀四階段 AI 協作戰略規劃方法論：四個客戶現場案例，從事實到治理的完整路徑。",
       "link": "/knowledge/ai-strategy-planning-collaboration",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n40",

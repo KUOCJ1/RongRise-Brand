@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-fill-labor-gap-not-replace",
+    cat: "AI 轉型",
+    title: "政府比你的公司還會用 AI：半年省下 3 萬分鐘，靠的是「補人力缺口」不是「取代人」",
+    date: "2026.08.27",
+    readTime: "8 分鐘",
+    excerpt: "政府比企業更敢用 AI？新竹市把 AI 放進不動產登記審查，半年省下逾 3 萬分鐘工時。關鍵不是買了 AI，而是「缺口驅動」思維：先重設計流程、再讓 AI 補人力缺口。本文拆解「焦慮驅動 vs 缺口驅動」兩種導入動機。",
+    tags: ["AI 轉型", "公部門", "流程重設計", "AI 補人力", "缺口驅動", "中小企業"],
+  },
+  {
     slug: "ai-one-person-scrum-team",
     cat: "AI 轉型",
     title: "一人 Scrum Team：AI 落地最短的捷徑，是讓員工自己當產品經理",
