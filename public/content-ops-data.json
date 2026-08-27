@@ -1,15 +1,15 @@
 {
- "generatedAt": "2026-08-26T05:01:13Z",
+ "generatedAt": "2026-08-27T05:01:52Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 88
+  "daysRunning": 89
  },
  "stats": {
-  "scanDays": 67,
+  "scanDays": 68,
   "weekArticles": 54,
-  "articles": 61,
-  "newsItems": 40,
+  "articles": 62,
+  "newsItems": 41,
   "newsletterIssues": 11,
   "subscribers": 17,
   "confirmedSubscribers": 12,
@@ -17,16 +17,11 @@
   "views": 155,
   "channelSubscribers": 8,
   "insights": 9,
-  "socialPosts": 13,
+  "socialPosts": 14,
   "igCards": 2,
-  "competitorReports": 65
+  "competitorReports": 66
  },
  "activity": [
-  {
-   "date": "2026-08-20",
-   "count": 12,
-   "topics": []
-  },
   {
    "date": "2026-08-21",
    "count": 12,
@@ -54,6 +49,11 @@
   },
   {
    "date": "2026-08-26",
+   "count": 15,
+   "topics": []
+  },
+  {
+   "date": "2026-08-27",
    "count": 0,
    "topics": []
   }
