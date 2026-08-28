@@ -14,8 +14,8 @@ import { coverImg } from "@/lib/cover-map";
 import newsData from "@/data/news.json";
 
 export const metadata = {
-  title: "榕耀管顧 RongRise Consulting｜AI 轉型 × 人才策略 × ESG 永續",
-  description: "協助企業從人才策略到 AI 落地，驅動永續成長。CJ哥專業顧問品牌，聚焦 AI 轉型、人才策略、ESG 永續發展。",
+  title: "榕耀管顧 RongRise Consulting｜管理為本 · AI 為用",
+  description: "以管理為本、以 AI 為用的企業顧問。CJ哥 20 年人資管理實戰，聚焦組織設計、人才發展、變革管理與 AI 落地，陪企業把轉型走完。",
   alternates: {
     canonical: "https://rong-rise.com",
     languages: {
@@ -97,16 +97,16 @@ export default function HomePage() {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-5 py-2 mb-8 border border-white/10 animate-fade-in-up">
               <span className="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse-glow" />
-              <span className="text-sm font-medium tracking-wide">智慧轉型，創新未來</span>
+              <span className="text-sm font-medium tracking-wide">管理為本 · AI 為用</span>
             </div>
             <h1 className="heading-hero mb-6 animate-fade-in-up animation-delay-100">
-              從人才策略到
+              把管理做深，
               <br />
-              <span className="hero-highlight">AI 落地</span>
+              <span className="hero-highlight">讓 AI 落地</span>
             </h1>
             <p className="text-body-lg text-white/80 mb-10 animate-fade-in-up animation-delay-200 leading-relaxed">
-              協助企業驅動永續成長，讓前瞻思維與務實方案結合，
-              在 AI 時代中搶得先機。
+              以 20 年人資管理實戰為底，從組織設計、人才發展到變革領導，
+              讓 AI 成為管理的槓桿，而不只是工具。
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in-up animation-delay-300">
               <TrackLink href="/about#contact" className="btn-primary bg-white text-primary font-bold hover:bg-white/95 shadow-lg shadow-white/20 animate-pulse-glow" trackLabel="預約免費諮詢" trackLocation="hero">

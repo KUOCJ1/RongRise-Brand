@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import CaseStudiesEnSection from "@/components/CaseStudiesEn";
 
 export const metadata: Metadata = {
-  title: "RongRise Consulting | AI Transformation × Talent × ESG",
-  description: "Helping businesses drive sustainable growth through AI Transformation, Talent Strategy, and ESG Sustainability. Founded by C.J. Kuo with 20+ years of experience.",
+  title: "RongRise Consulting | Management First, AI as the Lever",
+  description: "Rooted in management, powered by AI. C.J. Kuo brings 20+ years of HR leadership and consulting experience to organizational design, talent development, change leadership, and AI implementation.",
   alternates: {
     canonical: "https://rong-rise.com/en",
     languages: {
@@ -12,8 +12,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "RongRise Consulting | AI Transformation × Talent × ESG",
-    description: "Helping businesses drive sustainable growth. AI Transformation, Talent Strategy, ESG Sustainability.",
+    title: "RongRise Consulting | Management First, AI as the Lever",
+    description: "Rooted in management, powered by AI — organizational design, talent development, change leadership, and AI implementation.",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "RongRise Consulting" }],
   },
 };
@@ -39,16 +39,17 @@ export default function EnHomePage() {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 bg-white/15 rounded-full px-4 py-1.5 mb-6">
               <span className="w-2 h-2 rounded-full bg-tertiary animate-pulse" />
-              <span className="text-sm font-medium">Smart Transformation, Innovative Future</span>
+              <span className="text-sm font-medium">Management First, AI as the Lever</span>
             </div>
             <h1 className="heading-hero mb-6 animate-fade-in-up">
-              From Talent Strategy to
+              Deepen Management.
               <br />
-              <span className="text-tertiary-light">AI Implementation</span>
+              <span className="text-tertiary-light">Deliver AI Impact</span>
             </h1>
             <p className="text-body-lg text-white/85 mb-8 animate-fade-in-up animation-delay-200">
-              Helping businesses drive sustainable growth by combining forward-thinking
-              strategies with practical solutions in the AI era.
+              Rooted in 20+ years of HR management practice — from organizational design
+              and talent development to change leadership, AI becomes a lever for management,
+              not just a tool.
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in-up animation-delay-300">
               <TrackLink href="/en/about#contact" className="btn-primary bg-white text-primary font-bold hover:bg-white/95 shadow-lg shadow-white/20" trackLabel="Book Consultation" trackLocation="en_hero">

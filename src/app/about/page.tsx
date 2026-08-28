@@ -7,9 +7,9 @@ import type { Metadata } from "next";
    ============================================ */
 
 export const metadata: Metadata = {
-  title: "關於我們｜榕耀管顧 — 企業 AI 轉型顧問",
+  title: "關於我們｜榕耀管顧 — 企業管理與 AI 落地顧問",
   description:
-    "榕耀管顧由郭鎮榕 CJ哥創辦，與 AI 營運長小賀共同領導專業團隊，專注企業 AI 轉型、人才策略與 ESG 永續諮詢。",
+    "榕耀管顧由郭鎮榕 CJ哥創辦，與 AI 營運長小賀共同領導專業團隊，專注管理策略、人才發展、AI 落地與 ESG 永續諮詢。",
   alternates: {
     canonical: "https://rong-rise.com/about",
     languages: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "關於我們｜榕耀管顧 — 企業 AI 轉型顧問",
+    title: "關於我們｜榕耀管顧 — 企業管理與 AI 落地顧問",
     description: "CJ 郭鎮榕 × 小賀 AI 營運長 — 企業轉型的最佳夥伴。",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "榕耀管顧 RongRise Consulting" }],
   },
@@ -74,7 +74,7 @@ export default function AboutPage() {
             </h1>
             <p className="text-body-lg text-white/85">
               由 CJ 郭鎮榕創辦，與 AI 營運長小賀共同領導專業團隊<br />
-              協助企業從人才策略到 AI 落地，驅動永續成長。
+              以管理為本、以 AI 為用——從組織、人才到策略，陪企業把轉型走完。
             </p>
           </div>
         </div>

@@ -8,19 +8,24 @@ import Script from "next/script";
 const SITE_URL = "https://rong-rise.com";
 const SITE_NAME = "榕耀管顧 RongRise Consulting";
 const SITE_DESCRIPTION =
-  "協助企業從人才策略到 AI 落地，驅動永續成長。智慧轉型，創新未來。C.J. Kuo 老師專業諮詢品牌，聚焦 AI 轉型、人才策略、ESG 永續發展。";
+  "以管理為本、以 AI 為用。CJ哥 20 年人資管理實戰，從組織設計、人才發展到變革領導，陪企業把 AI 真正落地。聚焦管理策略、人才發展、AI 落地、ESG 永續。";
 const OG_IMAGE = `${SITE_URL}/images/og-image-ai.jpg`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — 從人才策略到 AI 落地，驅動永續成長`,
+    default: `${SITE_NAME} — 把管理做深，讓 AI 落地`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
   keywords: [
     "AI 轉型",
     "人才策略",
+    "管理顧問",
+    "組織變革",
+    "變革管理",
+    "策略管理",
+    "領導力發展",
     "ESG",
     "企業顧問",
     "智慧轉型",
@@ -68,7 +73,7 @@ const jsonLd = {
   name: "榕耀管顧 RongRise Consulting",
   alternateName: "RongRise Consulting",
   description:
-    "從人才策略到 AI 落地，驅動永續成長。智慧轉型，創新未來。",
+    "以管理為本、以 AI 為用。從組織設計、人才發展到變革領導，陪企業把轉型走完。",
   url: SITE_URL,
   logo: `${SITE_URL}/images/cj-portrait-full.jpg`,
   image: `${SITE_URL}/images/cj-portrait-full.jpg`,
@@ -85,7 +90,7 @@ const jsonLd = {
     areaServed: "TW",
     availableLanguage: ["Chinese"],
   },
-  serviceType: ["AI 轉型策略", "人才發展策略", "ESG 永續諮詢"],
+  serviceType: ["管理顧問諮詢", "AI 轉型策略", "人才發展策略", "ESG 永續諮詢"],
   sameAs: [
     "https://www.linkedin.com/in/c-j-kuo-5629b97b/",
     "https://www.facebook.com/cj.kuo1",
@@ -140,3 +145,4 @@ export default function RootLayout({
     </html>
   );
 }
+

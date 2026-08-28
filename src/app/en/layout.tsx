@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "Talent Strategy",
     "ESG",
     "Business Consulting",
-    "Smart Transformation",
+    "Management Consulting",
     "RongRise",
     "C.J. Kuo",
   ],

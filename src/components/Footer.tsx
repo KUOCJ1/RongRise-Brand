@@ -17,8 +17,8 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              協助企業從人才策略到 AI 落地，驅動永續成長。<br />
-              智慧轉型，創新未來。
+              以管理為本，以 AI 為用。<br />
+              從組織、人才到策略，陪企業把轉型走完。
             </p>
           </div>
 
