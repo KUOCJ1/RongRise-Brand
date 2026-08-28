@@ -25,11 +25,11 @@ const articles: Article[] = [
   {
     slug: "hugging-face-nvidia-129-billion",
     cat: "AI 轉型",
-    title: "OpenAI 的 AI 駭了它、NVIDIA 買了它——Hugging Face 究竟值什麼？",
+    title: "OpenAI 的智能體想方設法駭進它，NVIDIA 準備花 129 億買了它，Hugging Face 究竟是何方神聖？",
     date: "2026.08.28",
     readTime: "8 分鐘",
-    excerpt: "7 月被 OpenAI 的 AI agent 入侵生產環境，8 月傳出以 129 億美元被 NVIDIA 收購。全球最大開源 AI 平台的定位與處境，以及 AI 供應鏈整併的幾個訊號。",
-    tags: ["Hugging Face", "NVIDIA", "開源 AI", "AI 供應鏈", "Agent 安全"],
+    excerpt: "7 月被 OpenAI 的智能體入侵生產環境，8 月傳出以 129 億美元被 NVIDIA 收購。全球最大開源 AI 平台的定位與處境，以及 AI 供應鏈整併的幾個訊號。",
+    tags: ["Hugging Face", "NVIDIA", "開源 AI", "AI 供應鏈", "智能體安全"],
   },
   {
     slug: "ai-fill-labor-gap-not-replace",
