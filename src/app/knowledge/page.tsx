@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "hugging-face-nvidia-129-billion",
+    cat: "AI 轉型",
+    title: "OpenAI 的 AI 駭了它、NVIDIA 買了它——Hugging Face 究竟值什麼？",
+    date: "2026.08.28",
+    readTime: "8 分鐘",
+    excerpt: "7 月被 OpenAI 的 AI agent 駭進生產環境，8 月被 NVIDIA 以 129 億美元收購。全球最大的開源 AI 平台 Hugging Face，一個月內從受害者變成被收購方。拆解它的三個角色與真正價值，以及對你 AI 採購的影響。",
+    tags: ["Hugging Face", "NVIDIA", "開源 AI", "AI 供應鏈", "Agent 安全"],
+  },
+  {
     slug: "ai-fill-labor-gap-not-replace",
     cat: "AI 轉型",
     title: "政府比你的公司還會用 AI：半年省下 3 萬分鐘，靠的是「補人力缺口」不是「取代人」",

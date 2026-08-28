@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n44",
+      "date": "2026-08-28",
+      "category": "資源",
+      "title": "OpenAI 的 AI 駭了它、NVIDIA 買了它——Hugging Face 究竟值什麼？",
+      "summary": "全球最大開源 AI 平台一個月內先被駭、再被 129 億美元收購。拆解 HF 的價值與 AI 供應鏈的整併訊號。",
+      "link": "/knowledge/hugging-face-nvidia-129-billion",
+      "isNew": true
+    },
+    {
       "id": "n43",
       "date": "2026-08-27",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "賣鏟子的人自己來挖金礦了：AI 廠商「顧問化」，你的顧問還剩什麼價值？",
       "summary": "賣你 AI 工具的人，開始買顧問公司了。Anthropic 收購顧問、Bain 把 AI 轉型標準化成指南——顧問業正被 AI 廠商「向後整合」。但 AI 廠商能複製知識，複製不了判斷與信任。本文拆解顧問價值的五階光譜。",
       "link": "/knowledge/ai-vendors-becoming-consultants-moat",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n5",
