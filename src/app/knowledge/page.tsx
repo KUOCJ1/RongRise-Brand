@@ -28,7 +28,7 @@ const articles: Article[] = [
     title: "OpenAI 的 AI 駭了它、NVIDIA 買了它——Hugging Face 究竟值什麼？",
     date: "2026.08.28",
     readTime: "8 分鐘",
-    excerpt: "7 月被 OpenAI 的 AI agent 駭進生產環境，8 月被 NVIDIA 以 129 億美元收購。全球最大的開源 AI 平台 Hugging Face，一個月內從受害者變成被收購方。拆解它的三個角色與真正價值，以及對你 AI 採購的影響。",
+    excerpt: "7 月被 OpenAI 的 AI agent 入侵生產環境，8 月傳出以 129 億美元被 NVIDIA 收購。全球最大開源 AI 平台的定位與處境，以及 AI 供應鏈整併的幾個訊號。",
     tags: ["Hugging Face", "NVIDIA", "開源 AI", "AI 供應鏈", "Agent 安全"],
   },
   {
