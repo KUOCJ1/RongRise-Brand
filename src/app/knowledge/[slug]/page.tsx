@@ -1,5 +1,6 @@
 import Link from "next/link";
 import articlesData from "@/data/articles.json";
+import vaultRelatedJson from "@/data/vault-related.json";
 import type { Metadata } from "next";
 import ArticleTracker from "@/components/ArticleTracker";
 import ArticleToc from "@/components/ArticleToc";
@@ -26,6 +27,16 @@ interface Article {
   tags: string[];
   body: string;
 }
+
+interface VaultRelatedItem {
+  slug: string;
+  title: string;
+  category: string;
+  excerpt?: string;
+  url: string;
+}
+
+const vaultRelatedData = vaultRelatedJson as Record<string, VaultRelatedItem[]>;
 
 function getArticle(slug: string): Article | undefined {
   return (articlesData as Article[]).find((a) => a.slug === slug);
@@ -389,6 +400,44 @@ export default async function ArticlePage({ params }: PageProps) {
                   </p>
                   <span className="text-xs text-primary mt-3 inline-block">閱讀更多 →</span>
                 </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Vault Related — 第二大腦延伸閱讀 */}
+      {(vaultRelatedData[slug] || []).length > 0 && (
+        <section className="py-12 md:py-16">
+          <div className="max-w-[800px] mx-auto px-4 sm:px-6">
+            <h2 className="heading-subsection text-text-primary mb-2">
+              延伸閱讀 — 第二大腦
+            </h2>
+            <p className="text-text-secondary text-sm mb-6">
+              從榕耀第二大腦（內部知識庫）挖出的相關研究筆記，給你更深一層的素材。
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {vaultRelatedData[slug].map((r, i) => (
+                <a
+                  key={i}
+                  href={r.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card group no-underline block"
+                >
+                  <span className="tag mb-2">{r.category}</span>
+                  <h3 className="font-semibold text-text-primary group-hover:text-primary transition-colors mb-2 text-sm leading-relaxed line-clamp-3">
+                    {r.title}
+                  </h3>
+                  {r.excerpt ? (
+                    <p className="text-text-secondary text-xs line-clamp-2">
+                      {r.excerpt}
+                    </p>
+                  ) : null}
+                  <span className="text-xs text-primary mt-3 inline-block">
+                    在第二大腦閱讀 →
+                  </span>
+                </a>
               ))}
             </div>
           </div>
