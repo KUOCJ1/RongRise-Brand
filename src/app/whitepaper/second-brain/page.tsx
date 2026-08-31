@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "第二大腦白皮書 — 把知識變成商業引擎 ｜ 榕耀管顧",
   description:
-    "榕耀管顧第二大腦白皮書：運作邏輯（知識飛輪）、資訊架構（五層系統）、理論架構（DIKW × SECI）與核心元件說明——一套會自我生長、可對外輸出的知識基礎設施。",
+    "榕耀管顧第二大腦白皮書：運作邏輯（知識飛輪）、資訊架構（五層系統）、理論架構（DIKW × SECI）與落地實況——一套已在運作、會自我生長、可對外輸出的知識基礎設施。",
   alternates: { canonical: "https://rong-rise.com/whitepaper/second-brain" },
   openGraph: {
     type: "article",
     title: "第二大腦白皮書 — 把知識變成商業引擎 ｜ 榕耀管顧",
     description:
-      "運作邏輯、資訊架構、理論架構——一套會自我生長、可對外輸出的知識基礎設施。",
+      "運作邏輯、資訊架構、理論架構、落地實況——一套已在運作、可對外輸出的知識基礎設施。",
     url: "https://rong-rise.com/whitepaper/second-brain",
     images: [{ url: "https://rong-rise.com/images/second-brain/fig1.jpg", width: 1920, height: 1900, alt: "第二大腦知識飛輪" }],
   },
@@ -66,12 +66,12 @@ export default function SecondBrainWhitepaper() {
               把知識變成商業引擎
             </h1>
             <p className="mt-5 text-lg text-white/75 leading-relaxed">
-              運作邏輯 · 資訊架構 · 理論架構 —— 一套會自我生長、可對外輸出的知識基礎設施
+              運作邏輯 · 資訊架構 · 理論架構 · 落地實況 —— 一套已在運作、會自我生長、可對外輸出的知識基礎設施
             </p>
             <div className="mt-8 flex flex-wrap gap-6 text-sm text-white/60">
               <span>作者：<b className="text-white">郭鎮榕 C.J. Kuo</b></span>
-              <span>發行：<b className="text-white">2026-08-30</b></span>
-              <span>版本：<b className="text-white">v1.0</b></span>
+              <span>發行：<b className="text-white">2026-08-31</b></span>
+              <span>版本：<b className="text-white">v1.1</b></span>
               <span>系統：<b className="text-white">brain.rong-rise.com</b></span>
             </div>
           </div>
@@ -81,7 +81,7 @@ export default function SecondBrainWhitepaper() {
         <section className="bg-white rounded-2xl border border-border p-8 md:p-10 mb-8">
           <div className="text-sm font-bold tracking-widest text-tertiary mb-3">摘要 · EXECUTIVE SUMMARY</div>
           <p className="text-[17px] leading-[1.9] text-text-secondary">
-            顧問的知識就是產品。過去十五年企業人資管理、十年顧問服務所累積的經驗與判斷，大多散落在腦海、硬碟與對話紀錄中——它們真實存在，卻無法累積、無法複利、無法在需要時被精準召喚。榕耀管顧的第二大腦，把這份無形資產變成一套有紀律的知識基礎設施：知識自動流入、結構化儲存、語意化連結，再輸出為文章、電子報、諮詢服務與顧問交付物；而每一次輸出產生的新經驗，又會回流成為下一輪輸入。本文從運作邏輯（知識飛輪）、資訊架構（五層系統）與理論架構（DIKW × SECI）三個視角，完整說明這套系統的設計，以及其中每一個元件的作用。
+            顧問的知識就是產品。過去十五年企業人資管理、十年顧問服務所累積的經驗與判斷，大多散落在腦海、硬碟與對話紀錄中——它們真實存在，卻無法累積、無法複利、無法在需要時被精準召喚。榕耀管顧的第二大腦，把這份無形資產變成一套有紀律的知識基礎設施：知識自動流入、結構化儲存、語意化連結，再輸出為文章、電子報、諮詢服務與顧問交付物；而每一次輸出產生的新經驗，又會回流成為下一輪輸入。本文從運作邏輯（知識飛輪）、資訊架構（五層系統）與理論架構（DIKW × SECI）三個視角，完整說明這套系統的設計，以及其中每一個元件的作用。寫在前面：這不是一份紙上藍圖，而是一套已經架構出來、正在實際運作的系統。文中的每一個數字，此刻都在真實發生。
           </p>
         </section>
 
@@ -135,7 +135,20 @@ export default function SecondBrainWhitepaper() {
         </Section>
 
         {/* 05 */}
-        <Section num="05" title="核心元件說明" en="COMPONENT GUIDE">
+        <Section num="05" title="落地實況：這不是理論，是正在運作的系統" en="LIVE STATUS — ALREADY OPERATING, NOT A BLUEPRINT">
+          <p>讀到這裡，如果你以為這只是一份理論架構文件，我要先澄清：本文描述的每一根管線、每一個元件，此刻都在實際運作。它不是願景，而是榕耀管顧每天賴以生產的基礎設施——文章、電子報、顧問交付，都從這套系統流出。</p>
+          <ul>
+            <li><b>知識本體持續增長</b>——Vault 現有 366 篇筆記、17 個領域、36.4 萬字，每日健康檢查與每週週報持續追蹤它的演化方向。</li>
+            <li><b>六條掃描管線每日入庫</b>——arXiv、英文部落格、政策法規、產業報告、競對監測與每日掃描，每天自動抓取、摘要並歸檔，品質由機制守護。</li>
+            <li><b>公開知識庫對外服務</b>——brain.rong-rise.com 每日自動重建，任何讀者都能瀏覽；brain-api 提供 10+ 個端點，供官網與外部服務呼叫。</li>
+            <li><b>內容生產全面接軌</b>——官網 64 篇文章底部自動串接知識庫延伸閱讀，電子報每週雙刊的選材由知識庫自動注入。</li>
+            <li><b>治理機制每日運作</b>——Git 雙向同步、Google Drive 增量備份、Cognee 每日圖譜增量，讓知識資產可回溯、可保全、可語意檢索。</li>
+          </ul>
+          <Callout gold>最直接的證據是：<b>你正在讀的這份白皮書，本身就是這套系統的產出</b>——它的選題來自知識庫的累積，它的結構由輸出驅動的原則決定，它的圖表由同一套設計系統產出。系統不是為了這份文件才存在；這份文件只是系統日常輸出的一次展示。</Callout>
+        </Section>
+
+        {/* 06 */}
+        <Section num="06" title="核心元件說明" en="COMPONENT GUIDE">
           <p>下表逐一說明系統中每個元件的職責、技術與現況——這是理解整個第二大腦的元件地圖。</p>
           <div className="overflow-x-auto mt-6">
             <table className="w-full text-left text-[15px] border-collapse">
@@ -165,8 +178,8 @@ export default function SecondBrainWhitepaper() {
           </div>
         </Section>
 
-        {/* 06 */}
-        <Section num="06" title="治理與品質保證" en="GOVERNANCE & QUALITY">
+        {/* 07 */}
+        <Section num="07" title="治理與品質保證" en="GOVERNANCE & QUALITY">
           <p>知識庫最大的風險不是「沒有內容」，而是「內容失去信任」。第二大腦以五道防線守住品質底線：</p>
           <ul>
             <li><b>每日健康檢查</b>——自動統計檔案數、空連結、待處理內容與 git 狀態，異常即回報。</li>
@@ -178,8 +191,8 @@ export default function SecondBrainWhitepaper() {
           <Callout gold>治理的哲學：<b>用機制取代意志力。</b>品質不依賴任何人的記憶或自律，而是內建在每日的系統運作中。</Callout>
         </Section>
 
-        {/* 07 */}
-        <Section num="07" title="未來進化路線" en="ROADMAP">
+        {/* 08 */}
+        <Section num="08" title="未來進化路線" en="ROADMAP">
           <p>第二大腦的下一階段，是讓知識資產從「支撐內容生產」進化為「驅動商業價值」。五大方向依序推進：</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 mt-6">
             {roadmap.map((r) => (
@@ -192,10 +205,10 @@ export default function SecondBrainWhitepaper() {
           </div>
         </Section>
 
-        {/* 08 */}
-        <Section num="08" title="結語" en="CLOSING">
+        {/* 09 */}
+        <Section num="09" title="結語" en="CLOSING">
           <p>AI 時代，企業與顧問的競爭力，正從「擁有知識」轉向「組織知識的速度」。第二大腦是榕耀管顧對這個問題的回答：一套有理論依據、有自動化紀律、有商業輸出的知識基礎設施。它讓每一次閱讀都成為資產，每一次輸出都成為複利，讓「以管理為本、以 AI 為用」不再只是一句標語，而是每天在系統中真實發生的循環。</p>
-          <p className="mb-0">這份白皮書的內容本身，就是第二大腦的產物——而它的下一版，會因為這份文件的產出而變得更好。</p>
+          <p className="mb-0">這份白皮書的內容本身，就是第二大腦的產物——而它的下一版，會因為這份文件的產出而變得更好。它不是停留在紙上的理論，而是一套正在運作的系統：你讀到的每一個數字，此刻都在真實發生。</p>
         </Section>
 
       </div>
