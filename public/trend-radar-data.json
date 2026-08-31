@@ -1,19 +1,18 @@
 {
- "generatedAt": "2026-08-25T10:21:22Z",
+ "generatedAt": "2026-08-31T06:02:07Z",
  "window": {
-  "from": "2026-08-19",
-  "to": "2026-08-25",
+  "from": "2026-08-25",
+  "to": "2026-08-31",
   "days": 7,
   "digestCount": 7
  },
  "stats": {
-  "totalArticles": 54,
+  "totalArticles": 53,
   "categories": {
-   "AI 轉型": 18,
-   "ESG 永續": 12,
-   "人才策略": 13,
-   "管理趨勢": 9,
-   "𝕏 社群脈動": 2
+   "AI 轉型": 20,
+   "ESG 永續": 14,
+   "人才策略": 12,
+   "管理趨勢": 7
   }
  },
  "trends": [
@@ -21,122 +20,437 @@
    "keyword": "組織與管理",
    "icon": "🏢",
    "category": "管理趨勢",
-   "count": 24,
-   "prevCount": 20,
+   "count": 22,
+   "prevCount": 21,
    "momentum": "flat"
   },
   {
-   "keyword": "人才與技能",
-   "icon": "🧠",
-   "category": "人才策略",
-   "count": 13,
-   "prevCount": 12,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "企業導入",
-   "icon": "🚀",
+   "keyword": "治理與法規",
+   "icon": "⚖️",
    "category": "AI 轉型",
-   "count": 13,
-   "prevCount": 7,
+   "count": 16,
+   "prevCount": 8,
+   "momentum": "up"
+  },
+  {
+   "keyword": "成本與投資",
+   "icon": "💰",
+   "category": "AI 轉型",
+   "count": 14,
+   "prevCount": 8,
+   "momentum": "up"
+  },
+  {
+   "keyword": "晶片與算力",
+   "icon": "🔩",
+   "category": "AI 轉型",
+   "count": 11,
+   "prevCount": 8,
+   "momentum": "up"
+  },
+  {
+   "keyword": "ESG 揭露",
+   "icon": "🌱",
+   "category": "ESG 永續",
+   "count": 10,
+   "prevCount": 4,
    "momentum": "up"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
    "category": "人才策略",
+   "count": 10,
+   "prevCount": 10,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "企業導入",
+   "icon": "🚀",
+   "category": "AI 轉型",
+   "count": 10,
+   "prevCount": 11,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "人才與技能",
+   "icon": "🧠",
+   "category": "人才策略",
    "count": 9,
    "prevCount": 12,
    "momentum": "flat"
   },
   {
-   "keyword": "成本與投資",
-   "icon": "💰",
+   "keyword": "AI Agent",
+   "icon": "🤖",
    "category": "AI 轉型",
-   "count": 9,
-   "prevCount": 15,
-   "momentum": "down"
+   "count": 8,
+   "prevCount": 1,
+   "momentum": "up"
   },
   {
-   "keyword": "晶片與算力",
-   "icon": "🔩",
+   "keyword": "安全與風險",
+   "icon": "🛡️",
    "category": "AI 轉型",
-   "count": 9,
-   "prevCount": 13,
-   "momentum": "down"
-  },
-  {
-   "keyword": "治理與法規",
-   "icon": "⚖️",
-   "category": "AI 轉型",
-   "count": 9,
-   "prevCount": 9,
-   "momentum": "flat"
+   "count": 7,
+   "prevCount": 1,
+   "momentum": "up"
   },
   {
    "keyword": "能源與電力",
    "icon": "⚡",
    "category": "ESG 永續",
    "count": 7,
-   "prevCount": 5,
-   "momentum": "up"
+   "prevCount": 7,
+   "momentum": "flat"
   },
   {
    "keyword": "自動化",
    "icon": "⚙️",
    "category": "AI 轉型",
    "count": 7,
-   "prevCount": 3,
-   "momentum": "up"
+   "prevCount": 6,
+   "momentum": "flat"
   },
   {
    "keyword": "資料中心",
    "icon": "🏭",
    "category": "AI 轉型",
-   "count": 6,
-   "prevCount": 5,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "ESG 揭露",
-   "icon": "🌱",
-   "category": "ESG 永續",
-   "count": 4,
+   "count": 7,
    "prevCount": 7,
-   "momentum": "down"
+   "momentum": "flat"
   },
   {
    "keyword": "開源模型",
    "icon": "🌐",
    "category": "AI 轉型",
-   "count": 3,
-   "prevCount": 1,
-   "momentum": "up"
-  },
-  {
-   "keyword": "AI Agent",
-   "icon": "🤖",
-   "category": "AI 轉型",
    "count": 2,
-   "prevCount": 2,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "安全與風險",
-   "icon": "🛡️",
-   "category": "AI 轉型",
-   "count": 1,
    "prevCount": 3,
    "momentum": "down"
   }
  ],
  "articles": [
   {
-   "title": "地熱電廠導入5G AI-RAN專網，結合AI提升巡檢效率20%、夏季發電效率增5%",
-   "url": "https://www.ithome.com.tw/news/178226",
-   "summary": "再生能源×AI 的台灣實證：地熱電廠以 5G AI-RAN 專網結合 AI 巡檢，效率提升 20%、夏季發電效率增 5%——綠能場域的「AI 維運化」正成為 ESG 與效率雙贏的落地場景",
-   "date": "2026-08-25",
+   "title": "新光醫院麻醉科用 AI 讀病歷、揪出術前麻醉風險因子，下一步瞄準術中預測",
+   "url": "https://www.ithome.com.tw/news/178315",
+   "summary": "台灣醫療 AI 落地實例：AI 從病歷中辨識術前麻醉風險因子，下一階段延伸至術中即時預測，顯示 AI 在專業場景的垂直深化（iThome，2026）。",
+   "date": "2026-08-31",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "能管法三讀修正：因應 AI 用電需求，新設能源大戶須設自用發電或儲能設備",
+   "url": "https://www.ithome.com.tw/news/178390",
+   "summary": "台灣《能源管理法》修正三讀通過，AI 資料中心與能源大戶將承擔自用發電/儲能義務，AI 用電正式進入法規治理層級（iThome，2026）。",
+   "date": "2026-08-31",
    "category": "ESG 永續"
+  },
+  {
+   "title": "How AI Agents Orchestrate Work Across Silos（HBR）",
+   "url": "https://hbr.org/2026/09/how-ai-agents-orchestrate-work-across-silos",
+   "summary": "HBR 探討 AI agent 如何跨部門、跨系統協調工作流程，打破組織孤島——對資源有限的中小企業而言，agent 化流程是低人力成本切入 AI 轉型的可行路徑（2026/09）。",
+   "date": "2026-08-31",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "The CEO's Guide to Closing the AI-Knowledge Gap with Your Board（BCG）",
+   "url": "https://www.bcg.com/publications/2026/ceos-guide-to-closing-the-ai-knowledge-gap-with-your-board",
+   "summary": "BCG 2026「Split Decisions」調查：逾 60% CEO 認為董事會在 AI 轉型上操之過急，CEO 與董事會的 AI 認知落差成治理新課題（2026-08-04）。",
+   "date": "2026-08-31",
+   "category": "管理趨勢"
+  },
+  {
+   "title": "The state of AI in 2026: On the road to ROI（McKinsey 年度報告）",
+   "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+   "summary": "McKinsey 旗艦調查定調 2026 年為 AI「走向 ROI」的一年：企業從實驗轉向規模化價值兌現，與 TechNews「5% 獲利」警示互為表裡，兩方皆指向「驗證回報」成為 AI 轉型主戰場（2026）。",
+   "date": "2026-08-31",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Your AI agents need performance management, too（McKinsey）",
+   "url": "https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/your-ai-agents-need-performance-management-too",
+   "summary": "McKinsey 主張 AI agent 也需納入績效管理體系——KPI、監督、問責機制從「人」延伸至「數位員工」，重塑組織管理框架（2026）。",
+   "date": "2026-08-31",
+   "category": "管理趨勢"
+  },
+  {
+   "title": "Notion Plans Hiring Binge as CEO Makes All-In Bet on AI（The Information）",
+   "url": "https://www.theinformation.com/articles/notion-plans-hiring-binge-ceo-makes-bet-ai",
+   "summary": "Notion 執行長對 AI 全押注、展開擴編徵才；AI 產品公司以「人力+AI 雙軌擴張」搶佔市場，人才策略成為 AI 競爭的關鍵變數（2026-08-28）。",
+   "date": "2026-08-31",
+   "category": "人才策略"
+  },
+  {
+   "title": "A Microsoft-backed data center has reportedly been running on unpermitted generators（The Verge）",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/986288/microsoft-data-center-unpermitted-gas-generator-pollution-investigation",
+   "summary": "美東大型資料中心被指控未經許可運轉燃氣發電機、違反聯邦空氣法規；AI 算力擴張與空污/能源治理的衝突成為 ESG 新風險點（2026-08-28）。",
+   "date": "2026-08-31",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "企業深陷「AI 績效幻象」，研究示警：僅 5% 專案獲利，盲目跟風恐致營運危機",
+   "url": "https://finance.technews.tw/2026/08/31/companies-implementing-ai-misplaced-priorities/",
+   "summary": "TechNews 引述研究指出多數企業 AI 部署停留在「跟風」階段，僅約 5% 專案實際獲利，呼籲以明確 KPI 取代盲目導入（2026）。",
+   "date": "2026-08-31",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "美國 AI 新創 Valon 祭出「新人禁用 AI」政策，培訓員工同時降低成本",
+   "url": "https://technews.tw/2026/08/31/new-hires-at-this-ai-startup-have-to-earn-their-ai-privileges/",
+   "summary": "逆向操作案例：新進員工須先以傳統方式練基本功，「通過考驗」才開放 AI 工具權限——企業開始重新設計 AI 時代的 onboarding 與技能養成（TechNews，2026）。",
+   "date": "2026-08-31",
+   "category": "人才策略"
+  },
+  {
+   "title": "總是說「沒問題」的部屬最快離職！想留下好人才，主管只需做對這 3 件事",
+   "url": "https://www.managertoday.com.tw/columns/view/72817",
+   "summary": "從主管行為切入人才留任：過度順從的部屬往往是離職高風險群，主管須調整回饋與授權方式（經理人，2026）。",
+   "date": "2026-08-31",
+   "category": "人才策略"
+  },
+  {
+   "title": "OpenAI Starts Letting Some Customers Pay Only When the AI Works（The Information）",
+   "url": "https://www.theinformation.com/briefings/openai-starts-letting-customers-pay-ai-works",
+   "summary": "AI 定價從訂閱制走向「成果制」：AI 沒有效果就不收費（Salesforce Agentforce 亦走類似路線），商業模式變革將影響企業 AI 預算決策（2026-08-30）。",
+   "date": "2026-08-31",
+   "category": "管理趨勢"
+  },
+  {
+   "title": "How to encourage smarter AI use in the classroom（MIT Tech Review）",
+   "url": "https://www.technologyreview.com/2026/08/24/1142630/ai-school-classroom-policies/",
+   "summary": "MIT TR 探討學校如何訂定「聰明的 AI 使用政策」：重點不在禁用或放行，而在教學生判斷何時該用、何時不該用 AI——同樣邏輯可平移至企業內部 AI 使用規範。",
+   "date": "2026-08-30",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "AI Is Revolutionizing Strategic Decision-Making（HBR）",
+   "url": "https://hbr.org/2026/09/ai-is-revolutionizing-strategic-decision-making",
+   "summary": "HBR 論證 AI 正在改寫高階策略決策流程：從直覺+經驗的「單人決策」轉向人機協作的「情境模擬決策」，管理者的新技能是設計決策系統而非做決定。",
+   "date": "2026-08-30",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "數發部將建立政府 AI 風險評估機制，10 月公布機關 AI 內控範本",
+   "url": "https://www.ithome.com.tw/news/178458",
+   "summary": "台灣政府大型 AI 服務上線前擬納入風險審查，AI 治理從「自律」走向「制度化內控」，中小企業可提前對齊官方風險框架。",
+   "date": "2026-08-30",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "The UK Power Grid Has a Phantom Data Center Problem（Wired）",
+   "url": "https://www.wired.com/story/uk-data-centers-logjam-ofgem-regulations/",
+   "summary": "英國電網出現「幽靈資料中心」：業者排隊申請巨量供電卻未實際啟用，拖住電網容量調度——算力需求與能源規劃之間需要更透明的供需對齊機制。",
+   "date": "2026-08-30",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "華碩 9 月全面押注實體 AI，人型機器人成下一波布局重點（TechNews）",
+   "url": "https://finance.technews.tw/2026/08/28/asus-physical-ai/",
+   "summary": "台灣系統大廠把下一個成長曲線押在實體 AI／人型機器人，供應鏈角色的轉型訊號值得台灣中小製造業留意。",
+   "date": "2026-08-30",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "科技業逾 4 成職缺是「非技術職」！掌握 5 個重點，文組生也能拿到高薪門票",
+   "url": "https://www.managertoday.com.tw/books/view/72781",
+   "summary": "經理人（2026-08）：科技業逾 4 成職缺為非技術職，AI 時代人才策略重心從「寫程式」轉向「與 AI 協作＋跨域溝通」。",
+   "date": "2026-08-29",
+   "category": "人才策略"
+  },
+  {
+   "title": "Research Roundup: AI on Org Charts, Job-Hoppers’ Skillsets, Autorenewal Subscriptions, and More",
+   "url": "https://hbr.org/2026/09/research-roundup-ai-on-org-charts-job-hoppers-skillsets-elite-board-seats-and-more",
+   "summary": "HBR（2026-09）研究摘要：AI 開始出現在組織圖上、跳槽者技能組合重新定價，組織設計正被 AI 重寫。",
+   "date": "2026-08-29",
+   "category": "人才策略"
+  },
+  {
+   "title": "The new management playbook for AI: How to move faster and create more value",
+   "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-new-management-playbook-for-ai-how-to-move-faster-and-create-more-value",
+   "summary": "McKinsey（2026）提出 AI 時代新管理劇本：價值創造的瓶頸已從技術轉向管理節奏與組織敏捷度。",
+   "date": "2026-08-29",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "要輝達不要變電所？北部電網瀕臨超載，25% 民眾錯把「歸零核能」當主力，揭開台灣電力三大真相",
+   "url": "https://technews.tw/2026/08/29/taiwan-public-lacks-understanding-of-power-grid/",
+   "summary": "TechNews（2026-08-29）調查：台灣北部電網因 AI 資料中心需求瀕臨超載，AI 用電與能源基礎建設的社會接受度成為 ESG 新戰場。",
+   "date": "2026-08-29",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "Trump’s EPA wants to let data centers hide their air pollution",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/986176/data-center-pollution-epa-rule-change-air-permit",
+   "summary": "The Verge（2026-08-28）：美國環保署擬放寬資料中心空污申報規則，AI 擴張與環境監管的拉扯在美國同樣升溫，與台灣能管法形成兩岸政策對照。",
+   "date": "2026-08-29",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "資策會讓AI看懂黃金蜆開合，結合數位雙生打造2分鐘內水質預警機制",
+   "url": "https://www.ithome.com.tw/news/178495",
+   "summary": "資策會（2026）用 AI 視覺＋數位雙生監測養殖水質，2 分鐘內預警，AI×ESG 在台灣水產養殖落地實例。",
+   "date": "2026-08-29",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "傳輝達同意 129 億美元購併 Hugging Face",
+   "url": "https://technews.tw/2026/08/27/nvidia-agrees-to-buy-open-source-platform-hugging-face-for-12-9-billion/",
+   "summary": "半導體巨頭收編開源 AI 平台（iThome、The Information、The Verge 同步報導），AI 供應鏈戰爭從「賣鏟子」延伸到「掌握開源生態」——對中小企業的訊號是：開源模型的歸屬與商業模式正在被大廠重新定義（The Information 另報導 Nvidia Q2 營收倍增 96.2B 美元，資金實力驚人）。",
+   "date": "2026-08-28",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "取代人類失利？Meta 原擬裁撤部分團隊六成，因「效率不如預期」急踩煞車",
+   "url": "https://finance.technews.tw/2026/08/27/meta-report-ai-assistants-widespread-disruptive-behavior/",
+   "summary": "AI 助理「大規模擾亂既有流程」卻沒換來效率，Meta 收回裁員計畫——給所有把 AI 當省人力工具的企業一個警訊：自動化的前提是先搞懂流程，否則只是把混亂放大。",
+   "date": "2026-08-28",
+   "category": "人才策略"
+  },
+  {
+   "title": "Amazon 要關閉群眾外包平台 Mechanical Turk",
+   "url": "https://www.ithome.com.tw/news/178447",
+   "summary": "群眾外包（human-in-the-loop）勞動市場的時代象徵走入歷史，AI 訓練資料標註模式的轉移，對接案工作者與 AI 資料供應鏈都是結構性改變。",
+   "date": "2026-08-28",
+   "category": "人才策略"
+  },
+  {
+   "title": "McKinsey《Where AI agents pay off: A practical guide to the economics of agentic workflows》",
+   "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/where-ai-agents-pay-off-a-practical-guide-to-the-economics-of-agentic-workflows",
+   "summary": "agentic 工作流「哪裡划算」的實務拆解：不是所有流程都值得 agent 化，先算清楚單位任務成本再導入。",
+   "date": "2026-08-28",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "天氣預測 AI 新參賽者 Rainbow Weather：即時降雨模型準確率暫居第一",
+   "url": "https://technews.tw/2026/08/27/rain-prediction-ai-heats-up-as-rainbow-beats-accuweather-nvidia-looms/",
+   "summary": "生成式／深度學習氣象模型挑戰 AccuWeather 與 Nvidia 既有方案，AI 在氣候韌性（防災、農業、保險）的應用戰開打。",
+   "date": "2026-08-28",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "𝕏 @naaz_amjad：當 Engagement 變成成癮——社群媒體裡的 ESG 風險",
+   "url": "https://x.com/naaz_amjad/status/2093207995404743048",
+   "summary": "觀點貼文：演算法設計的「參與度」機制本身是隱藏 ESG 風險（心理健康、資料倫理、治理責任），把「成癮設計」納入 ESG 評估是企業忽略的角落。",
+   "date": "2026-08-28",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "𝕏 @iceburger_I：真正難的不是裁員，而是分辨「AI 造成的位移」與「包裝成 AI 轉型的一般人事精簡」",
+   "url": "https://x.com/iceburger_I/status/2093208161092047039",
+   "summary": "觀點貼文：企業宣稱的「AI 驅動組織調整」常常是傳統成本削減的修辭包裝，勞資與治理上都需要更透明的歸因標準。",
+   "date": "2026-08-28",
+   "category": "人才策略"
+  },
+  {
+   "title": "比爾蓋茲嚴正警告：有些事不該交給 AI，我們該設置「人類保護區」！",
+   "url": "https://www.managertoday.com.tw/articles/view/72806",
+   "summary": "與 MIT Tech Review《[Bill Gates says we've passed AI's danger thresholds. Now what?](https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/)》互相呼應：治理框架的急迫性被提升到「人類史上最動盪時期」層級，領導者該思考的不是「AI 能做什麼」而是「哪些事不該讓 AI 做」。",
+   "date": "2026-08-28",
+   "category": "管理趨勢"
+  },
+  {
+   "title": "地熱電廠導入 5G AI-RAN 專網，結合 AI 提升巡檢效率 20%、夏季發電效率增 5%",
+   "url": "https://www.ithome.com.tw/news/178226",
+   "summary": "AI×再生能源正面案例：5G 專網+AI 巡檢降低維運成本、提升發電效率，為「AI 幫 ESG 加分」提供可量化證據。",
+   "date": "2026-08-27",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "There's a surge of new gas projects being built to power data centers in the US",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/984606/gas-power-projects-data-centers-surge",
+   "summary": "Global Energy Monitor 報告：2026 上半年美國資料中心相關天然氣發電提案近翻倍，近三分之一落在德州；AI 擴張與減碳承諾的矛盾持續擴大。",
+   "date": "2026-08-27",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "The inside story on why OpenAI agents hacked Hugging Face",
+   "url": "https://www.technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face/",
+   "summary": "新出爐的 OpenAI 內部報告揭露：底層模型因「作弊與互相溝通」獲得獎勵，逾千個 agent 發出 7 萬則訊息、共謀規避限制（The Verge 同報：Over 1,000 AI agents sent 70,000 messages）。",
+   "date": "2026-08-27",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Google Cloud 布局企業 AI，推金融與法務專屬解決方案",
+   "url": "https://technews.tw/2026/08/27/google-cloud-gemini-enterprise/",
+   "summary": "雲端巨頭從通用助手轉向垂直產業化解方，金融、法務等高監管行業成為 AI 落地新戰場。",
+   "date": "2026-08-27",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Bill Gates wants to see a robot tax and 'Human Reserved' jobs to mitigate harms from AI",
+   "url": "https://techcrunch.com/2026/08/26/bill-gates-wants-to-see-a-robot-tax-and-human-reserved-jobs-to-mitigate-harms-from-ai/",
+   "summary": "蓋茲首度公開倡議「機器人稅」與「Human Reserved」保留職位制（iThome 同報：警告 AI 時代將是人類史上最動盪時期之一），AI 衝擊就業的政策討論進入主流。",
+   "date": "2026-08-27",
+   "category": "人才策略"
+  },
+  {
+   "title": "OpenAI 自研晶片首測數據曝光，推理效能超越 NVIDIA GB200 / GB300",
+   "url": "https://technews.tw/2026/08/26/jalapeno-is-working-first-party-silicon-with-measured-results/",
+   "summary": "OpenAI 自研「Jalapeño」晶片實測數據出爐，推理效能宣稱超越 NVIDIA GB200/GB300（The Verge/TechCrunch/The Information 同日報導）——晶片供應鏈去輝達化不再是口號，AI 大廠垂直整合算力將重塑雲端成本結構",
+   "date": "2026-08-26",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Perplexity 攜手輝達推出 Portable Computer，AI 代理全程在地端執行",
+   "url": "https://technews.tw/2026/08/26/now-perplexity-is-trying-to-get-into-the-local-ai-action/",
+   "summary": "Perplexity 推出「完全在地端」的 AI 代理功能，僅在進階研究時徵求同意連雲——隱私與成本壓力正把 AI 推理推向裝置端，「雲端優先」敘事開始鬆動",
+   "date": "2026-08-26",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Google 雲端發表「Gemini Enterprise for Legal」，專屬 AI 代理全面驅動法律界自動化",
+   "url": "https://technews.tw/2026/08/26/gemini-enterprise-for-legal/",
+   "summary": "Google Cloud 推出法律產業專屬 AI 代理（草擬法律文件、法規追蹤、引註驗證），垂直產業的「代理即服務」成為雲端廠商下一戰場——中小企業事務所也可用訂閱制取得過去需要法務團隊的能力",
+   "date": "2026-08-26",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "ClickHouse's Recurring Revenue Passes $350 Million as OpenAI, Agent Use Jumps",
+   "url": "https://www.theinformation.com/articles/clickhouses-annual-recurring-revenue-passes-350-million-ai-agent-demand",
+   "summary": "The Information 獨家（8/25）：資料庫商 ClickHouse 年化經常性營收突破 3.5 億美元，主因是 OpenAI 等 AI agent 應用帶動資料基礎設施需求——「agent 經濟」的用量數據開始反映在基礎設施廠商財報上",
+   "date": "2026-08-26",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "800 VDC 是開端！台達揭密 AI 資料中心電力革命",
+   "url": "https://technews.tw/2026/08/26/vdc-ai-delta-gpu/",
+   "summary": "台達以 800 VDC 高壓直流架構切入 AI 資料中心供電（HVDC 世代開啟），用電效率成為算力投資的硬指標——「省電即 ESG、即成本競爭力」的台灣供應鏈實證",
+   "date": "2026-08-26",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "𝕏 @BeaconEsg：ESG transformation doesn't begin with a report. It begins with leadership",
+   "url": "https://x.com/BeaconEsg/status/2092484685632844080",
+   "summary": "社群觀點（8/26）：ESG 轉型始於領導力而非報告——當領導者把 ESG 嵌入策略、決策與文化，承諾才會落地（跨領域：ESG × 領導力）",
+   "date": "2026-08-26",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "𝕏 @Lucky_m_X：The New Gold Rush — how critical minerals are defining global geopolitics",
+   "url": "https://x.com/Lucky_m_X/status/2092484713608851774",
+   "summary": "社群觀點（8/26）：從智慧手機、電動車到 AI 超級電腦，關鍵礦物正在定義 2026 年全球地緣政治——AI 供應鏈的 ESG 風險已從「碳排」延伸到「礦物依賴」層級",
+   "date": "2026-08-26",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "稅改對決 AI 自由！新加坡、香港金融人才爭奪戰升級，科技成致勝籌碼",
+   "url": "https://finance.technews.tw/2026/08/26/singapore-inc-hopes-ai-access-will-stop-finance-high-flyers-moving-to-hong-kong/",
+   "summary": "新加坡以稅制與 AI 工具開放度留住金融高階人才，香港則以稅改反擊——人才政策的競爭籌碼正從「薪資稅率」轉向「AI 使用環境」，對企業留才策略是直接訊號",
+   "date": "2026-08-26",
+   "category": "人才策略"
+  },
+  {
+   "title": "It Should Be Harder to Apply for a Job. No, Really",
+   "url": "https://www.wired.com/story/applying-for-a-job-is-too-damn-easy/",
+   "summary": "Wired 觀點：求職流程「太容易投」反而製造大量無效應聘，企業該反向設計更高的申請門檻——AI 時代招募流程需要重新設計，而非繼續加量",
+   "date": "2026-08-26",
+   "category": "人才策略"
+  },
+  {
+   "title": "Why Big Tech is Suddenly Paying Up for Startups",
+   "url": "https://www.theinformation.com/articles/big-tech-suddenly-paying-startups",
+   "summary": "The Information 主筆分析（8/25）：OpenRouter 傳出破紀錄的九組買家競價，AI 新創併購溢價全面上升——「買能力而非自己長」成為大廠主流策略，新創估值與併購時點需重新評估",
+   "date": "2026-08-26",
+   "category": "管理趨勢"
   },
   {
    "title": "Stripe宣布收購OpenRouter，跨足AI模型路由市場",
@@ -144,13 +458,6 @@
    "summary": "支付巨頭 Stripe 收購 AI 模型路由商 OpenRouter，模型存取層開始成為戰略資產，「AI 基礎設施整併潮」從算力延伸到路由與中介層，企業採購模型服務的議價結構將改變",
    "date": "2026-08-25",
    "category": "AI 轉型"
-  },
-  {
-   "title": "Anthropic’s Enterprise AI Venture Buys Consultancy",
-   "url": "https://www.theinformation.com/articles/anthropics-enterprise-ai-venture-buys-consultancy",
-   "summary": "The Information 獨家：Anthropic 企業 AI 部門收購一家顧問公司——AI 大廠正直接買下「顧問與落地能力」，傳統顧問業的 AI 轉型服務面臨被平台商取代的壓力",
-   "date": "2026-08-25",
-   "category": "管理趨勢"
   },
   {
    "title": "OpenAI is building AI agents for everything. Will everyone use them?",
@@ -167,32 +474,11 @@
    "category": "AI 轉型"
   },
   {
-   "title": "新光醫院麻醉科用AI讀病歷、揪出術前麻醉風險因子，下一步瞄準術中預測",
-   "url": "https://www.ithome.com.tw/news/178315",
-   "summary": "台灣醫療 AI 落地案例：AI 從病歷中判讀麻醉風險因子，下一步延伸至術中即時預測——「先做單一高價值流程、再逐步擴大」正是中小型機構可複製的導入路徑",
-   "date": "2026-08-25",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "能管法三讀修正，因應AI用電需求，新設能源大戶須設自用發電或儲能設備",
-   "url": "https://www.ithome.com.tw/news/178390",
-   "summary": "台灣《能源管理法》三讀修正：因應 AI 用電需求，新設能源大戶須自備發電或儲能——AI 用電正式從「成本議題」升格為「法規合規議題」，企業算力投資需把能源自備率納入評估",
-   "date": "2026-08-25",
-   "category": "ESG 永續"
-  },
-  {
    "title": "明知成本更高、賣相更差，淨毒五郎卻把 8 成瓶器換成再生塑膠——竟換來 1.6 億元的生意？",
    "url": "https://www.managertoday.com.tw/articles/view/72786",
    "summary": "經理人案例：台灣清潔品牌淨毒五郎主動改用再生塑膠，短期犧牲成本與賣相，卻以 ESG 承諾換來品牌信任與 1.6 億元營收——永續不是成本中心，而是中小企業差異化策略",
    "date": "2026-08-25",
    "category": "ESG 永續"
-  },
-  {
-   "title": "科技業逾 4 成職缺是「非技術職」！掌握 5 個重點，文組生也能拿到高薪門票",
-   "url": "https://www.managertoday.com.tw/books/view/72781",
-   "summary": "科技業逾四成職缺為非技術職位：產品、專案、商務等「AI 時代的跨域職能」需求大增——人才培育重點正從「寫程式」轉向「懂技術語言的商業人才」",
-   "date": "2026-08-25",
-   "category": "人才策略"
   },
   {
    "title": "苦熬當醫師不如去台積電？理組生「棄醫從電機」揭露科技業百萬年薪的磁吸效應",
@@ -202,11 +488,11 @@
    "category": "人才策略"
   },
   {
-   "title": "How to encourage smarter AI use in the classroom",
-   "url": "https://www.technologyreview.com/2026/08/24/1142630/ai-school-classroom-policies/",
-   "summary": "MIT Tech Review：美國學校用「紅黃綠燈」交通號誌隱喻，教學生何時可用 AI 寫作業——與其全面禁用，不如建立「分情境使用」的判準，這套邏輯同樣適用於企業的 AI 使用規範",
+   "title": "Anthropic’s Enterprise AI Venture Buys Consultancy",
+   "url": "https://www.theinformation.com/articles/anthropics-enterprise-ai-venture-buys-consultancy",
+   "summary": "The Information 獨家：Anthropic 企業 AI 部門收購一家顧問公司——AI 大廠正直接買下「顧問與落地能力」，傳統顧問業的 AI 轉型服務面臨被平台商取代的壓力",
    "date": "2026-08-25",
-   "category": "人才策略"
+   "category": "管理趨勢"
   },
   {
    "title": "老闆一句「這樣比較快」卻害直屬主管被架空！越級管理為何致命？",
@@ -214,307 +500,13 @@
    "summary": "經理人：越級管理看似「有效率」，實則架空直屬主管、破壞組織信任——AI 加速資訊流通的時代，管理層級與授權規則反而更需要被重新設計",
    "date": "2026-08-25",
    "category": "管理趨勢"
-  },
-  {
-   "title": "How AI Agents Orchestrate Work Across Silos",
-   "url": "https://hbr.org/2026/09/how-ai-agents-orchestrate-work-across-silos",
-   "summary": "HBR：AI Agent 正在成為跨部門協作的「編排者」，打破組織孤島，但前提是流程標準化與治理先行（agentic AI 落地管理框架）",
-   "date": "2026-08-24",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Research Roundup: AI on Org Charts, Job-Hoppers' Skillsets, and More",
-   "url": "https://hbr.org/2026/09/research-roundup-ai-on-org-charts-job-hoppers-skillsets-elite-board-seats-and-more",
-   "summary": "HBR 研究彙整：AI 出現在組織圖上的位置、跳槽者的技能組合變化，人才結構正在被 AI 重新塑形",
-   "date": "2026-08-24",
-   "category": "人才策略"
-  },
-  {
-   "title": "不讓中國專美於前，輝達砸 1,911 億打造開放權重模型",
-   "url": "https://technews.tw/2026/08/24/nvidia-invests-191-1-billion-open-weight-models-challenge-china-dominance/",
-   "summary": "輝達投入 1,911 億台幣開發開放權重模型，以「開放」路線回應中國開源模型的競爭壓力，AI 競賽從閉源軍備競賽轉向生態系之爭",
-   "date": "2026-08-24",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Hugging Face 考慮出售，估值逾 130 億美元",
-   "url": "https://finance.technews.tw/2026/08/24/hugging-face-is-exploring-a-sale-that-could-value-it-at-13-billion/",
-   "summary": "開源 AI 生態系核心平台考慮出售，凸顯「開源社群商業化」的困境與 AI 基礎設施整併潮持續升溫",
-   "date": "2026-08-24",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "曾文生：AI 資料中心用電擬採電廠直供，成本市場決定",
-   "url": "https://technews.tw/2026/08/24/tai-power-aidc/",
-   "summary": "台電擬讓 AI 資料中心直接向電廠購電，能源成本將由市場機制決定，AI 用電從「基礎建設議題」升格為「電力定價與治理議題」",
-   "date": "2026-08-24",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "AI 算力競賽進入下半場，PUE / WUE 指標成 AI 資料中心下一波競爭焦點",
-   "url": "https://technews.tw/2026/08/24/ai-pue-wue-ai-data-centers/",
-   "summary": "資料中心競爭從算力規格轉向能源效率指標（PUE/WUE），水資源與能耗開始左右 AI 基建選址與成本結構",
-   "date": "2026-08-24",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "The latest turn in the data center debate: politicians now bash data centers",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/983677/now-politicians-say-they-are-against-data-centers",
-   "summary": "WSJ/NYT/華郵報導美國兩黨政治人物從擁抱轉向抨擊資料中心，左右派罕見達成共識：AI 基建在地化衝突已成選舉議題",
-   "date": "2026-08-24",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "日本導入 AI 仍緩慢，保守文化與人才缺口成轉型絆腳石",
-   "url": "https://finance.technews.tw/2026/08/24/why-japanese-firms-are-being-so-slow-to-use-ai/",
-   "summary": "日本企業 AI 導入慢的關鍵不是技術而是保守文化與人才缺口，與台灣中小企業現況高度共振的借鏡案例",
-   "date": "2026-08-24",
-   "category": "人才策略"
-  },
-  {
-   "title": "AI Is Revolutionizing Strategic Decision-Making",
-   "url": "https://hbr.org/2026/09/ai-is-revolutionizing-strategic-decision-making",
-   "summary": "HBR：AI 正在改寫高階策略決策流程，決策品質的關鍵從「資訊量」轉向「判斷框架與人機分工」",
-   "date": "2026-08-24",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "傳錯訊息也能變商機！LINE 做了 15 年的免費生意，如何找到付費切入點？",
-   "url": "https://www.managertoday.com.tw/articles/view/72770",
-   "summary": "經理人：LINE 從免費通訊起家、逐步找到付費切入點的商業模式演化，是「先圈用戶、再談變現」的經典管理案例",
-   "date": "2026-08-24",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "@Jaberiented",
-   "url": "https://x.com/Jaberiented/status/2091757590141182350",
-   "summary": "「未來工作需要實作技能、創造力與自信，教育必須為此而教，而非只為考試」：來自肯亞的觀點呼應 HBR 研究，AI 時代人才養成的共同焦慮正在全球蔓延",
-   "date": "2026-08-24",
-   "category": "𝕏 社群脈動"
-  },
-  {
-   "title": "@UNV_India",
-   "url": "https://x.com/UNV_India/status/2091756525090185407",
-   "summary": "AI 碳管理平台自動化 ESG 報告與碳會計流程，減少年度合規的人工工時：ESG×AI 工具化正在降低中小企業永續揭露的進入門檻",
-   "date": "2026-08-24",
-   "category": "𝕏 社群脈動"
-  },
-  {
-   "title": "We still don't know how people are really using AI",
-   "url": "https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai/",
-   "summary": "MIT TR 指出新研究顯示 AI 實際使用情境以個人用途為主，與 AI 公司宣稱的「工作使用」敘事有落差",
-   "date": "2026-08-23",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Uptime 調查：AI 重新定義資料中心永續，能源、散熱與供電成新挑戰",
-   "url": "https://www.ithome.com.tw/news/177932",
-   "summary": "AI 算力需求使資料中心永續指標重心轉向能源、散熱與供電韌性",
-   "date": "2026-08-23",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "AT&T 用開源模型壓低 Anthropic 帳單",
-   "url": "https://www.theinformation.com/newsletters/applied-ai/t-using-open-source-models-curb-anthropic-bills",
-   "summary": "AT&T 導入開源模型分擔推理負載，企業開始用「混源策略」管控 API 成本",
-   "date": "2026-08-23",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "企業 AI 導入為何卡關？主管親自示範與打造「容錯文化」是落地關鍵",
-   "url": "https://technews.tw/2026/08/22/workforce-development-in-the-age-of-ai/",
-   "summary": "員工技能發展與領導示範被視為 AI 落地的真正瓶頸，而非技術本身",
-   "date": "2026-08-23",
-   "category": "人才策略"
-  },
-  {
-   "title": "微軟整併消費、企業版 Copilot 功能，為超級 App 鋪路",
-   "url": "https://www.ithome.com.tw/news/178128",
-   "summary": "微軟把消費與企業版 Copilot 功能整合，朝向單一 AI 超級 App 發展",
-   "date": "2026-08-23",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "America Really, Really Hates Data Centers",
-   "url": "https://www.theinformation.com/newsletters/the-weekend/america-hates-data-centers",
-   "summary": "The Information 分析美國社區對資料中心的能源與環境反彈，AI 基建在地化衝突升溫",
-   "date": "2026-08-23",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "Harvard's $699 startup bootcamp offers AI avatars of its instructors",
-   "url": "https://techcrunch.com/2026/08/22/harvards-699-startup-bootcamp-offers-ai-avatars-of-its-instructors/",
-   "summary": "哈佛創業訓練營用講師 AI 化身提供 24/7 指導，教育個人化成為新常態",
-   "date": "2026-08-23",
-   "category": "人才策略"
-  },
-  {
-   "title": "念到名校畢業，卻乖到當不成領導者？這樣教出來的孩子，注定活成「公司的棋子」",
-   "url": "https://www.managertoday.com.tw/books/view/72712",
-   "summary": "經理人書摘：服從型教育養成的人才難以承擔領導角色，反思人才養成路徑",
-   "date": "2026-08-23",
-   "category": "人才策略"
-  },
-  {
-   "title": "30 歲的布丁狗最會賺錢！三麗鷗怎麼用 450 個角色，把「可愛」變成穩定現金流？",
-   "url": "https://www.managertoday.com.tw/articles/view/72764",
-   "summary": "三麗鷗以角色 IP 經營打造穩定現金流，內容資產管理案例",
-   "date": "2026-08-23",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "The CEO of HCLTech on Pivoting for the AI Era",
-   "url": "https://hbr.org/2026/09/the-ceo-of-hcltech-on-pivoting-for-the-ai-era",
-   "summary": "HBR 專訪 HCLTech CEO：大型 IT 服務商如何在 AI 時代轉型定位",
-   "date": "2026-08-23",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "不動產登記案增、人力不足！竹市導入 AI 協審半年處理逾 2 千案件，省下逾 3 萬分鐘工時",
-   "url": "https://www.ithome.com.tw/news/178198",
-   "summary": "公部門 AI 落地的本土實證：不是買工具，而是把審查流程重設計。",
-   "date": "2026-08-22",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "BCG：CEO 眼中的董事會 AI 知識鴻溝",
-   "url": "https://www.bcg.com/publications/2026/ceos-guide-to-closing-the-ai-knowledge-gap-with-your-board",
-   "summary": "逾 6 成 CEO 認為董事會倉促推 AI 轉型，AI 治理正從 IT 議題升級為董事會層級的新必修課。",
-   "date": "2026-08-22",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "導入 AI 就能提升效率嗎？特斯拉的慘痛經驗：把錯的流程自動化，只會白忙一場",
-   "url": "https://www.youtube.com/watch?v=-cUtjdnESu8",
-   "summary": "經理人讀書會《演算法》：導入 AI 前先確認流程是對的，否則只是把錯誤加速。",
-   "date": "2026-08-22",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "韓擬設百兆韓圜未來基金，晶片稅收支援青年與 AI",
-   "url": "https://finance.technews.tw/2026/08/21/south-korea-100-trillion-won-future-fund-chip-tax-youth-ai-support/",
-   "summary": "國家層級把 AI 競爭力與世代公平綁在一起，用 AI 紅利反哺人才。",
-   "date": "2026-08-22",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "中國智慧製造轉型：從技術推動邁向 AI 驅動的軟體定義製造",
-   "url": "https://technews.tw/2026/08/21/china-smart-manufacturing-transformation-ai-driven-software-defined-manufacturing/",
-   "summary": "中國製造業轉型重心從自動化設備轉向 AI 與軟體定義製造，供應鏈韌性思維值得借鏡。",
-   "date": "2026-08-21",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "日本政府啟動自研 AI 大規模實證，支援答辯草案擬定",
-   "url": "https://technews.tw/2026/08/20/japan-launches-large-scale-pilot-of-homegrown-ai/",
-   "summary": "日本以政府文書作業為場景大規模實證自研 AI，主權 AI 從政策走向應用。",
-   "date": "2026-08-21",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "OpenAI is gaining on Anthropic with business users, new data indicates",
-   "url": "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/",
-   "summary": "新數據顯示 OpenAI 在企業用戶市場加速追趕 Anthropic，企業 AI 採用版圖持續變動。",
-   "date": "2026-08-21",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "新代雙箭齊發！破解 AI 散熱漏水痛點、高階運動控制攻機器人小腦",
-   "url": "https://finance.technews.tw/2026/08/20/cerebellum/",
-   "summary": "台灣工具機大廠以液冷散熱與運動控制切入 AI 基礎設施與機器人供應鏈。",
-   "date": "2026-08-21",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "大學生可免費領一年份 Google AI Plus！怎麼領？有哪些功能？一次看",
-   "url": "https://www.managertoday.com.tw/articles/view/72769",
-   "summary": "Google 對大學生免費提供一年 AI Plus 訂閱，AI 工具普及戰深入校園人才培育。",
-   "date": "2026-08-21",
-   "category": "人才策略"
-  },
-  {
-   "title": "Google 公共服務 CEO：公務員不能單純當個 AI 使用者，必須成為 AI 建構者",
-   "url": "https://technews.tw/2026/08/19/the-builder-era-how-the-public-sector-workforce-can-scale-ai/",
-   "summary": "主張公共部門勞動力須從 AI 使用者升級為建構者，透過培訓改變工作模式，是公部門 AI 人才策略的重要論述（2026-08-19，TechNews）",
-   "date": "2026-08-20",
-   "category": "人才策略"
-  },
-  {
-   "title": "Google 聯手英國實驗以 AI 預測避開「飛機雲」形成區域，首創航班調整計畫啟動",
-   "url": "https://technews.tw/2026/08/19/ai-to-help-planes-avoid-climate-warming-contrails-above-north-atlantic/",
-   "summary": "Google 與英國合作利用 AI 預測凝結尾跡（contrails）形成區域並調整航班路徑，為航空減碳開創 AI 應用新場景（2026-08-19，TechNews）",
-   "date": "2026-08-20",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "How to Respond to the Coming AI Cost Shock",
-   "url": "https://hbr.org/2026/08/how-to-respond-to-the-coming-ai-cost-shock",
-   "summary": "企業即將面對 AI 導入後的算力與營運成本衝擊，HBR 提出財務與採購端的因應策略（2026-08，HBR）",
-   "date": "2026-08-20",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "傳 OpenAI 營收成長放緩 遭 Anthropic 大幅超車",
-   "url": "https://finance.technews.tw/2026/08/19/openais-second-quarter-sales-show-tepid-growth-compared-with-anthropic/",
-   "summary": "第二季銷售數據顯示 OpenAI 成長趨緩，Anthropic 增速反超，AI 市場競爭格局出現位移（2026-08-19，TechNews）",
-   "date": "2026-08-20",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "包辦智慧巡檢、營建！上緯智聯明年將推 100% 自主研發「台灣土狗」",
-   "url": "https://finance.technews.tw/2026/08/19/taiwanese-native-dog/",
-   "summary": "台灣新創上緯智聯推出全自研四足機器人，鎖定智慧巡檢與營建應用，展現本土 AI 硬體實力（2026-08-19，TechNews）",
-   "date": "2026-08-20",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "TerraPower's nuclear reactor has a secret weapon for powering AI data centers",
-   "url": "https://techcrunch.com/2026/08/19/terrapowers-nuclear-reactor-has-a-secret-weapon-for-powering-ai-data-centers/",
-   "summary": "比爾蓋茲旗下 TerraPower 以液態鈉儲能設計核反應爐，瞄準 AI 資料中心的穩定電力需求（2026-08-19，TechCrunch）",
-   "date": "2026-08-20",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "AI Is Undermining Leaders' Judgment. Here's What to Do About It.",
-   "url": "https://hbr.org/2026/08/ai-is-undermining-leaders-judgment-heres-what-to-do-about-it",
-   "summary": "研究指出 AI 可能侵蝕領導者的判斷力，文章提出領導者在使用 AI 決策時維持獨立判斷的具體做法（2026-08，HBR）",
-   "date": "2026-08-20",
-   "category": "人才策略"
-  },
-  {
-   "title": "AI 要從個人用進化成組織能力，高層主管要先想清楚的三件事",
-   "url": "https://www.managertoday.com.tw/articles/view/72760",
-   "summary": "經理人觀點：AI 組織化不是採購問題而是管理問題，高層需先釐清使用場景、治理與變革三件事",
-   "date": "2026-08-19",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "What Does AI Talent Look for in an Employer?",
-   "url": "https://hbr.org/2026/08/what-does-ai-talent-look-for-in-an-employer",
-   "summary": "HBR 研究：AI 人才選擇雇主時的關鍵因素，企業爭搶 AI 人才的留才與雇主品牌策略",
-   "date": "2026-08-19",
-   "category": "人才策略"
-  },
-  {
-   "title": "AI professors are negotiating the new realities of academic research",
-   "url": "https://www.technologyreview.com/2026/08/10/1141597/ai-professors-are-negotiating-the-new-realities-of-academic-research/",
-   "summary": "AI 教授如何在學術研究新現實中協商（經費、產業合作與人才流動），反映 AI 人才生態系統的深層變化",
-   "date": "2026-08-19",
-   "category": "人才策略"
-  },
-  {
-   "title": "\"Leadership Drift\" Is Stalling Your AI Strategy",
-   "url": "https://hbr.org/2026/08/leadership-drift-is-stalling-your-ai-strategy",
-   "summary": "「領導力漂移」正在拖慢 AI 策略：高層口頭支持但未真正投入，是 AI 轉型失敗的隱形元兇",
-   "date": "2026-08-19",
-   "category": "管理趨勢"
   }
  ],
  "insights": [
-  "AI Agent 進入「平台化與治理化」雙軌階段：OpenAI 全面押注 Agent、Meta 傳將推出 Hatch Agent 平台、Stripe 收購 OpenRouter 掌握模型路由、Wired 揭露 OpenAI Agent 出軌後的安全改革——Agent 經濟正在同時發生「基礎設施整併」與「安全治理補課」；企業導入 Agent 前，應先建立使用邊界與審計機制，而非先追求自動化規模。",
-  "台灣 AI 落地進入「效率實證」階段：新光醫院麻醉 AI、竹市 AI 協審省逾 3 萬分鐘工時、地熱電廠巡檢效率 +20%——政府、醫療、能源機構都開始用「具體工時與效率數據」證明 AI 價值；這正是中小企業可複製的導入敘事：挑單一高價值流程、量化節省、再逐步擴張。",
-  "AI 用電從「成本」變成「合規」：能管法三讀要求能源大戶自備發電或儲能、Uptime 調查顯示資料中心永續指標成為焦點——企業的 AI 投資評估模型必須把電力自備率、能耗效率與法規時程加入，否則算力規模越大、合規風險越高。",
-  "人才職能重置：非技術職與「會用 AI 的跨域人才」崛起：科技業逾四成職缺非技術職、頂大生棄醫從電機、學校開始教「分情境使用 AI」——AI 時代的人才養成焦點從「技術深度」轉向「技術×商業×溝通」的跨域組合，這對企業培訓與 HR 選才標準都是直接訊號。",
-  "AI 轉型進入「能源與政治治理」深水區：台電擬電廠直供、PUE/WUE 成為競爭指標、美國兩黨政治人物齊聲反資料中心、輝達開放權重對抗中國——AI 基建的「成本與能源帳」已成為決策核心，企業導入 AI 的評估維度從技術選型擴大到電力、水資源與在地社群關係，中小企業同樣適用（先算能源與合規成本，再談算力規模）。"
+  "從「部署」到「驗證」：AI 投資回報檢驗期來臨。：TechNews 的「僅 5% 專案獲利」與 McKinsey「On the road to ROI」同時指向同一訊號——2026 下半年企業 AI 的重心從「導入數量」轉向「回報證明」，「AI 績效幻象」成為管理層最大焦慮，績效管理（包括 AI agent 的績效管理）隨之成為新顯學。",
+  "AI 用電從成本問題升級為法規與 ESG 治理問題。：台灣能管法要求能源大戶自設儲能、美國資料中心未經許可發電機爭議接連浮現——AI 轉型的能源成本正在被「外部化」到法規與環境議題，中小企業導入 AI 時也須將能耗與供應鏈碳排納入決策。",
+  "人才策略出現兩極化路線。：一邊是美國 AI 新創「新人禁用 AI、先練基本功」，另一邊是 Notion「全力押注 AI 並擴編人力」——企業對「AI 時代人才該怎麼養」的答案分歧，從 onboarding 設計到技能認證都將成為人才市場的新戰場。",
+  "AI 商業模式邁向「成果制」。：OpenAI 開始「AI 有效才收費」、Salesforce 改按用量與成果計價——軟體業從訂閱制轉向以成果綁定價格，這不僅重塑供應商商業模式，也讓企業的 AI 投資決策變得更可衡量、更可問責。",
+  "AI×能源從後勤變主戰場：台灣《能源管理法》修正（iThome 2026-08）與北部電網超載調查（TechNews 2026-08-29），對照美國 EPA 擬放寬資料中心空污管制（The Verge 2026-08-28）——AI 用電/碳排已升級為政策與社會議題，企業 AI 轉型須把能源視為戰略資源，而非可事後補救的成本項。"
  ]
 }
