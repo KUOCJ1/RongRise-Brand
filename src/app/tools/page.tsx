@@ -22,80 +22,70 @@ type Tool = {
   tagClass: string;
 };
 
-const toolGroups: { title: string; en: string; tools: Tool[] }[] = [
+const tools: Tool[] = [
   {
-    title: "診斷你的 AI 現況",
-    en: "DIAGNOSE",
-    tools: [
-      {
-        href: "/pilot-trap-scan",
-        icon: "📋",
-        name: "Pilot Trap 診斷量表",
-        desc: "25 題、五個維度，五分鐘測出你的 AI 部隊在鋪路，還是卡進 Pilot Trap，附雷達圖一眼看懂。",
-        tag: "量表",
-        tagClass: "bg-tertiary/10 text-tertiary",
-      },
-      {
-        href: "/ai-assessment",
-        icon: "📊",
-        name: "AI 成熟度評測",
-        desc: "以 HR 的 AI 轉型五層責任架構為基礎，評估你與團隊目前的 AI 成熟度落點。",
-        tag: "自評",
-        tagClass: "bg-teal/10 text-teal",
-      },
-      {
-        href: "/esg-assessment",
-        icon: "🌱",
-        name: "ESG + AI 轉型自評",
-        desc: "互動式評估工具，檢視 ESG 與 AI 轉型兩條主線在企業內的整合現況。",
-        tag: "自評",
-        tagClass: "bg-teal/10 text-teal",
-      },
-    ],
+    href: "/pilot-trap-scan",
+    icon: "📋",
+    name: "Pilot Trap 診斷量表",
+    desc: "25 題、五個維度，五分鐘測出你的 AI 部隊在鋪路，還是卡進 Pilot Trap，附雷達圖一眼看懂。",
+    tag: "量表",
+    tagClass: "bg-tertiary/10 text-tertiary",
   },
   {
-    title: "估算與盤點",
-    en: "CALCULATE & SCAN",
-    tools: [
-      {
-        href: "/roi-calculator",
-        icon: "💰",
-        name: "AI 轉型 ROI 估算器",
-        desc: "三分鐘算出你的 AI 導入投資回報，讓決策站在數字上，而不是感覺上。",
-        tag: "估算",
-        tagClass: "bg-primary/10 text-primary",
-      },
-      {
-        href: "/amoeba-scan",
-        icon: "🔍",
-        name: "任務變形蟲盤點器",
-        desc: "把你的工作拆解成任務，逐項檢視哪些可以交給 AI——任務級盤點。",
-        tag: "盤點",
-        tagClass: "bg-primary/10 text-primary",
-      },
-    ],
+    href: "/ai-assessment",
+    icon: "📊",
+    name: "AI 成熟度評測",
+    desc: "以 HR 的 AI 轉型五層責任架構為基礎，評估你與團隊目前的 AI 成熟度落點。",
+    tag: "自評",
+    tagClass: "bg-teal/10 text-teal",
   },
   {
-    title: "追蹤趨勢與問答",
-    en: "TRACK & ASK",
-    tools: [
-      {
-        href: "/trend-radar",
-        icon: "📡",
-        name: "AI 轉型趨勢雷達",
-        desc: "每週企業 AI 熱門話題排行，快速掌握市場現在在討論什麼。",
-        tag: "監測",
-        tagClass: "bg-teal/10 text-teal",
-      },
-      {
-        href: "/assistant",
-        icon: "🦞",
-        name: "AI 小賀",
-        desc: "企業 AI 轉型問答助手，從成熟度到落地路徑，任何問題直接問。",
-        tag: "對話",
-        tagClass: "bg-primary/10 text-primary",
-      },
-    ],
+    href: "/esg-assessment",
+    icon: "🌱",
+    name: "ESG + AI 轉型自評",
+    desc: "互動式評估工具，檢視 ESG 與 AI 轉型兩條主線在企業內的整合現況。",
+    tag: "自評",
+    tagClass: "bg-teal/10 text-teal",
+  },
+  {
+    href: "/roi-calculator",
+    icon: "💰",
+    name: "AI 轉型 ROI 估算器",
+    desc: "三分鐘算出你的 AI 導入投資回報，讓決策站在數字上，而不是感覺上。",
+    tag: "估算",
+    tagClass: "bg-primary/10 text-primary",
+  },
+  {
+    href: "/amoeba-scan",
+    icon: "🔍",
+    name: "任務變形蟲盤點器",
+    desc: "把你的工作拆解成任務，逐項檢視哪些可以交給 AI——任務級盤點。",
+    tag: "盤點",
+    tagClass: "bg-primary/10 text-primary",
+  },
+  {
+    href: "/trend-radar",
+    icon: "📡",
+    name: "AI 轉型趨勢雷達",
+    desc: "每週企業 AI 熱門話題排行，快速掌握市場現在在討論什麼。",
+    tag: "監測",
+    tagClass: "bg-teal/10 text-teal",
+  },
+  {
+    href: "/assistant",
+    icon: "🦞",
+    name: "AI 小賀",
+    desc: "企業 AI 轉型問答助手，從成熟度到落地路徑，任何問題直接問。",
+    tag: "對話",
+    tagClass: "bg-primary/10 text-primary",
+  },
+  {
+    href: "/content-ops",
+    icon: "📈",
+    name: "內容引擎戰情室",
+    desc: "AI 驅動內容引擎的營運儀表板，即時掌握知識庫與內容生產狀態。",
+    tag: "營運",
+    tagClass: "bg-tertiary/10 text-tertiary",
   },
 ];
 
@@ -120,67 +110,38 @@ export default function ToolsPage() {
         </div>
       </section>
 
-      {/* Tool Groups */}
-      <div className="max-w-[1000px] mx-auto px-4 sm:px-6 py-12 md:py-16 space-y-14">
-        {toolGroups.map((group) => (
-          <section key={group.title}>
-            <div className="flex items-baseline gap-3 mb-6">
-              <h2 className="font-display text-2xl font-extrabold text-text-primary">{group.title}</h2>
-              <span className="text-xs text-text-secondary tracking-[0.2em]">{group.en}</span>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-              {group.tools.map((tool) => (
-                <a
-                  key={tool.href}
-                  href={tool.href}
-                  className="group bg-white rounded-2xl border border-border p-6 flex flex-col no-underline hover:shadow-lg hover:border-primary/30 transition-all hover:-translate-y-0.5"
-                >
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-3xl">{tool.icon}</span>
-                    <span className={`inline-block text-xs font-bold px-2.5 py-0.5 rounded-full ${tool.tagClass}`}>
-                      {tool.tag}
-                    </span>
-                  </div>
-                  <h3 className="font-bold text-text-primary text-[17px] group-hover:text-primary transition-colors">
-                    {tool.name}
-                  </h3>
-                  <p className="text-sm text-text-secondary leading-relaxed mt-2 flex-1">{tool.desc}</p>
-                  <span className="inline-flex items-center gap-1.5 text-sm font-bold text-primary mt-5">
-                    開始使用
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M5 12h14" />
-                      <path d="m12 5 7 7-7 7" />
-                    </svg>
-                  </span>
-                </a>
-              ))}
-            </div>
-          </section>
-        ))}
-
-        {/* Ops tools */}
-        <section>
-          <div className="flex items-baseline gap-3 mb-6">
-            <h2 className="font-display text-2xl font-extrabold text-text-primary">內容引擎</h2>
-            <span className="text-xs text-text-secondary tracking-[0.2em]">CONTENT ENGINE</span>
-          </div>
-          <a
-            href="/content-ops"
-            className="group bg-white rounded-2xl border border-border p-6 flex items-center justify-between no-underline hover:shadow-lg hover:border-primary/30 transition-all max-w-[1000px]"
-          >
-            <div className="flex items-center gap-4">
-              <span className="text-3xl">📈</span>
-              <div>
-                <h3 className="font-bold text-text-primary text-[17px] group-hover:text-primary transition-colors">內容引擎戰情室</h3>
-                <p className="text-sm text-text-secondary leading-relaxed mt-1">AI 驅動內容引擎的營運儀表板，即時掌握知識庫與內容生產狀態。</p>
+      {/* Tools Grid */}
+      <div className="max-w-[1000px] mx-auto px-4 sm:px-6 py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {tools.map((tool) => (
+            <a
+              key={tool.href}
+              href={tool.href}
+              className="group bg-white rounded-2xl border border-border p-6 flex flex-col no-underline hover:shadow-lg hover:border-primary/30 transition-all hover:-translate-y-0.5"
+            >
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-3xl">{tool.icon}</span>
+                <span className={`inline-block text-xs font-bold px-2.5 py-0.5 rounded-full ${tool.tagClass}`}>
+                  {tool.tag}
+                </span>
               </div>
-            </div>
-            <span className="text-xs font-bold px-2.5 py-0.5 rounded-full bg-tertiary/10 text-tertiary">營運</span>
-          </a>
-        </section>
+              <h2 className="font-bold text-text-primary text-[17px] group-hover:text-primary transition-colors">
+                {tool.name}
+              </h2>
+              <p className="text-sm text-text-secondary leading-relaxed mt-2 flex-1">{tool.desc}</p>
+              <span className="inline-flex items-center gap-1.5 text-sm font-bold text-primary mt-5">
+                開始使用
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </span>
+            </a>
+          ))}
+        </div>
 
         {/* CTA */}
-        <section className="bg-gradient-to-br from-[#0D2B4E] via-[#123A66] to-[#1A6DB5] rounded-3xl p-10 md:p-14 text-white text-center relative overflow-hidden">
+        <section className="mt-14 bg-gradient-to-br from-[#0D2B4E] via-[#123A66] to-[#1A6DB5] rounded-3xl p-10 md:p-14 text-white text-center relative overflow-hidden">
           <div className="absolute -left-20 -top-20 w-72 h-72 rounded-full bg-teal/20 blur-3xl" />
           <div className="relative">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold">
