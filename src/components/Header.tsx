@@ -7,17 +7,11 @@ const navItems = [
   { href: "/", label: "首頁" },
   { href: "/services", label: "服務項目" },
   { href: "/courses", label: "課程" },
-  { href: "/about", label: "關於我們" },
   { href: "/knowledge", label: "知識庫" },
   { href: "/whitepaper/second-brain", label: "白皮書" },
-  { href: "/roi-calculator", label: "ROI 估算" },
-  { href: "/amoeba-scan", label: "任務盤點" },
-  { href: "/trend-radar", label: "趨勢雷達" },
-  { href: "/content-ops", label: "內容戰情" },
+  { href: "/tools", label: "工具箱" },
   { href: "/newsletter", label: "電子報" },
-  { href: "/news", label: "最新消息" },
-  { href: "/downloads", label: "下載區" },
-  { href: "/assistant", label: "小幫手" },
+  { href: "/about", label: "關於我們" },
 ];
 
 export default function Header() {
@@ -42,8 +36,8 @@ export default function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-2">
-          {navItems.slice(0, 13).map((item) => (
+        <nav className="hidden lg:flex items-center gap-1.5">
+          {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
@@ -53,7 +47,7 @@ export default function Header() {
             </Link>
           ))}
           {/* Language Switcher */}
-          <div className="flex items-center gap-0.5 ml-2 pl-2 border-l border-border">
+          <div className="flex items-center gap-0.5 ml-1 pl-2 border-l border-border">
             <Link
               href="/"
               className="text-[12px] font-medium px-2 py-1 rounded text-primary bg-primary/5"
@@ -71,7 +65,7 @@ export default function Header() {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden p-2 rounded-md hover:bg-surface-hover transition-colors"
+          className="lg:hidden p-2 rounded-md hover:bg-surface-hover transition-colors"
           aria-label="選單"
           aria-expanded={mobileOpen}
           aria-controls="mobile-nav"
@@ -85,7 +79,7 @@ export default function Header() {
         </button>
 
         {/* CTA - Desktop only */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-4">
           <Link href="/about/#contact" className="btn-primary text-sm py-2 px-5">
             預約諮詢
           </Link>
@@ -94,7 +88,7 @@ export default function Header() {
 
       {/* Mobile Nav */}
       {mobileOpen && (
-        <div id="mobile-nav" className="md:hidden border-t border-border bg-surface">
+        <div id="mobile-nav" className="lg:hidden border-t border-border bg-surface">
           <div className="px-4 py-3 space-y-1">
             {navItems.map((item) => (
               <Link
