@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-agents-performance-management",
+    cat: "AI 轉型",
+    title: "你的 AI 同事該打考績了：McKinsey 說，agent 也要績效管理",
+    date: "2026.09.01",
+    readTime: "10 分鐘",
+    excerpt: "AI agent 已經從工具變成「虛擬員工」，但幾乎沒人給它打考績。McKinsey 主張 agent 也要績效管理：定 KPI、監控失誤、定期回訓、離職面談——這四件事，正是 HR 練了二十年的看家本領。不會寫程式的管理者，反而成了 agent 時代的主角。",
+    tags: ["AI Agent", "績效管理", "數位員工", "McKinsey", "HR", "中小企業", "AI 轉型"],
+  },
+  {
     slug: "hugging-face-nvidia-129-billion",
     cat: "AI 轉型",
     title: "OpenAI 的智能體想方設法駭進它，NVIDIA 準備花 129 億買了它，Hugging Face 究竟是何方神聖？",
