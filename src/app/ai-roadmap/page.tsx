@@ -86,10 +86,11 @@ export default function AiRoadmapPage() {
         const res = await fetch("/api/newsletter/subscribe", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
+          signal: AbortSignal.timeout(10000),
           body: JSON.stringify({
             name: name || "路線圖訪客",
             email,
-            company: company || "",
+            company: company || "未填寫",
             industry: "其他／綜合",
             ai_stage: aiStageByStage[stageKey],
             challenges: [challengeByStage[stageKey]],
@@ -208,6 +209,7 @@ export default function AiRoadmapPage() {
                     <button
                       key={k}
                       onClick={() => setSize(k)}
+                      aria-pressed={active}
                       className={`text-sm px-4 py-3 rounded-lg border transition-all text-left ${
                         active
                           ? "bg-[#1A6DB5]/30 border-[#2EC4B6] text-white font-semibold"
@@ -235,6 +237,7 @@ export default function AiRoadmapPage() {
                     <button
                       key={a.key}
                       onClick={() => toggleArea(a.key)}
+                      aria-pressed={active}
                       className={`flex items-center gap-3 text-sm px-4 py-3 rounded-lg border transition-all text-left ${
                         active
                           ? "bg-[#1A6DB5]/30 border-[#2EC4B6] text-white font-semibold"
@@ -268,6 +271,7 @@ export default function AiRoadmapPage() {
                     <button
                       key={k}
                       onClick={() => setStage(k)}
+                      aria-pressed={active}
                       className={`text-sm px-4 py-3 rounded-lg border transition-all text-left ${
                         active
                           ? "bg-[#1A6DB5]/30 border-[#2EC4B6] text-white font-semibold"
@@ -293,6 +297,7 @@ export default function AiRoadmapPage() {
                     <button
                       key={k}
                       onClick={() => setBudget(k)}
+                      aria-pressed={active}
                       className={`text-sm px-4 py-3 rounded-lg border transition-all text-left ${
                         active
                           ? "bg-[#1A6DB5]/30 border-[#2EC4B6] text-white font-semibold"
@@ -309,12 +314,13 @@ export default function AiRoadmapPage() {
 
             {/* 留資（選填） */}
             <div className="bg-white/5 border border-white/10 rounded-xl p-5 mb-6">
-              <label className="block text-sm font-semibold text-[#2EC4B6] mb-1">
+              <label htmlFor="rr-email" className="block text-sm font-semibold text-[#2EC4B6] mb-1">
                 留下 Email 取得路線圖副本（選填）
               </label>
               <p className="text-xs text-[#5A7A9E] mb-4">填寫後可收到完整路線圖與 AI 轉型週報，隨時可退訂。</p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                 <input
+                  id="rr-name"
                   type="text"
                   placeholder="姓名"
                   value={name}
@@ -322,13 +328,15 @@ export default function AiRoadmapPage() {
                   className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-[#5A7A9E] focus:border-[#2EC4B6] focus:outline-none"
                 />
                 <input
+                  id="rr-email"
                   type="email"
-                  placeholder="Email *"
+                  placeholder="Email（選填）"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-[#5A7A9E] focus:border-[#2EC4B6] focus:outline-none"
                 />
                 <input
+                  id="rr-company"
                   type="text"
                   placeholder="公司名稱"
                   value={company}
@@ -467,7 +475,7 @@ export default function AiRoadmapPage() {
                 <span className="ml-2 text-sm font-normal text-[#A0C4E8]">
                   總預算級距
                   <span className="text-[#E8912A] font-bold text-lg ml-1">{result.investment.total}</span>
-                  元（新台幣／年）
+                  （新台幣／年）
                 </span>
               </h3>
               <div className="space-y-3 mt-4">
@@ -476,7 +484,7 @@ export default function AiRoadmapPage() {
                     <div className="flex items-center justify-between text-sm mb-1">
                       <span className="font-semibold">
                         {s.name} <span className="text-[#2EC4B6]">{s.pct}%</span>
-                        <span className="text-[#A0C4E8] font-normal ml-2">約 {s.amount} 元</span>
+                        <span className="text-[#A0C4E8] font-normal ml-2">約 {s.amount}</span>
                       </span>
                       <span className="text-xs text-[#5A7A9E]">{s.desc}</span>
                     </div>
