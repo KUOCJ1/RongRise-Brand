@@ -80,6 +80,14 @@ const tools: Tool[] = [
     tagClass: "bg-primary/10 text-primary",
   },
   {
+    href: "/ai-roadmap",
+    icon: "🗺️",
+    name: "AI 轉型路線圖生成器",
+    desc: "四個問題，三分鐘生成你的 12 個月導入藍圖——三階段行動、試點場景與投資配置一次到位。",
+    tag: "規劃",
+    tagClass: "bg-tertiary/10 text-tertiary",
+  },
+  {
     href: "/content-ops",
     icon: "📈",
     name: "內容引擎戰情室",
@@ -112,7 +120,7 @@ export default function ToolsPage() {
 
       {/* Tools Grid */}
       <div className="max-w-[1000px] mx-auto px-4 sm:px-6 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {tools.map((tool) => (
             <a
               key={tool.href}
