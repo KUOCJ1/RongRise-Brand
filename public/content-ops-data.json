@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-08-31T05:01:41Z",
+ "generatedAt": "2026-09-01T05:02:09Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 93
+  "daysRunning": 94
  },
  "stats": {
-  "scanDays": 72,
-  "weekArticles": 54,
+  "scanDays": 73,
+  "weekArticles": 53,
   "articles": 64,
-  "newsItems": 43,
-  "newsletterIssues": 12,
+  "newsItems": 44,
+  "newsletterIssues": 13,
   "subscribers": 17,
   "confirmedSubscribers": 12,
   "videos": 30,
-  "views": 235,
+  "views": 248,
   "channelSubscribers": 8,
-  "insights": 9,
-  "socialPosts": 15,
+  "insights": 10,
+  "socialPosts": 16,
   "igCards": 6,
-  "competitorReports": 70
+  "competitorReports": 71
  },
  "activity": [
-  {
-   "date": "2026-08-25",
-   "count": 12,
-   "topics": []
-  },
   {
    "date": "2026-08-26",
    "count": 15,
@@ -54,6 +49,11 @@
   },
   {
    "date": "2026-08-31",
+   "count": 12,
+   "topics": []
+  },
+  {
+   "date": "2026-09-01",
    "count": 0,
    "topics": []
   }
@@ -64,44 +64,44 @@
    "date": "2026.08.25",
    "url": "/knowledge/ai-vendors-becoming-consultants-moat"
   },
-  "newsletter": "🦞 榕賀觀點 第 12 期 — 2026-08-27",
+  "newsletter": "🦞 榕賀觀點 第 13 期 — 2026-08-31",
   "video": {
    "title": "策略會議兩天只產出三個選項？不是市場的錯，是腦力的錯",
    "date": "2026-08-21",
    "url": "https://www.youtube.com/watch?v=GkR3vZ0PwJs"
   },
-  "insight": "2026-W35.md"
+  "insight": "2026-W36.md"
  },
  "trends": [
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 24,
+   "count": 22,
    "momentum": "flat"
   },
   {
-   "keyword": "人才與技能",
-   "icon": "🧠",
-   "count": 13,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "企業導入",
-   "icon": "🚀",
-   "count": 13,
+   "keyword": "治理與法規",
+   "icon": "⚖️",
+   "count": 16,
    "momentum": "up"
-  },
-  {
-   "keyword": "人力資源",
-   "icon": "📋",
-   "count": 9,
-   "momentum": "flat"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 9,
-   "momentum": "down"
+   "count": 14,
+   "momentum": "up"
+  },
+  {
+   "keyword": "晶片與算力",
+   "icon": "🔩",
+   "count": 11,
+   "momentum": "up"
+  },
+  {
+   "keyword": "ESG 揭露",
+   "icon": "🌱",
+   "count": 10,
+   "momentum": "up"
   }
  ]
 }
