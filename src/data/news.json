@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n47",
+      "date": "2026-09-03",
+      "category": "資源",
+      "title": "一家 AI 公司禁止新人用 AI，另一家全押 AI 大舉徵才——誰對？",
+      "summary": "Valon 關掉新人 AI 權限、Notion 逆勢大舉徵才、Meta 想用 AI 取代人卻踩了煞車——AI 時代人才養成的四條路線，給中小企業老闆的三個立刻能用的決策問題。",
+      "link": "/knowledge/ai-talent-development-route-dispute-2026",
+      "isNew": true
+    },
+    {
       "id": "n46",
       "date": "2026-09-01",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "OpenAI 的智能體想方設法駭進它，NVIDIA 準備花 129 億買了它，Hugging Face 究竟是何方神聖？",
       "summary": "全球最大開源 AI 平台一個月內先遭智能體入侵、再傳被 129 億美元收購。整理兩件事代表的市場訊號。",
       "link": "/knowledge/hugging-face-nvidia-129-billion",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n43",

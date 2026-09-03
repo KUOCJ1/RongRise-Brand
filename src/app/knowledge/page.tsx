@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-talent-development-route-dispute-2026",
+    cat: "AI 轉型",
+    title: "一家 AI 公司禁止新人用 AI，另一家全押 AI 大舉徵才——誰對？",
+    date: "2026.09.03",
+    readTime: "13 分鐘",
+    excerpt: "Valon 關掉新人的 AI 權限、Notion 逆勢大舉徵才、Meta 想用 AI 取代人卻踩了煞車、比爾蓋茲提議課機器人稅——AI 時代人才究竟該怎麼養，市場給出了四個完全相反的答案。本文拆解四條路線背後的共同邏輯，給中小企業老闆一份立刻能用的人才三問框架。",
+    tags: ["AI 人才", "人才策略", "Valon", "Notion", "Meta", "機器人稅", "中小企業", "AI 轉型", "比爾蓋茲"],
+  },
+  {
     slug: "ai-agents-performance-management",
     cat: "AI 轉型",
     title: "你的 AI 同事該打考績了：McKinsey 說，agent 也要績效管理",
