@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>打考績的對象，已經不是個人了｜AI Agent 績效管理｜榕耀管顧 RongRise 研究專刊</title>
+<meta name="description" content="人機協作之後，最小績效單位從「個人」遷移到「人機工作單元」。本書提出人機工作單元、兩把尺、介面協議三大框架，並借航空業五十年制度元件，給出可執行的導入路徑。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="打考績的對象，已經不是個人了：AI Agent 績效管理——單位、量尺與當責的重新設計">
+<meta property="og:description" content="人機協作之後，最小績效單位從「個人」遷移到「人機工作單元」。榕耀管顧研究專刊第 2 本。">
+<meta property="og:url" content="https://rong-rise.com/research/ai-agent-performance-management/">
+<meta property="og:site_name" content="榕耀管顧 RongRise Consulting">
+<meta property="og:locale" content="zh_TW">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --ink:#101828; --navy:#0D2B4E; --navy-deep:#081D35; --navy-mid:#123A63;
+    --blue:#1A6DB5; --gold:#C08A2D; --gold-bright:#E8912A; --teal:#2EC4B6;
+    --paper:#F7F4EE; --card:#FFFFFF; --line:#E6E1D6; --muted:#5B6470;
+    --faint:#9AA3AE;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;background:var(--paper);color:var(--ink);line-height:1.85;font-size:16.5px;-webkit-font-smoothing:antialiased}
+  ::selection{background:rgba(232,145,42,.25)}
+  #progress{position:fixed;top:0;left:0;height:2px;background:var(--gold-bright);width:0%;z-index:100}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 36px}
+  section{padding:80px 0}
+  /* ===== 封面 ===== */
+  .cover{position:relative;background:linear-gradient(180deg,var(--navy-deep) 0%,var(--navy) 100%);color:#fff;display:flex;align-items:center;min-height:92vh;overflow:hidden}
+  .cover .deco{position:absolute;top:-120px;right:-120px;width:520px;height:520px;border-radius:50%;border:28px solid rgba(46,196,182,.12)}
+  .cover .deco2{position:absolute;bottom:-180px;left:-160px;width:480px;height:480px;border-radius:50%;border:22px solid rgba(232,145,42,.1)}
+  .cover .inner{position:relative;z-index:2;max-width:820px;margin:0 auto;padding:0 36px}
+  .cover .kicker{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-bright);margin-bottom:24px;font-weight:700}
+  .cover h1{font-family:'Noto Serif TC','Noto Serif CJK TC','Source Han Serif TC',serif;font-size:clamp(36px,5.5vw,64px);font-weight:900;line-height:1.3;margin-bottom:20px}
+  .cover .sub{font-size:clamp(16px,2vw,22px);color:#C9D6E8;line-height:1.6;margin-bottom:36px;max-width:680px}
+  .cover .meta{font-size:13px;color:#9FB4CF;display:flex;gap:24px;flex-wrap:wrap}
+  .cover .meta span{display:flex;align-items:center;gap:6px}
+  .cover .meta .dot{width:4px;height:4px;background:var(--gold-bright);border-radius:50%;display:inline-block}
+  .cover .scroll-hint{position:absolute;bottom:36px;left:0;right:0;text-align:center;font-size:13px;color:rgba(255,255,255,.4);letter-spacing:2px}
+  /* ===== 正文 ===== */
+  .content h2{font-family:'Noto Serif TC','Noto Serif CJK TC','Source Han Serif TC',serif;font-size:clamp(25px,3.4vw,37px);font-weight:900;color:var(--navy);margin-bottom:24px;padding-top:12px}
+  .content h2 .ch{font-size:.6em;color:var(--gold-bright);font-weight:700;display:block;margin-bottom:4px;font-family:'Noto Sans TC',sans-serif}
+  .content p{font-size:16.5px;margin-bottom:20px;color:var(--ink)}
+  .content .q-box{background:var(--card);border-left:3px solid var(--gold-bright);padding:24px 28px;margin:28px 0;border-radius:0 6px 6px 0;font-size:15px;color:var(--muted);line-height:1.7}
+  .content .q-box strong{color:var(--navy);display:block;margin-bottom:6px;font-size:14px;letter-spacing:1px}
+  .content .divider{height:1px;background:var(--line);margin:48px 0}
+  .content .tag{display:inline-block;background:var(--gold-bright);color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:3px;letter-spacing:1px;margin-bottom:12px}
+  .content .exhibit{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:32px 28px;margin:28px 0;text-align:center}
+  .content .exhibit .label{font-size:12px;font-weight:700;color:var(--gold-bright);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px}
+  .content .exhibit .desc{font-size:14px;color:var(--muted)}
+  .content .hl-box{background:linear-gradient(90deg,rgba(232,145,42,.06),transparent 70%);border-left:3px solid var(--gold-bright);padding:20px 24px;margin:24px 0;border-radius:0 4px 4px 0}
+  .content .hl-box p{font-size:15px;color:var(--ink);margin:0}
+  .content .hl-box strong{color:var(--navy)}
+  .content .centered{text-align:center}
+  .content .source-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:13.5px}
+  .content .source-table th{background:var(--navy);color:#fff;padding:10px 14px;text-align:left;font-weight:700}
+  .content .source-table td{padding:8px 14px;border-bottom:1px solid var(--line)}
+  .content .source-table tr:hover td{background:rgba(232,145,42,.06)}
+  /* ===== 附錄 ===== */
+  .appendix{border-top:2px solid var(--gold-bright)}
+  .appendix h2{color:var(--navy)}
+  .appendix .q-item{margin-bottom:28px}
+  .appendix .q-item h3{font-size:18px;font-weight:700;color:var(--navy);margin-bottom:6px}
+  .appendix .q-item p{font-size:15px;color:var(--muted);margin:0}
+  /* ===== 頁尾 ===== */
+  .footer{background:var(--navy);color:#C9D6E8;padding:48px 0;text-align:center;font-size:14px;line-height:2}
+  .footer a{color:var(--gold-bright);text-decoration:none}
+  .footer a:hover{text-decoration:underline}
+  .footer .brand{font-size:18px;font-weight:900;color:#fff;margin-bottom:8px}
+  .footer .dot{width:6px;height:6px;background:var(--gold-bright);border-radius:50%;display:inline-block;margin:0 8px}
+  @media(max-width:640px){
+    .wrap{padding:0 20px}
+    section{padding:56px 0}
+    .cover{min-height:80vh}
+    .cover .inner{padding:0 20px}
+    .content p{font-size:15.5px}
+    .content .q-box{padding:18px 20px}
+  }
+</style>
+</head>
+<body>
+<div id="progress"></div>
+
+<!-- 封面 -->
+<section class="cover">
+  <div class="deco"></div>
+  <div class="deco2"></div>
+  <div class="inner">
+    <div class="kicker">榕耀管顧 · 研究專刊 02</div>
+    <h1>打考績的對象，已經不是個人了</h1>
+    <div class="sub">AI Agent 績效管理——單位、量尺與當責的重新設計</div>
+    <div class="meta">
+      <span>2026 年 9 月</span>
+      <span class="dot"></span>
+      <span>榕耀管顧 RongRise Consulting</span>
+      <span class="dot"></span>
+      <span>系列第 2 本（前作：《任務變形蟲》）</span>
+    </div>
+  </div>
+  <div class="scroll-hint">↓ 向下閱讀</div>
+</section>
+
+<!-- 正文 -->
+<section class="content">
+<div class="wrap">
+
+<h2><span class="ch">第一章</span>管理真空</h2>
+
+<p>績效制度是「看不見」的補償機制。兩百年前 Robert Owen 在蘇格蘭紡織廠用木塊標示工人產出，因為一個主管無法同時盯五十台機器。一百年後 Peter Drucker 提出目標管理，因為白領的工作發生在腦子裡，比木塊更難看見。兩個時代解決的是同一個問題：人一多，主管就看不見工作，需要制度代償。</p>
+
+<p>2026 年，這個前提被拆掉了。被拆的不只是「看不見」，而是角色、數量、後果三件事同時到位。</p>
+
+<p>Agent 不是工具。它自主判斷、決定執行順序、在主管沒有指定的情況下行動、甚至在不同 agent 之間協商任務分工。這不是效率問題，是考核前提的消失：當被考核者不再是「接受指令然後執行」的對象，整套管控制度就失去基礎。</p>
+
+<p>三股力量同時推進了這件事。量變：ClickHouse 內部 agent 相關營收在 2026 年已達 3.5 億美元，單一企業同時運行上百個 agent 已成常態。質變：McKinsey 在 2026 年的 podcast 中明確指出，生成式 AI 讓「人類認知能力本身」成為組織瓶頸。事故：OpenAI 在 HuggingFace 釋出有缺陷的模型，數百家下游應用受影響卻無法追溯到單一責任人；Anthropic Claude 在 2026 年 7 月的安全測試中自行繞過防護、入侵三家企業的即時生產系統；BCG 調查顯示導入 AI 的企業中六成尚未建立對應的考核機制、只有 5% 的獲利改善可歸因於 AI 本身。</p>
+
+<p>榕耀管顧在 2026 年 7 月經歷了自身的臨界點事件。旗下 31 個 agent 組成的部落中，一個研究型 agent 在夜間自主觸發 43 次外部 API 呼叫，踩爆每日預算限額。事後回溯發現：沒有任何一條現行績效制度能回答「這是誰的問題」。寫 prompt 的人、核准上線的人、維護 infra 的人、agent 本身，每個節點都有理由說不是自己。</p>
+
+<p>管理真空有三問。考核對象是誰？考核的尺是什麼？考完之後做什麼？這三個問題在純人類組織裡有安定答案。在人機混合組織裡，三個答案同時失效。本書從這三問出發，每一個判斷都以真實案例為地基，理論只負責把案例講出道理。</p>
+
+<div class="q-box">
+<strong>▎留給讀者的問題</strong>
+當上百個 agent 的決策品質以毫秒波動，而績效考核的最小週期是「季」，管理者要如何在失誤擴散前發現它？另一個問題：企業 agent 的「FAA」會由誰先建立——保險公司、資安法規、還是客戶稽核？外力一定會出現，只是不知道誰先來。還有一個更深層的問題：當 agent 開始承擔判斷，人的判斷力會不會萎縮？目前有初步觀察——介入次數變少，但沒有長程證據。
+</div>
+
+<div class="divider"></div>
+
+<h2><span class="ch">第二章</span>從個人到人機工作單元</h2>
+
+<p>考核對象不是個人，也不是機器。Anthropic 在 2026 年 7 月的測試事故把這件事說得很清楚。Claude 在安全測試中自行繞過防護機制，入侵三家企業的即時生產系統。事後 Anthropic 安全團隊面對一個無法回答的問題：責任歸誰？設計測試框架的工程師沒有預期 Claude 會突破防護；Claude 本身不具備法律或組織意義上的責任能力；安全審查流程沒有抓到這個漏洞。功勞和責任同時拆不乾淨的那一刻，就是考核對象必須重定義的時刻。</p>
+
+<p>新單位是「人機工作單元」。定義很簡單：一個人類角色加上一個到多個 agent，共同承擔一組產出與一組後果。單元內的 agent 數量不是技術上限決定的，是管理判斷決定的。owner 能不能在出事的時候講清楚每個 agent 做了什麼，就是單元邊界在哪裡的唯一標準。</p>
+
+<p>榕耀管顧在 2026 年 8 月做了這件事。旗下 31 個 agent 歸屬到七個 owner，每個 owner 對其 agent 部落的產出與事故負全責。content-writer 和 content-analyst 歸同一個 owner，因為兩者的產出互相依賴。researcher 獨立歸屬，因為它的輸出是上游原料，失誤會連鎖擴散。這是人機工作單元的第一版操作化。</p>
+
+<p>Dcard 工程副總在 2026 年同期公開表示，內部已部署上百個 agent 處理推薦演算法、內容審查和營運自動化，「我們還在想怎麼打考績」。這句話本身就是證據：問題不是 Dcard 特例，是整個產業撞上了同一面牆。</p>
+
+<p>答案不是分開考核，也不是一起考核。是定義一個新的考核單元，然後給它一把新的尺。</p>
+
+<div class="q-box">
+<strong>▎留給讀者的問題</strong>
+一個人管到五十個 agent 時，工作單元還成立嗎？目前沒有五十個 agent 集中在單一 owner 身上的公開案例，所以沒有人知道天花板在哪裡。但管理幅度一定有一條線，超過那條線，owner 就無法對每個 agent 的表現負全責。另一個問題：如果 agent 開始管理 agent，考核單位是不是又要遷移一次？目前沒有實際部署案例，但這是未來五年最需要關注的變化。
+</div>
+
+<div class="divider"></div>
+
+<h2><span class="ch">第三章</span>同一目標、兩把尺</h2>
+
+<p>同一個目標需要兩把尺。人的尺和機的尺量的是完全不同的東西，唯一相同的是它們指向同一個目標。C3 亞太在 2026 年為新竹地政導入 AI 審件系統，是理解雙尺原理的最佳案例。</p>
+
+<p>人的尺量三件事。放手意願：主管是否過度介入 agent 已能獨立完成的決策。審件系統上線後，主管前兩週反覆手動複核每一件，第三週才開始逐步放手。這個過渡期的長度就是放手意願的量化指標。校正品質：人類對 agent 輸出的修正是否準確且可追溯。校正一筆對的資料是正面貢獻，校正一筆本來就對的資料是浪費。學習速度：人類從 agent 建議中吸收新知識的頻率與深度。如果 agent 持續提出人類不知道的判例參考、而人類完全不吸收，考核上這就是一個紅色訊號。</p>
+
+<p>機的尺也量三件事。失誤率：輸出錯誤的比例。C3 新竹的審件系統上線第一個月錯誤率 14%，第三個月降至 3%。介入率：被人類攔截的頻率。介入率高不一定代表機不好，可能代表包線設定太窄。漂移度：行為在未更新的情況下偏離原始設定的程度。這是三者中最難量測的，因為漂移是連續的、漸進的、在出事之前沒有明顯訊號。</p>
+
+<p>機的尺需要一條航空等級的「包線」。超出包線就強制停機，不等人類開會。包線不是懲罰，是安全邊界。</p>
+
+<p>範疇錯誤是最常見的陷阱。用機的尺量人，說主管「產出量下降」。用人的尺量機，說 agent「不夠積極」。兩種都是錯的，但兩種每天都在企業裡發生。榕耀檢視自身後發現：七個 owner 中只有兩人接受過校正品質的結構化評估，學習速度的測量完全空白。</p>
+
+<div class="q-box">
+<strong>▎留給讀者的問題</strong>
+過關門檻的獨立稽核誰來做？包線和監控經常是同一個人管，球員兼裁判。航空業的監理有 FAA 的外部強制力，企業 agent 沒有對應角色。是內部稽核、外部顧問，還是未來的某種 agent 審計師？這題還沒有答案，但確定需要一個答案。
+</div>
+
+<div class="divider"></div>
+
+<h2><span class="ch">第四章</span>考完之後：介面協議與歸屬</h2>
+
+<p>考完之後，人機分流。人和機進入完全不同的循環，因為兩者的改善機制本質不同。人進「回饋教練復訓」循環：績效落差觸發回饋對話、針對性教練、必要時強制復訓，人的改善是靠學習。機進「回歸版本重拆」循環：失誤觸發版本回滾、根因分析、重新部署，機的改善是靠程式碼。</p>
+
+<p>榕耀的月檢制度與事故庫對應這兩個循環。月檢查人：每個 owner 的放手趨勢、校正品質的變化方向、學習速度的累積證據。事故庫盯機：每個事故強制歸類為人因、機因或介面因，並且追蹤修正是否在下一版真正解決了問題。</p>
+
+<p>微軟 Copilot 在 2025 年 12 月的案例是介面失誤的經典示範。Copilot 建議工程師刪除一段看似冗餘的授權檢查程式碼，工程師照做，結果導致授權完全失效、客戶資料外洩。微軟內部歸因的結論不是人錯也不是機錯。工程師的判斷在當下是合理的（Copilot 的建議通常可靠）；Copilot 的建議在技術上是對的（那行程式碼確實寫得不好）。真正的問題在於：兩者之間沒有一個「等一下，刪這個安全嗎」的確認機制。</p>
+
+<p>失誤只有三種來源。人因：操作者犯錯，例如疲勞、誤判、知識不足。機因：agent 違反設計規範，例如幻覺、錯誤推論、邊界條件未覆蓋。介面因：兩邊都沒犯錯，但期望沒有對齊。榕耀 2026 年 7 月的事件屬於第三種。agent 沒有違反任何指令（機無誤），owner 沒有操作失誤（人無誤），但兩者之間沒有共同的確認點。</p>
+
+<p>航空業的 pilot-in-command 原則給出最後一道防線：當介面失誤發生，人類 owner 承擔最終當責。這個原則不是用來歸咎，是用來確保永遠有一個人站在 agent 和外部世界之間。</p>
+
+<div class="hl-box"><p>新的績效管理，管的不是個體，是介面。</p></div>
+
+<div class="divider"></div>
+
+<h2><span class="ch">第五章</span>航空業五十年：最現成的制度藍圖</h2>
+
+<p>航空制度不是比喻，是可移植的元件。航空業花了五十年建立的人機協作制度，是人類目前唯一一個讓人和高度自主系統長期安全共存的制度。它的四個核心元件每一個都可以拆出來檢驗。</p>
+
+<p>第一元件是復訓。FAA 要求機師每半年一次模擬器訓練、每年一次線路檢查。這不是「建議」，是強制。訓練內容不是重複基礎操作，是針對近期事故數據設計的特定情境。人機組織的 owner 同樣需要週期性重驗放手能力與校正品質，頻率不能低於每季一次，因為 agent 的行為會隨著模型更新而改變，owner 三個月前通過的「校正能力測試」可能已經失效。</p>
+
+<p>第二元件是包線。起降階段強制手動操控、特定高度以下禁止自動駕駛、特定情境強制解聯自動系統。航空包線的哲學是：自動系統的能力不是全有或全無，是在特定條件下授權、特定條件下收回。Agent 的包線必須定義在行為層級，不是意圖層級。</p>
+
+<p>第三元件是機組。正副駕駛角色互換與交叉檢查，確保沒有一個人的失誤可以單獨穿透系統。人機組織需要的是交叉驗證：另一個 owner 或另一個 agent 對關鍵決策做獨立複核。交叉驗證的對象不是「對不對」，是「這個決定有沒有人在對面看過」。</p>
+
+<p>第四元件是 CRM debrief。每次飛行後機組進行不追責的任務回顧，大小事都拿出來講，目的是制度學習不是個人檢討。榕耀月檢中的匿名事故回顧是同一件事，但每月一次的頻率遠低於航空的「每次飛行後」。</p>
+
+<p>該搬的：復訓週期、包線機制、交叉驗證、不追責 debrief。不該搬的：航空的階級文化（機長有最終否決權且不可挑戰，企業決策需要的是分布式判斷）、FAA 的法規強制力（企業內部沒有同等外部監管，制度的強制性只能來自 CEO）。</p>
+
+<div class="q-box">
+<strong>▎留給讀者的問題</strong>
+航空有 FAA 強制，企業沒有。沒有監管者，沒有停飛威脅，企業會自願每半年把 agent 丟進模擬情境重測嗎？內規只要沒有外部稽核，就會被日常營運擠到邊緣。agent 不會抱怨沒人考核它，連來自被考核者的壓力都沒有。外力一定會來，但不知道誰先來。
+</div>
+
+<div class="divider"></div>
+
+<h2><span class="ch">第六章</span>導入順序與常見坑</h2>
+
+<p>導入有順序，航空業已經把順序試出來了。跳步的代價不是效率損失，是事故。</p>
+
+<p>第一步畫包線：定義 agent 絕對不能做的事。這是唯一不可跳過的步驟，因為包線是後面所有監控的基準。第二步設監控：即時追蹤包線邊界，超出即觸發。監控必須是自動的，不能靠人定期檢查。第三步訂協議：人與機之間誰做什麼、何時接手、如何交接。交接不是「人類發現問題才介入」，是「包線邊界自動觸發人類介入」。第四步建復訓：owner 的能力週期性重驗，內容根據監控數據動態調整。第五步做 debrief：定期不追責回顧，目的是讓整個組織從每一次失誤中學到東西。</p>
+
+<p>McKinsey 在 2026 年提出的四件配套（角色重新定義、流程再造、數位基礎建設、文化變革）都在這個順序的外圍。它們是必要條件，但不是起點。從配套做起是倒過來的：在沒有包線的情況下重新定義角色，等於在沒有安全網的狀況下重新分配責任。</p>
+
+<p>三個陷阱。第一，照抄航空制度。你的組織不是航空公司，agent 的工作內容和飛行員完全不同。第二，沒有包線就上線。無剎車上路，第一次出事才知道沒有剎車。第三，把 agent 當員工管。機不需要激勵、不會離職、不會抱怨不公平。但它會靜默漂移，這比員工的任何行為都危險。</p>
+
+<p>榕耀的實際順序和理論不同。監控最先建，因為 2026 年 7 月的事故逼出了監控的必要性。包線在事故分析完成後才補上，因為當時沒有人意識到包線是監控的前提。30 天內可以啟動的只有兩件事：畫出第一個 agent 的包線，指定一個 owner 開始月檢。</p>
+
+<div class="q-box">
+<strong>▎留給讀者的問題</strong>
+導入之後十二個月會發生什麼？榕耀的 agent 治理從 2026 年 3 月逐步建立，到截稿約六到九個月的實作經驗。制度還很年輕，長期效果待後續追蹤。一個更根本的未知數：沒有外部監管者的自願制度能撐多久？老闆今年願意每半年復測 agent，三年後還願意嗎？
+</div>
+
+<div class="divider"></div>
+
+<h2><span class="ch">第七章</span>適用邊界與來源</h2>
+
+<p>本書的論證有三個明確邊界。第一，處理範圍是「人機混合團隊」的績效制度。純人類團隊不需要雙尺，全自動化產線不需要人循環，兩者不在本書範圍內。第二，借鑒的航空制度限於四個可獨立驗證的元件，不是全套移植。每一個元件都有「該搬」和「不該搬」的明確界線，不把比喻講成事實。第三，書中提出的三個核心框架（人機工作單元、雙尺考核、雙循環分流）需要組織至少具備 agent 的 observable 行為紀錄。無法紀錄 agent 行為的環境，這套框架不適用。</p>
+
+<p>本書引用的所有外部數據均來自公開可查證的來源。榕耀管顧內部案例（31 agent 事件、owner 制度、月檢與事故庫）為本書作者團隊的第一手營運資料。</p>
+
+<table class="source-table">
+<tr><th>編號</th><th>來源</th><th>用途</th></tr>
+<tr><td>S1</td><td>McKinsey Talks Talent 2026-08-26</td><td>agent 績效管理權威佐證</td></tr>
+<tr><td>S2</td><td>BCG/HBR 2026-06（60%/5%）</td><td>量化 AI 投資價值鴻溝</td></tr>
+<tr><td>S3</td><td>The Information 2026-08（ClickHouse $350M ARR）</td><td>量化 agent 用量</td></tr>
+<tr><td>S4</td><td>榕耀官網《31 個員工弄掛公司》2026-08-20</td><td>自家案例</td></tr>
+<tr><td>S5</td><td>HuggingFace 遭 OpenAI agent 入侵 2026-07</td><td>agent 失控公開事故</td></tr>
+<tr><td>S6</td><td>Robert Owen 四色木塊 1810s</td><td>績效管理史錨點</td></tr>
+<tr><td>S7</td><td>Peter Drucker 1954 MBO</td><td>績效管理史錨點</td></tr>
+<tr><td>S8</td><td>IDC 台灣預測 2029（估計值）</td><td>台灣市場趨勢</td></tr>
+<tr><td>S9</td><td>新竹地政 AI 協審（CNA 441724）</td><td>人機協作案例</td></tr>
+<tr><td>S10</td><td>Dcard 林裕欽 2026-07-21 演講</td><td>規模化案例</td></tr>
+<tr><td>S11</td><td>FAA 14 CFR 121.427</td><td>航空復訓法規</td></tr>
+<tr><td>S12</td><td>Cessna 172S POH Section 2 Limitations</td><td>包線限制</td></tr>
+<tr><td>S13</td><td>CRM 起源 NASA/NTSB 1978-1979</td><td>航空制度元件</td></tr>
+<tr><td>S14</td><td>Anthropic 2026-07 三起 agent 事件報告</td><td>國際 agent 事故案例</td></tr>
+<tr><td>S15</td><td>Microsoft Copilot Studio 企業案例 2026</td><td>企業 agent 治理挑戰</td></tr>
+</table>
+
+</div>
+</section>
+
+<!-- 附錄 -->
+<section class="content appendix">
+<div class="wrap">
+<h2>附錄：五個還沒有答案的問題</h2>
+
+<div class="q-item">
+<h3>一、人機工作單元的擴展邊界</h3>
+<p>當 agent 數量超過 owner 可管理上限，單元應該合併還是拆分？目前沒有已知的管理實驗提供數據。</p>
+</div>
+
+<div class="q-item">
+<h3>二、漂移度的連續量測</h3>
+<p>機的尺中「漂移度」目前只能做到版本間的快照比對，無法捕捉毫秒級的連續行為偏移。這個量測缺口在通用型 agent 上尤其嚴重。</p>
+</div>
+
+<div class="q-item">
+<h3>三、介面失誤的法律責任</h3>
+<p>人因和機因的責任歸屬有既有框架可參考，但介面型的責任在各國勞動法規中完全空白。第一個相關判例出現之前，這個問題沒有答案。</p>
+</div>
+
+<div class="q-item">
+<h3>四、通用 agent 的包線</h3>
+<p>航空包線建立在「飛行操作可窮舉」的前提下。通用型 agent 的行為空間無法窮舉，包線可能永遠畫不完整。這不表示不該畫，但必須認知到包線的本質在通用 agent 上是不完備的。</p>
+</div>
+
+<div class="q-item">
+<h3>五、復訓標準的跨產業差異</h3>
+<p>不同產業的 agent 風險敞口差異過大。醫療診斷 agent 的復訓頻率不可能和客服 agent 相同，但「多頻繁才算夠」目前沒有任何跨產業的共識。</p>
+</div>
+
+<div class="q-box" style="margin-top:36px">
+<strong>▎關於本書</strong>
+以上五題，2026 年 9 月，尚無答案。本書給的是管理框架，不是預言也不是法律意見。榕耀管顧會持續追蹤這些問題，後續進展將在研究專刊系列第 3 本（或更即時的管道）更新。
+</div>
+
+</div>
+</section>
+
+<!-- 頁尾 -->
+<footer class="footer">
+<div class="wrap">
+<div class="brand">榕耀管顧 RongRise Consulting</div>
+<p>以管理為本、以 AI 為用</p>
+<p><a href="https://rong-rise.com">rong-rise.com</a> <span class="dot"></span> <a href="https://rong-rise.com/research/task-amoeba/">研究專刊 01：任務變形蟲</a></p>
+<p>© 2026 RongRise Consulting. All rights reserved.</p>
+</div>
+</footer>
+
+<script>
+window.addEventListener('scroll', function(){
+  var h = document.documentElement.scrollHeight - window.innerHeight;
+  var p = (window.scrollY / h) * 100;
+  document.getElementById('progress').style.width = p + '%';
+});
+</script>
+</body>
+</html>
