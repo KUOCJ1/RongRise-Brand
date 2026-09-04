@@ -1,16 +1,16 @@
 {
- "generatedAt": "2026-09-03T05:00:35Z",
+ "generatedAt": "2026-09-04T05:00:51Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 96
+  "daysRunning": 97
  },
  "stats": {
-  "scanDays": 75,
+  "scanDays": 76,
   "weekArticles": 53,
-  "articles": 65,
-  "newsItems": 45,
-  "newsletterIssues": 13,
+  "articles": 66,
+  "newsItems": 46,
+  "newsletterIssues": 14,
   "subscribers": 17,
   "confirmedSubscribers": 12,
   "videos": 30,
@@ -19,14 +19,9 @@
   "insights": 10,
   "socialPosts": 17,
   "igCards": 7,
-  "competitorReports": 73
+  "competitorReports": 74
  },
  "activity": [
-  {
-   "date": "2026-08-28",
-   "count": 14,
-   "topics": []
-  },
   {
    "date": "2026-08-29",
    "count": 12,
@@ -54,6 +49,11 @@
   },
   {
    "date": "2026-09-03",
+   "count": 12,
+   "topics": []
+  },
+  {
+   "date": "2026-09-04",
    "count": 0,
    "topics": []
   }
@@ -64,7 +64,7 @@
    "date": "2026.08.25",
    "url": "/knowledge/ai-vendors-becoming-consultants-moat"
   },
-  "newsletter": "🦞 榕賀觀點 第 13 期 — 2026-08-31",
+  "newsletter": "🦞 榕賀觀點 第 14 期 — 2026-09-03",
   "video": {
    "title": "策略會議兩天只產出三個選項？不是市場的錯，是腦力的錯",
    "date": "2026-08-21",
