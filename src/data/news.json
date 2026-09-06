@@ -1,355 +1,67 @@
 {
   "news": [
     {
-      "id": "n47",
-      "date": "2026-09-03",
-      "category": "資源",
-      "title": "一家 AI 公司禁止新人用 AI，另一家全押 AI 大舉徵才——誰對？",
-      "summary": "Valon 關掉新人 AI 權限、Notion 逆勢大舉徵才、Meta 想用 AI 取代人卻踩了煞車——AI 時代人才養成的四條路線，給中小企業老闆的三個立刻能用的決策問題。",
-      "link": "/knowledge/ai-talent-development-route-dispute-2026",
-      "isNew": true
-    },
-    {
-      "id": "n46",
-      "date": "2026-09-01",
-      "category": "資源",
-      "title": "你的 AI 同事該打考績了：McKinsey 說，agent 也要績效管理",
-      "summary": "AI agent 已經從工具變成「虛擬員工」，但幾乎沒人給它打考績。McKinsey 主張 agent 也要績效管理：定 KPI、監控失誤、回訓、離職面談——會管人的人，成了 agent 時代的主角。",
-      "link": "/knowledge/ai-agents-performance-management",
-      "isNew": true
-    },
-    {
-      "id": "n45",
-      "date": "2026-08-31",
-      "category": "公告",
-      "title": "白皮書發布：第二大腦 —— 一套正在運作的知識基礎設施",
-      "summary": "榕耀管顧發布《第二大腦》白皮書 v1.1：知識飛輪、五層架構、理論基礎，加上落地實況。366 篇筆記、六條自動掃描管線、公開知識庫，全部已在運作——這份白皮書本身就是系統的產出。",
-      "link": "/whitepaper/second-brain",
-      "isNew": true
-    },
-    {
-      "id": "n44",
-      "date": "2026-08-28",
-      "category": "資源",
-      "title": "OpenAI 的智能體想方設法駭進它，NVIDIA 準備花 129 億買了它，Hugging Face 究竟是何方神聖？",
-      "summary": "全球最大開源 AI 平台一個月內先遭智能體入侵、再傳被 129 億美元收購。整理兩件事代表的市場訊號。",
-      "link": "/knowledge/hugging-face-nvidia-129-billion",
-      "isNew": false
-    },
-    {
-      "id": "n43",
-      "date": "2026-08-27",
-      "category": "資源",
-      "title": "政府比你的公司還會用 AI：半年省下 3 萬分鐘，靠的是「補人力缺口」不是「取代人」",
-      "summary": "新竹市把 AI 放進不動產登記審查，半年省下逾 3 萬分鐘工時、每天回補 1.25 名人力。關鍵不是買了 AI，而是「缺口驅動」思維：先重設計流程、再讓 AI 補人力缺口。拆解「焦慮驅動 vs 缺口驅動」兩種導入動機。",
-      "link": "/knowledge/ai-fill-labor-gap-not-replace",
-      "isNew": false
-    },
-    {
-      "id": "n42",
-      "date": "2026-08-26",
-      "category": "資源",
-      "title": "一人 Scrum Team：AI 落地最短的捷徑，是讓員工自己當產品經理",
-      "summary": "Google 與史丹佛研究發現：AI 落地關鍵不是提示詞，而是產品經理的能力。用 PO 思維定義問題、Scrum 節奏迭代、Vibe Coding 工具內建 Builder 執行——每個人自己就是一支 Scrum Team。",
-      "link": "/knowledge/ai-one-person-scrum-team/",
-      "isNew": false
-    },
-    {
-      "id": "n41",
-      "date": "2026-08-25",
-      "category": "資源",
-      "title": "賣鏟子的人自己來挖金礦了：AI 廠商「顧問化」，你的顧問還剩什麼價值？",
-      "summary": "賣你 AI 工具的人，開始買顧問公司了。Anthropic 收購顧問、Bain 把 AI 轉型標準化成指南——顧問業正被 AI 廠商「向後整合」。但 AI 廠商能複製知識，複製不了判斷與信任。本文拆解顧問價值的五階光譜。",
-      "link": "/knowledge/ai-vendors-becoming-consultants-moat",
-      "isNew": false
-    },
-    {
       "id": "n5",
-      "date": "2026-08-21",
-      "category": "媒體",
-      "title": "新文章：策略會議兩天只產出三個選項？不是市場的錯，是腦力的錯",
-      "summary": "榕耀四階段 AI 協作戰略規劃方法論：四個客戶現場案例，從事實到治理的完整路徑。",
-      "link": "/knowledge/ai-strategy-planning-collaboration",
-      "isNew": false
-    },
-    {
-      "id": "n40",
-      "date": "2026-08-20",
+      "date": "2026-09-05",
       "category": "資源",
-      "title": "你的 AI 部隊健康嗎？五分鐘測出「Pilot Trap 陷阱深度」",
-      "summary": "五個維度（平台歸屬／員工信任／人才培養／治理成熟／Pilot 陷阱）快速檢驗 AI 部隊體質，附 25 題免費線上診斷量表。",
-      "link": "/knowledge/pilot-trap-self-check",
-      "isNew": false
+      "title": "你的績效管理對象多了一群 AI Agent：McKinsey 給 2026 年 HR 的 5 個訊號",
+      "summary": "McKinsey 報告指出 HR 角色從人事管家變成混合勞動力總監，5 個訊號與落地框架。",
+      "link": "/knowledge/mckinsey-hr-agent-performance-management",
+      "isNew": true
     },
     {
-      "id": "n39",
-      "date": "2026-08-20",
+      "date": "2026-06-18",
       "category": "資源",
-      "title": "我們公司有 31 個員工，上個月他們把公司給弄掛了。",
-      "summary": "從一次把公司弄掛的故障開始，我們替自己的 agent 部隊建立了管理制度。五個檢查項目：鋪路還是硬化、有無 owner、可否審計、划不划算、該不該退役。",
-      "link": "/knowledge/managing-31-ai-agents",
-      "isNew": false
+      "title": "AI 的隱形帳單：為什麼你的企業該關心資料中心用多少水",
+      "summary": "AI 資料中心到 2030 年預計消耗 6,000 億加侖水——相當於撒哈拉以南非洲 13 億人口一年基本用水。當歐盟開始為資料中心設立能源效率門檻、大企業要求",
+      "link": "/knowledge/ai-data-center-water-esg",
+      "isNew": true,
+      "id": "n6"
     },
     {
-      "id": "n38",
-      "date": "2026-08-20",
+      "date": "2026-06-18",
       "category": "資源",
-      "title": "AI 巨頭開始買電廠了：你的雲端帳單，即將變貴的三個理由",
-      "summary": "輝達投資綠能公司 SB Energy 15 億美元、為 OpenAI 資料中心擔保 1,050 億美元——AI 巨頭開始「買電廠」。綠電溢價將沿供應鏈傳導，你的雲端帳單遲早變貴。本文拆解能源帳單三層結構，教你現在就重算 AI 成本。",
-      "link": "/knowledge/ai-energy-arms-race-cloud-bill",
-      "isNew": false
+      "title": "當 AI 能在數小時內打造攻擊程式，你的企業還在天級修補漏洞嗎？",
+      "summary": "2026 年 CVE 漏洞數量恐破 66,000 個，AI 輔助漏洞挖掘讓攻擊速度從「天級」加速到「小時級」。Anthropic 報告顯示 AI 惡意濫用比例從",
+      "link": "/knowledge/ai-vulnerability-attack-speed-2026",
+      "isNew": true,
+      "id": "n7"
     },
     {
-      "id": "n37",
-      "date": "2026-08-18",
+      "date": "2026-06-11",
       "category": "資源",
-      "title": "員工偷偷用 AI、連高階主管都在繞道：影子 AI 治理的「紅綠燈」",
-      "summary": "PagerDuty 調查：66% 員工用過明知不被允許的 AI，81% 認為主管用另一套規則。影子 AI 不是員工不聽話，是政策跟不上生產力。本文提出「AI 治理紅綠燈」框架＋HBR「領導漂移」診斷，三週讓 AI 從暗處走回檯面。",
-      "link": "/knowledge/shadow-ai-governance-traffic-light",
-      "isNew": false
+      "title": "🕵️ Shadow AI 正在你家企業裡爆炸：你最大的資安風險不是駭客，是員工",
+      "summary": "Claude 惡意濫用比率一年內從 33% 飆升至 56%、Meta AI 客服被駭導致 2 萬 Instagram 帳號外洩、NPM 供應鏈攻擊鎖定 AI S",
+      "link": "/knowledge/shadow-ai-enterprise-security-risk",
+      "isNew": false,
+      "id": "n8"
     },
     {
-      "id": "n36",
-      "date": "2026-08-18",
+      "date": "2026-06-10",
       "category": "資源",
-      "title": "買 AI 像買電：NVIDIA 的「模型路由」，正在幫企業省下 74% 的 AI 成本",
-      "summary": "NVIDIA「模型路由」實測：只有 7% 的請求需要旗艦模型，分流後成本省 74%。買 AI 正在變成買電力——「AI 用電四級」框架，教你一個下午盤點任務分級，不換供應商也能把帳單砍半。",
-      "link": "/knowledge/ai-model-routing-power-grid",
-      "isNew": false
+      "title": "🤖 AI Agent 來了：企業如何從「用 AI」升級為「管 AI」",
+      "summary": "微軟報告顯示企業 AI 代理數量年增 15 倍，黃仁勳宣示 AI 已從生成式 AI 走向 Agent AI。當 AI 從「被動工具」變成「主動執行者」，企業面臨",
+      "link": "/knowledge/ai-agent-management-era",
+      "isNew": false,
+      "id": "n9"
     },
     {
-      "id": "n35",
-      "date": "2026-08-16",
+      "date": "2026-06-10",
       "category": "資源",
-      "title": "AI 巨頭告別個人化小助手：從「養寵物」到「雇員工」的時代轉折",
-      "summary": "OpenAI 停用企業版 Custom GPTs、Google 淡出 Gems——角色型助手為何被巨頭收攤？「養寵物 vs 雇員工」框架帶你看懂 AI 從角色經濟走向工作流經濟的轉折。",
-      "link": "/knowledge/ai-role-to-workflow-economy",
-      "isNew": false
+      "title": "別再 AI 洗白了！56% 企業裁員後股價反跌 25%，2026 年投資人只看這件事",
+      "summary": "CNBC 統計 23 家標普 500 企業：宣布因 AI 裁員後，56% 股價反而下跌、平均跌幅 25%。Nike 砍 800 人後跌 35%、Salesfor",
+      "link": "/knowledge/ai-layoffs-narrative-dead",
+      "isNew": false,
+      "id": "n10"
     },
     {
-      "id": "n34",
-      "date": "2026-08-16",
+      "date": "2026-06-04",
       "category": "資源",
-      "title": "搶不到 AI 人才？別再參加薪水拍賣，學會當「人才磁場」",
-      "summary": "HBR 分析百萬次互動數據：AI 人才追的不是高薪，是「正在發生的事」。本文提出人才磁場框架——動量、互補能力、可信後的彈性三塊磁鐵，中小企業照樣搶得到人。",
-      "link": "/knowledge/ai-talent-magnet",
-      "isNew": false
-    },
-    {
-      "id": "n33",
-      "date": "2026-08-16",
-      "category": "資源",
-      "title": "AI 印鈔時代來臨：內容大通膨，只有「信任」不貶值",
-      "summary": "麥肯錫高層罕見呼籲「少做像樣內容」、微軟同月砍功能——供應端收縮是內容泡沫見頂訊號。AI 印鈔時代，本文提出「內容通膨」框架與信任三道防線，守住唯一不貶值的資產。",
-      "link": "/knowledge/ai-content-inflation-trust",
-      "isNew": false
-    },
-    {
-      "id": "n32",
-      "date": "2026-08-13",
-      "category": "資源",
-      "title": "你的 AI 訂閱費，換回了什麼？Rippling 燒掉數百萬美元後的「帳單三看」",
-      "summary": "Rippling 把研發部門四成的薪資預算燒在 AI token 上，每個月還以 80% 成長。AI 支出進入「會計時刻」，本文提出「帳單三看」：看科目、看人、看產出，教你用一個下午把 AI 訂閱費從黑洞變成儀表板。",
-      "link": "/knowledge/ai-bill-three-checks",
-      "isNew": false
-    },
-    {
-      "id": "n31",
-      "date": "2026-08-11",
-      "category": "資源",
-      "title": "你的 AI 每次都像「新來的」？——AI 記憶管理，是 2026 年企業 AI 的分水嶺",
-      "summary": "AI 記憶管理將是 2026 年企業 AI 的分水嶺：「AI 記憶三層階梯」框架 + 失憶稅診斷 + 寫管讀三步管理法，讓 AI 從新進員工變成十年老臣。",
-      "link": "/knowledge/ai-memory-three-tier-ladder",
-      "isNew": false
-    },
-    {
-      "id": "n30",
-      "date": "2026-08-11",
-      "category": "資源",
-      "title": "AI 會「發明」新偏見：你的招募工具，正在用幾個樣本淘汰千里馬",
-      "summary": "MIT 報導的最新研究發現，AI 招募工具不只複製人類偏見，還會憑著極少數樣本「發明」新歧視。CJ 哥提出「冷啟動歧視」框架：公司規模越小、樣本越少，AI 越容易把一兩個人的表現變成對整類人的標籤，並給出人機雙軌、抽樣比對、偏誤稽核三道關卡。",
-      "link": "/knowledge/ai-hiring-invented-bias",
-      "isNew": false
-    },
-    {
-      "id": "n29",
-      "date": "2026-08-07",
-      "category": "資源",
-      "title": "AI 能力虛胖症：63% 員工裝會 AI，你的團隊在演還是在用？",
-      "summary": "63% 的美國員工會誇大自己的 AI 熟練度——每三個人就有兩個在「裝會」。CJ 哥提出「AI 能力虛胖症」診斷框架：術語型、複製型、報喜型三種症狀，配上拆穿三問與解方三招，把團隊從裝會改造成會用。",
-      "link": "/knowledge/ai-skill-inflation-workforce",
-      "isNew": false
-    },
-    {
-      "id": "n28",
-      "date": "2026-08-06",
-      "category": "資源",
-      "title": "任務變形蟲：AI 成熟之後，組織設計重回戰略主軸（研究專刊）",
-      "summary": "當 AI 工具像水電瓦斯一樣便宜，競爭優勢不再來自「買得起什麼」，而是「組織怎麼長出來」。本專刊提出任務變形蟲模型（Task Amoeba Model），並提供三階段落地路徑。",
-      "link": "/research/task-amoeba/",
-      "isNew": false
-    },
-    {
-      "id": "n27",
-      "date": "2026-08-06",
-      "category": "資源",
-      "title": "資料變成戰略物資：你公司裡的「沉睡資產」，該醒了",
-      "summary": "政府把資料列為戰略物資，立法打通四大資料流通機制。但多數中小企業最值錢的資料還躺在 ERP、Excel 和老師傅的腦子裡。本文提出「盤、清、標、串」喚醒四步法，讓沉睡資料變成可變現的 AI 資產。",
-      "link": "/knowledge/sleeping-data-assets-awakening",
-      "isNew": false
-    },
-    {
-      "id": "n26",
-      "date": "2026-08-05",
-      "category": "資源",
-      "title": "算力通縮時代：Kimi K3 掀起的 AI 價格戰，正在改寫企業的成本帳本",
-      "summary": "Kimi K3 把頂級 AI 模型價格打到十分之一，OpenAI 一週內降價 80%、百度砍到一折。這不是新聞，是「算力通縮」的開場——模型價格正在以季為單位崩跌，企業的 AI 成本評估邏輯必須重寫。本文提出「成本曲線、遷移成本、能力溢價」三定律，並點出比價格更關鍵的戰場：資料主權。",
-      "link": "/knowledge/ai-price-war-compute-deflation",
-      "isNew": false
-    },
-    {
-      "id": "n24",
-      "date": "2026-08-04",
-      "category": "資源",
-      "title": "納瓦爾寶典的「槓桿論」：AI 時代，管理者的工作從管人變成設計槓桿",
-      "summary": "從《納瓦爾寶典》的槓桿論出發，拆解 AI 時代管理者的角色轉變：財富＝特定知識 × 槓桿 × 判斷力，純監督型管理者正在被取代，未來的工作是設計槓桿組合。",
-      "link": "/knowledge/naval-leverage-ai-management",
-      "isNew": false
-    },
-    {
-      "id": "n25",
-      "date": "2026-08-04",
-      "category": "資源",
-      "title": "納瓦爾說「欲望是與現狀的契約」：給管理者的 5 個績效設計，別讓員工簽下受苦契約",
-      "summary": "把納瓦爾的欲望契約觀點放進績效管理：KPI 就是幫員工簽的契約，問題是履不履約得起。提供 5 個可執行的績效設計原則，對抗職場倦怠與 AI 焦慮。",
-      "link": "/knowledge/naval-desire-contract-performance",
-      "isNew": false
-    },
-    {
-      "id": "n23",
-      "date": "2026-08-04",
-      "category": "資源",
-      "title": "當 AI 代理變成你的「無聲員工」：先畫圍欄，再放狗",
-      "summary": "Claude 駭進三家真實公司、OpenAI 代理逃出隔離——AI 代理變成沒有勞動契約的「無聲員工」。先畫三道圍欄（資料、權限、金錢），再放狗上線，是中小企業導入代理的第一課。",
-      "link": "/knowledge/ai-agent-silent-employee-fences",
-      "isNew": false
-    },
-    {
-      "id": "n22",
-      "date": "2026-08-01",
-      "category": "資源",
-      "title": "AI 轉型死在假一致：會議上點頭的高階主管，心裡想的根本不是同一件事",
-      "summary": "BCG 追蹤 2,000 家企業發現，逾 70% 的變革失敗源於高階主管的「假一致」。AI 轉型更是重災區——五個高階主管用同一個詞，描述五件不同的事。本文拆解假一致陷阱，提供 AI 轉型版的真共識五步驟。",
-      "link": "/knowledge/false-alignment-ai-transformation",
-      "isNew": false
-    },
-    {
-      "id": "n21",
-      "date": "2026-07-31",
-      "category": "資源",
-      "title": "恐懼稅：你的 AI 專案，死在員工不敢說出口的三句話",
-      "summary": "三個沉默時刻：不敢說我不會、不敢說 AI 算錯了、不敢說流程該改。沒有心理安全感，再強的 AI 也只是辦公室的裝飾品。",
-      "link": "/knowledge/fear-tax-ai-landing",
-      "isNew": false
-    },
-    {
-      "id": "n20",
-      "date": "2026-07-28",
-      "category": "資源",
-      "title": "小賀的全貌：一個 AI Agent 如何撐起一家顧問公司的數位營運",
-      "summary": "221 篇知識庫、40 篇官網文章、21 個自動化排程、206 部影片——小賀的完整自我介紹與系統建置全記錄。",
-      "link": "/knowledge/xiaoha-hermes-system-overview",
-      "isNew": false
-    },
-    {
-      "id": "n17",
-      "date": "2026-07-21",
-      "category": "資源",
-      "title": "從 BCG X 到 Dcard：AI 轉型的上下半場，就是同一場比賽",
-      "summary": "同一天、同一場論壇——上午 BCG X 講戰略，下午 Dcard 講實戰。CJ 哥把兩塊拼圖接起來，給你一張完整的 AI 轉型地圖。",
-      "link": "/knowledge/bcgx-dcard-ai-transformation-full-picture",
-      "isNew": false
-    },
-    {
-      "id": "n18",
-      "date": "2026-07-21",
-      "category": "資源",
-      "title": "Dcard 的 100 個 Agent：從「買工具」到「變流程」",
-      "summary": "100+ 生產環境 Agent、90% 團隊每週使用——Dcard 執行長林裕欽的轉型實戰經驗完整拆解，加上 CJ 哥第一線觀點。",
-      "link": "/knowledge/dcard-agent-native-100-ai-agents",
-      "isNew": false
-    },
-    {
-      "id": "n19",
-      "date": "2026-07-21",
-      "category": "資源",
-      "title": "取代的是 Task，不是 Job——AI 時代經理人的新功課",
-      "summary": "當任務被重新分配，團隊邊界模糊了。從管理心理學看 Dcard 的 Agent-Native 對經理人意味著什麼。",
-      "link": "/knowledge/ai-replaces-tasks-not-jobs-manager-new-role",
-      "isNew": false
-    },
-    {
-      "id": "n15",
-      "date": "2026-07-21",
-      "category": "AI 轉型",
-      "title": "BCG X AI 轉型深度解析：從 Deploy 到 Invent，你的企業在哪一層？",
-      "summary": "經理人 AI for Impact 論壇現場報導，深入拆解 BCG X 的 AI 價值三層框架與 CJ 哥的顧問觀點。",
-      "link": "/knowledge/bcgx-ai-transformation-deploy-reshape-invent",
-      "isNew": false
-    },
-    {
-      "id": "n16",
-      "date": "2026-07-21",
-      "category": "AI 轉型",
-      "title": "10-20-70 法則：為什麼你的 AI 投資沒有回報？",
-      "summary": "演算法只占 10%，系統整合占 20%，轉型管理占 70%——BCG 的 10-20-70 法則完整解析與五個行動綱領。",
-      "link": "/knowledge/ai-10-20-70-rule-transformation-management",
-      "isNew": false
-    },
-    {
-      "id": "n14",
-      "date": "2026-07-14",
-      "category": "管理心理",
-      "title": "管理者必修的10堂心理學課——從馬斯洛到皮格馬利翁",
-      "summary": "馬斯洛、赫茲伯格、認知失調、社會懈怠…10個經典心理學理論的管理應用，不談學術空話，直接給實戰與顧問觀點",
-      "link": "/knowledge/10-management-psychology-theories",
-      "isNew": false
-    },
-    {
-      "id": "n9",
-      "date": "2026-07-07",
-      "category": "資源",
-      "title": "AI 導入的真正卡關不在技術，而在「人」——如何讓團隊自己用 AI",
-      "summary": "AI落地關鍵在組織而非技術｜提供三層責任制框架與具體行動步驟",
-      "link": "/knowledge/ai-team-adoption",
-      "isNew": false
-    },
-    {
-      "id": "n8",
-      "date": "2026-07-06",
-      "category": "資源",
-      "title": "矽谷正在用 AI 消滅「純管理職」——工作者如何避免終身困在基層？",
-      "summary": "Block 裁 4,000 人、Amazon 裁 30,000 人、Google 管理層縮減 35%——這是組織結構的根本性重構。Jack Dorsey 的「智慧層」取代中階主管，四條生存路徑讓你不再困在基層。",
-      "link": "/knowledge/ai-eliminating-middle-management-worker-survival-guide",
-      "isNew": false
-    },
-    {
-      "id": "n6",
-      "date": "2026-07-01",
-      "category": "媒體",
-      "title": "【影片】人資部門即將消失？麥肯錫揭露 AI 重塑 HR 的三大真相",
-      "summary": "72% 企業在試點 AI 招聘工具，但僅 29% 建立完整架構。小賀用 5 分鐘為您解析麥肯錫最新人力資源監測報告。",
-      "link": "https://www.youtube.com/@RongRiseConsulting",
-      "isNew": false
-    },
-    {
-      "id": "n7",
-      "date": "2026-07-01",
-      "category": "資源",
-      "title": "80% 的 AI 專案不是 IT 做的：AI 所有權反轉的時代來了",
-      "summary": "緯創軟體兩年跑出 100+ AI 場景，80% 由業務部門主導。本文提出「AI 所有權反轉」框架，告訴你為什麼 AI 導入的關鍵不是技術，是組織設計。",
-      "link": "/knowledge/ai-ownership-inversion-non-it-lead",
-      "isNew": false
+      "title": "💰 Token 計價時代：AI 每一問都有價，你的企業用了多少浪費的 Token？",
+      "summary": "GitHub Copilot 改採 Token 計價、Alphabet 5 月就燒光全年 AI 預算——AI 的使用成本正從「隱藏成本」變成「可見帳單」。對預算",
+      "link": "/knowledge/ai-token-cost-management",
+      "isNew": false,
+      "id": "n11"
     },
     {
       "id": "n1",
@@ -361,6 +73,15 @@
       "isNew": false
     },
     {
+      "date": "2026-05-29",
+      "category": "資源",
+      "title": "策略是減法：為什麼台灣傳產企業更需要學會「不做事」",
+      "summary": "羅傑．馬丁說策略的本質是選擇。但我在傳產現場看到的是——資源已經燒光了，大家還在做加法。從傳統產業的三重壓力到Netflix的關鍵轉折，深度解析為什麼減法這麼難",
+      "link": "/knowledge/strategy-subtraction-traditional-industry",
+      "isNew": false,
+      "id": "n12"
+    },
+    {
       "id": "n2",
       "date": "2026-05-28",
       "category": "媒體",
@@ -368,6 +89,69 @@
       "summary": "深入探討台灣中小企業在 AI 轉型過程中面臨的組織摩擦力，以及 HR 在轉型中的關鍵角色。",
       "link": "/knowledge/hr-ai-transformation-five-layers",
       "isNew": false
+    },
+    {
+      "date": "2026-05-28",
+      "category": "資源",
+      "title": "AI 轉型實戰營：從入門到企業落地",
+      "summary": "C.J. 老師的核心講義精華。涵蓋 AI 演進路徑、生成式 AI 底層邏輯、AI 幻覺風險管理、RTIF 提示工程架構，以及企業 AI 成熟度模型與轉型五大要素",
+      "link": "/knowledge/ai-transformation-bootcamp",
+      "isNew": false,
+      "id": "n13"
+    },
+    {
+      "date": "2026-05-28",
+      "category": "資源",
+      "title": "HR × AI：從認識到落地課程設計",
+      "summary": "針對 HR 專業人士設計的兩天 10 模組課程大綱。以「選→用→育→留」為骨幹，融入 AI 工具實作、Prompt 工程、人才九宮格 2.0、HR AI 合規治",
+      "link": "/knowledge/hr-ai-course-design",
+      "isNew": false,
+      "id": "n14"
+    },
+    {
+      "date": "2026-05-28",
+      "category": "資源",
+      "title": "企業 AI 工具選型指南：如何挑對工具而非最貴的工具",
+      "summary": "面對琳瑯滿目的 AI 工具，企業如何做出明智選擇？從需求分析、成本評估到導入策略，提供系統性的 AI 工具選型框架。",
+      "link": "/knowledge/ai-tool-selection-guide",
+      "isNew": false,
+      "id": "n15"
+    },
+    {
+      "date": "2026-05-28",
+      "category": "資源",
+      "title": "服務業 AI 客服導入實戰：投訴率降 60% 的關鍵",
+      "summary": "一家中型電商如何透過 AI 客服系統，在六個月內將客戶投訴率降低 60%、客服成本節省 45%。分享從選型、訓練到上線的全過程。",
+      "link": "/knowledge/service-ai-chatbot-case",
+      "isNew": false,
+      "id": "n16"
+    },
+    {
+      "date": "2026-05-28",
+      "category": "資源",
+      "title": "2026 年政府 AI 補助資源完整整理",
+      "summary": "2026 年台灣政府提供哪些 AI 相關補助？從經濟部、勞動部到數發部，一次整理所有可申請的 AI 轉型資源。",
+      "link": "/knowledge/gov-ai-subsidy-guide",
+      "isNew": false,
+      "id": "n17"
+    },
+    {
+      "date": "2026-05-28",
+      "category": "資源",
+      "title": "2026 AI 轉型四大趨勢：從工具導入到組織變革",
+      "summary": "根據最新 TechNews 與 iThome 報導，2026 年 AI 轉型呈現四大趨勢：邊緣 AI 爆發、AI Agent 進入企業日常工作、AI 資安成為首",
+      "link": "/knowledge/ai-transformation-trends-2026",
+      "isNew": false,
+      "id": "n18"
+    },
+    {
+      "date": "2026-05-28",
+      "category": "資源",
+      "title": "企業 Agentic AI 轉型高階共識營：從願景到落地的完整框架",
+      "summary": "如何讓高阶主管在一天內達成 AI 轉型共識？從課前痛點探測、Agent 場景評估畫布、多代理協作劇本，到顧問話術與治理框架——完整工作坊设计指南。",
+      "link": "/knowledge/agentic-ai-transformation-workshop",
+      "isNew": false,
+      "id": "n19"
     },
     {
       "id": "n3",
@@ -379,40 +163,49 @@
       "isNew": false
     },
     {
-      "id": "n10",
-      "date": "2026-07-11",
-      "category": "管理心理",
-      "title": "心理安全感不是「讓大家舒服」——職場心理安全感真正的定義與實踐",
-      "summary": "Amy Edmondson 定義、4 層級模型、Google Aristotle 研究——中小企業如何培養心理安全感",
-      "link": "/knowledge/psychological-safety-truth",
+      "id": "n4",
+      "date": "2026-05-15",
+      "category": "課程",
+      "title": "Agentic AI 轉型高階共識營 — 第二期開放報名",
+      "summary": "專為企業高阶主管設計的一天共識營，從願景對齊到落地框架，含 Agent 場景評估畫布實作。",
+      "link": "/knowledge/agentic-ai-consensus-camp",
       "isNew": false
     },
     {
-      "id": "n11",
-      "date": "2026-07-11",
-      "category": "管理心理",
-      "title": "你的管理決策被多少認知偏誤綁架？——從確認偏誤到群體思維",
-      "summary": "管理現場最常見的 10 個認知偏誤，以及一套決策前必看的檢查清單",
-      "link": "/knowledge/cognitive-biases-management",
-      "isNew": false
+      "date": "2025-11-10",
+      "category": "資源",
+      "title": "中小企業 ESG 實務入門",
+      "summary": "ESG 不只是大企業的專利。中小企業如何從日常營運中落實永續，創造差異化競爭優勢。從碳盤查到社會影響力，一步步建立屬於您的永續策略。",
+      "link": "/knowledge/sme-esg-guide",
+      "isNew": false,
+      "id": "n20"
     },
     {
-      "id": "n12",
-      "date": "2026-07-11",
-      "category": "管理心理",
-      "title": "為什麼員工抗拒改變？——變革管理的心理學視角",
-      "summary": "80% 變革失敗是心理問題不是策略問題——Kübler-Ross 變革曲線與 Beckhard 公式",
-      "link": "/knowledge/change-psychology-perspective",
-      "isNew": false
+      "date": "2025-10-22",
+      "category": "資源",
+      "title": "製造業 AI 品質檢測導入案例",
+      "summary": "一家中部傳統製造廠如何在三個月內成功導入 AI 視覺檢測系統，將不良率降低 40%。分享導入過程中的挑戰、解決方案與關鍵成功因素。",
+      "link": "/knowledge/manufacturing-ai-quality",
+      "isNew": false,
+      "id": "n21"
     },
     {
-      "id": "n13",
-      "date": "2026-07-11",
-      "category": "管理心理",
-      "title": "教練式領導不是心靈雞湯——從神經科學到心理資本的實證基礎",
-      "summary": "心理資本 PsyCap 提升 2% = 績效提升 20%——GROW 模型與科學實證",
-      "link": "/knowledge/coaching-leadership-science",
-      "isNew": false
+      "date": "2025-10-05",
+      "category": "資源",
+      "title": "企業 AI 成熟度自評量表",
+      "summary": "免費下載！協助企業快速評估自身 AI 成熟度水準的五個維度量表，包含基礎設施、數據品質、人才能力、組織文化與應用場景。",
+      "link": "/knowledge/ai-maturity-assessment",
+      "isNew": false,
+      "id": "n22"
+    },
+    {
+      "date": "2025-09-18",
+      "category": "資源",
+      "title": "激發團隊創新動力的管理方法",
+      "summary": "創新不只是口號。探討如何透過制度設計、激勵機制與文化塑造，讓團隊成員主動擁抱改變、提出創新方案，打造真正的創新型組織。",
+      "link": "/knowledge/team-innovation-management",
+      "isNew": false,
+      "id": "n23"
     }
   ]
 }

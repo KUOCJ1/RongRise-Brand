@@ -24,6 +24,22 @@ type Tool = {
 
 const tools: Tool[] = [
   {
+    href: "/ai-hr-assessment",
+    icon: "ð§ð¼âð¼",
+    name: "HR AI æçåº¦è©ä¼°",
+    desc: "CJ å¥ 20 å¹´äººè³ Ã AI è½åãäºå¤§ HR å ´æ¯ Ã 20+ é¡ï¼äºåéæ¾åºä½ ç HR AI åç¼ºå£èåªåè¡åã",
+    tag: "èªè©",
+    tagClass: "bg-teal/10 text-teal",
+  },
+  {
+    href: "/ai-skill-path",
+    icon: "ð§ð«",
+    name: "å¡å·¥ AI æè½è·¯å¾å",
+    desc: "é¸ä½ çé¨éå AI çåº¦ï¼ç«å³ç²å¾å°å±¬ç 90 å¤©é¤æè¨ç«ãäºå¤§è§è²ãä¸ç´çåº¦ï¼å·é«å°æ¯é±åä»éº¼ãç¨ä»éº¼å·¥å·ã",
+    tag: "ç´å°",
+    tagClass: "bg-primary/10 text-primary",
+  },
+  {
     href: "/pilot-trap-scan",
     icon: "📋",
     name: "Pilot Trap 診斷量表",

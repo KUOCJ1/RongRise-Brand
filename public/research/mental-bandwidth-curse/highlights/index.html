@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>心智頻寬詛咒（精華版）｜榕耀管顧研究專刊</title>
+<meta name="description" content="精華版：AI 輸出速度超越人類判斷速度、恐懼稅吃掉心智頻寬、判斷力正在萎縮——三股力量疊加，7 分鐘掌握核心框架。">
+<meta property="og:title" content="心智頻寬詛咒（精華版）｜榕耀管顧研究專刊">
+<meta property="og:description" content="精華版・7 分鐘閱讀。當管理層的大腦成為 AI 轉型最大的瓶頸。">
+<meta property="og:image" content="https://rong-rise.com/research/mental-bandwidth-curse/og-image.jpg">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #F7F4EE;
+  --white: #FFFFFF;
+  --navy: #0D2B4E;
+  --gold: #E8912A;
+  --teal: #2EC4B6;
+  --text: #1a1a2e;
+  --text-secondary: #555;
+  --border: #ddd;
+  --card-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--paper);
+  color: var(--text);
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.85;
+  font-size: 16px;
+}
+.container { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+
+/* ===== COVER ===== */
+.cover {
+  background: var(--navy);
+  color: white;
+  padding: 80px 24px 60px;
+  text-align: center;
+}
+.cover .kicker {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: var(--gold);
+  border: 1px solid rgba(232,145,42,0.4);
+  border-radius: 20px;
+  padding: 6px 18px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+.cover h1 {
+  font-family: 'Noto Serif TC', serif;
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 900;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+.cover .subtitle {
+  font-size: 16px;
+  color: rgba(255,255,255,0.7);
+  max-width: 560px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+.cover .meta {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+}
+.cover .meta span { margin: 0 8px; }
+.cover .series-badge {
+  display: inline-block;
+  background: rgba(46,196,182,0.15);
+  color: var(--teal);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+/* ===== CONTENT ===== */
+.content { padding: 48px 0 64px; }
+.content .section-title {
+  font-family: 'Noto Serif TC', serif;
+  font-size: clamp(20px, 3vw, 24px);
+  font-weight: 700;
+  color: var(--navy);
+  margin: 40px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--gold);
+}
+.content .section-title:first-child { margin-top: 0; }
+.content h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 28px 0 12px;
+}
+.content p { margin: 14px 0; }
+.content .gold-line {
+  width: 40px;
+  height: 2px;
+  background: var(--gold);
+  margin: 8px 0 24px;
+}
+
+/* ===== EXHIBIT ===== */
+.exhibit {
+  background: var(--white);
+  border-radius: 12px;
+  border-top: 3px solid var(--gold);
+  padding: 20px 24px;
+  margin: 28px 0;
+  box-shadow: var(--card-shadow);
+}
+.exhibit .exhibit-tag {
+  display: inline-block;
+  background: var(--gold);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.exhibit .exhibit-title {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 12px;
+}
+.exhibit p { font-size: 15px; margin: 10px 0; }
+
+/* ===== CALLOUT ===== */
+.callout {
+  border-left: 3px solid var(--gold);
+  background: linear-gradient(90deg, rgba(232,145,42,0.05), transparent 70%);
+  padding: 14px 20px;
+  margin: 20px 0;
+  border-radius: 0 8px 8px 0;
+}
+.callout p { margin: 4px 0; color: var(--text-secondary); font-size: 14px; }
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 13px;
+}
+th {
+  background: var(--navy);
+  color: white;
+  padding: 8px 10px;
+  text-align: left;
+  font-weight: 600;
+}
+td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ===== FOOTER CTA ===== */
+.cta-section {
+  background: var(--navy);
+  border-radius: 16px;
+  padding: 36px 28px;
+  text-align: center;
+  margin: 40px 0;
+  color: white;
+}
+.cta-section h3 { color: white !important; font-family: 'Noto Serif TC', serif; font-size: 20px; }
+.cta-section p { color: rgba(255,255,255,0.7) !important; margin: 12px 0 20px; font-size: 14px; }
+.cta-section .btn {
+  display: inline-block;
+  background: var(--gold);
+  color: white;
+  font-weight: 700;
+  padding: 10px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+.cta-section .btn:hover { background: #d47d1e; }
+
+@media (max-width: 600px) {
+  .cover { padding: 48px 20px 36px; }
+  .content { padding: 32px 0; }
+  .exhibit { padding: 16px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== COVER ===== -->
+<section class="cover">
+  <div class="series-badge">榕耀管顧 · 研究專刊系列第 3 本</div>
+  <div class="kicker">MENTAL BANDWIDTH CURSE · HIGHLIGHTS</div>
+  <h1>心智頻寬詛咒</h1>
+  <p class="subtitle" style="font-size:18px;color:rgba(255,255,255,0.85);font-weight:500;margin-bottom:12px;">當管理層的大腦，<br>成為 AI 轉型最大的瓶頸</p>
+  <p class="subtitle">精華版・約 7 分鐘閱讀。以下濃縮了完整白皮書的核心論述——三股力量、水庫模型、管理真空 2.0 與三個解方方向。</p>
+  <div class="meta">
+    <span>2026 年 9 月</span><span>·</span><span>榕耀管顧 RongRise Consulting</span>
+  </div>
+</section>
+
+<!-- ===== VERSION SWITCHER ===== -->
+<div class="version-switcher" style="text-align:center;padding:24px 0 8px;">
+  <a href="/research/mental-bandwidth-curse/highlights/" class="active" style="display:inline-block;padding:8px 20px;border-radius:20px;font-size:13px;font-weight:700;color:white;background:#0D2B4E;text-decoration:none;margin:0 4px;">⚡ 精華版</a>
+  <a href="/research/mental-bandwidth-curse/" style="display:inline-block;padding:8px 20px;border-radius:20px;font-size:13px;font-weight:500;color:#666;background:#eee;text-decoration:none;margin:0 4px;">📖 完整版（約 40 分鐘）</a>
+</div>
+
+<!-- ===== CONTENT ===== -->
+<section class="content">
+<div class="container">
+
+<p class="strong-lead" style="font-weight:700;font-size:17px;">你的團隊心智頻寬，還夠用嗎？</p>
+
+<p>過去兩年，我在輔導企業的過程中反覆看到一個共通現象：導入 AI 越積極的團隊，主管越疲勞。不是他們不認真，是大腦有物理限制。這個限制叫做「心智頻寬」（Mental Bandwidth）——一個人在特定時間內，能用來處理判斷、決策與創造性工作的認知容量。跟手機的 RAM 一樣，就那麼大，用完就是會卡、會當機、會失誤，跟努力無關。</p>
+
+<p>2026 年的此刻之所以關鍵，是因為三股力量同時疊加，把這個現象從「管理困擾」升級成了「結構性風險」。</p>
+
+<div class="gold-line"></div>
+
+<h3>三股力量同時疊加</h3>
+
+<p><strong>力量一：AI 輸出速度超越人類判斷速度。</strong>導入 AI 後，團隊每天收到的報告、建議、警示比以前多了四到六倍。每個資訊都需要一個人判斷要不要採信、要不要行動、要不要升級。McKinsey 的 Kate Smaje 自己坦承：AI 重度用戶的認知負荷反而上升——因為例行工作被拿掉後，留下來的全是需要真實判斷、困難對話、情緒投入的工作，這些最消耗頻寬。</p>
+
+<p>這形成了一個前所未有的剪刀差：AI 輸出速度每年數倍成長，人類判斷速度千年來沒有本質變化。當差距擴大到臨界點，人就不再是「決策者」，而是「蓋章者」——簽了名但沒有真正判斷。</p>
+
+<p><strong>力量二：恐懼稅吃掉最稀缺的資源。</strong>員工不敢說 AI 算錯了。不是看不出來，是擔心說了之後被認為「你比 AI 還懂？」。光是「擔心它會發生」，就佔用了認知資源。《匱乏經濟學》的 Mullainathan 和 Shafir 證明了匱乏本身會降低認知效能——印度甘蔗農民在收成前最缺錢的時候，認知測驗表現相當於 IQ 下降 13 分。恐懼稅的運作機制完全一樣：不敢說 → 錯誤沒修正 → 主管不信任 → 更多監控 → 更多認知負荷 → 更不敢說。每轉一圈，可用頻寬就少一圈。</p>
+
+<p><strong>力量三：判斷力本身正在萎縮。</strong>微軟與 CMU（Lee et al., CHI'25）追蹤 319 位知識工作者發現：對 GenAI 信心越高，批判性思考投入就越低。NTSB 調查 Uber 2018 年 Tempe 致命事故時發現，安全駕駛 34% 的時間在低頭看手機。結論：「人類極不擅長監控自動化系統。」當主管從「閱讀全文再判斷」變成「掃一眼 AI 摘要然後確認」，高階推理的神經連結就會弱化。</p>
+
+<div class="gold-line"></div>
+
+<h3>水庫模型：心智頻寬的四層因果鏈</h3>
+
+<p>三股力量合力壓縮的是同一個東西：可用心智頻寬。為了說清楚它如何運作，我在白皮書中提出了「水庫模型」——把大腦認知系統比擬為一座水庫：</p>
+
+<div class="exhibit">
+<div class="exhibit-tag">Exhibit</div>
+<div class="exhibit-title">水庫模型：心智頻寬的四層因果鏈</div>
+<table>
+<tr><th>層級</th><th>定義</th></tr>
+<tr><td><strong>第一層</strong><br>認知邊界</td><td>大腦先天硬體限制——工作記憶容量、注意力持續時間，無法靠意志力擴張</td></tr>
+<tr><td><strong>第二層</strong><br>認知負荷</td><td>每天流入的資訊量——會議、訊息、AI 建議。多數組織正在持續增加它</td></tr>
+<tr><td><strong>第三層</strong><br>心智頻寬</td><td>可用水量 = 總容量 減 被恐懼/焦慮/不確定性佔用的部分。這才是真正能用於判斷的資源</td></tr>
+<tr><td><strong>第四層</strong><br>注意力窄化</td><td>頻寬見底時，大腦鎖死在一個焦點上——症狀，不是原因；治本必須往上游找</td></tr>
+</table>
+</div>
+
+<p>這條鏈最關鍵的洞見不是四層結構本身，而是它會自己加速：當可用頻寬降低，判斷力跟著下降；判斷力下降，人更依賴 AI；更依賴 AI，更少獨立判斷練習，判斷力進一步萎縮——同時 AI 輸出更多建議需要判斷，又增加了認知負荷。本書把這個自加速的封閉迴路叫做「心智頻寬詛咒」。</p>
+
+<div class="gold-line"></div>
+
+<h3>三條老問題，AI 讓它們同時爆炸</h3>
+
+<p>水庫模型幫我們用新視角看三條經典的管理問題，它們沒有一條是新的，但 AI 改變了它們的加速度：</p>
+
+<p><strong>基本歸因謬誤</strong>——系統問題被轉嫁成個人責任。AI 時代歸因對象擴張到 agent：一個 agent 出錯，是設計不良還是流程問題？94% 的組織問題來自系統設計缺陷（Deming），但在頻寬見底時，管理者最容易走捷徑——究責比分析省力。</p>
+
+<p><strong>恐懼稅</strong>——過去不敢說真話的代價有時間差，錯誤可以慢慢累積。但現在 AI agent 可以在幾秒內把錯誤寫進生產系統，影響幾百個客戶。恐懼稅的單位時間成本被放大了一個數量級。</p>
+
+<p><strong>管理真空 2.0</strong>——當 AI agent 不開會、不報告、不在出錯前舉手，管理者面對的不再只是看不見的人，還有看不見的 agent。更糟的是，管理真空有三層：資訊真空（不知道 agent 在做什麼）→ 判斷真空（沒有頻寬去判斷資訊的意義）→ 歸屬真空（出事了不知道該算誰的）。三層同時存在，每一層都在消耗下一層本來就不夠的資源。</p>
+
+<div class="gold-line"></div>
+
+<h3>三個可行的方向</h3>
+
+<p>白皮書第五章提出了三個經過榕耀管顧自身營運驗證的方向：</p>
+
+<p><strong>方向一：把頻寬可視化。</strong>用三個替代指標推估——中斷次數（被即時通訊或臨時會議打斷的頻率）、判斷密度（每天重大決策數量 vs. 安靜思考時間）、錯誤來源歸因（多少錯誤來自認知疲勞）。不需要軟體，只看管理者願不願意把頻寬放進管理會議。</p>
+
+<p><strong>方向二：用制度保護頻寬。</strong>減少判斷數量比加速判斷更重要——讓 AI 過濾而不是幫人生產更多選項。建立「判斷免責區」，特定決策的錯誤只分析系統原因、不究責個人。每天留兩小時零中斷時段給深度判斷。</p>
+
+<p><strong>方向三：重新設計人機分工。</strong>把出發點從「AI 能幫人做什麼」改成「人類的頻寬該花在哪裡」。每個 AI 導入決策前先問：這是在減少人類的判斷負荷，還是在增加？是在過濾需要人類判斷的事項，還是在推更多資訊出來？</p>
+
+<div class="callout">
+<p><strong>一句話總結：</strong>如果你的團隊正在經歷「導入 AI 越多，主管越疲勞」——先不問工具，先問頻寬。它可能是你的組織目前最被低估的風險。完整的白皮書從現象到機制到解方，共約 12,000 字，免費閱讀。</p>
+</div>
+
+</div>
+</section>
+
+<!-- ===== VERSION SWITCHER BOTTOM ===== -->
+<div class="version-switcher" style="text-align:center;padding:16px 0 8px;">
+  <a href="/research/mental-bandwidth-curse/highlights/" class="active" style="display:inline-block;padding:8px 20px;border-radius:20px;font-size:13px;font-weight:700;color:white;background:#0D2B4E;text-decoration:none;margin:0 4px;">⚡ 精華版</a>
+  <a href="/research/mental-bandwidth-curse/" style="display:inline-block;padding:8px 20px;border-radius:20px;font-size:13px;font-weight:500;color:#666;background:#eee;text-decoration:none;margin:0 4px;">📖 完整版（約 40 分鐘）</a>
+</div>
+
+<!-- ===== CTA ===== -->
+<div class="cta-section">
+  <h3>你的團隊心智頻寬還好嗎？</h3>
+  <p>本書提出的框架，源自榕耀管顧在 AI 轉型輔導中的第一線觀察。如果你正在思考如何讓團隊在 AI 時代保持判斷力，我們可以陪你一起找出最值得先做的那一步。</p>
+  <a href="https://rong-rise.com/about/#contact" class="btn" target="_blank">預約免費諮詢</a>
+</div>
+
+</body>
+</html>
