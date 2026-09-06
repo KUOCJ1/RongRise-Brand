@@ -6,17 +6,17 @@ import type { Metadata } from "next";
    ============================================ */
 
 export const metadata: Metadata = {
-  title: "下載區｜AI 轉型工具包與免費白皮書｜榕耀管顧",
+  title: "下載區｜AI 轉型工具包與白皮書",
   description:
     "免費下載榕耀管顧精選資源：AI 成熟度自評量表、ESG 盤點清單、AI 轉型策略白皮書、政府補助指南。持續更新中。",
   alternates: {
-    canonical: "https://rong-rise.com/downloads",
+    canonical: "https://rongrise.com/downloads",
     languages: {
-      en: "https://rong-rise.com/en/downloads",
+      en: "https://rongrise.com/en/downloads",
     },
   },
   openGraph: {
-    title: "下載區｜AI 轉型工具包與免費白皮書",
+    title: "下載區｜AI 轉型工具包白皮書 — 榕耀管顧",
     description: "免費下載 AI 成熟度自評量表、ESG 盤點清單、轉型白皮書。",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "榕耀管顧 RongRise Consulting" }],
   },
@@ -48,6 +48,14 @@ const downloadCategories: DownloadCategory[] = [
         size: "1.2 MB",
         desc: "完整介紹我們的服務項目、核心優勢與合作方式。",
         href: "https://drive.google.com/file/d/1iFvZsDKs6MjgxaewB161FNFlDG1S1bDX/view?usp=sharing",
+      },
+      {
+        name: "研究專刊系列",
+        type: "WEB",
+        size: "3 本",
+        desc: "AI 時代的管理專題研究：心智頻寬詛咒、AI Agent 績效管理、任務變形蟲。免費閱讀。",
+        href: "/research",
+        isNew: true,
       },
       {
         name: "AI 轉型策略白皮書",
@@ -178,7 +186,7 @@ export default function DownloadsPage() {
             <div key={ci} className="mb-12 last:mb-0">
               <div className="flex items-center gap-3 mb-6">
                 <span className="text-3xl">{cat.icon}</span>
-                <h2 className="heading-subsection text-text-primary">{cat.title}</h2>
+                <h2 className="heading-subsection text-dark">{cat.title}</h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -201,7 +209,7 @@ export default function DownloadsPage() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-1">
-                        <h3 className="font-semibold text-text-primary text-[15px] group-hover:text-primary transition-colors">
+                        <h3 className="font-semibold text-dark text-[15px] group-hover:text-primary transition-colors">
                           {item.name}
                         </h3>
                         {item.isNew && (
