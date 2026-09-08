@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n25",
+      "date": "2026-09-08",
+      "category": "資源",
+      "title": "AI 的淨效率陷阱：當 65% 白領懷念沒有 AI 的日子，你的 ROI 算對了嗎？",
+      "summary": "HBR 最新研究證明 AI 廣告賣不動、65% 白領懷念沒有 AI 的日子、Meta 緊急取消 token 用量考績——四條獨立證據同時指向一個結論：你的 AI ROI 公式，很可能少算了「修正成本」和「信任折損」。",
+      "link": "/knowledge/ai-net-efficiency-trap",
+      "isNew": true
+    },
+    {
       "id": "n24",
       "date": "2026-09-06",
       "category": "資源",
@@ -24,7 +33,7 @@
       "title": "AI 的隱形帳單：為什麼你的企業該關心資料中心用多少水",
       "summary": "AI 資料中心到 2030 年預計消耗 6,000 億加侖水——相當於撒哈拉以南非洲 13 億人口一年基本用水。當歐盟開始為資料中心設立能源效率門檻、大企業要求",
       "link": "/knowledge/ai-data-center-water-esg",
-      "isNew": true,
+      "isNew": false,
       "id": "n6"
     },
     {
@@ -33,7 +42,7 @@
       "title": "當 AI 能在數小時內打造攻擊程式，你的企業還在天級修補漏洞嗎？",
       "summary": "2026 年 CVE 漏洞數量恐破 66,000 個，AI 輔助漏洞挖掘讓攻擊速度從「天級」加速到「小時級」。Anthropic 報告顯示 AI 惡意濫用比例從",
       "link": "/knowledge/ai-vulnerability-attack-speed-2026",
-      "isNew": true,
+      "isNew": false,
       "id": "n7"
     },
     {

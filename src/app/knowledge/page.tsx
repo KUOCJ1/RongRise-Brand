@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-net-efficiency-trap",
+    cat: "AI 轉型",
+    title: "AI 的淨效率陷阱：當 65% 白領懷念沒有 AI 的日子，你的 ROI 算對了嗎？",
+    date: "2026.09.08",
+    readTime: "12 分鐘",
+    excerpt: "HBR 最新研究證明 AI 廣告賣不動、65% 白領懷念沒有 AI 的日子、Meta 緊急取消 token 用量考績——四條獨立證據同時指向一個結論：你的 AI ROI 公式，很可能少算了「修正成本」和「信任折損」。本文提出「淨效率」概念，幫中小企業主把帳算清楚。",
+    tags: ["AI 生產力", "ROI", "HBR", "淨效率", "中小企業", "Meta", "AI 治理"],
+  },
+  {
     slug: "ai-talent-development-route-dispute-2026",
     cat: "AI 轉型",
     title: "一家 AI 公司禁止新人用 AI，另一家全押 AI 大舉徵才——誰對？",
