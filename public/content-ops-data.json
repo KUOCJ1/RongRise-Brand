@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-09-07T05:01:01Z",
+ "generatedAt": "2026-09-08T05:00:27Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 100
+  "daysRunning": 101
  },
  "stats": {
-  "scanDays": 79,
-  "weekArticles": 53,
-  "articles": 66,
-  "newsItems": 46,
+  "scanDays": 80,
+  "weekArticles": 66,
+  "articles": 20,
+  "newsItems": 24,
   "newsletterIssues": 14,
   "subscribers": 17,
   "confirmedSubscribers": 12,
   "videos": 30,
   "views": 312,
   "channelSubscribers": 9,
-  "insights": 10,
-  "socialPosts": 18,
+  "insights": 11,
+  "socialPosts": 19,
   "igCards": 11,
   "competitorReports": 78
  },
  "activity": [
-  {
-   "date": "2026-09-01",
-   "count": 12,
-   "topics": []
-  },
   {
    "date": "2026-09-02",
    "count": 12,
@@ -54,15 +49,20 @@
   },
   {
    "date": "2026-09-07",
+   "count": 10,
+   "topics": []
+  },
+  {
+   "date": "2026-09-08",
    "count": 0,
    "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "賣鏟子的人自己來挖金礦了：AI 廠商「顧問化」，你的顧問還剩什麼價值？",
-   "date": "2026.08.25",
-   "url": "/knowledge/ai-vendors-becoming-consultants-moat"
+   "title": "你的績效管理對象多了一群 AI Agent：McKinsey 給 2026 年 HR 的 5 個訊號",
+   "date": "2026.09.05",
+   "url": "/knowledge/mckinsey-hr-agent-performance-management"
   },
   "newsletter": "🦞 榕賀觀點 第 14 期 — 2026-09-03",
   "video": {
@@ -70,38 +70,38 @@
    "date": "2026-08-21",
    "url": "https://www.youtube.com/watch?v=GkR3vZ0PwJs"
   },
-  "insight": "2026-W36.md"
+  "insight": "2026-W37.md"
  },
  "trends": [
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 22,
+   "count": 20,
    "momentum": "flat"
-  },
-  {
-   "keyword": "治理與法規",
-   "icon": "⚖️",
-   "count": 16,
-   "momentum": "up"
-  },
-  {
-   "keyword": "成本與投資",
-   "icon": "💰",
-   "count": 14,
-   "momentum": "up"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 11,
+   "count": 19,
    "momentum": "up"
   },
   {
-   "keyword": "ESG 揭露",
-   "icon": "🌱",
-   "count": 10,
+   "keyword": "人力資源",
+   "icon": "📋",
+   "count": 17,
    "momentum": "up"
+  },
+  {
+   "keyword": "治理與法規",
+   "icon": "⚖️",
+   "count": 17,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "成本與投資",
+   "icon": "💰",
+   "count": 13,
+   "momentum": "flat"
   }
  ]
 }
