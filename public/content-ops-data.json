@@ -1,15 +1,15 @@
 {
- "generatedAt": "2026-09-08T05:00:27Z",
+ "generatedAt": "2026-09-09T05:00:51Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 101
+  "daysRunning": 102
  },
  "stats": {
-  "scanDays": 80,
+  "scanDays": 81,
   "weekArticles": 66,
-  "articles": 20,
-  "newsItems": 24,
+  "articles": 21,
+  "newsItems": 25,
   "newsletterIssues": 14,
   "subscribers": 17,
   "confirmedSubscribers": 12,
@@ -19,14 +19,9 @@
   "insights": 11,
   "socialPosts": 19,
   "igCards": 11,
-  "competitorReports": 78
+  "competitorReports": 79
  },
  "activity": [
-  {
-   "date": "2026-09-02",
-   "count": 12,
-   "topics": []
-  },
   {
    "date": "2026-09-03",
    "count": 12,
@@ -54,15 +49,20 @@
   },
   {
    "date": "2026-09-08",
+   "count": 13,
+   "topics": []
+  },
+  {
+   "date": "2026-09-09",
    "count": 0,
    "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "你的績效管理對象多了一群 AI Agent：McKinsey 給 2026 年 HR 的 5 個訊號",
-   "date": "2026.09.05",
-   "url": "/knowledge/mckinsey-hr-agent-performance-management"
+   "title": "AI 的淨效率陷阱：當 65% 白領懷念沒有 AI 的日子，你的 ROI 算對了嗎？",
+   "date": "2026.09.08",
+   "url": "/knowledge/ai-net-efficiency-trap"
   },
   "newsletter": "🦞 榕賀觀點 第 14 期 — 2026-09-03",
   "video": {
