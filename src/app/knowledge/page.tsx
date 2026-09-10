@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "agentic-ai-employee-management",
+    cat: "AI 轉型",
+    title: "我一個人管五個 AI 員工：導入 AI 的瓶頸不是技術，是管理",
+    date: "2026.09.10",
+    readTime: "12 分鐘",
+    excerpt: "三個半月，一個人，46 條自動化流程、255 個技能、5 個各司其職的 AI 員工。我把 AI 當員工管理之後，整理出「Agentic AI 員工管理學」五階生命週期：招募、入職、考核、治理、成長。導入 AI 真正卡住的，幾乎都不是技術問題。",
+    tags: ["AI 轉型", "AI Agent", "AI 管理", "一人公司", "自動化", "人資管理"],
+  },
+  {
     slug: "middle-managers-ai-pivot",
     cat: "AI 轉型",
     title: "HBR：中階主管決定 AI 成敗——過去說會被取代的那群人，現在成了最關鍵的樞紐",

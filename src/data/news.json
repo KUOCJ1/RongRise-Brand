@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "date": "2026-09-10",
+      "category": "資源",
+      "title": "我一個人管五個 AI 員工：導入 AI 的瓶頸不是技術，是管理",
+      "summary": "46 條自動化流程、255 個技能、5 個 AI 員工。一人公司實作三個半月，整理出「Agentic AI 員工管理學」五階生命週期。",
+      "link": "/knowledge/agentic-ai-employee-management",
+      "isNew": true,
+      "id": "n27"
+    },
+    {
       "id": "n26",
       "date": "2026-09-10",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "📕 研究專刊第 3 本《心智頻寬詛咒》上線（含精華版）",
       "summary": "AI 輸出速度超越人類判斷速度、恐懼稅吃掉心智頻寬、判斷力正在萎縮——三股力量疊加，12,000 字完整論述 + 7 分鐘精華版。",
       "link": "/research/mental-bandwidth-curse/",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n5",

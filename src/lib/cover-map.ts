@@ -35,6 +35,7 @@ export const COVER_MAP: Record<string, string> = {
   "ai-energy-arms-race-cloud-bill": "article-ai-energy-arms-race-cloud-bill.jpg",
   "managing-31-ai-agents": "article-managing-agents.jpg",
   "pilot-trap-self-check": "article-pilot-trap.jpg",
+  "agentic-ai-employee-management": "article-agentic-ai-employee-management.jpg",
   "ai-strategy-planning-collaboration": "article-cover.jpg",
   "ai-vendors-becoming-consultants-moat": "article-ai-vendors-becoming-consultants-moat.jpg",
   "ai-one-person-scrum-team": "article-ai-one-person-scrum-team.jpg",
