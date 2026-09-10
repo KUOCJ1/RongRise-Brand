@@ -43,6 +43,7 @@ export const COVER_MAP: Record<string, string> = {
   "ai-agents-performance-management": "article-ai-agents-performance-management.jpg",
   "ai-talent-development-route-dispute-2026": "article-ai-talent-development-route-dispute-2026.jpg",
   "ai-net-efficiency-trap": "article-ai-net-efficiency-trap.jpg",
+  "middle-managers-ai-pivot": "article-middle-managers-ai-pivot.jpg",
 };
 
 export function coverImg(slug: string): string {
