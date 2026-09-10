@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n26",
+      "date": "2026-09-10",
+      "category": "資源",
+      "title": "HBR：中階主管決定 AI 成敗——過去說會被取代的那群人，現在成了最關鍵的樞紐",
+      "summary": "HBR 九月封面文章直接翻盤：中階主管不是 AI 時代的受害者，而是唯一無法被跳過的關鍵樞紐。BCG 數據顯示 74% 前線員工已經在用 AI，但 66% 沒人教。本文拆解五種主管類型，疊加榕耀管顧的「AI 賦能四象限」框架。",
+      "link": "/knowledge/middle-managers-ai-pivot",
+      "isNew": true
+    },
+    {
       "id": "n25",
       "date": "2026-09-08",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "你的績效管理對象多了一群 AI Agent：McKinsey 給 2026 年 HR 的 5 個訊號",
       "summary": "McKinsey 報告指出 HR 角色從人事管家變成混合勞動力總監，5 個訊號與落地框架。",
       "link": "/knowledge/mckinsey-hr-agent-performance-management",
-      "isNew": true
+      "isNew": false
     },
     {
       "date": "2026-06-18",

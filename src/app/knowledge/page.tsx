@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "middle-managers-ai-pivot",
+    cat: "AI 轉型",
+    title: "HBR：中階主管決定 AI 成敗——過去說會被取代的那群人，現在成了最關鍵的樞紐",
+    date: "2026.09.10",
+    readTime: "14 分鐘",
+    excerpt: "HBR 九月封面文章直接翻盤：中階主管不是 AI 時代的受害者，而是唯一無法被跳過的關鍵樞紐。BCG 數據顯示 74% 前線員工已經在用 AI，但 66% 沒人教他們怎麼用——這個缺口，正是中階主管的新權力來源。本文拆解 HBR 的五種主管類型，疊加榕耀管顧的「AI 賦能四象限」框架，幫你把最強的中階主管從救火隊變成 AI 時代的指揮官。",
+    tags: ["中階主管", "AI 導入", "HBR", "組織變革", "領導力", "BCG", "人才策略"],
+  },
+  {
     slug: "ai-net-efficiency-trap",
     cat: "AI 轉型",
     title: "AI 的淨效率陷阱：當 65% 白領懷念沒有 AI 的日子，你的 ROI 算對了嗎？",
