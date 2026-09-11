@@ -1,51 +1,47 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import coursesData from "@/data/courses.json";
+import { getCourses, courseStatus, formatCourseDate } from "@/lib/courses";
+import LiveSeats from "./LiveSeats";
 
 export const metadata: Metadata = {
   title: "課程行事曆｜AI 轉型與 ESG 永續課程｜榕耀管顧",
-  description: "從單日工作坊到系列課程，找到最適合您的學習路徑。AI 轉型、人才策略、ESG 永續專業培訓，名額有限建議提早報名。",
+  description:
+    "從單日工作坊到系列課程，找到最適合您的學習路徑。AI 轉型、人才策略、ESG 永續專業培訓，名額有限建議提早報名。",
   alternates: {
     canonical: "https://rong-rise.com/courses",
-    languages: {
-      en: "https://rong-rise.com/en/courses",
-    },
+    languages: { en: "https://rong-rise.com/en/courses" },
   },
   openGraph: {
     title: "課程行事曆｜AI 轉型與 ESG 永續課程",
-    description: "從單日工作坊到系列課程，找到最適合您的學習路徑。AI 轉型、人才策略、ESG 永續專業培訓。",
-    images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "榕耀管顧 RongRise Consulting" }],
+    description: "從單日工作坊到系列課程，找到最適合您的學習路徑。",
+    images: [
+      {
+        url: "https://rong-rise.com/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "榕耀管顧 RongRise Consulting",
+      },
+    ],
   },
 };
 
-const statusLabels: Record<string, { label: string; color: string }> = {
-  open: { label: "報名中", color: "bg-success/10 text-success" },
-  full: { label: "額滿", color: "bg-gray-100 text-gray-500" },
-  closed: { label: "已結束", color: "bg-gray-100 text-gray-400" },
-};
+export const dynamic = "force-static";
 
-function isPast(dateStr: string) {
-  return new Date(dateStr) < new Date();
-}
-
-export default function CoursesPage() {
-  const courses = coursesData.courses.filter((c) => !isPast(c.date));
+export default async function CoursesPage() {
+  const courses = await getCourses();
 
   return (
     <>
-      {/* Hero */}
       <section className="bg-gradient-hero text-white">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-16 md:py-20">
           <span className="tag bg-white/15 text-white mb-4">課程行事曆</span>
           <h1 className="heading-hero mt-4 mb-4">近期課程與活動</h1>
           <p className="text-body-lg text-white/85 max-w-2xl">
-            從單日工作坊到系列課程，找到最適合您的學習路徑。
-            名額有限，建議提早報名。
+            從單日工作坊到系列課程，找到最適合您的學習路徑。名額有限，建議提早報名。
           </p>
         </div>
       </section>
 
-      {/* Course List */}
       <section className="section">
         <div className="section-inner">
           <h2 className="sr-only">近期開課</h2>
@@ -59,63 +55,85 @@ export default function CoursesPage() {
                 </Link>
               </div>
             )}
+
             {courses.map((course) => {
-              const status = statusLabels[course.status] || statusLabels.open;
+              const status = courseStatus(course);
               return (
                 <div key={course.id} className="card overflow-hidden">
                   <div className="flex flex-col md:flex-row md:items-stretch">
-                    {/* Date Block */}
                     <div className="md:w-32 bg-primary/5 flex flex-row md:flex-col items-center justify-center p-4 md:p-6 border-b md:border-b-0 md:border-r border-border-light">
                       <div className="text-center">
                         <div className="text-xs text-text-secondary">
-                          {new Date(course.date).toLocaleDateString("zh-TW", { month: "short" })}
+                          {new Date(course.startAt).toLocaleDateString("zh-TW", { month: "short" })}
                         </div>
                         <div className="text-3xl font-bold text-primary">
-                          {new Date(course.date).getDate()}
+                          {new Date(course.startAt).getDate()}
                         </div>
                         <div className="text-xs text-text-secondary">
-                          {new Date(course.date).toLocaleDateString("zh-TW", { year: "numeric" })}
+                          {new Date(course.startAt).toLocaleDateString("zh-TW", { year: "numeric" })}
                         </div>
                       </div>
                     </div>
 
-                    {/* Content */}
                     <div className="flex-1 p-5 md:p-6">
-                      <div className="flex items-start justify-between gap-4 mb-3">
-                        <div>
-                          <div className="flex items-center gap-2 mb-1 flex-wrap">
-                            <span className="tag">{course.type}</span>
-                            <span className={`text-[10px] px-2 py-0.5 rounded-full font-semibold ${status.color}`}>
-                              {status.label}
+                      <div className="flex flex-wrap items-center gap-2 mb-2">
+                        {course.courseType && (
+                          <span className="text-[10px] px-2 py-0.5 rounded-full font-semibold bg-primary/10 text-primary">
+                            {course.courseType}
+                          </span>
+                        )}
+                        <span className={`text-[10px] px-2 py-0.5 rounded-full font-semibold ${status.color}`}>
+                          {status.label}
+                        </span>
+                      </div>
+
+                      <h3 className="heading-subsection text-text-primary">{course.title}</h3>
+
+                      {course.description && (
+                        <p className="text-body text-text-secondary mt-2">{course.description}</p>
+                      )}
+
+                      <div className="flex flex-wrap gap-x-5 gap-y-2 mt-4 text-sm text-text-secondary">
+                        <span>🗓 {formatCourseDate(course.startAt)}</span>
+                        {course.location && <span>📍 {course.location}</span>}
+                        <LiveSeats
+                          slug={course.slug}
+                          initial={{
+                            enrolled: course.enrolled,
+                            seats: course.seats,
+                            seatsLeft: course.seatsLeft,
+                            full: course.full,
+                            enrollable: course.enrollable,
+                          }}
+                        />
+                      </div>
+
+                      {course.tags?.length > 0 && (
+                        <div className="flex flex-wrap gap-2 mt-3">
+                          {course.tags.map((t) => (
+                            <span key={t} className="text-xs px-2 py-1 rounded bg-bg-secondary text-text-secondary">
+                              #{t}
                             </span>
-                          </div>
-                          <h3 className="heading-subsection text-text-primary">{course.title}</h3>
+                          ))}
                         </div>
-                      </div>
+                      )}
 
-                      <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-text-secondary mb-3">
-                        <span>🕐 {course.time}</span>
-                        <span>📍 {course.location}</span>
-                        <span>👥 剩餘 {course.seatsLeft}/{course.seats} 名</span>
-                      </div>
-
-                      <p className="text-text-secondary text-body-sm mb-4">{course.description}</p>
-
-                      <div className="flex items-center justify-between">
+                      <div className="flex flex-wrap items-center gap-4 mt-5">
                         <div>
-                          <span className="text-lg font-bold text-primary">{course.price}</span>
+                          {course.price && <div className="text-lg font-bold text-primary">{course.price}</div>}
                           {course.earlyBirdPrice && (
-                            <span className="text-xs text-tertiary ml-2">早鳥 {course.earlyBirdPrice}</span>
+                            <div className="text-xs text-accent font-medium">
+                              早鳥 {course.earlyBirdPrice}
+                            </div>
                           )}
                         </div>
-                        <div className="flex gap-2">
-                          <Link href={course.link} className="btn-ghost text-sm text-primary">
-                            課程詳情
-                          </Link>
-                          <Link href="/about#contact" className="btn-primary text-sm">
-                            立即報名
-                          </Link>
-                        </div>
+                        <div className="flex-1" />
+                        <Link href={`/courses/${course.slug}`} className="btn-ghost text-sm text-primary">
+                          課程詳情
+                        </Link>
+                        <Link href={`/courses/${course.slug}#enroll`} className="btn-primary text-sm">
+                          {course.enrollable ? "立即報名" : "查看課程"}
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -123,28 +141,17 @@ export default function CoursesPage() {
               );
             })}
           </div>
-
-          {/* CTA */}
-          <div className="text-center mt-10">
-            <p className="text-text-secondary text-sm mb-4">
-              想為企業客製化專屬培訓課程？
-            </p>
-            <Link href="/about#contact" className="btn-secondary">
-              聯繫討論企業內訓
-            </Link>
-          </div>
         </div>
       </section>
 
-      {/* Newsletter */}
-      <section className="bg-gradient-subtle py-12">
-        <div className="max-w-[600px] mx-auto px-4 text-center">
-          <h3 className="heading-subsection text-text-primary mb-3">不想錯過開課通知？</h3>
-          <p className="text-text-secondary text-body mb-4">
-            訂閱轉型快訊，第一時間收到新課程公告與早鳥優惠。
+      <section className="section bg-bg-secondary">
+        <div className="section-inner text-center">
+          <h2 className="heading-section mb-4">需要企業內訓或客製課程？</h2>
+          <p className="text-body-lg text-text-secondary max-w-2xl mx-auto mb-8">
+            我們可以依照您的組織需求，設計專屬的 AI 轉型與管理培訓。
           </p>
-          <Link href="/" className="btn-secondary">
-            前往首頁訂閱
+          <Link href="/about#contact" className="btn-secondary">
+            與我們聯繫
           </Link>
         </div>
       </section>
