@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-09-10T05:01:14Z",
+ "generatedAt": "2026-09-11T05:00:41Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 103
+  "daysRunning": 104
  },
  "stats": {
-  "scanDays": 82,
+  "scanDays": 83,
   "weekArticles": 66,
-  "articles": 21,
-  "newsItems": 25,
-  "newsletterIssues": 14,
+  "articles": 23,
+  "newsItems": 27,
+  "newsletterIssues": 16,
   "subscribers": 17,
   "confirmedSubscribers": 12,
   "videos": 30,
-  "views": 312,
-  "channelSubscribers": 9,
+  "views": 313,
+  "channelSubscribers": 10,
   "insights": 11,
   "socialPosts": 20,
   "igCards": 11,
-  "competitorReports": 80
+  "competitorReports": 81
  },
  "activity": [
-  {
-   "date": "2026-09-04",
-   "count": 15,
-   "topics": []
-  },
   {
    "date": "2026-09-05",
    "count": 13,
@@ -54,17 +49,22 @@
   },
   {
    "date": "2026-09-10",
+   "count": 12,
+   "topics": []
+  },
+  {
+   "date": "2026-09-11",
    "count": 0,
    "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "AI 的淨效率陷阱：當 65% 白領懷念沒有 AI 的日子，你的 ROI 算對了嗎？",
-   "date": "2026.09.08",
-   "url": "/knowledge/ai-net-efficiency-trap"
+   "title": "我一個人管五個 AI 員工：導入 AI 的瓶頸不是技術，是管理",
+   "date": "2026.09.10",
+   "url": "/knowledge/agentic-ai-employee-management"
   },
-  "newsletter": "🦞 榕賀觀點 第 14 期 — 2026-09-03",
+  "newsletter": "🦞 榕賀觀點 第 16 期 — 2026-09-10",
   "video": {
    "title": "策略會議兩天只產出三個選項？不是市場的錯，是腦力的錯",
    "date": "2026-08-21",
