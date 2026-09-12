@@ -1,5 +1,7 @@
 // src/lib/courses.ts
 // 課程資料來源：行事曆 app 的公開 API（單一來源，不再用手寫 JSON）
+import courseDetails from "@/data/course-details.json";
+
 export type Course = {
   id: string;
   slug: string;
@@ -45,7 +47,15 @@ export async function getCourse(slug: string): Promise<Course | null> {
   return all.find((c) => c.slug === slug) || null;
 }
 
-export function courseStatus(c: Course): { label: string; color: string } {
+// 課程狀態：course-details.json 的 status === "preparing" 代表「籌備中，即將公開」
+// （尚未開放報名、資訊仍在確認；前台要 grey out 報名表並隱藏未定資訊）
+export function isPreparing(slug: string): boolean {
+  const entry = (courseDetails as Record<string, { status?: string }>)[slug];
+  return entry?.status === "preparing";
+}
+
+export function courseStatus(c: Course, preparing = false): { label: string; color: string } {
+  if (preparing) return { label: "籌備中，即將公開", color: "bg-accent/15 text-accent" };
   if (!c.enrollOpen) return { label: "已關閉報名", color: "bg-gray-100 text-gray-500" };
   if (c.full) return { label: "額滿（可候補）", color: "bg-gray-100 text-gray-500" };
   if (new Date(c.endAt) < new Date()) return { label: "已結束", color: "bg-gray-100 text-gray-400" };

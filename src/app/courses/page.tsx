@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getCourses, courseStatus, formatCourseDate } from "@/lib/courses";
+import { getCourses, courseStatus, isPreparing, formatCourseDate } from "@/lib/courses";
 import LiveSeats from "./LiveSeats";
 
 export const metadata: Metadata = {
@@ -57,7 +57,8 @@ export default async function CoursesPage() {
             )}
 
             {courses.map((course) => {
-              const status = courseStatus(course);
+              const preparing = isPreparing(course.slug);
+              const status = courseStatus(course, preparing);
               return (
                 <div key={course.id} className="card overflow-hidden">
                   <div className="flex flex-col md:flex-row md:items-stretch">
@@ -96,16 +97,18 @@ export default async function CoursesPage() {
                       <div className="flex flex-wrap gap-x-5 gap-y-2 mt-4 text-sm text-text-secondary">
                         <span>🗓 {formatCourseDate(course.startAt)}</span>
                         {course.location && <span>📍 {course.location}</span>}
-                        <LiveSeats
-                          slug={course.slug}
-                          initial={{
-                            enrolled: course.enrolled,
-                            seats: course.seats,
-                            seatsLeft: course.seatsLeft,
-                            full: course.full,
-                            enrollable: course.enrollable,
-                          }}
-                        />
+                        {!preparing && (
+                          <LiveSeats
+                            slug={course.slug}
+                            initial={{
+                              enrolled: course.enrolled,
+                              seats: course.seats,
+                              seatsLeft: course.seatsLeft,
+                              full: course.full,
+                              enrollable: course.enrollable,
+                            }}
+                          />
+                        )}
                       </div>
 
                       {course.tags?.length > 0 && (
@@ -120,19 +123,32 @@ export default async function CoursesPage() {
 
                       <div className="flex flex-wrap items-center gap-4 mt-5">
                         <div>
-                          {course.price && <div className="text-lg font-bold text-primary">{course.price}</div>}
-                          {course.earlyBirdPrice && (
-                            <div className="text-xs text-accent font-medium">
-                              早鳥 {course.earlyBirdPrice}
+                          {preparing ? (
+                            <div className="text-sm font-medium text-text-secondary">
+                              定價確認中，開放報名時公告
                             </div>
+                          ) : (
+                            <>
+                              {course.price && (
+                                <div className="text-lg font-bold text-primary">{course.price}</div>
+                              )}
+                              {course.earlyBirdPrice && (
+                                <div className="text-xs text-accent font-medium">
+                                  早鳥 {course.earlyBirdPrice}
+                                </div>
+                              )}
+                            </>
                           )}
                         </div>
                         <div className="flex-1" />
                         <Link href={`/courses/${course.slug}`} className="btn-ghost text-sm text-primary">
                           課程詳情
                         </Link>
-                        <Link href={`/courses/${course.slug}#enroll`} className="btn-primary text-sm">
-                          {course.enrollable ? "立即報名" : "查看課程"}
+                        <Link
+                          href={preparing ? `/courses/${course.slug}` : `/courses/${course.slug}#enroll`}
+                          className={preparing ? "btn-secondary text-sm" : "btn-primary text-sm"}
+                        >
+                          {preparing ? "籌備中" : course.enrollable ? "立即報名" : "查看課程"}
                         </Link>
                       </div>
                     </div>

@@ -5,6 +5,7 @@ import {
   getCourses,
   getCourse,
   courseStatus,
+  isPreparing,
   formatCourseRange,
 } from "@/lib/courses";
 import EnrollForm from "./EnrollForm";
@@ -68,7 +69,8 @@ export default async function CourseDetailPage({
   const course = await getCourse(slug);
   if (!course) notFound();
 
-  const status = courseStatus(course);
+  const preparing = isPreparing(course.slug);
+  const status = courseStatus(course, preparing);
   const extra = courseDetails[course.slug];
 
   const jsonLd = {
@@ -129,7 +131,11 @@ export default async function CourseDetailPage({
                 {course.courseType}
               </span>
             )}
-            <span className="text-xs px-2.5 py-1 rounded-full bg-white/15 text-white font-medium">
+            <span
+              className={`text-xs px-2.5 py-1 rounded-full font-semibold ${
+                preparing ? "bg-accent text-white" : "bg-white/15 text-white"
+              }`}
+            >
               {status.label}
             </span>
           </div>
@@ -139,6 +145,16 @@ export default async function CourseDetailPage({
           )}
         </div>
       </section>
+
+      {preparing && (
+        <div className="bg-accent/10 border-y border-accent/30">
+          <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-4 text-body text-text-primary leading-relaxed">
+            <span className="font-semibold text-accent">本課程籌備中，即將公開。</span>{" "}
+            內容、定價與場地仍在確認中，<span className="font-semibold">目前尚未開放報名</span>。
+            確認後會在本頁與電子報公告。
+          </div>
+        </div>
+      )}
 
       <section className="section">
         <div className="section-inner">
@@ -163,8 +179,10 @@ export default async function CourseDetailPage({
                   <div className="flex gap-4">
                     <dt className="w-20 text-text-secondary shrink-0">費用</dt>
                     <dd className="text-text-primary font-medium">
-                      {course.price || "請與我們聯繫"}
-                      {course.earlyBirdPrice && (
+                      {preparing
+                        ? "確認中，開放報名時公告"
+                        : course.price || "請與我們聯繫"}
+                      {!preparing && course.earlyBirdPrice && (
                         <span className="block text-sm text-accent mt-1">
                           早鳥優惠 {course.earlyBirdPrice}
                           {course.promoEnd &&
@@ -179,11 +197,13 @@ export default async function CourseDetailPage({
                   <div className="flex gap-4">
                     <dt className="w-20 text-text-secondary shrink-0">名額</dt>
                     <dd className="text-text-primary font-medium">
-                      {course.seatsLeft === null
-                        ? "不限"
-                        : course.full
-                          ? "已額滿（可排候補）"
-                          : `剩餘 ${course.seatsLeft}/${course.seats} 位`}
+                      {preparing
+                        ? "確認中，開放報名時公告"
+                        : course.seatsLeft === null
+                          ? "不限"
+                          : course.full
+                            ? "已額滿（可排候補）"
+                            : `剩餘 ${course.seatsLeft}/${course.seats} 位`}
                     </dd>
                   </div>
                 </dl>
@@ -311,6 +331,11 @@ export default async function CourseDetailPage({
 
               <div className="card p-6 bg-bg-secondary">
                 <h2 className="heading-subsection text-text-primary mb-3">報名流程</h2>
+                {preparing && (
+                  <p className="text-sm text-accent font-medium mb-3">
+                    目前尚未開放報名，以下流程在開放報名後適用。
+                  </p>
+                )}
                 <ol className="space-y-2 text-body text-text-secondary list-decimal list-inside">
                   <li>填寫右側報名表單送出</li>
                   <li>系統立即寄出確認信到你的 Email</li>
@@ -370,6 +395,7 @@ export default async function CourseDetailPage({
                   courseTitle={course.title}
                   enrollable={course.enrollable}
                   full={course.full}
+                  preparing={preparing}
                 />
               </div>
             </div>

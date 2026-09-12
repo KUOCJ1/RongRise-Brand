@@ -7,13 +7,21 @@ type Props = {
   courseTitle: string;
   enrollable: boolean;
   full: boolean;
+  /** 課程籌備中：表單反灰、看得見但不能送出 */
+  preparing?: boolean;
 };
 
 const input =
   "w-full px-4 py-2.5 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary text-body";
 const label = "block text-sm font-medium text-text-primary mb-1.5";
 
-export default function EnrollForm({ slug, courseTitle, enrollable, full }: Props) {
+export default function EnrollForm({
+  slug,
+  courseTitle,
+  enrollable,
+  full,
+  preparing = false,
+}: Props) {
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -31,6 +39,7 @@ export default function EnrollForm({ slug, courseTitle, enrollable, full }: Prop
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (preparing) return;
     if (!form.name || !form.email) {
       setResult({ ok: false, msg: "請填寫姓名與 Email。" });
       return;
@@ -62,6 +71,76 @@ export default function EnrollForm({ slug, courseTitle, enrollable, full }: Prop
     }
   };
 
+  /** 表單欄位（lock = true 時全部 disabled，用於籌備中的反灰狀態） */
+  const fields = (lock: boolean) => (
+    <>
+      <div className="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label className={label}>姓名 *</label>
+          <input className={input} value={form.name} disabled={lock}
+                 onChange={(e) => set("name", e.target.value)} required />
+        </div>
+        <div>
+          <label className={label}>Email *</label>
+          <input type="email" className={input} value={form.email} disabled={lock}
+                 onChange={(e) => set("email", e.target.value)} required />
+        </div>
+        <div>
+          <label className={label}>手機</label>
+          <input className={input} value={form.phone} disabled={lock}
+                 onChange={(e) => set("phone", e.target.value)} />
+        </div>
+        <div>
+          <label className={label}>公司 / 單位</label>
+          <input className={input} value={form.company} disabled={lock}
+                 onChange={(e) => set("company", e.target.value)} />
+        </div>
+        <div>
+          <label className={label}>統一編號（需開立統編者填寫）</label>
+          <input className={input} value={form.taxId} disabled={lock}
+                 onChange={(e) => set("taxId", e.target.value)} />
+        </div>
+        <div>
+          <label className={label}>備註</label>
+          <input className={input} value={form.note} disabled={lock}
+                 onChange={(e) => set("note", e.target.value)}
+                 placeholder="例如：素食、想先了解的議題" />
+        </div>
+      </div>
+
+      {/* honeypot：真人看不到，機器人會填 */}
+      <input type="text" tabIndex={-1} autoComplete="off" value={form.website}
+             onChange={(e) => set("website", e.target.value)}
+             style={{ position: "absolute", left: "-9999px", width: 1, height: 1, opacity: 0 }}
+             aria-hidden="true" />
+
+      <label className="flex items-start gap-2 text-sm text-text-secondary">
+        <input type="checkbox" checked={agree} disabled={lock}
+               onChange={(e) => setAgree(e.target.checked)} className="mt-1 w-4 h-4" />
+        <span>
+          我同意榕耀管顧依《個人資料保護法》蒐集、處理及利用我提供的資料，
+          用於課程報名、聯繫與後續課程通知。{/* 個資同意 */}
+        </span>
+      </label>
+
+      {result && !result.ok && <p className="text-sm text-red-600">{result.msg}</p>}
+
+      <button
+        type="submit"
+        disabled={sending || lock}
+        className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        {lock ? "尚未開放報名" : sending ? "送出中..." : "送出報名"}
+      </button>
+
+      <p className="text-xs text-text-secondary text-center">
+        送出後你會立刻收到確認信；我們會在 1 個工作日內與你聯繫繳費事宜。
+        <br />
+        課程：{courseTitle}
+      </p>
+    </>
+  );
+
   if (result?.ok) {
     return (
       <div className="card p-6 bg-success/5 border border-success/20">
@@ -70,6 +149,33 @@ export default function EnrollForm({ slug, courseTitle, enrollable, full }: Prop
           {result.waitlist ? "已為你保留候補順位" : "報名成功！"}
         </h3>
         <p className="text-body text-text-secondary">{result.msg}</p>
+      </div>
+    );
+  }
+
+  // 籌備中：上方提示「即將公開」，下方表單反灰，看得見但不能填、不能送
+  if (preparing) {
+    return (
+      <div>
+        <div className="card p-5 bg-accent/10 border border-accent/30 mb-4">
+          <p className="text-[11px] font-bold tracking-[0.18em] text-accent mb-1.5">
+            COMING SOON
+          </p>
+          <h3 className="heading-subsection text-text-primary mb-2">籌備中，即將公開</h3>
+          <p className="text-body text-text-secondary leading-relaxed">
+            課程內容、定價與場地仍在確認中，確認後才會開放報名。
+            開放時會在本頁與電子報公告。
+          </p>
+        </div>
+
+        <form
+          onSubmit={(e) => e.preventDefault()}
+          aria-disabled="true"
+          className="card p-6 space-y-4 opacity-45 select-none pointer-events-none"
+        >
+          <h3 className="heading-subsection text-text-primary">報名這門課</h3>
+          {fields(true)}
+        </form>
       </div>
     );
   }
@@ -93,62 +199,7 @@ export default function EnrollForm({ slug, courseTitle, enrollable, full }: Prop
   return (
     <form onSubmit={submit} className="card p-6 space-y-4">
       <h3 className="heading-subsection text-text-primary">報名這門課</h3>
-
-      <div className="grid sm:grid-cols-2 gap-4">
-        <div>
-          <label className={label}>姓名 *</label>
-          <input className={input} value={form.name} onChange={(e) => set("name", e.target.value)} required />
-        </div>
-        <div>
-          <label className={label}>Email *</label>
-          <input type="email" className={input} value={form.email}
-                 onChange={(e) => set("email", e.target.value)} required />
-        </div>
-        <div>
-          <label className={label}>手機</label>
-          <input className={input} value={form.phone} onChange={(e) => set("phone", e.target.value)} />
-        </div>
-        <div>
-          <label className={label}>公司 / 單位</label>
-          <input className={input} value={form.company} onChange={(e) => set("company", e.target.value)} />
-        </div>
-        <div>
-          <label className={label}>統一編號（需開立統編者填寫）</label>
-          <input className={input} value={form.taxId} onChange={(e) => set("taxId", e.target.value)} />
-        </div>
-        <div>
-          <label className={label}>備註</label>
-          <input className={input} value={form.note} onChange={(e) => set("note", e.target.value)}
-                 placeholder="例如：素食、想先了解的議題" />
-        </div>
-      </div>
-
-      {/* honeypot：真人看不到，機器人會填 */}
-      <input type="text" tabIndex={-1} autoComplete="off" value={form.website}
-             onChange={(e) => set("website", e.target.value)}
-             style={{ position: "absolute", left: "-9999px", width: 1, height: 1, opacity: 0 }}
-             aria-hidden="true" />
-
-      <label className="flex items-start gap-2 text-sm text-text-secondary">
-        <input type="checkbox" checked={agree} onChange={(e) => setAgree(e.target.checked)}
-               className="mt-1 w-4 h-4" />
-        <span>
-          我同意榕耀管顧依《個人資料保護法》蒐集、處理及利用我提供的資料，
-          用於課程報名、聯繫與後續課程通知。{/* 個資同意 */}
-        </span>
-      </label>
-
-      {result && !result.ok && <p className="text-sm text-red-600">{result.msg}</p>}
-
-      <button type="submit" disabled={sending} className="btn-primary w-full disabled:opacity-50">
-        {sending ? "送出中..." : "送出報名"}
-      </button>
-
-      <p className="text-xs text-text-secondary text-center">
-        送出後你會立刻收到確認信；我們會在 1 個工作日內與你聯繫繳費事宜。
-        <br />
-        課程：{courseTitle}
-      </p>
+      {fields(false)}
     </form>
   );
 }
