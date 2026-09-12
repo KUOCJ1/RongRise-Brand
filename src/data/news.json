@@ -114,7 +114,7 @@
       "category": "課程",
       "title": "【AI 實戰營】7 月班開課 — 從入門到企業落地",
       "summary": "兩天實戰課程，涵蓋生成式 AI 底層邏輯、提示工程、企業 AI 成熟度評估。早鳥優惠至 6/15。",
-      "link": "/knowledge/ai-bootcamp",
+      "link": "/courses/",
       "isNew": false
     },
     {
@@ -213,7 +213,7 @@
       "category": "課程",
       "title": "Agentic AI 轉型高階共識營 — 第二期開放報名",
       "summary": "專為企業高阶主管設計的一天共識營，從願景對齊到落地框架，含 Agent 場景評估畫布實作。",
-      "link": "/knowledge/agentic-ai-consensus-camp",
+      "link": "/courses/",
       "isNew": false
     },
     {
