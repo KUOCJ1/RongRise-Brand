@@ -9,6 +9,7 @@ import {
 } from "@/lib/courses";
 import EnrollForm from "./EnrollForm";
 import courseDetailsData from "@/data/course-details.json";
+import coursePolicy from "@/data/course-policy.json";
 
 type CourseDetail = {
   intro?: string[];
@@ -299,6 +300,29 @@ export default async function CourseDetailPage({
                   <li>完成繳費後保留名額，並於開課前寄發行前通知</li>
                 </ol>
               </div>
+
+              {coursePolicy?.items?.length > 0 && (
+                <div className="card p-6">
+                  <h2 className="heading-subsection text-text-primary mb-2">
+                    {coursePolicy.title}
+                  </h2>
+                  {coursePolicy.updated && (
+                    <p className="text-xs text-text-secondary mb-4">
+                      最後更新：{coursePolicy.updated}
+                    </p>
+                  )}
+                  <ol className="space-y-2 text-body text-text-secondary list-decimal list-inside leading-relaxed">
+                    {coursePolicy.items.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ol>
+                  {coursePolicy.note && (
+                    <p className="mt-4 pt-4 border-t border-border text-sm text-text-secondary leading-relaxed">
+                      {coursePolicy.note}
+                    </p>
+                  )}
+                </div>
+              )}
             </div>
 
             {/* 右：報名表單 */}

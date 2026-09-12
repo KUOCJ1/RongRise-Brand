@@ -119,7 +119,7 @@ export default function EnrollForm({ slug, courseTitle, enrollable, full }: Prop
         <div>
           <label className={label}>備註</label>
           <input className={input} value={form.note} onChange={(e) => set("note", e.target.value)}
-                 placeholder="例如：飲食需求、想先了解的議題" />
+                 placeholder="例如：素食、想先了解的議題" />
         </div>
       </div>
 
