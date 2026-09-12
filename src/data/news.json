@@ -1,12 +1,21 @@
 {
   "news": [
     {
+      "id": "n29",
+      "date": "2026-09-12",
+      "category": "媒體",
+      "title": "那一天最大的幸運，是我們遇到了一大堆難題",
+      "summary": "卡了兩個多小時，解開的只是一個授權問題。那天真正的收穫是另一件事。",
+      "link": "/knowledge/luckiest-day-was-the-hardest-problems",
+      "isNew": true
+    },
+    {
       "date": "2026-09-10",
       "category": "資源",
       "title": "我一個人管五個 AI 員工：導入 AI 的瓶頸不是技術，是管理",
       "summary": "46 條自動化流程、255 個技能、5 個 AI 員工。一人公司實作三個半月，整理出「Agentic AI 員工管理學」五階生命週期。",
       "link": "/knowledge/agentic-ai-employee-management",
-      "isNew": true,
+      "isNew": false,
       "id": "n28"
     },
     {
@@ -16,7 +25,7 @@
       "title": "HBR：中階主管決定 AI 成敗——過去說會被取代的那群人，現在成了最關鍵的樞紐",
       "summary": "HBR 九月封面文章直接翻盤：中階主管不是 AI 時代的受害者，而是唯一無法被跳過的關鍵樞紐。BCG 數據顯示 74% 前線員工已經在用 AI，但 66% 沒人教。本文拆解五種主管類型，疊加榕耀管顧的「AI 賦能四象限」框架。",
       "link": "/knowledge/middle-managers-ai-pivot",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n25",
@@ -25,7 +34,7 @@
       "title": "AI 的淨效率陷阱：當 65% 白領懷念沒有 AI 的日子，你的 ROI 算對了嗎？",
       "summary": "HBR 最新研究證明 AI 廣告賣不動、65% 白領懷念沒有 AI 的日子、Meta 緊急取消 token 用量考績——四條獨立證據同時指向一個結論：你的 AI ROI 公式，很可能少算了「修正成本」和「信任折損」。",
       "link": "/knowledge/ai-net-efficiency-trap",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n24",

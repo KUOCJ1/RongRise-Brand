@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "luckiest-day-was-the-hardest-problems",
+    cat: "案例分享",
+    title: "那一天最大的幸運，是我們遇到了一大堆難題",
+    date: "2026.09.12",
+    readTime: "4 分鐘",
+    excerpt: "我陪一位認識很久的顧問朋友卡了兩個多小時，最後解開的只是一個授權問題。但那天真正有價值的，是讓他學會：遇到不會的東西時，怎麼透過 AI 把它拆開。",
+    tags: ["AI 落地", "問題解決", "顧問陪跑", "AI 協作"],
+  },
+  {
     slug: "agentic-ai-employee-management",
     cat: "AI 轉型",
     title: "我一個人管五個 AI 員工：導入 AI 的瓶頸不是技術，是管理",
