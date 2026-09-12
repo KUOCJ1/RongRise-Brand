@@ -8,6 +8,20 @@ import {
   formatCourseRange,
 } from "@/lib/courses";
 import EnrollForm from "./EnrollForm";
+import courseDetailsData from "@/data/course-details.json";
+
+type CourseDetail = {
+  intro?: string[];
+  audience?: string[];
+  outcomes?: string[];
+  outline?: { time: string; title: string; detail?: string }[];
+  takeaway?: string[];
+  prereq?: string;
+  instructor?: string;
+  notes?: string[];
+};
+
+const courseDetails = courseDetailsData as Record<string, CourseDetail>;
 
 export async function generateStaticParams() {
   const courses = await getCourses(true);
@@ -53,12 +67,15 @@ export default async function CourseDetailPage({
   if (!course) notFound();
 
   const status = courseStatus(course);
+  const extra = courseDetails[course.slug];
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Course",
     name: course.title,
     description: course.description || undefined,
+    teaches: extra?.outcomes?.length ? extra.outcomes.join("、") : undefined,
+    coursePrerequisites: extra?.prereq,
     provider: {
       "@type": "Organization",
       name: "榕耀管顧 RongRise Consulting",
@@ -163,6 +180,113 @@ export default async function CourseDetailPage({
                       #{t}
                     </span>
                   ))}
+                </div>
+              )}
+
+              {extra?.intro && extra.intro.length > 0 && (
+                <div className="card p-6">
+                  <h2 className="heading-subsection text-text-primary mb-4">課程介紹</h2>
+                  <div className="space-y-4 text-body text-text-secondary leading-relaxed">
+                    {extra.intro.map((para, i) => (
+                      <p key={i}>{para}</p>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {extra?.outcomes && extra.outcomes.length > 0 && (
+                <div className="card p-6">
+                  <h2 className="heading-subsection text-text-primary mb-4">這堂課你會學到</h2>
+                  <ol className="space-y-3">
+                    {extra.outcomes.map((o, i) => (
+                      <li key={i} className="flex gap-3 text-body text-text-primary">
+                        <span className="shrink-0 w-6 h-6 rounded-full bg-bg-secondary text-primary text-sm font-bold flex items-center justify-center">
+                          {i + 1}
+                        </span>
+                        <span className="leading-relaxed">{o}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              )}
+
+              {extra?.outline && extra.outline.length > 0 && (
+                <div className="card p-6">
+                  <h2 className="heading-subsection text-text-primary mb-2">課程大綱</h2>
+                  <p className="text-sm text-text-secondary mb-4">
+                    一整天 8 小時，上午建立觀念與判讀力，下午動手實作。
+                  </p>
+                  <ul>
+                    {extra.outline.map((slot, i) => (
+                      <li
+                        key={i}
+                        className="flex gap-4 py-3 border-b border-border last:border-0"
+                      >
+                        <span className="w-24 shrink-0 text-sm font-semibold text-primary tabular-nums">
+                          {slot.time}
+                        </span>
+                        <div>
+                          <div className="text-body font-semibold text-text-primary">
+                            {slot.title}
+                          </div>
+                          {slot.detail && (
+                            <div className="text-sm text-text-secondary mt-1 leading-relaxed">
+                              {slot.detail}
+                            </div>
+                          )}
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {((extra?.audience && extra.audience.length > 0) || extra?.prereq) && (
+                <div className="card p-6">
+                  <h2 className="heading-subsection text-text-primary mb-4">適合對象</h2>
+                  {extra?.audience && extra.audience.length > 0 && (
+                    <ul className="space-y-2 text-body text-text-secondary list-disc list-inside">
+                      {extra.audience.map((a, i) => (
+                        <li key={i}>{a}</li>
+                      ))}
+                    </ul>
+                  )}
+                  {extra?.prereq && (
+                    <p className="mt-4 pt-4 border-t border-border text-sm text-text-secondary leading-relaxed">
+                      <span className="font-semibold text-text-primary">先備條件：</span>
+                      {extra.prereq}
+                    </p>
+                  )}
+                </div>
+              )}
+
+              {extra?.takeaway && extra.takeaway.length > 0 && (
+                <div className="card p-6 bg-bg-secondary">
+                  <h2 className="heading-subsection text-text-primary mb-4">你將帶走</h2>
+                  <ul className="space-y-2 text-body text-text-primary">
+                    {extra.takeaway.map((t, i) => (
+                      <li key={i} className="flex gap-3">
+                        <span className="text-accent shrink-0 font-bold">✓</span>
+                        <span className="leading-relaxed">{t}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  {extra?.notes && extra.notes.length > 0 && (
+                    <ul className="mt-4 pt-4 border-t border-border space-y-1.5 text-sm text-text-secondary">
+                      {extra.notes.map((n, i) => (
+                        <li key={i}>・{n}</li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              )}
+
+              {extra?.instructor && (
+                <div className="card p-6">
+                  <h2 className="heading-subsection text-text-primary mb-3">講師</h2>
+                  <p className="text-body text-text-secondary leading-relaxed">
+                    {extra.instructor}
+                  </p>
                 </div>
               )}
 
