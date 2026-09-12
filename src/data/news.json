@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n30",
+      "date": "2026-09-12",
+      "category": "資源",
+      "title": "政府一句話，就能關掉你正在用的 AI：企業的模型主權四階",
+      "summary": "美國政府一紙命令，暫停了所有外國人對 Fable 5 的存取。企業該問的不是「哪個模型最強」，而是「誰能關掉它」。",
+      "link": "/knowledge/anthropic-fable-5-us-government-ban",
+      "isNew": true
+    },
+    {
       "id": "n29",
       "date": "2026-09-12",
       "category": "媒體",
@@ -15,7 +24,7 @@
       "title": "我一個人管五個 AI 員工：導入 AI 的瓶頸不是技術，是管理",
       "summary": "46 條自動化流程、255 個技能、5 個 AI 員工。一人公司實作三個半月，整理出「Agentic AI 員工管理學」五階生命週期。",
       "link": "/knowledge/agentic-ai-employee-management",
-      "isNew": false,
+      "isNew": true,
       "id": "n28"
     },
     {
@@ -114,7 +123,7 @@
       "category": "課程",
       "title": "【AI 實戰營】7 月班開課 — 從入門到企業落地",
       "summary": "兩天實戰課程，涵蓋生成式 AI 底層邏輯、提示工程、企業 AI 成熟度評估。早鳥優惠至 6/15。",
-      "link": "/courses/",
+      "link": "/knowledge/ai-transformation-bootcamp",
       "isNew": false
     },
     {
@@ -213,7 +222,7 @@
       "category": "課程",
       "title": "Agentic AI 轉型高階共識營 — 第二期開放報名",
       "summary": "專為企業高阶主管設計的一天共識營，從願景對齊到落地框架，含 Agent 場景評估畫布實作。",
-      "link": "/courses/",
+      "link": "/knowledge/agentic-ai-transformation-workshop",
       "isNew": false
     },
     {

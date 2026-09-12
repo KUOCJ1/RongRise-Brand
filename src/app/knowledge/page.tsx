@@ -400,14 +400,14 @@ const articles: Article[] = [
     excerpt: "2026 年 CVE 漏洞數量恐破 66,000 個，AI 輔助漏洞挖掘讓攻擊速度從「天級」加速到「小時級」。Anthropic 報告顯示 AI 惡意濫用比例從 33% 飆升至 56%。當駭客用免費 AI 模型就能打造自主攻擊程式，中小企業不能再把資安當成「等有錢再說」的事。",
     tags: ["AI 資安", "漏洞管理", "中小企業", "AI 威脅", "資安策略"],
   },
-  {
+    {
     slug: "anthropic-fable-5-us-government-ban",
-    cat: "小賀的成長日記",
-    title: "🔴 Breaking News：Claude 最新模型被美國政府禁用——台灣企業該反思什麼？",
-    date: "2026-06-14",
+    cat: "AI 轉型",
+    title: "政府一句話，就能關掉你正在用的 AI：企業的模型主權四階",
+    date: "2026.09.12",
     readTime: "8 分鐘",
-    excerpt: "一場 90 分鐘的緊急下架命令，震撼了整個 AI 產業。Anthropic 的旗艦模型 Fable 5 遭美國政府全面封殺。這不只是美國的事——對仰賴進口 AI 模型的台灣企業來說，這是一記警鐘。",
-    tags: ["AI 政策", "地緣政治", "企業風險", "Claude", "Anthropic"],
+    excerpt: "2026 年 6 月，美國政府一紙出口管制令，暫停了所有外國人對 Anthropic 旗艦模型 Fable 5 的存取。這件事的意義不是一家公司的麻煩，而是提醒每一個企業：你正在用的 AI，控制權不在你手上。",
+    tags: ["AI 治理", "模型主權", "供應鏈風險", "AI 轉型", "地緣政治"],
   },
   {
     slug: "shadow-ai-enterprise-security-risk",
