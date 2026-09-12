@@ -296,7 +296,7 @@ export default async function CourseDetailPage({
                 <ol className="space-y-2 text-body text-text-secondary list-decimal list-inside">
                   <li>填寫右側報名表單送出</li>
                   <li>系統立即寄出確認信到你的 Email</li>
-                  <li>我們在 1 個工作日內與你聯繫繳費事宜</li>
+                  <li>我們在 1 個工作日內以 Email 寄發繳費資訊（匯款）</li>
                   <li>完成繳費後保留名額，並於開課前寄發行前通知</li>
                 </ol>
               </div>
