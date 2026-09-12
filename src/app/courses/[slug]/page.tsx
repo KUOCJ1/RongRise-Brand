@@ -20,6 +20,7 @@ type CourseDetail = {
   prereq?: string;
   instructor?: string;
   notes?: string[];
+  faq?: { q: string; a: string }[];
 };
 
 const courseDetails = courseDetailsData as Record<string, CourseDetail>;
@@ -99,6 +100,23 @@ export default async function CourseDetailPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+
+      {extra?.faq && extra.faq.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: extra.faq.map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            }),
+          }}
+        />
+      )}
 
       <section className="bg-gradient-hero text-white">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-14 md:py-18">
@@ -300,6 +318,25 @@ export default async function CourseDetailPage({
                   <li>完成繳費後保留名額，並於開課前寄發行前通知</li>
                 </ol>
               </div>
+
+              {extra?.faq && extra.faq.length > 0 && (
+                <div className="card p-6">
+                  <h2 className="heading-subsection text-text-primary mb-4">常見問題</h2>
+                  <div className="space-y-5">
+                    {extra.faq.map((f, i) => (
+                      <div key={i}>
+                        <h3 className="text-body font-semibold text-text-primary mb-2">
+                          <span className="text-primary mr-1.5">Q{i + 1}.</span>
+                          {f.q}
+                        </h3>
+                        <p className="text-body text-text-secondary leading-relaxed pl-7">
+                          {f.a}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {coursePolicy?.items?.length > 0 && (
                 <div className="card p-6">
