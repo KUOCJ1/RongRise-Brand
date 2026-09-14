@@ -46,6 +46,10 @@ export const COVER_MAP: Record<string, string> = {
   "ai-net-efficiency-trap": "article-ai-net-efficiency-trap.jpg",
   "middle-managers-ai-pivot": "article-middle-managers-ai-pivot.jpg",
   "luckiest-day-was-the-hardest-problems": "article-cover.jpg",
+  "narrow-ring-change-management": "article-narrow-ring.jpg",
+  "efficiency-concealment-ai-productivity": "article-efficiency-concealment.jpg",
+  "training-replication-gap": "article-training-replication-gap.jpg",
+  "management-gap-2-ai-era": "article-ai-management-gap.jpg",
 };
 
 export function coverImg(slug: string): string {

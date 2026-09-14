@@ -1,13 +1,49 @@
 {
   "news": [
     {
+      "id": "n35",
+      "date": "2026-09-14",
+      "category": "資源",
+      "title": "最窄的那一圈，才是關鍵資訊",
+      "summary": "歐洲研究年輪的人，找的不是平均寬度，而是最窄的那幾圈。這條線索對上企業變革的三件事：真相藏在最窄的那一段、變革不會補所以要留紀錄、不要用一棵樹代表整片森林。",
+      "link": "/knowledge/narrow-ring-change-management",
+      "isNew": true
+    },
+    {
+      "id": "n34",
+      "date": "2026-09-14",
+      "category": "資源",
+      "title": "效率隱藏：AI 省下的時間，為什麼沒有回到員工身上",
+      "summary": "AI 確實省下了時間，但時間去了哪裡？本文切開影子 AI、工作量蔓延與最被低估的效率隱藏，用五份跨國數據與三個案例說明：當誠實有價格，員工就會讓完成看起來像還沒做完。",
+      "link": "/knowledge/efficiency-concealment-ai-productivity",
+      "isNew": true
+    },
+    {
+      "id": "n33",
+      "date": "2026-09-14",
+      "category": "資源",
+      "title": "為什麼你的培訓成效複製不了？56 項隨機對照研究給企業的三個提醒",
+      "summary": "56 項美國隨機對照研究顯示，培訓讓就業率只升 2 到 3 個百分點、年收入多約 1,000 美元，人均成本卻要 13,000 美元。少數成效高出數倍的計畫又複製不了。三個提醒，談企業該怎麼綁職缺、做驗證。",
+      "link": "/knowledge/training-replication-gap",
+      "isNew": true
+    },
+    {
+      "id": "n32",
+      "date": "2026-09-14",
+      "category": "資源",
+      "title": "管不好人，就管不好 AI：當管理層的大腦還留在十九世紀",
+      "summary": "戴明說 94% 的問題來自系統設計，只有 6% 能歸因個人。當組織還在找戰犯，它就失去了唯一能改的選項；更現實的是，不懂認知邊界與流程防呆的組織，也無法為 AI 設計護欄。",
+      "link": "/knowledge/management-gap-2-ai-era",
+      "isNew": false
+    },
+    {
       "id": "n31",
       "date": "2026-09-12",
       "category": "課程",
       "title": "Agentic AI for HR 工作坊籌備中：11/14 初階班、12/5 進階班",
       "summary": "兩堂實體工作坊正在籌備中，課程內容、定價與場地確認後才會開放報名；開放時會在本頁與電子報公告。",
       "link": "/courses/",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n30",
@@ -16,7 +52,7 @@
       "title": "政府一句話，就能關掉你正在用的 AI：企業的模型主權四階",
       "summary": "美國政府一紙命令，暫停了所有外國人對 Fable 5 的存取。企業該問的不是「哪個模型最強」，而是「誰能關掉它」。",
       "link": "/knowledge/anthropic-fable-5-us-government-ban",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n29",
@@ -25,7 +61,7 @@
       "title": "那一天最大的幸運，是我們遇到了一大堆難題",
       "summary": "卡了兩個多小時，解開的只是一個授權問題。那天真正的收穫是另一件事。",
       "link": "/knowledge/luckiest-day-was-the-hardest-problems",
-      "isNew": true
+      "isNew": false
     },
     {
       "date": "2026-09-10",
