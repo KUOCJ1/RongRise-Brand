@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-09-13T07:21:04Z",
+ "generatedAt": "2026-09-14T07:20:08Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 106
+  "daysRunning": 107
  },
  "stats": {
-  "scanDays": 86,
-  "weekArticles": 66,
-  "articles": 72,
-  "newsItems": 30,
+  "scanDays": 87,
+  "weekArticles": 59,
+  "articles": 76,
+  "newsItems": 34,
   "newsletterIssues": 16,
   "subscribers": 17,
   "confirmedSubscribers": 12,
-  "videos": 31,
-  "views": 315,
+  "videos": 32,
+  "views": 359,
   "channelSubscribers": 10,
   "insights": 11,
   "socialPosts": 24,
-  "igCards": 17,
-  "competitorReports": 84
+  "igCards": 18,
+  "competitorReports": 85
  },
  "activity": [
-  {
-   "date": "2026-09-07",
-   "count": 10,
-   "topics": []
-  },
   {
    "date": "2026-09-08",
    "count": 13,
@@ -56,19 +51,24 @@
    "date": "2026-09-13",
    "count": 12,
    "topics": []
+  },
+  {
+   "date": "2026-09-14",
+   "count": 10,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "政府一句話，就能關掉你正在用的 AI：企業的模型主權四階",
-   "date": "2026.09.12",
-   "url": "/knowledge/anthropic-fable-5-us-government-ban"
+   "title": "最窄的那一圈，才是關鍵資訊",
+   "date": "2026.09.14",
+   "url": "/knowledge/narrow-ring-change-management"
   },
   "newsletter": "🦞 榕賀觀點 第 16 期 — 2026-09-10",
   "video": {
-   "title": "我一個人管五個 AI 員工：導入 AI 的瓶頸不是技術，是管理｜Agentic AI 員工管理學",
-   "date": "2026-09-11",
-   "url": "https://www.youtube.com/watch?v=VPO7VgKL8xg"
+   "title": "陪跑筆記｜那一天最大的幸運，是我們遇到了一大堆難題",
+   "date": "2026-09-13",
+   "url": "https://www.youtube.com/watch?v=GDc24HE1K-o"
   },
   "insight": "2026-W37.md"
  },
@@ -76,31 +76,31 @@
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 20,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "晶片與算力",
-   "icon": "🔩",
-   "count": 19,
-   "momentum": "up"
+   "count": 15,
+   "momentum": "down"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 17,
-   "momentum": "up"
-  },
-  {
-   "keyword": "治理與法規",
-   "icon": "⚖️",
-   "count": 17,
-   "momentum": "flat"
+   "count": 13,
+   "momentum": "down"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 13,
+   "count": 12,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "企業導入",
+   "icon": "🚀",
+   "count": 11,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "AI Agent",
+   "icon": "🤖",
+   "count": 9,
    "momentum": "flat"
   }
  ]
