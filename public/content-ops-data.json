@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-09-14T07:20:08Z",
+ "generatedAt": "2026-09-15T07:20:30Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 107
+  "daysRunning": 108
  },
  "stats": {
-  "scanDays": 87,
-  "weekArticles": 59,
+  "scanDays": 88,
+  "weekArticles": 62,
   "articles": 76,
   "newsItems": 34,
-  "newsletterIssues": 16,
+  "newsletterIssues": 17,
   "subscribers": 17,
   "confirmedSubscribers": 12,
   "videos": 32,
-  "views": 359,
+  "views": 362,
   "channelSubscribers": 10,
-  "insights": 11,
+  "insights": 12,
   "socialPosts": 24,
   "igCards": 18,
-  "competitorReports": 85
+  "competitorReports": 86
  },
  "activity": [
-  {
-   "date": "2026-09-08",
-   "count": 13,
-   "topics": []
-  },
   {
    "date": "2026-09-09",
    "count": 10,
@@ -56,6 +51,11 @@
    "date": "2026-09-14",
    "count": 10,
    "topics": []
+  },
+  {
+   "date": "2026-09-15",
+   "count": 12,
+   "topics": []
   }
  ],
  "latest": {
@@ -64,44 +64,44 @@
    "date": "2026.09.14",
    "url": "/knowledge/narrow-ring-change-management"
   },
-  "newsletter": "🦞 榕賀觀點 第 16 期 — 2026-09-10",
+  "newsletter": "🦞 榕賀觀點 第 17 期 — 2026-09-14",
   "video": {
    "title": "陪跑筆記｜那一天最大的幸運，是我們遇到了一大堆難題",
    "date": "2026-09-13",
    "url": "https://www.youtube.com/watch?v=GDc24HE1K-o"
   },
-  "insight": "2026-W37.md"
+  "insight": "2026-W38.md"
  },
  "trends": [
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 15,
-   "momentum": "down"
+   "count": 17,
+   "momentum": "flat"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 13,
-   "momentum": "down"
-  },
-  {
-   "keyword": "成本與投資",
-   "icon": "💰",
-   "count": 12,
+   "count": 14,
    "momentum": "flat"
   },
   {
    "keyword": "企業導入",
    "icon": "🚀",
-   "count": 11,
+   "count": 14,
+   "momentum": "up"
+  },
+  {
+   "keyword": "成本與投資",
+   "icon": "💰",
+   "count": 14,
    "momentum": "flat"
   },
   {
    "keyword": "AI Agent",
    "icon": "🤖",
-   "count": 9,
-   "momentum": "flat"
+   "count": 11,
+   "momentum": "up"
   }
  ]
 }
