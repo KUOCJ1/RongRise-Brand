@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-compliance-2027-taiwan-sme",
+    cat: "AI 轉型",
+    title: "AI 法規訂在 2027，最貴的是回頭補紀錄",
+    date: "2026.09.15",
+    readTime: "8 分鐘",
+    excerpt: "台灣《人工智慧基本法》今年 1 月上路，數發部 9 月宣布與八部會啟動 AI 風險盤點，2027 年 6 月底前完成首輪法規調適。這不是一則法規新聞，而是企業的準備期只剩 12 到 18 個月。本文提出三件事：名冊、界線、標示。",
+    tags: ["AI 治理", "AI 基本法", "合規", "中小企業", "資料治理"],
+  },
+  {
     slug: "narrow-ring-change-management",
     cat: "策略管理",
     title: "最窄的那一圈，才是關鍵資訊",
