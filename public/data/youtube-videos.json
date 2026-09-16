@@ -1,6 +1,15 @@
 {
   "videos": [
     {
+      "id": "EblI3M1LkPk",
+      "title": "答案變便宜，判斷力開始變貴：AI 時代不能折舊的三種能力｜認知資本折舊",
+      "date": "2026-09-16",
+      "description": "一份 OECD 的數據、一份 HBR 的實證，指向同一件事：AI 讓答案變便宜，卻讓判斷力變貴。 這半年我最常遇到的一個場景：主管把 ...",
+      "thumbnail": "https://img.youtube.com/vi/EblI3M1LkPk/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/EblI3M1LkPk/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=EblI3M1LkPk"
+    },
+    {
       "id": "GDc24HE1K-o",
       "title": "陪跑筆記｜那一天最大的幸運，是我們遇到了一大堆難題",
       "date": "2026-09-13",
@@ -17,16 +26,7 @@
       "thumbnail": "https://img.youtube.com/vi/VPO7VgKL8xg/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/VPO7VgKL8xg/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=VPO7VgKL8xg"
-    },
-    {
-      "id": "GkR3vZ0PwJs",
-      "title": "策略會議兩天只產出三個選項？不是市場的錯，是腦力的錯",
-      "date": "2026-08-21",
-      "description": "你上次的策略會議，開完兩天，拿到幾個選項？三個？四個？ 不是市場的錯，是腦力的錯——學者叫它「有限理性」。 這支影片分享 ...",
-      "thumbnail": "https://img.youtube.com/vi/GkR3vZ0PwJs/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/GkR3vZ0PwJs/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=GkR3vZ0PwJs"
     }
   ],
-  "fetchedAt": "2026-09-16T15:08:46Z"
+  "fetchedAt": "2026-09-16T17:12:47Z"
 }
