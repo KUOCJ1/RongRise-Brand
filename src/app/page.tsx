@@ -319,7 +319,7 @@ export default function HomePage() {
             無論您正處於轉型的哪個階段，我們都能提供專業且務實的建議。
             讓我們一起探索適合您企業的最佳路徑。
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="grid grid-cols-2 gap-3 max-w-[520px] mx-auto sm:max-w-none sm:flex sm:flex-wrap sm:justify-center sm:gap-4">
             <TrackLink href="/about#contact" className="btn-primary" trackLabel="立即預約諮詢" trackLocation="cta_section">
               立即預約諮詢
             </TrackLink>
