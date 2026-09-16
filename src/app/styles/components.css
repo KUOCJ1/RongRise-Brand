@@ -10,7 +10,9 @@
   gap: 0.5rem;
   padding: 0.85rem 2rem;
   background: linear-gradient(135deg, var(--color-tertiary) 0%, #D4842A 100%);
-  color: white;
+  /* 白字在品牌橘上只有 2.47:1（WCAG 不足）→ 改品牌深藍字，5.78:1，
+     品牌橘不變、色調與官網既有深藍／橘配色一致 */
+  color: var(--color-primary);
   font-weight: 700;
   font-size: 0.95rem;
   border-radius: var(--radius-md);
@@ -277,6 +279,27 @@
 .bg-cta .btn-secondary:hover {
   background: rgba(255,255,255,0.25);
   border-color: white;
+}
+
+/* ── 文字對比優化（2026-09-16）────────────────────────────────
+   1. 橘色「文字」在淺底上只有 2.4:1 → 淺底改深一階橘（≥4.7:1）；深色區塊內維持品牌橘。
+   2. 橘色「填色」搭白字只有 2.47:1 → 改品牌深藍字（5.78:1），品牌橘本身不動。 */
+.text-tertiary {
+  color: var(--color-tertiary-strong);
+}
+
+.bg-primary .text-tertiary,
+.bg-primary-dark .text-tertiary,
+.bg-cta .text-tertiary,
+.bg-gradient-hero .text-tertiary,
+.bg-dark .text-tertiary {
+  color: var(--color-tertiary);
+}
+
+.bg-tertiary.text-white,
+.bg-tertiary .text-white,
+.text-white.bg-tertiary {
+  color: var(--color-primary);
 }
 
 .bg-gradient-warm {

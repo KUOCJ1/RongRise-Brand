@@ -446,7 +446,29 @@ export default function AboutPage() {
             <div>
               <div className="text-3xl mb-3">📱</div>
               <h4 className="font-semibold mb-1">LINE 官方</h4>
-              <p className="text-white/70 text-sm">@954qxhhe</p>
+              <a
+                href="https://line.me/R/ti/p/@954qxhhe"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 text-sm hover:text-white transition-colors underline decoration-white/30 underline-offset-4"
+              >
+                @954qxhhe
+              </a>
+              <a
+                href="https://line.me/R/ti/p/@954qxhhe"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block mt-4"
+              >
+                <img
+                  src="/images/line-oa-qr.png"
+                  alt="掃描 QR code 加入榕耀管顧 LINE 官方帳號"
+                  width={104}
+                  height={104}
+                  className="mx-auto w-26 h-26 rounded-lg bg-white p-1.5"
+                />
+                <span className="block mt-2 text-[11px] text-white/60">掃碼加入好友</span>
+              </a>
             </div>
             <div>
               <div className="text-3xl mb-3">📍</div>

@@ -10,6 +10,9 @@
   --color-secondary: #1A6DB5;
   --color-tertiary: #E8912A;
   --color-tertiary-light: #F5B84A;
+  /* 淺底上的橘色文字（標籤／STEP／星等）用深一階的橘，白底對比 ≥4.7:1；
+     填色按鈕維持品牌橘 #E8912A 但改深藍字（5.78:1），不稀釋品牌色 */
+  --color-tertiary-strong: #9E5B0C;
   --color-accent: #2EC4B6;
   --color-success: #3DAE62;
 
@@ -76,6 +79,7 @@
   --color-primary: var(--color-primary);
   --color-secondary: var(--color-secondary);
   --color-tertiary: var(--color-tertiary);
+  --color-tertiary-strong: var(--color-tertiary-strong);
   --color-accent: var(--color-accent);
   --color-success: var(--color-success);
   --color-dark: var(--color-text-primary);

@@ -262,7 +262,7 @@ export default function QuickChat() {
                         <div
                           className={`rounded-2xl px-3 py-2 text-sm leading-relaxed ${
                             msg.role === "user"
-                              ? "bg-accent text-white"
+                              ? "bg-accent text-primary"
                               : "bg-bg-alt text-text-primary border border-border"
                           }`}
                           style={msg.role === "user" ? { backgroundColor: "#E8912A" } : {}}
@@ -317,7 +317,7 @@ export default function QuickChat() {
                     <div className="flex gap-2">
                       <Link
                         href="/assistant"
-                        className="text-xs px-3 py-1.5 rounded-full bg-accent text-white font-medium hover:bg-primary transition-all"
+                        className="text-xs px-3 py-1.5 rounded-full bg-accent text-primary font-medium hover:bg-primary hover:text-white transition-all"
                         style={{ backgroundColor: "#E8912A" }}
                         onClick={() => { setIsOpen(false); setIsExpanded(false); }}
                       >
@@ -349,7 +349,7 @@ export default function QuickChat() {
                     <button
                       type="submit"
                       disabled={!input.trim() || isTyping}
-                      className="px-4 py-2 rounded-xl bg-accent text-white text-sm font-medium hover:bg-primary transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="px-4 py-2 rounded-xl bg-accent text-primary text-sm font-medium hover:bg-primary hover:text-white transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                       style={{ backgroundColor: "#E8912A" }}
                     >
                       {isTyping ? "..." : "發送"}

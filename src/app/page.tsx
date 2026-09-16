@@ -329,6 +329,9 @@ export default function HomePage() {
             <TrackLink href="/assistant" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white" trackLabel="先問問小幫手" trackLocation="cta_section">
               先問問小幫手
             </TrackLink>
+            <TrackLink href="https://line.me/R/ti/p/@954qxhhe" target="_blank" rel="noopener noreferrer" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white" trackLabel="加 LINE 聊聊" trackLocation="cta_section">
+              加 LINE 聊聊
+            </TrackLink>
           </div>
         </div>
       </section>
