@@ -100,6 +100,18 @@
 
 .btn-line:active { transform: translateY(0); }
 
+/* 對話框 icon（不佔用 tsx；所有 .btn-line 都會帶） */
+.btn-line::before {
+  content: '';
+  flex: 0 0 auto;
+  width: 1.15em;
+  height: 1.15em;
+  background-image: url('/images/line-icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* 小尺寸變體（聯絡卡片內用） */
 .btn-line-sm {
   padding: 0.55rem 1.1rem;

@@ -347,7 +347,7 @@ export default function ServicesPage() {
               💬 先問問小幫手
             </Link>
             <a href="https://line.me/R/ti/p/@954qxhhe" target="_blank" rel="noopener noreferrer" className="btn-line">
-              💬 加 LINE 聊聊
+              加 LINE 聊聊
             </a>
           </div>
         </div>

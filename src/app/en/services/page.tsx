@@ -168,7 +168,7 @@ export default function ServicesEnPage() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/en/about#contact" className="btn-primary bg-white text-primary font-bold hover:bg-white/95">✉️ Book Consultation</Link>
             <Link href="/en/assistant" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white">💬 Ask the Assistant</Link>
-            <a href="https://line.me/R/ti/p/@954qxhhe" target="_blank" rel="noopener noreferrer" className="btn-line">💬 Chat on LINE</a>
+            <a href="https://line.me/R/ti/p/@954qxhhe" target="_blank" rel="noopener noreferrer" className="btn-line">Chat on LINE</a>
           </div>
         </div>
       </section>
