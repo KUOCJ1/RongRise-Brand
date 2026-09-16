@@ -255,21 +255,26 @@
 .bg-gradient-hero .heading-hero,
 .bg-gradient-hero .heading-section,
 .bg-primary .heading-section,
+.bg-cta .heading-section,
+.bg-cta .heading-hero,
 .bg-gradient-hero h1, .bg-gradient-hero h2, .bg-gradient-hero h3,
-.bg-primary h1, .bg-primary h2, .bg-primary h3 {
+.bg-primary h1, .bg-primary h2, .bg-primary h3,
+.bg-cta h1, .bg-cta h2, .bg-cta h3 {
   color: white;
 }
 
 /* Hero / 深色區域內 secondary button 加強可見度 */
 .bg-gradient-hero .btn-secondary,
-.bg-primary .btn-secondary {
+.bg-primary .btn-secondary,
+.bg-cta .btn-secondary {
   background: rgba(255,255,255,0.12);
   border-color: rgba(255,255,255,0.5);
   color: white;
   font-weight: 600;
 }
 .bg-gradient-hero .btn-secondary:hover,
-.bg-primary .btn-secondary:hover {
+.bg-primary .btn-secondary:hover,
+.bg-cta .btn-secondary:hover {
   background: rgba(255,255,255,0.25);
   border-color: white;
 }
@@ -442,6 +447,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgba(13, 43, 78, 0.65);
+  /* 0.65 → 0.72：深色遮罩再厚一點，確保白字在照片上對比足夠 */
+  background-color: rgba(13, 43, 78, 0.72);
   z-index: 0;
 }
