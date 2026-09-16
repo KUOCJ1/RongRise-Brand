@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n37",
+      "date": "2026-09-16",
+      "category": "資源",
+      "title": "認知資本折舊：AI 讓答案變便宜，為什麼公司的判斷力反而在貶值",
+      "summary": "OECD、HBR 與安永三個訊號指向同一件事：AI 讓答案變便宜，組織的判斷力卻在貶值。設備折舊會進財報，認知資本不會。本文提出折舊三要素、盤點四問與三個保值動作。",
+      "link": "/knowledge/cognitive-capital-depreciation",
+      "isNew": true
+    },
+    {
       "id": "n36",
       "date": "2026-09-15",
       "category": "資源",

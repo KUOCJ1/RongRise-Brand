@@ -1,6 +1,24 @@
 {
   "videos": [
     {
+      "id": "GDc24HE1K-o",
+      "title": "陪跑筆記｜那一天最大的幸運，是我們遇到了一大堆難題",
+      "date": "2026-09-13",
+      "description": "卡了兩個多小時，最後解開的只是一個授權問題。那天真正的收穫，其實是另一件事。 那是一位認識很久的顧問朋友。我們在咖啡館 ...",
+      "thumbnail": "https://img.youtube.com/vi/GDc24HE1K-o/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/GDc24HE1K-o/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=GDc24HE1K-o"
+    },
+    {
+      "id": "VPO7VgKL8xg",
+      "title": "我一個人管五個 AI 員工：導入 AI 的瓶頸不是技術，是管理｜Agentic AI 員工管理學",
+      "date": "2026-09-11",
+      "description": "導入AI 的瓶頸，從來不是技術，是管理。 我一個人管五個AI 員工——內容、官網、電子報、影片。不是因為我很會用工具，是因為我 ...",
+      "thumbnail": "https://img.youtube.com/vi/VPO7VgKL8xg/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/VPO7VgKL8xg/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=VPO7VgKL8xg"
+    },
+    {
       "id": "GkR3vZ0PwJs",
       "title": "策略會議兩天只產出三個選項？不是市場的錯，是腦力的錯",
       "date": "2026-08-21",
@@ -8,25 +26,7 @@
       "thumbnail": "https://img.youtube.com/vi/GkR3vZ0PwJs/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/GkR3vZ0PwJs/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=GkR3vZ0PwJs"
-    },
-    {
-      "id": "LXAR0fuVowA",
-      "title": "輝達開始買電廠了：AI 戰爭下半場，誰掌握綠電誰就贏｜AI 轉型 × 能源",
-      "date": "2026-08-19",
-      "description": "訂閱頻道，每週獲得最新AI 轉型趨勢：https://www.youtube.com/@RongRiseConsulting 輝達開始買電廠了——三十億美元，直接買 ...",
-      "thumbnail": "https://img.youtube.com/vi/LXAR0fuVowA/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/LXAR0fuVowA/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=LXAR0fuVowA"
-    },
-    {
-      "id": "u-01Jr0LqUk",
-      "title": "AI 代理會為了達標說謊？導入前必懂的三條「人機合約」｜AI 轉型 × 信任",
-      "date": "2026-08-12",
-      "description": "訂閱頻道，每週獲得最新AI 轉型趨勢：https://www.youtube.com/@RongRiseConsulting 你的AI 代理，可能正在為了達標，對你說謊 ...",
-      "thumbnail": "https://img.youtube.com/vi/u-01Jr0LqUk/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/u-01Jr0LqUk/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=u-01Jr0LqUk"
     }
   ],
-  "fetchedAt": "2026-09-07T04:15:20Z"
+  "fetchedAt": "2026-09-16T15:08:46Z"
 }

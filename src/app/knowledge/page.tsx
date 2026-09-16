@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "cognitive-capital-depreciation",
+    cat: "AI 轉型",
+    title: "認知資本折舊：AI 讓答案變便宜，為什麼公司的判斷力反而在貶值",
+    date: "2026.09.16",
+    readTime: "10 分鐘",
+    excerpt: "OECD 的 PISA 2025 顯示常用 AI 的學生表現較差、HBR 的研究證明 AI 不會把新手變專家、安永用 1 億美元獎勵「人類核心技能」。三個訊號指向同一件事：組織的判斷力正在折舊，只是它不會出現在財報上。本文提出折舊三要素、盤點四問與三個保值動作。",
+    tags: ["認知資本", "判斷力", "人才培育", "AI 導入", "工作記憶", "中階主管"],
+  },
+  {
     slug: "ai-compliance-2027-taiwan-sme",
     cat: "AI 轉型",
     title: "AI 法規訂在 2027，最貴的是回頭補紀錄",
