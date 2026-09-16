@@ -7,6 +7,13 @@
   .card { padding: 1.25rem; }
   .card:hover { transform: translateY(-1px); }
   .btn-primary, .btn-secondary { padding: 0.7rem 1.5rem; font-size: 0.88rem; }
+  /* LINE 按鈕多一個 icon，手機版再收一點 padding 並禁止斷行（「加 LINE 聊聊」不能被拆成兩行） */
+  .btn-line {
+    padding: 0.7rem 0.9rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+  .btn-line::before { width: 1em; height: 1em; }
   .bg-gradient-hero::after { height: 30px; }
   .tag { font-size: 0.68rem; padding: 0.15rem 0.55rem; }
 }
