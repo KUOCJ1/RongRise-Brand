@@ -346,6 +346,9 @@ export default function ServicesPage() {
             <Link href="/assistant" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white">
               💬 先問問小幫手
             </Link>
+            <a href="https://line.me/R/ti/p/@954qxhhe" target="_blank" rel="noopener noreferrer" className="btn-line">
+              💬 加 LINE 聊聊
+            </a>
           </div>
         </div>
       </section>

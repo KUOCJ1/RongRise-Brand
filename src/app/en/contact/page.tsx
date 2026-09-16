@@ -71,8 +71,30 @@ export default function EnContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-text-primary mb-1">LINE Official</h3>
-                      <p className="text-text-secondary">@954qxhhe</p>
+                      <a
+                        href="https://line.me/R/ti/p/@954qxhhe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-secondary hover:text-primary underline decoration-secondary/40 underline-offset-4 transition-colors"
+                      >
+                        @954qxhhe
+                      </a>
                       <p className="text-text-secondary text-sm mt-1">Available for quick questions and scheduling</p>
+                      <img
+                        src="/images/line-oa-qr.png"
+                        alt="QR code to add RongRise Consulting on LINE"
+                        width={104}
+                        height={104}
+                        className="mt-3 w-26 h-26 rounded-lg bg-white p-1.5 border border-border"
+                      />
+                      <a
+                        href="https://line.me/R/ti/p/@954qxhhe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-line btn-line-sm mt-3 inline-flex"
+                      >
+                        Add on LINE
+                      </a>
                     </div>
                   </div>
 

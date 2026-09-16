@@ -70,6 +70,43 @@
   transition: width 0s, height 0s, opacity 0.3s ease;
 }
 
+/* ── LINE 加好友 Button（官方綠 #06C755）── */
+.btn-line {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2rem;
+  background: var(--color-line);
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(6, 199, 85, 0.28);
+  letter-spacing: 0.02em;
+}
+
+.btn-line:hover {
+  background: #05B84E;
+  color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(6, 199, 85, 0.34);
+}
+
+.btn-line:active { transform: translateY(0); }
+
+/* 小尺寸變體（聯絡卡片內用） */
+.btn-line-sm {
+  padding: 0.55rem 1.1rem;
+  font-size: 0.85rem;
+  box-shadow: none;
+}
+
 /* ── Secondary Button ── */
 .btn-secondary {
   display: inline-flex;

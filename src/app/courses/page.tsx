@@ -166,9 +166,14 @@ export default async function CoursesPage() {
           <p className="text-body-lg text-text-secondary max-w-2xl mx-auto mb-8">
             我們可以依照您的組織需求，設計專屬的 AI 轉型與管理培訓。
           </p>
-          <Link href="/about#contact" className="btn-secondary">
-            與我們聯繫
-          </Link>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/about#contact" className="btn-secondary">
+              與我們聯繫
+            </Link>
+            <a href="https://line.me/R/ti/p/@954qxhhe" target="_blank" rel="noopener noreferrer" className="btn-line">
+              用 LINE 詢問
+            </a>
+          </div>
         </div>
       </section>
     </>

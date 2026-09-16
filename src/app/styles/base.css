@@ -15,6 +15,8 @@
   --color-tertiary-strong: #9E5B0C;
   --color-accent: #2EC4B6;
   --color-success: #3DAE62;
+  /* LINE 官方品牌綠（加好友入口專用）；白字只有 2.26:1 → 一律搭品牌深藍字 6.32:1 */
+  --color-line: #06C755;
 
   /* ── Extended Palette ── */
   --color-primary-dark: #081D35;
@@ -82,6 +84,7 @@
   --color-tertiary-strong: var(--color-tertiary-strong);
   --color-accent: var(--color-accent);
   --color-success: var(--color-success);
+  --color-line: var(--color-line);
   --color-dark: var(--color-text-primary);
   --color-bg: var(--color-bg);
   --color-bg-alt: var(--color-bg-alt);

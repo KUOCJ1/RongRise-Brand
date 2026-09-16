@@ -467,8 +467,16 @@ export default function AboutPage() {
                   height={104}
                   className="mx-auto w-26 h-26 rounded-lg bg-white p-1.5"
                 />
-                <span className="block mt-2 text-[11px] text-white/60">掃碼加入好友</span>
               </a>
+              <a
+                href="https://line.me/R/ti/p/@954qxhhe"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-line btn-line-sm mt-3 inline-flex"
+              >
+                加入好友
+              </a>
+              <span className="block mt-2 text-[11px] text-white/50">掃 QR code 或點按鈕加入</span>
             </div>
             <div>
               <div className="text-3xl mb-3">📍</div>
