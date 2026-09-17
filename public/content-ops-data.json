@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-09-16T07:20:25Z",
+ "generatedAt": "2026-09-17T07:20:28Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 109
+  "daysRunning": 110
  },
  "stats": {
-  "scanDays": 89,
-  "weekArticles": 58,
-  "articles": 77,
-  "newsItems": 35,
+  "scanDays": 90,
+  "weekArticles": 56,
+  "articles": 78,
+  "newsItems": 36,
   "newsletterIssues": 17,
   "subscribers": 17,
   "confirmedSubscribers": 12,
-  "videos": 32,
-  "views": 365,
+  "videos": 33,
+  "views": 366,
   "channelSubscribers": 10,
   "insights": 12,
-  "socialPosts": 25,
+  "socialPosts": 26,
   "igCards": 18,
-  "competitorReports": 87
+  "competitorReports": 88
  },
  "activity": [
-  {
-   "date": "2026-09-10",
-   "count": 12,
-   "topics": []
-  },
   {
    "date": "2026-09-11",
    "count": 0,
@@ -56,19 +51,24 @@
    "date": "2026-09-16",
    "count": 12,
    "topics": []
+  },
+  {
+   "date": "2026-09-17",
+   "count": 9,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "AI 法規訂在 2027，最貴的是回頭補紀錄",
-   "date": "2026.09.15",
-   "url": "/knowledge/ai-compliance-2027-taiwan-sme"
+   "title": "認知資本折舊：AI 讓答案變便宜，為什麼公司的判斷力反而在貶值",
+   "date": "2026.09.16",
+   "url": "/knowledge/cognitive-capital-depreciation"
   },
   "newsletter": "🦞 榕賀觀點 第 17 期 — 2026-09-14",
   "video": {
-   "title": "陪跑筆記｜那一天最大的幸運，是我們遇到了一大堆難題",
-   "date": "2026-09-13",
-   "url": "https://www.youtube.com/watch?v=GDc24HE1K-o"
+   "title": "答案變便宜，判斷力開始變貴：AI 時代不能折舊的三種能力｜認知資本折舊",
+   "date": "2026-09-16",
+   "url": "https://www.youtube.com/watch?v=EblI3M1LkPk"
   },
   "insight": "2026-W38.md"
  },
@@ -76,13 +76,7 @@
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 18,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "企業導入",
-   "icon": "🚀",
-   "count": 13,
+   "count": 19,
    "momentum": "up"
   },
   {
@@ -92,16 +86,22 @@
    "momentum": "flat"
   },
   {
-   "keyword": "成本與投資",
-   "icon": "💰",
+   "keyword": "企業導入",
+   "icon": "🚀",
    "count": 12,
    "momentum": "flat"
   },
   {
-   "keyword": "AI Agent",
-   "icon": "🤖",
+   "keyword": "成本與投資",
+   "icon": "💰",
+   "count": 11,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "治理與法規",
+   "icon": "⚖️",
    "count": 10,
-   "momentum": "up"
+   "momentum": "flat"
   }
  ]
 }
