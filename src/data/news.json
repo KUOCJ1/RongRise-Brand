@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n38",
+      "date": "2026-09-17",
+      "category": "資源",
+      "title": "監督債：導入 AI 代理不是省人力，是每個月欠下一筆監督工時",
+      "summary": "思科向 9 萬名員工配發 AI 代理，同一週的研究卻算出員工每週要多花超過 6 小時檢查與修正它的產出。省下的工時記在效率欄，新增的工時沒有科目。這筆債叫「監督債」，拆成校正、權限、歸屬三本帳。",
+      "link": "/knowledge/supervision-debt-ai-agents",
+      "isNew": true
+    },
+    {
       "id": "n37",
       "date": "2026-09-16",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "最窄的那一圈，才是關鍵資訊",
       "summary": "歐洲研究年輪的人，找的不是平均寬度，而是最窄的那幾圈。這條線索對上企業變革的三件事：真相藏在最窄的那一段、變革不會補所以要留紀錄、不要用一棵樹代表整片森林。",
       "link": "/knowledge/narrow-ring-change-management",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n34",
@@ -34,7 +43,7 @@
       "title": "效率隱藏：AI 省下的時間，為什麼沒有回到員工身上",
       "summary": "AI 確實省下了時間，但時間去了哪裡？本文切開影子 AI、工作量蔓延與最被低估的效率隱藏，用五份跨國數據與三個案例說明：當誠實有價格，員工就會讓完成看起來像還沒做完。",
       "link": "/knowledge/efficiency-concealment-ai-productivity",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n33",

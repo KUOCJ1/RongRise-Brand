@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "supervision-debt-ai-agents",
+    cat: "AI 轉型",
+    title: "監督債：導入 AI 代理不是省人力，是每個月欠下一筆監督工時",
+    date: "2026.09.17",
+    readTime: "9 分鐘",
+    excerpt: "思科向 9 萬名員工配發 AI 代理，同一週的研究卻算出員工每週要多花超過 6 小時當這些代理的保母。省下的工時記在效率欄，新增的工時沒有科目。這筆債叫「監督債」。",
+    tags: ["AI 代理", "監督債", "管理成本", "AI 治理", "導入 ROI", "中階主管"],
+  },
+  {
     slug: "cognitive-capital-depreciation",
     cat: "AI 轉型",
     title: "認知資本折舊：AI 讓答案變便宜，為什麼公司的判斷力反而在貶值",
