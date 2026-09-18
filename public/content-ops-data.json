@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-09-17T07:20:28Z",
+ "generatedAt": "2026-09-18T07:20:39Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 110
+  "daysRunning": 111
  },
  "stats": {
-  "scanDays": 90,
-  "weekArticles": 56,
-  "articles": 78,
-  "newsItems": 36,
+  "scanDays": 91,
+  "weekArticles": 55,
+  "articles": 79,
+  "newsItems": 37,
   "newsletterIssues": 17,
-  "subscribers": 17,
+  "subscribers": 18,
   "confirmedSubscribers": 12,
   "videos": 33,
-  "views": 366,
-  "channelSubscribers": 10,
+  "views": 436,
+  "channelSubscribers": 12,
   "insights": 12,
-  "socialPosts": 26,
+  "socialPosts": 27,
   "igCards": 18,
-  "competitorReports": 88
+  "competitorReports": 89
  },
  "activity": [
-  {
-   "date": "2026-09-11",
-   "count": 0,
-   "topics": []
-  },
   {
    "date": "2026-09-12",
    "count": 17,
@@ -56,13 +51,18 @@
    "date": "2026-09-17",
    "count": 9,
    "topics": []
+  },
+  {
+   "date": "2026-09-18",
+   "count": 13,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "認知資本折舊：AI 讓答案變便宜，為什麼公司的判斷力反而在貶值",
-   "date": "2026.09.16",
-   "url": "/knowledge/cognitive-capital-depreciation"
+   "title": "監督債：導入 AI 代理不是省人力，是每個月欠下一筆監督工時",
+   "date": "2026.09.17",
+   "url": "/knowledge/supervision-debt-ai-agents"
   },
   "newsletter": "🦞 榕賀觀點 第 17 期 — 2026-09-14",
   "video": {
@@ -76,8 +76,8 @@
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 19,
-   "momentum": "up"
+   "count": 17,
+   "momentum": "flat"
   },
   {
    "keyword": "人力資源",
@@ -86,21 +86,21 @@
    "momentum": "flat"
   },
   {
-   "keyword": "企業導入",
-   "icon": "🚀",
+   "keyword": "成本與投資",
+   "icon": "💰",
    "count": 12,
    "momentum": "flat"
   },
   {
-   "keyword": "成本與投資",
-   "icon": "💰",
+   "keyword": "企業導入",
+   "icon": "🚀",
    "count": 11,
    "momentum": "flat"
   },
   {
-   "keyword": "治理與法規",
-   "icon": "⚖️",
-   "count": 10,
+   "keyword": "人才與技能",
+   "icon": "🧠",
+   "count": 8,
    "momentum": "flat"
   }
  ]

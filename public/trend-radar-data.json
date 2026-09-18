@@ -1,18 +1,18 @@
 {
- "generatedAt": "2026-09-17T07:20:28Z",
+ "generatedAt": "2026-09-18T07:20:40Z",
  "window": {
-  "from": "2026-09-11",
-  "to": "2026-09-17",
+  "from": "2026-09-12",
+  "to": "2026-09-18",
   "days": 7,
   "digestCount": 7
  },
  "stats": {
-  "totalArticles": 55,
+  "totalArticles": 68,
   "categories": {
-   "AI 轉型": 19,
-   "ESG 永續": 14,
-   "人才策略": 11,
-   "管理趨勢": 11
+   "AI 轉型": 24,
+   "ESG 永續": 18,
+   "人才策略": 13,
+   "管理趨勢": 13
   }
  },
  "trends": [
@@ -20,49 +20,73 @@
    "keyword": "組織與管理",
    "icon": "🏢",
    "category": "管理趨勢",
-   "count": 17,
-   "prevCount": 15,
+   "count": 21,
+   "prevCount": 11,
+   "momentum": "up"
+  },
+  {
+   "keyword": "成本與投資",
+   "icon": "💰",
+   "category": "AI 轉型",
+   "count": 15,
+   "prevCount": 9,
+   "momentum": "up"
+  },
+  {
+   "keyword": "企業導入",
+   "icon": "🚀",
+   "category": "AI 轉型",
+   "count": 14,
+   "prevCount": 11,
    "momentum": "flat"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
    "category": "人才策略",
-   "count": 12,
-   "prevCount": 15,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "成本與投資",
-   "icon": "💰",
-   "category": "AI 轉型",
-   "count": 12,
-   "prevCount": 10,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "企業導入",
-   "icon": "🚀",
-   "category": "AI 轉型",
-   "count": 11,
-   "prevCount": 11,
+   "count": 13,
+   "prevCount": 12,
    "momentum": "flat"
   },
   {
    "keyword": "人才與技能",
    "icon": "🧠",
    "category": "人才策略",
-   "count": 8,
-   "prevCount": 7,
+   "count": 11,
+   "prevCount": 6,
+   "momentum": "up"
+  },
+  {
+   "keyword": "資料中心",
+   "icon": "🏭",
+   "category": "AI 轉型",
+   "count": 10,
+   "prevCount": 3,
+   "momentum": "up"
+  },
+  {
+   "keyword": "晶片與算力",
+   "icon": "🔩",
+   "category": "AI 轉型",
+   "count": 9,
+   "prevCount": 10,
    "momentum": "flat"
   },
   {
    "keyword": "治理與法規",
    "icon": "⚖️",
    "category": "AI 轉型",
-   "count": 8,
-   "prevCount": 11,
+   "count": 9,
+   "prevCount": 9,
    "momentum": "flat"
+  },
+  {
+   "keyword": "能源與電力",
+   "icon": "⚡",
+   "category": "ESG 永續",
+   "count": 8,
+   "prevCount": 4,
+   "momentum": "up"
   },
   {
    "keyword": "AI Agent",
@@ -73,55 +97,122 @@
    "momentum": "flat"
   },
   {
-   "keyword": "資料中心",
-   "icon": "🏭",
+   "keyword": "安全與風險",
+   "icon": "🛡️",
    "category": "AI 轉型",
    "count": 7,
    "prevCount": 4,
    "momentum": "up"
   },
   {
-   "keyword": "晶片與算力",
-   "icon": "🔩",
-   "category": "AI 轉型",
-   "count": 6,
-   "prevCount": 14,
-   "momentum": "down"
-  },
-  {
-   "keyword": "能源與電力",
-   "icon": "⚡",
-   "category": "ESG 永續",
-   "count": 6,
-   "prevCount": 5,
-   "momentum": "flat"
-  },
-  {
    "keyword": "ESG 揭露",
    "icon": "🌱",
    "category": "ESG 永續",
-   "count": 5,
+   "count": 6,
    "prevCount": 2,
    "momentum": "up"
-  },
-  {
-   "keyword": "安全與風險",
-   "icon": "🛡️",
-   "category": "AI 轉型",
-   "count": 5,
-   "prevCount": 6,
-   "momentum": "flat"
   },
   {
    "keyword": "自動化",
    "icon": "⚙️",
    "category": "AI 轉型",
-   "count": 4,
-   "prevCount": 4,
-   "momentum": "flat"
+   "count": 5,
+   "prevCount": 3,
+   "momentum": "up"
   }
  ],
  "articles": [
+  {
+   "title": "算力與規模不再是唯一解答，AI 突破盲點的新解方：讀懂人類真實反應",
+   "url": "https://technews.tw/2026/09/18/ai-breakthrough-human-context-layer/",
+   "summary": "當模型能力趨同，差異化戰場從「堆算力」轉向「理解人類情境脈絡」（context layer），是中小企業導入 AI 最務實的切入點。",
+   "date": "2026-09-18",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "英特爾布局邊緣AI生態系，從零售、製造到交通推動Physical AI落地",
+   "url": "https://www.ithome.com.tw/news/179031",
+   "summary": "Intel 把 AI 推向邊緣端，零售／製造／交通三大場域先行，代表「不進雲、就地算」的產業 AI 路線正在成形。",
+   "date": "2026-09-18",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Google DeepMind launches institute to widen the AGI debate",
+   "url": "https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/",
+   "summary": "DeepMind 成立新機構，試圖把 AGI 討論從實驗室內部擴大到社會與產業層面，AI 治理話語權之爭升溫。",
+   "date": "2026-09-18",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Europe's new AI edge? The emerging application layer opportunity",
+   "url": "https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/europes-new-ai-edge-the-emerging-application-layer-opportunity",
+   "summary": "McKinsey 指出歐洲 AI 的真正機會不在底層模型，而在「應用層」——對缺乏算力資本的市場（含台灣中小企業）是可直接複製的戰略路徑。",
+   "date": "2026-09-18",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "𝕏 @analyticsinme：UAE's AI transformation 對國際投資者的意義",
+   "url": "https://x.com/analyticsinme/status/2100812011395588321",
+   "summary": "社群觀點：阿聯 AI 轉型正重塑資料中心、雲、能源、資安與教育投資版圖，政府主導型 AI 轉型的中東樣本。",
+   "date": "2026-09-18",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "2050 年電子廢棄物恐破 2 億噸，AI 貢獻占兩成",
+   "url": "https://technews.tw/2026/09/17/the-ai-data-center-e-waste-problem-is-huge/",
+   "summary": "AI 資料中心硬體汰換速度推升電子廢棄物，預估 2050 年總量突破 2 億噸、其中約 20% 來自 AI，硬體生命週期管理成為企業 ESG 新科目。",
+   "date": "2026-09-18",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "Google, Nvidia, and Anthropic want Emerald AI to find space on the grid for more data centers",
+   "url": "https://techcrunch.com/2026/09/17/google-nvidia-and-anthropic-want-emerald-ai-to-find-space-on-the-grid-for-more-data-centers/",
+   "summary": "三大 AI 廠聯手投資 Emerald AI，用 AI 幫資料中心「找電」——電力取得已成為 AI 擴張的實質瓶頸，也是能源效率議題的商業化出口。",
+   "date": "2026-09-18",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "2026 台灣創新技術博覽會盛大開幕，AI 營建機器人、節能零稀土風扇馬達與循環再生技術展現跨域創新",
+   "url": "https://technews.tw/2026/09/17/2026-taiwan-innotech-expo-ai-construction-robots-rare-earth-free-motors-circular-regeneration-tech-cross-domain-innovation/",
+   "summary": "台灣本地案例：AI 營建機器人、零稀土馬達、循環再生三大技術同時落地，是「AI × 節能減碳」最貼近中小企業供應鏈的觀察窗口。",
+   "date": "2026-09-18",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "𝕏 @EMSTEELGroup：UAE Steel Decarbonisation Dialogue",
+   "url": "https://x.com/EMSTEELGroup/status/2100812103464656944",
+   "summary": "鋼鐵業代表在阿聯鋼鐵脫碳對話中共同主持產業聯盟場次，顯示重工業的脫碳討論正從承諾階段進入「產業聯盟 + 具體行動」。",
+   "date": "2026-09-18",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "OpenAI Hires Global Sales Chief From SpaceX and Two Senior Snowflake Salespeople",
+   "url": "https://www.theinformation.com/briefings/openai-hires-global-sales-chief-spacex-two-senior-snowflake-salespeople",
+   "summary": "OpenAI 從 SpaceX、Snowflake 挖角資深企業銷售主管，補強大型企業客戶戰力——AI 公司的人才戰場已從研究員轉向「能賣進大企業」的商業化人才。",
+   "date": "2026-09-18",
+   "category": "人才策略"
+  },
+  {
+   "title": "面試一小時不夠，還要觀察你怎麼點酒、搭車！CEO 評估人才的「隱藏關卡」有哪些？",
+   "url": "https://www.managertoday.com.tw/articles/view/72944",
+   "summary": "高階主管用非正式情境觀察候選人的決策與應對風格，提醒企業選才若只看結構化面試，容易漏掉價值觀與判斷力的關鍵訊號。",
+   "date": "2026-09-18",
+   "category": "人才策略"
+  },
+  {
+   "title": "Is Your Strategy Ambitious Enough?",
+   "url": "https://hbr.org/2026/09/is-your-strategy-ambitious-enough",
+   "summary": "HBR 主張多數企業的策略不是「太冒險」而是「太保守」，在 AI 重寫成本結構的當下，目標設定過低本身就是最大風險。",
+   "date": "2026-09-18",
+   "category": "管理趨勢"
+  },
+  {
+   "title": "Why transformations stall—and where only CEOs make the difference",
+   "url": "https://www.mckinsey.com/capabilities/transformation/our-insights/why-transformations-stall-and-where-only-ceos-make-the-difference",
+   "summary": "McKinsey 拆解轉型卡關的斷點，指出有幾類決策只有 CEO 能拍板；AI 轉型失敗多半不是技術問題，而是領導層未承擔不可委派的決策。",
+   "date": "2026-09-18",
+   "category": "管理趨勢"
+  },
   {
    "title": "從找工作到查工地！勞動部揭4大數位轉型實例，數天工程督導作業靠AI縮短到8分鐘",
    "url": "https://www.ithome.com.tw/news/178524",
