@@ -12,6 +12,8 @@ export default function NewsletterSection() {
   const [confirmed, setConfirmed] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [resending, setResending] = useState(false);
+  const [resent, setResent] = useState(false);
 
   // 從 URL 參數檢查是否為確認/退訂導向
   useEffect(() => {
@@ -89,6 +91,32 @@ export default function NewsletterSection() {
     }
   };
 
+  const handleResend = async () => {
+    if (!email || !email.includes("@")) {
+      setError("請先在上方填入你的 Email。");
+      return;
+    }
+    setResending(true);
+    setError("");
+    try {
+      const res = await fetch(API_URL + "/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, name, source: "website-resend" }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setResent(true);
+      } else {
+        setError(data.error || "重寄失敗，請稍後再試。");
+      }
+    } catch {
+      setError("連線失敗，請稍後再試。");
+    } finally {
+      setResending(false);
+    }
+  };
+
   // 確認成功頁面
   if (confirmed) {
     return (
@@ -140,11 +168,41 @@ export default function NewsletterSection() {
               <div className="text-4xl mb-3">✉️</div>
               <h3 className="heading-subsection text-text-primary mb-3">確認信已送出！</h3>
               <p className="text-text-secondary text-body leading-relaxed">
-                請檢查你的 Email 信箱，點擊確認連結完成訂閱。
+                請到你的 Email 信箱，點擊信中的「確認訂閱」按鈕才算完成。
               </p>
-              <p className="text-text-secondary text-sm mt-4">
-                沒收到信？請檢查垃圾郵件信箱，或重新提交一次。
-              </p>
+
+              <div className="mt-6 text-left rounded-xl p-5 bg-[#FFF7E6] border border-[#F0D9A8]">
+                <p className="font-bold mb-2 text-[#8A5A00]">📬 沒看到信？它多半在垃圾信箱</p>
+                <p className="text-sm leading-relaxed mb-3 text-[#6B4A00]">
+                  請到「垃圾郵件」或 Gmail 的「促銷內容」分頁找一下，找到後做這兩件事，之後每週的電子報才不會漏掉：
+                </p>
+                <ul className="text-sm leading-relaxed space-y-1 mb-3 text-[#6B4A00]">
+                  <li>
+                    1. 把寄件者 <strong className="text-[#8A5A00]">rongrise.consulting@gmail.com</strong> 加入通訊錄
+                  </li>
+                  <li>2. 把這封信標記為「非垃圾信」</li>
+                </ul>
+                <p className="text-xs leading-relaxed text-[#8A5A00]">
+                  會這樣是因為：你的信箱還不認識我們，第一次收到我們的信很容易被自動歸類。
+                </p>
+              </div>
+
+              <div className="mt-5">
+                <button
+                  type="button"
+                  onClick={handleResend}
+                  disabled={resending || resent}
+                  className="px-5 py-2.5 rounded-xl border border-border bg-white text-text-primary text-sm font-medium hover:border-primary transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                >
+                  {resending ? "寄送中..." : resent ? "已重新寄出，請再檢查一次" : "沒收到？重新寄一次確認信"}
+                </button>
+                {resent && (
+                  <p className="text-text-secondary text-xs mt-2">
+                    如果還是沒收到，回到上面換一個 Email 或稍後再試。
+                  </p>
+                )}
+                {error && <p className="text-sm mt-2 text-[#C0392B]">{error}</p>}
+              </div>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-3 max-w-md mx-auto">
