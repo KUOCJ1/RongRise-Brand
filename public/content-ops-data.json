@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-09-18T07:20:39Z",
+ "generatedAt": "2026-09-19T07:20:44Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 111
+  "daysRunning": 112
  },
  "stats": {
-  "scanDays": 91,
-  "weekArticles": 55,
+  "scanDays": 92,
+  "weekArticles": 68,
   "articles": 79,
   "newsItems": 37,
-  "newsletterIssues": 17,
+  "newsletterIssues": 18,
   "subscribers": 18,
-  "confirmedSubscribers": 12,
+  "confirmedSubscribers": 13,
   "videos": 33,
-  "views": 436,
+  "views": 503,
   "channelSubscribers": 12,
   "insights": 12,
-  "socialPosts": 27,
+  "socialPosts": 28,
   "igCards": 18,
-  "competitorReports": 89
+  "competitorReports": 90
  },
  "activity": [
-  {
-   "date": "2026-09-12",
-   "count": 17,
-   "topics": []
-  },
   {
    "date": "2026-09-13",
    "count": 12,
@@ -56,6 +51,11 @@
    "date": "2026-09-18",
    "count": 13,
    "topics": []
+  },
+  {
+   "date": "2026-09-19",
+   "count": 13,
+   "topics": []
   }
  ],
  "latest": {
@@ -64,7 +64,7 @@
    "date": "2026.09.17",
    "url": "/knowledge/supervision-debt-ai-agents"
   },
-  "newsletter": "🦞 榕賀觀點 第 17 期 — 2026-09-14",
+  "newsletter": "🦞 榕賀觀點 第 18 期 — 2026-09-17",
   "video": {
    "title": "答案變便宜，判斷力開始變貴：AI 時代不能折舊的三種能力｜認知資本折舊",
    "date": "2026-09-16",
@@ -76,32 +76,32 @@
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 17,
+   "count": 21,
+   "momentum": "up"
+  },
+  {
+   "keyword": "成本與投資",
+   "icon": "💰",
+   "count": 15,
+   "momentum": "up"
+  },
+  {
+   "keyword": "企業導入",
+   "icon": "🚀",
+   "count": 14,
    "momentum": "flat"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 12,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "成本與投資",
-   "icon": "💰",
-   "count": 12,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "企業導入",
-   "icon": "🚀",
-   "count": 11,
+   "count": 13,
    "momentum": "flat"
   },
   {
    "keyword": "人才與技能",
    "icon": "🧠",
-   "count": 8,
-   "momentum": "flat"
+   "count": 11,
+   "momentum": "up"
   }
  ]
 }

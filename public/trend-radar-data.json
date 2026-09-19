@@ -1,18 +1,18 @@
 {
- "generatedAt": "2026-09-18T07:20:40Z",
+ "generatedAt": "2026-09-19T07:20:44Z",
  "window": {
-  "from": "2026-09-12",
-  "to": "2026-09-18",
+  "from": "2026-09-13",
+  "to": "2026-09-19",
   "days": 7,
   "digestCount": 7
  },
  "stats": {
-  "totalArticles": 68,
+  "totalArticles": 67,
   "categories": {
-   "AI 轉型": 24,
-   "ESG 永續": 18,
+   "AI 轉型": 23,
+   "ESG 永續": 19,
    "人才策略": 13,
-   "管理趨勢": 13
+   "管理趨勢": 12
   }
  },
  "trends": [
@@ -21,70 +21,70 @@
    "icon": "🏢",
    "category": "管理趨勢",
    "count": 21,
-   "prevCount": 11,
+   "prevCount": 16,
    "momentum": "up"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
    "category": "AI 轉型",
-   "count": 15,
-   "prevCount": 9,
+   "count": 16,
+   "prevCount": 10,
    "momentum": "up"
   },
   {
    "keyword": "企業導入",
    "icon": "🚀",
    "category": "AI 轉型",
-   "count": 14,
+   "count": 15,
    "prevCount": 11,
-   "momentum": "flat"
+   "momentum": "up"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
    "category": "人才策略",
-   "count": 13,
+   "count": 12,
    "prevCount": 12,
    "momentum": "flat"
+  },
+  {
+   "keyword": "資料中心",
+   "icon": "🏭",
+   "category": "AI 轉型",
+   "count": 12,
+   "prevCount": 3,
+   "momentum": "up"
   },
   {
    "keyword": "人才與技能",
    "icon": "🧠",
    "category": "人才策略",
    "count": 11,
-   "prevCount": 6,
-   "momentum": "up"
-  },
-  {
-   "keyword": "資料中心",
-   "icon": "🏭",
-   "category": "AI 轉型",
-   "count": 10,
-   "prevCount": 3,
+   "prevCount": 7,
    "momentum": "up"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
    "category": "AI 轉型",
-   "count": 9,
-   "prevCount": 10,
+   "count": 11,
+   "prevCount": 9,
    "momentum": "flat"
   },
   {
-   "keyword": "治理與法規",
-   "icon": "⚖️",
+   "keyword": "安全與風險",
+   "icon": "🛡️",
    "category": "AI 轉型",
    "count": 9,
-   "prevCount": 9,
-   "momentum": "flat"
+   "prevCount": 6,
+   "momentum": "up"
   },
   {
    "keyword": "能源與電力",
    "icon": "⚡",
    "category": "ESG 永續",
-   "count": 8,
+   "count": 9,
    "prevCount": 4,
    "momentum": "up"
   },
@@ -92,36 +92,127 @@
    "keyword": "AI Agent",
    "icon": "🤖",
    "category": "AI 轉型",
+   "count": 8,
+   "prevCount": 10,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "治理與法規",
+   "icon": "⚖️",
+   "category": "AI 轉型",
    "count": 7,
    "prevCount": 10,
    "momentum": "flat"
   },
   {
-   "keyword": "安全與風險",
-   "icon": "🛡️",
-   "category": "AI 轉型",
-   "count": 7,
-   "prevCount": 4,
-   "momentum": "up"
-  },
-  {
    "keyword": "ESG 揭露",
    "icon": "🌱",
    "category": "ESG 永續",
-   "count": 6,
-   "prevCount": 2,
+   "count": 5,
+   "prevCount": 3,
    "momentum": "up"
   },
   {
    "keyword": "自動化",
    "icon": "⚙️",
    "category": "AI 轉型",
-   "count": 5,
-   "prevCount": 3,
-   "momentum": "up"
+   "count": 3,
+   "prevCount": 4,
+   "momentum": "flat"
   }
  ],
  "articles": [
+  {
+   "title": "數發部與八大部會啟動AI風險盤點，2027年前完成首輪法規調適",
+   "url": "https://www.ithome.com.tw/news/178826",
+   "summary": "台灣公部門 AI 治理進入實作期，中小企業未來合規成本與採購門檻將同步上升（同系列另有主權 AI 模型評測結果：本地模型對臺灣價值超越國外模型）。",
+   "date": "2026-09-19",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "OpenAI 重奪 OpenRouter 支出優勢，GPT-6 Astra 能否撼動 Anthropic 企業版圖？",
+   "url": "https://technews.tw/2026/09/18/can-gpt-6-astra-disrupt-anthropics-enterprise-business/",
+   "summary": "企業級 LLM 支出流向再度翻轉，開發者平台的模型選擇正從「技術指標」轉向「生態系黏著度」。",
+   "date": "2026-09-19",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Anthropic's first embedded evaluator is … Accenture?",
+   "url": "https://techcrunch.com/2026/09/18/anthropics-first-embedded-evaluator-is-accenture/",
+   "summary": "模型商第一個「嵌入式評測單位」竟是顧問公司，揭示 AI 導入的品質驗證正外包給顧問業（對 RongRise 顧問業務是直接訊號）。",
+   "date": "2026-09-19",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Google's Gemini Model Hacks Companies During Test",
+   "url": "https://www.theinformation.com/briefings/googles-gemini-model-hacks-companies-test",
+   "summary": "Google 證實在評測期間發生三起未授權入侵，Agentic AI 的資安邊界成為企業採用前的必答題。",
+   "date": "2026-09-19",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Research: Gen AI Is Collapsing Creative Processes",
+   "url": "https://hbr.org/2026/09/research-gen-ai-is-collapsing-creative-processes",
+   "summary": "HBR 研究指出生成式 AI 讓創意流程的「發散—收斂」階段被壓縮，反而削弱組織的原創決策品質。",
+   "date": "2026-09-19",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Could AI really kill us all? Your questions, answered",
+   "url": "https://www.technologyreview.com/2026/09/18/1144435/could-ai-really-kill-us-all-your-questions-answered/",
+   "summary": "MIT TR 回應讀者對「AI 生存風險」的疑慮，把恐慌敘事拉回可驗證的具體問題。",
+   "date": "2026-09-19",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "The transformer supercycle: Why demand is outrunning supply",
+   "url": "https://www.mckinsey.com/industries/electric-power-and-natural-gas/our-insights/the-transformer-supercycle-why-demand-is-outrunning-supply",
+   "summary": "AI 資料中心與電網現代化共同引爆變壓器超級週期，供需缺口成為能源轉型的實體瓶頸（不是缺電，是缺設備）。",
+   "date": "2026-09-19",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "Virginia governor creates an AI task force and moves to restrain data centers",
+   "url": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force",
+   "summary": "維吉尼亞州長以行政命令同時推進 AI 任務編組與資料中心管制，美國地方層級開始把「算力擴張」與「能源／水資源外部性」綁在一起審。",
+   "date": "2026-09-19",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "從凱米颱風到楊柳颱風，氣象署以實戰驗證AI預報，逐步打造AI＋數值模式的融合預報架構",
+   "url": "https://www.ithome.com.tw/news/178595",
+   "summary": "台灣氣象署用兩次颱風實戰驗證 AI 預報，氣候調適的 AI 化是 ESG 中少見「已驗證落地」的場景。",
+   "date": "2026-09-19",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "婚假延長至14天！何時上路？2026勞工婚假新制預告、新婚補助總整理",
+   "url": "https://www.managertoday.com.tw/articles/view/72962",
+   "summary": "台灣勞動條件再度上修，中小企業的福利設計與人力成本試算需提前調整。",
+   "date": "2026-09-19",
+   "category": "人才策略"
+  },
+  {
+   "title": "Napster Is Back, and It Wants to Digitally Clone Teachers",
+   "url": "https://www.wired.com/story/napster-is-back-and-it-wants-to-digitally-clone-teachers/",
+   "summary": "老牌 Napster 轉向「數位複製教師」，AI 分身／數位教材的 IP 與職能替代爭議浮上檯面（與本團隊數位分身影片技術同源議題）。",
+   "date": "2026-09-19",
+   "category": "人才策略"
+  },
+  {
+   "title": "Cutting the 'coordination tax': How agentic AI can reshape workflows",
+   "url": "https://www.mckinsey.com/industries/industrials/our-insights/cutting-the-coordination-tax-how-agentic-ai-can-reshape-workflows",
+   "summary": "McKinsey 把 AI 效益重新定義為「降低協調稅」：砍掉的是跨部門來回，而不是砍人。",
+   "date": "2026-09-19",
+   "category": "管理趨勢"
+  },
+  {
+   "title": "OpenAI Said to Forecast Nearly $280 Billion in Cash Burn Through End 2030",
+   "url": "https://www.theinformation.com/briefings/openai-said-forecast-nearly-280-billion-cash-burn-end-2030",
+   "summary": "OpenAI 現金消耗預測大幅上修，AI 產業「補貼期定價」能撐多久，直接影響企業客戶的長期合約風險。",
+   "date": "2026-09-19",
+   "category": "管理趨勢"
+  },
   {
    "title": "算力與規模不再是唯一解答，AI 突破盲點的新解方：讀懂人類真實反應",
    "url": "https://technews.tw/2026/09/18/ai-breakthrough-human-context-layer/",
@@ -214,18 +305,18 @@
    "category": "管理趨勢"
   },
   {
-   "title": "從找工作到查工地！勞動部揭4大數位轉型實例，數天工程督導作業靠AI縮短到8分鐘",
-   "url": "https://www.ithome.com.tw/news/178524",
-   "summary": "勞動部公布四大數位轉型實例，原本需要數天的工程督導作業靠 AI 縮短到 8 分鐘，示範公部門如何把 AI 用在第一線人力吃緊的環節。",
-   "date": "2026-09-17",
-   "category": "人才策略"
-  },
-  {
    "title": "To Adopt AI at Scale, Employees Need to Trust Agents",
    "url": "https://hbr.org/2026/09/to-adopt-ai-at-scale-employees-need-to-trust-agents",
    "summary": "HBR 指出大規模導入 AI 的真正瓶頸是「員工對 agent 的信任」：若不能讓員工理解 agent 的判斷邊界，再好的工具也推不動規模化。",
    "date": "2026-09-17",
    "category": "AI 轉型"
+  },
+  {
+   "title": "從找工作到查工地！勞動部揭4大數位轉型實例，數天工程督導作業靠AI縮短到8分鐘",
+   "url": "https://www.ithome.com.tw/news/178524",
+   "summary": "勞動部公布四大數位轉型實例，原本需要數天的工程督導作業靠 AI 縮短到 8 分鐘，示範公部門如何把 AI 用在第一線人力吃緊的環節。",
+   "date": "2026-09-17",
+   "category": "人才策略"
   },
   {
    "title": "AI Agents Are Thirsty for Power",
@@ -438,9 +529,9 @@
    "category": "管理趨勢"
   },
   {
-   "title": "數發部與八大部會啟動AI風險盤點，2027年前完成首輪法規調適",
-   "url": "https://www.ithome.com.tw/news/178826",
-   "summary": "台灣政府啟動跨部會 AI 風險盤點，2027 年前完成首輪法規調適，中小企業的 AI 治理與合規要求將隨之收緊。",
+   "title": "Scaling GenAI Across Operations at PHOENIX group",
+   "url": "https://www.bcg.com/about/client-impact/how-gen-ai-transformed-operations-for-pharma-wholesale-leader",
+   "summary": "BCG 客戶案例：歐洲醫藥批發龍頭 PHOENIX group 把生成式 AI 擴散到營運流程，示範傳統非科技業如何把 AI 從試點推向規模化。",
    "date": "2026-09-13",
    "category": "AI 轉型"
   },
@@ -448,13 +539,6 @@
    "title": "The speed problem: How frontier AI exposes weakness in enterprise cybersecurity",
    "url": "https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/the-speed-problem-how-frontier-ai-exposes-weakness-in-enterprise-cybersecurity",
    "summary": "McKinsey 分析前沿 AI 的攻防速度已超越企業資安反應能力，建議把資安韌性從「事後補救」前移到架構設計層。",
-   "date": "2026-09-13",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Scaling GenAI Across Operations at PHOENIX group",
-   "url": "https://www.bcg.com/about/client-impact/how-gen-ai-transformed-operations-for-pharma-wholesale-leader",
-   "summary": "BCG 客戶案例：歐洲醫藥批發龍頭 PHOENIX group 把生成式 AI 擴散到營運流程，示範傳統非科技業如何把 AI 從試點推向規模化。",
    "date": "2026-09-13",
    "category": "AI 轉型"
   },
@@ -506,104 +590,13 @@
    "summary": "經理人：AI 產出品質不穩的根因常在指令與驗收標準缺失，給出具體可複製的三項檢查點，適合中小企業導入 AI 工作流時參考。",
    "date": "2026-09-13",
    "category": "管理趨勢"
-  },
-  {
-   "title": "拒絕「AI 造神」，蘋果新任 CEO 定調務實路線：iPhone 化身最強個人智慧樞紐",
-   "url": "https://technews.tw/2026/09/11/iphone-smart-personal-hub/",
-   "summary": "蘋果新一代 CEO 強調不追逐 AI 炒作，而是將 iPhone 打造成個人化 AI 中樞，走務實應用路線。反映大型科技公司在 AI 落地策略上的分化。",
-   "date": "2026-09-12",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "OpenAI puts Pro subscriptions on hold due to Astra demand",
-   "url": "https://techcrunch.com/2026/09/10/openai-puts-pro-subscriptions-on-hold-due-to-astra-demand",
-   "summary": "OpenAI GPT-6 Astra 需求過高，暫停 $200 Pro 方案新訂閱，顯示頂級 AI 服務的算力瓶頸已從理論變成現實商業問題。",
-   "date": "2026-09-12",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Mecka AI nears $500M valuation in Sequoia-led deal amid rush for robot training",
-   "url": "https://techcrunch.com/2026/09/11/mecka-ai-nears-500m-valuation-in-sequoia-led-deal-amid-rush-for-robot-training-data/",
-   "summary": "機器人訓練 AI 新創 Mecka AI 獲 Sequoia 領投，估值近 5 億美元，反映實體 AI（Physical AI）成為創投新焦點。",
-   "date": "2026-09-12",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Nvidia May Invest Up to $10 Billion In Anthropic's IPO",
-   "url": "https://www.theinformation.com/briefings/nvidia-may-invest-10-billion-anthropics-ipo",
-   "summary": "Nvidia 傳可能投資 Anthropic IPO 高達 100 億美元，揭示 AI 基礎設施巨頭與模型公司之間的資本綑綁正日益加深。",
-   "date": "2026-09-12",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Clearview AI Is Testing an AI Tool That Would Let Cops Unearth Your Life Online",
-   "url": "https://www.wired.com/story/clearview-ai-is-testing-an-ai-tool-that-lets-cops-instantly-unearth-your-life-online/",
-   "summary": "Clearview AI 測試新工具讓警方一鍵挖掘個人線上足跡，AI 執法應用與隱私爭議再度升溫。",
-   "date": "2026-09-12",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Bill Gates says we've passed AI's danger thresholds. Now what?",
-   "url": "https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/",
-   "summary": "比爾蓋茲坦言 AI 已跨越危險門檻，呼籲加速政策制定而非技術放緩，凸顯高層領袖對 AI 治理的急迫感。",
-   "date": "2026-09-12",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "從凱米颱風到楊柳颱風，氣象署以實戰驗證 AI 預報，逐步打造 AI ＋ 數值模式的融合預報架構",
-   "url": "https://www.ithome.com.tw/news/178595",
-   "summary": "台灣氣象署以雙颱案例驗證 AI 預報效能，推動傳統數值模式與 AI 融合，AI 在氣候災防的實戰價值得到印證。",
-   "date": "2026-09-12",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "Harnessing AI to accelerate European truck operations",
-   "url": "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/harnessing-ai-to-accelerate-european-truck-operations",
-   "summary": "McKinsey 探討 AI 如何加速歐洲卡車營運效率，從路線優化到碳排放減量，AI 成為運輸業 ESG 轉型的關鍵槓桿。",
-   "date": "2026-09-12",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "Gen AI Won't Make Your Employees Experts",
-   "url": "https://hbr.org/2026/03/gen-ai-wont-make-your-employees-experts",
-   "summary": "HBR 研究指出生成式 AI 幫助新手更快完成陌生任務，但無法縮小新手與專家之間的表現差距。AI 提升效率卻不自動轉化為專業深度。",
-   "date": "2026-09-12",
-   "category": "人才策略"
-  },
-  {
-   "title": "Research Roundup: AI on Org Charts, Job-Hoppers' Skillsets, and More",
-   "url": "https://hbr.org/2026/09/research-roundup-ai-on-org-charts-job-hoppers-skillsets-elite-board-seats-and-more",
-   "summary": "HBR 彙整多項最新學術研究，包含 AI 如何影響組織架構（AI 進入組織圖）、跳槽者技能組合變化等，提供人力資源策略的實證基礎。",
-   "date": "2026-09-12",
-   "category": "人才策略"
-  },
-  {
-   "title": "Embrace AI Without Damaging Trust: Lessons from the \"Financial Times\"",
-   "url": "https://hbr.org/2026/07/embrace-ai-without-damaging-trust-lessons-from-the-financial-times",
-   "summary": "HBR 以金融時報為案例，探討如何在導入 AI 的同時維護讀者與員工信任，提出透明溝通與倫理框架的具體做法。",
-   "date": "2026-09-12",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "Why Salesforce and Figma Are Placing Opposing Bets on the Future of Apps",
-   "url": "https://www.theinformation.com/newsletters/applied-ai/salesforce-figma-placing-opposing-bets-future-apps",
-   "summary": "The Information 分析 Salesforce（AI Agent 優先）與 Figma（人機協作工具）在 AI 時代應用程式策略上的路線分歧，反映企業軟體的未來走向尚未定論。",
-   "date": "2026-09-12",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "One of AI's Fiercest Critics Says All the Doom Talk Is 'Meant to Distract Us'",
-   "url": "https://www.wired.com/story/one-of-ais-fiercest-critics-says-all-the-doom-talk-is-meant-to-distract-us/",
-   "summary": "Wired 專訪 AI 批評者指出「AI 毀滅論」實為分散對當下真實問題（偏見、勞動力衝擊、權力集中）注意力的手段。",
-   "date": "2026-09-12",
-   "category": "管理趨勢"
   }
  ],
  "insights": [
-  "AI 進入「監管與敘事同步收斂」階段：這週末日警告、OpenAI 不上市、Anthropic 喊減速同時出現，加上三大實驗室私下談安全標準機構（TechCrunch / The Information），企業評估 AI 供應商時要開始看「合規敘事」而非只有功能規格。",
-  "導入 AI 的成本正在從工具費轉向管理費：TechNews 的 AI 團隊治理失控、BCG 的 CFO 代理 AI 議程都指向同一件事——真正的支出是監督、校正與效益衡量，預算編列邏輯需要重寫。",
-  "能源與 ESG 成為算力的硬約束：Wired 的代理耗電與麻州潔淨電力新規顯示，AI 擴張已從「技術可行」進入「電力與地方政策是否允許」，ESG 揭露將納入 AI 代理的能源足跡。",
-  "人才策略走向分世代、分能力組合：跨世代 AI 使用差異與中高齡求職門檻（經理人／TechNews）說明「一律教大家用 AI」的內訓已不夠，需針對不同世代設計能力地圖。",
-  "台灣本地案例密度提高：勞動部、陽明海運、明竑科技三個案例同日出現，公部門與傳統產業的 AI 落地素材變多，適合做為中小企業轉型的本土參考故事。"
+  "「降速」與「擴張」同時發生：Wired／The Verge／TechNews 同日均在報導 AI 產業放慢步調的呼聲（外部審查、kill switch、反壟斷），但同一批公司仍在天量擴建算力（McKinsey：變壓器供應鏈、OpenAI 現金消耗上修）。對中小企業的意義是：算力成本不會因喊話而降，導入策略要以「可撤回」為前提。",
+  "治理從原則走向盤點與驗證：台灣數發部＋八大部會的 AI 風險盤點、Google Gemini 評測期間的入侵事件、Anthropic 把評測外包給 Accenture，三件事指向同一個職能缺口——「AI 導入的獨立驗證／稽核」正在形成新市場，也最適合顧問業切入。",
+  "ESG 的關鍵字從碳排轉向「基礎設施瓶頸」：變壓器、電網、資料中心水電與地方管制成為 9 月主旋律，環境議題以能源設備與地方政策的形式回到企業議程。",
+  "人才線偏勞動制度而非技能：今日人才素材以台灣勞基制度（婚假新制）與 AI 替代職能（數位複製教師）為主，AI 技能培訓類新聞稀少，建議後續掃描補以 iThome／經理人組織轉型案例平衡。",
+  "AI 進入「監管與敘事同步收斂」階段：這週末日警告、OpenAI 不上市、Anthropic 喊減速同時出現，加上三大實驗室私下談安全標準機構（TechCrunch / The Information），企業評估 AI 供應商時要開始看「合規敘事」而非只有功能規格。"
  ]
 }
