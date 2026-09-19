@@ -178,7 +178,7 @@ export default function NewsletterSection() {
                 </p>
                 <ul className="text-sm leading-relaxed space-y-1 mb-3 text-[#6B4A00]">
                   <li>
-                    1. 把寄件者 <strong className="text-[#8A5A00]">rongrise.consulting@gmail.com</strong> 加入通訊錄
+                    1. 把寄件者「小賀 🦞 榕耀管顧」加入通訊錄
                   </li>
                   <li>2. 把這封信標記為「非垃圾信」</li>
                 </ul>
