@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-09-19T07:20:44Z",
+ "generatedAt": "2026-09-20T07:20:46Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 112
+  "daysRunning": 113
  },
  "stats": {
-  "scanDays": 92,
-  "weekArticles": 68,
+  "scanDays": 93,
+  "weekArticles": 67,
   "articles": 79,
   "newsItems": 37,
   "newsletterIssues": 18,
   "subscribers": 18,
-  "confirmedSubscribers": 13,
+  "confirmedSubscribers": 14,
   "videos": 33,
-  "views": 503,
+  "views": 504,
   "channelSubscribers": 12,
   "insights": 12,
   "socialPosts": 28,
-  "igCards": 18,
-  "competitorReports": 90
+  "igCards": 24,
+  "competitorReports": 91
  },
  "activity": [
-  {
-   "date": "2026-09-13",
-   "count": 12,
-   "topics": []
-  },
   {
    "date": "2026-09-14",
    "count": 10,
@@ -56,6 +51,11 @@
    "date": "2026-09-19",
    "count": 13,
    "topics": []
+  },
+  {
+   "date": "2026-09-20",
+   "count": 11,
+   "topics": []
   }
  ],
  "latest": {
@@ -82,25 +82,25 @@
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 15,
+   "count": 16,
    "momentum": "up"
   },
   {
    "keyword": "企業導入",
    "icon": "🚀",
-   "count": 14,
-   "momentum": "flat"
+   "count": 15,
+   "momentum": "up"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 13,
+   "count": 12,
    "momentum": "flat"
   },
   {
-   "keyword": "人才與技能",
-   "icon": "🧠",
-   "count": 11,
+   "keyword": "資料中心",
+   "icon": "🏭",
+   "count": 12,
    "momentum": "up"
   }
  ]
