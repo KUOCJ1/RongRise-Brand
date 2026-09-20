@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "hr-function-ai-layoff-rehire-paradox",
+    cat: "人才策略",
+    title: "先裁掉人資，再高薪請回來：AI 時代的 HR，問題不在員額",
+    date: "2026.09.20",
+    readTime: "11 分鐘",
+    excerpt: "2026 年，企業一邊把人力資源列為優先裁撤對象，一邊用更高的薪水把 specialist 請回來。Careerminds 調查 600 位實際執行過裁員的人資主管，三分之二已經在回聘；Orgvue 算出每省下 1 元，實際要付出 1.27 元。這個來回本身就是一份診斷書。",
+    tags: ["人資轉型", "AI 轉型", "組織設計", "混合勞動力", "人才策略", "裁員與回聘"],
+  },
+  {
     slug: "supervision-debt-ai-agents",
     cat: "AI 轉型",
     title: "監督債：導入 AI 代理不是省人力，是每個月欠下一筆監督工時",
