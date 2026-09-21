@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-09-21T07:20:36Z",
+ "generatedAt": "2026-09-21T07:22:21Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
@@ -7,7 +7,7 @@
  },
  "stats": {
   "scanDays": 94,
-  "weekArticles": 69,
+  "weekArticles": 75,
   "articles": 81,
   "newsItems": 39,
   "newsletterIssues": 18,
@@ -82,26 +82,26 @@
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 17,
-   "momentum": "up"
-  },
-  {
-   "keyword": "企業導入",
-   "icon": "🚀",
-   "count": 16,
+   "count": 19,
    "momentum": "up"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 14,
+   "count": 17,
    "momentum": "up"
   },
   {
    "keyword": "人才與技能",
    "icon": "🧠",
-   "count": 12,
+   "count": 15,
    "momentum": "up"
+  },
+  {
+   "keyword": "企業導入",
+   "icon": "🚀",
+   "count": 14,
+   "momentum": "flat"
   }
  ]
 }
