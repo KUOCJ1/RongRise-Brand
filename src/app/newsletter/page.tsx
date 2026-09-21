@@ -418,6 +418,7 @@ export default function NewsletterArchivePage() {
               <h3 className="heading-subsection text-text-primary mb-2">關於期數</h3>
               <ul className="text-body text-text-secondary space-y-2 list-disc pl-5">
                 <li>《榕賀觀點》每週一、四出刊；未寄送或未核准的期數不上架，因此期數可能跳號。</li>
+                <li>第 5、6 期未發行（2026 年 6 月下旬至 7 月初期間停刊兩期），因此典藏期數由第 4 期直接接續第 7 期；其餘期數連續。</li>
                 <li>全文檢索索引於每次出刊後自動更新，內容與寄送版本一致。</li>
                 <li>
                   {loadFailed
