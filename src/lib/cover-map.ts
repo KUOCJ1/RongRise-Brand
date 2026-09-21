@@ -4,6 +4,7 @@
  */
 
 export const COVER_MAP: Record<string, string> = {
+  "hr-function-three-possible-positions": "article-hr-three-positions.jpg",
   "hr-function-ai-layoff-rehire-paradox": "article-hr-layoff-rehire.jpg",
   "supervision-debt-ai-agents": "article-supervision-debt.jpg",
   "ai-compliance-2027-taiwan-sme": "article-ai-compliance-2027.jpg",

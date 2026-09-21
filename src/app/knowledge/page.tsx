@@ -23,13 +23,22 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "hr-function-three-possible-positions",
+    cat: "人才策略",
+    title: "人資還需不需要存在？三個正在發生的答案",
+    date: "2026.09.21",
+    readTime: "8 分鐘",
+    excerpt: "2026 年，企業先裁掉人資、六個月內又高薪請回。與其爭論「還需不需要 HR」，更值得看的是三條同時發生的路徑：從支援者變成工作設計者、從一個部門變成一組能力、與 IT 和營運合流管理「人＋AI 代理」的混合勞動力。台灣的風險不是被取代，是還沒被授權。",
+    tags: ["人資轉型", "組織設計", "混合勞動力", "職能定位", "人才策略"],
+  },
+  {
     slug: "hr-function-ai-layoff-rehire-paradox",
     cat: "人才策略",
     title: "先裁掉人資，再高薪請回來：AI 時代的 HR，問題不在員額",
     date: "2026.09.20",
-    readTime: "11 分鐘",
+    readTime: "7 分鐘",
     excerpt: "2026 年，企業一邊把人力資源列為優先裁撤對象，一邊用更高的薪水把 specialist 請回來。Careerminds 調查 600 位實際執行過裁員的人資主管，三分之二已經在回聘；Orgvue 算出每省下 1 元，實際要付出 1.27 元。這個來回本身就是一份診斷書。",
-    tags: ["人資轉型", "AI 轉型", "組織設計", "混合勞動力", "人才策略", "裁員與回聘"],
+    tags: ["人資轉型", "AI 轉型", "組織設計", "裁員與回聘", "人才策略"],
   },
   {
     slug: "supervision-debt-ai-agents",
