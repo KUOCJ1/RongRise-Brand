@@ -118,6 +118,29 @@ function renderBody(body: string): React.ReactNode[] {
 
     if (line.trim() === "") continue;
 
+    // 內文插圖：![alt](/images/x.jpg "圖說")（2026-09-20 新增）
+    const imgMatch = line.trim().match(/^!\[([^\]]*)\]\((\S+?)(?:\s+"([^"]*)")?\)$/);
+    if (imgMatch) {
+      const [, alt, src, caption] = imgMatch;
+      elements.push(
+        <figure key={`fig-${i}`} className="my-10">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={src}
+            alt={alt}
+            loading="lazy"
+            className="w-full h-auto rounded-xl border border-border-light"
+          />
+          {caption ? (
+            <figcaption className="mt-3 text-sm text-text-secondary text-center leading-relaxed">
+              {caption}
+            </figcaption>
+          ) : null}
+        </figure>
+      );
+      continue;
+    }
+
     // H2
     if (line.startsWith("## ")) {
       elements.push(
