@@ -43,3 +43,6 @@ next-env.d.ts
 # admin-dashboard
 admin-dashboard/node_modules/
 admin-dashboard/.next/
+
+# 檔案備份（不要進版控）
+*.bak-*
