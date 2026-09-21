@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-09-20T07:20:46Z",
+ "generatedAt": "2026-09-21T07:20:36Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 113
+  "daysRunning": 114
  },
  "stats": {
-  "scanDays": 93,
-  "weekArticles": 67,
-  "articles": 79,
-  "newsItems": 37,
+  "scanDays": 94,
+  "weekArticles": 69,
+  "articles": 81,
+  "newsItems": 39,
   "newsletterIssues": 18,
   "subscribers": 18,
   "confirmedSubscribers": 14,
   "videos": 33,
-  "views": 504,
+  "views": 500,
   "channelSubscribers": 12,
   "insights": 12,
-  "socialPosts": 28,
+  "socialPosts": 30,
   "igCards": 24,
-  "competitorReports": 91
+  "competitorReports": 92
  },
  "activity": [
-  {
-   "date": "2026-09-14",
-   "count": 10,
-   "topics": []
-  },
   {
    "date": "2026-09-15",
    "count": 12,
@@ -56,13 +51,18 @@
    "date": "2026-09-20",
    "count": 11,
    "topics": []
+  },
+  {
+   "date": "2026-09-21",
+   "count": 12,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "監督債：導入 AI 代理不是省人力，是每個月欠下一筆監督工時",
-   "date": "2026.09.17",
-   "url": "/knowledge/supervision-debt-ai-agents"
+   "title": "人資還需不需要存在？三個正在發生的答案",
+   "date": "2026.09.21",
+   "url": "/knowledge/hr-function-three-possible-positions"
   },
   "newsletter": "🦞 榕賀觀點 第 18 期 — 2026-09-17",
   "video": {
@@ -76,30 +76,30 @@
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 21,
+   "count": 23,
    "momentum": "up"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 16,
+   "count": 17,
    "momentum": "up"
   },
   {
    "keyword": "企業導入",
    "icon": "🚀",
-   "count": 15,
+   "count": 16,
    "momentum": "up"
   },
   {
-   "keyword": "人力資源",
-   "icon": "📋",
-   "count": 12,
-   "momentum": "flat"
+   "keyword": "晶片與算力",
+   "icon": "🔩",
+   "count": 14,
+   "momentum": "up"
   },
   {
-   "keyword": "資料中心",
-   "icon": "🏭",
+   "keyword": "人才與技能",
+   "icon": "🧠",
    "count": 12,
    "momentum": "up"
   }
