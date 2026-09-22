@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-09-21T07:22:21Z",
+ "generatedAt": "2026-09-22T07:20:52Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 114
+  "daysRunning": 115
  },
  "stats": {
-  "scanDays": 94,
+  "scanDays": 95,
   "weekArticles": 75,
   "articles": 81,
   "newsItems": 39,
-  "newsletterIssues": 18,
-  "subscribers": 18,
+  "newsletterIssues": 19,
+  "subscribers": 21,
   "confirmedSubscribers": 14,
   "videos": 33,
-  "views": 500,
+  "views": 499,
   "channelSubscribers": 12,
-  "insights": 12,
+  "insights": 13,
   "socialPosts": 30,
   "igCards": 24,
-  "competitorReports": 92
+  "competitorReports": 93
  },
  "activity": [
-  {
-   "date": "2026-09-15",
-   "count": 12,
-   "topics": []
-  },
   {
    "date": "2026-09-16",
    "count": 12,
@@ -56,6 +51,11 @@
    "date": "2026-09-21",
    "count": 12,
    "topics": []
+  },
+  {
+   "date": "2026-09-22",
+   "count": 13,
+   "topics": []
   }
  ],
  "latest": {
@@ -64,13 +64,13 @@
    "date": "2026.09.21",
    "url": "/knowledge/hr-function-three-possible-positions"
   },
-  "newsletter": "🦞 榕賀觀點 第 18 期 — 2026-09-17",
+  "newsletter": "🦞 榕賀觀點 第 19 期 — 2026-09-21",
   "video": {
    "title": "答案變便宜，判斷力開始變貴：AI 時代不能折舊的三種能力｜認知資本折舊",
    "date": "2026-09-16",
    "url": "https://www.youtube.com/watch?v=EblI3M1LkPk"
   },
-  "insight": "2026-W38.md"
+  "insight": "2026-W39.md"
  },
  "trends": [
   {

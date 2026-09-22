@@ -1,18 +1,18 @@
 {
- "generatedAt": "2026-09-21T07:20:40Z",
+ "generatedAt": "2026-09-22T07:21:01Z",
  "window": {
-  "from": "2026-09-15",
-  "to": "2026-09-21",
+  "from": "2026-09-16",
+  "to": "2026-09-22",
   "days": 7,
   "digestCount": 7
  },
  "stats": {
-  "totalArticles": 75,
+  "totalArticles": 79,
   "categories": {
-   "AI 轉型": 27,
-   "ESG 永續": 20,
-   "人才策略": 15,
-   "管理趨勢": 13
+   "AI 轉型": 31,
+   "ESG 永續": 21,
+   "人才策略": 16,
+   "管理趨勢": 11
   }
  },
  "trends": [
@@ -21,46 +21,22 @@
    "icon": "🏢",
    "category": "管理趨勢",
    "count": 23,
-   "prevCount": 17,
-   "momentum": "up"
+   "prevCount": 18,
+   "momentum": "flat"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
    "category": "AI 轉型",
-   "count": 19,
-   "prevCount": 14,
+   "count": 21,
+   "prevCount": 12,
    "momentum": "up"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
    "category": "AI 轉型",
-   "count": 17,
-   "prevCount": 7,
-   "momentum": "up"
-  },
-  {
-   "keyword": "人才與技能",
-   "icon": "🧠",
-   "category": "人才策略",
-   "count": 15,
-   "prevCount": 8,
-   "momentum": "up"
-  },
-  {
-   "keyword": "企業導入",
-   "icon": "🚀",
-   "category": "AI 轉型",
-   "count": 14,
-   "prevCount": 14,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "資料中心",
-   "icon": "🏭",
-   "category": "AI 轉型",
-   "count": 13,
+   "count": 20,
    "prevCount": 5,
    "momentum": "up"
   },
@@ -68,15 +44,39 @@
    "keyword": "人力資源",
    "icon": "📋",
    "category": "人才策略",
-   "count": 12,
-   "prevCount": 14,
-   "momentum": "flat"
+   "count": 17,
+   "prevCount": 12,
+   "momentum": "up"
+  },
+  {
+   "keyword": "企業導入",
+   "icon": "🚀",
+   "category": "AI 轉型",
+   "count": 17,
+   "prevCount": 13,
+   "momentum": "up"
+  },
+  {
+   "keyword": "人才與技能",
+   "icon": "🧠",
+   "category": "人才策略",
+   "count": 16,
+   "prevCount": 8,
+   "momentum": "up"
+  },
+  {
+   "keyword": "資料中心",
+   "icon": "🏭",
+   "category": "AI 轉型",
+   "count": 15,
+   "prevCount": 3,
+   "momentum": "up"
   },
   {
    "keyword": "安全與風險",
    "icon": "🛡️",
    "category": "AI 轉型",
-   "count": 12,
+   "count": 14,
    "prevCount": 4,
    "momentum": "up"
   },
@@ -84,15 +84,15 @@
    "keyword": "能源與電力",
    "icon": "⚡",
    "category": "ESG 永續",
-   "count": 11,
-   "prevCount": 6,
+   "count": 12,
+   "prevCount": 4,
    "momentum": "up"
   },
   {
    "keyword": "ESG 揭露",
    "icon": "🌱",
    "category": "ESG 永續",
-   "count": 7,
+   "count": 9,
    "prevCount": 4,
    "momentum": "up"
   },
@@ -100,7 +100,7 @@
    "keyword": "治理與法規",
    "icon": "⚖️",
    "category": "AI 轉型",
-   "count": 7,
+   "count": 9,
    "prevCount": 10,
    "momentum": "flat"
   },
@@ -109,19 +109,110 @@
    "icon": "🤖",
    "category": "AI 轉型",
    "count": 6,
-   "prevCount": 11,
+   "prevCount": 10,
    "momentum": "down"
   },
   {
    "keyword": "自動化",
    "icon": "⚙️",
    "category": "AI 轉型",
-   "count": 3,
-   "prevCount": 6,
-   "momentum": "down"
+   "count": 4,
+   "prevCount": 4,
+   "momentum": "flat"
   }
  ],
  "articles": [
+  {
+   "title": "Andrew McAfee on AI, jobs, and 'permissionless innovation'",
+   "url": "https://www.mckinsey.com/mgi/our-research/a-century-of-plenty/podcast/andrew-mcafee-on-ai-jobs-and-permissionless-innovation",
+   "summary": "McAfee 主張 AI 對就業的衝擊被高估、被制度綁死的創新能量才是真正的瓶頸，提供與「AI 搶工作」敘事相反的論點。",
+   "date": "2026-09-22",
+   "category": "人才策略"
+  },
+  {
+   "title": "AI Is Changing the Rules of Entrepreneurship",
+   "url": "https://hbr.org/2026/09/ai-is-changing-the-rules-of-entrepreneurship",
+   "summary": "HBR 分析 AI 如何改寫創業的成本結構與競爭門檻，對既有企業的意義是新進者的門檻同時在降低與位移。",
+   "date": "2026-09-22",
+   "category": "管理趨勢"
+  },
+  {
+   "title": "別把 AI 當成單純的省錢工具，真正贏家是那些比對手「學得更快」的企業",
+   "url": "https://technews.tw/2026/09/22/ai-cost-efficiency-true-competitive-advantage-generative-organization/",
+   "summary": "把 AI 當成本削減工具只能拿到一次性效益，能持續把經驗轉成組織學習速度的企業才會拉開差距，這是中小企業導入 AI 最該先對齊的目標設定。",
+   "date": "2026-09-22",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "OpenAI and Anthropic Neared Deal to Stress-Test Each Other's AI",
+   "url": "https://www.theinformation.com/articles/openai-anthropic-neared-deal-stress-test-others-ai",
+   "summary": "兩大實驗室曾接近達成互相壓力測試對方模型的協議，代表「第三方驗證」正從監理要求變成廠商主動的商業信任機制。",
+   "date": "2026-09-22",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "歐洲AI業者反對放慢AI發展，批美國巨頭藉安全鞏固領先地位",
+   "url": "https://www.ithome.com.tw/news/179083",
+   "summary": "歐洲 AI 業者反對以安全為名的減速倡議，直指美國大廠藉監管語彙鎖住領先優勢，AI 治理話語權已成為產業競爭的一部分。",
+   "date": "2026-09-22",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "WIRED: The AI playbook top companies use",
+   "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/wired-the-ai-playbook-top-companies-use",
+   "summary": "McKinsey 梳理領先企業的 AI 打法，可作為中小企業撰寫內部 AI 導入劇本時的對照清單。",
+   "date": "2026-09-22",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "California tightens rules on AI data center energy and water use",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills",
+   "summary": "加州州長簽署一系列法案，要求 AI 資料中心自行負擔地方電網升級成本，用水與用電正式被納入許可條件。",
+   "date": "2026-09-22",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "搶電搶水惹議 德州暫停核發 AI 資料中心環境許可",
+   "url": "https://technews.tw/2026/09/22/texas-suspends-environmental-permits-for-ai-data-centers/",
+   "summary": "德州跟進暫停核發環境許可，美國兩大 AI 重鎮同時收緊水電審查，「算力擴張的環境外部成本」已成地方政治議題。",
+   "date": "2026-09-22",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "將廢棄蚵殼變成鞋材，母子鱷魚如何打造馬拉松、媽祖遶境都能穿的拖鞋？",
+   "url": "https://www.managertoday.com.tw/articles/view/72976",
+   "summary": "德成鞋業把廢棄蚵殼轉為鞋材，用循環材料做出有記憶點的商品，是台灣中小企業「永續即產品力」的具體案例。",
+   "date": "2026-09-22",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "研究：AI 可讓就業人口增加，但多是較高階職位",
+   "url": "https://technews.tw/2026/09/22/ai-adoption-is-driving-hiring-but-mostly-for-senior-roles/",
+   "summary": "研究顯示 AI 導入確實帶來增聘，但新職缺集中在資深職位，初階工作反而被壓縮，人才階梯斷層的風險浮現。",
+   "date": "2026-09-22",
+   "category": "人才策略"
+  },
+  {
+   "title": "𝕏 @japanshah：印度 HR-tech 平台擴張中東市場",
+   "url": "https://x.com/japanshah/status/2102261612790858202",
+   "summary": "社群觀察：以實際招募經驗累積起來的 HR 科技可以跨市場複製，反映亞洲 HR SaaS 正往中東找第二成長曲線。",
+   "date": "2026-09-22",
+   "category": "人才策略"
+  },
+  {
+   "title": "𝕏 @ocjain4：未來的工作不能略過「女性的工作」",
+   "url": "https://x.com/ocjain4/status/2102260145531302030",
+   "summary": "引述聯合國前助理秘書長 Lakshmi Puri 的呼籲：照護經濟要投入、女性要能設計與治理重塑自身生活的技術，是 ESG 社會面與人才策略的交會點。",
+   "date": "2026-09-22",
+   "category": "人才策略"
+  },
+  {
+   "title": "麥肯錫：當AI模型都差不多聰明，內部資產才是勝負關鍵",
+   "url": "https://www.managertoday.com.tw/columns/view/72973",
+   "summary": "麥肯錫調查顯示九成企業已在部分業務定期使用 AI、八成員工自認效率提升，但只有 37% 看到獲利成長，差距來自企業自有資料與流程等內部資產。",
+   "date": "2026-09-22",
+   "category": "管理趨勢"
+  },
   {
    "title": "AI 語音就是品牌門面，接通第一秒決定客戶去留",
    "url": "https://technews.tw/2026/09/21/ai-voice-losing-customers/",
@@ -273,13 +364,6 @@
    "title": "管理不能憑感覺！台積電主管用「AIG 法」，把問題變成算得出來的數字",
    "url": "https://www.managertoday.com.tw/books/view/72942",
    "summary": "台積電主管以 AIG 法把模糊的「感覺問題」轉成可衡量的數字再決策，是 AI 時代最基本的管理紀律：先把問題量化，否則再多工具也只是加速錯誤。",
-   "date": "2026-09-20",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "AI Is Changing the Rules of Entrepreneurship",
-   "url": "https://hbr.org/2026/09/ai-is-changing-the-rules-of-entrepreneurship",
-   "summary": "HBR 分析 AI 如何改寫創業規則：啟動成本暴跌後，稀缺資源從「技術能力」轉為「判斷力與通路」。對中小企業的啟示是：AI 拉低的是進入門檻，不是競爭門檻。",
    "date": "2026-09-20",
    "category": "管理趨勢"
   },
@@ -466,25 +550,18 @@
    "category": "管理趨勢"
   },
   {
-   "title": "從找工作到查工地！勞動部揭4大數位轉型實例，數天工程督導作業靠AI縮短到8分鐘",
-   "url": "https://www.ithome.com.tw/news/178524",
-   "summary": "勞動部公布四大數位轉型實例，原本需要數天的工程督導作業靠 AI 縮短到 8 分鐘，示範公部門如何把 AI 用在第一線人力吃緊的環節。",
-   "date": "2026-09-17",
-   "category": "人才策略"
-  },
-  {
-   "title": "AI Agents Are Thirsty for Power",
-   "url": "https://www.wired.com/story/ai-agents-are-thirsty-for-power/",
-   "summary": "Wired 解析 AI agent 常駐運作帶來的用電攀升問題：agent 越自主、越長期在線，能源足跡就越難被忽略。",
-   "date": "2026-09-17",
-   "category": "ESG 永續"
-  },
-  {
    "title": "To Adopt AI at Scale, Employees Need to Trust Agents",
    "url": "https://hbr.org/2026/09/to-adopt-ai-at-scale-employees-need-to-trust-agents",
    "summary": "HBR 指出大規模導入 AI 的真正瓶頸是「員工對 agent 的信任」：若不能讓員工理解 agent 的判斷邊界，再好的工具也推不動規模化。",
    "date": "2026-09-17",
    "category": "AI 轉型"
+  },
+  {
+   "title": "從找工作到查工地！勞動部揭4大數位轉型實例，數天工程督導作業靠AI縮短到8分鐘",
+   "url": "https://www.ithome.com.tw/news/178524",
+   "summary": "勞動部公布四大數位轉型實例，原本需要數天的工程督導作業靠 AI 縮短到 8 分鐘，示範公部門如何把 AI 用在第一線人力吃緊的環節。",
+   "date": "2026-09-17",
+   "category": "人才策略"
   },
   {
    "title": "研調：AI 支出今年估增 49.5%，2027 年達 3.63 兆美元",
@@ -518,6 +595,13 @@
    "title": "The AI data center e-waste problem is huge — and getting bigger",
    "url": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban",
    "summary": "AI 資料中心的電子廢棄物問題規模龐大且持續擴大，硬體汰換速度已成為 AI 成長在環境面的主要副作用之一。",
+   "date": "2026-09-17",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "AI Agents Are Thirsty for Power",
+   "url": "https://www.wired.com/story/ai-agents-are-thirsty-for-power/",
+   "summary": "Wired 解析 AI agent 常駐運作帶來的用電攀升問題：agent 越自主、越長期在線，能源足跡就越難被忽略。",
    "date": "2026-09-17",
    "category": "ESG 永續"
   },
@@ -578,13 +662,6 @@
    "category": "ESG 永續"
   },
   {
-   "title": "Andrew McAfee on AI, jobs, and 'permissionless innovation'",
-   "url": "https://www.mckinsey.com/mgi/our-research/a-century-of-plenty/podcast/andrew-mcafee-on-ai-jobs-and-permissionless-innovation",
-   "summary": "MIT 學者 McAfee 談 AI 對就業的實際衝擊與「無須許可的創新」，主張鬆綁組織內部的實驗門檻比預測失業率更有意義。",
-   "date": "2026-09-16",
-   "category": "人才策略"
-  },
-  {
    "title": "Stop Automating Old Processes. Design New Ones Instead.",
    "url": "https://hbr.org/2026/09/stop-automating-old-processes-design-new-ones-instead",
    "summary": "HBR 提醒把 AI 套在舊流程上只會加速錯誤，真正的價值來自先重寫流程再導入 AI。",
@@ -596,55 +673,6 @@
    "url": "https://www.managertoday.com.tw/articles/view/72726",
    "summary": "中鋼花三年讓 AI 從知識庫走進日常工作，關鍵不是技術取得，而是組織能否在成果出現前先養成學習習慣。",
    "date": "2026-09-16",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "Zero-emission trucks: Accelerating Europe's transition",
-   "url": "https://www.mckinsey.com/industries/automotive-and-assembly/our-insights/zero-emission-trucks-accelerating-europes-transition",
-   "summary": "麥肯錫分析歐洲零排放卡車轉型的推進路徑：總持有成本、充電基建與車隊汰換時程仍是三大卡點。",
-   "date": "2026-09-15",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "從傳統製造走向淨零科技：永彰科技攜手明竑科技推動數位轉型",
-   "url": "https://www.managertoday.com.tw/articles/view/72841",
-   "summary": "台灣傳統製造業以數位轉型對接淨零需求，示範減碳與營運升級可以並行走，而非二選一。",
-   "date": "2026-09-15",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "AI技能已成為進入瑞銀的必要條件",
-   "url": "https://www.ithome.com.tw/news/178772",
-   "summary": "瑞銀把 AI 技能列為招募必要條件，金融業的人才門檻被整體改寫，非技術職也不例外。",
-   "date": "2026-09-15",
-   "category": "人才策略"
-  },
-  {
-   "title": "哈佛研究：會下 Prompt 的人，更會帶團隊！一流 AI 人才、成功主管都懂得「委派六問」",
-   "url": "https://www.managertoday.com.tw/articles/view/72912",
-   "summary": "哈佛研究發現提示工程能力與管理委派能力高度相關，AI 時代主管要重新學會怎麼「派工」給人與機器。",
-   "date": "2026-09-15",
-   "category": "人才策略"
-  },
-  {
-   "title": "The new management playbook for AI: How to move faster and create more value",
-   "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-new-management-playbook-for-ai-how-to-move-faster-and-create-more-value",
-   "summary": "麥肯錫提出 AI 時代的新管理劇本，核心是加快決策節奏與價值交付，而非增加更多工具。",
-   "date": "2026-09-15",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "Microsoft Joins Calls for AI \"Pacing,\" Pledges to Build Kill Switches Into AI Products",
-   "url": "https://www.theinformation.com/briefings/microsoft-joins-calls-ai-pacing-pledges-build-kill-switches-ai-products",
-   "summary": "微軟加入 AI「配速」呼籲，承諾在產品內建緊急切斷機制，並開放第三方稽核內部 AI 開發。",
-   "date": "2026-09-15",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "The AI industry has taken a doomer turn. What now?",
-   "url": "https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/",
-   "summary": "MIT Technology Review 分析 AI 產業轉向「末日論」的背景，以及頂尖實驗室一邊喊減速、一邊不願公開的矛盾。",
-   "date": "2026-09-15",
    "category": "管理趨勢"
   }
  ],
