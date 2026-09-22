@@ -20,6 +20,7 @@ export const metadata: Metadata = {
 
 const categoryColors: Record<string, string> = {
   "課程": "bg-tertiary/10 text-tertiary",
+  "活動": "bg-primary/10 text-primary",
   "媒體": "bg-secondary/10 text-secondary",
   "資源": "bg-accent/10 text-accent",
   "公告": "bg-primary/10 text-primary"

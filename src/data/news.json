@@ -1,13 +1,22 @@
 {
   "news": [
     {
+      "id": "n42",
+      "date": "2026-09-22",
+      "category": "活動",
+      "title": "HR AI Agent 實踐論壇：當 HR 開始用策略語言談 AI",
+      "summary": "五位實務講師、近百位 HR 夥伴，一整天下來，現場提問從「要不要做」變成「怎麼落地」。落地卡住的通常不是技術，是語言：怎麼把 AI Agent 翻譯成決策層關心的瓶頸、成本與風險。",
+      "link": "/events/hr-ai-agent-forum-20260920",
+      "isNew": true
+    },
+    {
       "id": "n41",
       "date": "2026-09-22",
       "category": "資源",
       "title": "驗證經濟：當產量變成 19.2 倍，值錢的是「誰說這個可以出貨」",
       "summary": "一季內有銷售紀錄的書成長 19.2 倍，營收只成長 8.9 倍。生產變便宜之後，稀缺的從生產搬到辨識：驗證者、翻譯者、中介者三個新定價點，以及一份今天就能填的驗收單。",
       "link": "/knowledge/verification-economy",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n40",
@@ -16,7 +25,7 @@
       "title": "人資還需不需要存在？三個正在發生的答案",
       "summary": "與其爭論 HR 的去留，更值得看的是三條同時發生的路徑：工作設計者、一組能力、混合勞動力治理。台灣的風險不是被取代，是還沒被授權。",
       "link": "/knowledge/hr-function-three-possible-positions",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n39",
@@ -25,7 +34,7 @@
       "title": "先裁掉人資，再高薪請回來：AI 時代的 HR，問題不在員額",
       "summary": "2026 年，企業一邊把人力資源列為優先裁撤對象，一邊用更高的薪水把 specialist 請回來。Careerminds 調查 600 位實際執行過裁員的人資主管，三分之二已經在回聘；Orgvue 算出每省下 1 元，實際要付出 1.27 元。這個來回本身就是一份診斷書。",
       "link": "/knowledge/hr-function-ai-layoff-rehire-paradox",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n38",
