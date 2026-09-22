@@ -148,6 +148,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     {
+      url: `${baseUrl}/events/hr-ai-agent-forum-20260920`,
+      lastModified: new Date("2026-09-20"),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
       url: `${baseUrl}/en`,
       lastModified: new Date(),
       changeFrequency: "monthly",
