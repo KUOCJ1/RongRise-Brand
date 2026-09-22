@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "verification-economy",
+    cat: "AI 轉型",
+    title: "驗證經濟：當產量變成 19.2 倍，值錢的是「誰說這個可以出貨」",
+    date: "2026.09.22",
+    readTime: "8 分鐘",
+    excerpt: "Amazon 上賣得出去的自出版類型小說成長 19.2 倍，整季營收只成長 8.9 倍。當產出變便宜，稀缺的從生產搬到辨識。本文提出驗證經濟的三個新定價點，以及一份今天就能填的驗收單。",
+    tags: ["驗證經濟", "驗收標準", "AI 導入", "產出品質", "管理實務"],
+  },
+  {
     slug: "hr-function-three-possible-positions",
     cat: "人才策略",
     title: "人資還需不需要存在？三個正在發生的答案",
