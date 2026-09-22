@@ -33,7 +33,7 @@ export default function AIGovernanceScanPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState("");
-  const [submitting, setSubmitting] = useState(false);
+  const [leadEmail, setLeadEmail] = useState<string | null>(null);
   const [result, setResult] = useState<ScanResult | null>(null);
   const [copied, setCopied] = useState(false);
 
@@ -66,54 +66,62 @@ export default function AIGovernanceScanPage() {
     }
   }, [currentDimIdx]);
 
-  const handleSubmit = useCallback(async () => {
-    if (!allAnswered) return;
-    setSubmitting(true);
+  const handleSubmit = useCallback(
+    (scrollToTop = true) => {
+      if (!allAnswered) return;
 
-    // Build scores per dimension
-    const scores: Record<DimKey, number[]> = {
-      people: [],
-      process: [],
-      data: [],
-      tech: [],
-      culture: [],
-    };
-    for (const d of DIMENSIONS) {
-      for (const q of d.questions) {
-        scores[d.key].push(answers[q.id]);
+      // Build scores per dimension
+      const scores: Record<DimKey, number[]> = {
+        people: [],
+        process: [],
+        data: [],
+        tech: [],
+        culture: [],
+      };
+      for (const d of DIMENSIONS) {
+        for (const q of d.questions) {
+          scores[d.key].push(answers[q.id]);
+        }
       }
-    }
 
-    const r = evaluate(scores);
-    setResult(r);
+      const r = evaluate(scores);
+      setResult(r);
 
-    // Lead capture (optional)
-    if (email) {
-      try {
-        await fetch("/api/newsletter/subscribe", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          signal: AbortSignal.timeout(10000),
-          body: JSON.stringify({
-            name: name || "治理量表訪客",
-            email,
-            company: company || "未填寫",
-            industry: "其他／綜合",
-            ai_stage: "not_started",
-            challenges: ["AI 治理"],
-            source: "ai-governance-scan",
-            subscribed_at: new Date().toISOString(),
-          }),
-        });
-      } catch {
-        // silent
+      // 先交結果畫面，再處理留資——任何情況都不讓使用者等不到結果
+      setStep("result");
+      if (scrollToTop) window.scrollTo({ top: 0, behavior: "smooth" });
+
+      // 留資（選填）：背景送出。不 await、失敗靜默；
+      // 用「上次送出的 Email」比對，改過信箱再送出才會重送。
+      if (email && email !== leadEmail) {
+        try {
+          const pending = fetch("/api/newsletter/subscribe", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            signal: AbortSignal.timeout(10000),
+            body: JSON.stringify({
+              name: name || "治理量表訪客",
+              email,
+              company: company || "未填寫",
+              industry: "其他／綜合",
+              ai_stage: "not_started",
+              challenges: ["AI 治理"],
+              source: "ai-governance-scan",
+              subscribed_at: new Date().toISOString(),
+            }),
+          });
+          // 請求確實送出後才顯示「已送出」
+          setLeadEmail(email);
+          pending.catch(() => {
+            // silent：留資失敗不影響結果
+          });
+        } catch {
+          // silent：環境不支援 AbortSignal.timeout 也不能擋住結果畫面
+        }
       }
-    }
-
-    setSubmitting(false);
-    setStep("result");
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [allAnswered, answers, email, name, company]);
+    },
+    [allAnswered, answers, email, leadEmail, name, company]
+  );
 
   /* ===== SVG Radar Chart ===== */
   const RadarChart = ({ result }: { result: ScanResult }) => {
@@ -348,11 +356,11 @@ export default function AIGovernanceScanPage() {
               </button>
               {isLastDim ? (
                 <button
-                  onClick={handleSubmit}
-                  disabled={!allAnswered || submitting}
+                  onClick={() => handleSubmit(true)}
+                  disabled={!allAnswered}
                   className="bg-[#E8912A] hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors shadow-lg"
                 >
-                  {submitting ? "計算中…" : "看結果 →"}
+                  看結果 →
                 </button>
               ) : (
                 <button
@@ -471,7 +479,7 @@ export default function AIGovernanceScanPage() {
             </div>
 
             {/* Lead capture */}
-            {!email && (
+            {!leadEmail ? (
               <div className="bg-gradient-to-br from-[#1A6DB5]/20 to-[#2EC4B6]/10 border border-[#2EC4B6]/30 rounded-2xl p-6 mb-8">
                 <h2 className="text-lg font-bold mb-1">📬 想拿到完整治理行動清單？</h2>
                 <p className="text-white/60 text-sm mb-4 leading-relaxed">
@@ -504,13 +512,28 @@ export default function AIGovernanceScanPage() {
                   aria-label="公司名稱"
                 />
                 <button
-                  onClick={handleSubmit}
-                  disabled={!email || submitting}
+                  onClick={() => handleSubmit(false)}
+                  disabled={!email}
                   className="bg-[#E8912A] hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
-                  {submitting ? "送出中…" : "訂閱並取得指南 →"}
+                  訂閱並取得指南 →
                 </button>
+                {!email && (
+                  <p className="text-white/40 text-xs mt-3" role="status">
+                    填上 Email 即可送出（不留 Email 也能看到完整結果）。
+                  </p>
+                )}
                 <p className="text-white/30 text-xs mt-3">我們只寄有用的內容，隨時可退訂。</p>
+              </div>
+            ) : (
+              <div className="bg-white/5 border border-white/10 rounded-2xl p-5 mb-8" role="status">
+                <p className="text-white/60 text-sm leading-relaxed">
+                  已送出 {leadEmail}，行動指南會寄到這個信箱。若一直沒收到，直接
+                  <a href="/about/#contact" className="text-[#2EC4B6] hover:text-[#7FE3D8] font-semibold ml-1">
+                    預約免費諮詢
+                  </a>
+                  比較快。
+                </p>
               </div>
             )}
 

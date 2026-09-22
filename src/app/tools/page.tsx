@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "AI 工具箱 — 免費診斷與評估工具 ｜ 榕耀管顧",
   description:
-    "榕耀管顧 AI 工具箱：Pilot Trap 診斷量表、AI 成熟度評測、ROI 估算器、任務變形蟲盤點器、趨勢雷達等免費工具——即開即用，三分鐘見結果。",
+    "榕耀管顧 AI 工具箱：Pilot Trap 診斷量表、AI 成熟度評測、ROI 估算器、投資配置體檢（10-20-70）、任務變形蟲盤點器、趨勢雷達等免費工具——即開即用，三分鐘見結果。",
   alternates: { canonical: "https://rong-rise.com/tools" },
   openGraph: {
     type: "website",
@@ -80,6 +80,14 @@ const tools: Tool[] = [
     tagClass: "bg-primary/10 text-primary",
   },
   {
+    href: "/ai-investment-split",
+    icon: "⚖️",
+    name: "AI 投資配置體檢（10-20-70）",
+    desc: "輸入年度預算與技術／流程／人三桶配置，兩分鐘看出哪一桶失衡、該把錢移到哪裡，附 30/40/30 預算釋出節奏。",
+    tag: "估算",
+    tagClass: "bg-primary/10 text-primary",
+  },
+  {
     href: "/amoeba-scan",
     icon: "🔍",
     name: "任務變形蟲盤點器",
@@ -144,12 +152,14 @@ export default function ToolsPage() {
 
       {/* Tools Grid */}
       <div className="max-w-[1000px] mx-auto px-4 sm:px-6 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {/* 卡片數持續增加（每週一個工具），改用 flex-wrap + justify-center：
+            最後一列不滿時置中，避免固定欄數留下孤兒卡（右側大片留白） */}
+        <div className="flex flex-wrap justify-center gap-5">
           {tools.map((tool) => (
             <a
               key={tool.href}
               href={tool.href}
-              className="group bg-white rounded-2xl border border-border p-6 flex flex-col no-underline hover:shadow-lg hover:border-primary/30 transition-all hover:-translate-y-0.5"
+              className="group w-full md:w-[calc(50%-0.625rem)] lg:w-[calc(33.333%-0.8333rem)] bg-white rounded-2xl border border-border p-6 flex flex-col no-underline hover:shadow-lg hover:border-primary/30 transition-all hover:-translate-y-0.5"
             >
               <div className="flex items-center justify-between mb-4">
                 <span className="text-3xl">{tool.icon}</span>
