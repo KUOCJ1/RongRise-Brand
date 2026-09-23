@@ -1,42 +1,42 @@
 {
- "generatedAt": "2026-09-22T07:21:01Z",
+ "generatedAt": "2026-09-23T07:20:14Z",
  "window": {
-  "from": "2026-09-16",
-  "to": "2026-09-22",
+  "from": "2026-09-17",
+  "to": "2026-09-23",
   "days": 7,
   "digestCount": 7
  },
  "stats": {
-  "totalArticles": 79,
+  "totalArticles": 82,
   "categories": {
    "AI 轉型": 31,
    "ESG 永續": 21,
-   "人才策略": 16,
+   "人才策略": 19,
    "管理趨勢": 11
   }
  },
  "trends": [
   {
-   "keyword": "組織與管理",
-   "icon": "🏢",
-   "category": "管理趨勢",
-   "count": 23,
-   "prevCount": 18,
-   "momentum": "flat"
-  },
-  {
    "keyword": "成本與投資",
    "icon": "💰",
    "category": "AI 轉型",
-   "count": 21,
-   "prevCount": 12,
+   "count": 24,
+   "prevCount": 11,
    "momentum": "up"
+  },
+  {
+   "keyword": "組織與管理",
+   "icon": "🏢",
+   "category": "管理趨勢",
+   "count": 22,
+   "prevCount": 19,
+   "momentum": "flat"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
    "category": "AI 轉型",
-   "count": 20,
+   "count": 21,
    "prevCount": 5,
    "momentum": "up"
   },
@@ -44,7 +44,7 @@
    "keyword": "人力資源",
    "icon": "📋",
    "category": "人才策略",
-   "count": 17,
+   "count": 19,
    "prevCount": 12,
    "momentum": "up"
   },
@@ -52,16 +52,8 @@
    "keyword": "企業導入",
    "icon": "🚀",
    "category": "AI 轉型",
-   "count": 17,
-   "prevCount": 13,
-   "momentum": "up"
-  },
-  {
-   "keyword": "人才與技能",
-   "icon": "🧠",
-   "category": "人才策略",
    "count": 16,
-   "prevCount": 8,
+   "prevCount": 12,
    "momentum": "up"
   },
   {
@@ -69,7 +61,15 @@
    "icon": "🏭",
    "category": "AI 轉型",
    "count": 15,
-   "prevCount": 3,
+   "prevCount": 4,
+   "momentum": "up"
+  },
+  {
+   "keyword": "人才與技能",
+   "icon": "🧠",
+   "category": "人才策略",
+   "count": 14,
+   "prevCount": 9,
    "momentum": "up"
   },
   {
@@ -77,15 +77,15 @@
    "icon": "🛡️",
    "category": "AI 轉型",
    "count": 14,
-   "prevCount": 4,
+   "prevCount": 5,
    "momentum": "up"
   },
   {
    "keyword": "能源與電力",
    "icon": "⚡",
    "category": "ESG 永續",
-   "count": 12,
-   "prevCount": 4,
+   "count": 13,
+   "prevCount": 5,
    "momentum": "up"
   },
   {
@@ -93,14 +93,14 @@
    "icon": "🌱",
    "category": "ESG 永續",
    "count": 9,
-   "prevCount": 4,
+   "prevCount": 6,
    "momentum": "up"
   },
   {
    "keyword": "治理與法規",
    "icon": "⚖️",
    "category": "AI 轉型",
-   "count": 9,
+   "count": 8,
    "prevCount": 10,
    "momentum": "flat"
   },
@@ -108,8 +108,8 @@
    "keyword": "AI Agent",
    "icon": "🤖",
    "category": "AI 轉型",
-   "count": 6,
-   "prevCount": 10,
+   "count": 4,
+   "prevCount": 8,
    "momentum": "down"
   },
   {
@@ -117,17 +117,94 @@
    "icon": "⚙️",
    "category": "AI 轉型",
    "count": 4,
-   "prevCount": 4,
+   "prevCount": 5,
    "momentum": "flat"
   }
  ],
  "articles": [
   {
-   "title": "Andrew McAfee on AI, jobs, and 'permissionless innovation'",
-   "url": "https://www.mckinsey.com/mgi/our-research/a-century-of-plenty/podcast/andrew-mcafee-on-ai-jobs-and-permissionless-innovation",
-   "summary": "McAfee 主張 AI 對就業的衝擊被高估、被制度綁死的創新能量才是真正的瓶頸，提供與「AI 搶工作」敘事相反的論點。",
-   "date": "2026-09-22",
+   "title": "New Data Show Anthropic, OpenAI and Other Upstarts Are Eating into Software Budgets",
+   "url": "https://www.theinformation.com/newsletters/applied-ai/new-data-show-anthropic-openai-upstarts-eating-software-budgets",
+   "summary": "最新數據顯示 Anthropic、OpenAI 等 AI 新創正實質吃掉企業軟體預算，企業採購的「預算池」正在重新分配，既有 SaaS 供應商面對的是替代而非增量競爭。",
+   "date": "2026-09-23",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "The economics of AI",
+   "url": "https://www.mckinsey.com/quarterly/the-five-fifty/five-fifty-the-economics-of-ai",
+   "summary": "McKinsey 從成本結構、投資報酬與市場集中度拆解 AI 經濟學，對中小企業的意義是：導入前先算清「每單位產出的 AI 成本」，比選模型更關鍵。",
+   "date": "2026-09-23",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "AI 監管國際呼聲升溫，20 多國領袖籲透明安全措施",
+   "url": "https://technews.tw/2026/09/22/ai-regulation-international-calls-20-nations-leaders-transparent-safety-measures/",
+   "summary": "20 多國領袖共同呼籲 AI 發展須具備透明與安全措施，跨國監管框架的雛形正在形成，企業的 AI 治理文件將從「自願」走向「被要求」。",
+   "date": "2026-09-23",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Reinvention and Rigor: What CEOs Should Look for in an AI-First Chief Operating Officer",
+   "url": "https://www.bcg.com/publications/2026/what-ceos-should-look-for-ai-first-coo",
+   "summary": "BCG 指出企業開始設置「AI 優先的營運長」，關鍵不在技術背景，而在能否把 AI 嵌進營運節奏並承擔損益，是 AI 轉型進入組織設計階段的訊號。",
+   "date": "2026-09-23",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "做好事也要有商業思維！全家推動移工友善，如何兼顧營利與社會影響力？",
+   "url": "https://www.managertoday.com.tw/columns/view/72963",
+   "summary": "全家以移工友善服務兼顧營收與社會影響力，示範 ESG 社會面不是成本項，而是能長出商業模式的差異化能力，對中小企業的啟示是可從既有客群痛點切入。",
+   "date": "2026-09-23",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "Powering through uncertainty: A talk with former US Energy Secretary Ernest Moniz",
+   "url": "https://www.mckinsey.com/industries/electric-power-and-natural-gas/our-insights/powering-through-uncertainty-a-talk-with-former-us-energy-secretary-ernest-moniz",
+   "summary": "前美國能源部長 Moniz 談電力需求與能源轉型的不確定性，AI 用電成長讓「能源供給穩定度」成為企業永續揭露與營運風險的共同題目。",
+   "date": "2026-09-23",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "Everyone can find a reason to dislike data center construction",
+   "url": "https://techcrunch.com/2026/09/22/everyone-can-find-a-reason-to-dislike-data-center-construction",
+   "summary": "資料中心選址的反對聲浪來自各方（用電、用水、噪音、房價），顯示算力擴張的社會成本已成地方層級的實質阻力，企業在規劃 AI 基礎設施時必須納入社區溝通。",
+   "date": "2026-09-23",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "進希爾頓飯店實習，比考上常春藤名校還難！AI 時代，該怎麼從海量履歷中被看見？",
+   "url": "https://www.managertoday.com.tw/articles/view/72978",
+   "summary": "希爾頓 2026 年 72 個實習缺湧入 1.2 萬人（錄取率 0.6%），在 AI 大量代寫履歷的時代，辨識「真人訊號」與建立內部養成路徑成為招募端的核心難題。",
+   "date": "2026-09-23",
    "category": "人才策略"
+  },
+  {
+   "title": "HR 人資怎麼用 AI？完整教學：10 大工作情境拆解，可複製 Prompt 一次看",
+   "url": "https://www.managertoday.com.tw/articles/view/72975",
+   "summary": "從撰寫 JD、篩履歷到績效面談拆解 10 個人資 AI 應用情境並附可複製 Prompt，是 HR 團隊最直接可用的導入清單。",
+   "date": "2026-09-23",
+   "category": "人才策略"
+  },
+  {
+   "title": "台灣美光 2 次勞資調解破局，宣布啟動罷工投票！豪發每人百萬感謝金也解不了危機？",
+   "url": "https://www.managertoday.com.tw/articles/view/72917",
+   "summary": "美光台灣勞資二度調解破局並啟動罷工投票，資方以一次性獎金回應「制度性獲利分享」訴求失效，提示企業在獲利期就要處理分配機制，而非等到衝突升高。",
+   "date": "2026-09-23",
+   "category": "人才策略"
+  },
+  {
+   "title": "當電商、實體零售都在成長，為什麼物流業反而衰退？",
+   "url": "https://www.managertoday.com.tw/columns/view/72974",
+   "summary": "電商與實體零售同步成長，專業物流業卻因客戶自建物流而衰退，說明「異業競爭」往往比同業更致命，是中小企業做策略盤點時最該補上的視角。",
+   "date": "2026-09-23",
+   "category": "管理趨勢"
+  },
+  {
+   "title": "The key to AI value is hiding in plain sight: Your operating model",
+   "url": "https://www.mckinsey.com/capabilities/people-and-organization/our-insights/the-key-to-ai-value-is-hiding-in-plain-sight-your-operating-model",
+   "summary": "McKinsey 指出 AI 價值的關鍵藏在既有營運模式（決策權、流程與角色設計）裡，不改組織只換工具，投資報酬率難以顯現。",
+   "date": "2026-09-23",
+   "category": "管理趨勢"
   },
   {
    "title": "AI Is Changing the Rules of Entrepreneurship",
@@ -189,6 +266,13 @@
    "title": "研究：AI 可讓就業人口增加，但多是較高階職位",
    "url": "https://technews.tw/2026/09/22/ai-adoption-is-driving-hiring-but-mostly-for-senior-roles/",
    "summary": "研究顯示 AI 導入確實帶來增聘，但新職缺集中在資深職位，初階工作反而被壓縮，人才階梯斷層的風險浮現。",
+   "date": "2026-09-22",
+   "category": "人才策略"
+  },
+  {
+   "title": "Andrew McAfee on AI, jobs, and 'permissionless innovation'",
+   "url": "https://www.mckinsey.com/mgi/our-research/a-century-of-plenty/podcast/andrew-mcafee-on-ai-jobs-and-permissionless-innovation",
+   "summary": "McAfee 主張 AI 對就業的衝擊被高估、被制度綁死的創新能量才是真正的瓶頸，提供與「AI 搶工作」敘事相反的論點。",
    "date": "2026-09-22",
    "category": "人才策略"
   },
@@ -550,23 +634,16 @@
    "category": "管理趨勢"
   },
   {
-   "title": "To Adopt AI at Scale, Employees Need to Trust Agents",
-   "url": "https://hbr.org/2026/09/to-adopt-ai-at-scale-employees-need-to-trust-agents",
-   "summary": "HBR 指出大規模導入 AI 的真正瓶頸是「員工對 agent 的信任」：若不能讓員工理解 agent 的判斷邊界，再好的工具也推不動規模化。",
+   "title": "研調：AI 支出今年估增 49.5%，2027 年達 3.63 兆美元",
+   "url": "https://technews.tw/2026/09/17/gartner-forecasts-worldwide-ai-spending-to-grow-49-5-percent-in-2026/",
+   "summary": "Gartner 最新預測全球 AI 支出 2026 年成長 49.5%，2027 年規模上看 3.63 兆美元，AI 投資已從實驗預算變成企業結構性支出。",
    "date": "2026-09-17",
    "category": "AI 轉型"
   },
   {
-   "title": "從找工作到查工地！勞動部揭4大數位轉型實例，數天工程督導作業靠AI縮短到8分鐘",
-   "url": "https://www.ithome.com.tw/news/178524",
-   "summary": "勞動部公布四大數位轉型實例，原本需要數天的工程督導作業靠 AI 縮短到 8 分鐘，示範公部門如何把 AI 用在第一線人力吃緊的環節。",
-   "date": "2026-09-17",
-   "category": "人才策略"
-  },
-  {
-   "title": "研調：AI 支出今年估增 49.5%，2027 年達 3.63 兆美元",
-   "url": "https://technews.tw/2026/09/17/gartner-forecasts-worldwide-ai-spending-to-grow-49-5-percent-in-2026/",
-   "summary": "Gartner 最新預測全球 AI 支出 2026 年成長 49.5%，2027 年規模上看 3.63 兆美元，AI 投資已從實驗預算變成企業結構性支出。",
+   "title": "To Adopt AI at Scale, Employees Need to Trust Agents",
+   "url": "https://hbr.org/2026/09/to-adopt-ai-at-scale-employees-need-to-trust-agents",
+   "summary": "HBR 指出大規模導入 AI 的真正瓶頸是「員工對 agent 的信任」：若不能讓員工理解 agent 的判斷邊界，再好的工具也推不動規模化。",
    "date": "2026-09-17",
    "category": "AI 轉型"
   },
@@ -606,74 +683,18 @@
    "category": "ESG 永續"
   },
   {
+   "title": "從找工作到查工地！勞動部揭4大數位轉型實例，數天工程督導作業靠AI縮短到8分鐘",
+   "url": "https://www.ithome.com.tw/news/178524",
+   "summary": "勞動部公布四大數位轉型實例，原本需要數天的工程督導作業靠 AI 縮短到 8 分鐘，示範公部門如何把 AI 用在第一線人力吃緊的環節。",
+   "date": "2026-09-17",
+   "category": "人才策略"
+  },
+  {
    "title": "AI 晶片愈做愈大，工程師卻不夠用了！Cadence 把 Agent 帶進 EDA 核心流程",
    "url": "https://technews.tw/2026/09/17/ai-chips-grow-larger-engineers-scarce-cadence-integrates-agents-core-eda-flow/",
    "summary": "晶片設計複雜度暴增但工程師供給追不上，Cadence 直接把 AI agent 嵌進 EDA 核心流程，用工具補人力的結構性缺口。",
    "date": "2026-09-17",
    "category": "人才策略"
-  },
-  {
-   "title": "The CEO of HCLTech on Pivoting for the AI Era",
-   "url": "https://hbr.org/2026/09/the-ceo-of-hcltech-on-pivoting-for-the-ai-era",
-   "summary": "印度 IT 服務巨頭 HCLTech 執行長談傳統人力密集服務業如何為 AI 時代重新定位，是「大型服務商被 AI 顛覆」的第一手回應。",
-   "date": "2026-09-16",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Stacking the odds: A blueprint for successfully scaling agentic AI",
-   "url": "https://www.mckinsey.com/capabilities/operations/our-insights/stacking-the-odds-a-blueprint-for-successfully-scaling-agentic-ai",
-   "summary": "麥肯錫提出 agentic AI 規模化藍圖，強調成敗取決於流程重設計與治理設計，而非模型選擇。",
-   "date": "2026-09-16",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "導入 AI 卻沒有轉型？台灣企業卡關的五個層次",
-   "url": "https://www.managertoday.com.tw/articles/view/72363",
-   "summary": "《2026 台灣產業 AI 化大調查》顯示逾六成員工已在用 AI，但策略、流程、人才、協作與組織能力同步落後，卡關點不在技術。",
-   "date": "2026-09-16",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "AI 代理不能只靠 API 金鑰，專家呼籲建立「數位身分」防堵資安漏洞",
-   "url": "https://finance.technews.tw/2026/09/15/ai-agents-cannot-rely-api-keys/",
-   "summary": "企業導入 AI 代理後，以 API 金鑰授權的模式已成資安破口，業界呼籲為代理建立可驗證的「數位身分」。",
-   "date": "2026-09-16",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "US data centers could consume more natural gas than Germany and Japan combined by 2035",
-   "url": "https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035/",
-   "summary": "AI 資料中心的用電成長正改寫能源結構，2035 年美國資料中心天然氣消耗量估將超過德日兩國總和，AI 的碳帳愈來愈難與企業淨零承諾脫鉤。",
-   "date": "2026-09-16",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "先做好ESG才有EPS！毛利高同業2倍，普萊德科技怎麼辦到的？",
-   "url": "https://www.managertoday.com.tw/articles/view/71070",
-   "summary": "台灣工業級網通廠普萊德以 ESG 治理拉出 47.88% 毛利率（同業平均 24.58%）、成立 32 年零虧損，是中小企業「永續即競爭力」的本地實證。",
-   "date": "2026-09-16",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "BRICS pushes back on unilateral carbon border measures",
-   "url": "https://x.com/KarbunWise/status/2100084382472253820",
-   "summary": "新德里 BRICS 峰會成員國聯合抵制 EU CBAM 等單邊碳邊境措施，主張氣候行動須兼顧經濟發展，出口導向企業的碳成本規則風險升高。",
-   "date": "2026-09-16",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "Stop Automating Old Processes. Design New Ones Instead.",
-   "url": "https://hbr.org/2026/09/stop-automating-old-processes-design-new-ones-instead",
-   "summary": "HBR 提醒把 AI 套在舊流程上只會加速錯誤，真正的價值來自先重寫流程再導入 AI。",
-   "date": "2026-09-16",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "從管理知識庫到 AI 日常：中鋼用三年養出學習型組織",
-   "url": "https://www.managertoday.com.tw/articles/view/72726",
-   "summary": "中鋼花三年讓 AI 從知識庫走進日常工作，關鍵不是技術取得，而是組織能否在成果出現前先養成學習習慣。",
-   "date": "2026-09-16",
-   "category": "管理趨勢"
   }
  ],
  "insights": [

@@ -1,15 +1,15 @@
 {
- "generatedAt": "2026-09-22T07:20:52Z",
+ "generatedAt": "2026-09-23T07:20:14Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 115
+  "daysRunning": 116
  },
  "stats": {
-  "scanDays": 95,
-  "weekArticles": 75,
-  "articles": 81,
-  "newsItems": 39,
+  "scanDays": 96,
+  "weekArticles": 79,
+  "articles": 82,
+  "newsItems": 41,
   "newsletterIssues": 19,
   "subscribers": 21,
   "confirmedSubscribers": 14,
@@ -17,16 +17,11 @@
   "views": 499,
   "channelSubscribers": 12,
   "insights": 13,
-  "socialPosts": 30,
+  "socialPosts": 32,
   "igCards": 24,
-  "competitorReports": 93
+  "competitorReports": 94
  },
  "activity": [
-  {
-   "date": "2026-09-16",
-   "count": 12,
-   "topics": []
-  },
   {
    "date": "2026-09-17",
    "count": 9,
@@ -56,13 +51,18 @@
    "date": "2026-09-22",
    "count": 13,
    "topics": []
+  },
+  {
+   "date": "2026-09-23",
+   "count": 12,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "人資還需不需要存在？三個正在發生的答案",
-   "date": "2026.09.21",
-   "url": "/knowledge/hr-function-three-possible-positions"
+   "title": "驗證經濟：當產量變成 19.2 倍，值錢的是「誰說這個可以出貨」",
+   "date": "2026.09.22",
+   "url": "/knowledge/verification-economy"
   },
   "newsletter": "🦞 榕賀觀點 第 19 期 — 2026-09-21",
   "video": {
@@ -77,31 +77,31 @@
    "keyword": "組織與管理",
    "icon": "🏢",
    "count": 23,
-   "momentum": "up"
+   "momentum": "flat"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 19,
+   "count": 21,
    "momentum": "up"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 17,
+   "count": 20,
    "momentum": "up"
   },
   {
-   "keyword": "人才與技能",
-   "icon": "🧠",
-   "count": 15,
+   "keyword": "人力資源",
+   "icon": "📋",
+   "count": 17,
    "momentum": "up"
   },
   {
    "keyword": "企業導入",
    "icon": "🚀",
-   "count": 14,
-   "momentum": "flat"
+   "count": 17,
+   "momentum": "up"
   }
  ]
 }
