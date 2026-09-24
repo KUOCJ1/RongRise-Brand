@@ -56,6 +56,7 @@ export const COVER_MAP: Record<string, string> = {
   "management-gap-2-ai-era": "article-ai-management-gap.jpg",
   "cognitive-capital-depreciation": "article-cognitive-capital-depreciation.jpg",
   "verification-economy": "article-verification-economy.jpg",
+  "ai-permitting-bottleneck": "article-ai-permitting-bottleneck.jpg",
 };
 
 export function coverImg(slug: string): string {

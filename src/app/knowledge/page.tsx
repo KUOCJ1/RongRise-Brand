@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-permitting-bottleneck",
+    cat: "AI 轉型",
+    title: "全美九州喊停、紐約暫停核准一年：AI 的瓶頸已經不是晶片，是鄰居",
+    date: "2026.09.24",
+    readTime: "9 分鐘",
+    excerpt: "全美 9 州暫緩新建資料中心、紐約暫停核准一年，維州禁簽保密協議、眾院以 417 比 3 通過電費法案。當瓶頸從晶片、電力搬到「許可」，採購 AI 的盡職調查要多一欄：選址與電力風險。",
+    tags: ["許可瓶頸", "AI 基建", "資料中心", "供應鏈風險", "AI 轉型"],
+  },
+  {
     slug: "verification-economy",
     cat: "AI 轉型",
     title: "驗證經濟：當產量變成 19.2 倍，值錢的是「誰說這個可以出貨」",
