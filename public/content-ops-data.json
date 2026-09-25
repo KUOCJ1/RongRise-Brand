@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-09-24T07:20:12Z",
+ "generatedAt": "2026-09-25T07:20:14Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 117
+  "daysRunning": 118
  },
  "stats": {
-  "scanDays": 97,
-  "weekArticles": 82,
-  "articles": 82,
-  "newsItems": 41,
-  "newsletterIssues": 19,
-  "subscribers": 21,
+  "scanDays": 98,
+  "weekArticles": 86,
+  "articles": 83,
+  "newsItems": 42,
+  "newsletterIssues": 20,
+  "subscribers": 18,
   "confirmedSubscribers": 14,
   "videos": 33,
-  "views": 502,
+  "views": 504,
   "channelSubscribers": 12,
   "insights": 13,
-  "socialPosts": 33,
+  "socialPosts": 34,
   "igCards": 24,
-  "competitorReports": 95
+  "competitorReports": 96
  },
  "activity": [
-  {
-   "date": "2026-09-18",
-   "count": 13,
-   "topics": []
-  },
   {
    "date": "2026-09-19",
    "count": 13,
@@ -56,15 +51,20 @@
    "date": "2026-09-24",
    "count": 13,
    "topics": []
+  },
+  {
+   "date": "2026-09-25",
+   "count": 13,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "驗證經濟：當產量變成 19.2 倍，值錢的是「誰說這個可以出貨」",
-   "date": "2026.09.22",
-   "url": "/knowledge/verification-economy"
+   "title": "全美九州喊停、紐約暫停核准一年：AI 的瓶頸已經不是晶片，是鄰居",
+   "date": "2026.09.24",
+   "url": "/knowledge/ai-permitting-bottleneck"
   },
-  "newsletter": "🦞 榕賀觀點 第 19 期 — 2026-09-21",
+  "newsletter": "🦞 榕賀觀點 第 20 期 — 2026-09-24",
   "video": {
    "title": "答案變便宜，判斷力開始變貴：AI 時代不能折舊的三種能力｜認知資本折舊",
    "date": "2026-09-16",
@@ -76,25 +76,25 @@
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 24,
+   "count": 25,
    "momentum": "up"
   },
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 22,
-   "momentum": "flat"
+   "count": 24,
+   "momentum": "up"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 21,
+   "count": 22,
    "momentum": "up"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 19,
+   "count": 21,
    "momentum": "up"
   },
   {
