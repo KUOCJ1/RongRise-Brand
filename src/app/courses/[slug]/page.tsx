@@ -167,13 +167,13 @@ export default async function CourseDetailPage({
                   <div className="flex gap-4">
                     <dt className="w-20 text-text-secondary shrink-0">時間</dt>
                     <dd className="text-text-primary font-medium">
-                      {formatCourseRange(course)}
+                      {preparing ? "確認中，開放報名時公告" : formatCourseRange(course)}
                     </dd>
                   </div>
                   <div className="flex gap-4">
                     <dt className="w-20 text-text-secondary shrink-0">地點</dt>
                     <dd className="text-text-primary font-medium">
-                      {course.location || "將於開課前通知"}
+                      {preparing ? "確認中" : course.location || "將於開課前通知"}
                     </dd>
                   </div>
                   <div className="flex gap-4">

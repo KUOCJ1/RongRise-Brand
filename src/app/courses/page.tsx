@@ -64,15 +64,23 @@ export default async function CoursesPage() {
                   <div className="flex flex-col md:flex-row md:items-stretch">
                     <div className="md:w-32 bg-primary/5 flex flex-row md:flex-col items-center justify-center p-4 md:p-6 border-b md:border-b-0 md:border-r border-border-light">
                       <div className="text-center">
-                        <div className="text-xs text-text-secondary">
-                          {new Date(course.startAt).toLocaleDateString("zh-TW", { month: "short" })}
-                        </div>
-                        <div className="text-3xl font-bold text-primary">
-                          {new Date(course.startAt).getDate()}
-                        </div>
-                        <div className="text-xs text-text-secondary">
-                          {new Date(course.startAt).toLocaleDateString("zh-TW", { year: "numeric" })}
-                        </div>
+                        {preparing ? (
+                          <div className="text-sm font-medium text-text-secondary">
+                            籌備中
+                          </div>
+                        ) : (
+                          <>
+                            <div className="text-xs text-text-secondary">
+                              {new Date(course.startAt).toLocaleDateString("zh-TW", { month: "short" })}
+                            </div>
+                            <div className="text-3xl font-bold text-primary">
+                              {new Date(course.startAt).getDate()}
+                            </div>
+                            <div className="text-xs text-text-secondary">
+                              {new Date(course.startAt).toLocaleDateString("zh-TW", { year: "numeric" })}
+                            </div>
+                          </>
+                        )}
                       </div>
                     </div>
 
@@ -95,8 +103,8 @@ export default async function CoursesPage() {
                       )}
 
                       <div className="flex flex-wrap gap-x-5 gap-y-2 mt-4 text-sm text-text-secondary">
-                        <span>🗓 {formatCourseDate(course.startAt)}</span>
-                        {course.location && <span>📍 {course.location}</span>}
+                        <span>🗓 {preparing ? "開課時間確認中" : formatCourseDate(course.startAt)}</span>
+                        {course.location && <span>📍 {preparing ? "場地確認中" : course.location}</span>}
                         {!preparing && (
                           <LiveSeats
                             slug={course.slug}
