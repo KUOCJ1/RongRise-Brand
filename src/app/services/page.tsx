@@ -257,16 +257,16 @@ export default function ServicesPage() {
               <div className="text-text-secondary text-sm mb-4">遠低於市價</div>
               <ul className="text-left space-y-2 mb-6 flex-1">
                 <li className="flex items-start gap-2 text-sm text-text-secondary">
-                  <span className="text-accent">✓</span> AI 實戰營（公開班）
+                  <span className="text-accent-strong">✓</span> AI 實戰營（公開班）
                 </li>
                 <li className="flex items-start gap-2 text-sm text-text-secondary">
-                  <span className="text-accent">✓</span> 企業內訓工作坊
+                  <span className="text-accent-strong">✓</span> 企業內訓工作坊
                 </li>
                 <li className="flex items-start gap-2 text-sm text-text-secondary">
-                  <span className="text-accent">✓</span> 高階共識營
+                  <span className="text-accent-strong">✓</span> 高階共識營
                 </li>
                 <li className="flex items-start gap-2 text-sm text-text-secondary">
-                  <span className="text-accent">✓</span> 客製化課程設計
+                  <span className="text-accent-strong">✓</span> 客製化課程設計
                 </li>
               </ul>
               <Link href="/knowledge" className="btn-secondary w-full text-center">

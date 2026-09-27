@@ -158,7 +158,7 @@ export default function EnrollForm({
     return (
       <div>
         <div className="card p-5 bg-accent/10 border border-accent/30 mb-4">
-          <p className="text-[11px] font-bold tracking-[0.18em] text-accent mb-1.5">
+          <p className="text-[11px] font-bold tracking-[0.18em] text-accent-strong mb-1.5">
             COMING SOON
           </p>
           <h3 className="heading-subsection text-text-primary mb-2">籌備中，即將公開</h3>

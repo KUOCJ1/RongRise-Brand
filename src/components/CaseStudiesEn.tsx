@@ -24,7 +24,7 @@ export default function CaseStudiesEnSection() {
               <div className="flex items-center justify-between mb-4">
                 <span className="tag">{study.industry}</span>
                 {study.tags.map((t) => (
-                  <span key={t} className="text-[10px] px-2 py-0.5 rounded-full bg-accent/10 text-accent font-medium">
+                  <span key={t} className="text-[10px] px-2 py-0.5 rounded-full bg-accent/10 text-accent-strong font-medium">
                     {t}
                   </span>
                 ))}

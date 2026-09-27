@@ -146,10 +146,10 @@ export default function ServicesEnPage() {
               <div className="text-3xl font-bold text-primary mb-1">Per Person</div>
               <div className="text-text-secondary text-sm mb-4">Below Market Rate</div>
               <ul className="text-left space-y-2 mb-6 flex-1">
-                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-accent">✓</span> AI Bootcamp (public)</li>
-                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-accent">✓</span> Corporate workshops</li>
-                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-accent">✓</span> Executive consensus camp</li>
-                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-accent">✓</span> Custom curriculum design</li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-accent-strong">✓</span> AI Bootcamp (public)</li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-accent-strong">✓</span> Corporate workshops</li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-accent-strong">✓</span> Executive consensus camp</li>
+                <li className="flex items-start gap-2 text-sm text-text-secondary"><span className="text-accent-strong">✓</span> Custom curriculum design</li>
               </ul>
               <Link href="/en/courses" className="btn-secondary w-full text-center">View Courses</Link>
             </div>

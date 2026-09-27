@@ -14,6 +14,9 @@
      填色按鈕維持品牌橘 #E8912A 但改深藍字（5.78:1），不稀釋品牌色 */
   --color-tertiary-strong: #9E5B0C;
   --color-accent: #2EC4B6;
+  /* 淺底上的青色文字（標籤／分類／勾選）用深一階的青，白底 5.18:1、淺青底 4.78:1，
+     都過 WCAG AA 4.5:1；品牌青 #2EC4B6 只留給圖形、邊框、裝飾等非文字用途 */
+  --color-accent-strong: #147A72;
   --color-success: #3DAE62;
   /* LINE 官方品牌綠（加好友入口專用）；白字只有 2.26:1 → 一律搭品牌深藍字 6.32:1 */
   --color-line: #06C755;
@@ -83,6 +86,7 @@
   --color-tertiary: var(--color-tertiary);
   --color-tertiary-strong: var(--color-tertiary-strong);
   --color-accent: var(--color-accent);
+  --color-accent-strong: var(--color-accent-strong);
   --color-success: var(--color-success);
   --color-line: var(--color-line);
   --color-dark: var(--color-text-primary);

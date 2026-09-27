@@ -85,10 +85,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 mt-8 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3">
-          <p className="text-gray-500 text-xs">
+          <p className="text-gray-400 text-xs">
             © {new Date().getFullYear()} 榕耀管顧 RongRise Consulting. All rights reserved.
           </p>
-          <p className="text-gray-500 text-xs">
+          <p className="text-gray-400 text-xs">
             Designed with ❤️ by C.J. Kuo
           </p>
         </div>

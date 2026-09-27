@@ -29,7 +29,7 @@ export default function MonitorPage() {
         <StatCard label="文章總數" value={totalArticles.toString()} color="text-primary" />
         <StatCard label="最新消息" value={totalNews.toString()} color="text-secondary" />
         <StatCard label="NEW 標記" value={newItems.toString()} color="text-tertiary" />
-        <StatCard label="最新影片" value={videoData?.videos?.length?.toString() || "0"} color="text-accent" />
+        <StatCard label="最新影片" value={videoData?.videos?.length?.toString() || "0"} color="text-accent-strong" />
       </div>
 
       {/* Video Status */}

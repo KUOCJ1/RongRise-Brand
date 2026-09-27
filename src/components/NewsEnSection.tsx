@@ -4,7 +4,7 @@ import news from "@/data/news-en.json";
 const categoryColors: Record<string, string> = {
   "Course": "bg-tertiary/10 text-tertiary",
   "Media": "bg-secondary/10 text-secondary",
-  "Resource": "bg-accent/10 text-accent",
+  "Resource": "bg-accent/10 text-accent-strong",
   "Announcement": "bg-primary/10 text-primary"
 };
 

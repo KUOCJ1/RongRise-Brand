@@ -55,7 +55,7 @@ export function isPreparing(slug: string): boolean {
 }
 
 export function courseStatus(c: Course, preparing = false): { label: string; color: string } {
-  if (preparing) return { label: "籌備中，即將公開", color: "bg-accent/15 text-accent" };
+  if (preparing) return { label: "籌備中，即將公開", color: "bg-accent/15 text-accent-strong" };
   if (!c.enrollOpen) return { label: "已關閉報名", color: "bg-gray-100 text-gray-500" };
   if (c.full) return { label: "額滿（可候補）", color: "bg-gray-100 text-gray-500" };
   if (new Date(c.endAt) < new Date()) return { label: "已結束", color: "bg-gray-100 text-gray-400" };

@@ -141,7 +141,7 @@ export default async function CoursesPage() {
                                 <div className="text-lg font-bold text-primary">{course.price}</div>
                               )}
                               {course.earlyBirdPrice && (
-                                <div className="text-xs text-accent font-medium">
+                                <div className="text-xs text-accent-strong font-medium">
                                   早鳥 {course.earlyBirdPrice}
                                 </div>
                               )}
