@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "perfectionism-worse-grades",
+    cat: "管理心理學",
+    title: "為什麼目標訂得越高，成績反而越差？",
+    date: "2026.09.27",
+    readTime: "10 分鐘",
+    excerpt: "七十年研究指向同一件事：把標準訂在達不到的位置，目標越高、結果越差。追求卓越與追求完美，差別不在標準高低，在標準的性質",
+    tags: ["完美主義", "決策品質", "AI 導入", "心理安全感", "HBR"],
+  },
+  {
     slug: "ai-permitting-bottleneck",
     cat: "AI 轉型",
     title: "全美九州喊停、紐約暫停核准一年：AI 的瓶頸已經不是晶片，是鄰居",

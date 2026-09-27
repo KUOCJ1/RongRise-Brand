@@ -1,13 +1,22 @@
 {
   "news": [
     {
+      "id": "n44",
+      "date": "2026-09-27",
+      "category": "資源",
+      "title": "為什麼目標訂得越高，成績反而越差？",
+      "summary": "七十年研究指向同一件事：把標準訂在達不到的位置，目標越高、結果越差",
+      "link": "/knowledge/perfectionism-worse-grades",
+      "isNew": true
+    },
+    {
       "id": "n43",
       "date": "2026-09-24",
       "category": "資源",
       "title": "全美九州喊停、紐約暫停核准一年：AI 的瓶頸已經不是晶片，是鄰居",
       "summary": "全美 9 州暫緩新建資料中心、紐約暫停核准一年，維州禁簽 NDA，眾院以 417 比 3 通過電費法案。AI 的瓶頸從晶片、電力搬到「許可」，採購 AI 的盡職調查要多一欄：選址與電力風險。",
       "link": "/knowledge/ai-permitting-bottleneck",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n42",
@@ -16,7 +25,7 @@
       "title": "HR AI Agent 實踐論壇：當 HR 開始用策略語言談 AI",
       "summary": "五位實務講師、近百位 HR 夥伴，一整天下來，現場提問從「要不要做」變成「怎麼落地」。落地卡住的通常不是技術，是語言：怎麼把 AI Agent 翻譯成決策層關心的瓶頸、成本與風險。",
       "link": "/events/hr-ai-agent-forum-20260920",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n41",
@@ -25,7 +34,7 @@
       "title": "驗證經濟：當產量變成 19.2 倍，值錢的是「誰說這個可以出貨」",
       "summary": "一季內有銷售紀錄的書成長 19.2 倍，營收只成長 8.9 倍。生產變便宜之後，稀缺的從生產搬到辨識：驗證者、翻譯者、中介者三個新定價點，以及一份今天就能填的驗收單。",
       "link": "/knowledge/verification-economy",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n40",
