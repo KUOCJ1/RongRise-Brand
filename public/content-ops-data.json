@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-09-27T07:20:54Z",
+ "generatedAt": "2026-09-28T07:20:59Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 120
+  "daysRunning": 121
  },
  "stats": {
-  "scanDays": 100,
-  "weekArticles": 83,
-  "articles": 83,
-  "newsItems": 42,
+  "scanDays": 101,
+  "weekArticles": 84,
+  "articles": 85,
+  "newsItems": 45,
   "newsletterIssues": 20,
   "subscribers": 18,
   "confirmedSubscribers": 14,
   "videos": 33,
-  "views": 512,
+  "views": 516,
   "channelSubscribers": 12,
   "insights": 13,
   "socialPosts": 35,
   "igCards": 28,
-  "competitorReports": 98
+  "competitorReports": 99
  },
  "activity": [
-  {
-   "date": "2026-09-21",
-   "count": 12,
-   "topics": []
-  },
   {
    "date": "2026-09-22",
    "count": 13,
@@ -56,13 +51,18 @@
    "date": "2026-09-27",
    "count": 12,
    "topics": []
+  },
+  {
+   "date": "2026-09-28",
+   "count": 12,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "全美九州喊停、紐約暫停核准一年：AI 的瓶頸已經不是晶片，是鄰居",
-   "date": "2026.09.24",
-   "url": "/knowledge/ai-permitting-bottleneck"
+   "title": "政府 AI 補助怎麼選：三種企業規模的三條路線",
+   "date": "2026.09.28",
+   "url": "/knowledge/gov-ai-subsidy-three-routes"
   },
   "newsletter": "🦞 榕賀觀點 第 20 期 — 2026-09-24",
   "video": {
@@ -74,33 +74,33 @@
  },
  "trends": [
   {
-   "keyword": "成本與投資",
-   "icon": "💰",
-   "count": 25,
-   "momentum": "up"
-  },
-  {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 23,
+   "count": 24,
    "momentum": "flat"
+  },
+  {
+   "keyword": "成本與投資",
+   "icon": "💰",
+   "count": 23,
+   "momentum": "up"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 19,
+   "count": 20,
    "momentum": "up"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 19,
-   "momentum": "up"
+   "count": 18,
+   "momentum": "flat"
   },
   {
    "keyword": "企業導入",
    "icon": "🚀",
-   "count": 14,
+   "count": 15,
    "momentum": "flat"
   }
  ]
