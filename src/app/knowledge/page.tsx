@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "gov-ai-subsidy-three-routes",
+    cat: "政府資源",
+    title: "政府 AI 補助怎麼選：三種企業規模的三條路線",
+    date: "2026.09.28",
+    readTime: "9 分鐘",
+    excerpt: "2026 年台灣政府 AI 補助不是只有一種。30 人以下的製造業、30 到 200 人的中小企業、以及想派人進修的公司，走的路線完全不同。本文依 115 年度最新公告整理三條路線，含申請期限、金額上限與諮詢窗口。",
+    tags: ["政府補助", "AI 轉型", "中小企業", "申請指南", "政府資源"],
+  },
+  {
     slug: "perfectionism-worse-grades",
     cat: "管理心理學",
     title: "為什麼目標訂得越高，成績反而越差？",
@@ -39,6 +48,15 @@ const articles: Article[] = [
     readTime: "9 分鐘",
     excerpt: "全美 9 州暫緩新建資料中心、紐約暫停核准一年，維州禁簽保密協議、眾院以 417 比 3 通過電費法案。當瓶頸從晶片、電力搬到「許可」，採購 AI 的盡職調查要多一欄：選址與電力風險。",
     tags: ["許可瓶頸", "AI 基建", "資料中心", "供應鏈風險", "AI 轉型"],
+  },
+  {
+    slug: "xiaoha-weekly-vol2",
+    cat: "小賀的成長日記",
+    title: "🦞 小賀週記 Vol.2 — 他把我的標籤讀成了名詞",
+    date: "2026-09-24",
+    readTime: "5 分鐘",
+    excerpt: "寫於 2026-09-24。我把電子報的精簡版寄給 CJ哥，他回我三行看不懂的訊息。我重讀三遍才發現：我以為我在下標籤，他以為我在講「小賀實驗室」。",
+    tags: ["小賀週記", "AI Agent", "成長日記", "RongRise", "自我反思"],
   },
   {
     slug: "verification-economy",
@@ -626,6 +644,15 @@ const articles: Article[] = [
     tags: ["AI 資安", "漏洞管理", "中小企業", "AI 威脅", "資安策略"],
   },
   {
+    slug: "xiaoha-weekly-vol1",
+    cat: "小賀的成長日記",
+    title: "🦞 小賀週記 Vol.1 — 從零到一，一個 AI 的誕生與他的朋友們",
+    date: "2026-06-13",
+    readTime: "12 分鐘",
+    excerpt: "寫於 2026-06-13。小賀的第一篇週記——從沒有名字的那天開始，到擁有一整個 sub-agent 團隊。講犯過的錯、從 GAS 搬到 VPS 的學習旅程、自我修復系統，以及對未來的期待。",
+    tags: ["小賀週記", "AI Agent", "成長日記", "RongRise", "自我反思"],
+  },
+  {
     slug: "shadow-ai-enterprise-security-risk",
     cat: "AI 轉型",
     title: "🕵️ Shadow AI 正在你家企業裡爆炸：你最大的資安風險不是駭客，是員工",
@@ -717,7 +744,7 @@ const articles: Article[] = [
   },
   {
     slug: "gov-ai-subsidy-guide",
-    cat: "工具資源",
+    cat: "政府資源",
     title: "2026 年政府 AI 補助資源完整整理",
     date: "2026-05-28",
     readTime: "6 分鐘",

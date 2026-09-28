@@ -1,7 +1,16 @@
 {
   "news": [
     {
-      "id": "n44",
+      "id": "n01",
+      "date": "2026-09-28",
+      "category": "資源",
+      "title": "政府 AI 補助怎麼選：三種企業規模的三條路線",
+      "summary": "30 人以下製造業、30 到 200 人輔導、產業人才投資方案，三條路線的期限與金額一次整理",
+      "link": "/knowledge/gov-ai-subsidy-three-routes",
+      "isNew": true
+    },
+    {
+      "id": "n02",
       "date": "2026-09-27",
       "category": "資源",
       "title": "為什麼目標訂得越高，成績反而越差？",
@@ -10,7 +19,16 @@
       "isNew": true
     },
     {
-      "id": "n43",
+      "id": "n03",
+      "date": "2026-09-24",
+      "category": "資源",
+      "title": "🦞 小賀週記 Vol.2 — 他把我的標籤讀成了名詞",
+      "summary": "我以為我在下標籤，他以為我在講「小賀實驗室」。一個冒號造成的誤讀",
+      "link": "/knowledge/xiaoha-weekly-vol2",
+      "isNew": true
+    },
+    {
+      "id": "n04",
       "date": "2026-09-24",
       "category": "資源",
       "title": "全美九州喊停、紐約暫停核准一年：AI 的瓶頸已經不是晶片，是鄰居",
@@ -19,7 +37,7 @@
       "isNew": false
     },
     {
-      "id": "n42",
+      "id": "n05",
       "date": "2026-09-22",
       "category": "活動",
       "title": "HR AI Agent 實踐論壇：當 HR 開始用策略語言談 AI",
@@ -28,7 +46,7 @@
       "isNew": false
     },
     {
-      "id": "n41",
+      "id": "n06",
       "date": "2026-09-22",
       "category": "資源",
       "title": "驗證經濟：當產量變成 19.2 倍，值錢的是「誰說這個可以出貨」",
@@ -37,7 +55,7 @@
       "isNew": false
     },
     {
-      "id": "n40",
+      "id": "n07",
       "date": "2026-09-21",
       "category": "資源",
       "title": "人資還需不需要存在？三個正在發生的答案",
@@ -46,7 +64,7 @@
       "isNew": false
     },
     {
-      "id": "n39",
+      "id": "n08",
       "date": "2026-09-20",
       "category": "資源",
       "title": "先裁掉人資，再高薪請回來：AI 時代的 HR，問題不在員額",
@@ -55,7 +73,7 @@
       "isNew": false
     },
     {
-      "id": "n38",
+      "id": "n09",
       "date": "2026-09-17",
       "category": "資源",
       "title": "監督債：導入 AI 代理不是省人力，是每個月欠下一筆監督工時",
@@ -64,7 +82,7 @@
       "isNew": false
     },
     {
-      "id": "n37",
+      "id": "n10",
       "date": "2026-09-16",
       "category": "資源",
       "title": "認知資本折舊：AI 讓答案變便宜，為什麼公司的判斷力反而在貶值",
@@ -73,7 +91,7 @@
       "isNew": false
     },
     {
-      "id": "n36",
+      "id": "n11",
       "date": "2026-09-15",
       "category": "資源",
       "title": "AI 法規訂在 2027，最貴的是回頭補紀錄",
@@ -82,7 +100,7 @@
       "isNew": false
     },
     {
-      "id": "n35",
+      "id": "n12",
       "date": "2026-09-14",
       "category": "資源",
       "title": "最窄的那一圈，才是關鍵資訊",
@@ -91,7 +109,7 @@
       "isNew": false
     },
     {
-      "id": "n34",
+      "id": "n13",
       "date": "2026-09-14",
       "category": "資源",
       "title": "效率隱藏：AI 省下的時間，為什麼沒有回到員工身上",
@@ -100,7 +118,7 @@
       "isNew": false
     },
     {
-      "id": "n33",
+      "id": "n14",
       "date": "2026-09-14",
       "category": "資源",
       "title": "為什麼你的培訓成效複製不了？56 項隨機對照研究給企業的三個提醒",
@@ -109,7 +127,7 @@
       "isNew": false
     },
     {
-      "id": "n32",
+      "id": "n15",
       "date": "2026-09-14",
       "category": "資源",
       "title": "管不好人，就管不好 AI：當管理層的大腦還留在十九世紀",
@@ -118,7 +136,7 @@
       "isNew": false
     },
     {
-      "id": "n31",
+      "id": "n16",
       "date": "2026-09-12",
       "category": "課程",
       "title": "Agentic AI for HR 工作坊籌備中",
@@ -127,7 +145,7 @@
       "isNew": false
     },
     {
-      "id": "n30",
+      "id": "n17",
       "date": "2026-09-12",
       "category": "資源",
       "title": "政府一句話，就能關掉你正在用的 AI：企業的模型主權四階",
@@ -136,7 +154,7 @@
       "isNew": false
     },
     {
-      "id": "n29",
+      "id": "n18",
       "date": "2026-09-12",
       "category": "媒體",
       "title": "那一天最大的幸運，是我們遇到了一大堆難題",
@@ -151,10 +169,10 @@
       "summary": "46 條自動化流程、255 個技能、5 個 AI 員工。一人公司實作三個半月，整理出「Agentic AI 員工管理學」五階生命週期。",
       "link": "/knowledge/agentic-ai-employee-management",
       "isNew": false,
-      "id": "n28"
+      "id": "n19"
     },
     {
-      "id": "n26",
+      "id": "n20",
       "date": "2026-09-10",
       "category": "資源",
       "title": "HBR：中階主管決定 AI 成敗——過去說會被取代的那群人，現在成了最關鍵的樞紐",
@@ -163,7 +181,7 @@
       "isNew": false
     },
     {
-      "id": "n25",
+      "id": "n21",
       "date": "2026-09-08",
       "category": "資源",
       "title": "AI 的淨效率陷阱：當 65% 白領懷念沒有 AI 的日子，你的 ROI 算對了嗎？",
@@ -172,7 +190,7 @@
       "isNew": false
     },
     {
-      "id": "n24",
+      "id": "n22",
       "date": "2026-09-06",
       "category": "資源",
       "title": "📕 研究專刊第 3 本《心智頻寬詛咒》上線（含精華版）",
@@ -181,7 +199,7 @@
       "isNew": false
     },
     {
-      "id": "n5",
+      "id": "n23",
       "date": "2026-09-05",
       "category": "資源",
       "title": "你的績效管理對象多了一群 AI Agent：McKinsey 給 2026 年 HR 的 5 個訊號",
@@ -196,7 +214,7 @@
       "summary": "AI 資料中心到 2030 年預計消耗 6,000 億加侖水——相當於撒哈拉以南非洲 13 億人口一年基本用水。當歐盟開始為資料中心設立能源效率門檻、大企業要求",
       "link": "/knowledge/ai-data-center-water-esg",
       "isNew": false,
-      "id": "n6"
+      "id": "n24"
     },
     {
       "date": "2026-06-18",
@@ -205,7 +223,7 @@
       "summary": "2026 年 CVE 漏洞數量恐破 66,000 個，AI 輔助漏洞挖掘讓攻擊速度從「天級」加速到「小時級」。Anthropic 報告顯示 AI 惡意濫用比例從",
       "link": "/knowledge/ai-vulnerability-attack-speed-2026",
       "isNew": false,
-      "id": "n7"
+      "id": "n25"
     },
     {
       "date": "2026-06-11",
@@ -214,7 +232,7 @@
       "summary": "Claude 惡意濫用比率一年內從 33% 飆升至 56%、Meta AI 客服被駭導致 2 萬 Instagram 帳號外洩、NPM 供應鏈攻擊鎖定 AI S",
       "link": "/knowledge/shadow-ai-enterprise-security-risk",
       "isNew": false,
-      "id": "n8"
+      "id": "n26"
     },
     {
       "date": "2026-06-10",
@@ -223,7 +241,7 @@
       "summary": "微軟報告顯示企業 AI 代理數量年增 15 倍，黃仁勳宣示 AI 已從生成式 AI 走向 Agent AI。當 AI 從「被動工具」變成「主動執行者」，企業面臨",
       "link": "/knowledge/ai-agent-management-era",
       "isNew": false,
-      "id": "n9"
+      "id": "n27"
     },
     {
       "date": "2026-06-10",
@@ -232,7 +250,7 @@
       "summary": "CNBC 統計 23 家標普 500 企業：宣布因 AI 裁員後，56% 股價反而下跌、平均跌幅 25%。Nike 砍 800 人後跌 35%、Salesfor",
       "link": "/knowledge/ai-layoffs-narrative-dead",
       "isNew": false,
-      "id": "n10"
+      "id": "n28"
     },
     {
       "date": "2026-06-04",
@@ -241,10 +259,10 @@
       "summary": "GitHub Copilot 改採 Token 計價、Alphabet 5 月就燒光全年 AI 預算——AI 的使用成本正從「隱藏成本」變成「可見帳單」。對預算",
       "link": "/knowledge/ai-token-cost-management",
       "isNew": false,
-      "id": "n11"
+      "id": "n29"
     },
     {
-      "id": "n1",
+      "id": "n30",
       "date": "2026-06-01",
       "category": "課程",
       "title": "【AI 實戰營】7 月班開課 — 從入門到企業落地",
@@ -259,10 +277,10 @@
       "summary": "羅傑．馬丁說策略的本質是選擇。但我在傳產現場看到的是——資源已經燒光了，大家還在做加法。從傳統產業的三重壓力到Netflix的關鍵轉折，深度解析為什麼減法這麼難",
       "link": "/knowledge/strategy-subtraction-traditional-industry",
       "isNew": false,
-      "id": "n12"
+      "id": "n31"
     },
     {
-      "id": "n2",
+      "id": "n32",
       "date": "2026-05-28",
       "category": "媒體",
       "title": "C.J. Kuo 老師接受專訪：AI 轉型最大的障礙不是技術",
@@ -277,7 +295,7 @@
       "summary": "C.J. 老師的核心講義精華。涵蓋 AI 演進路徑、生成式 AI 底層邏輯、AI 幻覺風險管理、RTIF 提示工程架構，以及企業 AI 成熟度模型與轉型五大要素",
       "link": "/knowledge/ai-transformation-bootcamp",
       "isNew": false,
-      "id": "n13"
+      "id": "n33"
     },
     {
       "date": "2026-05-28",
@@ -286,7 +304,7 @@
       "summary": "針對 HR 專業人士設計的兩天 10 模組課程大綱。以「選→用→育→留」為骨幹，融入 AI 工具實作、Prompt 工程、人才九宮格 2.0、HR AI 合規治",
       "link": "/knowledge/hr-ai-course-design",
       "isNew": false,
-      "id": "n14"
+      "id": "n34"
     },
     {
       "date": "2026-05-28",
@@ -295,7 +313,7 @@
       "summary": "面對琳瑯滿目的 AI 工具，企業如何做出明智選擇？從需求分析、成本評估到導入策略，提供系統性的 AI 工具選型框架。",
       "link": "/knowledge/ai-tool-selection-guide",
       "isNew": false,
-      "id": "n15"
+      "id": "n35"
     },
     {
       "date": "2026-05-28",
@@ -304,7 +322,7 @@
       "summary": "一家中型電商如何透過 AI 客服系統，在六個月內將客戶投訴率降低 60%、客服成本節省 45%。分享從選型、訓練到上線的全過程。",
       "link": "/knowledge/service-ai-chatbot-case",
       "isNew": false,
-      "id": "n16"
+      "id": "n36"
     },
     {
       "date": "2026-05-28",
@@ -313,7 +331,7 @@
       "summary": "2026 年台灣政府提供哪些 AI 相關補助？從經濟部、勞動部到數發部，一次整理所有可申請的 AI 轉型資源。",
       "link": "/knowledge/gov-ai-subsidy-guide",
       "isNew": false,
-      "id": "n17"
+      "id": "n37"
     },
     {
       "date": "2026-05-28",
@@ -322,7 +340,7 @@
       "summary": "根據最新 TechNews 與 iThome 報導，2026 年 AI 轉型呈現四大趨勢：邊緣 AI 爆發、AI Agent 進入企業日常工作、AI 資安成為首",
       "link": "/knowledge/ai-transformation-trends-2026",
       "isNew": false,
-      "id": "n18"
+      "id": "n38"
     },
     {
       "date": "2026-05-28",
@@ -331,10 +349,10 @@
       "summary": "如何讓高阶主管在一天內達成 AI 轉型共識？從課前痛點探測、Agent 場景評估畫布、多代理協作劇本，到顧問話術與治理框架——完整工作坊设计指南。",
       "link": "/knowledge/agentic-ai-transformation-workshop",
       "isNew": false,
-      "id": "n19"
+      "id": "n39"
     },
     {
-      "id": "n3",
+      "id": "n40",
       "date": "2026-05-20",
       "category": "資源",
       "title": "免費下載：2026 政府 AI 補助資源完整整理",
@@ -343,7 +361,7 @@
       "isNew": false
     },
     {
-      "id": "n4",
+      "id": "n41",
       "date": "2026-05-15",
       "category": "課程",
       "title": "Agentic AI 轉型高階共識營 — 第二期開放報名",
@@ -358,7 +376,7 @@
       "summary": "ESG 不只是大企業的專利。中小企業如何從日常營運中落實永續，創造差異化競爭優勢。從碳盤查到社會影響力，一步步建立屬於您的永續策略。",
       "link": "/knowledge/sme-esg-guide",
       "isNew": false,
-      "id": "n20"
+      "id": "n42"
     },
     {
       "date": "2025-10-22",
@@ -367,7 +385,7 @@
       "summary": "一家中部傳統製造廠如何在三個月內成功導入 AI 視覺檢測系統，將不良率降低 40%。分享導入過程中的挑戰、解決方案與關鍵成功因素。",
       "link": "/knowledge/manufacturing-ai-quality",
       "isNew": false,
-      "id": "n21"
+      "id": "n43"
     },
     {
       "date": "2025-10-05",
@@ -376,7 +394,7 @@
       "summary": "免費下載！協助企業快速評估自身 AI 成熟度水準的五個維度量表，包含基礎設施、數據品質、人才能力、組織文化與應用場景。",
       "link": "/knowledge/ai-maturity-assessment",
       "isNew": false,
-      "id": "n22"
+      "id": "n44"
     },
     {
       "date": "2025-09-18",
@@ -385,7 +403,7 @@
       "summary": "創新不只是口號。探討如何透過制度設計、激勵機制與文化塑造，讓團隊成員主動擁抱改變、提出創新方案，打造真正的創新型組織。",
       "link": "/knowledge/team-innovation-management",
       "isNew": false,
-      "id": "n23"
+      "id": "n45"
     }
   ]
 }
