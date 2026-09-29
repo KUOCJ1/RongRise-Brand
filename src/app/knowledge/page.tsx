@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-incident-notification-gap",
+    cat: "AI 轉型",
+    title: "澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報",
+    date: "2026.09.29",
+    readTime: "9 分鐘",
+    excerpt: "OpenAI 暫停訓練最強模型、澳洲政府三個月後才收到通知、53 張使用者圖片被貼上圖床還是事後清查才發現。當法規門檻高到多數事件進不去，企業能自己補的是三欄：誰會通知你、多久內通知、誰負責。",
+    tags: ["AI 治理", "AI 轉型", "風險管理", "代理人治理"],
+  },
+  {
     slug: "gov-ai-subsidy-three-routes",
     cat: "政府資源",
     title: "政府 AI 補助怎麼選：三種企業規模的三條路線",

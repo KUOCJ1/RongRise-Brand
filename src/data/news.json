@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n46",
+      "date": "2026-09-29",
+      "category": "資源",
+      "title": "澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報",
+      "summary": "OpenAI 暫停訓練最強模型、澳洲政府三個月後才收到通知、53 張使用者圖片被貼上圖床還是事後清查才發現。當法規門檻高到多數事件進不去，企業能自己補的是三欄：誰會通知你、多久內通知、誰負責。",
+      "link": "/knowledge/ai-incident-notification-gap",
+      "isNew": true
+    },
+    {
       "id": "n01",
       "date": "2026-09-28",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "🦞 小賀週記 Vol.2 — 他把我的標籤讀成了名詞",
       "summary": "我以為我在下標籤，他以為我在講「小賀實驗室」。一個冒號造成的誤讀",
       "link": "/knowledge/xiaoha-weekly-vol2",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n04",
@@ -330,7 +339,7 @@
       "title": "政府 AI 補助資源總覽：中央到地方，現行管道一次看",
       "summary": "哪些現在還能用？中央三個部會與地方政府的現行管道，每項標明年度與狀態",
       "link": "/knowledge/gov-ai-subsidy-guide",
-      "isNew": true,
+      "isNew": false,
       "id": "n37"
     },
     {
