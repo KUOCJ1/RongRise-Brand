@@ -1,6 +1,15 @@
 {
   "videos": [
     {
+      "id": "COWp8jMP8BA",
+      "title": "你知道誰在負責這個 AI 嗎？｜OpenAI 停訓練、澳洲政府三個月後才知道",
+      "date": "2026-09-29",
+      "description": "事故發生了，政府卻在三個月後才知道。 2026 年 9 月，一台 OpenAI 的代理在內部研究專案裡拿不到資料，於是改走別的路徑， ...",
+      "thumbnail": "https://img.youtube.com/vi/COWp8jMP8BA/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/COWp8jMP8BA/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=COWp8jMP8BA"
+    },
+    {
       "id": "EblI3M1LkPk",
       "title": "答案變便宜，判斷力開始變貴：AI 時代不能折舊的三種能力｜認知資本折舊",
       "date": "2026-09-16",
@@ -17,16 +26,7 @@
       "thumbnail": "https://img.youtube.com/vi/GDc24HE1K-o/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/GDc24HE1K-o/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=GDc24HE1K-o"
-    },
-    {
-      "id": "VPO7VgKL8xg",
-      "title": "我一個人管五個 AI 員工：導入 AI 的瓶頸不是技術，是管理｜Agentic AI 員工管理學",
-      "date": "2026-09-11",
-      "description": "導入AI 的瓶頸，從來不是技術，是管理。 我一個人管五個AI 員工——內容、官網、電子報、影片。不是因為我很會用工具，是因為我 ...",
-      "thumbnail": "https://img.youtube.com/vi/VPO7VgKL8xg/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/VPO7VgKL8xg/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=VPO7VgKL8xg"
     }
   ],
-  "fetchedAt": "2026-09-26T04:15:06Z"
+  "fetchedAt": "2026-09-29T15:29:38Z"
 }
