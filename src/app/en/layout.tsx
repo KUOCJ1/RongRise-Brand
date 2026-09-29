@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "@/app/globals.css";
 import HeaderEn from "@/components/HeaderEn";
 import FooterEn from "@/components/FooterEn";
-import Script from "next/script";
 
 const SITE_URL = "https://rong-rise.com";
 const SITE_NAME = "RongRise Consulting";
@@ -98,7 +97,6 @@ const jsonLd = {
   ],
 };
 
-const GA4_ID = "G-E4PL80M0BL";
 
 export default function EnLayout({
   children,
@@ -106,41 +104,10 @@ export default function EnLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full antialiased">
-      <head>
-        {/* 字體：Noto Serif TC（標題襯線）+ Noto Sans TC（內文） */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap"
-          rel="stylesheet"
-        />
-        <Script
-          id="en-json-ld"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}
-          strategy="lazyOnload"
-        />
-        <Script id="en-ga4-init" strategy="lazyOnload">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA4_ID}', {
-              page_path: window.location.pathname,
-              send_page_view: true,
-            });
-          `}
-        </Script>
-      </head>
-      <body className="min-h-full flex flex-col">
-        <HeaderEn />
-        <main className="flex-1">{children}</main>
-        <FooterEn />
-      </body>
-    </html>
+    <>
+      <HeaderEn />
+      <main className="flex-1">{children}</main>
+      <FooterEn />
+    </>
   );
 }
