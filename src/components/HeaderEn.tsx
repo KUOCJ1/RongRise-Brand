@@ -19,9 +19,9 @@ export default function HeaderEn() {
 
   return (
     <header className="sticky top-0 z-50 bg-surface/95 backdrop-blur-sm border-b border-border">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 flex items-center justify-between h-16 gap-6">
         {/* Logo */}
-        <Link href="/en" className="flex items-center gap-2 no-underline">
+        <Link href="/en" className="flex items-center gap-2 no-underline shrink-0">
           <div className="w-9 h-9 rounded-lg bg-gradient-hero flex items-center justify-center">
             <span className="text-white font-bold text-lg">榕</span>
           </div>
@@ -32,18 +32,18 @@ export default function HeaderEn() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-1">
+        <nav className="hidden lg:flex items-center gap-1">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="nav-link text-[14px] px-3 py-2"
+              className="nav-link"
             >
               {item.label}
             </Link>
           ))}
           {/* Language Switcher */}
-          <div className="flex items-center gap-0.5 ml-2 pl-2 border-l border-border">
+          <div className="flex items-center gap-0.5 ml-2 pl-2 border-l border-border shrink-0">
             <Link
               href="/"
               className="text-[11px] font-medium px-2 py-1 rounded text-text-secondary hover:text-primary hover:bg-primary/5 transition-colors"
@@ -60,16 +60,16 @@ export default function HeaderEn() {
         </nav>
 
         {/* CTA + Language (Desktop) */}
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden lg:flex items-center gap-3 shrink-0">
           <Link
             href="/"
-            className="text-[13px] font-medium text-text-secondary hover:text-primary transition-colors"
+            className="text-[13px] font-medium text-text-secondary hover:text-primary transition-colors whitespace-nowrap"
           >
             中文
           </Link>
           <Link
             href="/en/about#contact"
-            className="btn-primary text-sm py-2 px-5"
+            className="btn-primary text-sm py-2 px-5 whitespace-nowrap"
           >
             Book a Consultation
           </Link>
@@ -78,7 +78,7 @@ export default function HeaderEn() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden p-2 rounded-md hover:bg-surface-hover transition-colors"
+          className="lg:hidden p-2 rounded-md hover:bg-surface-hover transition-colors"
           aria-label="Menu"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
@@ -100,7 +100,7 @@ export default function HeaderEn() {
 
       {/* Mobile Nav */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-border bg-surface">
+        <div className="lg:hidden border-t border-border bg-surface">
           <nav className="flex flex-col px-4 py-3 gap-1">
             {navItems.map((item) => (
               <Link

@@ -21,9 +21,9 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 flex items-center justify-between h-16 gap-6">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5 no-underline">
+        <Link href="/" className="flex items-center gap-2.5 no-underline shrink-0">
           <img
             src="/images/logo.svg"
             alt="榕耀管顧 RongRise Consulting"
@@ -38,18 +38,18 @@ export default function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-3">
+        <nav className="hidden lg:flex items-center gap-0.5">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="nav-link text-[15px] px-3 py-2 relative after:absolute after:bottom-0 after:left-3 after:right-3 after:h-[2px] after:bg-primary after:scale-x-0 after:origin-left after:transition-transform hover:after:scale-x-100"
+              className="nav-link relative"
             >
               {item.label}
             </Link>
           ))}
           {/* Language Switcher */}
-          <div className="flex items-center gap-0.5 ml-3 pl-3 border-l border-border">
+          <div className="flex items-center gap-0.5 ml-2 pl-2 border-l border-border shrink-0">
             <Link
               href="/"
               className="text-[12px] font-medium px-2 py-1 rounded text-primary bg-primary/5"
@@ -66,22 +66,22 @@ export default function Header() {
         </nav>
 
         {/* CTA + Language (Desktop) */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-3 shrink-0">
           <Link
             href="/newsletter"
-            className="text-[14px] font-medium text-text-secondary hover:text-primary transition-colors"
+            className="text-[14px] font-medium text-text-secondary hover:text-primary transition-colors whitespace-nowrap hidden xl:inline"
           >
             📬 訂閱電子報
           </Link>
           <Link
             href="/en"
-            className="text-[14px] font-medium text-text-secondary hover:text-primary transition-colors hidden lg:inline"
+            className="text-[14px] font-medium text-text-secondary hover:text-primary transition-colors whitespace-nowrap hidden xl:inline"
           >
             English
           </Link>
           <Link
             href="/about#contact"
-            className="btn-primary text-sm py-2 px-5"
+            className="btn-primary text-sm py-2 px-5 whitespace-nowrap"
           >
             預約諮詢
           </Link>
@@ -90,7 +90,7 @@ export default function Header() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden p-2 rounded-md hover:bg-surface-hover transition-colors"
+          className="lg:hidden p-2 rounded-md hover:bg-surface-hover transition-colors"
           aria-label="選單"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
@@ -112,7 +112,7 @@ export default function Header() {
 
       {/* Mobile Nav */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-border bg-white">
+        <div className="lg:hidden border-t border-border bg-white">
           <nav className="flex flex-col px-4 py-3 gap-1">
             {navItems.map((item) => (
               <Link

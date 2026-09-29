@@ -16,6 +16,7 @@
   font-weight: 700;
   font-size: 0.95rem;
   border-radius: var(--radius-md);
+  white-space: nowrap;
   border: none;
   cursor: pointer;
   transition: all var(--transition-base);
@@ -381,9 +382,11 @@
   color: var(--color-text-primary);
   font-weight: 500;
   text-decoration: none;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.625rem;
   transition: color var(--transition-fast);
   font-size: 14px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .nav-link::after {
