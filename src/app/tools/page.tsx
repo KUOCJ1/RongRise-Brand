@@ -127,6 +127,14 @@ const tools: Tool[] = [
     tag: "營運",
     tagClass: "bg-tertiary/10 text-tertiary",
   },
+  {
+    href: "/course-fit",
+    icon: "🎓",
+    name: "Agentic AI for HR 課程適配度自評",
+    desc: "回答六個問題，判斷你該上 11/14 初階班還是 12/5 進階班，附課前預習清單。",
+    tag: "課程",
+    tagClass: "bg-primary/10 text-primary",
+  },
 ];
 
 export default function ToolsPage() {
