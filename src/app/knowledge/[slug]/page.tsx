@@ -6,6 +6,7 @@ import ArticleTracker from "@/components/ArticleTracker";
 import ArticleToc from "@/components/ArticleToc";
 import ReadingProgress from "@/components/ReadingProgress";
 import ArticleActions from "@/components/ArticleActions";
+import YouTubeEmbed from "@/components/YouTubeEmbed";
 import { COVER_MAP } from "@/lib/cover-map";
 
 import Script from "next/script";
@@ -26,6 +27,7 @@ interface Article {
   excerpt: string;
   tags: string[];
   body: string;
+  youtube?: string;
 }
 
 interface VaultRelatedItem {
@@ -368,6 +370,23 @@ export default async function ArticlePage({ params }: PageProps) {
               </span>
             ))}
           </div>
+
+          {/* Video（文章有對應影片時顯示） */}
+          {article.youtube && (
+            <div className="mb-10">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-sm font-semibold text-text-primary">
+                  這篇文章有影片版
+                </span>
+              </div>
+              <div className="max-w-[420px]">
+                <YouTubeEmbed
+                  videoId={article.youtube}
+                  title={article.title}
+                />
+              </div>
+            </div>
+          )}
 
           {/* Content */}
           <div className="relative">
