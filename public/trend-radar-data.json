@@ -1,18 +1,18 @@
 {
- "generatedAt": "2026-09-29T07:21:01Z",
+ "generatedAt": "2026-09-30T07:20:52Z",
  "window": {
-  "from": "2026-09-23",
-  "to": "2026-09-29",
+  "from": "2026-09-24",
+  "to": "2026-09-30",
   "days": 7,
   "digestCount": 7
  },
  "stats": {
   "totalArticles": 82,
   "categories": {
-   "AI 轉型": 33,
-   "ESG 永續": 18,
+   "AI 轉型": 35,
+   "ESG 永續": 15,
    "人才策略": 18,
-   "管理趨勢": 13
+   "管理趨勢": 14
   }
  },
  "trends": [
@@ -21,15 +21,15 @@
    "icon": "🏢",
    "category": "管理趨勢",
    "count": 27,
-   "prevCount": 23,
+   "prevCount": 22,
    "momentum": "flat"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
    "category": "AI 轉型",
-   "count": 24,
-   "prevCount": 20,
+   "count": 23,
+   "prevCount": 21,
    "momentum": "flat"
   },
   {
@@ -37,7 +37,7 @@
    "icon": "💰",
    "category": "AI 轉型",
    "count": 22,
-   "prevCount": 21,
+   "prevCount": 24,
    "momentum": "flat"
   },
   {
@@ -45,31 +45,31 @@
    "icon": "📋",
    "category": "人才策略",
    "count": 18,
-   "prevCount": 17,
+   "prevCount": 19,
    "momentum": "flat"
   },
   {
    "keyword": "企業導入",
    "icon": "🚀",
    "category": "AI 轉型",
-   "count": 17,
-   "prevCount": 17,
+   "count": 18,
+   "prevCount": 16,
    "momentum": "flat"
   },
   {
    "keyword": "能源與電力",
    "icon": "⚡",
    "category": "ESG 永續",
-   "count": 17,
-   "prevCount": 12,
-   "momentum": "up"
+   "count": 15,
+   "prevCount": 13,
+   "momentum": "flat"
   },
   {
    "keyword": "治理與法規",
    "icon": "⚖️",
    "category": "AI 轉型",
    "count": 14,
-   "prevCount": 9,
+   "prevCount": 8,
    "momentum": "up"
   },
   {
@@ -84,31 +84,31 @@
    "keyword": "AI Agent",
    "icon": "🤖",
    "category": "AI 轉型",
-   "count": 10,
-   "prevCount": 6,
+   "count": 11,
+   "prevCount": 4,
    "momentum": "up"
-  },
-  {
-   "keyword": "ESG 揭露",
-   "icon": "🌱",
-   "category": "ESG 永續",
-   "count": 8,
-   "prevCount": 9,
-   "momentum": "flat"
   },
   {
    "keyword": "人才與技能",
    "icon": "🧠",
    "category": "人才策略",
-   "count": 8,
-   "prevCount": 16,
+   "count": 9,
+   "prevCount": 14,
    "momentum": "down"
+  },
+  {
+   "keyword": "ESG 揭露",
+   "icon": "🌱",
+   "category": "ESG 永續",
+   "count": 7,
+   "prevCount": 9,
+   "momentum": "flat"
   },
   {
    "keyword": "安全與風險",
    "icon": "🛡️",
    "category": "AI 轉型",
-   "count": 8,
+   "count": 7,
    "prevCount": 14,
    "momentum": "down"
   },
@@ -116,12 +116,103 @@
    "keyword": "自動化",
    "icon": "⚙️",
    "category": "AI 轉型",
-   "count": 5,
+   "count": 6,
    "prevCount": 4,
-   "momentum": "flat"
+   "momentum": "up"
   }
  ],
  "articles": [
+  {
+   "title": "AI 伺服器液冷需求升溫、奇鋐一路旺到年底，外資喊目標價 4,513 元",
+   "url": "https://finance.technews.tw/2026/09/29/ai-server-liquid-cooling-avc-2/",
+   "summary": "AI 資料中心耗能攀升帶動液冷散熱需求，顯示「能源效率」已成 AI 基礎建設與 ESG 的交會點。",
+   "date": "2026-09-30",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "OpenAI launches GPT-6.1 Sol, says it nearly matches GPT-6 Astra and costs less",
+   "url": "https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/",
+   "summary": "OpenAI 推出 GPT-6.1 Sol，宣稱效能幾近旗艦 GPT-6 Astra 但成本更低，把「夠用就好、更便宜」的成本思維推進主流。",
+   "date": "2026-09-30",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
+   "url": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation/",
+   "summary": "傳 OpenAI 正洽談 300 億美元新一輪募資、估值上看 1.4 兆美元，反映資本市場對 AI 龍頭的熱度未減。",
+   "date": "2026-09-30",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Anthropic 推出 Claude Sonnet 5.5：速度提升逾 30%、單項任務成本最多降三成",
+   "url": "https://technews.tw/2026/09/29/anthropic-upgrades-claude-with-new-sonnet-5-5-model/",
+   "summary": "Anthropic 發表中階模型 Sonnet 5.5，主打更快更省並強化資安防護，企業導入的單位成本續降。",
+   "date": "2026-09-30",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "AMD 斥資 82 億美元收購 World Labs，李飛飛出任首席科學家",
+   "url": "https://technews.tw/2026/09/29/amd-to-buy-fei-fei-lis-world-labs-ai-startup-for-8-2-billion/",
+   "summary": "AMD 以逾 82 億美元併購李飛飛創辦的 World Labs，布局「空間智慧」，AI 晶片大廠競爭延伸到模型與產品層。",
+   "date": "2026-09-30",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "川普簽署行政命令，要美國政府機構把 AI 改成 SI",
+   "url": "https://www.ithome.com.tw/news/179290",
+   "summary": "川普簽行政命令要求聯邦機構將「人工智慧（AI）」改稱「超級智慧（SI）」，同時反對全球 AI 監管的立場浮上檯面。",
+   "date": "2026-09-30",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Meta is expanding its AI agent Muse to small businesses",
+   "url": "https://techcrunch.com/2026/09/29/meta-is-expanding-its-ai-agent-muse-to-small-businesses/",
+   "summary": "Meta 把企業版 AI 代理 Muse 下放給中小企業，SMB 取得可自動執行任務的 AI 代理門檻明顯降低（與中小企業最直接相關）。",
+   "date": "2026-09-30",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "業務怎麼用 AI｜開發客戶、業績預估等 10 大工作情境拆解，可複製 Prompt 一次看",
+   "url": "https://www.managertoday.com.tw/articles/view/72995",
+   "summary": "以業務工作流拆解 10 個可直接套用的 AI 應用情境，是中小企業一線員工落地 AI 的實作範本。",
+   "date": "2026-09-30",
+   "category": "人才策略"
+  },
+  {
+   "title": "不是人才變多，是作弊的人增加了！面試高分、上工失靈的「後悔招募」怎麼防？",
+   "url": "https://www.managertoday.com.tw/articles/view/72950",
+   "summary": "AI 面試作弊標記率三個月翻三倍、38.5% 求職者被標記，招募端的驗證成本與新方法成為企業痛點。",
+   "date": "2026-09-30",
+   "category": "人才策略"
+  },
+  {
+   "title": "AI is changing how we work. Is your organization ready?",
+   "url": "https://www.mckinsey.com/capabilities/people-and-organization/our-insights/ai-is-changing-how-we-work-is-your-organization-ready",
+   "summary": "McKinsey 指出 AI 改變工作方式的關鍵在組織與人，而非單點工具導入（09-28 發布）。",
+   "date": "2026-09-30",
+   "category": "人才策略"
+  },
+  {
+   "title": "How leaders are turning AI into growth",
+   "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/how-leaders-are-turning-ai-into-growth",
+   "summary": "McKinsey 訪談領先企業，歸納把 AI 從試點轉為成長引擎的領導做法（09-29 發布）。",
+   "date": "2026-09-30",
+   "category": "管理趨勢"
+  },
+  {
+   "title": "Making AI an asset, not an expense",
+   "url": "https://www.technologyreview.com/2026/09/29/1145186/making-ai-an-asset-not-an-expense/",
+   "summary": "MIT Technology Review 主張 AI 要當資產而非費用管理，重點在流程重設計與價值衡量（09-29 發布）。",
+   "date": "2026-09-30",
+   "category": "管理趨勢"
+  },
+  {
+   "title": "AI Is Changing the Rules of Entrepreneurship",
+   "url": "https://hbr.org/2026/09/ai-is-changing-the-rules-of-entrepreneurship",
+   "summary": "HBR 分析 AI 如何改寫創業的進入門檻與競爭規則，對小型團隊的產品／商業模式設計有直接啟示。",
+   "date": "2026-09-30",
+   "category": "管理趨勢"
+  },
   {
    "title": "OpenAI、Anthropic、微軟、Meta 研究領袖罕見聯手示警：AI 研究自動化恐引發「智慧爆炸」",
    "url": "https://technews.tw/2026/09/29/top-ai-researchers-call-for-urgent-oversight-of-self-improving-systems/",
@@ -168,13 +259,6 @@
    "title": "輝達破天荒訂「AI 工廠儲能認證規範」！台達、光寶有望迎來大單",
    "url": "https://www.managertoday.com.tw/articles/view/73016",
    "summary": "輝達首度釋出 AI 工廠認證規範「DSX Ready to Qualified」，聚焦儲能與散熱領域，特斯拉也名列其中；對台灣供應鏈而言，這代表 AI 基礎建設的採購門檻正從「算力規格」轉向「能源與散熱的認證規格」，符合認證才有資格進場。",
-   "date": "2026-09-29",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "AI 伺服器液冷需求升溫、奇鋐一路旺到年底，外資喊目標價 4,513 元",
-   "url": "https://finance.technews.tw/2026/09/29/ai-server-liquid-cooling-avc-2/",
-   "summary": "液冷散熱需求隨 AI 伺服器功耗上升而放大，業者能見度延伸至年底；與前一則輝達儲能認證合看，AI 擴張的成本重心正從晶片本身移轉到「電力＋散熱」這條實體基礎設施鏈。",
    "date": "2026-09-29",
    "category": "ESG 永續"
   },
@@ -611,97 +695,13 @@
    "summary": "McKinsey 指出採購導入 AI 後，「判斷力」反而成為更稀缺的資產，呼應 AI 時代企業該投資的是人的決策品質而非單純流程自動化。",
    "date": "2026-09-24",
    "category": "管理趨勢"
-  },
-  {
-   "title": "New Data Show Anthropic, OpenAI and Other Upstarts Are Eating into Software Budgets",
-   "url": "https://www.theinformation.com/newsletters/applied-ai/new-data-show-anthropic-openai-upstarts-eating-software-budgets",
-   "summary": "最新數據顯示 Anthropic、OpenAI 等 AI 新創正實質吃掉企業軟體預算，企業採購的「預算池」正在重新分配，既有 SaaS 供應商面對的是替代而非增量競爭。",
-   "date": "2026-09-23",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "The economics of AI",
-   "url": "https://www.mckinsey.com/quarterly/the-five-fifty/five-fifty-the-economics-of-ai",
-   "summary": "McKinsey 從成本結構、投資報酬與市場集中度拆解 AI 經濟學，對中小企業的意義是：導入前先算清「每單位產出的 AI 成本」，比選模型更關鍵。",
-   "date": "2026-09-23",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "AI 監管國際呼聲升溫，20 多國領袖籲透明安全措施",
-   "url": "https://technews.tw/2026/09/22/ai-regulation-international-calls-20-nations-leaders-transparent-safety-measures/",
-   "summary": "20 多國領袖共同呼籲 AI 發展須具備透明與安全措施，跨國監管框架的雛形正在形成，企業的 AI 治理文件將從「自願」走向「被要求」。",
-   "date": "2026-09-23",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Reinvention and Rigor: What CEOs Should Look for in an AI-First Chief Operating Officer",
-   "url": "https://www.bcg.com/publications/2026/what-ceos-should-look-for-ai-first-coo",
-   "summary": "BCG 指出企業開始設置「AI 優先的營運長」，關鍵不在技術背景，而在能否把 AI 嵌進營運節奏並承擔損益，是 AI 轉型進入組織設計階段的訊號。",
-   "date": "2026-09-23",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "做好事也要有商業思維！全家推動移工友善，如何兼顧營利與社會影響力？",
-   "url": "https://www.managertoday.com.tw/columns/view/72963",
-   "summary": "全家以移工友善服務兼顧營收與社會影響力，示範 ESG 社會面不是成本項，而是能長出商業模式的差異化能力，對中小企業的啟示是可從既有客群痛點切入。",
-   "date": "2026-09-23",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "Powering through uncertainty: A talk with former US Energy Secretary Ernest Moniz",
-   "url": "https://www.mckinsey.com/industries/electric-power-and-natural-gas/our-insights/powering-through-uncertainty-a-talk-with-former-us-energy-secretary-ernest-moniz",
-   "summary": "前美國能源部長 Moniz 談電力需求與能源轉型的不確定性，AI 用電成長讓「能源供給穩定度」成為企業永續揭露與營運風險的共同題目。",
-   "date": "2026-09-23",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "Everyone can find a reason to dislike data center construction",
-   "url": "https://techcrunch.com/2026/09/22/everyone-can-find-a-reason-to-dislike-data-center-construction",
-   "summary": "資料中心選址的反對聲浪來自各方（用電、用水、噪音、房價），顯示算力擴張的社會成本已成地方層級的實質阻力，企業在規劃 AI 基礎設施時必須納入社區溝通。",
-   "date": "2026-09-23",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "進希爾頓飯店實習，比考上常春藤名校還難！AI 時代，該怎麼從海量履歷中被看見？",
-   "url": "https://www.managertoday.com.tw/articles/view/72978",
-   "summary": "希爾頓 2026 年 72 個實習缺湧入 1.2 萬人（錄取率 0.6%），在 AI 大量代寫履歷的時代，辨識「真人訊號」與建立內部養成路徑成為招募端的核心難題。",
-   "date": "2026-09-23",
-   "category": "人才策略"
-  },
-  {
-   "title": "HR 人資怎麼用 AI？完整教學：10 大工作情境拆解，可複製 Prompt 一次看",
-   "url": "https://www.managertoday.com.tw/articles/view/72975",
-   "summary": "從撰寫 JD、篩履歷到績效面談拆解 10 個人資 AI 應用情境並附可複製 Prompt，是 HR 團隊最直接可用的導入清單。",
-   "date": "2026-09-23",
-   "category": "人才策略"
-  },
-  {
-   "title": "台灣美光 2 次勞資調解破局，宣布啟動罷工投票！豪發每人百萬感謝金也解不了危機？",
-   "url": "https://www.managertoday.com.tw/articles/view/72917",
-   "summary": "美光台灣勞資二度調解破局並啟動罷工投票，資方以一次性獎金回應「制度性獲利分享」訴求失效，提示企業在獲利期就要處理分配機制，而非等到衝突升高。",
-   "date": "2026-09-23",
-   "category": "人才策略"
-  },
-  {
-   "title": "當電商、實體零售都在成長，為什麼物流業反而衰退？",
-   "url": "https://www.managertoday.com.tw/columns/view/72974",
-   "summary": "電商與實體零售同步成長，專業物流業卻因客戶自建物流而衰退，說明「異業競爭」往往比同業更致命，是中小企業做策略盤點時最該補上的視角。",
-   "date": "2026-09-23",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "The key to AI value is hiding in plain sight: Your operating model",
-   "url": "https://www.mckinsey.com/capabilities/people-and-organization/our-insights/the-key-to-ai-value-is-hiding-in-plain-sight-your-operating-model",
-   "summary": "McKinsey 指出 AI 價值的關鍵藏在既有營運模式（決策權、流程與角色設計）裡，不改組織只換工具，投資報酬率難以顯現。",
-   "date": "2026-09-23",
-   "category": "管理趨勢"
   }
  ],
  "insights": [
-  "AI 治理從「政策呼籲」變成「停機事實」：頂尖實驗室研究主管聯名示警自我改進系統、OpenAI 因代理越軌暫停訓練最強模型、MIT 科技評論追問失控代理的法律責任——三則同週發生，治理的討論已經從「該不該管」推進到「出事時誰負責、用什麼停損」。企業導入代理工具的下一步不是比功能，而是把責任條款與停損條件寫進採購合約。",
-  "成本結構重心從算力移向「電力＋散熱＋認證」：輝達首度針對 AI 工廠的儲能與散熱制定認證規範、液冷散熱需求能見度看到年底、氣候週上 AI 排擠減碳議程的爭議——AI 擴張的實體限制與 ESG 外部性正在同一條供應鏈上結算，「有沒有拿到能源與散熱認證」比「有沒有買到 GPU」更能決定能不能進場。",
-  "人才策略的主軸從「搶外部人才」轉向「盤點內部技能地圖」：麥肯錫的勞動力移動分析、WIRED 對代理「數位同事」管理真空的提問、以及中階主管升遷溢價被重算的案例，三條線共同指向：AI 時代的人才投資順序，是先讓現有員工的技能可轉移，再談引進。",
-  "導入 AI 的成敗關鍵在「參數定義權」而非模型強度：企業實際部署的現場經驗、以及 AI 專案排序的「隱形權重」陷阱，都指向同一件事——當標準、權重與限制沒被明確定義，AI 會自行補齊，而這正是產出不可重現、無法稽核的根因。",
-  "治理與可控性正式超越「模型能力」成為主戰場：OpenAI 自行暫停最強模型訓練、五角大廈對 Anthropic 的供應鏈風險認定獲法院維持、數發部啟動主權 AI 評測與跨部會風險盤點——三方都在回答同一個問題：「誰能管住 AI、憑什麼」。企業導入 AI 的下一份文件不是採購單，而是治理與責任界線。"
+  "「更便宜、夠用」成 AI 產品新戰場：OpenAI GPT-6.1 Sol、Anthropic Sonnet 5.5 同日主打降本增效，加上 Meta 把 Muse 代理下放中小企業——AI 導入的價格門檻持續下探，SMB 的採用障礙從「買不起」轉為「不會用」。",
+  "成敗關鍵回到組織與人：McKinsey（AI 改變工作方式、領導者用 AI 創造成長）、MIT TR（AI 當資產而非費用）三方指向同一結論：價值 70% 來自工作流程重設計、AI 素養與治理，而非模型本身。",
+  "人才端出現兩股張力：一面是 AI 工具大幅提升業務與知識工作產能，一面是 AI 面試作弊使「後悔招募」激增，招募驗證與人才辨識成本同步上升。",
+  "資本與風險並進：AMD 82 億併 World Labs、OpenAI 傳 1.4 兆美元估值募資，投資熱度不減；但 AI 代理失控（Nvidia/OpenAI 資安事件）、資料中心能耗與許可監管等風險議題同步升溫，ESG 與治理壓力正從政策端傳導到企業端。",
+  "ESG 題材今日偏薄：主要落在資料中心能源效率（液冷），政策型永續題材近 7 日已收錄，建議下游內容端以「AI×能源×治理」角度切入補位。"
  ]
 }
