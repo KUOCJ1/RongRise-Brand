@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-09-30T07:20:52Z",
+ "generatedAt": "2026-10-01T07:20:54Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 123
+  "daysRunning": 124
  },
  "stats": {
-  "scanDays": 103,
+  "scanDays": 104,
   "weekArticles": 82,
   "articles": 86,
   "newsItems": 46,
@@ -14,19 +14,14 @@
   "subscribers": 19,
   "confirmedSubscribers": 14,
   "videos": 34,
-  "views": 524,
-  "channelSubscribers": 12,
+  "views": 603,
+  "channelSubscribers": 13,
   "insights": 14,
-  "socialPosts": 36,
+  "socialPosts": 37,
   "igCards": 28,
-  "competitorReports": 101
+  "competitorReports": 102
  },
  "activity": [
-  {
-   "date": "2026-09-24",
-   "count": 13,
-   "topics": []
-  },
   {
    "date": "2026-09-25",
    "count": 13,
@@ -56,6 +51,11 @@
    "date": "2026-09-30",
    "count": 13,
    "topics": []
+  },
+  {
+   "date": "2026-10-01",
+   "count": 13,
+   "topics": []
   }
  ],
  "latest": {
@@ -82,7 +82,7 @@
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 24,
+   "count": 23,
    "momentum": "flat"
   },
   {
@@ -100,7 +100,7 @@
   {
    "keyword": "企業導入",
    "icon": "🚀",
-   "count": 17,
+   "count": 18,
    "momentum": "flat"
   }
  ]
