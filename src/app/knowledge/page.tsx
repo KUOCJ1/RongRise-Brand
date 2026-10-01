@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "coordination-tax",
+    cat: "AI 轉型",
+    title: "協調稅：一個七步驟的流程，工作一天，等待九到十八天",
+    date: "2026.10.01",
+    readTime: "9 分鐘",
+    excerpt: "麥肯錫量出一個七步驟的流程：步驟內的工作只要一天，步驟之間的協調卻要九到十八天。協調稅吃掉總工時的 35% 到 60%。台灣的判準更簡單，能不能無縫換手、有沒有人負責。附今天就能開始的三張表。",
+    tags: ["協調稅", "AI 轉型", "流程重設", "管理成本", "AI 導入"],
+  },
+  {
     slug: "ai-incident-notification-gap",
     cat: "AI 轉型",
     title: "澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報",
