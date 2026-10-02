@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-10-01T07:20:54Z",
+ "generatedAt": "2026-10-02T07:20:52Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 124
+  "daysRunning": 125
  },
  "stats": {
-  "scanDays": 104,
+  "scanDays": 105,
   "weekArticles": 82,
-  "articles": 86,
-  "newsItems": 46,
+  "articles": 87,
+  "newsItems": 47,
   "newsletterIssues": 21,
-  "subscribers": 19,
-  "confirmedSubscribers": 14,
-  "videos": 34,
-  "views": 603,
-  "channelSubscribers": 13,
+  "subscribers": 17,
+  "confirmedSubscribers": 13,
+  "videos": 35,
+  "views": 641,
+  "channelSubscribers": 15,
   "insights": 14,
-  "socialPosts": 37,
+  "socialPosts": 38,
   "igCards": 28,
-  "competitorReports": 102
+  "competitorReports": 103
  },
  "activity": [
-  {
-   "date": "2026-09-25",
-   "count": 13,
-   "topics": []
-  },
   {
    "date": "2026-09-26",
    "count": 10,
@@ -56,19 +51,24 @@
    "date": "2026-10-01",
    "count": 13,
    "topics": []
+  },
+  {
+   "date": "2026-10-02",
+   "count": 12,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報",
-   "date": "2026.09.29",
-   "url": "/knowledge/ai-incident-notification-gap"
+   "title": "協調稅：一個七步驟的流程，工作一天，等待九到十八天",
+   "date": "2026.10.01",
+   "url": "/knowledge/coordination-tax"
   },
   "newsletter": "🦞 榕賀觀點 第 21 期 — 2026-09-28",
   "video": {
-   "title": "你知道誰在負責這個 AI 嗎？｜OpenAI 停訓練、澳洲政府三個月後才知道",
-   "date": "2026-09-29",
-   "url": "https://www.youtube.com/watch?v=COWp8jMP8BA"
+   "title": "你知道誰在負責這個 AI 嗎？｜思科 9 萬人配發 AI 代理，員工每週多花 6 小時善後",
+   "date": "2026-10-01",
+   "url": "https://www.youtube.com/watch?v=rrkW0F12CZA"
   },
   "insight": "2026-W40.md"
  },
@@ -76,13 +76,13 @@
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 27,
+   "count": 28,
    "momentum": "flat"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 23,
+   "count": 26,
    "momentum": "flat"
   },
   {
@@ -92,14 +92,14 @@
    "momentum": "flat"
   },
   {
-   "keyword": "人力資源",
-   "icon": "📋",
-   "count": 18,
+   "keyword": "企業導入",
+   "icon": "🚀",
+   "count": 20,
    "momentum": "flat"
   },
   {
-   "keyword": "企業導入",
-   "icon": "🚀",
+   "keyword": "人力資源",
+   "icon": "📋",
    "count": 18,
    "momentum": "flat"
   }
