@@ -261,9 +261,9 @@ export default function AboutPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
-              { id: "-Lp7k92d7C8", title: "AI 時代的人才策略：從焦慮到賦能", date: "2026.06.04" },
-              { id: "UoR9Jd4Ks5I", title: "中小企業 ESG 轉型實務攻略", date: "2026.06.02" },
-              { id: "AsyKniCNofU", title: "AI 轉型不是口號：從策略到落地的完整路徑", date: "2026.06.01" },
+              { id: "VPO7VgKL8xg", title: "我一個人管五個 AI 員工：導入 AI 的瓶頸不是技術，是管理", date: "2026.09.11" },
+              { id: "9jmqiPWGbeo", title: "你的 AI 專案，死在員工不敢說出口的三句話｜心理安全感 × AI 落地", date: "2026.07.31" },
+              { id: "M4N2pf8UF5Y", title: "63% 員工假裝懂 AI：你的團隊在「演」還是在「用」？", date: "2026.08.05" },
             ].map((video) => (
               <a
                 key={video.id}

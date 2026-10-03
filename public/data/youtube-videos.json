@@ -1,6 +1,15 @@
 {
   "videos": [
     {
+      "id": "rrkW0F12CZA",
+      "title": "你知道誰在負責這個 AI 嗎？｜思科 9 萬人配發 AI 代理，員工每週多花 6 小時善後",
+      "date": "2026-10-01",
+      "description": "導入 AI 代理，省下的工時記在「效率」那一欄，沒有人看見。 但有另一筆帳：員工每週多花六小時檢查產出、補背景、修錯，這筆 ...",
+      "thumbnail": "https://img.youtube.com/vi/rrkW0F12CZA/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/rrkW0F12CZA/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=rrkW0F12CZA"
+    },
+    {
       "id": "COWp8jMP8BA",
       "title": "你知道誰在負責這個 AI 嗎？｜OpenAI 停訓練、澳洲政府三個月後才知道",
       "date": "2026-09-29",
@@ -17,16 +26,7 @@
       "thumbnail": "https://img.youtube.com/vi/EblI3M1LkPk/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/EblI3M1LkPk/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=EblI3M1LkPk"
-    },
-    {
-      "id": "GDc24HE1K-o",
-      "title": "陪跑筆記｜那一天最大的幸運，是我們遇到了一大堆難題",
-      "date": "2026-09-13",
-      "description": "卡了兩個多小時，最後解開的只是一個授權問題。那天真正的收穫，其實是另一件事。 那是一位認識很久的顧問朋友。我們在咖啡館 ...",
-      "thumbnail": "https://img.youtube.com/vi/GDc24HE1K-o/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/GDc24HE1K-o/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=GDc24HE1K-o"
     }
   ],
-  "fetchedAt": "2026-09-29T15:29:38Z"
+  "fetchedAt": "2026-10-03T04:15:44Z"
 }

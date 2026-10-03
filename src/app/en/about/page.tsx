@@ -103,9 +103,9 @@ export default function AboutEnPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
-              { id: "-Lp7k92d7C8", title: "AI Talent Strategy: From Anxiety to Empowerment", date: "2026.06.04" },
-              { id: "UoR9Jd4Ks5I", title: "SME ESG Transformation: A Practical Guide", date: "2026.06.02" },
-              { id: "AsyKniCNofU", title: "AI Transformation: From Strategy to Execution", date: "2026.06.01" },
+              { id: "VPO7VgKL8xg", title: "Managing Five AI Employees on My Own: The Bottleneck Isn't Technology, It's Management", date: "2026.09.11" },
+              { id: "9jmqiPWGbeo", title: "Why Your AI Project Died: Three Things Employees Never Dared to Say | Psychological Safety × AI", date: "2026.07.31" },
+              { id: "M4N2pf8UF5Y", title: "63% of Employees Pretend to Understand AI: Is Your Team Performing or Actually Using It?", date: "2026.08.05" },
             ].map((video) => (
               <a
                 key={video.id}
