@@ -160,7 +160,7 @@ export default function NewsletterSection() {
             小賀每週為你整理 AI 轉型趨勢、ESG 實務攻略、課程優惠。
           </p>
           <p className="text-text-secondary text-sm mb-6">
-            不發廢文，只送有價值的內容。目前已有 <strong className="text-primary">300+</strong> 位企業主訂閱。
+            不發廢文，只送有價值的內容。每週兩封，讀完剛好一杯咖啡的時間。
           </p>
 
           {submitted ? (

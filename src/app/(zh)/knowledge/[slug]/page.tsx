@@ -6,6 +6,7 @@ import ArticleTracker from "@/components/ArticleTracker";
 import ArticleToc from "@/components/ArticleToc";
 import ReadingProgress from "@/components/ReadingProgress";
 import ArticleActions from "@/components/ArticleActions";
+import InlineSubscribe from "@/components/InlineSubscribe";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import { COVER_MAP } from "@/lib/cover-map";
 
@@ -394,6 +395,9 @@ export default async function ArticlePage({ params }: PageProps) {
             <article>
               {renderBody(article.body)}
             </article>
+
+            {/* 文章底部訂閱 CTA（導流用） */}
+            <InlineSubscribe />
           </div>
 
           {/* Navigation */}
