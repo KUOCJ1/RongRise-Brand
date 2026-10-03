@@ -14,9 +14,13 @@
       "seats": 25,
       "seatsLeft": 12,
       "status": "open",
-      "tags": ["AI Transformation", "Enterprise Deployment", "Hands-on"],
+      "tags": [
+        "AI Transformation",
+        "Enterprise Deployment",
+        "Hands-on"
+      ],
       "description": "Two-day intensive covering generative AI fundamentals, RTIF prompt engineering, AI maturity assessment, and enterprise implementation roadmaps.",
-      "link": "/knowledge/ai-bootcamp"
+      "link": "/knowledge/ai-transformation-bootcamp"
     },
     {
       "id": "agentic-aug-2026",
@@ -29,7 +33,11 @@
       "seats": 15,
       "seatsLeft": 8,
       "status": "open",
-      "tags": ["Agentic AI", "Executive", "Alignment"],
+      "tags": [
+        "Agentic AI",
+        "Executive",
+        "Alignment"
+      ],
       "description": "One-day executive alignment workshop covering vision calibration to implementation frameworks, including Agent scenario assessment canvas exercises.",
       "link": "/knowledge/agentic-ai-transformation-workshop"
     },
@@ -47,7 +55,11 @@
       "seats": 20,
       "seatsLeft": 20,
       "status": "open",
-      "tags": ["ESG Sustainability", "Certification", "Advanced"],
+      "tags": [
+        "ESG Sustainability",
+        "Certification",
+        "Advanced"
+      ],
       "description": "Two-day intensive covering ESG regulatory trends, carbon inventory practice, sustainability report writing, and TCSA evaluation preparation.",
       "link": "/knowledge/sme-esg-guide"
     },
@@ -62,7 +74,11 @@
       "seats": 30,
       "seatsLeft": 18,
       "status": "open",
-      "tags": ["HR", "Talent Strategy", "AI Tools"],
+      "tags": [
+        "HR",
+        "Talent Strategy",
+        "AI Tools"
+      ],
       "description": "Designed for HR professionals: hands-on AI tools, prompt engineering, Talent Grid 2.0, and HR AI compliance governance.",
       "link": "/knowledge/hr-ai-course-design"
     }

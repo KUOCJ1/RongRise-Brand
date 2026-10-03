@@ -199,7 +199,7 @@ export default function EnKnowledgePage() {
               {filtered.map((post, i) => (
                 <Link
                   key={post.slug}
-                  href={`/en/knowledge/${post.slug}`}
+                  href={`/knowledge/${post.slug}`}
                   className="card group no-underline flex flex-col"
                 >
                   <div className="flex items-center justify-between mb-3">
@@ -215,7 +215,7 @@ export default function EnKnowledgePage() {
                   <div className="flex items-center justify-between mt-auto pt-4 border-t border-border-light">
                     <span className="text-xs text-text-secondary">{post.date}</span>
                     <span className="text-xs font-medium text-primary group-hover:text-secondary transition-colors">
-                      Read More →
+                      Read in Chinese →
                     </span>
                   </div>
                 </Link>

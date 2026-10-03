@@ -6,7 +6,7 @@
       "category": "Course",
       "title": "[AI Bootcamp] July Class Open — From Fundamentals to Enterprise Deployment",
       "summary": "Two-day intensive covering generative AI fundamentals, prompt engineering, and enterprise AI maturity assessment. Early bird pricing until 6/15.",
-      "link": "/knowledge/ai-bootcamp",
+      "link": "/knowledge/ai-transformation-bootcamp",
       "isNew": true
     },
     {
@@ -33,7 +33,7 @@
       "category": "Course",
       "title": "Agentic AI Transformation Executive Alignment Camp — Phase 2 Registration Open",
       "summary": "One-day executive workshop covering vision alignment to implementation frameworks, including Agent scenario assessment canvas exercises.",
-      "link": "/knowledge/agentic-ai-consensus-camp",
+      "link": "/knowledge/agentic-ai-transformation-workshop",
       "isNew": false
     }
   ]
