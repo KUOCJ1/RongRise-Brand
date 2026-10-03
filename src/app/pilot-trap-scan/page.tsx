@@ -457,7 +457,7 @@ export default function PilotTrapScanPage() {
                 「AI 轉型 North Star 一頁圖」與 30/60/90 天行動計畫。
               </p>
               <a
-                href="/contact"
+                href="/about#contact"
                 className="inline-block bg-[#E8912A] hover:bg-[#F0A040] text-[#0D2B4E] font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-[#E8912A]/20"
               >
                 預約免費諮詢 →

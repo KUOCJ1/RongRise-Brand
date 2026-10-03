@@ -237,7 +237,7 @@ export default function EnHomePage() {
                 <div className="card flex-1 flex flex-col justify-center">
                   <h3 className="heading-subsection text-text-primary mb-3">Have Questions First?</h3>
                   <p className="text-text-secondary text-body mb-4">The Assistant is available 24/7 with C.J. Kuo's complete knowledge base. Prefer chatting in LINE? Add us and ask directly.</p>
-                  <Link href="/en/assistant" className="btn-secondary text-center">Ask the Assistant →</Link>
+                  <Link href="/assistant" className="btn-secondary text-center">Ask the Assistant →</Link>
                   <a href="https://line.me/R/ti/p/@954qxhhe" target="_blank" rel="noopener noreferrer" className="btn-line mt-3 text-center">Chat on LINE</a>
                 </div>
               </div>
@@ -258,7 +258,7 @@ export default function EnHomePage() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/en/about#contact" className="btn-primary">Book a Consultation</Link>
-            <Link href="/en/assistant" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white">Ask the Assistant</Link>
+            <Link href="/assistant" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white">Ask the Assistant</Link>
             <a href="https://line.me/R/ti/p/@954qxhhe" target="_blank" rel="noopener noreferrer" className="btn-line">Chat on LINE</a>
           </div>
         </div>

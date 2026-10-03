@@ -210,7 +210,7 @@ export default function EnDownloadsPage() {
             <Link href="/en/about#contact" className="btn-primary">
               Book a Consultation
             </Link>
-            <Link href="/en/assistant" className="btn-secondary">
+            <Link href="/assistant" className="btn-secondary">
               Ask the Assistant
             </Link>
           </div>

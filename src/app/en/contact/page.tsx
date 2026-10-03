@@ -133,7 +133,7 @@ export default function EnContactPage() {
                     <p className="text-text-secondary text-body-sm mb-4">
                       Our AI Assistant is available 24/7 with C.J. Kuo&apos;s complete knowledge base.
                     </p>
-                    <Link href="/en/assistant" className="btn-secondary inline-flex items-center gap-2">
+                    <Link href="/assistant" className="btn-secondary inline-flex items-center gap-2">
                       💬 Ask the Assistant →
                     </Link>
                   </div>
@@ -216,7 +216,7 @@ export default function EnContactPage() {
             <a href="mailto:info@rongrise.com" className="btn-primary bg-white text-primary font-bold hover:bg-white/95">
               ✉️ Send Email
             </a>
-            <Link href="/en/assistant" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white">
+            <Link href="/assistant" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white">
               💬 Ask the Assistant
             </Link>
           </div>

@@ -84,7 +84,7 @@ export default function AboutEnPage() {
                 </p>
               </div>
               <div className="mt-6">
-                <Link href="/en/assistant" className="btn-ghost text-primary">
+                <Link href="/assistant" className="btn-ghost text-primary">
                   💬 Want to learn more? Ask the Assistant →
                 </Link>
               </div>

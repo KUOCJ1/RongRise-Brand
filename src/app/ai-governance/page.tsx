@@ -37,7 +37,7 @@ const ITEMS = [
     tag: "顧問服務",
     title: "Agentic HR 診斷工作坊",
     desc: "三小時，把雷達圖變成你的 AI 轉型 North Star 一頁圖與 30/60/90 天行動計畫。適合 HR 主管與企業主。",
-    href: "/contact",
+    href: "/about#contact",
     cta: "預約諮詢 →",
   },
 ];

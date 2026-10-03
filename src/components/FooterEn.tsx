@@ -34,7 +34,7 @@ export default function FooterEn() {
                 { href: "/en/knowledge", label: "Knowledge" },
                 { href: "/en/downloads", label: "Downloads" },
                 { href: "/en/news", label: "News" },
-                { href: "/en/assistant", label: "Assistant" },
+                { href: "/assistant", label: "Assistant" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
