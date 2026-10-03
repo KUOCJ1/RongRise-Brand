@@ -1,7 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import news from "@/data/news.json";
-
 export const metadata: Metadata = {
   title: "Latest News | Courses & Insights | RongRise",
   description: "Stay updated on the latest course offerings, government incentive resources, and industry insights from RongRise Consulting.",
@@ -50,7 +49,7 @@ export default function EnNewsPage() {
       <section className="section">
         <div className="section-inner">
           <div className="max-w-3xl mx-auto space-y-6">
-            {news.news.map((item) => (
+            {news.news.slice(0, 12).map((item) => (
               <Link
                 key={item.id}
                 href={item.link}
@@ -60,13 +59,13 @@ export default function EnNewsPage() {
                   {/* Date */}
                   <div className="flex-shrink-0 text-center sm:min-w-[70px]">
                     <div className="text-xs text-text-secondary font-medium">
-                      {new Date(item.date).toLocaleDateString("en-US", { month: "long" })}
+                      {new Date(item.date.replace(/\./g, "-")).toLocaleDateString("en-US", { month: "long" })}
                     </div>
                     <div className="text-3xl font-bold text-primary">
-                      {new Date(item.date).getDate()}
+                      {new Date(item.date.replace(/\./g, "-")).getDate()}
                     </div>
                     <div className="text-xs text-text-secondary">
-                      {new Date(item.date).getFullYear()}
+                      {new Date(item.date.replace(/\./g, "-")).getFullYear()}
                     </div>
                   </div>
 
@@ -76,11 +75,6 @@ export default function EnNewsPage() {
                       <span className={`text-[10px] px-2 py-0.5 rounded-full font-semibold ${categoryColors[item.category] || "bg-gray-100 text-gray-600"}`}>
                         {categoryLabels[item.category] || item.category}
                       </span>
-                      {item.isNew && (
-                        <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-tertiary text-white font-bold">
-                          NEW
-                        </span>
-                      )}
                     </div>
                     <h3 className="heading-subsection text-text-primary group-hover:text-primary transition-colors mb-2">
                       {item.title}

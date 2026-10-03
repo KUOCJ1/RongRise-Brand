@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
-import HeaderEn from "@/components/HeaderEn";
-import FooterEn from "@/components/FooterEn";
 
 const SITE_URL = "https://rong-rise.com";
 const SITE_NAME = "RongRise Consulting";
@@ -103,11 +101,5 @@ export default function EnLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <>
-      <HeaderEn />
-      <main className="flex-1">{children}</main>
-      <FooterEn />
-    </>
-  );
+  return <>{children}</>;
 }

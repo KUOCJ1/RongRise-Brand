@@ -27,7 +27,35 @@ import NewsletterEnSection from "@/components/NewsletterEn";
 import ScrollTracker from "@/components/ScrollTracker";
 import TrackLink from "@/components/TrackLink";
 import faqData from "@/data/faq-en.json";
-import coursesData from "@/data/courses-en.json";
+import coursesData from "@/data/courses.json";
+
+// slug → English copy for courses surfaced on the EN home page.
+const courseEnCopy: Record<string, { type: string; title: string; desc: string; price: string }> = {
+  "ai-bootcamp-jul-2026": {
+    type: "Public Class",
+    title: "AI Bootcamp: From Fundamentals to Enterprise Deployment",
+    desc: "Two-day intensive covering generative AI fundamentals, RTIF prompt engineering, AI maturity assessment, and enterprise rollout roadmaps.",
+    price: "NT$8,800 per person",
+  },
+  "agentic-aug-2026": {
+    type: "Corporate Training",
+    title: "Agentic AI Transformation Executive Alignment Camp",
+    desc: "One-day executive workshop aligning vision to implementation, including Agent scenario assessment canvas exercises.",
+    price: "Quoted by headcount",
+  },
+  "esg-sep-2026": {
+    type: "Certification",
+    title: "ESG Sustainability Consultant Certification Program",
+    desc: "Certification track covering carbon footprint assessment, ESG reporting frameworks, and practical sustainability governance.",
+    price: "NT$9,600 per person",
+  },
+  "hr-ai-nov-2026": {
+    type: "Corporate Training",
+    title: "HR × AI Transformation Workshop",
+    desc: "Designed for HR professionals: AI tool practice, prompt engineering, Talent Grid 2.0, and HR AI compliance governance.",
+    price: "Quoted by headcount",
+  },
+};
 
 export default function EnHomePage() {
   return (
@@ -175,22 +203,25 @@ export default function EnHomePage() {
             <div className="brand-divider brand-divider-center mt-4" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {coursesData.courses.slice(0, 4).map((course) => (
+            {(coursesData.courses as any[]).filter((c) => !c.hidden).sort((a, b) => (a.date < b.date ? -1 : 1)).filter((c) => c.date >= "2026-10-03").slice(0, 4).map((course) => {
+              const copy = courseEnCopy[course.id];
+              return (
               <div key={course.id} className="card flex flex-col">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="tag">{course.type}</span>
+                  <span className="tag">{copy ? copy.type : course.type}</span>
                   <span className="text-xs text-text-secondary">
-                    {new Date(course.date).toLocaleDateString("en-US", { month: "long", day: "numeric" })}
+                    {new Date(course.date.replace(/\./g, "-")).toLocaleDateString("en-US", { month: "long", day: "numeric" })}
                   </span>
                 </div>
-                <h3 className="heading-subsection text-text-primary mb-2">{course.title}</h3>
-                <p className="text-text-secondary text-body-sm mb-4 flex-1">{course.description}</p>
+                <h3 className="heading-subsection text-text-primary mb-2">{copy ? copy.title : course.title}</h3>
+                <p className="text-text-secondary text-body-sm mb-4 flex-1">{copy ? copy.desc : course.description}</p>
                 <div className="flex items-center justify-between pt-4 border-t border-border-light">
-                  <span className="text-sm font-semibold text-primary">{course.price}</span>
-                  <Link href="/en/courses" className="btn-ghost text-sm text-primary">Details →</Link>
+                  <span className="text-sm font-semibold text-primary">{copy ? copy.price : course.price}</span>
+                  <Link href={`/knowledge/${course.link ? course.link.split("/").pop() : "agentic-ai-transformation-workshop"}`} className="btn-ghost text-sm text-primary">Details →</Link>
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
           <div className="text-center mt-8">
             <Link href="/en/courses" className="btn-secondary">View All Courses →</Link>
