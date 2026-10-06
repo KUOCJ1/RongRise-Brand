@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "陪跑筆記案例庫",
+    "subtitle": "真實輔導現場與內部實作中看到的 AI 轉型故事",
+    "description": "從企業導入現場與榕耀管顧內部實作中收錄的真實案例：情境、做法、結果與學到的教訓。"
+  },
+  "filters": [
+    { "key": "all", "label": "全部" },
+    { "key": "cost-trap", "label": "成本陷阱" },
+    { "key": "org-change", "label": "組織變革" },
+    { "key": "field-note", "label": "內部實作" },
+    { "key": "industry", "label": "產業觀察" }
+  ],
+  "cases": [
+    {
+      "id": "hospital-ai-claim-docs",
+      "type": "industry",
+      "filter": "cost-trap",
+      "tags": ["醫療業", "成本陷阱", "生成式 AI"],
+      "title": "醫院用 AI 寫理賠文件，兩年多花 9.42 億美元",
+      "summary": "技術成功了，誘因結構失敗了：AI 加速寫文件，也加速產生費用。",
+      "situation": "美國醫院導入生成式 AI 撰寫理賠文件，文件產出變快、變複雜，但實際照護沒有對應變化。",
+      "action": "藍十字藍盾協會分析兩年醫療支出，發現 AI 輔助的理賠文件推高支出約 9.42 億美元。",
+      "result": "成本不減反增，病歷複雜度上升，實際照護品質未見提升。",
+      "lesson": "導入 AI 前先問「這條流程的成本怎麼算」。如果產出直接連結費用，效率會直接變成費用膨脹。",
+      "source": {
+        "label": "產業案例庫 · 醫療業 AI 理賠文件",
+        "href": "https://rong-rise.com/knowledge/medical-ai-claim-cost-case"
+      }
+    },
+    {
+      "id": "cisco-ai-agents-supervision",
+      "type": "industry",
+      "filter": "org-change",
+      "tags": ["AI 代理", "監督債", "中階主管"],
+      "title": "思科配發 9 萬名員工 AI 代理，同一週算出每週多花 6 小時當保母",
+      "summary": "省下的工時記在效率欄，新增的監督工時沒有科目。",
+      "situation": "思科向全球約 9 萬名員工全面配發個人 AI 代理，財務揭露草稿八成由 AI 代理操刀。",
+      "action": "同一週研究指出，辦公室員工每週可能要多花超過 6 小時檢查 AI 產出、補充背景、修正錯誤。",
+      "result": "員工從「做十件事」變成「盯著三個代理做三十件事」，職稱與工作說明沒改，預算表上找不到這一項。",
+      "lesson": "導入 AI 代理省下的工時要記，為了讓它不出錯而新增的工時更要記。沒有科目的成本不會被管理。",
+      "source": {
+        "label": "知識庫 · 監督債",
+        "href": "https://rong-rise.com/knowledge/supervision-debt-ai-agents"
+      }
+    },
+    {
+      "id": "klarna-customer-service-rehire",
+      "type": "industry",
+      "filter": "org-change",
+      "tags": ["客服", "裁員與回聘", "AI 依賴"],
+      "title": "Klarna 裁掉 700 名客服後，CEO 承認品質下降並重新僱人",
+      "summary": "被裁掉的是「執行流程的人」，被請回來的是「做判斷的人」。",
+      "situation": "Klarna 大舉裁撤客服，宣稱 AI 能處理相當於 700 名人力；隨後客戶滿意度下滑。",
+      "action": "CEO 公開承認公司把成本放在體驗前面，開始重新招募人員。",
+      "result": "回鍋員工平均薪資比離職前高出約 25%，實際付出高於當初省下的人事成本。",
+      "lesson": "AI 能處理可預測的部分，剩下帶著情緒、脈絡與關係的狀況仍需要人。判斷與關係無法被壓縮。",
+      "source": {
+        "label": "知識庫 · 先裁掉人資，再高薪請回來",
+        "href": "https://rong-rise.com/knowledge/hr-function-ai-layoff-rehire-paradox"
+      }
+    },
+    {
+      "id": "unified-supermarket-ai-order",
+      "type": "industry",
+      "filter": "industry",
+      "tags": ["零售業", "需求預測", "人機協作"],
+      "title": "統一超商用 AI 訂貨，鮮食廢棄率從 8.2% 降到 4.1%",
+      "summary": "庫存預測直接影響損益，是零售 AI 最容易算 ROI 的入口。",
+      "situation": "全台超過 7,000 家門市，每日需預測 3,000+ SKU 需求量，人工訂貨標準不一、廢棄率高。",
+      "action": "導入 AI 自動訂貨，整合天氣、節慶、歷史銷售、商圈數據；保留店長覆核權限。",
+      "result": "鮮食廢棄率從 8.2% 降至 4.1%，缺貨率從 5.5% 降至 1.8%，店長每日訂貨時間從 45 分鐘縮短至 10 分鐘。",
+      "lesson": "零售 AI 的優先場景不是客服，是庫存預測——它直接影響損益，而且數據基礎相對完整。",
+      "source": {
+        "label": "產業案例庫 · 零售業 AI 賦能",
+        "href": "https://rong-rise.com/knowledge/retail-ai-empowerment"
+      }
+    },
+    {
+      "id": "yuishan-ai-lab",
+      "type": "industry",
+      "filter": "industry",
+      "tags": ["金融業", "智能客服", "風控"],
+      "title": "玉山銀行智能金融實驗室：AI 客服首次解決率從 72% 到 91%",
+      "summary": "投入 10 億元建 AI 基礎設施後，真正的瓶頸是跨部門數據與複合人才。",
+      "situation": "玉山銀行自 2019 年成立智能金融實驗室，投入超過 10 億元建置 AI 基礎設施。",
+      "action": "導入 NLU 智能客服、GNN 風控模型、智能理專輔助系統；同步處理跨部門數據孤島與法規溝通。",
+      "result": "AI 客服首次解決率從 72% 升至 91%，偽冒案件通報時間從 15 分鐘縮短至 30 秒，財富管理手續費收入年增 14%。",
+      "lesson": "AI 成效 80% 取決於數據品質。模型可以買，但跨部門數據整合與懂 AI 又懂金融的人才無法快速補齊。",
+      "source": {
+        "label": "產業案例庫 · 金融業 AI 轉型",
+        "href": "https://rong-rise.com/knowledge/financial-ai-transformation"
+      }
+    },
+    {
+      "id": "rongrise-cron-model-null",
+      "type": "field-note",
+      "filter": "field-note",
+      "tags": ["小賀系統", "cron", "agent 治理"],
+      "title": "cron job 更新後 model 變 null：我們用錯了「更新」指令",
+      "summary": "文件說「update」，實際只更新 schedule，model/provider 會被清空。",
+      "situation": "我們用 hermes cron edit 更新排程，發現 jobs.json 裡的 model 與 provider 被設成 null，導致 LLM job 跑預設模型而非預期的 deepseek-v4。",
+      "action": "改為直接編輯 /opt/data/cron/jobs.json（改前備份），對照正常 job 的格式補回 model/provider，並把這條寫進 micro-tool-development skill 的 pitfalls。",
+      "result": "cron job 恢復預期模型分派，後續新增 LLM job 都先 pin 再手動校對 jobs.json。",
+      "lesson": "不要假設 CLI 的「update」會保留所有欄位。關鍵任務的設定要落地到檔案層級，並保留對照樣本。",
+      "source": {
+        "label": "技術深讀 · agent 治理計畫",
+        "href": "https://rong-rise.com/knowledge/agentic-ai-employee-management"
+      }
+    },
+    {
+      "id": "rongrise-vps-9am-crash",
+      "type": "field-note",
+      "filter": "field-note",
+      "tags": ["小賀系統", "VPS", "部署"],
+      "title": "每天早上 9 點 VPS 準時崩潰：原來是 cron 同時啟動太多服務",
+      "summary": "多個 no_agent cron 在同一分鐘啟動，記憶體與 IO 瞬間爆掉。",
+      "situation": "每天早上 9 點官網與服務會短暫無法連線，持續數分鐘後自動恢復，log 顯示大量 cron 同時執行。",
+      "action": "盤點所有 cron 的執行時間，把密集的 no_agent job 錯開 5–10 分鐘；替高風險 job 加鎖檔與重試機制。",
+      "result": "9 點崩潰停止，服務可用性恢復穩定。",
+      "lesson": "自動化排程要考慮「同時啟動」的資源競爭，不是每個 job 單獨能跑就沒問題。",
+      "source": {
+        "label": "技術深讀 · agent 治理計畫",
+        "href": "https://rong-rise.com/knowledge/agentic-ai-employee-management"
+      }
+    },
+    {
+      "id": "rongrise-skill-overwrite",
+      "type": "field-note",
+      "filter": "field-note",
+      "tags": ["小賀系統", "skill", "人機協作"],
+      "title": "skill 自動覆寫人工編輯：我們差點丟掉一週的修正",
+      "summary": "agent 與人同時編輯 skill，後寫的覆蓋前者，沒有版本衝突提示。",
+      "situation": "我們手動修正了一個 skill 的 pitfalls，隔天發現內容被 agent 的自動更新覆蓋回舊版。",
+      "action": "建立 skill 修改流程：人工編輯後必須 pin，或在 git commit message 標註「手動修改勿覆寫」；定期用 git diff 檢查 skill 變化。",
+      "result": "後續人工修正的 skill 不再被自動流程覆蓋，事故庫也開始記錄這類衝突。",
+      "lesson": "人與 agent 共享檔案時，必須有明確的鎖定與版本紀律，否則「自動化」會變成「自動覆蓋」。",
+      "source": {
+        "label": "技術深讀 · agent 治理計畫",
+        "href": "https://rong-rise.com/knowledge/agentic-ai-employee-management"
+      }
+    }
+  ]
+}

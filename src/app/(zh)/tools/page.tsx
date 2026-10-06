@@ -135,6 +135,14 @@ const tools: Tool[] = [
     tag: "課程",
     tagClass: "bg-primary/10 text-primary",
   },
+  {
+    href: "/case-notes",
+    icon: "📝",
+    name: "陪跑筆記案例庫",
+    desc: "從真實輔導現場與產業觀察中萃取出情境、做法、結果與教訓。每個故事都是一堂可以被複製的決策課。",
+    tag: "案例",
+    tagClass: "bg-tertiary/10 text-tertiary",
+  },
 ];
 
 export default function ToolsPage() {
