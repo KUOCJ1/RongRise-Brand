@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n48",
+      "date": "2026-10-06",
+      "category": "資源",
+      "title": "會用 AI 的人變多了，會查 AI 的人沒有變多",
+      "summary": "PwC 問了近五萬名工作者，把勞動力切成四種人：前鋒 14%、AI 起義者 18%、不可替代者 11%、引擎室 56%。同一份調查裡，AI 使用率上升 10 個百分點，拿得到學習資源的人卻少了 8 個。",
+      "link": "/knowledge/ai-workforce-four-groups",
+      "isNew": true
+    },
+    {
       "id": "n47",
       "date": "2026-10-01",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "政府 AI 補助怎麼選：三種企業規模的三條路線",
       "summary": "30 人以下製造業、30 到 200 人輔導、產業人才投資方案，三條路線的期限與金額一次整理",
       "link": "/knowledge/gov-ai-subsidy-three-routes",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n02",

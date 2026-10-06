@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-workforce-four-groups",
+    cat: "人才策略",
+    title: "會用 AI 的人變多了，會查 AI 的人沒有變多",
+    date: "2026.10.06",
+    readTime: "9 分鐘",
+    excerpt: "PwC 問了近五萬名工作者，把勞動力切成四種人。最刺眼的是那 56% 的引擎室：他們做著公司最多的日常事，卻最拿不到學習資源。同一份調查裡，AI 使用率上升 10 個百分點，訓練資源反而下降 8 個。",
+    tags: ["AI 人才", "技能落差", "驗證能力", "人才策略", "AI 導入"],
+  },
+  {
     slug: "coordination-tax",
     cat: "AI 轉型",
     title: "協調稅：一個七步驟的流程，工作一天，等待九到十八天",
