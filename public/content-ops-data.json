@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-10-05T07:20:27Z",
+ "generatedAt": "2026-10-06T07:20:31Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 128
+  "daysRunning": 129
  },
  "stats": {
-  "scanDays": 108,
-  "weekArticles": 84,
+  "scanDays": 109,
+  "weekArticles": 81,
   "articles": 87,
   "newsItems": 47,
-  "newsletterIssues": 21,
-  "subscribers": 18,
-  "confirmedSubscribers": 13,
+  "newsletterIssues": 23,
+  "subscribers": 19,
+  "confirmedSubscribers": 14,
   "videos": 35,
   "views": 643,
-  "channelSubscribers": 15,
-  "insights": 14,
+  "channelSubscribers": 16,
+  "insights": 15,
   "socialPosts": 42,
   "igCards": 35,
-  "competitorReports": 106
+  "competitorReports": 107
  },
  "activity": [
-  {
-   "date": "2026-09-29",
-   "count": 13,
-   "topics": []
-  },
   {
    "date": "2026-09-30",
    "count": 13,
@@ -56,6 +51,11 @@
    "date": "2026-10-05",
    "count": 11,
    "topics": []
+  },
+  {
+   "date": "2026-10-06",
+   "count": 12,
+   "topics": []
   }
  ],
  "latest": {
@@ -64,43 +64,43 @@
    "date": "2026.10.01",
    "url": "/knowledge/coordination-tax"
   },
-  "newsletter": "🦞 榕賀觀點 第 21 期 — 2026-09-28",
+  "newsletter": "🦞 榕賀觀點 第 23 期 — 2026-10-05",
   "video": {
    "title": "你知道誰在負責這個 AI 嗎？｜思科 9 萬人配發 AI 代理，員工每週多花 6 小時善後",
    "date": "2026-10-01",
    "url": "https://www.youtube.com/watch?v=rrkW0F12CZA"
   },
-  "insight": "2026-W40.md"
+  "insight": "2026-W41.md"
  },
  "trends": [
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 30,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "人力資源",
-   "icon": "📋",
-   "count": 25,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "晶片與算力",
-   "icon": "🔩",
-   "count": 24,
+   "count": 32,
    "momentum": "up"
   },
   {
    "keyword": "企業導入",
    "icon": "🚀",
-   "count": 23,
+   "count": 25,
    "momentum": "up"
+  },
+  {
+   "keyword": "人力資源",
+   "icon": "📋",
+   "count": 23,
+   "momentum": "flat"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 22,
+   "count": 20,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "晶片與算力",
+   "icon": "🔩",
+   "count": 19,
    "momentum": "flat"
   }
  ]
