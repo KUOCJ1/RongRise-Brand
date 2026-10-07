@@ -1,15 +1,15 @@
 {
- "generatedAt": "2026-10-06T07:20:31Z",
+ "generatedAt": "2026-10-07T07:20:30Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 129
+  "daysRunning": 130
  },
  "stats": {
-  "scanDays": 109,
-  "weekArticles": 81,
-  "articles": 87,
-  "newsItems": 47,
+  "scanDays": 110,
+  "weekArticles": 83,
+  "articles": 88,
+  "newsItems": 49,
   "newsletterIssues": 23,
   "subscribers": 19,
   "confirmedSubscribers": 14,
@@ -17,16 +17,11 @@
   "views": 643,
   "channelSubscribers": 16,
   "insights": 15,
-  "socialPosts": 42,
+  "socialPosts": 44,
   "igCards": 35,
-  "competitorReports": 107
+  "competitorReports": 108
  },
  "activity": [
-  {
-   "date": "2026-09-30",
-   "count": 13,
-   "topics": []
-  },
   {
    "date": "2026-10-01",
    "count": 13,
@@ -56,13 +51,18 @@
    "date": "2026-10-06",
    "count": 12,
    "topics": []
+  },
+  {
+   "date": "2026-10-07",
+   "count": 12,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "協調稅：一個七步驟的流程，工作一天，等待九到十八天",
-   "date": "2026.10.01",
-   "url": "/knowledge/coordination-tax"
+   "title": "會用 AI 的人變多了，會查 AI 的人沒有變多",
+   "date": "2026.10.06",
+   "url": "/knowledge/ai-workforce-four-groups"
   },
   "newsletter": "🦞 榕賀觀點 第 23 期 — 2026-10-05",
   "video": {
@@ -77,30 +77,30 @@
    "keyword": "組織與管理",
    "icon": "🏢",
    "count": 32,
-   "momentum": "up"
+   "momentum": "flat"
   },
   {
    "keyword": "企業導入",
    "icon": "🚀",
-   "count": 25,
+   "count": 26,
    "momentum": "up"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 23,
+   "count": 22,
    "momentum": "flat"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 20,
+   "count": 19,
    "momentum": "flat"
   },
   {
-   "keyword": "晶片與算力",
-   "icon": "🔩",
-   "count": 19,
+   "keyword": "治理與法規",
+   "icon": "⚖️",
+   "count": 17,
    "momentum": "flat"
   }
  ]
