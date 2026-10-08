@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-10-07T07:20:30Z",
+ "generatedAt": "2026-10-08T07:20:29Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 130
+  "daysRunning": 131
  },
  "stats": {
-  "scanDays": 110,
+  "scanDays": 111,
   "weekArticles": 83,
   "articles": 88,
   "newsItems": 49,
   "newsletterIssues": 23,
-  "subscribers": 19,
-  "confirmedSubscribers": 14,
-  "videos": 35,
-  "views": 643,
-  "channelSubscribers": 16,
+  "subscribers": 22,
+  "confirmedSubscribers": 16,
+  "videos": 37,
+  "views": 645,
+  "channelSubscribers": 17,
   "insights": 15,
-  "socialPosts": 44,
+  "socialPosts": 46,
   "igCards": 35,
-  "competitorReports": 108
+  "competitorReports": 109
  },
  "activity": [
-  {
-   "date": "2026-10-01",
-   "count": 13,
-   "topics": []
-  },
   {
    "date": "2026-10-02",
    "count": 12,
@@ -56,6 +51,11 @@
    "date": "2026-10-07",
    "count": 12,
    "topics": []
+  },
+  {
+   "date": "2026-10-08",
+   "count": 9,
+   "topics": []
   }
  ],
  "latest": {
@@ -66,9 +66,9 @@
   },
   "newsletter": "🦞 榕賀觀點 第 23 期 — 2026-10-05",
   "video": {
-   "title": "你知道誰在負責這個 AI 嗎？｜思科 9 萬人配發 AI 代理，員工每週多花 6 小時善後",
-   "date": "2026-10-01",
-   "url": "https://www.youtube.com/watch?v=rrkW0F12CZA"
+   "title": "AI 導入裂成兩條路：能上雲的走對話，不能上雲的走自建",
+   "date": "2026-10-08",
+   "url": "https://www.youtube.com/watch?v=1wkOGE3FSaI"
   },
   "insight": "2026-W41.md"
  },
@@ -82,7 +82,7 @@
   {
    "keyword": "企業導入",
    "icon": "🚀",
-   "count": 26,
+   "count": 27,
    "momentum": "up"
   },
   {
@@ -92,16 +92,16 @@
    "momentum": "flat"
   },
   {
-   "keyword": "成本與投資",
-   "icon": "💰",
+   "keyword": "晶片與算力",
+   "icon": "🔩",
    "count": 19,
    "momentum": "flat"
   },
   {
    "keyword": "治理與法規",
    "icon": "⚖️",
-   "count": 17,
-   "momentum": "flat"
+   "count": 19,
+   "momentum": "up"
   }
  ]
 }
