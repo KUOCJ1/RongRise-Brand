@@ -1,32 +1,32 @@
 {
   "videos": [
     {
-      "id": "dmWeBNp4EZw",
-      "title": "你導入了三個 AI 代理，公司卻沒有多出一個主管職",
-      "date": "2026-10-08",
-      "description": "你導入了三個 AI 代理，公司裡卻沒有多出一個主管職。這件事，正在很多公司安靜地發生。 這不是省了人力，是把成本換到一個看 ...",
-      "thumbnail": "https://img.youtube.com/vi/dmWeBNp4EZw/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/dmWeBNp4EZw/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=dmWeBNp4EZw"
-    },
-    {
       "id": "PR_VEEJ0FmI",
       "title": "協調稅：公司最貴的成本，是那些沒有名字的等待",
       "date": "2026-10-08",
-      "description": "你們公司每個月都看得到 AI 的工具費，卻看不到最貴的那一筆：等待、交接、重工。麥肯錫把它叫做「協調稅」——AI 真正的價值 ...",
+      "description": "你們公司每個月都看得到 AI 的工具費，卻看不到最貴的那一筆：等待、交接、重工。麥肯錫把它叫做「協調稅」——AI 真正的價值不在取代哪一個職務，而在拿掉等待與交接。這支影片用 90 秒講清楚：怎麼量、怎麼指派負責人、以及為什麼先改 KPI ",
       "thumbnail": "https://img.youtube.com/vi/PR_VEEJ0FmI/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/PR_VEEJ0FmI/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=PR_VEEJ0FmI"
     },
     {
+      "id": "dmWeBNp4EZw",
+      "title": "你導入了三個 AI 代理，公司卻沒有多出一個主管職",
+      "date": "2026-10-08",
+      "description": "你導入了三個 AI 代理，公司裡卻沒有多出一個主管職。這件事，正在很多公司安靜地發生。\n\n這不是省了人力，是把成本換到一個看不見的位置。看得見的費用會有人抗議；看不見的工時，沒有人會替它說話，也不會進到任何一場檢討會議裡。\n\n過去一個人做十",
+      "thumbnail": "https://img.youtube.com/vi/dmWeBNp4EZw/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/dmWeBNp4EZw/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=dmWeBNp4EZw"
+    },
+    {
       "id": "1wkOGE3FSaI",
       "title": "AI 導入裂成兩條路：能上雲的走對話，不能上雲的走自建",
       "date": "2026-10-08",
-      "description": "十月一日，Shopify 讓你在對話框裡開出一整間店；十月二日，台灣法務部宣布要花三年，自己蓋一套 AI。同一個星期，AI 導入裂成 ...",
+      "description": "十月一日，Shopify 讓你在對話框裡開出一整間店；十月二日，台灣法務部宣布要花三年，自己蓋一套 AI。同一個星期，AI 導入裂成兩條路：能上雲的走對話派，不能上雲的走自建派。差別不是技術，是你哪一類資料絕對不能上雲。這支影片講清楚：資料",
       "thumbnail": "https://img.youtube.com/vi/1wkOGE3FSaI/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/1wkOGE3FSaI/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=1wkOGE3FSaI"
     }
   ],
-  "fetchedAt": "2026-10-08T10:44:21Z"
+  "fetchedAt": "2026-10-08T10:46:42Z"
 }
