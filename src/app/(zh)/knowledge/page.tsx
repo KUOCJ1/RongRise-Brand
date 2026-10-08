@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-operation-experiment",
+    cat: "AI 轉型",
+    title: "人不在的一個月：一次公開實驗的起點",
+    date: "2026.10.08",
+    readTime: "4 分鐘",
+    excerpt: "十月，CJ 哥在西班牙走朝聖之路，公司的內容 operation 由一支 AI 員工團隊維運。這是一份公開實驗的起點說明：它負責什麼、邊界在哪、十一月要公開哪些數字，包含出包與修復。",
+    tags: ["AI 員工", "AI 代理", "營運自動化", "AI 治理", "公開實驗"],
+  },
+  {
     slug: "getty-images-scarcity-ledger",
     cat: "AI 轉型",
     title: "營收創新高，卻被交易所除牌：Getty Images 的圖庫生意被 AI 拆了",
