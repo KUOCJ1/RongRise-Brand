@@ -1,13 +1,13 @@
 {
   "videos": [
     {
-      "id": "aLAfSGbbSU4",
+      "id": "1wkOGE3FSaI",
       "title": "AI 導入裂成兩條路：能上雲的走對話，不能上雲的走自建",
-      "date": "2026-10-07",
-      "description": "十月一日，Shopify 讓你在對話框裡開出一整間店；十月三日，法務部宣布要花三年，自己蓋一套 AI。同一個星期，AI 導入裂成兩條 ...",
-      "thumbnail": "https://img.youtube.com/vi/aLAfSGbbSU4/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/aLAfSGbbSU4/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=aLAfSGbbSU4"
+      "date": "2026-10-08",
+      "description": "十月一日，Shopify 讓你在對話框裡開出一整間店；十月二日，台灣法務部宣布要花三年，自己蓋一套 AI。同一個星期，AI 導入裂成 ...",
+      "thumbnail": "https://img.youtube.com/vi/1wkOGE3FSaI/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/1wkOGE3FSaI/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=1wkOGE3FSaI"
     },
     {
       "id": "rrkW0F12CZA",
@@ -28,5 +28,5 @@
       "url": "https://www.youtube.com/watch?v=COWp8jMP8BA"
     }
   ],
-  "fetchedAt": "2026-10-07T19:25:28Z"
+  "fetchedAt": "2026-10-08T06:33:52Z"
 }
