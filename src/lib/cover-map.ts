@@ -4,6 +4,7 @@
  */
 
 export const COVER_MAP: Record<string, string> = {
+  "getty-images-scarcity-ledger": "article-getty-images-scarcity-ledger.jpg",
   "coordination-tax": "article-coordination-tax.jpg",
   "ai-incident-notification-gap": "article-ai-incident-notification-gap.jpg",
   "hr-function-three-possible-positions": "article-hr-three-positions.jpg",

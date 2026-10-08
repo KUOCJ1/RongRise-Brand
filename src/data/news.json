@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n50",
+      "date": "2026-10-08",
+      "category": "資源",
+      "title": "營收創新高，卻被交易所除牌：Getty Images 的圖庫生意被 AI 拆了",
+      "summary": "Getty Images 去年營收 9.813 億美元創歷年新高，今年 9 月卻因股價過低被紐交所除牌，市值剩 1,742 萬美元。生成式 AI 讓圖片不再稀缺，第一個鬆動的是定價權。附一張表：哪一種稀缺性 AI 拿得走。",
+      "link": "/knowledge/getty-images-scarcity-ledger",
+      "isNew": true
+    },
+    {
       "id": "n49",
       "date": "2026-10-07",
       "category": "公告",
@@ -25,7 +34,7 @@
       "title": "協調稅：一個七步驟的流程，工作一天，等待九到十八天",
       "summary": "麥肯錫量出一個七步驟的流程：步驟內的工作只要一天，步驟之間的協調卻要九到十八天。協調稅吃掉總工時的 35% 到 60%。台灣的判準更簡單，能不能無縫換手、有沒有人負責。附今天就能開始的三張表。",
       "link": "/knowledge/coordination-tax",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n46",

@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "getty-images-scarcity-ledger",
+    cat: "AI 轉型",
+    title: "營收創新高，卻被交易所除牌：Getty Images 的圖庫生意被 AI 拆了",
+    date: "2026.10.08",
+    readTime: "9 分鐘",
+    excerpt: "Getty Images 去年營收 9.813 億美元，公司歷年最高；今年 9 月被紐交所除牌，市值剩 1,742 萬美元。生成式 AI 讓圖片不再稀缺，第一個鬆動的是定價權。附一張表：哪一種稀缺性 AI 拿得走，哪一種拿不走。",
+    tags: ["AI 商業模式", "稀缺性", "定價權", "生成式 AI", "AI 轉型"],
+  },
+  {
     slug: "ai-workforce-four-groups",
     cat: "人才策略",
     title: "會用 AI 的人變多了，會查 AI 的人沒有變多",
