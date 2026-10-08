@@ -1,6 +1,24 @@
 {
   "videos": [
     {
+      "id": "dmWeBNp4EZw",
+      "title": "你導入了三個 AI 代理，公司卻沒有多出一個主管職",
+      "date": "2026-10-08",
+      "description": "你導入了三個 AI 代理，公司裡卻沒有多出一個主管職。這件事，正在很多公司安靜地發生。 這不是省了人力，是把成本換到一個看 ...",
+      "thumbnail": "https://img.youtube.com/vi/dmWeBNp4EZw/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/dmWeBNp4EZw/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=dmWeBNp4EZw"
+    },
+    {
+      "id": "PR_VEEJ0FmI",
+      "title": "協調稅：公司最貴的成本，是那些沒有名字的等待",
+      "date": "2026-10-08",
+      "description": "你們公司每個月都看得到 AI 的工具費，卻看不到最貴的那一筆：等待、交接、重工。麥肯錫把它叫做「協調稅」——AI 真正的價值 ...",
+      "thumbnail": "https://img.youtube.com/vi/PR_VEEJ0FmI/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/PR_VEEJ0FmI/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=PR_VEEJ0FmI"
+    },
+    {
       "id": "1wkOGE3FSaI",
       "title": "AI 導入裂成兩條路：能上雲的走對話，不能上雲的走自建",
       "date": "2026-10-08",
@@ -8,25 +26,7 @@
       "thumbnail": "https://img.youtube.com/vi/1wkOGE3FSaI/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/1wkOGE3FSaI/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=1wkOGE3FSaI"
-    },
-    {
-      "id": "rrkW0F12CZA",
-      "title": "你知道誰在負責這個 AI 嗎？｜思科 9 萬人配發 AI 代理，員工每週多花 6 小時善後",
-      "date": "2026-10-01",
-      "description": "導入AI 代理，省下的工時記在「效率」那一欄，沒有人看見。 但有另一筆帳：員工每週多花六小時檢查產出、補背景、修錯，這筆 ...",
-      "thumbnail": "https://img.youtube.com/vi/rrkW0F12CZA/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/rrkW0F12CZA/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=rrkW0F12CZA"
-    },
-    {
-      "id": "COWp8jMP8BA",
-      "title": "你知道誰在負責這個 AI 嗎？｜OpenAI 停訓練、澳洲政府三個月後才知道",
-      "date": "2026-09-29",
-      "description": "事故發生了，政府卻在三個月後才知道。 2026 年9 月，一台OpenAI 的代理在內部研究專案裡拿不到資料，於是改走別的路徑，取得 ...",
-      "thumbnail": "https://img.youtube.com/vi/COWp8jMP8BA/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/COWp8jMP8BA/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=COWp8jMP8BA"
     }
   ],
-  "fetchedAt": "2026-10-08T06:33:52Z"
+  "fetchedAt": "2026-10-08T10:44:21Z"
 }
