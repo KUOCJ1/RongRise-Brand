@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-10-08T07:20:29Z",
+ "generatedAt": "2026-10-09T07:20:27Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 131
+  "daysRunning": 132
  },
  "stats": {
-  "scanDays": 111,
-  "weekArticles": 83,
-  "articles": 88,
-  "newsItems": 49,
+  "scanDays": 112,
+  "weekArticles": 79,
+  "articles": 90,
+  "newsItems": 50,
   "newsletterIssues": 23,
   "subscribers": 22,
   "confirmedSubscribers": 16,
-  "videos": 37,
-  "views": 645,
+  "videos": 38,
+  "views": 646,
   "channelSubscribers": 17,
   "insights": 15,
-  "socialPosts": 46,
+  "socialPosts": 48,
   "igCards": 35,
-  "competitorReports": 109
+  "competitorReports": 110
  },
  "activity": [
-  {
-   "date": "2026-10-02",
-   "count": 12,
-   "topics": []
-  },
   {
    "date": "2026-10-03",
    "count": 12,
@@ -56,19 +51,24 @@
    "date": "2026-10-08",
    "count": 9,
    "topics": []
+  },
+  {
+   "date": "2026-10-09",
+   "count": 12,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "會用 AI 的人變多了，會查 AI 的人沒有變多",
-   "date": "2026.10.06",
-   "url": "/knowledge/ai-workforce-four-groups"
+   "title": "人不在的一個月：一次公開實驗的起點",
+   "date": "2026.10.08",
+   "url": "/knowledge/ai-operation-experiment"
   },
   "newsletter": "🦞 榕賀觀點 第 23 期 — 2026-10-05",
   "video": {
-   "title": "AI 導入裂成兩條路：能上雲的走對話，不能上雲的走自建",
+   "title": "協調稅：公司最貴的成本，是那些沒有名字的等待",
    "date": "2026-10-08",
-   "url": "https://www.youtube.com/watch?v=1wkOGE3FSaI"
+   "url": "https://www.youtube.com/watch?v=PR_VEEJ0FmI"
   },
   "insight": "2026-W41.md"
  },
@@ -76,32 +76,32 @@
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 32,
+   "count": 28,
    "momentum": "flat"
   },
   {
    "keyword": "企業導入",
    "icon": "🚀",
-   "count": 27,
-   "momentum": "up"
+   "count": 23,
+   "momentum": "flat"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 22,
+   "count": 19,
    "momentum": "flat"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 19,
-   "momentum": "flat"
+   "count": 17,
+   "momentum": "down"
   },
   {
    "keyword": "治理與法規",
    "icon": "⚖️",
-   "count": 19,
-   "momentum": "up"
+   "count": 15,
+   "momentum": "flat"
   }
  ]
 }

@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-10-08T07:20:29Z",
+ "generatedAt": "2026-10-09T07:20:27Z",
  "window": {
-  "from": "2026-10-02",
-  "to": "2026-10-08",
+  "from": "2026-10-03",
+  "to": "2026-10-09",
   "days": 7,
   "digestCount": 7
  },
@@ -21,15 +21,15 @@
    "icon": "🏢",
    "category": "管理趨勢",
    "count": 28,
-   "prevCount": 28,
+   "prevCount": 31,
    "momentum": "flat"
   },
   {
    "keyword": "企業導入",
    "icon": "🚀",
    "category": "AI 轉型",
-   "count": 23,
-   "prevCount": 20,
+   "count": 21,
+   "prevCount": 25,
    "momentum": "flat"
   },
   {
@@ -37,14 +37,14 @@
    "icon": "📋",
    "category": "人才策略",
    "count": 19,
-   "prevCount": 18,
+   "prevCount": 23,
    "momentum": "flat"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
    "category": "AI 轉型",
-   "count": 17,
+   "count": 18,
    "prevCount": 26,
    "momentum": "down"
   },
@@ -52,63 +52,63 @@
    "keyword": "治理與法規",
    "icon": "⚖️",
    "category": "AI 轉型",
-   "count": 15,
-   "prevCount": 15,
+   "count": 12,
+   "prevCount": 16,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "人才與技能",
+   "icon": "🧠",
+   "category": "人才策略",
+   "count": 11,
+   "prevCount": 10,
    "momentum": "flat"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
    "category": "AI 轉型",
-   "count": 14,
-   "prevCount": 22,
-   "momentum": "down"
-  },
-  {
-   "keyword": "人才與技能",
-   "icon": "🧠",
-   "category": "人才策略",
-   "count": 13,
-   "prevCount": 9,
-   "momentum": "up"
-  },
-  {
-   "keyword": "安全與風險",
-   "icon": "🛡️",
-   "category": "AI 轉型",
    "count": 11,
-   "prevCount": 7,
-   "momentum": "up"
+   "prevCount": 24,
+   "momentum": "down"
   },
   {
    "keyword": "能源與電力",
    "icon": "⚡",
    "category": "ESG 永續",
-   "count": 10,
-   "prevCount": 14,
+   "count": 11,
+   "prevCount": 13,
    "momentum": "flat"
+  },
+  {
+   "keyword": "安全與風險",
+   "icon": "🛡️",
+   "category": "AI 轉型",
+   "count": 10,
+   "prevCount": 6,
+   "momentum": "up"
   },
   {
    "keyword": "資料中心",
    "icon": "🏭",
    "category": "AI 轉型",
    "count": 10,
-   "prevCount": 13,
+   "prevCount": 10,
    "momentum": "flat"
   },
   {
    "keyword": "AI Agent",
    "icon": "🤖",
    "category": "AI 轉型",
-   "count": 9,
-   "prevCount": 12,
-   "momentum": "flat"
+   "count": 8,
+   "prevCount": 13,
+   "momentum": "down"
   },
   {
    "keyword": "ESG 揭露",
    "icon": "🌱",
    "category": "ESG 永續",
-   "count": 6,
+   "count": 7,
    "prevCount": 7,
    "momentum": "flat"
   },
@@ -116,9 +116,9 @@
    "keyword": "自動化",
    "icon": "⚙️",
    "category": "AI 轉型",
-   "count": 3,
+   "count": 5,
    "prevCount": 5,
-   "momentum": "down"
+   "momentum": "flat"
   },
   {
    "keyword": "開源模型",
@@ -130,6 +130,90 @@
   }
  ],
  "articles": [
+  {
+   "title": "Google brings agentic AI to Gemini, starting with businesses",
+   "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
+   "summary": "Google 把 agentic AI 帶進 Gemini，先從企業場景落地，讓 AI 代理直接代辦跨工具任務。",
+   "date": "2026-10-09",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "OpenAI's revenue is reportedly $20 billion less than previously projected",
+   "url": "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/",
+   "summary": "報導指 OpenAI 實際營收比原預估少 200 億美元，為 AI 熱潮的變現能力投下變數。",
+   "date": "2026-10-09",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "AI breakthroughs in robotics won't change your life any time soon",
+   "url": "https://www.technologyreview.com/2026/10/08/1145923/ai-breakthroughs-in-robotics-wont-change-your-life-any-time-soon/",
+   "summary": "MIT Tech Review 認為機器人 AI 雖有進展，但要真正走入日常仍言之過早，企業投資需抓對時程。",
+   "date": "2026-10-09",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "美國聯邦政府入口網站 America.gov 上線，底層使用 Google Gemini、Grok",
+   "url": "https://www.ithome.com.tw/news/179309",
+   "summary": "美國聯邦政府新入口網站 America.gov 採用 Gemini、Grok 等模型，公部門 AI 導入再跨一步。",
+   "date": "2026-10-09",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Hear from Ambrosia Energy and Bloom Energy execs on where the AI infrastructure boom is creating opportunity",
+   "url": "https://techcrunch.com/2026/10/08/hear-from-ambrosia-energy-and-bloom-energy-execs-on-where-the-ai-infrastructure-boom-is-creating-opportunity-at-disrupt-2026/",
+   "summary": "能源業者指出 AI 基礎建設熱潮正推升電力需求，能源供給與永續將成 AI 擴張的關鍵瓶頸。",
+   "date": "2026-10-09",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "Scaling AI inference",
+   "url": "https://www.mckinsey.com/industries/semiconductors/our-insights/scaling-ai-inference",
+   "summary": "麥肯錫剖析 AI 推論規模化對算力與能源效率的要求，指向資料中心的永續設計。",
+   "date": "2026-10-09",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "導入 AI 就能少用一些人？福特重金回聘 350 名老將，才知道「應變經驗」省不得",
+   "url": "https://www.managertoday.com.tw/columns/view/73082",
+   "summary": "福特導入 AI 後回頭重聘 350 名資深員工，提醒企業「工作被自動化」不等於「人可被取代」，應變經驗省不得。",
+   "date": "2026-10-09",
+   "category": "人才策略"
+  },
+  {
+   "title": "「待遇面議」的空間再縮小！職缺薪資揭露門檻擬調至 5 萬，勞動部「1.75 倍」公式怎麼算",
+   "url": "https://www.managertoday.com.tw/articles/view/73079",
+   "summary": "勞動部研議修法，職缺薪資揭露門檻擬以最低工資 1.75 倍計算（約 5 萬元），企業招募資訊透明度要求升高。",
+   "date": "2026-10-09",
+   "category": "人才策略"
+  },
+  {
+   "title": "台灣美光罷工投票近 9 成過關！工會痛批：CEO 股票多拿 400 倍、盼公平分配成果",
+   "url": "https://www.managertoday.com.tw/articles/view/72917",
+   "summary": "美光桃園廠工會近 9 成同意罷工，勞方批執行長股票獎勵達員工平均數百倍，考驗企業在 AI 獲利下的成果分配。",
+   "date": "2026-10-09",
+   "category": "人才策略"
+  },
+  {
+   "title": "How Leaders Talk About AI Predicts Adoption",
+   "url": "https://hbr.org/2026/09/how-leaders-talk-about-ai-predicts-adoption",
+   "summary": "HBR 研究指出，領導者談論 AI 的方式會直接影響員工採用程度，溝通框架比工具本身更能左右轉型成敗。",
+   "date": "2026-10-09",
+   "category": "管理趨勢"
+  },
+  {
+   "title": "The CEO's singular impact on the success—or failure—of AI in organizations",
+   "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-ceos-singular-impact-on-the-success-or-failure-of-ai-in-organizations",
+   "summary": "麥肯錫強調 CEO 是 AI 成敗的關鍵少數；缺乏執行長親自定調的組織，轉型多半停在試點階段。",
+   "date": "2026-10-09",
+   "category": "管理趨勢"
+  },
+  {
+   "title": "AI Transformation（BCG）",
+   "url": "https://www.bcg.com/capabilities/artificial-intelligence",
+   "summary": "BCG 指出 AI 轉型價值僅約一成來自應用本身、兩成來自資料與技術，其餘七成靠流程再造與文化；72% 執行長自認是組織內 AI 的主要決策者。",
+   "date": "2026-10-09",
+   "category": "管理趨勢"
+  },
   {
    "title": "博通傳籌資 300 億美元，助 OpenAI 採購客製化 AI 晶片",
    "url": "https://technews.tw/2026/10/08/broadcom-reportedly-raising-30-billion-to-fund-openai-custom-ai-chip-procurement/",
@@ -597,90 +681,6 @@
    "url": "https://www.mckinsey.com/industries/financial-services/our-insights/pause-pivot-or-accelerate-saas-in-the-age-of-agentic-ai",
    "summary": "McKinsey 探討代理式 AI 對 SaaS 商業模式的衝擊，企業須在「暫停、轉向、加速」間做出選擇；對仰賴訂閱軟體的中小企業而言，這是重新檢視軟體採購與自建策略的時機。",
    "date": "2026-10-03",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "How AI Is Changing Cyber Threats—and Cybersecurity—for SMBs",
-   "url": "https://hbr.org/2026/10/how-ai-is-changing-cyber-threats-and-cybersecurity-for-smbs",
-   "summary": "HBR 專文指出 AI 同時放大中小企業的資安攻擊面與防禦工具，重點在「用 AI 防守、也要防 AI 攻擊」；資安已從 IT 採購項目升級為 SMB 導入 AI 的前置治理條件。",
-   "date": "2026-10-02",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Shopify debuts Canvas, a way to build online stores by chatting with AI",
-   "url": "https://techcrunch.com/2026/10/01/shopify-debuts-canvas-a-way-to-build-online-stores-by-chatting-with-ai/",
-   "summary": "Shopify 推出 Canvas，讓商家用對話就能生成並改裝線上商店；把「開店」這件中小企業最花工的事壓縮成 AI 對話流程，是電商場景 AI 落地的具體範本。",
-   "date": "2026-10-02",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "路透：麥當勞推 AI 定價工具，曾建議大麥克套餐賣 570 元",
-   "url": "https://technews.tw/2026/10/01/inside-mcdonalds-push-to-have-ai-price-your-big-mac/",
-   "summary": "路透調查揭露麥當勞以 AI 依各店顧客付費意願提供菜單定價建議，曾建議大麥克套餐賣 570 元；AI 定價的效益與觀感爭議同時浮上檯面，定價透明與倫理成為導入課題。",
-   "date": "2026-10-02",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Meta 9 月飆 27%　AI 代理 Muse 下載量突破 500 萬次",
-   "url": "https://technews.tw/2026/10/01/muse-downloads-surpass-5-million/",
-   "summary": "Meta 的 AI 代理 Muse 上線後下載量突破 500 萬次，帶動股價單月大漲；消費級 AI 代理的採用速度，正在重設企業評估「對話式代理」導入的市場預期。",
-   "date": "2026-10-02",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Google thinks SpaceX's Starship has to launch 1,800 times before space data centers get off the ground",
-   "url": "https://techcrunch.com/2026/10/01/google-thinks-spacexs-starship-has-to-launch-1600-times-before-space-data-centers-get-off-the-ground/",
-   "summary": "Google 指出太空資料中心若要成立，Starship 須發射約 1,800 次，成本與碳足跡門檻極高；在地面電力與土地日益吃緊之際，AI 算力的「能源路線之爭」從電網延伸到了軌道。",
-   "date": "2026-10-02",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "Google 推 AI 內容分潤計畫，出版商批金額低又不透明",
-   "url": "https://technews.tw/2026/10/01/googles-early-attempt-to-pay-websites-for-ai-answers-is-struggling/",
-   "summary": "Google 嘗試以分潤補償被 AI 摘要引用的網站，但出版商批評金額過低、機制不透明；AI 對內容生態的外部成本開始被正式定價，是數位治理（ESG 的 S/G 面向）的新戰場。",
-   "date": "2026-10-02",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "加州禁止 AI 自行決定解僱員工，成全美首例",
-   "url": "https://www.ithome.com.tw/news/179367",
-   "summary": "加州立法禁止由 AI 自動做出解僱員工的決定，為全美首例；當 AI 進入人資決策，雇主須保留「由人做最終決定」的界線，是中小企業導入 HR Tech 最直接的合規警訊。",
-   "date": "2026-10-02",
-   "category": "人才策略"
-  },
-  {
-   "title": "面試最後問這句話最扣分！前 Google 人資：改問這 4 題，讓人想當場錄取你",
-   "url": "https://www.managertoday.com.tw/articles/view/73019",
-   "summary": "前 Google 人資主管歸納面試末段提問的地雷與加分題型；在 AI 面試工具普及、招募資訊高度對稱的環境下，「問對問題」成為辨識真實人才的核心技巧。",
-   "date": "2026-10-02",
-   "category": "人才策略"
-  },
-  {
-   "title": "五五就業促進獎勵是什麼？中高齡再就業最高拿 6 萬！資格與申請方法總整理",
-   "url": "https://www.managertoday.com.tw/articles/view/73021",
-   "summary": "整理 55 歲以上（及 45 歲依法退休者）重返職場可領最高 6 萬元的獎勵制度；在 AI 造成技能斷層之際，中高齡人才回流政策成為企業補足人力缺口、降低再訓練成本的另一條路。",
-   "date": "2026-10-02",
-   "category": "人才策略"
-  },
-  {
-   "title": "愈會放手的主管愈強！麥肯錫：頂尖執行長上任第一天，就對 3 件事「抓大放小」",
-   "url": "https://www.managertoday.com.tw/books/view/73041",
-   "summary": "麥肯錫觀察頂尖執行長上任即對特定 3 件事「抓大放小」，把時間留給真正影響成敗的決策；在 AI 轉型需要經營者親自主導的當下，主管的「放手與聚焦」正是槓桿所在。",
-   "date": "2026-10-02",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "Brian Chesky interview: AI agents need their own operating system",
-   "url": "https://techcrunch.com/2026/10/01/brian-chesky-interview-ai-agents-need-their-own-operating-system/",
-   "summary": "Airbnb 執行長 Chesky 主張 AI 代理需要專屬作業系統與介面，而非塞進既有 App；對企業的啟示是：導入代理不只是加功能，而是重新設計「工作被執行」的方式。",
-   "date": "2026-10-02",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "The next phase of government AI economics",
-   "url": "https://www.mckinsey.com/industries/public-sector/our-insights/the-next-phase-of-government-ai-economics",
-   "summary": "McKinsey 分析公部門 AI 正從「買工具」進入「算投報」階段，重點轉向可衡量的生產力與服務品質提升；此一「先證明價值再擴大」的節奏，對資源有限的中小企業同樣適用。",
-   "date": "2026-10-02",
    "category": "管理趨勢"
   }
  ],
