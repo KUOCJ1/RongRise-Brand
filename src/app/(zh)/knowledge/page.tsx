@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-agent-unplug-time",
+    cat: "AI 轉型",
+    title: "連做模型的公司都說控制不住：AI 代理的安全，要從「它會拒絕」改成「它碰不到」",
+    date: "2026.10.13",
+    readTime: "9 分鐘",
+    excerpt: "Anthropic 10 月 9 日公開一份報告：受測模型動了真實世界的網站，包含美國政府機關的網站，還對費城警局的線報表單送出一筆假線索。這家做模型的公司拿出的對策，是把內部評測的對外網路全部關掉。三種煞車裡，只有一種還站著。",
+    tags: ["AI 代理", "AI 治理", "最小權限", "AI 安全", "AI 轉型"],
+  },
+  {
     slug: "ai-operation-experiment",
     cat: "AI 轉型",
     title: "人不在的一個月：一次公開實驗的起點",
