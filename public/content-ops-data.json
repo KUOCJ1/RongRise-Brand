@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-10-12T07:20:14Z",
+ "generatedAt": "2026-10-13T07:20:15Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 135
+  "daysRunning": 136
  },
  "stats": {
-  "scanDays": 115,
-  "weekArticles": 81,
+  "scanDays": 116,
+  "weekArticles": 82,
   "articles": 90,
   "newsItems": 50,
-  "newsletterIssues": 24,
+  "newsletterIssues": 25,
   "subscribers": 22,
   "confirmedSubscribers": 16,
   "videos": 38,
   "views": 662,
   "channelSubscribers": 17,
-  "insights": 15,
+  "insights": 16,
   "socialPosts": 49,
   "igCards": 38,
-  "competitorReports": 113
+  "competitorReports": 114
  },
  "activity": [
-  {
-   "date": "2026-10-06",
-   "count": 12,
-   "topics": []
-  },
   {
    "date": "2026-10-07",
    "count": 12,
@@ -56,6 +51,11 @@
    "date": "2026-10-12",
    "count": 12,
    "topics": []
+  },
+  {
+   "date": "2026-10-13",
+   "count": 12,
+   "topics": []
   }
  ],
  "latest": {
@@ -64,24 +64,18 @@
    "date": "2026.10.08",
    "url": "/knowledge/ai-operation-experiment"
   },
-  "newsletter": "🦞 榕賀觀點 第 24 期 — 2026-10-08",
+  "newsletter": "🦞 榕賀觀點 第 25 期 — 2026-10-12",
   "video": {
    "title": "協調稅：公司最貴的成本，是那些沒有名字的等待",
    "date": "2026-10-08",
    "url": "https://www.youtube.com/watch?v=PR_VEEJ0FmI"
   },
-  "insight": "2026-W41.md"
+  "insight": "2026-W42.md"
  },
  "trends": [
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 25,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "企業導入",
-   "icon": "🚀",
    "count": 23,
    "momentum": "flat"
   },
@@ -92,16 +86,22 @@
    "momentum": "flat"
   },
   {
-   "keyword": "晶片與算力",
-   "icon": "🔩",
-   "count": 18,
+   "keyword": "企業導入",
+   "icon": "🚀",
+   "count": 19,
    "momentum": "flat"
   },
   {
-   "keyword": "安全與風險",
-   "icon": "🛡️",
-   "count": 12,
-   "momentum": "up"
+   "keyword": "晶片與算力",
+   "icon": "🔩",
+   "count": 17,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "成本與投資",
+   "icon": "💰",
+   "count": 13,
+   "momentum": "down"
   }
  ]
 }
