@@ -9,6 +9,7 @@ const navItems = [
   { href: "/courses", label: "課程" },
   { href: "/about", label: "關於我們" },
   { href: "/knowledge", label: "知識庫" },
+  { href: "/ai-faq", label: "FAQ" },
   { href: "/research", label: "研究專刊" },
   { href: "/newsletter", label: "電子報" },
   { href: "/news", label: "最新消息" },

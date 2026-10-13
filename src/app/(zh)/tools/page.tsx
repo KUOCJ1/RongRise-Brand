@@ -143,6 +143,14 @@ const tools: Tool[] = [
     tag: "案例",
     tagClass: "bg-tertiary/10 text-tertiary",
   },
+  {
+    href: "/ai-faq",
+    icon: "🗂️",
+    name: "AI 轉型 FAQ 知識卡",
+    desc: "從知識庫、電子報與陪跑案例萃取的 AI 轉型常見問題，按角色與主題分類，每題附短答與延伸閱讀。",
+    tag: "知識卡",
+    tagClass: "bg-teal/10 text-teal",
+  },
 ];
 
 export default function ToolsPage() {

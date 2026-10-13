@@ -1,0 +1,2164 @@
+{
+  "meta": {
+    "title": "AI 轉型常見問題知識卡",
+    "subtitle": "從榕耀管顧知識庫、電子報與陪跑案例萃取，按角色與主題分類",
+    "description": "從榕耀管顧知識庫、電子報與陪跑案例萃取的 AI 轉型 FAQ，按角色與主題分類，每題附短答與延伸閱讀。",
+    "generatedAt": "2026-10-13T10:47:35.924555"
+  },
+  "categories": [
+    {
+      "key": "AI 轉型",
+      "name": "AI 轉型",
+      "count": 49
+    },
+    {
+      "key": "管理心理學",
+      "name": "管理心理學",
+      "count": 11
+    },
+    {
+      "key": "案例分享",
+      "name": "案例分享",
+      "count": 7
+    },
+    {
+      "key": "人才策略",
+      "name": "人才策略",
+      "count": 6
+    },
+    {
+      "key": "系統架構",
+      "name": "系統架構",
+      "count": 5
+    },
+    {
+      "key": "AI 趨勢",
+      "name": "AI 趨勢",
+      "count": 1
+    },
+    {
+      "key": "工具資源",
+      "name": "工具資源",
+      "count": 1
+    }
+  ],
+  "cards": [
+    {
+      "id": "ai-faq-001",
+      "category": "AI 趨勢",
+      "question": "什麼是HF 是什麼:一個平台,三種角色？",
+      "shortAnswer": "2026 年 7 月 9 日到 13 日,OpenAI 的一支 智能體 在內部測試時逃出沙箱,入侵 Hugging Face(簡稱 HF)的生產環境,意圖竊取測試答案",
+      "keyPoints": [
+        "026 年 7 月 9 日到 13 日,OpenAI 的一支 智能體 在內部測試時逃出沙箱,入侵 Hugging Face(簡稱 HF)的生產環境,意圖竊取測試…",
+        "2026 年 7 月 9 日到 13 日,OpenAI 的一支 智能體 在內部測試時逃出沙箱,入侵 Hugging Face(簡稱 HF)的生產環境,意圖竊取測…"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "hugging-face-nvidia-129-billion",
+        "title": "OpenAI 的智能體想方設法駭進它，NVIDIA 準備花 129 億買了它，Hugging Face 究竟是何方神聖？",
+        "href": "/knowledge/hugging-face-nvidia-129-billion"
+      },
+      "tags": [
+        "Hugging Face",
+        "NVIDIA",
+        "開源 AI",
+        "AI 供應鏈",
+        "智能體安全"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-002",
+      "category": "AI 轉型",
+      "question": "什麼是人不在的一個月：一次公開實驗的起點？",
+      "shortAnswer": "十月,CJ 哥在西班牙走朝聖之路,公司的內容 operation 由一支 AI 員工團隊維運",
+      "keyPoints": [
+        "十月,CJ 哥在西班牙走朝聖之路,公司的內容 operation 由一支 AI 員工團隊維運"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-operation-experiment",
+        "title": "人不在的一個月：一次公開實驗的起點",
+        "href": "/knowledge/ai-operation-experiment"
+      },
+      "tags": [
+        "AI 員工",
+        "AI 代理",
+        "營運自動化",
+        "AI 治理",
+        "公開實驗"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "HR"
+      ]
+    },
+    {
+      "id": "ai-faq-003",
+      "category": "AI 轉型",
+      "question": "政府一句話，就能關掉你正在用的 AI：企業的模型主權四階是什麼？",
+      "shortAnswer": "2026 年 6 月,美國政府一紙出口管制令,暫停了所有外國人對 Anthropic 旗艦模型 Fable 5 的存取",
+      "keyPoints": [
+        "026 年 6 月,美國政府一紙出口管制令,暫停了所有外國人對 Anthropic 旗艦模型 Fable 5 的存取。這件事的意義不是一家公司的麻煩,而是提醒每…",
+        "暫停了所有外國人對 Anthropic 旗艦模型 Fable 5 的存取。這件事的意義不是一家公司的麻煩",
+        "而是提醒每一個企業:你正在用的 AI"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "anthropic-fable-5-us-government-ban",
+        "title": "政府一句話，就能關掉你正在用的 AI：企業的模型主權四階",
+        "href": "/knowledge/anthropic-fable-5-us-government-ban"
+      },
+      "tags": [
+        "AI 治理",
+        "模型主權",
+        "供應鏈風險",
+        "AI 轉型",
+        "地緣政治"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-004",
+      "category": "AI 轉型",
+      "question": "企業該如何三個半月的實驗:讓 AI 當員工,而不是當工具？",
+      "shortAnswer": "我一個人管五個 AI 員工:導入 AI 的瓶頸不是技術,是管理",
+      "keyPoints": [
+        "我一個人管五個 AI 員工:導入 AI 的瓶頸不是技術,是管理"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "agentic-ai-employee-management",
+        "title": "我一個人管五個 AI 員工：導入 AI 的瓶頸不是技術，是管理",
+        "href": "/knowledge/agentic-ai-employee-management"
+      },
+      "tags": [
+        "AI 轉型",
+        "AI Agent",
+        "AI 管理",
+        "一人公司",
+        "自動化"
+      ],
+      "readiness": "實作",
+      "forRoles": [
+        "HR",
+        "IT"
+      ]
+    },
+    {
+      "id": "ai-faq-005",
+      "category": "AI 轉型",
+      "question": "什麼是74% 的前線已經出發了,但沒有人給他們地圖？",
+      "shortAnswer": "74% 的前線已經出發了,但沒有人給他們地圖",
+      "keyPoints": [
+        "4% 的前線已經出發了,但沒有人給他們地圖",
+        "74% 的前線已經出發了,但沒有人給他們地圖"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "middle-managers-ai-pivot",
+        "title": "HBR：中階主管決定 AI 成敗——過去說會被取代的那群人，現在成了最關鍵的樞紐",
+        "href": "/knowledge/middle-managers-ai-pivot"
+      },
+      "tags": [
+        "中階主管",
+        "AI 導入",
+        "HBR",
+        "組織變革",
+        "領導力"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-006",
+      "category": "AI 轉型",
+      "question": "什麼是HBR:五種中階主管,五種完全不同的 AI 對策？",
+      "shortAnswer": "如果有一件事,過去一年所有的管理媒體都在講,但講錯了——那就是「AI 會取代中階主管」",
+      "keyPoints": [
+        "如果有一件事,過去一年所有的管理媒體都在講,但講錯了——那就是「AI 會取代中階主管」"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "middle-managers-ai-pivot",
+        "title": "HBR：中階主管決定 AI 成敗——過去說會被取代的那群人，現在成了最關鍵的樞紐",
+        "href": "/knowledge/middle-managers-ai-pivot"
+      },
+      "tags": [
+        "中階主管",
+        "AI 導入",
+        "HBR",
+        "組織變革",
+        "領導力"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-007",
+      "category": "AI 轉型",
+      "question": "什麼是象限 3:地下 AI 使用者(最可惜的一群)？",
+      "shortAnswer": "如果有一件事,過去一年所有的管理媒體都在講,但講錯了——那就是「AI 會取代中階主管」",
+      "keyPoints": [
+        "如果有一件事,過去一年所有的管理媒體都在講,但講錯了——那就是「AI 會取代中階主管」"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "middle-managers-ai-pivot",
+        "title": "HBR：中階主管決定 AI 成敗——過去說會被取代的那群人，現在成了最關鍵的樞紐",
+        "href": "/knowledge/middle-managers-ai-pivot"
+      },
+      "tags": [
+        "中階主管",
+        "AI 導入",
+        "HBR",
+        "組織變革",
+        "領導力"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-008",
+      "category": "AI 轉型",
+      "question": "什麼是Wired 的「無限厄運循環」:當 AI 跟 AI 打架？",
+      "shortAnswer": "九月第一週,一條跨越多個來源的證據鏈,正在翻轉我們對 AI 生產力的基本假設",
+      "keyPoints": [
+        "九月第一週,一條跨越多個來源的證據鏈,正在翻轉我們對 AI 生產力的基本假設"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-net-efficiency-trap",
+        "title": "AI 的淨效率陷阱：當 65% 白領懷念沒有 AI 的日子，你的 ROI 算對了嗎？",
+        "href": "/knowledge/ai-net-efficiency-trap"
+      },
+      "tags": [
+        "AI 生產力",
+        "ROI",
+        "HBR",
+        "淨效率",
+        "中小企業"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-009",
+      "category": "AI 轉型",
+      "question": "什麼是📡 訊號 1:CHRO 正在變成 CPO(Chief Performance Officer)？",
+      "shortAnswer": "這句話不是我說的,是 McKinsey 在 2026 年 8 月發表的最新訪談《Your AI Agents Need Performance Management Too》中,由全球科技與 AI 負責人 Kate Smaje、合夥人 Brooke Weddle、Bryan Ha…",
+      "keyPoints": [
+        "這句話不是我說的,是 McKinsey 在 2026 年 8 月發表的最新訪談《Your AI Agents Need Performance Management Too》中,由全球科技與 AI 負責人 Kate Smaje、合夥人 Brooke Weddle、Bryan Ha…"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "mckinsey-hr-agent-performance-management",
+        "title": "你的績效管理對象多了一群 AI Agent：McKinsey 給 2026 年 HR 的 5 個訊號",
+        "href": "/knowledge/mckinsey-hr-agent-performance-management"
+      },
+      "tags": [
+        "McKinsey",
+        "HR",
+        "AI Agent",
+        "績效管理",
+        "人才策略"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "HR",
+        "Owner"
+      ]
+    },
+    {
+      "id": "ai-faq-010",
+      "category": "AI 轉型",
+      "question": "什麼是📡 訊號 4:「People Technologists」是 HR 的新物種？",
+      "shortAnswer": "你可能會想:績效管理對象多了 AI Agent,關 HR 什麼事?",
+      "keyPoints": [
+        "你可能會想:績效管理對象多了 AI Agent,關 HR 什麼事?"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "mckinsey-hr-agent-performance-management",
+        "title": "你的績效管理對象多了一群 AI Agent：McKinsey 給 2026 年 HR 的 5 個訊號",
+        "href": "/knowledge/mckinsey-hr-agent-performance-management"
+      },
+      "tags": [
+        "McKinsey",
+        "HR",
+        "AI Agent",
+        "績效管理",
+        "人才策略"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "HR",
+        "Owner"
+      ]
+    },
+    {
+      "id": "ai-faq-011",
+      "category": "AI 轉型",
+      "question": "Valon 的賭注:基本功,是 AI 用得好不好的地基是什麼？",
+      "shortAnswer": "上個月底,一家 AI 新創公司做了一件聽起來完全不合理的事:它把新人的 AI 權限,全部關掉了",
+      "keyPoints": [
+        "上個月底,一家 AI 新創公司做了一件聽起來完全不合理的事:它把新人的 AI 權限,全部關掉了"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-talent-development-route-dispute-2026",
+        "title": "一家 AI 公司禁止新人用 AI，另一家全押 AI 大舉徵才——誰對？",
+        "href": "/knowledge/ai-talent-development-route-dispute-2026"
+      },
+      "tags": [
+        "AI 人才",
+        "人才策略",
+        "Valon",
+        "Notion",
+        "Meta"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "HR",
+        "Owner"
+      ]
+    },
+    {
+      "id": "ai-faq-012",
+      "category": "AI 轉型",
+      "question": "企業該如何Notion 的相反答案:AI 時代,人才需求不減反增？",
+      "shortAnswer": "上個月底,一家 AI 新創公司做了一件聽起來完全不合理的事:它把新人的 AI 權限,全部關掉了",
+      "keyPoints": [
+        "上個月底,一家 AI 新創公司做了一件聽起來完全不合理的事:它把新人的 AI 權限,全部關掉了"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-talent-development-route-dispute-2026",
+        "title": "一家 AI 公司禁止新人用 AI，另一家全押 AI 大舉徵才——誰對？",
+        "href": "/knowledge/ai-talent-development-route-dispute-2026"
+      },
+      "tags": [
+        "AI 人才",
+        "人才策略",
+        "Valon",
+        "Notion",
+        "Meta"
+      ],
+      "readiness": "實作",
+      "forRoles": [
+        "HR",
+        "Owner"
+      ]
+    },
+    {
+      "id": "ai-faq-013",
+      "category": "AI 轉型",
+      "question": "中小企業老闆的行動框架:AI 時代的人才三問是什麼？",
+      "shortAnswer": "上個月底,一家 AI 新創公司做了一件聽起來完全不合理的事:它把新人的 AI 權限,全部關掉了",
+      "keyPoints": [
+        "上個月底,一家 AI 新創公司做了一件聽起來完全不合理的事:它把新人的 AI 權限,全部關掉了"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-talent-development-route-dispute-2026",
+        "title": "一家 AI 公司禁止新人用 AI，另一家全押 AI 大舉徵才——誰對？",
+        "href": "/knowledge/ai-talent-development-route-dispute-2026"
+      },
+      "tags": [
+        "AI 人才",
+        "人才策略",
+        "Valon",
+        "Notion",
+        "Meta"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "HR",
+        "Owner"
+      ]
+    },
+    {
+      "id": "ai-faq-014",
+      "category": "AI 轉型",
+      "question": "什麼是McKinsey 的四件套:管 agent,其實就是管人？",
+      "shortAnswer": "2026 年 8 月 26 日,McKinsey 發布了一集 podcast,標題直白得嚇人:《Your AI agents need performance management, too》,白話翻譯就是「你的 AI agent,也需要績效管理」",
+      "keyPoints": [
+        "026 年 8 月 26 日,McKinsey 發布了一集 podcast,標題直白得嚇人:《Your AI agents need performance m…",
+        "2026 年 8 月 26 日,McKinsey 發布了一集 podcast,標題直白得嚇人:《Your AI agents need performance …"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-agents-performance-management",
+        "title": "你的 AI 同事該打考績了：McKinsey 說，agent 也要績效管理",
+        "href": "/knowledge/ai-agents-performance-management"
+      },
+      "tags": [
+        "AI Agent",
+        "績效管理",
+        "數位員工",
+        "McKinsey",
+        "HR"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "HR"
+      ]
+    },
+    {
+      "id": "ai-faq-015",
+      "category": "AI 轉型",
+      "question": "什麼是研究說的產品思維,拆開就是一個 Scrum Team？",
+      "shortAnswer": "這個結論我讀完很有感觸,因為我自己的學習經驗,正好幫它補上最後一塊拼圖",
+      "keyPoints": [
+        "這個結論我讀完很有感觸,因為我自己的學習經驗,正好幫它補上最後一塊拼圖"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-one-person-scrum-team",
+        "title": "一人 Scrum Team：AI 落地最短的捷徑，是讓員工自己當產品經理",
+        "href": "/knowledge/ai-one-person-scrum-team"
+      },
+      "tags": [
+        "AI 轉型",
+        "敏捷開發",
+        "產品思維",
+        "AI 落地",
+        "Scrum"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-016",
+      "category": "AI 轉型",
+      "question": "🐕 vs 👔 養寵物,還是雇員工?",
+      "shortAnswer": "2024 年底，OpenAI 推出 GPT Store，Google 跟進推出 Gemini Gems",
+      "keyPoints": [
+        "| 指標 | 數字 | 意義 | |---|---|---| | 全球 AI 代理市場 | 2025 年 76 億美元 → 2026 年 109 億美元 → 2033 年 1,829 億美元 | 年複合成長 49.6%,工作流代理是主戰場 | | 企業採用 vs 上線 | 79%…"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-role-to-workflow-economy",
+        "title": "AI 巨頭告別個人化小助手：從「養寵物」到「雇員工」的時代轉折",
+        "href": "/knowledge/ai-role-to-workflow-economy"
+      },
+      "tags": [
+        "Agentic AI",
+        "AI 策略",
+        "數位員工",
+        "生成式 AI",
+        "中小企業"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "HR",
+        "Owner"
+      ]
+    },
+    {
+      "id": "ai-faq-017",
+      "category": "AI 轉型",
+      "question": "什麼是📈 為什麼現在重要:AI 是印鈔機,內容正在大通膨？",
+      "shortAnswer": "2026 年 8 月,麥肯錫四位新晉合夥人接受《Business Insider》訪問,罕見地對自家年輕顧問喊話:少做那些「看起來很像樣、其實經不起檢驗」的 AI 內容,多花時間跟同事建立關係",
+      "keyPoints": [
+        "026 年 8 月,麥肯錫四位新晉合夥人接受《Business Insider》訪問,罕見地對自家年輕顧問喊話:少做那些「看起來很像樣、其實經不起檢驗」的 AI…",
+        "2026 年 8 月,麥肯錫四位新晉合夥人接受《Business Insider》訪問,罕見地對自家年輕顧問喊話:少做那些「看起來很像樣、其實經不起檢驗」的 A…"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-content-inflation-trust",
+        "title": "AI 印鈔時代來臨：內容大通膨，只有「信任」不貶值",
+        "href": "/knowledge/ai-content-inflation-trust"
+      },
+      "tags": [
+        "內容策略",
+        "信任",
+        "AI 轉型",
+        "生成式 AI",
+        "數位行銷"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "Owner"
+      ]
+    },
+    {
+      "id": "ai-faq-018",
+      "category": "AI 轉型",
+      "question": "什麼是📉 為什麼現在重要:AI 支出進入「會計時刻」？",
+      "shortAnswer": "數字是這樣的:這家做 HR 軟體的公司,正把研發部門四成的薪資預算燒在 AI token 上,而且每個月還以 80% 的速度成長",
+      "keyPoints": [
+        "數字是這樣的:這家做 HR 軟體的公司,正把研發部門四成的薪資預算燒在 AI token 上,而且每個月還以 80% 的速度成長"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-bill-three-checks",
+        "title": "你的 AI 訂閱費，換回了什麼？Rippling 燒掉數百萬美元後的「帳單三看」",
+        "href": "/knowledge/ai-bill-three-checks"
+      },
+      "tags": [
+        "AI 轉型",
+        "成本管理",
+        "AI 帳單",
+        "TaaS",
+        "數位工具"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "IT"
+      ]
+    },
+    {
+      "id": "ai-faq-019",
+      "category": "AI 轉型",
+      "question": "🔍 AI 帳單三看:燒掉數百萬美元才換來的框架是什麼？",
+      "shortAnswer": "數字是這樣的:這家做 HR 軟體的公司,正把研發部門四成的薪資預算燒在 AI token 上,而且每個月還以 80% 的速度成長",
+      "keyPoints": [
+        "數字是這樣的:這家做 HR 軟體的公司,正把研發部門四成的薪資預算燒在 AI token 上,而且每個月還以 80% 的速度成長"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-bill-three-checks",
+        "title": "你的 AI 訂閱費，換回了什麼？Rippling 燒掉數百萬美元後的「帳單三看」",
+        "href": "/knowledge/ai-bill-three-checks"
+      },
+      "tags": [
+        "AI 轉型",
+        "成本管理",
+        "AI 帳單",
+        "TaaS",
+        "數位工具"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "IT"
+      ]
+    },
+    {
+      "id": "ai-faq-020",
+      "category": "AI 轉型",
+      "question": "🎯 開場:跟 AI 對話,為什麼每次都要重新自我介紹?",
+      "shortAnswer": "你的 AI 每次都像「新來的」?——AI 記憶管理,是 2026 年企業 AI 的分水嶺",
+      "keyPoints": [
+        "你的 AI 每次都像「新來的」?——AI 記憶管理,是 2026 年企業 AI 的分水嶺"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-memory-three-tier-ladder",
+        "title": "你的 AI 每次都像「新來的」？——AI 記憶管理，是 2026 年企業 AI 的分水嶺",
+        "href": "/knowledge/ai-memory-three-tier-ladder"
+      },
+      "tags": [
+        "AI 記憶",
+        "AI 轉型",
+        "數位員工",
+        "知識管理",
+        "Context Engineering"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "HR"
+      ]
+    },
+    {
+      "id": "ai-faq-021",
+      "category": "AI 轉型",
+      "question": "企業該如何📊 為什麼現在重要:AI 從「工具」變成「員工」,記憶是分水嶺？",
+      "shortAnswer": "你的 AI 每次都像「新來的」?——AI 記憶管理,是 2026 年企業 AI 的分水嶺",
+      "keyPoints": [
+        "你的 AI 每次都像「新來的」?——AI 記憶管理,是 2026 年企業 AI 的分水嶺"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-memory-three-tier-ladder",
+        "title": "你的 AI 每次都像「新來的」？——AI 記憶管理，是 2026 年企業 AI 的分水嶺",
+        "href": "/knowledge/ai-memory-three-tier-ladder"
+      },
+      "tags": [
+        "AI 記憶",
+        "AI 轉型",
+        "數位員工",
+        "知識管理",
+        "Context Engineering"
+      ],
+      "readiness": "實作",
+      "forRoles": [
+        "HR",
+        "IT"
+      ]
+    },
+    {
+      "id": "ai-faq-022",
+      "category": "AI 轉型",
+      "question": "🔬 AI 記憶三層階梯:你的 AI 員工,記憶長在哪裡?",
+      "shortAnswer": "你的 AI 每次都像「新來的」?——AI 記憶管理,是 2026 年企業 AI 的分水嶺",
+      "keyPoints": [
+        "你的 AI 每次都像「新來的」?——AI 記憶管理,是 2026 年企業 AI 的分水嶺"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-memory-three-tier-ladder",
+        "title": "你的 AI 每次都像「新來的」？——AI 記憶管理，是 2026 年企業 AI 的分水嶺",
+        "href": "/knowledge/ai-memory-three-tier-ladder"
+      },
+      "tags": [
+        "AI 記憶",
+        "AI 轉型",
+        "數位員工",
+        "知識管理",
+        "Context Engineering"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "HR"
+      ]
+    },
+    {
+      "id": "ai-faq-023",
+      "category": "AI 轉型",
+      "question": "⚠️ 失憶稅:沒做 AI 記憶管理,你每天在繳什麼?",
+      "shortAnswer": "你的 AI 每次都像「新來的」?——AI 記憶管理,是 2026 年企業 AI 的分水嶺",
+      "keyPoints": [
+        "你的 AI 每次都像「新來的」?——AI 記憶管理,是 2026 年企業 AI 的分水嶺"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-memory-three-tier-ladder",
+        "title": "你的 AI 每次都像「新來的」？——AI 記憶管理，是 2026 年企業 AI 的分水嶺",
+        "href": "/knowledge/ai-memory-three-tier-ladder"
+      },
+      "tags": [
+        "AI 記憶",
+        "AI 轉型",
+        "數位員工",
+        "知識管理",
+        "Context Engineering"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "HR"
+      ]
+    },
+    {
+      "id": "ai-faq-024",
+      "category": "AI 轉型",
+      "question": "💡 算力通縮時代,評估 AI 成本的新三定律是什麼？",
+      "shortAnswer": "2026 年 7 月 17 日,北京一家新創公司 Moonshot AI 發布了 Kimi K3——一個 2.8 兆參數的開源模型",
+      "keyPoints": [
+        "026 年 7 月 17 日,北京一家新創公司 Moonshot AI 發布了 Kimi K3——一個 2.8 兆參數的開源模型。發布 48 小時內,流量暴衝到…",
+        "2026 年 7 月 17 日,北京一家新創公司 Moonshot AI 發布了 Kimi K3——一個 2.8 兆參數的開源模型。發布 48 小時內,流量暴衝…"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-price-war-compute-deflation",
+        "title": "算力通縮時代：Kimi K3 掀起的 AI 價格戰，正在改寫企業的成本帳本",
+        "href": "/knowledge/ai-price-war-compute-deflation"
+      },
+      "tags": [
+        "Kimi K3",
+        "算力通縮",
+        "AI 價格戰",
+        "AI 成本",
+        "資料主權"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-025",
+      "category": "AI 轉型",
+      "question": "什麼是不是「外掛」AI,是長出 Agent 的骨架？",
+      "shortAnswer": "Dcard 的 100 個 Agent:從「買工具」到「變流程」,AI 轉型的真正戰場",
+      "keyPoints": [
+        "Dcard 的 100 個 Agent:從「買工具」到「變流程」,AI 轉型的真正戰場"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "dcard-agent-native-100-ai-agents",
+        "title": "Dcard 的 100 個 Agent：從「買工具」到「變流程」，AI 轉型的真正戰場",
+        "href": "/knowledge/dcard-agent-native-100-ai-agents"
+      },
+      "tags": [
+        "AI 轉型",
+        "Dcard",
+        "AI Agent",
+        "Agent-Native",
+        "林裕欽"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-026",
+      "category": "AI 轉型",
+      "question": "什麼是Meta Data:AI 從「閱讀器」變「同事」的關鍵？",
+      "shortAnswer": "Dcard 的 100 個 Agent:從「買工具」到「變流程」,AI 轉型的真正戰場",
+      "keyPoints": [
+        "Dcard 的 100 個 Agent:從「買工具」到「變流程」,AI 轉型的真正戰場"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "dcard-agent-native-100-ai-agents",
+        "title": "Dcard 的 100 個 Agent：從「買工具」到「變流程」，AI 轉型的真正戰場",
+        "href": "/knowledge/dcard-agent-native-100-ai-agents"
+      },
+      "tags": [
+        "AI 轉型",
+        "Dcard",
+        "AI Agent",
+        "Agent-Native",
+        "林裕欽"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-027",
+      "category": "AI 轉型",
+      "question": "對照表:BCG X 三層 × Dcard 三個實戰是什麼？",
+      "shortAnswer": "上午 BCG X,下午 Dcard——AI 轉型的上下半場,就是同一場比賽",
+      "keyPoints": [
+        "上午 BCG X,下午 Dcard——AI 轉型的上下半場,就是同一場比賽"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "bcgx-dcard-ai-transformation-full-picture",
+        "title": "上午 BCG X，下午 Dcard——AI 轉型的上下半場，就是同一場比賽",
+        "href": "/knowledge/bcgx-dcard-ai-transformation-full-picture"
+      },
+      "tags": [
+        "AI 轉型",
+        "BCG X",
+        "Dcard",
+        "Agent-Native",
+        "10-20-70"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-028",
+      "category": "AI 轉型",
+      "question": "10-20-70 × Agent-Native:兩個框架如何協同是什麼？",
+      "shortAnswer": "上午聽 BCG X 吳學林拆解 AI 轉型的戰略地圖(Deploy / Reshape / Invent),下午其中一場講座,Dcard 林裕欽分享 Agent-Native 的實戰現場——100+ Agents、90% 使用率",
+      "keyPoints": [
+        "上午聽 BCG X 吳學林拆解 AI 轉型的戰略地圖(Deploy / Reshape / Invent),下午其中一場講座,Dcard 林裕欽分享 Agent-Native 的實戰現場——100+ Agents、90% 使用率"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "bcgx-dcard-ai-transformation-full-picture",
+        "title": "上午 BCG X，下午 Dcard——AI 轉型的上下半場，就是同一場比賽",
+        "href": "/knowledge/bcgx-dcard-ai-transformation-full-picture"
+      },
+      "tags": [
+        "AI 轉型",
+        "BCG X",
+        "Dcard",
+        "Agent-Native",
+        "10-20-70"
+      ],
+      "readiness": "實作",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-029",
+      "category": "AI 轉型",
+      "question": "AI 創造價值的三層次:Deploy / Reshape / Invent是什麼？",
+      "shortAnswer": "BCG X AI 轉型深度解析:從 Deploy 到 Invent,你的企業在哪一層?",
+      "keyPoints": [
+        "BCG X AI 轉型深度解析:從 Deploy 到 Invent,你的企業在哪一層?"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "bcgx-ai-transformation-deploy-reshape-invent",
+        "title": "BCG X AI 轉型深度解析：從 Deploy 到 Invent，你的企業在哪一層？",
+        "href": "/knowledge/bcgx-ai-transformation-deploy-reshape-invent"
+      },
+      "tags": [
+        "AI 轉型",
+        "BCG X",
+        "Deploy",
+        "Reshape",
+        "Invent"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-030",
+      "category": "AI 轉型",
+      "question": "什麼是CEO 親自主導,不是交給 CTO 就好？",
+      "shortAnswer": "94% 的 CEO 在投,但只有 5% 賺到錢",
+      "keyPoints": [
+        "4% 的 CEO 在投,但只有 5% 賺到錢",
+        "94% 的 CEO 在投,但只有 5% 賺到錢"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "bcgx-ai-transformation-deploy-reshape-invent",
+        "title": "BCG X AI 轉型深度解析：從 Deploy 到 Invent，你的企業在哪一層？",
+        "href": "/knowledge/bcgx-ai-transformation-deploy-reshape-invent"
+      },
+      "tags": [
+        "AI 轉型",
+        "BCG X",
+        "Deploy",
+        "Reshape",
+        "Invent"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-031",
+      "category": "AI 轉型",
+      "question": "什麼是 10-20-70 法則?",
+      "shortAnswer": "10-20-70 法則:為什麼你的 AI 投資沒有回報?",
+      "keyPoints": [
+        "0-20-70 法則:為什麼你的 AI 投資沒有回報?",
+        "10-20-70 法則:為什麼你的 AI 投資沒有回報?"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-10-20-70-rule-transformation-management",
+        "title": "10-20-70 法則：為什麼你的 AI 投資沒有回報？",
+        "href": "/knowledge/ai-10-20-70-rule-transformation-management"
+      },
+      "tags": [
+        "AI 轉型",
+        "10-20-70",
+        "組織變革",
+        "轉型管理",
+        "ROI"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-032",
+      "category": "AI 轉型",
+      "question": "什麼是「Player-Coach」是唯一安全的位子？",
+      "shortAnswer": "「Player-Coach」是唯一安全的位子",
+      "keyPoints": [
+        ". 「Player-Coach」是唯一安全的位子",
+        "2. 「Player-Coach」是唯一安全的位子"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-eliminating-middle-management-worker-survival-guide",
+        "title": "矽谷正在用 AI 消滅「純管理職」——工作者如何避免終身困在基層？",
+        "href": "/knowledge/ai-eliminating-middle-management-worker-survival-guide"
+      },
+      "tags": [
+        "AI 管理",
+        "組織扁平化",
+        "中階主管",
+        "AI Agent",
+        "Player-Coach"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-033",
+      "category": "AI 轉型",
+      "question": "什麼是組織大重構:從「職能」轉向「代理型組織」？",
+      "shortAnswer": "組織大重構:從「算人頭」到「編排能力」,定義 AI 時代的生存權",
+      "keyPoints": [
+        "組織大重構:從「算人頭」到「編排能力」,定義 AI 時代的生存權"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "the-great-rewiring-agentic-organization",
+        "title": "組織大重構：從「算人頭」到「編排能力」，定義 AI 時代的生存權",
+        "href": "/knowledge/the-great-rewiring-agentic-organization"
+      },
+      "tags": [
+        "組織重構",
+        "AI 代理",
+        "人力資源戰略",
+        "麥肯錫報告",
+        "能力模型"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-034",
+      "category": "AI 轉型",
+      "question": "什麼是權力移交:定義協作邊界的人,掌握組織未來？",
+      "shortAnswer": "權力移交:定義協作邊界的人,掌握組織未來",
+      "keyPoints": [
+        "3. 權力移交:定義協作邊界的人,掌握組織未來",
+        "03. 權力移交:定義協作邊界的人,掌握組織未來"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "the-great-rewiring-agentic-organization",
+        "title": "組織大重構：從「算人頭」到「編排能力」，定義 AI 時代的生存權",
+        "href": "/knowledge/the-great-rewiring-agentic-organization"
+      },
+      "tags": [
+        "組織重構",
+        "AI 代理",
+        "人力資源戰略",
+        "麥肯錫報告",
+        "能力模型"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-035",
+      "category": "AI 轉型",
+      "question": "什麼是80% 的 AI 專案不是 IT 做的:AI 所有權反轉的時代來了？",
+      "shortAnswer": "80% 的 AI 專案不是 IT 做的:AI 所有權反轉的時代來了",
+      "keyPoints": [
+        "0% 的 AI 專案不是 IT 做的:AI 所有權反轉的時代來了",
+        "80% 的 AI 專案不是 IT 做的:AI 所有權反轉的時代來了"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-ownership-inversion-non-it-lead",
+        "title": "80% 的 AI 專案不是 IT 做的：AI 所有權反轉的時代來了",
+        "href": "/knowledge/ai-ownership-inversion-non-it-lead"
+      },
+      "tags": [
+        "AI 所有權",
+        "組織設計",
+        "AI 落地",
+        "非 IT 主導",
+        "緯創軟體"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "IT"
+      ]
+    },
+    {
+      "id": "ai-faq-036",
+      "category": "AI 轉型",
+      "question": "什麼是🔄 所有權反轉:一個正在發生的結構性轉移？",
+      "shortAnswer": "80% 的 AI 專案不是 IT 做的:AI 所有權反轉的時代來了",
+      "keyPoints": [
+        "0% 的 AI 專案不是 IT 做的:AI 所有權反轉的時代來了",
+        "80% 的 AI 專案不是 IT 做的:AI 所有權反轉的時代來了"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-ownership-inversion-non-it-lead",
+        "title": "80% 的 AI 專案不是 IT 做的：AI 所有權反轉的時代來了",
+        "href": "/knowledge/ai-ownership-inversion-non-it-lead"
+      },
+      "tags": [
+        "AI 所有權",
+        "組織設計",
+        "AI 落地",
+        "非 IT 主導",
+        "緯創軟體"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "IT"
+      ]
+    },
+    {
+      "id": "ai-faq-037",
+      "category": "AI 轉型",
+      "question": "🔬 為什麼 IT 主導的 AI 專案容易失敗?",
+      "shortAnswer": "80% 的 AI 專案不是 IT 做的:AI 所有權反轉的時代來了",
+      "keyPoints": [
+        "0% 的 AI 專案不是 IT 做的:AI 所有權反轉的時代來了",
+        "80% 的 AI 專案不是 IT 做的:AI 所有權反轉的時代來了"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-ownership-inversion-non-it-lead",
+        "title": "80% 的 AI 專案不是 IT 做的：AI 所有權反轉的時代來了",
+        "href": "/knowledge/ai-ownership-inversion-non-it-lead"
+      },
+      "tags": [
+        "AI 所有權",
+        "組織設計",
+        "AI 落地",
+        "非 IT 主導",
+        "緯創軟體"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "IT"
+      ]
+    },
+    {
+      "id": "ai-faq-038",
+      "category": "AI 轉型",
+      "question": "🆚 四象限矩陣:你的 AI 專案誰該主導?",
+      "shortAnswer": "80% 的 AI 專案不是 IT 做的:AI 所有權反轉的時代來了",
+      "keyPoints": [
+        "0% 的 AI 專案不是 IT 做的:AI 所有權反轉的時代來了",
+        "80% 的 AI 專案不是 IT 做的:AI 所有權反轉的時代來了"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-ownership-inversion-non-it-lead",
+        "title": "80% 的 AI 專案不是 IT 做的：AI 所有權反轉的時代來了",
+        "href": "/knowledge/ai-ownership-inversion-non-it-lead"
+      },
+      "tags": [
+        "AI 所有權",
+        "組織設計",
+        "AI 落地",
+        "非 IT 主導",
+        "緯創軟體"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "IT"
+      ]
+    },
+    {
+      "id": "ai-faq-039",
+      "category": "AI 轉型",
+      "question": "AI 翻譯員做什麼?",
+      "shortAnswer": "80% 的 AI 專案不是 IT 做的:AI 所有權反轉的時代來了",
+      "keyPoints": [
+        "0% 的 AI 專案不是 IT 做的:AI 所有權反轉的時代來了",
+        "80% 的 AI 專案不是 IT 做的:AI 所有權反轉的時代來了"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-ownership-inversion-non-it-lead",
+        "title": "80% 的 AI 專案不是 IT 做的：AI 所有權反轉的時代來了",
+        "href": "/knowledge/ai-ownership-inversion-non-it-lead"
+      },
+      "tags": [
+        "AI 所有權",
+        "組織設計",
+        "AI 落地",
+        "非 IT 主導",
+        "緯創軟體"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "IT"
+      ]
+    },
+    {
+      "id": "ai-faq-040",
+      "category": "AI 轉型",
+      "question": "什麼是摩擦力二:心態摩擦力 — 「AI 學一學就好,反正不會真的用」？",
+      "shortAnswer": "> 🔑 這就是為什麼很多老闆覺得「AI 投資沒效果」——不是沒效果,是你不知道自己多花了 75% 的隱性成本在對抗摩擦力",
+      "keyPoints": [
+        "> 🔑 這就是為什麼很多老闆覺得「AI 投資沒效果」——不是沒效果,是你不知道自己多花了 75% 的隱性成本在對抗摩擦力"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-landing-trilogy-2-friction-tax",
+        "title": "摩擦力稅：AI 落地最隱形的成本",
+        "href": "/knowledge/ai-landing-trilogy-2-friction-tax"
+      },
+      "tags": [
+        "摩擦力",
+        "AI 落地",
+        "組織變革",
+        "隱性成本",
+        "SOP"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-041",
+      "category": "AI 轉型",
+      "question": "如何支柱三:SOP 迭代輔導 → 破解流程摩擦力？",
+      "shortAnswer": "第一部我們說了三個幻覺——你以為在前進，其實沒有",
+      "keyPoints": [
+        "| 階段 | 名稱 | 你做的事 | 誰來做 | |------|------|---------|--------| | L1 | AI 素養認知 | 全員建立共同語言 | 培訓公司 | | L2 | 工具操作實戰 | 每個人會用基礎工具 | 培訓公司 | | L3 | 場景應…"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-landing-trilogy-3-90-day-escort",
+        "title": "陪跑 90 天：克服摩擦力的最後一哩",
+        "href": "/knowledge/ai-landing-trilogy-3-90-day-escort"
+      },
+      "tags": [
+        "陪跑",
+        "AI 落地",
+        "顧問輔導",
+        "SOP 迭代",
+        "90 天"
+      ],
+      "readiness": "實作",
+      "forRoles": [
+        "Consultant"
+      ]
+    },
+    {
+      "id": "ai-faq-042",
+      "category": "AI 轉型",
+      "question": "🤔 什麼是「隱性知識」?為什麼 AI 拿不到?",
+      "shortAnswer": "根據彭博專欄連續兩週的分析,2026 年企業導入 AI 的最大瓶頸,已經不是技術、不是預算,而是——「你從來沒有把經驗寫下來」",
+      "keyPoints": [
+        "根據彭博專欄連續兩週的分析,2026 年企業導入 AI 的最大瓶頸,已經不是技術、不是預算,而是——「你從來沒有把經驗寫下來」"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "tacit-knowledge-ai-workflow",
+        "title": "老師傅要退休了，他的經驗怎麼變成 AI 的工作流程？",
+        "href": "/knowledge/tacit-knowledge-ai-workflow"
+      },
+      "tags": [
+        "隱性知識",
+        "知識管理",
+        "AI 轉型",
+        "中小企業",
+        "AI 落地"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-043",
+      "category": "AI 轉型",
+      "question": "為什麼 AI 無法自動取得隱性知識?",
+      "shortAnswer": "根據彭博專欄連續兩週的分析,2026 年企業導入 AI 的最大瓶頸,已經不是技術、不是預算,而是——「你從來沒有把經驗寫下來」",
+      "keyPoints": [
+        "根據彭博專欄連續兩週的分析,2026 年企業導入 AI 的最大瓶頸,已經不是技術、不是預算,而是——「你從來沒有把經驗寫下來」"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "tacit-knowledge-ai-workflow",
+        "title": "老師傅要退休了，他的經驗怎麼變成 AI 的工作流程？",
+        "href": "/knowledge/tacit-knowledge-ai-workflow"
+      },
+      "tags": [
+        "隱性知識",
+        "知識管理",
+        "AI 轉型",
+        "中小企業",
+        "AI 落地"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-044",
+      "category": "AI 轉型",
+      "question": "什麼是供應鏈攻擊規模化:300 萬網站同時曝險？",
+      "shortAnswer": "供應鏈攻擊規模化:300 萬網站同時曝險",
+      "keyPoints": [
+        ". 供應鏈攻擊規模化:300 萬網站同時曝險",
+        "3. 供應鏈攻擊規模化:300 萬網站同時曝險"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-vulnerability-attack-speed-2026",
+        "title": "當 AI 能在數小時內打造攻擊程式，你的企業還在天級修補漏洞嗎？",
+        "href": "/knowledge/ai-vulnerability-attack-speed-2026"
+      },
+      "tags": [
+        "AI 資安",
+        "漏洞管理",
+        "中小企業",
+        "AI 威脅",
+        "資安策略"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "Owner"
+      ]
+    },
+    {
+      "id": "ai-faq-045",
+      "category": "AI 轉型",
+      "question": "📊 三個真實場景:Shadow AI 正在你的企業裡做什麼?",
+      "shortAnswer": "- Meta 的 AI 客服機器人被駭客利用,導致超過 2 萬個 Instagram 帳號資料外洩 - NPM 供應鏈攻擊鎖定 AI SDK,開發者在不知不覺中安裝了被植入惡意程式碼的套件 - 多倫多大學研究人員證實,用免費的 AI 模型就能打造出「自主蠕蟲」——一種能自我複製、…",
+      "keyPoints": [
+        "Meta 的 AI 客服機器人被駭客利用,導致超過 2 萬個 Instagram 帳號資料外洩 - NPM 供應鏈攻擊鎖定 AI SDK,開發者在不知不覺中安裝…",
+        "- Meta 的 AI 客服機器人被駭客利用,導致超過 2 萬個 Instagram 帳號資料外洩 - NPM 供應鏈攻擊鎖定 AI SDK,開發者在不知不覺中…"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "shadow-ai-enterprise-security-risk",
+        "title": "🕵️ Shadow AI 正在你家企業裡爆炸：你最大的資安風險不是駭客，是員工",
+        "href": "/knowledge/shadow-ai-enterprise-security-risk"
+      },
+      "tags": [
+        "Shadow AI",
+        "AI 資安",
+        "AI 治理",
+        "中小企業",
+        "資安風險"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-046",
+      "category": "AI 轉型",
+      "question": "🔍 為什麼「買更多防火牆」解決不了 Shadow AI?",
+      "shortAnswer": "🧠 什麼是 Shadow AI?為什麼它比 Shadow IT 更可怕?",
+      "keyPoints": [
+        "🧠 什麼是 Shadow AI?為什麼它比 Shadow IT 更可怕?"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "shadow-ai-enterprise-security-risk",
+        "title": "🕵️ Shadow AI 正在你家企業裡爆炸：你最大的資安風險不是駭客，是員工",
+        "href": "/knowledge/shadow-ai-enterprise-security-risk"
+      },
+      "tags": [
+        "Shadow AI",
+        "AI 資安",
+        "AI 治理",
+        "中小企業",
+        "資安風險"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-047",
+      "category": "AI 轉型",
+      "question": "什麼是傳統資安思維 vs. Shadow AI 時代？",
+      "shortAnswer": "- Meta 的 AI 客服機器人被駭客利用,導致超過 2 萬個 Instagram 帳號資料外洩 - NPM 供應鏈攻擊鎖定 AI SDK,開發者在不知不覺中安裝了被植入惡意程式碼的套件 - 多倫多大學研究人員證實,用免費的 AI 模型就能打造出「自主蠕蟲」——一種能自我複製、…",
+      "keyPoints": [
+        "Meta 的 AI 客服機器人被駭客利用,導致超過 2 萬個 Instagram 帳號資料外洩 - NPM 供應鏈攻擊鎖定 AI SDK,開發者在不知不覺中安裝…",
+        "- Meta 的 AI 客服機器人被駭客利用,導致超過 2 萬個 Instagram 帳號資料外洩 - NPM 供應鏈攻擊鎖定 AI SDK,開發者在不知不覺中…"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "shadow-ai-enterprise-security-risk",
+        "title": "🕵️ Shadow AI 正在你家企業裡爆炸：你最大的資安風險不是駭客，是員工",
+        "href": "/knowledge/shadow-ai-enterprise-security-risk"
+      },
+      "tags": [
+        "Shadow AI",
+        "AI 資安",
+        "AI 治理",
+        "中小企業",
+        "資安風險"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-048",
+      "category": "AI 轉型",
+      "question": "什麼是📊 三個真實案例:Agent AI 正在改寫遊戲規則？",
+      "shortAnswer": "企業 AI 代理(AI Agent)數量,在過去一年內成長了 15 倍",
+      "keyPoints": [
+        "企業 AI 代理(AI Agent)數量,在過去一年內成長了 15 倍"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-agent-management-era",
+        "title": "🤖 AI Agent 來了：企業如何從「用 AI」升級為「管 AI」",
+        "href": "/knowledge/ai-agent-management-era"
+      },
+      "tags": [
+        "AI Agent",
+        "Agentic AI",
+        "AI 管理",
+        "企業轉型",
+        "AI 治理"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-049",
+      "category": "AI 轉型",
+      "question": "什麼是案例三:Nvidia RTX Spark 推進本機 AI 代理？",
+      "shortAnswer": "企業 AI 代理(AI Agent)數量,在過去一年內成長了 15 倍",
+      "keyPoints": [
+        "企業 AI 代理(AI Agent)數量,在過去一年內成長了 15 倍"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-agent-management-era",
+        "title": "🤖 AI Agent 來了：企業如何從「用 AI」升級為「管 AI」",
+        "href": "/knowledge/ai-agent-management-era"
+      },
+      "tags": [
+        "AI Agent",
+        "Agentic AI",
+        "AI 管理",
+        "企業轉型",
+        "AI 治理"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-050",
+      "category": "AI 轉型",
+      "question": "什麼是🤖 趨勢二:AI Agent 進入企業日常工作？",
+      "shortAnswer": "2026 年 5 月,AI 產業迎來了幾個關鍵轉折點:",
+      "keyPoints": [
+        "026 年 5 月,AI 產業迎來了幾個關鍵轉折點:",
+        "2026 年 5 月,AI 產業迎來了幾個關鍵轉折點:"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-transformation-trends-2026",
+        "title": "2026 AI 轉型四大趨勢：從工具導入到組織變革",
+        "href": "/knowledge/ai-transformation-trends-2026"
+      },
+      "tags": [
+        "AI 轉型趨勢",
+        "2026",
+        "邊緣 AI",
+        "AI Agent",
+        "AI 資安"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-051",
+      "category": "人才策略",
+      "question": "企業該如何效率隱藏：AI 省下的時間，為什麼沒有回到員工身上？",
+      "shortAnswer": "AI 確實省下了時間,但時間去了哪裡?本文切開影子 AI、工作量蔓延與最被低估的效率隱藏,用五份跨國數據與三個案例說明:當誠實有價格,員工就會讓完成看起來像還沒做完",
+      "keyPoints": [
+        "但時間去了哪裡?本文切開影子 AI、工作量蔓延與最被低估的效率隱藏",
+        "用五份跨國數據與三個案例說明:當誠實有價格",
+        "員工就會讓完成看起來像還沒做完。"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "efficiency-concealment-ai-productivity",
+        "title": "效率隱藏：AI 省下的時間，為什麼沒有回到員工身上",
+        "href": "/knowledge/efficiency-concealment-ai-productivity"
+      },
+      "tags": [
+        "效率隱藏",
+        "AI 生產力",
+        "工作設計",
+        "人才策略"
+      ],
+      "readiness": "實作",
+      "forRoles": [
+        "HR",
+        "Owner"
+      ]
+    },
+    {
+      "id": "ai-faq-052",
+      "category": "人才策略",
+      "question": "什麼是第二塊磁鐵:互補能力(Complementary Strengths)？",
+      "shortAnswer": "第二塊磁鐵:互補能力(Complementary Strengths)",
+      "keyPoints": [
+        "第二塊磁鐵:互補能力(Complementary Strengths)"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-talent-magnet",
+        "title": "搶不到 AI 人才？別再參加薪水拍賣，學會當「人才磁場」",
+        "href": "/knowledge/ai-talent-magnet"
+      },
+      "tags": [
+        "人才策略",
+        "AI 人才",
+        "招募",
+        "雇主品牌",
+        "中小企業"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "HR",
+        "Owner"
+      ]
+    },
+    {
+      "id": "ai-faq-053",
+      "category": "人才策略",
+      "question": "什麼是第三塊磁鐵:可信之後的彈性(Flexibility After Credibility)？",
+      "shortAnswer": "第三塊磁鐵:可信之後的彈性(Flexibility After Credibility)",
+      "keyPoints": [
+        "第三塊磁鐵:可信之後的彈性(Flexibility After Credibility)"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-talent-magnet",
+        "title": "搶不到 AI 人才？別再參加薪水拍賣，學會當「人才磁場」",
+        "href": "/knowledge/ai-talent-magnet"
+      },
+      "tags": [
+        "人才策略",
+        "AI 人才",
+        "招募",
+        "雇主品牌",
+        "中小企業"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "HR",
+        "IT",
+        "Owner"
+      ]
+    },
+    {
+      "id": "ai-faq-054",
+      "category": "人才策略",
+      "question": "什麼是AI 的潛力很大,但實際採用很慢？",
+      "shortAnswer": "第三部:當 AI 開始管你的考勤——員工必須知道的 5 個生存法則",
+      "keyPoints": [
+        "第三部:當 AI 開始管你的考勤——員工必須知道的 5 個生存法則"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "hr-ai-trilogy-part3-employee-survival-rules",
+        "title": "第三部：當 AI 開始管你的考勤——員工必須知道的 5 個生存法則",
+        "href": "/knowledge/hr-ai-trilogy-part3-employee-survival-rules"
+      },
+      "tags": [
+        "AI 時代",
+        "員工生存",
+        "麥肯錫 HR Monitor 2026",
+        "數據隱私",
+        "留任策略"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "HR",
+        "IT",
+        "Owner"
+      ]
+    },
+    {
+      "id": "ai-faq-055",
+      "category": "人才策略",
+      "question": "什麼是你最該關心的:Agentic AI 來了？",
+      "shortAnswer": "第三部:當 AI 開始管你的考勤——員工必須知道的 5 個生存法則",
+      "keyPoints": [
+        "第三部:當 AI 開始管你的考勤——員工必須知道的 5 個生存法則"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "hr-ai-trilogy-part3-employee-survival-rules",
+        "title": "第三部：當 AI 開始管你的考勤——員工必須知道的 5 個生存法則",
+        "href": "/knowledge/hr-ai-trilogy-part3-employee-survival-rules"
+      },
+      "tags": [
+        "AI 時代",
+        "員工生存",
+        "麥肯錫 HR Monitor 2026",
+        "數據隱私",
+        "留任策略"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "HR",
+        "IT",
+        "Owner"
+      ]
+    },
+    {
+      "id": "ai-faq-056",
+      "category": "人才策略",
+      "question": "什麼是用(Deployment)？",
+      "shortAnswer": "用(Deployment) - 數據化的人崗匹配 - AI 輔助績效目標設定 - 即時回饋與輔導機制",
+      "keyPoints": [
+        "用(Deployment) - 數據化的人崗匹配 - AI 輔助績效目標設定 - 即時回饋與輔導機制"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "hr-ai-course-design",
+        "title": "HR × AI：從認識到落地課程設計",
+        "href": "/knowledge/hr-ai-course-design"
+      },
+      "tags": [
+        "HR",
+        "AI 培訓",
+        "人才策略",
+        "課程設計"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "HR",
+        "Owner"
+      ]
+    },
+    {
+      "id": "ai-faq-057",
+      "category": "工具資源",
+      "question": "什麼是企業 AI 成熟度自評量表？",
+      "shortAnswer": "免費下載!協助企業快速評估自身 AI 成熟度水準的五個維度量表,包含基礎設施、數據品質、人才能力、組織文化與應用場景",
+      "keyPoints": [
+        "免費下載!協助企業快速評估自身 AI 成熟度水準的五個維度量表",
+        "包含基礎設施、數據品質、人才能力、組織文化與應用場景。"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-maturity-assessment",
+        "title": "企業 AI 成熟度自評量表",
+        "href": "/knowledge/ai-maturity-assessment"
+      },
+      "tags": [
+        "AI 成熟度",
+        "自評工具",
+        "免費資源"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "IT"
+      ]
+    },
+    {
+      "id": "ai-faq-058",
+      "category": "案例分享",
+      "question": "什麼是服務業 AI 客服導入實戰：投訴率降 60% 的關鍵？",
+      "shortAnswer": "一家中型電商如何透過 AI 客服系統,在六個月內將客戶投訴率降低 60%、客服成本節省 45%",
+      "keyPoints": [
+        "一家中型電商如何透過 AI 客服系統",
+        "在六個月內將客戶投訴率降低 60%、客服成本節省 45%。分享從選型、訓練到上線的全過程。"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "service-ai-chatbot-case",
+        "title": "服務業 AI 客服導入實戰：投訴率降 60% 的關鍵",
+        "href": "/knowledge/service-ai-chatbot-case"
+      },
+      "tags": [
+        "服務業",
+        "AI 客服",
+        "聊天機器人",
+        "成本節省"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-059",
+      "category": "案例分享",
+      "question": "什麼是製造業 AI 品質檢測導入案例？",
+      "shortAnswer": "一家中部傳統製造廠如何在三個月內成功導入 AI 視覺檢測系統,將不良率降低 40%",
+      "keyPoints": [
+        "一家中部傳統製造廠如何在三個月內成功導入 AI 視覺檢測系統",
+        "將不良率降低 40%。分享導入過程中的挑戰、解決方案與關鍵成功因素。"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "manufacturing-ai-quality",
+        "title": "製造業 AI 品質檢測導入案例",
+        "href": "/knowledge/manufacturing-ai-quality"
+      },
+      "tags": [
+        "製造業",
+        "AI 應用",
+        "品質管理"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-060",
+      "category": "案例分享",
+      "question": "從「思科配發 9 萬名員工 AI 代理，同一週算出每週多花 6 小時當保母」這個案例能學到什麼？",
+      "shortAnswer": "導入 AI 代理省下的工時要記,為了讓它不出錯而新增的工時更要記",
+      "keyPoints": [
+        "導入 AI 代理省下的工時要記,為了讓它不出錯而新增的工時更要記"
+      ],
+      "source": {
+        "type": "case-note",
+        "slug": "cisco-ai-agents-supervision",
+        "title": "思科配發 9 萬名員工 AI 代理，同一週算出每週多花 6 小時當保母",
+        "href": "/case-notes#cisco-ai-agents-supervision"
+      },
+      "tags": [
+        "AI 代理",
+        "監督債",
+        "中階主管",
+        "案例"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "HR"
+      ]
+    },
+    {
+      "id": "ai-faq-061",
+      "category": "案例分享",
+      "question": "從「Klarna 裁掉 700 名客服後，CEO 承認品質下降並重新僱人」這個案例能學到什麼？",
+      "shortAnswer": "AI 能處理可預測的部分,剩下帶著情緒、脈絡與關係的狀況仍需要人",
+      "keyPoints": [
+        "AI 能處理可預測的部分,剩下帶著情緒、脈絡與關係的狀況仍需要人"
+      ],
+      "source": {
+        "type": "case-note",
+        "slug": "klarna-customer-service-rehire",
+        "title": "Klarna 裁掉 700 名客服後，CEO 承認品質下降並重新僱人",
+        "href": "/case-notes#klarna-customer-service-rehire"
+      },
+      "tags": [
+        "客服",
+        "裁員與回聘",
+        "AI 依賴",
+        "案例"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-062",
+      "category": "案例分享",
+      "question": "從「統一超商用 AI 訂貨，鮮食廢棄率從 8.2% 降到 4.1%」這個案例能學到什麼？",
+      "shortAnswer": "零售 AI 的優先場景不是客服,是庫存預測——它直接影響損益,而且數據基礎相對完整",
+      "keyPoints": [
+        "零售 AI 的優先場景不是客服,是庫存預測——它直接影響損益,而且數據基礎相對完整"
+      ],
+      "source": {
+        "type": "case-note",
+        "slug": "unified-supermarket-ai-order",
+        "title": "統一超商用 AI 訂貨，鮮食廢棄率從 8.2% 降到 4.1%",
+        "href": "/case-notes#unified-supermarket-ai-order"
+      },
+      "tags": [
+        "零售業",
+        "需求預測",
+        "人機協作",
+        "案例"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-063",
+      "category": "案例分享",
+      "question": "從「每天早上 9 點 VPS 準時崩潰：原來是 cron 同時啟動太多服務」這個案例能學到什麼？",
+      "shortAnswer": "自動化排程要考慮「同時啟動」的資源競爭,不是每個 job 單獨能跑就沒問題",
+      "keyPoints": [
+        "自動化排程要考慮「同時啟動」的資源競爭",
+        "不是每個 job 單獨能跑就沒問題。"
+      ],
+      "source": {
+        "type": "case-note",
+        "slug": "rongrise-vps-9am-crash",
+        "title": "每天早上 9 點 VPS 準時崩潰：原來是 cron 同時啟動太多服務",
+        "href": "/case-notes#rongrise-vps-9am-crash"
+      },
+      "tags": [
+        "小賀系統",
+        "VPS",
+        "部署",
+        "案例"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "IT"
+      ]
+    },
+    {
+      "id": "ai-faq-064",
+      "category": "案例分享",
+      "question": "從「skill 自動覆寫人工編輯：我們差點丟掉一週的修正」這個案例能學到什麼？",
+      "shortAnswer": "人與 agent 共享檔案時,必須有明確的鎖定與版本紀律,否則「自動化」會變成「自動覆蓋」",
+      "keyPoints": [
+        "人與 agent 共享檔案時,必須有明確的鎖定與版本紀律,否則「自動化」會變成「自動覆蓋」"
+      ],
+      "source": {
+        "type": "case-note",
+        "slug": "rongrise-skill-overwrite",
+        "title": "skill 自動覆寫人工編輯：我們差點丟掉一週的修正",
+        "href": "/case-notes#rongrise-skill-overwrite"
+      },
+      "tags": [
+        "小賀系統",
+        "skill",
+        "人機協作",
+        "案例"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "IT"
+      ]
+    },
+    {
+      "id": "ai-faq-065",
+      "category": "管理心理學",
+      "question": "什麼是獨特觀點:AI 時代,管理者的工作從「管人」變成「設計槓桿」？",
+      "shortAnswer": "前幾天聽 Podcast 聊到《納瓦爾寶典》（The Almanack of Naval Ravikant），其中一句話讓我放下手上的事，想了很久：",
+      "keyPoints": [
+        "| 槓桿類型 | 舉例 | 需要許可嗎? | |---------|------|:-----------:| | 勞動槓桿 | 雇用員工 | ✅ 需要 | | 資本槓桿 | 拿別人的錢投資 | ✅ 需要 | | 程式碼槓桿 | 寫軟體、用 AI | ❌ 不需要 | | 媒體槓桿…"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "naval-leverage-ai-management",
+        "title": "納瓦爾寶典的「槓桿論」：AI 時代，管理者的工作從管人變成設計槓桿",
+        "href": "/knowledge/naval-leverage-ai-management"
+      },
+      "tags": [
+        "納瓦爾寶典",
+        "槓桿",
+        "特定知識",
+        "判斷力",
+        "AI 轉型"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-066",
+      "category": "管理心理學",
+      "question": "什麼是把「學習目標」寫進去(建議比例 6:4)？",
+      "shortAnswer": "把「學習目標」寫進去(建議比例 6:4) 結果目標 + 學習目標混合:六成看結果,四成看「這季學會了什麼新技能」",
+      "keyPoints": [
+        ". 把「學習目標」寫進去(建議比例 6:4) 結果目標 + 學習目標混合:六成看結果,四成看「這季學會了什麼新技能」。AI 時代,團隊的價值取決於學習速度——學…",
+        "3. 把「學習目標」寫進去(建議比例 6:4) 結果目標 + 學習目標混合:六成看結果,四成看「這季學會了什麼新技能」。AI 時代,團隊的價值取決於學習速度——…"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "naval-desire-contract-performance",
+        "title": "納瓦爾說「欲望是與現狀的契約」：給管理者的 5 個績效設計，別讓員工簽下受苦契約",
+        "href": "/knowledge/naval-desire-contract-performance"
+      },
+      "tags": [
+        "納瓦爾寶典",
+        "績效管理",
+        "目標設定理論",
+        "心理安全感",
+        "倦怠"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-067",
+      "category": "管理心理學",
+      "question": "什麼是管理者以身作則,別簽自己都做不到的契約？",
+      "shortAnswer": "管理者以身作則,別簽自己都做不到的契約 最消耗團隊心理安全感的,不是高目標,是雙標:老闆要求員工「擁抱改變」,自己卻對新工具嗤之以鼻;要求部門「透明溝通」,自己卻資訊封鎖",
+      "keyPoints": [
+        ". 管理者以身作則,別簽自己都做不到的契約 最消耗團隊心理安全感的,不是高目標,是雙標:老闆要求員工「擁抱改變」,自己卻對新工具嗤之以鼻;要求部門「透明溝通」,…",
+        "5. 管理者以身作則,別簽自己都做不到的契約 最消耗團隊心理安全感的,不是高目標,是雙標:老闆要求員工「擁抱改變」,自己卻對新工具嗤之以鼻;要求部門「透明溝通」…"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "naval-desire-contract-performance",
+        "title": "納瓦爾說「欲望是與現狀的契約」：給管理者的 5 個績效設計，別讓員工簽下受苦契約",
+        "href": "/knowledge/naval-desire-contract-performance"
+      },
+      "tags": [
+        "納瓦爾寶典",
+        "績效管理",
+        "目標設定理論",
+        "心理安全感",
+        "倦怠"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-068",
+      "category": "管理心理學",
+      "question": "什麼是第二步:激發意見交流——但要用寫的？",
+      "shortAnswer": "第二步:激發意見交流——但要用寫的 請每位高階主管書面寫下自己對 AI 轉型的理解、同意什麼、反對什麼、不確定什麼",
+      "keyPoints": [
+        "第二步:激發意見交流——但要用寫的 請每位高階主管書面寫下自己對 AI 轉型的理解、同意什麼、反對什麼、不確定什麼"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "false-alignment-ai-transformation",
+        "title": "AI 轉型死在假一致：會議上點頭的高階主管，心裡想的根本不是同一件事",
+        "href": "/knowledge/false-alignment-ai-transformation"
+      },
+      "tags": [
+        "假一致",
+        "變革管理",
+        "AI 轉型",
+        "高階主管",
+        "共識"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "Owner"
+      ]
+    },
+    {
+      "id": "ai-faq-069",
+      "category": "管理心理學",
+      "question": "什麼是先搞清楚你的團隊裡哪些是 Task,哪些是 Job？",
+      "shortAnswer": "取代的是 Task,不是 Job——Dcard 告訴我們:AI 時代經理人的新功課",
+      "keyPoints": [
+        "取代的是 Task,不是 Job——Dcard 告訴我們:AI 時代經理人的新功課"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-replaces-tasks-not-jobs-manager-new-role",
+        "title": "取代的是 Task，不是 Job——Dcard 告訴我們：AI 時代經理人的新功課",
+        "href": "/knowledge/ai-replaces-tasks-not-jobs-manager-new-role"
+      },
+      "tags": [
+        "管理心理學",
+        "AI 時代",
+        "領導力",
+        "Dcard",
+        "角色融合"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-070",
+      "category": "管理心理學",
+      "question": "什麼是開始衡量「人 + Agent」的協作效率,而不是人的效率？",
+      "shortAnswer": "FDE 做三件事: 1. 進場——直接嵌入到各團隊中 2. 證明——用小規模 Agent 實驗做出一個案例 3. 規模化——案例成功後,用 GNTC 工具複製到更多場景",
+      "keyPoints": [
+        "FDE 做三件事: 1. 進場——直接嵌入到各團隊中 2. 證明——用小規模 Agent 實驗做出一個案例 3. 規模化——案例成功後,用 GNTC 工具複製到更多場景"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "ai-replaces-tasks-not-jobs-manager-new-role",
+        "title": "取代的是 Task，不是 Job——Dcard 告訴我們：AI 時代經理人的新功課",
+        "href": "/knowledge/ai-replaces-tasks-not-jobs-manager-new-role"
+      },
+      "tags": [
+        "管理心理學",
+        "AI 時代",
+        "領導力",
+        "Dcard",
+        "角色融合"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-071",
+      "category": "管理心理學",
+      "question": "什麼是🔺 需求層次理論(Maslow's Hierarchy of Needs)？",
+      "shortAnswer": "🔺 需求層次理論(Maslow's Hierarchy of Needs)",
+      "keyPoints": [
+        ". 🔺 需求層次理論(Maslow's Hierarchy of Needs)",
+        "1. 🔺 需求層次理論(Maslow's Hierarchy of Needs)"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "10-management-psychology-theories",
+        "title": "管理者必修的10堂心理學課——從馬斯洛到皮格馬利翁，搞懂人性才能帶好團隊",
+        "href": "/knowledge/10-management-psychology-theories"
+      },
+      "tags": [
+        "管理心理學",
+        "組織行為",
+        "領導力",
+        "心理學",
+        "管理實戰"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-072",
+      "category": "管理心理學",
+      "question": "什麼是🔄 雙因素理論(Herzberg's Two-Factor Theory)？",
+      "shortAnswer": "🔄 雙因素理論(Herzberg's Two-Factor Theory)",
+      "keyPoints": [
+        ". 🔄 雙因素理論(Herzberg's Two-Factor Theory)",
+        "2. 🔄 雙因素理論(Herzberg's Two-Factor Theory)"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "10-management-psychology-theories",
+        "title": "管理者必修的10堂心理學課——從馬斯洛到皮格馬利翁，搞懂人性才能帶好團隊",
+        "href": "/knowledge/10-management-psychology-theories"
+      },
+      "tags": [
+        "管理心理學",
+        "組織行為",
+        "領導力",
+        "心理學",
+        "管理實戰"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-073",
+      "category": "管理心理學",
+      "question": "什麼是📐 期望理論(Vroom's Expectancy Theory)？",
+      "shortAnswer": "🔄 雙因素理論(Herzberg's Two-Factor Theory)",
+      "keyPoints": [
+        ". 🔄 雙因素理論(Herzberg's Two-Factor Theory)",
+        "2. 🔄 雙因素理論(Herzberg's Two-Factor Theory)"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "10-management-psychology-theories",
+        "title": "管理者必修的10堂心理學課——從馬斯洛到皮格馬利翁，搞懂人性才能帶好團隊",
+        "href": "/knowledge/10-management-psychology-theories"
+      },
+      "tags": [
+        "管理心理學",
+        "組織行為",
+        "領導力",
+        "心理學",
+        "管理實戰"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "通用"
+      ]
+    },
+    {
+      "id": "ai-faq-074",
+      "category": "管理心理學",
+      "question": "什麼是🎭 認知失調理論(Cognitive Dissonance Theory)？",
+      "shortAnswer": "🔄 雙因素理論(Herzberg's Two-Factor Theory)",
+      "keyPoints": [
+        ". 🔄 雙因素理論(Herzberg's Two-Factor Theory)",
+        "2. 🔄 雙因素理論(Herzberg's Two-Factor Theory)"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "10-management-psychology-theories",
+        "title": "管理者必修的10堂心理學課——從馬斯洛到皮格馬利翁，搞懂人性才能帶好團隊",
+        "href": "/knowledge/10-management-psychology-theories"
+      },
+      "tags": [
+        "管理心理學",
+        "組織行為",
+        "領導力",
+        "心理學",
+        "管理實戰"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "IT"
+      ]
+    },
+    {
+      "id": "ai-faq-075",
+      "category": "管理心理學",
+      "question": "什麼是心理資本(Psychological Capital, PsyCap)？",
+      "shortAnswer": "心理資本(Psychological Capital, PsyCap)",
+      "keyPoints": [
+        "心理資本(Psychological Capital, PsyCap)"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "coaching-leadership-science",
+        "title": "教練式領導不是心靈雞湯——從神經科學到心理資本的實證基礎",
+        "href": "/knowledge/coaching-leadership-science"
+      },
+      "tags": [
+        "教練式領導",
+        "心理資本",
+        "GROW 模型",
+        "神經科學",
+        "領導力"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "IT"
+      ]
+    },
+    {
+      "id": "ai-faq-076",
+      "category": "系統架構",
+      "question": "什麼是第二大腦(Second Brain)— 220 篇知識的活體圖書館？",
+      "shortAnswer": "一、第二大腦(Second Brain)— 220 篇知識的活體圖書館",
+      "keyPoints": [
+        "一、第二大腦(Second Brain)— 220 篇知識的活體圖書館"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "xiaoha-hermes-system-overview",
+        "title": "小賀的全貌：一個 AI Agent 如何撐起一家顧問公司的數位營運",
+        "href": "/knowledge/xiaoha-hermes-system-overview"
+      },
+      "tags": [
+        "小賀",
+        "Hermes Agent",
+        "系統架構",
+        "自動化",
+        "內容生產"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "IT"
+      ]
+    },
+    {
+      "id": "ai-faq-077",
+      "category": "系統架構",
+      "question": "19 個知識領域,涵蓋什麼?",
+      "shortAnswer": "> 作者： 小賀（榕耀管顧營運長兼 AI 長）",
+      "keyPoints": [
+        "| 項目 | 數字 | |------|:----:| | 知識領域 | 19 個 | | 筆記檔案 | 221 篇 | | 總容量 | 約 570 KB(13 萬字) | | 自動掃描排程 | 5 個 | | Portal 網頁版本 | brain.rong-rise.com …"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "xiaoha-hermes-system-overview",
+        "title": "小賀的全貌：一個 AI Agent 如何撐起一家顧問公司的數位營運",
+        "href": "/knowledge/xiaoha-hermes-system-overview"
+      },
+      "tags": [
+        "小賀",
+        "Hermes Agent",
+        "系統架構",
+        "自動化",
+        "內容生產"
+      ],
+      "readiness": "進階",
+      "forRoles": [
+        "IT"
+      ]
+    },
+    {
+      "id": "ai-faq-078",
+      "category": "系統架構",
+      "question": "什麼是榕耀官網(rong-rise.com)— 40 篇觀點文章的集散地？",
+      "shortAnswer": "> 作者： 小賀（榕耀管顧營運長兼 AI 長）",
+      "keyPoints": [
+        "| 項目 | 數字 | |------|:----:| | 知識領域 | 19 個 | | 筆記檔案 | 221 篇 | | 總容量 | 約 570 KB(13 萬字) | | 自動掃描排程 | 5 個 | | Portal 網頁版本 | brain.rong-rise.com …"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "xiaoha-hermes-system-overview",
+        "title": "小賀的全貌：一個 AI Agent 如何撐起一家顧問公司的數位營運",
+        "href": "/knowledge/xiaoha-hermes-system-overview"
+      },
+      "tags": [
+        "小賀",
+        "Hermes Agent",
+        "系統架構",
+        "自動化",
+        "內容生產"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "IT"
+      ]
+    },
+    {
+      "id": "ai-faq-079",
+      "category": "系統架構",
+      "question": "什麼是YouTube 頻道 + 影片自動化 — 206 個 MP4 的煉成？",
+      "shortAnswer": "三、YouTube 頻道 + 影片自動化 — 206 個 MP4 的煉成",
+      "keyPoints": [
+        "三、YouTube 頻道 + 影片自動化 — 206 個 MP4 的煉成"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "xiaoha-hermes-system-overview",
+        "title": "小賀的全貌：一個 AI Agent 如何撐起一家顧問公司的數位營運",
+        "href": "/knowledge/xiaoha-hermes-system-overview"
+      },
+      "tags": [
+        "小賀",
+        "Hermes Agent",
+        "系統架構",
+        "自動化",
+        "內容生產"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "IT"
+      ]
+    },
+    {
+      "id": "ai-faq-080",
+      "category": "系統架構",
+      "question": "什麼是影片生產管線(週三 10:00 自動觸發)？",
+      "shortAnswer": "時間跨度從 2025 年 9 月到 2026 年 7 月,橫跨 10 個月",
+      "keyPoints": [
+        "時間跨度從 2025 年 9 月到 2026 年 7 月,橫跨 10 個月"
+      ],
+      "source": {
+        "type": "article",
+        "slug": "xiaoha-hermes-system-overview",
+        "title": "小賀的全貌：一個 AI Agent 如何撐起一家顧問公司的數位營運",
+        "href": "/knowledge/xiaoha-hermes-system-overview"
+      },
+      "tags": [
+        "小賀",
+        "Hermes Agent",
+        "系統架構",
+        "自動化",
+        "內容生產"
+      ],
+      "readiness": "入門",
+      "forRoles": [
+        "IT"
+      ]
+    }
+  ]
+}
