@@ -1,29 +1,21 @@
 {
- "generatedAt": "2026-10-13T07:20:18Z",
+ "generatedAt": "2026-10-14T07:20:17Z",
  "window": {
-  "from": "2026-10-07",
-  "to": "2026-10-13",
+  "from": "2026-10-08",
+  "to": "2026-10-14",
   "days": 7,
   "digestCount": 7
  },
  "stats": {
   "totalArticles": 82,
   "categories": {
-   "AI 轉型": 32,
+   "AI 轉型": 33,
    "ESG 永續": 15,
    "人才策略": 20,
-   "管理趨勢": 15
+   "管理趨勢": 14
   }
  },
  "trends": [
-  {
-   "keyword": "人力資源",
-   "icon": "📋",
-   "category": "人才策略",
-   "count": 20,
-   "prevCount": 22,
-   "momentum": "flat"
-  },
   {
    "keyword": "組織與管理",
    "icon": "🏢",
@@ -33,19 +25,27 @@
    "momentum": "down"
   },
   {
+   "keyword": "人力資源",
+   "icon": "📋",
+   "category": "人才策略",
+   "count": 18,
+   "prevCount": 22,
+   "momentum": "flat"
+  },
+  {
    "keyword": "晶片與算力",
    "icon": "🔩",
    "category": "AI 轉型",
-   "count": 19,
-   "prevCount": 16,
+   "count": 16,
+   "prevCount": 19,
    "momentum": "flat"
   },
   {
    "keyword": "企業導入",
    "icon": "🚀",
    "category": "AI 轉型",
-   "count": 16,
-   "prevCount": 26,
+   "count": 15,
+   "prevCount": 27,
    "momentum": "down"
   },
   {
@@ -53,22 +53,30 @@
    "icon": "💰",
    "category": "AI 轉型",
    "count": 14,
-   "prevCount": 19,
+   "prevCount": 16,
    "momentum": "flat"
-  },
-  {
-   "keyword": "安全與風險",
-   "icon": "🛡️",
-   "category": "AI 轉型",
-   "count": 11,
-   "prevCount": 8,
-   "momentum": "up"
   },
   {
    "keyword": "AI Agent",
    "icon": "🤖",
    "category": "AI 轉型",
    "count": 10,
+   "prevCount": 10,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "治理與法規",
+   "icon": "⚖️",
+   "category": "AI 轉型",
+   "count": 10,
+   "prevCount": 19,
+   "momentum": "down"
+  },
+  {
+   "keyword": "安全與風險",
+   "icon": "🛡️",
+   "category": "AI 轉型",
+   "count": 9,
    "prevCount": 10,
    "momentum": "flat"
   },
@@ -84,17 +92,9 @@
    "keyword": "資料中心",
    "icon": "🏭",
    "category": "AI 轉型",
-   "count": 9,
+   "count": 8,
    "prevCount": 11,
    "momentum": "flat"
-  },
-  {
-   "keyword": "治理與法規",
-   "icon": "⚖️",
-   "category": "AI 轉型",
-   "count": 8,
-   "prevCount": 17,
-   "momentum": "down"
   },
   {
    "keyword": "人才與技能",
@@ -105,19 +105,19 @@
    "momentum": "down"
   },
   {
-   "keyword": "ESG 揭露",
-   "icon": "🌱",
-   "category": "ESG 永續",
-   "count": 6,
-   "prevCount": 6,
-   "momentum": "flat"
-  },
-  {
    "keyword": "自動化",
    "icon": "⚙️",
    "category": "AI 轉型",
    "count": 6,
-   "prevCount": 5,
+   "prevCount": 4,
+   "momentum": "up"
+  },
+  {
+   "keyword": "ESG 揭露",
+   "icon": "🌱",
+   "category": "ESG 永續",
+   "count": 5,
+   "prevCount": 6,
    "momentum": "flat"
   },
   {
@@ -130,6 +130,90 @@
   }
  ],
  "articles": [
+  {
+   "title": "The AI operating system: A new way for CEOs to run the enterprise",
+   "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-ai-operating-system-a-new-way-for-ceos-to-run-the-enterprise",
+   "summary": "McKinsey 提出「AI 作業系統」框架，主張 CEO 應把 AI 從單點工具升級為貫穿決策、流程與組織的營運層，而非另立一個技術專案。",
+   "date": "2026-10-14",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "英特爾與博通執行長示警，融資恐成 AI 發展最大瓶頸",
+   "url": "https://finance.technews.tw/2026/10/13/intel-broadcom-ceos-warn-capital-crunch-could-become-ais-biggest-bottleneck/",
+   "summary": "兩大晶片廠 CEO 同聲警告，AI 基礎建設的真正瓶頸正從算力轉向資本籌措，融資成本將決定誰能持續擴產。",
+   "date": "2026-10-14",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "GovTech月報第57期：美國聯邦政府採用AI打造全新政府服務入口網，民眾用自然語言就能尋找政府服務",
+   "url": "https://www.ithome.com.tw/news/179645",
+   "summary": "美國聯邦政府以 AI 重做服務入口，讓民眾用自然語言直接找服務；台灣行政院同步研議食品識別與資料交換機制，公部門 AI 導入進入實作期。",
+   "date": "2026-10-14",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Amex introduces a framework to prevent AI agents from making unauthorized purchases",
+   "url": "https://techcrunch.com/2026/10/13/amex-introduces-a-framework-to-prevent-ai-agents-from-making-unauthorized-purchases/",
+   "summary": "美國運通推出代理交易授權框架，為「AI 代理代替人下單付款」建立防呆與授權邊界，代理經濟的支付治理開始落地。",
+   "date": "2026-10-14",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "OpenAI and Anthropic Tell British Lawmakers: Regulate Us",
+   "url": "https://www.wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us/",
+   "summary": "兩家前沿 AI 公司反向遊說英國議員要求立法監管，反映頭部業者以「主動接受監管」換取市場秩序與競爭門檻的戰略。",
+   "date": "2026-10-14",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "曾文生盼電業加速融入科技業決策，供電關鍵點名電網",
+   "url": "https://technews.tw/2026/10/12/tseng-wensheng-urges-power-industry-accelerate-tech-integration-decision-making-highlighting-power-grid-key-supply/",
+   "summary": "台電董事長曾文生呼籲電力業以科技業節奏決策，直指 AI 用電成長下「電網」才是供電關鍵，能源韌性成 AI 擴張的隱形上限。",
+   "date": "2026-10-14",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "𝕏 @IEI_Ltd：海水淡化真正難題在鹽水排放",
+   "url": "https://x.com/IEI_Ltd/status/2110234519097987460",
+   "summary": "貼文指出「海水淡化取水」已是成熟問題，真正未解的是如何負責任地處理排放的高鹽滷水，點出中東淡化擴產背後的環境外部性。",
+   "date": "2026-10-14",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "機器人真的搶走人類飯碗？真相是只有 0.3%",
+   "url": "https://finance.technews.tw/2026/10/13/what-work-can-robots-do/",
+   "summary": "研究顯示目前真正被機器人取代的職務僅約 0.3%，「AI 搶飯碗」的焦慮遠大於實際衝擊，重點仍是工作內容重組而非全面取代。",
+   "date": "2026-10-14",
+   "category": "人才策略"
+  },
+  {
+   "title": "提供誘因讓專家貢獻經驗，AI學徒才能變熟手",
+   "url": "https://www.managertoday.com.tw/columns/view/73094",
+   "summary": "經理人專欄指出導入 AI 的真正障礙不在能力而在驗收與傳承，須設計誘因讓資深專家願意貢獻經驗，AI 應用才能從「買工具」變成「養熟手」。",
+   "date": "2026-10-14",
+   "category": "人才策略"
+  },
+  {
+   "title": "Judge orders OpenAI to turn over hiring records in Apple trade secrets case",
+   "url": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/",
+   "summary": "法院命令 OpenAI 交出招聘紀錄以釐清蘋果營業秘密案，AI 人才爭奪戰開始進入司法與合規層面，挖角界線成新風險。",
+   "date": "2026-10-14",
+   "category": "人才策略"
+  },
+  {
+   "title": "台積電進駐熊本滿 5 年：地方變有錢了，為何中小企業卻笑不出來？",
+   "url": "https://www.managertoday.com.tw/articles/view/73097",
+   "summary": "熊本因台積電設廠人口與財政成長，但周邊中小企業面臨租金與人力成本飆升、甚至歇業退會，揭示「大廠進駐」對在地供應鏈的雙面效應。",
+   "date": "2026-10-14",
+   "category": "管理趨勢"
+  },
+  {
+   "title": "夫妻、好友合夥創業為何常鬧翻？引爆點往往不是錢，是沒說出口的「沉默契約」",
+   "url": "https://www.managertoday.com.tw/columns/view/73086",
+   "summary": "書摘指出合夥破裂多半源於未言明的「沉默契約」而非金錢，提醒中小企業在股權與角色分工上要及早把默契寫成明規則。",
+   "date": "2026-10-14",
+   "category": "管理趨勢"
+  },
   {
    "title": "AI 資料中心告別「晶片軍備競賽」，資本與能源雙效率躍升投資新指標",
    "url": "https://technews.tw/2026/10/13/data-centers-compete-capital-energy/",
@@ -619,90 +703,6 @@
    "summary": "在跳槽變難與裁員陰影下，員工從「安靜離職」轉向「大聲工作」，凸顯 AI 時代工作保障與績效展演的微妙變化。",
    "date": "2026-10-08",
    "category": "人才策略"
-  },
-  {
-   "title": "The next hurdle for AI agents: getting websites to let them in",
-   "url": "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/",
-   "summary": "AI 代理要真正落地，下一個關卡不是模型能力，而是網站是否願意放行、以及隨之而來的存取與付費規則。",
-   "date": "2026-10-07",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "AMD 斥資 82 億美元併購李飛飛創辦的 World Labs，布局空間智慧 AI",
-   "url": "https://www.ithome.com.tw/news/179256",
-   "summary": "晶片大廠以併購補齊「空間智慧」能力，顯示 AI 競爭正從語言模型延伸到對真實世界的理解。",
-   "date": "2026-10-07",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "川普稱或入股 OpenAI、Anthropic，美國政府持股模式延伸至 AI？",
-   "url": "https://technews.tw/2026/10/06/trump-says-may-take-stakes-in-openai-anthropic-%ee%88%81/",
-   "summary": "繼晶片業之後，美國政府考慮把「持股換戰略控制」模式套用到 AI 巨頭，產業與國家的界線更趨模糊。",
-   "date": "2026-10-07",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "收入怎麼認，左右 AI 巨頭估值！總額法 vs. 淨額法，差別在哪？",
-   "url": "https://www.managertoday.com.tw/columns/view/73065",
-   "summary": "隨著 Anthropic、OpenAI 相繼啟動 IPO，AI 公司怎麼認列收入，將直接左右市場對其估值的評價方式。",
-   "date": "2026-10-07",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "A Japanese real estate company is building a data center in an underground tunnel",
-   "url": "https://www.theverge.com/science/1005082/a-japanese-real-estate-company-is-building-a-data-center-in-an-underground-tunnel",
-   "summary": "日本三井不動產把資料中心搬進神戶的地下隧道，凸顯 AI 算力擴張下，土地利用與能源供給正逼出創新的選址解方。",
-   "date": "2026-10-07",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "Author Talks: Rana Foroohar on a new 'great game' in the Arctic",
-   "url": "https://www.mckinsey.com/featured-insights/mckinsey-on-books/author-talks-rana-foroohar-on-a-new-great-game-in-the-arctic",
-   "summary": "氣候變遷使北極航道與資源重新洗牌，作者提醒企業在「資源地緣」新賽局中需重新評估永續風險。",
-   "date": "2026-10-07",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "《2026台灣工作者AI應用大調查》：85% 已同時用三種以上 AI，最大障礙卻是「不知道怎麼用」？",
-   "url": "https://www.managertoday.com.tw/articles/view/73068",
-   "summary": "台灣工作者工具採用率極高，但真正的瓶頸是「不會用」，凸顯 AI 素養與情境訓練的缺口。",
-   "date": "2026-10-07",
-   "category": "人才策略"
-  },
-  {
-   "title": "104 爆 12 萬筆履歷外流！工作者受影響查詢方式與自保指南",
-   "url": "https://www.managertoday.com.tw/articles/view/73069",
-   "summary": "求職平台發生大規模履歷外洩，提醒企業與人資在導入 AI 招募時，資料治理與個資保護同步升級。",
-   "date": "2026-10-07",
-   "category": "人才策略"
-  },
-  {
-   "title": "Our minds aren't equipped to handle AI",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1003794/ai-education-computational-model-thought",
-   "summary": "評論指出人類的心智模型不足以理解 AI，教育與人才培育必須納入對 AI 運作邏輯的批判性理解。",
-   "date": "2026-10-07",
-   "category": "人才策略"
-  },
-  {
-   "title": "The AI Risk Your Company Is Overlooking",
-   "url": "https://hbr.org/2026/10/the-ai-risk-your-company-is-overlooking",
-   "summary": "HBR 指出企業在導入 AI 時最常忽略的一類風險，提醒管理者把風險盤點與治理拉到與部署同等的優先序。",
-   "date": "2026-10-07",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "麥當勞面臨集體訴訟，被控利用 AI 操縱餐點價格",
-   "url": "https://technews.tw/2026/10/06/mcdonalds-hit-with-class-action-alleging-ai-powered-menu-price-fixing/",
-   "summary": "用 AI 做動態定價遭控操縱價格，顯示演算法決策一旦缺乏透明與問責，將直接變成法律與品牌風險。",
-   "date": "2026-10-07",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "愈沒本事，愈愛耍官威！摩根大通 CEO 20 年觀察：身邊全是親信、只聽好話，是主管毀掉的開始",
-   "url": "https://www.managertoday.com.tw/articles/view/73044",
-   "summary": "摩根大通執行長長年觀察指出，主管衰敗始於只聽好話，提醒領導者主動建立異議與回饋機制。",
-   "date": "2026-10-07",
-   "category": "管理趨勢"
   }
  ],
  "insights": [
