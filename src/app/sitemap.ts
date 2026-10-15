@@ -197,6 +197,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  // 獨立手寫頁（不進 articles.json 的知識庫頁，例：小賀週記）
+  // ⚠️ 新增這類頁面時要補這裡，否則頁面 200 但 sitemap 少一筆
+  const independentPages: MetadataRoute.Sitemap = (
+    [
+      { slug: "xiaoha-weekly-vol1", date: "2026-06-13" },
+      { slug: "xiaoha-weekly-vol2", date: "2026-09-24" },
+      { slug: "xiaoha-weekly-vol3", date: "2026-10-15" },
+    ] as { slug: string; date: string }[]
+  ).map((p) => ({
+    url: `${baseUrl}/knowledge/${p.slug}`,
+    lastModified: new Date(p.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   // Knowledge articles
   const articlePages: MetadataRoute.Sitemap = (articlesData as { slug: string; date: string }[]).map(
     (article) => ({
@@ -217,5 +232,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   );
 
-  return [...staticPages, ...articlePages, ...newsletterPages];
+  return [...staticPages, ...independentPages, ...articlePages, ...newsletterPages];
 }
