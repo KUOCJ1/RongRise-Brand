@@ -1,18 +1,18 @@
 {
- "generatedAt": "2026-10-14T07:20:17Z",
+ "generatedAt": "2026-10-15T07:20:17Z",
  "window": {
-  "from": "2026-10-08",
-  "to": "2026-10-14",
+  "from": "2026-10-09",
+  "to": "2026-10-15",
   "days": 7,
   "digestCount": 7
  },
  "stats": {
-  "totalArticles": 82,
+  "totalArticles": 85,
   "categories": {
-   "AI 轉型": 33,
-   "ESG 永續": 15,
-   "人才策略": 20,
-   "管理趨勢": 14
+   "AI 轉型": 34,
+   "ESG 永續": 16,
+   "人才策略": 19,
+   "管理趨勢": 16
   }
  },
  "trends": [
@@ -20,23 +20,15 @@
    "keyword": "組織與管理",
    "icon": "🏢",
    "category": "管理趨勢",
-   "count": 20,
-   "prevCount": 32,
-   "momentum": "down"
+   "count": 22,
+   "prevCount": 28,
+   "momentum": "flat"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
    "category": "人才策略",
-   "count": 18,
-   "prevCount": 22,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "晶片與算力",
-   "icon": "🔩",
-   "category": "AI 轉型",
-   "count": 16,
+   "count": 20,
    "prevCount": 19,
    "momentum": "flat"
   },
@@ -44,92 +36,184 @@
    "keyword": "企業導入",
    "icon": "🚀",
    "category": "AI 轉型",
-   "count": 15,
-   "prevCount": 27,
+   "count": 16,
+   "prevCount": 23,
    "momentum": "down"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
    "category": "AI 轉型",
-   "count": 14,
-   "prevCount": 16,
+   "count": 16,
+   "prevCount": 14,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "晶片與算力",
+   "icon": "🔩",
+   "category": "AI 轉型",
+   "count": 16,
+   "prevCount": 17,
    "momentum": "flat"
   },
   {
    "keyword": "AI Agent",
    "icon": "🤖",
    "category": "AI 轉型",
-   "count": 10,
-   "prevCount": 10,
-   "momentum": "flat"
+   "count": 13,
+   "prevCount": 9,
+   "momentum": "up"
   },
   {
    "keyword": "治理與法規",
    "icon": "⚖️",
    "category": "AI 轉型",
-   "count": 10,
-   "prevCount": 19,
-   "momentum": "down"
-  },
-  {
-   "keyword": "安全與風險",
-   "icon": "🛡️",
-   "category": "AI 轉型",
-   "count": 9,
-   "prevCount": 10,
+   "count": 12,
+   "prevCount": 15,
    "momentum": "flat"
   },
   {
    "keyword": "能源與電力",
    "icon": "⚡",
    "category": "ESG 永續",
-   "count": 9,
+   "count": 10,
    "prevCount": 10,
    "momentum": "flat"
+  },
+  {
+   "keyword": "安全與風險",
+   "icon": "🛡️",
+   "category": "AI 轉型",
+   "count": 9,
+   "prevCount": 11,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "自動化",
+   "icon": "⚙️",
+   "category": "AI 轉型",
+   "count": 8,
+   "prevCount": 3,
+   "momentum": "up"
   },
   {
    "keyword": "資料中心",
    "icon": "🏭",
    "category": "AI 轉型",
    "count": 8,
-   "prevCount": 11,
+   "prevCount": 10,
    "momentum": "flat"
   },
   {
    "keyword": "人才與技能",
    "icon": "🧠",
    "category": "人才策略",
-   "count": 7,
-   "prevCount": 12,
-   "momentum": "down"
-  },
-  {
-   "keyword": "自動化",
-   "icon": "⚙️",
-   "category": "AI 轉型",
    "count": 6,
-   "prevCount": 4,
-   "momentum": "up"
+   "prevCount": 13,
+   "momentum": "down"
   },
   {
    "keyword": "ESG 揭露",
    "icon": "🌱",
    "category": "ESG 永續",
-   "count": 5,
+   "count": 3,
    "prevCount": 6,
-   "momentum": "flat"
+   "momentum": "down"
   },
   {
    "keyword": "開源模型",
    "icon": "🌐",
    "category": "AI 轉型",
-   "count": 2,
-   "prevCount": 0,
-   "momentum": "new"
+   "count": 1,
+   "prevCount": 1,
+   "momentum": "flat"
   }
  ],
  "articles": [
+  {
+   "title": "The AI value curve: The economics of applying AI to existing work",
+   "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-ai-value-curve-the-economics-of-applying-ai-to-existing-work",
+   "summary": "McKinsey 指出多數組織仍在「量 AI 導入率」而非「量價值」，提出「AI 價值曲線」協助判斷哪些既有工作的自動化潛力最值得優先投入、成本效益最高。",
+   "date": "2026-10-15",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "JPMorgan Chase is keeping AI agents out",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1010962/jpmorgan-chase-is-keeping-ai-agents-out",
+   "summary": "摩根大通執行長 Jamie Dimon 在財報電話會議明言「不會讓任何外部 AI 代理進入公司」，並提醒客戶授權代理操作帳戶等於發生「責任移轉」；代理經濟的問責邊界開始由大型金融機構強制劃定。",
+   "date": "2026-10-15",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Figma announces new features to define how agents work on its platform",
+   "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/",
+   "summary": "Figma 推出新功能，定義 AI 代理在其平台上「能做什麼、怎麼做」，把代理的權限與協作規則變成平台層的產品設定，而非留給使用者各自約定。",
+   "date": "2026-10-15",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "輝達 5 年砸 2.5 億美元算力資源，助英國強化代理式 AI 安全研究",
+   "url": "https://technews.tw/2026/10/15/nvidia-commits-250m-over-5-years-to-advance-uk-agentic-safety-research/",
+   "summary": "輝達投入算力資源支持英國的代理式 AI 安全研究，顯示代理安全（agentic safety）已從學術題目變成需要產業資本長期挹注的基礎工程。",
+   "date": "2026-10-15",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "AMD推Agentic AI機櫃架構Helion，以CPU、GPU彈性配置鎖定不同Agent工作負載",
+   "url": "https://www.ithome.com.tw/news/179632",
+   "summary": "AMD 發表 Helion 機櫃架構，用可彈性配置的 CPU／GPU 組合對應不同型態的 AI 代理工作負載，代理運算開始被當成獨立的硬體需求來設計。",
+   "date": "2026-10-15",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "歐盟管起 AI 資料中心，2027 年將訂能源、用水最低效率標準",
+   "url": "https://technews.tw/2026/09/28/eu-regulate-ai-data-centers-minimum-energy-water-efficiency-standards-2027/",
+   "summary": "歐盟將對 AI 資料中心訂定能源與用水的最低效率標準（預計 2027 年上路），把 AI 擴張的資源消耗正式納入監管，資料中心的環境外部性開始有法規天花板。",
+   "date": "2026-10-15",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "風電、光電與儲能齊聚，2026 智慧能源週登場",
+   "url": "https://technews.tw/2026/10/13/2026-smart-energy-week-wind-power-solar-power-energy-storage/",
+   "summary": "2026 智慧能源週集結風電、光電與儲能業者，反映 AI 用電成長下能源供給端正加速整合，「算力—電力」的供需連動成產業主軸。",
+   "date": "2026-10-15",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "川普親手創造全球電動車大優勢，唯獨美國除外",
+   "url": "https://technews.tw/2026/10/14/trump-created-ev-advantages-for-the-world-but-not-usa/",
+   "summary": "美國政策轉向反而讓其他市場取得電動車的相對優勢，美國自身卻被排除在外，顯示政策不確定性如何重塑綠色產業的全球競爭位置。",
+   "date": "2026-10-15",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "職缺開了半年還招不到人？試試把 JD 條件分成 3 類，招募範圍跟著變大",
+   "url": "https://www.managertoday.com.tw/articles/view/73098",
+   "summary": "引日本《Business Journal》的「人才資產矩陣」，把 JD 條件重分為「必備／可培養／多餘」三類，主張在人力成本高漲的環境下，企業該從「尋找 100 分的人」轉向「培養 80 分的人」——但前提是先備好培訓與在職訓練，否則放寬條件會以新人早退反撲。",
+   "date": "2026-10-15",
+   "category": "人才策略"
+  },
+  {
+   "title": "AI 能寫提案、找客戶，為何還需要業務？黃仁勳示範 B2B 銷售最難取代的能力",
+   "url": "https://www.managertoday.com.tw/articles/view/73102",
+   "summary": "引 Gartner 調查：45% B2B 買家曾用生成式 AI 蒐集供應商資訊、67% 偏好沒有業務介入，但仍有 69% 會找真人業務確認；另據 Gartner 2026 年初調查 210 位銷售主管，AI 平均每週替業務省下 4.8 小時，然而 72% 的銷售組織沒把這些時間重新投入高價值活動，有重新投入者超越客戶成長目標的機率是其他組織的 2.2 倍。",
+   "date": "2026-10-15",
+   "category": "人才策略"
+  },
+  {
+   "title": "別再說「你最近做事很拖」！部屬提出理由時，用 4 個回饋步驟把要求說明白",
+   "url": "https://www.managertoday.com.tw/articles/view/73101",
+   "summary": "主管給回饋時最怕講重傷感情、不講問題重演，文章提供 4 個對話步驟，先把卡關原因釐清，再把要改的地方說清楚——回饋的難點不在內容而在對話結構。",
+   "date": "2026-10-15",
+   "category": "管理趨勢"
+  },
+  {
+   "title": "AI 基礎設施燒錢速度遠超預期，Gartner 警告：80% 新雲端業者恐難存活",
+   "url": "https://finance.technews.tw/2026/10/15/the-ai-math-isnt-mathing-as-infrastructure-spending-forecast-to-outstrip-expected-revenue/",
+   "summary": "Gartner 警告 AI 基礎設施支出成長速度已超過可預期營收，估計 80% 的新雲端業者恐難存活；AI 投資的「算術對不上」正從個別公司風險升級為產業結構風險。",
+   "date": "2026-10-15",
+   "category": "管理趨勢"
+  },
   {
    "title": "The AI operating system: A new way for CEOs to run the enterprise",
    "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-ai-operating-system-a-new-way-for-ceos-to-run-the-enterprise",
@@ -640,69 +724,6 @@
    "summary": "BCG 指出 AI 轉型價值僅約一成來自應用本身、兩成來自資料與技術，其餘七成靠流程再造與文化；72% 執行長自認是組織內 AI 的主要決策者。",
    "date": "2026-10-09",
    "category": "管理趨勢"
-  },
-  {
-   "title": "博通傳籌資 300 億美元，助 OpenAI 採購客製化 AI 晶片",
-   "url": "https://technews.tw/2026/10/08/broadcom-reportedly-raising-30-billion-to-fund-openai-custom-ai-chip-procurement/",
-   "summary": "客製 AI 晶片需求的資金鏈延伸到供應商自籌，顯示 AI 硬體競賽正從「賣鏟子」變成「一起出資」，資本風險與綁定同步升高。",
-   "date": "2026-10-08",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "AI 圖打敗圖庫霸主，Getty Images 股價崩跌遭紐交所除牌",
-   "url": "https://technews.tw/2026/10/08/getty-images-faces-delisting-amid-ai-image-impact/",
-   "summary": "生成式 AI 直接顛覆圖庫本業，連握有大量授權內容的老牌龍頭都被市場除名，是內容產業被 AI 重估的具體案例。",
-   "date": "2026-10-08",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "韓國「AI for All」計畫 10 月試營運，SK 電信、Kakao、KT 各押不同 AI 入口",
-   "url": "https://technews.tw/2026/10/07/ai-for-all-set-for-october-contest-as-sk-telecom-bets-on-calls-kakao-on-kakaotalk-and-kt-on-open-architecture/",
-   "summary": "韓國以國家級計畫把 AI 推入全民日常，三家電信／平台各押不同入口，是政府主導 AI 普及的亞洲樣本。",
-   "date": "2026-10-08",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Nous Research confirms it hit $1.5B valuation, launches AI agents for business users",
-   "url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/",
-   "summary": "開源系 AI 團隊估值衝上 15 億美元並推出企業代理，反映「開源＋企業代理」路線正被資本買單。",
-   "date": "2026-10-08",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "美資料中心建設支出大飆 73%！年化達 850 億美元，4 個月來增速加快",
-   "url": "https://technews.tw/2026/10/07/us-spending-on-data-center-buildings/",
-   "summary": "AI 算力擴張把資料中心建設推成能源與土地消耗的急先鋒，永續報告裡的「用電與碳排」正被 AI 需求重寫。",
-   "date": "2026-10-08",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "IMF 總裁示警，AI 恐擴大全球不平等",
-   "url": "https://technews.tw/2026/10/08/imf-preparing-el-nino-assistance-concerned-about-ai-bubble-burst/",
-   "summary": "IMF 把 AI 與氣候並列為全球風險，提醒企業 ESG 的「社會面」（就業與分配的公平性）將更受關注。",
-   "date": "2026-10-08",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "AI 寫程式引發過勞與職涯焦慮，工程師面臨「身分認同危機」",
-   "url": "https://technews.tw/2026/10/08/ai-programming-triggers-developer-burnout-crisis/",
-   "summary": "AI 讓寫程式更快，卻也讓工程師陷入過勞與自我價值焦慮；人才策略要處理的不只是技能，還有心理與角色定位。",
-   "date": "2026-10-08",
-   "category": "人才策略"
-  },
-  {
-   "title": "波士頓動力挖角亞馬遜 AI 大將，力攻物理 AI 戰場",
-   "url": "https://technews.tw/2026/10/07/boston-dynamics-taps-amazon-ai-veteran-to-lead-physical-ai-push/",
-   "summary": "物理 AI 進入搶人大戰，老牌機器人公司向雲端巨頭挖角，凸顯「懂模型又懂硬體」的整合型人才正成稀缺資源。",
-   "date": "2026-10-08",
-   "category": "人才策略"
-  },
-  {
-   "title": "安靜離職沒人敢玩了？職場全面上演「高調工作」，你同事為何要搶著忙給老闆看？",
-   "url": "https://www.managertoday.com.tw/articles/view/73073",
-   "summary": "在跳槽變難與裁員陰影下，員工從「安靜離職」轉向「大聲工作」，凸顯 AI 時代工作保障與績效展演的微妙變化。",
-   "date": "2026-10-08",
-   "category": "人才策略"
   }
  ],
  "insights": [

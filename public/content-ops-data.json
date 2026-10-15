@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-10-14T07:20:17Z",
+ "generatedAt": "2026-10-15T07:20:15Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 137
+  "daysRunning": 138
  },
  "stats": {
-  "scanDays": 117,
+  "scanDays": 118,
   "weekArticles": 82,
   "articles": 91,
   "newsItems": 51,
   "newsletterIssues": 25,
   "subscribers": 22,
   "confirmedSubscribers": 16,
-  "videos": 38,
+  "videos": 39,
   "views": 669,
   "channelSubscribers": 17,
   "insights": 16,
-  "socialPosts": 50,
+  "socialPosts": 52,
   "igCards": 38,
-  "competitorReports": 115
+  "competitorReports": 116
  },
  "activity": [
-  {
-   "date": "2026-10-08",
-   "count": 9,
-   "topics": []
-  },
   {
    "date": "2026-10-09",
    "count": 12,
@@ -56,6 +51,11 @@
    "date": "2026-10-14",
    "count": 12,
    "topics": []
+  },
+  {
+   "date": "2026-10-15",
+   "count": 12,
+   "topics": []
   }
  ],
  "latest": {
@@ -66,19 +66,13 @@
   },
   "newsletter": "🦞 榕賀觀點 第 25 期 — 2026-10-12",
   "video": {
-   "title": "協調稅：公司最貴的成本，是那些沒有名字的等待",
-   "date": "2026-10-08",
-   "url": "https://www.youtube.com/watch?v=PR_VEEJ0FmI"
+   "title": "連做模型的公司都說控制不住：AI 代理的安全，從「它會拒絕」改成「它碰不到」",
+   "date": "2026-10-14",
+   "url": "https://www.youtube.com/watch?v=Zi7obd2eQUo"
   },
   "insight": "2026-W42.md"
  },
  "trends": [
-  {
-   "keyword": "人力資源",
-   "icon": "📋",
-   "count": 20,
-   "momentum": "flat"
-  },
   {
    "keyword": "組織與管理",
    "icon": "🏢",
@@ -86,15 +80,21 @@
    "momentum": "down"
   },
   {
+   "keyword": "人力資源",
+   "icon": "📋",
+   "count": 18,
+   "momentum": "flat"
+  },
+  {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 19,
+   "count": 16,
    "momentum": "flat"
   },
   {
    "keyword": "企業導入",
    "icon": "🚀",
-   "count": 16,
+   "count": 15,
    "momentum": "down"
   },
   {
