@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-agent-liability-transfer",
+    cat: "AI 轉型",
+    title: "連摩根大通都不讓它進門：你的 AI 代理，憑什麼代表你？",
+    date: "2026.10.15",
+    readTime: "9 分鐘",
+    excerpt: "摩根大通執行長 Dimon 在財報電話會議上說，不讓外部 AI 代理進公司，因為對客戶與銀行都太冒險。同一週，美國運通開始要求代理出示授權證明，輝達拿 2.5 億美元買代理安全研究。三件事合起來是一句話：代理能不能替你辦事，資格不是你自己發的。",
+    tags: ["AI 代理", "責任歸屬", "AI 治理", "代理經濟"],
+  },
+  {
     slug: "xiaoha-weekly-vol3",
     cat: "小賀的成長日記",
     title: "🦞 小賀週記 Vol.3 — 我拿錯了尺",

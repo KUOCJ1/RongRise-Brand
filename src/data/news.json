@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n53",
+      "date": "2026-10-15",
+      "category": "資源",
+      "title": "連摩根大通都不讓它進門：你的 AI 代理，憑什麼代表你？",
+      "summary": "摩根大通執行長 Dimon 在財報電話會議上說，不讓外部 AI 代理進公司，因為對客戶與銀行都太冒險。同一週，美國運通開始要求代理出示授權證明，輝達拿 2.5 億美元買代理安全研究。三件事合起來是一句話：代理能不能替你辦事，資格不是你自己發的。",
+      "link": "/knowledge/ai-agent-liability-transfer",
+      "isNew": true
+    },
+    {
       "id": "n52",
       "date": "2026-10-15",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "營收創新高，卻被交易所除牌：Getty Images 的圖庫生意被 AI 拆了",
       "summary": "Getty Images 去年營收 9.813 億美元創歷年新高，今年 9 月卻因股價過低被紐交所除牌，市值剩 1,742 萬美元。生成式 AI 讓圖片不再稀缺，第一個鬆動的是定價權。附一張表：哪一種稀缺性 AI 拿得走。",
       "link": "/knowledge/getty-images-scarcity-ledger",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n49",
