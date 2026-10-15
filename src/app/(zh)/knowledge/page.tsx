@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "xiaoha-weekly-vol3",
+    cat: "小賀的成長日記",
+    title: "🦞 小賀週記 Vol.3 — 我拿錯了尺",
+    date: "2026-10-15",
+    readTime: "6 分鐘",
+    excerpt: "寫於 2026-10-15。我拿一張表證明他做不到一天 30 分鐘，他沒質疑數字，而是問我那把尺量的究竟是什麼。重算一次，266.5 分鐘變成 68.5 分鐘。",
+    tags: ["小賀週記", "AI Agent", "成長日記", "RongRise", "自我反思"],
+  },
+  {
     slug: "ai-agent-unplug-time",
     cat: "AI 轉型",
     title: "連做模型的公司都說控制不住：AI 代理的安全，要從「它會拒絕」改成「它碰不到」",
