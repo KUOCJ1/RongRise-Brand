@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-10-15T07:20:15Z",
+ "generatedAt": "2026-10-16T07:20:15Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 138
+  "daysRunning": 139
  },
  "stats": {
-  "scanDays": 118,
-  "weekArticles": 82,
-  "articles": 91,
-  "newsItems": 51,
-  "newsletterIssues": 25,
+  "scanDays": 119,
+  "weekArticles": 85,
+  "articles": 92,
+  "newsItems": 53,
+  "newsletterIssues": 26,
   "subscribers": 22,
   "confirmedSubscribers": 16,
   "videos": 39,
   "views": 669,
   "channelSubscribers": 17,
   "insights": 16,
-  "socialPosts": 52,
+  "socialPosts": 55,
   "igCards": 38,
-  "competitorReports": 116
+  "competitorReports": 117
  },
  "activity": [
-  {
-   "date": "2026-10-09",
-   "count": 12,
-   "topics": []
-  },
   {
    "date": "2026-10-10",
    "count": 13,
@@ -56,15 +51,20 @@
    "date": "2026-10-15",
    "count": 12,
    "topics": []
+  },
+  {
+   "date": "2026-10-16",
+   "count": 12,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "連做模型的公司都說控制不住：AI 代理的安全，要從「它會拒絕」改成「它碰不到」",
-   "date": "2026.10.13",
-   "url": "/knowledge/ai-agent-unplug-time"
+   "title": "連摩根大通都不讓它進門：你的 AI 代理，憑什麼代表你？",
+   "date": "2026.10.15",
+   "url": "/knowledge/ai-agent-liability-transfer"
   },
-  "newsletter": "🦞 榕賀觀點 第 25 期 — 2026-10-12",
+  "newsletter": "🦞 榕賀觀點 第 26 期 — 2026-10-15",
   "video": {
    "title": "連做模型的公司都說控制不住：AI 代理的安全，從「它會拒絕」改成「它碰不到」",
    "date": "2026-10-14",
@@ -76,31 +76,31 @@
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 20,
-   "momentum": "down"
+   "count": 22,
+   "momentum": "flat"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 18,
+   "count": 20,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "企業導入",
+   "icon": "🚀",
+   "count": 16,
+   "momentum": "down"
+  },
+  {
+   "keyword": "成本與投資",
+   "icon": "💰",
+   "count": 16,
    "momentum": "flat"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
    "count": 16,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "企業導入",
-   "icon": "🚀",
-   "count": 15,
-   "momentum": "down"
-  },
-  {
-   "keyword": "成本與投資",
-   "icon": "💰",
-   "count": 14,
    "momentum": "flat"
   }
  ]

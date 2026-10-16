@@ -1,18 +1,18 @@
 {
- "generatedAt": "2026-10-15T07:20:17Z",
+ "generatedAt": "2026-10-16T07:20:16Z",
  "window": {
-  "from": "2026-10-09",
-  "to": "2026-10-15",
+  "from": "2026-10-10",
+  "to": "2026-10-16",
   "days": 7,
   "digestCount": 7
  },
  "stats": {
   "totalArticles": 85,
   "categories": {
-   "AI 轉型": 34,
-   "ESG 永續": 16,
-   "人才策略": 19,
-   "管理趨勢": 16
+   "AI 轉型": 35,
+   "ESG 永續": 17,
+   "人才策略": 18,
+   "管理趨勢": 15
   }
  },
  "trends": [
@@ -20,40 +20,40 @@
    "keyword": "組織與管理",
    "icon": "🏢",
    "category": "管理趨勢",
-   "count": 22,
+   "count": 23,
    "prevCount": 28,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "人力資源",
-   "icon": "📋",
-   "category": "人才策略",
-   "count": 20,
-   "prevCount": 19,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "企業導入",
-   "icon": "🚀",
-   "category": "AI 轉型",
-   "count": 16,
-   "prevCount": 23,
-   "momentum": "down"
-  },
-  {
-   "keyword": "成本與投資",
-   "icon": "💰",
-   "category": "AI 轉型",
-   "count": 16,
-   "prevCount": 14,
    "momentum": "flat"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
    "category": "AI 轉型",
-   "count": 16,
-   "prevCount": 17,
+   "count": 20,
+   "prevCount": 18,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "人力資源",
+   "icon": "📋",
+   "category": "人才策略",
+   "count": 19,
+   "prevCount": 19,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "成本與投資",
+   "icon": "💰",
+   "category": "AI 轉型",
+   "count": 17,
+   "prevCount": 11,
+   "momentum": "up"
+  },
+  {
+   "keyword": "企業導入",
+   "icon": "🚀",
+   "category": "AI 轉型",
+   "count": 15,
+   "prevCount": 21,
    "momentum": "flat"
   },
   {
@@ -61,15 +61,23 @@
    "icon": "🤖",
    "category": "AI 轉型",
    "count": 13,
-   "prevCount": 9,
+   "prevCount": 8,
    "momentum": "up"
   },
   {
    "keyword": "治理與法規",
    "icon": "⚖️",
    "category": "AI 轉型",
-   "count": 12,
-   "prevCount": 15,
+   "count": 13,
+   "prevCount": 12,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "安全與風險",
+   "icon": "🛡️",
+   "category": "AI 轉型",
+   "count": 11,
+   "prevCount": 10,
    "momentum": "flat"
   },
   {
@@ -77,15 +85,15 @@
    "icon": "⚡",
    "category": "ESG 永續",
    "count": 10,
-   "prevCount": 10,
+   "prevCount": 11,
    "momentum": "flat"
   },
   {
-   "keyword": "安全與風險",
-   "icon": "🛡️",
+   "keyword": "資料中心",
+   "icon": "🏭",
    "category": "AI 轉型",
    "count": 9,
-   "prevCount": 11,
+   "prevCount": 10,
    "momentum": "flat"
   },
   {
@@ -93,43 +101,119 @@
    "icon": "⚙️",
    "category": "AI 轉型",
    "count": 8,
-   "prevCount": 3,
+   "prevCount": 5,
    "momentum": "up"
-  },
-  {
-   "keyword": "資料中心",
-   "icon": "🏭",
-   "category": "AI 轉型",
-   "count": 8,
-   "prevCount": 10,
-   "momentum": "flat"
   },
   {
    "keyword": "人才與技能",
    "icon": "🧠",
    "category": "人才策略",
    "count": 6,
-   "prevCount": 13,
-   "momentum": "down"
-  },
-  {
-   "keyword": "ESG 揭露",
-   "icon": "🌱",
-   "category": "ESG 永續",
-   "count": 3,
-   "prevCount": 6,
+   "prevCount": 11,
    "momentum": "down"
   },
   {
    "keyword": "開源模型",
    "icon": "🌐",
    "category": "AI 轉型",
-   "count": 1,
+   "count": 2,
    "prevCount": 1,
-   "momentum": "flat"
+   "momentum": "up"
+  },
+  {
+   "keyword": "ESG 揭露",
+   "icon": "🌱",
+   "category": "ESG 永續",
+   "count": 1,
+   "prevCount": 7,
+   "momentum": "down"
   }
  ],
  "articles": [
+  {
+   "title": "誰在替你下指令？AI 助理出錯，責任算誰的？",
+   "url": "https://technews.tw/2026/10/16/who-responsible-when-ai-assistants-make-mistakes/",
+   "summary": "從 OpenAI DevDay 發表的 Dots（可外掛連接逾 4,000 個應用程式、會主動研究）談起：模型「知道怎麼做」不等於「被准許這麼做」，只在提示詞寫「不要修改資料」不算權限控管，讀取／修改／對外傳送要在帳號與工具層級分開；撤銷連接與清除資料是兩件事；人工核准節點若只是每天機械式按下確認，等於「替事故留下簽名」。",
+   "date": "2026-10-16",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "德國擬與輝達簽合作協議，砸數億歐元加速 AI 導入工業領域",
+   "url": "https://technews.tw/2026/10/16/germany-plans-ai-cooperation-deal-with-nvidia/",
+   "summary": "《商務日報》報導德國計畫下週在柏林「投資德國」大會上與輝達簽署範圍廣泛的合作協議（黃仁勳將出席），投資規模達數億歐元，以「主權開源基礎模型」（SOOFI）計畫為核心，兩大目標是為實體 AI（機器人、自駕）工具奠基，以及協助工業開發高效能 AI 模型。",
+   "date": "2026-10-16",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "日本數位好萊塢大學全校導入 Claude 創日本首例，師生用量無上限",
+   "url": "https://technews.tw/2026/10/16/jp-dhu-claude/",
+   "summary": "東京數位好萊塢大學（DHU）11 月起全體學生與教職員都能用學校帳號使用 Claude、不必在意用量與費用；重點不在發帳號，而是把 AI 併入既有「全校 AI 基盤」，改成以「使用 AI 為前提」設計作業與評量，並訂出成果中 AI 使用情形的申報規則與著作物、個資處理規章。",
+   "date": "2026-10-16",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "The judgment bottleneck: Balancing AI and human speeds in strategy",
+   "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-judgment-bottleneck-balancing-ai-and-human-speeds-in-strategy",
+   "summary": "分析已跑在 AI 速度，判斷仍跑在人的速度：AI 能快速掃描趨勢、跑情境、設觸發條件，但理解意涵、挑戰假設、承擔決策無法同樣壓縮，於是「判斷」成為新瓶頸；加速過頭會讓決策未經檢驗，慢過頭則投資收不回。文中另點出兩件事：把分析交給 AI 也移除了培養新決策者的入門訓練場；以及要指定有經驗的人「擁有」決策，避免 AI 產出的問責被侵蝕。",
+   "date": "2026-10-16",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Anthropic is letting METR researchers look under the hood with employee-level access",
+   "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
+   "summary": "Anthropic 給六名 METR 研究員公司筆電、辦公空間與內部工具（大致等同自家風險評估團隊），可獨立評估其模型、安全實務與風險管理；Anthropic 不能否決發表，僅能就客戶資料、律師特權、模型架構等既定類別要求塗黑，METR 還可公開評論塗黑是否合理。此為其新三層評估制度的最上層，官方以「金檢人員進駐銀行」比擬。",
+   "date": "2026-10-16",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "美、歐、中三條路線大不同，資料中心競賽的勝負取決於能源與實體基礎設施",
+   "url": "https://technews.tw/2026/10/16/the-ai-data-center-race-is-a-strategic-contest/",
+   "summary": "資料中心競賽已從技術話題升級為地緣政治與國家戰略，勝負取決於電力、水、晶片與供應鏈。亞馬遜、Alphabet、微軟、Meta 2026 年合計資本支出約 7,250 億美元（較 2025 年的 4,100 億大增 77%）；IEA 指美國近半資料中心容量集中在五個區域群聚，並預測 2030 年資料中心將占美國電力需求成長近一半。歐盟以制度補資本劣勢（目標五到七年把資料中心容量提升三倍），中國把算力當國家級基礎設施、把負載導向再生能源充足地區；瓶頸延伸到關鍵原料（IEA 估 2030 年鎵需求可能超過目前供應 10%，中國掌握全球 99% 精煉鎵）。",
+   "date": "2026-10-16",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "AI時代資料中心不再追著使用者跑，台電倡議「以光代電」納入AIDC選址策略",
+   "url": "https://www.ithome.com.tw/news/179721",
+   "summary": "過去資料中心靠近使用者端以降低延遲，AI 時代高密度用電讓「電力從哪裡來」變成選址新考量；台電在 2026 台灣國際智慧能源週提出「以光代電」：讓資料中心靠近電源端、就地用電，再用長光纖把算力服務送給遠端使用者。台電把 AI 用電分為「製造 AI」（半導體產業用電估由 2026 年約 520 億度增至 2035 年 1,100 億度）與「運行 AI」（AIDC，以「鉛球」比喻其對電網的高密度衝擊）；AIDC 核供總量已達 1,441MW，其中 2026 年新增約 750MW、占累積量逾五成。",
+   "date": "2026-10-16",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "@GreenCarbonCorp：Scope 3 與 CSRD 稽核需要即時 dMRV 遙測",
+   "url": "https://x.com/GreenCarbonCorp/status/2110958609421172775",
+   "summary": "主張 Q4 CSRD 稽核的 Scope 3 驗證需要跨價值鏈的即時數位化 MRV 遙測，把自動化供應商數據與 ICVCM CCP 標籤、Article 6 調整結合，以消除漂綠責任。（𝕏 今日結果品質偏低，僅取 1 則跨域觀點。）",
+   "date": "2026-10-16",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "Team Dynamics Weaken When Employees Turn to AI instead of Colleagues",
+   "url": "https://hbr.org/2026/10/team-dynamics-weaken-when-employees-turn-to-ai-instead-of-colleagues",
+   "summary": "以社會心理學家 Dan Wegner 的「交互記憶系統」為框架：團隊靠一套共享的「誰記得什麼、該找誰」分工運作（連伴侶都是），研究顯示員工改向 AI 求助而非同事時，這套共享分工會鬆動，團隊協作隨之變弱。",
+   "date": "2026-10-16",
+   "category": "人才策略"
+  },
+  {
+   "title": "導入 AI 沒成效，業務也得負責？AWS 為何要求追蹤客戶 KPI？",
+   "url": "https://www.managertoday.com.tw/articles/view/73121",
+   "summary": "AWS 2026 年 6 月推出「商業價值實現」（BVR）夥伴計畫，要求合作夥伴在專案開始就與客戶訂出成果 KPI、上線後持續追蹤，部分獎勵資源與客戶實際成果連動；關鍵提醒是「數字改善不等於省到錢」（客服時間減半卻要投入大量人力檢查錯誤答案、產量翻倍卻不良品增加）。AWS 2026 年研究：最擅長追蹤客戶成效的合作夥伴 3 年營收成長 10%～11%、專案毛利率提高 6～7 個百分點，每投入 1 美元在協助客戶實現成果的相關工作，5 年平均產生 3.5 美元毛利。",
+   "date": "2026-10-16",
+   "category": "人才策略"
+  },
+  {
+   "title": "Bank of America CEO wants a human in the loop",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1011767/bank-of-america-wants-a-human-in-the-loop",
+   "summary": "美國銀行執行長 Brian Moynihan 表示，近來 AI 風險討論「主要是把代理放著自己運作」，而「我們不做這種事」；該行長期政策是員工必須檢查所有交付客戶的 AI 產出，並與 AI 業界共同主張付款授權保留真人，直到代理出錯風險隨能力發展降低。",
+   "date": "2026-10-16",
+   "category": "管理趨勢"
+  },
+  {
+   "title": "What does AI really cost?",
+   "url": "https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-does-ai-really-cost",
+   "summary": "2026 年 AI 供應商轉向按用量計價（每個請求都收費），加上雲端帳單、SaaS 內嵌 AI 與人工檢查輸出的工時，成本變得難估；McKinsey 研究指出從試辦走到正式上線，AI 支出平均近乎翻四倍。案例：一家銀行在開放所有工具與模型、毫無護欄後，年度 AI 支出由 300 萬美元跳到 2,500 萬美元以上；也有組織兩到四個月內用量與支出同步翻倍、模型從 Sonnet 全面換到 Opus。結論是先重想流程再自動化——同樣的用例交給兩個客戶做，結果天差地遠。",
+   "date": "2026-10-16",
+   "category": "管理趨勢"
+  },
   {
    "title": "The AI value curve: The economics of applying AI to existing work",
    "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-ai-value-curve-the-economics-of-applying-ai-to-existing-work",
@@ -639,90 +723,6 @@
    "url": "https://www.managertoday.com.tw/articles/view/73087",
    "summary": "路易莎上半年營收創新高但稅後淨利腰斬，董事長坦承展店過快的策略失誤，是台灣本土企業擴張節奏的借鏡案例。",
    "date": "2026-10-10",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "Google brings agentic AI to Gemini, starting with businesses",
-   "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
-   "summary": "Google 把 agentic AI 帶進 Gemini，先從企業場景落地，讓 AI 代理直接代辦跨工具任務。",
-   "date": "2026-10-09",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "OpenAI's revenue is reportedly $20 billion less than previously projected",
-   "url": "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/",
-   "summary": "報導指 OpenAI 實際營收比原預估少 200 億美元，為 AI 熱潮的變現能力投下變數。",
-   "date": "2026-10-09",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "AI breakthroughs in robotics won't change your life any time soon",
-   "url": "https://www.technologyreview.com/2026/10/08/1145923/ai-breakthroughs-in-robotics-wont-change-your-life-any-time-soon/",
-   "summary": "MIT Tech Review 認為機器人 AI 雖有進展，但要真正走入日常仍言之過早，企業投資需抓對時程。",
-   "date": "2026-10-09",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "美國聯邦政府入口網站 America.gov 上線，底層使用 Google Gemini、Grok",
-   "url": "https://www.ithome.com.tw/news/179309",
-   "summary": "美國聯邦政府新入口網站 America.gov 採用 Gemini、Grok 等模型，公部門 AI 導入再跨一步。",
-   "date": "2026-10-09",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Hear from Ambrosia Energy and Bloom Energy execs on where the AI infrastructure boom is creating opportunity",
-   "url": "https://techcrunch.com/2026/10/08/hear-from-ambrosia-energy-and-bloom-energy-execs-on-where-the-ai-infrastructure-boom-is-creating-opportunity-at-disrupt-2026/",
-   "summary": "能源業者指出 AI 基礎建設熱潮正推升電力需求，能源供給與永續將成 AI 擴張的關鍵瓶頸。",
-   "date": "2026-10-09",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "Scaling AI inference",
-   "url": "https://www.mckinsey.com/industries/semiconductors/our-insights/scaling-ai-inference",
-   "summary": "麥肯錫剖析 AI 推論規模化對算力與能源效率的要求，指向資料中心的永續設計。",
-   "date": "2026-10-09",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "導入 AI 就能少用一些人？福特重金回聘 350 名老將，才知道「應變經驗」省不得",
-   "url": "https://www.managertoday.com.tw/columns/view/73082",
-   "summary": "福特導入 AI 後回頭重聘 350 名資深員工，提醒企業「工作被自動化」不等於「人可被取代」，應變經驗省不得。",
-   "date": "2026-10-09",
-   "category": "人才策略"
-  },
-  {
-   "title": "「待遇面議」的空間再縮小！職缺薪資揭露門檻擬調至 5 萬，勞動部「1.75 倍」公式怎麼算",
-   "url": "https://www.managertoday.com.tw/articles/view/73079",
-   "summary": "勞動部研議修法，職缺薪資揭露門檻擬以最低工資 1.75 倍計算（約 5 萬元），企業招募資訊透明度要求升高。",
-   "date": "2026-10-09",
-   "category": "人才策略"
-  },
-  {
-   "title": "台灣美光罷工投票近 9 成過關！工會痛批：CEO 股票多拿 400 倍、盼公平分配成果",
-   "url": "https://www.managertoday.com.tw/articles/view/72917",
-   "summary": "美光桃園廠工會近 9 成同意罷工，勞方批執行長股票獎勵達員工平均數百倍，考驗企業在 AI 獲利下的成果分配。",
-   "date": "2026-10-09",
-   "category": "人才策略"
-  },
-  {
-   "title": "How Leaders Talk About AI Predicts Adoption",
-   "url": "https://hbr.org/2026/09/how-leaders-talk-about-ai-predicts-adoption",
-   "summary": "HBR 研究指出，領導者談論 AI 的方式會直接影響員工採用程度，溝通框架比工具本身更能左右轉型成敗。",
-   "date": "2026-10-09",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "The CEO's singular impact on the success—or failure—of AI in organizations",
-   "url": "https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/the-ceos-singular-impact-on-the-success-or-failure-of-ai-in-organizations",
-   "summary": "麥肯錫強調 CEO 是 AI 成敗的關鍵少數；缺乏執行長親自定調的組織，轉型多半停在試點階段。",
-   "date": "2026-10-09",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "AI Transformation（BCG）",
-   "url": "https://www.bcg.com/capabilities/artificial-intelligence",
-   "summary": "BCG 指出 AI 轉型價值僅約一成來自應用本身、兩成來自資料與技術，其餘七成靠流程再造與文化；72% 執行長自認是組織內 AI 的主要決策者。",
-   "date": "2026-10-09",
    "category": "管理趨勢"
   }
  ],
