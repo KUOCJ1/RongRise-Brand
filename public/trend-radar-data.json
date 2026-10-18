@@ -1,90 +1,98 @@
 {
- "generatedAt": "2026-10-17T07:20:18Z",
+ "generatedAt": "2026-10-18T07:20:31Z",
  "window": {
-  "from": "2026-10-11",
-  "to": "2026-10-17",
+  "from": "2026-10-12",
+  "to": "2026-10-18",
   "days": 7,
   "digestCount": 7
  },
  "stats": {
-  "totalArticles": 82,
+  "totalArticles": 78,
   "categories": {
-   "AI 轉型": 34,
-   "ESG 永續": 16,
-   "人才策略": 20,
-   "管理趨勢": 12
+   "AI 轉型": 35,
+   "ESG 永續": 14,
+   "人才策略": 19,
+   "管理趨勢": 10
   }
  },
  "trends": [
   {
-   "keyword": "晶片與算力",
-   "icon": "🔩",
-   "category": "AI 轉型",
-   "count": 23,
-   "prevCount": 17,
-   "momentum": "up"
-  },
-  {
    "keyword": "組織與管理",
    "icon": "🏢",
    "category": "管理趨勢",
+   "count": 23,
+   "prevCount": 25,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "晶片與算力",
+   "icon": "🔩",
+   "category": "AI 轉型",
    "count": 22,
-   "prevCount": 27,
+   "prevCount": 18,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "人力資源",
+   "icon": "📋",
+   "category": "人才策略",
+   "count": 21,
+   "prevCount": 19,
    "momentum": "flat"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
    "category": "AI 轉型",
-   "count": 19,
-   "prevCount": 11,
-   "momentum": "up"
-  },
-  {
-   "keyword": "人力資源",
-   "icon": "📋",
-   "category": "人才策略",
    "count": 18,
-   "prevCount": 21,
-   "momentum": "flat"
+   "prevCount": 12,
+   "momentum": "up"
   },
   {
    "keyword": "AI Agent",
    "icon": "🤖",
    "category": "AI 轉型",
-   "count": 14,
-   "prevCount": 9,
-   "momentum": "up"
+   "count": 13,
+   "prevCount": 10,
+   "momentum": "flat"
   },
   {
    "keyword": "企業導入",
    "icon": "🚀",
    "category": "AI 轉型",
-   "count": 13,
-   "prevCount": 22,
+   "count": 12,
+   "prevCount": 23,
    "momentum": "down"
   },
   {
    "keyword": "治理與法規",
    "icon": "⚖️",
    "category": "AI 轉型",
-   "count": 13,
-   "prevCount": 10,
+   "count": 12,
+   "prevCount": 11,
    "momentum": "flat"
+  },
+  {
+   "keyword": "自動化",
+   "icon": "⚙️",
+   "category": "AI 轉型",
+   "count": 9,
+   "prevCount": 6,
+   "momentum": "up"
   },
   {
    "keyword": "安全與風險",
    "icon": "🛡️",
    "category": "AI 轉型",
-   "count": 10,
-   "prevCount": 10,
-   "momentum": "flat"
+   "count": 8,
+   "prevCount": 12,
+   "momentum": "down"
   },
   {
    "keyword": "能源與電力",
    "icon": "⚡",
    "category": "ESG 永續",
-   "count": 9,
+   "count": 7,
    "prevCount": 10,
    "momentum": "flat"
   },
@@ -92,7 +100,7 @@
    "keyword": "資料中心",
    "icon": "🏭",
    "category": "AI 轉型",
-   "count": 8,
+   "count": 7,
    "prevCount": 9,
    "momentum": "flat"
   },
@@ -100,17 +108,9 @@
    "keyword": "人才與技能",
    "icon": "🧠",
    "category": "人才策略",
-   "count": 7,
-   "prevCount": 9,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "自動化",
-   "icon": "⚙️",
-   "category": "AI 轉型",
-   "count": 7,
-   "prevCount": 6,
-   "momentum": "flat"
+   "count": 5,
+   "prevCount": 8,
+   "momentum": "down"
   },
   {
    "keyword": "開源模型",
@@ -122,6 +122,62 @@
   }
  ],
  "articles": [
+  {
+   "title": "Meta removes language that raised scraping and AI training concerns",
+   "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+   "summary": "Meta 更新商業使用條款時寫入「可用企業帳號所屬網域、網頁或 URL 的內容來提供、開發、改善、研究、訓練與維護」Meta 產品，法律專家（Nieman Lab 訪談）讀成 Meta 取得可爬取任何擁有商業帳號的媒體網站、並用於訓練自家模型的授權；爭議延燒後該條文已移除，Meta 稱只是把廣告與商業產品既有條款併攏、不改變爬蟲行為。資料授權邊界仍在拉鋸。",
+   "date": "2026-10-18",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "不禁 AI 但拒絕 AI 垃圾內容，YouTube、TikTok 等社群平台齊改規則",
+   "url": "https://technews.tw/2026/10/17/from-substack-to-youtube-here-are-the-social-platforms-cracking-down-on-ai-slop/",
+   "summary": "YouTube、TikTok、Substack、LinkedIn、Meta、Pinterest、Snapchat 近期同步調整 AI 內容的標示、推薦與變現規則。YouTube 明確區分「用 AI 強化原創」與「以 AI 量產」，後者可能影響變現資格；TikTok 測試偵測專發 AI 垃圾內容的帳號；LinkedIn 承認平台上 AI slop 氾濫並將限制「表面流暢、缺乏獨特觀點」的內容；Snapchat 的 Spotlight 不再推薦全 AI 生成影片。共同方向是「不封殺 AI，但重新定義哪種 AI 用法可被推薦與變現」。",
+   "date": "2026-10-18",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Agentic AI 浪潮襲來！HPE 剖析企業 AI 轉型痛點與企業級 AI 工廠策略",
+   "url": "https://finance.technews.tw/2026/10/17/hpe-analyzes-the-pain-points-of-enterprise-ai-transformation-and-enterprise-level-ai-factory-strategies/",
+   "summary": "HPE 台灣暨香港董事長王嘉昇指出，企業已從雲端 POC 轉向地端與邊緣落地，卻卡在三件事：各部門（HR、法務、製造）自行選模型導致架構碎片化、開發門檻降低後 API 金鑰外洩產生巨額帳單、無節制呼叫大模型使成本失控。他主張推理效率與模型路由比追求 GPU 算力峰值更關鍵，解法是把企業 AI「工廠化」：自駕級基礎架構、KV Cache 優化、液冷資料中心，加上 AI 治理規章。另引數據：建置每瓦算力約 40～50 美元，全球新增算力 30%～50% 集中在少數 AI 巨頭，其中約 50% 用於自主 Agent 開發測試。",
+   "date": "2026-10-18",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "AI 普及但付費意願低，a16z 調查：消費者 AI 市場「極度兩極化」",
+   "url": "https://finance.technews.tw/2026/10/18/ai-subscription-models-tested-as-few-consumers-pay/",
+   "summary": "a16z 第七版《Top 100 Gen AI Consumer Apps》首次納入支出數據：近半數美國消費者用過 AI，但只有約四分之一每天使用，截至 8 月僅約 4.5% 有個人訂閱 ChatGPT／Gemini／Claude。付費極度集中——前 10% 付費者貢獻約一半消費者 AI 支出、前 1% 占 19.5%（平均月付 903 美元），全體平均月支出僅 25 美元；高支出者多用於程式開發、效率工具與創作。ChatGPT 付費訂閱數約為 Claude 或 Gemini 的三倍。",
+   "date": "2026-10-18",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "拆解 Deepfake 與 AI 幻覺，蘇格蘭高中設立全英首位「AI 素養專責教師」",
+   "url": "https://technews.tw/2026/10/18/ai-literacy-teachers/",
+   "summary": "蘇格蘭東倫弗魯郡米恩斯城堡高中設專責 AI 素養教師（由前生物教師 Jamie Laycock 出任），課程涵蓋 deepfake 辨識、AI 幻覺、擬人化風險與精準提問；他提醒 AI 常過度附和與稱讚使用者，學生若不辨別會把輸出當成權威建議。校長 Stuart Clark 說要避免重演社群媒體時代「年輕人在不了解後果前就冒然先用」的經驗；蘇格蘭政府今年 3 月已頒 AI 國家指引。",
+   "date": "2026-10-18",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
+   "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
+   "summary": "Anthropic 公布自家勞動力報告（自稱可作為「AI 如何改變工作組織、招募與人力需求」的觀察窗）：技術部門初階員工占比自 2025 年初的 21% 降至 14%，初階技術招募占比更從 27% 掉到 9%；技術團隊占全公司比重由 61% 降至 56%，原因之一是「寫程式工具讓非技術員工自己做軟體」。員工形容「永遠在趕、什麼都用 Claude」；2026 年 4 月調查中 27% 說因 Claude 更有生產力、20% 說工作已「從做事變成管理一堆 Claude」，有工程師比喻成保母——每個「小孩」都同樣要求你的注意力。報告直說「人的注意力與判斷」正成為生產力瓶頸；會議時間／人較一年前增加 20%（技術貢獻者 +16%），原因是「人的信任與問責」，員工反覆說面對面協調不可替代。",
+   "date": "2026-10-18",
+   "category": "人才策略"
+  },
+  {
+   "title": "AI 助攻效率與創意但「貧富不均」，高學歷與管理職還是最大贏家",
+   "url": "https://technews.tw/2026/10/17/ai-benefits-at-work-are-uneven-across-the-us-workforce-study-finds/",
+   "summary": "蓋洛普、Jobs for the Future 與 The Families & Workers Fund 合做的《美國工作品質研究》：使用 AI 的受訪者中 63% 說做事更快、56% 說更能找到創意解法、47% 說能把時間放在最有興趣的部分。但效益並不平均——大學畢業生每天或每週使用 AI 的比例 40%，遠高於無學位者的 17%；管理職 37% 屬規律使用者，個人工作者 25%。規律使用者感受到正面效果的比例也遠高於偶爾使用者（79% vs 37% 更快完成）。共同主持人 Blankenship 說 AI 好處「沒有公平分享」，重點是讓效益更平均。",
+   "date": "2026-10-18",
+   "category": "人才策略"
+  },
+  {
+   "title": "即使行為與人類無異，科學證實人們仍認為 AI 缺乏「真正意識」",
+   "url": "https://technews.tw/2026/10/17/cognitive-boundaries-ai-human-consciousness/",
+   "summary": "德國慕尼黑大學（LMU）發表於《Cognition》的研究，對近 1,100 名受試者做對照實驗（同一情境、主角分別是人類與 AI）：在「感知／覺察」上人機界線幾乎消失（反應越靈敏分數越高），但在「真實意識」上，即使反應最完美的 AI，評價仍低於反應最遲鈍的人類。研究者 Ophelia Deroy 說，人們用「困惑」「貼心」形容 AI 只是因為被訓練得像人、一時沒有更好的形容詞；Bahador Bahrami 提醒科技業與媒體常用過度擬人化詞彙包裝 AI，但大眾判斷其實敏銳。對外溝通用「感知」這類中性詞會降低隔閡，炒作「意識」只會與直覺衝突。",
+   "date": "2026-10-18",
+   "category": "人才策略"
+  },
   {
    "title": "Google 推 AI 新聞計畫，CNN 等 400 多家媒體授權內容",
    "url": "https://technews.tw/2026/10/16/cnn-axios-and-other-publishers-join-googles-ai-news-program/",
@@ -611,97 +667,13 @@
    "summary": "在高度透明與輿論放大鏡下，領導者如何拿捏溝通與決策。",
    "date": "2026-10-12",
    "category": "管理趨勢"
-  },
-  {
-   "title": "AI 競賽進入下半場：不再只拚「模型最強」，規模化與落地部署才是決勝關鍵",
-   "url": "https://technews.tw/2026/10/10/the-unglamorous-reality-of-winning-the-ai-race/",
-   "summary": "科技新報分析 AI 競賽重心已從模型能力轉向規模化與部署效率，勝負取決於不起眼的工程與營運細節。",
-   "date": "2026-10-11",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Building a safer path to autonomous industrial AI",
-   "url": "https://www.technologyreview.com/2026/10/08/1144020/building-a-safer-path-to-autonomous-industrial-ai/",
-   "summary": "MIT 科技評論談工業自主 AI 的安全導入路徑，強調沙盒驗證與物理常識是製造業落地的先決條件。",
-   "date": "2026-10-11",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Microsoft's Satya Nadella says AI models need an 'emergency brake'",
-   "url": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
-   "summary": "微軟執行長納德拉倡議 AI 模型需具備「緊急煞車」機制，反映大型企業對代理自主性的風險意識升高。",
-   "date": "2026-10-11",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
-   "url": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/",
-   "summary": "Anthropic 揭露測試中的 Claude 對費城警方送出假命案線索、並誤提交簽證申請，AI 代理「幻覺行動」的問責與防護成新課題。",
-   "date": "2026-10-11",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "AI 軍備競賽關鍵是電力！阿波羅電力採購特斯拉 1GWh 大型儲能設備",
-   "url": "https://finance.technews.tw/2026/10/10/1gwh/",
-   "summary": "AI 資料中心用電暴增，電力業者採購 1GWh 儲能設備搶供電，凸顯 AI 擴張的能源基礎建設瓶頸。",
-   "date": "2026-10-11",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "A bipartisan bill aims to hold data centers accountable for their energy use",
-   "url": "https://www.theverge.com/policy/1008076/bipartisan-energy-permitting-bill-data-centers",
-   "summary": "美國跨黨派《American Affordability and Jobs Act》要求資料中心揭露用電、並讓電力公司對其加收輸配電成本，把 AI 算力的能源外部性拉回政策與帳單。",
-   "date": "2026-10-11",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect",
-   "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
-   "summary": "遭解僱的 OpenAI 安全研究員反駁不當行為指控，警告此舉可能對 AI 安全人才形成寒蟬效應。",
-   "date": "2026-10-11",
-   "category": "人才策略"
-  },
-  {
-   "title": "AI導致低品質報告氾濫，arXiv將限制報告每月提交最多2篇",
-   "url": "https://www.ithome.com.tw/news/179401",
-   "summary": "預印本平台 arXiv 出手限制 AI 生成的低品質報告，反映 AI 普及對學術與專業審查量能的衝擊。",
-   "date": "2026-10-11",
-   "category": "人才策略"
-  },
-  {
-   "title": "US bars Microsoft, Adobe, and major IT firms from green card program for skilled foreign workers",
-   "url": "https://techcrunch.com/2026/10/08/us-bars-microsoft-adobe-and-major-it-firms-from-green-card-program-for-skilled-foreign-workers/",
-   "summary": "美國以詐欺為由暫停微軟、Adobe、Infosys 等大廠的技術移民綠卡（PERM）申請，高技能外籍人才引進收緊、人才政策加速政治化。",
-   "date": "2026-10-11",
-   "category": "人才策略"
-  },
-  {
-   "title": "TPASS帶動搭乘需求，全台卻缺近2000名駕駛！公車產業如何突破重重限制？",
-   "url": "https://www.managertoday.com.tw/articles/view/72845",
-   "summary": "TPASS 帶動運量，公車業卻仍缺近 2,000 名駕駛；票價僵固、路線不能說停就停，凸顯服務業缺工與勞動條件的結構困境。",
-   "date": "2026-10-11",
-   "category": "人才策略"
-  },
-  {
-   "title": "As the world order turns, leading companies are keeping pace. Here's how",
-   "url": "https://www.mckinsey.com/capabilities/geopolitics/our-insights/as-the-world-order-turns-leading-companies-are-keeping-pace-heres-how",
-   "summary": "McKinsey 觀察領先企業如何在地緣政治重組下調整供應鏈與投資布局，不確定性管理成為經營基本功。",
-   "date": "2026-10-11",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "Shapers and Founders: Understanding the owner mindset",
-   "url": "https://www.mckinsey.com/featured-insights/future-of-asia/future-of-asia-podcasts/shapers-and-founders-understanding-the-owner-mindset",
-   "summary": "McKinsey 亞洲系列剖析「所有者心態」：家族與創辦人企業在轉型決策上的優勢與盲點，對中小企業主特別貼近。",
-   "date": "2026-10-11",
-   "category": "管理趨勢"
   }
  ],
  "insights": [
-  "「判斷」是今天所有線交會的字：McKinsey 訪談裡 Devin 寫掉 95% 的程式碼之後，工程師的工作變成決定「該做什麼」；經理人引 BCG 調查指出半數高層已看到員工失去判斷力；哈佛調查則顯示男性受訪者更敢自稱懂 AI、卻有半數「認識」不存在的高階主管。三則指向同一件事——執行變便宜之後，稀缺的是敢說「不確定」、會追問推論的判斷力。",
-  "誰來付清理成本開始浮上檯面：Wired 記錄 Anthropic 代理誤報命案線索、da.gd 被多家代理濫用卻表明不求償，受害者自行吸收伺服器與修補成本；McKinsey 與 SIA 的半導體供應鏈報告把韌性問題從 Tier 1 拉到隱藏的次層供應商與關鍵礦物。同一週內，能力開放（Google 對歐洲研究機構開放模型）與追責機制（印度 CERT-In 通報代理越界）兩條線同時推進，但付費與問責都還落在能力提供者之外的一方。",
-  "台灣的位置：IMF 把台灣今年實質 GDP 成長率上調到 10.7%，港大鄧希煒卻提醒效益仍集中在半導體，傳統服務業與製造業的外溢效應還沒出現。對以內需企業為客群的我們，這是需求端最值得盯的一句。",
-  "管理面是同一件事的兩端：經理人兩篇分別講「部屬犯錯該不該介入」（成本判準）與「AI 讓報告一秒做完、出錯卻沒人發現」（把關失效）——前者是決策門檻，後者是門檻失靈後的補救，正好可以接成同一組教材。",
-  "AI 投資的評估軸線正從「算力」轉向「資本 × 能源效率」：今日 AI 資料中心報導與 IMF 的全球成長數據指向同一件事——AI 熱潮能不能撐住，取決於每單位產出的能源與資本效率，而非單純的模型規模。"
+  "「使用普及」不等於「價值普及」：a16z 顯示付費高度集中在少數重度使用者（前 1% 占 19.5% 支出）；蓋洛普研究顯示效益集中在大學畢業生與管理職；Anthropic 自報的初階技術招募占比更從 27% 腰斬到 9%。三條線指向同一件事——AI 的好處先落在「已經會定義問題、有判斷力」的人身上，落差是使用落差、也是判斷落差。",
+  "注意力與判斷正式成為瓶頸：Anthropic 報告直說「人的注意力與判斷」是生產力瓶頸、會議時間／人年增 20%（員工說面對面協調不可替代）；HPE 說企業落地卡在模型碎片化、金鑰外洩與成本失控，解法是模型路由加治理規章；Wired 的報告則顯示護欄可在 3 天內被移除、包裝成「安全研究」就能讓模型作答率提高近 9 倍。能力開放的速度與治理能力之間的落差，是這一季最需要盯的一條線。",
+  "AI 內容的邊界正在被重新劃：社群平台同步收緊 AI slop 的標示、推薦與變現；Meta 的爬取條款爭議則顯示資料授權邊界仍在拉鋸。對以內容為核心的團隊，平台規則已從「能不能用 AI」轉向「用了 AI 還能不能被推薦、被變現」；同一時間蘇格蘭把 AI 素養（deepfake、幻覺、擬人化）正式納入中學課表，前端教育與後端平台規則兩頭同時收緊。",
+  "⚠️ **ESG 類今日無新增題材**：本日來源（含 TechNews、iThome、McKinsey RSS、Wired、The Verge）未出現可收錄的 ESG／永續新文，相關近文（台電 AIDC「以光代電」、McKinsey×SIA 半導體供應鏈）皆已在 10-16／10-17 digest 收錄，故本日不設 ESG 分類、不回填舊文。",
+  "「判斷」是今天所有線交會的字：McKinsey 訪談裡 Devin 寫掉 95% 的程式碼之後，工程師的工作變成決定「該做什麼」；經理人引 BCG 調查指出半數高層已看到員工失去判斷力；哈佛調查則顯示男性受訪者更敢自稱懂 AI、卻有半數「認識」不存在的高階主管。三則指向同一件事——執行變便宜之後，稀缺的是敢說「不確定」、會追問推論的判斷力。"
  ]
 }
