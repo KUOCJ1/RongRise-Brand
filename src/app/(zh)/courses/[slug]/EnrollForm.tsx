@@ -65,7 +65,7 @@ export default function EnrollForm({
         setResult({ ok: false, msg: data.message || "送出失敗，請稍後再試或直接來信。" });
       }
     } catch {
-      setResult({ ok: false, msg: "連線失敗，請稍後再試或直接來信 info@rongrise.com。" });
+      setResult({ ok: false, msg: "連線失敗，請稍後再試或直接來信 info@rong-rise.com。" });
     } finally {
       setSending(false);
     }
@@ -189,8 +189,8 @@ export default function EnrollForm({
         <p className="text-body text-text-secondary mb-4">
           歡迎來信留下聯絡方式，我們會在下一梯次開放時第一時間通知你。
         </p>
-        <a href="mailto:info@rongrise.com" className="btn-secondary inline-block">
-          info@rongrise.com
+        <a href="mailto:info@rong-rise.com" className="btn-secondary inline-block">
+          info@rong-rise.com
         </a>
       </div>
     );

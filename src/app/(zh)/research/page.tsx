@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "研究專刊｜白皮書 — 榕耀管顧",
   description: "榕耀管顧研究專刊系列，探討 AI 時代的管理議題：心智頻寬、AI Agent 績效管理、任務變形蟲。免費閱讀。",
   alternates: {
-    canonical: "https://rongrise.com/research",
+    canonical: "https://rong-rise.com/research",
   },
   openGraph: {
     title: "研究專刊｜白皮書 — 榕耀管顧",

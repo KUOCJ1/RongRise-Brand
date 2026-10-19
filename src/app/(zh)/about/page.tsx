@@ -441,7 +441,7 @@ export default function AboutPage() {
             <div>
               <div className="text-3xl mb-3">📧</div>
               <h4 className="font-semibold mb-1">Email</h4>
-              <a href="mailto:info@rongrise.com" className="text-white/70 text-sm hover:text-white transition-colors">info@rongrise.com</a>
+              <a href="mailto:info@rong-rise.com" className="text-white/70 text-sm hover:text-white transition-colors">info@rong-rise.com</a>
             </div>
             <div>
               <div className="text-3xl mb-3">📱</div>
@@ -501,7 +501,7 @@ export default function AboutPage() {
               讓我們一起探索最適合您企業的發展路徑。
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="mailto:info@rongrise.com" className="btn-primary bg-white text-primary font-bold hover:bg-white/95">
+              <a href="mailto:info@rong-rise.com" className="btn-primary bg-white text-primary font-bold hover:bg-white/95">
                 ✉️ 發送 Email
               </a>
               <Link href="/downloads" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white">

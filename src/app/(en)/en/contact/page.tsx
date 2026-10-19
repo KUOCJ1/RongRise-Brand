@@ -47,8 +47,8 @@ export default function EnContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-text-primary mb-1">Email</h3>
-                      <a href="mailto:info@rongrise.com" className="text-text-secondary hover:text-primary transition-colors">
-                        info@rongrise.com
+                      <a href="mailto:info@rong-rise.com" className="text-text-secondary hover:text-primary transition-colors">
+                        info@rong-rise.com
                       </a>
                       <p className="text-text-secondary text-sm mt-1">We typically respond within 24 hours</p>
                     </div>
@@ -121,7 +121,7 @@ export default function EnContactPage() {
                       Schedule a free 30-minute consultation with C.J. Kuo to discuss your business transformation needs.
                     </p>
                     <a
-                      href="mailto:info@rongrise.com?subject=Consultation%20Request"
+                      href="mailto:info@rong-rise.com?subject=Consultation%20Request"
                       className="btn-primary inline-flex items-center gap-2"
                     >
                       ✉️ Send Email
@@ -213,7 +213,7 @@ export default function EnContactPage() {
             No matter what stage of transformation you&apos;re at, we can provide professional and practical advice.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="mailto:info@rongrise.com" className="btn-primary bg-white text-primary font-bold hover:bg-white/95">
+            <a href="mailto:info@rong-rise.com" className="btn-primary bg-white text-primary font-bold hover:bg-white/95">
               ✉️ Send Email
             </a>
             <Link href="/assistant" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white">

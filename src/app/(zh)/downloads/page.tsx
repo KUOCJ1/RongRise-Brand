@@ -10,9 +10,9 @@ export const metadata: Metadata = {
   description:
     "免費下載榕耀管顧精選資源：AI 成熟度自評量表、ESG 盤點清單、AI 轉型策略白皮書、政府補助指南。持續更新中。",
   alternates: {
-    canonical: "https://rongrise.com/downloads",
+    canonical: "https://rong-rise.com/downloads",
     languages: {
-      en: "https://rongrise.com/en/downloads",
+      en: "https://rong-rise.com/en/downloads",
     },
   },
   openGraph: {

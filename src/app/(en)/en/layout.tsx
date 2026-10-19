@@ -79,7 +79,7 @@ const jsonLd = {
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer service",
-    email: "info@rongrise.com",
+    email: "info@rong-rise.com",
     areaServed: "TW",
     availableLanguage: ["English", "Chinese"],
   },

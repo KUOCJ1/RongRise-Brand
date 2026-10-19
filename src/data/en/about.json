@@ -61,7 +61,7 @@
     "tag": "Contact",
     "title": "Get in Touch",
     "items": [
-      { "icon": "📧", "label": "Email", "value": "info@rongrise.com", "href": "mailto:info@rongrise.com" },
+      { "icon": "📧", "label": "Email", "value": "info@rong-rise.com", "href": "mailto:info@rong-rise.com" },
       { "icon": "💼", "label": "LinkedIn", "value": "C.J. Kuo", "href": "https://www.linkedin.com/in/c-j-kuo-5629b97b/" },
       { "icon": "📍", "label": "Service Area", "value": "Worldwide · Online Consultation", "href": null }
     ],

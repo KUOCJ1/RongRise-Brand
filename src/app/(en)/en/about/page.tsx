@@ -223,7 +223,7 @@ export default function AboutEnPage() {
             Whether you are just starting or deep into your transformation journey, let us find the best path together.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="mailto:info@rongrise.com" className="btn-primary bg-white text-primary font-bold hover:bg-white/95">
+            <a href="mailto:info@rong-rise.com" className="btn-primary bg-white text-primary font-bold hover:bg-white/95">
               ✉️ Send Email
             </a>
             <Link href="/en/downloads" className="btn-secondary border-white/40 text-white hover:bg-white/15 hover:border-white">
