@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>授權悖論｜你交給 AI 的工作越長，你越驗不動它 — 榕耀管顧研究專刊</title>
-<meta name="description" content="榕耀管顧研究專刊系列第 4 本。AI 能完成的任務每七個月翻一倍，人的審核能力沒有對應的變化。本書用 65 筆可查證來源，說明授權悖論的三層結構、審核失效的實驗證據，以及授權四級與三層審核的操作框架。">
-<meta property="og:title" content="授權悖論｜榕耀管顧研究專刊">
+<title>人類與 AI 的授權悖論｜你交給 AI 的工作越長，你越驗不動它 — 榕耀管顧研究專刊</title>
+<meta name="description" content="榕耀管顧研究專刊系列第 4 本。本書談的不是系統權限，也不是法律代理，而是「人類把工作交給 AI 之後，還能不能驗證它」。用 65 筆可查證來源說明三層結構、審核失效的實驗證據，並提出授權四級與三層審核框架。">
+<meta property="og:title" content="人類與 AI 的授權悖論｜榕耀管顧研究專刊">
 <meta property="og:description" content="你交給 AI 的工作越長，你越沒有能力審核它。榕耀管顧研究專刊系列第 4 本。">
 <meta property="og:image" content="https://rong-rise.com/research/authorization-paradox/og-image.jpg">
 <meta property="og:type" content="article">
@@ -243,7 +243,33 @@ tr:hover td { background: rgba(232,145,42,0.04); }
 .exhibit tbody tr:hover td { background:rgba(232,145,42,0.06); }
 .exhibit .source { font-size:12.5px; color:#8a8a8a; margin:10px 0 0; line-height:1.65; }
 
-/* 圖表：HTML 長條（手機自動換行，不需要橫向滑動） */
+/* ===== Executive Summary ===== */
+.h1-pre { display:block; font-size:clamp(15px,2.2vw,20px); font-weight:500; color:rgba(255,255,255,0.72); letter-spacing:2px; margin-bottom:10px; }
+
+.exec-summary { background:#FFFFFF; border:1px solid #E4DED2; border-top:4px solid var(--navy);
+  border-radius:10px; padding:30px 30px 24px; margin:8px 0 36px; box-shadow:0 2px 10px rgba(13,43,78,0.06); }
+.exec-summary .es-kicker { font-size:11px; letter-spacing:3px; font-weight:700; color:var(--gold); }
+.exec-summary h2 { font-family:'Noto Serif TC',serif; font-size:clamp(22px,3.4vw,28px); color:var(--navy);
+  margin:8px 0 10px; letter-spacing:0.5px; }
+.exec-summary .es-lead { font-size:15.5px; line-height:1.85; color:#2f2f2f; margin:0 0 6px;
+  padding-left:14px; border-left:3px solid var(--gold); }
+.exec-summary .es-h3 { font-size:14px; font-weight:700; color:var(--navy); margin:24px 0 8px;
+  letter-spacing:0.5px; }
+.exec-summary .es-h3 span { font-weight:400; color:#9a9384; font-size:12.5px; margin-left:6px; }
+.exec-summary .es-h3-pov { color:#A86414; }
+.es-list { margin:0; padding-left:0; list-style:none; }
+.es-list li { position:relative; padding-left:20px; margin:9px 0; font-size:14.5px; line-height:1.8; color:#3a3a3a; }
+.es-list li::before { content:"▍"; position:absolute; left:0; top:0; color:var(--gold); font-size:13px; }
+.es-list li strong { color:var(--navy); }
+.es-list-pov li::before { color:var(--teal); }
+.exec-summary .es-foot { font-size:12.5px; color:#8a8a8a; margin:18px 0 0; padding-top:14px;
+  border-top:1px dashed #E4DED2; }
+
+/* ===== 名詞定義 ===== */
+.def-box { background:#FFF9EF; border:1px solid #F0DFC4; border-left:4px solid var(--gold);
+  border-radius:8px; padding:18px 20px; margin:20px 0 26px; }
+.def-box .def-title { font-size:13px; font-weight:700; color:#A86414; letter-spacing:1px; margin-bottom:6px; }
+.def-box p { margin:0; font-size:14.5px; line-height:1.8; color:#3a3a3a; }
 .bars { margin: 18px 0 6px; }
 .bar-row { display:grid; grid-template-columns: 168px 1fr 96px; align-items:center; gap:12px; margin:11px 0; }
 .bar-label { font-size:13.5px; color:#3f3f3f; line-height:1.45; }
@@ -278,7 +304,7 @@ tr:hover td { background: rgba(232,145,42,0.04); }
 <header class="cover">
   <div class="series-badge">榕耀管顧研究專刊系列 第 4 本</div>
   <div class="kicker">RongRise Research · 2026</div>
-  <h1>授權悖論</h1>
+  <h1><span class="h1-pre">人類與 AI 的</span>授權悖論</h1>
   <p class="subtitle">你交給 AI 的工作越長、越難，你越沒有能力審核它。這不是使用方式的問題，是兩條曲線的斜率問題。</p>
   <div class="meta">
     <span>2026 年 10 月</span><span>·</span><span>約 10,500 字</span><span>·</span><span>閱讀時間 30 分鐘</span>
@@ -293,52 +319,55 @@ tr:hover td { background: rgba(232,145,42,0.04); }
 <main class="content">
   <div class="container">
 
+    <section class="exec-summary">
+      <div class="es-kicker">EXECUTIVE SUMMARY</div>
+      <h2>三十秒讀完這本書</h2>
+      <p class="es-lead">AI 能做的事越深，人越沒有能力驗證它。這不是使用方式的問題，是兩條能力曲線的斜率問題。解法不是限制 AI，而是把審核從「一個人的簽核」，換成「多來源的對抗性審核」。</p>
+
+      <h3 class="es-h3">五個判斷</h3>
+      <ul class="es-list">
+        <li><strong>授權越深，可驗證性越低。</strong>你交出去的工作長度，已經超過你自己從頭做完它所需要的時間；而它變強的地方，正好是你原本不知道答案的題目。</li>
+        <li><strong>兩條曲線的斜率差一個量級。</strong>AI 能完成的任務長度約每 7 個月翻一倍（2024 年起估計 88.6 天）；人的工作記憶約 4 個組塊、行為吞吐約每秒 10 bit，二十年沒有量級變化。</li>
+        <li><strong>人會跟著錯，方向可預測。</strong>44 位受過 20 小時 AI 素養訓練的醫師，收到含錯建議後診斷正確率 84.9% → 73.3%；AI 解釋錯誤時人的正確率 35%，比不給解釋的 49% 更低。</li>
+        <li><strong>產出變好，不等於能力變好。</strong>133 位專利律師三個月實驗：AI 期間草稿品質 +0.38 SD；移除 AI 後，資深 +0.45 SD、資淺 −0.03 SD。</li>
+        <li><strong>最大風險是不知道自己超出範圍。</strong>65% 企業遇過代理越界，只有 32% 能在數分鐘內圍堵、34.2% 在行動當下檢查授權、46% 查不出近 30 天完整軌跡。</li>
+      </ul>
+
+      <h3 class="es-h3 es-h3-pov">我們的三個觀點<span>（本書原創，非引用）</span></h3>
+      <ul class="es-list es-list-pov">
+        <li><strong>審核有三種成本，組織只投資第一種。</strong>讀懂、查證、否決。前兩種靠資料治理，第三種靠制度設計；多數簽核失效不是看不懂，是沒有人願意付出否決的代價。</li>
+        <li><strong>授權該用「能不能回頭」分級，不是用金額或部門。</strong>L1 建議、L2 可逆執行、L3 不可逆執行、L4 對外代表。同一家公司可以對 L1 完全放手、對 L4 一律人工，兩者不衝突。</li>
+        <li><strong>「診斷而不執行」是判斷力斷代的機制。</strong>新人看得出問題，卻沒有動手改對的練習；AI 代勞掉的正好是後半段。於判斷力只長在原本就有底子的人身上。</li>
+      </ul>
+
+      <h3 class="es-h3">如果只有五分鐘，做這三件事</h3>
+      <ol class="es-list">
+        <li>把公司所有 AI 動作列成一張表，用授權四級標一遍。</li>
+        <li>挑一個 L3 或 L4 的動作，實際演練一次回復，並計時。</li>
+        <li>在 AI 產出的交付格式加一欄「依據」，空白的不採用。</li>
+      </ol>
+
+      <p class="es-foot">以下章節依序展開證據、制度實驗與適用邊界；完整版文末可下載 19 頁 PDF。</p>
+    </section>
+
     <div class="method-note">
       <strong>這本書怎麼寫的</strong>
       <p>本書的材料分三層。第一層是可查證的公開研究與監理文件，每一項數字後面都附機構與日期，完整清單見書末。第二層是 2026 年下半年企業與政府的真實事故，用在需要說明「這件事已經發生」的地方。第三層是榕耀管顧自己的觀察與推論，會在句子裡標明，不與前兩層混用。</p>
       <p>有些題目目前沒有可靠答案。遇到這種地方，本書不會硬給結論，而是把問題留在章末。讀者如果發現某個數字與你手上的版本不同，請以原始來源為準，並歡迎告訴我們。</p>
     </div>
 
-    <h2 class="section-title">執行摘要：五個核心判斷</h2>
-    <p class="section-subtitle">如果只讀一頁，讀這五段。</p>
-
-    <div class="judgment">
-      <div class="judgment-num">01</div>
-      <h3>授權的深度與可審核性，是往反方向走的。</h3>
-      <p>你交給 AI 的任務越長、越複雜、越接近「沒有標準答案」的判斷題，你越沒有能力檢查它做對還是做錯。過去 AI 做的是你已知答案的事，這一類你驗得動。現在它開始做你原本不知道答案的事，這一類只能看結果。而結果來得慢、錯了不能回頭。</p>
-    </div>
-
-    <div class="judgment">
-      <div class="judgment-num">02</div>
-      <h3>兩條曲線的斜率差了一個量級，而且差距還在擴大。</h3>
-      <p>研究機構 METR 追蹤前沿模型能獨立完成的任務長度，2019 年以來大約每七個月翻一倍；2024 年之後的估計縮短到 88.6 天。人類這一側沒有對應的變化：工作記憶的專注焦點平均約四個組塊，行為的資訊吞吐量約每秒 10 bit。這不是誰不努力，是兩條線的斜率本來就不一樣。</p>
-    </div>
-
-    <div class="judgment">
-      <div class="judgment-num">03</div>
-      <h3>審核失效已經有實驗數據，偏誤的方向是「人傾向相信 AI」。</h3>
-      <p>一項隨機臨床試驗找來 44 位受過 20 小時 AI 素養訓練的醫師。收到含錯的模型建議後，診斷推理正確率從 84.9% 掉到 73.3%，首選診斷從 90.5% 掉到 76.1%。另一項研究發現，當 AI 的解釋是錯的，人的正確率只剩 35%，比完全不給解釋的 49% 還低。解釋本身會變成一種說服力。</p>
-    </div>
-
-    <div class="judgment">
-      <div class="judgment-num">04</div>
-      <h3>制度可以放大審核能力，但目前多數機制還沒有被證明有效。</h3>
-      <p>法規端最具體的是歐盟 AI 法第 14 條：高風險系統必須能被自然人有效監督，條文甚至點名「自動化偏誤」。但實證偏悲觀。大型語言模型自己當評審，成對偏好的結果平均有 13.6% 會翻轉；119 位專業審計師在審核自動化產出時，投入時間明顯較少、揪錯效果也較差。要求「有人監督」寫得出來，讓監督真的發生是另一件事。</p>
-    </div>
-
-    <div class="judgment">
-      <div class="judgment-num">05</div>
-      <h3>真正的風險不是 AI 超出範圍，是你不知道自己超出了範圍。</h3>
-      <p>2026 年 8 月的一項企業調查顯示，65% 的企業經歷過 AI 代理做出預期範圍外的行為，其中 29% 造成可量測的組織影響。但只有 32% 能在數分鐘內偵測並圍堵，只有 34.2% 在行動當下檢查授權，46% 無法還原某個代理近 30 天的完整軌跡。企業已經開始關門，但多半是在事故曝光之後。</p>
-    </div>
-
-    <h2 class="section-title">一、問題定義：授權悖論</h2>
+<h2 class="section-title">一、問題定義：授權悖論</h2>
 
     <h3>1.1 一個具體的場景</h3>
     <p>一位主管把一份市場進入評估交給 AI。他給的指示很清楚：三個市場、兩年財務預測、主要風險、建議順序。四十分鐘後，他收到一份二十八頁的文件，架構完整、數字齊全、還附了敏感度分析。</p>
     <p>他讀了二十分鐘，覺得「看起來很合理」。於是他簽了，往上送。</p>
     <p>問題不在他偷懶。問題在於：這份文件的每一個判斷，都建立在他沒有查證的假設上。某個市場的監理門檻被低估、某個客群的付費意願引用了一份三年前的調查、某個成本項目漏掉了通路折讓。這些錯誤不會在閱讀時跳出來，只會在十八個月後出現在財報上。</p>
     <p>而他之所以看不出來，不是因為他不够聰明，是因為這份工作的長度與複雜度，已經超過他獨立完成它所需要的時間。你不可能完整審核一件你沒有能力從頭做一遍的事。</p>
+
+    <div class="def-box">
+      <div class="def-title">名詞定義：本書說的「授權」是哪一種</div>
+      <p>「授權」這兩個字在企業裡至少指四件事：存取權限（角色、OAuth、API 金鑰）、法律上的代理關係、組織的核決層級，以及把一件工作交給 AI 並相信它的產出。前三種都有成熟的治理工具與判準；第四種沒有。多數企業目前對第四種的管理方式，只有一句「記得檢查」。本書處理的是第四種，因此全書談的是「人類把工作交給 AI 之後，還能不能驗證它」，而不是系統權限或法務代理。</p>
+    </div>
 
     <h3>1.2 三層結構</h3>
     <p><strong>第一層是能力。</strong>審核的前提是你有能力判斷對錯。你沒有辦法審核一個超出你水準的東西。這一層最容易被誤解成「專業不夠」，實際上它與專業無關，與任務的長度有關。</p>
