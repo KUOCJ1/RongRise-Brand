@@ -4,6 +4,7 @@
  */
 
 export const COVER_MAP: Record<string, string> = {
+  "ai-judgment-generation-gap": "article-ai-judgment-generation-gap.jpg",
   "ai-agent-liability-transfer": "article-ai-agent-liability-transfer.jpg",
   "ai-agent-unplug-time": "article-ai-agent-unplug-time.jpg",
   "getty-images-scarcity-ledger": "article-getty-images-scarcity-ledger.jpg",

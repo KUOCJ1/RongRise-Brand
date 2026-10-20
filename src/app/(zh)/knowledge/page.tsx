@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-judgment-generation-gap",
+    cat: "人才策略",
+    title: "拿掉 AI 之後，只有老手真的進步：判斷力的訓練場，正在被 AI 吃掉",
+    date: "2026.10.20",
+    readTime: "9 分鐘",
+    excerpt: "MIT 三個月實驗：AI 讓 133 位專利律師的草稿都變好，但拿掉 AI 後只有資深律師真的進步，初階平均零成長。判斷力不是貶值，是斷代——AI 正在吃掉培養判斷力的訓練場，台灣連鎖業的缺口也正好卡在店長與區督。",
+    tags: ["判斷力", "人才養成", "AI 轉型", "中階主管"],
+  },
+  {
     slug: "ai-agent-liability-transfer",
     cat: "AI 轉型",
     title: "連摩根大通都不讓它進門：你的 AI 代理，憑什麼代表你？",
