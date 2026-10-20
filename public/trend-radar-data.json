@@ -1,83 +1,75 @@
 {
- "generatedAt": "2026-10-19T07:20:31Z",
+ "generatedAt": "2026-10-20T07:20:28Z",
  "window": {
-  "from": "2026-10-13",
-  "to": "2026-10-19",
+  "from": "2026-10-14",
+  "to": "2026-10-20",
   "days": 7,
   "digestCount": 7
  },
  "stats": {
-  "totalArticles": 74,
+  "totalArticles": 69,
   "categories": {
-   "AI 轉型": 33,
-   "ESG 永續": 13,
+   "AI 轉型": 31,
+   "ESG 永續": 12,
    "人才策略": 20,
-   "管理趨勢": 8
+   "管理趨勢": 6
   }
  },
  "trends": [
-  {
-   "keyword": "人力資源",
-   "icon": "📋",
-   "category": "人才策略",
-   "count": 23,
-   "prevCount": 19,
-   "momentum": "flat"
-  },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
    "category": "AI 轉型",
    "count": 23,
-   "prevCount": 17,
-   "momentum": "up"
+   "prevCount": 19,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "人力資源",
+   "icon": "📋",
+   "category": "人才策略",
+   "count": 22,
+   "prevCount": 20,
+   "momentum": "flat"
   },
   {
    "keyword": "組織與管理",
    "icon": "🏢",
    "category": "管理趨勢",
    "count": 21,
-   "prevCount": 23,
+   "prevCount": 20,
    "momentum": "flat"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
    "category": "AI 轉型",
-   "count": 16,
-   "prevCount": 13,
+   "count": 15,
+   "prevCount": 14,
    "momentum": "flat"
   },
   {
    "keyword": "AI Agent",
    "icon": "🤖",
    "category": "AI 轉型",
-   "count": 12,
-   "prevCount": 11,
-   "momentum": "flat"
+   "count": 14,
+   "prevCount": 10,
+   "momentum": "up"
   },
   {
    "keyword": "企業導入",
    "icon": "🚀",
    "category": "AI 轉型",
-   "count": 11,
-   "prevCount": 19,
-   "momentum": "down"
+   "count": 12,
+   "prevCount": 16,
+   "momentum": "flat"
   },
   {
    "keyword": "治理與法規",
    "icon": "⚖️",
    "category": "AI 轉型",
    "count": 11,
-   "prevCount": 9,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "自動化",
-   "icon": "⚙️",
-   "category": "AI 轉型",
-   "count": 10,
-   "prevCount": 4,
+   "prevCount": 8,
    "momentum": "up"
   },
   {
@@ -85,43 +77,100 @@
    "icon": "🛡️",
    "category": "AI 轉型",
    "count": 9,
-   "prevCount": 10,
+   "prevCount": 11,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "自動化",
+   "icon": "⚙️",
+   "category": "AI 轉型",
+   "count": 9,
+   "prevCount": 6,
+   "momentum": "up"
+  },
+  {
+   "keyword": "人才與技能",
+   "icon": "🧠",
+   "category": "人才策略",
+   "count": 8,
+   "prevCount": 7,
    "momentum": "flat"
   },
   {
    "keyword": "能源與電力",
    "icon": "⚡",
    "category": "ESG 永續",
-   "count": 7,
-   "prevCount": 8,
-   "momentum": "flat"
+   "count": 6,
+   "prevCount": 9,
+   "momentum": "down"
   },
   {
    "keyword": "資料中心",
    "icon": "🏭",
    "category": "AI 轉型",
-   "count": 6,
-   "prevCount": 10,
-   "momentum": "down"
-  },
-  {
-   "keyword": "人才與技能",
-   "icon": "🧠",
-   "category": "人才策略",
    "count": 5,
-   "prevCount": 8,
+   "prevCount": 9,
    "momentum": "down"
   },
   {
    "keyword": "開源模型",
    "icon": "🌐",
    "category": "AI 轉型",
-   "count": 3,
-   "prevCount": 1,
+   "count": 4,
+   "prevCount": 2,
    "momentum": "up"
   }
  ],
  "articles": [
+  {
+   "title": "Google 開源 Harness2！AI 代理不用重新訓練模型，也能自己改進工作流程",
+   "url": "https://www.inside.com.tw/article/42679-google-harness2-open-source-recursive-agent-harness-propose-probe-compose",
+   "summary": "Google Cloud AI Research 以 Apache 2.0 開源遞迴式代理框架，開放系統提示詞、護欄、記憶、工具指引、子代理、技能、腳本、外掛 8 個可編輯部分，模型權重不動；機制是 Propose-Probe-Compose：先提兩項改動，同條件跑基準比對行為，只留「有行為差異佐證」的修改。三項基準自報領先 4.5～11.8 個百分點，遞迴後增幅逐步縮小。⚠️ 非 Google 官方支援產品、測試成績為作者自報無法核對，README 明示沙箱停用、執行代理網路不受限。",
+   "date": "2026-10-20",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "OpenAI 公布老牌程式語言測試成績！GPT-6.1 Sol 改寫 COBOL 準確率 86.6%，前一代僅 5.4%",
+   "url": "https://www.inside.com.tw/article/42682-openai-cobol-fortran-low-resource-languages-gpt-6-1-sol",
+   "summary": "新模型在 COBOL→C++/Java/Kotlin/Python/Rust 移轉要「逐位元組一致」才算通過，低推理強度 86.6%、拉高後 97.9%（成本為前代 61%）；MultiLangBench 20 種語言平均 87.4%，COBOL 仍最難（72.1%）。OpenAI 引 IBM 資料：逾 40% 網銀系統、80% 實體刷卡、95% ATM 交易仍跑 COBOL；官方明講上線仍需專家審查。",
+   "date": "2026-10-20",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Nvidia launches new open models to run agents in the enterprise and on PCs",
+   "url": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+   "summary": "NVIDIA 發布可在企業環境與個人電腦上執行 agent 的開源模型，把代理推往地端部署；同日 Amazon 以 TorchNeuron 開發工具正面挑戰 CUDA 生態。",
+   "date": "2026-10-20",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "手作電商 Etsy 為逾 70% 買家建立 AI 顧客檔案，個人化推薦如何協助平台重返成長？",
+   "url": "https://techorange.com/2026/10/20/etsy-ai/",
+   "summary": "平台以 AI 為超過七成買家建檔做個人化推薦，作為重返成長的主策略，是「AI 用在既有商業流程」而非新產品的案例。",
+   "date": "2026-10-20",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "新創 PrismML 把 AI 模型壓縮近 10 倍，個人電腦就能執行，測試分數達原版 98%",
+   "url": "https://techorange.com/2026/10/20/prismml-6gb-ai-model-bonsai-2/",
+   "summary": "用「三元權重」（+1／−1／0）把 Qwen3.8 27B 壓到 5.9GB，記憶體佔用降 9～10 倍、綜合基準達原版 98%（前代 95%）；推論可在 PC／高階手機跑，等於同時解掉雲端成本、能源與資料不出地（隱私）三個問題。第一代已累積 1,100 萬次下載，下一步要壓千億級模型。",
+   "date": "2026-10-20",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "同一個視窗聊到底，讓 AI 愈來愈笨？4 步驟存成檔案、指令免重貼，5 組提示詞直接複製",
+   "url": "https://www.managertoday.com.tw/articles/view/73126",
+   "summary": "經理人把「AI 用得好」拆成可交接的檔案工程：試出結果後開新視窗（交接清單）→ 固定做法存「技能包」（觸發條件／步驟／限制／資源／驗收）、專案進度存 STATE.md → 請 AI 從對話回推技能包草稿 → 用「頻率 × 穩定度」決定打包、建狀態檔或直接新對話。核心論點：好做法留在別人的視窗裡就等於不存在。",
+   "date": "2026-10-20",
+   "category": "人才策略"
+  },
+  {
+   "title": "AI 面試不會取代面試官，關鍵在「人機分工」而非全權交給 AI",
+   "url": "https://technews.tw/2026/10/18/ai-interviews-not-replacing-interviewers-company-success-human-ai-collaboration-not-full-ai-delegation/",
+   "summary": "招募導入 AI 的成效差異不在工具有多強，而在有沒有把「篩選／初談／判斷」切清楚；全權委派的企業反而失去辨識人才的優勢。",
+   "date": "2026-10-20",
+   "category": "人才策略"
+  },
   {
    "title": "「人人有代理」時代來臨！虛擬幕僚代勞日常，人類仍是不可取代的「最終當責者」",
    "url": "https://technews.tw/2026/10/19/ai-agents-cut-costs-and-drive-revenue-growth/",
@@ -555,97 +604,13 @@
    "summary": "書摘指出合夥破裂多半源於未言明的「沉默契約」而非金錢，提醒中小企業在股權與角色分工上要及早把默契寫成明規則。",
    "date": "2026-10-14",
    "category": "管理趨勢"
-  },
-  {
-   "title": "AI 資料中心告別「晶片軍備競賽」，資本與能源雙效率躍升投資新指標",
-   "url": "https://technews.tw/2026/10/13/data-centers-compete-capital-energy/",
-   "summary": "AI 資料中心的競爭焦點從「堆算力」轉向資本效率與能源效率，投資人評估指標正在改寫。",
-   "date": "2026-10-13",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "歐盟首度證實測試中國開源 AI 模型，ENISA 與 JRC 展開歐美中技術大評測",
-   "url": "https://technews.tw/2026/10/13/eu-begins-internal-testing-of-chinese-open-source-ai-models/",
-   "summary": "歐盟機構首度公開承認對中國開源模型進行內部評測，主權 AI 與模型來源審查浮上檯面。",
-   "date": "2026-10-13",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "OpenAI 用內部模型挑戰 4,000 道數學問題，公開 722 篇研究手稿",
-   "url": "https://www.ithome.com.tw/news/179471",
-   "summary": "OpenAI 以自家模型攻克大量數學題並公開研究手稿，把「AI 做科研」的透明度當成信任籌碼。",
-   "date": "2026-10-13",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Microsoft president says UK is best placed to drive AI regulation",
-   "url": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/",
-   "summary": "微軟總裁公開力挺英國主導 AI 監管框架，科技巨頭搶進監管話語權。",
-   "date": "2026-10-13",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "This AI startup says it can generate permit-ready blueprints in minutes",
-   "url": "https://techcrunch.com/2026/10/12/this-ai-startup-says-it-can-generate-permit-ready-blueprints-in-minutes/",
-   "summary": "新創主打「數分鐘產出可送審建照圖」，AI 直攻建築／營造的專業工作流程。",
-   "date": "2026-10-13",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Leading-Edge AI Models Are Losing Their Allure With Developers",
-   "url": "https://www.theinformation.com/articles/leading-edge-ai-models-losing-allure-developers",
-   "summary": "The Information 觀察：最前沿模型對開發者的吸引力下滑，性價比與穩定性開始壓過「跑分最強」。",
-   "date": "2026-10-13",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "保時捷以 100% 再生原料打造動力電池，城市礦山理念再獲進展",
-   "url": "https://technews.tw/2026/10/13/porsche-power-batteries-100-recycled-materials-urban-mining-advances/",
-   "summary": "車廠以 100% 再生原料製造動力電池，「城市礦山」（回收料再製）從概念走向產線。",
-   "date": "2026-10-13",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "IMF：AI 投資潮撐全球經濟成長 3%，力抗能源衝擊",
-   "url": "https://technews.tw/2026/10/12/ai-investment-boom-supports-3-global-economic-growth/",
-   "summary": "IMF 指出 AI 投資熱潮撐起全球約 3% 成長動能，同時成為對抗能源價格衝擊的緩衝。",
-   "date": "2026-10-13",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "面試時手上拿著冰咖啡，會被「扣分」嗎？招募專家解析面試官真心話",
-   "url": "https://www.managertoday.com.tw/articles/view/73020",
-   "summary": "招募專家拆解面試官的「非語言評分」偏誤，提醒求職者與用人主管正視第一印象的隱形扣分。",
-   "date": "2026-10-13",
-   "category": "人才策略"
-  },
-  {
-   "title": "Leading when change feels threatening",
-   "url": "https://www.mckinsey.com/capabilities/people-and-organization/our-insights/leading-when-change-feels-threatening",
-   "summary": "McKinsey 談變革期的領導：當改變讓員工感到威脅時，主管如何降低抗拒、維持士氣。",
-   "date": "2026-10-13",
-   "category": "人才策略"
-  },
-  {
-   "title": "美國麥當勞引進 AI 菜單定價惹議！你買漢堡的價格竟取決於當地顧客願意付多少錢？",
-   "url": "https://www.managertoday.com.tw/articles/view/73039",
-   "summary": "麥當勞導入 AI 動態定價，把「顧客願付價格」直接寫進菜單，引發演算法定價的公平性爭議。",
-   "date": "2026-10-13",
-   "category": "管理趨勢"
-  },
-  {
-   "title": "OpenAI and Microsoft knew they were starting a 'doom loop' for the web",
-   "url": "https://www.theverge.com/ai-artificial-intelligence/997633/openai-microsoft-chatgpt-ai-new-york-times-doom-loop-theft-google-zero",
-   "summary": "The Verge 報導訴訟揭露的內部文件：AI 摘要掏空內容網站流量、形成「內容生態末日循環」的證據鏈。",
-   "date": "2026-10-13",
-   "category": "管理趨勢"
   }
  ],
  "insights": [
-  "「使用普及」不等於「價值普及」的落差持續擴大：MIT 研究（#8）顯示 AI 提升的是產出表象，真正能力累積只發生在已有基礎心智模型的資深者；三成上班族隱瞞 AI 提效（#6）與連鎖業中階人才斷層（#5）指向同一件事——紅利先落在已具判斷力與定義問題能力的人與職位。",
-  "「人在迴路」正被兩面夾擊：一邊是 Turkle（#3）直言 human in the loop 常只是事後清理與訴訟樣板；另一邊是企業端主動關門（#9）——Yelp、Delta、JPMorgan、Charles Schwab 不讓 agent 進門，美國銀行執行長要求付款授權保留人類。agent 的能力邊界與「被信任的範圍」出現明顯落差。",
-  "治理從「自律」走向「外部查核」：Anthropic 把 5% 股份投入公益基金（#11）、G7 要對銀行演練 AI 網攻（#12），前沿實驗室與金融體系同時被推上外部問責的位置。",
-  "資本狂潮與社會反彈同步升溫：四大巨頭兩年 1.12 兆美元 Capex（#2）、其中 2/3 是 3–5 年就折舊的短壽命資產；同時資料中心業界得靠童書與校園活動修補形象（#4）。硬體擴建的財務風險與社會接受度，是同一條線的兩端。",
-  "缺工對策從「加薪搶人」轉向「重設工作」：連鎖業調查（#5）顯示缺口已從一線蔓延至店長、區督等中階，麥肯錫（#10）也把成長瓶頸指向軟實力而非產能——兩者共同指向「先重新設計工作與流程，再談補人」。"
+  "「改外圍」比「改模型」便宜，而且已經有人做出來：Harness2 不動權重、只改寫提示詞／工具／記憶／調度；PrismML 用三元權重把 27B 壓進 PC；OpenAI 直接用模型能力吃 COBOL 遺留系統。三條路在解同一件事——把改造成本與算力往下壓，而不是繼續往上堆。",
+  "能力上線了，責任介面還沒上線：微軟把 agent 當內部威脅、FTC 傳喚兩家前沿實驗室、Meta 把爬取授權寫進商業條款的預設值。治理的戰場正從「事後聲明」移到「預設設定與契約條文」——這也是企業最容易漏看的一層。",
+  "AI 產出的「可交接性」才是分水嶺：經理人把好用做法打包成技能包＋狀態檔、AI 面試仍要人機分工、業務主管等入帳才發戰報，三件事指向同一結論——判斷與驗證的位置沒有被 AI 移走，只是被要求寫得比以前更明確。",
+  "今日 ESG 線偏薄：唯一入選的 PrismML 是「效率型永續」（小模型＝少算力、少雲端、少傳輸），不是碳盤查或法規線；其餘 ESG 素材為昨日已收錄的重複項。",
+  "「使用普及」不等於「價值普及」的落差持續擴大：MIT 研究（#8）顯示 AI 提升的是產出表象，真正能力累積只發生在已有基礎心智模型的資深者；三成上班族隱瞞 AI 提效（#6）與連鎖業中階人才斷層（#5）指向同一件事——紅利先落在已具判斷力與定義問題能力的人與職位。"
  ]
 }
