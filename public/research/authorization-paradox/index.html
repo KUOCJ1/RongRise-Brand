@@ -261,7 +261,13 @@ tr:hover td { background: rgba(232,145,42,0.04); }
 .es-list li { position:relative; padding-left:20px; margin:15px 0; font-size:14.5px; line-height:1.8; color:#3a3a3a; }
 .es-list li:first-child { margin-top:6px; }
 .es-list li::before { content:"▍"; position:absolute; left:0; top:0; color:var(--gold); font-size:13px; }
-.es-list li strong { color:var(--navy); }
+.es-list li strong { display:block; color:var(--navy); margin-bottom:3px; font-size:15px; }
+.es-num { counter-reset: esn; }
+.es-num li { padding-left:36px; }
+.es-num li::before { counter-increment: esn; content: counter(esn, decimal-leading-zero); color:var(--gold);
+  font-weight:700; font-size:12px; position:absolute; left:0; top:5px; letter-spacing:0; }
+@media (max-width: 600px) { .es-list li strong { font-size:14.5px; } }
+
 .es-list-pov li::before { color:var(--teal); }
 .exec-summary .es-foot { font-size:12.5px; color:#8a8a8a; margin:18px 0 0; padding-top:14px;
   border-top:1px dashed #E4DED2; }
@@ -326,7 +332,7 @@ tr:hover td { background: rgba(232,145,42,0.04); }
       <p class="es-lead">AI 能做的事越深，人越沒有能力驗證它。這不是使用方式的問題，是兩條能力曲線的斜率問題。解法不是限制 AI，而是把審核從「一個人的簽核」，換成「多來源的對抗性審核」。</p>
 
       <h3 class="es-h3">五個判斷</h3>
-      <ul class="es-list">
+      <ul class="es-list es-num">
         <li><strong>授權越深，可驗證性越低。</strong>你交出去的工作長度，已經超過你自己從頭做完它所需要的時間；而它變強的地方，正好是你原本不知道答案的題目。</li>
         <li><strong>兩條曲線的斜率差一個量級。</strong>AI 能完成的任務長度約每 7 個月翻一倍（2024 年起估計 88.6 天）；人的工作記憶約 4 個組塊、行為吞吐約每秒 10 bit，二十年沒有量級變化。</li>
         <li><strong>人會跟著錯，方向可預測。</strong>44 位受過 20 小時 AI 素養訓練的醫師，收到含錯建議後診斷正確率 84.9% → 73.3%。AI 解釋錯誤時，人的正確率 35%，比不給解釋的 49% 更低。</li>
