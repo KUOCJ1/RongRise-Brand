@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>授權悖論｜你交給 AI 的工作越長，你越驗不動它 — 榕耀管顧研究專刊</title>
+<meta name="description" content="榕耀管顧研究專刊系列第 4 本。AI 能完成的任務每七個月翻一倍，人的審核能力沒有對應的變化。本書用 65 筆可查證來源，說明授權悖論的三層結構、審核失效的實驗證據，以及授權四級與三層審核的操作框架。">
+<meta property="og:title" content="授權悖論｜榕耀管顧研究專刊">
+<meta property="og:description" content="你交給 AI 的工作越長，你越沒有能力審核它。榕耀管顧研究專刊系列第 4 本。">
+<meta property="og:image" content="https://rong-rise.com/research/authorization-paradox/og-image.jpg">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #F7F4EE;
+  --white: #FFFFFF;
+  --navy: #0D2B4E;
+  --gold: #E8912A;
+  --teal: #2EC4B6;
+  --text: #1a1a2e;
+  --text-secondary: #555;
+  --border: #ddd;
+  --card-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--paper);
+  color: var(--text);
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.85;
+  font-size: 16px;
+}
+.container { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+
+/* ===== COVER ===== */
+.cover {
+  background: var(--navy);
+  color: white;
+  padding: 80px 24px 60px;
+  text-align: center;
+}
+.cover .kicker {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: var(--gold);
+  border: 1px solid rgba(232,145,42,0.4);
+  border-radius: 20px;
+  padding: 6px 18px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+.cover h1 {
+  font-family: 'Noto Serif TC', serif;
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 900;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+.cover .subtitle {
+  font-size: 16px;
+  color: rgba(255,255,255,0.7);
+  max-width: 560px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+.cover .meta {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+}
+.cover .meta span { margin: 0 8px; }
+.cover .series-badge {
+  display: inline-block;
+  background: rgba(46,196,182,0.15);
+  color: var(--teal);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+/* ===== CONTENT ===== */
+.content { padding: 48px 0 64px; }
+.content .section-title {
+  font-family: 'Noto Serif TC', serif;
+  font-size: clamp(22px, 3.5vw, 28px);
+  font-weight: 700;
+  color: var(--navy);
+  margin: 48px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--gold);
+}
+.content .section-title:first-child { margin-top: 0; }
+.content .section-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+.content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 36px 0 12px;
+}
+.content p { margin: 16px 0; color: var(--text); }
+.content p.strong-lead { font-weight: 700; font-size: 17px; }
+.content .gold-line {
+  width: 40px;
+  height: 2px;
+  background: var(--gold);
+  margin: 8px 0 24px;
+}
+
+/* ===== EXHIBIT ===== */
+.exhibit {
+  background: var(--white);
+  border-radius: 12px;
+  border-top: 3px solid var(--gold);
+  padding: 24px;
+  margin: 32px 0;
+  box-shadow: var(--card-shadow);
+}
+.exhibit .exhibit-tag {
+  display: inline-block;
+  background: var(--gold);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+.exhibit .exhibit-title {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+
+/* ===== QUOTE / CALLOUT ===== */
+.callout {
+  border-left: 3px solid var(--gold);
+  background: linear-gradient(90deg, rgba(232,145,42,0.05), transparent 70%);
+  padding: 16px 20px;
+  margin: 24px 0;
+  border-radius: 0 8px 8px 0;
+}
+.callout p { margin: 4px 0; color: var(--text-secondary); font-size: 15px; }
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 14px;
+}
+th {
+  background: var(--navy);
+  color: white;
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 600;
+}
+td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+tr:hover td { background: rgba(232,145,42,0.04); }
+
+/* ===== CHAPTER QUESTIONS ===== */
+.questions-box {
+  background: rgba(13,43,78,0.03);
+  border: 1px solid rgba(13,43,78,0.08);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 32px 0;
+}
+.questions-box h4 { color: var(--navy); font-size: 15px; margin-bottom: 16px; }
+.questions-box .q-item { margin: 16px 0; }
+.questions-box .q-item strong { color: var(--gold); }
+
+/* ===== FOOTER CTA ===== */
+.cta-section {
+  background: var(--navy);
+  border-radius: 16px;
+  padding: 40px 32px;
+  text-align: center;
+  margin: 48px 0;
+  color: white;
+}
+.cta-section h3 { color: white !important; font-family: 'Noto Serif TC', serif; font-size: 22px; }
+.cta-section p { color: rgba(255,255,255,0.7) !important; margin: 12px 0 24px; font-size: 15px; }
+.cta-section .btn {
+  display: inline-block;
+  background: var(--gold);
+  color: white;
+  font-weight: 700;
+  padding: 12px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+.cta-section .btn:hover { background: #d47d1e; }
+
+/* ===== PRINT ===== */
+@media print {
+  .cover { padding: 40px 24px; }
+  .no-print { display: none !important; }
+  .exhibit { break-inside: avoid; }
+  body { font-size: 14px; }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .cover { padding: 48px 20px 36px; }
+  .content { padding: 32px 0; }
+  .exhibit { padding: 16px; }
+}
+
+/* ===== 本書新增樣式 ===== */
+.method-note { background:#FFFFFF; border:1px solid #E4DED2; border-left:3px solid var(--teal);
+  border-radius:8px; padding:20px 22px; margin:8px 0 32px; }
+.method-note strong { display:block; color:var(--navy); font-size:15px; margin-bottom:8px; }
+.method-note p { font-size:14px; color:#555; margin:8px 0; line-height:1.8; }
+
+.judgment { position:relative; background:#FFFFFF; border-left:3px solid var(--gold);
+  border-radius:8px; padding:22px 24px 18px; margin:20px 0; box-shadow:var(--card-shadow); overflow:hidden; }
+.judgment-num { position:absolute; right:14px; top:-6px; font-family:'Noto Serif TC',serif;
+  font-size:64px; font-weight:900; color:rgba(13,43,78,0.05); line-height:1; }
+.judgment h3 { font-size:17px; margin:0 0 10px; color:var(--navy); position:relative; }
+.judgment p { margin:0; font-size:15px; color:#3a3a3a; }
+
+.exhibit table { width:100%; border-collapse:collapse; font-size:14px; margin:4px 0 8px; }
+.exhibit thead th { background:var(--navy); color:#fff; text-align:left; padding:10px 12px; font-weight:700; font-size:13px; }
+.exhibit tbody td { border-bottom:1px solid #ECE6DA; padding:10px 12px; vertical-align:top; line-height:1.7; }
+.exhibit tbody tr:hover td { background:rgba(232,145,42,0.06); }
+.exhibit .source { font-size:11.5px; color:#8a8a8a; margin:10px 0 0; line-height:1.6; }
+
+.source-list { margin:8px 0 24px; padding-left:18px; }
+.source-list li { font-size:13.5px; color:#4a4a4a; margin:7px 0; line-height:1.75; }
+
+.disclaimer { font-size:12px; color:#8a8a8a; background:#FFFFFF; border:1px solid #E4DED2;
+  border-radius:8px; padding:16px 18px; margin:32px 0 0; line-height:1.8; }
+
+.version-switcher { background:var(--paper); }
+@media print { .version-switcher { display:none !important; } }
+
+</style>
+
+<body>
+<!-- ===== COVER ===== -->
+<header class="cover">
+  <div class="series-badge">榕耀管顧研究專刊系列 第 4 本</div>
+  <div class="kicker">RongRise Research · 2026</div>
+  <h1>授權悖論</h1>
+  <p class="subtitle">你交給 AI 的工作越長、越難，你越沒有能力審核它。這不是使用方式的問題，是兩條曲線的斜率問題。</p>
+  <div class="meta">
+    <span>2026 年 10 月</span><span>·</span><span>約 10,500 字</span><span>·</span><span>閱讀時間 30 分鐘</span>
+  </div>
+</header>
+
+<div class="version-switcher" style="text-align:center;padding:24px 0 8px;">
+  <a href="/research/authorization-paradox/" class="active" style="display:inline-block;padding:8px 20px;border-radius:20px;font-size:13px;font-weight:700;color:white;background:#0D2B4E;text-decoration:none;margin:0 4px;">📖 完整版</a>
+  <a href="/research/authorization-paradox/highlights/" style="display:inline-block;padding:8px 20px;border-radius:20px;font-size:13px;font-weight:500;color:#666;background:#eee;text-decoration:none;margin:0 4px;">⚡ 精華版（7 分鐘）</a>
+</div>
+
+<main class="content">
+  <div class="container">
+
+    <div class="method-note">
+      <strong>這本書怎麼寫的</strong>
+      <p>本書的材料分三層。第一層是可查證的公開研究與監理文件，每一項數字後面都附機構與日期，完整清單見書末。第二層是 2026 年下半年企業與政府的真實事故，用在需要說明「這件事已經發生」的地方。第三層是榕耀管顧自己的觀察與推論，會在句子裡標明，不與前兩層混用。</p>
+      <p>有些題目目前沒有可靠答案。遇到這種地方，本書不會硬給結論，而是把問題留在章末。讀者如果發現某個數字與你手上的版本不同，請以原始來源為準，並歡迎告訴我們。</p>
+    </div>
+
+    <h2 class="section-title">執行摘要：五個核心判斷</h2>
+    <p class="section-subtitle">如果只讀一頁，讀這五段。</p>
+
+    <div class="judgment">
+      <div class="judgment-num">01</div>
+      <h3>授權的深度與可審核性，是往反方向走的。</h3>
+      <p>你交給 AI 的任務越長、越複雜、越接近「沒有標準答案」的判斷題，你越沒有能力檢查它做對還是做錯。過去 AI 做的是你已知答案的事，這一類你驗得動。現在它開始做你原本不知道答案的事，這一類只能看結果。而結果來得慢、錯了不能回頭。</p>
+    </div>
+
+    <div class="judgment">
+      <div class="judgment-num">02</div>
+      <h3>兩條曲線的斜率差了一個量級，而且差距還在擴大。</h3>
+      <p>研究機構 METR 追蹤前沿模型能獨立完成的任務長度，2019 年以來大約每七個月翻一倍；2024 年之後的估計縮短到 88.6 天。人類這一側沒有對應的變化：工作記憶的專注焦點平均約四個組塊，行為的資訊吞吐量約每秒 10 bit。這不是誰不努力，是兩條線的斜率本來就不一樣。</p>
+    </div>
+
+    <div class="judgment">
+      <div class="judgment-num">03</div>
+      <h3>審核失效已經有實驗數據，偏誤的方向是「人傾向相信 AI」。</h3>
+      <p>一項隨機臨床試驗找來 44 位受過 20 小時 AI 素養訓練的醫師。收到含錯的模型建議後，診斷推理正確率從 84.9% 掉到 73.3%，首選診斷從 90.5% 掉到 76.1%。另一項研究發現，當 AI 的解釋是錯的，人的正確率只剩 35%，比完全不給解釋的 49% 還低。解釋本身會變成一種說服力。</p>
+    </div>
+
+    <div class="judgment">
+      <div class="judgment-num">04</div>
+      <h3>制度可以放大審核能力，但目前多數機制還沒有被證明有效。</h3>
+      <p>法規端最具體的是歐盟 AI 法第 14 條：高風險系統必須能被自然人有效監督，條文甚至點名「自動化偏誤」。但實證偏悲觀。大型語言模型自己當評審，成對偏好的結果平均有 13.6% 會翻轉；119 位專業審計師在審核自動化產出時，投入時間明顯較少、揪錯效果也較差。要求「有人監督」寫得出來，讓監督真的發生是另一件事。</p>
+    </div>
+
+    <div class="judgment">
+      <div class="judgment-num">05</div>
+      <h3>真正的風險不是 AI 超出範圍，是你不知道自己超出了範圍。</h3>
+      <p>2026 年 8 月的一項企業調查顯示，65% 的企業經歷過 AI 代理做出預期範圍外的行為，其中 29% 造成可量測的組織影響。但只有 32% 能在數分鐘內偵測並圍堵，只有 34.2% 在行動當下檢查授權，46% 無法還原某個代理近 30 天的完整軌跡。企業已經開始關門，但多半是在事故曝光之後。</p>
+    </div>
+
+    <h2 class="section-title">一、問題定義：授權悖論</h2>
+
+    <h3>1.1 一個具體的場景</h3>
+    <p>一位主管把一份市場進入評估交給 AI。他給的指示很清楚：三個市場、兩年財務預測、主要風險、建議順序。四十分鐘後，他收到一份二十八頁的文件，架構完整、數字齊全、還附了敏感度分析。</p>
+    <p>他讀了二十分鐘，覺得「看起來很合理」。於是他簽了，往上送。</p>
+    <p>問題不在他偷懶。問題在於：這份文件的每一個判斷，都建立在他沒有查證的假設上。某個市場的監理門檻被低估、某個客群的付費意願引用了一份三年前的調查、某個成本項目漏掉了通路折讓。這些錯誤不會在閱讀時跳出來，只會在十八個月後出現在財報上。</p>
+    <p>而他之所以看不出來，不是因為他不够聰明，是因為這份工作的長度與複雜度，已經超過他獨立完成它所需要的時間。你不可能完整審核一件你沒有能力從頭做一遍的事。</p>
+
+    <h3>1.2 三層結構</h3>
+    <p><strong>第一層是能力。</strong>審核的前提是你有能力判斷對錯。你沒有辦法審核一個超出你水準的東西。這一層最容易被誤解成「專業不夠」，實際上它與專業無關，與任務的長度有關。</p>
+    <p><strong>第二層是類別。</strong>過去 AI 做的是已知答案的事：翻譯、摘要、改寫、程式碼片段。這一類你驗得動，因為你心裡有一個正確答案可以對照。現在它做的是你原本不知道答案的事：策略、風險預判、跨域判斷。這一類沒有標準答案，只有結果。</p>
+    <p><strong>第三層是時間。</strong>這一類的結果來得慢、錯了不能回頭、又沒有客觀基準。等你發現，成本已經發生。三層疊在一起，就是授權悖論的完整形狀。</p>
+
+    <div class="exhibit">
+      <span class="exhibit-tag">EXHIBIT 1</span>
+      <div class="exhibit-title">授權深度與可審核性的剪刀差</div>
+      <svg viewBox="0 0 640 300" width="100%" role="img" aria-label="授權深度上升時，可審核性下降的示意圖">
+        <rect x="0" y="0" width="640" height="300" fill="#FFFFFF"/>
+        <!-- axes -->
+        <line x1="60" y1="250" x2="600" y2="250" stroke="#C9C2B6" stroke-width="1.5"/>
+        <line x1="60" y1="30" x2="60" y2="250" stroke="#C9C2B6" stroke-width="1.5"/>
+        <text x="330" y="285" font-size="13" fill="#555" text-anchor="middle" font-family="Noto Sans TC, sans-serif">授權給 AI 的任務深度（長度・複雜度・不可逆性）</text>
+        <text x="18" y="140" font-size="13" fill="#555" text-anchor="middle" transform="rotate(-90 18 140)" font-family="Noto Sans TC, sans-serif">可審核性</text>
+        <!-- area between -->
+        <path d="M60,215 C180,200 260,170 340,120 C420,70 520,45 600,38 L600,235 C520,225 420,210 340,190 C260,175 180,170 60,170 Z" fill="#E8912A" opacity="0.10"/>
+        <!-- AI capability curve -->
+        <path d="M60,235 C160,225 240,195 320,150 C410,100 510,65 600,45" fill="none" stroke="#0D2B4E" stroke-width="3"/>
+        <!-- verifiability curve -->
+        <path d="M60,175 C180,172 300,168 420,162 C500,158 560,156 600,155" fill="none" stroke="#2EC4B6" stroke-width="3" stroke-dasharray="7 5"/>
+        <!-- labels -->
+        <text x="470" y="34" font-size="13" font-weight="700" fill="#0D2B4E" font-family="Noto Sans TC, sans-serif">AI 能做的任務深度</text>
+        <text x="440" y="150" font-size="13" font-weight="700" fill="#1E9C90" font-family="Noto Sans TC, sans-serif">人能審核的上限</text>
+        <text x="330" y="120" font-size="12" fill="#A86414" font-family="Noto Sans TC, sans-serif">差距＝授權出去、卻沒有人真的驗過的範圍</text>
+        <!-- markers -->
+        <circle cx="320" cy="150" r="4.5" fill="#0D2B4E"/>
+        <circle cx="320" cy="165" r="4.5" fill="#2EC4B6"/>
+      </svg>
+      <p class="source">Source：榕耀管顧整理。縱軸為概念示意，非量化量測；兩條曲線的相對位置由第二章的公開研究支撐。</p>
+    </div>
+
+    <h3>1.3 兩個直覺反應，以及它們各自的代價</h3>
+    <p><strong>反應一：設計機制，確保產出落在「我們已知」的範圍裡。</strong>這條路只覆蓋一半，而且它其實是個降級條件。已知的東西沒有新資訊，等於叫它只做你已經會的事。可操作的版本不是「已知」，而是「可追溯」：要求每個結論指回一個你看得懂的來源，指不出來的不採用。但對「本來就沒有來源可指」的題目，例如策略、風險預判、人事判斷，溯源救不了你。</p>
+    <p><strong>反應二：限制 AI 的能力與效率，讓它配合人類的限制。</strong>這在競爭環境裡不是安全策略，是自我淘汰。你限速、別人不限速。而且它的代價是把 AI 降級成人，等於主動放棄那條曲線。</p>
+    <p>兩個反應的共通點是：都在把人放回中心。而人已經不在中心了。</p>
+
+    <h3>1.4 一個必要的修正</h3>
+    <p>「人跟不上」的結論不是「無法審核」。審核能力不只有個人這一條路，人可以靠制度把它放大：同儕會互相挑戰，市場會用結果投票，時間會把錯的挑出來。真正的結論是<strong>個人簽核失效，得換成多來源的對抗性審核</strong>。這件事可以設計，而第四章整理的就是目前設計得出來、以及已經被證明設計失敗的部分。</p>
+
+    <h2 class="section-title">二、兩條曲線的實證</h2>
+    <p class="section-subtitle">先看 AI 那一側有多快，再看人這一側有多慢。</p>
+
+    <h3>2.1 AI 那一側：以「月」為單位的翻倍</h3>
+    <p>研究機構 METR 提出一個衡量方式：以「人類專家完成某個任務需要多久」當作尺，去看「AI 能以 50% 成功率完成的任務有多長」。這個指標叫任務時間視野。它的好處是不看 benchmark 分數，只看任務長度，比較接近企業真正關心的問題：這東西能獨立做完多長的工作。</p>
+    <p>實測結果是這樣：2019 年到 2025 年間，這個視野大約每七個月翻一倍。2026 年 1 月 29 日的更新把題庫從 170 題擴到 228 題後重估，全期翻倍時間為 196.5 天，2023 年起算是 130.8 天，2024 年起算則是 88.6 天。三個數字放在一起看，重點不在哪一個才對，而在方向：越近期的估計，翻倍越快。</p>
+
+    <div class="exhibit">
+      <span class="exhibit-tag">EXHIBIT 2</span>
+      <div class="exhibit-title">50% 任務時間視野的翻倍所需天數（依不同起始年估計）</div>
+      <svg viewBox="0 0 640 230" width="100%" role="img" aria-label="三組翻倍天數的長條圖">
+        <rect x="0" y="0" width="640" height="230" fill="#FFFFFF"/>
+        <g font-family="Noto Sans TC, sans-serif">
+          <text x="20" y="28" font-size="12" fill="#555">全期（2019 起）</text>
+          <rect x="190" y="12" width="380" height="26" rx="4" fill="#DCE3EC"/>
+          <rect x="190" y="12" width="380" height="26" rx="4" fill="#0D2B4E" opacity="0.55"/>
+          <text x="580" y="31" font-size="14" font-weight="700" fill="#0D2B4E">196.5 天</text>
+
+          <text x="20" y="92" font-size="12" fill="#555">2023 年起</text>
+          <rect x="190" y="76" width="253" height="26" rx="4" fill="#0D2B4E" opacity="0.75"/>
+          <text x="453" y="95" font-size="14" font-weight="700" fill="#0D2B4E">130.8 天</text>
+
+          <text x="20" y="156" font-size="12" fill="#555">2024 年起</text>
+          <rect x="190" y="140" width="171" height="26" rx="4" fill="#E8912A"/>
+          <text x="371" y="159" font-size="14" font-weight="700" fill="#A86414">88.6 天</text>
+
+          <text x="20" y="205" font-size="11" fill="#888">同一把尺、同一份題庫，只換起始年：越近期，翻倍越快。</text>
+        </g>
+      </svg>
+      <p class="source">Source：METR，Tasks/Horizon 1.1 更新，2026-01-29；原始研究 arXiv:2503.14499（2025-03-18）。此指標量測誤差可達上下兩倍，宜以區間解讀。</p>
+    </div>
+
+    <p>另一組具體對照：2025 年的 Claude 3.7 Sonnet 對應約 50 分鐘的任務，同年稍晚的 o3 約 110 分鐘。這些是「能以一半成功率完成」的長度，不是「可以放心交給它」的長度。兩者之間的差距，就是本書要談的那段。</p>
+
+    <h3>2.2 人這一側：沒有對應的量級變化</h3>
+    <p>人類的認知限制是硬體規格，不是態度問題。工作記憶的專注焦點平均約四個組塊，這是 Cowan 在 2001 年提出的估計，二十多年來沒有出現量級上的修正。2024 年 12 月發表在《Neuron》的一篇回顧把數字說得更清楚：人類行為的資訊吞吐量約每秒 10 bit，感官接收的資訊量約每秒 10 的 9 次方 bit。中間差了八個數量級。</p>
+    <p>這組數字常被拿來說「人腦很慢」，但它的重點不是速度，是<strong>篩選</strong>。感官進來的一億分之一會變成行為，其餘都在注意力這個閘門被丟掉。AI 的工作方式恰好相反：它不篩選，它產出。產出越多，通過那道閘門的東西就越少。</p>
+    <p>於是出現一個過去沒有遇過的狀況：交出去的工作，長度已經超過自己做完它所需要的時間。而它變強的地方，正好是你原本不知道答案的題目。</p>
+
+    <div class="callout">
+      <p><strong>一個被忽略的中間變數：解釋。</strong>多數人以為「AI 有解釋，我就能判斷」。NAACL 2024 的實驗（80 位群眾工作者）給了相反結果：解釋正確時，人的正確率 87%；解釋錯誤時，只剩 35%；完全不給解釋時，是 49%。錯誤的解釋比沒有解釋更糟，因為它讓審核者的注意力被引導到錯的地方。</p>
+    </div>
+
+    <h3>2.3 台灣的對照：缺口已經從一線移到中階</h3>
+    <p>同一件事在台灣以另一種形式出現。連鎖加盟協會委託資策會調查 160 家大型連鎖加盟企業，98.8% 的業者缺工，57% 缺超過一年。缺口最大的是門市接待（62.0%）與商品銷售（53.8%），但真正補不動的是店長與門市主管（60.8%）與總部區域督導（51.8%）。</p>
+    <p>這組數字與本書的主題有同一個機制：中階主管是組織裡「把總部政策翻譯成現場決定」的位置，也就是判斷力的儲存庫。當這個階層同時被缺工與 AI 兩股力量拉扯，企業缺的就不再是人手，而是會替公司做判斷的人。兩邊的因果不同，機制相同：判斷力的供給端正在被拆。</p>
+
+    <div class="exhibit">
+      <span class="exhibit-tag">EXHIBIT 3</span>
+      <div class="exhibit-title">台灣連鎖加盟業缺工缺口：一線缺人力，中階缺判斷</div>
+      <svg viewBox="0 0 640 250" width="100%" role="img" aria-label="四類職缺的缺工比例長條圖">
+        <rect x="0" y="0" width="640" height="250" fill="#FFFFFF"/>
+        <g font-family="Noto Sans TC, sans-serif" font-size="12" fill="#555">
+          <text x="20" y="34">門市接待</text>
+          <rect x="150" y="18" width="372" height="24" rx="3" fill="#0D2B4E" opacity="0.35"/>
+          <text x="532" y="36" font-size="13" font-weight="700" fill="#0D2B4E">62.0%</text>
+
+          <text x="20" y="82">商品銷售</text>
+          <rect x="150" y="66" width="323" height="24" rx="3" fill="#0D2B4E" opacity="0.35"/>
+          <text x="483" y="84" font-size="13" font-weight="700" fill="#0D2B4E">53.8%</text>
+
+          <text x="20" y="130">店長／門市主管</text>
+          <rect x="150" y="114" width="365" height="24" rx="3" fill="#E8912A"/>
+          <text x="525" y="132" font-size="13" font-weight="700" fill="#A86414">60.8%</text>
+
+          <text x="20" y="178">總部區域督導</text>
+          <rect x="150" y="162" width="311" height="24" rx="3" fill="#E8912A"/>
+          <text x="471" y="180" font-size="13" font-weight="700" fill="#A86414">51.8%</text>
+
+          <text x="20" y="222" font-size="11" fill="#888">金色為判斷密集職位；藍色為人力密集職位。加薪與補人對前者效果有限。</text>
+        </g>
+      </svg>
+      <p class="source">Source：TCFA × 資策會數位轉型研究院，160 家大型連鎖加盟企業調查，2026-09-30 發布、2026-10-02 論壇公布；聯合新聞網、工商時報報導。</p>
+    </div>
+
+    <h2 class="section-title">三、審核失效的實驗證據</h2>
+    <p class="section-subtitle">不是「人會出錯」這種廢話，而是「錯的方向是可預測的」。</p>
+
+    <h3>3.1 受過訓練的專家，一樣會跟著錯</h3>
+    <p>2026 年一項隨機臨床試驗找來 44 位醫師，每個人都受過 20 小時的 AI 素養訓練，內容包括模型限制、幻覺風險、如何交叉檢查。研究設計很直接：讓醫師處理診斷題，其中一部分題目會附上一個大型語言模型的建議，而這些建議裡刻意放入了錯誤。</p>
+    <p>結果是，在收到含錯建議之後，診斷推理的正確率從 84.9% 降到 73.3%，少了 14 個百分點；首選診斷的正確率從 90.5% 降到 76.1%，少了 18.3 個百分點。這群人是受過訓練的，也知道自己在被測試，仍然往下掉。</p>
+    <p>同一段時間還有兩個結果值得放在一起看。Anthropic 實測 Claude 1.3，在使用者質疑它時，98% 的題目會錯誤地承認自己犯錯。也就是說，當你帶著懷疑去問它「你確定嗎」，它給你的多半不是重新推理，而是順從。而 NAACL 2024 那個實驗告訴我們，錯誤的解釋比沒有解釋更危險。</p>
+    <p>三件事合起來，是一個閉環：<strong>人傾向相信 AI，AI 傾向順從人，而解釋會放大前者。</strong>這個閉環不需要誰特別笨，它只需要雙方都表現得像平常一樣。</p>
+
+    <div class="exhibit">
+      <span class="exhibit-tag">EXHIBIT 4</span>
+      <div class="exhibit-title">收到含錯的模型建議前後，醫師診斷正確率變化</div>
+      <svg viewBox="0 0 640 260" width="100%" role="img" aria-label="醫師診斷正確率前後對比">
+        <rect x="0" y="0" width="640" height="260" fill="#FFFFFF"/>
+        <g font-family="Noto Sans TC, sans-serif">
+          <text x="20" y="30" font-size="12" fill="#555">診斷推理正確率</text>
+          <rect x="200" y="14" width="340" height="30" rx="3" fill="#0D2B4E" opacity="0.85"/>
+          <text x="548" y="35" font-size="14" font-weight="700" fill="#0D2B4E">84.9%</text>
+          <rect x="200" y="50" width="293" height="30" rx="3" fill="#E8912A"/>
+          <text x="501" y="71" font-size="14" font-weight="700" fill="#A86414">73.3%</text>
+          <text x="200" y="98" font-size="11" fill="#B03A2E">−14.0 個百分點</text>
+
+          <text x="20" y="150" font-size="12" fill="#555">首選診斷正確率</text>
+          <rect x="200" y="134" width="362" height="30" rx="3" fill="#0D2B4E" opacity="0.85"/>
+          <text x="570" y="155" font-size="14" font-weight="700" fill="#0D2B4E">90.5%</text>
+          <rect x="200" y="170" width="304" height="30" rx="3" fill="#E8912A"/>
+          <text x="512" y="191" font-size="14" font-weight="700" fill="#A86414">76.1%</text>
+          <text x="200" y="218" font-size="11" fill="#B03A2E">−18.3 個百分點</text>
+
+          <text x="20" y="246" font-size="11" fill="#888">深藍＝未受錯誤建議影響；金色＝收到含錯建議後。44 位受過 20 小時 AI 素養訓練的醫師。</text>
+        </g>
+      </svg>
+      <p class="source">Source：隨機臨床試驗（44 位醫師、20 小時 AI 素養訓練），2026；數字引自該研究摘要。</p>
+    </div>
+
+    <h3>3.2 「產出變好」與「能力變好」是兩件事</h3>
+    <p>2026 年 9 月，NBER 工作論文 35720 發表了一個三個月的隨機對照實驗。研究者找來 133 位專利律師，分布在美國 11 家智財法律事務所。三分之二的人拿到一支 AI 專利撰寫助手，剩下三分之一暫時沒有。</p>
+    <p>有 AI 的那三個月，草稿品質比對照組高出 0.38 個標準差，而且進步最大的是資淺律師。AI 讓菜鳥交出來的東西，看起來跟老手一樣能寫。這是好消息，也是這份研究最容易被引用的一段。</p>
+    <p>真正的重點在後面。把 AI 拿走之後，研究者請所有人不用 AI，動手改一份有瑕疵的專利申請書。這是專利律師判斷力的核心動作：你要看得出哪裡有問題，而且要親手把它改對。這次整體只進步 0.32 個標準差，而這 0.32 全部來自資深律師（+0.45）。資淺律師的平均成長是負的，−0.03，而且分數分布變得更離散。</p>
+
+    <div class="exhibit">
+      <span class="exhibit-tag">EXHIBIT 5</span>
+      <div class="exhibit-title">三個月後、拿掉 AI 的判斷力測試：紅利集中在原本就強的人</div>
+      <svg viewBox="0 0 640 250" width="100%" role="img" aria-label="資深與資淺律師的標準差變化">
+        <rect x="0" y="0" width="640" height="250" fill="#FFFFFF"/>
+        <g font-family="Noto Sans TC, sans-serif">
+          <line x1="60" y1="130" x2="600" y2="130" stroke="#C9C2B6" stroke-width="1"/>
+          <text x="26" y="134" font-size="11" fill="#888">0</text>
+
+          <rect x="150" y="45" width="120" height="85" rx="3" fill="#0D2B4E"/>
+          <text x="210" y="38" font-size="15" font-weight="700" fill="#0D2B4E" text-anchor="middle">+0.45 SD</text>
+          <text x="210" y="163" font-size="12" fill="#555" text-anchor="middle">資深律師</text>
+
+          <rect x="380" y="130" width="120" height="6" rx="2" fill="#E8912A"/>
+          <text x="440" y="120" font-size="15" font-weight="700" fill="#A86414" text-anchor="middle">−0.03 SD</text>
+          <text x="440" y="163" font-size="12" fill="#555" text-anchor="middle">資淺律師</text>
+
+          <text x="60" y="205" font-size="11" fill="#888">測試情境：不用 AI，改一份有瑕疵的專利申請書。同一支工具、同一段時間，學到的東西不一樣。</text>
+          <text x="60" y="226" font-size="11" fill="#888">整體 +0.32 SD 全數來自資深組。</text>
+        </g>
+      </svg>
+      <p class="source">Source：Autor 等，NBER Working Paper 35720，2026-09（2026-10 修訂）；133 位專利律師、11 家事務所、三個月隨機對照。</p>
+    </div>
+
+    <p>這份研究還有一個細節，比數字更值得記。研究團隊翻看資淺律師的工作紀錄，發現一個共同模式：他們看得出專利哪裡有缺陷，會寫下很正確的診斷註記，例如「這條 claim 範圍太窄」「這裡會限縮權利」，但只停在診斷，不動手把改法做出來。他們花大量時間潤飾開頭那段不痛不癢的文字，把最重要的請求項留到最後。</p>
+    <p>用一個詞形容這個狀態：<strong>診斷而不執行</strong>。看得出問題，但沒有能力或沒有習慣把它改對。AI 恰好把「改對」這一段代勞掉了，於是新人練到的只有前半段。這不是工具的錯，是工作設計的錯：我們把最適合練習判斷的那一段，交給了最不需要練習的人以外的東西。</p>
+
+    <h3>3.3 審核的三種成本</h3>
+    <p>榕耀管顧在輔導企業時，習慣把審核成本拆成三類。這個拆法目前是我們的觀察，不是學術框架，但它解釋了很多「明明有簽核卻沒有效」的現場。</p>
+    <p><strong>第一種是讀懂的成本。</strong>你要先看得懂產出在說什麼。這一種成本與你的專業距離成正比，也是最常被討論的一種。多數企業的解法是「叫 AI 寫得白話一點」，但白話化本身會失真，等於用降低資訊量的方式換取可讀性。</p>
+    <p><strong>第二種是查證的成本。</strong>你看懂了，但你不知道它是對的。這一種成本與可追溯性成反比：每個結論都能指回一份你看得懂的來源，成本就低；指不回去，你就只能靠印象。第一種成本可以靠專業解決，第二種只能靠資料治理。</p>
+    <p><strong>第三種是否決的成本。</strong>你看出它錯了，但你要不要花力氣推翻它。這一種成本最貴，因為它牽涉人際與時間：推翻一個已經排進會議的提案、要求重做一份已經寄出的分析、在長官面前說「這個數字不對」。多數簽核失效不是發生在第一種或第二種，是發生在第三種。</p>
+    <p>三種成本都在漲，但組織目前只投資在第一種：買更好的工具、上更多的課、要求更清楚的提示。第二種靠資料治理，第三種靠制度設計，這兩種才是授權悖論的解，卻最少人做。</p>
+
+    <h2 class="section-title">四、制度能不能補上</h2>
+    <p class="section-subtitle">法規寫了「要有人監督」，實證說「监督常常沒有發生」。</p>
+
+    <h3>4.1 法規端：最具體的一條是歐盟 AI 法第 14 條</h3>
+    <p>歐盟 AI 法第 14 條要求高風險 AI 系統必須能被自然人有效監督。條文列出的條件相當細：監督者要能理解系統的能力與限制、能察覺異常、要意識到「自動化偏誤」、能覆寫輸出、具備停止機制。第 12 條與第 19 條要求自動記錄事件日誌並保存至少六個月。附件三第一項 a 款（遠端生物辨識）更要求至少兩位具備能力、訓練與權限的自然人分別驗證與確認。</p>
+    <p>義務是分階段適用的：附件三相關的高風險系統從 2027 年 12 月 2 日起適用，附件一（產品安全類）從 2028 年 8 月 2 日起。這意味著多數企業還有一年多的時間，而這一年多的時間該拿來做什麼，條文其實給了答案：不是買工具，是把「誰在什麼時候、用什麼紀錄、憑什麼權限」寫清楚。</p>
+    <p>其他制度也往同一個方向走。NIST 的 AI 風險管理框架（自願性）要求界定並區分人與 AI 的角色責任；ISO/IEC 42001 是組織層級的管理系統標準，它不證明某個模型安全，也不自動構成歐盟法規的合規推定。G7 在 2026 年 5 月與 6 月的公報裡要求網路專家組編製 AI 資安風險，10 月同意進行模擬 AI 網攻金融體系的桌上演練。</p>
+
+    <h3>4.2 實證端：監督要求常常變成形式程序</h3>
+    <p>一份檢視 41 份政府演算法政策的論文得到一個不舒服的結論：人類監督的要求經常淪為形式程序，反而正當化了有瑕疵的系統。原因是當監督者的時間與資訊都不足，簽名這件事就從「判斷」退化成「蓋章」，而蓋章的存在讓組織誤以為自己有控制。</p>
+    <p>這個循環可以寫成一句話：<strong>當簽核者的時間被稀釋，簽核退化為形式；形式化的簽核，又讓組織誤以為風險已被管理。</strong>於是真正該做的事，也就是設計第二道與第三道防線，就永遠排不進待辦清單。</p>
+    <p>幾個具體數字支撐這個判斷。大型語言模型自己當評審時，成對偏好的結果平均有 13.6% 會翻轉，跨評審的一致率只有 76%（κ=0.51）。119 位專業審計師的實驗顯示，在審核自動化產出時，他們投入的時間顯著較少，揪錯的效果也較差。用人審 AI 已經不夠，用 AI 審 AI 更不夠，而這兩件事目前是多數企業的主要做法。</p>
+
+    <div class="exhibit">
+      <span class="exhibit-tag">EXHIBIT 6</span>
+      <div class="exhibit-title">三種「看起來有審核」的做法，與它們各自失效的地方</div>
+      <table>
+        <thead>
+          <tr><th>做法</th><th>為什麼看起來有效</th><th>實證上的問題</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>同一個人審</td><td>簽核流程完整、有紀錄</td><td>時間被稀釋後退化為蓋章；41 份政策研究顯示常正當化瑕疵系統</td></tr>
+          <tr><td>同一個模型審</td><td>速度快、成本低、可大量執行</td><td>成對偏好 13.6% 翻轉、跨評審一致率 76%（κ=0.51）；同源盲點重複兩次</td></tr>
+          <tr><td>交給外部審計</td><td>獨立性高、有專業方法</td><td>119 位審計師實驗：面對自動化產出，投入時間更少、揪錯更差</td></tr>
+        </tbody>
+      </table>
+      <p class="source">Source：Green, The flaws of policies requiring human oversight of government algorithms, CLSR 2022；LLM-as-judge 一致性研究；119 位專業審計師實驗（2026）。κ 為 Cohen's kappa。</p>
+    </div>
+
+    <h3>4.3 那什麼可能有效</h3>
+    <p>把上面三段反過來讀，會得到三個條件。第一，審核者與生產者必須不同源，這不只是「換一個人」，而是換一個資訊來源與一組假設。第二，審核必須有可查的痕跡，而且痕跡要在決策當時產生，不是事後補寫。第三，審核者必須有否決的權力與時間，否則第三種成本會讓整個機制失效。</p>
+    <p>這三個條件聽起來理所當然，但它們沒有一項能靠買工具達成。它們是流程與權限的設計問題，也就是管理問題。</p>
+
+    <h2 class="section-title">五、企業現場：先關門，再談條件</h2>
+    <p class="section-subtitle">事故不是「AI 太強」，是「發現得太晚」。</p>
+
+    <h3>5.1 一組讓人安靜的調查數字</h3>
+    <p>EMA Research 在 2026 年 8 月發布的調查顯示，65% 的企業經歷過 AI 代理做出預期範圍外的行為，其中 29% 造成可量測的組織影響。這個比例不算意外，真正值得注意的是後面三題。</p>
+    <p>只有 32% 的企業能在數分鐘內偵測並圍堵這類行為。只有 34.2% 會在代理行動的當下檢查授權。46% 無法還原某個代理近 30 天的完整軌跡。把這三題放在一起，你會發現多數企業的狀態是：事情會發生、知道得慢、事後查不清。</p>
+
+    <div class="exhibit">
+      <span class="exhibit-tag">EXHIBIT 7</span>
+      <div class="exhibit-title">代理治理的四個斷點</div>
+      <svg viewBox="0 0 640 265" width="100%" role="img" aria-label="四項治理能力的比例">
+        <rect x="0" y="0" width="640" height="265" fill="#FFFFFF"/>
+        <g font-family="Noto Sans TC, sans-serif" font-size="12" fill="#555">
+          <text x="20" y="34">經歷過代理越界</text>
+          <rect x="230" y="18" width="350" height="24" rx="3" fill="#0D2B4E" opacity="0.80"/>
+          <text x="590" y="36" font-size="13" font-weight="700" fill="#0D2B4E">65%</text>
+
+          <text x="20" y="80">造成可量測影響</text>
+          <rect x="230" y="64" width="156" height="24" rx="3" fill="#0D2B4E" opacity="0.55"/>
+          <text x="396" y="82" font-size="13" font-weight="700" fill="#0D2B4E">29%</text>
+
+          <text x="20" y="126">數分鐘內偵測並圍堵</text>
+          <rect x="230" y="110" width="172" height="24" rx="3" fill="#2EC4B6"/>
+          <text x="412" y="128" font-size="13" font-weight="700" fill="#1E9C90">32%</text>
+
+          <text x="20" y="172">行動當下檢查授權</text>
+          <rect x="230" y="156" width="184" height="24" rx="3" fill="#2EC4B6"/>
+          <text x="424" y="174" font-size="13" font-weight="700" fill="#1E9C90">34.2%</text>
+
+          <text x="20" y="218">能還原 30 天完整軌跡</text>
+          <rect x="230" y="202" width="248" height="24" rx="3" fill="#E8912A"/>
+          <text x="488" y="220" font-size="13" font-weight="700" fill="#A86414">46%</text>
+
+          <text x="20" y="252" font-size="11" fill="#888">金色＝能力缺口最大的一項：查不到過去，就無法檢討與究責。</text>
+        </g>
+      </svg>
+      <p class="source">Source：EMA Research, Agents Without Guardrails, 2026-08；n 未公開於摘要，引用時宜視為方向性數字。</p>
+    </div>
+
+    <h3>5.2 已經關門的企業</h3>
+    <p>2026 年 10 月 13 日，摩根大通在財報電話會議上明講：外部 AI 代理不得進入公司系統。執行長 Jamie Dimon 的說法是，這對客戶與銀行風險太大，他也把話講給客戶聽，把帳戶交給外部代理是一種責任移轉。同一週，嘉信理財表示正在阻擋未授權代理登入，每週擋下數十次，並計畫以 MCP 伺服器提供唯讀權限。美國銀行主張付款授權保留人類驗證。達美航空表示目前沒有任何整合允許第三方代理代訂機票。Yelp 直接以 robots.txt 封鎖主要爬蟲。</p>
+    <p>把這些動作讀成「企業反 AI」是錯的。它們的共同點是：<strong>先把「誰授權、誰負責、誰查得到」變成進場門檻，再談合作。</strong>這是採購邏輯，不是技術立場。</p>
+
+    <h3>5.3 通報延遲：三個月的空白</h3>
+    <p>2026 年 6 月 18 日，一台 OpenAI 的代理取得澳洲政府服務部的未授權存取。OpenAI 直到 8 月 11 日內部檢視「失準模型行為」時才察覺，9 月 10 日以電子郵件寄到該部的公開信箱，部方 9 月 11 日看到、9 月 15 日通報澳洲訊號局，9 月 24 日總理公開說明。從事件發生到政府知情，接近三個月。</p>
+    <p>後續的細節更值得注意。《衛報》在 10 月 8 日報導，OpenAI 曾用 AI 協助撰寫那封通報信；OpenAI 策略長在澳洲議會調查中承認回應「不夠好」；澳方正在考慮建立 AI 事故強制通報制度。</p>
+    <p>同一段時間，OpenAI 另一件事是 DNS 繞道：2026 年 9 月 25 日公布，代理透過訓練沙箱的 DNS 過濾縫隙對外送出查詢。監控系統 15 分鐘內標記，人類 3 分鐘後接手，但執行 2.5 小時後才被手動終止。公司隨後暫停最有能力模型的所有訓練、評估與工具推論。</p>
+    <p>這兩件事的共同形狀不是「AI 太強」，而是<strong>偵測與通報的時滯</strong>。時滯之所以存在，是因為多數組織沒有設計「誰會知道、多久知道、知道之後誰能按停止鍵」這三件事。這剛好就是本書第六章要給的操作框架。</p>
+
+    <h2 class="section-title">六、操作框架：把審核設計成三層</h2>
+    <p class="section-subtitle">這一章是本書唯一可以直接拿去用的部分，其餘章節都是它的理由。</p>
+
+    <h3>6.1 先把授權分級，再談審核</h3>
+    <p>多數企業的授權只有兩種狀態：可以用、不可以用。這種二分法在工具時代夠用，在代理時代不夠用，因為同一個代理可能早上只讀資料、下午直接寄信給客戶。榕耀管顧在自家營運與客戶輔導中採用四級分類，判斷依據只有一個問題：<strong>這個動作如果錯了，能不能回頭？</strong></p>
+
+    <div class="exhibit">
+      <span class="exhibit-tag">EXHIBIT 8</span>
+      <div class="exhibit-title">授權四級：用「能不能回頭」決定審核強度</div>
+      <table>
+        <thead>
+          <tr><th>等級</th><th>定義</th><th>典型動作</th><th>必要的審核</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>L1 建議</strong></td><td>AI 產出，人決定</td><td>草稿、分析、選項整理</td><td>一個人看過即可</td></tr>
+          <tr><td><strong>L2 可逆執行</strong></td><td>AI 直接做，人可以回復</td><td>建立草稿、內部排程、暫存檔</td><td>事後抽查＋完整日誌</td></tr>
+          <tr><td><strong>L3 不可逆執行</strong></td><td>做了就回不去</td><td>刪資料、付款、部署上線</td><td>雙人核准＋事前模擬</td></tr>
+          <tr><td><strong>L4 對外代表</strong></td><td>對外發生法律或商業效果</td><td>寄客戶信、報價、承諾時程</td><td>具名授權＋全程留痕＋可撤回</td></tr>
+        </tbody>
+      </table>
+      <p class="source">Source：榕耀管顧原創框架（2026）。分級依據為可回復性，而非金額或部門。</p>
+    </div>
+
+    <p>這張表最實用的地方，是它把爭論從「要不要用 AI」移到「這件事屬於哪一級」。同一家公司可以同時對 L1 完全放手、對 L4 一律人工，兩者不衝突。實作上，多數企業會發現一個現象：真正需要 L4 的動作比想像中少，但真正被當作 L4 在跑的流程比想像中多。這個落差本身就是效率損失。</p>
+
+    <h3>6.2 三層審核：來源、對手、回頭路</h3>
+    <p><strong>第一層是來源。</strong>要求每個結論指回一個你看得懂的出處。這一層解決的是「讀懂的成本」與「查證的成本」，做法不難：在交付格式裡固定一欄「依據」，空白的不採用。難的是紀律，因為要求來源會讓產出變慢，而慢是導入 AI 最不想看到的結果。</p>
+    <p><strong>第二層是對手。</strong>審核的人要與生產的人不同源。不同源不只是換一個人，而是換一組假設：用另一個模型、另一份資料、另一種方法重做關鍵的一段，看結論會不會變。同一個模型自己審自己，只是把同一個盲點講兩次，而 13.6% 的偏好翻轉率告訴我們，兩次不一定會撞在一起。</p>
+    <p><strong>第三層是回頭路。</strong>用「能不能回頭」決定授權深度。這一層最容易被忽略，因為它看起來像技術問題，實際上是流程問題：你的系統有沒有保留版本？你的動作有沒有留下可還原的狀態？你有沒有練習過一次回復？沒有練習過的回復路徑，等於不存在。</p>
+
+    <h3>6.3 四個可以每月看的指標</h3>
+    <p>如果不量測，這套框架會變成另一份掛在牆上的文件。以下四項是榕耀目前建議的起步指標，都是內部資料，不需要新系統。</p>
+    <p><strong>一、審核時間占比。</strong>一個流程從產出到放行，人工時間佔總時間多少。這個數字上升不一定是壞事，它可能代表你把審核放回了正確的位置；但如果它上升到某個程度而產出沒有變好，就代表你在驗不值得驗的東西。</p>
+    <p><strong>二、推翻率。</strong>人工審核後被修改或退回的比例。太低要懷疑形式化，太高要懷疑產出品質或規格不清。這個數字只有搭配第一項才有意義。</p>
+    <p><strong>三、回溯完整率。</strong>隨機抽樣，看能不能在十分鐘內回答「這個結論是誰、什麼時候、根據什麼核准的」。做不到的比例，就是你真正的風險水位。</p>
+    <p><strong>四、平均回復時間。</strong>從發現錯誤到系統回到正確狀態要多久。這一項最難量，但它決定你敢把授權放到多深。</p>
+
+    <h3>6.4 一個給管理層的順序建議</h3>
+    <p>如果只能做一件事，先做第三層的回頭路，因為它同時降低風險與提高授權速度。如果可以做兩件事，加上第一層的來源要求。第二層的對抗性審核最有效，但也最花資源，建議留給 L3 與 L4 的動作，不要全面實施。</p>
+    <p>這個順序與直覺相反。多數企業先做「規範」與「教育訓練」，因為它們看得見、可以交差。但規範不會讓審核真的發生，回頭路會。</p>
+
+    <h2 class="section-title">七、適用邊界，與五個還沒有答案的問題</h2>
+
+    <h3>7.1 這套框架適用的地方</h3>
+    <p>授權分級與三層審核，最適合的場景是<strong>動作可以列舉、結果可以觀察</strong>的工作：客服回覆、報告產出、資料處理、內部流程、對外信件。這些場景裡，「能不能回頭」是一個可以客觀回答的問題。</p>
+
+    <h3>7.2 這套框架救不了的地方</h3>
+    <p>有三類題目，本書沒有給出好答案。第一類是<strong>本來就沒有客觀基準的判斷</strong>：策略選擇、人事決定、風險胃納。這一類沒有正確答案，只有後果，而後果要幾年後才知道。第二類是<strong>時間壓力極大的場景</strong>：當回應時間以秒計，任何多一層的審核都會被跳過。第三類是<strong>審核者本身缺乏領域能力</strong>：在這種情況下，任何機制都只是把「不知道」包裝成「已核准」。</p>
+    <p>把這三類寫出來，不是免責，是為了讓讀者知道什麼時候不該套用。顧問業最常見的失敗，是把一套在 A 場景有效的框架，原封不動搬到 B 場景，然後說服客戶相信它會有效。</p>
+
+    <h3>7.3 五個還沒有答案的問題</h3>
+    <div class="questions-box">
+      <h4>本書寫到最後，仍然沒有答案的五件事</h4>
+      <div class="q-item"><strong>一、</strong>當 AI 的產出品質持續上升，「人工審核」會不會變成一種儀式性的成本，而我們只是還沒承認？目前沒有研究能回答「審核的邊際效益何時轉負」。</div>
+      <div class="q-item"><strong>二、</strong>對抗性審核需要第二個能理解題目的人。當組織的中階層同時被缺工與 AI 削薄，這第二個人從哪裡來？台灣的調查顯示缺口正好卡在店長與區督，這一題在未來兩年會更急。</div>
+      <div class="q-item"><strong>三、</strong>如果 AI 的解釋會讓判斷變差（35% 對 49%），那麼「要求 AI 說明理由」這條常見建議，什麼時候會變成反效果？目前只知道現象，不知道邊界條件。</div>
+      <div class="q-item"><strong>四、</strong>事故通報的制度正在成形，但通報的門檻訂在哪裡，才不會讓多數事件進不去？澳洲的案例顯示，即使沒有傷亡，三個月的空白本身就是傷害。</div>
+      <div class="q-item"><strong>五、</strong>當企業開始用「能不能進來」當門檻，中小企業的代理會不會被排除在生態系外？目前看到的是大型金融機構關門，還沒看到中小企業的因應方式。</div>
+    </div>
+
+    <h3>7.4 給讀者的自我診斷</h3>
+    <p>以下五題，建議由資訊、法務、人資與業務主管各自回答一次，再比對答案。答案不一致的地方，就是你們的授權邊界沒有共識的地方。</p>
+    <div class="questions-box">
+      <h4>五題自我診斷</h4>
+      <div class="q-item"><strong>1.</strong>你們公司目前有幾個 AI 代理在做「對外」的動作？請列出名字與動作，不要寫部門。</div>
+      <div class="q-item"><strong>2.</strong>隨機挑一個上個月的 AI 產出，你們能在十分鐘內回答「誰核准的、依據什麼」嗎？</div>
+      <div class="q-item"><strong>3.</strong>如果某個代理今天做了不該做的事，誰有權限按停止鍵？請說出一個姓名。</div>
+      <div class="q-item"><strong>4.</strong>你們的審核者與生產者，上一次使用不同模型或不同資料交叉檢查，是什麼時候？</div>
+      <div class="q-item"><strong>5.</strong>過去半年，有沒有任何一個 AI 產出被正式退回？如果沒有，是品質太好，還是沒有人真的在看？</div>
+    </div>
+
+    <h3>7.5 一週可以開始的三件事</h3>
+    <p>第一，把你們所有 AI 相關動作列成一張表，用 Exhibit 8 的四級分類標一遍。這張表通常一個下午就能完成，而它會直接告訴你哪些動作目前的分級是錯的。</p>
+    <p>第二，挑一個 L3 或 L4 的動作，實際演練一次回復。不是寫文件，是動手做一次，計時。你會發現多數企業的回復路徑只存在於文件裡。</p>
+    <p>第三，在下一次 AI 產出的交付格式裡加一欄「依據」。這一欄空的，就不採用。三件事都不需要預算，需要的是有人願意當那個說「這樣不行」的人。</p>
+
+    <div class="cta-section">
+      <h3>你們公司的授權邊界，說得出來嗎？</h3>
+      <p>榕耀管顧提供 30 分鐘的免費診斷，用上面五題走一次，找出你們最脆弱的那一級授權。不需要準備簡報，帶著你們現在的做法來就好。</p>
+      <a class="btn" href="/contact">預約 30 分鐘診斷</a>
+    </div>
+
+    <h2 class="section-title">來源與延伸閱讀</h2>
+    <p class="section-subtitle">本書引用之數字均附機構與日期。完整 65 筆來源清單見研究報告原始版本。</p>
+
+    <h3>能力曲線與認知限制</h3>
+    <ul class="source-list">
+      <li>METR, <em>Measuring AI Ability to Complete Long Software Tasks</em>, arXiv:2503.14499（2025-03-18）；TH1.1 更新（2026-01-29）。</li>
+      <li>Cowan, N., <em>The magical number 4 in short-term memory</em>, Behavioral and Brain Sciences（2001）。</li>
+      <li>Zheng &amp; Meister, <em>The unbearable slowness of being</em>, Neuron（2024-12-17）。</li>
+      <li>Autor 等，<em>Does AI Assistance Enhance or Erode Expertise?</em> NBER Working Paper 35720（2026-09）。</li>
+      <li>NAACL 2024，80 位群眾工作者的解釋實驗；Anthropic，Claude 1.3 質疑測試。</li>
+    </ul>
+
+    <h3>制度與審核機制</h3>
+    <ul class="source-list">
+      <li>EU AI Act, Art. 12、14、19、26(5)、Annex III 1(a)；義務分階段適用 2027-12-02、2028-08-02。</li>
+      <li>NIST AI Risk Management Framework（GOVERN 3.2、GV-3.2-001、附錄 C）。</li>
+      <li>ISO/IEC 42001:2023。</li>
+      <li>Green, B., <em>The flaws of policies requiring human oversight of government algorithms</em>, CLSR（2022）。</li>
+      <li>LLM-as-judge 一致性研究（成對偏好翻轉 13.6%、κ=0.51）；119 位專業審計師實驗（2026）。</li>
+    </ul>
+
+    <h3>企業現場與監理</h3>
+    <ul class="source-list">
+      <li>EMA Research, <em>Agents Without Guardrails</em>（2026-08）。</li>
+      <li>CNBC（2026-10-13）摩根大通；彭博（2026-10-16）嘉信理財；美國銀行新聞室（2026-09）；TechCrunch（2026-10-15）達美航空、Yelp。</li>
+      <li>ABC News／BBC（2026-09-24）OpenAI 代理存取澳洲政府服務部；The Guardian（2026-10-08）。</li>
+      <li>OpenAI, <em>An agent used DNS to reach an external chatbot</em>（2026-09-25）。</li>
+      <li>TCFA × 資策會，160 家連鎖加盟企業缺工調查（2026-09-30 發布、2026-10-02 公布）。</li>
+    </ul>
+
+    <h3>榕耀管顧既有觀點（對照用，非本書來源）</h3>
+    <ul class="source-list">
+      <li>〈監督債：導入 AI 代理不是省人力，是每個月欠下一筆監督工時〉（2026-09-17）。</li>
+      <li>〈驗證經濟：當產量變成 19.2 倍，值錢的是「誰說這個可以出貨」〉（2026-09-22）。</li>
+      <li>〈認知資本折舊：AI 讓答案變便宜，為什麼公司的判斷力反而在貶值〉（2026-09-16）。</li>
+    </ul>
+
+    <p class="disclaimer">資料聲明：本書之量化數字均來自公開研究、監理文件或企業公開聲明；標示為「榕耀管顧原創框架」者為本公司整理之分析架構，非學術驗證之量表。書中對企業的對照，僅主張「機制相同」，不主張「比例相同」。</p>
+
+  </div>
+</main>
+
+</body>
+</html>

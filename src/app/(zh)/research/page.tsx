@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "研究專刊｜白皮書 — 榕耀管顧",
-  description: "榕耀管顧研究專刊系列，探討 AI 時代的管理議題：心智頻寬、AI Agent 績效管理、任務變形蟲。免費閱讀。",
+  description: "榕耀管顧研究專刊系列，探討 AI 時代的管理議題：授權悖論、心智頻寬、AI Agent 績效管理、任務變形蟲。免費閱讀。",
   alternates: {
     canonical: "https://rong-rise.com/research",
   },
@@ -29,6 +29,18 @@ interface ResearchPaper {
 
 const papers: ResearchPaper[] = [
   {
+    title: "授權悖論",
+    sub: "你交給 AI 的工作越長，你越驗不動它",
+    series: "研究專刊系列第 4 本",
+    desc: "AI 能完成的任務長度約每七個月翻一倍，人的審核能力卻沒有對應的變化。本書用 65 筆可查證來源，拆解授權悖論的三層結構：能力、類別、時間；整理審核失效的實驗數據（醫師、專利律師、審計師），並提出可直接操作的「授權四級」與三層審核框架。",
+    wordCount: "10,500 字",
+    date: "2026.10",
+    href: "/research/authorization-paradox/",
+    hrefAlt: { label: "⚡ 精華版（7 分鐘）", url: "/research/authorization-paradox/highlights/" },
+    isNew: true,
+    tags: ["授權悖論", "AI 治理", "審核機制", "代理 AI"],
+  },
+  {
     title: "心智頻寬詛咒",
     sub: "當管理層的大腦成為 AI 轉型最大的瓶頸",
     series: "研究專刊系列第 3 本",
@@ -37,7 +49,7 @@ const papers: ResearchPaper[] = [
     date: "2026.09",
     href: "/research/mental-bandwidth-curse/",
     hrefAlt: { label: "⚡ 精華版（7 分鐘）", url: "/research/mental-bandwidth-curse/highlights/" },
-    isNew: true,
+    isNew: false,
     tags: ["心智頻寬", "決策疲勞", "管理真空", "認知科學"],
   },
   {

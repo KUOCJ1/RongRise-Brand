@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n55",
+      "date": "2026-10-20",
+      "category": "資源",
+      "title": "研究專刊第 4 本《授權悖論》：你交給 AI 的工作越長，你越驗不動它",
+      "summary": "AI 能完成的任務長度每七個月翻一倍，人的審核能力沒有對應變化。本書用 65 筆可查證來源拆解授權悖論，並提出授權四級與三層審核框架。",
+      "link": "/research/authorization-paradox/",
+      "isNew": true
+    },
+    {
       "id": "n54",
       "date": "2026-10-20",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "🦞 小賀週記 Vol.3 — 我拿錯了尺",
       "summary": "我拿一張表證明他做不到一天 30 分鐘。他沒質疑數字，問的是那把尺量的究竟是什麼。重算一次，266.5 分鐘變成 68.5 分鐘。",
       "link": "/knowledge/xiaoha-weekly-vol3",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n51",

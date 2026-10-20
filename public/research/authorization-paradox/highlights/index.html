@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>授權悖論（精華版）｜7 分鐘讀完 — 榕耀管顧研究專刊</title>
+<meta name="description" content="授權悖論精華版：五個核心判斷、授權四級框架、三層審核與五題自我診斷。榕耀管顧研究專刊系列第 4 本。">
+<meta property="og:title" content="授權悖論（精華版）｜榕耀管顧研究專刊">
+<meta property="og:description" content="7 分鐘讀完授權悖論：五個判斷、授權四級、五題自我診斷。">
+<meta property="og:image" content="https://rong-rise.com/research/authorization-paradox/og-image.jpg">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #F7F4EE;
+  --white: #FFFFFF;
+  --navy: #0D2B4E;
+  --gold: #E8912A;
+  --teal: #2EC4B6;
+  --text: #1a1a2e;
+  --text-secondary: #555;
+  --border: #ddd;
+  --card-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--paper);
+  color: var(--text);
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.85;
+  font-size: 16px;
+}
+.container { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+
+/* ===== COVER ===== */
+.cover {
+  background: var(--navy);
+  color: white;
+  padding: 80px 24px 60px;
+  text-align: center;
+}
+.cover .kicker {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: var(--gold);
+  border: 1px solid rgba(232,145,42,0.4);
+  border-radius: 20px;
+  padding: 6px 18px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+.cover h1 {
+  font-family: 'Noto Serif TC', serif;
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 900;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+.cover .subtitle {
+  font-size: 16px;
+  color: rgba(255,255,255,0.7);
+  max-width: 560px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+.cover .meta {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+}
+.cover .meta span { margin: 0 8px; }
+.cover .series-badge {
+  display: inline-block;
+  background: rgba(46,196,182,0.15);
+  color: var(--teal);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+/* ===== CONTENT ===== */
+.content { padding: 48px 0 64px; }
+.content .section-title {
+  font-family: 'Noto Serif TC', serif;
+  font-size: clamp(22px, 3.5vw, 28px);
+  font-weight: 700;
+  color: var(--navy);
+  margin: 48px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--gold);
+}
+.content .section-title:first-child { margin-top: 0; }
+.content .section-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+.content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 36px 0 12px;
+}
+.content p { margin: 16px 0; color: var(--text); }
+.content p.strong-lead { font-weight: 700; font-size: 17px; }
+.content .gold-line {
+  width: 40px;
+  height: 2px;
+  background: var(--gold);
+  margin: 8px 0 24px;
+}
+
+/* ===== EXHIBIT ===== */
+.exhibit {
+  background: var(--white);
+  border-radius: 12px;
+  border-top: 3px solid var(--gold);
+  padding: 24px;
+  margin: 32px 0;
+  box-shadow: var(--card-shadow);
+}
+.exhibit .exhibit-tag {
+  display: inline-block;
+  background: var(--gold);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+.exhibit .exhibit-title {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+
+/* ===== QUOTE / CALLOUT ===== */
+.callout {
+  border-left: 3px solid var(--gold);
+  background: linear-gradient(90deg, rgba(232,145,42,0.05), transparent 70%);
+  padding: 16px 20px;
+  margin: 24px 0;
+  border-radius: 0 8px 8px 0;
+}
+.callout p { margin: 4px 0; color: var(--text-secondary); font-size: 15px; }
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 14px;
+}
+th {
+  background: var(--navy);
+  color: white;
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 600;
+}
+td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+tr:hover td { background: rgba(232,145,42,0.04); }
+
+/* ===== CHAPTER QUESTIONS ===== */
+.questions-box {
+  background: rgba(13,43,78,0.03);
+  border: 1px solid rgba(13,43,78,0.08);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 32px 0;
+}
+.questions-box h4 { color: var(--navy); font-size: 15px; margin-bottom: 16px; }
+.questions-box .q-item { margin: 16px 0; }
+.questions-box .q-item strong { color: var(--gold); }
+
+/* ===== FOOTER CTA ===== */
+.cta-section {
+  background: var(--navy);
+  border-radius: 16px;
+  padding: 40px 32px;
+  text-align: center;
+  margin: 48px 0;
+  color: white;
+}
+.cta-section h3 { color: white !important; font-family: 'Noto Serif TC', serif; font-size: 22px; }
+.cta-section p { color: rgba(255,255,255,0.7) !important; margin: 12px 0 24px; font-size: 15px; }
+.cta-section .btn {
+  display: inline-block;
+  background: var(--gold);
+  color: white;
+  font-weight: 700;
+  padding: 12px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+.cta-section .btn:hover { background: #d47d1e; }
+
+/* ===== PRINT ===== */
+@media print {
+  .cover { padding: 40px 24px; }
+  .no-print { display: none !important; }
+  .exhibit { break-inside: avoid; }
+  body { font-size: 14px; }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .cover { padding: 48px 20px 36px; }
+  .content { padding: 32px 0; }
+  .exhibit { padding: 16px; }
+}
+
+/* ===== 本書新增樣式 ===== */
+.method-note { background:#FFFFFF; border:1px solid #E4DED2; border-left:3px solid var(--teal);
+  border-radius:8px; padding:20px 22px; margin:8px 0 32px; }
+.method-note strong { display:block; color:var(--navy); font-size:15px; margin-bottom:8px; }
+.method-note p { font-size:14px; color:#555; margin:8px 0; line-height:1.8; }
+
+.judgment { position:relative; background:#FFFFFF; border-left:3px solid var(--gold);
+  border-radius:8px; padding:22px 24px 18px; margin:20px 0; box-shadow:var(--card-shadow); overflow:hidden; }
+.judgment-num { position:absolute; right:14px; top:-6px; font-family:'Noto Serif TC',serif;
+  font-size:64px; font-weight:900; color:rgba(13,43,78,0.05); line-height:1; }
+.judgment h3 { font-size:17px; margin:0 0 10px; color:var(--navy); position:relative; }
+.judgment p { margin:0; font-size:15px; color:#3a3a3a; }
+
+.exhibit table { width:100%; border-collapse:collapse; font-size:14px; margin:4px 0 8px; }
+.exhibit thead th { background:var(--navy); color:#fff; text-align:left; padding:10px 12px; font-weight:700; font-size:13px; }
+.exhibit tbody td { border-bottom:1px solid #ECE6DA; padding:10px 12px; vertical-align:top; line-height:1.7; }
+.exhibit tbody tr:hover td { background:rgba(232,145,42,0.06); }
+.exhibit .source { font-size:11.5px; color:#8a8a8a; margin:10px 0 0; line-height:1.6; }
+
+.source-list { margin:8px 0 24px; padding-left:18px; }
+.source-list li { font-size:13.5px; color:#4a4a4a; margin:7px 0; line-height:1.75; }
+
+.disclaimer { font-size:12px; color:#8a8a8a; background:#FFFFFF; border:1px solid #E4DED2;
+  border-radius:8px; padding:16px 18px; margin:32px 0 0; line-height:1.8; }
+
+.version-switcher { background:var(--paper); }
+@media print { .version-switcher { display:none !important; } }
+
+</style>
+
+<body>
+<header class="cover">
+  <div class="series-badge">榕耀管顧研究專刊系列 第 4 本</div>
+  <div class="kicker">精華版 · 7 分鐘</div>
+  <h1>授權悖論</h1>
+  <p class="subtitle">你交給 AI 的工作越長、越難，你越沒有能力審核它。這是斜率問題，不是使用方式的問題。</p>
+  <div class="meta"><span>2026 年 10 月</span><span>·</span><span>精華版</span></div>
+</header>
+
+<div class="version-switcher" style="text-align:center;padding:24px 0 8px;">
+  <a href="/research/authorization-paradox/" style="display:inline-block;padding:8px 20px;border-radius:20px;font-size:13px;font-weight:500;color:#666;background:#eee;text-decoration:none;margin:0 4px;">📖 完整版（30 分鐘）</a>
+  <a href="/research/authorization-paradox/highlights/" class="active" style="display:inline-block;padding:8px 20px;border-radius:20px;font-size:13px;font-weight:700;color:white;background:#0D2B4E;text-decoration:none;margin:0 4px;">⚡ 精華版（7 分鐘）</a>
+</div>
+
+<main class="content">
+  <div class="container">
+
+    <h2 class="section-title">一句話版本</h2>
+    <p>AI 能完成的任務長度每七個月翻一倍，人的審核能力沒有對應的變化。於是你交出去的工作，已經超過你有能力驗證的範圍，而多數企業還沒有設計任何機制發現這件事。</p>
+
+    <h2 class="section-title">五個核心判斷</h2>
+
+    <div class="judgment">
+      <div class="judgment-num">01</div>
+      <h3>授權的深度與可審核性，往反方向走。</h3>
+      <p>過去 AI 做的是你已知答案的事，這一類你驗得動。現在它做你原本不知道答案的事，這一類只能看結果，而結果來得慢、錯了不能回頭。</p>
+    </div>
+
+    <div class="judgment">
+      <div class="judgment-num">02</div>
+      <h3>兩條曲線的斜率差了一個量級。</h3>
+      <p>METR 實測：前沿模型能完成的任務長度，2019 年起約每七個月翻一倍，2024 年起算的估計縮短到 88.6 天。人的工作記憶約四個組塊、行為吞吐約每秒 10 bit，二十多年沒有量級變化。</p>
+    </div>
+
+    <div class="judgment">
+      <div class="judgment-num">03</div>
+      <h3>審核失效有數據，偏誤方向是「人傾向相信 AI」。</h3>
+      <p>44 位受過 20 小時 AI 素養訓練的醫師，收到含錯建議後，診斷正確率從 84.9% 掉到 73.3%。AI 的解釋錯誤時，人的正確率只剩 35%，比不給解釋的 49% 更低。</p>
+    </div>
+
+    <div class="judgment">
+      <div class="judgment-num">04</div>
+      <h3>制度可以放大審核，但多數機制還沒被證明有效。</h3>
+      <p>模型自己當評審，成對偏好平均 13.6% 會翻轉；119 位專業審計師審核自動化產出時，投入時間更少、揪錯更差。法規寫了「要有人監督」，不等於監督真的發生。</p>
+    </div>
+
+    <div class="judgment">
+      <div class="judgment-num">05</div>
+      <h3>真正的風險是你不知道自己超出了範圍。</h3>
+      <p>65% 的企業遇過代理越界，但只有 32% 能在數分鐘內圍堵、34.2% 在行動當下檢查授權、46% 查不出代理近 30 天做了什麼。</p>
+    </div>
+
+    <h2 class="section-title">可以直接用的框架</h2>
+
+    <div class="exhibit">
+      <span class="exhibit-tag">EXHIBIT</span>
+      <div class="exhibit-title">授權四級：用「能不能回頭」決定審核強度</div>
+      <table>
+        <thead><tr><th>等級</th><th>定義</th><th>必要審核</th></tr></thead>
+        <tbody>
+          <tr><td><strong>L1 建議</strong></td><td>AI 產出，人決定</td><td>一個人看過</td></tr>
+          <tr><td><strong>L2 可逆執行</strong></td><td>AI 直接做，人能回復</td><td>事後抽查＋完整日誌</td></tr>
+          <tr><td><strong>L3 不可逆執行</strong></td><td>做了回不去</td><td>雙人核准＋事前模擬</td></tr>
+          <tr><td><strong>L4 對外代表</strong></td><td>對外發生法律或商業效果</td><td>具名授權＋留痕＋可撤回</td></tr>
+        </tbody>
+      </table>
+      <p class="source">Source：榕耀管顧原創框架（2026）。判斷依據為可回復性，不是金額或部門。</p>
+    </div>
+
+    <p><strong>三層審核。</strong>第一層要求來源：每個結論指回一個你看得懂的出處，指不回去的不採用。第二層要求對手：審核者與生產者不同源，換模型、換資料、換方法重做關鍵一段。第三層要求回頭路：用能不能回復決定授權深度，而且實際演練過一次。</p>
+
+    <p><strong>四個每月指標。</strong>審核時間占比、推翻率、回溯完整率、平均回復時間。四個都是內部資料，不需要新系統。</p>
+
+    <h2 class="section-title">五題自我診斷</h2>
+    <div class="questions-box">
+      <h4>由資訊、法務、人資與業務各自回答，再比對</h4>
+      <div class="q-item"><strong>1.</strong>公司現在有幾個 AI 代理在做對外動作？請列出名字與動作。</div>
+      <div class="q-item"><strong>2.</strong>隨機挑一筆上個月的 AI 產出，十分鐘內答得出「誰核准、依據什麼」嗎？</div>
+      <div class="q-item"><strong>3.</strong>如果代理今天做了不該做的事，誰有權限按停止鍵？請說出姓名。</div>
+      <div class="q-item"><strong>4.</strong>上一次用不同模型或不同資料交叉檢查，是什麼時候？</div>
+      <div class="q-item"><strong>5.</strong>過去半年有任何 AI 產出被正式退回嗎？沒有，是品質太好還是沒人真的在看？</div>
+    </div>
+
+    <div class="cta-section">
+      <h3>完整版有實驗數據與適用邊界</h3>
+      <p>完整版包含 8 張 Exhibit、MIT 三個月隨機實驗的完整解讀、歐盟 AI 法第 14 條的實務要求，以及這套框架救不了的三種場景。</p>
+      <a class="btn" href="/research/authorization-paradox/">閱讀完整版</a>
+    </div>
+
+  </div>
+</main>
+
+</body>
+</html>
