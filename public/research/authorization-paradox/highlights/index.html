@@ -243,15 +243,23 @@ tr:hover td { background: rgba(232,145,42,0.04); }
 .exhibit tbody tr:hover td { background:rgba(232,145,42,0.06); }
 .exhibit .source { font-size:12.5px; color:#8a8a8a; margin:10px 0 0; line-height:1.65; }
 
-/* 圖表：手機維持原比例、可橫向滑動，避免文字被縮成 7px */
-.chart-scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; }
-.chart-scroll svg { display:block; }
-.chart-scroll::-webkit-scrollbar { height:6px; }
-.chart-scroll::-webkit-scrollbar-thumb { background:#D8D1C4; border-radius:3px; }
+/* 圖表：HTML 長條（手機自動換行，不需要橫向滑動） */
+.bars { margin: 18px 0 6px; }
+.bar-row { display:grid; grid-template-columns: 168px 1fr 96px; align-items:center; gap:12px; margin:11px 0; }
+.bar-label { font-size:13.5px; color:#3f3f3f; line-height:1.45; }
+.bar-track { display:block; height:14px; background:#EDE7DB; border-radius:7px; overflow:hidden; }
+.bar-fill { display:block; height:100%; border-radius:7px; }
+.bar-val { font-size:14.5px; font-weight:700; color:#0D2B4E; text-align:right; font-variant-numeric:tabular-nums; }
+.bar-val.accent { color:#A86414; }
+.bar-group-title { font-size:13px; font-weight:700; color:#0D2B4E; margin:6px 0 4px; letter-spacing:0.3px; }
+.bar-delta { font-size:12.5px; color:#B03A2E; margin:2px 0 10px 180px; }
+.bar-note { font-size:12.5px; color:#8a8a8a; margin:12px 0 0; line-height:1.7; }
 @media (max-width: 600px) {
-  .chart-scroll { margin: 0 -4px; padding-bottom: 4px; }
-  .chart-scroll svg { width: 600px; max-width: none; }
-  .chart-scroll::after { content:"← 圖表可左右滑動 →"; display:block; font-size:11px; color:#9a9384; margin-top:6px; }
+  .bar-row { grid-template-columns: 1fr auto; gap:6px 10px; margin:13px 0; }
+  .bar-track { grid-column: 1 / -1; height:12px; }
+  .bar-label { font-size:13px; }
+  .bar-val { font-size:14px; }
+  .bar-delta { margin-left:0; }
 }
 
 .source-list { margin:8px 0 24px; padding-left:18px; }

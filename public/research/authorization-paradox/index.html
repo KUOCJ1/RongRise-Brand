@@ -243,15 +243,23 @@ tr:hover td { background: rgba(232,145,42,0.04); }
 .exhibit tbody tr:hover td { background:rgba(232,145,42,0.06); }
 .exhibit .source { font-size:12.5px; color:#8a8a8a; margin:10px 0 0; line-height:1.65; }
 
-/* 圖表：手機維持原比例、可橫向滑動，避免文字被縮成 7px */
-.chart-scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; }
-.chart-scroll svg { display:block; }
-.chart-scroll::-webkit-scrollbar { height:6px; }
-.chart-scroll::-webkit-scrollbar-thumb { background:#D8D1C4; border-radius:3px; }
+/* 圖表：HTML 長條（手機自動換行，不需要橫向滑動） */
+.bars { margin: 18px 0 6px; }
+.bar-row { display:grid; grid-template-columns: 168px 1fr 96px; align-items:center; gap:12px; margin:11px 0; }
+.bar-label { font-size:13.5px; color:#3f3f3f; line-height:1.45; }
+.bar-track { display:block; height:14px; background:#EDE7DB; border-radius:7px; overflow:hidden; }
+.bar-fill { display:block; height:100%; border-radius:7px; }
+.bar-val { font-size:14.5px; font-weight:700; color:#0D2B4E; text-align:right; font-variant-numeric:tabular-nums; }
+.bar-val.accent { color:#A86414; }
+.bar-group-title { font-size:13px; font-weight:700; color:#0D2B4E; margin:6px 0 4px; letter-spacing:0.3px; }
+.bar-delta { font-size:12.5px; color:#B03A2E; margin:2px 0 10px 180px; }
+.bar-note { font-size:12.5px; color:#8a8a8a; margin:12px 0 0; line-height:1.7; }
 @media (max-width: 600px) {
-  .chart-scroll { margin: 0 -4px; padding-bottom: 4px; }
-  .chart-scroll svg { width: 600px; max-width: none; }
-  .chart-scroll::after { content:"← 圖表可左右滑動 →"; display:block; font-size:11px; color:#9a9384; margin-top:6px; }
+  .bar-row { grid-template-columns: 1fr auto; gap:6px 10px; margin:13px 0; }
+  .bar-track { grid-column: 1 / -1; height:12px; }
+  .bar-label { font-size:13px; }
+  .bar-val { font-size:14px; }
+  .bar-delta { margin-left:0; }
 }
 
 .source-list { margin:8px 0 24px; padding-left:18px; }
@@ -340,27 +348,19 @@ tr:hover td { background: rgba(232,145,42,0.04); }
     <div class="exhibit">
       <span class="exhibit-tag">EXHIBIT 1</span>
       <div class="exhibit-title">授權深度與可審核性的剪刀差</div>
-      <div class="chart-scroll"><svg viewBox="0 0 640 300" width="100%" role="img" aria-label="授權深度上升時，可審核性下降的示意圖">
-        <rect x="0" y="0" width="640" height="300" fill="#FFFFFF"/>
-        <!-- axes -->
-        <line x1="60" y1="250" x2="600" y2="250" stroke="#C9C2B6" stroke-width="1.5"/>
-        <line x1="60" y1="30" x2="60" y2="250" stroke="#C9C2B6" stroke-width="1.5"/>
-        <text x="330" y="285" font-size="13" fill="#555" text-anchor="middle" font-family="Noto Sans TC, sans-serif">授權給 AI 的任務深度（長度・複雜度・不可逆性）</text>
-        <text x="18" y="140" font-size="13" fill="#555" text-anchor="middle" transform="rotate(-90 18 140)" font-family="Noto Sans TC, sans-serif">可審核性</text>
-        <!-- area between -->
-        <path d="M60,215 C180,200 260,170 340,120 C420,70 520,45 600,38 L600,235 C520,225 420,210 340,190 C260,175 180,170 60,170 Z" fill="#E8912A" opacity="0.10"/>
-        <!-- AI capability curve -->
-        <path d="M60,235 C160,225 240,195 320,150 C410,100 510,65 600,45" fill="none" stroke="#0D2B4E" stroke-width="3"/>
-        <!-- verifiability curve -->
-        <path d="M60,175 C180,172 300,168 420,162 C500,158 560,156 600,155" fill="none" stroke="#2EC4B6" stroke-width="3" stroke-dasharray="7 5"/>
-        <!-- labels -->
-        <text x="470" y="34" font-size="13" font-weight="700" fill="#0D2B4E" font-family="Noto Sans TC, sans-serif">AI 能做的任務深度</text>
-        <text x="440" y="150" font-size="13" font-weight="700" fill="#1E9C90" font-family="Noto Sans TC, sans-serif">人能審核的上限</text>
-        <text x="330" y="120" font-size="12" fill="#A86414" font-family="Noto Sans TC, sans-serif">差距＝授權出去、卻沒有人真的驗過的範圍</text>
-        <!-- markers -->
-        <circle cx="320" cy="150" r="4.5" fill="#0D2B4E"/>
-        <circle cx="320" cy="165" r="4.5" fill="#2EC4B6"/>
-      </svg></div>
+      <svg viewBox="0 0 400 300" width="100%" style="max-width:520px;margin:0 auto" role="img" aria-label="授權深度與可審核性的剪刀差">
+        <rect x="0" y="0" width="400" height="300" fill="#FFFFFF"/>
+        <line x1="46" y1="250" x2="384" y2="250" stroke="#C9C2B6" stroke-width="1.5"/>
+        <line x1="46" y1="24" x2="46" y2="250" stroke="#C9C2B6" stroke-width="1.5"/>
+        <text x="215" y="284" font-size="15" fill="#555" text-anchor="middle" font-family="Noto Sans TC, sans-serif">授權出去的任務深度</text>
+        <text x="18" y="140" font-size="15" fill="#555" text-anchor="middle" transform="rotate(-90 18 140)" font-family="Noto Sans TC, sans-serif">可審核性</text>
+        <path d="M46,215 C140,200 210,168 270,120 C320,80 355,60 384,52 L384,232 C355,224 320,210 270,188 C210,170 140,168 46,170 Z" fill="#E8912A" opacity="0.12"/>
+        <path d="M46,236 C130,226 200,196 265,150 C320,110 355,78 384,58" fill="none" stroke="#0D2B4E" stroke-width="4"/>
+        <path d="M46,174 C150,171 260,167 384,163" fill="none" stroke="#2EC4B6" stroke-width="4" stroke-dasharray="8 5"/>
+        <text x="250" y="44" font-size="15" font-weight="700" fill="#0D2B4E" font-family="Noto Sans TC, sans-serif">AI 做得到</text>
+        <text x="250" y="156" font-size="15" font-weight="700" fill="#1E9C90" font-family="Noto Sans TC, sans-serif">人驗得到</text>
+        <text x="60" y="120" font-size="14" fill="#A86414" font-family="Noto Sans TC, sans-serif">這段差距，沒有人真的驗過</text>
+      </svg>
       <p class="source">Source：榕耀管顧整理。縱軸為概念示意，非量化量測；兩條曲線的相對位置由第二章的公開研究支撐。</p>
     </div>
 
@@ -382,25 +382,12 @@ tr:hover td { background: rgba(232,145,42,0.04); }
     <div class="exhibit">
       <span class="exhibit-tag">EXHIBIT 2</span>
       <div class="exhibit-title">50% 任務時間視野的翻倍所需天數（依不同起始年估計）</div>
-      <div class="chart-scroll"><svg viewBox="0 0 640 230" width="100%" role="img" aria-label="三組翻倍天數的長條圖">
-        <rect x="0" y="0" width="640" height="230" fill="#FFFFFF"/>
-        <g font-family="Noto Sans TC, sans-serif">
-          <text x="20" y="28" font-size="12" fill="#555">全期（2019 起）</text>
-          <rect x="190" y="12" width="380" height="26" rx="4" fill="#DCE3EC"/>
-          <rect x="190" y="12" width="380" height="26" rx="4" fill="#0D2B4E" opacity="0.55"/>
-          <text x="580" y="31" font-size="14" font-weight="700" fill="#0D2B4E">196.5 天</text>
-
-          <text x="20" y="92" font-size="12" fill="#555">2023 年起</text>
-          <rect x="190" y="76" width="253" height="26" rx="4" fill="#0D2B4E" opacity="0.75"/>
-          <text x="453" y="95" font-size="14" font-weight="700" fill="#0D2B4E">130.8 天</text>
-
-          <text x="20" y="156" font-size="12" fill="#555">2024 年起</text>
-          <rect x="190" y="140" width="171" height="26" rx="4" fill="#E8912A"/>
-          <text x="371" y="159" font-size="14" font-weight="700" fill="#A86414">88.6 天</text>
-
-          <text x="20" y="205" font-size="11" fill="#888">同一把尺、同一份題庫，只換起始年：越近期，翻倍越快。</text>
-        </g>
-      </svg></div>
+      <div class="bars">
+        <div class="bar-row"><span class="bar-label">全期（2019 起）</span><span class="bar-track"><span class="bar-fill" style="width:100%;background:#9DAFC4"></span></span><span class="bar-val">196.5 天</span></div>
+        <div class="bar-row"><span class="bar-label">2023 年起</span><span class="bar-track"><span class="bar-fill" style="width:66.6%;background:#41648C"></span></span><span class="bar-val">130.8 天</span></div>
+        <div class="bar-row"><span class="bar-label">2024 年起</span><span class="bar-track"><span class="bar-fill" style="width:45.1%;background:#E8912A"></span></span><span class="bar-val accent">88.6 天</span></div>
+      </div>
+      <p class="bar-note">同一把尺、同一份題庫，只換起始年：越近期，翻倍越快。</p>
       <p class="source">Source：METR，Tasks/Horizon 1.1 更新，2026-01-29；原始研究 arXiv:2503.14499（2025-03-18）。此指標量測誤差可達上下兩倍，宜以區間解讀。</p>
     </div>
 
@@ -422,28 +409,13 @@ tr:hover td { background: rgba(232,145,42,0.04); }
     <div class="exhibit">
       <span class="exhibit-tag">EXHIBIT 3</span>
       <div class="exhibit-title">台灣連鎖加盟業缺工缺口：一線缺人力，中階缺判斷</div>
-      <div class="chart-scroll"><svg viewBox="0 0 640 250" width="100%" role="img" aria-label="四類職缺的缺工比例長條圖">
-        <rect x="0" y="0" width="640" height="250" fill="#FFFFFF"/>
-        <g font-family="Noto Sans TC, sans-serif" font-size="12" fill="#555">
-          <text x="20" y="34">門市接待</text>
-          <rect x="150" y="18" width="372" height="24" rx="3" fill="#0D2B4E" opacity="0.35"/>
-          <text x="532" y="36" font-size="13" font-weight="700" fill="#0D2B4E">62.0%</text>
-
-          <text x="20" y="82">商品銷售</text>
-          <rect x="150" y="66" width="323" height="24" rx="3" fill="#0D2B4E" opacity="0.35"/>
-          <text x="483" y="84" font-size="13" font-weight="700" fill="#0D2B4E">53.8%</text>
-
-          <text x="20" y="130">店長／門市主管</text>
-          <rect x="150" y="114" width="365" height="24" rx="3" fill="#E8912A"/>
-          <text x="525" y="132" font-size="13" font-weight="700" fill="#A86414">60.8%</text>
-
-          <text x="20" y="178">總部區域督導</text>
-          <rect x="150" y="162" width="311" height="24" rx="3" fill="#E8912A"/>
-          <text x="471" y="180" font-size="13" font-weight="700" fill="#A86414">51.8%</text>
-
-          <text x="20" y="222" font-size="11" fill="#888">金色為判斷密集職位；藍色為人力密集職位。加薪與補人對前者效果有限。</text>
-        </g>
-      </svg></div>
+      <div class="bars">
+        <div class="bar-row"><span class="bar-label">門市接待</span><span class="bar-track"><span class="bar-fill" style="width:100%;background:#9DAFC4"></span></span><span class="bar-val">62.0%</span></div>
+        <div class="bar-row"><span class="bar-label">商品銷售</span><span class="bar-track"><span class="bar-fill" style="width:86.8%;background:#9DAFC4"></span></span><span class="bar-val">53.8%</span></div>
+        <div class="bar-row"><span class="bar-label">店長／門市主管</span><span class="bar-track"><span class="bar-fill" style="width:98.1%;background:#E8912A"></span></span><span class="bar-val accent">60.8%</span></div>
+        <div class="bar-row"><span class="bar-label">總部區域督導</span><span class="bar-track"><span class="bar-fill" style="width:83.5%;background:#E8912A"></span></span><span class="bar-val accent">51.8%</span></div>
+      </div>
+      <p class="bar-note">金色＝判斷密集職位，藍色＝人力密集職位。加薪與補人對前者效果有限。</p>
       <p class="source">Source：TCFA × 資策會數位轉型研究院，160 家大型連鎖加盟企業調查，2026-09-30 發布、2026-10-02 論壇公布；聯合新聞網、工商時報報導。</p>
     </div>
 
@@ -459,26 +431,17 @@ tr:hover td { background: rgba(232,145,42,0.04); }
     <div class="exhibit">
       <span class="exhibit-tag">EXHIBIT 4</span>
       <div class="exhibit-title">收到含錯的模型建議前後，醫師診斷正確率變化</div>
-      <div class="chart-scroll"><svg viewBox="0 0 640 260" width="100%" role="img" aria-label="醫師診斷正確率前後對比">
-        <rect x="0" y="0" width="640" height="260" fill="#FFFFFF"/>
-        <g font-family="Noto Sans TC, sans-serif">
-          <text x="20" y="30" font-size="12" fill="#555">診斷推理正確率</text>
-          <rect x="200" y="14" width="340" height="30" rx="3" fill="#0D2B4E" opacity="0.85"/>
-          <text x="548" y="35" font-size="14" font-weight="700" fill="#0D2B4E">84.9%</text>
-          <rect x="200" y="50" width="293" height="30" rx="3" fill="#E8912A"/>
-          <text x="501" y="71" font-size="14" font-weight="700" fill="#A86414">73.3%</text>
-          <text x="200" y="98" font-size="11" fill="#B03A2E">−14.0 個百分點</text>
-
-          <text x="20" y="150" font-size="12" fill="#555">首選診斷正確率</text>
-          <rect x="200" y="134" width="362" height="30" rx="3" fill="#0D2B4E" opacity="0.85"/>
-          <text x="570" y="155" font-size="14" font-weight="700" fill="#0D2B4E">90.5%</text>
-          <rect x="200" y="170" width="304" height="30" rx="3" fill="#E8912A"/>
-          <text x="512" y="191" font-size="14" font-weight="700" fill="#A86414">76.1%</text>
-          <text x="200" y="218" font-size="11" fill="#B03A2E">−18.3 個百分點</text>
-
-          <text x="20" y="246" font-size="11" fill="#888">深藍＝未受錯誤建議影響；金色＝收到含錯建議後。44 位受過 20 小時 AI 素養訓練的醫師。</text>
-        </g>
-      </svg></div>
+      <div class="bars">
+        <div class="bar-group-title">診斷推理正確率</div>
+        <div class="bar-row"><span class="bar-label">未受錯誤建議影響</span><span class="bar-track"><span class="bar-fill" style="width:100%;background:#0D2B4E"></span></span><span class="bar-val">84.9%</span></div>
+        <div class="bar-row"><span class="bar-label">收到含錯建議</span><span class="bar-track"><span class="bar-fill" style="width:86.3%;background:#E8912A"></span></span><span class="bar-val accent">73.3%</span></div>
+        <div class="bar-delta">−14.0 個百分點</div>
+        <div class="bar-group-title" style="margin-top:18px">首選診斷正確率</div>
+        <div class="bar-row"><span class="bar-label">未受錯誤建議影響</span><span class="bar-track"><span class="bar-fill" style="width:100%;background:#0D2B4E"></span></span><span class="bar-val">90.5%</span></div>
+        <div class="bar-row"><span class="bar-label">收到含錯建議</span><span class="bar-track"><span class="bar-fill" style="width:84.1%;background:#E8912A"></span></span><span class="bar-val accent">76.1%</span></div>
+        <div class="bar-delta">−18.3 個百分點</div>
+      </div>
+      <p class="bar-note">44 位受過 20 小時 AI 素養訓練的醫師。</p>
       <p class="source">Source：隨機臨床試驗（44 位醫師、20 小時 AI 素養訓練），2026；數字引自該研究摘要。</p>
     </div>
 
@@ -490,24 +453,12 @@ tr:hover td { background: rgba(232,145,42,0.04); }
     <div class="exhibit">
       <span class="exhibit-tag">EXHIBIT 5</span>
       <div class="exhibit-title">三個月後、拿掉 AI 的判斷力測試：紅利集中在原本就強的人</div>
-      <div class="chart-scroll"><svg viewBox="0 0 640 250" width="100%" role="img" aria-label="資深與資淺律師的標準差變化">
-        <rect x="0" y="0" width="640" height="250" fill="#FFFFFF"/>
-        <g font-family="Noto Sans TC, sans-serif">
-          <line x1="60" y1="130" x2="600" y2="130" stroke="#C9C2B6" stroke-width="1"/>
-          <text x="26" y="134" font-size="11" fill="#888">0</text>
-
-          <rect x="150" y="45" width="120" height="85" rx="3" fill="#0D2B4E"/>
-          <text x="210" y="38" font-size="15" font-weight="700" fill="#0D2B4E" text-anchor="middle">+0.45 SD</text>
-          <text x="210" y="163" font-size="12" fill="#555" text-anchor="middle">資深律師</text>
-
-          <rect x="380" y="130" width="120" height="6" rx="2" fill="#E8912A"/>
-          <text x="440" y="120" font-size="15" font-weight="700" fill="#A86414" text-anchor="middle">−0.03 SD</text>
-          <text x="440" y="163" font-size="12" fill="#555" text-anchor="middle">資淺律師</text>
-
-          <text x="60" y="205" font-size="11" fill="#888">測試情境：不用 AI，改一份有瑕疵的專利申請書。同一支工具、同一段時間，學到的東西不一樣。</text>
-          <text x="60" y="226" font-size="11" fill="#888">整體 +0.32 SD 全數來自資深組。</text>
-        </g>
-      </svg></div>
+      <div class="bars">
+        <div class="bar-group-title">拿掉 AI 後的判斷力測試（標準差變化）</div>
+        <div class="bar-row"><span class="bar-label">資深律師</span><span class="bar-track"><span class="bar-fill" style="width:100%;background:#0D2B4E"></span></span><span class="bar-val">+0.45 SD</span></div>
+        <div class="bar-row"><span class="bar-label">資淺律師</span><span class="bar-track"><span class="bar-fill" style="width:4%;background:#E8912A"></span></span><span class="bar-val accent">−0.03 SD</span></div>
+      </div>
+      <p class="bar-note">測試情境：不用 AI，改一份有瑕疵的專利申請書。整體 +0.32 SD 全數來自資深組。</p>
       <p class="source">Source：Autor 等，NBER Working Paper 35720，2026-09（2026-10 修訂）；133 位專利律師、11 家事務所、三個月隨機對照。</p>
     </div>
 
@@ -564,32 +515,14 @@ tr:hover td { background: rgba(232,145,42,0.04); }
     <div class="exhibit">
       <span class="exhibit-tag">EXHIBIT 7</span>
       <div class="exhibit-title">代理治理的四個斷點</div>
-      <div class="chart-scroll"><svg viewBox="0 0 640 265" width="100%" role="img" aria-label="四項治理能力的比例">
-        <rect x="0" y="0" width="640" height="265" fill="#FFFFFF"/>
-        <g font-family="Noto Sans TC, sans-serif" font-size="12" fill="#555">
-          <text x="20" y="34">經歷過代理越界</text>
-          <rect x="230" y="18" width="350" height="24" rx="3" fill="#0D2B4E" opacity="0.80"/>
-          <text x="590" y="36" font-size="13" font-weight="700" fill="#0D2B4E">65%</text>
-
-          <text x="20" y="80">造成可量測影響</text>
-          <rect x="230" y="64" width="156" height="24" rx="3" fill="#0D2B4E" opacity="0.55"/>
-          <text x="396" y="82" font-size="13" font-weight="700" fill="#0D2B4E">29%</text>
-
-          <text x="20" y="126">數分鐘內偵測並圍堵</text>
-          <rect x="230" y="110" width="172" height="24" rx="3" fill="#2EC4B6"/>
-          <text x="412" y="128" font-size="13" font-weight="700" fill="#1E9C90">32%</text>
-
-          <text x="20" y="172">行動當下檢查授權</text>
-          <rect x="230" y="156" width="184" height="24" rx="3" fill="#2EC4B6"/>
-          <text x="424" y="174" font-size="13" font-weight="700" fill="#1E9C90">34.2%</text>
-
-          <text x="20" y="218">能還原 30 天完整軌跡</text>
-          <rect x="230" y="202" width="248" height="24" rx="3" fill="#E8912A"/>
-          <text x="488" y="220" font-size="13" font-weight="700" fill="#A86414">46%</text>
-
-          <text x="20" y="252" font-size="11" fill="#888">金色＝能力缺口最大的一項：查不到過去，就無法檢討與究責。</text>
-        </g>
-      </svg></div>
+      <div class="bars">
+        <div class="bar-row"><span class="bar-label">經歷過代理越界</span><span class="bar-track"><span class="bar-fill" style="width:100%;background:#0D2B4E"></span></span><span class="bar-val">65%</span></div>
+        <div class="bar-row"><span class="bar-label">造成可量測影響</span><span class="bar-track"><span class="bar-fill" style="width:44.6%;background:#41648C"></span></span><span class="bar-val">29%</span></div>
+        <div class="bar-row"><span class="bar-label">數分鐘內偵測並圍堵</span><span class="bar-track"><span class="bar-fill" style="width:49.2%;background:#2EC4B6"></span></span><span class="bar-val">32%</span></div>
+        <div class="bar-row"><span class="bar-label">行動當下檢查授權</span><span class="bar-track"><span class="bar-fill" style="width:52.6%;background:#2EC4B6"></span></span><span class="bar-val">34.2%</span></div>
+        <div class="bar-row"><span class="bar-label">能還原 30 天完整軌跡</span><span class="bar-track"><span class="bar-fill" style="width:70.8%;background:#E8912A"></span></span><span class="bar-val accent">46%</span></div>
+      </div>
+      <p class="bar-note">金色＝能力缺口最大的一項：查不到過去，就無法檢討與究責。</p>
       <p class="source">Source：EMA Research, Agents Without Guardrails, 2026-08；n 未公開於摘要，引用時宜視為方向性數字。</p>
     </div>
 
