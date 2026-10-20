@@ -241,7 +241,18 @@ tr:hover td { background: rgba(232,145,42,0.04); }
 .exhibit thead th { background:var(--navy); color:#fff; text-align:left; padding:10px 12px; font-weight:700; font-size:13px; }
 .exhibit tbody td { border-bottom:1px solid #ECE6DA; padding:10px 12px; vertical-align:top; line-height:1.7; }
 .exhibit tbody tr:hover td { background:rgba(232,145,42,0.06); }
-.exhibit .source { font-size:11.5px; color:#8a8a8a; margin:10px 0 0; line-height:1.6; }
+.exhibit .source { font-size:12.5px; color:#8a8a8a; margin:10px 0 0; line-height:1.65; }
+
+/* 圖表：手機維持原比例、可橫向滑動，避免文字被縮成 7px */
+.chart-scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.chart-scroll svg { display:block; }
+.chart-scroll::-webkit-scrollbar { height:6px; }
+.chart-scroll::-webkit-scrollbar-thumb { background:#D8D1C4; border-radius:3px; }
+@media (max-width: 600px) {
+  .chart-scroll { margin: 0 -4px; padding-bottom: 4px; }
+  .chart-scroll svg { width: 600px; max-width: none; }
+  .chart-scroll::after { content:"← 圖表可左右滑動 →"; display:block; font-size:11px; color:#9a9384; margin-top:6px; }
+}
 
 .source-list { margin:8px 0 24px; padding-left:18px; }
 .source-list li { font-size:13.5px; color:#4a4a4a; margin:7px 0; line-height:1.75; }
@@ -329,7 +340,7 @@ tr:hover td { background: rgba(232,145,42,0.04); }
     <div class="exhibit">
       <span class="exhibit-tag">EXHIBIT 1</span>
       <div class="exhibit-title">授權深度與可審核性的剪刀差</div>
-      <svg viewBox="0 0 640 300" width="100%" role="img" aria-label="授權深度上升時，可審核性下降的示意圖">
+      <div class="chart-scroll"><svg viewBox="0 0 640 300" width="100%" role="img" aria-label="授權深度上升時，可審核性下降的示意圖">
         <rect x="0" y="0" width="640" height="300" fill="#FFFFFF"/>
         <!-- axes -->
         <line x1="60" y1="250" x2="600" y2="250" stroke="#C9C2B6" stroke-width="1.5"/>
@@ -349,7 +360,7 @@ tr:hover td { background: rgba(232,145,42,0.04); }
         <!-- markers -->
         <circle cx="320" cy="150" r="4.5" fill="#0D2B4E"/>
         <circle cx="320" cy="165" r="4.5" fill="#2EC4B6"/>
-      </svg>
+      </svg></div>
       <p class="source">Source：榕耀管顧整理。縱軸為概念示意，非量化量測；兩條曲線的相對位置由第二章的公開研究支撐。</p>
     </div>
 
@@ -371,7 +382,7 @@ tr:hover td { background: rgba(232,145,42,0.04); }
     <div class="exhibit">
       <span class="exhibit-tag">EXHIBIT 2</span>
       <div class="exhibit-title">50% 任務時間視野的翻倍所需天數（依不同起始年估計）</div>
-      <svg viewBox="0 0 640 230" width="100%" role="img" aria-label="三組翻倍天數的長條圖">
+      <div class="chart-scroll"><svg viewBox="0 0 640 230" width="100%" role="img" aria-label="三組翻倍天數的長條圖">
         <rect x="0" y="0" width="640" height="230" fill="#FFFFFF"/>
         <g font-family="Noto Sans TC, sans-serif">
           <text x="20" y="28" font-size="12" fill="#555">全期（2019 起）</text>
@@ -389,7 +400,7 @@ tr:hover td { background: rgba(232,145,42,0.04); }
 
           <text x="20" y="205" font-size="11" fill="#888">同一把尺、同一份題庫，只換起始年：越近期，翻倍越快。</text>
         </g>
-      </svg>
+      </svg></div>
       <p class="source">Source：METR，Tasks/Horizon 1.1 更新，2026-01-29；原始研究 arXiv:2503.14499（2025-03-18）。此指標量測誤差可達上下兩倍，宜以區間解讀。</p>
     </div>
 
@@ -411,7 +422,7 @@ tr:hover td { background: rgba(232,145,42,0.04); }
     <div class="exhibit">
       <span class="exhibit-tag">EXHIBIT 3</span>
       <div class="exhibit-title">台灣連鎖加盟業缺工缺口：一線缺人力，中階缺判斷</div>
-      <svg viewBox="0 0 640 250" width="100%" role="img" aria-label="四類職缺的缺工比例長條圖">
+      <div class="chart-scroll"><svg viewBox="0 0 640 250" width="100%" role="img" aria-label="四類職缺的缺工比例長條圖">
         <rect x="0" y="0" width="640" height="250" fill="#FFFFFF"/>
         <g font-family="Noto Sans TC, sans-serif" font-size="12" fill="#555">
           <text x="20" y="34">門市接待</text>
@@ -432,7 +443,7 @@ tr:hover td { background: rgba(232,145,42,0.04); }
 
           <text x="20" y="222" font-size="11" fill="#888">金色為判斷密集職位；藍色為人力密集職位。加薪與補人對前者效果有限。</text>
         </g>
-      </svg>
+      </svg></div>
       <p class="source">Source：TCFA × 資策會數位轉型研究院，160 家大型連鎖加盟企業調查，2026-09-30 發布、2026-10-02 論壇公布；聯合新聞網、工商時報報導。</p>
     </div>
 
@@ -448,7 +459,7 @@ tr:hover td { background: rgba(232,145,42,0.04); }
     <div class="exhibit">
       <span class="exhibit-tag">EXHIBIT 4</span>
       <div class="exhibit-title">收到含錯的模型建議前後，醫師診斷正確率變化</div>
-      <svg viewBox="0 0 640 260" width="100%" role="img" aria-label="醫師診斷正確率前後對比">
+      <div class="chart-scroll"><svg viewBox="0 0 640 260" width="100%" role="img" aria-label="醫師診斷正確率前後對比">
         <rect x="0" y="0" width="640" height="260" fill="#FFFFFF"/>
         <g font-family="Noto Sans TC, sans-serif">
           <text x="20" y="30" font-size="12" fill="#555">診斷推理正確率</text>
@@ -467,7 +478,7 @@ tr:hover td { background: rgba(232,145,42,0.04); }
 
           <text x="20" y="246" font-size="11" fill="#888">深藍＝未受錯誤建議影響；金色＝收到含錯建議後。44 位受過 20 小時 AI 素養訓練的醫師。</text>
         </g>
-      </svg>
+      </svg></div>
       <p class="source">Source：隨機臨床試驗（44 位醫師、20 小時 AI 素養訓練），2026；數字引自該研究摘要。</p>
     </div>
 
@@ -479,7 +490,7 @@ tr:hover td { background: rgba(232,145,42,0.04); }
     <div class="exhibit">
       <span class="exhibit-tag">EXHIBIT 5</span>
       <div class="exhibit-title">三個月後、拿掉 AI 的判斷力測試：紅利集中在原本就強的人</div>
-      <svg viewBox="0 0 640 250" width="100%" role="img" aria-label="資深與資淺律師的標準差變化">
+      <div class="chart-scroll"><svg viewBox="0 0 640 250" width="100%" role="img" aria-label="資深與資淺律師的標準差變化">
         <rect x="0" y="0" width="640" height="250" fill="#FFFFFF"/>
         <g font-family="Noto Sans TC, sans-serif">
           <line x1="60" y1="130" x2="600" y2="130" stroke="#C9C2B6" stroke-width="1"/>
@@ -496,7 +507,7 @@ tr:hover td { background: rgba(232,145,42,0.04); }
           <text x="60" y="205" font-size="11" fill="#888">測試情境：不用 AI，改一份有瑕疵的專利申請書。同一支工具、同一段時間，學到的東西不一樣。</text>
           <text x="60" y="226" font-size="11" fill="#888">整體 +0.32 SD 全數來自資深組。</text>
         </g>
-      </svg>
+      </svg></div>
       <p class="source">Source：Autor 等，NBER Working Paper 35720，2026-09（2026-10 修訂）；133 位專利律師、11 家事務所、三個月隨機對照。</p>
     </div>
 
@@ -553,7 +564,7 @@ tr:hover td { background: rgba(232,145,42,0.04); }
     <div class="exhibit">
       <span class="exhibit-tag">EXHIBIT 7</span>
       <div class="exhibit-title">代理治理的四個斷點</div>
-      <svg viewBox="0 0 640 265" width="100%" role="img" aria-label="四項治理能力的比例">
+      <div class="chart-scroll"><svg viewBox="0 0 640 265" width="100%" role="img" aria-label="四項治理能力的比例">
         <rect x="0" y="0" width="640" height="265" fill="#FFFFFF"/>
         <g font-family="Noto Sans TC, sans-serif" font-size="12" fill="#555">
           <text x="20" y="34">經歷過代理越界</text>
@@ -578,7 +589,7 @@ tr:hover td { background: rgba(232,145,42,0.04); }
 
           <text x="20" y="252" font-size="11" fill="#888">金色＝能力缺口最大的一項：查不到過去，就無法檢討與究責。</text>
         </g>
-      </svg>
+      </svg></div>
       <p class="source">Source：EMA Research, Agents Without Guardrails, 2026-08；n 未公開於摘要，引用時宜視為方向性數字。</p>
     </div>
 

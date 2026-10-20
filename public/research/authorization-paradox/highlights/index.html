@@ -241,7 +241,18 @@ tr:hover td { background: rgba(232,145,42,0.04); }
 .exhibit thead th { background:var(--navy); color:#fff; text-align:left; padding:10px 12px; font-weight:700; font-size:13px; }
 .exhibit tbody td { border-bottom:1px solid #ECE6DA; padding:10px 12px; vertical-align:top; line-height:1.7; }
 .exhibit tbody tr:hover td { background:rgba(232,145,42,0.06); }
-.exhibit .source { font-size:11.5px; color:#8a8a8a; margin:10px 0 0; line-height:1.6; }
+.exhibit .source { font-size:12.5px; color:#8a8a8a; margin:10px 0 0; line-height:1.65; }
+
+/* 圖表：手機維持原比例、可橫向滑動，避免文字被縮成 7px */
+.chart-scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.chart-scroll svg { display:block; }
+.chart-scroll::-webkit-scrollbar { height:6px; }
+.chart-scroll::-webkit-scrollbar-thumb { background:#D8D1C4; border-radius:3px; }
+@media (max-width: 600px) {
+  .chart-scroll { margin: 0 -4px; padding-bottom: 4px; }
+  .chart-scroll svg { width: 600px; max-width: none; }
+  .chart-scroll::after { content:"← 圖表可左右滑動 →"; display:block; font-size:11px; color:#9a9384; margin-top:6px; }
+}
 
 .source-list { margin:8px 0 24px; padding-left:18px; }
 .source-list li { font-size:13.5px; color:#4a4a4a; margin:7px 0; line-height:1.75; }
