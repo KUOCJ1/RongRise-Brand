@@ -9,7 +9,6 @@ import VideoCarousel from "@/components/VideoCarousel";
 import NewsletterSection from "@/components/Newsletter";
 import FAQSection from "@/components/FAQ";
 import QuickChat from "@/components/QuickChat";
-import ReviewSchema from "@/components/ReviewSchema";
 import { coverImg } from "@/lib/cover-map";
 import newsData from "@/data/news.json";
 
@@ -299,7 +298,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <ReviewSchema />
 
       {/* ═══ 3.6 CTA（移至 client 邊界之前）═══ */}
       <section className="py-16 relative overflow-hidden bg-cta">

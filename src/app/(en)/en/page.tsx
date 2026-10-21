@@ -22,7 +22,6 @@ import ServiceFlowEnSection from "@/components/ServiceFlowEn";
 import NewsEnSection from "@/components/NewsEnSection";
 import FAQEnSection from "@/components/FAQEnSection";
 import FAQSchema from "@/components/FAQSchema";
-import ReviewSchema from "@/components/ReviewSchema";
 import NewsletterEnSection from "@/components/NewsletterEn";
 import ScrollTracker from "@/components/ScrollTracker";
 import TrackLink from "@/components/TrackLink";
@@ -161,7 +160,6 @@ export default function EnHomePage() {
 
       {/* Testimonials */}
       <TestimonialsEnSection />
-      <ReviewSchema />
 
       {/* Knowledge */}
       <section className="section bg-gradient-subtle">
