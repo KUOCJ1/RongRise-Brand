@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-10-20T07:20:27Z",
+ "generatedAt": "2026-10-21T07:20:27Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 143
+  "daysRunning": 144
  },
  "stats": {
-  "scanDays": 123,
-  "weekArticles": 74,
-  "articles": 92,
-  "newsItems": 53,
+  "scanDays": 124,
+  "weekArticles": 69,
+  "articles": 93,
+  "newsItems": 55,
   "newsletterIssues": 26,
   "subscribers": 22,
   "confirmedSubscribers": 16,
   "videos": 39,
-  "views": 673,
+  "views": 672,
   "channelSubscribers": 17,
   "insights": 17,
-  "socialPosts": 58,
+  "socialPosts": 60,
   "igCards": 40,
-  "competitorReports": 121
+  "competitorReports": 122
  },
  "activity": [
-  {
-   "date": "2026-10-14",
-   "count": 12,
-   "topics": []
-  },
   {
    "date": "2026-10-15",
    "count": 12,
@@ -56,13 +51,18 @@
    "date": "2026-10-20",
    "count": 7,
    "topics": []
+  },
+  {
+   "date": "2026-10-21",
+   "count": 7,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "連摩根大通都不讓它進門：你的 AI 代理，憑什麼代表你？",
-   "date": "2026.10.15",
-   "url": "/knowledge/ai-agent-liability-transfer"
+   "title": "98.8% 缺工、缺口卡在店長：台灣中階斷層的下一站是判斷力",
+   "date": "2026.10.20",
+   "url": "/knowledge/ai-judgment-generation-gap"
   },
   "newsletter": "🦞 榕賀觀點 第 26 期 — 2026-10-15",
   "video": {
@@ -74,16 +74,16 @@
  },
  "trends": [
   {
-   "keyword": "人力資源",
-   "icon": "📋",
+   "keyword": "晶片與算力",
+   "icon": "🔩",
    "count": 23,
    "momentum": "flat"
   },
   {
-   "keyword": "晶片與算力",
-   "icon": "🔩",
-   "count": 23,
-   "momentum": "up"
+   "keyword": "人力資源",
+   "icon": "📋",
+   "count": 22,
+   "momentum": "flat"
   },
   {
    "keyword": "組織與管理",
@@ -94,14 +94,14 @@
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 16,
+   "count": 15,
    "momentum": "flat"
   },
   {
    "keyword": "AI Agent",
    "icon": "🤖",
-   "count": 12,
-   "momentum": "flat"
+   "count": 14,
+   "momentum": "up"
   }
  ]
 }
