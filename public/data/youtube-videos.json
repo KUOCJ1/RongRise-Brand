@@ -1,6 +1,15 @@
 {
   "videos": [
     {
+      "id": "T5e5Ia09QLg",
+      "title": "拿掉 AI 之後，只有老手真的進步：MIT 實驗揭開的判斷力斷代",
+      "date": "2026-10-21",
+      "description": "MIT 經濟學家 David Autor 做了一個三個月的隨機對照實驗：133 位專利律師用 AI 寫草稿，草稿確實變好了；但三個月後把 AI 拿掉，只有執業七年以上的老手真的進步，初階的人一無所獲。這支影片講清楚：為什麼 AI 是「表現平",
+      "thumbnail": "https://img.youtube.com/vi/T5e5Ia09QLg/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/T5e5Ia09QLg/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=T5e5Ia09QLg"
+    },
+    {
       "id": "Zi7obd2eQUo",
       "title": "連做模型的公司都說控制不住：AI 代理的安全，從「它會拒絕」改成「它碰不到」",
       "date": "2026-10-14",
@@ -17,16 +26,7 @@
       "thumbnail": "https://img.youtube.com/vi/PR_VEEJ0FmI/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/PR_VEEJ0FmI/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=PR_VEEJ0FmI"
-    },
-    {
-      "id": "dmWeBNp4EZw",
-      "title": "你導入了三個 AI 代理，公司卻沒有多出一個主管職",
-      "date": "2026-10-08",
-      "description": "你導入了三個 AI 代理，公司裡卻沒有多出一個主管職。這件事，正在很多公司安靜地發生。\n\n這不是省了人力，是把成本換到一個看不見的位置。看得見的費用會有人抗議；看不見的工時，沒有人會替它說話，也不會進到任何一場檢討會議裡。\n\n過去一個人做十",
-      "thumbnail": "https://img.youtube.com/vi/dmWeBNp4EZw/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/dmWeBNp4EZw/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=dmWeBNp4EZw"
     }
   ],
-  "fetchedAt": "2026-10-14T14:47:21Z"
+  "fetchedAt": "2026-10-21T14:08:00Z"
 }
