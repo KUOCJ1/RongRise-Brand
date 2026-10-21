@@ -307,15 +307,19 @@ export default async function ArticlePage({ params }: PageProps) {
               name: "郭鎮榕 C.J. Kuo",
               url: `${SITE_URL}/about`,
             },
-            datePublished: article.date,
-            dateModified: article.date,
+            // schema.org 要 ISO 8601；articles.json 是 2026.10.20 格式
+            datePublished: article.date.replace(/\./g, "-"),
+            dateModified: article.date.replace(/\./g, "-"),
             image: `${SITE_URL}/images/${COVER_MAP[article.slug] || "og-image.jpg"}`,
             publisher: {
               "@type": "Organization",
+              "@id": `${SITE_URL}/#organization`,
               name: "榕耀管顧 RongRise Consulting",
               logo: {
                 "@type": "ImageObject",
-                url: `${SITE_URL}/images/logo.svg`,
+                url: `${SITE_URL}/images/logo-512.png`,
+                width: 512,
+                height: 512,
               },
             },
             mainEntityOfPage: {
@@ -324,6 +328,26 @@ export default async function ArticlePage({ params }: PageProps) {
             },
             keywords: article.tags,
             articleSection: article.cat,
+          }),
+        }}></script>
+      {/* BreadcrumbList：讓搜尋與 AI 引擎知道文章在站內的位置 */}
+      <script
+        id={`breadcrumb-${article.slug}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "首頁", item: SITE_URL },
+              { "@type": "ListItem", position: 2, name: "知識庫", item: `${SITE_URL}/knowledge` },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: article.title,
+                item: `${SITE_URL}/knowledge/${article.slug}`,
+              },
+            ],
           }),
         }}></script>
       <ArticleTracker slug={slug} title={article.title} category={article.cat} />
