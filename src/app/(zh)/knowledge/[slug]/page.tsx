@@ -10,7 +10,6 @@ import InlineSubscribe from "@/components/InlineSubscribe";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import { COVER_MAP } from "@/lib/cover-map";
 
-import Script from "next/script";
 
 /* ============================================
    知識庫文章單頁 Knowledge Base Article Page
@@ -294,7 +293,7 @@ export default async function ArticlePage({ params }: PageProps) {
   return (
     <>
       {/* Article JSON-LD Schema */}
-      <Script
+      <script
         id={`jsonld-${article.slug}`}
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -326,8 +325,7 @@ export default async function ArticlePage({ params }: PageProps) {
             keywords: article.tags,
             articleSection: article.cat,
           }),
-        }}
-      />
+        }}></script>
       <ArticleTracker slug={slug} title={article.title} category={article.cat} />
 
       {/* Article Header */}
@@ -535,7 +533,11 @@ export async function generateMetadata({
   }
   const coverFile = COVER_MAP[slug] || "og-image.jpg";
   return {
-    title: `${article.title} ｜ ${article.cat}`,
+    // 標題過長（Google 約 60 字元截斷）就不再附加分類，保留文章標題本身
+    title:
+      article.title.length > 52
+        ? article.title
+        : `${article.title} ｜ ${article.cat}`,
     description: article.excerpt,
     alternates: {
       canonical: `${SITE_URL}/knowledge/${article.slug}`,

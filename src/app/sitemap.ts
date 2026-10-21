@@ -233,13 +233,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   );
 
   // 研究專刊（public/research/<slug>/ 靜態 HTML，不在 app router 內，要手動列）
+  // highlights 只在該專刊真的有精華版時才列入（否則 sitemap 會出現 404）
   const researchPages: MetadataRoute.Sitemap = (
     [
-      { slug: "authorization-paradox", date: "2026-10-20" },
-      { slug: "mental-bandwidth-curse", date: "2026-09-07" },
-      { slug: "ai-agent-performance-management", date: "2026-08-15" },
-      { slug: "task-amoeba", date: "2026-07-10" },
-    ] as { slug: string; date: string }[]
+      { slug: "authorization-paradox", date: "2026-10-20", highlights: true },
+      { slug: "mental-bandwidth-curse", date: "2026-09-07", highlights: true },
+      { slug: "ai-agent-performance-management", date: "2026-08-15", highlights: false },
+      { slug: "task-amoeba", date: "2026-07-10", highlights: false },
+    ] as { slug: string; date: string; highlights: boolean }[]
   ).flatMap((p) => [
     {
       url: `${baseUrl}/research/${p.slug}/`,
@@ -247,12 +248,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.8,
     },
-    {
-      url: `${baseUrl}/research/${p.slug}/highlights/`,
-      lastModified: new Date(p.date),
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    },
+    ...(p.highlights
+      ? [
+          {
+            url: `${baseUrl}/research/${p.slug}/highlights/`,
+            lastModified: new Date(p.date),
+            changeFrequency: "monthly" as const,
+            priority: 0.6,
+          },
+        ]
+      : []),
   ]);
 
   return [...staticPages, ...independentPages, ...articlePages, ...newsletterPages, ...researchPages];

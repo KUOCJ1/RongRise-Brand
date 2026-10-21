@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 export const metadata: Metadata = {
-  title: "About C.J. Kuo | Management & AI Implementation Consultant",
+  title: "About C.J. Kuo | Management & AI Consultant",
   description: "C.J. Kuo — 20+ years of multinational corporate experience. Former HR executive at Chubb Life, Cigna Life. Founder of RongRise Consulting.",
   alternates: {
     canonical: "https://rong-rise.com/en/about",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "About C.J. Kuo | Management & AI Implementation Consultant",
+    title: "About C.J. Kuo | Management & AI Consultant",
     description: "20+ years of multinational corporate experience. Founder of RongRise Consulting.",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "RongRise Consulting" }],
   },

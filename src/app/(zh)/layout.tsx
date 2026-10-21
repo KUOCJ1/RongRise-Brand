@@ -11,7 +11,7 @@ const SITE_DESCRIPTION =
 export const metadata: Metadata = {
   title: {
     default: `${SITE_NAME} — 把管理做深，讓 AI 落地`,
-    template: `%s | ${SITE_NAME}`,
+    template: "%s",
   },
   description: SITE_DESCRIPTION,
 };

@@ -1,4 +1,3 @@
-import Script from "next/script";
 
 interface FAQSchemaProps {
   faq: {
@@ -26,10 +25,9 @@ export default function FAQSchema({ faq }: FAQSchemaProps) {
   };
 
   return (
-    <Script
+    <script
       id="faq-schema"
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}></script>
   );
 }

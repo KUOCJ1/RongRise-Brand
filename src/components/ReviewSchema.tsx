@@ -1,4 +1,3 @@
-import Script from "next/script";
 import testimonials from "@/data/testimonials.json";
 
 export default function ReviewSchema() {
@@ -21,10 +20,9 @@ export default function ReviewSchema() {
   };
 
   return (
-    <Script
+    <script
       id="review-schema"
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-    />
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}></script>
   );
 }

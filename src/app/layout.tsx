@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: `${SITE_NAME} — 把管理做深，讓 AI 落地`,
-    template: `%s | ${SITE_NAME}`,
+    template: "%s",
   },
   description: SITE_DESCRIPTION,
   keywords: [
@@ -70,18 +70,25 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
+  "@id": `${SITE_URL}/#organization`,
   name: "榕耀管顧 RongRise Consulting",
   alternateName: "RongRise Consulting",
   description:
     "以管理為本、以 AI 為用。從組織設計、人才發展到變革領導，陪企業把轉型走完。",
   url: SITE_URL,
-  logo: `${SITE_URL}/images/cj-portrait-full.jpg`,
-  image: `${SITE_URL}/images/cj-portrait-full.jpg`,
+  logo: `${SITE_URL}/images/logo-512.png`,
+  image: `${SITE_URL}/images/og-image-ai.jpg`,
   founder: {
     "@type": "Person",
     name: "郭鎮榕 C.J. Kuo",
     jobTitle: "創辦人 / 企業轉型顧問",
     url: `${SITE_URL}/about`,
+    sameAs: ["https://www.linkedin.com/in/c-j-kuo-5629b97b/"],
+  },
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "TW",
+    addressRegion: "台北市",
   },
   contactPoint: {
     "@type": "ContactPoint",
@@ -90,11 +97,32 @@ const jsonLd = {
     areaServed: "TW",
     availableLanguage: ["Chinese"],
   },
+  areaServed: { "@type": "Country", name: "台灣" },
+  knowsAbout: [
+    "AI 轉型",
+    "Agentic AI 員工管理",
+    "人才發展",
+    "組織設計",
+    "ESG 永續",
+  ],
   serviceType: ["管理顧問諮詢", "AI 轉型策略", "人才發展策略", "ESG 永續諮詢"],
   sameAs: [
     "https://www.linkedin.com/in/c-j-kuo-5629b97b/",
-    "https://www.facebook.com/cj.kuo1",
+    "https://www.facebook.com/profile.php?id=1420407754479165",
+    "https://www.youtube.com/channel/UCFfz1iDwqqRfjWgR7GhVMGA",
+    "https://www.instagram.com/kuocj12026/",
+    "https://line.me/R/ti/p/@954qxhhe",
   ],
+};
+
+const websiteLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${SITE_URL}/#website`,
+  url: SITE_URL,
+  name: "榕耀管顧 RongRise Consulting",
+  inLanguage: "zh-TW",
+  publisher: { "@id": `${SITE_URL}/#organization` },
 };
 
 const GA4_ID = "G-E4PL80M0BL";
@@ -107,11 +135,14 @@ export default function RootLayout({
   return (
     <html lang="zh-TW" className="h-full antialiased">
       <head>
-        <Script
+        <script
           id="json-ld"
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}></script>
+        <script
+          id="json-ld-website"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteLd) }}></script>
         {/* 字體：Noto Serif TC（標題襯線）+ Noto Sans TC（內文） */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
