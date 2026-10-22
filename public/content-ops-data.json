@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-10-21T07:20:27Z",
+ "generatedAt": "2026-10-22T07:20:25Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 144
+  "daysRunning": 145
  },
  "stats": {
-  "scanDays": 124,
-  "weekArticles": 69,
+  "scanDays": 125,
+  "weekArticles": 64,
   "articles": 93,
   "newsItems": 55,
   "newsletterIssues": 26,
   "subscribers": 22,
   "confirmedSubscribers": 16,
-  "videos": 39,
-  "views": 672,
+  "videos": 40,
+  "views": 673,
   "channelSubscribers": 17,
   "insights": 17,
-  "socialPosts": 60,
+  "socialPosts": 62,
   "igCards": 40,
-  "competitorReports": 122
+  "competitorReports": 123
  },
  "activity": [
-  {
-   "date": "2026-10-15",
-   "count": 12,
-   "topics": []
-  },
   {
    "date": "2026-10-16",
    "count": 12,
@@ -56,6 +51,11 @@
    "date": "2026-10-21",
    "count": 7,
    "topics": []
+  },
+  {
+   "date": "2026-10-22",
+   "count": 8,
+   "topics": []
   }
  ],
  "latest": {
@@ -66,9 +66,9 @@
   },
   "newsletter": "🦞 榕賀觀點 第 26 期 — 2026-10-15",
   "video": {
-   "title": "連做模型的公司都說控制不住：AI 代理的安全，從「它會拒絕」改成「它碰不到」",
-   "date": "2026-10-14",
-   "url": "https://www.youtube.com/watch?v=Zi7obd2eQUo"
+   "title": "拿掉 AI 之後，只有老手真的進步：MIT 實驗揭開的判斷力斷代",
+   "date": "2026-10-21",
+   "url": "https://www.youtube.com/watch?v=T5e5Ia09QLg"
   },
   "insight": "2026-W43.md"
  },
@@ -76,8 +76,8 @@
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 23,
-   "momentum": "flat"
+   "count": 26,
+   "momentum": "up"
   },
   {
    "keyword": "人力資源",
@@ -88,13 +88,7 @@
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 21,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "成本與投資",
-   "icon": "💰",
-   "count": 15,
+   "count": 19,
    "momentum": "flat"
   },
   {
@@ -102,6 +96,12 @@
    "icon": "🤖",
    "count": 14,
    "momentum": "up"
+  },
+  {
+   "keyword": "成本與投資",
+   "icon": "💰",
+   "count": 14,
+   "momentum": "flat"
   }
  ]
 }
