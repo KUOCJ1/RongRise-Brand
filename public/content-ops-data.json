@@ -1,37 +1,27 @@
 {
- "generatedAt": "2026-10-22T07:20:25Z",
+ "generatedAt": "2026-10-24T05:20:56Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 145
+  "daysRunning": 147
  },
  "stats": {
-  "scanDays": 125,
-  "weekArticles": 64,
-  "articles": 93,
-  "newsItems": 55,
-  "newsletterIssues": 26,
+  "scanDays": 126,
+  "weekArticles": 60,
+  "articles": 94,
+  "newsItems": 56,
+  "newsletterIssues": 27,
   "subscribers": 22,
   "confirmedSubscribers": 16,
   "videos": 40,
-  "views": 673,
+  "views": 680,
   "channelSubscribers": 17,
   "insights": 17,
-  "socialPosts": 62,
+  "socialPosts": 63,
   "igCards": 40,
-  "competitorReports": 123
+  "competitorReports": 125
  },
  "activity": [
-  {
-   "date": "2026-10-16",
-   "count": 12,
-   "topics": []
-  },
-  {
-   "date": "2026-10-17",
-   "count": 10,
-   "topics": []
-  },
   {
    "date": "2026-10-18",
    "count": 8,
@@ -56,15 +46,25 @@
    "date": "2026-10-22",
    "count": 8,
    "topics": []
+  },
+  {
+   "date": "2026-10-23",
+   "count": 0,
+   "topics": []
+  },
+  {
+   "date": "2026-10-24",
+   "count": 8,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "98.8% 缺工、缺口卡在店長：台灣中階斷層的下一站是判斷力",
-   "date": "2026.10.20",
-   "url": "/knowledge/ai-judgment-generation-gap"
+   "title": "GPU 三年就折舊光：你付的每一筆 AI 訂閱，都在替別人攤這筆帳",
+   "date": "2026.10.22",
+   "url": "/knowledge/ai-capital-depreciation-bill"
   },
-  "newsletter": "🦞 榕賀觀點 第 26 期 — 2026-10-15",
+  "newsletter": "🦞 榕賀觀點 第 27 期 — 2026-10-22",
   "video": {
    "title": "拿掉 AI 之後，只有老手真的進步：MIT 實驗揭開的判斷力斷代",
    "date": "2026-10-21",
@@ -76,13 +76,13 @@
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 26,
+   "count": 25,
    "momentum": "up"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 22,
+   "count": 21,
    "momentum": "flat"
   },
   {
@@ -92,15 +92,15 @@
    "momentum": "flat"
   },
   {
-   "keyword": "AI Agent",
-   "icon": "🤖",
-   "count": 14,
-   "momentum": "up"
-  },
-  {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 14,
+   "count": 12,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "AI Agent",
+   "icon": "🤖",
+   "count": 11,
    "momentum": "flat"
   }
  ]
