@@ -297,6 +297,24 @@ export default function Post() {
             13 天後，先講結論。機器撐住了，判斷沒有。169 次檢查全部在線，內容與流程卻出了 7 件錯，其中 6 件不是機器壞掉，是檢查設在錯的位置。
           </p>
 
+          <figure className="my-12">
+            <div className="mx-auto w-full max-w-[380px] overflow-hidden rounded-2xl border border-border-light bg-black/5">
+              <video
+                controls
+                playsInline
+                preload="metadata"
+                poster="/images/backstage-ep02-poster.jpg"
+                className="h-auto w-full"
+              >
+                <source src="/videos/backstage-ep02-short.mp4" type="video/mp4" />
+                你的瀏覽器不支援影片播放。
+              </video>
+            </div>
+            <figcaption className="mt-3 text-center text-sm text-text-secondary">
+              52 秒看完這篇：7 件錯、37.1 分鐘、56.3 小時的等待
+            </figcaption>
+          </figure>
+
           <div className="my-10 grid grid-cols-1 gap-3 sm:grid-cols-3">
             {[
               { n: "169 / 169", t: "服務檢查全在線" },
