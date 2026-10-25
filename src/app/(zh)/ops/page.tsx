@@ -82,8 +82,11 @@ function KpiCard({ item }: { item: Headline }) {
     <div className="rounded-2xl border border-[#E4DDD0] bg-white p-6">
       <div className="text-sm font-medium tracking-wide text-[#6B655D]">{item.label}</div>
       <div className="mt-3 flex items-baseline gap-2">
-        <span className="text-4xl font-bold tabular-nums text-[#0D2B4E]">{item.value}</span>
-        <span className="text-sm text-[#4A4540]">{item.unit}</span>
+        <span className="text-4xl font-bold tabular-nums text-[#0D2B4E]">
+          {item.value}
+          {item.unit === "%" ? "%" : ""}
+        </span>
+        {item.unit !== "%" && <span className="text-sm text-[#4A4540]">{item.unit}</span>}
       </div>
       <div className="mt-2 text-xs leading-relaxed text-[#6B655D]">{item.note}</div>
     </div>
