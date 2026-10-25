@@ -332,18 +332,27 @@ export default function OpsPage() {
               <h3 className="text-sm font-semibold text-[#0D2B4E]">每日在場時間</h3>
               <span className="text-[11px] text-[#6B655D]">橘線＝30 分鐘目標；單位：分鐘</span>
             </div>
-            <div className="flex h-44 items-end gap-1.5">
+            <div className="relative flex h-[140px] items-end gap-1.5">
+              <div
+                className="pointer-events-none absolute inset-x-0 border-t-2 border-dashed border-[#E8912A]"
+                style={{ bottom: `${(30 / dailyMax) * 140}px` }}
+              />
               {m.daily.map((d) => (
-                <div key={d.date} className="group flex flex-1 flex-col items-center justify-end gap-1">
-                  <div
-                    className="w-full rounded-t"
-                    style={{
-                      height: `${Math.max(3, (d.min / dailyMax) * 130)}px`,
-                      background: d.min > 30 ? GOLD : TEAL,
-                    }}
-                    title={`${d.date}｜${d.min} 分｜進場 ${d.visits} 次`}
-                  />
-                  <div className="text-[9px] text-[#6B655D]">{d.date.slice(8)}</div>
+                <div
+                  key={d.date}
+                  className="w-full flex-1 rounded-t"
+                  style={{
+                    height: `${Math.max(3, (d.min / dailyMax) * 140)}px`,
+                    background: d.min > 30 ? GOLD : TEAL,
+                  }}
+                  title={`${d.date}｜${d.min} 分｜進場 ${d.visits} 次`}
+                />
+              ))}
+            </div>
+            <div className="mt-1 flex gap-1.5">
+              {m.daily.map((d) => (
+                <div key={d.date} className="flex-1 text-center text-[9px] text-[#6B655D]">
+                  {d.date.slice(8)}
                 </div>
               ))}
             </div>
