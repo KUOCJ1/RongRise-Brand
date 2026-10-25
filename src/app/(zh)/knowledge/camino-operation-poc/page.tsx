@@ -437,7 +437,7 @@ export default function Post() {
       <section className="bg-gradient-hero text-white">
         <div className="max-w-[860px] mx-auto px-4 sm:px-6 py-16 md:py-20">
           <span className="tag bg-white/15 text-white mb-4">公開實驗・後台紀錄 ③</span>
-          <h1 className="heading-hero mt-4 mb-4">管理制度，也可以先做一輪 POC 嗎？</h1>
+          <h1 className="heading-hero mt-4 mb-4">管理制度，也可以像 Vibe Coding 一樣，先做一輪 POC 嗎？</h1>
           <p className="text-body-lg text-white/85 mb-2">
             工作完成了，流程還在等我。真正的瓶頸，是一天被叫回系統幾次。
           </p>
