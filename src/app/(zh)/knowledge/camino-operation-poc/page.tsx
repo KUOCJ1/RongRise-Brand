@@ -432,8 +432,70 @@ function CheckList() {
 }
 
 export default function Post() {
+  const SITE_URL = "https://rong-rise.com";
+  const pageTitle = "後台紀錄 ③：管理制度，也可以先做一輪 POC 嗎？";
+  const pageDesc =
+    "13 天裡每天介入約 37 分鐘，卻被切成十幾段。比起總時間，一天被叫回來幾次，更接近真正的管理問題。";
+
   return (
     <>
+      <script
+        id="jsonld-camino-operation-poc"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: pageTitle,
+            description: pageDesc,
+            author: {
+              "@type": "Person",
+              name: "郭鎮榕 C.J. Kuo",
+              url: `${SITE_URL}/about`,
+            },
+            datePublished: "2026-10-27",
+            dateModified: "2026-10-27",
+            image: `${SITE_URL}/images/article-camino-operation-poc.jpg`,
+            publisher: {
+              "@type": "Organization",
+              "@id": `${SITE_URL}/#organization`,
+              name: "榕耀管顧 RongRise Consulting",
+              logo: {
+                "@type": "ImageObject",
+                url: `${SITE_URL}/images/logo-512.png`,
+                width: 512,
+                height: 512,
+              },
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": `${SITE_URL}/knowledge/camino-operation-poc`,
+            },
+            keywords: ["公開實驗", "AI 員工", "授權設計", "管理制度", "後台紀錄"],
+            articleSection: "AI 轉型",
+          }),
+        }}
+      ></script>
+      <script
+        id="breadcrumb-camino-operation-poc"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "首頁", item: SITE_URL },
+              { "@type": "ListItem", position: 2, name: "知識庫", item: `${SITE_URL}/knowledge` },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: pageTitle,
+                item: `${SITE_URL}/knowledge/camino-operation-poc`,
+              },
+            ],
+          }),
+        }}
+      ></script>
       <section className="bg-gradient-hero text-white">
         <div className="max-w-[860px] mx-auto px-4 sm:px-6 py-16 md:py-20">
           <span className="tag bg-white/15 text-white mb-4">公開實驗・後台紀錄 ③</span>

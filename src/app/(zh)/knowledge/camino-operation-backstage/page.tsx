@@ -14,10 +14,10 @@ export const metadata: Metadata = {
       "13 天、169 次服務檢查全部在線，內容與流程卻出了 7 件錯。機器撐住了，判斷沒有。",
     images: [
       {
-        url: "https://rong-rise.com/images/og-image.jpg",
+        url: "https://rong-rise.com/images/article-camino-operation-backstage.jpg",
         width: 1200,
         height: 630,
-        alt: "榕耀管顧 RongRise Consulting",
+        alt: "後台紀錄 ②：一天 37 分鐘的管理窗口，出了 7 件錯",
       },
     ],
   },
@@ -272,8 +272,52 @@ function KpiGrid() {
 }
 
 export default function Post() {
+  const SITE_URL = "https://rong-rise.com";
+  const pageTitle = "後台紀錄 ②：一天 37 分鐘的管理窗口，出了 7 件錯";
+
   return (
     <>
+      <script
+        id="jsonld-camino-operation-backstage"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: pageTitle,
+            description:
+              "13 天、169 次服務檢查全部在線，內容與流程卻出了 7 件錯，其中 6 件是檢查設在錯的位置。",
+            author: { "@type": "Person", name: "郭鎮榕 C.J. Kuo", url: `${SITE_URL}/about` },
+            datePublished: "2026-10-25",
+            dateModified: "2026-10-25",
+            image: `${SITE_URL}/images/article-camino-operation-backstage.jpg`,
+            publisher: {
+              "@type": "Organization",
+              "@id": `${SITE_URL}/#organization`,
+              name: "榕耀管顧 RongRise Consulting",
+              logo: { "@type": "ImageObject", url: `${SITE_URL}/images/logo-512.png`, width: 512, height: 512 },
+            },
+            mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/knowledge/camino-operation-backstage` },
+            keywords: ["公開實驗", "AI 員工", "管理窗口", "後台紀錄"],
+            articleSection: "AI 轉型",
+          }),
+        }}
+      ></script>
+      <script
+        id="breadcrumb-camino-operation-backstage"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "首頁", item: SITE_URL },
+              { "@type": "ListItem", position: 2, name: "知識庫", item: `${SITE_URL}/knowledge` },
+              { "@type": "ListItem", position: 3, name: pageTitle, item: `${SITE_URL}/knowledge/camino-operation-backstage` },
+            ],
+          }),
+        }}
+      ></script>
       <section className="bg-gradient-hero text-white">
         <div className="max-w-[860px] mx-auto px-4 sm:px-6 py-16 md:py-20">
           <span className="tag bg-white/15 text-white mb-4">公開實驗・後台紀錄 ②</span>
