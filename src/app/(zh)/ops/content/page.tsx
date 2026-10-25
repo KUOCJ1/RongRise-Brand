@@ -29,7 +29,7 @@ export default function OpsContentPage() {
   const c = data.content;
 
   return (
-    <Shell title="內容產出" sub={`累計至 ${data.periods.content}。文章清單為最近 40 篇，可點進官網原文。`}>
+    <Shell title="內容產出" sub={`${data.periods.content}。文章清單為最近 40 篇，可點進官網原文。`}>
       <Panel title="產出總量" meta="累計值">
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
           {[
