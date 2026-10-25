@@ -1,0 +1,514 @@
+{
+  "generatedAt": "2026-10-25T08:21:07Z",
+  "periods": {
+    "content": "累計至 2026-10-25；近 30 天＝2026-09-25 起",
+    "health": "2026-10-01 ~ 2026-10-25（25 天）",
+    "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
+    "management": "2026-10-03 ~ 2026-10-24（22 天）"
+  },
+  "headline": [
+    {
+      "key": "content",
+      "label": "內容產出",
+      "value": 94,
+      "unit": "篇文章",
+      "note": "近 30 天新增 12 篇"
+    },
+    {
+      "key": "uptime",
+      "label": "服務可用率",
+      "value": 100.0,
+      "unit": "%",
+      "note": "25 天 × 18 個服務，450/450 次在線"
+    },
+    {
+      "key": "incidents",
+      "label": "未結事故",
+      "value": 0,
+      "unit": "件",
+      "note": "近 30 天 34 筆告警，涉及 22 支排程"
+    },
+    {
+      "key": "attention",
+      "label": "每天在場",
+      "value": 41.5,
+      "unit": "分鐘（中位數）",
+      "note": "實驗期 13 天 37.1 分；5/22 天在 30 分內"
+    }
+  ],
+  "content": {
+    "articles": 94,
+    "articles30d": 12,
+    "newsletters": 27,
+    "videos": 40,
+    "videos30d": 3,
+    "igCards": 42,
+    "socialPosts": 63,
+    "scanDays": 127,
+    "competitorReports": 126,
+    "insights": 17,
+    "monthly": [
+      {
+        "month": "2025-10",
+        "count": 2
+      },
+      {
+        "month": "2025-11",
+        "count": 1
+      },
+      {
+        "month": "2026-05",
+        "count": 8
+      },
+      {
+        "month": "2026-06",
+        "count": 10
+      },
+      {
+        "month": "2026-07",
+        "count": 18
+      },
+      {
+        "month": "2026-08",
+        "count": 23
+      },
+      {
+        "month": "2026-09",
+        "count": 23
+      },
+      {
+        "month": "2026-10",
+        "count": 8
+      }
+    ],
+    "latest": {
+      "article": {
+        "title": "GPU 三年就折舊光：你付的每一筆 AI 訂閱，都在替別人攤這筆帳",
+        "date": "2026.10.22",
+        "url": "/knowledge/ai-capital-depreciation-bill"
+      },
+      "newsletter": "🦞 榕賀觀點 第 27 期 — 2026-10-22",
+      "video": {
+        "title": "拿掉 AI 之後，只有老手真的進步：MIT 實驗揭開的判斷力斷代",
+        "date": "2026-10-21",
+        "url": "https://www.youtube.com/watch?v=T5e5Ia09QLg"
+      },
+      "insight": "2026-W43.md"
+    }
+  },
+  "health": {
+    "days": [
+      {
+        "date": "2026-10-01",
+        "online": 18,
+        "total": 18,
+        "status": "warning",
+        "disk": 73,
+        "restarts": 6
+      },
+      {
+        "date": "2026-10-02",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 73,
+        "restarts": 8
+      },
+      {
+        "date": "2026-10-03",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 74,
+        "restarts": 9
+      },
+      {
+        "date": "2026-10-04",
+        "online": 18,
+        "total": 18,
+        "status": "warning",
+        "disk": 74,
+        "restarts": 24
+      },
+      {
+        "date": "2026-10-05",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 74,
+        "restarts": 27
+      },
+      {
+        "date": "2026-10-06",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 74,
+        "restarts": 33
+      },
+      {
+        "date": "2026-10-07",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 78,
+        "restarts": 38
+      },
+      {
+        "date": "2026-10-08",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 79,
+        "restarts": 39
+      },
+      {
+        "date": "2026-10-09",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 79,
+        "restarts": 44
+      },
+      {
+        "date": "2026-10-10",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 79,
+        "restarts": 45
+      },
+      {
+        "date": "2026-10-11",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 79,
+        "restarts": 47
+      },
+      {
+        "date": "2026-10-12",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 74,
+        "restarts": 48
+      },
+      {
+        "date": "2026-10-13",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 74,
+        "restarts": 50
+      },
+      {
+        "date": "2026-10-14",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 76,
+        "restarts": 56
+      },
+      {
+        "date": "2026-10-15",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 84,
+        "restarts": 57
+      },
+      {
+        "date": "2026-10-16",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 79,
+        "restarts": 66
+      },
+      {
+        "date": "2026-10-17",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 79,
+        "restarts": 67
+      },
+      {
+        "date": "2026-10-18",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 81,
+        "restarts": 0
+      },
+      {
+        "date": "2026-10-19",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 78,
+        "restarts": 1
+      },
+      {
+        "date": "2026-10-20",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 78,
+        "restarts": 3
+      },
+      {
+        "date": "2026-10-21",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 78,
+        "restarts": 16
+      },
+      {
+        "date": "2026-10-22",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 79,
+        "restarts": 23
+      },
+      {
+        "date": "2026-10-23",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 84,
+        "restarts": 14
+      },
+      {
+        "date": "2026-10-24",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 80,
+        "restarts": 0
+      },
+      {
+        "date": "2026-10-25",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 85,
+        "restarts": 1
+      }
+    ],
+    "checks": 450,
+    "online": 450,
+    "warningDays": 2,
+    "maxDisk": 85,
+    "live": [
+      {
+        "name": "官網",
+        "url": "https://rong-rise.com/",
+        "code": "200",
+        "ok": true,
+        "seconds": 0.03
+      },
+      {
+        "name": "第二大腦",
+        "url": "https://brain.rong-rise.com/",
+        "code": "200",
+        "ok": true,
+        "seconds": 0.16
+      },
+      {
+        "name": "AI 落地頁",
+        "url": "https://ai.rong-rise.com/",
+        "code": "200",
+        "ok": true,
+        "seconds": 0.05
+      },
+      {
+        "name": "職能評測",
+        "url": "https://assess.rong-rise.com/",
+        "code": "200",
+        "ok": true,
+        "seconds": 0.02
+      },
+      {
+        "name": "n8n 自動化",
+        "url": "https://n8n.rong-rise.com/",
+        "code": "200",
+        "ok": true,
+        "seconds": 0.05
+      },
+      {
+        "name": "管理後台",
+        "url": "https://admin.rong-rise.com/",
+        "code": "401",
+        "ok": true,
+        "seconds": 0.03
+      }
+    ],
+    "liveAt": "2026-10-25 08:21 UTC"
+  },
+  "schedule": {
+    "incidents30d": 34,
+    "incidentJobs": 22,
+    "incidentDays": 15,
+    "open": 0,
+    "types": [
+      {
+        "type": "script",
+        "count": 17
+      },
+      {
+        "type": "config",
+        "count": 7
+      },
+      {
+        "type": "unknown",
+        "count": 5
+      },
+      {
+        "type": "timeout",
+        "count": 2
+      },
+      {
+        "type": "rate_limit",
+        "count": 2
+      }
+    ],
+    "executions": 1000,
+    "executionsOk": 1000,
+    "executionsFrom": "2026-10-24T20:25:50",
+    "jobs": 80,
+    "jobsEnabled": 72
+  },
+  "management": {
+    "days": 22,
+    "medianOnline": 41.5,
+    "experimentMedian": 37.1,
+    "avgOnline": 51.8,
+    "totalHours": 19.0,
+    "medianVisits": 14.0,
+    "perVisit": 3.1,
+    "daysUnder30": 5,
+    "daily": [
+      {
+        "date": "2026-10-03",
+        "min": 79.8,
+        "visits": 23
+      },
+      {
+        "date": "2026-10-04",
+        "min": 92.0,
+        "visits": 19
+      },
+      {
+        "date": "2026-10-05",
+        "min": 30.6,
+        "visits": 17
+      },
+      {
+        "date": "2026-10-06",
+        "min": 30.1,
+        "visits": 15
+      },
+      {
+        "date": "2026-10-07",
+        "min": 37.1,
+        "visits": 13
+      },
+      {
+        "date": "2026-10-08",
+        "min": 22.3,
+        "visits": 11
+      },
+      {
+        "date": "2026-10-09",
+        "min": 24.1,
+        "visits": 11
+      },
+      {
+        "date": "2026-10-10",
+        "min": 42.1,
+        "visits": 9
+      },
+      {
+        "date": "2026-10-11",
+        "min": 33.1,
+        "visits": 11
+      },
+      {
+        "date": "2026-10-12",
+        "min": 68.5,
+        "visits": 22
+      },
+      {
+        "date": "2026-10-13",
+        "min": 69.1,
+        "visits": 16
+      },
+      {
+        "date": "2026-10-14",
+        "min": 35.5,
+        "visits": 12
+      },
+      {
+        "date": "2026-10-15",
+        "min": 56.9,
+        "visits": 13
+      },
+      {
+        "date": "2026-10-16",
+        "min": 48.1,
+        "visits": 9
+      },
+      {
+        "date": "2026-10-17",
+        "min": 26.8,
+        "visits": 11
+      },
+      {
+        "date": "2026-10-18",
+        "min": 126.7,
+        "visits": 21
+      },
+      {
+        "date": "2026-10-19",
+        "min": 110.7,
+        "visits": 29
+      },
+      {
+        "date": "2026-10-20",
+        "min": 48.9,
+        "visits": 16
+      },
+      {
+        "date": "2026-10-21",
+        "min": 23.2,
+        "visits": 11
+      },
+      {
+        "date": "2026-10-22",
+        "min": 40.8,
+        "visits": 16
+      },
+      {
+        "date": "2026-10-23",
+        "min": 25.2,
+        "visits": 5
+      },
+      {
+        "date": "2026-10-24",
+        "min": 68.8,
+        "visits": 15
+      }
+    ]
+  },
+  "reach": {
+    "subscribers": 22,
+    "confirmed": 16,
+    "pending": 6,
+    "views": 684,
+    "channelSubscribers": 17
+  }
+}
