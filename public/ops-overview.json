@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T08:30:23Z",
+  "generatedAt": "2026-10-25T08:31:30Z",
   "periods": {
     "content": "累計至 2026-10-25；近 30 天＝2026-09-25 起",
     "health": "2026-10-01 ~ 2026-10-25（25 天）",
@@ -308,38 +308,38 @@
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.14
+        "seconds": 0.4
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.06
+        "seconds": 0.03
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.02
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.04
       },
       {
         "name": "管理後台",
         "url": "https://admin.rong-rise.com/",
         "code": "401",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.02
       }
     ],
-    "liveAt": "2026-10-25 08:30 UTC"
+    "liveAt": "2026-10-25 08:31 UTC"
   },
   "schedule": {
     "incidents30d": 34,
@@ -370,7 +370,7 @@
     ],
     "executions": 1000,
     "executionsOk": 1000,
-    "executionsFrom": "2026-10-24T20:34:50",
+    "executionsFrom": "2026-10-24T20:36:50",
     "jobs": 80,
     "jobsEnabled": 72
   },
