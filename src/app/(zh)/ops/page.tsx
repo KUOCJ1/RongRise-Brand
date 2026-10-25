@@ -102,7 +102,7 @@ function KpiCard({ item }: { item: Headline }) {
       </div>
       <div className="mt-2 flex items-center justify-between text-xs leading-relaxed text-[#6B655D]">
         <span>{item.note}</span>
-        <span className="opacity-0 transition group-hover:opacity-100">→</span>
+        <span className="text-[#C9BFAE] transition group-hover:text-[#E8912A]">→</span>
       </div>
     </Link>
   );
