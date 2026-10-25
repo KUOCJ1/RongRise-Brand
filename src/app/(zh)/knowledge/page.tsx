@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "camino-operation-poc",
+    cat: "AI 轉型",
+    title: "後台紀錄 ③：管理制度，也可以先做一輪 POC",
+    date: "2026-10-27",
+    readTime: "6 分鐘",
+    excerpt: "13 天裡每天介入約 37 分鐘，卻被切成十幾段。比起總時間，一天被叫回來幾次，更接近真正的管理問題。下一輪試行三層授權。",
+    tags: ["公開實驗", "AI 員工", "授權設計", "管理制度", "後台紀錄"],
+  },
+  {
     slug: "camino-operation-backstage",
     cat: "AI 轉型",
     title: "後台紀錄 ②：一天 37 分鐘的管理窗口，出了 7 件錯",
