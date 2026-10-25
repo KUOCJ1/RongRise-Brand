@@ -181,7 +181,7 @@ export default function OpsPage() {
           <div className="mt-6 rounded-2xl border border-[#E4DDD0] bg-white p-6">
             <div className="mb-4 flex items-baseline justify-between">
               <h3 className="text-sm font-semibold text-[#0D2B4E]">每月上線文章</h3>
-              <span className="text-[11px] text-[#6B655D]">近 8 個月｜單位：篇</span>
+              <span className="text-[11px] text-[#6B655D]">2026/05 起逐月｜單位：篇</span>
             </div>
             <div className="flex h-40 items-end gap-2 sm:gap-4">
               {c.monthly.map((mo) => (
