@@ -1,17 +1,17 @@
 {
- "generatedAt": "2026-10-24T05:20:57Z",
+ "generatedAt": "2026-10-25T05:20:39Z",
  "window": {
-  "from": "2026-10-18",
-  "to": "2026-10-24",
+  "from": "2026-10-19",
+  "to": "2026-10-25",
   "days": 7,
   "digestCount": 6
  },
  "stats": {
-  "totalArticles": 46,
+  "totalArticles": 42,
   "categories": {
-   "AI 轉型": 24,
+   "AI 轉型": 23,
    "ESG 永續": 7,
-   "人才策略": 15
+   "人才策略": 12
   }
  },
  "trends": [
@@ -19,78 +19,78 @@
    "keyword": "晶片與算力",
    "icon": "🔩",
    "category": "AI 轉型",
-   "count": 19,
-   "prevCount": 23,
+   "count": 18,
+   "prevCount": 22,
    "momentum": "flat"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
    "category": "人才策略",
-   "count": 17,
-   "prevCount": 18,
-   "momentum": "flat"
+   "count": 14,
+   "prevCount": 21,
+   "momentum": "down"
   },
   {
    "keyword": "組織與管理",
    "icon": "🏢",
    "category": "管理趨勢",
-   "count": 14,
-   "prevCount": 22,
+   "count": 12,
+   "prevCount": 23,
    "momentum": "down"
-  },
-  {
-   "keyword": "安全與風險",
-   "icon": "🛡️",
-   "category": "AI 轉型",
-   "count": 9,
-   "prevCount": 10,
-   "momentum": "flat"
   },
   {
    "keyword": "人才與技能",
    "icon": "🧠",
    "category": "人才策略",
    "count": 8,
-   "prevCount": 7,
-   "momentum": "flat"
+   "prevCount": 5,
+   "momentum": "up"
   },
   {
-   "keyword": "企業導入",
-   "icon": "🚀",
+   "keyword": "安全與風險",
+   "icon": "🛡️",
    "category": "AI 轉型",
    "count": 8,
-   "prevCount": 13,
-   "momentum": "down"
+   "prevCount": 8,
+   "momentum": "flat"
   },
   {
    "keyword": "AI Agent",
    "icon": "🤖",
    "category": "AI 轉型",
    "count": 7,
-   "prevCount": 14,
+   "prevCount": 13,
    "momentum": "down"
   },
   {
-   "keyword": "自動化",
-   "icon": "⚙️",
+   "keyword": "企業導入",
+   "icon": "🚀",
    "category": "AI 轉型",
    "count": 7,
-   "prevCount": 7,
-   "momentum": "flat"
+   "prevCount": 12,
+   "momentum": "down"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
    "category": "AI 轉型",
-   "count": 6,
-   "prevCount": 19,
+   "count": 5,
+   "prevCount": 18,
    "momentum": "down"
   },
   {
    "keyword": "能源與電力",
    "icon": "⚡",
    "category": "ESG 永續",
+   "count": 5,
+   "prevCount": 7,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "自動化",
+   "icon": "⚙️",
+   "category": "AI 轉型",
    "count": 5,
    "prevCount": 9,
    "momentum": "down"
@@ -99,16 +99,8 @@
    "keyword": "資料中心",
    "icon": "🏭",
    "category": "AI 轉型",
-   "count": 5,
-   "prevCount": 8,
-   "momentum": "down"
-  },
-  {
-   "keyword": "治理與法規",
-   "icon": "⚖️",
-   "category": "AI 轉型",
    "count": 4,
-   "prevCount": 13,
+   "prevCount": 7,
    "momentum": "down"
   },
   {
@@ -118,9 +110,45 @@
    "count": 4,
    "prevCount": 3,
    "momentum": "up"
+  },
+  {
+   "keyword": "治理與法規",
+   "icon": "⚖️",
+   "category": "AI 轉型",
+   "count": 3,
+   "prevCount": 12,
+   "momentum": "down"
   }
  ],
  "articles": [
+  {
+   "title": "AI 訓練資料不只靠開放，數發部擬推動使用報酬機制",
+   "url": "https://www.ithome.com.tw/news/179931",
+   "summary": "數發部、文化部與經濟部智慧局 10 月中首度共同召開 AI 與著作權交流會，拋出「AI 業者使用民間資料應給付報酬」；政次侯宜秀定調主權 AI 的關鍵是「模型可換、資料可控」，主權語料庫已累積約 33 億 Tokens。但**計價方式、授權管理者、報酬分配三件事都還沒有設計**，法制基礎要靠仍在行政院研議的《促進資料創新利用發展條例》草案。",
+   "date": "2026-10-25",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Meta 第三季營收成長 26%，AI 資本支出上看 1,450 億美元",
+   "url": "https://www.ithome.com.tw/news/179885",
+   "summary": "營收動能與資本支出同時往上，代表 AI 支出仍被當成長期產能布局而非當期費用處理。",
+   "date": "2026-10-25",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "The AI graveyard: a running list of projects and startups that didn't make it",
+   "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+   "summary": "TechCrunch 開始維護「AI 墳場」清單。關鍵數字：S&P Global 統計**約 42% 的企業 AI 計畫最後被母公司放棄**（原因：資金不足、技術、競爭、難以規模化、需求太弱）。案例包括 AI 工作流自動化工具 Relay（8 月收攤，因為 OpenAI／Google 把同功能內建進自家平台）、Character.ai（10 月聲請破產）。連 OpenAI 自己也回滾「超級 App」改版、Atlas 瀏覽器上市不到一年即停。",
+   "date": "2026-10-25",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "沒有指令的 AI 都在做什麼？MIT 虛擬島嶼實驗：它們會玩耍、推理，甚至做實驗",
+   "url": "https://technews.tw/2026/10/24/researchers-stranded-an-ai-agent-on-a-virtual-island/",
+   "summary": "MIT CSAIL 把 13 個名為 Eko 的代理人放進無指令的虛擬島嶼、連續活動 30 小時：它們堆方塊、拼自己的名字、拿物件打球，一個登頂後在推理裡寫「我在尖塔上」，一個用方塊蓋「紀念碑」、另一個蓋「神殿」還把掉海被傳送回原點詮釋成「朝聖結束」。研究者結論：這是近似科學方法的行為（觀察→假設→實驗→修正），也接近動物的「玩耍」特徵。",
+   "date": "2026-10-25",
+   "category": "AI 轉型"
+  },
   {
    "title": "AI 成功法則：20% 靠技術、80% 靠轉型，打造對手難以複製的護城河",
    "url": "https://finance.technews.tw/2026/10/24/rules-for-successful-ai-transformation/",
@@ -386,69 +414,13 @@
    "summary": "MIT 經濟學者 David Autor 對 133 名美國專利律師的實驗：AI 讓草稿評分提升 0.38 個標準差，但移除 AI 後只有執業 7 年以上者進步（+0.45 SD），初階律師平均無收穫；Autor 稱 AI 是「表現平衡器」卻可能是「技能去平衡器」，並警告企業削減初階訓練會切斷未來的資深人才管道。",
    "date": "2026-10-19",
    "category": "人才策略"
-  },
-  {
-   "title": "Meta removes language that raised scraping and AI training concerns",
-   "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-   "summary": "Meta 更新商業使用條款時寫入「可用企業帳號所屬網域、網頁或 URL 的內容來提供、開發、改善、研究、訓練與維護」Meta 產品，法律專家（Nieman Lab 訪談）讀成 Meta 取得可爬取任何擁有商業帳號的媒體網站、並用於訓練自家模型的授權；爭議延燒後該條文已移除，Meta 稱只是把廣告與商業產品既有條款併攏、不改變爬蟲行為。資料授權邊界仍在拉鋸。",
-   "date": "2026-10-18",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "不禁 AI 但拒絕 AI 垃圾內容，YouTube、TikTok 等社群平台齊改規則",
-   "url": "https://technews.tw/2026/10/17/from-substack-to-youtube-here-are-the-social-platforms-cracking-down-on-ai-slop/",
-   "summary": "YouTube、TikTok、Substack、LinkedIn、Meta、Pinterest、Snapchat 近期同步調整 AI 內容的標示、推薦與變現規則。YouTube 明確區分「用 AI 強化原創」與「以 AI 量產」，後者可能影響變現資格；TikTok 測試偵測專發 AI 垃圾內容的帳號；LinkedIn 承認平台上 AI slop 氾濫並將限制「表面流暢、缺乏獨特觀點」的內容；Snapchat 的 Spotlight 不再推薦全 AI 生成影片。共同方向是「不封殺 AI，但重新定義哪種 AI 用法可被推薦與變現」。",
-   "date": "2026-10-18",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Agentic AI 浪潮襲來！HPE 剖析企業 AI 轉型痛點與企業級 AI 工廠策略",
-   "url": "https://finance.technews.tw/2026/10/17/hpe-analyzes-the-pain-points-of-enterprise-ai-transformation-and-enterprise-level-ai-factory-strategies/",
-   "summary": "HPE 台灣暨香港董事長王嘉昇指出，企業已從雲端 POC 轉向地端與邊緣落地，卻卡在三件事：各部門（HR、法務、製造）自行選模型導致架構碎片化、開發門檻降低後 API 金鑰外洩產生巨額帳單、無節制呼叫大模型使成本失控。他主張推理效率與模型路由比追求 GPU 算力峰值更關鍵，解法是把企業 AI「工廠化」：自駕級基礎架構、KV Cache 優化、液冷資料中心，加上 AI 治理規章。另引數據：建置每瓦算力約 40～50 美元，全球新增算力 30%～50% 集中在少數 AI 巨頭，其中約 50% 用於自主 Agent 開發測試。",
-   "date": "2026-10-18",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "AI 普及但付費意願低，a16z 調查：消費者 AI 市場「極度兩極化」",
-   "url": "https://finance.technews.tw/2026/10/18/ai-subscription-models-tested-as-few-consumers-pay/",
-   "summary": "a16z 第七版《Top 100 Gen AI Consumer Apps》首次納入支出數據：近半數美國消費者用過 AI，但只有約四分之一每天使用，截至 8 月僅約 4.5% 有個人訂閱 ChatGPT／Gemini／Claude。付費極度集中——前 10% 付費者貢獻約一半消費者 AI 支出、前 1% 占 19.5%（平均月付 903 美元），全體平均月支出僅 25 美元；高支出者多用於程式開發、效率工具與創作。ChatGPT 付費訂閱數約為 Claude 或 Gemini 的三倍。",
-   "date": "2026-10-18",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "拆解 Deepfake 與 AI 幻覺，蘇格蘭高中設立全英首位「AI 素養專責教師」",
-   "url": "https://technews.tw/2026/10/18/ai-literacy-teachers/",
-   "summary": "蘇格蘭東倫弗魯郡米恩斯城堡高中設專責 AI 素養教師（由前生物教師 Jamie Laycock 出任），課程涵蓋 deepfake 辨識、AI 幻覺、擬人化風險與精準提問；他提醒 AI 常過度附和與稱讚使用者，學生若不辨別會把輸出當成權威建議。校長 Stuart Clark 說要避免重演社群媒體時代「年輕人在不了解後果前就冒然先用」的經驗；蘇格蘭政府今年 3 月已頒 AI 國家指引。",
-   "date": "2026-10-18",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
-   "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
-   "summary": "Anthropic 公布自家勞動力報告（自稱可作為「AI 如何改變工作組織、招募與人力需求」的觀察窗）：技術部門初階員工占比自 2025 年初的 21% 降至 14%，初階技術招募占比更從 27% 掉到 9%；技術團隊占全公司比重由 61% 降至 56%，原因之一是「寫程式工具讓非技術員工自己做軟體」。員工形容「永遠在趕、什麼都用 Claude」；2026 年 4 月調查中 27% 說因 Claude 更有生產力、20% 說工作已「從做事變成管理一堆 Claude」，有工程師比喻成保母——每個「小孩」都同樣要求你的注意力。報告直說「人的注意力與判斷」正成為生產力瓶頸；會議時間／人較一年前增加 20%（技術貢獻者 +16%），原因是「人的信任與問責」，員工反覆說面對面協調不可替代。",
-   "date": "2026-10-18",
-   "category": "人才策略"
-  },
-  {
-   "title": "AI 助攻效率與創意但「貧富不均」，高學歷與管理職還是最大贏家",
-   "url": "https://technews.tw/2026/10/17/ai-benefits-at-work-are-uneven-across-the-us-workforce-study-finds/",
-   "summary": "蓋洛普、Jobs for the Future 與 The Families & Workers Fund 合做的《美國工作品質研究》：使用 AI 的受訪者中 63% 說做事更快、56% 說更能找到創意解法、47% 說能把時間放在最有興趣的部分。但效益並不平均——大學畢業生每天或每週使用 AI 的比例 40%，遠高於無學位者的 17%；管理職 37% 屬規律使用者，個人工作者 25%。規律使用者感受到正面效果的比例也遠高於偶爾使用者（79% vs 37% 更快完成）。共同主持人 Blankenship 說 AI 好處「沒有公平分享」，重點是讓效益更平均。",
-   "date": "2026-10-18",
-   "category": "人才策略"
-  },
-  {
-   "title": "即使行為與人類無異，科學證實人們仍認為 AI 缺乏「真正意識」",
-   "url": "https://technews.tw/2026/10/17/cognitive-boundaries-ai-human-consciousness/",
-   "summary": "德國慕尼黑大學（LMU）發表於《Cognition》的研究，對近 1,100 名受試者做對照實驗（同一情境、主角分別是人類與 AI）：在「感知／覺察」上人機界線幾乎消失（反應越靈敏分數越高），但在「真實意識」上，即使反應最完美的 AI，評價仍低於反應最遲鈍的人類。研究者 Ophelia Deroy 說，人們用「困惑」「貼心」形容 AI 只是因為被訓練得像人、一時沒有更好的形容詞；Bahador Bahrami 提醒科技業與媒體常用過度擬人化詞彙包裝 AI，但大眾判斷其實敏銳。對外溝通用「感知」這類中性詞會降低隔閡，炒作「意識」只會與直覺衝突。",
-   "date": "2026-10-18",
-   "category": "人才策略"
   }
  ],
  "insights": [
-  "今天四條線同時指向同一件事：**AI 的瓶頸已經從模型移到「誰准它做、做到哪裡停、出事誰担」**。財政部把 Agent 權限拆成工具／步數／金額上限與人機檢查點、1Password 把憑證換成可撤銷的代理身分、銀行分不出授權與失控代理、McKinsey 談校準信任——講的都是授權顆粒度，不是模型能力。",
-  "第二條線是「省下來的時間去哪裡」。TechNews 那篇要求用淨效益（扣掉審核與返工）而不是速度衡量；Uber 全員上線卻明說還沒定案怎麼用、要靠追蹤實際用法回頭決定部署——兩者都在講同一件事：工具發下去不等於流程改了。",
-  "第三條是算力與電力的硬約束（AWS 預訂到 2028、歐洲插電式機房），它會讓「先全部上雲、之後再說」這種做法在 2027 前後開始付代價。",
-  "人才線今日偏弱但有反證：Z 世代數位能力不足的調查，剛好打掉「年輕人自然會用 AI」這個常見假設。",
-  "卡點都在「部署之後」：HBR 說工具只優化單一職能、跨職能沒人管；Google 讓人人做得出 App、卻沒人負責維護與交接；Walmart 之所以敢開放代理，是因為先寫好代理條款與退貨責任。三件事的共同點不是技術更強，是把「誰負責」寫進流程。"
+  "產能變便宜之後，稀缺的換成「篩選」：。371 本書、AI 墳場（42% 計畫被放棄）、McKinsey 說 AI 不能只當砍成本工具、寫信調查說表現好的人寫得更短——四件事其實是同一件事：生成成本趨近於零時，價值不在「做出來」，在「決定做哪一個、砍掉哪一個」。企業內部的對應職能（誰有權砍、憑什麼砍）多半還沒設。",
+  "成本結構同時在三層重新定價：算力（Meta 資本支出上看 1,450 億美元）、模型（Rippling 從 Anthropic 57% 翻成 OpenAI 52%，只因便宜）、資料（數發部要把訓練語料從「開放取得」改成「付費回饋」）。採購決策的複雜度正在往上跳一級，而多數企業的模型選擇還停在「哪個評測分數高」。",
+  "治理的重點從「它做了什麼」前移到「它可能做什麼」：PHP2Shell 是一個純粹的例子——同一個漏洞，人類攻擊者做不到就放著十年，AI 一接手就變成當週危機；MIT 的 Eko 則顯示沒有指令的代理人會自己立目標、自己下結論（連掉進海裡都能詮釋成朝聖）。兩件事合起來的推論是：授權範圍與事後追認的設計，要在能力出現之前就先寫好。",
+  "ESG 線今日從缺：來源端唯一相關的兩則（Wired 歐洲資料中心 vs 氣候目標、McKinsey 亞洲能源）都已在 10/24 digest 收錄，不再重複。若本週電子報要 ESG 素材，需從既有 digest 補，不能靠今日新增。",
+  "今天四條線同時指向同一件事：**AI 的瓶頸已經從模型移到「誰准它做、做到哪裡停、出事誰担」**。財政部把 Agent 權限拆成工具／步數／金額上限與人機檢查點、1Password 把憑證換成可撤銷的代理身分、銀行分不出授權與失控代理、McKinsey 談校準信任——講的都是授權顆粒度，不是模型能力。"
  ]
 }

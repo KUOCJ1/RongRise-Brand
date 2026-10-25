@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-10-24T05:20:56Z",
+ "generatedAt": "2026-10-25T05:20:39Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 147
+  "daysRunning": 148
  },
  "stats": {
-  "scanDays": 126,
-  "weekArticles": 60,
+  "scanDays": 127,
+  "weekArticles": 46,
   "articles": 94,
   "newsItems": 56,
   "newsletterIssues": 27,
   "subscribers": 22,
   "confirmedSubscribers": 16,
   "videos": 40,
-  "views": 680,
+  "views": 684,
   "channelSubscribers": 17,
   "insights": 17,
   "socialPosts": 63,
-  "igCards": 40,
-  "competitorReports": 125
+  "igCards": 42,
+  "competitorReports": 126
  },
  "activity": [
-  {
-   "date": "2026-10-18",
-   "count": 8,
-   "topics": []
-  },
   {
    "date": "2026-10-19",
    "count": 8,
@@ -56,6 +51,11 @@
    "date": "2026-10-24",
    "count": 8,
    "topics": []
+  },
+  {
+   "date": "2026-10-25",
+   "count": 4,
+   "topics": []
   }
  ],
  "latest": {
@@ -76,31 +76,31 @@
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 25,
-   "momentum": "up"
+   "count": 19,
+   "momentum": "flat"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 21,
+   "count": 17,
    "momentum": "flat"
   },
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 19,
+   "count": 14,
+   "momentum": "down"
+  },
+  {
+   "keyword": "安全與風險",
+   "icon": "🛡️",
+   "count": 9,
    "momentum": "flat"
   },
   {
-   "keyword": "成本與投資",
-   "icon": "💰",
-   "count": 12,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "AI Agent",
-   "icon": "🤖",
-   "count": 11,
+   "keyword": "人才與技能",
+   "icon": "🧠",
+   "count": 8,
    "momentum": "flat"
   }
  ]
