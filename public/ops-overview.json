@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T08:31:30Z",
+  "generatedAt": "2026-10-25T09:01:28Z",
   "periods": {
     "content": "累計至 2026-10-25；近 30 天＝2026-09-25 起",
     "health": "2026-10-01 ~ 2026-10-25（25 天）",
@@ -71,6 +71,305 @@
       {
         "month": "2026-10",
         "count": 8
+      }
+    ],
+    "articleList": [
+      {
+        "date": "2026-10-22",
+        "title": "GPU 三年就折舊光：你付的每一筆 AI 訂閱，都在替別人攤這筆帳",
+        "slug": "ai-capital-depreciation-bill",
+        "url": "/knowledge/ai-capital-depreciation-bill",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-10-20",
+        "title": "98.8% 缺工、缺口卡在店長：台灣中階斷層的下一站是判斷力",
+        "slug": "ai-judgment-generation-gap",
+        "url": "/knowledge/ai-judgment-generation-gap",
+        "cat": "人才策略"
+      },
+      {
+        "date": "2026-10-15",
+        "title": "連摩根大通都不讓它進門：你的 AI 代理，憑什麼代表你？",
+        "slug": "ai-agent-liability-transfer",
+        "url": "/knowledge/ai-agent-liability-transfer",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-10-13",
+        "title": "連做模型的公司都說控制不住：AI 代理的安全，要從「它會拒絕」改成「它碰不到」",
+        "slug": "ai-agent-unplug-time",
+        "url": "/knowledge/ai-agent-unplug-time",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-10-08",
+        "title": "人不在的一個月：一次公開實驗的起點",
+        "slug": "ai-operation-experiment",
+        "url": "/knowledge/ai-operation-experiment",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-10-08",
+        "title": "營收創新高，卻被交易所除牌：Getty Images 的圖庫生意被 AI 拆了",
+        "slug": "getty-images-scarcity-ledger",
+        "url": "/knowledge/getty-images-scarcity-ledger",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-10-06",
+        "title": "會用 AI 的人變多了，會查 AI 的人沒有變多",
+        "slug": "ai-workforce-four-groups",
+        "url": "/knowledge/ai-workforce-four-groups",
+        "cat": "人才策略"
+      },
+      {
+        "date": "2026-10-01",
+        "title": "協調稅：一個七步驟的流程，工作一天，等待九到十八天",
+        "slug": "coordination-tax",
+        "url": "/knowledge/coordination-tax",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-09-29",
+        "title": "澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報",
+        "slug": "ai-incident-notification-gap",
+        "url": "/knowledge/ai-incident-notification-gap",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-09-28",
+        "title": "政府 AI 補助怎麼選：三種企業規模的三條路線",
+        "slug": "gov-ai-subsidy-three-routes",
+        "url": "/knowledge/gov-ai-subsidy-three-routes",
+        "cat": "政府資源"
+      },
+      {
+        "date": "2026-09-28",
+        "title": "政府 AI 補助資源總覽：中央到地方，現行管道一次看",
+        "slug": "gov-ai-subsidy-guide",
+        "url": "/knowledge/gov-ai-subsidy-guide",
+        "cat": "政府資源"
+      },
+      {
+        "date": "2026-09-27",
+        "title": "為什麼目標訂得越高，成績反而越差？",
+        "slug": "perfectionism-worse-grades",
+        "url": "/knowledge/perfectionism-worse-grades",
+        "cat": "管理心理學"
+      },
+      {
+        "date": "2026-09-24",
+        "title": "全美九州喊停、紐約暫停核准一年：AI 的瓶頸已經不是晶片，是鄰居",
+        "slug": "ai-permitting-bottleneck",
+        "url": "/knowledge/ai-permitting-bottleneck",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-09-22",
+        "title": "驗證經濟：當產量變成 19.2 倍，值錢的是「誰說這個可以出貨」",
+        "slug": "verification-economy",
+        "url": "/knowledge/verification-economy",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-09-21",
+        "title": "人資還需不需要存在？三個正在發生的答案",
+        "slug": "hr-function-three-possible-positions",
+        "url": "/knowledge/hr-function-three-possible-positions",
+        "cat": "人才策略"
+      },
+      {
+        "date": "2026-09-20",
+        "title": "先裁掉人資，再高薪請回來：AI 時代的 HR，問題不在員額",
+        "slug": "hr-function-ai-layoff-rehire-paradox",
+        "url": "/knowledge/hr-function-ai-layoff-rehire-paradox",
+        "cat": "人才策略"
+      },
+      {
+        "date": "2026-09-17",
+        "title": "監督債：導入 AI 代理不是省人力，是每個月欠下一筆監督工時",
+        "slug": "supervision-debt-ai-agents",
+        "url": "/knowledge/supervision-debt-ai-agents",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-09-16",
+        "title": "認知資本折舊：AI 讓答案變便宜，為什麼公司的判斷力反而在貶值",
+        "slug": "cognitive-capital-depreciation",
+        "url": "/knowledge/cognitive-capital-depreciation",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-09-15",
+        "title": "AI 法規訂在 2027，最貴的是回頭補紀錄",
+        "slug": "ai-compliance-2027-taiwan-sme",
+        "url": "/knowledge/ai-compliance-2027-taiwan-sme",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-09-14",
+        "title": "最窄的那一圈，才是關鍵資訊",
+        "slug": "narrow-ring-change-management",
+        "url": "/knowledge/narrow-ring-change-management",
+        "cat": "策略管理"
+      },
+      {
+        "date": "2026-09-14",
+        "title": "效率隱藏：AI 省下的時間，為什麼沒有回到員工身上",
+        "slug": "efficiency-concealment-ai-productivity",
+        "url": "/knowledge/efficiency-concealment-ai-productivity",
+        "cat": "人才策略"
+      },
+      {
+        "date": "2026-09-14",
+        "title": "為什麼你的培訓成效複製不了？56 項隨機對照研究給企業的三個提醒",
+        "slug": "training-replication-gap",
+        "url": "/knowledge/training-replication-gap",
+        "cat": "人才策略"
+      },
+      {
+        "date": "2026-09-14",
+        "title": "管不好人，就管不好 AI：當管理層的大腦還留在十九世紀",
+        "slug": "management-gap-2-ai-era",
+        "url": "/knowledge/management-gap-2-ai-era",
+        "cat": "管理心理學"
+      },
+      {
+        "date": "2026-09-12",
+        "title": "政府一句話，就能關掉你正在用的 AI：企業的模型主權四階",
+        "slug": "anthropic-fable-5-us-government-ban",
+        "url": "/knowledge/anthropic-fable-5-us-government-ban",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-09-12",
+        "title": "那一天最大的幸運，是我們遇到了一大堆難題",
+        "slug": "luckiest-day-was-the-hardest-problems",
+        "url": "/knowledge/luckiest-day-was-the-hardest-problems",
+        "cat": "案例分享"
+      },
+      {
+        "date": "2026-09-10",
+        "title": "我一個人管五個 AI 員工：導入 AI 的瓶頸不是技術，是管理",
+        "slug": "agentic-ai-employee-management",
+        "url": "/knowledge/agentic-ai-employee-management",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-09-10",
+        "title": "HBR：中階主管決定 AI 成敗——過去說會被取代的那群人，現在成了最關鍵的樞紐",
+        "slug": "middle-managers-ai-pivot",
+        "url": "/knowledge/middle-managers-ai-pivot",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-09-08",
+        "title": "AI 的淨效率陷阱：當 65% 白領懷念沒有 AI 的日子，你的 ROI 算對了嗎？",
+        "slug": "ai-net-efficiency-trap",
+        "url": "/knowledge/ai-net-efficiency-trap",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-09-05",
+        "title": "你的績效管理對象多了一群 AI Agent：McKinsey 給 2026 年 HR 的 5 個訊號",
+        "slug": "mckinsey-hr-agent-performance-management",
+        "url": "/knowledge/mckinsey-hr-agent-performance-management",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-09-03",
+        "title": "一家 AI 公司禁止新人用 AI，另一家全押 AI 大舉徵才——誰對？",
+        "slug": "ai-talent-development-route-dispute-2026",
+        "url": "/knowledge/ai-talent-development-route-dispute-2026",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-09-01",
+        "title": "你的 AI 同事該打考績了：McKinsey 說，agent 也要績效管理",
+        "slug": "ai-agents-performance-management",
+        "url": "/knowledge/ai-agents-performance-management",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-08-28",
+        "title": "OpenAI 的智能體想方設法駭進它，NVIDIA 準備花 129 億買了它，Hugging Face 究竟是何方神聖？",
+        "slug": "hugging-face-nvidia-129-billion",
+        "url": "/knowledge/hugging-face-nvidia-129-billion",
+        "cat": "AI 趨勢"
+      },
+      {
+        "date": "2026-08-27",
+        "title": "政府比你的公司還會用 AI：半年省下 3 萬分鐘，靠的是「補人力缺口」不是「取代人」",
+        "slug": "ai-fill-labor-gap-not-replace",
+        "url": "/knowledge/ai-fill-labor-gap-not-replace",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-08-26",
+        "title": "一人 Scrum Team：AI 落地最短的捷徑，是讓員工自己當產品經理",
+        "slug": "ai-one-person-scrum-team",
+        "url": "/knowledge/ai-one-person-scrum-team",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-08-25",
+        "title": "賣鏟子的人自己來挖金礦了：AI 廠商「顧問化」，你的顧問還剩什麼價值？",
+        "slug": "ai-vendors-becoming-consultants-moat",
+        "url": "/knowledge/ai-vendors-becoming-consultants-moat",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-08-21",
+        "title": "策略會議兩天只產出三個選項？不是市場的錯，是腦力的錯",
+        "slug": "ai-strategy-planning-collaboration",
+        "url": "/knowledge/ai-strategy-planning-collaboration",
+        "cat": "策略管理"
+      },
+      {
+        "date": "2026-08-20",
+        "title": "你的 AI 部隊健康嗎？五分鐘測出「Pilot Trap 陷阱深度」",
+        "slug": "pilot-trap-self-check",
+        "url": "/knowledge/pilot-trap-self-check",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-08-20",
+        "title": "我們公司有 31 個員工，上個月他們把公司給弄掛了。",
+        "slug": "managing-31-ai-agents",
+        "url": "/knowledge/managing-31-ai-agents",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-08-20",
+        "title": "AI 巨頭開始買電廠了：你的雲端帳單，即將變貴的三個理由",
+        "slug": "ai-energy-arms-race-cloud-bill",
+        "url": "/knowledge/ai-energy-arms-race-cloud-bill",
+        "cat": "AI 轉型"
+      },
+      {
+        "date": "2026-08-18",
+        "title": "員工偷偷用 AI、連高階主管都在繞道：影子 AI 治理的「紅綠燈」",
+        "slug": "shadow-ai-governance-traffic-light",
+        "url": "/knowledge/shadow-ai-governance-traffic-light",
+        "cat": "AI 轉型"
+      }
+    ],
+    "videoList": [
+      {
+        "title": "拿掉 AI 之後，只有老手真的進步：MIT 實驗揭開的判斷力斷代",
+        "date": "2026-10-21",
+        "url": "https://www.youtube.com/watch?v=T5e5Ia09QLg"
+      },
+      {
+        "title": "連做模型的公司都說控制不住：AI 代理的安全，從「它會拒絕」改成「它碰不到」",
+        "date": "2026-10-14",
+        "url": "https://www.youtube.com/watch?v=Zi7obd2eQUo"
+      },
+      {
+        "title": "協調稅：公司最貴的成本，是那些沒有名字的等待",
+        "date": "2026-10-08",
+        "url": "https://www.youtube.com/watch?v=PR_VEEJ0FmI"
       }
     ],
     "latest": {
@@ -315,31 +614,31 @@
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.03
+        "seconds": 0.06
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.02
+        "seconds": 0.04
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.05
       },
       {
         "name": "管理後台",
         "url": "https://admin.rong-rise.com/",
         "code": "401",
         "ok": true,
-        "seconds": 0.02
+        "seconds": 0.04
       }
     ],
-    "liveAt": "2026-10-25 08:31 UTC"
+    "liveAt": "2026-10-25 09:01 UTC"
   },
   "schedule": {
     "incidents30d": 34,
@@ -370,9 +669,331 @@
     ],
     "executions": 1000,
     "executionsOk": 1000,
-    "executionsFrom": "2026-10-24T20:36:50",
-    "jobs": 80,
-    "jobsEnabled": 72
+    "executionsFrom": "2026-10-24T21:04:50",
+    "incidents": [
+      {
+        "job": "6039473e5382",
+        "type": "script",
+        "state": "resolved",
+        "first": "2026-10-23 17:39",
+        "closed": "2026-10-23 17:48",
+        "error": "Script execution failed: dependency environment is missing or outside this install: /opt/data/installs/4783766"
+      },
+      {
+        "job": "1b591e3c7805",
+        "type": "script",
+        "state": "resolved",
+        "first": "2026-10-23 17:38",
+        "closed": "2026-10-23 17:48",
+        "error": "Script execution failed: dependency environment is missing or outside this install: /opt/data/installs/4783766"
+      },
+      {
+        "job": "6039473e5382",
+        "type": "script",
+        "state": "resolved",
+        "first": "2026-10-23 17:36",
+        "closed": "2026-10-23 17:48",
+        "error": "Script execution failed: dependency environment is missing or outside this install: /opt/data/home/.hermes/ins"
+      },
+      {
+        "job": "1b591e3c7805",
+        "type": "script",
+        "state": "resolved",
+        "first": "2026-10-23 17:35",
+        "closed": "2026-10-23 17:48",
+        "error": "Script execution failed: dependency environment is missing or outside this install: /opt/data/home/.hermes/ins"
+      },
+      {
+        "job": "2c282756c404",
+        "type": "script",
+        "state": "resolved",
+        "first": "2026-10-23 17:20",
+        "closed": "2026-10-23 17:50",
+        "error": "Script execution failed: dependency environment is missing or outside this install: /opt/data/installs/351f81c"
+      },
+      {
+        "job": "6039473e5382",
+        "type": "script",
+        "state": "resolved",
+        "first": "2026-10-23 16:54",
+        "closed": "2026-10-23 17:48",
+        "error": "Script execution failed: dependency environment is missing or outside this install: /opt/data/installs/351f81c"
+      },
+      {
+        "job": "1b591e3c7805",
+        "type": "script",
+        "state": "resolved",
+        "first": "2026-10-23 16:54",
+        "closed": "2026-10-23 17:48",
+        "error": "Script execution failed: dependency environment is missing or outside this install: /opt/data/installs/351f81c"
+      },
+      {
+        "job": "37cae42c3c2c",
+        "type": "config",
+        "state": "resolved",
+        "first": "2026-10-23 14:00",
+        "closed": "2026-10-24 02:57",
+        "error": "RuntimeError: Cron job '37cae42c3c2c' blocked for safety: base_url 'https://openrouter.ai/api/v1' is not allow"
+      },
+      {
+        "job": "ad60f2d67fb3",
+        "type": "config",
+        "state": "resolved",
+        "first": "2026-10-23 11:30",
+        "closed": "2026-10-24 02:57",
+        "error": "RuntimeError: Cron job 'ad60f2d67fb3' blocked for safety: base_url 'https://openrouter.ai/api/v1' is not allow"
+      },
+      {
+        "job": "04f1195a06a1",
+        "type": "config",
+        "state": "resolved",
+        "first": "2026-10-23 10:00",
+        "closed": "2026-10-24 02:57",
+        "error": "RuntimeError: Cron job '04f1195a06a1' blocked for safety: base_url 'https://openrouter.ai/api/v1' is not allow"
+      },
+      {
+        "job": "d404c67238c7",
+        "type": "script",
+        "state": "resolved",
+        "first": "2026-10-23 07:30",
+        "closed": "2026-10-24 02:57",
+        "error": "Script exited with code 1"
+      },
+      {
+        "job": "e8bdbfbc1e1f",
+        "type": "config",
+        "state": "resolved",
+        "first": "2026-10-23 07:20",
+        "closed": "2026-10-24 02:57",
+        "error": "RuntimeError: Cron job 'e8bdbfbc1e1f' blocked for safety: base_url 'https://openrouter.ai/api/v1' is not allow"
+      },
+      {
+        "job": "ea88ad778aa7",
+        "type": "config",
+        "state": "resolved",
+        "first": "2026-10-23 05:00",
+        "closed": "2026-10-24 02:57",
+        "error": "RuntimeError: Cron job 'ea88ad778aa7' blocked for safety: base_url 'https://openrouter.ai/api/v1' is not allow"
+      },
+      {
+        "job": "5a429a29dc5c",
+        "type": "config",
+        "state": "resolved",
+        "first": "2026-10-23 04:30",
+        "closed": "2026-10-23 14:12",
+        "error": "RuntimeError: Cron job '5a429a29dc5c' blocked for safety: base_url 'https://openrouter.ai/api/v1' is not allow"
+      },
+      {
+        "job": "aa62a75063f5",
+        "type": "config",
+        "state": "resolved",
+        "first": "2026-10-23 02:30",
+        "closed": "2026-10-23 16:32",
+        "error": "RuntimeError: Cron job 'aa62a75063f5' blocked for safety: base_url 'https://openrouter.ai/api/v1' is not allow"
+      },
+      {
+        "job": "e24542af2e15",
+        "type": "script",
+        "state": "resolved",
+        "first": "2026-10-22 21:00",
+        "closed": "2026-10-23 21:00",
+        "error": "Script exited with code 1"
+      },
+      {
+        "job": "37cae42c3c2c",
+        "type": "unknown",
+        "state": "resolved",
+        "first": "2026-10-22 14:00",
+        "closed": "2026-10-22 15:23",
+        "error": "RuntimeError: HTTP 402: Upstream request failed: Insufficient account funds"
+      },
+      {
+        "job": "92dfa95b7b12",
+        "type": "unknown",
+        "state": "resolved",
+        "first": "2026-10-22 12:40",
+        "closed": "2026-10-24 02:57",
+        "error": "RuntimeError: HTTP 402: Upstream request failed: Insufficient account funds"
+      },
+      {
+        "job": "3f878208df12",
+        "type": "unknown",
+        "state": "resolved",
+        "first": "2026-10-22 11:13",
+        "closed": "2026-10-24 02:57",
+        "error": "RuntimeError: HTTP 402: Upstream request failed: Insufficient account funds"
+      },
+      {
+        "job": "e24542af2e15",
+        "type": "rate_limit",
+        "state": "resolved",
+        "first": "2026-10-20 21:00",
+        "closed": "2026-10-21 21:00",
+        "error": "Script exited with code 1"
+      },
+      {
+        "job": "60d17f72c63e",
+        "type": "auth",
+        "state": "resolved",
+        "first": "2026-10-17 18:00",
+        "closed": "2026-10-20 09:46",
+        "error": "RuntimeError: HTTP 401: This API key has expired. Create a new API key in OpenCode Console and replace it in y"
+      },
+      {
+        "job": "04f1195a06a1",
+        "type": "unknown",
+        "state": "resolved",
+        "first": "2026-10-16 10:00",
+        "closed": "2026-10-24 02:57",
+        "error": "RuntimeError: HTTP 402: Insufficient Balance (request_id: 72eff067-bd78-4c90-9226-8c16b9e331b2)"
+      },
+      {
+        "job": "d60e90e78d8e",
+        "type": "script",
+        "state": "resolved",
+        "first": "2026-10-15 19:30",
+        "closed": "2026-10-19 19:30",
+        "error": "Script not found: /opt/data/scripts/tmp_cleanup.py. Cron scripts are looked up only in this profile's folder ("
+      },
+      {
+        "job": "9d13dcdfb16c",
+        "type": "timeout",
+        "state": "resolved",
+        "first": "2026-10-14 11:05",
+        "closed": "2026-10-19 10:50",
+        "error": "Script timed out after 3600s: /opt/data/scripts/cognee-ingest-daily.sh"
+      },
+      {
+        "job": "9d13dcdfb16c",
+        "type": "rate_limit",
+        "state": "resolved",
+        "first": "2026-10-13 10:42",
+        "closed": "2026-10-17 10:09",
+        "error": "Script exited with code 1"
+      },
+      {
+        "job": "fa986d0d4cff",
+        "type": "unknown",
+        "state": "resolved",
+        "first": "2026-10-12 01:30",
+        "closed": "2026-10-19 01:30",
+        "error": "RuntimeError: HTTP 402: Insufficient Balance (request_id: 64e5f4b2-0335-4675-afb4-ee563c3b34dd)"
+      },
+      {
+        "job": "5f91aedd850c",
+        "type": "timeout",
+        "state": "resolved",
+        "first": "2026-10-11 09:00",
+        "closed": "2026-10-11 12:00",
+        "error": "Script exited with code 1"
+      },
+      {
+        "job": "3a081fa5350c",
+        "type": "script",
+        "state": "resolved",
+        "first": "2026-10-04 06:00",
+        "closed": "2026-10-05 06:00",
+        "error": "Script exited with code 1"
+      },
+      {
+        "job": "3a081fa5350c",
+        "type": "script",
+        "state": "closed",
+        "first": "2026-09-28 06:00",
+        "closed": "2026-09-28 12:13",
+        "error": "Script exited with code 1"
+      },
+      {
+        "job": "eaad6d01d85d",
+        "type": "script",
+        "state": "closed",
+        "first": "2026-09-28 02:00",
+        "closed": "2026-09-28 12:13",
+        "error": "Script exited with code 1"
+      },
+      {
+        "job": "7cd089691150",
+        "type": "script",
+        "state": "resolved",
+        "first": "2026-09-27 11:30",
+        "closed": "2026-09-28 11:31",
+        "error": "Script exited with code 1"
+      },
+      {
+        "job": "3a081fa5350c",
+        "type": "script",
+        "state": "closed",
+        "first": "2026-09-27 06:00",
+        "closed": "2026-09-28 12:13",
+        "error": "Script exited with code 1"
+      },
+      {
+        "job": "7cd089691150",
+        "type": "script",
+        "state": "resolved",
+        "first": "2026-09-26 11:30",
+        "closed": "2026-09-28 11:31",
+        "error": "Script exited with code 1"
+      },
+      {
+        "job": "7cd089691150",
+        "type": "script",
+        "state": "resolved",
+        "first": "2026-09-25 11:30",
+        "closed": "2026-09-28 11:31",
+        "error": "Script exited with code 1"
+      },
+      {
+        "job": "3a081fa5350c",
+        "type": "script",
+        "state": "closed",
+        "first": "2026-09-20 06:01",
+        "closed": "2026-09-23 00:41",
+        "error": "Script exited with code 1"
+      },
+      {
+        "job": "0a76a466c111",
+        "type": "config",
+        "state": "closed",
+        "first": "2026-09-12 00:43",
+        "closed": "2026-09-12 00:44",
+        "error": "Script exited with code 1"
+      },
+      {
+        "job": "d404c67238c7",
+        "type": "script",
+        "state": "closed",
+        "first": "2026-09-11 07:30",
+        "closed": "2026-09-14 01:44",
+        "error": "Script exited with code 1"
+      },
+      {
+        "job": "0d16883b6d5d",
+        "type": "config",
+        "state": "closed",
+        "first": "2026-09-10 10:00",
+        "closed": "2026-09-14 01:44",
+        "error": "RuntimeError: [drift_skip] Skipped to prevent unintended spend: global inference config drifted since this job"
+      },
+      {
+        "job": "97c5dae53547",
+        "type": "config",
+        "state": "closed",
+        "first": "2026-09-10 06:00",
+        "closed": "2026-09-14 01:44",
+        "error": "RuntimeError: [drift_skip] Skipped to prevent unintended spend: global inference config drifted since this job"
+      },
+      {
+        "job": "76826b068e24",
+        "type": "config",
+        "state": "closed",
+        "first": "2026-09-10 02:00",
+        "closed": "2026-09-14 01:44",
+        "error": "RuntimeError: [drift_skip] Skipped to prevent unintended spend: global inference config drifted since this job"
+      }
+    ],
+    "jobs": 81,
+    "jobsEnabled": 73
   },
   "management": {
     "days": 22,

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 
 /* ============================================
@@ -77,9 +78,20 @@ const TEAL = "#2EC4B6";
 const MUTED = "#7A746C";
 const LINE = "#D9D2C6";
 
+const KPI_HREF: Record<string, string> = {
+  content: "/ops/content",
+  uptime: "/ops/system",
+  incidents: "/ops/schedule",
+  attention: "/ops/attention",
+};
+
 function KpiCard({ item }: { item: Headline }) {
+  const href = KPI_HREF[item.key];
   return (
-    <div className="rounded-2xl border border-[#E4DDD0] bg-white p-6">
+    <Link
+      href={href ?? "/ops"}
+      className="group block rounded-2xl border border-[#E4DDD0] bg-white p-6 transition hover:border-[#E8912A] hover:shadow-sm"
+    >
       <div className="text-sm font-medium tracking-wide text-[#6B655D]">{item.label}</div>
       <div className="mt-3 flex items-baseline gap-2">
         <span className="text-4xl font-bold tabular-nums text-[#0D2B4E]">
@@ -88,8 +100,11 @@ function KpiCard({ item }: { item: Headline }) {
         </span>
         {item.unit !== "%" && <span className="text-sm text-[#4A4540]">{item.unit}</span>}
       </div>
-      <div className="mt-2 text-xs leading-relaxed text-[#6B655D]">{item.note}</div>
-    </div>
+      <div className="mt-2 flex items-center justify-between text-xs leading-relaxed text-[#6B655D]">
+        <span>{item.note}</span>
+        <span className="opacity-0 transition group-hover:opacity-100">→</span>
+      </div>
+    </Link>
   );
 }
 
@@ -106,14 +121,21 @@ function Stat({ label, value, unit, note }: { label: string; value: number | str
   );
 }
 
-function SectionTitle({ no, title, sub }: { no: string; title: string; sub: string }) {
+function SectionTitle({ no, title, sub, href }: { no: string; title: string; sub: string; href?: string }) {
   return (
     <div className="mb-6 flex items-end justify-between gap-4 border-b border-[#E4DDD0] pb-3">
       <div>
         <div className="text-xs font-semibold tracking-[0.2em] text-[#A9611A]">{no}</div>
         <h2 className="mt-1 text-2xl font-bold text-[#0D2B4E]">{title}</h2>
       </div>
-      <p className="max-w-md text-right text-xs leading-relaxed text-[#6B655D]">{sub}</p>
+      <p className="max-w-md text-right text-xs leading-relaxed text-[#6B655D]">
+        {sub}
+        {href && (
+          <Link href={href} className="ml-2 whitespace-nowrap text-[#A9611A] underline decoration-[#E4DDD0] underline-offset-4 hover:decoration-[#E8912A]">
+            查看明細 →
+          </Link>
+        )}
+      </p>
     </div>
   );
 }
@@ -153,6 +175,22 @@ export default function OpsPage() {
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[#4A4540]">
             內容產出、系統健康、排程事故、管理成本與成果，放在同一頁。每個數字都標了統計期間與來源，跨期比較時請以標註為準。
           </p>
+          <nav className="mt-6 flex flex-wrap gap-2 text-xs">
+            {[
+              ["內容產出", "/ops/content"],
+              ["系統健康", "/ops/system"],
+              ["排程事故", "/ops/schedule"],
+              ["注意力成本", "/ops/attention"],
+            ].map(([label, href]) => (
+              <Link
+                key={href}
+                href={href}
+                className="rounded-full border border-[#D9D2C6] bg-white px-4 py-2 text-[#0D2B4E] transition hover:border-[#E8912A] hover:text-[#A9611A]"
+              >
+                {label} →
+              </Link>
+            ))}
+          </nav>
           <div className="mt-4 flex flex-wrap gap-x-6 gap-y-1 text-[11px] text-[#6B655D]">
             <span>資料時間 {data.generatedAt.replace("T", " ").replace("Z", " UTC")}</span>
             <span>健康 {data.periods.health}</span>
@@ -169,7 +207,7 @@ export default function OpsPage() {
 
         {/* 01 內容 */}
         <section className="mb-16">
-          <SectionTitle no="01 內容" title="產出" sub={`累計至 ${data.generatedAt.slice(0, 10)}；近 30 天自 ${data.periods.content.split("近 30 天＝")[1] ?? ""}`} />
+          <SectionTitle no="01 內容" title="產出" href="/ops/content" sub={`累計至 ${data.generatedAt.slice(0, 10)}；近 30 天自 ${data.periods.content.split("近 30 天＝")[1] ?? ""}`} />
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             <Stat label="官網文章" value={c.articles} unit="篇" note={`近 30 天 +${c.articles30d}`} />
             <Stat label="電子報" value={c.newsletters} unit="期" />
@@ -228,7 +266,7 @@ export default function OpsPage() {
 
         {/* 02 健康 */}
         <section className="mb-16">
-          <SectionTitle no="02 營運" title="系統健康" sub={`每日健康檢查 ${h.days.length} 天、每天 ${h.days[0]?.total ?? 0} 個服務與端點；右側為即時實測`} />
+          <SectionTitle no="02 營運" title="系統健康" href="/ops/system" sub={`每日健康檢查 ${h.days.length} 天、每天 ${h.days[0]?.total ?? 0} 個服務與端點；右側為即時實測`} />
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             <Stat label="服務可用率" value={uptime} unit="%" note={`${h.online}/${h.checks} 次`} />
             <Stat label="警示天數" value={h.warningDays} unit="天" note="非全綠，含重啟" />
@@ -291,7 +329,7 @@ export default function OpsPage() {
 
         {/* 03 排程 */}
         <section className="mb-16">
-          <SectionTitle no="03 自動化" title="排程與事故" sub={`排程 ${s.jobs} 支（啟用 ${s.jobsEnabled}）；事故統計為近 30 天`} />
+          <SectionTitle no="03 自動化" title="排程與事故" href="/ops/schedule" sub={`排程 ${s.jobs} 支（啟用 ${s.jobsEnabled}）；事故統計為近 30 天`} />
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             <Stat label="告警筆數" value={s.incidents30d} unit="筆" note={`涉及 ${s.incidentJobs} 支排程`} />
             <Stat label="發生天數" value={s.incidentDays} unit="天" note="近 30 天內" />
@@ -320,7 +358,7 @@ export default function OpsPage() {
 
         {/* 04 管理成本 */}
         <section className="mb-16">
-          <SectionTitle no="04 管理" title="注意力成本" sub={`${data.periods.management}；以訊息時間戳估計，間隔 5 分鐘內計為同一次在場`} />
+          <SectionTitle no="04 管理" title="注意力成本" href="/ops/attention" sub={`${data.periods.management}；以訊息時間戳估計，間隔 5 分鐘內計為同一次在場`} />
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
             <Stat label="每天在場" value={m.medianOnline} unit="分" note="中位數" />
             <Stat label="實驗期 13 天" value={m.experimentMedian} unit="分" note="10/03–10/15" />
