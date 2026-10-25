@@ -23,6 +23,24 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "camino-operation-backstage",
+    cat: "AI 轉型",
+    title: "後台紀錄 ②：一天 37 分鐘的管理窗口，出了 7 件錯",
+    date: "2026-10-25",
+    readTime: "8 分鐘",
+    excerpt: "13 天、169 次服務檢查全部在線，內容與流程卻出了 7 件錯，其中 6 件是檢查設在錯的位置。附每日在場時間、簽核等待與事故分類圖表。",
+    tags: ["公開實驗", "AI 員工", "管理窗口", "AI 治理", "後台紀錄"],
+  },
+  {
+    slug: "ai-capital-depreciation-bill",
+    cat: "AI 轉型",
+    title: "GPU 三年就折舊光：你付的每一筆 AI 訂閱，都在替別人攤這筆帳",
+    date: "2026.10.22",
+    readTime: "6 分鐘",
+    excerpt: "微軟、亞馬遜、Alphabet、Meta 兩年砸 1.12 兆美元在 AI，是曼哈頓計劃的 31.2 倍，三分之二買的是三到五年就報廢的設備。這筆折舊帳，最後用漲價、倒閉、轉嫁三種方式，回到你的 AI 訂閱費上。",
+    tags: ["資本支出", "AI 成本", "供應商風險", "折舊", "AI 轉型"],
+  },
+  {
     slug: "ai-judgment-generation-gap",
     cat: "人才策略",
     title: "98.8% 缺工、缺口卡在店長：台灣中階斷層的下一站是判斷力",

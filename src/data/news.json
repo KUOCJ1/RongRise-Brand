@@ -1,6 +1,24 @@
 {
   "news": [
     {
+      "id": "n57",
+      "date": "2026-10-25",
+      "category": "資源",
+      "title": "後台紀錄 ②：一天 37 分鐘的管理窗口，出了 7 件錯",
+      "summary": "公開實驗後台紀錄第二篇：13 天、169 次服務檢查全部在線，卻出了 7 件錯。機器撐住了，判斷沒有。",
+      "link": "/knowledge/camino-operation-backstage",
+      "isNew": true
+    },
+    {
+      "id": "n56",
+      "date": "2026-10-22",
+      "category": "資源",
+      "title": "GPU 三年就折舊光：你付的每一筆 AI 訂閱，都在替別人攤這筆帳",
+      "summary": "四大科技巨頭兩年砸 1.12 兆美元在 AI，是曼哈頓計劃的 31.2 倍，其中三分之二買的是三年就報廢的設備。這筆折舊帳，最後用漲價、倒閉、轉嫁三種方式回到你的 AI 訂閱費上。",
+      "link": "/knowledge/ai-capital-depreciation-bill",
+      "isNew": true
+    },
+    {
       "id": "n55",
       "date": "2026-10-20",
       "category": "資源",
@@ -16,7 +34,7 @@
       "title": "98.8% 缺工、缺口卡在店長：台灣中階斷層的下一站是判斷力",
       "summary": "MIT 三個月實驗：AI 讓草稿都變好，但拿掉 AI 後只有資深律師真的進步，初階平均零成長——判斷力不是貶值，是斷代。",
       "link": "/knowledge/ai-judgment-generation-gap",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n53",
@@ -25,7 +43,7 @@
       "title": "連摩根大通都不讓它進門：你的 AI 代理，憑什麼代表你？",
       "summary": "摩根大通執行長 Dimon 在財報電話會議上說，不讓外部 AI 代理進公司，因為對客戶與銀行都太冒險。同一週，美國運通開始要求代理出示授權證明，輝達拿 2.5 億美元買代理安全研究。三件事合起來是一句話：代理能不能替你辦事，資格不是你自己發的。",
       "link": "/knowledge/ai-agent-liability-transfer",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n52",

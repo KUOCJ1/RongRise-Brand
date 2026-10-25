@@ -204,6 +204,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { slug: "xiaoha-weekly-vol1", date: "2026-06-13" },
       { slug: "xiaoha-weekly-vol2", date: "2026-09-24" },
       { slug: "xiaoha-weekly-vol3", date: "2026-10-15" },
+      { slug: "camino-operation-backstage", date: "2026-10-25" },
     ] as { slug: string; date: string }[]
   ).map((p) => ({
     url: `${baseUrl}/knowledge/${p.slug}`,
