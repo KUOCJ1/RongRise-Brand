@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-first-rung",
+    cat: "人才策略",
+    title: "當 AI 在企業內產生效益的同時，也默默地拆掉組織職涯階梯的第一階",
+    date: "2026-10-27",
+    readTime: "8 分鐘",
+    excerpt: "當 AI 在企業內產生效益，也默默拆掉職涯階梯的第一階。愛爾蘭科技業被裁掉的是內容審核、信任與安全這類白領入門職；企業買了 AI，同時買走了自己的訓練場，帳單三年後才到。",
+    tags: ["人才策略", "職涯階梯", "AI 治理", "組織變革", "國際觀察"],
+  },
+  {
     slug: "camino-operation-poc",
     cat: "AI 轉型",
     title: "後台紀錄 ③：管理制度，也可以先做一輪 POC 嗎？",

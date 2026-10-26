@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n58",
+      "date": "2026-10-27",
+      "category": "資源",
+      "title": "當 AI 在企業內產生效益的同時，也默默地拆掉組織職涯階梯的第一階",
+      "summary": "愛爾蘭科技業被裁掉的是內容審核、信任與安全這類白領入門職。企業買了 AI，也買走了自己的訓練場，帳單三年後才到。",
+      "link": "/knowledge/ai-first-rung",
+      "isNew": true
+    },
+    {
       "id": "n57",
       "date": "2026-10-25",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "研究專刊第 4 本《人類與 AI 的授權悖論》：你交給 AI 的工作越長，你越驗不動它",
       "summary": "AI 能完成的任務長度每七個月翻一倍，人的審核能力沒有對應變化。本書用 65 筆可查證來源拆解授權悖論，並提出授權四級與三層審核框架。",
       "link": "/research/authorization-paradox/",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n54",
