@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-10-25T05:20:39Z",
+ "generatedAt": "2026-10-26T05:20:38Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 148
+  "daysRunning": 149
  },
  "stats": {
-  "scanDays": 127,
-  "weekArticles": 46,
-  "articles": 94,
-  "newsItems": 56,
+  "scanDays": 128,
+  "weekArticles": 42,
+  "articles": 95,
+  "newsItems": 57,
   "newsletterIssues": 27,
   "subscribers": 22,
   "confirmedSubscribers": 16,
   "videos": 40,
-  "views": 684,
+  "views": 686,
   "channelSubscribers": 17,
   "insights": 17,
-  "socialPosts": 63,
+  "socialPosts": 65,
   "igCards": 42,
-  "competitorReports": 126
+  "competitorReports": 127
  },
  "activity": [
-  {
-   "date": "2026-10-19",
-   "count": 8,
-   "topics": []
-  },
   {
    "date": "2026-10-20",
    "count": 7,
@@ -56,13 +51,18 @@
    "date": "2026-10-25",
    "count": 4,
    "topics": []
+  },
+  {
+   "date": "2026-10-26",
+   "count": 6,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "GPU 三年就折舊光：你付的每一筆 AI 訂閱，都在替別人攤這筆帳",
-   "date": "2026.10.22",
-   "url": "/knowledge/ai-capital-depreciation-bill"
+   "title": "後台紀錄 ③：管理制度，也可以先做一輪 POC 嗎？",
+   "date": "2026.10.27",
+   "url": "/knowledge/camino-operation-poc"
   },
   "newsletter": "🦞 榕賀觀點 第 27 期 — 2026-10-22",
   "video": {
@@ -76,30 +76,30 @@
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 19,
+   "count": 18,
    "momentum": "flat"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 17,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "組織與管理",
-   "icon": "🏢",
    "count": 14,
    "momentum": "down"
   },
   {
-   "keyword": "安全與風險",
-   "icon": "🛡️",
-   "count": 9,
-   "momentum": "flat"
+   "keyword": "組織與管理",
+   "icon": "🏢",
+   "count": 12,
+   "momentum": "down"
   },
   {
    "keyword": "人才與技能",
    "icon": "🧠",
+   "count": 8,
+   "momentum": "up"
+  },
+  {
+   "keyword": "安全與風險",
+   "icon": "🛡️",
    "count": 8,
    "momentum": "flat"
   }
