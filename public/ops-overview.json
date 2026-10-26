@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-26T00:30:34Z",
+  "generatedAt": "2026-10-26T04:33:19Z",
   "periods": {
     "content": "累計至 2026-10-26；近 30 天＝2026-09-26 起",
-    "health": "2026-10-01 ~ 2026-10-25（25 天）",
+    "health": "2026-10-01 ~ 2026-10-26（26 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-10-24（22 天）"
+    "management": "2026-10-03 ~ 2026-10-25（23 天）"
   },
   "headline": [
     {
@@ -19,21 +19,21 @@
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "25 天 × 18 個服務，450/450 次在線"
+      "note": "26 天 × 18 個服務，468/468 次在線"
     },
     {
       "key": "incidents",
       "label": "未結事故",
-      "value": 0,
+      "value": 1,
       "unit": "件",
-      "note": "近 30 天 33 筆告警，涉及 22 支排程"
+      "note": "近 30 天 34 筆告警，涉及 23 支排程"
     },
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 41.5,
+      "value": 42.1,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；5/22 天達標"
+      "note": "實驗期 37.1 分；5/23 天達標"
     }
   ],
   "content": {
@@ -588,10 +588,18 @@
         "status": "ok",
         "disk": 85,
         "restarts": 1
+      },
+      {
+        "date": "2026-10-26",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 83,
+        "restarts": 12
       }
     ],
-    "checks": 450,
-    "online": 450,
+    "checks": 468,
+    "online": 468,
     "warningDays": 2,
     "maxDisk": 85,
     "live": [
@@ -607,14 +615,14 @@
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.15
+        "seconds": 0.19
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.09
       },
       {
         "name": "職能評測",
@@ -628,7 +636,7 @@
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.1
+        "seconds": 0.07
       },
       {
         "name": "管理後台",
@@ -638,17 +646,17 @@
         "seconds": 0.03
       }
     ],
-    "liveAt": "2026-10-26 00:30 UTC"
+    "liveAt": "2026-10-26 04:33 UTC"
   },
   "schedule": {
-    "incidents30d": 33,
-    "incidentJobs": 22,
-    "incidentDays": 14,
-    "open": 0,
+    "incidents30d": 34,
+    "incidentJobs": 23,
+    "incidentDays": 15,
+    "open": 1,
     "types": [
       {
         "type": "script",
-        "count": 16
+        "count": 17
       },
       {
         "type": "config",
@@ -668,9 +676,17 @@
       }
     ],
     "executions": 1001,
-    "executionsOk": 1000,
-    "executionsFrom": "2026-10-25T12:31:33",
+    "executionsOk": 999,
+    "executionsFrom": "2026-10-25T16:41:33",
     "incidents": [
+      {
+        "job": "243ab7c8200f",
+        "type": "script",
+        "state": "alerted",
+        "first": "2026-10-26 00:30",
+        "closed": "",
+        "error": "Script exited with code 1"
+      },
       {
         "job": "6039473e5382",
         "type": "script",
@@ -982,26 +998,18 @@
         "first": "2026-09-10 06:00",
         "closed": "2026-09-14 01:44",
         "error": "RuntimeError: [drift_skip] Skipped to prevent unintended spend: global inference config drifted since this job"
-      },
-      {
-        "job": "76826b068e24",
-        "type": "config",
-        "state": "closed",
-        "first": "2026-09-10 02:00",
-        "closed": "2026-09-14 01:44",
-        "error": "RuntimeError: [drift_skip] Skipped to prevent unintended spend: global inference config drifted since this job"
       }
     ],
-    "jobs": 83,
+    "jobs": 82,
     "jobsEnabled": 76
   },
   "management": {
-    "days": 22,
-    "medianOnline": 41.5,
+    "days": 23,
+    "medianOnline": 42.1,
     "experimentMedian": 37.1,
-    "avgOnline": 51.8,
-    "totalHours": 19.0,
-    "medianVisits": 14.0,
+    "avgOnline": 54.5,
+    "totalHours": 20.9,
+    "medianVisits": 15,
     "perVisit": 3.1,
     "daysUnder30": 5,
     "daily": [
@@ -1114,6 +1122,11 @@
         "date": "2026-10-24",
         "min": 68.8,
         "visits": 15
+      },
+      {
+        "date": "2026-10-25",
+        "min": 114.0,
+        "visits": 21
       }
     ]
   },
