@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-25T09:01:28Z",
+  "generatedAt": "2026-10-26T00:30:34Z",
   "periods": {
-    "content": "累計至 2026-10-25；近 30 天＝2026-09-25 起",
+    "content": "累計至 2026-10-26；近 30 天＝2026-09-26 起",
     "health": "2026-10-01 ~ 2026-10-25（25 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
     "management": "2026-10-03 ~ 2026-10-24（22 天）"
@@ -12,7 +12,7 @@
       "label": "內容產出",
       "value": 94,
       "unit": "篇文章",
-      "note": "近 30 天新增 12 篇"
+      "note": "近 30 天新增 13 篇"
     },
     {
       "key": "uptime",
@@ -26,7 +26,7 @@
       "label": "未結事故",
       "value": 0,
       "unit": "件",
-      "note": "近 30 天 34 筆告警，涉及 22 支排程"
+      "note": "近 30 天 33 筆告警，涉及 22 支排程"
     },
     {
       "key": "attention",
@@ -38,7 +38,7 @@
   ],
   "content": {
     "articles": 94,
-    "articles30d": 12,
+    "articles30d": 13,
     "newsletters": 27,
     "videos": 40,
     "videos30d": 3,
@@ -70,10 +70,17 @@
       },
       {
         "month": "2026-10",
-        "count": 8
+        "count": 9
       }
     ],
     "articleList": [
+      {
+        "date": "2026-10-27",
+        "title": "後台紀錄 ③：管理制度，也可以先做一輪 POC 嗎？",
+        "slug": "camino-operation-poc",
+        "url": "/knowledge/camino-operation-poc",
+        "cat": "AI 轉型"
+      },
       {
         "date": "2026-10-22",
         "title": "GPU 三年就折舊光：你付的每一筆 AI 訂閱，都在替別人攤這筆帳",
@@ -346,13 +353,6 @@
         "slug": "ai-energy-arms-race-cloud-bill",
         "url": "/knowledge/ai-energy-arms-race-cloud-bill",
         "cat": "AI 轉型"
-      },
-      {
-        "date": "2026-08-18",
-        "title": "員工偷偷用 AI、連高階主管都在繞道：影子 AI 治理的「紅綠燈」",
-        "slug": "shadow-ai-governance-traffic-light",
-        "url": "/knowledge/shadow-ai-governance-traffic-light",
-        "cat": "AI 轉型"
       }
     ],
     "videoList": [
@@ -600,21 +600,21 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.03
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.4
+        "seconds": 0.15
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.06
+        "seconds": 0.04
       },
       {
         "name": "職能評測",
@@ -628,27 +628,27 @@
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.1
       },
       {
         "name": "管理後台",
         "url": "https://admin.rong-rise.com/",
         "code": "401",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.03
       }
     ],
-    "liveAt": "2026-10-25 09:01 UTC"
+    "liveAt": "2026-10-26 00:30 UTC"
   },
   "schedule": {
-    "incidents30d": 34,
+    "incidents30d": 33,
     "incidentJobs": 22,
-    "incidentDays": 15,
+    "incidentDays": 14,
     "open": 0,
     "types": [
       {
         "type": "script",
-        "count": 17
+        "count": 16
       },
       {
         "type": "config",
@@ -667,9 +667,9 @@
         "count": 2
       }
     ],
-    "executions": 1000,
+    "executions": 1001,
     "executionsOk": 1000,
-    "executionsFrom": "2026-10-24T21:04:50",
+    "executionsFrom": "2026-10-25T12:31:33",
     "incidents": [
       {
         "job": "6039473e5382",
@@ -992,8 +992,8 @@
         "error": "RuntimeError: [drift_skip] Skipped to prevent unintended spend: global inference config drifted since this job"
       }
     ],
-    "jobs": 81,
-    "jobsEnabled": 73
+    "jobs": 83,
+    "jobsEnabled": 76
   },
   "management": {
     "days": 22,
