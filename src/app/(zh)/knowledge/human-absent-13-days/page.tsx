@@ -125,13 +125,13 @@ export default function HumanAbsentThirteenDaysPage() {
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             {NUMBERS.map((x) => (
               <div key={x.t} className="rounded-2xl border border-border-light bg-[#FBF8F3] p-4">
-                <p className="text-xl font-bold" style={{ color: NAVY }}>
+                <p className="text-2xl font-bold" style={{ color: NAVY }}>
                   {x.n}
                 </p>
-                <p className="mt-1 text-xs font-bold" style={{ color: GOLD }}>
+                <p className="mt-1 text-sm font-bold" style={{ color: GOLD }}>
                   {x.t}
                 </p>
-                <p className="mt-1 text-xs text-text-secondary">{x.s}</p>
+                <p className="mt-1 text-sm text-text-secondary">{x.s}</p>
               </div>
             ))}
           </div>
@@ -165,13 +165,13 @@ export default function HumanAbsentThirteenDaysPage() {
           </div>
 
           <figure className="my-14">
-            <div className="mx-auto w-full max-w-[380px] overflow-hidden rounded-2xl border border-border-light bg-black/5">
+            <div className="mx-auto w-full max-w-[440px] overflow-hidden rounded-2xl border border-border-light bg-black/5">
               <video controls playsInline preload="metadata" poster="/images/backstage-ep02-poster.jpg" className="h-auto w-full">
                 <source src="/videos/backstage-ep02-short.mp4" type="video/mp4" />
                 你的瀏覽器不支援影片播放。
               </video>
             </div>
-            <figcaption className="mt-3 text-center text-sm text-text-secondary">
+            <figcaption className="mt-3 text-center text-base text-text-secondary">
               52 秒看完後台紀錄 1：7 件錯、37.1 分鐘、56.3 小時的等待
             </figcaption>
           </figure>
@@ -180,7 +180,7 @@ export default function HumanAbsentThirteenDaysPage() {
             <h2 className="text-xl font-bold mb-4" style={{ color: NAVY }}>
               這個系列在測什麼
             </h2>
-            <ul className="space-y-3 text-text-secondary leading-relaxed">
+            <ul className="list-disc space-y-3 pl-5 text-text-secondary leading-relaxed">
               <li>
                 <strong className="text-text-primary">測的不是 AI 有多萬能</strong>，是管理者每天只有 30 分鐘、只有手機時，一家公司的內容 operation 會變成什麼樣子。
               </li>
