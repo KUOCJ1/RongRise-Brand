@@ -2,14 +2,14 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "後台紀錄 ②：一天 37 分鐘的管理窗口，出了 7 件錯 | 榕耀管顧",
+  title: "後台紀錄 1：一天 37 分鐘的管理窗口，出了 7 件錯 | 榕耀管顧",
   description:
-    "公開實驗後台紀錄第二篇：13 天、169 次服務檢查全部在線，內容與流程卻出了 7 件錯，其中 6 件是檢查設在錯的位置。附每日在場時間、簽核等待與錯誤分類圖表。",
+    "我不在公司的 13 天後台紀錄第一篇：13 天、169 次服務檢查全部在線，內容與流程卻出了 7 件錯，其中 6 件是檢查設在錯的位置。附每日在場時間、簽核等待與錯誤分類圖表。",
   alternates: {
     canonical: "https://rong-rise.com/knowledge/camino-operation-backstage",
   },
   openGraph: {
-    title: "後台紀錄 ②：一天 37 分鐘的管理窗口，出了 7 件錯 | 榕耀管顧",
+    title: "後台紀錄 1：一天 37 分鐘的管理窗口，出了 7 件錯 | 榕耀管顧",
     description:
       "13 天、169 次服務檢查全部在線，內容與流程卻出了 7 件錯。機器撐住了，判斷沒有。",
     images: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         url: "https://rong-rise.com/images/article-camino-operation-backstage.jpg",
         width: 1200,
         height: 630,
-        alt: "後台紀錄 ②：一天 37 分鐘的管理窗口，出了 7 件錯",
+        alt: "後台紀錄 1：一天 37 分鐘的管理窗口，出了 7 件錯",
       },
     ],
   },
@@ -273,7 +273,7 @@ function KpiGrid() {
 
 export default function Post() {
   const SITE_URL = "https://rong-rise.com";
-  const pageTitle = "後台紀錄 ②：一天 37 分鐘的管理窗口，出了 7 件錯";
+  const pageTitle = "後台紀錄 1：一天 37 分鐘的管理窗口，出了 7 件錯";
 
   return (
     <>
@@ -320,7 +320,7 @@ export default function Post() {
       ></script>
       <section className="bg-gradient-hero text-white">
         <div className="max-w-[860px] mx-auto px-4 sm:px-6 py-16 md:py-20">
-          <span className="tag bg-white/15 text-white mb-4">公開實驗・後台紀錄 ②</span>
+          <Link href="/knowledge/human-absent-13-days" className="tag bg-white/15 text-white mb-4">← 我不在公司的 13 天・系列總覽</Link>
           <h1 className="heading-hero mt-4 mb-4">一天 37 分鐘的管理窗口，出了 7 件錯</h1>
           <p className="text-body-lg text-white/85 mb-2">
             機器撐住了，判斷沒有。13 天、169 次服務檢查全部在線，內容與流程卻出了 7 件錯。
@@ -332,7 +332,7 @@ export default function Post() {
       <section className="section bg-white">
         <div className="max-w-[860px] mx-auto px-4 sm:px-6">
           <p className="text-text-secondary leading-[1.9] text-lg mb-6">
-            10 月 8 日我們發過〈人不在的一個月〉，條件是：我不在辦公室，沒有其他真人員工，內容交給 AI 團隊，我只保留簽核。這篇先講結果。
+            10 月 8 日我們發過〈我不在公司的 13 天〉，條件是：我不在辦公室，沒有其他真人員工，內容交給 AI 團隊，我只保留簽核。這篇先講結果。
           </p>
           <p className="text-text-secondary leading-[1.9] mb-6">
             這個實驗測的不是 AI 有多萬能，是管理者每天只有 30 分鐘、只有手機，其餘交給 AI 員工，後台會怎樣。30 分鐘，夠不夠管住一家公司。
@@ -465,7 +465,7 @@ export default function Post() {
           <div className="my-14 rounded-2xl bg-[#FBF8F3] p-6 md:p-8">
             <p className="text-sm font-bold tracking-widest text-tertiary mb-2">公開實驗</p>
             <p className="text-text-secondary leading-[1.9] mb-4">
-              這是「人不在的一個月」公開實驗的第二篇。第一篇寫條件，這一篇寫結果，下週寫我們要怎麼改。
+              這是〈我不在公司的 13 天〉的後台紀錄第 1 篇，系列第 2 篇。開場寫條件，這一篇寫結果，下一篇寫我們要怎麼改。
             </p>
             <Link href="/knowledge" className="btn-secondary inline-block">
               回到知識庫

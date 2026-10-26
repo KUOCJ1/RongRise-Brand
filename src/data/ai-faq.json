@@ -73,7 +73,7 @@
     {
       "id": "ai-faq-002",
       "category": "AI 轉型",
-      "question": "什麼是人不在的一個月：一次公開實驗的起點？",
+      "question": "什麼是我不在公司的 13 天：一次公開實驗的起點？",
       "shortAnswer": "十月,CJ 哥在西班牙走朝聖之路,公司的內容 operation 由一支 AI 員工團隊維運",
       "keyPoints": [
         "十月,CJ 哥在西班牙走朝聖之路,公司的內容 operation 由一支 AI 員工團隊維運"
@@ -81,7 +81,7 @@
       "source": {
         "type": "article",
         "slug": "ai-operation-experiment",
-        "title": "人不在的一個月：一次公開實驗的起點",
+        "title": "我不在公司的 13 天：一次公開實驗的起點",
         "href": "/knowledge/ai-operation-experiment"
       },
       "tags": [

@@ -34,7 +34,7 @@ const articles: Article[] = [
   {
     slug: "camino-operation-poc",
     cat: "AI 轉型",
-    title: "後台紀錄 ③：管理制度，也可以先做一輪 POC 嗎？",
+    title: "後台紀錄 2：管理制度，也可以先做一輪 POC 嗎？",
     date: "2026-10-27",
     readTime: "6 分鐘",
     excerpt: "13 天裡每天介入約 37 分鐘，卻被切成十幾段。比起總時間，一天被叫回來幾次，更接近真正的管理問題。下一輪試行三層授權。",
@@ -43,7 +43,7 @@ const articles: Article[] = [
   {
     slug: "camino-operation-backstage",
     cat: "AI 轉型",
-    title: "後台紀錄 ②：一天 37 分鐘的管理窗口，出了 7 件錯",
+    title: "後台紀錄 1：一天 37 分鐘的管理窗口，出了 7 件錯",
     date: "2026-10-25",
     readTime: "8 分鐘",
     excerpt: "13 天、169 次服務檢查全部在線，內容與流程卻出了 7 件錯，其中 6 件是檢查設在錯的位置。附每日在場時間、簽核等待與事故分類圖表。",
@@ -97,7 +97,7 @@ const articles: Article[] = [
   {
     slug: "ai-operation-experiment",
     cat: "AI 轉型",
-    title: "人不在的一個月：一次公開實驗的起點",
+    title: "我不在公司的 13 天：一次公開實驗的起點",
     date: "2026.10.08",
     readTime: "4 分鐘",
     excerpt: "十月，CJ 哥在西班牙走朝聖之路，公司的內容 operation 由一支 AI 員工團隊維運。這是一份公開實驗的起點說明：它負責什麼、邊界在哪、十一月要公開哪些數字，包含出包與修復。",

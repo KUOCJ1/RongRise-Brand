@@ -2,14 +2,14 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "後台紀錄 ③：管理制度，也可以先做一輪 POC | 榕耀管顧",
+  title: "後台紀錄 2：管理制度，也可以先做一輪 POC | 榕耀管顧",
   description:
-    "公開實驗第三篇：13 天裡每天介入約 37 分鐘，卻被切成十幾段。比起總時間，一天被叫回來幾次，更接近真正的管理問題。下一輪試行三層授權。",
+    "後台紀錄第 2 篇：13 天裡每天介入約 37 分鐘，卻被切成十幾段。比起總時間，一天被叫回來幾次，更接近真正的管理問題。下一輪試行三層授權。",
   alternates: {
     canonical: "https://rong-rise.com/knowledge/camino-operation-poc",
   },
   openGraph: {
-    title: "後台紀錄 ③：管理制度，也可以先做一輪 POC | 榕耀管顧",
+    title: "後台紀錄 2：管理制度，也可以先做一輪 POC | 榕耀管顧",
     description:
       "工作完成了，流程還在等我。當 AI 團隊擴大，真正的瓶頸是被叫回系統的次數。",
     images: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         url: "https://rong-rise.com/images/article-camino-operation-poc.jpg",
         width: 1200,
         height: 630,
-        alt: "後台紀錄 ③：管理制度，也可以先做一輪 POC",
+        alt: "後台紀錄 2：管理制度，也可以先做一輪 POC",
       },
     ],
   },
@@ -433,7 +433,7 @@ function CheckList() {
 
 export default function Post() {
   const SITE_URL = "https://rong-rise.com";
-  const pageTitle = "後台紀錄 ③：管理制度，也可以先做一輪 POC 嗎？";
+  const pageTitle = "後台紀錄 2：管理制度，也可以先做一輪 POC 嗎？";
   const pageDesc =
     "13 天裡每天介入約 37 分鐘，卻被切成十幾段。比起總時間，一天被叫回來幾次，更接近真正的管理問題。";
 
@@ -498,7 +498,7 @@ export default function Post() {
       ></script>
       <section className="bg-gradient-hero text-white">
         <div className="max-w-[860px] mx-auto px-4 sm:px-6 py-16 md:py-20">
-          <span className="tag bg-white/15 text-white mb-4">公開實驗・後台紀錄 ③</span>
+          <Link href="/knowledge/human-absent-13-days" className="tag bg-white/15 text-white mb-4">← 我不在公司的 13 天・系列總覽</Link>
           <h1 className="heading-hero mt-4 mb-4">管理制度，也可以像 Vibe Coding 一樣，先做一輪 POC 嗎？</h1>
           <p className="text-body-lg text-white/85 mb-2">
             工作完成了，流程還在等我。真正的瓶頸，是一天被叫回系統幾次。
@@ -579,11 +579,11 @@ export default function Post() {
           <div className="my-14 rounded-2xl border border-border-light p-6 md:p-8">
             <p className="text-sm font-bold tracking-widest text-tertiary mb-2">公開實驗</p>
             <p className="text-text-secondary leading-[1.9] mb-4">
-              這是「人不在的一個月」公開實驗的第三篇。第一篇寫條件，第二篇寫 13 天的結果，這一篇寫下一輪要怎麼改。數字來自實驗期紀錄，沒有對照組，不能宣稱因果。
+              這是〈我不在公司的 13 天〉的後台紀錄第 2 篇。第一篇寫條件，第二篇寫 13 天的結果，這一篇寫下一輪要怎麼改。數字來自實驗期紀錄，沒有對照組，不能宣稱因果。
             </p>
             <div className="flex flex-wrap gap-3">
               <Link href="/knowledge/camino-operation-backstage" className="btn-secondary inline-block">
-                讀第二篇：後台紀錄 ②
+                讀上一篇：後台紀錄 1
               </Link>
               <Link href="/knowledge" className="btn-secondary inline-block">
                 回到知識庫
