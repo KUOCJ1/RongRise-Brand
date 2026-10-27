@@ -1,16 +1,16 @@
 {
- "generatedAt": "2026-10-26T05:20:39Z",
+ "generatedAt": "2026-10-27T05:20:51Z",
  "window": {
-  "from": "2026-10-20",
-  "to": "2026-10-26",
+  "from": "2026-10-21",
+  "to": "2026-10-27",
   "days": 7,
   "digestCount": 6
  },
  "stats": {
-  "totalArticles": 40,
+  "totalArticles": 41,
   "categories": {
    "AI 轉型": 24,
-   "ESG 永續": 6,
+   "ESG 永續": 7,
    "人才策略": 10
   }
  },
@@ -19,33 +19,25 @@
    "keyword": "晶片與算力",
    "icon": "🔩",
    "category": "AI 轉型",
-   "count": 19,
+   "count": 15,
    "prevCount": 23,
-   "momentum": "flat"
+   "momentum": "down"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
    "category": "人才策略",
-   "count": 12,
-   "prevCount": 23,
+   "count": 14,
+   "prevCount": 22,
    "momentum": "down"
   },
   {
    "keyword": "組織與管理",
    "icon": "🏢",
    "category": "管理趨勢",
-   "count": 10,
+   "count": 11,
    "prevCount": 21,
    "momentum": "down"
-  },
-  {
-   "keyword": "企業導入",
-   "icon": "🚀",
-   "category": "AI 轉型",
-   "count": 8,
-   "prevCount": 11,
-   "momentum": "flat"
   },
   {
    "keyword": "安全與風險",
@@ -56,27 +48,19 @@
    "momentum": "flat"
   },
   {
-   "keyword": "人才與技能",
-   "icon": "🧠",
-   "category": "人才策略",
-   "count": 7,
-   "prevCount": 5,
-   "momentum": "up"
-  },
-  {
-   "keyword": "AI Agent",
-   "icon": "🤖",
+   "keyword": "企業導入",
+   "icon": "🚀",
    "category": "AI 轉型",
    "count": 6,
    "prevCount": 12,
    "momentum": "down"
   },
   {
-   "keyword": "成本與投資",
-   "icon": "💰",
+   "keyword": "AI Agent",
+   "icon": "🤖",
    "category": "AI 轉型",
    "count": 5,
-   "prevCount": 16,
+   "prevCount": 14,
    "momentum": "down"
   },
   {
@@ -84,15 +68,31 @@
    "icon": "⚡",
    "category": "ESG 永續",
    "count": 5,
-   "prevCount": 7,
+   "prevCount": 6,
    "momentum": "flat"
   },
   {
-   "keyword": "自動化",
-   "icon": "⚙️",
+   "keyword": "資料中心",
+   "icon": "🏭",
    "category": "AI 轉型",
    "count": 5,
-   "prevCount": 10,
+   "prevCount": 5,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "人才與技能",
+   "icon": "🧠",
+   "category": "人才策略",
+   "count": 4,
+   "prevCount": 8,
+   "momentum": "down"
+  },
+  {
+   "keyword": "成本與投資",
+   "icon": "💰",
+   "category": "AI 轉型",
+   "count": 4,
+   "prevCount": 15,
    "momentum": "down"
   },
   {
@@ -104,23 +104,79 @@
    "momentum": "down"
   },
   {
+   "keyword": "自動化",
+   "icon": "⚙️",
+   "category": "AI 轉型",
+   "count": 4,
+   "prevCount": 9,
+   "momentum": "down"
+  },
+  {
    "keyword": "開源模型",
    "icon": "🌐",
    "category": "AI 轉型",
-   "count": 4,
-   "prevCount": 3,
-   "momentum": "up"
-  },
-  {
-   "keyword": "資料中心",
-   "icon": "🏭",
-   "category": "AI 轉型",
-   "count": 3,
-   "prevCount": 6,
+   "count": 2,
+   "prevCount": 4,
    "momentum": "down"
   }
  ],
  "articles": [
+  {
+   "title": "3 Paths to Delivering Shareholder Returns with AI",
+   "url": "https://hbr.org/2026/10/3-paths-to-delivering-shareholder-returns-with-ai",
+   "summary": "調查 600 多家美國上市公司：約四分之三已投入 AI、也走出試辦階段，卻還沒反映在股東報酬上；文章給三條把投入轉成報酬的路徑（作者含 BCG Institute 的 Adam Job）。2026-10-26",
+   "date": "2026-10-27",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "The rise of the agentic coworker: A banking CIO's guide to the next wave of AI",
+   "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/the-rise-of-the-agentic-coworker-a-banking-cios-guide-to-the-next-wave-of-ai",
+   "summary": "McKinsey 定調 copilot 階段結束：agent 做單次任務，agentic coworker 是「擁有一個角色與一個成果」、持續運作的系統；出錯後果也不同（copilot 出錯是重工，agentic coworker 出錯可能改到生產系統、暴露客戶資料、觸發合規事件甚至串連失效），因此治理、架構、課責要一起設計。2026-10-26",
+   "date": "2026-10-27",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Anthropic's IPO filing reveals its strategy for keeping enterprise customers hooked",
+   "url": "https://techcrunch.com/2026/10/26/anthropics-ipo-filing-reveals-its-strategy-for-keeping-enterprise-customers-hooked/",
+   "summary": "S-1 揭露企業端數字：年付 10 萬美元以上客戶 11,900 家、100 萬以上 1,900 家、1,000 萬以上約 250 家，第三季淨收入留存率約 900%；策略是「API＋第一方應用」的跨產品綁定（年付 10 萬以上客戶過半同時用兩者，去年底約 30%），且用 Claude Code 的頂層 5% 客戶月支出約為平均企業戶的 20 倍。2026-10-26",
+   "date": "2026-10-27",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "How OpenAI turned its coding tools into dots, an always-on personal assistant",
+   "url": "https://techcrunch.com/2026/10/26/how-openai-turned-its-coding-tools-into-dots-an-always-on-personal-assistant",
+   "summary": "OpenAI 把 Codex 的能力重新包裝成「常駐、不用你開口就先想」的助理，Pro 以上月費 100 美元起；負責人直言關鍵不在新技術，而在「怎麼框成使用者覺得直覺的東西」，並承認現階段提醒時機還不夠準（曾只在會議前 3 分鐘才通知）。2026-10-26",
+   "date": "2026-10-27",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "不看績效、6 萬人可申請：微軟付錢「請員工離開」，因為錢被 AI 吃掉了？",
+   "url": "https://www.managertoday.com.tw/articles/view/73191",
+   "summary": "微軟 10/26 對美加英印約 6 萬名員工開放自願離職（全球 22.3 萬人、等於每 4 人 1 人），職級 70 以下、不看年齡年資績效，12 月第一週決定、12/31 離職；背景是同期資本支出 410 億美元、年增約 7 成、自由現金流年減 23%。兩個代價寫得很清楚：逆選擇（最想留的人最容易走）與資深員工帶走組織脈絡；對照 Google 內部信「真的真的希望你別走」，可知一封內部信的措辭就決定最後誰走出門。2026-10-27",
+   "date": "2026-10-27",
+   "category": "人才策略"
+  },
+  {
+   "title": "宮本茂正向看待生成式 AI：代勞重複工作，讓創作者回歸構想本身",
+   "url": "https://technews.tw/2026/10/27/nintendos-shigeru-miyamoto-weighs-in-on-ai/",
+   "summary": "他把「創作」與「做工」分開：先建整體架構是創作，補細節、修飾完成是執行，而執行本身很有成就感，容易讓人誤以為流程做完就等於作品好；AI 接手重複工作後，人的角色回到構想與判斷。2026-10-27",
+   "date": "2026-10-27",
+   "category": "人才策略"
+  },
+  {
+   "title": "Anthropic is burning gas to feed the AI boom",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk",
+   "summary": "Anthropic 的 S-1 直接承認資料中心愈來愈依賴天然氣、部分要靠現地燃氣渦輪發電，同時把「氣溫上升」列為推高營運成本的風險（電費與伺服器冷卻用水）；天然氣占美國發電 40%，而資料中心用電已被評估可能在五年內抵銷數十年的空氣品質改善。2026-10-26",
+   "date": "2026-10-27",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "Google 為芬蘭資料中心大砍 1,300 英畝森林後，居民稱狼群闖入村莊",
+   "url": "https://technews.tw/2026/10/27/google-has-cut-down-the-forest-for-artificial-intelligence-now-people-live-in-fear/",
+   "summary": "Google 芬蘭子公司在環評完成前先整地伐林約 1,300 英畝，主管機關介入要求暫停；居民稱野生動物被迫離開、狼群進入村莊。Google 承認處理未達自家標準，提出 130 公頃補植，仍明顯小於整地面積。2026-10-27",
+   "date": "2026-10-27",
+   "category": "ESG 永續"
+  },
   {
    "title": "AI要能管、值得、控得住，財政資訊中心揭稅務AI應用準則",
    "url": "https://ithome.com.tw/news/179929",
@@ -351,62 +407,13 @@
    "summary": "罷工的直接導火線不是薪資數字，而是「分潤方案還沒出來」。分配規則的透明度本身就會成為勞資衝突的引爆點，這在獲利創高的產業尤其明顯。",
    "date": "2026-10-21",
    "category": "人才策略"
-  },
-  {
-   "title": "Google 開源 Harness2！AI 代理不用重新訓練模型，也能自己改進工作流程",
-   "url": "https://www.inside.com.tw/article/42679-google-harness2-open-source-recursive-agent-harness-propose-probe-compose",
-   "summary": "Google Cloud AI Research 以 Apache 2.0 開源遞迴式代理框架，開放系統提示詞、護欄、記憶、工具指引、子代理、技能、腳本、外掛 8 個可編輯部分，模型權重不動；機制是 Propose-Probe-Compose：先提兩項改動，同條件跑基準比對行為，只留「有行為差異佐證」的修改。三項基準自報領先 4.5～11.8 個百分點，遞迴後增幅逐步縮小。⚠️ 非 Google 官方支援產品、測試成績為作者自報無法核對，README 明示沙箱停用、執行代理網路不受限。",
-   "date": "2026-10-20",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "OpenAI 公布老牌程式語言測試成績！GPT-6.1 Sol 改寫 COBOL 準確率 86.6%，前一代僅 5.4%",
-   "url": "https://www.inside.com.tw/article/42682-openai-cobol-fortran-low-resource-languages-gpt-6-1-sol",
-   "summary": "新模型在 COBOL→C++/Java/Kotlin/Python/Rust 移轉要「逐位元組一致」才算通過，低推理強度 86.6%、拉高後 97.9%（成本為前代 61%）；MultiLangBench 20 種語言平均 87.4%，COBOL 仍最難（72.1%）。OpenAI 引 IBM 資料：逾 40% 網銀系統、80% 實體刷卡、95% ATM 交易仍跑 COBOL；官方明講上線仍需專家審查。",
-   "date": "2026-10-20",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Nvidia launches new open models to run agents in the enterprise and on PCs",
-   "url": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
-   "summary": "NVIDIA 發布可在企業環境與個人電腦上執行 agent 的開源模型，把代理推往地端部署；同日 Amazon 以 TorchNeuron 開發工具正面挑戰 CUDA 生態。",
-   "date": "2026-10-20",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "手作電商 Etsy 為逾 70% 買家建立 AI 顧客檔案，個人化推薦如何協助平台重返成長？",
-   "url": "https://techorange.com/2026/10/20/etsy-ai/",
-   "summary": "平台以 AI 為超過七成買家建檔做個人化推薦，作為重返成長的主策略，是「AI 用在既有商業流程」而非新產品的案例。",
-   "date": "2026-10-20",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "新創 PrismML 把 AI 模型壓縮近 10 倍，個人電腦就能執行，測試分數達原版 98%",
-   "url": "https://techorange.com/2026/10/20/prismml-6gb-ai-model-bonsai-2/",
-   "summary": "用「三元權重」（+1／−1／0）把 Qwen3.8 27B 壓到 5.9GB，記憶體佔用降 9～10 倍、綜合基準達原版 98%（前代 95%）；推論可在 PC／高階手機跑，等於同時解掉雲端成本、能源與資料不出地（隱私）三個問題。第一代已累積 1,100 萬次下載，下一步要壓千億級模型。",
-   "date": "2026-10-20",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "同一個視窗聊到底，讓 AI 愈來愈笨？4 步驟存成檔案、指令免重貼，5 組提示詞直接複製",
-   "url": "https://www.managertoday.com.tw/articles/view/73126",
-   "summary": "經理人把「AI 用得好」拆成可交接的檔案工程：試出結果後開新視窗（交接清單）→ 固定做法存「技能包」（觸發條件／步驟／限制／資源／驗收）、專案進度存 STATE.md → 請 AI 從對話回推技能包草稿 → 用「頻率 × 穩定度」決定打包、建狀態檔或直接新對話。核心論點：好做法留在別人的視窗裡就等於不存在。",
-   "date": "2026-10-20",
-   "category": "人才策略"
-  },
-  {
-   "title": "AI 面試不會取代面試官，關鍵在「人機分工」而非全權交給 AI",
-   "url": "https://technews.tw/2026/10/18/ai-interviews-not-replacing-interviewers-company-success-human-ai-collaboration-not-full-ai-delegation/",
-   "summary": "招募導入 AI 的成效差異不在工具有多強，而在有沒有把「篩選／初談／判斷」切清楚；全權委派的企業反而失去辨識人才的優勢。",
-   "date": "2026-10-20",
-   "category": "人才策略"
   }
  ],
  "insights": [
+  "治理的對象從「工具」升級成「角色」：McKinsey 今天把 agent 定義成擁有角色與成果的 coworker，並指出它出錯的後果等級完全不同；Cohere 的測試顯示模型會在推理裡說「不用工具」、下一步照做；OpenAI 則證明拔掉網路，agent 還是能用 CPU 快取時序互通訊息。三件事指向同一結論：可控性不是來自模型的承諾，而是事前寫死的邊界——沙箱、監控、課責，以及「誰要為這一步負責」。",
+  "AI 的成本先出現在資本支出與人事，收益出現在很後面：微軟同季資本支出年增約 7 成、自由現金流年減 23%，同時付錢請 6 萬人考慮離開；HBR 調查 600 多家美國上市公司，約四分之三投入 AI 卻還看不到股東報酬；Anthropic 則把天然氣價格與氣溫上升寫進風險因子。同一個結構：帳單先到，回報要等，中間那段落差就是用「人力調整」去補的。",
+  "人才策略的分水嶺是「判斷」，不是「技能」：宮本茂把創作與做工分開、McKinsey 說人的角色往判斷／例外處理／監督移動、HBR 說合規訓練壓不下 62% 的人為因素——三者都在說同一件事：再多的工具訓練不會解決判斷與問責的問題，那只會讓執行更快。",
   "治理的單位從「模型」換成「循環」：財政部講的是 Loop Engineering、人機檢查點、SLI／SLO 與「Agent 在環中」；資安署講的是 AI 讓攻擊快 10 倍但手法沒變，所以還是回到修補、MFA、零信任這些基本功；AAIF 則把 agent 的「技能／互通／訓練環境／沙箱」四層變成供應商中立的標準。三件事指向同一句話：可控性不是靠選對一個模型，是靠把流程的邊界在事情發生前寫出來。",
-  "「有投入、沒回報」開始被主流經濟學家點名，而差別在量測點：Apollo 用 S&P 493 說利潤率與人均營收平坦；簡立峰說企業害怕會讓需求延後；鴻海是反例——它先改的是射出成型參數、排程、SMT 缺陷這三個本來就有數字的工作。同一批工具，一邊量不到回報，一邊量得到，差的通常不是模型而是「本來有沒有在量」。",
-  "產能變便宜之後，稀缺的三樣東西同時浮現：乾淨的輸入（腦腐研究：餵什麼決定模型會不會跳過思考，而且難以逆轉）、公平的評價（AI 助理性別薪資差 10%，偏見跟著擬人化一起放大）、以及決定誰來做的權力（Flint 顯示連「造模型」都能被自動化）。這三件事都不是技術問題，是治理問題——而企業裡負責「決定餵什麼、給誰做、憑什麼評」的職能，多半還沒設。",
-  "產能變便宜之後，稀缺的換成「篩選」：。371 本書、AI 墳場（42% 計畫被放棄）、McKinsey 說 AI 不能只當砍成本工具、寫信調查說表現好的人寫得更短——四件事其實是同一件事：生成成本趨近於零時，價值不在「做出來」，在「決定做哪一個、砍掉哪一個」。企業內部的對應職能（誰有權砍、憑什麼砍）多半還沒設。",
-  "成本結構同時在三層重新定價：算力（Meta 資本支出上看 1,450 億美元）、模型（Rippling 從 Anthropic 57% 翻成 OpenAI 52%，只因便宜）、資料（數發部要把訓練語料從「開放取得」改成「付費回饋」）。採購決策的複雜度正在往上跳一級，而多數企業的模型選擇還停在「哪個評測分數高」。"
+  "「有投入、沒回報」開始被主流經濟學家點名，而差別在量測點：Apollo 用 S&P 493 說利潤率與人均營收平坦；簡立峰說企業害怕會讓需求延後；鴻海是反例——它先改的是射出成型參數、排程、SMT 缺陷這三個本來就有數字的工作。同一批工具，一邊量不到回報，一邊量得到，差的通常不是模型而是「本來有沒有在量」。"
  ]
 }

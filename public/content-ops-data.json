@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-10-26T05:20:38Z",
+ "generatedAt": "2026-10-27T05:20:47Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 149
+  "daysRunning": 150
  },
  "stats": {
-  "scanDays": 128,
-  "weekArticles": 42,
-  "articles": 95,
-  "newsItems": 57,
-  "newsletterIssues": 27,
+  "scanDays": 129,
+  "weekArticles": 40,
+  "articles": 96,
+  "newsItems": 58,
+  "newsletterIssues": 28,
   "subscribers": 22,
   "confirmedSubscribers": 16,
   "videos": 40,
-  "views": 686,
+  "views": 687,
   "channelSubscribers": 17,
-  "insights": 17,
-  "socialPosts": 65,
+  "insights": 18,
+  "socialPosts": 69,
   "igCards": 42,
-  "competitorReports": 127
+  "competitorReports": 128
  },
  "activity": [
-  {
-   "date": "2026-10-20",
-   "count": 7,
-   "topics": []
-  },
   {
    "date": "2026-10-21",
    "count": 7,
@@ -56,46 +51,51 @@
    "date": "2026-10-26",
    "count": 6,
    "topics": []
+  },
+  {
+   "date": "2026-10-27",
+   "count": 8,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "後台紀錄 ③：管理制度，也可以先做一輪 POC 嗎？",
+   "title": "當 AI 在企業內產生效益的同時，也默默地拆掉組織職涯階梯的第一階",
    "date": "2026.10.27",
-   "url": "/knowledge/camino-operation-poc"
+   "url": "/knowledge/ai-first-rung"
   },
-  "newsletter": "🦞 榕賀觀點 第 27 期 — 2026-10-22",
+  "newsletter": "🦞 榕賀觀點 第 28 期 — 2026-10-26",
   "video": {
    "title": "拿掉 AI 之後，只有老手真的進步：MIT 實驗揭開的判斷力斷代",
    "date": "2026-10-21",
    "url": "https://www.youtube.com/watch?v=T5e5Ia09QLg"
   },
-  "insight": "2026-W43.md"
+  "insight": "2026-W44.md"
  },
  "trends": [
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 18,
+   "count": 19,
    "momentum": "flat"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 14,
+   "count": 12,
    "momentum": "down"
   },
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 12,
+   "count": 10,
    "momentum": "down"
   },
   {
-   "keyword": "人才與技能",
-   "icon": "🧠",
+   "keyword": "企業導入",
+   "icon": "🚀",
    "count": 8,
-   "momentum": "up"
+   "momentum": "flat"
   },
   {
    "keyword": "安全與風險",
