@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-26T04:33:45Z",
+  "generatedAt": "2026-10-27T00:30:42Z",
   "periods": {
-    "content": "累計至 2026-10-26；近 30 天＝2026-09-26 起",
+    "content": "累計至 2026-10-27；近 30 天＝2026-09-27 起",
     "health": "2026-10-01 ~ 2026-10-26（26 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
     "management": "2026-10-03 ~ 2026-10-25（23 天）"
@@ -10,9 +10,9 @@
     {
       "key": "content",
       "label": "內容產出",
-      "value": 94,
+      "value": 95,
       "unit": "篇文章",
-      "note": "近 30 天新增 13 篇"
+      "note": "近 30 天新增 14 篇"
     },
     {
       "key": "uptime",
@@ -26,7 +26,7 @@
       "label": "未結事故",
       "value": 1,
       "unit": "件",
-      "note": "近 30 天 34 筆告警，涉及 23 支排程"
+      "note": "近 30 天 33 筆告警，涉及 23 支排程"
     },
     {
       "key": "attention",
@@ -37,15 +37,15 @@
     }
   ],
   "content": {
-    "articles": 94,
-    "articles30d": 13,
+    "articles": 95,
+    "articles30d": 14,
     "newsletters": 27,
     "videos": 40,
     "videos30d": 3,
     "igCards": 42,
-    "socialPosts": 63,
-    "scanDays": 127,
-    "competitorReports": 126,
+    "socialPosts": 65,
+    "scanDays": 128,
+    "competitorReports": 127,
     "insights": 17,
     "monthly": [
       {
@@ -70,13 +70,20 @@
       },
       {
         "month": "2026-10",
-        "count": 9
+        "count": 10
       }
     ],
     "articleList": [
       {
         "date": "2026-10-27",
-        "title": "後台紀錄 ③：管理制度，也可以先做一輪 POC 嗎？",
+        "title": "當 AI 在企業內產生效益的同時，也默默地拆掉組織職涯階梯的第一階",
+        "slug": "ai-first-rung",
+        "url": "/knowledge/ai-first-rung",
+        "cat": "人才策略"
+      },
+      {
+        "date": "2026-10-27",
+        "title": "後台紀錄 2：管理制度，也可以先做一輪 POC 嗎？",
         "slug": "camino-operation-poc",
         "url": "/knowledge/camino-operation-poc",
         "cat": "AI 轉型"
@@ -111,7 +118,7 @@
       },
       {
         "date": "2026-10-08",
-        "title": "人不在的一個月：一次公開實驗的起點",
+        "title": "我不在公司的 13 天：一次公開實驗的起點",
         "slug": "ai-operation-experiment",
         "url": "/knowledge/ai-operation-experiment",
         "cat": "AI 轉型"
@@ -346,13 +353,6 @@
         "slug": "managing-31-ai-agents",
         "url": "/knowledge/managing-31-ai-agents",
         "cat": "AI 轉型"
-      },
-      {
-        "date": "2026-08-20",
-        "title": "AI 巨頭開始買電廠了：你的雲端帳單，即將變貴的三個理由",
-        "slug": "ai-energy-arms-race-cloud-bill",
-        "url": "/knowledge/ai-energy-arms-race-cloud-bill",
-        "cat": "AI 轉型"
       }
     ],
     "videoList": [
@@ -374,9 +374,9 @@
     ],
     "latest": {
       "article": {
-        "title": "GPU 三年就折舊光：你付的每一筆 AI 訂閱，都在替別人攤這筆帳",
-        "date": "2026.10.22",
-        "url": "/knowledge/ai-capital-depreciation-bill"
+        "title": "後台紀錄 ③：管理制度，也可以先做一輪 POC 嗎？",
+        "date": "2026.10.27",
+        "url": "/knowledge/camino-operation-poc"
       },
       "newsletter": "🦞 榕賀觀點 第 27 期 — 2026-10-22",
       "video": {
@@ -608,55 +608,55 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.03
+        "seconds": 0.04
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.39
+        "seconds": 0.13
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 1.8
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.02
+        "seconds": 0.06
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.03
+        "seconds": 0.05
       },
       {
         "name": "管理後台",
         "url": "https://admin.rong-rise.com/",
         "code": "401",
         "ok": true,
-        "seconds": 0.02
+        "seconds": 0.05
       }
     ],
-    "liveAt": "2026-10-26 04:33 UTC"
+    "liveAt": "2026-10-27 00:30 UTC"
   },
   "schedule": {
-    "incidents30d": 34,
+    "incidents30d": 33,
     "incidentJobs": 23,
-    "incidentDays": 15,
+    "incidentDays": 14,
     "open": 1,
     "types": [
       {
         "type": "script",
-        "count": 17
+        "count": 16
       },
       {
         "type": "config",
@@ -676,8 +676,8 @@
       }
     ],
     "executions": 1001,
-    "executionsOk": 999,
-    "executionsFrom": "2026-10-25T16:42:33",
+    "executionsOk": 1000,
+    "executionsFrom": "2026-10-26T12:28:33",
     "incidents": [
       {
         "job": "243ab7c8200f",
@@ -1134,7 +1134,7 @@
     "subscribers": 22,
     "confirmed": 16,
     "pending": 6,
-    "views": 684,
+    "views": 686,
     "channelSubscribers": 17
   }
 }
