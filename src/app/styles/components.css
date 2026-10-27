@@ -526,3 +526,12 @@
   background-color: rgba(13, 43, 78, 0.72);
   z-index: 0;
 }
+
+/* 橫向捲動容器但隱藏原生捲軸（標籤列用）— 桌機改為換行，不再出現灰色 scrollbar */
+.no-scrollbar {
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* 舊 Edge/IE */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;                /* Chrome/Safari */
+}

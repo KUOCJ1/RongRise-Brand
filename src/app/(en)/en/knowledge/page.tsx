@@ -163,7 +163,7 @@ export default function EnKnowledgePage() {
       {/* Category Filter */}
       <section className="bg-white border-b border-border sticky top-16 z-40">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 py-3">
-          <div className="flex gap-2 overflow-x-auto pb-1">
+          <div className="no-scrollbar flex gap-2 overflow-x-auto pb-1 md:flex-wrap md:overflow-visible md:pb-0">
             {categories.map((cat) => (
               <button
                 key={cat}
