@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-self-improvement-evidence",
+    cat: "AI 轉型",
+    title: "AI 開始自己改自己了，接下來要問的是：證據在哪裡",
+    date: "2026-10-27",
+    readTime: "7 分鐘",
+    excerpt: "MIT 把十三個 AI 代理放進荒島，無指令跑了三十小時，它們自己蓋神殿、把掉海詮釋成朝聖。同一週，Google 開源的 Harness2 讓 AI 自己改自己，但每一筆改動都要有行為差異佐證。自主性已經自己長出來了，接下來要問的是：證據在哪裡。",
+    tags: ["AI 轉型", "AI 治理", "遞迴自我改進", "AI 代理", "數位轉型"],
+  },
+  {
     slug: "ai-first-rung",
     cat: "人才策略",
     title: "當 AI 在企業內產生效益的同時，也默默地拆掉組織職涯階梯的第一階",

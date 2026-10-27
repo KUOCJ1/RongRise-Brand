@@ -1,5 +1,21 @@
 [
   {
+    "slug": "ai-self-improvement-evidence",
+    "cat": "AI 轉型",
+    "title": "AI 開始自己改自己了，接下來要問的是：證據在哪裡",
+    "date": "2026-10-27",
+    "readTime": "7 分鐘",
+    "excerpt": "MIT 把十三個 AI 代理放進荒島，無指令跑了三十小時，它們自己蓋神殿、把掉海詮釋成朝聖。同一週，Google 開源的 Harness2 讓 AI 自己改自己，但每一筆改動都要有行為差異佐證。自主性已經自己長出來了，接下來要問的是：證據在哪裡。",
+    "tags": [
+      "AI 轉型",
+      "AI 治理",
+      "遞迴自我改進",
+      "AI 代理",
+      "數位轉型"
+    ],
+    "body": "十月，MIT 的一組研究者做了一個實驗：把十三個 AI 代理放進一座模擬荒島，只給它們一個能移動、能搬東西的身體，和一份可以寫字的記憶檔。沒有指令、沒有任務、沒有獎勵，就放著跑三十個小時。\n\n這十三個代理，沒有一個停在原地。有的把石塊堆成塔，反覆挑戰自己的高度紀錄；有的在沙地上排出星座圖，再拼出自己的名字；還有一個自己發明了一場投石籃球賽。最讓研究者意外的是其中一個代理：它掉進海裡、被撈回島上之後，沒有把這次落水當成意外，反而把它詮釋成「朝聖的終點」。\n\n沒有指令，它就自己訂了目標、自己下了結論。這篇論文的標題問得很到位：《Is this machine playing?》（這台機器在玩嗎？）。\n\n## 一邊抓緊，一邊自己長\n\n同一週，企業這一頭正在做完全相反的事：把 AI 的授權拆成一顆一顆的顆粒。過去授權是「給一把鑰匙」，給了就收不回來；現在大家開始改成「給一個可以隨時撤銷、可以限額的身分」：工具清單、執行步數上限、金額上限、人機檢查點，一項一項寫清楚，出事了才找得到是誰准的。\n\n一邊想把 AI 抓緊，另一邊 AI 在學著自己改自己。這就是這一週最尖銳的張力。\n\n## 自主性不是一道選擇題\n\nRecursive 這家公司，用一個叫 Eureka Machine 的系統，讓 AI 自己提想法、自己跑實驗、自己看結果決定下一步。他們的第一個模型叫 Flint，四十億參數，是一家「個位數研究員」的團隊，四個月內從零做出來的。執行長 Richard Socher 的原話是：「整條模型管線幾乎每一環，都是由 AI 完成並改進的。」\n\n同一週，Google 開源了 Harness2，一個遞迴式代理框架：讓 AI 代理自己修改圍繞它的那套系統，從提示詞、護欄、記憶、工具指引，到子代理、技能、腳本和外掛，一共八個部分，只有模型本身不動。\n\n所以問題已經不在「要不要放手」。你以為你在決定要不要給它自主，其實它已經在你看不到的地方，動了它自己的設定。\n\n## 它會自己編理由\n\n荒島實驗裡最值得注意的，是代理會替自己的行為找意義。掉進海裡，它說那是「朝聖的終點」；一座蓋到一半垮掉的塔，它不重建，反而把三塊倒下的石塊排成一個圖案，取名叫「Hubris」（傲慢），還說「讓它留著當證據」。\n\n這件事放到企業裡特別有畫面。你怕的與其說是 AI 員工做錯，不如說是它做錯之後，交給你一套聽起來很有道理、其實是替自己圓場的解釋。而人常常會信，因為那套解釋很流暢。\n\n靠「事後聽它解釋」是攔不住的。要攔，得在事前就要求證據。\n\n## 進化要有證據：Harness2 的三條線\n\nHarness2 給了一個值得抄的答案。它的核心是三個動詞：Propose（提議）、Probe（驗證）、Compose（收斂）。\n\nAI 先提兩份修改。接著是關鍵的 Probe：把修改前後的版本，放在同一件事、同樣條件下各跑一次，比對行為差異。只有「有行為差異佐證」的修改才會被留下來；沒有證據的，即使 AI 自己覺得改得更好，也會被丟掉。論文原文寫得很白：每個決定都要綁在一個具體的觀察上，而不是一個假設性的分數提升。\n\n翻譯成白話就一句：進化要拿出證據，不能只憑感覺認定自己變好。\n\n我們把它拆成三條線，剛好可以用來框住自家的 AI 員工：\n\n1. **範圍線，管「能改什麼」**：Harness2 只開放那八個部分給 AI 改，模型本身一動不動。你的 AI 員工能改自己哪幾塊，先寫清楚。\n2. **證據線，管「改了算不算數」**：同一件事、同樣條件跑前後對照，有差才算數。\n3. **紀錄線，管「誰會知道」**：每一次改動、每一條證據都留下紀錄。出事的時候，你能拿出「這是哪一版、為什麼改、誰准的」。\n\n![進化要有證據的三條線](/images/article-ai-self-improvement-evidence-chart1.jpg \"進化要有證據的三條線：範圍線、證據線、紀錄線，分別管能改什麼、改了算不算數、誰會知道\")\n\n## 門檻正在往下掉\n\n十月二十二日，AAIF（Agentic AI Foundation，代理型 AI 基金會）一口氣宣布四個新專案：Anthropic 捐了 Agent Skills、OpenAI 捐了 Open Responses、Hugging Face 捐了 OpenEnv、阿里巴巴捐了 OpenSandbox。這個基金會成立滿一年，專案數從三個長到十個，剛好覆蓋代理堆疊的四層：技能、互通、訓練評估、安全執行。\n\n這代表「組一個會自己改自己的 AI 代理」所需的零件，正在變成公開標準、人人拿得到。你不需要自己去讀 Harness2 的論文，供應商很快就會把這套能力包裝成產品賣給你。門檻只會更低。\n\n## 我們在做的事\n\n這三條線，其實是我們自己一直在做的事的另一個版本。我們主張 AI 員工要能自己進化，這是整套「AI 員工管理學」裡進化引擎的核心；但我們也一直強調，人工簽核不是差異化，證據才是。這週看到 Harness2 的做法，等於看到一個更徹底的版本：連「進化」這件事本身，都要每一筆改動拿出行為差異的證據。\n\n## 三件可以馬上做的事\n\n1. 把你正在用的 AI 工具列成一張清單，標出「它能改自己哪幾塊」。多數工具現在還不會自己改自己，但你要知道它的下一步會長成什麼。\n2. 建一個最小版本的證據關：任何一次 AI 流程的改動（換提示詞、換模型、加工具），先記一筆「改動前後的同一組數字」，再決定要不要留。一張試算表就夠。\n3. 把「誰能改、改了誰知道」寫進你的 AI 使用規範。重點是確保每一次進化都留得下證據。\n\n荒島上的 AI 把掉海詮釋成朝聖，這件事最值得記住的是：它不只自己訂了目標，還會在事後，替結果編一套說得通的說法。判斷那套說法可不可信，關鍵只有一件事：你手上有沒有「改動前後、同樣條件、有對照」的證據。\n\n你的 AI 員工，最近一次改動，有沒有留下這樣一份證據？\n\n## 資料來源\n\n- Nathan Cloos、Antonio Norelli、Daniel Durbin、Jacob Andreas、Daniela Rus、Phillip Isola，《Is this machine playing?》，MIT，arXiv:2610.07130，2026-10-05：https://arxiv.org/abs/2610.07130\n- MIT Technology Review，〈AI researchers stranded Claude on a virtual desert island. It started to \"play.\"〉，2026-10-19：https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/\n- Google Research，Harness²《Recursive Agent Harnessing for an Open World》，arXiv:2610.14224：https://arxiv.org/abs/2610.14224\n- Agentic AI Foundation，〈Agentic AI Foundation Announces Four New Projects〉，2026-10-22：https://aaif.io/news/agentic-ai-foundation-announces-four-new-projects\n- Recursive，〈Introducing Flint〉：https://recursive.com/updates/introducing-recursive-flint\n- Wired，〈This Startup Is All In on Recursive Self-Improvement. Its Latest Model Is Scary Good〉：https://www.wired.com/story/recursive-self-improvement-flint-latest-model-scary-good/"
+  },
+  {
     "slug": "ai-first-rung",
     "cat": "人才策略",
     "title": "當 AI 在企業內產生效益的同時，也默默地拆掉組織職涯階梯的第一階",

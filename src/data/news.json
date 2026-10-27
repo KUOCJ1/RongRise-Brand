@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n59",
+      "date": "2026-10-27",
+      "category": "資源",
+      "title": "AI 開始自己改自己了，接下來要問的是：證據在哪裡",
+      "summary": "MIT 把十三個 AI 代理放進荒島無指令跑三十小時，它們自己蓋神殿、把掉海詮釋成朝聖；Google 的 Harness2 則讓 AI 自己改自己，但每一筆都要有證據。自主性已經自己長出來了。",
+      "link": "/knowledge/ai-self-improvement-evidence",
+      "isNew": true
+    },
+    {
       "id": "n58",
       "date": "2026-10-27",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "GPU 三年就折舊光：你付的每一筆 AI 訂閱，都在替別人攤這筆帳",
       "summary": "四大科技巨頭兩年砸 1.12 兆美元在 AI，是曼哈頓計劃的 31.2 倍，其中三分之二買的是三年就報廢的設備。這筆折舊帳，最後用漲價、倒閉、轉嫁三種方式回到你的 AI 訂閱費上。",
       "link": "/knowledge/ai-capital-depreciation-bill",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n55",
