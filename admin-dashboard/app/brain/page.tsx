@@ -10,6 +10,8 @@ type BrainData = {
 
 export default function BrainPage() {
   const [data, setData] = useState<BrainData | null>(null);
+  // 空字串代表量測失敗，要顯示「—」而不是留白（2026-10-27 修）
+  const v = (x?: string) => (x === undefined || x === null || x === "" ? "—" : x);
 
   useEffect(() => {
     fetch("/api/dashboard")
@@ -26,15 +28,15 @@ export default function BrainPage() {
       <div className="grid">
         <div className="card">
           <div className="label"><Brain size={14} /> 筆記總數</div>
-          <div className="value">{data?.files ?? "—"}</div>
+          <div className="value">{v(data?.files)}</div>
         </div>
         <div className="card">
           <div className="label">7 天內更新</div>
-          <div className="value">{data?.recent7d ?? "—"}<small> 次 commit</small></div>
+          <div className="value">{v(data?.recent7d)}<small> 次 commit</small></div>
         </div>
         <div className="card">
           <div className="label">未提交變更</div>
-          <div className="value">{data?.uncommitted ?? "—"}<small> 個檔案</small></div>
+          <div className="value">{v(data?.uncommitted)}<small> 個檔案</small></div>
         </div>
       </div>
 

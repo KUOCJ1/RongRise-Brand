@@ -14,6 +14,8 @@ type Data = {
 export default function DashboardPage() {
   const [data, setData] = useState<Data | null>(null);
   const [err, setErr] = useState("");
+  // 空字串代表量測失敗，要顯示「—」而不是留白（2026-10-27 修）
+  const v = (x?: string) => (x === undefined || x === null || x === "" ? "—" : x);
 
   useEffect(() => {
     fetch("/api/dashboard")
@@ -39,22 +41,22 @@ export default function DashboardPage() {
       <div className="grid">
         <div className="card">
           <div className="label"><Brain size={14} /> 第二大腦</div>
-          <div className="value">{data?.secondBrain?.files ?? "—"}<small> 篇筆記</small></div>
-          <div className="hint">7 天更新 {data?.secondBrain?.recent7d ?? "—"} · 未提交 {data?.secondBrain?.uncommitted ?? "—"}</div>
+          <div className="value">{v(data?.secondBrain?.files)}<small> 篇筆記</small></div>
+          <div className="hint">7 天更新 {v(data?.secondBrain?.recent7d)} · 未提交 {v(data?.secondBrain?.uncommitted)}</div>
         </div>
         <div className="card">
           <div className="label"><Server size={14} /> 磁碟</div>
-          <div className="value">{data?.vps?.disk ?? "—"}</div>
+          <div className="value">{v(data?.vps?.disk)}</div>
           <div className="bar-track"><div className="bar-fill" style={{ width: data?.vps?.disk ?? "0%" }} /></div>
         </div>
         <div className="card">
           <div className="label"><Activity size={14} /> 記憶體</div>
-          <div className="value">{data?.vps?.mem ?? "—"}<small>%</small></div>
+          <div className="value">{v(data?.vps?.mem)}<small>%</small></div>
           <div className="bar-track"><div className="bar-fill" style={{ width: `${data?.vps?.mem ?? 0}%` }} /></div>
         </div>
         <div className="card">
           <div className="label"><Mail size={14} /> 電子報訂閱</div>
-          <div className="value">{data?.newsletter?.subscribers ?? "—"}<small> 人</small></div>
+          <div className="value">{v(data?.newsletter?.subscribers)}<small> 人</small></div>
           <div className="hint">每週日 19:00 自動寄送</div>
         </div>
       </div>

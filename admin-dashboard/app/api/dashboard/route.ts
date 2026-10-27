@@ -6,8 +6,11 @@ export const revalidate = 0;
 
 function run(cmd: string): string {
   try {
-    return execSync(cmd, { timeout: 10, encoding: "utf-8" }).trim();
-  } catch {
+    // spawnSync 的 timeout 單位是「毫秒」，不是秒。原寫 timeout: 10 = 10ms，
+    // 任何 shell 指令都超過 10ms → ETIMEDOUT → 全部回空字串（2026-10-27 修）。
+    return execSync(cmd, { timeout: 5000, encoding: "utf-8" }).trim();
+  } catch (e) {
+    console.error("[dashboard] exec failed:", cmd, (e as Error).message);
     return "";
   }
 }

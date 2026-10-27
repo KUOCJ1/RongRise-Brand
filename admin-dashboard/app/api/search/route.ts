@@ -6,7 +6,7 @@ export const revalidate = 0;
 
 function run(cmd: string): string {
   try {
-    return execSync(cmd, { timeout: 8, encoding: "utf-8" }).trim();
+    return execSync(cmd, { timeout: 8000, encoding: "utf-8" }).trim();
   } catch {
     return "";
   }
