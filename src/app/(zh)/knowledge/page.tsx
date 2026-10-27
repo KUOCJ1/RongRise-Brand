@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useCallback } from "react";
+import { useState, useMemo, useCallback, Fragment } from "react";
 import Link from "next/link";
 import Fuse from "fuse.js";
 import { coverImg } from "@/lib/cover-map";
@@ -1087,8 +1087,15 @@ export default function KnowledgePage() {
                 // 前 6 篇（最新兩列）保留封面大圖，其餘改緊湊無圖卡：一屏 3 → 6 篇、頁高約 -47%
                 const compact = i >= 6;
                 return (
+                  <Fragment key={post.slug}>
+                  {i === 6 && (
+                    <div className="col-span-full flex items-center gap-3 mt-4">
+                      <span className="text-sm font-medium text-text-primary">更多文章</span>
+                      <span className="h-px flex-1 bg-border-light" />
+                      <span className="text-xs text-text-secondary">{filtered.length - 6} 篇</span>
+                    </div>
+                  )}
                   <Link
-                    key={post.slug}
                     href={`/knowledge/${post.slug}`}
                     className={`card group no-underline flex flex-col overflow-hidden ${compact ? "card-compact" : ""}`}
                   >
@@ -1116,13 +1123,14 @@ export default function KnowledgePage() {
                         {post.excerpt}
                       </p>
                     )}
-                    <div className={`flex items-center justify-between border-t border-border-light ${compact ? "mt-4 pt-3" : "mt-auto pt-4"}`}>
+                    <div className={`flex items-center justify-between border-t border-border-light ${compact ? "mt-auto pt-3" : "mt-auto pt-4"}`}>
                       <span className="text-xs text-text-secondary">{post.date}</span>
                       <span className="text-xs font-medium text-primary group-hover:text-secondary transition-colors">
                         閱讀更多 →
                       </span>
                     </div>
                   </Link>
+                  </Fragment>
                 );
               })}
             </div>
