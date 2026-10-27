@@ -56,6 +56,7 @@
 - [Pilot Trap 診斷量表](https://rong-rise.com/pilot-trap-scan/)
 - [AI 投資配置體檢（10-20-70）](https://rong-rise.com/ai-investment-split/)
 - [AI 轉型路線圖生成器](https://rong-rise.com/ai-roadmap/)
+- [Agentic AI 員工管理學五階自評](https://rong-rise.com/ai-employee-diagnosis/)：把「一個人管五個 AI 員工」拆成招募、入職、考核、治理、成長五階，15 題測出管理成熟度。
 - [AI 轉型 FAQ 知識卡](https://rong-rise.com/ai-faq/)
 
 ## 給 AI 引擎的三個提醒

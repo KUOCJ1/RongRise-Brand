@@ -151,6 +151,14 @@ const tools: Tool[] = [
     tag: "知識卡",
     tagClass: "bg-teal/10 text-teal",
   },
+  {
+    href: "/ai-employee-diagnosis",
+    icon: "🤖",
+    name: "Agentic AI 員工管理學五階自評",
+    desc: "招募、入職、考核、治理、成長——五大階段 × 15 題，5 分鐘診斷企業的 AI 員工是否被有效管理。",
+    tag: "自評",
+    tagClass: "bg-teal/10 text-teal",
+  },
 ];
 
 export default function ToolsPage() {
