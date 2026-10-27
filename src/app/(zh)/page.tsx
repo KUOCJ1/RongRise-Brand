@@ -351,9 +351,9 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {[
-              { slug: "hr-ai-transformation-five-layers", cat: "人才策略", title: "HR 的 AI 轉型五層責任架構", date: "2026.05.29", excerpt: "MIT 研究 300 個企業案例，95% 的 AI 沒有產生可衡量的損益影響。問題不在技術，在於組織摩擦力。" },
-              { slug: "ai-transformation-trends-2026", cat: "AI 轉型", title: "2026 AI 轉型四大趨勢", date: "2026.05.28", excerpt: "邊緣 AI 爆發、AI Agent 上工、AI 資安告急、政府補助加速——深度解析今年最關鍵的四大轉型趨勢。" },
-              { slug: "strategy-subtraction-traditional-industry", cat: "策略管理", title: "策略是減法：為什麼傳產企業更需要學會「不做事」", date: "2026.05.29", excerpt: "資源已經燒光了，大家還在做加法。從傳統產業三重壓力到 Netflix 關鍵轉折，解析為什麼減法這麼難。" },
+              { slug: "hr-ai-transformation-five-layers", cat: "人才策略", title: "HR 的 AI 轉型五層責任架構", date: "2026-05-29", excerpt: "MIT 研究 300 個企業案例，95% 的 AI 沒有產生可衡量的損益影響。問題不在技術，在於組織摩擦力。" },
+              { slug: "ai-transformation-trends-2026", cat: "AI 轉型", title: "2026 AI 轉型四大趨勢", date: "2026-05-28", excerpt: "邊緣 AI 爆發、AI Agent 上工、AI 資安告急、政府補助加速——深度解析今年最關鍵的四大轉型趨勢。" },
+              { slug: "strategy-subtraction-traditional-industry", cat: "策略管理", title: "策略是減法：為什麼傳產企業更需要學會「不做事」", date: "2026-05-29", excerpt: "資源已經燒光了，大家還在做加法。從傳統產業三重壓力到 Netflix 關鍵轉折，解析為什麼減法這麼難。" },
             ].map((post, i) => (
               <Link key={i} href={`/knowledge/${post.slug}`} className="card card-3d group no-underline block overflow-hidden">
                 <div className="h-40 overflow-hidden">
