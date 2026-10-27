@@ -1014,12 +1014,12 @@ export default function KnowledgePage() {
           </div>
 
           {/* Category Pills */}
-          <div className="no-scrollbar flex gap-2 overflow-x-auto pb-1 md:flex-wrap md:overflow-visible md:pb-0">
+          <div className="no-scrollbar flex gap-1.5 overflow-x-auto pb-1 md:flex-wrap md:overflow-visible md:pb-0">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setActiveCat(cat)}
-                className={`flex-shrink-0 px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                className={`flex-shrink-0 px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
                   activeCat === cat
                     ? "bg-primary text-white"
                     : "bg-bg-alt text-text-secondary hover:bg-primary/10 hover:text-primary"
