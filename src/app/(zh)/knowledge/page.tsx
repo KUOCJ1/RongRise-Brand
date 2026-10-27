@@ -1100,7 +1100,7 @@ export default function KnowledgePage() {
                     className={`card group no-underline flex flex-col overflow-hidden ${compact ? "card-compact" : ""}`}
                   >
                     {!compact && (
-                      <div className="h-36 overflow-hidden">
+                      <div className={`h-36 overflow-hidden ${i >= 2 ? "hidden md:block" : ""}`}>
                         <img
                           src={coverImg(post.slug)}
                           alt={post.title}
