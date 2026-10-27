@@ -1083,40 +1083,48 @@ export default function KnowledgePage() {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filtered.map((post, i) => (
-                <Link
-                  key={post.slug}
-                  href={`/knowledge/${post.slug}`}
-                  className="card group no-underline flex flex-col overflow-hidden"
-                >
-                  <div className="h-36 overflow-hidden">
-                    <img
-                      src={coverImg(post.slug)}
-                      alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="tag">{post.cat}</span>
-                    <span className="text-xs text-text-secondary">
-                      {post.readTime}閱讀
-                    </span>
-                  </div>
-                  <h3 className="heading-subsection text-text-primary group-hover:text-primary transition-colors mb-2">
-                    {post.title}
-                  </h3>
-                  <p className="text-text-secondary text-body-sm flex-1 mb-4">
-                    {post.excerpt}
-                  </p>
-                  <div className="flex items-center justify-between mt-auto pt-4 border-t border-border-light">
-                    <span className="text-xs text-text-secondary">{post.date}</span>
-                    <span className="text-xs font-medium text-primary group-hover:text-secondary transition-colors">
-                      閱讀更多 →
-                    </span>
-                  </div>
-                </Link>
-              ))}
+              {filtered.map((post, i) => {
+                // 前 6 篇（最新兩列）保留封面大圖，其餘改緊湊無圖卡：一屏 3 → 6 篇、頁高約 -47%
+                const compact = i >= 6;
+                return (
+                  <Link
+                    key={post.slug}
+                    href={`/knowledge/${post.slug}`}
+                    className={`card group no-underline flex flex-col overflow-hidden ${compact ? "card-compact" : ""}`}
+                  >
+                    {!compact && (
+                      <div className="h-36 overflow-hidden">
+                        <img
+                          src={coverImg(post.slug)}
+                          alt={post.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          loading="lazy"
+                        />
+                      </div>
+                    )}
+                    <div className="flex items-center justify-between mb-3">
+                      <span className="tag">{post.cat}</span>
+                      <span className="text-xs text-text-secondary">
+                        {post.readTime}閱讀
+                      </span>
+                    </div>
+                    <h3 className={`heading-subsection text-text-primary group-hover:text-primary transition-colors ${compact ? "line-clamp-2" : "mb-2"}`}>
+                      {post.title}
+                    </h3>
+                    {!compact && (
+                      <p className="text-text-secondary text-body-sm flex-1 mb-4">
+                        {post.excerpt}
+                      </p>
+                    )}
+                    <div className={`flex items-center justify-between border-t border-border-light ${compact ? "mt-4 pt-3" : "mt-auto pt-4"}`}>
+                      <span className="text-xs text-text-secondary">{post.date}</span>
+                      <span className="text-xs font-medium text-primary group-hover:text-secondary transition-colors">
+                        閱讀更多 →
+                      </span>
+                    </div>
+                  </Link>
+                );
+              })}
             </div>
           )}
         </div>

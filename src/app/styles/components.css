@@ -183,6 +183,12 @@
   transform: translateY(-4px);
   border-color: var(--color-primary);
 }
+/* 知識庫列表：前 6 篇之後改緊湊無圖卡（密度優先）。
+   放在 .card 之後，靠順序覆蓋 .card 的 padding。 */
+.card-compact {
+  padding: 1.25rem 1.35rem;
+}
+
 
 /* ── Card-Feature (For asymmetric layouts) ── */
 .card-feature {
