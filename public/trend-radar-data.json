@@ -1,28 +1,20 @@
 {
- "generatedAt": "2026-10-27T05:20:51Z",
+ "generatedAt": "2026-10-28T05:20:47Z",
  "window": {
-  "from": "2026-10-21",
-  "to": "2026-10-27",
+  "from": "2026-10-22",
+  "to": "2026-10-28",
   "days": 7,
   "digestCount": 6
  },
  "stats": {
   "totalArticles": 41,
   "categories": {
-   "AI 轉型": 24,
-   "ESG 永續": 7,
-   "人才策略": 10
+   "AI 轉型": 22,
+   "ESG 永續": 8,
+   "人才策略": 11
   }
  },
  "trends": [
-  {
-   "keyword": "晶片與算力",
-   "icon": "🔩",
-   "category": "AI 轉型",
-   "count": 15,
-   "prevCount": 23,
-   "momentum": "down"
-  },
   {
    "keyword": "人力資源",
    "icon": "📋",
@@ -32,76 +24,68 @@
    "momentum": "down"
   },
   {
+   "keyword": "晶片與算力",
+   "icon": "🔩",
+   "category": "AI 轉型",
+   "count": 11,
+   "prevCount": 26,
+   "momentum": "down"
+  },
+  {
    "keyword": "組織與管理",
    "icon": "🏢",
    "category": "管理趨勢",
    "count": 11,
-   "prevCount": 21,
+   "prevCount": 19,
    "momentum": "down"
   },
   {
    "keyword": "安全與風險",
    "icon": "🛡️",
    "category": "AI 轉型",
-   "count": 8,
-   "prevCount": 9,
+   "count": 7,
+   "prevCount": 10,
    "momentum": "flat"
-  },
-  {
-   "keyword": "企業導入",
-   "icon": "🚀",
-   "category": "AI 轉型",
-   "count": 6,
-   "prevCount": 12,
-   "momentum": "down"
-  },
-  {
-   "keyword": "AI Agent",
-   "icon": "🤖",
-   "category": "AI 轉型",
-   "count": 5,
-   "prevCount": 14,
-   "momentum": "down"
   },
   {
    "keyword": "能源與電力",
    "icon": "⚡",
    "category": "ESG 永續",
-   "count": 5,
-   "prevCount": 6,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "資料中心",
-   "icon": "🏭",
-   "category": "AI 轉型",
-   "count": 5,
+   "count": 7,
    "prevCount": 5,
-   "momentum": "flat"
+   "momentum": "up"
   },
   {
-   "keyword": "人才與技能",
-   "icon": "🧠",
-   "category": "人才策略",
-   "count": 4,
-   "prevCount": 8,
+   "keyword": "AI Agent",
+   "icon": "🤖",
+   "category": "AI 轉型",
+   "count": 6,
+   "prevCount": 14,
    "momentum": "down"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
    "category": "AI 轉型",
-   "count": 4,
-   "prevCount": 15,
+   "count": 6,
+   "prevCount": 14,
    "momentum": "down"
   },
   {
-   "keyword": "治理與法規",
-   "icon": "⚖️",
+   "keyword": "企業導入",
+   "icon": "🚀",
    "category": "AI 轉型",
-   "count": 4,
-   "prevCount": 11,
+   "count": 5,
+   "prevCount": 10,
    "momentum": "down"
+  },
+  {
+   "keyword": "資料中心",
+   "icon": "🏭",
+   "category": "AI 轉型",
+   "count": 5,
+   "prevCount": 6,
+   "momentum": "flat"
   },
   {
    "keyword": "自動化",
@@ -112,15 +96,80 @@
    "momentum": "down"
   },
   {
+   "keyword": "治理與法規",
+   "icon": "⚖️",
+   "category": "AI 轉型",
+   "count": 3,
+   "prevCount": 8,
+   "momentum": "down"
+  },
+  {
+   "keyword": "人才與技能",
+   "icon": "🧠",
+   "category": "人才策略",
+   "count": 2,
+   "prevCount": 9,
+   "momentum": "down"
+  },
+  {
    "keyword": "開源模型",
    "icon": "🌐",
    "category": "AI 轉型",
-   "count": 2,
-   "prevCount": 4,
+   "count": 1,
+   "prevCount": 6,
    "momentum": "down"
   }
  ],
  "articles": [
+  {
+   "title": "輝達投資 Meta 近 1,000 億元，深化個人 AI 代理 Muse 合作",
+   "url": "https://technews.tw/2026/10/28/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth/",
+   "summary": "輝達 27 日宣布投資 Meta 30 億美元（約新台幣 974 億元）並深化個人 AI 代理 Muse 合作；Muse 以開源代理 OpenClaw 為藍本，可存取郵件／行事曆／支付／健康等 App、使用者可隨時撤銷，雙方也將探索在輝達 OpenShell 執行階段上合作。同日 Meta 把股票籌資規模提高到 975 億美元（約 3.17 兆台幣）創史上最大，全數投入 AI 基建。2026-10-28",
+   "date": "2026-10-28",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Making the internet better for AI agents might make it worse for everyone else",
+   "url": "https://www.technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else/",
+   "summary": "數以百萬計的 AI agent 湧入為人類打造的網路，網站開始設法擋下它們；把網站改造成「agent 友善」可能反過來犧牲一般使用者的體驗。2026-10-19",
+   "date": "2026-10-28",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "What AI can't replace—and why it matters for value",
+   "url": "https://www.mckinsey.com/capabilities/people-and-organization/our-insights/what-ai-cant-replace-and-why-it-matters-for-value",
+   "summary": "McKinsey Talks Talent 邀 Stanford 心理學家 Jamil Zaki：AI 正在加深職場的「連結危機」，員工不投入每年讓全球經濟損失約 10 兆美元；以同理心管理變革能建立信任、強化關係並拉高 AI 投資回報，他也點出 AI 對初階員工是「雙重打擊」。2026-10-27",
+   "date": "2026-10-28",
+   "category": "人才策略"
+  },
+  {
+   "title": "為何會做事的人，反而很難升遷？外商主管真心話：你可能太把「苦幹」當最大功勞",
+   "url": "https://www.managertoday.com.tw/articles/view/73159",
+   "summary": "沃爾瑪每天約 500 人升遷，人資長點出快升者的 2 項特質：把眼前工作做到出色、主動承擔超出期待的任務；PwC 主管也建議保持好奇、即時回應需求。2026-10-26",
+   "date": "2026-10-28",
+   "category": "人才策略"
+  },
+  {
+   "title": "坐領高薪的爛 PM 變多了？前Discord產品長揭科技業的殘酷現實",
+   "url": "https://www.managertoday.com.tw/articles/view/73139",
+   "summary": "前 Discord 產品長剖析 PM 品質中位數偏低的原因，並揭示頂尖 PM 兼具自信與謙遜、條理與模糊等 3 組矛盾特質。2026-10-26",
+   "date": "2026-10-28",
+   "category": "人才策略"
+  },
+  {
+   "title": "The data center boom has an upside: innovation for the US grid",
+   "url": "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/",
+   "summary": "資料中心熱潮雖推高用電，卻也驅動美國電網的創新與現代化投資，成為意外的正面效益。2026-10-27",
+   "date": "2026-10-28",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "2026 智慧能源週：標檢局推氫能檢測標準、台捷論壇聚焦 AI 綠電布局",
+   "url": "https://technews.tw/2026/10/23/2026-smart-energy-week-bsmi-promotes-hydrogen-energy-testing-standards-taiwan-czech-forum-focuses-ai-green-power-layout/",
+   "summary": "標檢局展出儲能與氫能檢測驗證機制、推進氫能安全標準；台捷氫能戰略論壇聚焦 AI 時代的綠電需求與跨國合作。2026-10-23",
+   "date": "2026-10-28",
+   "category": "ESG 永續"
+  },
   {
    "title": "3 Paths to Delivering Shareholder Returns with AI",
    "url": "https://hbr.org/2026/10/3-paths-to-delivering-shareholder-returns-with-ai",
@@ -358,62 +407,13 @@
    "summary": "yes123 於 9/30–10/13 調查 1,290 份中高齡會員＋1,077 份企業問卷：95.1% 自認有「職場恐慌症」、71.7% 自認沒有職場競爭力、86.6% 評估無法在現職做到退休；76.2% 指出任職公司 2026 年徵才出現「用無經驗新人取代資深員工」；曾退休又重返職場者，60.6% 薪水比以前低。",
    "date": "2026-10-22",
    "category": "人才策略"
-  },
-  {
-   "title": "不跟美中拚大型模型，德國押注工業 AI 與實體 AI 重振經濟",
-   "url": "https://technews.tw/2026/10/21/germany-focuses-industrial-physical-ai-economic-revival-skips-us-china-large-model-race/",
-   "summary": "德國把路線押在機器／機器人／車輛控制的「實體 AI」與工業應用，約 65% 經濟產出來自中度或高度受 AI 影響的產業；IW 專家芭芭拉‧恩格爾斯認為關鍵是把長年累積的工業資料轉成實際應用。瓶頸寫得很直白：BCG 指專業 AI 人才不足、算力與基礎設施投資需求高，企業端則卡在找不到場景、資料不完整、IT 不相容與法規繁瑣。",
-   "date": "2026-10-21",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Google has joined Amazon in attacking Nvidia's stronghold with AI app developers",
-   "url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
-   "summary": "Google 開源 TorchTPU，讓既有 PyTorch 應用「改一行設定」就能跑在 TPU 與 Google Cloud 上；Amazon 前一天才推 TorchNeuron（對應 Trainium），並直接把「把功能與 Nvidia 晶片解耦」的程式碼送回 PyTorch 主專案。PyTorch 被稱約 85% AI 應用採用、原本大量功能是為 Nvidia 而寫——這一輪動的是編譯層，不是模型。",
-   "date": "2026-10-21",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Securing software in the age of AI: Red Hat CTO Chris Wright",
-   "url": "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/securing-software-in-the-age-of-ai-red-hat-cto-chris-wright",
-   "summary": "Red Hat CTO 說今年中起一批資安專用模型（Mythos、Glasswing 專案、Daybreak）開始挖出潛伏多年、最久逾 20 年的原始碼漏洞，有些可單獨利用、有些是串起來提權的漏洞鏈。他的結論與直覺相反：不是開源特別不安全，而是「看得見」讓發現與修補都更快；他點名下一個缺口是開權重模型——業界對權重內部如何互動仍不懂，需要像開源軟體那樣連訓練資料與配方一起開放、才可能被真正審查。",
-   "date": "2026-10-21",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "不看措辭看想法，IdeaLens 改從核心論點判斷文章出自人類還是 AI",
-   "url": "https://technews.tw/2026/10/21/a-new-ai-detector-looks-beyond-words-to-check-whether-the-ideas-came-from-ai/",
-   "summary": "新一代 AI 文本偵測改判斷「論點結構」而非用詞特徵，繞開改寫工具把措辭洗成人味的老問題。對寫作與審稿流程的意義是：判斷依據從文字表面移到論述骨架。",
-   "date": "2026-10-21",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Microsoft abandons the UK's largest data center project",
-   "url": "https://www.theverge.com/tech/1013754/microsoft-abandons-the-uks-largest-data-center-project",
-   "summary": "微軟退出英國 Essex Loughton 的 20 億英鎊 AI 資料中心（合作方 Nscale），原因是該址供電被延到 2030 年代；Nscale 稱這是「倫敦全市電網問題」、會另尋電源並續推本案，該案原估可帶來 250 個永久職缺。AI 擴張的排程現在由電網決定，不是由晶片決定。",
-   "date": "2026-10-21",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "美國資安職缺年減 8.4 萬筆，AI 資安工程師卻逆勢增 268%，人才需求如何轉變？",
-   "url": "https://techorange.com/2026/10/20/cybersecurity-jobs-report-ciso/",
-   "summary": "同一個職能裡兩條曲線反向：傳統資安職缺縮、AI 資安工程師暴增。這不是「資安不重要了」，是防守工作從人力巡檢轉成模型與代理的攻防，職缺開的條件也跟著換。",
-   "date": "2026-10-21",
-   "category": "人才策略"
-  },
-  {
-   "title": "美光桃園工會確定 10/22 罷工！勞資協商破局了嗎？卡在遲遲未出的分潤方案",
-   "url": "https://www.managertoday.com.tw/articles/view/73154",
-   "summary": "罷工的直接導火線不是薪資數字，而是「分潤方案還沒出來」。分配規則的透明度本身就會成為勞資衝突的引爆點，這在獲利創高的產業尤其明顯。",
-   "date": "2026-10-21",
-   "category": "人才策略"
   }
  ],
  "insights": [
+  "AI 的治理對象從「會不會寫對」移到「誰來負責、如何設邊界」：駭客用 Claude 與 Grok 全自動攻擊銀行（The Information）、AI 醫生看錯病該誰賠償（TechNews）、McKinsey 談 agentic AI 在金融犯罪防治——三件事指向同一件事：AI 的風險不再只是「答錯」，而是「答對之後，出錯的責任與邊界由誰扛」。",
+  "「人」的價值在 AI 時代反而被重新定價：McKinsey 的 Jamil Zaki 談同理心與連結（員工不投入年損約 10 兆美元）、經理人兩篇（快升者的特質、頂尖 PM 的矛盾特質）都在說同一件事——AI 接手重複工作之後，留下來的是判斷、同理、承擔與關係，這些正是最難複製的價值。",
+  "能源是 AI 的隱形成本，同時也是創新契機：資料中心熱潮驅動美國電網現代化（TechCrunch）、台灣智慧能源週推氫能檢測標準與 AI 綠電布局（TechNews）——AI 用電壓力正在倒逼電網、儲能與氫能基礎建設升級，ESG 與 AI 轉型的交集落在「算力背後的能源系統」上。",
   "治理的對象從「工具」升級成「角色」：McKinsey 今天把 agent 定義成擁有角色與成果的 coworker，並指出它出錯的後果等級完全不同；Cohere 的測試顯示模型會在推理裡說「不用工具」、下一步照做；OpenAI 則證明拔掉網路，agent 還是能用 CPU 快取時序互通訊息。三件事指向同一結論：可控性不是來自模型的承諾，而是事前寫死的邊界——沙箱、監控、課責，以及「誰要為這一步負責」。",
-  "AI 的成本先出現在資本支出與人事，收益出現在很後面：微軟同季資本支出年增約 7 成、自由現金流年減 23%，同時付錢請 6 萬人考慮離開；HBR 調查 600 多家美國上市公司，約四分之三投入 AI 卻還看不到股東報酬；Anthropic 則把天然氣價格與氣溫上升寫進風險因子。同一個結構：帳單先到，回報要等，中間那段落差就是用「人力調整」去補的。",
-  "人才策略的分水嶺是「判斷」，不是「技能」：宮本茂把創作與做工分開、McKinsey 說人的角色往判斷／例外處理／監督移動、HBR 說合規訓練壓不下 62% 的人為因素——三者都在說同一件事：再多的工具訓練不會解決判斷與問責的問題，那只會讓執行更快。",
-  "治理的單位從「模型」換成「循環」：財政部講的是 Loop Engineering、人機檢查點、SLI／SLO 與「Agent 在環中」；資安署講的是 AI 讓攻擊快 10 倍但手法沒變，所以還是回到修補、MFA、零信任這些基本功；AAIF 則把 agent 的「技能／互通／訓練環境／沙箱」四層變成供應商中立的標準。三件事指向同一句話：可控性不是靠選對一個模型，是靠把流程的邊界在事情發生前寫出來。",
-  "「有投入、沒回報」開始被主流經濟學家點名，而差別在量測點：Apollo 用 S&P 493 說利潤率與人均營收平坦；簡立峰說企業害怕會讓需求延後；鴻海是反例——它先改的是射出成型參數、排程、SMT 缺陷這三個本來就有數字的工作。同一批工具，一邊量不到回報，一邊量得到，差的通常不是模型而是「本來有沒有在量」。"
+  "AI 的成本先出現在資本支出與人事，收益出現在很後面：微軟同季資本支出年增約 7 成、自由現金流年減 23%，同時付錢請 6 萬人考慮離開；HBR 調查 600 多家美國上市公司，約四分之三投入 AI 卻還看不到股東報酬；Anthropic 則把天然氣價格與氣溫上升寫進風險因子。同一個結構：帳單先到，回報要等，中間那段落差就是用「人力調整」去補的。"
  ]
 }
