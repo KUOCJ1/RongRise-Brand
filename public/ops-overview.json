@@ -1,51 +1,51 @@
 {
-  "generatedAt": "2026-10-28T00:30:41Z",
+  "generatedAt": "2026-10-29T00:30:42Z",
   "periods": {
-    "content": "累計至 2026-10-28；近 30 天＝2026-09-28 起",
-    "health": "2026-10-01 ~ 2026-10-27（27 天）",
+    "content": "累計至 2026-10-29；近 30 天＝2026-09-29 起",
+    "health": "2026-10-01 ~ 2026-10-28（28 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-10-26（24 天）"
+    "management": "2026-10-03 ~ 2026-10-27（25 天）"
   },
   "headline": [
     {
       "key": "content",
       "label": "內容產出",
-      "value": 96,
+      "value": 97,
       "unit": "篇文章",
-      "note": "近 30 天新增 14 篇"
+      "note": "近 30 天新增 12 篇"
     },
     {
       "key": "uptime",
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "27 天 × 18 個服務，486/486 次在線"
+      "note": "28 天 × 18 個服務，504/504 次在線"
     },
     {
       "key": "incidents",
       "label": "未結事故",
       "value": 1,
       "unit": "件",
-      "note": "近 30 天 32 筆告警，涉及 23 支排程"
+      "note": "近 30 天 30 筆告警，涉及 22 支排程"
     },
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 45.1,
+      "value": 48.1,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；5/24 天達標"
+      "note": "實驗期 37.1 分；5/25 天達標"
     }
   ],
   "content": {
-    "articles": 96,
-    "articles30d": 14,
+    "articles": 97,
+    "articles30d": 12,
     "newsletters": 28,
     "videos": 40,
     "videos30d": 3,
     "igCards": 42,
-    "socialPosts": 69,
-    "scanDays": 129,
-    "competitorReports": 128,
+    "socialPosts": 70,
+    "scanDays": 130,
+    "competitorReports": 129,
     "insights": 18,
     "monthly": [
       {
@@ -374,9 +374,9 @@
     ],
     "latest": {
       "article": {
-        "title": "當 AI 在企業內產生效益的同時，也默默地拆掉組織職涯階梯的第一階",
-        "date": "2026.10.27",
-        "url": "/knowledge/ai-first-rung"
+        "title": "AI 開始自己改自己了，接下來要問的是：證據在哪裡",
+        "date": "2026-10-27",
+        "url": "/knowledge/ai-self-improvement-evidence"
       },
       "newsletter": "🦞 榕賀觀點 第 28 期 — 2026-10-26",
       "video": {
@@ -604,10 +604,18 @@
         "status": "ok",
         "disk": 84,
         "restarts": 18
+      },
+      {
+        "date": "2026-10-28",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 84,
+        "restarts": 24
       }
     ],
-    "checks": 486,
-    "online": 486,
+    "checks": 504,
+    "online": 504,
     "warningDays": 2,
     "maxDisk": 85,
     "live": [
@@ -623,48 +631,48 @@
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.16
+        "seconds": 0.15
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.44
+        "seconds": 0.41
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.13
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.08
+        "seconds": 0.23
       },
       {
         "name": "管理後台",
         "url": "https://admin.rong-rise.com/",
         "code": "401",
         "ok": true,
-        "seconds": 0.03
+        "seconds": 0.11
       }
     ],
-    "liveAt": "2026-10-28 00:30 UTC"
+    "liveAt": "2026-10-29 00:30 UTC"
   },
   "schedule": {
-    "incidents30d": 32,
-    "incidentJobs": 23,
-    "incidentDays": 14,
+    "incidents30d": 30,
+    "incidentJobs": 22,
+    "incidentDays": 13,
     "open": 1,
     "types": [
       {
         "type": "script",
-        "count": 15
+        "count": 13
       },
       {
         "type": "config",
@@ -684,8 +692,8 @@
       }
     ],
     "executions": 1001,
-    "executionsOk": 999,
-    "executionsFrom": "2026-10-27T12:30:41",
+    "executionsOk": 1000,
+    "executionsFrom": "2026-10-28T12:20:41",
     "incidents": [
       {
         "job": "a0d92a76ca47",
@@ -1008,17 +1016,17 @@
         "error": "RuntimeError: [drift_skip] Skipped to prevent unintended spend: global inference config drifted since this job"
       }
     ],
-    "jobs": 82,
-    "jobsEnabled": 75
+    "jobs": 83,
+    "jobsEnabled": 76
   },
   "management": {
-    "days": 24,
-    "medianOnline": 45.1,
+    "days": 25,
+    "medianOnline": 48.1,
     "experimentMedian": 37.1,
-    "avgOnline": 55.1,
-    "totalHours": 22.1,
-    "medianVisits": 15.0,
-    "perVisit": 3.2,
+    "avgOnline": 55.6,
+    "totalHours": 23.1,
+    "medianVisits": 15,
+    "perVisit": 3.4,
     "daysUnder30": 5,
     "daily": [
       {
@@ -1140,14 +1148,19 @@
         "date": "2026-10-26",
         "min": 68.9,
         "visits": 20
+      },
+      {
+        "date": "2026-10-27",
+        "min": 65.6,
+        "visits": 18
       }
     ]
   },
   "reach": {
-    "subscribers": 22,
+    "subscribers": 24,
     "confirmed": 16,
     "pending": 6,
-    "views": 687,
+    "views": 689,
     "channelSubscribers": 17
   }
 }
