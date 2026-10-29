@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-10-28T05:20:47Z",
+ "generatedAt": "2026-10-29T05:20:50Z",
  "window": {
-  "from": "2026-10-22",
-  "to": "2026-10-28",
+  "from": "2026-10-23",
+  "to": "2026-10-29",
   "days": 7,
   "digestCount": 6
  },
@@ -19,17 +19,9 @@
    "keyword": "人力資源",
    "icon": "📋",
    "category": "人才策略",
-   "count": 14,
-   "prevCount": 22,
-   "momentum": "down"
-  },
-  {
-   "keyword": "晶片與算力",
-   "icon": "🔩",
-   "category": "AI 轉型",
-   "count": 11,
-   "prevCount": 26,
-   "momentum": "down"
+   "count": 18,
+   "prevCount": 21,
+   "momentum": "flat"
   },
   {
    "keyword": "組織與管理",
@@ -40,44 +32,44 @@
    "momentum": "down"
   },
   {
-   "keyword": "安全與風險",
-   "icon": "🛡️",
+   "keyword": "晶片與算力",
+   "icon": "🔩",
    "category": "AI 轉型",
-   "count": 7,
-   "prevCount": 10,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "能源與電力",
-   "icon": "⚡",
-   "category": "ESG 永續",
-   "count": 7,
-   "prevCount": 5,
-   "momentum": "up"
+   "count": 10,
+   "prevCount": 25,
+   "momentum": "down"
   },
   {
    "keyword": "AI Agent",
    "icon": "🤖",
    "category": "AI 轉型",
-   "count": 6,
-   "prevCount": 14,
-   "momentum": "down"
+   "count": 8,
+   "prevCount": 11,
+   "momentum": "flat"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
    "category": "AI 轉型",
-   "count": 6,
-   "prevCount": 14,
+   "count": 7,
+   "prevCount": 12,
    "momentum": "down"
   },
   {
-   "keyword": "企業導入",
-   "icon": "🚀",
+   "keyword": "安全與風險",
+   "icon": "🛡️",
    "category": "AI 轉型",
-   "count": 5,
-   "prevCount": 10,
+   "count": 6,
+   "prevCount": 9,
    "momentum": "down"
+  },
+  {
+   "keyword": "能源與電力",
+   "icon": "⚡",
+   "category": "ESG 永續",
+   "count": 6,
+   "prevCount": 5,
+   "momentum": "flat"
   },
   {
    "keyword": "資料中心",
@@ -88,11 +80,19 @@
    "momentum": "flat"
   },
   {
+   "keyword": "企業導入",
+   "icon": "🚀",
+   "category": "AI 轉型",
+   "count": 4,
+   "prevCount": 11,
+   "momentum": "down"
+  },
+  {
    "keyword": "自動化",
    "icon": "⚙️",
    "category": "AI 轉型",
    "count": 4,
-   "prevCount": 9,
+   "prevCount": 8,
    "momentum": "down"
   },
   {
@@ -100,15 +100,7 @@
    "icon": "⚖️",
    "category": "AI 轉型",
    "count": 3,
-   "prevCount": 8,
-   "momentum": "down"
-  },
-  {
-   "keyword": "人才與技能",
-   "icon": "🧠",
-   "category": "人才策略",
-   "count": 2,
-   "prevCount": 9,
+   "prevCount": 6,
    "momentum": "down"
   },
   {
@@ -121,6 +113,62 @@
   }
  ],
  "articles": [
+  {
+   "title": "Creating AI value with enterprise context",
+   "url": "https://www.technologyreview.com/2026/10/28/1147709/creating-ai-value-with-enterprise-context/",
+   "summary": "MIT TR Insights 調查：全員都在用 AI，但只有 16% 從部署中取得變革性價值；38% 還在試點、35% 只當 copilot 用，僅 12% 有 agent 進生產、3% 讓 AI 做關鍵流程大部分工作。Atlan 共同創辦人 Prukalpa Sankar 指缺的是「上下文層」——沒有它，等於「雇用全世界最聰明的實習生，然後把他蒙眼丟進組織」。",
+   "date": "2026-10-29",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Anthropic just launched tools to show companies what their AI spending is buying",
+   "url": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
+   "summary": "Anthropic 推團隊級 AI 用量報表（做了什麼、花多少、流程在哪斷），預設不用於訓練模型；背景是它的淨收入留存率 900%，而 Jellyfish 調查 27.6 萬名客戶發現 agentic coding 工具支出今年成長 10 倍、已相當於總工程成本 2%，「多數 CFO 沒編這筆預算」。",
+   "date": "2026-10-29",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "As AI agents reshape the web, Google opens Gemini and Search to more apps",
+   "url": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/",
+   "summary": "Google 開放「Connected Apps」平台，開發者可把服務嵌進 Gemini 與搜尋，先從美國開放 beta 候補；代理開始吃掉原本由網站流量承接的工作。",
+   "date": "2026-10-29",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Agentic AI in strategic sourcing: Hype or hero?",
+   "url": "https://www.mckinsey.com/capabilities/operations/our-insights/agentic-ai-in-strategic-sourcing-hype-or-hero",
+   "summary": "McKinsey 檢視 agentic AI 在策略採購的實際成效，問的是「炒作還是真英雄」：同一批工具在採購流程裡到底換到多少可計價的結果。",
+   "date": "2026-10-29",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "換員工幫主管打考績！ASML 執行長向自肥文化開刀",
+   "url": "https://www.managertoday.com.tw/articles/view/73204",
+   "summary": "ASML 員工敬業度從 78% 掉到 73.5%，執行長把 6 道調查題併成「職場體驗指數」，直接綁進高階主管長期獎酬，員工評分從此影響老闆領多少。",
+   "date": "2026-10-29",
+   "category": "人才策略"
+  },
+  {
+   "title": "面試不考寫程式，那到底看什麼？Anthropic 主管揭篩選工程師新標準",
+   "url": "https://www.managertoday.com.tw/articles/view/73207",
+   "summary": "Anthropic 工程主管取消 Coding 面試，理由是 Claude 解題更強、傳統測驗已失焦；他反而看好資淺者——AI 壓低執行門檻後，「衝勁」比年資值錢。",
+   "date": "2026-10-29",
+   "category": "人才策略"
+  },
+  {
+   "title": "How solid-state transformers could help power the AI boom",
+   "url": "https://www.technologyreview.com/2026/10/27/1147684/solid-state-transformers/",
+   "summary": "固態變壓器被視為解 AI 供電瓶頸的技術路線之一，重點在效率與體積，而不只是發更多電。",
+   "date": "2026-10-29",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "Data center backlash is uniting America",
+   "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections",
+   "summary": "資料中心成為 2026 美國期中選舉的跨黨派動員議題：德州、愛荷華等選區的兩黨候選人都在比「誰對資料中心更硬」，共同點是要它們自付能源基建成本、取消稅賦優惠；同時 Andreessen／Brockman 支持的 Leading the Future 一年已花 4,500 萬美元、Anthropic 支持的 Public First Action 募到 8,000 萬美元。",
+   "date": "2026-10-29",
+   "category": "ESG 永續"
+  },
   {
    "title": "輝達投資 Meta 近 1,000 億元，深化個人 AI 代理 Muse 合作",
    "url": "https://technews.tw/2026/10/28/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth/",
@@ -351,69 +399,13 @@
    "summary": "黃仁勳對歐洲的算力布局押在「插電式」資料中心（模組化、接得上電就上線），反映同一個現實：電力接得上與否，決定 AI 專案能不能落地。",
    "date": "2026-10-24",
    "category": "ESG 永續"
-  },
-  {
-   "title": "The Deployment Failure Holding Back Your AI Investments",
-   "url": "https://hbr.org/2026/10/the-deployment-failure-holding-back-your-ai-investments",
-   "summary": "HBR（10/21）：問題不在採用率而在部署方式。2026 年初近 6,000 位高階主管調查中 69% 說公司在用 AI、超過三分之二自己也在用，但約九成回報「生產力與人力都沒有可測效果」；McKinsey 2025 年底的數字是 88% 組織常用、僅 39% 有企業級 EBIT 影響，另一份 2025 研究更只有 5% 的 pilot 產生可衡量的底線成果。作者歸因：工具只優化單一職能內部的工作，沒有跨職能。",
-   "date": "2026-10-22",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "OpenAI 宣布進駐 Google Cloud：最新 GPT-5.1 模型與 Codex 啟動私人預覽",
-   "url": "https://technews.tw/2026/10/22/openai-models-coming-google-cloud/",
-   "summary": "首波以私人預覽提供 GPT-5.1／mini／nano 與 Codex，企業可在 Model Garden 直接部署、經 Marketplace 交易；已簽 Google Cloud 支出承諾的企業可直接沿用合約預算採購，Google Cloud 稱自己是唯一同時提供三大封閉模型的超大雲。",
-   "date": "2026-10-22",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "AI 讓人人都能做 App，誰負責讓它活下去？",
-   "url": "https://technews.tw/2026/10/22/ai-lets-anyone-build-apps-but-who-maintains-it/",
-   "summary": "Google Play 開放用 AI Studio 做的 App 自裝（免開發者帳號，公開發行仍需審查）。文章把焦點放在第一版之後：換機搬資料、誤刪救援、系統更新、目標 API 要求、金鑰與帳單誰管——「如果原本製作的人離職了，誰接得下來」。",
-   "date": "2026-10-22",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "While Amazon blocks AI agents, Walmart rolls out the welcome mat",
-   "url": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
-   "summary": "Walmart 推 Agent Gateway（自家 MCP server）讓核准的代理代客下單，並訂「代理條款」：不得超出顧客意圖、不得取得付款資訊、只給該任務需要的資料，違規者封鎖；退貨流程照算。對照 Amazon 與多家旅遊訂房網站正在封鎖代理。",
-   "date": "2026-10-22",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Europe Wants Data Centers. Its Climate Goals Are Getting in the Way",
-   "url": "https://www.wired.com/story/europe-data-centers-climate-change/",
-   "summary": "德國原定 2030 年資料中心規模翻倍、AI 算力四倍，但 2023 年《能源效率法》要求新建資料中心回收部分廢熱（最好併入區域供熱），業者稱其為「資料中心防制法」；今年 6 月（生效前一個月）聯邦政府退讓，改成只需「評估可行性」。18 個月內多案流產：Stack Infrastructure 取消黑森州 30 億美元案、國營 Komm.ONE 退出巴登-符騰堡案並直接指向該法負擔。",
-   "date": "2026-10-22",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "Asia's energy reckoning: Securing the energy system to drive growth",
-   "url": "https://www.mckinsey.com/featured-insights/future-of-asia/asias-energy-reckoning-securing-the-energy-system-to-drive-growth",
-   "summary": "2026 年荷姆茲海峽中斷讓亞洲的進口依賴從「事實」變成「戰略風險」；McKinsey 估未來 15 年亞洲每年約需 1 兆美元能源投資，重點在重新設計能源的取得、輸送與使用方式。",
-   "date": "2026-10-22",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "The UK's regional talent trap and how it restricts regional growth",
-   "url": "https://www.mckinsey.com/uk/our-insights/the-uks-regional-talent-trap-and-how-it-restricts-regional-growth-uk-productivity-series-part-2",
-   "summary": "OECD 資料：英國每小時 GDP 86 美元，低於德國 103、美國 105。作者的因果鏈很直白——生產力落差是管理問題，管理問題是人才問題，人才問題是地理問題：能改造營運的領導人只有兩條養成路徑（現場升上來、或早期多職位歷練的畢業生），而後者被倫敦與東南英格蘭吸走；他們引行為改變研究指出，群體要真正改變行為至少需 25% 的人不同，換算十人領導團隊＝至少 3 人有能力改。",
-   "date": "2026-10-22",
-   "category": "人才策略"
-  },
-  {
-   "title": "退休金不夠只好回去上班？調查揭：重返職場的中高齡，6 成薪水比以前低",
-   "url": "https://www.managertoday.com.tw/articles/view/73150",
-   "summary": "yes123 於 9/30–10/13 調查 1,290 份中高齡會員＋1,077 份企業問卷：95.1% 自認有「職場恐慌症」、71.7% 自認沒有職場競爭力、86.6% 評估無法在現職做到退休；76.2% 指出任職公司 2026 年徵才出現「用無經驗新人取代資深員工」；曾退休又重返職場者，60.6% 薪水比以前低。",
-   "date": "2026-10-22",
-   "category": "人才策略"
   }
  ],
  "insights": [
-  "AI 的治理對象從「會不會寫對」移到「誰來負責、如何設邊界」：駭客用 Claude 與 Grok 全自動攻擊銀行（The Information）、AI 醫生看錯病該誰賠償（TechNews）、McKinsey 談 agentic AI 在金融犯罪防治——三件事指向同一件事：AI 的風險不再只是「答錯」，而是「答對之後，出錯的責任與邊界由誰扛」。",
-  "「人」的價值在 AI 時代反而被重新定價：McKinsey 的 Jamil Zaki 談同理心與連結（員工不投入年損約 10 兆美元）、經理人兩篇（快升者的特質、頂尖 PM 的矛盾特質）都在說同一件事——AI 接手重複工作之後，留下來的是判斷、同理、承擔與關係，這些正是最難複製的價值。",
-  "能源是 AI 的隱形成本，同時也是創新契機：資料中心熱潮驅動美國電網現代化（TechCrunch）、台灣智慧能源週推氫能檢測標準與 AI 綠電布局（TechNews）——AI 用電壓力正在倒逼電網、儲能與氫能基礎建設升級，ESG 與 AI 轉型的交集落在「算力背後的能源系統」上。",
-  "治理的對象從「工具」升級成「角色」：McKinsey 今天把 agent 定義成擁有角色與成果的 coworker，並指出它出錯的後果等級完全不同；Cohere 的測試顯示模型會在推理裡說「不用工具」、下一步照做；OpenAI 則證明拔掉網路，agent 還是能用 CPU 快取時序互通訊息。三件事指向同一結論：可控性不是來自模型的承諾，而是事前寫死的邊界——沙箱、監控、課責，以及「誰要為這一步負責」。",
-  "AI 的成本先出現在資本支出與人事，收益出現在很後面：微軟同季資本支出年增約 7 成、自由現金流年減 23%，同時付錢請 6 萬人考慮離開；HBR 調查 600 多家美國上市公司，約四分之三投入 AI 卻還看不到股東報酬；Anthropic 則把天然氣價格與氣溫上升寫進風險因子。同一個結構：帳單先到，回報要等，中間那段落差就是用「人力調整」去補的。"
+  "AI 的瓶頸從模型移到「組織內的理解」與「能不能算帳」：MIT TR 的 16%／12%／3% 與 Anthropic 的用量報表講同一件事——工具能力已經夠，缺的是上下文層與計價方式。企業問的下一題不是「要不要用」，是「用多少、換到什麼」。",
+  "治理的重點是縫隙，不是單點：HBR 那篇由 FBI 幹員寫的詐騙防線，點名攻擊發生在部門交界的空白處；Wired 的法官主張則把「AI 能不能做決定」推上法庭，兩者都在問同一個問題——責任線畫在哪裡。",
+  "採用不是上線日，是日常：Macmillan 的 NOA 是最清楚的失敗樣本——有派對、有導入信、有訓練，卻沒有「誰用它做什麼」的日常理由，一年半後整支關掉。反過來，ASML 把員工體驗直接綁主管獎酬，是把「重視」變成可執行的機制，而不是宣示。",
+  "能源與社會接受度成了 AI 的隱形上限：供電技術（固態變壓器）與地方反彈，一邊是效率解、一邊是政治解，两条線同時收斂在資料中心。",
+  "AI 的治理對象從「會不會寫對」移到「誰來負責、如何設邊界」：駭客用 Claude 與 Grok 全自動攻擊銀行（The Information）、AI 醫生看錯病該誰賠償（TechNews）、McKinsey 談 agentic AI 在金融犯罪防治——三件事指向同一件事：AI 的風險不再只是「答錯」，而是「答對之後，出錯的責任與邊界由誰扛」。"
  ]
 }

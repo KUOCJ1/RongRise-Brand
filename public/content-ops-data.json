@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-10-28T05:20:47Z",
+ "generatedAt": "2026-10-29T05:20:47Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 151
+  "daysRunning": 152
  },
  "stats": {
-  "scanDays": 130,
+  "scanDays": 131,
   "weekArticles": 41,
   "articles": 97,
   "newsItems": 59,
@@ -17,16 +17,11 @@
   "views": 689,
   "channelSubscribers": 17,
   "insights": 18,
-  "socialPosts": 70,
+  "socialPosts": 71,
   "igCards": 42,
-  "competitorReports": 129
+  "competitorReports": 130
  },
  "activity": [
-  {
-   "date": "2026-10-22",
-   "count": 8,
-   "topics": []
-  },
   {
    "date": "2026-10-23",
    "count": 0,
@@ -56,6 +51,11 @@
    "date": "2026-10-28",
    "count": 7,
    "topics": []
+  },
+  {
+   "date": "2026-10-29",
+   "count": 8,
+   "topics": []
   }
  ],
  "latest": {
@@ -74,15 +74,15 @@
  },
  "trends": [
   {
-   "keyword": "晶片與算力",
-   "icon": "🔩",
-   "count": 15,
-   "momentum": "down"
-  },
-  {
    "keyword": "人力資源",
    "icon": "📋",
    "count": 14,
+   "momentum": "down"
+  },
+  {
+   "keyword": "晶片與算力",
+   "icon": "🔩",
+   "count": 11,
    "momentum": "down"
   },
   {
@@ -94,14 +94,14 @@
   {
    "keyword": "安全與風險",
    "icon": "🛡️",
-   "count": 8,
+   "count": 7,
    "momentum": "flat"
   },
   {
-   "keyword": "企業導入",
-   "icon": "🚀",
-   "count": 6,
-   "momentum": "down"
+   "keyword": "能源與電力",
+   "icon": "⚡",
+   "count": 7,
+   "momentum": "up"
   }
  ]
 }
