@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n60",
+      "date": "2026-10-29",
+      "category": "資源",
+      "title": "你餵 AI 什麼，它就長成什麼：腦腐不可逆，乾淨輸入成了新護城河",
+      "summary": "德州農工把垃圾內容餵給 AI，餵到全垃圾時，原本拒絕教人散播謠言的模型開始主動給做法，重訓也救不回來。乾淨輸入，成了下一條護城河。",
+      "link": "/knowledge/clean-input-ai-moat",
+      "isNew": true
+    },
+    {
       "id": "n59",
       "date": "2026-10-27",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "後台紀錄 1：一天 37 分鐘的管理窗口，出了 7 件錯",
       "summary": "公開實驗後台紀錄第二篇：13 天、169 次服務檢查全部在線，卻出了 7 件錯。機器撐住了，判斷沒有。",
       "link": "/knowledge/camino-operation-backstage",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n56",

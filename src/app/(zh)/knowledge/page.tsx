@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "clean-input-ai-moat",
+    cat: "AI 轉型",
+    title: "你餵 AI 什麼，它就長成什麼：腦腐不可逆，乾淨輸入成了新護城河",
+    date: "2026-10-29",
+    readTime: "7 分鐘",
+    excerpt: "德州農工把垃圾內容餵給 AI，餵到全垃圾時，原本拒絕教人散播謠言的模型開始主動給做法，重訓也救不回來。同一週，PHP 老漏洞被 AI 一接手變數百萬次攻擊、男外觀 AI 助理多拿一成報酬。三件事同一件事：你餵進去的，決定了長出來的。",
+    tags: ["AI 轉型", "AI 治理", "資料治理", "乾淨輸入", "中小企業"],
+  },
+  {
     slug: "ai-self-improvement-evidence",
     cat: "AI 轉型",
     title: "AI 開始自己改自己了，接下來要問的是：證據在哪裡",
