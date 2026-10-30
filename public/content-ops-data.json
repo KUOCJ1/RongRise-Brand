@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-10-29T05:20:47Z",
+ "generatedAt": "2026-10-30T05:21:31Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 152
+  "daysRunning": 153
  },
  "stats": {
-  "scanDays": 131,
-  "weekArticles": 41,
-  "articles": 97,
-  "newsItems": 59,
-  "newsletterIssues": 28,
-  "subscribers": 24,
+  "scanDays": 132,
+  "weekArticles": 50,
+  "articles": 98,
+  "newsItems": 60,
+  "newsletterIssues": 29,
+  "subscribers": 22,
   "confirmedSubscribers": 16,
   "videos": 40,
   "views": 689,
   "channelSubscribers": 17,
   "insights": 18,
-  "socialPosts": 71,
-  "igCards": 42,
-  "competitorReports": 130
+  "socialPosts": 72,
+  "igCards": 43,
+  "competitorReports": 131
  },
  "activity": [
-  {
-   "date": "2026-10-23",
-   "count": 0,
-   "topics": []
-  },
   {
    "date": "2026-10-24",
    "count": 8,
@@ -56,15 +51,20 @@
    "date": "2026-10-29",
    "count": 8,
    "topics": []
+  },
+  {
+   "date": "2026-10-30",
+   "count": 9,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "AI 開始自己改自己了，接下來要問的是：證據在哪裡",
-   "date": "2026-10-27",
-   "url": "/knowledge/ai-self-improvement-evidence"
+   "title": "你餵 AI 什麼，它就長成什麼：腦腐不可逆，乾淨輸入成了新護城河",
+   "date": "2026-10-29",
+   "url": "/knowledge/clean-input-ai-moat"
   },
-  "newsletter": "🦞 榕賀觀點 第 28 期 — 2026-10-26",
+  "newsletter": "🦞 榕賀觀點 第 29 期 — 2026-10-29",
   "video": {
    "title": "拿掉 AI 之後，只有老手真的進步：MIT 實驗揭開的判斷力斷代",
    "date": "2026-10-21",
@@ -76,32 +76,32 @@
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 14,
-   "momentum": "down"
-  },
-  {
-   "keyword": "晶片與算力",
-   "icon": "🔩",
-   "count": 11,
-   "momentum": "down"
+   "count": 21,
+   "momentum": "flat"
   },
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 11,
-   "momentum": "down"
-  },
-  {
-   "keyword": "安全與風險",
-   "icon": "🛡️",
-   "count": 7,
+   "count": 16,
    "momentum": "flat"
   },
   {
-   "keyword": "能源與電力",
-   "icon": "⚡",
-   "count": 7,
-   "momentum": "up"
+   "keyword": "晶片與算力",
+   "icon": "🔩",
+   "count": 12,
+   "momentum": "down"
+  },
+  {
+   "keyword": "AI Agent",
+   "icon": "🤖",
+   "count": 9,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "企業導入",
+   "icon": "🚀",
+   "count": 8,
+   "momentum": "flat"
   }
  ]
 }

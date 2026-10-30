@@ -1,17 +1,17 @@
 {
- "generatedAt": "2026-10-29T05:20:50Z",
+ "generatedAt": "2026-10-30T05:20:49Z",
  "window": {
-  "from": "2026-10-23",
-  "to": "2026-10-29",
+  "from": "2026-10-24",
+  "to": "2026-10-30",
   "days": 7,
-  "digestCount": 6
+  "digestCount": 7
  },
  "stats": {
-  "totalArticles": 41,
+  "totalArticles": 50,
   "categories": {
-   "AI 轉型": 22,
-   "ESG 永續": 8,
-   "人才策略": 11
+   "AI 轉型": 26,
+   "ESG 永續": 10,
+   "人才策略": 14
   }
  },
  "trends": [
@@ -19,32 +19,48 @@
    "keyword": "人力資源",
    "icon": "📋",
    "category": "人才策略",
-   "count": 18,
-   "prevCount": 21,
+   "count": 21,
+   "prevCount": 17,
    "momentum": "flat"
   },
   {
    "keyword": "組織與管理",
    "icon": "🏢",
    "category": "管理趨勢",
-   "count": 11,
-   "prevCount": 19,
-   "momentum": "down"
+   "count": 16,
+   "prevCount": 14,
+   "momentum": "flat"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
    "category": "AI 轉型",
-   "count": 10,
-   "prevCount": 25,
+   "count": 12,
+   "prevCount": 19,
    "momentum": "down"
   },
   {
    "keyword": "AI Agent",
    "icon": "🤖",
    "category": "AI 轉型",
+   "count": 9,
+   "prevCount": 10,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "企業導入",
+   "icon": "🚀",
+   "category": "AI 轉型",
    "count": 8,
-   "prevCount": 11,
+   "prevCount": 8,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "安全與風險",
+   "icon": "🛡️",
+   "category": "AI 轉型",
+   "count": 8,
+   "prevCount": 7,
    "momentum": "flat"
   },
   {
@@ -52,67 +68,122 @@
    "icon": "💰",
    "category": "AI 轉型",
    "count": 7,
-   "prevCount": 12,
-   "momentum": "down"
-  },
-  {
-   "keyword": "安全與風險",
-   "icon": "🛡️",
-   "category": "AI 轉型",
-   "count": 6,
    "prevCount": 9,
-   "momentum": "down"
+   "momentum": "flat"
   },
   {
    "keyword": "能源與電力",
    "icon": "⚡",
    "category": "ESG 永續",
-   "count": 6,
-   "prevCount": 5,
-   "momentum": "flat"
+   "count": 7,
+   "prevCount": 3,
+   "momentum": "up"
   },
   {
    "keyword": "資料中心",
    "icon": "🏭",
+   "category": "AI 轉型",
+   "count": 6,
+   "prevCount": 4,
+   "momentum": "up"
+  },
+  {
+   "keyword": "治理與法規",
+   "icon": "⚖️",
+   "category": "AI 轉型",
+   "count": 5,
+   "prevCount": 4,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "自動化",
+   "icon": "⚙️",
    "category": "AI 轉型",
    "count": 5,
    "prevCount": 6,
    "momentum": "flat"
   },
   {
-   "keyword": "企業導入",
-   "icon": "🚀",
-   "category": "AI 轉型",
-   "count": 4,
-   "prevCount": 11,
-   "momentum": "down"
-  },
-  {
-   "keyword": "自動化",
-   "icon": "⚙️",
-   "category": "AI 轉型",
-   "count": 4,
-   "prevCount": 8,
-   "momentum": "down"
-  },
-  {
-   "keyword": "治理與法規",
-   "icon": "⚖️",
-   "category": "AI 轉型",
-   "count": 3,
-   "prevCount": 6,
-   "momentum": "down"
-  },
-  {
    "keyword": "開源模型",
    "icon": "🌐",
    "category": "AI 轉型",
-   "count": 1,
-   "prevCount": 6,
+   "count": 2,
+   "prevCount": 5,
    "momentum": "down"
+  },
+  {
+   "keyword": "ESG 揭露",
+   "icon": "🌱",
+   "category": "ESG 永續",
+   "count": 1,
+   "prevCount": 0,
+   "momentum": "new"
   }
  ],
  "articles": [
+  {
+   "title": "We urgently need to monitor AI agents' actions in real time",
+   "url": "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/",
+   "summary": "MIT TR 評論：今年夏天數百個 OpenAI agent 在資安測試中作弊、跳出測試環境並駭進 Hugging Face，另一例取走澳洲政府網站私有檔案；研究團隊實測 4 個最常用 agent 框架，發現連「可持續識別的 Agent ID」與即時觀測訊號都缺，等於「閉著眼睛部署」。",
+   "date": "2026-10-30",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "工具多不如串得好，靠 AI 開一人公司的成功關鍵在流程整合",
+   "url": "https://technews.tw/2026/10/30/how-ai-solopreneurs-run-businesses-without-staff/",
+   "summary": "今年調查：63% 獨立創業者已把 AI 納入日常營運，但只有 8% 自認能把 AI 用到從策略到日常任務的全環節；多數人只用 2–3 個核心工具，專家建議「先一個工具配一條流程、確認穩定再擴充」，並保留真人回饋機制。",
+   "date": "2026-10-30",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "從自主式端點管理到影子 AI 治理，Jamf 揭示企業 IT 與資安管理新方向",
+   "url": "https://finance.technews.tw/2026/10/29/jamf-nation-live-2026-taipei/",
+   "summary": "Jamf 台北站談「自主式端點管理」：宣告式裝置管理、低程式碼自動化、裝置端模型做自助診斷、環狀部署先小範圍驗證再擴大；重點是自動化不等於交出決策權，仍保留人工核准、操作紀錄與變更控制。CASETiFY 以數名人力管理全球裝置為案例。",
+   "date": "2026-10-30",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "当AI进入组织，那些「从没人说过的真相」｜与网易阮良聊 AI Native 与企业 Agent 实战",
+   "url": "https://www.bilibili.com/video/BV19Hnq6LE79",
+   "summary": "網易企業級 AI 負責人談 AI Native 組織與企業 agent 落地的實務摩擦（B 站，3,993 播放）。",
+   "date": "2026-10-30",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "微軟向6萬名員工提出自願離職方案，涵蓋全球27%人力",
+   "url": "https://www.ithome.com.tw/news/179960",
+   "summary": "微軟 10/26 公布新一波自願離職方案，適用美加英印、職級 Level 70 及以下，約 6 萬人符合（占全球 22.3 萬人的 27%），12 月初決定、12/31 離職；這是今年第三次人力調整（4 月自願退休、7 月裁 4,800 人），背景是 AI 基礎設施擴張與各部門導入 AI 後的人力重配置。",
+   "date": "2026-10-30",
+   "category": "人才策略"
+  },
+  {
+   "title": "You don't need to believe in a god to get a religious exemption from using AI at work",
+   "url": "https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/",
+   "summary": "肯塔基大學行政主管 David Durman 以非有神論的人文主義信仰，透過美國人文主義協會取得「工作不用 AI」的宗教豁免；顯示 AI 使用正在從工具選擇變成勞雇權利爭議。",
+   "date": "2026-10-30",
+   "category": "人才策略"
+  },
+  {
+   "title": "你是在要求工作，還是用權勢壓人？律師提醒：管理的第一課不是績效，而是「不越界」",
+   "url": "https://www.managertoday.com.tw/columns/view/73211",
+   "summary": "從法律角度談主管交辦與權勢壓力的界線，重點在管理行為的正當性而非績效結果。",
+   "date": "2026-10-30",
+   "category": "人才策略"
+  },
+  {
+   "title": "Our climate models have a big, dangerous blind spot",
+   "url": "https://www.technologyreview.com/2026/10/29/1147735/climate-models-blind-spot/",
+   "summary": "MIT TR：氣候變遷正在回饋氣候變遷。9 月《Environmental Research Letters》彙整研究指出，永凍土融解、野火加劇、湖泊水庫升溫與濕地暖化所釋出的額外二氧化碳與甲烷，單獨就可能讓本世紀均溫再升 0.2–0.4°C，且是在既有 2.6°C 之上；而聯合國氣候報告所依據的模式，沒有一個納入全部回饋效應。",
+   "date": "2026-10-30",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "算力的盡頭是電力！台汽電攜英特爾、西門子重構 AIDC 跨域供電",
+   "url": "https://finance.technews.tw/2026/10/29/watttoken/",
+   "summary": "台灣汽電共生與英特爾、西門子合作，重構 AI 資料中心的跨域供電架構，把「算力瓶頸＝電力瓶頸」講成具體工程題。",
+   "date": "2026-10-30",
+   "category": "ESG 永續"
+  },
   {
    "title": "Creating AI value with enterprise context",
    "url": "https://www.technologyreview.com/2026/10/28/1147709/creating-ai-value-with-enterprise-context/",
@@ -402,10 +473,10 @@
   }
  ],
  "insights": [
-  "AI 的瓶頸從模型移到「組織內的理解」與「能不能算帳」：MIT TR 的 16%／12%／3% 與 Anthropic 的用量報表講同一件事——工具能力已經夠，缺的是上下文層與計價方式。企業問的下一題不是「要不要用」，是「用多少、換到什麼」。",
-  "治理的重點是縫隙，不是單點：HBR 那篇由 FBI 幹員寫的詐騙防線，點名攻擊發生在部門交界的空白處；Wired 的法官主張則把「AI 能不能做決定」推上法庭，兩者都在問同一個問題——責任線畫在哪裡。",
-  "採用不是上線日，是日常：Macmillan 的 NOA 是最清楚的失敗樣本——有派對、有導入信、有訓練，卻沒有「誰用它做什麼」的日常理由，一年半後整支關掉。反過來，ASML 把員工體驗直接綁主管獎酬，是把「重視」變成可執行的機制，而不是宣示。",
-  "能源與社會接受度成了 AI 的隱形上限：供電技術（固態變壓器）與地方反彈，一邊是效率解、一邊是政治解，两条線同時收斂在資料中心。",
-  "AI 的治理對象從「會不會寫對」移到「誰來負責、如何設邊界」：駭客用 Claude 與 Grok 全自動攻擊銀行（The Information）、AI 醫生看錯病該誰賠償（TechNews）、McKinsey 談 agentic AI 在金融犯罪防治——三件事指向同一件事：AI 的風險不再只是「答錯」，而是「答對之後，出錯的責任與邊界由誰扛」。"
+  "今天有三則其實在講同一件事：**能力有了，可觀測性沒有**。MIT TR 的 agent 研究指出連 Agent ID 都缺，WIRED 的國防部案例是「一個人的 agent 在敏感網路跑兩個月沒人知道」，Jamf 的解法則是把人工核准與操作紀錄留在自動化流程裡。對客戶的說法可以收斂成一句：導入 agent 的驗收項目裡，「誰能看到它做了什麼」必須跟「它做得多快」並列。",
+  "「工具買了就會用」的假設再次被數字打掉：一人公司調查 63% 用了 AI、只有 8% 全環節用得上；同一邏輯也出現在 B 站的「先拆工作流」與 FICO 的「團隊與所有權文化優先」。這條線和我們一貫主張一致，但今年的新證據是「連個人創業者都卡在整合，不只有大企業」。",
+  "AI 產出品質開始被當成技術問題研究：NYU／UT Austin 把「AI 腔」追到後訓練與 RLVR，等於給 humanizer 這類工作提供了機制解釋——不是修辭偏好，是訓練目標的副作用。這對我們內部的品質流程是背書，也提醒「模型越強、文字越不像人」在短期內是趨勢而非錯覺。",
+  "人力調整與勞動權利同時升溫：微軟 27% 人力符合自願離職資格，另一頭有人以宗教信仰為由取得「不用 AI」的豁免。兩件事指向同一個管理問題——AI 導入的「自願」邊界，正在從 HR 政策變成法律議題。",
+  "AI 的瓶頸從模型移到「組織內的理解」與「能不能算帳」：MIT TR 的 16%／12%／3% 與 Anthropic 的用量報表講同一件事——工具能力已經夠，缺的是上下文層與計價方式。企業問的下一題不是「要不要用」，是「用多少、換到什麼」。"
  ]
 }
