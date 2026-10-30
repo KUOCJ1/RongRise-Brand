@@ -1,4 +1,786 @@
 {
+  "clean-input-ai-moat": [
+    {
+      "slug": "ai-incident-notification-gap-2026-09-29",
+      "title": "AI 事故通報缺口：事故最貴的一段，是沒人通報的那段時間",
+      "category": "國際視野",
+      "excerpt": "**來源：** W40 週報（2026-09-22 ～ 09-28）＋ 自家文章〈澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報〉 **日期：** 20",
+      "url": "https://brain.rong-rise.com/brain/ai-incident-notification-gap-2026-09-29/"
+    },
+    {
+      "slug": "ai-jhzne0",
+      "title": "AI 轉型實戰營核心筆記",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
+      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
+    },
+    {
+      "slug": "ai-agents-sustainable-sme-esg",
+      "title": "AI Agents for Sustainable SMEs: A Green ESG Assessment Framework",
+      "category": "技術深讀",
+      "excerpt": "**作者：** Viet Trinh, Tan Nguyen, Minh-Huyen Phan, Quan Luu **發表：** 2026-04-05（原文日",
+      "url": "https://brain.rong-rise.com/brain/ai-agents-sustainable-sme-esg/"
+    }
+  ],
+  "ai-self-improvement-evidence": [
+    {
+      "slug": "ai-incident-notification-gap-2026-09-29",
+      "title": "AI 事故通報缺口：事故最貴的一段，是沒人通報的那段時間",
+      "category": "國際視野",
+      "excerpt": "**來源：** W40 週報（2026-09-22 ～ 09-28）＋ 自家文章〈澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報〉 **日期：** 20",
+      "url": "https://brain.rong-rise.com/brain/ai-incident-notification-gap-2026-09-29/"
+    },
+    {
+      "slug": "ai-jhzne0",
+      "title": "AI 轉型實戰營核心筆記",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
+      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
+    },
+    {
+      "slug": "arxiv-digital-labor-factor-of-production",
+      "title": "Evolving the Productivity Equation: Should Digital Labor Be Considered a New Factor of Production?",
+      "category": "技術深讀",
+      "excerpt": "**作者：** Alex Farach, Alexia Cambon, Jared Spataro **發表：** 2025-05-14  ## 摘要 傳統生產",
+      "url": "https://brain.rong-rise.com/brain/arxiv-digital-labor-factor-of-production/"
+    }
+  ],
+  "ai-first-rung": [
+    {
+      "slug": "mckinsey-three-horizons-ai-transformation",
+      "title": "McKinsey：從採用到影響——AI 轉型的三層視野",
+      "category": "國際視野",
+      "excerpt": "# McKinsey：AI 轉型的三層視野——enablement → automation → reinvention  **來源：** McKinsey Q",
+      "url": "https://brain.rong-rise.com/brain/mckinsey-three-horizons-ai-transformation/"
+    },
+    {
+      "slug": "5-g4le91",
+      "title": "企業消滅摩擦的5大戰略",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> AI 是這個世代的馬鐙與弩，解放了雙手，但也唯有願意重新設計系統的企業才能在加速曲線上勝出。  ## 📌 核心命題  技術躍遷的紅利從不雨露均霑。新秩序來臨",
+      "url": "https://brain.rong-rise.com/brain/5-g4le91/"
+    },
+    {
+      "slug": "arxiv-privacy-workforce-ai-governance-2026-10",
+      "title": "誰在治理 AI 時代的資料？美國隱私職能的徵才分析",
+      "category": "技術深讀",
+      "excerpt": "# 誰在治理 AI 時代的資料？美國隱私職能的徵才分析  **來源：** arXiv（2609.32030，Ramazan Yener 等） **日期：** 2",
+      "url": "https://brain.rong-rise.com/brain/arxiv-privacy-workforce-ai-governance-2026-10/"
+    }
+  ],
+  "camino-operation-poc": [
+    {
+      "slug": "anthropic-2026-10-16-6mmtmv",
+      "title": "Anthropic 內部研究：AI 如何改變一家 AI 公司的工作與雇用",
+      "category": "技術深讀",
+      "excerpt": "# 一句話  前沿 AI 公司自己公布的內部數據：當 agent 工時超過人類 6 倍，**人類注意力成為唯一瓶頸**，工作內容從「做事」轉為「管理 agent",
+      "url": "https://brain.rong-rise.com/brain/anthropic-2026-10-16-6mmtmv/"
+    },
+    {
+      "slug": "gartner-agentic-ai-saas-risk",
+      "title": "Gartner：Agentic AI 將威脅 $2,340 億企業軟體支出——Saaspocalypse 重定義",
+      "category": "國際視野",
+      "excerpt": "# Gartner：$2,340 億企業軟體支出面臨 Agentic AI 威脅  **來源：** Gartner Press Release **日期：** ",
+      "url": "https://brain.rong-rise.com/brain/gartner-agentic-ai-saas-risk/"
+    },
+    {
+      "slug": "ai-jhzne0",
+      "title": "AI 轉型實戰營核心筆記",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
+      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
+    }
+  ],
+  "ai-capital-depreciation-bill": [
+    {
+      "slug": "ai-jhzne0",
+      "title": "AI 轉型實戰營核心筆記",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
+      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
+    },
+    {
+      "slug": "stratechery-script-for-zuckerberg-2026",
+      "title": "A Script for Mark Zuckerberg（給祖克柏的「劇本」：Meta 的 AI 資本支出辯護）",
+      "category": "國際視野",
+      "excerpt": "**來源：** Stratechery（Ben Thompson） **原文日期：** 2026-07-07  ## 中文摘要 Ben Thompson 以「替",
+      "url": "https://brain.rong-rise.com/brain/stratechery-script-for-zuckerberg-2026/"
+    },
+    {
+      "slug": "mckinsey-agentic-economics-operating-model-2026-07",
+      "title": "這個 AI 代理值得嗎？代理經濟學與現代營運模式（McKinsey）",
+      "category": "國際視野",
+      "excerpt": "# 這個 AI 代理值得嗎？代理經濟學與現代營運模式（McKinsey）  **來源：** McKinsey Quarterly〈Is that AI agen",
+      "url": "https://brain.rong-rise.com/brain/mckinsey-agentic-economics-operating-model-2026-07/"
+    }
+  ],
+  "ai-judgment-generation-gap": [
+    {
+      "slug": "ai-jhzne0",
+      "title": "AI 轉型實戰營核心筆記",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
+      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
+    },
+    {
+      "slug": "a-6y88h3",
+      "title": "納瓦爾寶典（The Almanack of Naval Ravikant）",
+      "category": "好書推薦",
+      "excerpt": "> **來源：** 2026-08-04 Podcast 聽到後收集整理 > **作者：** Naval Ravikant（編纂：Eric Jorgenson，",
+      "url": "https://brain.rong-rise.com/brain/a-6y88h3/"
+    },
+    {
+      "slug": "a-9k1vc1",
+      "title": "納瓦爾寶典碰撞：槓桿、判斷力與欲望契約的管理應用",
+      "category": "管理心理學",
+      "excerpt": "> **來源：** 2026-08-04 聽 Podcast 後整理，與 納瓦爾寶典 知識筆記配套。 > **碰撞方法：** 現象 → 管理理論視角 → 心理學",
+      "url": "https://brain.rong-rise.com/brain/a-9k1vc1/"
+    }
+  ],
+  "ai-agent-liability-transfer": [
+    {
+      "slug": "ai-incident-notification-gap-2026-09-29",
+      "title": "AI 事故通報缺口：事故最貴的一段，是沒人通報的那段時間",
+      "category": "國際視野",
+      "excerpt": "**來源：** W40 週報（2026-09-22 ～ 09-28）＋ 自家文章〈澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報〉 **日期：** 20",
+      "url": "https://brain.rong-rise.com/brain/ai-incident-notification-gap-2026-09-29/"
+    },
+    {
+      "slug": "anthropic-project-swap-agents-trade-2026-09",
+      "title": "Project Swap：當代理替我們上談判桌——模型比指令更決定結果",
+      "category": "國際視野",
+      "excerpt": "# Project Swap：當代理替我們上談判桌——模型比指令更決定結果  **來源：** Anthropic〈Project Swap: What happ",
+      "url": "https://brain.rong-rise.com/brain/anthropic-project-swap-agents-trade-2026-09/"
+    },
+    {
+      "slug": "ai-agent-unplug-time-framework-2026-10",
+      "title": "拔線時間：AI 代理治理從規範層退守到架構層",
+      "category": "國際視野",
+      "excerpt": "# 拔線時間：AI 代理治理從規範層退守到架構層  **對應官網文章：**〈連做模型的公司都說控制不住：AI 代理的安全，要從「它會拒絕」改成「它碰不到」〉（2",
+      "url": "https://brain.rong-rise.com/brain/ai-agent-unplug-time-framework-2026-10/"
+    }
+  ],
+  "ai-agent-unplug-time": [
+    {
+      "slug": "ai-incident-notification-gap-2026-09-29",
+      "title": "AI 事故通報缺口：事故最貴的一段，是沒人通報的那段時間",
+      "category": "國際視野",
+      "excerpt": "**來源：** W40 週報（2026-09-22 ～ 09-28）＋ 自家文章〈澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報〉 **日期：** 20",
+      "url": "https://brain.rong-rise.com/brain/ai-incident-notification-gap-2026-09-29/"
+    },
+    {
+      "slug": "ai-agent-unplug-time-framework-2026-10",
+      "title": "拔線時間：AI 代理治理從規範層退守到架構層",
+      "category": "國際視野",
+      "excerpt": "# 拔線時間：AI 代理治理從規範層退守到架構層  **對應官網文章：**〈連做模型的公司都說控制不住：AI 代理的安全，要從「它會拒絕」改成「它碰不到」〉（2",
+      "url": "https://brain.rong-rise.com/brain/ai-agent-unplug-time-framework-2026-10/"
+    },
+    {
+      "slug": "ai-jhzne0",
+      "title": "AI 轉型實戰營核心筆記",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
+      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
+    }
+  ],
+  "ai-operation-experiment": [
+    {
+      "slug": "ai-incident-notification-gap-2026-09-29",
+      "title": "AI 事故通報缺口：事故最貴的一段，是沒人通報的那段時間",
+      "category": "國際視野",
+      "excerpt": "**來源：** W40 週報（2026-09-22 ～ 09-28）＋ 自家文章〈澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報〉 **日期：** 20",
+      "url": "https://brain.rong-rise.com/brain/ai-incident-notification-gap-2026-09-29/"
+    },
+    {
+      "slug": "2026-10-ssgnon",
+      "title": "AI 代理的「資格」由第三人畫線：責任移轉（2026-10-13 起）",
+      "category": "國際視野",
+      "excerpt": "# AI 代理的「資格」由第三人畫線：責任移轉（2026-10-13 起）  > 整理日 2026-10-15 ｜ 對應官網文章：`ai-agent-liabi",
+      "url": "https://brain.rong-rise.com/brain/2026-10-ssgnon/"
+    },
+    {
+      "slug": "x-2026-09-13-7ez21",
+      "title": "強制連結：年輪 × 勞工再培訓實證回顧（2026-09-13）",
+      "category": "異質輸入",
+      "excerpt": "# 強制連結：年輪 × 勞工再培訓實證回顧  > 抽中詞彙：**年輪**（Bridge Words #25）｜配對筆記：國際視野/anthropic-worke",
+      "url": "https://brain.rong-rise.com/brain/x-2026-09-13-7ez21/"
+    }
+  ],
+  "getty-images-scarcity-ledger": [
+    {
+      "slug": "getty-7u75dy",
+      "title": "稀缺性對帳：當生成成本每年便宜 13 倍，被拆掉的是收費的那一段",
+      "category": "國際視野",
+      "excerpt": "**來源：** W41 週報趨勢 4（成本崩塌 → 商業模式被對帳）＋ 自家文章〈營收創新高，卻被交易所除牌：Getty Images 的圖庫生意被 AI 拆了",
+      "url": "https://brain.rong-rise.com/brain/getty-7u75dy/"
+    },
+    {
+      "slug": "ai-jhzne0",
+      "title": "AI 轉型實戰營核心筆記",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
+      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
+    },
+    {
+      "slug": "arxiv-workforce-readiness-smart-manufacturing",
+      "title": "智慧製造的「勞動力就緒度」框架：把 TRL 改寫成九級能力階梯",
+      "category": "技術深讀",
+      "excerpt": "# 智慧製造的「勞動力就緒度」框架：把 TRL 改寫成九級能力階梯  **來源：** arXiv 2608.11540v1（eess.SY / cs.AI / ",
+      "url": "https://brain.rong-rise.com/brain/arxiv-workforce-readiness-smart-manufacturing/"
+    }
+  ],
+  "ai-workforce-four-groups": [
+    {
+      "slug": "pwcai-2026-09-kg9vpo",
+      "title": "PwC 全球勞動力調查：AI 把員工分成四個技能落差族群",
+      "category": "人才策略",
+      "excerpt": "# PwC 全球勞動力調查：AI 把員工分成四個技能落差族群  **來源：** PwC《2026 年全球勞動力希望與恐懼調查》（2026-09-29 公布，5–",
+      "url": "https://brain.rong-rise.com/brain/pwcai-2026-09-kg9vpo/"
+    },
+    {
+      "slug": "gartner-people-centric-ai-talent-2026",
+      "title": "Gartner：2027 年前，五成缺「以人為本 AI 策略」的企業會流失頂尖 AI 人才",
+      "category": "國際視野",
+      "excerpt": "# Gartner：2027 年前，五成缺「以人為本 AI 策略」的企業會流失頂尖 AI 人才  **來源：** Gartner 新聞稿（2026-05-13）",
+      "url": "https://brain.rong-rise.com/brain/gartner-people-centric-ai-talent-2026/"
+    },
+    {
+      "slug": "ai-hbr2026-09-23-71u6hf",
+      "title": "AI 時代的績效管理：三層衡量框架（HBR 2026-09-23）",
+      "category": "人才策略",
+      "excerpt": "# AI 時代的績效管理：三層衡量框架  > **來源**：蘭迪．畢恩（Randy Bean）、艾瑞克．史特勞斯（Erik Strauss）、蘭迪普．辛格（Ra",
+      "url": "https://brain.rong-rise.com/brain/ai-hbr2026-09-23-71u6hf/"
+    }
+  ],
+  "coordination-tax": [
+    {
+      "slug": "coordination-tax-2026-10-01",
+      "title": "協調稅：公司最貴的成本，是流程圖箭頭上的等待",
+      "category": "國際視野",
+      "excerpt": "**來源：** 麥肯錫〈Cutting the 'coordination tax': How agentic AI can reshape workflows",
+      "url": "https://brain.rong-rise.com/brain/coordination-tax-2026-10-01/"
+    },
+    {
+      "slug": "ai-jhzne0",
+      "title": "AI 轉型實戰營核心筆記",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
+      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
+    },
+    {
+      "slug": "ai-vb4jq5",
+      "title": "AI 成本結構轉移：從「買工具」到「養流程」",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "# AI 成本結構轉移：從「買工具」到「養流程」  **來源：** 榕賀觀點第 20 期（2026-09-24）深讀，數據引麥肯錫／經理人 2026-09-21",
+      "url": "https://brain.rong-rise.com/brain/ai-vb4jq5/"
+    }
+  ],
+  "ai-incident-notification-gap": [
+    {
+      "slug": "ai-jhzne0",
+      "title": "AI 轉型實戰營核心筆記",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
+      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
+    },
+    {
+      "slug": "anthropic-project-vend-phase-2",
+      "title": "Project Vend Phase Two（Project Vend 第二階段：AI 店員的進化與局限）",
+      "category": "國際視野",
+      "excerpt": "**來源：** Anthropic Research **原文日期：** 2025-12-18  ## 中文摘要  Anthropic 發表 Project V",
+      "url": "https://brain.rong-rise.com/brain/anthropic-project-vend-phase-2/"
+    },
+    {
+      "slug": "gartner-agent-autonomy-governance-levels-2026",
+      "title": "Gartner — AI agent 治理不能一套到底：四級自主度與 2027 年 40% 退役預測",
+      "category": "國際視野",
+      "excerpt": "# Gartner：Applying Uniform Governance Across AI Agents Will Lead to Enterprise A",
+      "url": "https://brain.rong-rise.com/brain/gartner-agent-autonomy-governance-levels-2026/"
+    }
+  ],
+  "gov-ai-subsidy-three-routes": [
+    {
+      "slug": "ai-agents-sustainable-sme-esg",
+      "title": "AI Agents for Sustainable SMEs: A Green ESG Assessment Framework",
+      "category": "技術深讀",
+      "excerpt": "**作者：** Viet Trinh, Tan Nguyen, Minh-Huyen Phan, Quan Luu **發表：** 2026-04-05（原文日",
+      "url": "https://brain.rong-rise.com/brain/ai-agents-sustainable-sme-esg/"
+    },
+    {
+      "slug": "ai-jhzne0",
+      "title": "AI 轉型實戰營核心筆記",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
+      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
+    },
+    {
+      "slug": "ai-ej20ew",
+      "title": "台灣 AI 政策動態",
+      "category": "政策與法規",
+      "excerpt": "## AI 基本法草案進度  台灣《人工智慧基本法》草案由國家科學及技術委員會（國科會）主導，歷經多次公聽會與跨部會協商，目前重點彙整如下：  - **立法架構",
+      "url": "https://brain.rong-rise.com/brain/ai-ej20ew/"
+    }
+  ],
+  "perfectionism-worse-grades": [
+    {
+      "slug": "simongaudreau-5gzvy8",
+      "title": "完美主義的學術脈絡 — 從 Simon 到 Gaudreau 的七十年證據鏈",
+      "category": "管理心理學",
+      "excerpt": "# 🔬 完美主義的學術脈絡 — 從 Simon 到 Gaudreau 的七十年證據鏈  **建立：** 2026-09-27 **用途：** HBR 好讀〈追求",
+      "url": "https://brain.rong-rise.com/brain/simongaudreau-5gzvy8/"
+    },
+    {
+      "slug": "hbr2026-09-27-dddup",
+      "title": "追求完美反而更容易失敗？用「最適主義」改寫成功定義",
+      "category": "管理心理學",
+      "excerpt": "# 🎯 追求完美反而更容易失敗？用「最適主義」改寫成功定義  **來源：** HBR 好讀（HBR CC Book Digest），2026-09-27，約 5",
+      "url": "https://brain.rong-rise.com/brain/hbr2026-09-27-dddup/"
+    },
+    {
+      "slug": "a-wkgfo2",
+      "title": "為什麼目標訂得越高，成績反而越差？",
+      "category": "寫作與出版",
+      "excerpt": "# 為什麼目標訂得越高，成績反而越差？  2022 年，一群心理學家在《Journal of Personality and Social Psychology",
+      "url": "https://brain.rong-rise.com/brain/a-wkgfo2/"
+    }
+  ],
+  "ai-permitting-bottleneck": [
+    {
+      "slug": "ai-blqxvd",
+      "title": "許可瓶頸：AI 基建的閘門從晶片、電力搬到「社會許可」",
+      "category": "國際視野",
+      "excerpt": "**來源：** W39 週報（2026-09-15 ～ 09-21）＋ 自家文章〈全美九州喊停、紐約暫停核准一年：AI 的瓶頸已經不是晶片，是鄰居〉 **日期：",
+      "url": "https://brain.rong-rise.com/brain/ai-blqxvd/"
+    },
+    {
+      "slug": "ai-jhzne0",
+      "title": "AI 轉型實戰營核心筆記",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
+      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
+    },
+    {
+      "slug": "open-source-memory-sustainability-governance",
+      "title": "Why Memory Components Fail: Eight Years of License and Sustainability Events in Open-Source Data Infrastructure",
+      "category": "技術深讀",
+      "excerpt": "**作者：** Dmitrii Dmitrenko **發表：** 2026-06-05  ## 摘要 本文指出 2026 年初五大 Agent Memory ",
+      "url": "https://brain.rong-rise.com/brain/open-source-memory-sustainability-governance/"
+    }
+  ],
+  "verification-economy": [
+    {
+      "slug": "2026-10-19-wonzfx",
+      "title": "🎬 影片數據回饋 — 2026-10-19",
+      "category": "內容引擎營運",
+      "excerpt": "# 🎬 影片數據回饋 — 2026-10-19  > 由小哈內容引擎自動彙整（YouTube Data API + Analytics API）。共 39 支影",
+      "url": "https://brain.rong-rise.com/brain/2026-10-19-wonzfx/"
+    },
+    {
+      "slug": "2026-08-19-1xxygi",
+      "title": "研究觀察-2026-08-19：七日 digest 跨領域趨勢回顧",
+      "category": "技術深讀",
+      "excerpt": "> 回顧 7 份 digest（2026-08-13 ~ 08-19），整理三條跨領域主線：AI 成本重估 × 財務管理、AI 擴張 × 能源 ESG、AI 時",
+      "url": "https://brain.rong-rise.com/brain/2026-08-19-1xxygi/"
+    },
+    {
+      "slug": "2026-09-19-cc6us8",
+      "title": "工程週報 2026-09-19",
+      "category": "技術深讀",
+      "excerpt": "# 工程週報 2026-09-19  > 範圍：2026-09-13 ~ 09-19（7 天）｜資料來源：本機 git log、進度檔、只讀公網 curl 驗證",
+      "url": "https://brain.rong-rise.com/brain/2026-09-19-cc6us8/"
+    }
+  ],
+  "hr-function-three-possible-positions": [
+    {
+      "slug": "bcg-ai-at-work-strategy-2026",
+      "title": "BCG 第四屆 AI at Work 調查 — 74% 一線員工天天用 AI，但省下的時間去哪了？",
+      "category": "國際視野",
+      "excerpt": "# BCG：AI at Work — Why Strategy Matters More Than Tools  **來源：** BCG（Vinciane Be",
+      "url": "https://brain.rong-rise.com/brain/bcg-ai-at-work-strategy-2026/"
+    },
+    {
+      "slug": "arxiv-human-ai-substitution-principle",
+      "title": "人機替代原理：什麼條件下一個職位真的會被 AI 取代",
+      "category": "技術深讀",
+      "excerpt": "# 人機替代原理：什麼條件下一個職位真的會被 AI 取代  **來源：** arXiv（cs.AI, cs.CY, econ.GN） **日期：** 2026-",
+      "url": "https://brain.rong-rise.com/brain/arxiv-human-ai-substitution-principle/"
+    },
+    {
+      "slug": "arxiv-ai-first-organization-roadmap",
+      "title": "arXiv — 走向 AI-first 組織的路線圖：大型嵌入式軟體公司的 40 人工作坊實證",
+      "category": "技術深讀",
+      "excerpt": "# Developing a Roadmap to an AI-first Organization: A Case Study in Embedded Sof",
+      "url": "https://brain.rong-rise.com/brain/arxiv-ai-first-organization-roadmap/"
+    }
+  ],
+  "hr-function-ai-layoff-rehire-paradox": [
+    {
+      "slug": "mckinsey-escaping-pilot-trap-hr-agentic-era",
+      "title": "逃離 Pilot 陷阱：打造 Agentic 時代的 HR（麥肯錫 2026）",
+      "category": "國際視野",
+      "excerpt": "**來源：** McKinsey & Company（People & Organizational Performance Practice） **作者：**",
+      "url": "https://brain.rong-rise.com/brain/mckinsey-escaping-pilot-trap-hr-agentic-era/"
+    },
+    {
+      "slug": "arxiv-hr-managers-xai-literacy-recruiting",
+      "title": "arXiv 2509.06475 — 解釋了卻更誤解：410 位 HR 主管的可解釋 AI 實驗",
+      "category": "技術深讀",
+      "excerpt": "# Explained, yet misunderstood：HR 主管的 AI 素養如何影響他們理解招募推薦系統  **來源：** arXiv:2509.06",
+      "url": "https://brain.rong-rise.com/brain/arxiv-hr-managers-xai-literacy-recruiting/"
+    },
+    {
+      "slug": "anthropic-worker-retraining-review",
+      "title": "Anthropic：勞工再培訓計畫的實證回顧——AI 時代的關鍵問題",
+      "category": "國際視野",
+      "excerpt": "# Anthropic：勞工再培訓計畫的實證回顧  **來源：** Anthropic Research（Economics Team） **日期：** 202",
+      "url": "https://brain.rong-rise.com/brain/anthropic-worker-retraining-review/"
+    }
+  ],
+  "supervision-debt-ai-agents": [
+    {
+      "slug": "ai-incident-notification-gap-2026-09-29",
+      "title": "AI 事故通報缺口：事故最貴的一段，是沒人通報的那段時間",
+      "category": "國際視野",
+      "excerpt": "**來源：** W40 週報（2026-09-22 ～ 09-28）＋ 自家文章〈澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報〉 **日期：** 20",
+      "url": "https://brain.rong-rise.com/brain/ai-incident-notification-gap-2026-09-29/"
+    },
+    {
+      "slug": "ai-8wp20e",
+      "title": "心理安全感與 AI 導入 — 實證研究證據鏈",
+      "category": "管理心理學",
+      "excerpt": "# 心理安全感與 AI 導入（實證研究證據鏈）  > 既有兩篇（恐懼稅-心理安全感與AI落地、心理安全感與職場文化）處理的是概念與實務動作。 > 本篇補上**可",
+      "url": "https://brain.rong-rise.com/brain/ai-8wp20e/"
+    },
+    {
+      "slug": "ai-6pc9ud",
+      "title": "AI 導入五步驟方法論",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 從 0 到 1 的 AI 轉型路線圖，適合中小企業按部就班落地執行。  ## 總覽  ``` Step 1: 盤點 → Step 2: 選點 → Step ",
+      "url": "https://brain.rong-rise.com/brain/ai-6pc9ud/"
+    }
+  ],
+  "cognitive-capital-depreciation": [
+    {
+      "slug": "a-6y88h3",
+      "title": "納瓦爾寶典（The Almanack of Naval Ravikant）",
+      "category": "好書推薦",
+      "excerpt": "> **來源：** 2026-08-04 Podcast 聽到後收集整理 > **作者：** Naval Ravikant（編纂：Eric Jorgenson，",
+      "url": "https://brain.rong-rise.com/brain/a-6y88h3/"
+    },
+    {
+      "slug": "a-9k1vc1",
+      "title": "納瓦爾寶典碰撞：槓桿、判斷力與欲望契約的管理應用",
+      "category": "管理心理學",
+      "excerpt": "> **來源：** 2026-08-04 聽 Podcast 後整理，與 納瓦爾寶典 知識筆記配套。 > **碰撞方法：** 現象 → 管理理論視角 → 心理學",
+      "url": "https://brain.rong-rise.com/brain/a-9k1vc1/"
+    },
+    {
+      "slug": "arxiv-workforce-readiness-smart-manufacturing",
+      "title": "智慧製造的「勞動力就緒度」框架：把 TRL 改寫成九級能力階梯",
+      "category": "技術深讀",
+      "excerpt": "# 智慧製造的「勞動力就緒度」框架：把 TRL 改寫成九級能力階梯  **來源：** arXiv 2608.11540v1（eess.SY / cs.AI / ",
+      "url": "https://brain.rong-rise.com/brain/arxiv-workforce-readiness-smart-manufacturing/"
+    }
+  ],
+  "ai-compliance-2027-taiwan-sme": [
+    {
+      "slug": "gartner-data-governance-culture-2026-09-21",
+      "title": "Gartner：2027 年前，忽略「治理文化」的組織有 60% 無法成功治理 AI",
+      "category": "國際視野",
+      "excerpt": "# Gartner：2027 年前，忽略「治理文化」的組織有 60% 無法成功治理 AI  **來源：** Gartner（新聞稿，於孟買 Data & Ana",
+      "url": "https://brain.rong-rise.com/brain/gartner-data-governance-culture-2026-09-21/"
+    },
+    {
+      "slug": "arxiv-auditable-trustworthiness-ai-governance",
+      "title": "A Methodology for Auditable Trustworthiness Levels in AI Lifecycle Governance",
+      "category": "技術深讀",
+      "excerpt": "**作者：** Andrea Ferrario **發表：** 2026-07-17  ## 摘要 AI 治理越來越需要判斷一個 AI 系統是否能隨時間保持足夠",
+      "url": "https://brain.rong-rise.com/brain/arxiv-auditable-trustworthiness-ai-governance/"
+    },
+    {
+      "slug": "ai-incident-notification-gap-2026-09-29",
+      "title": "AI 事故通報缺口：事故最貴的一段，是沒人通報的那段時間",
+      "category": "國際視野",
+      "excerpt": "**來源：** W40 週報（2026-09-22 ～ 09-28）＋ 自家文章〈澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報〉 **日期：** 20",
+      "url": "https://brain.rong-rise.com/brain/ai-incident-notification-gap-2026-09-29/"
+    }
+  ],
+  "narrow-ring-change-management": [
+    {
+      "slug": "a-y4cv1x",
+      "title": "變革的心理方程式",
+      "category": "管理心理學",
+      "excerpt": "## 核心問題：為什麼人天生抗拒改變？  > *「人不抗拒改變，人抗拒的是被改變。」* — 管理心理學經典名言  ## Kübler-Ross 變革曲線（5 S",
+      "url": "https://brain.rong-rise.com/brain/a-y4cv1x/"
+    },
+    {
+      "slug": "a-7qcsmq",
+      "title": "組織變革管理步驟",
+      "category": "人資與組織發展",
+      "excerpt": "> 引導組織順利度過變革的結構化方法，降低抗拒、加速採納。  ## 📋 變革管理八步驟（Kotter 模型改編）  ### Step 1：建立急迫感 - 分析市",
+      "url": "https://brain.rong-rise.com/brain/a-7qcsmq/"
+    },
+    {
+      "slug": "mckinsey-three-horizons-ai-transformation",
+      "title": "McKinsey：從採用到影響——AI 轉型的三層視野",
+      "category": "國際視野",
+      "excerpt": "# McKinsey：AI 轉型的三層視野——enablement → automation → reinvention  **來源：** McKinsey Q",
+      "url": "https://brain.rong-rise.com/brain/mckinsey-three-horizons-ai-transformation/"
+    }
+  ],
+  "efficiency-concealment-ai-productivity": [
+    {
+      "slug": "ai-wwmama",
+      "title": "效率隱藏-AI生產力紅利分配契約",
+      "category": "人才策略",
+      "excerpt": "> 來源：CJ哥研究筆記（2026-08-08 產出） > 存入：2026-08-16｜分類：人才策略 / AI 生產力 / 績效設計 / 工作設計  ## 一",
+      "url": "https://brain.rong-rise.com/brain/ai-wwmama/"
+    },
+    {
+      "slug": "bcg-ai-at-work-strategy-2026",
+      "title": "BCG 第四屆 AI at Work 調查 — 74% 一線員工天天用 AI，但省下的時間去哪了？",
+      "category": "國際視野",
+      "excerpt": "# BCG：AI at Work — Why Strategy Matters More Than Tools  **來源：** BCG（Vinciane Be",
+      "url": "https://brain.rong-rise.com/brain/bcg-ai-at-work-strategy-2026/"
+    },
+    {
+      "slug": "ai-hbr2026-09-23-71u6hf",
+      "title": "AI 時代的績效管理：三層衡量框架（HBR 2026-09-23）",
+      "category": "人才策略",
+      "excerpt": "# AI 時代的績效管理：三層衡量框架  > **來源**：蘭迪．畢恩（Randy Bean）、艾瑞克．史特勞斯（Erik Strauss）、蘭迪普．辛格（Ra",
+      "url": "https://brain.rong-rise.com/brain/ai-hbr2026-09-23-71u6hf/"
+    }
+  ],
+  "training-replication-gap": [
+    {
+      "slug": "pwc-2026-workforce-four-groups-2026-10-06",
+      "title": "PwC 2026 全球勞動力希望與恐懼調查：四種人與那 56%",
+      "category": "國際視野",
+      "excerpt": "# PwC 2026 全球勞動力希望與恐懼調查：四種人與那 56%  **收錄日**：2026-10-06｜**來源**：PwC《Global Workforc",
+      "url": "https://brain.rong-rise.com/brain/pwc-2026-workforce-four-groups-2026-10-06/"
+    },
+    {
+      "slug": "anthropic-claude-code-expertise",
+      "title": "Claude Code Expertise 研究：領域專業知識比程式能力更重要",
+      "category": "國際視野",
+      "excerpt": "**來源：** Anthropic Research **原文日期：** 2026-06-18  ## 中文摘要 Anthropic 分析了 2025 年 10",
+      "url": "https://brain.rong-rise.com/brain/anthropic-claude-code-expertise/"
+    },
+    {
+      "slug": "ai-hbr2026-09-23-71u6hf",
+      "title": "AI 時代的績效管理：三層衡量框架（HBR 2026-09-23）",
+      "category": "人才策略",
+      "excerpt": "# AI 時代的績效管理：三層衡量框架  > **來源**：蘭迪．畢恩（Randy Bean）、艾瑞克．史特勞斯（Erik Strauss）、蘭迪普．辛格（Ra",
+      "url": "https://brain.rong-rise.com/brain/ai-hbr2026-09-23-71u6hf/"
+    }
+  ],
+  "management-gap-2-ai-era": [
+    {
+      "slug": "a-9k1vc1",
+      "title": "納瓦爾寶典碰撞：槓桿、判斷力與欲望契約的管理應用",
+      "category": "管理心理學",
+      "excerpt": "> **來源：** 2026-08-04 聽 Podcast 後整理，與 納瓦爾寶典 知識筆記配套。 > **碰撞方法：** 現象 → 管理理論視角 → 心理學",
+      "url": "https://brain.rong-rise.com/brain/a-9k1vc1/"
+    },
+    {
+      "slug": "management-brain-19th-century-ai-sanboy289",
+      "title": "當管理層的大腦還留在十九世紀，企業憑什麼駕馭二十一世紀的AI？",
+      "category": "國際視野",
+      "excerpt": "# 當管理層的大腦還留在十九世紀，企業憑什麼駕馭二十一世紀的AI？  > 來源：https://home.gamer.com.tw/artwork.php?sn",
+      "url": "https://brain.rong-rise.com/brain/management-brain-19th-century-ai-sanboy289/"
+    },
+    {
+      "slug": "ai-2026-09-svhvxf",
+      "title": "心智頻寬：工具變快之後，人的注意力成了新瓶頸",
+      "category": "管理心理學",
+      "excerpt": "# 心智頻寬：工具變快之後，人的注意力成了新瓶頸  **來源：** 榕賀觀點第 21 期深讀（2026-09-28），整合 HBR 2026-09-16 創意工",
+      "url": "https://brain.rong-rise.com/brain/ai-2026-09-svhvxf/"
+    }
+  ],
+  "anthropic-fable-5-us-government-ban": [
+    {
+      "slug": "ai-incident-notification-gap-2026-09-29",
+      "title": "AI 事故通報缺口：事故最貴的一段，是沒人通報的那段時間",
+      "category": "國際視野",
+      "excerpt": "**來源：** W40 週報（2026-09-22 ～ 09-28）＋ 自家文章〈澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報〉 **日期：** 20",
+      "url": "https://brain.rong-rise.com/brain/ai-incident-notification-gap-2026-09-29/"
+    },
+    {
+      "slug": "ai-jhzne0",
+      "title": "AI 轉型實戰營核心筆記",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
+      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
+    },
+    {
+      "slug": "stratechery-american-disruption",
+      "title": "American Disruption（美國式顛覆）",
+      "category": "國際視野",
+      "excerpt": "**來源：** Stratechery (Ben Thompson) **原文日期：** 2025-04-09  ## 中文摘要  Ben Thompson 以",
+      "url": "https://brain.rong-rise.com/brain/stratechery-american-disruption/"
+    }
+  ],
+  "luckiest-day-was-the-hardest-problems": [
+    {
+      "slug": "ai-mnkqg1",
+      "title": "醫療 AI 應用案例",
+      "category": "產業案例庫",
+      "excerpt": "> 醫療 AI 在診斷輔助、醫療影像、病歷分析的實際應用，聚焦 Taiwan AI Labs 與各大醫院的真實落地成效。  ---  ## 一、Taiwan A",
+      "url": "https://brain.rong-rise.com/brain/ai-mnkqg1/"
+    },
+    {
+      "slug": "ai-uke7j2",
+      "title": "金融業 AI 轉型案例",
+      "category": "產業案例庫",
+      "excerpt": "> 銀行、保險、證券業的 AI 應用深度剖析：風控、客服、理專三大核心場景的真實案例與成效數據。  ---  ## 一、銀行業：玉山銀行「智能金融實驗室」  玉",
+      "url": "https://brain.rong-rise.com/brain/ai-uke7j2/"
+    },
+    {
+      "slug": "ai-nqtxhl",
+      "title": "零售業 AI 賦能案例",
+      "category": "產業案例庫",
+      "excerpt": "> 零售 AI 在個人化推薦、庫存管理、智慧門市的深度應用，檢視統一超商、全聯、momo 等本土巨頭的實際導入成效。  ---  ## 一、統一超商（7-ELE",
+      "url": "https://brain.rong-rise.com/brain/ai-nqtxhl/"
+    }
+  ],
+  "agentic-ai-employee-management": [
+    {
+      "slug": "ai-jhzne0",
+      "title": "AI 轉型實戰營核心筆記",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
+      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
+    },
+    {
+      "slug": "ai-8wp20e",
+      "title": "心理安全感與 AI 導入 — 實證研究證據鏈",
+      "category": "管理心理學",
+      "excerpt": "# 心理安全感與 AI 導入（實證研究證據鏈）  > 既有兩篇（恐懼稅-心理安全感與AI落地、心理安全感與職場文化）處理的是概念與實務動作。 > 本篇補上**可",
+      "url": "https://brain.rong-rise.com/brain/ai-8wp20e/"
+    },
+    {
+      "slug": "ai-6pc9ud",
+      "title": "AI 導入五步驟方法論",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 從 0 到 1 的 AI 轉型路線圖，適合中小企業按部就班落地執行。  ## 總覽  ``` Step 1: 盤點 → Step 2: 選點 → Step ",
+      "url": "https://brain.rong-rise.com/brain/ai-6pc9ud/"
+    }
+  ],
+  "middle-managers-ai-pivot": [
+    {
+      "slug": "5-g4le91",
+      "title": "企業消滅摩擦的5大戰略",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> AI 是這個世代的馬鐙與弩，解放了雙手，但也唯有願意重新設計系統的企業才能在加速曲線上勝出。  ## 📌 核心命題  技術躍遷的紅利從不雨露均霑。新秩序來臨",
+      "url": "https://brain.rong-rise.com/brain/5-g4le91/"
+    },
+    {
+      "slug": "bcg-next-gen-strategist-ai",
+      "title": "BCG：AI 時代的下一代策略長——分析被商品化，策略價值在於選擇「對的思考模式」",
+      "category": "國際視野",
+      "excerpt": "# BCG：AI 時代的下一代策略長——四種思考模式  **來源：** BCG（Boston Consulting Group） **日期：** 2026-08",
+      "url": "https://brain.rong-rise.com/brain/bcg-next-gen-strategist-ai/"
+    },
+    {
+      "slug": "bcg-next-gen-strategist-ai-2026",
+      "title": "The Next-Gen Strategist in the Age of AI（AI 時代的新世代策略家：策略領導者如何適應 AI）",
+      "category": "國際視野",
+      "excerpt": "**來源：** BCG **日期：** 2026-08-13  ## 核心論點 AI 正把分析式思考「商品化」——策略部門傳統引以為傲的分析技能，隨著 AI 擴",
+      "url": "https://brain.rong-rise.com/brain/bcg-next-gen-strategist-ai-2026/"
+    }
+  ],
+  "ai-net-efficiency-trap": [
+    {
+      "slug": "ai-incident-notification-gap-2026-09-29",
+      "title": "AI 事故通報缺口：事故最貴的一段，是沒人通報的那段時間",
+      "category": "國際視野",
+      "excerpt": "**來源：** W40 週報（2026-09-22 ～ 09-28）＋ 自家文章〈澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報〉 **日期：** 20",
+      "url": "https://brain.rong-rise.com/brain/ai-incident-notification-gap-2026-09-29/"
+    },
+    {
+      "slug": "5-g4le91",
+      "title": "企業消滅摩擦的5大戰略",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> AI 是這個世代的馬鐙與弩，解放了雙手，但也唯有願意重新設計系統的企業才能在加速曲線上勝出。  ## 📌 核心命題  技術躍遷的紅利從不雨露均霑。新秩序來臨",
+      "url": "https://brain.rong-rise.com/brain/5-g4le91/"
+    },
+    {
+      "slug": "mckinsey-state-of-ai-2026-road-to-roi",
+      "title": "McKinsey State of AI 2026：通往 ROI 之路（個人產能飆升、企業獲利停滯）",
+      "category": "國際視野",
+      "excerpt": "# McKinsey State of AI 2026：通往 ROI 之路（個人產能飆升、企業獲利停滯）  **來源：** McKinsey Global Su",
+      "url": "https://brain.rong-rise.com/brain/mckinsey-state-of-ai-2026-road-to-roi/"
+    }
+  ],
+  "mckinsey-hr-agent-performance-management": [
+    {
+      "slug": "mckinsey-2026-hr-role-8uh8bw",
+      "title": "McKinsey 2026 的 HR 下一步：從人事管家到 hybrid workforce 總監",
+      "category": "國際視野",
+      "excerpt": "# McKinsey 2026 的 HR 下一步：從人事管家到 hybrid workforce 總監  ## 一句話定調  **2026 年，HR 的角色不再",
+      "url": "https://brain.rong-rise.com/brain/mckinsey-2026-hr-role-8uh8bw/"
+    },
+    {
+      "slug": "mckinsey-escaping-pilot-trap-hr-agentic-era",
+      "title": "逃離 Pilot 陷阱：打造 Agentic 時代的 HR（麥肯錫 2026）",
+      "category": "國際視野",
+      "excerpt": "**來源：** McKinsey & Company（People & Organizational Performance Practice） **作者：**",
+      "url": "https://brain.rong-rise.com/brain/mckinsey-escaping-pilot-trap-hr-agentic-era/"
+    },
+    {
+      "slug": "mckinsey-state-of-organizations-2026",
+      "title": "McKinsey《State of Organizations 2026》：解鎖「AI 使能的組織」",
+      "category": "國際視野",
+      "excerpt": "**來源：** McKinsey & Company（People & Organizational Performance） **日期：** 2026（年度旗",
+      "url": "https://brain.rong-rise.com/brain/mckinsey-state-of-organizations-2026/"
+    }
+  ],
+  "ai-talent-development-route-dispute-2026": [
+    {
+      "slug": "gartner-people-centric-ai-talent-2026",
+      "title": "Gartner：2027 年前，五成缺「以人為本 AI 策略」的企業會流失頂尖 AI 人才",
+      "category": "國際視野",
+      "excerpt": "# Gartner：2027 年前，五成缺「以人為本 AI 策略」的企業會流失頂尖 AI 人才  **來源：** Gartner 新聞稿（2026-05-13）",
+      "url": "https://brain.rong-rise.com/brain/gartner-people-centric-ai-talent-2026/"
+    },
+    {
+      "slug": "ai-jhzne0",
+      "title": "AI 轉型實戰營核心筆記",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
+      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
+    },
+    {
+      "slug": "5-g4le91",
+      "title": "企業消滅摩擦的5大戰略",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> AI 是這個世代的馬鐙與弩，解放了雙手，但也唯有願意重新設計系統的企業才能在加速曲線上勝出。  ## 📌 核心命題  技術躍遷的紅利從不雨露均霑。新秩序來臨",
+      "url": "https://brain.rong-rise.com/brain/5-g4le91/"
+    }
+  ],
+  "ai-agents-performance-management": [
+    {
+      "slug": "mckinsey-2026-hr-role-8uh8bw",
+      "title": "McKinsey 2026 的 HR 下一步：從人事管家到 hybrid workforce 總監",
+      "category": "國際視野",
+      "excerpt": "# McKinsey 2026 的 HR 下一步：從人事管家到 hybrid workforce 總監  ## 一句話定調  **2026 年，HR 的角色不再",
+      "url": "https://brain.rong-rise.com/brain/mckinsey-2026-hr-role-8uh8bw/"
+    },
+    {
+      "slug": "ai-agent-workforce-management-2026-09-iggd2p",
+      "title": "AI Agent 進入 Workforce Management（2026-09 週報情報）",
+      "category": "國際視野",
+      "excerpt": "# 🤖 AI Agent 進入 Workforce Management（2026-09 週報情報）  **來源：** 外部 AI × HR 週報深度版（202",
+      "url": "https://brain.rong-rise.com/brain/ai-agent-workforce-management-2026-09-iggd2p/"
+    },
+    {
+      "slug": "mckinsey-ai-reinventors-operating-model-2026",
+      "title": "McKinsey：AI「重塑者」靠營運模式取勝——12 個設計要素與四項成果（2026）",
+      "category": "國際視野",
+      "excerpt": "# McKinsey：AI「重塑者」靠營運模式取勝——12 個設計要素與四項成果（2026）  **來源：** McKinsey（Organize to Val",
+      "url": "https://brain.rong-rise.com/brain/mckinsey-ai-reinventors-operating-model-2026/"
+    }
+  ],
   "hugging-face-nvidia-129-billion": [
     {
       "slug": "stratechery-openai-huggingface-alignment",
@@ -24,25 +806,25 @@
   ],
   "ai-fill-labor-gap-not-replace": [
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
+      "slug": "mit-tr-scaling-agentic-ai-pilots-enterprise-2026-09-03",
+      "title": "MIT TR — 從試點到全企業：agentic AI 卡在編排、資料與治理，不是模型",
+      "category": "國際視野",
+      "excerpt": "# MIT TR：Scaling agentic AI pilots across the enterprise  **來源：** MIT Technology",
+      "url": "https://brain.rong-rise.com/brain/mit-tr-scaling-agentic-ai-pilots-enterprise-2026-09-03/"
+    },
+    {
+      "slug": "arxiv-productivity-divide-ai-competence",
+      "title": "arXiv 2605.18143 — 生成式 AI 的「生產力鴻溝」：決定差距的是 AI 互動能力，不是 GPA",
+      "category": "技術深讀",
+      "excerpt": "# 生成式 AI 與生產力鴻溝：AI 互動能力（AIC）決定誰真的受益  **來源：** arXiv:2605.18143（Lihi Idan, Bharat ",
+      "url": "https://brain.rong-rise.com/brain/arxiv-productivity-divide-ai-competence/"
     },
     {
       "slug": "ai-jhzne0",
       "title": "AI 轉型實戰營核心筆記",
       "category": "中小企業AI轉型實戰",
-      "excerpt": "## 1. AI 認知與時代趨勢  ### AI 演進路徑  - 2023: ChatBot 對話式 AI - 2024: GenAI 內容生成 - 2025:",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
       "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
-    },
-    {
-      "slug": "ai-agents-sustainable-sme-esg",
-      "title": "AI Agents for Sustainable SMEs: A Green ESG Assessment Framework",
-      "category": "技術深讀",
-      "excerpt": "--- title: \"AI Agents for Sustainable SMEs: A Green ESG Assessment Framework\" ta",
-      "url": "https://brain.rong-rise.com/brain/ai-agents-sustainable-sme-esg/"
     }
   ],
   "ai-one-person-scrum-team": [
@@ -50,15 +832,15 @@
       "slug": "ai-jhzne0",
       "title": "AI 轉型實戰營核心筆記",
       "category": "中小企業AI轉型實戰",
-      "excerpt": "## 1. AI 認知與時代趨勢  ### AI 演進路徑  - 2023: ChatBot 對話式 AI - 2024: GenAI 內容生成 - 2025:",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
       "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
     },
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
+      "slug": "arxiv-workforce-readiness-smart-manufacturing",
+      "title": "智慧製造的「勞動力就緒度」框架：把 TRL 改寫成九級能力階梯",
+      "category": "技術深讀",
+      "excerpt": "# 智慧製造的「勞動力就緒度」框架：把 TRL 改寫成九級能力階梯  **來源：** arXiv 2608.11540v1（eess.SY / cs.AI / ",
+      "url": "https://brain.rong-rise.com/brain/arxiv-workforce-readiness-smart-manufacturing/"
     },
     {
       "slug": "bcg-ai-radar-2026-ceos-take-lead",
@@ -70,28 +852,35 @@
   ],
   "ai-vendors-becoming-consultants-moat": [
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
-    },
-    {
       "slug": "ai-jhzne0",
       "title": "AI 轉型實戰營核心筆記",
       "category": "中小企業AI轉型實戰",
-      "excerpt": "## 1. AI 認知與時代趨勢  ### AI 演進路徑  - 2023: ChatBot 對話式 AI - 2024: GenAI 內容生成 - 2025:",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
       "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
     },
     {
       "slug": "ai-agents-sustainable-sme-esg",
       "title": "AI Agents for Sustainable SMEs: A Green ESG Assessment Framework",
       "category": "技術深讀",
-      "excerpt": "--- title: \"AI Agents for Sustainable SMEs: A Green ESG Assessment Framework\" ta",
+      "excerpt": "**作者：** Viet Trinh, Tan Nguyen, Minh-Huyen Phan, Quan Luu **發表：** 2026-04-05（原文日",
       "url": "https://brain.rong-rise.com/brain/ai-agents-sustainable-sme-esg/"
+    },
+    {
+      "slug": "ai-ej20ew",
+      "title": "台灣 AI 政策動態",
+      "category": "政策與法規",
+      "excerpt": "## AI 基本法草案進度  台灣《人工智慧基本法》草案由國家科學及技術委員會（國科會）主導，歷經多次公聽會與跨部會協商，目前重點彙整如下：  - **立法架構",
+      "url": "https://brain.rong-rise.com/brain/ai-ej20ew/"
     }
   ],
   "ai-strategy-planning-collaboration": [
+    {
+      "slug": "simongaudreau-5gzvy8",
+      "title": "完美主義的學術脈絡 — 從 Simon 到 Gaudreau 的七十年證據鏈",
+      "category": "管理心理學",
+      "excerpt": "# 🔬 完美主義的學術脈絡 — 從 Simon 到 Gaudreau 的七十年證據鏈  **建立：** 2026-09-27 **用途：** HBR 好讀〈追求",
+      "url": "https://brain.rong-rise.com/brain/simongaudreau-5gzvy8/"
+    },
     {
       "slug": "hbr-ai-strategic-decision-making-csaszar",
       "title": "衝破認知框架：用 AI 驅動長贏決策（HBR 2026-09）",
@@ -105,13 +894,6 @@
       "category": "管理心理學",
       "excerpt": "> 高階主管常誤認彼此已達成共識，實則不然。組織要成功轉型，管理層必須設法凝聚真正的共識。  ## 📌 核心命題  變革失敗的根源往往不是策略錯誤，而是領導團隊",
       "url": "https://brain.rong-rise.com/brain/a-9pjw8l/"
-    },
-    {
-      "slug": "5-g4le91",
-      "title": "企業消滅摩擦的5大戰略",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> AI 是這個世代的馬鐙與弩，解放了雙手，但也唯有願意重新設計系統的企業才能在加速曲線上勝出。  ## 📌 核心命題  技術躍遷的紅利從不雨露均霑。新秩序來臨",
-      "url": "https://brain.rong-rise.com/brain/5-g4le91/"
     }
   ],
   "pilot-trap-self-check": [
@@ -130,26 +912,49 @@
       "url": "https://brain.rong-rise.com/brain/mckinsey-escaping-pilot-trap-hr-agentic-era/"
     },
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
+      "slug": "ai-incident-notification-gap-2026-09-29",
+      "title": "AI 事故通報缺口：事故最貴的一段，是沒人通報的那段時間",
+      "category": "國際視野",
+      "excerpt": "**來源：** W40 週報（2026-09-22 ～ 09-28）＋ 自家文章〈澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報〉 **日期：** 20",
+      "url": "https://brain.rong-rise.com/brain/ai-incident-notification-gap-2026-09-29/"
     }
   ],
   "managing-31-ai-agents": [
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
+      "slug": "ai-incident-notification-gap-2026-09-29",
+      "title": "AI 事故通報缺口：事故最貴的一段，是沒人通報的那段時間",
+      "category": "國際視野",
+      "excerpt": "**來源：** W40 週報（2026-09-22 ～ 09-28）＋ 自家文章〈澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報〉 **日期：** 20",
+      "url": "https://brain.rong-rise.com/brain/ai-incident-notification-gap-2026-09-29/"
+    },
+    {
+      "slug": "2026-08-31-wp2o3k",
+      "title": "🎬 影片數據回饋 — 2026-08-31",
+      "category": "內容引擎營運",
+      "excerpt": "# 🎬 影片數據回饋 — 2026-08-31  > 由小哈內容引擎自動彙整（YouTube Data API + Analytics API）。共 30 支影",
+      "url": "https://brain.rong-rise.com/brain/2026-08-31-wp2o3k/"
+    },
+    {
+      "slug": "2026-08-31-ttyo85",
+      "title": "選題建議 2026-08-31（W35 分析報告）",
+      "category": "內容引擎營運",
+      "excerpt": "# 選題建議 2026-08-31（第 35 週報告）  ## 前置檢查：W35 五大趨勢的「燒掉」狀態  | 趨勢 | 狀態 | 說明 | |------|-",
+      "url": "https://brain.rong-rise.com/brain/2026-08-31-ttyo85/"
+    }
+  ],
+  "ai-energy-arms-race-cloud-bill": [
+    {
+      "slug": "ai-jhzne0",
+      "title": "AI 轉型實戰營核心筆記",
       "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
+      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
     },
     {
       "slug": "ai-agents-sustainable-sme-esg",
       "title": "AI Agents for Sustainable SMEs: A Green ESG Assessment Framework",
       "category": "技術深讀",
-      "excerpt": "--- title: \"AI Agents for Sustainable SMEs: A Green ESG Assessment Framework\" ta",
+      "excerpt": "**作者：** Viet Trinh, Tan Nguyen, Minh-Huyen Phan, Quan Luu **發表：** 2026-04-05（原文日",
       "url": "https://brain.rong-rise.com/brain/ai-agents-sustainable-sme-esg/"
     },
     {
@@ -160,59 +965,36 @@
       "url": "https://brain.rong-rise.com/brain/ai-ej20ew/"
     }
   ],
-  "ai-energy-arms-race-cloud-bill": [
-    {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
-    },
-    {
-      "slug": "ai-jhzne0",
-      "title": "AI 轉型實戰營核心筆記",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "## 1. AI 認知與時代趨勢  ### AI 演進路徑  - 2023: ChatBot 對話式 AI - 2024: GenAI 內容生成 - 2025:",
-      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
-    },
-    {
-      "slug": "ai-agents-sustainable-sme-esg",
-      "title": "AI Agents for Sustainable SMEs: A Green ESG Assessment Framework",
-      "category": "技術深讀",
-      "excerpt": "--- title: \"AI Agents for Sustainable SMEs: A Green ESG Assessment Framework\" ta",
-      "url": "https://brain.rong-rise.com/brain/ai-agents-sustainable-sme-esg/"
-    }
-  ],
   "shadow-ai-governance-traffic-light": [
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
+      "slug": "ai-incident-notification-gap-2026-09-29",
+      "title": "AI 事故通報缺口：事故最貴的一段，是沒人通報的那段時間",
+      "category": "國際視野",
+      "excerpt": "**來源：** W40 週報（2026-09-22 ～ 09-28）＋ 自家文章〈澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報〉 **日期：** 20",
+      "url": "https://brain.rong-rise.com/brain/ai-incident-notification-gap-2026-09-29/"
     },
     {
       "slug": "ai-jhzne0",
       "title": "AI 轉型實戰營核心筆記",
       "category": "中小企業AI轉型實戰",
-      "excerpt": "## 1. AI 認知與時代趨勢  ### AI 演進路徑  - 2023: ChatBot 對話式 AI - 2024: GenAI 內容生成 - 2025:",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
       "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
     },
     {
       "slug": "ai-agents-sustainable-sme-esg",
       "title": "AI Agents for Sustainable SMEs: A Green ESG Assessment Framework",
       "category": "技術深讀",
-      "excerpt": "--- title: \"AI Agents for Sustainable SMEs: A Green ESG Assessment Framework\" ta",
+      "excerpt": "**作者：** Viet Trinh, Tan Nguyen, Minh-Huyen Phan, Quan Luu **發表：** 2026-04-05（原文日",
       "url": "https://brain.rong-rise.com/brain/ai-agents-sustainable-sme-esg/"
     }
   ],
   "ai-model-routing-power-grid": [
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
+      "slug": "arxiv-planner-as-router-cost-efficient-agents",
+      "title": "把模型層級選擇折進規劃：Planner-as-Router 省 44% 成本（arXiv 2609.32917）",
+      "category": "技術深讀",
+      "excerpt": "# 把模型層級選擇折進規劃：Planner-as-Router 省 44% 成本  **來源：** arXiv（Singh 等） **日期：** 2026-09",
+      "url": "https://brain.rong-rise.com/brain/arxiv-planner-as-router-cost-efficient-agents/"
     },
     {
       "slug": "stratechery-nvidia-risky-business-2026",
@@ -222,26 +1004,26 @@
       "url": "https://brain.rong-rise.com/brain/stratechery-nvidia-risky-business-2026/"
     },
     {
-      "slug": "ai-jhzne0",
-      "title": "AI 轉型實戰營核心筆記",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "## 1. AI 認知與時代趨勢  ### AI 演進路徑  - 2023: ChatBot 對話式 AI - 2024: GenAI 內容生成 - 2025:",
-      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
+      "slug": "ai-942-2026-09-lbbk0t",
+      "title": "醫院用 AI 寫理賠文件，兩年多花 9.42 億美元：AI 增加成本的案例",
+      "category": "產業案例庫",
+      "excerpt": "# 醫院用 AI 寫理賠文件，兩年多花 9.42 億美元  **來源：** 美國藍十字藍盾協會（Blue Cross Blue Shield Associati",
+      "url": "https://brain.rong-rise.com/brain/ai-942-2026-09-lbbk0t/"
     }
   ],
   "ai-role-to-workflow-economy": [
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
+      "slug": "openai-chatgpt-small-business-program-2026-07",
+      "title": "OpenAI 推出「ChatGPT 中小企業方案」——AI 下放給小型商家（2026-07）",
+      "category": "國際視野",
+      "excerpt": "# OpenAI 推出「ChatGPT 中小企業方案」——AI 下放給小型商家（2026-07）  **來源：** OpenAI Blog **日期：** 20",
+      "url": "https://brain.rong-rise.com/brain/openai-chatgpt-small-business-program-2026-07/"
     },
     {
       "slug": "ai-jhzne0",
       "title": "AI 轉型實戰營核心筆記",
       "category": "中小企業AI轉型實戰",
-      "excerpt": "## 1. AI 認知與時代趨勢  ### AI 演進路徑  - 2023: ChatBot 對話式 AI - 2024: GenAI 內容生成 - 2025:",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
       "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
     },
     {
@@ -254,63 +1036,56 @@
   ],
   "ai-content-inflation-trust": [
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
-    },
-    {
       "slug": "ai-jhzne0",
       "title": "AI 轉型實戰營核心筆記",
       "category": "中小企業AI轉型實戰",
-      "excerpt": "## 1. AI 認知與時代趨勢  ### AI 演進路徑  - 2023: ChatBot 對話式 AI - 2024: GenAI 內容生成 - 2025:",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
       "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
     },
     {
       "slug": "ai-agents-sustainable-sme-esg",
       "title": "AI Agents for Sustainable SMEs: A Green ESG Assessment Framework",
       "category": "技術深讀",
-      "excerpt": "--- title: \"AI Agents for Sustainable SMEs: A Green ESG Assessment Framework\" ta",
+      "excerpt": "**作者：** Viet Trinh, Tan Nguyen, Minh-Huyen Phan, Quan Luu **發表：** 2026-04-05（原文日",
       "url": "https://brain.rong-rise.com/brain/ai-agents-sustainable-sme-esg/"
+    },
+    {
+      "slug": "ai-ej20ew",
+      "title": "台灣 AI 政策動態",
+      "category": "政策與法規",
+      "excerpt": "## AI 基本法草案進度  台灣《人工智慧基本法》草案由國家科學及技術委員會（國科會）主導，歷經多次公聽會與跨部會協商，目前重點彙整如下：  - **立法架構",
+      "url": "https://brain.rong-rise.com/brain/ai-ej20ew/"
     }
   ],
   "ai-talent-magnet": [
     {
+      "slug": "gartner-people-centric-ai-talent-2026",
+      "title": "Gartner：2027 年前，五成缺「以人為本 AI 策略」的企業會流失頂尖 AI 人才",
+      "category": "國際視野",
+      "excerpt": "# Gartner：2027 年前，五成缺「以人為本 AI 策略」的企業會流失頂尖 AI 人才  **來源：** Gartner 新聞稿（2026-05-13）",
+      "url": "https://brain.rong-rise.com/brain/gartner-people-centric-ai-talent-2026/"
+    },
+    {
+      "slug": "arxiv-hr-managers-xai-literacy-recruiting",
+      "title": "arXiv 2509.06475 — 解釋了卻更誤解：410 位 HR 主管的可解釋 AI 實驗",
+      "category": "技術深讀",
+      "excerpt": "# Explained, yet misunderstood：HR 主管的 AI 素養如何影響他們理解招募推薦系統  **來源：** arXiv:2509.06",
+      "url": "https://brain.rong-rise.com/brain/arxiv-hr-managers-xai-literacy-recruiting/"
+    },
+    {
       "slug": "ai-workforce-policy-testbed",
       "title": "Toward an AI-Powered Computational Testbed for Workforce Policy",
       "category": "技術深讀",
-      "excerpt": "**作者：** Sumer S. Vaid, Ashley V. Whillans **發表：** 2026-05-18  ## 摘要  AI 正大規模改變知識",
+      "excerpt": "**作者：** Sumer S. Vaid, Ashley V. Whillans **發表：** 2026-05-18（原文日期亦記為 18 May 2026",
       "url": "https://brain.rong-rise.com/brain/ai-workforce-policy-testbed/"
-    },
-    {
-      "slug": "mckinsey-escaping-pilot-trap-hr-agentic-era",
-      "title": "逃離 Pilot 陷阱：打造 Agentic 時代的 HR（麥肯錫 2026）",
-      "category": "國際視野",
-      "excerpt": "**來源：** McKinsey & Company（People & Organizational Performance Practice） **作者：**",
-      "url": "https://brain.rong-rise.com/brain/mckinsey-escaping-pilot-trap-hr-agentic-era/"
-    },
-    {
-      "slug": "hr_ai_-4d30sb",
-      "title": "HR × AI 課程大綱",
-      "category": "人資與組織發展",
-      "excerpt": "--- title: HR × AI 課程大綱 tags: [課程大綱, HR, AI 培訓, 人資] domain: 人資與組織發展 source: \"Goo",
-      "url": "https://brain.rong-rise.com/brain/hr_ai_-4d30sb/"
     }
   ],
   "ai-bill-three-checks": [
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
-    },
-    {
       "slug": "ai-jhzne0",
       "title": "AI 轉型實戰營核心筆記",
       "category": "中小企業AI轉型實戰",
-      "excerpt": "## 1. AI 認知與時代趨勢  ### AI 演進路徑  - 2023: ChatBot 對話式 AI - 2024: GenAI 內容生成 - 2025:",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
       "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
     },
     {
@@ -319,6 +1094,13 @@
       "category": "國際視野",
       "excerpt": "**來源：** MIT Technology Review (James O'Donnell) **原文日期：** 2026-07-06  ## 中文摘要 MI",
       "url": "https://brain.rong-rise.com/brain/your-familys-300-stake-in-openai-2026/"
+    },
+    {
+      "slug": "ai-agents-sustainable-sme-esg",
+      "title": "AI Agents for Sustainable SMEs: A Green ESG Assessment Framework",
+      "category": "技術深讀",
+      "excerpt": "**作者：** Viet Trinh, Tan Nguyen, Minh-Huyen Phan, Quan Luu **發表：** 2026-04-05（原文日",
+      "url": "https://brain.rong-rise.com/brain/ai-agents-sustainable-sme-esg/"
     }
   ],
   "ai-memory-three-tier-ladder": [
@@ -330,18 +1112,18 @@
       "url": "https://brain.rong-rise.com/brain/ai-eeu83g/"
     },
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
+      "slug": "2026-10-26-ttjzjq",
+      "title": "選題建議 2026-10-26（W43 報告＋10-26 digest）",
+      "category": "內容引擎營運",
+      "excerpt": "# 選題建議 2026-10-26  - **最新週報實查**：`ls -t insights/*.md` 首筆為 **`2026-W43.md`**（區間 2",
+      "url": "https://brain.rong-rise.com/brain/2026-10-26-ttjzjq/"
     },
     {
-      "slug": "bcg-ai-radar-2026-ceos-take-lead",
-      "title": "BCG 2026 AI Radar：AI 投資翻倍，CEO 接掌主導權",
+      "slug": "openai-chatgpt-small-business-program-2026-07",
+      "title": "OpenAI 推出「ChatGPT 中小企業方案」——AI 下放給小型商家（2026-07）",
       "category": "國際視野",
-      "excerpt": "**來源：** Boston Consulting Group **日期：** 2026（2026 AI Radar，調查 2,360 位高階主管、含 640 ",
-      "url": "https://brain.rong-rise.com/brain/bcg-ai-radar-2026-ceos-take-lead/"
+      "excerpt": "# OpenAI 推出「ChatGPT 中小企業方案」——AI 下放給小型商家（2026-07）  **來源：** OpenAI Blog **日期：** 20",
+      "url": "https://brain.rong-rise.com/brain/openai-chatgpt-small-business-program-2026-07/"
     }
   ],
   "ai-hiring-invented-bias": [
@@ -349,7 +1131,7 @@
       "slug": "ai-workforce-policy-testbed",
       "title": "Toward an AI-Powered Computational Testbed for Workforce Policy",
       "category": "技術深讀",
-      "excerpt": "**作者：** Sumer S. Vaid, Ashley V. Whillans **發表：** 2026-05-18  ## 摘要  AI 正大規模改變知識",
+      "excerpt": "**作者：** Sumer S. Vaid, Ashley V. Whillans **發表：** 2026-05-18（原文日期亦記為 18 May 2026",
       "url": "https://brain.rong-rise.com/brain/ai-workforce-policy-testbed/"
     },
     {
@@ -360,11 +1142,11 @@
       "url": "https://brain.rong-rise.com/brain/mckinsey-escaping-pilot-trap-hr-agentic-era/"
     },
     {
-      "slug": "hr_ai_-4d30sb",
-      "title": "HR × AI 課程大綱",
-      "category": "人資與組織發展",
-      "excerpt": "--- title: HR × AI 課程大綱 tags: [課程大綱, HR, AI 培訓, 人資] domain: 人資與組織發展 source: \"Goo",
-      "url": "https://brain.rong-rise.com/brain/hr_ai_-4d30sb/"
+      "slug": "ai-incident-notification-gap-2026-09-29",
+      "title": "AI 事故通報缺口：事故最貴的一段，是沒人通報的那段時間",
+      "category": "國際視野",
+      "excerpt": "**來源：** W40 週報（2026-09-22 ～ 09-28）＋ 自家文章〈澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報〉 **日期：** 20",
+      "url": "https://brain.rong-rise.com/brain/ai-incident-notification-gap-2026-09-29/"
     }
   ],
   "ai-skill-inflation-workforce": [
@@ -383,34 +1165,34 @@
       "url": "https://brain.rong-rise.com/brain/a-6hrwui/"
     },
     {
-      "slug": "ai-jhzne0",
-      "title": "AI 轉型實戰營核心筆記",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "## 1. AI 認知與時代趨勢  ### AI 演進路徑  - 2023: ChatBot 對話式 AI - 2024: GenAI 內容生成 - 2025:",
-      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
+      "slug": "ai-hbr2026-09-23-71u6hf",
+      "title": "AI 時代的績效管理：三層衡量框架（HBR 2026-09-23）",
+      "category": "人才策略",
+      "excerpt": "# AI 時代的績效管理：三層衡量框架  > **來源**：蘭迪．畢恩（Randy Bean）、艾瑞克．史特勞斯（Erik Strauss）、蘭迪普．辛格（Ra",
+      "url": "https://brain.rong-rise.com/brain/ai-hbr2026-09-23-71u6hf/"
     }
   ],
   "sleeping-data-assets-awakening": [
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
-    },
-    {
       "slug": "ai-jhzne0",
       "title": "AI 轉型實戰營核心筆記",
       "category": "中小企業AI轉型實戰",
-      "excerpt": "## 1. AI 認知與時代趨勢  ### AI 演進路徑  - 2023: ChatBot 對話式 AI - 2024: GenAI 內容生成 - 2025:",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
       "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
     },
     {
       "slug": "ai-agents-sustainable-sme-esg",
       "title": "AI Agents for Sustainable SMEs: A Green ESG Assessment Framework",
       "category": "技術深讀",
-      "excerpt": "--- title: \"AI Agents for Sustainable SMEs: A Green ESG Assessment Framework\" ta",
+      "excerpt": "**作者：** Viet Trinh, Tan Nguyen, Minh-Huyen Phan, Quan Luu **發表：** 2026-04-05（原文日",
       "url": "https://brain.rong-rise.com/brain/ai-agents-sustainable-sme-esg/"
+    },
+    {
+      "slug": "ai-ej20ew",
+      "title": "台灣 AI 政策動態",
+      "category": "政策與法規",
+      "excerpt": "## AI 基本法草案進度  台灣《人工智慧基本法》草案由國家科學及技術委員會（國科會）主導，歷經多次公聽會與跨部會協商，目前重點彙整如下：  - **立法架構",
+      "url": "https://brain.rong-rise.com/brain/ai-ej20ew/"
     }
   ],
   "ai-price-war-compute-deflation": [
@@ -432,7 +1214,7 @@
       "slug": "ai4se-se4ai-decade-review",
       "title": "AI4SE and SE4AI Exploration: A Decade Looking Back and Forward",
       "category": "技術深讀",
-      "excerpt": "--- title: \"AI4SE and SE4AI Exploration: A Decade Looking Back and Forward\" tags",
+      "excerpt": "**作者：** H. Sinan Bank, Daniel R. Herber, Thomas Bradley **發表：** 2026-06-17  ## 摘",
       "url": "https://brain.rong-rise.com/brain/ai4se-se4ai-decade-review/"
     }
   ],
@@ -475,34 +1257,34 @@
       "url": "https://brain.rong-rise.com/brain/a-6hrwui/"
     },
     {
-      "slug": "a-olnn24",
-      "title": "內在動機與激勵心理學",
+      "slug": "simongaudreau-5gzvy8",
+      "title": "完美主義的學術脈絡 — 從 Simon 到 Gaudreau 的七十年證據鏈",
       "category": "管理心理學",
-      "excerpt": "## 核心問題：為什麼員工不 active？  多數管理者面對的困境：給了錢、給了獎金、給了福利，為什麼員工還是只做最低限度的事？  > **關鍵洞見（Dani",
-      "url": "https://brain.rong-rise.com/brain/a-olnn24/"
+      "excerpt": "# 🔬 完美主義的學術脈絡 — 從 Simon 到 Gaudreau 的七十年證據鏈  **建立：** 2026-09-27 **用途：** HBR 好讀〈追求",
+      "url": "https://brain.rong-rise.com/brain/simongaudreau-5gzvy8/"
     }
   ],
   "ai-agent-silent-employee-fences": [
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
-    },
-    {
       "slug": "ai-jhzne0",
       "title": "AI 轉型實戰營核心筆記",
       "category": "中小企業AI轉型實戰",
-      "excerpt": "## 1. AI 認知與時代趨勢  ### AI 演進路徑  - 2023: ChatBot 對話式 AI - 2024: GenAI 內容生成 - 2025:",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
       "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
     },
     {
       "slug": "ai-agents-sustainable-sme-esg",
       "title": "AI Agents for Sustainable SMEs: A Green ESG Assessment Framework",
       "category": "技術深讀",
-      "excerpt": "--- title: \"AI Agents for Sustainable SMEs: A Green ESG Assessment Framework\" ta",
+      "excerpt": "**作者：** Viet Trinh, Tan Nguyen, Minh-Huyen Phan, Quan Luu **發表：** 2026-04-05（原文日",
       "url": "https://brain.rong-rise.com/brain/ai-agents-sustainable-sme-esg/"
+    },
+    {
+      "slug": "deepmind-alphaevolve-algorithm-discovery",
+      "title": "AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms（AlphaEvolve：基于 Gemini 的高階演算法設計 AI 編碼代理）",
+      "category": "國際視野",
+      "excerpt": "**來源：** Google DeepMind **原文日期：** 2026-05-14  ## 中文摘要  Google DeepMind 推出 AlphaE",
+      "url": "https://brain.rong-rise.com/brain/deepmind-alphaevolve-algorithm-discovery/"
     }
   ],
   "false-alignment-ai-transformation": [
@@ -521,37 +1303,44 @@
       "url": "https://brain.rong-rise.com/brain/a-y4cv1x/"
     },
     {
-      "slug": "ai-jhzne0",
-      "title": "AI 轉型實戰營核心筆記",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "## 1. AI 認知與時代趨勢  ### AI 演進路徑  - 2023: ChatBot 對話式 AI - 2024: GenAI 內容生成 - 2025:",
-      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
+      "slug": "mckinsey-ceos-ai-moment-2026-01-22",
+      "title": "McKinsey：AI 轉型是「80% 商業、20% 技術」——最好的 CEO 怎麼做",
+      "category": "國際視野",
+      "excerpt": "# McKinsey：AI 轉型是「80% 商業、20% 技術」  **來源：** McKinsey Podcast（北美主席 Eric Kutcher） **",
+      "url": "https://brain.rong-rise.com/brain/mckinsey-ceos-ai-moment-2026-01-22/"
     }
   ],
   "fear-tax-ai-landing": [
     {
-      "slug": "a-jky39k",
-      "title": "顧問專案 — 實戰案例、方法論與產業洞見",
-      "category": "顧問專案",
-      "excerpt": "> 歷屆顧問專案紀錄、結案報告、方法論、產業案例與經驗學習。  ---  ## 📋 知識索引  ### 產業案例實戰 | 主題 | 檔案 | 核心洞見 | |-",
-      "url": "https://brain.rong-rise.com/brain/a-jky39k/"
-    },
-    {
       "slug": "ai-jhzne0",
       "title": "AI 轉型實戰營核心筆記",
       "category": "中小企業AI轉型實戰",
-      "excerpt": "## 1. AI 認知與時代趨勢  ### AI 演進路徑  - 2023: ChatBot 對話式 AI - 2024: GenAI 內容生成 - 2025:",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
       "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
     },
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
+      "slug": "ai-b4r6p3",
+      "title": "恐懼稅-心理安全感與AI落地",
+      "category": "管理心理學",
+      "excerpt": "> 員工不敢說出口的三句話，正在殺死你的 AI 專案。這是比摩擦力稅更底層的心理稅。  ## 核心觀點 - AI 落地本質是一場大規模試錯實驗：員工必須敢用、敢",
+      "url": "https://brain.rong-rise.com/brain/ai-b4r6p3/"
+    },
+    {
+      "slug": "mckinsey-ceos-ai-moment-2026-01-22",
+      "title": "McKinsey：AI 轉型是「80% 商業、20% 技術」——最好的 CEO 怎麼做",
+      "category": "國際視野",
+      "excerpt": "# McKinsey：AI 轉型是「80% 商業、20% 技術」  **來源：** McKinsey Podcast（北美主席 Eric Kutcher） **",
+      "url": "https://brain.rong-rise.com/brain/mckinsey-ceos-ai-moment-2026-01-22/"
     }
   ],
   "xiaoha-hermes-system-overview": [
+    {
+      "slug": "arxiv-llm-parkinsonism-executive-control",
+      "title": "arXiv — LLM Parkinsonism：agent 停不下來，問題出在「提案、評估、停手」都在同一個迴圈裡",
+      "category": "技術深讀",
+      "excerpt": "# LLM Parkinsonism: Executive-Control Failure, Token-Inefficient Persistence, an",
+      "url": "https://brain.rong-rise.com/brain/arxiv-llm-parkinsonism-executive-control/"
+    },
     {
       "slug": "hermes-agent-architecture-v0170",
       "title": "Hermes-Agent-Architecture-v0170",
@@ -560,18 +1349,11 @@
       "url": "https://brain.rong-rise.com/brain/hermes-agent-architecture-v0170/"
     },
     {
-      "slug": "deepmind-alphaevolve-algorithm-discovery",
-      "title": "AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms（AlphaEvolve：基于 Gemini 的高階演算法設計 AI 編碼代理）",
+      "slug": "a16z-agent-era-box-levie-2026-04-08",
+      "title": "a16z — Box 執行長：當 agent 比員工多 1000 倍，你的軟體是為誰而建？",
       "category": "國際視野",
-      "excerpt": "--- title: \"AlphaEvolve: A Gemini-powered coding agent for designing advanced al",
-      "url": "https://brain.rong-rise.com/brain/deepmind-alphaevolve-algorithm-discovery/"
-    },
-    {
-      "slug": "anthropic-paving-the-way-for-agents-in-biology",
-      "title": "Paving the way for agents in biology（為 AI Agent 鋪平生物學之路）",
-      "category": "國際視野",
-      "excerpt": "**來源：** Anthropic **原文日期：** 2026-06-08  ## 中文摘要  Anthropic 研究員 Laura Luebbert 指出",
-      "url": "https://brain.rong-rise.com/brain/anthropic-paving-the-way-for-agents-in-biology/"
+      "excerpt": "# a16z：The Agent Era — Building Software Beyond Chat with Box CEO Aaron Levie  *",
+      "url": "https://brain.rong-rise.com/brain/a16z-agent-era-box-levie-2026-04-08/"
     }
   ],
   "dcard-agent-native-100-ai-agents": [
@@ -606,18 +1388,18 @@
       "url": "https://brain.rong-rise.com/brain/bcg-ai-radar-2026-ceos-take-lead/"
     },
     {
-      "slug": "ai-jhzne0",
-      "title": "AI 轉型實戰營核心筆記",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "## 1. AI 認知與時代趨勢  ### AI 演進路徑  - 2023: ChatBot 對話式 AI - 2024: GenAI 內容生成 - 2025:",
-      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
+      "slug": "bcg-ai-agents-golden-era-customer-experience-2025",
+      "title": "BCG — How AI Agents Are Opening the Golden Era of Customer Experience",
+      "category": "國際視野",
+      "excerpt": "**來源：** BCG (Boston Consulting Group) **日期：** 2025-01-13 **作者：** Karen Lellouche",
+      "url": "https://brain.rong-rise.com/brain/bcg-ai-agents-golden-era-customer-experience-2025/"
     },
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
+      "slug": "bcg-cio-role-ai-value-creation-2025",
+      "title": "BCG — The CIO's Role in AI Value Creation",
+      "category": "國際視野",
+      "excerpt": "**來源：** BCG (Boston Consulting Group) **日期：** 2025-02-19 **作者：** Jean-François B",
+      "url": "https://brain.rong-rise.com/brain/bcg-cio-role-ai-value-creation-2025/"
     }
   ],
   "ai-replaces-tasks-not-jobs-manager-new-role": [
@@ -636,11 +1418,11 @@
       "url": "https://brain.rong-rise.com/brain/5-g4le91/"
     },
     {
-      "slug": "a-y4cv1x",
-      "title": "變革的心理方程式",
-      "category": "管理心理學",
-      "excerpt": "## 核心問題：為什麼人天生抗拒改變？  > *「人不抗拒改變，人抗拒的是被改變。」* — 管理心理學經典名言  ## Kübler-Ross 變革曲線（5 S",
-      "url": "https://brain.rong-rise.com/brain/a-y4cv1x/"
+      "slug": "bcg-next-gen-strategist-ai",
+      "title": "BCG：AI 時代的下一代策略長——分析被商品化，策略價值在於選擇「對的思考模式」",
+      "category": "國際視野",
+      "excerpt": "# BCG：AI 時代的下一代策略長——四種思考模式  **來源：** BCG（Boston Consulting Group） **日期：** 2026-08",
+      "url": "https://brain.rong-rise.com/brain/bcg-next-gen-strategist-ai/"
     }
   ],
   "bcgx-ai-transformation-deploy-reshape-invent": [
@@ -659,37 +1441,44 @@
       "url": "https://brain.rong-rise.com/brain/bcg-cio-role-ai-value-creation-2025/"
     },
     {
-      "slug": "ai-jhzne0",
-      "title": "AI 轉型實戰營核心筆記",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "## 1. AI 認知與時代趨勢  ### AI 演進路徑  - 2023: ChatBot 對話式 AI - 2024: GenAI 內容生成 - 2025:",
-      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
+      "slug": "bcg-ai-agents-golden-era-customer-experience-2025",
+      "title": "BCG — How AI Agents Are Opening the Golden Era of Customer Experience",
+      "category": "國際視野",
+      "excerpt": "**來源：** BCG (Boston Consulting Group) **日期：** 2025-01-13 **作者：** Karen Lellouche",
+      "url": "https://brain.rong-rise.com/brain/bcg-ai-agents-golden-era-customer-experience-2025/"
     }
   ],
   "ai-10-20-70-rule-transformation-management": [
+    {
+      "slug": "2026-10-10-cbst2v",
+      "title": "RongRise 工程週報 2026-10-10",
+      "category": "技術深讀",
+      "excerpt": "# RongRise 工程週報 2026-10-10  - tags: [工程週報, builder-bot, 開發回顧] - 回顧區間：2026-10-04（",
+      "url": "https://brain.rong-rise.com/brain/2026-10-10-cbst2v/"
+    },
+    {
+      "slug": "2026-10-20-r6nm9y",
+      "title": "工程週報 2026-10-20（補跑）",
+      "category": "技術深讀",
+      "excerpt": "# 工程週報 2026-10-20（補跑）  tags: [工程週報, builder-bot, 開發回顧]  ## 本週 commit 清單  ### Ron",
+      "url": "https://brain.rong-rise.com/brain/2026-10-20-r6nm9y/"
+    },
     {
       "slug": "gartner-ai-agents-outnumber-sellers-2028",
       "title": "Gartner Predicts AI Agents Will Outnumber Sellers 10 to 1 by 2028（Gartner 預測 2028 年 AI Agent 數量達銷售人員 10 倍）",
       "category": "國際視野",
       "excerpt": "**來源：** Gartner, Inc.（新聞稿） **日期：** 2026-07-28  ## 核心論點 Gartner 預測 2028 年銷售組織中 AI",
       "url": "https://brain.rong-rise.com/brain/gartner-ai-agents-outnumber-sellers-2028/"
-    },
-    {
-      "slug": "mittr-10-things-ai-right-now-2026",
-      "title": "10 things that matter in AI right now（當今 AI 最重要的 10 件事）",
-      "category": "國際視野",
-      "excerpt": "**來源：** MIT Technology Review **原文日期：** 2026-04-21  ## 中文摘要 MIT Technology Revie",
-      "url": "https://brain.rong-rise.com/brain/mittr-10-things-ai-right-now-2026/"
-    },
-    {
-      "slug": "deloitte-ai-transformation-predictions-2026",
-      "title": "Enterprise AI trends in 2026: AI transformation strategy opportunities and predictions（2026 企業 AI 趨勢：轉型策略的機會與預測——三大缺口）",
-      "category": "國際視野",
-      "excerpt": "--- title: \"Enterprise AI trends in 2026: AI transformation strategy opportuniti",
-      "url": "https://brain.rong-rise.com/brain/deloitte-ai-transformation-predictions-2026/"
     }
   ],
   "10-management-psychology-theories": [
+    {
+      "slug": "ai-workforce-policy-testbed",
+      "title": "Toward an AI-Powered Computational Testbed for Workforce Policy",
+      "category": "技術深讀",
+      "excerpt": "**作者：** Sumer S. Vaid, Ashley V. Whillans **發表：** 2026-05-18（原文日期亦記為 18 May 2026",
+      "url": "https://brain.rong-rise.com/brain/ai-workforce-policy-testbed/"
+    },
     {
       "slug": "a-60xceb",
       "title": "也許不是「AI 時代」，而是「摩擦力重新分配」的時代",
@@ -698,18 +1487,103 @@
       "url": "https://brain.rong-rise.com/brain/a-60xceb/"
     },
     {
-      "slug": "mittr-10-things-ai-right-now-2026",
-      "title": "10 things that matter in AI right now（當今 AI 最重要的 10 件事）",
-      "category": "國際視野",
-      "excerpt": "**來源：** MIT Technology Review **原文日期：** 2026-04-21  ## 中文摘要 MIT Technology Revie",
-      "url": "https://brain.rong-rise.com/brain/mittr-10-things-ai-right-now-2026/"
+      "slug": "2026-10-10-cbst2v",
+      "title": "RongRise 工程週報 2026-10-10",
+      "category": "技術深讀",
+      "excerpt": "# RongRise 工程週報 2026-10-10  - tags: [工程週報, builder-bot, 開發回顧] - 回顧區間：2026-10-04（",
+      "url": "https://brain.rong-rise.com/brain/2026-10-10-cbst2v/"
+    }
+  ],
+  "psychological-safety-truth": [
+    {
+      "slug": "a-6hrwui",
+      "title": "心理安全感與職場文化",
+      "category": "管理心理學",
+      "excerpt": "## 什麼是心理安全感？  心理安全感（Psychological Safety）不是「讓大家都很舒服」，而是 **「團隊成員敢於冒人際風險而不必擔心負面後果」",
+      "url": "https://brain.rong-rise.com/brain/a-6hrwui/"
     },
+    {
+      "slug": "5-g4le91",
+      "title": "企業消滅摩擦的5大戰略",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> AI 是這個世代的馬鐙與弩，解放了雙手，但也唯有願意重新設計系統的企業才能在加速曲線上勝出。  ## 📌 核心命題  技術躍遷的紅利從不雨露均霑。新秩序來臨",
+      "url": "https://brain.rong-rise.com/brain/5-g4le91/"
+    },
+    {
+      "slug": "bcg-next-gen-strategist-ai",
+      "title": "BCG：AI 時代的下一代策略長——分析被商品化，策略價值在於選擇「對的思考模式」",
+      "category": "國際視野",
+      "excerpt": "# BCG：AI 時代的下一代策略長——四種思考模式  **來源：** BCG（Boston Consulting Group） **日期：** 2026-08",
+      "url": "https://brain.rong-rise.com/brain/bcg-next-gen-strategist-ai/"
+    }
+  ],
+  "cognitive-biases-management": [
+    {
+      "slug": "a-mihwnl",
+      "title": "管理者的認知偏誤",
+      "category": "管理心理學",
+      "excerpt": "## 為什麼管理者特別容易掉入認知陷阱？  管理者的工作本質是「在不確定中做決策」——而人類大腦為了節省能量，發展出各種捷徑（heuristics），這些捷徑在",
+      "url": "https://brain.rong-rise.com/brain/a-mihwnl/"
+    },
+    {
+      "slug": "ai-nesfkm",
+      "title": "判斷力萎縮症：AI 自動化依賴如何讓決策技能用進廢退",
+      "category": "管理心理學",
+      "excerpt": "# 🧠 判斷力萎縮症：AI 自動化依賴如何讓決策技能用進廢退  > 一句話：AI 幫你做了 90% 的決定，剩下的 10% 你還會做嗎？判斷力像肌肉一樣用進廢退",
+      "url": "https://brain.rong-rise.com/brain/ai-nesfkm/"
+    },
+    {
+      "slug": "bcg-ai-fitness-for-ceos-2025",
+      "title": "BCG — AI Fitness for CEOs: Building Digital Strength",
+      "category": "國際視野",
+      "excerpt": "**來源：** BCG (Boston Consulting Group) **日期：** 2025-03-18  ## 核心論點  CEO 必須培養「AI 體",
+      "url": "https://brain.rong-rise.com/brain/bcg-ai-fitness-for-ceos-2025/"
+    }
+  ],
+  "change-psychology-perspective": [
     {
       "slug": "a-y4cv1x",
       "title": "變革的心理方程式",
       "category": "管理心理學",
       "excerpt": "## 核心問題：為什麼人天生抗拒改變？  > *「人不抗拒改變，人抗拒的是被改變。」* — 管理心理學經典名言  ## Kübler-Ross 變革曲線（5 S",
       "url": "https://brain.rong-rise.com/brain/a-y4cv1x/"
+    },
+    {
+      "slug": "a-7qcsmq",
+      "title": "組織變革管理步驟",
+      "category": "人資與組織發展",
+      "excerpt": "> 引導組織順利度過變革的結構化方法，降低抗拒、加速採納。  ## 📋 變革管理八步驟（Kotter 模型改編）  ### Step 1：建立急迫感 - 分析市",
+      "url": "https://brain.rong-rise.com/brain/a-7qcsmq/"
+    },
+    {
+      "slug": "ai-workforce-policy-testbed",
+      "title": "Toward an AI-Powered Computational Testbed for Workforce Policy",
+      "category": "技術深讀",
+      "excerpt": "**作者：** Sumer S. Vaid, Ashley V. Whillans **發表：** 2026-05-18（原文日期亦記為 18 May 2026",
+      "url": "https://brain.rong-rise.com/brain/ai-workforce-policy-testbed/"
+    }
+  ],
+  "coaching-leadership-science": [
+    {
+      "slug": "a-jc2hm7",
+      "title": "教練式領導的心理基礎",
+      "category": "管理心理學",
+      "excerpt": "## 教練不是心靈雞湯——它是科學  教練式領導（Coaching Leadership）常被誤解為「溫暖鼓勵的主管風格」，但它的基礎是紮實的心理學研究。  >",
+      "url": "https://brain.rong-rise.com/brain/a-jc2hm7/"
+    },
+    {
+      "slug": "mckinsey-ai-transformation-manifesto-2026",
+      "title": "McKinsey AI 轉型宣言 — 12 個主題與「20 家公司、20% EBITDA 提升」的實證",
+      "category": "國際視野",
+      "excerpt": "# McKinsey：The AI transformation manifesto（12 個主題）  **來源：** McKinsey Quarterly（A",
+      "url": "https://brain.rong-rise.com/brain/mckinsey-ai-transformation-manifesto-2026/"
+    },
+    {
+      "slug": "bcg-ai-fitness-for-ceos-2025",
+      "title": "BCG — AI Fitness for CEOs: Building Digital Strength",
+      "category": "國際視野",
+      "excerpt": "**來源：** BCG (Boston Consulting Group) **日期：** 2025-03-18  ## 核心論點  CEO 必須培養「AI 體",
+      "url": "https://brain.rong-rise.com/brain/bcg-ai-fitness-for-ceos-2025/"
     }
   ],
   "ai-eliminating-middle-management-worker-survival-guide": [
@@ -717,7 +1591,7 @@
       "slug": "ai-h73zw1",
       "title": "矽谷用AI消滅純管理職",
       "category": "人資與組織發展",
-      "excerpt": "--- title: 矽谷用AI消滅純管理職 type: note domain: 人資與組織發展 status: active date: 2026-08-3",
+      "excerpt": "> 來源：經理人月刊文章（2026-07 知識掃描收錄） > - [2026-07-06 版本](https://www.managertoday.com.tw",
       "url": "https://brain.rong-rise.com/brain/ai-h73zw1/"
     },
     {
@@ -731,11 +1605,64 @@
       "slug": "deepmind-alphaevolve-algorithm-discovery",
       "title": "AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms（AlphaEvolve：基于 Gemini 的高階演算法設計 AI 編碼代理）",
       "category": "國際視野",
-      "excerpt": "--- title: \"AlphaEvolve: A Gemini-powered coding agent for designing advanced al",
+      "excerpt": "**來源：** Google DeepMind **原文日期：** 2026-05-14  ## 中文摘要  Google DeepMind 推出 AlphaE",
       "url": "https://brain.rong-rise.com/brain/deepmind-alphaevolve-algorithm-discovery/"
     }
   ],
+  "the-great-rewiring-agentic-organization": [
+    {
+      "slug": "ai-incident-notification-gap-2026-09-29",
+      "title": "AI 事故通報缺口：事故最貴的一段，是沒人通報的那段時間",
+      "category": "國際視野",
+      "excerpt": "**來源：** W40 週報（2026-09-22 ～ 09-28）＋ 自家文章〈澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報〉 **日期：** 20",
+      "url": "https://brain.rong-rise.com/brain/ai-incident-notification-gap-2026-09-29/"
+    },
+    {
+      "slug": "ai-agent-unplug-time-framework-2026-10",
+      "title": "拔線時間：AI 代理治理從規範層退守到架構層",
+      "category": "國際視野",
+      "excerpt": "# 拔線時間：AI 代理治理從規範層退守到架構層  **對應官網文章：**〈連做模型的公司都說控制不住：AI 代理的安全，要從「它會拒絕」改成「它碰不到」〉（2",
+      "url": "https://brain.rong-rise.com/brain/ai-agent-unplug-time-framework-2026-10/"
+    },
+    {
+      "slug": "gartner-agentic-ai-saas-risk",
+      "title": "Gartner：Agentic AI 將威脅 $2,340 億企業軟體支出——Saaspocalypse 重定義",
+      "category": "國際視野",
+      "excerpt": "# Gartner：$2,340 億企業軟體支出面臨 Agentic AI 威脅  **來源：** Gartner Press Release **日期：** ",
+      "url": "https://brain.rong-rise.com/brain/gartner-agentic-ai-saas-risk/"
+    }
+  ],
+  "ai-ownership-inversion-non-it-lead": [
+    {
+      "slug": "gartner-it-spending-2026-ai-infrastructure",
+      "title": "Gartner Forecasts Worldwide IT Spending to Grow 14.2% in 2026（Gartner 預測 2026 全球 IT 支出成長 14.2%、達 6.37 兆美元）",
+      "category": "國際視野",
+      "excerpt": "**來源：** Gartner, Inc.（新聞稿） **日期：** 2026-07-27  ## 核心論點 Gartner 上修 2026 全球 IT 支出預",
+      "url": "https://brain.rong-rise.com/brain/gartner-it-spending-2026-ai-infrastructure/"
+    },
+    {
+      "slug": "stratechery-anthropic-watermarking-2026",
+      "title": "Anthropic's Watermarking, How It (Probably) Works, Worse Than It Seems（Anthropic 的浮水印：可能如何運作，比表面看起來更糟）",
+      "category": "國際視野",
+      "excerpt": "**來源：** Stratechery (Ben Thompson) **原文日期：** 2026-08-12  ## 中文摘要 歐盟 AI 法案（EU AI ",
+      "url": "https://brain.rong-rise.com/brain/stratechery-anthropic-watermarking-2026/"
+    },
+    {
+      "slug": "mckinsey-ai-reinventors-operating-model-2026",
+      "title": "McKinsey：AI「重塑者」靠營運模式取勝——12 個設計要素與四項成果（2026）",
+      "category": "國際視野",
+      "excerpt": "# McKinsey：AI「重塑者」靠營運模式取勝——12 個設計要素與四項成果（2026）  **來源：** McKinsey（Organize to Val",
+      "url": "https://brain.rong-rise.com/brain/mckinsey-ai-reinventors-operating-model-2026/"
+    }
+  ],
   "hr-ai-trilogy-part1-recruitment-automation": [
+    {
+      "slug": "arxiv-hr-managers-xai-literacy-recruiting",
+      "title": "arXiv 2509.06475 — 解釋了卻更誤解：410 位 HR 主管的可解釋 AI 實驗",
+      "category": "技術深讀",
+      "excerpt": "# Explained, yet misunderstood：HR 主管的 AI 素養如何影響他們理解招募推薦系統  **來源：** arXiv:2509.06",
+      "url": "https://brain.rong-rise.com/brain/arxiv-hr-managers-xai-literacy-recruiting/"
+    },
     {
       "slug": "mckinsey-escaping-pilot-trap-hr-agentic-era",
       "title": "逃離 Pilot 陷阱：打造 Agentic 時代的 HR（麥肯錫 2026）",
@@ -744,18 +1671,11 @@
       "url": "https://brain.rong-rise.com/brain/mckinsey-escaping-pilot-trap-hr-agentic-era/"
     },
     {
-      "slug": "anthropic-economic-index-cadences-2026",
+      "slug": "anthropic-economic-index-june-2026-cadences",
       "title": "Anthropic Economic Index report: Cadences（Anthropic 經濟指數報告：節奏）",
       "category": "國際視野",
-      "excerpt": "--- title: \"Anthropic Economic Index report: Cadences（Anthropic 經濟指數報告：節奏）\" tags",
-      "url": "https://brain.rong-rise.com/brain/anthropic-economic-index-cadences-2026/"
-    },
-    {
-      "slug": "mckinsey-three-horizons-ai-transformation",
-      "title": "From adoption to impact: Three horizons of AI transformation（從採用到影響：AI 轉型的三個階段）",
-      "category": "國際視野",
-      "excerpt": "--- title: \"From adoption to impact: Three horizons of AI transformation（從採用到影響：",
-      "url": "https://brain.rong-rise.com/brain/mckinsey-three-horizons-ai-transformation/"
+      "excerpt": "**來源：** Anthropic **原文日期：** 2026-06-26（另一份記錄為 2026 年 6 月）  ## 中文摘要 Anthropic 發布第",
+      "url": "https://brain.rong-rise.com/brain/anthropic-economic-index-june-2026-cadences/"
     }
   ],
   "hr-ai-trilogy-part2-taiwan-enterprise-challenges": [
@@ -763,22 +1683,22 @@
       "slug": "ai-jhzne0",
       "title": "AI 轉型實戰營核心筆記",
       "category": "中小企業AI轉型實戰",
-      "excerpt": "## 1. AI 認知與時代趨勢  ### AI 演進路徑  - 2023: ChatBot 對話式 AI - 2024: GenAI 內容生成 - 2025:",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
       "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
     },
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
+      "slug": "ai-q723x2",
+      "title": "希爾頓 72 個實習缺收到 1.2 萬份申請：投遞變便宜後，貴的是辨識真人訊號",
+      "category": "人才策略",
+      "excerpt": "# 希爾頓 72 個實習缺收到 1.2 萬份申請：投遞變便宜後，貴的是辨識真人訊號  **來源：** Fortune，2026-09-20（經榕賀觀點第 20 ",
+      "url": "https://brain.rong-rise.com/brain/ai-q723x2/"
     },
     {
-      "slug": "bcg-ai-radar-2026-ceos-take-lead",
-      "title": "BCG 2026 AI Radar：AI 投資翻倍，CEO 接掌主導權",
-      "category": "國際視野",
-      "excerpt": "**來源：** Boston Consulting Group **日期：** 2026（2026 AI Radar，調查 2,360 位高階主管、含 640 ",
-      "url": "https://brain.rong-rise.com/brain/bcg-ai-radar-2026-ceos-take-lead/"
+      "slug": "arxiv-workforce-readiness-smart-manufacturing",
+      "title": "智慧製造的「勞動力就緒度」框架：把 TRL 改寫成九級能力階梯",
+      "category": "技術深讀",
+      "excerpt": "# 智慧製造的「勞動力就緒度」框架：把 TRL 改寫成九級能力階梯  **來源：** arXiv 2608.11540v1（eess.SY / cs.AI / ",
+      "url": "https://brain.rong-rise.com/brain/arxiv-workforce-readiness-smart-manufacturing/"
     }
   ],
   "hr-ai-trilogy-part3-employee-survival-rules": [
@@ -793,70 +1713,31 @@
       "slug": "ai-wwmama",
       "title": "效率隱藏-AI生產力紅利分配契約",
       "category": "人才策略",
-      "excerpt": "--- title: 效率隱藏-AI生產力紅利分配契約 type: note domain: 人才策略 status: active date: 2026-08",
+      "excerpt": "> 來源：CJ哥研究筆記（2026-08-08 產出） > 存入：2026-08-16｜分類：人才策略 / AI 生產力 / 績效設計 / 工作設計  ## 一",
       "url": "https://brain.rong-rise.com/brain/ai-wwmama/"
-    }
-  ],
-  "the-great-rewiring-agentic-organization": [
-    {
-      "slug": "a-60xceb",
-      "title": "也許不是「AI 時代」，而是「摩擦力重新分配」的時代",
-      "category": "寫作與出版",
-      "excerpt": "## 也許不是「AI 時代」，而是「摩擦力重新分配」的時代  以前我常跟客戶說一句話：一個組織裡，真正拿來做事的時間，可能只有兩三成。剩下七八成，都花在整合不同",
-      "url": "https://brain.rong-rise.com/brain/a-60xceb/"
     },
     {
-      "slug": "mckinsey-escaping-pilot-trap-hr-agentic-era",
-      "title": "逃離 Pilot 陷阱：打造 Agentic 時代的 HR（麥肯錫 2026）",
-      "category": "國際視野",
-      "excerpt": "**來源：** McKinsey & Company（People & Organizational Performance Practice） **作者：**",
-      "url": "https://brain.rong-rise.com/brain/mckinsey-escaping-pilot-trap-hr-agentic-era/"
-    },
-    {
-      "slug": "ai-jhzne0",
-      "title": "AI 轉型實戰營核心筆記",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "## 1. AI 認知與時代趨勢  ### AI 演進路徑  - 2023: ChatBot 對話式 AI - 2024: GenAI 內容生成 - 2025:",
-      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
-    }
-  ],
-  "ai-ownership-inversion-non-it-lead": [
-    {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
-    },
-    {
-      "slug": "gartner-it-spending-2026-ai-infrastructure",
-      "title": "Gartner Forecasts Worldwide IT Spending to Grow 14.2% in 2026（Gartner 預測 2026 全球 IT 支出成長 14.2%、達 6.37 兆美元）",
-      "category": "國際視野",
-      "excerpt": "**來源：** Gartner, Inc.（新聞稿） **日期：** 2026-07-27  ## 核心論點 Gartner 上修 2026 全球 IT 支出預",
-      "url": "https://brain.rong-rise.com/brain/gartner-it-spending-2026-ai-infrastructure/"
-    },
-    {
-      "slug": "stratechery-anthropic-watermarking-2026",
-      "title": "Anthropic's Watermarking, How It (Probably) Works, Worse Than It Seems（Anthropic 的浮水印：可能如何運作，比表面看起來更糟）",
-      "category": "國際視野",
-      "excerpt": "**來源：** Stratechery (Ben Thompson) **原文日期：** 2026-08-12  ## 中文摘要 歐盟 AI 法案（EU AI ",
-      "url": "https://brain.rong-rise.com/brain/stratechery-anthropic-watermarking-2026/"
+      "slug": "ai-hbr2026-09-23-71u6hf",
+      "title": "AI 時代的績效管理：三層衡量框架（HBR 2026-09-23）",
+      "category": "人才策略",
+      "excerpt": "# AI 時代的績效管理：三層衡量框架  > **來源**：蘭迪．畢恩（Randy Bean）、艾瑞克．史特勞斯（Erik Strauss）、蘭迪普．辛格（Ra",
+      "url": "https://brain.rong-rise.com/brain/ai-hbr2026-09-23-71u6hf/"
     }
   ],
   "ai-landing-trilogy-1-three-illusions": [
-    {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
-    },
     {
       "slug": "a-be144m",
       "title": "國際顧問報告摘要 — AI 轉型關鍵洞察",
       "category": "國際視野",
       "excerpt": "## Gartner：AI 採用週期與炒作曲線  Gartner 2025-2026 年度的 AI 炒作曲線（Hype Cycle）顯示，生成式 AI 已從「膨",
       "url": "https://brain.rong-rise.com/brain/a-be144m/"
+    },
+    {
+      "slug": "bcg-next-gen-strategist-ai",
+      "title": "BCG：AI 時代的下一代策略長——分析被商品化，策略價值在於選擇「對的思考模式」",
+      "category": "國際視野",
+      "excerpt": "# BCG：AI 時代的下一代策略長——四種思考模式  **來源：** BCG（Boston Consulting Group） **日期：** 2026-08",
+      "url": "https://brain.rong-rise.com/brain/bcg-next-gen-strategist-ai/"
     },
     {
       "slug": "bcg-ai-radar-2026-ceos-take-lead",
@@ -875,18 +1756,18 @@
       "url": "https://brain.rong-rise.com/brain/a-7qcsmq/"
     },
     {
-      "slug": "a-jky39k",
-      "title": "顧問專案 — 實戰案例、方法論與產業洞見",
-      "category": "顧問專案",
-      "excerpt": "> 歷屆顧問專案紀錄、結案報告、方法論、產業案例與經驗學習。  ---  ## 📋 知識索引  ### 產業案例實戰 | 主題 | 檔案 | 核心洞見 | |-",
-      "url": "https://brain.rong-rise.com/brain/a-jky39k/"
-    },
-    {
       "slug": "a-y4cv1x",
       "title": "變革的心理方程式",
       "category": "管理心理學",
       "excerpt": "## 核心問題：為什麼人天生抗拒改變？  > *「人不抗拒改變，人抗拒的是被改變。」* — 管理心理學經典名言  ## Kübler-Ross 變革曲線（5 S",
       "url": "https://brain.rong-rise.com/brain/a-y4cv1x/"
+    },
+    {
+      "slug": "ai-ul17xq",
+      "title": "製造業 AI 應用案例集",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 收集中小型製造業的 AI 應用實例，作為提案與教學的參考素材。  ## 📊 案例總覽  | 應用場景 | AI 技術 | 效益 | 導入難度 | 投資規模 ",
+      "url": "https://brain.rong-rise.com/brain/ai-ul17xq/"
     }
   ],
   "ai-landing-trilogy-3-90-day-escort": [
@@ -914,17 +1795,10 @@
   ],
   "tacit-knowledge-ai-workflow": [
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
-    },
-    {
       "slug": "ai-jhzne0",
       "title": "AI 轉型實戰營核心筆記",
       "category": "中小企業AI轉型實戰",
-      "excerpt": "## 1. AI 認知與時代趨勢  ### AI 演進路徑  - 2023: ChatBot 對話式 AI - 2024: GenAI 內容生成 - 2025:",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
       "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
     },
     {
@@ -933,44 +1807,44 @@
       "category": "中小企業AI轉型實戰",
       "excerpt": "> AI 是這個世代的馬鐙與弩，解放了雙手，但也唯有願意重新設計系統的企業才能在加速曲線上勝出。  ## 📌 核心命題  技術躍遷的紅利從不雨露均霑。新秩序來臨",
       "url": "https://brain.rong-rise.com/brain/5-g4le91/"
-    }
-  ],
-  "ai-data-center-water-esg": [
+    },
     {
       "slug": "ai-agents-sustainable-sme-esg",
       "title": "AI Agents for Sustainable SMEs: A Green ESG Assessment Framework",
       "category": "技術深讀",
-      "excerpt": "--- title: \"AI Agents for Sustainable SMEs: A Green ESG Assessment Framework\" ta",
+      "excerpt": "**作者：** Viet Trinh, Tan Nguyen, Minh-Huyen Phan, Quan Luu **發表：** 2026-04-05（原文日",
+      "url": "https://brain.rong-rise.com/brain/ai-agents-sustainable-sme-esg/"
+    }
+  ],
+  "ai-data-center-water-esg": [
+    {
+      "slug": "arxiv-sustainai-water-aware-accountable-ai",
+      "title": "arXiv — SustainAI：AI 的水足跡差 11 倍，而且三分之一的推論花在錯的答案上",
+      "category": "技術深讀",
+      "excerpt": "# Beyond the Last Truffula Tree: SustainAI — A Water-Aware, Closed-Loop Framewor",
+      "url": "https://brain.rong-rise.com/brain/arxiv-sustainai-water-aware-accountable-ai/"
+    },
+    {
+      "slug": "ai-agents-sustainable-sme-esg",
+      "title": "AI Agents for Sustainable SMEs: A Green ESG Assessment Framework",
+      "category": "技術深讀",
+      "excerpt": "**作者：** Viet Trinh, Tan Nguyen, Minh-Huyen Phan, Quan Luu **發表：** 2026-04-05（原文日",
       "url": "https://brain.rong-rise.com/brain/ai-agents-sustainable-sme-esg/"
     },
     {
       "slug": "mittr-data-center-flex",
       "title": "\"Want to get a data center online quickly? Give it some flex\"（想讓資料中心快速上線？讓它「靈活」一點）",
       "category": "國際視野",
-      "excerpt": "--- title: \"\\\"Want to get a data center online quickly? Give it some flex\\\"（想讓資料",
+      "excerpt": "**來源：** MIT Technology Review **原文日期：** 2026-06-16  ## 中文摘要  隨著 AI 需求爆發，資料中心建設面臨",
       "url": "https://brain.rong-rise.com/brain/mittr-data-center-flex/"
-    },
-    {
-      "slug": "arxiv-ai-agents-green-esg-sme",
-      "title": "AI Agents for Sustainable SMEs: A Green ESG Assessment Framework",
-      "category": "技術深讀",
-      "excerpt": "--- title: \"AI Agents for Sustainable SMEs: A Green ESG Assessment Framework\" ta",
-      "url": "https://brain.rong-rise.com/brain/arxiv-ai-agents-green-esg-sme/"
     }
   ],
   "ai-vulnerability-attack-speed-2026": [
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
-    },
-    {
       "slug": "ai-agents-sustainable-sme-esg",
       "title": "AI Agents for Sustainable SMEs: A Green ESG Assessment Framework",
       "category": "技術深讀",
-      "excerpt": "--- title: \"AI Agents for Sustainable SMEs: A Green ESG Assessment Framework\" ta",
+      "excerpt": "**作者：** Viet Trinh, Tan Nguyen, Minh-Huyen Phan, Quan Luu **發表：** 2026-04-05（原文日",
       "url": "https://brain.rong-rise.com/brain/ai-agents-sustainable-sme-esg/"
     },
     {
@@ -979,6 +1853,13 @@
       "category": "政策與法規",
       "excerpt": "## AI 基本法草案進度  台灣《人工智慧基本法》草案由國家科學及技術委員會（國科會）主導，歷經多次公聽會與跨部會協商，目前重點彙整如下：  - **立法架構",
       "url": "https://brain.rong-rise.com/brain/ai-ej20ew/"
+    },
+    {
+      "slug": "integrator-advantage-agentic-ai-sme",
+      "title": "The Integrator Advantage: Controlled Agentic AI for Small and Medium-Sized Companies",
+      "category": "技術深讀",
+      "excerpt": "**作者：** Christopher Koch, Joshua A. Wellbrock **發表：** 2026-06-15  ## 摘要 本文探討 Age",
+      "url": "https://brain.rong-rise.com/brain/integrator-advantage-agentic-ai-sme/"
     }
   ],
   "shadow-ai-enterprise-security-risk": [
@@ -990,17 +1871,17 @@
       "url": "https://brain.rong-rise.com/brain/shadow-ai-ex7sfz/"
     },
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
+      "slug": "ai-incident-notification-gap-2026-09-29",
+      "title": "AI 事故通報缺口：事故最貴的一段，是沒人通報的那段時間",
+      "category": "國際視野",
+      "excerpt": "**來源：** W40 週報（2026-09-22 ～ 09-28）＋ 自家文章〈澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報〉 **日期：** 20",
+      "url": "https://brain.rong-rise.com/brain/ai-incident-notification-gap-2026-09-29/"
     },
     {
       "slug": "ai-agents-sustainable-sme-esg",
       "title": "AI Agents for Sustainable SMEs: A Green ESG Assessment Framework",
       "category": "技術深讀",
-      "excerpt": "--- title: \"AI Agents for Sustainable SMEs: A Green ESG Assessment Framework\" ta",
+      "excerpt": "**作者：** Viet Trinh, Tan Nguyen, Minh-Huyen Phan, Quan Luu **發表：** 2026-04-05（原文日",
       "url": "https://brain.rong-rise.com/brain/ai-agents-sustainable-sme-esg/"
     }
   ],
@@ -1009,14 +1890,14 @@
       "slug": "arxiv-agent-governance-manifest",
       "title": "Making Agent-Mediated Contributions Governable: A Project-Level Governance Manifest for Open-Source AI Collaboration",
       "category": "技術深讀",
-      "excerpt": "--- title: \"Making Agent-Mediated Contributions Governable: A Project-Level Gove",
+      "excerpt": "**作者：** Jinjin Gao, Luyang Li, Shufen Guo, Ligang He, Xiaoning Sun **發表：** 2026-",
       "url": "https://brain.rong-rise.com/brain/arxiv-agent-governance-manifest/"
     },
     {
       "slug": "deepmind-alphaevolve-algorithm-discovery",
       "title": "AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms（AlphaEvolve：基于 Gemini 的高階演算法設計 AI 編碼代理）",
       "category": "國際視野",
-      "excerpt": "--- title: \"AlphaEvolve: A Gemini-powered coding agent for designing advanced al",
+      "excerpt": "**來源：** Google DeepMind **原文日期：** 2026-05-14  ## 中文摘要  Google DeepMind 推出 AlphaE",
       "url": "https://brain.rong-rise.com/brain/deepmind-alphaevolve-algorithm-discovery/"
     },
     {
@@ -1027,266 +1908,50 @@
       "url": "https://brain.rong-rise.com/brain/anthropic-paving-the-way-for-agents-in-biology/"
     }
   ],
+  "ai-layoffs-narrative-dead": [
+    {
+      "slug": "gartner-hype-cycle-ai-control-ahead-capability-2026-10",
+      "title": "Gartner 2026 AI Hype Cycle——控制優先於能力（2026-10）",
+      "category": "國際視野",
+      "excerpt": "# Gartner 2026 AI Hype Cycle——控制優先於能力（2026-10）  **來源：** Gartner（Haritha Khandaba",
+      "url": "https://brain.rong-rise.com/brain/gartner-hype-cycle-ai-control-ahead-capability-2026-10/"
+    },
+    {
+      "slug": "2026-08-25-wp2o4b",
+      "title": "影片數據回饋-2026-08-25",
+      "category": "內容引擎營運",
+      "excerpt": "> 由小哈內容引擎自動彙整（YouTube Data API + Analytics API）。共 30 支影片有數據。  ## 📊 表現排行（觀看/天）  |",
+      "url": "https://brain.rong-rise.com/brain/2026-08-25-wp2o4b/"
+    },
+    {
+      "slug": "pwc-2026-workforce-four-groups-2026-10-06",
+      "title": "PwC 2026 全球勞動力希望與恐懼調查：四種人與那 56%",
+      "category": "國際視野",
+      "excerpt": "# PwC 2026 全球勞動力希望與恐懼調查：四種人與那 56%  **收錄日**：2026-10-06｜**來源**：PwC《Global Workforc",
+      "url": "https://brain.rong-rise.com/brain/pwc-2026-workforce-four-groups-2026-10-06/"
+    }
+  ],
   "ai-token-cost-management": [
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
+      "slug": "taiwan-ai-policy-2026-09-roundup",
+      "title": "台灣 AI 政策 2026 年 9 月觀察 — 主權 AI 語料庫 22 億 token、SEMI E187 驗證標章、先進 AI 資安三階段",
+      "category": "政策與法規",
+      "excerpt": "# 台灣 AI 政策 2026 年 9 月觀察  **地區：** 台灣 **來源：** 就享知（以數位發展部／數位產業署／資通安全署／資策會第一級官方來源為主要",
+      "url": "https://brain.rong-rise.com/brain/taiwan-ai-policy-2026-09-roundup/"
     },
     {
-      "slug": "trustworthy-data-cbam-value-chains",
-      "title": "To Share or Not to Share: Orchestrating Trustworthy Data in Global Value Chains",
+      "slug": "arxiv-graphmemory-token-efficient-memory",
+      "title": "記憶與脈絡解耦：GraphMemory 省 81–85% 記憶建構 token（arXiv 2610.02687）",
       "category": "技術深讀",
-      "excerpt": "--- title: \"To Share or Not to Share: Orchestrating Trustworthy Data in Global V",
-      "url": "https://brain.rong-rise.com/brain/trustworthy-data-cbam-value-chains/"
+      "excerpt": "# 記憶與脈絡解耦：GraphMemory 省 81–85% 記憶建構 token  **來源：** arXiv（Farhat 等，IBM Research） ",
+      "url": "https://brain.rong-rise.com/brain/arxiv-graphmemory-token-efficient-memory/"
     },
     {
-      "slug": "arxiv-augmentation-to-reconstruction",
-      "title": "From Augmentation to Reconstruction: Guiding the AI Disruption to the Good Place",
-      "category": "技術深讀",
-      "excerpt": "--- title: \"From Augmentation to Reconstruction: Guiding the AI Disruption to th",
-      "url": "https://brain.rong-rise.com/brain/arxiv-augmentation-to-reconstruction/"
-    }
-  ],
-  "ai-transformation-bootcamp": [
-    {
-      "slug": "ai-jhzne0",
-      "title": "AI 轉型實戰營核心筆記",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "## 1. AI 認知與時代趨勢  ### AI 演進路徑  - 2023: ChatBot 對話式 AI - 2024: GenAI 內容生成 - 2025:",
-      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
-    },
-    {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
-    },
-    {
-      "slug": "bcg-ai-radar-2026-ceos-take-lead",
-      "title": "BCG 2026 AI Radar：AI 投資翻倍，CEO 接掌主導權",
+      "slug": "ai-incident-notification-gap-2026-09-29",
+      "title": "AI 事故通報缺口：事故最貴的一段，是沒人通報的那段時間",
       "category": "國際視野",
-      "excerpt": "**來源：** Boston Consulting Group **日期：** 2026（2026 AI Radar，調查 2,360 位高階主管、含 640 ",
-      "url": "https://brain.rong-rise.com/brain/bcg-ai-radar-2026-ceos-take-lead/"
-    }
-  ],
-  "hr-ai-course-design": [
-    {
-      "slug": "hr_ai_-4d30sb",
-      "title": "HR × AI 課程大綱",
-      "category": "人資與組織發展",
-      "excerpt": "--- title: HR × AI 課程大綱 tags: [課程大綱, HR, AI 培訓, 人資] domain: 人資與組織發展 source: \"Goo",
-      "url": "https://brain.rong-rise.com/brain/hr_ai_-4d30sb/"
-    },
-    {
-      "slug": "mckinsey-escaping-pilot-trap-hr-agentic-era",
-      "title": "逃離 Pilot 陷阱：打造 Agentic 時代的 HR（麥肯錫 2026）",
-      "category": "國際視野",
-      "excerpt": "**來源：** McKinsey & Company（People & Organizational Performance Practice） **作者：**",
-      "url": "https://brain.rong-rise.com/brain/mckinsey-escaping-pilot-trap-hr-agentic-era/"
-    },
-    {
-      "slug": "ai-workforce-policy-testbed",
-      "title": "Toward an AI-Powered Computational Testbed for Workforce Policy",
-      "category": "技術深讀",
-      "excerpt": "**作者：** Sumer S. Vaid, Ashley V. Whillans **發表：** 2026-05-18  ## 摘要  AI 正大規模改變知識",
-      "url": "https://brain.rong-rise.com/brain/ai-workforce-policy-testbed/"
-    }
-  ],
-  "sme-esg-guide": [
-    {
-      "slug": "ai-agents-sustainable-sme-esg",
-      "title": "AI Agents for Sustainable SMEs: A Green ESG Assessment Framework",
-      "category": "技術深讀",
-      "excerpt": "--- title: \"AI Agents for Sustainable SMEs: A Green ESG Assessment Framework\" ta",
-      "url": "https://brain.rong-rise.com/brain/ai-agents-sustainable-sme-esg/"
-    },
-    {
-      "slug": "arxiv-ai-agents-green-esg-sme",
-      "title": "AI Agents for Sustainable SMEs: A Green ESG Assessment Framework",
-      "category": "技術深讀",
-      "excerpt": "--- title: \"AI Agents for Sustainable SMEs: A Green ESG Assessment Framework\" ta",
-      "url": "https://brain.rong-rise.com/brain/arxiv-ai-agents-green-esg-sme/"
-    },
-    {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
-    }
-  ],
-  "manufacturing-ai-quality": [
-    {
-      "slug": "ai-ul17xq",
-      "title": "製造業 AI 應用案例集",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 收集中小型製造業的 AI 應用實例，作為提案與教學的參考素材。  ## 📊 案例總覽  | 應用場景 | AI 技術 | 效益 | 導入難度 | 投資規模 ",
-      "url": "https://brain.rong-rise.com/brain/ai-ul17xq/"
-    },
-    {
-      "slug": "stratechery-american-disruption",
-      "title": "American Disruption（美國式顛覆）",
-      "category": "國際視野",
-      "excerpt": "**來源：** Stratechery (Ben Thompson) **原文日期：** 2025-04-09  ## 中文摘要  Ben Thompson 以",
-      "url": "https://brain.rong-rise.com/brain/stratechery-american-disruption/"
-    },
-    {
-      "slug": "a-jky39k",
-      "title": "顧問專案 — 實戰案例、方法論與產業洞見",
-      "category": "顧問專案",
-      "excerpt": "> 歷屆顧問專案紀錄、結案報告、方法論、產業案例與經驗學習。  ---  ## 📋 知識索引  ### 產業案例實戰 | 主題 | 檔案 | 核心洞見 | |-",
-      "url": "https://brain.rong-rise.com/brain/a-jky39k/"
-    }
-  ],
-  "ai-maturity-assessment": [
-    {
-      "slug": "a-b3rfpl",
-      "title": "參考資源 — 工具、書籍、課程與研究報告",
-      "category": "參考資源",
-      "excerpt": "> 整理各領域實用的工具、書籍、課程、研究報告，便於快速查閱與引用。  ---  ## 🛠️ AI 工具  | 工具 | 用途 | 連結 | |------|-",
-      "url": "https://brain.rong-rise.com/brain/a-b3rfpl/"
-    },
-    {
-      "slug": "openmontage-u1qaey",
-      "title": "OpenMontage能力比較",
-      "category": "參考資源",
-      "excerpt": "> 最后更新：2026-06-26  ## 核心能力比較  | 能力 | 現有管線 | OpenMontage | 誰更好？ | |------|-------",
-      "url": "https://brain.rong-rise.com/brain/openmontage-u1qaey/"
-    }
-  ],
-  "team-innovation-management": [
-    {
-      "slug": "ai-garychen-86mip2",
-      "title": "學了那麼多AI為什麼還是沒加薪-GaryChen",
-      "category": "人才策略",
-      "excerpt": "> 來源：YouTube [aZEmxJ9ivzg](https://youtu.be/aZEmxJ9ivzg)｜Gary Chen（@garytalksstu",
-      "url": "https://brain.rong-rise.com/brain/ai-garychen-86mip2/"
-    },
-    {
-      "slug": "ai-wwmama",
-      "title": "效率隱藏-AI生產力紅利分配契約",
-      "category": "人才策略",
-      "excerpt": "--- title: 效率隱藏-AI生產力紅利分配契約 type: note domain: 人才策略 status: active date: 2026-08",
-      "url": "https://brain.rong-rise.com/brain/ai-wwmama/"
-    }
-  ],
-  "ai-tool-selection-guide": [
-    {
-      "slug": "a-b3rfpl",
-      "title": "參考資源 — 工具、書籍、課程與研究報告",
-      "category": "參考資源",
-      "excerpt": "> 整理各領域實用的工具、書籍、課程、研究報告，便於快速查閱與引用。  ---  ## 🛠️ AI 工具  | 工具 | 用途 | 連結 | |------|-",
-      "url": "https://brain.rong-rise.com/brain/a-b3rfpl/"
-    },
-    {
-      "slug": "ai-th8abu",
-      "title": "AI 教師培訓提案大綱（實作優化版）",
-      "category": "AI知識傳播與教育",
-      "excerpt": "> 行銷與流通管理系專屬「AI 工具實作與教案重訓」教師培訓計畫  ## 一、專案背景與痛點診斷  ### 教學挑戰  1. **學生用 AI 寫作業，老師怎麼",
-      "url": "https://brain.rong-rise.com/brain/ai-th8abu/"
-    },
-    {
-      "slug": "gemini_gem_-khfvin",
-      "title": "Gemini GEM 差旅秘書 實戰操作手冊",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 四個階段建立會自動幫你找機票、訂飯店、排行程、算花費、寫出差報告的超級助理  ## 階段一：開啟秘書的「超能力」（擴充功能設定）  1. 開啟 Gemini",
-      "url": "https://brain.rong-rise.com/brain/gemini_gem_-khfvin/"
-    }
-  ],
-  "service-ai-chatbot-case": [
-    {
-      "slug": "ai-mnkqg1",
-      "title": "醫療 AI 應用案例",
-      "category": "產業案例庫",
-      "excerpt": "> 醫療 AI 在診斷輔助、醫療影像、病歷分析的實際應用，聚焦 Taiwan AI Labs 與各大醫院的真實落地成效。  ---  ## 一、Taiwan A",
-      "url": "https://brain.rong-rise.com/brain/ai-mnkqg1/"
-    },
-    {
-      "slug": "ai-uke7j2",
-      "title": "金融業 AI 轉型案例",
-      "category": "產業案例庫",
-      "excerpt": "> 銀行、保險、證券業的 AI 應用深度剖析：風控、客服、理專三大核心場景的真實案例與成效數據。  ---  ## 一、銀行業：玉山銀行「智能金融實驗室」  玉",
-      "url": "https://brain.rong-rise.com/brain/ai-uke7j2/"
-    },
-    {
-      "slug": "ai-nqtxhl",
-      "title": "零售業 AI 賦能案例",
-      "category": "產業案例庫",
-      "excerpt": "> 零售 AI 在個人化推薦、庫存管理、智慧門市的深度應用，檢視統一超商、全聯、momo 等本土巨頭的實際導入成效。  ---  ## 一、統一超商（7-ELE",
-      "url": "https://brain.rong-rise.com/brain/ai-nqtxhl/"
-    }
-  ],
-  "gov-ai-subsidy-guide": [
-    {
-      "slug": "bcg-ai-radar-2026-ceos-take-lead",
-      "title": "BCG 2026 AI Radar：AI 投資翻倍，CEO 接掌主導權",
-      "category": "國際視野",
-      "excerpt": "**來源：** Boston Consulting Group **日期：** 2026（2026 AI Radar，調查 2,360 位高階主管、含 640 ",
-      "url": "https://brain.rong-rise.com/brain/bcg-ai-radar-2026-ceos-take-lead/"
-    },
-    {
-      "slug": "deloitte-human-capital-trends-2026",
-      "title": "2026 Global Human Capital Trends: From Tensions to Tipping Points（2026 全球人力資本趨勢：從張力到臨界點）",
-      "category": "國際視野",
-      "excerpt": "--- title: \"2026 Global Human Capital Trends: From Tensions to Tipping Points（20",
-      "url": "https://brain.rong-rise.com/brain/deloitte-human-capital-trends-2026/"
-    },
-    {
-      "slug": "deloitte-state-of-ai-enterprise-2026",
-      "title": "The State of AI in the Enterprise – 2026 AI Report（2026 企業 AI 現況報告：The Untapped Edge）",
-      "category": "國際視野",
-      "excerpt": "**來源：** Deloitte **日期：** 2026-01-21（2026 年度旗艦 AI 報告）  ## 核心論點 Deloitte 2026 企業 A",
-      "url": "https://brain.rong-rise.com/brain/deloitte-state-of-ai-enterprise-2026/"
-    }
-  ],
-  "ai-transformation-trends-2026": [
-    {
-      "slug": "deloitte-ai-transformation-predictions-2026",
-      "title": "Enterprise AI trends in 2026: AI transformation strategy opportunities and predictions（2026 企業 AI 趨勢：轉型策略的機會與預測——三大缺口）",
-      "category": "國際視野",
-      "excerpt": "--- title: \"Enterprise AI trends in 2026: AI transformation strategy opportuniti",
-      "url": "https://brain.rong-rise.com/brain/deloitte-ai-transformation-predictions-2026/"
-    },
-    {
-      "slug": "deloitte-human-capital-trends-2026",
-      "title": "2026 Global Human Capital Trends: From Tensions to Tipping Points（2026 全球人力資本趨勢：從張力到臨界點）",
-      "category": "國際視野",
-      "excerpt": "--- title: \"2026 Global Human Capital Trends: From Tensions to Tipping Points（20",
-      "url": "https://brain.rong-rise.com/brain/deloitte-human-capital-trends-2026/"
-    },
-    {
-      "slug": "deloitte-state-of-ai-enterprise-2026",
-      "title": "The State of AI in the Enterprise – 2026 AI Report（2026 企業 AI 現況報告：The Untapped Edge）",
-      "category": "國際視野",
-      "excerpt": "**來源：** Deloitte **日期：** 2026-01-21（2026 年度旗艦 AI 報告）  ## 核心論點 Deloitte 2026 企業 A",
-      "url": "https://brain.rong-rise.com/brain/deloitte-state-of-ai-enterprise-2026/"
-    }
-  ],
-  "agentic-ai-transformation-workshop": [
-    {
-      "slug": "bcg-agentic-scenarios-marketing-2026",
-      "title": "Agentic Scenarios Every Marketer Must Prepare For（行銷人必須準備的 Agentic 四情境）",
-      "category": "國際視野",
-      "excerpt": "**來源：** Boston Consulting Group（BCG） **日期：** 2026-03-25  ## 核心論點 AI Agent 將徹底改寫消",
-      "url": "https://brain.rong-rise.com/brain/bcg-agentic-scenarios-marketing-2026/"
-    },
-    {
-      "slug": "bcg-agentic-ai-cio-cto-playbook-2026",
-      "title": "The Agentic Leadership Playbook: A Scaling Strategy for CTOs and CIOs（代理式領導手冊：CTO／CIO 的 Agentic AI 規模化策略）",
-      "category": "國際視野",
-      "excerpt": "--- title: \"The Agentic Leadership Playbook: A Scaling Strategy for CTOs and CIO",
-      "url": "https://brain.rong-rise.com/brain/bcg-agentic-ai-cio-cto-playbook-2026/"
-    },
-    {
-      "slug": "gartner-agentic-ai-234b-saas-risk-2026",
-      "title": "Gartner Says $234 Billion in Enterprise Application Software Spend Is at Risk from Agentic AI（Gartner：2,340 億美元企業應用軟體支出受 Agentic AI 威脅）",
-      "category": "國際視野",
-      "excerpt": "**來源：** Gartner **日期：** 2026-07-01  ## 核心論點 Agentic AI 透過「agentic arbitrage」——AI",
-      "url": "https://brain.rong-rise.com/brain/gartner-agentic-ai-234b-saas-risk-2026/"
+      "excerpt": "**來源：** W40 週報（2026-09-22 ～ 09-28）＋ 自家文章〈澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報〉 **日期：** 20",
+      "url": "https://brain.rong-rise.com/brain/ai-incident-notification-gap-2026-09-29/"
     }
   ],
   "hr-ai-transformation-five-layers": [
@@ -1305,11 +1970,11 @@
       "url": "https://brain.rong-rise.com/brain/5-g4le91/"
     },
     {
-      "slug": "mckinsey-three-horizons-ai-transformation",
-      "title": "From adoption to impact: Three horizons of AI transformation（從採用到影響：AI 轉型的三個階段）",
-      "category": "國際視野",
-      "excerpt": "--- title: \"From adoption to impact: Three horizons of AI transformation（從採用到影響：",
-      "url": "https://brain.rong-rise.com/brain/mckinsey-three-horizons-ai-transformation/"
+      "slug": "arxiv-hr-managers-xai-literacy-recruiting",
+      "title": "arXiv 2509.06475 — 解釋了卻更誤解：410 位 HR 主管的可解釋 AI 實驗",
+      "category": "技術深讀",
+      "excerpt": "# Explained, yet misunderstood：HR 主管的 AI 素養如何影響他們理解招募推薦系統  **來源：** arXiv:2509.06",
+      "url": "https://brain.rong-rise.com/brain/arxiv-hr-managers-xai-literacy-recruiting/"
     }
   ],
   "strategy-subtraction-traditional-industry": [
@@ -1328,27 +1993,27 @@
       "url": "https://brain.rong-rise.com/brain/a-7qcsmq/"
     },
     {
-      "slug": "ai-agent-governance-hitl-hotl",
-      "title": "當 AI 開始做決策：企業如何避免「誰負責」變成無人回答的問題",
-      "category": "技術深讀",
-      "excerpt": "> AI Agent 不是新員工，是一種新型風險載體。治理的起點，是先釐清它永遠不能承擔的那個責任。  ## 一、企業比自己以為的更沒準備好  Gartner ",
-      "url": "https://brain.rong-rise.com/brain/ai-agent-governance-hitl-hotl/"
+      "slug": "mckinsey-three-horizons-ai-transformation",
+      "title": "McKinsey：從採用到影響——AI 轉型的三層視野",
+      "category": "國際視野",
+      "excerpt": "# McKinsey：AI 轉型的三層視野——enablement → automation → reinvention  **來源：** McKinsey Q",
+      "url": "https://brain.rong-rise.com/brain/mckinsey-three-horizons-ai-transformation/"
     }
   ],
-  "ai-layoffs-narrative-dead": [
+  "ai-transformation-bootcamp": [
     {
-      "slug": "2026-08-25-wp2o4b",
-      "title": "影片數據回饋-2026-08-25",
-      "category": "內容引擎營運",
-      "excerpt": "> 由小哈內容引擎自動彙整（YouTube Data API + Analytics API）。共 30 支影片有數據。  ## 📊 表現排行（觀看/天）  |",
-      "url": "https://brain.rong-rise.com/brain/2026-08-25-wp2o4b/"
+      "slug": "ai-jhzne0",
+      "title": "AI 轉型實戰營核心筆記",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
+      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
     },
     {
-      "slug": "ai-b0wh7m",
-      "title": "中小企業 AI 轉型實戰",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> 聚焦於中小型企業的 AI 轉型策略、導入方法與實務案例。  ## 📌 本領域重點  - 企業 AI 成熟度評估 - AI 導入策略規劃 - 自動化流程設計 ",
-      "url": "https://brain.rong-rise.com/brain/ai-b0wh7m/"
+      "slug": "arxiv-workforce-readiness-smart-manufacturing",
+      "title": "智慧製造的「勞動力就緒度」框架：把 TRL 改寫成九級能力階梯",
+      "category": "技術深讀",
+      "excerpt": "# 智慧製造的「勞動力就緒度」框架：把 TRL 改寫成九級能力階梯  **來源：** arXiv 2608.11540v1（eess.SY / cs.AI / ",
+      "url": "https://brain.rong-rise.com/brain/arxiv-workforce-readiness-smart-manufacturing/"
     },
     {
       "slug": "bcg-ai-radar-2026-ceos-take-lead",
@@ -1358,96 +2023,220 @@
       "url": "https://brain.rong-rise.com/brain/bcg-ai-radar-2026-ceos-take-lead/"
     }
   ],
-  "psychological-safety-truth": [
+  "hr-ai-course-design": [
     {
-      "slug": "a-6hrwui",
-      "title": "心理安全感與職場文化",
-      "category": "管理心理學",
-      "excerpt": "## 什麼是心理安全感？  心理安全感（Psychological Safety）不是「讓大家都很舒服」，而是 **「團隊成員敢於冒人際風險而不必擔心負面後果」",
-      "url": "https://brain.rong-rise.com/brain/a-6hrwui/"
-    },
-    {
-      "slug": "5-g4le91",
-      "title": "企業消滅摩擦的5大戰略",
-      "category": "中小企業AI轉型實戰",
-      "excerpt": "> AI 是這個世代的馬鐙與弩，解放了雙手，但也唯有願意重新設計系統的企業才能在加速曲線上勝出。  ## 📌 核心命題  技術躍遷的紅利從不雨露均霑。新秩序來臨",
-      "url": "https://brain.rong-rise.com/brain/5-g4le91/"
-    },
-    {
-      "slug": "a-y4cv1x",
-      "title": "變革的心理方程式",
-      "category": "管理心理學",
-      "excerpt": "## 核心問題：為什麼人天生抗拒改變？  > *「人不抗拒改變，人抗拒的是被改變。」* — 管理心理學經典名言  ## Kübler-Ross 變革曲線（5 S",
-      "url": "https://brain.rong-rise.com/brain/a-y4cv1x/"
-    }
-  ],
-  "cognitive-biases-management": [
-    {
-      "slug": "a-mihwnl",
-      "title": "管理者的認知偏誤",
-      "category": "管理心理學",
-      "excerpt": "## 為什麼管理者特別容易掉入認知陷阱？  管理者的工作本質是「在不確定中做決策」——而人類大腦為了節省能量，發展出各種捷徑（heuristics），這些捷徑在",
-      "url": "https://brain.rong-rise.com/brain/a-mihwnl/"
-    },
-    {
-      "slug": "a-60xceb",
-      "title": "也許不是「AI 時代」，而是「摩擦力重新分配」的時代",
-      "category": "寫作與出版",
-      "excerpt": "## 也許不是「AI 時代」，而是「摩擦力重新分配」的時代  以前我常跟客戶說一句話：一個組織裡，真正拿來做事的時間，可能只有兩三成。剩下七八成，都花在整合不同",
-      "url": "https://brain.rong-rise.com/brain/a-60xceb/"
-    },
-    {
-      "slug": "bcg-ai-fitness-for-ceos-2025",
-      "title": "BCG — AI Fitness for CEOs: Building Digital Strength",
-      "category": "國際視野",
-      "excerpt": "--- title: \"BCG — AI Fitness for CEOs: Building Digital Strength\" tags: [產業報告, B",
-      "url": "https://brain.rong-rise.com/brain/bcg-ai-fitness-for-ceos-2025/"
-    }
-  ],
-  "change-psychology-perspective": [
-    {
-      "slug": "a-y4cv1x",
-      "title": "變革的心理方程式",
-      "category": "管理心理學",
-      "excerpt": "## 核心問題：為什麼人天生抗拒改變？  > *「人不抗拒改變，人抗拒的是被改變。」* — 管理心理學經典名言  ## Kübler-Ross 變革曲線（5 S",
-      "url": "https://brain.rong-rise.com/brain/a-y4cv1x/"
-    },
-    {
-      "slug": "a-60xceb",
-      "title": "也許不是「AI 時代」，而是「摩擦力重新分配」的時代",
-      "category": "寫作與出版",
-      "excerpt": "## 也許不是「AI 時代」，而是「摩擦力重新分配」的時代  以前我常跟客戶說一句話：一個組織裡，真正拿來做事的時間，可能只有兩三成。剩下七八成，都花在整合不同",
-      "url": "https://brain.rong-rise.com/brain/a-60xceb/"
-    },
-    {
-      "slug": "a-7qcsmq",
-      "title": "組織變革管理步驟",
+      "slug": "hr_ai_-4d30sb",
+      "title": "HR × AI 課程大綱",
       "category": "人資與組織發展",
-      "excerpt": "> 引導組織順利度過變革的結構化方法，降低抗拒、加速採納。  ## 📋 變革管理八步驟（Kotter 模型改編）  ### Step 1：建立急迫感 - 分析市",
-      "url": "https://brain.rong-rise.com/brain/a-7qcsmq/"
+      "excerpt": "> 針對 HR 專業人士與業務夥伴設計的兩天 14 小時課程（初階到中階）。  ## 課程核心主軸  以 HR 最熟悉的「選 → 用 → 育 → 留」四大領域為",
+      "url": "https://brain.rong-rise.com/brain/hr_ai_-4d30sb/"
+    },
+    {
+      "slug": "mckinsey-escaping-pilot-trap-hr-agentic-era",
+      "title": "逃離 Pilot 陷阱：打造 Agentic 時代的 HR（麥肯錫 2026）",
+      "category": "國際視野",
+      "excerpt": "**來源：** McKinsey & Company（People & Organizational Performance Practice） **作者：**",
+      "url": "https://brain.rong-rise.com/brain/mckinsey-escaping-pilot-trap-hr-agentic-era/"
+    },
+    {
+      "slug": "arxiv-hr-managers-xai-literacy-recruiting",
+      "title": "arXiv 2509.06475 — 解釋了卻更誤解：410 位 HR 主管的可解釋 AI 實驗",
+      "category": "技術深讀",
+      "excerpt": "# Explained, yet misunderstood：HR 主管的 AI 素養如何影響他們理解招募推薦系統  **來源：** arXiv:2509.06",
+      "url": "https://brain.rong-rise.com/brain/arxiv-hr-managers-xai-literacy-recruiting/"
     }
   ],
-  "coaching-leadership-science": [
+  "ai-tool-selection-guide": [
     {
-      "slug": "a-jc2hm7",
-      "title": "教練式領導的心理基礎",
-      "category": "管理心理學",
-      "excerpt": "## 教練不是心靈雞湯——它是科學  教練式領導（Coaching Leadership）常被誤解為「溫暖鼓勵的主管風格」，但它的基礎是紮實的心理學研究。  >",
-      "url": "https://brain.rong-rise.com/brain/a-jc2hm7/"
+      "slug": "ai-th8abu",
+      "title": "AI 教師培訓提案大綱（實作優化版）",
+      "category": "AI知識傳播與教育",
+      "excerpt": "> 行銷與流通管理系專屬「AI 工具實作與教案重訓」教師培訓計畫  ## 一、專案背景與痛點診斷  ### 教學挑戰  1. **學生用 AI 寫作業，老師怎麼",
+      "url": "https://brain.rong-rise.com/brain/ai-th8abu/"
     },
     {
-      "slug": "a-60xceb",
-      "title": "也許不是「AI 時代」，而是「摩擦力重新分配」的時代",
-      "category": "寫作與出版",
-      "excerpt": "## 也許不是「AI 時代」，而是「摩擦力重新分配」的時代  以前我常跟客戶說一句話：一個組織裡，真正拿來做事的時間，可能只有兩三成。剩下七八成，都花在整合不同",
-      "url": "https://brain.rong-rise.com/brain/a-60xceb/"
+      "slug": "gemini_gem_-khfvin",
+      "title": "Gemini GEM 差旅秘書 實戰操作手冊",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 四個階段建立會自動幫你找機票、訂飯店、排行程、算花費、寫出差報告的超級助理  ## 階段一：開啟秘書的「超能力」（擴充功能設定）  1. 開啟 Gemini",
+      "url": "https://brain.rong-rise.com/brain/gemini_gem_-khfvin/"
     },
     {
-      "slug": "bcg-ai-fitness-for-ceos-2025",
-      "title": "BCG — AI Fitness for CEOs: Building Digital Strength",
+      "slug": "openmontage-u1qaey",
+      "title": "OpenMontage能力比較",
+      "category": "參考資源",
+      "excerpt": "> 最后更新：2026-06-26  ## 核心能力比較  | 能力 | 現有管線 | OpenMontage | 誰更好？ | |------|-------",
+      "url": "https://brain.rong-rise.com/brain/openmontage-u1qaey/"
+    }
+  ],
+  "service-ai-chatbot-case": [
+    {
+      "slug": "gartner-audit-ai-strategy-gap-2026",
+      "title": "Gartner 調查 — 93% 審計單位已用 AI，但 60% 沒有正式策略",
       "category": "國際視野",
-      "excerpt": "--- title: \"BCG — AI Fitness for CEOs: Building Digital Strength\" tags: [產業報告, B",
-      "url": "https://brain.rong-rise.com/brain/bcg-ai-fitness-for-ceos-2025/"
+      "excerpt": "# Gartner：93% of Audit Functions Use AI, but 60% Lack a Formal Strategy  **來源：**",
+      "url": "https://brain.rong-rise.com/brain/gartner-audit-ai-strategy-gap-2026/"
+    },
+    {
+      "slug": "gartner-data-governance-culture-2026-09-21",
+      "title": "Gartner：2027 年前，忽略「治理文化」的組織有 60% 無法成功治理 AI",
+      "category": "國際視野",
+      "excerpt": "# Gartner：2027 年前，忽略「治理文化」的組織有 60% 無法成功治理 AI  **來源：** Gartner（新聞稿，於孟買 Data & Ana",
+      "url": "https://brain.rong-rise.com/brain/gartner-data-governance-culture-2026-09-21/"
+    },
+    {
+      "slug": "csrd-2026-implementation",
+      "title": "CSRD 2026 落地執行：ESG 經理必須交付的關鍵事項",
+      "category": "政策與法規",
+      "excerpt": "# CSRD 2026 落地執行：ESG 經理必須交付的關鍵事項  **來源：** CSE（Centre for Sustainability and Exce",
+      "url": "https://brain.rong-rise.com/brain/csrd-2026-implementation/"
+    }
+  ],
+  "gov-ai-subsidy-guide": [
+    {
+      "slug": "ai-jhzne0",
+      "title": "AI 轉型實戰營核心筆記",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 講師：郭鎮榕 (C.J. 老師) | 16 年跨國企業人資高階主管經驗  ## 課程特色  從策略高度出發，結合 AI 工具實操與落地，設計可執行的轉型路徑",
+      "url": "https://brain.rong-rise.com/brain/ai-jhzne0/"
+    },
+    {
+      "slug": "arxiv-workforce-readiness-smart-manufacturing",
+      "title": "智慧製造的「勞動力就緒度」框架：把 TRL 改寫成九級能力階梯",
+      "category": "技術深讀",
+      "excerpt": "# 智慧製造的「勞動力就緒度」框架：把 TRL 改寫成九級能力階梯  **來源：** arXiv 2608.11540v1（eess.SY / cs.AI / ",
+      "url": "https://brain.rong-rise.com/brain/arxiv-workforce-readiness-smart-manufacturing/"
+    },
+    {
+      "slug": "bcg-ai-radar-2026-ceos-take-lead",
+      "title": "BCG 2026 AI Radar：AI 投資翻倍，CEO 接掌主導權",
+      "category": "國際視野",
+      "excerpt": "**來源：** Boston Consulting Group **日期：** 2026（2026 AI Radar，調查 2,360 位高階主管、含 640 ",
+      "url": "https://brain.rong-rise.com/brain/bcg-ai-radar-2026-ceos-take-lead/"
+    }
+  ],
+  "ai-transformation-trends-2026": [
+    {
+      "slug": "deloitte-ai-transformation-predictions-2026",
+      "title": "Enterprise AI trends in 2026: AI transformation strategy opportunities and predictions（2026 企業 AI 趨勢：轉型策略的機會與預測——三大缺口）",
+      "category": "國際視野",
+      "excerpt": "**來源：** Deloitte（Deloitte AI Institute Pulse Check 系列） **日期：** 2026-06-02  ## 核心",
+      "url": "https://brain.rong-rise.com/brain/deloitte-ai-transformation-predictions-2026/"
+    },
+    {
+      "slug": "2026-10-26-ttjzjq",
+      "title": "選題建議 2026-10-26（W43 報告＋10-26 digest）",
+      "category": "內容引擎營運",
+      "excerpt": "# 選題建議 2026-10-26  - **最新週報實查**：`ls -t insights/*.md` 首筆為 **`2026-W43.md`**（區間 2",
+      "url": "https://brain.rong-rise.com/brain/2026-10-26-ttjzjq/"
+    },
+    {
+      "slug": "ai-agent-workforce-management-2026-09-iggd2p",
+      "title": "AI Agent 進入 Workforce Management（2026-09 週報情報）",
+      "category": "國際視野",
+      "excerpt": "# 🤖 AI Agent 進入 Workforce Management（2026-09 週報情報）  **來源：** 外部 AI × HR 週報深度版（202",
+      "url": "https://brain.rong-rise.com/brain/ai-agent-workforce-management-2026-09-iggd2p/"
+    }
+  ],
+  "agentic-ai-transformation-workshop": [
+    {
+      "slug": "bcg-agentic-scenarios-marketing-2026",
+      "title": "Agentic Scenarios Every Marketer Must Prepare For（行銷人必須準備的 Agentic 四情境）",
+      "category": "國際視野",
+      "excerpt": "**來源：** Boston Consulting Group（BCG） **日期：** 2026-03-25  ## 核心論點 AI Agent 將徹底改寫消",
+      "url": "https://brain.rong-rise.com/brain/bcg-agentic-scenarios-marketing-2026/"
+    },
+    {
+      "slug": "bcg-agentic-ai-cio-cto-playbook-2026",
+      "title": "The Agentic Leadership Playbook: A Scaling Strategy for CTOs and CIOs（代理式領導手冊：CTO／CIO 的 Agentic AI 規模化策略）",
+      "category": "國際視野",
+      "excerpt": "**來源：** BCG **日期：** 2026-07-08  ## 核心論點 BCG 兩位資深合夥人（Mark Abraham、Neveen Awad）的對談",
+      "url": "https://brain.rong-rise.com/brain/bcg-agentic-ai-cio-cto-playbook-2026/"
+    },
+    {
+      "slug": "gartner-agentic-ai-234b-saas-risk-2026",
+      "title": "Gartner Says $234 Billion in Enterprise Application Software Spend Is at Risk from Agentic AI（Gartner：2,340 億美元企業應用軟體支出受 Agentic AI 威脅）",
+      "category": "國際視野",
+      "excerpt": "**來源：** Gartner **日期：** 2026-07-01  ## 核心論點 Agentic AI 透過「agentic arbitrage」——AI",
+      "url": "https://brain.rong-rise.com/brain/gartner-agentic-ai-234b-saas-risk-2026/"
+    }
+  ],
+  "sme-esg-guide": [
+    {
+      "slug": "ai-agents-sustainable-sme-esg",
+      "title": "AI Agents for Sustainable SMEs: A Green ESG Assessment Framework",
+      "category": "技術深讀",
+      "excerpt": "**作者：** Viet Trinh, Tan Nguyen, Minh-Huyen Phan, Quan Luu **發表：** 2026-04-05（原文日",
+      "url": "https://brain.rong-rise.com/brain/ai-agents-sustainable-sme-esg/"
+    },
+    {
+      "slug": "csrd-2026-implementation",
+      "title": "CSRD 2026 落地執行：ESG 經理必須交付的關鍵事項",
+      "category": "政策與法規",
+      "excerpt": "# CSRD 2026 落地執行：ESG 經理必須交付的關鍵事項  **來源：** CSE（Centre for Sustainability and Exce",
+      "url": "https://brain.rong-rise.com/brain/csrd-2026-implementation/"
+    },
+    {
+      "slug": "esg-a6or4c",
+      "title": "ESG 法規趨勢追蹤",
+      "category": "未來趨勢與前瞻",
+      "excerpt": "> 追蹤台灣與國際 ESG 法規動態，協助企業提前準備合規。  ## 📊 台灣 ESG 法規時間線  | 時間 | 法規 | 影響對象 | 重點 | |----",
+      "url": "https://brain.rong-rise.com/brain/esg-a6or4c/"
+    }
+  ],
+  "manufacturing-ai-quality": [
+    {
+      "slug": "ai-ul17xq",
+      "title": "製造業 AI 應用案例集",
+      "category": "中小企業AI轉型實戰",
+      "excerpt": "> 收集中小型製造業的 AI 應用實例，作為提案與教學的參考素材。  ## 📊 案例總覽  | 應用場景 | AI 技術 | 效益 | 導入難度 | 投資規模 ",
+      "url": "https://brain.rong-rise.com/brain/ai-ul17xq/"
+    },
+    {
+      "slug": "x-ai-2026-09-27-5e2nd6",
+      "title": "強制連結：鐘擺 × 製造業AI轉型（2026-09-27）",
+      "category": "異質輸入",
+      "excerpt": "# 強制連結：鐘擺 × 製造業AI轉型  > 配對：抽象詞「鐘擺」（詞庫隨機抽出）× 既有筆記《案例實戰_製造業AI轉型》（顧問專案） > 規則：用鐘擺的物理機",
+      "url": "https://brain.rong-rise.com/brain/x-ai-2026-09-27-5e2nd6/"
+    },
+    {
+      "slug": "stratechery-american-disruption",
+      "title": "American Disruption（美國式顛覆）",
+      "category": "國際視野",
+      "excerpt": "**來源：** Stratechery (Ben Thompson) **原文日期：** 2025-04-09  ## 中文摘要  Ben Thompson 以",
+      "url": "https://brain.rong-rise.com/brain/stratechery-american-disruption/"
+    }
+  ],
+  "ai-maturity-assessment": [
+    {
+      "slug": "openmontage-u1qaey",
+      "title": "OpenMontage能力比較",
+      "category": "參考資源",
+      "excerpt": "> 最后更新：2026-06-26  ## 核心能力比較  | 能力 | 現有管線 | OpenMontage | 誰更好？ | |------|-------",
+      "url": "https://brain.rong-rise.com/brain/openmontage-u1qaey/"
+    }
+  ],
+  "team-innovation-management": [
+    {
+      "slug": "gartner-data-governance-culture-2026-09-21",
+      "title": "Gartner：2027 年前，忽略「治理文化」的組織有 60% 無法成功治理 AI",
+      "category": "國際視野",
+      "excerpt": "# Gartner：2027 年前，忽略「治理文化」的組織有 60% 無法成功治理 AI  **來源：** Gartner（新聞稿，於孟買 Data & Ana",
+      "url": "https://brain.rong-rise.com/brain/gartner-data-governance-culture-2026-09-21/"
+    },
+    {
+      "slug": "ai-garychen-86mip2",
+      "title": "學了那麼多AI為什麼還是沒加薪-GaryChen",
+      "category": "人才策略",
+      "excerpt": "> 來源：YouTube [aZEmxJ9ivzg](https://youtu.be/aZEmxJ9ivzg)｜Gary Chen（@garytalksstu",
+      "url": "https://brain.rong-rise.com/brain/ai-garychen-86mip2/"
+    },
+    {
+      "slug": "ai-wwmama",
+      "title": "效率隱藏-AI生產力紅利分配契約",
+      "category": "人才策略",
+      "excerpt": "> 來源：CJ哥研究筆記（2026-08-08 產出） > 存入：2026-08-16｜分類：人才策略 / AI 生產力 / 績效設計 / 工作設計  ## 一",
+      "url": "https://brain.rong-rise.com/brain/ai-wwmama/"
     }
   ]
 }

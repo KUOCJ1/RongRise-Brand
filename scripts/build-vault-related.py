@@ -79,8 +79,16 @@ def main():
     for art in articles:
         scored = []
         for note in notes:
-            # skip domain index pages (title == category) and empty titles
-            if not note.get("title") or note.get("title") == note.get("category"):
+            # skip domain index pages and empty titles
+            if not note.get("title"):
+                continue
+            parts = (note.get("file") or "").split("/")
+            is_index = (
+                len(parts) == 2
+                and parts[1].endswith(".md")
+                and parts[1][:-3].replace(" ", "") == parts[0].replace(" ", "")
+            )
+            if note.get("title") == note.get("category") or is_index:
                 continue
             s = score_article(art, note)
             if s > 0:
