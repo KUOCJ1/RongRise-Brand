@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-29T00:30:42Z",
+  "generatedAt": "2026-10-30T00:30:42Z",
   "periods": {
-    "content": "累計至 2026-10-29；近 30 天＝2026-09-29 起",
-    "health": "2026-10-01 ~ 2026-10-28（28 天）",
+    "content": "累計至 2026-10-30；近 30 天＝2026-09-30 起",
+    "health": "2026-10-01 ~ 2026-10-29（29 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-10-27（25 天）"
+    "management": "2026-10-03 ~ 2026-10-28（26 天）"
   },
   "headline": [
     {
@@ -19,7 +19,7 @@
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "28 天 × 18 個服務，504/504 次在線"
+      "note": "29 天 × 18 個服務，522/522 次在線"
     },
     {
       "key": "incidents",
@@ -31,9 +31,9 @@
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 48.1,
+      "value": 45.1,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；5/25 天達標"
+      "note": "實驗期 37.1 分；6/26 天達標"
     }
   ],
   "content": {
@@ -43,9 +43,9 @@
     "videos": 40,
     "videos30d": 3,
     "igCards": 42,
-    "socialPosts": 70,
-    "scanDays": 130,
-    "competitorReports": 129,
+    "socialPosts": 71,
+    "scanDays": 131,
+    "competitorReports": 130,
     "insights": 18,
     "monthly": [
       {
@@ -70,10 +70,17 @@
       },
       {
         "month": "2026-10",
-        "count": 11
+        "count": 12
       }
     ],
     "articleList": [
+      {
+        "date": "2026-10-29",
+        "title": "你餵 AI 什麼，它就長成什麼：腦腐不可逆，乾淨輸入成了新護城河",
+        "slug": "clean-input-ai-moat",
+        "url": "/knowledge/clean-input-ai-moat",
+        "cat": "AI 轉型"
+      },
       {
         "date": "2026-10-27",
         "title": "AI 開始自己改自己了，接下來要問的是：證據在哪裡",
@@ -346,13 +353,6 @@
         "slug": "ai-strategy-planning-collaboration",
         "url": "/knowledge/ai-strategy-planning-collaboration",
         "cat": "策略管理"
-      },
-      {
-        "date": "2026-08-20",
-        "title": "你的 AI 部隊健康嗎？五分鐘測出「Pilot Trap 陷阱深度」",
-        "slug": "pilot-trap-self-check",
-        "url": "/knowledge/pilot-trap-self-check",
-        "cat": "AI 轉型"
       }
     ],
     "videoList": [
@@ -612,10 +612,18 @@
         "status": "ok",
         "disk": 84,
         "restarts": 24
+      },
+      {
+        "date": "2026-10-29",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 80,
+        "restarts": 25
       }
     ],
-    "checks": 504,
-    "online": 504,
+    "checks": 522,
+    "online": 522,
     "warningDays": 2,
     "maxDisk": 85,
     "live": [
@@ -624,45 +632,45 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.07
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.15
+        "seconds": 0.16
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.41
+        "seconds": 0.33
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.13
+        "seconds": 0.07
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.23
+        "seconds": 0.08
       },
       {
         "name": "管理後台",
         "url": "https://admin.rong-rise.com/",
         "code": "401",
         "ok": true,
-        "seconds": 0.11
+        "seconds": 0.07
       }
     ],
-    "liveAt": "2026-10-29 00:30 UTC"
+    "liveAt": "2026-10-30 00:30 UTC"
   },
   "schedule": {
     "incidents30d": 30,
@@ -693,7 +701,7 @@
     ],
     "executions": 1001,
     "executionsOk": 1000,
-    "executionsFrom": "2026-10-28T12:20:41",
+    "executionsFrom": "2026-10-29T12:34:41",
     "incidents": [
       {
         "job": "a0d92a76ca47",
@@ -1016,18 +1024,18 @@
         "error": "RuntimeError: [drift_skip] Skipped to prevent unintended spend: global inference config drifted since this job"
       }
     ],
-    "jobs": 83,
-    "jobsEnabled": 76
+    "jobs": 85,
+    "jobsEnabled": 78
   },
   "management": {
-    "days": 25,
-    "medianOnline": 48.1,
+    "days": 26,
+    "medianOnline": 45.1,
     "experimentMedian": 37.1,
-    "avgOnline": 55.6,
-    "totalHours": 23.1,
-    "medianVisits": 15,
-    "perVisit": 3.4,
-    "daysUnder30": 5,
+    "avgOnline": 54.1,
+    "totalHours": 23.4,
+    "medianVisits": 15.0,
+    "perVisit": 3.2,
+    "daysUnder30": 6,
     "daily": [
       {
         "date": "2026-10-03",
@@ -1153,6 +1161,11 @@
         "date": "2026-10-27",
         "min": 65.6,
         "visits": 18
+      },
+      {
+        "date": "2026-10-28",
+        "min": 17.8,
+        "visits": 11
       }
     ]
   },
