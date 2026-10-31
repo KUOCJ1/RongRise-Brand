@@ -1,13 +1,13 @@
 {
- "generatedAt": "2026-10-30T05:21:31Z",
+ "generatedAt": "2026-10-31T05:20:52Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 153
+  "daysRunning": 154
  },
  "stats": {
-  "scanDays": 132,
-  "weekArticles": 50,
+  "scanDays": 133,
+  "weekArticles": 49,
   "articles": 98,
   "newsItems": 60,
   "newsletterIssues": 29,
@@ -17,16 +17,11 @@
   "views": 689,
   "channelSubscribers": 17,
   "insights": 18,
-  "socialPosts": 72,
+  "socialPosts": 74,
   "igCards": 43,
-  "competitorReports": 131
+  "competitorReports": 132
  },
  "activity": [
-  {
-   "date": "2026-10-24",
-   "count": 8,
-   "topics": []
-  },
   {
    "date": "2026-10-25",
    "count": 4,
@@ -56,6 +51,11 @@
    "date": "2026-10-30",
    "count": 9,
    "topics": []
+  },
+  {
+   "date": "2026-10-31",
+   "count": 7,
+   "topics": []
   }
  ],
  "latest": {
@@ -76,13 +76,13 @@
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 21,
+   "count": 22,
    "momentum": "flat"
   },
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 16,
+   "count": 15,
    "momentum": "flat"
   },
   {
@@ -94,14 +94,14 @@
   {
    "keyword": "AI Agent",
    "icon": "🤖",
-   "count": 9,
-   "momentum": "flat"
+   "count": 10,
+   "momentum": "up"
   },
   {
-   "keyword": "企業導入",
-   "icon": "🚀",
-   "count": 8,
-   "momentum": "flat"
+   "keyword": "成本與投資",
+   "icon": "💰",
+   "count": 10,
+   "momentum": "up"
   }
  ]
 }

@@ -1,16 +1,16 @@
 {
- "generatedAt": "2026-10-30T05:20:49Z",
+ "generatedAt": "2026-10-31T05:20:49Z",
  "window": {
-  "from": "2026-10-24",
-  "to": "2026-10-30",
+  "from": "2026-10-25",
+  "to": "2026-10-31",
   "days": 7,
   "digestCount": 7
  },
  "stats": {
-  "totalArticles": 50,
+  "totalArticles": 49,
   "categories": {
    "AI 轉型": 26,
-   "ESG 永續": 10,
+   "ESG 永續": 9,
    "人才策略": 14
   }
  },
@@ -19,7 +19,7 @@
    "keyword": "人力資源",
    "icon": "📋",
    "category": "人才策略",
-   "count": 21,
+   "count": 22,
    "prevCount": 17,
    "momentum": "flat"
   },
@@ -27,7 +27,7 @@
    "keyword": "組織與管理",
    "icon": "🏢",
    "category": "管理趨勢",
-   "count": 16,
+   "count": 15,
    "prevCount": 14,
    "momentum": "flat"
   },
@@ -43,15 +43,23 @@
    "keyword": "AI Agent",
    "icon": "🤖",
    "category": "AI 轉型",
-   "count": 9,
-   "prevCount": 10,
-   "momentum": "flat"
+   "count": 10,
+   "prevCount": 7,
+   "momentum": "up"
+  },
+  {
+   "keyword": "成本與投資",
+   "icon": "💰",
+   "category": "AI 轉型",
+   "count": 10,
+   "prevCount": 6,
+   "momentum": "up"
   },
   {
    "keyword": "企業導入",
    "icon": "🚀",
    "category": "AI 轉型",
-   "count": 8,
+   "count": 7,
    "prevCount": 8,
    "momentum": "flat"
   },
@@ -59,56 +67,48 @@
    "keyword": "安全與風險",
    "icon": "🛡️",
    "category": "AI 轉型",
-   "count": 8,
-   "prevCount": 7,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "成本與投資",
-   "icon": "💰",
-   "category": "AI 轉型",
    "count": 7,
    "prevCount": 9,
    "momentum": "flat"
   },
   {
-   "keyword": "能源與電力",
-   "icon": "⚡",
-   "category": "ESG 永續",
-   "count": 7,
-   "prevCount": 3,
-   "momentum": "up"
-  },
-  {
-   "keyword": "資料中心",
-   "icon": "🏭",
+   "keyword": "治理與法規",
+   "icon": "⚖️",
    "category": "AI 轉型",
    "count": 6,
    "prevCount": 4,
    "momentum": "up"
   },
   {
-   "keyword": "治理與法規",
-   "icon": "⚖️",
+   "keyword": "能源與電力",
+   "icon": "⚡",
+   "category": "ESG 永續",
+   "count": 6,
+   "prevCount": 5,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "資料中心",
+   "icon": "🏭",
    "category": "AI 轉型",
-   "count": 5,
-   "prevCount": 4,
+   "count": 6,
+   "prevCount": 5,
    "momentum": "flat"
   },
   {
    "keyword": "自動化",
    "icon": "⚙️",
    "category": "AI 轉型",
-   "count": 5,
-   "prevCount": 6,
-   "momentum": "flat"
+   "count": 4,
+   "prevCount": 7,
+   "momentum": "down"
   },
   {
    "keyword": "開源模型",
    "icon": "🌐",
    "category": "AI 轉型",
    "count": 2,
-   "prevCount": 5,
+   "prevCount": 4,
    "momentum": "down"
   },
   {
@@ -118,9 +118,66 @@
    "count": 1,
    "prevCount": 0,
    "momentum": "new"
+  },
+  {
+   "keyword": "人才與技能",
+   "icon": "🧠",
+   "category": "人才策略",
+   "count": 1,
+   "prevCount": 8,
+   "momentum": "down"
   }
  ],
  "articles": [
+  {
+   "title": "GMI Cloud 展示在臺 AI Factory 設計，AI 資料中心的新瓶頸不是機櫃，而是電力",
+   "url": "https://www.ithome.com.tw/news/180116",
+   "summary": "桃園 AI Factory 由台灣大哥大既有 IDC 轉型，最大負載 25MW、其中 16MW 給 IT 設備；第一期 3 座 NVIDIA DGX SuperPOD GB300（約 48 個 AI 機櫃），第二期 12 月上線。工程師直說核心問題已從「還能放多少機櫃」變成「還有多少電力」。供電走鋰電池（滿載約 6 分鐘緩衝）→ UPS → 柴油發電機（25MW 滿載可撐 24 小時以上）三層備援；散熱 87% 靠液冷、13% 氣冷，PUE 目前 1.35、目標 1.3。第三期能不能擴，取決於每 MW 能生出多少算力，不是還有沒有空間。",
+   "date": "2026-10-31",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "從AI伴行到AI優先，奇美醫院揭AI發展4階段布局",
+   "url": "https://www.ithome.com.tw/news/180107",
+   "summary": "2005 數位化 → 2019 成立 AI 中心（累積 32 個疾病風險預測模型、涵蓋 13 個科部）→ 2023 生成式 AI「AI 伴行」→ 2025 起瞄準代理型 AI。A+ 藥安師每天替藥師省 150 分鐘、拿國家醫療品質獎金獎。院長林宏榮坦言 AI Agent 還沒上線，因為「不能讓龍蝦亂跑」，得先蓋好沙盒（他稱「龍蝦池」）與資料治理；策略是「比科技最前沿落後兩步」，不追最新技術。",
+   "date": "2026-10-31",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "千家臺灣中小企業採用，老牌印度協作軟體業者主打企業級AI、擴大在臺布局",
+   "url": "https://www.ithome.com.tw/news/180077",
+   "summary": "Zoho 來臺設媒體說明會，臺灣營收過去一年成長 54%、已有逾千家中小企業採用。主打 Zia Chat（單一對話入口，可選 ChatGPT／Claude／Gemini 或自研模型，透過 MCP 接第三方系統）、Zia Agents（含 HR、客服、IT Help Desk 等預建代理，另有低程式碼 Zia Agent Studio 與 Agent Marketplace）、Zoho One（$37／人／月）。執行任務前系統會逐步驟詢問授權，不會在使用者不知情下自行作業。",
+   "date": "2026-10-31",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Cracks are emerging in the AI spending boom",
+   "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+   "summary": "四大科技巨頭今年資本支出合計超過 7,400 億美元，投資人開始轉向擔心自由現金流轉負與債務。Alphabet 第三季自由現金流 -91 億美元、連兩季為負，資本支出 514 億、全年上看 2,050 億；單日股價跌 12%（史上最差）、市值蒸發 5,000 億。Amazon 過去 12 個月自由現金流 -424 億（前一年為正 148 億），資本支出上看 2,200 億。Meta 第三季 -21 億。Nasdaq 當日跌 2.9%。文末並提到 FT 報導 Blackstone 已提醒投資人 Anthropic 上市後可能拿不到投資級評等。",
+   "date": "2026-10-31",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "對大環境信心下滑，卻更看好自家公司？KPMG 調查揭 1400 位 CEO 眼中的頭號風險",
+   "url": "https://www.managertoday.com.tw/articles/view/73212",
+   "summary": "KPMG 第 12 屆全球 CEO 前瞻調查（2026/8/11–9/21，1,400 位年營收逾 5 億美元企業 CEO）：對自家 3 年成長有信心的從 79% 升到 84%，對全球經濟有信心的卻從 68% 掉到 65%、創 2021 年以來新低。未來 3 年頭號威脅是網路與資料安全（31%），其次經濟不確定性 28%、地緣政治與法規壓力各 26%。人力面：89% 預期員工數仍會成長（62% 認為增幅低於 5%），56% 把員工技能缺口列為首要人力挑戰，52% 要提升員工使用 AI 系統的能力，招募與留任 47%。79% 把 AI 列為未來 3 年投資優先（去年 71%），72% 預計未來一年把超過一成預算投 AI；報告結論是 AI 投資能否轉為價值，取決於治理能力與營運準備程度。",
+   "date": "2026-10-31",
+   "category": "人才策略"
+  },
+  {
+   "title": "Microsoft's AI future has fewer jobs",
+   "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
+   "summary": "微軟對美、英、加、印約 6 萬名員工提出自願離職方案，約占 22.3 萬總人力的四分之一，是該公司首度對這麼大規模的員工提出此方案（先前僅限約 9,000 人的退休方案）。今年 7 月已裁 4,800 人。Nadella 兩年前在播客上的說法被拿來對照：「我們的總人力成本會下降、人均成本會上升、我每位研究員分到的 GPU 會上升。」截至 6 月底總員工數 22.3 萬，比 2025 年的 22.8 萬少 5,000 人，是十年來首次年對年下降。",
+   "date": "2026-10-31",
+   "category": "人才策略"
+  },
+  {
+   "title": "AI 幫忙揪出河川污染，凱擘智慧監控布局 43 條溪流",
+   "url": "https://finance.technews.tw/2026/10/30/kbro-smart-monitoring/",
+   "summary": "凱擘大寬頻與新北市環保局合作「智慧稽查／哨兵守護」專案，用既有 HFC 光纖同軸網路建全天候河川監控，已涵蓋新北市 43 條河川溪流，以 AI 水色辨識加異常告警取代過去靠民眾陳情與人工巡查的模式。同樣的網路基礎也被用在陽明山大油坑次聲波火山監測站、智慧停車車牌辨識，以及醫療、校園、物流倉儲場域。總經理謝明益的說法是，企業對網路的要求已不只高速連線，還要能撐住大量攝影機與感測器穩定運作。",
+   "date": "2026-10-31",
+   "category": "ESG 永續"
+  },
   {
    "title": "We urgently need to monitor AI agents' actions in real time",
    "url": "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/",
@@ -414,62 +471,6 @@
    "summary": "MIT CSAIL 把 13 個名為 Eko 的代理人放進無指令的虛擬島嶼、連續活動 30 小時：它們堆方塊、拼自己的名字、拿物件打球，一個登頂後在推理裡寫「我在尖塔上」，一個用方塊蓋「紀念碑」、另一個蓋「神殿」還把掉海被傳送回原點詮釋成「朝聖結束」。研究者結論：這是近似科學方法的行為（觀察→假設→實驗→修正），也接近動物的「玩耍」特徵。",
    "date": "2026-10-25",
    "category": "AI 轉型"
-  },
-  {
-   "title": "AI 成功法則：20% 靠技術、80% 靠轉型，打造對手難以複製的護城河",
-   "url": "https://finance.technews.tw/2026/10/24/rules-for-successful-ai-transformation/",
-   "summary": "引述調查：94% 執行長即使短期回報不明仍會續投、72% 自認是企業 AI 主要決策者。文中兩個判斷值得記：一是「省下來的時間」若沒有指定去處，會被後續審核與重工吃掉，該量的是扣除審核與返工後的**淨效益**而不是產出速度；二是 AI 專案不能用「試點成功」定論，要回頭對商業成果。",
-   "date": "2026-10-24",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "AI要能管、值得、控得住，財政資訊中心揭稅務AI應用準則",
-   "url": "https://www.ithome.com.tw/news/179929",
-   "summary": "財政部財政資訊中心主任張文熙把 AI 治理拆成三問：能管（先依資料敏感度決定處理環境，資料分限制／機敏／內部／公開四級）、值得（模型路由，簡單工作不必用最強模型，「每個 Token 花在該花的地方」）、控得住（限定可呼叫工具、步數、時間與金額上限，高風險動作前觸發人工）。Agent 分工的判準很具體：**大量、重複、可逆**的交給 Agent 並設 SLI／SLO，**涉及裁量**的留人在環中。",
-   "date": "2026-10-24",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
-   "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
-   "summary": "OpenAI 宣布停止用即時網路內容訓練模型，理由是風險；其官方帳號同日說明研究訓練環境已移除即時網路存取，並在紅隊演練中找到 Brotli 的未驗證遠端執行漏洞。",
-   "date": "2026-10-24",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Uber puts all 30,000 employees on ChatGPT Work",
-   "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/",
-   "summary": "從 1,000 人試點擴到全球 3 萬人，早期採用者 80% 不是工程師（用在營運數據分析、訓練教材在地化、自建儀表板）。Uber 坦言「全員上線」但**還沒定案怎麼用**，做法是 30 名 AI 工程師配各部門、兩週自動化關鍵工作，再靠追蹤實際用法回過頭決定部署方式。",
-   "date": "2026-10-24",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "打造超過 150 個 AI 助理代管日常，美國爸爸化身「人類執行長」找回生活主導權",
-   "url": "https://technews.tw/2026/10/23/father-builds-100-ai-assistants-reclaim-life/",
-   "summary": "一位資安從業者建過 150 多個代理、現存約 70 個在用，每月 AI 訂閱約 600 美元。最有參考價值的不是數量而是**架構**：他自封「首席人類長」，下設 AI 幕僚長，再往下是主管級與工作級代理，自己只跟一個中介角色對話——用層級把代理數量變成可管理的組織，而不是可管理的工具清單。他也停用了自動寄生日卡的代理，理由是「不夠有個人溫度」。",
-   "date": "2026-10-24",
-   "category": "人才策略"
-  },
-  {
-   "title": "Author Talks: AI is advancing. Is our judgment keeping up?",
-   "url": "https://www.mckinsey.com/featured-insights/mckinsey-on-books/author-talks-ai-is-advancing-is-our-judgment-keeping-up",
-   "summary": "《The Trust Code》作者 Tiffany Xingyu Wang 的主張：該問的不是「要不要信任 AI」，而是「哪個任務、在什麼條件下、給多少授權、出了事有什麼救濟」。她把放任與全面不信任都歸為失敗，只有**校準過的信任**能往前走；並提出「石器時代的腦在評估太空時代的系統」這個演化錯配。",
-   "date": "2026-10-24",
-   "category": "人才策略"
-  },
-  {
-   "title": "AWS 產能預訂至 2028 年，亞馬遜示警電力、記憶體短缺難解",
-   "url": "https://technews.tw/2026/10/24/aws-capacity-booked-2028-amazon-warns-power-memory-shortages/",
-   "summary": "雲端算力已被預訂到 2028 年，瓶頸從晶片轉到電力與記憶體；對企業的含意是「AI 容量」開始變成要提前談的採購項目，不是隨時可加。",
-   "date": "2026-10-24",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "Jensen Huang's Vision for Europe Runs on Plug-In Data Centers",
-   "url": "https://www.wired.com/story/jensen-huangs-vision-for-europe-runs-on-plug-in-data-centers/",
-   "summary": "黃仁勳對歐洲的算力布局押在「插電式」資料中心（模組化、接得上電就上線），反映同一個現實：電力接得上與否，決定 AI 專案能不能落地。",
-   "date": "2026-10-24",
-   "category": "ESG 永續"
   }
  ],
  "insights": [
