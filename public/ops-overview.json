@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-30T00:30:42Z",
+  "generatedAt": "2026-10-31T00:30:42Z",
   "periods": {
-    "content": "累計至 2026-10-30；近 30 天＝2026-09-30 起",
-    "health": "2026-10-01 ~ 2026-10-29（29 天）",
+    "content": "累計至 2026-10-31；近 30 天＝2026-10-01 起",
+    "health": "2026-10-01 ~ 2026-10-30（30 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-10-28（26 天）"
+    "management": "2026-10-03 ~ 2026-10-29（27 天）"
   },
   "headline": [
     {
       "key": "content",
       "label": "內容產出",
-      "value": 97,
+      "value": 98,
       "unit": "篇文章",
       "note": "近 30 天新增 12 篇"
     },
@@ -19,7 +19,7 @@
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "29 天 × 18 個服務，522/522 次在線"
+      "note": "30 天 × 18 個服務，540/540 次在線"
     },
     {
       "key": "incidents",
@@ -31,21 +31,21 @@
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 45.1,
+      "value": 42.1,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；6/26 天達標"
+      "note": "實驗期 37.1 分；6/27 天達標"
     }
   ],
   "content": {
-    "articles": 97,
+    "articles": 98,
     "articles30d": 12,
-    "newsletters": 28,
+    "newsletters": 29,
     "videos": 40,
     "videos30d": 3,
-    "igCards": 42,
-    "socialPosts": 71,
-    "scanDays": 131,
-    "competitorReports": 130,
+    "igCards": 43,
+    "socialPosts": 72,
+    "scanDays": 132,
+    "competitorReports": 131,
     "insights": 18,
     "monthly": [
       {
@@ -374,11 +374,11 @@
     ],
     "latest": {
       "article": {
-        "title": "AI 開始自己改自己了，接下來要問的是：證據在哪裡",
-        "date": "2026-10-27",
-        "url": "/knowledge/ai-self-improvement-evidence"
+        "title": "你餵 AI 什麼，它就長成什麼：腦腐不可逆，乾淨輸入成了新護城河",
+        "date": "2026-10-29",
+        "url": "/knowledge/clean-input-ai-moat"
       },
-      "newsletter": "🦞 榕賀觀點 第 28 期 — 2026-10-26",
+      "newsletter": "🦞 榕賀觀點 第 29 期 — 2026-10-29",
       "video": {
         "title": "拿掉 AI 之後，只有老手真的進步：MIT 實驗揭開的判斷力斷代",
         "date": "2026-10-21",
@@ -620,11 +620,19 @@
         "status": "ok",
         "disk": 80,
         "restarts": 25
+      },
+      {
+        "date": "2026-10-30",
+        "online": 18,
+        "total": 18,
+        "status": "warning",
+        "disk": 83,
+        "restarts": 33
       }
     ],
-    "checks": 522,
-    "online": 522,
-    "warningDays": 2,
+    "checks": 540,
+    "online": 540,
+    "warningDays": 3,
     "maxDisk": 85,
     "live": [
       {
@@ -632,28 +640,28 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.07
+        "seconds": 0.06
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.16
+        "seconds": 0.12
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.33
+        "seconds": 0.32
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.07
+        "seconds": 0.08
       },
       {
         "name": "n8n 自動化",
@@ -667,10 +675,10 @@
         "url": "https://admin.rong-rise.com/",
         "code": "401",
         "ok": true,
-        "seconds": 0.07
+        "seconds": 0.06
       }
     ],
-    "liveAt": "2026-10-30 00:30 UTC"
+    "liveAt": "2026-10-31 00:30 UTC"
   },
   "schedule": {
     "incidents30d": 30,
@@ -701,7 +709,7 @@
     ],
     "executions": 1001,
     "executionsOk": 1000,
-    "executionsFrom": "2026-10-29T12:34:41",
+    "executionsFrom": "2026-10-30T12:32:41",
     "incidents": [
       {
         "job": "a0d92a76ca47",
@@ -1024,17 +1032,17 @@
         "error": "RuntimeError: [drift_skip] Skipped to prevent unintended spend: global inference config drifted since this job"
       }
     ],
-    "jobs": 85,
-    "jobsEnabled": 78
+    "jobs": 86,
+    "jobsEnabled": 79
   },
   "management": {
-    "days": 26,
-    "medianOnline": 45.1,
+    "days": 27,
+    "medianOnline": 42.1,
     "experimentMedian": 37.1,
-    "avgOnline": 54.1,
-    "totalHours": 23.4,
-    "medianVisits": 15.0,
-    "perVisit": 3.2,
+    "avgOnline": 53.6,
+    "totalHours": 24.1,
+    "medianVisits": 15,
+    "perVisit": 3.1,
     "daysUnder30": 6,
     "daily": [
       {
@@ -1166,11 +1174,16 @@
         "date": "2026-10-28",
         "min": 17.8,
         "visits": 11
+      },
+      {
+        "date": "2026-10-29",
+        "min": 39.2,
+        "visits": 16
       }
     ]
   },
   "reach": {
-    "subscribers": 24,
+    "subscribers": 22,
     "confirmed": 16,
     "pending": 6,
     "views": 689,
