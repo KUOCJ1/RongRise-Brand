@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "agent-biggest-benefit-standardization",
+    cat: "AI 轉型",
+    title: "AI Agent 最大的效益，不是省下打提示詞的時間",
+    date: "2026-10-31",
+    readTime: "6 分鐘",
+    excerpt: "兩場進階工作坊，一位執行長從早坐到晚。有人問：Agent 最大的效益是省下打提示詞的時間嗎？真正的效益，是逼你把流程寫清楚，省下部門之間來回確認的時間。",
+    tags: ["AI 轉型", "AI Agent", "流程標準化", "組織管理", "中小企業"],
+  },
+  {
     slug: "clean-input-ai-moat",
     cat: "AI 轉型",
     title: "你餵 AI 什麼，它就長成什麼：腦腐不可逆，乾淨輸入成了新護城河",

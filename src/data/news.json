@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n61",
+      "date": "2026-10-31",
+      "category": "資源",
+      "title": "AI Agent 最大的效益，不是省下打提示詞的時間",
+      "summary": "兩場進階工作坊，一位執行長從早坐到晚。有人問 Agent 最大的效益是不是省下打提示詞的時間，真正的答案是把流程寫清楚。",
+      "link": "/knowledge/agent-biggest-benefit-standardization",
+      "isNew": true
+    },
+    {
       "id": "n60",
       "date": "2026-10-29",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "當 AI 在企業內產生效益的同時，也默默地拆掉組織職涯階梯的第一階",
       "summary": "愛爾蘭科技業被裁掉的是內容審核、信任與安全這類白領入門職。企業買了 AI，也買走了自己的訓練場，帳單三年後才到。",
       "link": "/knowledge/ai-first-rung",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n57",
