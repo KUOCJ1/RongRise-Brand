@@ -211,7 +211,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { slug: "xiaoha-weekly-vol2", date: "2026-09-24" },
       { slug: "xiaoha-weekly-vol3", date: "2026-10-15" },
       { slug: "camino-operation-backstage", date: "2026-10-25" },
-      { slug: "camino-operation-poc", date: "2026-10-27" },
+      // camino-operation-poc 已納入 articles.json，由 articlePages 產生，避免 sitemap 重複
       { slug: "human-absent-13-days", date: "2026-10-27" },
     ] as { slug: string; date: string }[]
   ).map((p) => ({

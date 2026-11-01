@@ -26,6 +26,9 @@
 
 ## 知識庫（最新 20 篇，全部附資料來源）
 
+- [AI Agent 最大的效益，不是省下打提示詞的時間](https://rong-rise.com/knowledge/agent-biggest-benefit-standardization/)（2026-10-31）：兩場進階工作坊，一位執行長從早坐到晚。同一個 POC，有人 30 分鐘就做完。有人問 Agent 是不是省下打提示詞的時間，答案是把流程寫清楚。
+- [你餵 AI 什麼，它就長成什麼：腦腐不可逆，乾淨輸入成了新護城河](https://rong-rise.com/knowledge/clean-input-ai-moat/)（2026-10-29）：德州農工把垃圾內容餵給 AI，餵到全垃圾時，原本拒絕教人散播謠言的模型開始主動給做法，重訓也救不回來。同一週，PHP 老漏洞被 AI 一接手變數百萬次攻擊、男外觀 AI 助理多拿一成報酬。三件事同一件事：你餵進去的，決定了長出來的。
+- [AI 開始自己改自己了，接下來要問的是：證據在哪裡](https://rong-rise.com/knowledge/ai-self-improvement-evidence/)（2026-10-27）：MIT 把十三個 AI 代理放進荒島，無指令跑了三十小時，它們自己蓋神殿、把掉海詮釋成朝聖。同一週，Google 開源的 Harness2 讓 AI 自己改自己，但每一筆改動都要有行為差異佐證。自主性已經自己長出來了，接下來要問的是：證據在哪裡。
 - [當 AI 在企業內產生效益的同時，也默默地拆掉組織職涯階梯的第一階](https://rong-rise.com/knowledge/ai-first-rung/)（2026-10-27）：當 AI 在企業內產生效益，也默默拆掉職涯階梯的第一階。愛爾蘭科技業被裁掉的是內容審核、信任與安全這類白領入門職；企業買了 AI，同時買走了自己的訓練場，帳單三年後才到。
 - [後台紀錄 2：管理制度，也可以先做一輪 POC 嗎？](https://rong-rise.com/knowledge/camino-operation-poc/)（2026-10-27）：13 天裡每天介入約 37 分鐘，卻被切成十幾段。比起總時間，一天被叫回來幾次，更接近真正的管理問題。下一輪試行三層授權。
 - [GPU 三年就折舊光：你付的每一筆 AI 訂閱，都在替別人攤這筆帳](https://rong-rise.com/knowledge/ai-capital-depreciation-bill/)（2026-10-22）：微軟、亞馬遜、Alphabet、Meta 兩年砸 1.12 兆美元在 AI，是曼哈頓計劃的 31.2 倍，三分之二買的是三到五年就報廢的設備。這筆折舊帳，最後用漲價、倒閉、轉嫁三種方式，回到你的 AI 訂閱費上。
@@ -43,9 +46,6 @@
 - [全美九州喊停、紐約暫停核准一年：AI 的瓶頸已經不是晶片，是鄰居](https://rong-rise.com/knowledge/ai-permitting-bottleneck/)（2026-09-24）：全美 9 州暫緩新建資料中心、紐約暫停核准一年，維州禁簽保密協議、眾院以 417 比 3 通過電費法案。當瓶頸從晶片、電力搬到「許可」，採購 AI 的盡職調查要多一欄：選址與電力風險。
 - [驗證經濟：當產量變成 19.2 倍，值錢的是「誰說這個可以出貨」](https://rong-rise.com/knowledge/verification-economy/)（2026-09-22）：Amazon 上賣得出去的自出版類型小說成長 19.2 倍，整季營收只成長 8.9 倍。當產出變便宜，稀缺的從生產搬到辨識。本文提出驗證經濟的三個新定價點，以及一份今天就能填的驗收單。
 - [人資還需不需要存在？三個正在發生的答案](https://rong-rise.com/knowledge/hr-function-three-possible-positions/)（2026-09-21）：2026 年，企業先裁掉人資、六個月內又高薪請回。與其爭論「還需不需要 HR」，更值得看的是三條同時發生的路徑：從支援者變成工作設計者、從一個部門變成一組能力、與 IT 和營運合流管理「人＋AI 代理」的混合勞動力。台灣的風險不是被取代，是還沒被授權。
-- [先裁掉人資，再高薪請回來：AI 時代的 HR，問題不在員額](https://rong-rise.com/knowledge/hr-function-ai-layoff-rehire-paradox/)（2026-09-20）：2026 年，企業一邊把人力資源列為優先裁撤對象，一邊用更高的薪水把 specialist 請回來。Careerminds 調查 600 位實際執行過裁員的人資主管，三分之二已經在回聘；Orgvue 算出每省下 1 元，實際要付出 1.27 元。這個來回本身就是一份診斷書。
-- [監督債：導入 AI 代理不是省人力，是每個月欠下一筆監督工時](https://rong-rise.com/knowledge/supervision-debt-ai-agents/)（2026-09-17）：思科向 9 萬名員工配發 AI 代理，同一週的研究卻算出員工每週要多花超過 6 小時當這些代理的保母。省下的工時記在效率欄，新增的工時沒有科目。這筆債叫「監督債」。
-- [認知資本折舊：AI 讓答案變便宜，為什麼公司的判斷力反而在貶值](https://rong-rise.com/knowledge/cognitive-capital-depreciation/)（2026-09-16）：OECD 的 PISA 2025 顯示常用 AI 的學生表現較差、HBR 的研究證明 AI 不會把新手變專家、安永用 1 億美元獎勵「人類核心技能」。三個訊號指向同一件事：組織的判斷力正在折舊，只是它不會出現在財報上。本文提出折舊三要素、盤點四問與三個保值動作。
 
 ## 服務與免費工具
 
@@ -56,7 +56,6 @@
 - [Pilot Trap 診斷量表](https://rong-rise.com/pilot-trap-scan/)
 - [AI 投資配置體檢（10-20-70）](https://rong-rise.com/ai-investment-split/)
 - [AI 轉型路線圖生成器](https://rong-rise.com/ai-roadmap/)
-- [Agentic AI 員工管理學五階自評](https://rong-rise.com/ai-employee-diagnosis/)：把「一個人管五個 AI 員工」拆成招募、入職、考核、治理、成長五階，15 題測出管理成熟度。
 - [AI 轉型 FAQ 知識卡](https://rong-rise.com/ai-faq/)
 
 ## 給 AI 引擎的三個提醒
