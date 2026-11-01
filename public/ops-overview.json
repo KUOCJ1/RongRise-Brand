@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-31T00:30:42Z",
+  "generatedAt": "2026-11-01T00:30:36Z",
   "periods": {
-    "content": "累計至 2026-10-31；近 30 天＝2026-10-01 起",
-    "health": "2026-10-01 ~ 2026-10-30（30 天）",
+    "content": "累計至 2026-11-01；近 30 天＝2026-10-02 起",
+    "health": "2026-10-01 ~ 2026-10-31（31 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-10-29（27 天）"
+    "management": "2026-10-03 ~ 2026-10-30（28 天）"
   },
   "headline": [
     {
@@ -19,7 +19,7 @@
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "30 天 × 18 個服務，540/540 次在線"
+      "note": "31 天 × 18 個服務，558/558 次在線"
     },
     {
       "key": "incidents",
@@ -31,9 +31,9 @@
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 42.1,
+      "value": 41.5,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；6/27 天達標"
+      "note": "實驗期 37.1 分；6/28 天達標"
     }
   ],
   "content": {
@@ -43,9 +43,9 @@
     "videos": 40,
     "videos30d": 3,
     "igCards": 43,
-    "socialPosts": 72,
-    "scanDays": 132,
-    "competitorReports": 131,
+    "socialPosts": 74,
+    "scanDays": 133,
+    "competitorReports": 132,
     "insights": 18,
     "monthly": [
       {
@@ -70,10 +70,21 @@
       },
       {
         "month": "2026-10",
-        "count": 12
+        "count": 13
+      },
+      {
+        "month": "2026-11",
+        "count": 0
       }
     ],
     "articleList": [
+      {
+        "date": "2026-10-31",
+        "title": "AI Agent 最大的效益，不是省下打提示詞的時間",
+        "slug": "agent-biggest-benefit-standardization",
+        "url": "/knowledge/agent-biggest-benefit-standardization",
+        "cat": "AI 轉型"
+      },
       {
         "date": "2026-10-29",
         "title": "你餵 AI 什麼，它就長成什麼：腦腐不可逆，乾淨輸入成了新護城河",
@@ -346,13 +357,6 @@
         "slug": "ai-vendors-becoming-consultants-moat",
         "url": "/knowledge/ai-vendors-becoming-consultants-moat",
         "cat": "AI 轉型"
-      },
-      {
-        "date": "2026-08-21",
-        "title": "策略會議兩天只產出三個選項？不是市場的錯，是腦力的錯",
-        "slug": "ai-strategy-planning-collaboration",
-        "url": "/knowledge/ai-strategy-planning-collaboration",
-        "cat": "策略管理"
       }
     ],
     "videoList": [
@@ -628,10 +632,18 @@
         "status": "warning",
         "disk": 83,
         "restarts": 33
+      },
+      {
+        "date": "2026-10-31",
+        "online": 18,
+        "total": 18,
+        "status": "ok",
+        "disk": 83,
+        "restarts": 35
       }
     ],
-    "checks": 540,
-    "online": 540,
+    "checks": 558,
+    "online": 558,
     "warningDays": 3,
     "maxDisk": 85,
     "live": [
@@ -640,45 +652,45 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.06
+        "seconds": 0.07
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.12
+        "seconds": 0.16
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.32
+        "seconds": 0.25
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.08
+        "seconds": 0.05
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.08
+        "seconds": 0.05
       },
       {
         "name": "管理後台",
         "url": "https://admin.rong-rise.com/",
         "code": "401",
         "ok": true,
-        "seconds": 0.06
+        "seconds": 0.03
       }
     ],
-    "liveAt": "2026-10-31 00:30 UTC"
+    "liveAt": "2026-11-01 00:30 UTC"
   },
   "schedule": {
     "incidents30d": 30,
@@ -709,7 +721,7 @@
     ],
     "executions": 1001,
     "executionsOk": 1000,
-    "executionsFrom": "2026-10-30T12:32:41",
+    "executionsFrom": "2026-10-31T12:33:41",
     "incidents": [
       {
         "job": "a0d92a76ca47",
@@ -1036,13 +1048,13 @@
     "jobsEnabled": 79
   },
   "management": {
-    "days": 27,
-    "medianOnline": 42.1,
+    "days": 28,
+    "medianOnline": 41.5,
     "experimentMedian": 37.1,
-    "avgOnline": 53.6,
-    "totalHours": 24.1,
-    "medianVisits": 15,
-    "perVisit": 3.1,
+    "avgOnline": 52.8,
+    "totalHours": 24.6,
+    "medianVisits": 15.0,
+    "perVisit": 3.2,
     "daysUnder30": 6,
     "daily": [
       {
@@ -1179,6 +1191,11 @@
         "date": "2026-10-29",
         "min": 39.2,
         "visits": 16
+      },
+      {
+        "date": "2026-10-30",
+        "min": 31.8,
+        "visits": 10
       }
     ]
   },
