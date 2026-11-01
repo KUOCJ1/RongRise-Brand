@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-10-31T05:20:52Z",
+ "generatedAt": "2026-11-01T05:20:41Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 154
+  "daysRunning": 155
  },
  "stats": {
-  "scanDays": 133,
+  "scanDays": 134,
   "weekArticles": 49,
-  "articles": 98,
-  "newsItems": 60,
+  "articles": 99,
+  "newsItems": 61,
   "newsletterIssues": 29,
   "subscribers": 22,
   "confirmedSubscribers": 16,
   "videos": 40,
-  "views": 689,
+  "views": 690,
   "channelSubscribers": 17,
   "insights": 18,
-  "socialPosts": 74,
-  "igCards": 43,
-  "competitorReports": 132
+  "socialPosts": 75,
+  "igCards": 47,
+  "competitorReports": 133
  },
  "activity": [
-  {
-   "date": "2026-10-25",
-   "count": 4,
-   "topics": []
-  },
   {
    "date": "2026-10-26",
    "count": 6,
@@ -56,13 +51,18 @@
    "date": "2026-10-31",
    "count": 7,
    "topics": []
+  },
+  {
+   "date": "2026-11-01",
+   "count": 5,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "你餵 AI 什麼，它就長成什麼：腦腐不可逆，乾淨輸入成了新護城河",
-   "date": "2026-10-29",
-   "url": "/knowledge/clean-input-ai-moat"
+   "title": "AI Agent 最大的效益，不是省下打提示詞的時間",
+   "date": "2026-10-31",
+   "url": "/knowledge/agent-biggest-benefit-standardization"
   },
   "newsletter": "🦞 榕賀觀點 第 29 期 — 2026-10-29",
   "video": {

@@ -1,17 +1,17 @@
 {
- "generatedAt": "2026-10-31T05:20:49Z",
+ "generatedAt": "2026-11-01T05:20:42Z",
  "window": {
-  "from": "2026-10-25",
-  "to": "2026-10-31",
+  "from": "2026-10-26",
+  "to": "2026-11-01",
   "days": 7,
   "digestCount": 7
  },
  "stats": {
-  "totalArticles": 49,
+  "totalArticles": 50,
   "categories": {
    "AI 轉型": 26,
    "ESG 永續": 9,
-   "人才策略": 14
+   "人才策略": 15
   }
  },
  "trends": [
@@ -20,30 +20,22 @@
    "icon": "📋",
    "category": "人才策略",
    "count": 22,
-   "prevCount": 17,
-   "momentum": "flat"
+   "prevCount": 14,
+   "momentum": "up"
   },
   {
    "keyword": "組織與管理",
    "icon": "🏢",
    "category": "管理趨勢",
-   "count": 15,
-   "prevCount": 14,
+   "count": 14,
+   "prevCount": 12,
    "momentum": "flat"
-  },
-  {
-   "keyword": "晶片與算力",
-   "icon": "🔩",
-   "category": "AI 轉型",
-   "count": 12,
-   "prevCount": 19,
-   "momentum": "down"
   },
   {
    "keyword": "AI Agent",
    "icon": "🤖",
    "category": "AI 轉型",
-   "count": 10,
+   "count": 11,
    "prevCount": 7,
    "momentum": "up"
   },
@@ -51,16 +43,24 @@
    "keyword": "成本與投資",
    "icon": "💰",
    "category": "AI 轉型",
-   "count": 10,
-   "prevCount": 6,
+   "count": 11,
+   "prevCount": 5,
    "momentum": "up"
+  },
+  {
+   "keyword": "晶片與算力",
+   "icon": "🔩",
+   "category": "AI 轉型",
+   "count": 11,
+   "prevCount": 18,
+   "momentum": "down"
   },
   {
    "keyword": "企業導入",
    "icon": "🚀",
    "category": "AI 轉型",
-   "count": 7,
-   "prevCount": 8,
+   "count": 8,
+   "prevCount": 7,
    "momentum": "flat"
   },
   {
@@ -68,7 +68,7 @@
    "icon": "🛡️",
    "category": "AI 轉型",
    "count": 7,
-   "prevCount": 9,
+   "prevCount": 8,
    "momentum": "flat"
   },
   {
@@ -76,7 +76,7 @@
    "icon": "⚖️",
    "category": "AI 轉型",
    "count": 6,
-   "prevCount": 4,
+   "prevCount": 3,
    "momentum": "up"
   },
   {
@@ -92,15 +92,15 @@
    "icon": "🏭",
    "category": "AI 轉型",
    "count": 6,
-   "prevCount": 5,
-   "momentum": "flat"
+   "prevCount": 4,
+   "momentum": "up"
   },
   {
    "keyword": "自動化",
    "icon": "⚙️",
    "category": "AI 轉型",
-   "count": 4,
-   "prevCount": 7,
+   "count": 3,
+   "prevCount": 5,
    "momentum": "down"
   },
   {
@@ -129,6 +129,41 @@
   }
  ],
  "articles": [
+  {
+   "title": "上半年淨利剩 660 萬，路易莎黃銘賢憑什麼喊「我們很賺錢」？首曝「AI 大平台」野心",
+   "url": "https://www.managertoday.com.tw/articles/view/73217",
+   "summary": "上半年營收 15.7 億（年增逾 15%）創新高、稅後淨利只剩 660 萬（年減 56.3%），營業費用 6.6 億（年增 21.3%）是主因。黃銘賢把少賺的錢當學費：投入 7,000～8,000 萬換 ERP、建數據中台與 AI 代理，先解旗下 11 個品牌「POS／訂位／排班資料各自分散」的老問題，明年 6 月上線後再包成 SaaS 賣給其他餐飲業者",
+   "date": "2026-11-01",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Closing banking’s AI value gap: A CEO guide",
+   "url": "https://www.mckinsey.com/industries/financial-services/our-insights/closing-bankings-ai-value-gap-a-ceo-guide",
+   "summary": "McKinsey 全球銀行業年報指出銀行科技支出高於其後四個產業加總，但成效卡在四個結構性缺口：價值缺口（投資無法追溯到企業成果）、把 AI 投資變成可重複部署的「AI capital」的能力、規模化、以及人機分工的重新設計",
+   "date": "2026-11-01",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Meta’s Muse Could Upend All Kinds of Businesses. It Hasn’t Yet",
+   "url": "https://www.wired.com/story/metas-muse-could-upend-all-kinds-of-businesses-it-hasnt-yet/",
+   "summary": "Meta 說美加已有逾 1,000 萬人啟用 Muse、25% 用來購物；但約 50 家企業在法說會口徑一致：DoorDash「數百筆」、Hilton「微不足道」、T-Mobile「沒有顯著」、Ally「相當低」、Life Time 說取消訂閱「零」。Chipotle 則發現 agent 卡在會員折扣與夜間下單，正回頭整理網站程式碼——agent 跑不動，常常是網站沒為 agent 設計",
+   "date": "2026-11-01",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Who wins when AI does the shopping? New evidence on agentic commerce",
+   "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/who-wins-when-ai-does-the-shopping-new-evidence-on-agentic-commerce",
+   "summary": "2026 年 6 月調查 11 個市場、約 21,000 名消費者：逾五成全球消費者在購物時用 AI；美國「用 AI 完成購買」的比率比去年跳增 70%。真正被點出的不是需求不足，而是「消費者已準備好、商業基礎設施還沒」",
+   "date": "2026-11-01",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "印度勞工化身 AI 導師，配戴攝影機記錄日常、親手訓練未來機器人",
+   "url": "https://technews.tw/2026/10/31/indian-workers-transform-into-ai-tutors/",
+   "summary": "理髮師、紡織工、家事工作者戴上頭戴攝影機，每天錄 5～6 小時的第一人稱操作影像，賣給機器人開發者訓練 Physical AI；採集公司要求每週 10 小時多樣化示範（修車、木工、水電）。報酬每小時約 13～15 美元（美國同類工作約三倍），但也有基礎任務錄 8～10 小時只賺 5～10 美元。報導點出的張力很直白：為了生計，親手訓練未來可能取代自己的機器",
+   "date": "2026-11-01",
+   "category": "人才策略"
+  },
   {
    "title": "GMI Cloud 展示在臺 AI Factory 設計，AI 資料中心的新瓶頸不是機櫃，而是電力",
    "url": "https://www.ithome.com.tw/news/180116",
@@ -443,41 +478,13 @@
    "summary": "Aged Intelligence Society（Shoshana Berger 與 Nina Willdorf 創辦）用邀請制晚餐會讓中年女性「用前沿工具解決中年問題」，第一場就超額報名、第二場被《紐約時報》報導，Substack 破千訂閱、外地開始自辦聚會。她們的觀察值得台灣企業參考：這批人的優勢不是技術，是「已經經歷過失敗與摩擦，知道什麼是好問題」。",
    "date": "2026-10-26",
    "category": "人才策略"
-  },
-  {
-   "title": "AI 訓練資料不只靠開放，數發部擬推動使用報酬機制",
-   "url": "https://www.ithome.com.tw/news/179931",
-   "summary": "數發部、文化部與經濟部智慧局 10 月中首度共同召開 AI 與著作權交流會，拋出「AI 業者使用民間資料應給付報酬」；政次侯宜秀定調主權 AI 的關鍵是「模型可換、資料可控」，主權語料庫已累積約 33 億 Tokens。但**計價方式、授權管理者、報酬分配三件事都還沒有設計**，法制基礎要靠仍在行政院研議的《促進資料創新利用發展條例》草案。",
-   "date": "2026-10-25",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Meta 第三季營收成長 26%，AI 資本支出上看 1,450 億美元",
-   "url": "https://www.ithome.com.tw/news/179885",
-   "summary": "營收動能與資本支出同時往上，代表 AI 支出仍被當成長期產能布局而非當期費用處理。",
-   "date": "2026-10-25",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "The AI graveyard: a running list of projects and startups that didn't make it",
-   "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-   "summary": "TechCrunch 開始維護「AI 墳場」清單。關鍵數字：S&P Global 統計**約 42% 的企業 AI 計畫最後被母公司放棄**（原因：資金不足、技術、競爭、難以規模化、需求太弱）。案例包括 AI 工作流自動化工具 Relay（8 月收攤，因為 OpenAI／Google 把同功能內建進自家平台）、Character.ai（10 月聲請破產）。連 OpenAI 自己也回滾「超級 App」改版、Atlas 瀏覽器上市不到一年即停。",
-   "date": "2026-10-25",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "沒有指令的 AI 都在做什麼？MIT 虛擬島嶼實驗：它們會玩耍、推理，甚至做實驗",
-   "url": "https://technews.tw/2026/10/24/researchers-stranded-an-ai-agent-on-a-virtual-island/",
-   "summary": "MIT CSAIL 把 13 個名為 Eko 的代理人放進無指令的虛擬島嶼、連續活動 30 小時：它們堆方塊、拼自己的名字、拿物件打球，一個登頂後在推理裡寫「我在尖塔上」，一個用方塊蓋「紀念碑」、另一個蓋「神殿」還把掉海被傳送回原點詮釋成「朝聖結束」。研究者結論：這是近似科學方法的行為（觀察→假設→實驗→修正），也接近動物的「玩耍」特徵。",
-   "date": "2026-10-25",
-   "category": "AI 轉型"
   }
  ],
  "insights": [
+  "資本市場這幾天同時用三種方式給 AI 重新定價：OpenAI 募資目標下調、Anthropic 被預期拿到 junk 評等、聯發科財報亮眼卻跌三成。三件事的共同點不是「AI 不重要」，而是「投資轉現金流的速度」開始被逐項檢查。",
+  "企業端的瓶頸則一致落在作業系統層：路易莎砸 8,000 萬先換 ERP 與數據中台才敢談 AI 代理，McKinsey 說銀行的錢卡在四個結構性缺口，Chipotle 的結論最白話——agent 買不了單，因為網站不是為 agent 寫的。",
+  "這一輪還有一個容易被忽略的外部性：Physical AI 的訓練資料來自印度理髮師與家事工作者的第一人稱影像，資料中心的空氣污染則進了法院。AI 的成本有一部分被推到不會出現在財報上的人身上。",
   "今天有三則其實在講同一件事：**能力有了，可觀測性沒有**。MIT TR 的 agent 研究指出連 Agent ID 都缺，WIRED 的國防部案例是「一個人的 agent 在敏感網路跑兩個月沒人知道」，Jamf 的解法則是把人工核准與操作紀錄留在自動化流程裡。對客戶的說法可以收斂成一句：導入 agent 的驗收項目裡，「誰能看到它做了什麼」必須跟「它做得多快」並列。",
-  "「工具買了就會用」的假設再次被數字打掉：一人公司調查 63% 用了 AI、只有 8% 全環節用得上；同一邏輯也出現在 B 站的「先拆工作流」與 FICO 的「團隊與所有權文化優先」。這條線和我們一貫主張一致，但今年的新證據是「連個人創業者都卡在整合，不只有大企業」。",
-  "AI 產出品質開始被當成技術問題研究：NYU／UT Austin 把「AI 腔」追到後訓練與 RLVR，等於給 humanizer 這類工作提供了機制解釋——不是修辭偏好，是訓練目標的副作用。這對我們內部的品質流程是背書，也提醒「模型越強、文字越不像人」在短期內是趨勢而非錯覺。",
-  "人力調整與勞動權利同時升溫：微軟 27% 人力符合自願離職資格，另一頭有人以宗教信仰為由取得「不用 AI」的豁免。兩件事指向同一個管理問題——AI 導入的「自願」邊界，正在從 HR 政策變成法律議題。",
-  "AI 的瓶頸從模型移到「組織內的理解」與「能不能算帳」：MIT TR 的 16%／12%／3% 與 Anthropic 的用量報表講同一件事——工具能力已經夠，缺的是上下文層與計價方式。企業問的下一題不是「要不要用」，是「用多少、換到什麼」。"
+  "「工具買了就會用」的假設再次被數字打掉：一人公司調查 63% 用了 AI、只有 8% 全環節用得上；同一邏輯也出現在 B 站的「先拆工作流」與 FICO 的「團隊與所有權文化優先」。這條線和我們一貫主張一致，但今年的新證據是「連個人創業者都卡在整合，不只有大企業」。"
  ]
 }
