@@ -9,7 +9,11 @@ export const metadata: Metadata = {
     "從單日工作坊到系列課程，找到最適合您的學習路徑。AI 轉型、人才策略、ESG 永續專業培訓，名額有限建議提早報名。",
   alternates: {
     canonical: "https://rong-rise.com/courses",
-    languages: { en: "https://rong-rise.com/en/courses" },
+    languages: {
+      "zh-TW": "https://rong-rise.com/courses/",
+      en: "https://rong-rise.com/en/courses/",
+      "x-default": "https://rong-rise.com/courses/",
+    },
   },
   openGraph: {
     title: "課程行事曆｜AI 轉型與 ESG 永續課程",

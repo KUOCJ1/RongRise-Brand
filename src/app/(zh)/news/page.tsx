@@ -8,7 +8,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://rong-rise.com/news",
     languages: {
-      en: "https://rong-rise.com/en/news",
+      "zh-TW": "https://rong-rise.com/news/",
+      en: "https://rong-rise.com/en/news/",
+      "x-default": "https://rong-rise.com/news/",
     },
   },
   openGraph: {

@@ -49,13 +49,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  alternates: {
-    canonical: `${SITE_URL}/en`,
-    languages: {
-      "zh-TW": SITE_URL,
-      "en": `${SITE_URL}/en`,
-    },
-  },
   icons: {
     icon: "/favicon.ico",
   },

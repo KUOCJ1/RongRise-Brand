@@ -17,13 +17,6 @@ export const metadata: Metadata = {
     template: "%s",
   },
   description: SITE_DESCRIPTION,
-  alternates: {
-    canonical: `${SITE_URL}/en`,
-    languages: {
-      zh: SITE_URL,
-      en: `${SITE_URL}/en`,
-    },
-  },
   openGraph: {
     title: `${SITE_NAME} — AI Transformation × Talent Strategy × ESG Sustainability`,
     description: SITE_DESCRIPTION,

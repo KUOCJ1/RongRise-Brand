@@ -6,7 +6,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://rong-rise.com/esg-assessment",
     languages: {
-      en: "https://rong-rise.com/en/esg-assessment",
+      "zh-TW": "https://rong-rise.com/esg-assessment/",
+      en: "https://rong-rise.com/en/esg-assessment/",
+      "x-default": "https://rong-rise.com/esg-assessment/",
     },
   },
   openGraph: {
