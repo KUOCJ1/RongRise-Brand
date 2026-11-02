@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-01T00:30:36Z",
+  "generatedAt": "2026-11-02T00:30:36Z",
   "periods": {
-    "content": "累計至 2026-11-01；近 30 天＝2026-10-02 起",
-    "health": "2026-10-01 ~ 2026-10-31（31 天）",
+    "content": "累計至 2026-11-02；近 30 天＝2026-10-03 起",
+    "health": "2026-10-02 ~ 2026-10-31（30 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-10-30（28 天）"
+    "management": "2026-10-03 ~ 2026-10-31（29 天）"
   },
   "headline": [
     {
       "key": "content",
       "label": "內容產出",
-      "value": 98,
+      "value": 99,
       "unit": "篇文章",
       "note": "近 30 天新增 12 篇"
     },
@@ -19,33 +19,33 @@
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "31 天 × 18 個服務，558/558 次在線"
+      "note": "30 天 × 18 個服務，540/540 次在線"
     },
     {
       "key": "incidents",
       "label": "未結事故",
-      "value": 1,
+      "value": 2,
       "unit": "件",
-      "note": "近 30 天 30 筆告警，涉及 22 支排程"
+      "note": "近 30 天 32 筆告警，涉及 23 支排程"
     },
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 41.5,
+      "value": 42.1,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；6/28 天達標"
+      "note": "實驗期 37.1 分；6/29 天達標"
     }
   ],
   "content": {
-    "articles": 98,
+    "articles": 99,
     "articles30d": 12,
     "newsletters": 29,
     "videos": 40,
     "videos30d": 3,
-    "igCards": 43,
-    "socialPosts": 74,
-    "scanDays": 133,
-    "competitorReports": 132,
+    "igCards": 47,
+    "socialPosts": 75,
+    "scanDays": 134,
+    "competitorReports": 133,
     "insights": 18,
     "monthly": [
       {
@@ -378,9 +378,9 @@
     ],
     "latest": {
       "article": {
-        "title": "你餵 AI 什麼，它就長成什麼：腦腐不可逆，乾淨輸入成了新護城河",
-        "date": "2026-10-29",
-        "url": "/knowledge/clean-input-ai-moat"
+        "title": "AI Agent 最大的效益，不是省下打提示詞的時間",
+        "date": "2026-10-31",
+        "url": "/knowledge/agent-biggest-benefit-standardization"
       },
       "newsletter": "🦞 榕賀觀點 第 29 期 — 2026-10-29",
       "video": {
@@ -393,14 +393,6 @@
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-01",
-        "online": 18,
-        "total": 18,
-        "status": "warning",
-        "disk": 73,
-        "restarts": 6
-      },
       {
         "date": "2026-10-02",
         "online": 18,
@@ -642,9 +634,9 @@
         "restarts": 35
       }
     ],
-    "checks": 558,
-    "online": 558,
-    "warningDays": 3,
+    "checks": 540,
+    "online": 540,
+    "warningDays": 2,
     "maxDisk": 85,
     "live": [
       {
@@ -652,7 +644,7 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.07
+        "seconds": 0.04
       },
       {
         "name": "第二大腦",
@@ -666,21 +658,21 @@
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.25
+        "seconds": 0.36
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.04
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.17
       },
       {
         "name": "管理後台",
@@ -690,17 +682,17 @@
         "seconds": 0.03
       }
     ],
-    "liveAt": "2026-11-01 00:30 UTC"
+    "liveAt": "2026-11-02 00:30 UTC"
   },
   "schedule": {
-    "incidents30d": 30,
-    "incidentJobs": 22,
-    "incidentDays": 13,
-    "open": 1,
+    "incidents30d": 32,
+    "incidentJobs": 23,
+    "incidentDays": 14,
+    "open": 2,
     "types": [
       {
         "type": "script",
-        "count": 13
+        "count": 14
       },
       {
         "type": "config",
@@ -712,17 +704,33 @@
       },
       {
         "type": "timeout",
-        "count": 2
+        "count": 3
       },
       {
         "type": "rate_limit",
         "count": 2
       }
     ],
-    "executions": 1001,
-    "executionsOk": 1000,
-    "executionsFrom": "2026-10-31T12:33:41",
+    "executions": 1002,
+    "executionsOk": 999,
+    "executionsFrom": "2026-11-01T12:34:36",
     "incidents": [
+      {
+        "job": "315e2192dbcf",
+        "type": "script",
+        "state": "alerted",
+        "first": "2026-11-01 21:00",
+        "closed": "",
+        "error": "Script exited with code 1"
+      },
+      {
+        "job": "5f91aedd850c",
+        "type": "timeout",
+        "state": "resolved",
+        "first": "2026-11-01 09:00",
+        "closed": "2026-11-01 12:00",
+        "error": "Script exited with code 1"
+      },
       {
         "job": "a0d92a76ca47",
         "type": "script",
@@ -1026,34 +1034,18 @@
         "first": "2026-09-12 00:43",
         "closed": "2026-09-12 00:44",
         "error": "Script exited with code 1"
-      },
-      {
-        "job": "d404c67238c7",
-        "type": "script",
-        "state": "closed",
-        "first": "2026-09-11 07:30",
-        "closed": "2026-09-14 01:44",
-        "error": "Script exited with code 1"
-      },
-      {
-        "job": "0d16883b6d5d",
-        "type": "config",
-        "state": "closed",
-        "first": "2026-09-10 10:00",
-        "closed": "2026-09-14 01:44",
-        "error": "RuntimeError: [drift_skip] Skipped to prevent unintended spend: global inference config drifted since this job"
       }
     ],
     "jobs": 86,
-    "jobsEnabled": 79
+    "jobsEnabled": 78
   },
   "management": {
-    "days": 28,
-    "medianOnline": 41.5,
+    "days": 29,
+    "medianOnline": 42.1,
     "experimentMedian": 37.1,
-    "avgOnline": 52.8,
-    "totalHours": 24.6,
-    "medianVisits": 15.0,
+    "avgOnline": 53.5,
+    "totalHours": 25.9,
+    "medianVisits": 15,
     "perVisit": 3.2,
     "daysUnder30": 6,
     "daily": [
@@ -1196,6 +1188,11 @@
         "date": "2026-10-30",
         "min": 31.8,
         "visits": 10
+      },
+      {
+        "date": "2026-10-31",
+        "min": 74.3,
+        "visits": 13
       }
     ]
   },
@@ -1203,7 +1200,7 @@
     "subscribers": 22,
     "confirmed": 16,
     "pending": 6,
-    "views": 689,
+    "views": 690,
     "channelSubscribers": 17
   }
 }
