@@ -68,6 +68,15 @@ const articles: Article[] = [
     tags: ["公開實驗", "AI 員工", "授權設計", "管理制度", "後台紀錄"],
   },
   {
+    slug: "human-absent-13-days",
+    cat: "AI 轉型",
+    title: "我不在公司的 13 天：一次公開實驗的系列總覽",
+    date: "2026-10-26",
+    readTime: "5 分鐘",
+    excerpt: "13 天、169 次服務檢查、7 件錯。經營者離開公司，內容 operation 交給 AI 員工團隊，只保留每天約 37 分鐘的簽核。三篇紀錄與一支影片，數字全部公開，包含出包與修復。",
+    tags: ["公開實驗", "AI 員工", "管理制度", "離線實驗", "系列總覽"],
+  },
+  {
     slug: "camino-operation-backstage",
     cat: "AI 轉型",
     title: "後台紀錄 1：一天 37 分鐘的管理窗口，出了 7 件錯",
