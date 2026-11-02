@@ -1,17 +1,17 @@
 {
- "generatedAt": "2026-11-01T05:20:42Z",
+ "generatedAt": "2026-11-02T05:20:44Z",
  "window": {
-  "from": "2026-10-26",
-  "to": "2026-11-01",
+  "from": "2026-10-27",
+  "to": "2026-11-02",
   "days": 7,
   "digestCount": 7
  },
  "stats": {
-  "totalArticles": 50,
+  "totalArticles": 53,
   "categories": {
    "AI 轉型": 26,
-   "ESG 永續": 9,
-   "人才策略": 15
+   "ESG 永續": 11,
+   "人才策略": 16
   }
  },
  "trends": [
@@ -19,87 +19,103 @@
    "keyword": "人力資源",
    "icon": "📋",
    "category": "人才策略",
-   "count": 22,
-   "prevCount": 14,
+   "count": 23,
+   "prevCount": 12,
    "momentum": "up"
   },
   {
    "keyword": "組織與管理",
    "icon": "🏢",
    "category": "管理趨勢",
-   "count": 14,
-   "prevCount": 12,
-   "momentum": "flat"
+   "count": 19,
+   "prevCount": 10,
+   "momentum": "up"
   },
   {
    "keyword": "AI Agent",
    "icon": "🤖",
    "category": "AI 轉型",
-   "count": 11,
-   "prevCount": 7,
+   "count": 13,
+   "prevCount": 6,
    "momentum": "up"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
    "category": "AI 轉型",
-   "count": 11,
+   "count": 12,
    "prevCount": 5,
+   "momentum": "up"
+  },
+  {
+   "keyword": "企業導入",
+   "icon": "🚀",
+   "category": "AI 轉型",
+   "count": 11,
+   "prevCount": 8,
    "momentum": "up"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
    "category": "AI 轉型",
-   "count": 11,
-   "prevCount": 18,
+   "count": 10,
+   "prevCount": 19,
    "momentum": "down"
-  },
-  {
-   "keyword": "企業導入",
-   "icon": "🚀",
-   "category": "AI 轉型",
-   "count": 8,
-   "prevCount": 7,
-   "momentum": "flat"
   },
   {
    "keyword": "安全與風險",
    "icon": "🛡️",
    "category": "AI 轉型",
-   "count": 7,
+   "count": 8,
    "prevCount": 8,
    "momentum": "flat"
+  },
+  {
+   "keyword": "能源與電力",
+   "icon": "⚡",
+   "category": "ESG 永續",
+   "count": 7,
+   "prevCount": 5,
+   "momentum": "up"
+  },
+  {
+   "keyword": "資料中心",
+   "icon": "🏭",
+   "category": "AI 轉型",
+   "count": 7,
+   "prevCount": 3,
+   "momentum": "up"
   },
   {
    "keyword": "治理與法規",
    "icon": "⚖️",
    "category": "AI 轉型",
    "count": 6,
-   "prevCount": 3,
-   "momentum": "up"
-  },
-  {
-   "keyword": "能源與電力",
-   "icon": "⚡",
-   "category": "ESG 永續",
-   "count": 6,
-   "prevCount": 5,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "資料中心",
-   "icon": "🏭",
-   "category": "AI 轉型",
-   "count": 6,
    "prevCount": 4,
    "momentum": "up"
+  },
+  {
+   "keyword": "ESG 揭露",
+   "icon": "🌱",
+   "category": "ESG 永續",
+   "count": 4,
+   "prevCount": 0,
+   "momentum": "new"
+  },
+  {
+   "keyword": "人才與技能",
+   "icon": "🧠",
+   "category": "人才策略",
+   "count": 3,
+   "prevCount": 7,
+   "momentum": "down"
   },
   {
    "keyword": "自動化",
    "icon": "⚙️",
    "category": "AI 轉型",
-   "count": 3,
+   "count": 2,
    "prevCount": 5,
    "momentum": "down"
   },
@@ -110,25 +126,72 @@
    "count": 2,
    "prevCount": 4,
    "momentum": "down"
-  },
-  {
-   "keyword": "ESG 揭露",
-   "icon": "🌱",
-   "category": "ESG 永續",
-   "count": 1,
-   "prevCount": 0,
-   "momentum": "new"
-  },
-  {
-   "keyword": "人才與技能",
-   "icon": "🧠",
-   "category": "人才策略",
-   "count": 1,
-   "prevCount": 8,
-   "momentum": "down"
   }
  ],
  "articles": [
+  {
+   "title": "火星生技導入 AI 輔助篩選機能配方！研發突破複方設計瓶頸獲國際肯定",
+   "url": "https://finance.technews.tw/2026/11/02/diu/",
+   "summary": "台灣中小型健康商品業者的落地樣本：AI 只做研究資料蒐整、機能性原料比對與複方配方初步評估，配方設計、打樣、量產仍由研發團隊負責，旗下 Diu⁺ 兩款商品拿下去年（2026）美國 AII 達文西國際發明展金牌；通路端有全台逾 4,200 家藥妝與藥局",
+   "date": "2026-11-02",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "讓 AI 代理拿假金鑰辦事，機密管理新創 Infisical 完成 4 千萬美元 B 輪募資",
+   "url": "https://finance.technews.tw/2026/11/02/this-600-million-startup-is-helping-keep-company-secrets-away-from-ai-agents/",
+   "summary": "估值 6 億美元、Elad Gil 領投，客戶含空中巴士、福斯與 OpenRouter（逾 1,300 家企業）。做法是發給 AI 代理假 API 金鑰、由代理伺服器在後端換成真憑證，並提供數分鐘即失效的一次性密碼——把「代理該有什麼權限」變成可撤銷的執行期控制，而不是把資料庫密碼交出去",
+   "date": "2026-11-02",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "AI 寫程式又快又多，漏洞風險與「責任歸屬」成企業開發新難題",
+   "url": "https://finance.technews.tw/2026/11/02/ai-makes-coding-faster-but-who-is-responsible-for-what-it-produces/",
+   "summary": "引 Veracode 2026 年測試：約 44% 的 AI 寫程式任務含已知漏洞；建議別讓同一套模型既寫又測、改由另一模型審查。另引 Anthropic 分析約 40 萬個 Claude Code 工作階段：多數情境是人類規劃、AI 執行。API 安全廠 Cequence 則主張「責任跟隨控制權」的三方共責（模型商／部署企業／產業標準），並舉例某《財星》50 大企業的 coding agent 連跑兩天、數千次工具呼叫亂猜檔名，平台卻毫無警示",
+   "date": "2026-11-02",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "Waniwani's CEO on the agentic future of insurance distribution",
+   "url": "https://www.mckinsey.com/industries/financial-services/our-insights/waniwanis-ceo-on-the-agentic-future-of-insurance-distribution",
+   "summary": "2026 年 2 月西班牙數位保險商 Tuio 把投保流程接進 ChatGPT，引爆美國保險經紀股賣壓。Waniwani 執行長的核心判斷：通路裡的「摩擦力與資訊不對稱」正在消失，選擇不進 agent 等於自願退出市場；但經紀人不會一夜消失（比價網站花了十幾年才改變英國市場）。真正的控制點是「你餵給 agent 什麼資訊」——防幻覺、合規與準確性都得在源頭管",
+   "date": "2026-11-02",
+   "category": "AI 轉型"
+  },
+  {
+   "title": "擺脫地球缺電與散熱瓶頸，馬斯克霸氣宣告：AI 算力主戰場在太空",
+   "url": "https://technews.tw/2026/11/02/elon-musk-ai-compute-empire/",
+   "summary": "馬斯克 10/31 在 X 上預測軌道算力部署量在 2028 年底前就會超過地面新增算力、2029 年後差距再拉大。Epoch AI 估計 xAI 曼菲斯 Colossus 2 已有約 111 萬個 H100 等效 GPU（全球最大）、2027 年初上看 182 萬；但把算力搬上軌道仍卡在發射頻率、太空供電、極端環境散熱與通訊頻寬——換句話說，「缺電與散熱」這個 ESG 命題沒有被解決，只是被換了地點",
+   "date": "2026-11-02",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "What the US Movement Against Data Centers Can Learn From Everywhere Else",
+   "url": "https://www.wired.com/story/what-the-us-anti-data-center-movement-can-learn-from-everywhere-else/",
+   "summary": "《Hyperscale》作者 Paris Marx 訪談：愛爾蘭 2021 年由電網營運商開第一槍擋下都柏林新接電，業者轉往其他地區、改接天然氣網、最後自建專用燃氣電廠，環署發排放許可時就警告氣候目標更難達；奧勒岡 The Dalles 的 Google 曾讓市議會試圖保密用水數據一年，公布後發現占該社區 29% 用水。他的結論很適合台灣讀者對照：資料中心的地方衝突不是新現象，是其他國家早發生過的預警",
+   "date": "2026-11-02",
+   "category": "ESG 永續"
+  },
+  {
+   "title": "蓋洛普調查：AI 職場紅利分配不均，高學歷與高薪族群受惠最多",
+   "url": "https://technews.tw/2026/11/02/gallup-ai-survey-10-findings-on-how-ai-helps-workers/",
+   "summary": "2026 年 1–3 月訪 1.7 萬名美國工作者（其中 7,845 人工作用過 AI）：63% 說 AI 讓工作更快、46% 認為品質提升，但僅 28% 每週至少用一次、54% 從未用過。大學畢業生每週使用率 40%、非大學學歷 17%；管理職 37%、一般員工 25%。31% 表示使用後雇主派更多工作，18–24 歲最常這樣反映（38%）。52% 認為自己對新科技導入的影響力低於期待",
+   "date": "2026-11-02",
+   "category": "人才策略"
+  },
+  {
+   "title": "企業開出愈來愈多遠距職缺，為什麼新人的門反而愈來愈窄？",
+   "url": "https://www.managertoday.com.tw/columns/view/73231",
+   "summary": "凱洛格管理學院張樂天等三人分析 2018–2021 年歐洲 28 國逾 5,000 萬筆職缺：同一企業同年度同一職位，遠距版本的技能要求比非遠距多 25%，經驗與學歷門檻也略高，四類技能（認知、同事社交、客戶社交、ICT）全面上升。原因有三：應徵池變大所以拉高篩選標準、面對面印象變少所以更依賴可驗證資歷、以及「反正沒辦法帶新人」——結果是把需要培訓的初階工作者擋在門外，形成惡性循環",
+   "date": "2026-11-02",
+   "category": "人才策略"
+  },
+  {
+   "title": "[𝕏] Malte Lindberg",
+   "url": "https://x.com/lindberg_malte/status/2117119510956085397",
+   "summary": "這十年最重要的領導任務是「詮釋」（interpretation）：對中小企業而言，AI、ESG、資安風險、關稅、利率、技能短缺與低成長都不是抽象的 megatrend，而是一張張需要決策的議程項目。貼文互動極低（0 讚），但把 ESG／人才／成本三條線放回同一個主管桌上，正好是本週 digest 的濃縮版",
+   "date": "2026-11-02",
+   "category": "人才策略"
+  },
   {
    "title": "上半年淨利剩 660 萬，路易莎黃銘賢憑什麼喊「我們很賺錢」？首曝「AI 大平台」野心",
    "url": "https://www.managertoday.com.tw/articles/view/73217",
@@ -436,55 +499,13 @@
    "summary": "Google 芬蘭子公司在環評完成前先整地伐林約 1,300 英畝，主管機關介入要求暫停；居民稱野生動物被迫離開、狼群進入村莊。Google 承認處理未達自家標準，提出 130 公頃補植，仍明顯小於整地面積。2026-10-27",
    "date": "2026-10-27",
    "category": "ESG 永續"
-  },
-  {
-   "title": "AI要能管、值得、控得住，財政資訊中心揭稅務AI應用準則",
-   "url": "https://ithome.com.tw/news/179929",
-   "summary": "財政部財政資訊中心主任張文熙把 AI 治理拆成「能管／值得／控得住」三要件：資料分四級（限制級走地端實體隔離、內部級可混合雲、公開級可用雲端），模型依敏感度與成本分流（Token 經濟學），Agent 要上線前先設工具清單、執行步數上限、單次 Token／金額上限與人機檢查點。他另外提出「Agent 在環中」（Agent in the Loop）——只要先設好服務水準指標（SLI／SLO）與退場機制，大量、重複、可逆的檢查可交給 Agent，涉及裁量的仍留人工。",
-   "date": "2026-10-26",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
-   "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
-   "summary": "Apollo 首席經濟學家 Torsten Slok 拿「S&P 493」（S&P 500 扣掉七巨頭）看，利潤率與人均營收都是平的，結論是「AI 對科技業以外的美國企業帶來零財務回報」。他的判語值得記：「AI 可能是很強的計算機，但商業裡的智慧主要是判斷」，並點名 AI 不懂問責、信任、文化、潛規則與公平取捨。",
-   "date": "2026-10-26",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "工作量減 50%，鴻海合作 Nvidia 秀智造成果",
-   "url": "https://finance.technews.tw/2026/10/26/foxconn-nvidia-smart-manufacture/",
-   "summary": "少數拿得出百分比數字的落地案例：射出成型參數設定與切換的工程工作量 -50%、AI 自動排程（APS）使排程人工時數 -25%、SMT 產線處理 20 項以上主要缺陷、異常改善率 >90%。底層是自家 FoxBrain（1,200 億參數，用 DGX GB200 訓練速度為 H100 的 2.48 倍），再往高雄 AI 工廠與 CityGPT 延伸。",
-   "date": "2026-10-26",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "AI 新經濟聚焦三領域，簡立峰提醒一風險可能連黃仁勳都沒想到",
-   "url": "https://finance.technews.tw/2026/10/25/ai-new-economy-three-areas-jan-lee-feng-warns-risk-jensen-huang-unanticipated/",
-   "summary": "簡立峰點出 AI 新經濟目前只有三個領域真的在改寫核心競爭力：縮短研發週期（新藥／新材料十年變兩年）、材料與藥物篩選（檢索→模擬→自動化實驗室）、電路與晶片設計。他認為 AI 還沒失控但「有危險」，因為拔電源不等於能停下；更大的商業風險是企業變得害怕（「資料都給了 AI，出事怎麼辦」），一旦「停看聽」成氛圍，原本預期的消費會晚一兩季。",
-   "date": "2026-10-26",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "表現完全相同，研究：男性外觀 AI 助理薪資比女性高約 10%",
-   "url": "https://technews.tw/2026/10/26/ai-agents-reproduce-gender-pay-gap/",
-   "summary": "愛爾蘭利默瑞克大學讓 189 名知識型工作者進 VR 辦公室，跟底下技術與表現完全相同的 AI 助理共事，再依表現分派真實報酬：越擬人化拿越多，而男性外觀的「Johan」平均比女性外觀的「Johanna」高約 10%，也被評為更「有人性」。多數受試者堅稱性別不影響判斷——行為與自我認知之間的落差，才是偏見會進到系統裡的路徑。",
-   "date": "2026-10-26",
-   "category": "人才策略"
-  },
-  {
-   "title": "The Social Society Helping Women Join the AI Boom",
-   "url": "https://www.wired.com/story/aged-intelligence-society-interview/",
-   "summary": "Aged Intelligence Society（Shoshana Berger 與 Nina Willdorf 創辦）用邀請制晚餐會讓中年女性「用前沿工具解決中年問題」，第一場就超額報名、第二場被《紐約時報》報導，Substack 破千訂閱、外地開始自辦聚會。她們的觀察值得台灣企業參考：這批人的優勢不是技術，是「已經經歷過失敗與摩擦，知道什麼是好問題」。",
-   "date": "2026-10-26",
-   "category": "人才策略"
   }
  ],
  "insights": [
+  "今天最一致的一條線是「控制點往下移」：Infisical 不給 agent 真金鑰、Cequence 說責任跟隨控制權、McKinsey 說保險業要控制餵給 agent 的資訊、Veracode 說別讓同一個模型自己寫自己測。四篇講的其實是同一件事——AI 導入的品質，取決於你能不能在執行期拉住它，而不是在事後追究。",
+  "資本市場與 ESG 兩邊同時對「算力擴張」收緊：標普把 Meta 展望轉負、馬斯克把算力（連同缺電與散熱）往太空搬、Wired 訪談則提醒地方對水與電的反彈在愛爾蘭與奧勒岡早已發生過。三篇合起來是同一句：算力的成本沒有消失，只是被搬到資產負債表、軌道或別人的社區裡。",
+  "人才端的訊號比較隱晦但更重要：蓋洛普顯示 AI 紅利集中在高學歷高薪與管理職，凱洛格的研究則說明遠距＋AI 讓初階職缺的門檻反而更高。兩份研究指向同一個風險——中階與初階的養成管道正在變窄，而這正是中小企業最缺的那一層。BCG 今日專區重申的「70% 價值來自工作流、文化與治理，而非 AI 應用本身」，正好是這條線的另一種說法。",
   "資本市場這幾天同時用三種方式給 AI 重新定價：OpenAI 募資目標下調、Anthropic 被預期拿到 junk 評等、聯發科財報亮眼卻跌三成。三件事的共同點不是「AI 不重要」，而是「投資轉現金流的速度」開始被逐項檢查。",
-  "企業端的瓶頸則一致落在作業系統層：路易莎砸 8,000 萬先換 ERP 與數據中台才敢談 AI 代理，McKinsey 說銀行的錢卡在四個結構性缺口，Chipotle 的結論最白話——agent 買不了單，因為網站不是為 agent 寫的。",
-  "這一輪還有一個容易被忽略的外部性：Physical AI 的訓練資料來自印度理髮師與家事工作者的第一人稱影像，資料中心的空氣污染則進了法院。AI 的成本有一部分被推到不會出現在財報上的人身上。",
-  "今天有三則其實在講同一件事：**能力有了，可觀測性沒有**。MIT TR 的 agent 研究指出連 Agent ID 都缺，WIRED 的國防部案例是「一個人的 agent 在敏感網路跑兩個月沒人知道」，Jamf 的解法則是把人工核准與操作紀錄留在自動化流程裡。對客戶的說法可以收斂成一句：導入 agent 的驗收項目裡，「誰能看到它做了什麼」必須跟「它做得多快」並列。",
-  "「工具買了就會用」的假設再次被數字打掉：一人公司調查 63% 用了 AI、只有 8% 全環節用得上；同一邏輯也出現在 B 站的「先拆工作流」與 FICO 的「團隊與所有權文化優先」。這條線和我們一貫主張一致，但今年的新證據是「連個人創業者都卡在整合，不只有大企業」。"
+  "企業端的瓶頸則一致落在作業系統層：路易莎砸 8,000 萬先換 ERP 與數據中台才敢談 AI 代理，McKinsey 說銀行的錢卡在四個結構性缺口，Chipotle 的結論最白話——agent 買不了單，因為網站不是為 agent 寫的。"
  ]
 }
