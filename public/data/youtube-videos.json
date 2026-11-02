@@ -1,6 +1,15 @@
 {
   "videos": [
     {
+      "id": "nu-DWgYyppc",
+      "title": "策略會議開兩天，為什麼只剩三個選項？把 AI 放進策略規劃的四個階段",
+      "date": "2026-11-02",
+      "description": "兩天、六個主管、最後只剩三個選項。不是市場只有三條路，是人腦一次只握得住這麼多。這支影片講有限理性，也講我們把 AI 放進策略規劃的四個階段與四個真實案例。",
+      "thumbnail": "https://img.youtube.com/vi/nu-DWgYyppc/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/nu-DWgYyppc/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=nu-DWgYyppc"
+    },
+    {
       "id": "T5e5Ia09QLg",
       "title": "拿掉 AI 之後，只有老手真的進步：MIT 實驗揭開的判斷力斷代",
       "date": "2026-10-21",
@@ -28,5 +37,5 @@
       "url": "https://www.youtube.com/watch?v=PR_VEEJ0FmI"
     }
   ],
-  "fetchedAt": "2026-10-21T14:08:00Z"
+  "fetchedAt": "2026-11-02T14:32:08Z"
 }
