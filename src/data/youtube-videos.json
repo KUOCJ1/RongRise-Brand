@@ -1,13 +1,13 @@
 {
   "videos": [
     {
-      "id": "nu-DWgYyppc",
+      "id": "8pwzisAACOk",
       "title": "策略會議開兩天，為什麼只剩三個選項？把 AI 放進策略規劃的四個階段",
       "date": "2026-11-02",
       "description": "兩天、六個主管、最後只剩三個選項。不是市場只有三條路，是人腦一次只握得住這麼多。這支影片講有限理性，也講我們把 AI 放進策略規劃的四個階段與四個真實案例。",
-      "thumbnail": "https://img.youtube.com/vi/nu-DWgYyppc/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/nu-DWgYyppc/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=nu-DWgYyppc"
+      "thumbnail": "https://img.youtube.com/vi/8pwzisAACOk/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/8pwzisAACOk/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=8pwzisAACOk"
     },
     {
       "id": "T5e5Ia09QLg",
@@ -37,5 +37,5 @@
       "url": "https://www.youtube.com/watch?v=PR_VEEJ0FmI"
     }
   ],
-  "fetchedAt": "2026-11-02T14:32:08Z"
+  "fetchedAt": "2026-11-02T15:51:32Z"
 }
