@@ -11,6 +11,7 @@ const navItems = [
   { href: "/knowledge", label: "知識庫" },
   { href: "/ai-faq", label: "FAQ" },
   { href: "/research", label: "研究專刊" },
+  { href: "/videos", label: "影音" },
   { href: "/newsletter", label: "電子報" },
   { href: "/news", label: "最新消息" },
   { href: "/downloads", label: "下載區" },
