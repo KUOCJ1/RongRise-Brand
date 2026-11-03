@@ -159,6 +159,14 @@ const tools: Tool[] = [
     tag: "自評",
     tagClass: "bg-teal/10 text-teal",
   },
+  {
+    href: "/human-ai-alignment",
+    icon: "🧭",
+    name: "人機策略對齊度自評",
+    desc: "人機策略、人機流程、管理機制、系統實作——四層 × 12 題，4 分鐘看出你的組織卡在哪一層、上層與下層哪裡接不起來。",
+    tag: "自評",
+    tagClass: "bg-primary/10 text-primary",
+  },
 ];
 
 export default function ToolsPage() {
