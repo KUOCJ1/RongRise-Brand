@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-11-02T05:20:41Z",
+ "generatedAt": "2026-11-03T05:20:42Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 156
+  "daysRunning": 157
  },
  "stats": {
-  "scanDays": 135,
-  "weekArticles": 50,
+  "scanDays": 136,
+  "weekArticles": 53,
   "articles": 99,
   "newsItems": 61,
-  "newsletterIssues": 29,
+  "newsletterIssues": 30,
   "subscribers": 22,
   "confirmedSubscribers": 16,
-  "videos": 40,
-  "views": 690,
+  "videos": 41,
+  "views": 696,
   "channelSubscribers": 17,
-  "insights": 18,
+  "insights": 19,
   "socialPosts": 75,
   "igCards": 47,
-  "competitorReports": 134
+  "competitorReports": 135
  },
  "activity": [
-  {
-   "date": "2026-10-27",
-   "count": 8,
-   "topics": []
-  },
   {
    "date": "2026-10-28",
    "count": 7,
@@ -56,6 +51,11 @@
    "date": "2026-11-02",
    "count": 9,
    "topics": []
+  },
+  {
+   "date": "2026-11-03",
+   "count": 10,
+   "topics": []
   }
  ],
  "latest": {
@@ -64,44 +64,44 @@
    "date": "2026-10-31",
    "url": "/knowledge/agent-biggest-benefit-standardization"
   },
-  "newsletter": "🦞 榕賀觀點 第 29 期 — 2026-10-29",
+  "newsletter": "🦞 榕賀觀點 第 30 期 — 2026-11-02",
   "video": {
-   "title": "拿掉 AI 之後，只有老手真的進步：MIT 實驗揭開的判斷力斷代",
-   "date": "2026-10-21",
-   "url": "https://www.youtube.com/watch?v=T5e5Ia09QLg"
+   "title": "策略會議開兩天，為什麼只剩三個選項？把 AI 放進策略規劃的四個階段",
+   "date": "2026-11-02",
+   "url": "https://www.youtube.com/watch?v=dChIyhaG3LM"
   },
-  "insight": "2026-W44.md"
+  "insight": "2026-W45.md"
  },
  "trends": [
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 22,
+   "count": 23,
    "momentum": "up"
   },
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 14,
-   "momentum": "flat"
+   "count": 19,
+   "momentum": "up"
   },
   {
    "keyword": "AI Agent",
    "icon": "🤖",
-   "count": 11,
+   "count": 13,
    "momentum": "up"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 11,
+   "count": 12,
    "momentum": "up"
   },
   {
-   "keyword": "晶片與算力",
-   "icon": "🔩",
+   "keyword": "企業導入",
+   "icon": "🚀",
    "count": 11,
-   "momentum": "down"
+   "momentum": "up"
   }
  ]
 }
