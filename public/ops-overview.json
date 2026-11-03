@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-02T00:30:36Z",
+  "generatedAt": "2026-11-03T00:30:36Z",
   "periods": {
-    "content": "累計至 2026-11-02；近 30 天＝2026-10-03 起",
-    "health": "2026-10-02 ~ 2026-10-31（30 天）",
+    "content": "累計至 2026-11-03；近 30 天＝2026-10-04 起",
+    "health": "2026-10-03 ~ 2026-10-31（29 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-10-31（29 天）"
+    "management": "2026-10-03 ~ 2026-11-01（30 天）"
   },
   "headline": [
     {
@@ -19,21 +19,21 @@
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "30 天 × 18 個服務，540/540 次在線"
+      "note": "29 天 × 18 個服務，522/522 次在線"
     },
     {
       "key": "incidents",
       "label": "未結事故",
-      "value": 2,
+      "value": 4,
       "unit": "件",
-      "note": "近 30 天 32 筆告警，涉及 23 支排程"
+      "note": "近 30 天 35 筆告警，涉及 24 支排程"
     },
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 42.1,
+      "value": 42.0,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；6/29 天達標"
+      "note": "實驗期 37.1 分；6/30 天達標"
     }
   ],
   "content": {
@@ -41,11 +41,11 @@
     "articles30d": 12,
     "newsletters": 29,
     "videos": 40,
-    "videos30d": 3,
+    "videos30d": 4,
     "igCards": 47,
     "socialPosts": 75,
-    "scanDays": 134,
-    "competitorReports": 133,
+    "scanDays": 135,
+    "competitorReports": 134,
     "insights": 18,
     "monthly": [
       {
@@ -361,6 +361,11 @@
     ],
     "videoList": [
       {
+        "title": "策略會議開兩天，為什麼只剩三個選項？把 AI 放進策略規劃的四個階段",
+        "date": "2026-11-02",
+        "url": "https://www.youtube.com/watch?v=dChIyhaG3LM"
+      },
+      {
         "title": "拿掉 AI 之後，只有老手真的進步：MIT 實驗揭開的判斷力斷代",
         "date": "2026-10-21",
         "url": "https://www.youtube.com/watch?v=T5e5Ia09QLg"
@@ -393,14 +398,6 @@
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-02",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 73,
-        "restarts": 8
-      },
       {
         "date": "2026-10-03",
         "online": 18,
@@ -634,8 +631,8 @@
         "restarts": 35
       }
     ],
-    "checks": 540,
-    "online": 540,
+    "checks": 522,
+    "online": 522,
     "warningDays": 2,
     "maxDisk": 85,
     "live": [
@@ -644,55 +641,55 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.07
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.16
+        "seconds": 0.17
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.36
+        "seconds": 0.41
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.05
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.17
+        "seconds": 0.22
       },
       {
         "name": "管理後台",
         "url": "https://admin.rong-rise.com/",
         "code": "401",
         "ok": true,
-        "seconds": 0.03
+        "seconds": 0.06
       }
     ],
-    "liveAt": "2026-11-02 00:30 UTC"
+    "liveAt": "2026-11-03 00:30 UTC"
   },
   "schedule": {
-    "incidents30d": 32,
-    "incidentJobs": 23,
-    "incidentDays": 14,
-    "open": 2,
+    "incidents30d": 35,
+    "incidentJobs": 24,
+    "incidentDays": 16,
+    "open": 4,
     "types": [
       {
         "type": "script",
-        "count": 14
+        "count": 16
       },
       {
         "type": "config",
@@ -704,17 +701,41 @@
       },
       {
         "type": "timeout",
-        "count": 3
+        "count": 4
       },
       {
         "type": "rate_limit",
         "count": 2
       }
     ],
-    "executions": 1002,
-    "executionsOk": 999,
-    "executionsFrom": "2026-11-01T12:34:36",
+    "executions": 1001,
+    "executionsOk": 998,
+    "executionsFrom": "2026-11-02T12:33:36",
     "incidents": [
+      {
+        "job": "5f91aedd850c",
+        "type": "timeout",
+        "state": "alerted",
+        "first": "2026-11-03 00:00",
+        "closed": "",
+        "error": "Script exited with code 1"
+      },
+      {
+        "job": "315e2192dbcf",
+        "type": "script",
+        "state": "alerted",
+        "first": "2026-11-02 21:00",
+        "closed": "",
+        "error": "Script exited with code 1"
+      },
+      {
+        "job": "66146e7037b0",
+        "type": "script",
+        "state": "resolved",
+        "first": "2026-11-02 01:00",
+        "closed": "2026-11-02 04:07",
+        "error": "Script exited with code 1"
+      },
       {
         "job": "315e2192dbcf",
         "type": "script",
@@ -1010,42 +1031,18 @@
         "first": "2026-09-26 11:30",
         "closed": "2026-09-28 11:31",
         "error": "Script exited with code 1"
-      },
-      {
-        "job": "7cd089691150",
-        "type": "script",
-        "state": "resolved",
-        "first": "2026-09-25 11:30",
-        "closed": "2026-09-28 11:31",
-        "error": "Script exited with code 1"
-      },
-      {
-        "job": "3a081fa5350c",
-        "type": "script",
-        "state": "closed",
-        "first": "2026-09-20 06:01",
-        "closed": "2026-09-23 00:41",
-        "error": "Script exited with code 1"
-      },
-      {
-        "job": "0a76a466c111",
-        "type": "config",
-        "state": "closed",
-        "first": "2026-09-12 00:43",
-        "closed": "2026-09-12 00:44",
-        "error": "Script exited with code 1"
       }
     ],
-    "jobs": 86,
-    "jobsEnabled": 78
+    "jobs": 87,
+    "jobsEnabled": 76
   },
   "management": {
-    "days": 29,
-    "medianOnline": 42.1,
+    "days": 30,
+    "medianOnline": 42.0,
     "experimentMedian": 37.1,
-    "avgOnline": 53.5,
-    "totalHours": 25.9,
-    "medianVisits": 15,
+    "avgOnline": 53.1,
+    "totalHours": 26.6,
+    "medianVisits": 15.0,
     "perVisit": 3.2,
     "daysUnder30": 6,
     "daily": [
@@ -1193,6 +1190,11 @@
         "date": "2026-10-31",
         "min": 74.3,
         "visits": 13
+      },
+      {
+        "date": "2026-11-01",
+        "min": 42.0,
+        "visits": 15
       }
     ]
   },
