@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-system-not-agent-ready",
+    cat: "AI 轉型",
+    title: "AI 跑不動，不是模型不夠聰明，是你的系統還沒為它開門",
+    date: "2026-11-03",
+    readTime: "7 分鐘",
+    excerpt: "Chipotle 的 AI 代理買不了單，卡在會員折扣和打烊下單；路易莎先砸八千萬換 ERP 才敢上 AI；Meta 的 Muse 一千萬人啟用、企業卻說成交微不足道。三件事指向同一個結論：AI 卡關的瓶頸不在模型，在系統還沒為它開門。",
+    tags: ["AI 轉型", "數位轉型", "AI 代理", "ERP", "中小企業"],
+  },
+  {
     slug: "agent-biggest-benefit-standardization",
     cat: "AI 轉型",
     title: "AI Agent 最大的效益，不是省下打提示詞的時間",

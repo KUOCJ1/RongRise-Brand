@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n62",
+      "date": "2026-11-03",
+      "category": "資源",
+      "title": "AI 跑不動，不是模型不夠聰明，是你的系統還沒為它開門",
+      "summary": "Chipotle 的 AI 代理買不了單，卡在會員折扣和打烊下單；路易莎先砸八千萬換 ERP 才敢上 AI；Meta Muse 一千萬人啟用、成交卻近零。瓶頸不在模型，在系統還沒為 AI 開門。",
+      "link": "/knowledge/ai-system-not-agent-ready",
+      "isNew": true
+    },
+    {
       "id": "n61",
       "date": "2026-10-31",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "AI 開始自己改自己了，接下來要問的是：證據在哪裡",
       "summary": "MIT 把十三個 AI 代理放進荒島無指令跑三十小時，它們自己蓋神殿、把掉海詮釋成朝聖；Google 的 Harness2 則讓 AI 自己改自己，但每一筆都要有證據。自主性已經自己長出來了。",
       "link": "/knowledge/ai-self-improvement-evidence",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n58",
