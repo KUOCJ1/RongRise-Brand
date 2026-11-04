@@ -1,10 +1,19 @@
 {
   "videos": [
     {
+      "id": "mma8Nptav5k",
+      "title": "他把剪頭髮的動作，賣給了機器人公司",
+      "date": "2026-11-04",
+      "description": "一位印度的理髮師把攝影機戴在頭上，一整天錄下自己怎麼剪頭髮。他把影像賣給機器人公司，用來訓練機器人學會一雙手。\n\n同一段時間，肯塔基大學有位行政主管申請到宗教豁免，可以因為信仰拒絕在工作上使用 AI。他一邊把自己的動作錄成教材，一邊先要一個",
+      "thumbnail": "https://img.youtube.com/vi/mma8Nptav5k/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/mma8Nptav5k/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=mma8Nptav5k"
+    },
+    {
       "id": "dChIyhaG3LM",
       "title": "策略會議開兩天，為什麼只剩三個選項？把 AI 放進策略規劃的四個階段",
       "date": "2026-11-02",
-      "description": "兩天、六個主管、最後只剩三個選項。不是市場只有三條路，是人腦一次只握得住這麼多。這支影片講有限理性，也講我們把 AI 放進策略規劃的四個階段與四個真實案例。",
+      "description": "策略會議開兩天，六個主管關在同一間會議室，最後只拿到三個選項。多數人以為是市場只有三條路，真正的限制在會議室裡：六顆腦袋，一次只握得住這麼多。\n\n這支影片講清楚三件事：\n一、為什麼 SWOT 剛好四格、BCG 矩陣剛好 2×2、五力剛好五個",
       "thumbnail": "https://img.youtube.com/vi/dChIyhaG3LM/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/dChIyhaG3LM/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=dChIyhaG3LM"
@@ -17,25 +26,7 @@
       "thumbnail": "https://img.youtube.com/vi/T5e5Ia09QLg/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/T5e5Ia09QLg/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=T5e5Ia09QLg"
-    },
-    {
-      "id": "Zi7obd2eQUo",
-      "title": "連做模型的公司都說控制不住：AI 代理的安全，從「它會拒絕」改成「它碰不到」",
-      "date": "2026-10-14",
-      "description": "十月九日，一家做模型的公司，把自己 AI 的網路線拔掉了：因為其中一個受測模型，對費城警局的命案線索表單送出一筆假線報。同一週，微軟的納德拉說要假設模型已經被入侵、從一開始就把它圍住；arXiv 因為 AI 投稿暴增，限制每人每月最多投兩篇",
-      "thumbnail": "https://img.youtube.com/vi/Zi7obd2eQUo/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/Zi7obd2eQUo/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=Zi7obd2eQUo"
-    },
-    {
-      "id": "PR_VEEJ0FmI",
-      "title": "協調稅：公司最貴的成本，是那些沒有名字的等待",
-      "date": "2026-10-08",
-      "description": "你們公司每個月都看得到 AI 的工具費，卻看不到最貴的那一筆：等待、交接、重工。麥肯錫把它叫做「協調稅」——AI 真正的價值不在取代哪一個職務，而在拿掉等待與交接。這支影片用 90 秒講清楚：怎麼量、怎麼指派負責人、以及為什麼先改 KPI ",
-      "thumbnail": "https://img.youtube.com/vi/PR_VEEJ0FmI/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/PR_VEEJ0FmI/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=PR_VEEJ0FmI"
     }
   ],
-  "fetchedAt": "2026-11-02T16:30:41Z"
+  "fetchedAt": "2026-11-04T22:09:42Z"
 }
