@@ -4,9 +4,9 @@ import { getCourses, courseStatus, isPreparing, formatCourseDate } from "@/lib/c
 import LiveSeats from "./LiveSeats";
 
 export const metadata: Metadata = {
-  title: "課程行事曆｜AI 轉型與 ESG 永續課程｜榕耀管顧",
+  title: "AI 課程與 HR 人資課程｜主管 AI 培訓與企業內訓｜榕耀管顧",
   description:
-    "從單日工作坊到系列課程，找到最適合您的學習路徑。AI 轉型、人才策略、ESG 永續專業培訓，名額有限建議提早報名。",
+    "Agentic AI for HR 系列課程：HR、人資與部門主管的 AI 培訓，含初階與進階公開班，也接受企業內訓。從單日工作坊到系列課程，找到最適合的學習路徑。",
   alternates: {
     canonical: "https://rong-rise.com/courses",
     languages: {
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "課程行事曆｜AI 轉型與 ESG 永續課程",
-    description: "從單日工作坊到系列課程，找到最適合您的學習路徑。",
+    title: "AI 課程與 HR 人資課程｜榕耀管顧",
+    description: "HR 與主管的 AI 培訓：初階、進階公開班與企業內訓。",
     images: [
       {
         url: "https://rong-rise.com/images/og-image.jpg",
