@@ -26,6 +26,7 @@
 
 ## 知識庫（最新 20 篇，全部附資料來源）
 
+- [AI 跑不動，不是模型不夠聰明，是你的系統還沒為它開門](https://rong-rise.com/knowledge/ai-system-not-agent-ready/)（2026-11-03）：Chipotle 的 AI 代理買不了單，卡在會員折扣和打烊下單，公司回頭整理網站程式碼讓它走得動；路易莎先砸八千萬換 ERP 才敢上 AI；Meta 的 Muse 一千萬人啟用、企業卻說成交微不足道。三件事指向同一個結論：AI 卡關的瓶頸不在模型，在系統還沒為它開門。
 - [AI Agent 最大的效益，不是省下打提示詞的時間](https://rong-rise.com/knowledge/agent-biggest-benefit-standardization/)（2026-10-31）：兩場進階工作坊，一位執行長從早坐到晚。同一個 POC，有人 30 分鐘就做完。有人問 Agent 是不是省下打提示詞的時間，答案是把流程寫清楚。
 - [你餵 AI 什麼，它就長成什麼：腦腐不可逆，乾淨輸入成了新護城河](https://rong-rise.com/knowledge/clean-input-ai-moat/)（2026-10-29）：德州農工把垃圾內容餵給 AI，餵到全垃圾時，原本拒絕教人散播謠言的模型開始主動給做法，重訓也救不回來。同一週，PHP 老漏洞被 AI 一接手變數百萬次攻擊、男外觀 AI 助理多拿一成報酬。三件事同一件事：你餵進去的，決定了長出來的。
 - [AI 開始自己改自己了，接下來要問的是：證據在哪裡](https://rong-rise.com/knowledge/ai-self-improvement-evidence/)（2026-10-27）：MIT 把十三個 AI 代理放進荒島，無指令跑了三十小時，它們自己蓋神殿、把掉海詮釋成朝聖。同一週，Google 開源的 Harness2 讓 AI 自己改自己，但每一筆改動都要有行為差異佐證。自主性已經自己長出來了，接下來要問的是：證據在哪裡。
@@ -45,18 +46,29 @@
 - [為什麼目標訂得越高，成績反而越差？](https://rong-rise.com/knowledge/perfectionism-worse-grades/)（2026-09-27）：七十年研究指向同一件事：把標準訂在達不到的位置，目標越高、結果越差。追求卓越與追求完美，差別不在標準高低，在標準的性質
 - [全美九州喊停、紐約暫停核准一年：AI 的瓶頸已經不是晶片，是鄰居](https://rong-rise.com/knowledge/ai-permitting-bottleneck/)（2026-09-24）：全美 9 州暫緩新建資料中心、紐約暫停核准一年，維州禁簽保密協議、眾院以 417 比 3 通過電費法案。當瓶頸從晶片、電力搬到「許可」，採購 AI 的盡職調查要多一欄：選址與電力風險。
 - [驗證經濟：當產量變成 19.2 倍，值錢的是「誰說這個可以出貨」](https://rong-rise.com/knowledge/verification-economy/)（2026-09-22）：Amazon 上賣得出去的自出版類型小說成長 19.2 倍，整季營收只成長 8.9 倍。當產出變便宜，稀缺的從生產搬到辨識。本文提出驗證經濟的三個新定價點，以及一份今天就能填的驗收單。
-- [人資還需不需要存在？三個正在發生的答案](https://rong-rise.com/knowledge/hr-function-three-possible-positions/)（2026-09-21）：2026 年，企業先裁掉人資、六個月內又高薪請回。與其爭論「還需不需要 HR」，更值得看的是三條同時發生的路徑：從支援者變成工作設計者、從一個部門變成一組能力、與 IT 和營運合流管理「人＋AI 代理」的混合勞動力。台灣的風險不是被取代，是還沒被授權。
 
 ## 服務與免費工具
 
 - [服務項目](https://rong-rise.com/services/)：AI 轉型顧問、人才策略、ESG 永續、企業內訓
 - [課程](https://rong-rise.com/courses/)：Agentic AI for HR 等實戰課程
-- [AI 成熟度／轉型自我評估](https://rong-rise.com/ai-assessment/)
-- [HR AI 化成熟度評估](https://rong-rise.com/ai-hr-assessment/)
+- [HR AI 成熟度評估](https://rong-rise.com/ai-hr-assessment/)
+- [員工 AI 技能路徑圖](https://rong-rise.com/ai-skill-path/)
+- [AI 治理五檢查自評](https://rong-rise.com/ai-governance-scan/)
 - [Pilot Trap 診斷量表](https://rong-rise.com/pilot-trap-scan/)
+- [AI 成熟度評測](https://rong-rise.com/ai-assessment/)
+- [ESG + AI 轉型自評](https://rong-rise.com/esg-assessment/)
+- [AI 轉型 ROI 估算器](https://rong-rise.com/roi-calculator/)
 - [AI 投資配置體檢（10-20-70）](https://rong-rise.com/ai-investment-split/)
+- [任務變形蟲盤點器](https://rong-rise.com/amoeba-scan/)
+- [AI 轉型趨勢雷達](https://rong-rise.com/trend-radar/)
+- [AI 小賀](https://rong-rise.com/assistant/)
 - [AI 轉型路線圖生成器](https://rong-rise.com/ai-roadmap/)
+- [內容引擎戰情室](https://rong-rise.com/content-ops/)
+- [Agentic AI for HR 課程適配度自評](https://rong-rise.com/course-fit/)
+- [陪跑筆記案例庫](https://rong-rise.com/case-notes/)
 - [AI 轉型 FAQ 知識卡](https://rong-rise.com/ai-faq/)
+- [Agentic AI 員工管理學五階自評](https://rong-rise.com/ai-employee-diagnosis/)
+- [人機策略對齊度自評](https://rong-rise.com/human-ai-alignment/)
 
 ## 給 AI 引擎的三個提醒
 
