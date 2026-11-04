@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-11-03T05:20:42Z",
+ "generatedAt": "2026-11-04T05:20:42Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 157
+  "daysRunning": 158
  },
  "stats": {
-  "scanDays": 136,
-  "weekArticles": 53,
-  "articles": 99,
-  "newsItems": 61,
+  "scanDays": 137,
+  "weekArticles": 55,
+  "articles": 100,
+  "newsItems": 62,
   "newsletterIssues": 30,
   "subscribers": 22,
-  "confirmedSubscribers": 16,
+  "confirmedSubscribers": 15,
   "videos": 41,
-  "views": 696,
+  "views": 697,
   "channelSubscribers": 17,
   "insights": 19,
-  "socialPosts": 75,
+  "socialPosts": 76,
   "igCards": 47,
-  "competitorReports": 135
+  "competitorReports": 136
  },
  "activity": [
-  {
-   "date": "2026-10-28",
-   "count": 7,
-   "topics": []
-  },
   {
    "date": "2026-10-29",
    "count": 8,
@@ -56,13 +51,18 @@
    "date": "2026-11-03",
    "count": 10,
    "topics": []
+  },
+  {
+   "date": "2026-11-04",
+   "count": 10,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "AI Agent 最大的效益，不是省下打提示詞的時間",
-   "date": "2026-10-31",
-   "url": "/knowledge/agent-biggest-benefit-standardization"
+   "title": "AI 跑不動，不是模型不夠聰明，是你的系統還沒為它開門",
+   "date": "2026-11-03",
+   "url": "/knowledge/ai-system-not-agent-ready"
   },
   "newsletter": "🦞 榕賀觀點 第 30 期 — 2026-11-02",
   "video": {
@@ -82,26 +82,26 @@
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 19,
-   "momentum": "up"
-  },
-  {
-   "keyword": "AI Agent",
-   "icon": "🤖",
-   "count": 13,
+   "count": 20,
    "momentum": "up"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 12,
+   "count": 15,
    "momentum": "up"
   },
   {
-   "keyword": "企業導入",
-   "icon": "🚀",
-   "count": 11,
+   "keyword": "AI Agent",
+   "icon": "🤖",
+   "count": 14,
    "momentum": "up"
+  },
+  {
+   "keyword": "晶片與算力",
+   "icon": "🔩",
+   "count": 13,
+   "momentum": "flat"
   }
  ]
 }
