@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-03T00:30:36Z",
+  "generatedAt": "2026-11-04T00:30:36Z",
   "periods": {
-    "content": "累計至 2026-11-03；近 30 天＝2026-10-04 起",
-    "health": "2026-10-03 ~ 2026-10-31（29 天）",
+    "content": "累計至 2026-11-04；近 30 天＝2026-10-05 起",
+    "health": "2026-10-04 ~ 2026-10-31（28 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-01（30 天）"
+    "management": "2026-10-03 ~ 2026-11-02（31 天）"
   },
   "headline": [
     {
@@ -12,41 +12,41 @@
       "label": "內容產出",
       "value": 99,
       "unit": "篇文章",
-      "note": "近 30 天新增 12 篇"
+      "note": "近 30 天新增 13 篇"
     },
     {
       "key": "uptime",
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "29 天 × 18 個服務，522/522 次在線"
+      "note": "28 天 × 18 個服務，504/504 次在線"
     },
     {
       "key": "incidents",
       "label": "未結事故",
-      "value": 4,
+      "value": 0,
       "unit": "件",
-      "note": "近 30 天 35 筆告警，涉及 24 支排程"
+      "note": "近 30 天 34 筆告警，涉及 23 支排程"
     },
     {
       "key": "attention",
       "label": "每天在場",
       "value": 42.0,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；6/30 天達標"
+      "note": "實驗期 37.1 分；6/31 天達標"
     }
   ],
   "content": {
     "articles": 99,
-    "articles30d": 12,
-    "newsletters": 29,
-    "videos": 40,
-    "videos30d": 4,
+    "articles30d": 13,
+    "newsletters": 30,
+    "videos": 41,
+    "videos30d": 3,
     "igCards": 47,
     "socialPosts": 75,
-    "scanDays": 135,
-    "competitorReports": 134,
-    "insights": 18,
+    "scanDays": 136,
+    "competitorReports": 135,
+    "insights": 19,
     "monthly": [
       {
         "month": "2026-05",
@@ -74,10 +74,17 @@
       },
       {
         "month": "2026-11",
-        "count": 0
+        "count": 1
       }
     ],
     "articleList": [
+      {
+        "date": "2026-11-03",
+        "title": "AI 跑不動，不是模型不夠聰明，是你的系統還沒為它開門",
+        "slug": "ai-system-not-agent-ready",
+        "url": "/knowledge/ai-system-not-agent-ready",
+        "cat": "AI 轉型"
+      },
       {
         "date": "2026-10-31",
         "title": "AI Agent 最大的效益，不是省下打提示詞的時間",
@@ -350,13 +357,6 @@
         "slug": "ai-one-person-scrum-team",
         "url": "/knowledge/ai-one-person-scrum-team",
         "cat": "AI 轉型"
-      },
-      {
-        "date": "2026-08-25",
-        "title": "賣鏟子的人自己來挖金礦了：AI 廠商「顧問化」，你的顧問還剩什麼價值？",
-        "slug": "ai-vendors-becoming-consultants-moat",
-        "url": "/knowledge/ai-vendors-becoming-consultants-moat",
-        "cat": "AI 轉型"
       }
     ],
     "videoList": [
@@ -374,11 +374,6 @@
         "title": "連做模型的公司都說控制不住：AI 代理的安全，從「它會拒絕」改成「它碰不到」",
         "date": "2026-10-14",
         "url": "https://www.youtube.com/watch?v=Zi7obd2eQUo"
-      },
-      {
-        "title": "協調稅：公司最貴的成本，是那些沒有名字的等待",
-        "date": "2026-10-08",
-        "url": "https://www.youtube.com/watch?v=PR_VEEJ0FmI"
       }
     ],
     "latest": {
@@ -387,25 +382,17 @@
         "date": "2026-10-31",
         "url": "/knowledge/agent-biggest-benefit-standardization"
       },
-      "newsletter": "🦞 榕賀觀點 第 29 期 — 2026-10-29",
+      "newsletter": "🦞 榕賀觀點 第 30 期 — 2026-11-02",
       "video": {
-        "title": "拿掉 AI 之後，只有老手真的進步：MIT 實驗揭開的判斷力斷代",
-        "date": "2026-10-21",
-        "url": "https://www.youtube.com/watch?v=T5e5Ia09QLg"
+        "title": "策略會議開兩天，為什麼只剩三個選項？把 AI 放進策略規劃的四個階段",
+        "date": "2026-11-02",
+        "url": "https://www.youtube.com/watch?v=dChIyhaG3LM"
       },
-      "insight": "2026-W44.md"
+      "insight": "2026-W45.md"
     }
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-03",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 74,
-        "restarts": 9
-      },
       {
         "date": "2026-10-04",
         "online": 18,
@@ -631,8 +618,8 @@
         "restarts": 35
       }
     ],
-    "checks": 522,
-    "online": 522,
+    "checks": 504,
+    "online": 504,
     "warningDays": 2,
     "maxDisk": 85,
     "live": [
@@ -641,55 +628,55 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.07
+        "seconds": 0.04
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.17
+        "seconds": 0.12
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.41
+        "seconds": 0.42
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.04
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.22
+        "seconds": 0.14
       },
       {
         "name": "管理後台",
         "url": "https://admin.rong-rise.com/",
         "code": "401",
         "ok": true,
-        "seconds": 0.06
+        "seconds": 0.03
       }
     ],
-    "liveAt": "2026-11-03 00:30 UTC"
+    "liveAt": "2026-11-04 00:30 UTC"
   },
   "schedule": {
-    "incidents30d": 35,
-    "incidentJobs": 24,
-    "incidentDays": 16,
-    "open": 4,
+    "incidents30d": 34,
+    "incidentJobs": 23,
+    "incidentDays": 15,
+    "open": 0,
     "types": [
       {
         "type": "script",
-        "count": 16
+        "count": 15
       },
       {
         "type": "config",
@@ -708,24 +695,24 @@
         "count": 2
       }
     ],
-    "executions": 1001,
-    "executionsOk": 998,
-    "executionsFrom": "2026-11-02T12:33:36",
+    "executions": 1002,
+    "executionsOk": 1000,
+    "executionsFrom": "2026-11-03T12:31:36",
     "incidents": [
       {
         "job": "5f91aedd850c",
         "type": "timeout",
-        "state": "alerted",
+        "state": "resolved",
         "first": "2026-11-03 00:00",
-        "closed": "",
+        "closed": "2026-11-03 03:00",
         "error": "Script exited with code 1"
       },
       {
         "job": "315e2192dbcf",
         "type": "script",
-        "state": "alerted",
+        "state": "resolved",
         "first": "2026-11-02 21:00",
-        "closed": "",
+        "closed": "2026-11-03 21:00",
         "error": "Script exited with code 1"
       },
       {
@@ -739,9 +726,9 @@
       {
         "job": "315e2192dbcf",
         "type": "script",
-        "state": "alerted",
+        "state": "closed",
         "first": "2026-11-01 21:00",
-        "closed": "",
+        "closed": "2026-11-03 01:26",
         "error": "Script exited with code 1"
       },
       {
@@ -755,9 +742,9 @@
       {
         "job": "a0d92a76ca47",
         "type": "script",
-        "state": "alerted",
+        "state": "closed",
         "first": "2026-10-27 20:01",
-        "closed": "",
+        "closed": "2026-11-03 01:26",
         "error": "Script exited with code 1"
       },
       {
@@ -1033,17 +1020,17 @@
         "error": "Script exited with code 1"
       }
     ],
-    "jobs": 87,
+    "jobs": 86,
     "jobsEnabled": 76
   },
   "management": {
-    "days": 30,
+    "days": 31,
     "medianOnline": 42.0,
     "experimentMedian": 37.1,
-    "avgOnline": 53.1,
-    "totalHours": 26.6,
-    "medianVisits": 15.0,
-    "perVisit": 3.2,
+    "avgOnline": 52.6,
+    "totalHours": 27.2,
+    "medianVisits": 15,
+    "perVisit": 3.1,
     "daysUnder30": 6,
     "daily": [
       {
@@ -1195,6 +1182,11 @@
         "date": "2026-11-01",
         "min": 42.0,
         "visits": 15
+      },
+      {
+        "date": "2026-11-02",
+        "min": 36.1,
+        "visits": 19
       }
     ]
   },
@@ -1202,7 +1194,7 @@
     "subscribers": 22,
     "confirmed": 16,
     "pending": 6,
-    "views": 690,
+    "views": 696,
     "channelSubscribers": 17
   }
 }
