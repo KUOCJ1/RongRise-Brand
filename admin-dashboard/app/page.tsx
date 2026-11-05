@@ -38,7 +38,8 @@ export default function DashboardPage() {
           hint={
             downCount
               ? `${downCount} 個沒回應：${svc.filter((s) => s.state === "down").map((s) => s.label).join("、")}`
-              : `${upCount} 個 2xx · ${svc.length - upCount} 個 4xx（API-only，屬正常）`
+              : `${upCount} 個 2xx · ${svc.length - upCount} 個 4xx（API-only，屬正常）
+                 <br />以 HTTP GET 127.0.0.1:port 實測`
           }
         />
         <Kpi
@@ -112,7 +113,6 @@ export default function DashboardPage() {
             <tr>
               <th>服務</th>
               <th>Port</th>
-              <th>HTTP</th>
               <th>狀態</th>
               <th className="hide-sm">備註</th>
             </tr>
@@ -125,7 +125,6 @@ export default function DashboardPage() {
                   <div className="sub mono">{s.name}</div>
                 </td>
                 <td className="mono">{s.port}</td>
-                <td className="mono">{s.code}</td>
                 <td>
                   <SvcPill state={s.state} code={s.code} />
                 </td>
@@ -136,7 +135,7 @@ export default function DashboardPage() {
             ))}
             {svc.length === 0 && (
               <tr>
-                <td colSpan={5} className="page-sub">
+                <td colSpan={4} className="page-sub">
                   載入中…
                 </td>
               </tr>
@@ -223,7 +222,7 @@ export default function DashboardPage() {
             </tbody>
           </table>
           <p className="page-sub" style={{ marginTop: 12, marginBottom: 0 }}>
-            <Link href="/analytics">看完整分析 →</Link>
+            累計值（自 pm2 上次啟動起）· <Link href="/analytics">看完整分析 →</Link>
             {data?.vps?.uptime ? ` · 主機已運行 ${data.vps.uptime}` : ""}
           </p>
         </div>

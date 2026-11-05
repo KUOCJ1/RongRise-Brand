@@ -76,7 +76,7 @@ export function Meter({ pct }: { pct: number }) {
 
 const SVC_LABEL = {
   up: { text: "正常", cls: "ok" },
-  idle: { text: "存活", cls: "warn" },
+  idle: { text: "存活", cls: "idle" },
   down: { text: "無回應", cls: "bad" },
 } as const;
 

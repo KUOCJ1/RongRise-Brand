@@ -197,7 +197,7 @@ export async function GET() {
     ["ai-landing", "AI 諮詢頁", 8091],
     ["launchpad", "行動工作台", 8092],
     ["n8n", "n8n 自動化", 5678],
-    ["hermes", "Hermes Gateway", 8642, "需金鑰，401 屬正常"],
+    ["hermes", "Hermes Gateway", 8642, "根路徑無路由，404 屬正常"],
   ];
   const services: Svc[] = await Promise.all(
     portDefs.map(async ([name, label, port, note]) => {
@@ -210,7 +210,16 @@ export async function GET() {
   const toGB = (kb: string) => (kb ? `${(Number(kb) / 1048576).toFixed(1)} GB` : "");
   const memRaw = run(`free -m | awk 'NR==2{printf "%s %s", $3, $2}'`, fails).split(" ");
   const load = run(`cat /proc/loadavg | cut -d' ' -f1-3`, fails);
-  const uptime = run(`uptime -p | sed 's/^up //'`, fails);
+  const upSec = Number(run(`cut -d' ' -f1 /proc/uptime`, fails) || 0);
+  const uptime = upSec
+    ? [
+        Math.floor(upSec / 604800) ? `${Math.floor(upSec / 604800)} 週` : "",
+        Math.floor((upSec % 604800) / 86400) ? `${Math.floor((upSec % 604800) / 86400)} 天` : "",
+        Math.floor((upSec % 86400) / 3600) ? `${Math.floor((upSec % 86400) / 3600)} 小時` : "",
+      ]
+        .filter(Boolean)
+        .join(" ") || "不到 1 小時"
+    : "";
 
   const [subscribers, nl] = await Promise.all([getSubscribers(), Promise.resolve(readNewsletter())]);
   const cron = readCron();
@@ -238,7 +247,7 @@ export async function GET() {
     issues.push({ level: "warn", text: `第二大腦有 ${brainUncommitted} 個未提交變更` });
   }
   if (nl.pending.length) {
-    issues.push({ level: "info", text: `電子報有 ${nl.pending.length} 期待寄：${nl.pending.join("、")}` });
+    issues.push({ level: "info", text: `電子報待寄 ${nl.pending.length} 期：${nl.pending.join("、")}` });
   }
   if (fails.length) {
     issues.push({

@@ -39,7 +39,6 @@ export default function WebsitePage() {
             <tr>
               <th>服務</th>
               <th>Port</th>
-              <th>HTTP</th>
               <th>狀態</th>
               <th className="hide-sm">備註</th>
             </tr>
@@ -52,7 +51,6 @@ export default function WebsitePage() {
                   <div className="sub mono">{s.name}</div>
                 </td>
                 <td className="mono">{s.port}</td>
-                <td className="mono">{s.code}</td>
                 <td>
                   <SvcPill state={s.state} code={s.code} />
                 </td>
