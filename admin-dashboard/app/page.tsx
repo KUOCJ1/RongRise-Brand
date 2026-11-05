@@ -40,7 +40,7 @@ export default function DashboardPage() {
               ? `${downCount} 個沒回應：${svc.filter((s) => s.state === "down").map((s) => s.label).join("、")}`
               : (
                   <>
-                    {upCount} 個 2xx · {svc.length - upCount} 個 4xx（API-only，屬正常）
+                    {upCount} 個正常（2xx／3xx）· {svc.length - upCount} 個 4xx（API-only，屬正常）
                     <br />
                     以 HTTP GET 127.0.0.1:port 實測
                   </>
