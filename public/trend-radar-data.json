@@ -1,67 +1,67 @@
 {
- "generatedAt": "2026-11-04T05:20:43Z",
+ "generatedAt": "2026-11-05T05:20:45Z",
  "window": {
-  "from": "2026-10-29",
-  "to": "2026-11-04",
+  "from": "2026-10-30",
+  "to": "2026-11-05",
   "days": 7,
   "digestCount": 7
  },
  "stats": {
-  "totalArticles": 58,
+  "totalArticles": 51,
   "categories": {
-   "AI 轉型": 28,
-   "ESG 永續": 13,
-   "人才策略": 17
+   "AI 轉型": 24,
+   "ESG 永續": 12,
+   "人才策略": 15
   }
  },
  "trends": [
   {
-   "keyword": "人力資源",
-   "icon": "📋",
-   "category": "人才策略",
-   "count": 25,
-   "prevCount": 14,
-   "momentum": "up"
-  },
-  {
    "keyword": "組織與管理",
    "icon": "🏢",
    "category": "管理趨勢",
-   "count": 24,
+   "count": 22,
    "prevCount": 11,
    "momentum": "up"
+  },
+  {
+   "keyword": "人力資源",
+   "icon": "📋",
+   "category": "人才策略",
+   "count": 19,
+   "prevCount": 18,
+   "momentum": "flat"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
    "category": "AI 轉型",
-   "count": 17,
-   "prevCount": 6,
+   "count": 16,
+   "prevCount": 7,
    "momentum": "up"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
    "category": "AI 轉型",
-   "count": 17,
-   "prevCount": 11,
+   "count": 16,
+   "prevCount": 10,
    "momentum": "up"
   },
   {
    "keyword": "企業導入",
    "icon": "🚀",
    "category": "AI 轉型",
-   "count": 16,
-   "prevCount": 5,
+   "count": 15,
+   "prevCount": 4,
    "momentum": "up"
   },
   {
    "keyword": "AI Agent",
    "icon": "🤖",
    "category": "AI 轉型",
-   "count": 12,
-   "prevCount": 6,
-   "momentum": "up"
+   "count": 9,
+   "prevCount": 8,
+   "momentum": "flat"
   },
   {
    "keyword": "治理與法規",
@@ -76,30 +76,14 @@
    "icon": "🛡️",
    "category": "AI 轉型",
    "count": 8,
-   "prevCount": 7,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "能源與電力",
-   "icon": "⚡",
-   "category": "ESG 永續",
-   "count": 7,
-   "prevCount": 7,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "資料中心",
-   "icon": "🏭",
-   "category": "AI 轉型",
-   "count": 7,
-   "prevCount": 5,
+   "prevCount": 6,
    "momentum": "up"
   },
   {
    "keyword": "ESG 揭露",
    "icon": "🌱",
    "category": "ESG 永續",
-   "count": 5,
+   "count": 6,
    "prevCount": 0,
    "momentum": "new"
   },
@@ -107,17 +91,33 @@
    "keyword": "人才與技能",
    "icon": "🧠",
    "category": "人才策略",
-   "count": 5,
-   "prevCount": 2,
-   "momentum": "up"
+   "count": 6,
+   "prevCount": 0,
+   "momentum": "new"
+  },
+  {
+   "keyword": "能源與電力",
+   "icon": "⚡",
+   "category": "ESG 永續",
+   "count": 6,
+   "prevCount": 6,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "資料中心",
+   "icon": "🏭",
+   "category": "AI 轉型",
+   "count": 6,
+   "prevCount": 5,
+   "momentum": "flat"
   },
   {
    "keyword": "自動化",
    "icon": "⚙️",
    "category": "AI 轉型",
-   "count": 3,
+   "count": 2,
    "prevCount": 4,
-   "momentum": "flat"
+   "momentum": "down"
   },
   {
    "keyword": "開源模型",
@@ -129,6 +129,13 @@
   }
  ],
  "articles": [
+  {
+   "title": "Lab-grown meat was supposed to save the world. What happened?",
+   "url": "https://www.theguardian.com/news/ng-interactive/2026/nov/05/lab-grown-meat-save-the-world-food-revolution-climate-crisis-food-system",
+   "summary": "2026 年 11 月 5 日的 Guardian 長讀，從 2013 年 8 月 5 日那顆漢堡說起：Maastricht 大學 Mark Post 用活體牛肩幹細胞培養出 2 萬條肌肉組織、做成 140 克肉餅，成本 25 萬歐元，錢來自 Google 共同創辦人 Sergey Brin。那場發表引發淘金熱——六大洲冒出 140 家公司、30 億美元投資湧入，支持者說細胞農業能同時解決氣候與糧食。十三年後肉沒上桌：建廠前期成本高、耗能驚人、產能與價格都不到位、也缺高技能人力；佛州、阿拉巴馬、密西西比、印第安納、蒙大拿、內布拉斯加、德州相繼立法禁售或禁產。作者走訪北卡，看到最刺眼的一幕——Believer Meats 20 萬平方英尺、號稱年產 950 萬公斤的全球最大培養肉廠，2025 年 9 月才拿到 FDA「無疑慮」函，卻在 2026 年初被營造商 Gray Construction 以 3,400 萬美元違約求償、宣告破產，關廠時連一根雞柳都沒生產過。產業還在賣的產品多半不是「肉」：新加坡 Huber's 的 GOOD Meat 3 只有 3% 雞細胞、110 克賣 5.62 美元；Mission Barns 每份動物細胞低於 10%，執行長坦言最難的是「投資人給的成本下降時程太激進」，公司最終目標其實是授權整套系統。作者用 Gartner 1995 年的 hype cycle 收尾：我們正站在泡沫破裂後的谷底，而谷底最容易看清一件事——能把實驗室成果規模化的，從來不是技術本身",
+   "date": "2026-11-05",
+   "category": "ESG 永續"
+  },
   {
    "title": "砸錢買 GPU 卻在空等，資料傳輸成 AI 基礎設施隱形瓶頸",
    "url": "https://technews.tw/2026/11/04/why-billion-dollar-ai-systems-are-only-as-fast-as-the-data-feeding-them/",
@@ -478,69 +485,13 @@
    "summary": "台灣汽電共生與英特爾、西門子合作，重構 AI 資料中心的跨域供電架構，把「算力瓶頸＝電力瓶頸」講成具體工程題。",
    "date": "2026-10-30",
    "category": "ESG 永續"
-  },
-  {
-   "title": "Creating AI value with enterprise context",
-   "url": "https://www.technologyreview.com/2026/10/28/1147709/creating-ai-value-with-enterprise-context/",
-   "summary": "MIT TR Insights 調查：全員都在用 AI，但只有 16% 從部署中取得變革性價值；38% 還在試點、35% 只當 copilot 用，僅 12% 有 agent 進生產、3% 讓 AI 做關鍵流程大部分工作。Atlan 共同創辦人 Prukalpa Sankar 指缺的是「上下文層」——沒有它，等於「雇用全世界最聰明的實習生，然後把他蒙眼丟進組織」。",
-   "date": "2026-10-29",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Anthropic just launched tools to show companies what their AI spending is buying",
-   "url": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
-   "summary": "Anthropic 推團隊級 AI 用量報表（做了什麼、花多少、流程在哪斷），預設不用於訓練模型；背景是它的淨收入留存率 900%，而 Jellyfish 調查 27.6 萬名客戶發現 agentic coding 工具支出今年成長 10 倍、已相當於總工程成本 2%，「多數 CFO 沒編這筆預算」。",
-   "date": "2026-10-29",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "As AI agents reshape the web, Google opens Gemini and Search to more apps",
-   "url": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/",
-   "summary": "Google 開放「Connected Apps」平台，開發者可把服務嵌進 Gemini 與搜尋，先從美國開放 beta 候補；代理開始吃掉原本由網站流量承接的工作。",
-   "date": "2026-10-29",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "Agentic AI in strategic sourcing: Hype or hero?",
-   "url": "https://www.mckinsey.com/capabilities/operations/our-insights/agentic-ai-in-strategic-sourcing-hype-or-hero",
-   "summary": "McKinsey 檢視 agentic AI 在策略採購的實際成效，問的是「炒作還是真英雄」：同一批工具在採購流程裡到底換到多少可計價的結果。",
-   "date": "2026-10-29",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "換員工幫主管打考績！ASML 執行長向自肥文化開刀",
-   "url": "https://www.managertoday.com.tw/articles/view/73204",
-   "summary": "ASML 員工敬業度從 78% 掉到 73.5%，執行長把 6 道調查題併成「職場體驗指數」，直接綁進高階主管長期獎酬，員工評分從此影響老闆領多少。",
-   "date": "2026-10-29",
-   "category": "人才策略"
-  },
-  {
-   "title": "面試不考寫程式，那到底看什麼？Anthropic 主管揭篩選工程師新標準",
-   "url": "https://www.managertoday.com.tw/articles/view/73207",
-   "summary": "Anthropic 工程主管取消 Coding 面試，理由是 Claude 解題更強、傳統測驗已失焦；他反而看好資淺者——AI 壓低執行門檻後，「衝勁」比年資值錢。",
-   "date": "2026-10-29",
-   "category": "人才策略"
-  },
-  {
-   "title": "How solid-state transformers could help power the AI boom",
-   "url": "https://www.technologyreview.com/2026/10/27/1147684/solid-state-transformers/",
-   "summary": "固態變壓器被視為解 AI 供電瓶頸的技術路線之一，重點在效率與體積，而不只是發更多電。",
-   "date": "2026-10-29",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "Data center backlash is uniting America",
-   "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections",
-   "summary": "資料中心成為 2026 美國期中選舉的跨黨派動員議題：德州、愛荷華等選區的兩黨候選人都在比「誰對資料中心更硬」，共同點是要它們自付能源基建成本、取消稅賦優惠；同時 Andreessen／Brockman 支持的 Leading the Future 一年已花 4,500 萬美元、Anthropic 支持的 Public First Action 募到 8,000 萬美元。",
-   "date": "2026-10-29",
-   "category": "ESG 永續"
   }
  ],
  "insights": [
-  "今天最一致的一條線是「錢花在看得見的地方，瓶頸卡在看不見的地方」。TechNews 的儲存與網路層、McKinsey 的軟體修補能力、以及 PIMCO 口中 2 兆美元的融資缺口，講的其實是同一種錯配：資本大量投在算力與模型這種可展示的資產上，而真正決定投報率的資料移動、修補速度與資金結構，沒有人認領。對導入 AI 的中小企業，這句話可以翻成一個檢查動作——先量資料從產出到進模型的時間，再談要不要加買算力",
-  "「信任」正在從模型能力問題變成組織溝通問題。經理人那篇講的是主管用 AI 寫例行訊息會被質疑自信與誠意，TechNews 那篇講的是流暢但錯誤的文字有八成的人看不出來，兩篇合起來是一個很實務的結論：AI 讓文字變便宜，於是書面溝通反而變成需要被管理的風險點。可操作的界線是 Williams 那條——AI 可以幫你刪、幫你找反方，但送出前那一道必須是人",
-  "代理（agent）的討論從「能不能做」轉向「怎麼設計規則讓它願意不做壞事」。MIT Technology Review 的機制設計路線（不去讀模型內部，改設計誘因）、Stamos 對把網銀密碼交給代理的警告、以及摩根大通自行開發官方代理並封堵外部代理，三者指向同一個治理形狀：與其期待使用者自律，不如讓平台與金融機構在架構層決定哪些動作根本不被允許",
-  "ESG 這條線今天有兩個不同層次。一個是供給面——華新麗華組核能國家隊，理由是 AI 用電與減碳同時要顧；另一個是社會許可——美國 10 州 41 項資料中心提案在期中選舉同日投票，今年已表決的六項全數不利開發。McKinsey 的調適報告則提醒另一件事：防護本身是門好生意（效益是成本的三倍），只是現在還缺可融資的結構。對台灣讀者，這三件事的交集會在科學園區與工業區的供電與環評審查桌上出現",
-  "今天的共同主軸是「可追溯性」變成 AI 導入的驗收標準，而不是模型能力。訊聯用 Harness 鎖住工具、資料、參數與版本，理由是「同樣輸入 A，這次 B、下次 C，要查得出差在哪」；英國內政部的庇護 AI 出事，正是因為摘要錯誤率不透明、APS 沒有品質控管、系統清冊不公開；McKinsey 則指出關鍵基礎設施的風險已從實體延伸到資料中心與算力層。三篇講的是同一件事：治理不是事後稽核，是執行程式的一部分"
+  "今天最硬的一條線是「AI 的帳單開始回頭改寫管理制度」。經理人那篇講 Uber 四個月燒光全年預算、沃爾瑪取消吃到飽，蘋果這篇講工程師每日額度從 300 降到 200 美元，兩件事的共同點不是省錢，而是**衡量單位的失效**：token 用量曾經是好用的採用率代理指標，一旦掛上考核就變成員工可以灌水的活動量（亞馬遜有人讓代理跑不必要的任務）。BCG 提的「每次成功結果的成本」與蘋果員工「額度一降就讀成裁員訊號」，其實是同一枚硬幣的兩面——成本治理如果不連著成果定義與溝通一起改，就會先傷到信任",
+  "「代理當員工」這個比喻今天被兩篇同時檢驗，而且結論相反又互補。TechNews 那篇引用波士頓大學與 BCG 的實驗：一旦把代理列進組織圖、說成「AI 員工」，經理人揪錯少 16%、責任感下降——比喻會稀釋問責。但同一篇也說，借用新人報到、職責定義、考核與轉呈的**紀律**，是導入流程最實用的框架。中國 B 站的 FDE 討論則從另一頭補上：真正缺的是「讓 Agent 在企業裡被用起來」的那個職務與流程。兩者合起來的實務結論是：要新人式的流程，不要新人式的責任豁免",
+  "社會與人文這條線今天給的是一個反問：採用速度是不是競爭力？Noema 的日本長文說，拒絕跟上（感應支付早就有卻推不動）反而保住了就業與社會選擇權；Guardian 的培養肉則示範另一種失敗——不是拒絕科技，而是**在技術還沒規模化時就先把工廠蓋好**，30 億美元與 140 家公司換來一座沒生產過一根雞柳的工廠。把這兩篇跟美國資工系入學兩年跌 18.4% 並讀，會看到同一種社會層面的重新定價：人們不再預設「新科技＝進步」，開始問它是為誰、多快、誰買單",
+  "總經與地緣的兩則把「AI 的社會許可」講成了選票與合約。美國期中選舉 119 億美元的政治支出沒能替資料中心買到許可，56% 選民說這件事影響投票，民主黨拿下兩院後直接預告傳喚 AI 執行長；同一週甲骨文取消與騰訊的 70 億美元晶片租賃，美方關切、北京也施壓。對台灣企業的訊號是一樣的：算力、電力與政治許可比模型能力更早決定專案能不能成立",
+  "今天最一致的一條線是「錢花在看得見的地方，瓶頸卡在看不見的地方」。TechNews 的儲存與網路層、McKinsey 的軟體修補能力、以及 PIMCO 口中 2 兆美元的融資缺口，講的其實是同一種錯配：資本大量投在算力與模型這種可展示的資產上，而真正決定投報率的資料移動、修補速度與資金結構，沒有人認領。對導入 AI 的中小企業，這句話可以翻成一個檢查動作——先量資料從產出到進模型的時間，再談要不要加買算力"
  ]
 }

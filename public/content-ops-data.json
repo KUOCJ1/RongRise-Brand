@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-11-04T05:20:42Z",
+ "generatedAt": "2026-11-05T05:20:42Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 158
+  "daysRunning": 159
  },
  "stats": {
-  "scanDays": 137,
-  "weekArticles": 55,
+  "scanDays": 138,
+  "weekArticles": 58,
   "articles": 100,
   "newsItems": 62,
   "newsletterIssues": 30,
   "subscribers": 22,
   "confirmedSubscribers": 15,
-  "videos": 41,
-  "views": 697,
+  "videos": 42,
+  "views": 701,
   "channelSubscribers": 17,
   "insights": 19,
-  "socialPosts": 76,
+  "socialPosts": 77,
   "igCards": 47,
-  "competitorReports": 136
+  "competitorReports": 137
  },
  "activity": [
-  {
-   "date": "2026-10-29",
-   "count": 8,
-   "topics": []
-  },
   {
    "date": "2026-10-30",
    "count": 9,
@@ -56,6 +51,11 @@
    "date": "2026-11-04",
    "count": 10,
    "topics": []
+  },
+  {
+   "date": "2026-11-05",
+   "count": 1,
+   "topics": []
   }
  ],
  "latest": {
@@ -66,9 +66,9 @@
   },
   "newsletter": "🦞 榕賀觀點 第 30 期 — 2026-11-02",
   "video": {
-   "title": "策略會議開兩天，為什麼只剩三個選項？把 AI 放進策略規劃的四個階段",
-   "date": "2026-11-02",
-   "url": "https://www.youtube.com/watch?v=dChIyhaG3LM"
+   "title": "他把剪頭髮的動作，賣給了機器人公司",
+   "date": "2026-11-04",
+   "url": "https://www.youtube.com/watch?v=mma8Nptav5k"
   },
   "insight": "2026-W45.md"
  },
@@ -76,32 +76,32 @@
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 23,
+   "count": 25,
    "momentum": "up"
   },
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 20,
+   "count": 24,
    "momentum": "up"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 15,
-   "momentum": "up"
-  },
-  {
-   "keyword": "AI Agent",
-   "icon": "🤖",
-   "count": 14,
+   "count": 17,
    "momentum": "up"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 13,
-   "momentum": "flat"
+   "count": 17,
+   "momentum": "up"
+  },
+  {
+   "keyword": "企業導入",
+   "icon": "🚀",
+   "count": 16,
+   "momentum": "up"
   }
  ]
 }
