@@ -19,7 +19,7 @@ interface Article {
   tags: string[];
 }
 
-const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "人才策略", "ESG 永續", "案例分享", "工具資源", "政府資源", "策略管理", "系統架構", "小賀的成長日記", "AI 趨勢"];
+const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "人才策略", "ESG 永續", "案例分享", "工具資源", "政府資源", "策略管理", "社會觀察", "全球趨勢", "系統架構", "小賀的成長日記", "AI 趨勢"];
 
 const articles: Article[] = [
   {
@@ -114,7 +114,7 @@ const articles: Article[] = [
   },
   {
     slug: "ai-agent-liability-transfer",
-    cat: "AI 轉型",
+    cat: "全球趨勢",
     title: "連摩根大通都不讓它進門：你的 AI 代理，憑什麼代表你？",
     date: "2026-10-15",
     readTime: "9 分鐘",
@@ -177,7 +177,7 @@ const articles: Article[] = [
   },
   {
     slug: "ai-incident-notification-gap",
-    cat: "AI 轉型",
+    cat: "社會觀察",
     title: "澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報",
     date: "2026-09-29",
     readTime: "9 分鐘",
@@ -204,7 +204,7 @@ const articles: Article[] = [
   },
   {
     slug: "ai-permitting-bottleneck",
-    cat: "AI 轉型",
+    cat: "社會觀察",
     title: "全美九州喊停、紐約暫停核准一年：AI 的瓶頸已經不是晶片，是鄰居",
     date: "2026-09-24",
     readTime: "9 分鐘",
