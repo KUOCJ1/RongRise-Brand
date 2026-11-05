@@ -207,6 +207,7 @@ export async function GET() {
   );
 
   const disk = run(`df -P / | tail -1 | awk '{print $5" "$3" "$2}'`, fails).split(" ");
+  const toGB = (kb: string) => (kb ? `${(Number(kb) / 1048576).toFixed(1)} GB` : "");
   const memRaw = run(`free -m | awk 'NR==2{printf "%s %s", $3, $2}'`, fails).split(" ");
   const load = run(`cat /proc/loadavg | cut -d' ' -f1-3`, fails);
   const uptime = run(`uptime -p | sed 's/^up //'`, fails);
@@ -264,8 +265,8 @@ export async function GET() {
     vps: {
       disk: disk[0] || "",
       diskPct,
-      diskUsed: disk[1] || "",
-      diskTotal: disk[2] || "",
+      diskUsed: toGB(disk[1]),
+      diskTotal: toGB(disk[2]),
       mem: memPct,
       memUsed: memRaw[0] || "",
       memTotal: memRaw[1] || "",

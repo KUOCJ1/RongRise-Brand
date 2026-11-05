@@ -32,10 +32,14 @@ export default function DashboardPage() {
         <Kpi
           label="服務狀態"
           icon={<Server size={14} />}
-          value={svc.length ? `${upCount}/${svc.length}` : "—"}
-          unit="正常"
-          tone={downCount ? "bad" : upCount === svc.length ? "ok" : "warn"}
-          hint={downCount ? `${downCount} 個沒回應` : "全部有回應"}
+          value={svc.length ? `${svc.length - downCount}/${svc.length}` : "—"}
+          unit="有回應"
+          tone={downCount ? "bad" : "ok"}
+          hint={
+            downCount
+              ? `${downCount} 個沒回應：${svc.filter((s) => s.state === "down").map((s) => s.label).join("、")}`
+              : `${upCount} 個 2xx · ${svc.length - upCount} 個 4xx（API-only，屬正常）`
+          }
         />
         <Kpi
           label="磁碟"
