@@ -330,6 +330,10 @@ tbody tr:hover td {
 .issue-line.warn {
   color: var(--warn);
 }
+.issue-line.info,
+.issues.ok .issue-line.info {
+  color: var(--blue);
+}
 .issues.ok .issue-line {
   color: var(--ok);
 }

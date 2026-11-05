@@ -219,7 +219,7 @@ export async function GET() {
   const memPct = memRaw[1] ? Math.round((Number(memRaw[0]) / Number(memRaw[1])) * 100) : 0;
 
   // ── 待處理警示（給人看的優先順序）──
-  const issues: { level: "warn" | "bad"; text: string }[] = [];
+  const issues: { level: "warn" | "bad" | "info"; text: string }[] = [];
   const downSvc = services.filter((s) => s.state === "down");
   if (downSvc.length) {
     issues.push({ level: "bad", text: `${downSvc.length} 個服務沒有回應：${downSvc.map((s) => s.label).join("、")}` });
@@ -237,7 +237,7 @@ export async function GET() {
     issues.push({ level: "warn", text: `第二大腦有 ${brainUncommitted} 個未提交變更` });
   }
   if (nl.pending.length) {
-    issues.push({ level: "warn", text: `電子報有 ${nl.pending.length} 期待寄：${nl.pending.join("、")}` });
+    issues.push({ level: "info", text: `電子報有 ${nl.pending.length} 期待寄：${nl.pending.join("、")}` });
   }
   if (fails.length) {
     issues.push({
@@ -246,7 +246,8 @@ export async function GET() {
     });
   }
 
-  const health = issues.some((i) => i.level === "bad") ? "bad" : issues.length ? "warn" : "ok";
+  const actionable = issues.filter((i) => i.level !== "info");
+  const health = actionable.some((i) => i.level === "bad") ? "bad" : actionable.length ? "warn" : "ok";
 
   return NextResponse.json({
     ts: new Date().toISOString(),

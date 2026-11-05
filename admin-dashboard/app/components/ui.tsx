@@ -1,5 +1,5 @@
 "use client";
-import { AlertTriangle, CheckCircle2, RefreshCw, XCircle } from "lucide-react";
+import { AlertTriangle, CheckCircle2, Info, RefreshCw, XCircle } from "lucide-react";
 import type { ReactNode } from "react";
 
 /** 頁首：標題 + 更新時間 + 手動刷新 */
@@ -91,8 +91,21 @@ export function SvcPill({ state, code }: { state: "up" | "idle" | "down"; code: 
 }
 
 /** 待處理清單：沒有問題時明說「沒有」，而不是留白 */
-export function Issues({ issues }: { issues?: { level: "warn" | "bad"; text: string }[] }) {
+export function Issues({ issues }: { issues?: { level: "warn" | "bad" | "info"; text: string }[] }) {
   if (!issues) return null;
+  const actionable = issues.filter((i) => i.level !== "info");
+  if (actionable.length === 0 && issues.length > 0) {
+    return (
+      <div className="panel issues ok">
+        {issues.map((i, k) => (
+          <div key={k} className="issue-line info">
+            <Info size={16} />
+            <span>{i.text}</span>
+          </div>
+        ))}
+      </div>
+    );
+  }
   if (issues.length === 0) {
     return (
       <div className="panel issues ok">
@@ -107,7 +120,7 @@ export function Issues({ issues }: { issues?: { level: "warn" | "bad"; text: str
       <h3>需要注意</h3>
       {issues.map((i, k) => (
         <div key={k} className={`issue-line ${i.level}`}>
-          {i.level === "bad" ? <XCircle size={16} /> : <AlertTriangle size={16} />}
+          {i.level === "bad" ? <XCircle size={16} /> : i.level === "info" ? <Info size={16} /> : <AlertTriangle size={16} />}
           <span>{i.text}</span>
         </div>
       ))}
