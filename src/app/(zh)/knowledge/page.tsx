@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "manage-people-like-ai",
+    cat: "管理心理學",
+    title: "用管 AI 的方式管人：授權，還有信任",
+    date: "2026-11-05",
+    readTime: "7 分鐘",
+    excerpt: "市面都在教「把 AI 當員工管」，但研究發現，把 AI 叫成「員工」，經理人揪錯反而少 16%。真正值錢的是反過來：用管 AI 的方法管人。信任不是感覺，是一道算式，驗證成本低於出錯成本，你才不需要每次檢查。",
+    tags: ["管理心理學", "授權", "信任", "領導力", "AI 代理"],
+  },
+  {
     slug: "ai-system-not-agent-ready",
     cat: "AI 轉型",
     title: "AI 跑不動，不是模型不夠聰明，是你的系統還沒為它開門",

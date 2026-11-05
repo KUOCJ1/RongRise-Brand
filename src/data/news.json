@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n63",
+      "date": "2026-11-05",
+      "category": "資源",
+      "title": "用管 AI 的方式管人：授權，還有信任",
+      "summary": "市面都在教「把 AI 當員工管」，但研究發現把 AI 叫成「員工」，經理人揪錯反而少 16%。真正值錢的是反過來：用管 AI 的方法管人。信任是一道算式，驗證成本低於出錯成本。",
+      "link": "/knowledge/manage-people-like-ai",
+      "isNew": true
+    },
+    {
       "id": "n62",
       "date": "2026-11-03",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "你餵 AI 什麼，它就長成什麼：腦腐不可逆，乾淨輸入成了新護城河",
       "summary": "德州農工把垃圾內容餵給 AI，餵到全垃圾時，原本拒絕教人散播謠言的模型開始主動給做法，重訓也救不回來。乾淨輸入，成了下一條護城河。",
       "link": "/knowledge/clean-input-ai-moat",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n59",
