@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-04T00:30:36Z",
+  "generatedAt": "2026-11-05T00:30:36Z",
   "periods": {
-    "content": "累計至 2026-11-04；近 30 天＝2026-10-05 起",
-    "health": "2026-10-04 ~ 2026-10-31（28 天）",
+    "content": "累計至 2026-11-05；近 30 天＝2026-10-06 起",
+    "health": "2026-10-05 ~ 2026-10-31（27 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-02（31 天）"
+    "management": "2026-10-03 ~ 2026-11-03（32 天）"
   },
   "headline": [
     {
       "key": "content",
       "label": "內容產出",
-      "value": 99,
+      "value": 100,
       "unit": "篇文章",
       "note": "近 30 天新增 13 篇"
     },
@@ -19,7 +19,7 @@
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "28 天 × 18 個服務，504/504 次在線"
+      "note": "27 天 × 18 個服務，486/486 次在線"
     },
     {
       "key": "incidents",
@@ -31,21 +31,21 @@
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 42.0,
+      "value": 41.4,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；6/31 天達標"
+      "note": "實驗期 37.1 分；7/32 天達標"
     }
   ],
   "content": {
-    "articles": 99,
+    "articles": 100,
     "articles30d": 13,
     "newsletters": 30,
     "videos": 41,
     "videos30d": 3,
     "igCards": 47,
-    "socialPosts": 75,
-    "scanDays": 136,
-    "competitorReports": 135,
+    "socialPosts": 76,
+    "scanDays": 137,
+    "competitorReports": 136,
     "insights": 19,
     "monthly": [
       {
@@ -361,6 +361,11 @@
     ],
     "videoList": [
       {
+        "title": "他把剪頭髮的動作，賣給了機器人公司",
+        "date": "2026-11-04",
+        "url": "https://www.youtube.com/watch?v=mma8Nptav5k"
+      },
+      {
         "title": "策略會議開兩天，為什麼只剩三個選項？把 AI 放進策略規劃的四個階段",
         "date": "2026-11-02",
         "url": "https://www.youtube.com/watch?v=dChIyhaG3LM"
@@ -369,18 +374,13 @@
         "title": "拿掉 AI 之後，只有老手真的進步：MIT 實驗揭開的判斷力斷代",
         "date": "2026-10-21",
         "url": "https://www.youtube.com/watch?v=T5e5Ia09QLg"
-      },
-      {
-        "title": "連做模型的公司都說控制不住：AI 代理的安全，從「它會拒絕」改成「它碰不到」",
-        "date": "2026-10-14",
-        "url": "https://www.youtube.com/watch?v=Zi7obd2eQUo"
       }
     ],
     "latest": {
       "article": {
-        "title": "AI Agent 最大的效益，不是省下打提示詞的時間",
-        "date": "2026-10-31",
-        "url": "/knowledge/agent-biggest-benefit-standardization"
+        "title": "AI 跑不動，不是模型不夠聰明，是你的系統還沒為它開門",
+        "date": "2026-11-03",
+        "url": "/knowledge/ai-system-not-agent-ready"
       },
       "newsletter": "🦞 榕賀觀點 第 30 期 — 2026-11-02",
       "video": {
@@ -393,14 +393,6 @@
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-04",
-        "online": 18,
-        "total": 18,
-        "status": "warning",
-        "disk": 74,
-        "restarts": 24
-      },
       {
         "date": "2026-10-05",
         "online": 18,
@@ -618,9 +610,9 @@
         "restarts": 35
       }
     ],
-    "checks": 504,
-    "online": 504,
-    "warningDays": 2,
+    "checks": 486,
+    "online": 486,
+    "warningDays": 1,
     "maxDisk": 85,
     "live": [
       {
@@ -628,21 +620,21 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.06
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.12
+        "seconds": 0.09
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.42
+        "seconds": 0.35
       },
       {
         "name": "職能評測",
@@ -656,17 +648,17 @@
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.14
+        "seconds": 0.05
       },
       {
         "name": "管理後台",
         "url": "https://admin.rong-rise.com/",
         "code": "401",
         "ok": true,
-        "seconds": 0.03
+        "seconds": 0.1
       }
     ],
-    "liveAt": "2026-11-04 00:30 UTC"
+    "liveAt": "2026-11-05 00:30 UTC"
   },
   "schedule": {
     "incidents30d": 34,
@@ -695,9 +687,9 @@
         "count": 2
       }
     ],
-    "executions": 1002,
+    "executions": 1001,
     "executionsOk": 1000,
-    "executionsFrom": "2026-11-03T12:31:36",
+    "executionsFrom": "2026-11-04T12:20:36",
     "incidents": [
       {
         "job": "5f91aedd850c",
@@ -1024,14 +1016,14 @@
     "jobsEnabled": 76
   },
   "management": {
-    "days": 31,
-    "medianOnline": 42.0,
+    "days": 32,
+    "medianOnline": 41.4,
     "experimentMedian": 37.1,
-    "avgOnline": 52.6,
-    "totalHours": 27.2,
-    "medianVisits": 15,
+    "avgOnline": 51.5,
+    "totalHours": 27.5,
+    "medianVisits": 15.0,
     "perVisit": 3.1,
-    "daysUnder30": 6,
+    "daysUnder30": 7,
     "daily": [
       {
         "date": "2026-10-03",
@@ -1187,14 +1179,19 @@
         "date": "2026-11-02",
         "min": 36.1,
         "visits": 19
+      },
+      {
+        "date": "2026-11-03",
+        "min": 19.0,
+        "visits": 11
       }
     ]
   },
   "reach": {
     "subscribers": 22,
-    "confirmed": 16,
+    "confirmed": 15,
     "pending": 6,
-    "views": 696,
+    "views": 697,
     "channelSubscribers": 17
   }
 }
