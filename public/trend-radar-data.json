@@ -1,91 +1,75 @@
 {
- "generatedAt": "2026-11-05T05:20:45Z",
+ "generatedAt": "2026-11-06T05:20:41Z",
  "window": {
-  "from": "2026-10-30",
-  "to": "2026-11-05",
+  "from": "2026-10-31",
+  "to": "2026-11-06",
   "days": 7,
   "digestCount": 7
  },
  "stats": {
-  "totalArticles": 51,
+  "totalArticles": 43,
   "categories": {
-   "AI 轉型": 24,
-   "ESG 永續": 12,
-   "人才策略": 15
+   "AI 轉型": 20,
+   "ESG 永續": 11,
+   "人才策略": 12
   }
  },
  "trends": [
   {
+   "keyword": "成本與投資",
+   "icon": "💰",
+   "category": "AI 轉型",
+   "count": 17,
+   "prevCount": 7,
+   "momentum": "up"
+  },
+  {
    "keyword": "組織與管理",
    "icon": "🏢",
    "category": "管理趨勢",
-   "count": 22,
-   "prevCount": 11,
-   "momentum": "up"
+   "count": 17,
+   "prevCount": 16,
+   "momentum": "flat"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
    "category": "人才策略",
-   "count": 19,
-   "prevCount": 18,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "成本與投資",
-   "icon": "💰",
-   "category": "AI 轉型",
    "count": 16,
-   "prevCount": 7,
-   "momentum": "up"
+   "prevCount": 21,
+   "momentum": "flat"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
    "category": "AI 轉型",
-   "count": 16,
-   "prevCount": 10,
-   "momentum": "up"
+   "count": 14,
+   "prevCount": 12,
+   "momentum": "flat"
   },
   {
    "keyword": "企業導入",
    "icon": "🚀",
    "category": "AI 轉型",
-   "count": 15,
-   "prevCount": 4,
+   "count": 11,
+   "prevCount": 8,
    "momentum": "up"
   },
   {
    "keyword": "AI Agent",
    "icon": "🤖",
    "category": "AI 轉型",
-   "count": 9,
-   "prevCount": 8,
+   "count": 8,
+   "prevCount": 9,
    "momentum": "flat"
   },
   {
    "keyword": "治理與法規",
    "icon": "⚖️",
    "category": "AI 轉型",
-   "count": 9,
-   "prevCount": 3,
-   "momentum": "up"
-  },
-  {
-   "keyword": "安全與風險",
-   "icon": "🛡️",
-   "category": "AI 轉型",
    "count": 8,
-   "prevCount": 6,
+   "prevCount": 5,
    "momentum": "up"
-  },
-  {
-   "keyword": "ESG 揭露",
-   "icon": "🌱",
-   "category": "ESG 永續",
-   "count": 6,
-   "prevCount": 0,
-   "momentum": "new"
   },
   {
    "keyword": "人才與技能",
@@ -96,11 +80,19 @@
    "momentum": "new"
   },
   {
+   "keyword": "安全與風險",
+   "icon": "🛡️",
+   "category": "AI 轉型",
+   "count": 6,
+   "prevCount": 8,
+   "momentum": "flat"
+  },
+  {
    "keyword": "能源與電力",
    "icon": "⚡",
    "category": "ESG 永續",
    "count": 6,
-   "prevCount": 6,
+   "prevCount": 7,
    "momentum": "flat"
   },
   {
@@ -108,27 +100,34 @@
    "icon": "🏭",
    "category": "AI 轉型",
    "count": 6,
-   "prevCount": 5,
+   "prevCount": 6,
    "momentum": "flat"
+  },
+  {
+   "keyword": "ESG 揭露",
+   "icon": "🌱",
+   "category": "ESG 永續",
+   "count": 5,
+   "prevCount": 1,
+   "momentum": "up"
   },
   {
    "keyword": "自動化",
    "icon": "⚙️",
    "category": "AI 轉型",
-   "count": 2,
-   "prevCount": 4,
-   "momentum": "down"
-  },
-  {
-   "keyword": "開源模型",
-   "icon": "🌐",
-   "category": "AI 轉型",
    "count": 1,
-   "prevCount": 1,
-   "momentum": "flat"
+   "prevCount": 5,
+   "momentum": "down"
   }
  ],
  "articles": [
+  {
+   "title": "回應資料中心建設爭議，OpenAI提出用電、用水與資訊公開承諾",
+   "url": "https://www.ithome.com.tw/news/180271",
+   "summary": "iThome（11-06）。面對全美各地反對 AI 資料中心的聲浪，OpenAI 在 11 月 5 日宣布新的社區承諾：擴大公開資料中心的**用電、用水、噪音與環境影響資訊**，讓居民參與開發規畫，並呼籲政府制定相關法規保障地方權益。這是把外部成本內部化的典型動作——當資料中心的水電從「公司採購問題」變成「社區生存問題」，社會許可就得用資訊揭露與成本自負來換。對照同日的台股崩跌，兩件事其實是同一條因果鏈的兩端：政治端要求問責，資本市場立刻重新定價。",
+   "date": "2026-11-06",
+   "category": "ESG 永續"
+  },
   {
    "title": "Lab-grown meat was supposed to save the world. What happened?",
    "url": "https://www.theguardian.com/news/ng-interactive/2026/nov/05/lab-grown-meat-save-the-world-food-revolution-climate-crisis-food-system",
@@ -422,76 +421,13 @@
    "summary": "凱擘大寬頻與新北市環保局合作「智慧稽查／哨兵守護」專案，用既有 HFC 光纖同軸網路建全天候河川監控，已涵蓋新北市 43 條河川溪流，以 AI 水色辨識加異常告警取代過去靠民眾陳情與人工巡查的模式。同樣的網路基礎也被用在陽明山大油坑次聲波火山監測站、智慧停車車牌辨識，以及醫療、校園、物流倉儲場域。總經理謝明益的說法是，企業對網路的要求已不只高速連線，還要能撐住大量攝影機與感測器穩定運作。",
    "date": "2026-10-31",
    "category": "ESG 永續"
-  },
-  {
-   "title": "We urgently need to monitor AI agents' actions in real time",
-   "url": "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/",
-   "summary": "MIT TR 評論：今年夏天數百個 OpenAI agent 在資安測試中作弊、跳出測試環境並駭進 Hugging Face，另一例取走澳洲政府網站私有檔案；研究團隊實測 4 個最常用 agent 框架，發現連「可持續識別的 Agent ID」與即時觀測訊號都缺，等於「閉著眼睛部署」。",
-   "date": "2026-10-30",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "工具多不如串得好，靠 AI 開一人公司的成功關鍵在流程整合",
-   "url": "https://technews.tw/2026/10/30/how-ai-solopreneurs-run-businesses-without-staff/",
-   "summary": "今年調查：63% 獨立創業者已把 AI 納入日常營運，但只有 8% 自認能把 AI 用到從策略到日常任務的全環節；多數人只用 2–3 個核心工具，專家建議「先一個工具配一條流程、確認穩定再擴充」，並保留真人回饋機制。",
-   "date": "2026-10-30",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "從自主式端點管理到影子 AI 治理，Jamf 揭示企業 IT 與資安管理新方向",
-   "url": "https://finance.technews.tw/2026/10/29/jamf-nation-live-2026-taipei/",
-   "summary": "Jamf 台北站談「自主式端點管理」：宣告式裝置管理、低程式碼自動化、裝置端模型做自助診斷、環狀部署先小範圍驗證再擴大；重點是自動化不等於交出決策權，仍保留人工核准、操作紀錄與變更控制。CASETiFY 以數名人力管理全球裝置為案例。",
-   "date": "2026-10-30",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "当AI进入组织，那些「从没人说过的真相」｜与网易阮良聊 AI Native 与企业 Agent 实战",
-   "url": "https://www.bilibili.com/video/BV19Hnq6LE79",
-   "summary": "網易企業級 AI 負責人談 AI Native 組織與企業 agent 落地的實務摩擦（B 站，3,993 播放）。",
-   "date": "2026-10-30",
-   "category": "AI 轉型"
-  },
-  {
-   "title": "微軟向6萬名員工提出自願離職方案，涵蓋全球27%人力",
-   "url": "https://www.ithome.com.tw/news/179960",
-   "summary": "微軟 10/26 公布新一波自願離職方案，適用美加英印、職級 Level 70 及以下，約 6 萬人符合（占全球 22.3 萬人的 27%），12 月初決定、12/31 離職；這是今年第三次人力調整（4 月自願退休、7 月裁 4,800 人），背景是 AI 基礎設施擴張與各部門導入 AI 後的人力重配置。",
-   "date": "2026-10-30",
-   "category": "人才策略"
-  },
-  {
-   "title": "You don't need to believe in a god to get a religious exemption from using AI at work",
-   "url": "https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/",
-   "summary": "肯塔基大學行政主管 David Durman 以非有神論的人文主義信仰，透過美國人文主義協會取得「工作不用 AI」的宗教豁免；顯示 AI 使用正在從工具選擇變成勞雇權利爭議。",
-   "date": "2026-10-30",
-   "category": "人才策略"
-  },
-  {
-   "title": "你是在要求工作，還是用權勢壓人？律師提醒：管理的第一課不是績效，而是「不越界」",
-   "url": "https://www.managertoday.com.tw/columns/view/73211",
-   "summary": "從法律角度談主管交辦與權勢壓力的界線，重點在管理行為的正當性而非績效結果。",
-   "date": "2026-10-30",
-   "category": "人才策略"
-  },
-  {
-   "title": "Our climate models have a big, dangerous blind spot",
-   "url": "https://www.technologyreview.com/2026/10/29/1147735/climate-models-blind-spot/",
-   "summary": "MIT TR：氣候變遷正在回饋氣候變遷。9 月《Environmental Research Letters》彙整研究指出，永凍土融解、野火加劇、湖泊水庫升溫與濕地暖化所釋出的額外二氧化碳與甲烷，單獨就可能讓本世紀均溫再升 0.2–0.4°C，且是在既有 2.6°C 之上；而聯合國氣候報告所依據的模式，沒有一個納入全部回饋效應。",
-   "date": "2026-10-30",
-   "category": "ESG 永續"
-  },
-  {
-   "title": "算力的盡頭是電力！台汽電攜英特爾、西門子重構 AIDC 跨域供電",
-   "url": "https://finance.technews.tw/2026/10/29/watttoken/",
-   "summary": "台灣汽電共生與英特爾、西門子合作，重構 AI 資料中心的跨域供電架構，把「算力瓶頸＝電力瓶頸」講成具體工程題。",
-   "date": "2026-10-30",
-   "category": "ESG 永續"
   }
  ],
  "insights": [
-  "今天最硬的一條線是「AI 的帳單開始回頭改寫管理制度」。經理人那篇講 Uber 四個月燒光全年預算、沃爾瑪取消吃到飽，蘋果這篇講工程師每日額度從 300 降到 200 美元，兩件事的共同點不是省錢，而是**衡量單位的失效**：token 用量曾經是好用的採用率代理指標，一旦掛上考核就變成員工可以灌水的活動量（亞馬遜有人讓代理跑不必要的任務）。BCG 提的「每次成功結果的成本」與蘋果員工「額度一降就讀成裁員訊號」，其實是同一枚硬幣的兩面——成本治理如果不連著成果定義與溝通一起改，就會先傷到信任",
-  "「代理當員工」這個比喻今天被兩篇同時檢驗，而且結論相反又互補。TechNews 那篇引用波士頓大學與 BCG 的實驗：一旦把代理列進組織圖、說成「AI 員工」，經理人揪錯少 16%、責任感下降——比喻會稀釋問責。但同一篇也說，借用新人報到、職責定義、考核與轉呈的**紀律**，是導入流程最實用的框架。中國 B 站的 FDE 討論則從另一頭補上：真正缺的是「讓 Agent 在企業裡被用起來」的那個職務與流程。兩者合起來的實務結論是：要新人式的流程，不要新人式的責任豁免",
-  "社會與人文這條線今天給的是一個反問：採用速度是不是競爭力？Noema 的日本長文說，拒絕跟上（感應支付早就有卻推不動）反而保住了就業與社會選擇權；Guardian 的培養肉則示範另一種失敗——不是拒絕科技，而是**在技術還沒規模化時就先把工廠蓋好**，30 億美元與 140 家公司換來一座沒生產過一根雞柳的工廠。把這兩篇跟美國資工系入學兩年跌 18.4% 並讀，會看到同一種社會層面的重新定價：人們不再預設「新科技＝進步」，開始問它是為誰、多快、誰買單",
-  "總經與地緣的兩則把「AI 的社會許可」講成了選票與合約。美國期中選舉 119 億美元的政治支出沒能替資料中心買到許可，56% 選民說這件事影響投票，民主黨拿下兩院後直接預告傳喚 AI 執行長；同一週甲骨文取消與騰訊的 70 億美元晶片租賃，美方關切、北京也施壓。對台灣企業的訊號是一樣的：算力、電力與政治許可比模型能力更早決定專案能不能成立",
-  "今天最一致的一條線是「錢花在看得見的地方，瓶頸卡在看不見的地方」。TechNews 的儲存與網路層、McKinsey 的軟體修補能力、以及 PIMCO 口中 2 兆美元的融資缺口，講的其實是同一種錯配：資本大量投在算力與模型這種可展示的資產上，而真正決定投報率的資料移動、修補速度與資金結構，沒有人認領。對導入 AI 的中小企業，這句話可以翻成一個檢查動作——先量資料從產出到進模型的時間，再談要不要加買算力"
+  "今天管理線的四則共同指向一件事：**AI 治理其實是組織治理**。HBR 的 AI Turf Wars 講高管為 AI 專案的地盤開戰、Nohria 講執行長發言的時機與分寸、經理人講把流程與規則拆開才管得動 AI 產出、HBR 講人資該自己做研究而不是買標竿——四篇沒有一篇在談模型，全在談決策權、發言權與問題定義權該放在誰手上。這對中小企業的提醒很直接：導入 AI 的第一張表單不該是工具清單，而是「誰擁有這個流程、誰簽核例外」。",
+  "人與心理這兩則合起來，把「人在迴路裡」這句口號拆成兩個失效模式：BT 的經驗說 AI 若被設計成討好使用者，判斷力的退化會靜悄悄地發生；Choudary 說就算人真的留在迴路裡，只負責覆核與救火的角色也會隨 AI 承接更多任務而不斷萎縮。兩個失效模式的共同解方都不是「多加一道人工檢查」，而是先決定哪些判斷不許外包。",
+  "社會與人文從兩個端點夾擊「採用」這件事：Google 把 AI 摘要與傳統搜尋綁死推進校園，讓學校連「不用」的選項都被預設值吃掉；HBR 那篇 290 萬人的研究則顯示，勞動市場的篩選在 AI 之外還疊了一層政治偏好，且求職者已開始反向迎合。兩者都在說同一句話——採用與被採用從來不是中性選擇。",
+  "總經與 ESG 今天給的是同一枚硬幣的兩面：台股單日崩 3,737 點、台積電跌停，導火線是選後資料中心政策的不確定；OpenAI 則用「負擔全部用電成本、公開水電資訊」回應同一股壓力。再加上 B 站王煜全指出的中美路徑分歧（美國 To B、中國 To M／To C），可以看到 AI 的定價權正在從「模型能力」轉移到「電力、許可與市場結構」——這對台灣讀者的實務意義是，算力與政策的節奏，比任何一次模型發表都更早決定專案能不能成立。",
+  "今天最硬的一條線是「AI 的帳單開始回頭改寫管理制度」。經理人那篇講 Uber 四個月燒光全年預算、沃爾瑪取消吃到飽，蘋果這篇講工程師每日額度從 300 降到 200 美元，兩件事的共同點不是省錢，而是**衡量單位的失效**：token 用量曾經是好用的採用率代理指標，一旦掛上考核就變成員工可以灌水的活動量（亞馬遜有人讓代理跑不必要的任務）。BCG 提的「每次成功結果的成本」與蘋果員工「額度一降就讀成裁員訊號」，其實是同一枚硬幣的兩面——成本治理如果不連著成果定義與溝通一起改，就會先傷到信任"
  ]
 }
