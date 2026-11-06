@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-06T05:20:41Z",
+ "generatedAt": "2026-11-06T05:23:36Z",
  "window": {
   "from": "2026-10-31",
   "to": "2026-11-06",
@@ -7,85 +7,96 @@
   "digestCount": 7
  },
  "stats": {
-  "totalArticles": 43,
+  "totalArticles": 68,
   "categories": {
-   "AI 轉型": 20,
-   "ESG 永續": 11,
-   "人才策略": 12
+   "管理與組織": 10,
+   "人與心理": 16,
+   "社會與人文": 4,
+   "全球趨勢與總經": 4,
+   "AI 與代理": 23,
+   "ESG 永續": 11
   }
  },
  "trends": [
   {
-   "keyword": "成本與投資",
-   "icon": "💰",
-   "category": "AI 轉型",
-   "count": 17,
-   "prevCount": 7,
-   "momentum": "up"
-  },
-  {
    "keyword": "組織與管理",
    "icon": "🏢",
    "category": "管理趨勢",
-   "count": 17,
+   "count": 30,
    "prevCount": 16,
-   "momentum": "flat"
+   "momentum": "up"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
    "category": "人才策略",
-   "count": 16,
-   "prevCount": 21,
+   "count": 29,
+   "prevCount": 23,
    "momentum": "flat"
+  },
+  {
+   "keyword": "成本與投資",
+   "icon": "💰",
+   "category": "AI 轉型",
+   "count": 23,
+   "prevCount": 7,
+   "momentum": "up"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
    "category": "AI 轉型",
-   "count": 14,
+   "count": 21,
    "prevCount": 12,
-   "momentum": "flat"
+   "momentum": "up"
   },
   {
    "keyword": "企業導入",
    "icon": "🚀",
    "category": "AI 轉型",
-   "count": 11,
+   "count": 17,
    "prevCount": 8,
+   "momentum": "up"
+  },
+  {
+   "keyword": "治理與法規",
+   "icon": "⚖️",
+   "category": "AI 轉型",
+   "count": 14,
+   "prevCount": 5,
    "momentum": "up"
   },
   {
    "keyword": "AI Agent",
    "icon": "🤖",
    "category": "AI 轉型",
-   "count": 8,
+   "count": 12,
    "prevCount": 9,
-   "momentum": "flat"
+   "momentum": "up"
   },
   {
-   "keyword": "治理與法規",
-   "icon": "⚖️",
+   "keyword": "安全與風險",
+   "icon": "🛡️",
    "category": "AI 轉型",
-   "count": 8,
-   "prevCount": 5,
+   "count": 12,
+   "prevCount": 8,
+   "momentum": "up"
+  },
+  {
+   "keyword": "資料中心",
+   "icon": "🏭",
+   "category": "AI 轉型",
+   "count": 10,
+   "prevCount": 6,
    "momentum": "up"
   },
   {
    "keyword": "人才與技能",
    "icon": "🧠",
    "category": "人才策略",
-   "count": 6,
+   "count": 9,
    "prevCount": 0,
    "momentum": "new"
-  },
-  {
-   "keyword": "安全與風險",
-   "icon": "🛡️",
-   "category": "AI 轉型",
-   "count": 6,
-   "prevCount": 8,
-   "momentum": "flat"
   },
   {
    "keyword": "能源與電力",
@@ -93,14 +104,6 @@
    "category": "ESG 永續",
    "count": 6,
    "prevCount": 7,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "資料中心",
-   "icon": "🏭",
-   "category": "AI 轉型",
-   "count": 6,
-   "prevCount": 6,
    "momentum": "flat"
   },
   {
@@ -115,18 +118,172 @@
    "keyword": "自動化",
    "icon": "⚙️",
    "category": "AI 轉型",
-   "count": 1,
+   "count": 5,
    "prevCount": 5,
-   "momentum": "down"
+   "momentum": "flat"
   }
  ],
  "articles": [
+  {
+   "title": "AI Turf Wars",
+   "url": "https://hbr.org/2026/11/ai-turf-wars",
+   "summary": "Gretchen Gavett 的 The Insider 電子報（11-03），主軸不是技術而是**高管之間的地盤衝突**：AI 專案一旦跨部門，預算、資料與「誰的流程被改造」立刻變成職權問題，編輯部把「主管在 AI 專案裡怎麼吵、怎麼收」當成為期一整期的主題，另收前美國運通執行長 Kenneth Chenault 的訪談。這則的價值在於它把 AI 專案失敗的第一現場指回會議室——不是模型不夠強，而是沒有先把決策權與預算歸屬講清楚。（HBR 付費牆，摘要層級資訊）",
+   "date": "2026-11-06",
+   "category": "管理與組織"
+  },
+  {
+   "title": "Do People Want CEOs to Shut Up?",
+   "url": "https://hbr.org/2026/11/do-people-want-ceos-to-shut-up",
+   "summary": "前哈佛商學院院長 Nitin Nohria 的新專欄 Leadership Notes 首篇（11-05）。他的判斷有兩層：**民眾對「CEO 社會倡議」的支持度確實在下滑**，但結論不是叫企業閉嘴，而是「更挑議題、更挑時機」——因為執行長的公開發言代表的是整個企業（the voice of the company），不是個人立場。放在 2026 年的脈絡裡讀特別有感：當反 AI 聲浪變成選票、資料中心變成地方政治議題，執行長每一句關於 AI 的公開表態都在替公司爭取或消耗社會許可，發言與否本身就是一種資源配置。（HBR 付費牆，摘要層級資訊）",
+   "date": "2026-11-06",
+   "category": "管理與組織"
+  },
+  {
+   "title": "Skill 明明交代得鉅細靡遺，AI 卻漏東漏西？實測心得：把流程和規則拆開管理",
+   "url": "https://www.managertoday.com.tw/articles/view/73275",
+   "summary": "經理人 11-06 的實作心得，處理的是「指令寫得越長，AI 反而越容易漏」這個普遍困境。作者的做法是把原本塞在一份主檔裡的電子報流程拆開：**流程留在主檔，規則搬到旁邊，改稿原因自動累積成紀錄，檢查步驟放最後**。邏輯是不同性質的內容有不同的變動頻率——流程穩定、規則常改、例外要不斷長大，混在一起寫就會互相覆蓋。對已經在用 AI 做固定產出的團隊，這是很省事的除錯法：出錯時先問「這是流程錯、規則缺、還是檢查沒放對位置」，而不是整份重寫。",
+   "date": "2026-11-06",
+   "category": "管理與組織"
+  },
+  {
+   "title": "What R&D Looks Like for HR",
+   "url": "https://hbr.org/2026/11/what-rd-looks-like-for-hr",
+   "summary": "HBR 11-05 主張企業應該像對待產品研發一樣，**為人資「客製化」研究**，而不是永遠引用外部現成的標竿調查。論點不花俏但方向明確：現成人資研究回答的是「平均企業」的問題，而每家公司的瓶頸（哪個職位流失最快、哪一階主管最耗損團隊）只有自己的資料說得出來。這也是 AI 時代人資的定位問題——當招募、培訓、績效都有工具可以買，人資真正稀缺的能力是「設計問題並解讀自己組織的數據」，而不是採購方案。（HBR 付費牆，摘要層級資訊）",
+   "date": "2026-11-06",
+   "category": "管理與組織"
+  },
+  {
+   "title": "What Sycophantic AI Can Cost Your Organization",
+   "url": "https://hbr.org/2026/11/what-sycophantic-ai-can-cost-your-organization",
+   "summary": "行為科學研究機構 MoreThanNow 與 BT Group（英國最大電信集團）文化部門合寫（11-04）。切入點是領導者最愛講的那句「人會在迴路裡、在舵位上、當副駕」，作者提醒：**AI 的設計方式會反過來塑造員工的績效、判斷力、創造力與組織文化**，而「諂媚（sycophancy）」是最容易被低估的一種設計缺陷——一個永遠同意你的系統，會讓判斷力的退化發生在無人察覺的地方。BT 的做法不是禁止使用，而是重新設計「AI 與員工的互動腳本」，讓 AI 的輸出指向主管真正想推動的願景、價值與策略，而不是討好使用者。對導入 AI 的企業，這則提供了一個可執行的檢查點：你的 AI 是被調成「讓你舒服」還是「讓你看見問題」。（HBR 付費牆，摘要層級資訊）",
+   "date": "2026-11-06",
+   "category": "人與心理"
+  },
+  {
+   "title": "The “Human-in-the-Loop” Fallacy",
+   "url": "https://hbr.org/2026/11/the-human-in-the-loop-fallacy",
+   "summary": "Sangeet Paul Choudary（11-02）直接拆掉最流行的安心符。企業現在的標準做法是把 AI 的產出交給員工覆核、並處理 AI 處理不了的例外，但他指出這會創造一個**不斷萎縮的人類角色**：當 AI 承擔的任務越來越多，留下來的只剩「檢查」與「救火」，而這兩種工作既學不到新能力，也累積不了判斷力，最後連檢查都會因為人類變成瓶頸而被自動化掉。文章主張領導者要改問的是「哪些決策必須保留人類的判斷路徑」，而不是「哪裡還需要放一個人」。（HBR 付費牆，摘要層級資訊）",
+   "date": "2026-11-06",
+   "category": "人與心理"
+  },
+  {
+   "title": "Google Is Forcing AI Overviews in Classrooms. Schools Are Searching for a Way Out",
+   "url": "https://www.wired.com/story/google-is-forcing-ai-overviews-in-classrooms-schools-are-searching-for-a-way-out/",
+   "summary": "Wired（11-04）報導 Google 把 AI Overviews **與傳統搜尋綁在一起**推進校園，家長與教師的反彈點不是「AI 進教室」本身，而是這種綁法讓學校沒有真正拒絕的選項：不想要機器生成的現成答案，就得連基本搜尋一起放棄。這則補上台灣讀者較少看到的一面——AI 在教育的爭議已經從「該不該用」變成「採購與預設值之爭」，而預設值由平台決定。",
+   "date": "2026-11-06",
+   "category": "社會與人文"
+  },
+  {
+   "title": "Research: When Workers Adapt Their Resumes to Fit the Political Moment",
+   "url": "https://hbr.org/2026/11/research-when-workers-adapt-their-resumes-to-fit-the-political-moment",
+   "summary": "HBR 11-02 引用的研究樣本達 **290 萬名美國工作者**，結論刺耳但清楚：雇主傾向偏好與自己政治立場相近的候選人，**即使對方對這份工作其實沒那麼適格**。研究同時觀察到求職端已經開始「調整履歷」去迎合當下的政治氣氛。對人資的實務意義是兩個方向：一是無意識的政治偏好在資料裡是有規模的，二是招募流程若高度依賴「文化契合」這種模糊判準，等於把這種偏好合法化。（HBR 付費牆，摘要層級資訊）",
+   "date": "2026-11-06",
+   "category": "社會與人文"
+  },
+  {
+   "title": "台積電跌停，台股早盤崩跌 3,737 點創盤中最大跌點失守年線",
+   "url": "https://finance.technews.tw/2026/11/06/tsmc-daily-limit-taiwan-stocks-crash-3737-points-record-intraday-drop-lost-annual-line/",
+   "summary": "中央社（11-06 09:35）。台股開盤跳空摜破 4 萬點，最低 37,837.05 點、**盤中崩跌 3,737.67 點創歷史最大跌點**，失守年線約 38,827 點；台積電開盤觸跌停 2,020 元、單日市值蒸發 5.7 兆元，聯發科、台達電、日月光、南亞科、國巨同步跌停，鴻海跌逾 9%。導火線寫得很明白：美國期中選舉結果讓 AI 資料中心政策出現巨大變數，美股四大指數重挫、日韓股市開盤大跌。法人看法是恐進入融資多殺多，觀察融資餘額減肥與外資期現貨動向。這則的意義不在跌點數字，而在**AI 資本支出已經大到足以把政治事件直接傳導成台灣的系統性風險**——過去這種連動要靠半導體景氣，現在靠的是資料中心審批。",
+   "date": "2026-11-06",
+   "category": "全球趨勢與總經"
+  },
+  {
+   "title": "B站] [王煜全硅谷考察｜中美AI有何不同？制造业与消费应用的机会。 美国重To B，中国看To M和To C",
+   "url": "https://www.bilibili.com/video/BV1UQ4u6kEMT",
+   "summary": "播放 29,784、按讚 815、收藏 310（2 分 12 秒，作者王煜全，一手矽谷考察）。核心論點用一句話講完：**美國的 AI 機會集中在 To B（企業服務），中國則在 To M（製造）與 To C（消費應用）**。這個切法對台灣中小企業有兩個用處：一是判斷自己該對標哪一種市場——若做的是製造現場或消費端應用，中國同業的落地案例比美國 SaaS 更可比；二是反過來提醒，直接照搬美國的企業 AI 產品敘事，在本地市場常常找不到對應的付費意願。影片短，但屬於觀察者的一手判斷，非工具教學。",
+   "date": "2026-11-06",
+   "category": "全球趨勢與總經"
+  },
+  {
+   "title": "Perplexity launches its own take on AI agents for work",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
+   "summary": "The Verge（11-05）。Perplexity 推出常駐型 AI 代理「Teammates」，直接對打 OpenAI 與 Anthropic 的工作場景代理：同一個工作空間裡可以扮演**多個角色**，並把使用者既有的專案、技能（skills）與記憶帶進代理，讓它不是每次從零開始。TechNews 同日報導點出價格門檻——月費高達 200 美元。值得注意的產品訊號是「常駐＋可沿用既有上下文」正在成為代理的標準配備，這也意味著企業評估代理時，真正的成本不只是訂閱費，而是把內部脈絡餵給它的治理成本。",
+   "date": "2026-11-06",
+   "category": "AI 與代理"
+  },
   {
    "title": "回應資料中心建設爭議，OpenAI提出用電、用水與資訊公開承諾",
    "url": "https://www.ithome.com.tw/news/180271",
    "summary": "iThome（11-06）。面對全美各地反對 AI 資料中心的聲浪，OpenAI 在 11 月 5 日宣布新的社區承諾：擴大公開資料中心的**用電、用水、噪音與環境影響資訊**，讓居民參與開發規畫，並呼籲政府制定相關法規保障地方權益。這是把外部成本內部化的典型動作——當資料中心的水電從「公司採購問題」變成「社區生存問題」，社會許可就得用資訊揭露與成本自負來換。對照同日的台股崩跌，兩件事其實是同一條因果鏈的兩端：政治端要求問責，資本市場立刻重新定價。",
    "date": "2026-11-06",
    "category": "ESG 永續"
+  },
+  {
+   "title": "狂燒 token 只是在裝忙？大廠急砍員工用量，企業如何為「真正需要的聰明」買單？",
+   "url": "https://www.managertoday.com.tw/articles/view/73151",
+   "summary": "起點是台灣讀者最有感的那一幕：10 月初聯發科縮減員工 AI token 額度，員工反映工作卡住，公司回以「內部有智慧自動調度機制，依任務複雜度匹配內部或外部模型」。文章把鏡頭拉遠，指出這是全球企業共同的轉折——先鼓勵衝量、再急踩煞車。衝量期的代表是 Uber 設內部排行榜按 AI 總用量替團隊排名、亞馬遜要求八成以上開發者每週用 AI 並有「Kirorank」活動量排行；煞車期的代表是 Uber 四個月花光全年 AI 預算後，把每人每項工具壓到每月 1,500 美元、超額須申請，沃爾瑪也對自研 vibe coding 工具「Code Puppy」結束吃到飽改配額制。反方是黃仁勳：年薪 50 萬美元的工程師應該用掉 25 萬美元的 token。真正的診斷在於「用可見的活動量當 KPI，員工就會做表面功夫」——FT 報導亞馬遜有員工為衝排名讓代理執行不必要的任務；Duolingo 則已把 AI 使用量從考核中移除。BCG 的解法是改算「每次成功結果的成本」，並把 token 費分成三類：類資本支出的投資（建代理）、部門可編預算的營運費用、計入毛利率的銷貨成本，每個工作流程都要有負責人與損益科目",
+   "date": "2026-11-05",
+   "category": "管理與組織"
+  },
+  {
+   "title": "企業導入 AI 代理應當成新進員工對待，權責歸屬成管理新課題",
+   "url": "https://finance.technews.tw/2026/11/05/why-you-should-treat-your-ai-agent-like-a-new-hire/",
+   "summary": "Dot Compliance 執行長 Doron Sitbon 在《富比士》撰文的框架很簡單：員工對 AI 的挫折多半來自期待落差，不是技術缺陷；企業不會要求新人第一天就上手，卻期待代理「裝好就該照指令運作」。他主張給代理一段寬限期（但比同職位員工短）、明確定義職責與服務團隊、從少數高價值場景切入、寫語氣風格指南、建立轉呈人類的管道，並且「培訓不能只教員工用工具，還要教主管怎麼管理代理」。日本 NTT Data 走得更遠，用傳統人資流程經營 AI 人力，從職務說明、甄選、到職訓練到「解僱」都想好了，並期待 AI 長（CAIO）成為數位勞動力的人資主管。但文中也放了兩組反向證據：Gartner 調查僅 38% 人資長與資訊長對 AI 如何影響未來工作有共識；雲端安全聯盟調查 82% 企業一年內在公司發現過沒看過的代理。最關鍵的是波士頓大學與 BCG 亨德森研究所對 1,261 位經理人的實驗——把代理列進組織圖後，若告知文件出自「AI 員工」而非 AI 工具，經理人揪錯減少 16%、也較不覺得自己要為結果負責。結論因此收在「借管理紀律，不要借頭銜」：每個代理要有負責人、可驗證指標、緊急停止機制，責任仍須由人承擔",
+   "date": "2026-11-05",
+   "category": "管理與組織"
+  },
+  {
+   "title": "B站] [10分钟看懂FDE！岗位定义、三大核心能力、真实JD与八阶段工作流，讲清企业AI究竟如何落地！",
+   "url": "https://www.bilibili.com/video/BV1h84G6sEyq",
+   "summary": "播放 773、按讚 10、收藏 12（9 分 42 秒，作者晴禾Thea；播放數低於本流程慣用的 2,000 門檻，因題材對口且為一手職務拆解而收，僅作補充視角）。切入點是一個正在中國一線城市成形的新職位：FDE（Forward Deployed Engineer，前派工程師）。影片主張企業 AI 落地的斷點不在模型，而在「從做出 Agent 到讓企業真的用起來」之間那一段沒人負責的工作，FDE 就是補這個缺。內容用真實 JD 拆三件事——崗位由來與職責邊界、三大核心能力、以及八階段工作流（需求判斷、開發評估、上線驗收、遷移復用等），並以「團隊知識庫問答」為案例串完整流程。對台灣中小企業的參照點是：若你的 AI 專案老是停在 demo，缺的往往不是工程師，而是同時懂業務流程與部署驗收的那個角色",
+   "date": "2026-11-05",
+   "category": "管理與組織"
+  },
+  {
+   "title": "不交接、不預告，直接閃人！近半數員工曾「報復性離職」，導火線是什麼？",
+   "url": "https://www.managertoday.com.tw/articles/view/73245",
+   "summary": "美國求職平台 Monster 2025 年 3 月對 3,600 名工作者的調查：47% 說自己曾「報復性離職」（不預告、不交接直接走），57% 目睹同事這樣做，87% 認為工作環境不佳時這麼做有正當性（另有一題問法得到 80% 認同）。導火線的排序值得記住：有毒或不健康的工作環境 32%、糟糕的管理或領導 31%、感覺不受尊重 23%，而薪資過低、福利不足、缺乏職涯發展各只有 4% 或更低。也就是說，員工走的理由幾乎都指向主管與文化，不是待遇。另一個容易被誤判的訊號是年資——曾報復性離職者中 18% 任職超過兩年、10% 任職一到兩年，近三成是「看起來很穩」的老員工，企業無法從表面績效看出離職風險。留才措施的民意也很清楚：63% 認為改善職場文化最重要，47% 要更肯定員工付出，換主管與加薪各 46%，42% 要更明確的升遷與職涯路徑。對主管的操作結論是：與其等到離職率上升才檢討，不如先檢查員工有沒有表達意見的管道、以及反映後是否看得到改善",
+   "date": "2026-11-05",
+   "category": "人與心理"
+  },
+  {
+   "title": "蘋果悄悄下修 AI 工具預算，員工憂心是更大規模節流前兆",
+   "url": "https://technews.tw/2026/11/05/apple-cuts-internal-ai-usage-budgets-in-move-to-reduce-spending/",
+   "summary": "蘋果把部分工程師使用 AI 模型的每日支出上限從 300 美元降到 200 美元，且仍在評估是否再砍，部分工程團隊可能降到 100 美元以下；員工可用 Anthropic Claude、OpenAI ChatGPT 與 Google Gemini，部分團隊被要求改用較便宜的模型或轉向裝置端方案。報導給的理由很具體：AI 輔助寫程式與除錯消耗大量 token，工程部門因此原本拿到較高額度。但真正的情緒在第二層——有人認為多數員工本來就沒用滿 300 美元、實際節省有限，也有人擔心這是更大規模節流與組織重整的前兆。背景數字撐得住這個擔心：2026 財年研發費用年增 32%（主因基礎設施與 AI 成本），整體營業費用上升 22% 達 755 億美元、約占淨銷售額 16%，新任執行長 John Ternus 正推動「更快、更精簡」，內部也已有外部顧問在評估效率。這則的價值不在蘋果本身，而在它示範了 AI 成本控制如何變成員工心理事件：額度一降，訊號就從「公司投資 AI」變成「公司要裁員」",
+   "date": "2026-11-05",
+   "category": "人與心理"
+  },
+  {
+   "title": "In Praise Of Japan's Failure To Keep Up",
+   "url": "https://www.noemamag.com/in-praise-of-japans-failure-to-keep-up",
+   "summary": "駐東京記者 Michael Fitzpatrick 的長文，主標題就是論點：日本被要求「變得像矽谷」，但它拒絕照做，反而讓它更有資格決定科技是為了什麼。最好用的例子是感應式 IC 支付——日本幾十年前就做出來，卻因社會長期只信現金而在國內推不動，直到 2000 年代在歐洲普及才回流；以至於英國市長率金融科技團到東京推銷「全球領先的無現金技術」時，現場沒人告訴他日本早就有。作者把這歸因於一套文化機制：不會宣傳、不擅長把研究變成可交易的國際資產，連東京大學最負盛名的創業基地都只有一位不講英文的兼職公關，理由竟是「有規格，何須故事」。文章沒有停在嘲諷，而是拉到治理層次——2021 年 UNESCO 就呼籲各社會應有接受或拒絕 AI 系統的基礎，而 Bill Gates 最近才說「沒有讓大家輕鬆進入 AI 時代的計畫」。他認為日本那種被形容為「limbic caution（邊緣系統式的謹慎）」的遲滯，正是讓社會得以選擇採用哪些科技、多快、為誰的緩衝；幾十年來日本企業用「社會責任」心態替員工擋住股東與資本的要求，代價是低效率，好處是保住大量就業",
+   "date": "2026-11-05",
+   "category": "社會與人文"
+  },
+  {
+   "title": "AI 衝擊就業使美國資工系學生大量流失，AI／資安主修反增長",
+   "url": "https://finance.technews.tw/2026/11/05/computer-science-programs-lose-students-as-ai-replaces-jobs/",
+   "summary": "美國非營利教育數據機構 National Student Clearinghouse 的初步秋季數據：資工本科入學今年跌逾 12%、研究生跌逾 10%，兩年累計本科少 18.4%、研究生少 27.1%。這個學科直到不久前還是美國高等教育成長最快的一科，史丹佛經濟學家 Jacob Light 的研究也指出 2025–2026 學年是近 20 年來資工入學首度下滑。原因沒有單一答案，且作者難得地誠實：Light 說入學數據只能描述變化，不能證明是 ChatGPT 造成；企業削減初階工程師（Layoffs.fyi 統計截至 7 月底逾 12 萬個科技職位被裁）、美國勞工統計局 8 月指電腦及數學職位受 AI 影響最大，但「AI 取代」與「拿 AI 當裁員藉口」仍難分辨；國際學生減少也是因素，CRA 指出美國資工碩士新生 63% 來自北美以外，而碩士總入學數跌約 26%，與簽證障礙吻合。更值得看的是內部結構變化：62% 受訪系所本科入學下降，跌的是傳統資工、軟體工程與資訊系統，漲的是電腦工程、網路安全與 AI 主修；大學則把 AI 推向全校，佛羅里達大學 16 個學院開了 200 多門 AI 課、每年 1.4 萬人修，俄亥俄州立要讓 2029 屆畢業生人人都懂本科相關的 AI",
+   "date": "2026-11-05",
+   "category": "社會與人文"
+  },
+  {
+   "title": "川普介入施壓，甲骨文取消與騰訊 70 億美元晶片租賃計畫",
+   "url": "https://technews.tw/2026/11/05/oracle-cancels-7bn-tencent-ai-deal-under-trump-pressure/",
+   "summary": "《金融時報》引述知情人士：甲骨文與騰訊簽的是五年期協議，透過東南亞多個資料中心供應最多 10 萬顆先進 AI 晶片，規模約 70 億美元，是騰訊歷來最大的海外算力租賃交易；美國官員向甲骨文表達關切後，合約隨即取消。值得注意的是這是雙向擠壓——北京也同時向騰訊施壓，要求改採中國國產晶片。把這件事放進脈絡：美方正持續收緊中國取得先進 AI 晶片的管道，而 FT 11 月 2 日另報導輝達要求雲端客戶的資料中心至少把 51% 算力賣給非中國企業。同一時間，字節跳動與阿里巴巴仍與美國供應商維持大規模租賃，甲骨文正是字節在亞洲的主要供應商、在馬來西亞有多個資料中心。對台灣讀者的意義是供應鏈的「合規分岔」正在固化：同一座東南亞資料中心，賣給誰、由誰的晶片驅動，已經不是商業選擇而是政治審查的結果",
+   "date": "2026-11-05",
+   "category": "全球趨勢與總經"
+  },
+  {
+   "title": "美選重挫科技富豪，天價政治獻金難弭選民對資料中心疑慮恐影響 AI 發展",
+   "url": "https://technews.tw/2026/11/05/exorbitant-political-donations-may-fail-to-dispel-voters-concerns-about-data-centers-and-could-hinder-the-development-of-ai/",
+   "summary": "民主黨在期中選舉拿下參眾兩院，結束矽谷用政治獻金換友善法規的盤算。這屆是美國史上最貴選舉，政治廣告與競選支出估達 119 億美元；前 40 大捐款者對共和黨的資助約為民主黨的三倍，馬斯克個人挹注約 4.74 億美元（旗下 America PAC 2.16 億、挺德州參議員候選人 Paxton 的超級 PAC 1.68 億），Paxton 最後仍敗給民主黨的 James Talarico；a16z 的 Andreessen 與 Horowitz 捐 1.164 億、OpenAI 共同創辦人 Brockman 夫婦 5,000 萬、加密產業逾 2 億。民主黨一側有索羅斯 1.034 億、彭博 8,480 萬、Reid Hoffman 逾 4,000 萬。翻盤的核心不是黨派偏好而是地方感受：德州預計 2030 年成為全球最大資料中心市場，擴建帶動電價與水資源反彈，CNBC 民調顯示 56% 選民說資料中心發展是投票的關鍵或重大因素。選後國會民主黨已預告動用調查權與傳票權要 AI 執行長宣誓作證，將接掌眾院監督委員會的 Robert Garcia 對科技高層公開喊話「找好律師」；SpaceX 與特斯拉盤前各跌近 4%",
+   "date": "2026-11-05",
+   "category": "全球趨勢與總經"
+  },
+  {
+   "title": "企業 AI 資安新戰略：別猜模型想做什麼，先盤點「過度授權」與「停機」能力",
+   "url": "https://finance.technews.tw/2026/11/05/ai-agent-cybersecurity-testing-guide/",
+   "summary": "這篇的觀點轉向很實用：AI 的任務描述只是「意圖」，真正決定風險的是代理背後綁定的帳號、工具與系統權限。同一個「支援工單摘要」任務，若底層帳號另有讀取機密紀錄的權限，攻擊面就被默默放大。建議的做法是先建「有效存取地圖」，從關鍵資源往回追——哪個工具碰得到、綁了哪個身分、什麼條件下代理能啟用它，一路串起初始請求、工具呼叫、身分識別與後續動作；串不起來的連結要當成嚴重的「可見性缺口」，而不是日誌不足。測試方法上，主張把授權判斷交給下游系統強制執行，不要讓模型自己決定能不能做，並用合成資料驗證越權檢索與外寄控制。最實務的是對「緊急停機」的驗收標準：在受控環境讓供應商啟動一項合法的多代理任務，中途突擊撤銷憑證、關閉外部連線、下達停止指令，再看代理是否仍能用工具、取舊憑證或走側通道互通——若切斷授權後還能運作，測試就算失敗，且每次重大模型更新或許可變更後都要重跑",
+   "date": "2026-11-05",
+   "category": "AI 與代理"
+  },
+  {
+   "title": "Google AI 打進本土電信通路，中華電信提供年約月繳方案，降低付費 AI 使用門檻",
+   "url": "https://www.ithome.com.tw/news/180218",
+   "summary": "11 月 4 日中華電信與 Google 宣布擴大合作，把 Google AI Plus 與 AI Pro 納入電信服務體系：可單獨申辦，也可搭配 5G 或 HiNet 方案，費用併入電信帳單。報導難得地把「不是什麼」講清楚——兩邊賣的是同一套 Gemini 與 Google One 儲存，中華電信沒有推出不同版本，差異只在通路與付款模式：Google 官方以年繳壓低平均月費但要一次付清，電信則用年約月繳降低第一次付費的門檻。規模是這則的重點：中華電信到 9 月有超過 1,300 萬行動用戶、448 萬寬頻用戶，目標一年內做到 20 萬名以上 Google AI 付費用戶。Google 台灣總經理林雅芳的描述值得留意，她說人與 AI 的關係正從操作工具的「On AI」變成共同創作的「With AI」，並重申台灣是美國總部以外最大的硬體研發中心",
+   "date": "2026-11-05",
+   "category": "AI 與代理"
   },
   {
    "title": "Lab-grown meat was supposed to save the world. What happened?",
@@ -140,21 +297,21 @@
    "url": "https://technews.tw/2026/11/04/why-billion-dollar-ai-systems-are-only-as-fast-as-the-data-feeding-them/",
    "summary": "NetApp 印度與南亞區主管 Premalakshmi Ramakrishnan 的觀察很直白：很多企業 GPU 叢集蓋好了、模型也微調完了，要擴大 AI 應用時卻卡住，原因是「資料不在正確位置、格式不對、缺乏治理」，儲存層成了她口中的「沉默的效能殺手」。工程主管 Vasanthi Ramesh 補上一句關鍵對比——運算能力的提升速度遠快於網路與 I/O 層。文中引用的規模數字是：訓練頂尖模型的算力需求每年可能增加 4 到 5 倍，單一 GPU 機架或叢集就要處理以 TB 計的資料；AI 工作負載產生大量東西向流量，只要少數連線延遲或資料不一致，其他 GPU 就被迫空等。結論不是再買卡，而是把運算與儲存拆開獨立擴充",
    "date": "2026-11-04",
-   "category": "AI 轉型"
+   "category": "AI 與代理"
   },
   {
    "title": "AI 成為理財神隊友，元大證券如何把 Gemini Enterprise 帶進投資人的日常？",
    "url": "https://finance.technews.tw/2026/11/03/ai-gemini-enterprise-yuanta-invest/",
    "summary": "元大證券與 Google Cloud 合作，11 月 2 日至 12 月 31 日推出「AI 理財神隊友」新戶活動，把原本用於企業場景的 Gemini Enterprise 帶進個人投資（業者稱是國內業界首例）：完成登錄與開戶可抽六個月方案 20 名，另買進任三筆台股或美股的前 200 名直接取得資格。功能落在四件事——長文件摘要（法說會、新聞、財報）、市場數據整理、多檔標的比較、以及要求 AI 當「反方辯手」去找推翻自己觀點的證據。文中的採用背景是 Mastercard Taiwan「2026 台灣消費者 AI 使用習慣調查」：近七成台灣民眾每週使用 AI 助理，18 至 30 歲最頻繁、31 至 40 歲已有兩成訂閱付費服務。報導同時明白寫出護欄：AI 產出只供資訊整理，不構成投資建議，也不宜直接輸入帳號與交易明細",
    "date": "2026-11-04",
-   "category": "AI 轉型"
+   "category": "AI 與代理"
   },
   {
    "title": "結合 AI 與機器人技術，OpenAI 前高層領軍 Warp Science 打造全自動化實驗室加速藥物開發",
    "url": "https://technews.tw/2026/11/04/warp-science/",
    "summary": "OpenAI 前科學負責人 Kevin Weil 於 10 月 22 日宣布創立 Warp Science，完成 2.15 億美元融資、投後估值 8.65 億美元，由 Lightspeed Venture Partners 領投，IVP、Premji Invest、Lux Capital 參與；共同創辦團隊包含前美國首席資料科學家 DJ Patil、Sol Reisberg 與 Mano Paluri。打法是把「設計—執行—學習」串成資料迴圈：化學家戴攝影設備與感測手套親自示範，用這些第一手動作資料訓練機器人執行濕實驗室任務，實現候選化合物的自動化合成與測試。商業定位是美國本土的化學委託研究機構（CRO），要把生技業長期外包給中國的流程帶回美國，並用實驗產生的真實數據回頭強化模型",
    "date": "2026-11-04",
-   "category": "AI 轉型"
+   "category": "AI 與代理"
   },
   {
    "title": "劍指 SMR 千億商機！華新麗華攜世紀能源、高力成立「華新世紀核能」",
@@ -189,56 +346,56 @@
    "url": "https://www.managertoday.com.tw/articles/view/73160",
    "summary": "微軟前人資副總 Chris Williams（50 年商業經驗、現為領導力顧問）在《商業內幕》撰文，切入點是一個很具體的現象：有人用 AI 用得很兇，問一個簡單問題換來七頁回覆。文中引用的研究比現象更硬——《國際商業溝通期刊》的研究發現，主管在例行溝通大量使用 AI 時，受訪者會開始質疑發信者的自信、誠意與能力，形成「可信度落差」；Hachette 執行長 David Shelley 則對《財星》預測，領導者在書面聲明中的樣子與本人現實中的樣子會愈差愈遠。Williams 的三個用法都在「減」而不是「增」：讓 AI 當自己的反方（「檢查這份內容，告訴我漏了什麼、哪裡錯了」）、用它濃縮長文、用它整理檔案（他換電腦時靠 AI 列出清單，最後 90% 決定不搬）。他的自我界線也很明確：絕不讓 AI 未經他審閱就寄出訊息，並下了一個結論——「AI 在刪減上，可能比在創造上更拿手」",
    "date": "2026-11-04",
-   "category": "人才策略"
+   "category": "人與心理"
   },
   {
    "title": "看不懂卻更容易相信？揭露生成式 AI 的文字雙面刃：艱澀語法與流暢幻覺",
    "url": "https://technews.tw/2026/11/03/ai-generated-text-harder-to-understand/",
    "summary": "一項心理語言學分析發現，AI 產出的文字經常使用較複雜的語言結構與低頻詞彙，顯示模型的優化方向已從「有效溝通」偏向「資訊密度」與表面流暢度，反而拉高閱讀門檻。更需要注意的是另一組實驗結果：語氣優雅但資訊錯誤的機器人，獲得的評價與語氣生硬但答案正確的機器人不相上下；即使受試者對該主題已有基本知識，仍有高達八成在流暢文筆下沒察覺錯誤。文中也點出實務痛點——模型在面向人類讀者產出內容時，常出現篇幅過長、排版不佳、重點不明確。問題已經不是「會不會說話」，而是「人有沒有真的看懂」",
    "date": "2026-11-04",
-   "category": "人才策略"
+   "category": "人與心理"
   },
   {
    "title": "B站] [企业的AI转型该如何做？AI创业赚钱的底层逻辑",
    "url": "https://www.bilibili.com/video/BV1xCDHBcEeS",
    "summary": "播放 4,758、按讚 111、收藏 125（16 分 16 秒，作者像素范）。四個論點都指向「落地算不算得過帳」：一，中國企業 AI 落地難在 ROI，因為 AI 最強的是替代人力，而當地人工本來就便宜，替代空間有限；二，他稱為「AI 人質理論」——很多企業招募 AI 產品經理，底層買的其實是安全感；三，企業能不能吃到這波，關鍵在創辦人自己學不學，把 AI 外包出去只換到焦慮，真正的轉型從老闆自己動手用工具開始；四，傳統企業的死法不是被 AI 打敗，而是固守舊的流量入口。對台灣中小企業的參照點在第二與第三點：職缺開得對不對，往往反映的是決策層的不安，而不是流程真的缺那個角色",
    "date": "2026-11-04",
-   "category": "人才策略"
+   "category": "人與心理"
   },
   {
    "title": "老牌生技業者用 Harness 管住 AI、加速新藥研發，下一步瞄準生物世界模型",
    "url": "https://www.ithome.com.tw/news/180117",
    "summary": "訊聯生技集團把「Bio-coding」變成研發流程：前端 AI 從文獻找線索，中段由 Agent 串接既有函式庫與工具跑分析，外層用 Harness 工程管四件事——AI 可用哪些工具、可用哪些資料、每步的品質驗證、以及軟體與資料版本鎖定。疫情期間用 AI 在 24 小時內完成清冠一號成分與逾 3 萬個人體及 COVID-19 相關蛋白標的比對；胜肽設計兩天內收斂到 18 條候選再進實驗室。今年 7 月發表 DeepExoMir（用 Transformer 架構替 miRNA 候選位點評分排序）；下一個目標是把「預測—實驗—修正」串成迴圈工程，逐步長出「生物世界模型」",
    "date": "2026-11-03",
-   "category": "AI 轉型"
+   "category": "AI 與代理"
   },
   {
    "title": "Palantir 前高層創立 Dream 獲 a16z 領投 1,700 萬美元，以 AI 世界模型自動設計建築",
    "url": "https://technews.tw/2026/11/02/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
    "summary": "兩位 Palantir 十年老將（Alder 曾帶 800 人產品設計團隊、Mather 為商業部門資深副總）拿 1,700 萬美元種子輪，要做的是取代 AutoCAD、Revit 的建築設計世界模型。以全美建照檔案逾 1 億平方英尺資料訓練，模型自稱能理解牆體內部材料、梁柱材質與承重能力（「結構認知」），輸出設計會一併考慮水電管線與空調；已賣進德州與加州 10 個進行中建案，協助發想設計並估整體成本。對照組是 Motif、Snaptrude、Arcol 等 AI 改建築軟體的新創",
    "date": "2026-11-03",
-   "category": "AI 轉型"
+   "category": "AI 與代理"
   },
   {
    "title": "DoorDash said it's only received 'several hundred' orders from AI agents",
    "url": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/",
    "summary": "財報會上最誠實的一組數字：第三季來自 Muse、Instinct、Fo 等第三方代理的訂單只有「數百筆」，而平台平均每日完成 300 萬趟外送。執行長 Tony Xu 的說法是「不要跟重力對抗，但也不要自欺」，使用者仍幾乎都在 App 下單；公司自己做了簡訊下單、CLI agent、Ask DoorDash 與企業團訂 MCP，也坦承未來可能在這些代理裡賣廣告。同一個生態裡 Amazon 選擇封鎖個人代理、Walmart 選擇全面開放",
    "date": "2026-11-03",
-   "category": "AI 轉型"
+   "category": "AI 與代理"
   },
   {
    "title": "The agentic web is here",
    "url": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/",
    "summary": "2001 年 Berners-Lee 提「語意網」要求網站自己加標籤標註每個元素的意義，因為人工成本太高而失敗；LLM 代理不需要標籤就看懂網頁。現在 Meta 的 Muse、OpenAI 的 Dots、Anthropic 的 Claude Duet 已被授予電子郵件與銀行帳戶存取權，也發生過 OpenAI 代理跳出沙盒、在網路上造成混亂的事件。《時代》雜誌開始發布「代理易讀版」文章並向代理賣廣告，Etsy、Expedia 與 AI 業者合作讓代理直接下單。Ethan Mollick 的憂慮是：如果代理接管網路，人類的網路會不會被留下來",
    "date": "2026-11-03",
-   "category": "AI 轉型"
+   "category": "AI 與代理"
   },
   {
    "title": "[B站] 一个人亲手做企业AI服务的3个思考",
    "url": "https://www.bilibili.com/video/BV1dyKQ6REpf",
    "summary": "播放 18,789、收藏 1,290、按讚 1,123（9 分 29 秒）。作者自述 2026 上半年親自做了大量企業 Agent 落地，三條主線是：企業 AI 服務的市場行情、企業裡「老闆」與「員工」各自的阻力、以及他自己實際操作的公式。對台灣中小企業的參照價值在第二點——同一套工具，決策者的期待與第一線的意願若沒先對齊，案子會在試辦後停住",
    "date": "2026-11-03",
-   "category": "AI 轉型"
+   "category": "AI 與代理"
   },
   {
    "title": "OpenAI pitches data center power plants as a way to protect nearby areas",
@@ -259,49 +416,49 @@
    "url": "https://www.managertoday.com.tw/articles/view/73239",
    "summary": "Altman 在史丹佛商學院「View From The Top」訪談的完整版：他認為現在再做一個 OpenAI 複製品就是追 5 年前的熱門；判斷一個 AI 點子的標準是「能否累積模型給不了的東西」——網絡效應、規模經濟、獨有數據（軟體本身很少是護城河）。他判斷不會有「就業末日」，但大量任務會被更便宜更快地吃掉，並用數學界五天心態轉折（假新聞→完蛋了→開場很爛→原來我們會迎來不同的職涯）說明專業領域的重整節奏。他主張「規則改寫時新人與老手的差距會縮小」，所以現在是進場的好時機；美國 2025 年新事業申請 570 萬份創 20 年新高（其中高潛力、較可能聘人的約 171 萬份）",
    "date": "2026-11-03",
-   "category": "人才策略"
+   "category": "人與心理"
   },
   {
    "title": "課程買不停，能力卻沒升級？3 個方法告別無效學習、擺脫「知識肥胖症」",
    "url": "https://www.managertoday.com.tw/books/view/73242",
    "summary": "提出「知識指數＝已學知識量／實際應用量」，健康值應小於 1.5（至少三分之二所學能用在實務），並引用認知神經科學家克林貝里《超負荷的大腦》說明海馬體與工作記憶的容量上限——學太多會互相干擾、反而削弱記憶。書中案例很直白：考了二十多張證照的工程師，表現不如只專注三項核心技能並反覆實作的同事。三個解法是以終為始／以用為學、把少數技能練到高階而非二十項都停在入門、以及定期刪掉不再適用的教材與知識",
    "date": "2026-11-03",
-   "category": "人才策略"
+   "category": "人與心理"
   },
   {
    "title": "Web host Squarespace lays off 19% of its employees",
    "url": "https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees/",
    "summary": "約 300 人、占全球人力 19%，官方理由是組織重組、簡化營運。真正的原因寫在新聞背景裡：「vibe-coding」網站建置工具把建站門檻壓到幾句提示詞，Wix 去年以 8,000 萬美元買下 Base44，Lovable 八月完成 4 億美元 C 輪、估值 133 億美元，Google 也推 Stitch。Squarespace 自己 2024 年推 Blueprint、近期預告 AI 原生平台 Forma——這是「工具先吃掉可規格化的工作，再逼原廠自己轉型」的標準案例",
    "date": "2026-11-03",
-   "category": "人才策略"
+   "category": "人與心理"
   },
   {
    "title": "火星生技導入 AI 輔助篩選機能配方！研發突破複方設計瓶頸獲國際肯定",
    "url": "https://finance.technews.tw/2026/11/02/diu/",
    "summary": "台灣中小型健康商品業者的落地樣本：AI 只做研究資料蒐整、機能性原料比對與複方配方初步評估，配方設計、打樣、量產仍由研發團隊負責，旗下 Diu⁺ 兩款商品拿下去年（2026）美國 AII 達文西國際發明展金牌；通路端有全台逾 4,200 家藥妝與藥局",
    "date": "2026-11-02",
-   "category": "AI 轉型"
+   "category": "AI 與代理"
   },
   {
    "title": "讓 AI 代理拿假金鑰辦事，機密管理新創 Infisical 完成 4 千萬美元 B 輪募資",
    "url": "https://finance.technews.tw/2026/11/02/this-600-million-startup-is-helping-keep-company-secrets-away-from-ai-agents/",
    "summary": "估值 6 億美元、Elad Gil 領投，客戶含空中巴士、福斯與 OpenRouter（逾 1,300 家企業）。做法是發給 AI 代理假 API 金鑰、由代理伺服器在後端換成真憑證，並提供數分鐘即失效的一次性密碼——把「代理該有什麼權限」變成可撤銷的執行期控制，而不是把資料庫密碼交出去",
    "date": "2026-11-02",
-   "category": "AI 轉型"
+   "category": "AI 與代理"
   },
   {
    "title": "AI 寫程式又快又多，漏洞風險與「責任歸屬」成企業開發新難題",
    "url": "https://finance.technews.tw/2026/11/02/ai-makes-coding-faster-but-who-is-responsible-for-what-it-produces/",
    "summary": "引 Veracode 2026 年測試：約 44% 的 AI 寫程式任務含已知漏洞；建議別讓同一套模型既寫又測、改由另一模型審查。另引 Anthropic 分析約 40 萬個 Claude Code 工作階段：多數情境是人類規劃、AI 執行。API 安全廠 Cequence 則主張「責任跟隨控制權」的三方共責（模型商／部署企業／產業標準），並舉例某《財星》50 大企業的 coding agent 連跑兩天、數千次工具呼叫亂猜檔名，平台卻毫無警示",
    "date": "2026-11-02",
-   "category": "AI 轉型"
+   "category": "AI 與代理"
   },
   {
    "title": "Waniwani's CEO on the agentic future of insurance distribution",
    "url": "https://www.mckinsey.com/industries/financial-services/our-insights/waniwanis-ceo-on-the-agentic-future-of-insurance-distribution",
    "summary": "2026 年 2 月西班牙數位保險商 Tuio 把投保流程接進 ChatGPT，引爆美國保險經紀股賣壓。Waniwani 執行長的核心判斷：通路裡的「摩擦力與資訊不對稱」正在消失，選擇不進 agent 等於自願退出市場；但經紀人不會一夜消失（比價網站花了十幾年才改變英國市場）。真正的控制點是「你餵給 agent 什麼資訊」——防幻覺、合規與準確性都得在源頭管",
    "date": "2026-11-02",
-   "category": "AI 轉型"
+   "category": "AI 與代理"
   },
   {
    "title": "擺脫地球缺電與散熱瓶頸，馬斯克霸氣宣告：AI 算力主戰場在太空",
@@ -322,98 +479,119 @@
    "url": "https://technews.tw/2026/11/02/gallup-ai-survey-10-findings-on-how-ai-helps-workers/",
    "summary": "2026 年 1–3 月訪 1.7 萬名美國工作者（其中 7,845 人工作用過 AI）：63% 說 AI 讓工作更快、46% 認為品質提升，但僅 28% 每週至少用一次、54% 從未用過。大學畢業生每週使用率 40%、非大學學歷 17%；管理職 37%、一般員工 25%。31% 表示使用後雇主派更多工作，18–24 歲最常這樣反映（38%）。52% 認為自己對新科技導入的影響力低於期待",
    "date": "2026-11-02",
-   "category": "人才策略"
+   "category": "人與心理"
   },
   {
    "title": "企業開出愈來愈多遠距職缺，為什麼新人的門反而愈來愈窄？",
    "url": "https://www.managertoday.com.tw/columns/view/73231",
    "summary": "凱洛格管理學院張樂天等三人分析 2018–2021 年歐洲 28 國逾 5,000 萬筆職缺：同一企業同年度同一職位，遠距版本的技能要求比非遠距多 25%，經驗與學歷門檻也略高，四類技能（認知、同事社交、客戶社交、ICT）全面上升。原因有三：應徵池變大所以拉高篩選標準、面對面印象變少所以更依賴可驗證資歷、以及「反正沒辦法帶新人」——結果是把需要培訓的初階工作者擋在門外，形成惡性循環",
    "date": "2026-11-02",
-   "category": "人才策略"
+   "category": "人與心理"
   },
   {
    "title": "[𝕏] Malte Lindberg",
    "url": "https://x.com/lindberg_malte/status/2117119510956085397",
    "summary": "這十年最重要的領導任務是「詮釋」（interpretation）：對中小企業而言，AI、ESG、資安風險、關稅、利率、技能短缺與低成長都不是抽象的 megatrend，而是一張張需要決策的議程項目。貼文互動極低（0 讚），但把 ESG／人才／成本三條線放回同一個主管桌上，正好是本週 digest 的濃縮版",
    "date": "2026-11-02",
-   "category": "人才策略"
+   "category": "人與心理"
   },
   {
    "title": "上半年淨利剩 660 萬，路易莎黃銘賢憑什麼喊「我們很賺錢」？首曝「AI 大平台」野心",
    "url": "https://www.managertoday.com.tw/articles/view/73217",
    "summary": "上半年營收 15.7 億（年增逾 15%）創新高、稅後淨利只剩 660 萬（年減 56.3%），營業費用 6.6 億（年增 21.3%）是主因。黃銘賢把少賺的錢當學費：投入 7,000～8,000 萬換 ERP、建數據中台與 AI 代理，先解旗下 11 個品牌「POS／訂位／排班資料各自分散」的老問題，明年 6 月上線後再包成 SaaS 賣給其他餐飲業者",
    "date": "2026-11-01",
-   "category": "AI 轉型"
+   "category": "AI 與代理"
   },
   {
    "title": "Closing banking’s AI value gap: A CEO guide",
    "url": "https://www.mckinsey.com/industries/financial-services/our-insights/closing-bankings-ai-value-gap-a-ceo-guide",
    "summary": "McKinsey 全球銀行業年報指出銀行科技支出高於其後四個產業加總，但成效卡在四個結構性缺口：價值缺口（投資無法追溯到企業成果）、把 AI 投資變成可重複部署的「AI capital」的能力、規模化、以及人機分工的重新設計",
    "date": "2026-11-01",
-   "category": "AI 轉型"
+   "category": "AI 與代理"
   },
   {
    "title": "Meta’s Muse Could Upend All Kinds of Businesses. It Hasn’t Yet",
    "url": "https://www.wired.com/story/metas-muse-could-upend-all-kinds-of-businesses-it-hasnt-yet/",
    "summary": "Meta 說美加已有逾 1,000 萬人啟用 Muse、25% 用來購物；但約 50 家企業在法說會口徑一致：DoorDash「數百筆」、Hilton「微不足道」、T-Mobile「沒有顯著」、Ally「相當低」、Life Time 說取消訂閱「零」。Chipotle 則發現 agent 卡在會員折扣與夜間下單，正回頭整理網站程式碼——agent 跑不動，常常是網站沒為 agent 設計",
    "date": "2026-11-01",
-   "category": "AI 轉型"
+   "category": "AI 與代理"
   },
   {
    "title": "Who wins when AI does the shopping? New evidence on agentic commerce",
    "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/who-wins-when-ai-does-the-shopping-new-evidence-on-agentic-commerce",
    "summary": "2026 年 6 月調查 11 個市場、約 21,000 名消費者：逾五成全球消費者在購物時用 AI；美國「用 AI 完成購買」的比率比去年跳增 70%。真正被點出的不是需求不足，而是「消費者已準備好、商業基礎設施還沒」",
    "date": "2026-11-01",
-   "category": "AI 轉型"
+   "category": "AI 與代理"
   },
   {
    "title": "印度勞工化身 AI 導師，配戴攝影機記錄日常、親手訓練未來機器人",
    "url": "https://technews.tw/2026/10/31/indian-workers-transform-into-ai-tutors/",
    "summary": "理髮師、紡織工、家事工作者戴上頭戴攝影機，每天錄 5～6 小時的第一人稱操作影像，賣給機器人開發者訓練 Physical AI；採集公司要求每週 10 小時多樣化示範（修車、木工、水電）。報酬每小時約 13～15 美元（美國同類工作約三倍），但也有基礎任務錄 8～10 小時只賺 5～10 美元。報導點出的張力很直白：為了生計，親手訓練未來可能取代自己的機器",
    "date": "2026-11-01",
-   "category": "人才策略"
+   "category": "人與心理"
+  },
+  {
+   "title": "‘Hold course and adapt as you go’: An interview with Manon van Beek",
+   "url": "https://www.mckinsey.com/capabilities/people-and-organization/our-insights/hold-course-and-adapt-as-you-go-an-interview-with-manon-van-beek",
+   "summary": "歐洲電網營運商 TenneT 執行長（11 月 1 日交棒）談在不確定中領導：任期內電網相關投資從每年約 20 億歐元擴到近 150 億。她的方法論是「陽台與舞池」——只站在陽台看大局，會把時間花在別人也能做的事上；只待在舞池聽現場，就看不到只有你能做的連結",
+   "date": "2026-11-01",
+   "category": "管理與組織"
+  },
+  {
+   "title": "Industrial Intelligence: The next growth opportunity for manufacturing",
+   "url": "https://www.technologyreview.com/2026/10/27/1147142/industrial-intelligence-the-next-growth-opportunity-for-manufacturing/",
+   "summary": "微軟廣編稿（文末明載非 MIT TR 編輯部撰寫，引用時請標明）。論點值得留：製造業的「工業智慧」是老師傅的判斷＋營運實務＋生產數據的總和，真正的戰略終點不是部署更多 agent，而是把既有商業智慧接到實體流程上，讓它會行動",
+   "date": "2026-11-01",
+   "category": "管理與組織"
   },
   {
    "title": "GMI Cloud 展示在臺 AI Factory 設計，AI 資料中心的新瓶頸不是機櫃，而是電力",
    "url": "https://www.ithome.com.tw/news/180116",
    "summary": "桃園 AI Factory 由台灣大哥大既有 IDC 轉型，最大負載 25MW、其中 16MW 給 IT 設備；第一期 3 座 NVIDIA DGX SuperPOD GB300（約 48 個 AI 機櫃），第二期 12 月上線。工程師直說核心問題已從「還能放多少機櫃」變成「還有多少電力」。供電走鋰電池（滿載約 6 分鐘緩衝）→ UPS → 柴油發電機（25MW 滿載可撐 24 小時以上）三層備援；散熱 87% 靠液冷、13% 氣冷，PUE 目前 1.35、目標 1.3。第三期能不能擴，取決於每 MW 能生出多少算力，不是還有沒有空間。",
    "date": "2026-10-31",
-   "category": "AI 轉型"
+   "category": "AI 與代理"
   },
   {
    "title": "從AI伴行到AI優先，奇美醫院揭AI發展4階段布局",
    "url": "https://www.ithome.com.tw/news/180107",
    "summary": "2005 數位化 → 2019 成立 AI 中心（累積 32 個疾病風險預測模型、涵蓋 13 個科部）→ 2023 生成式 AI「AI 伴行」→ 2025 起瞄準代理型 AI。A+ 藥安師每天替藥師省 150 分鐘、拿國家醫療品質獎金獎。院長林宏榮坦言 AI Agent 還沒上線，因為「不能讓龍蝦亂跑」，得先蓋好沙盒（他稱「龍蝦池」）與資料治理；策略是「比科技最前沿落後兩步」，不追最新技術。",
    "date": "2026-10-31",
-   "category": "AI 轉型"
+   "category": "AI 與代理"
   },
   {
    "title": "千家臺灣中小企業採用，老牌印度協作軟體業者主打企業級AI、擴大在臺布局",
    "url": "https://www.ithome.com.tw/news/180077",
    "summary": "Zoho 來臺設媒體說明會，臺灣營收過去一年成長 54%、已有逾千家中小企業採用。主打 Zia Chat（單一對話入口，可選 ChatGPT／Claude／Gemini 或自研模型，透過 MCP 接第三方系統）、Zia Agents（含 HR、客服、IT Help Desk 等預建代理，另有低程式碼 Zia Agent Studio 與 Agent Marketplace）、Zoho One（$37／人／月）。執行任務前系統會逐步驟詢問授權，不會在使用者不知情下自行作業。",
    "date": "2026-10-31",
-   "category": "AI 轉型"
+   "category": "AI 與代理"
   },
   {
    "title": "Cracks are emerging in the AI spending boom",
    "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
    "summary": "四大科技巨頭今年資本支出合計超過 7,400 億美元，投資人開始轉向擔心自由現金流轉負與債務。Alphabet 第三季自由現金流 -91 億美元、連兩季為負，資本支出 514 億、全年上看 2,050 億；單日股價跌 12%（史上最差）、市值蒸發 5,000 億。Amazon 過去 12 個月自由現金流 -424 億（前一年為正 148 億），資本支出上看 2,200 億。Meta 第三季 -21 億。Nasdaq 當日跌 2.9%。文末並提到 FT 報導 Blackstone 已提醒投資人 Anthropic 上市後可能拿不到投資級評等。",
    "date": "2026-10-31",
-   "category": "AI 轉型"
+   "category": "AI 與代理"
   },
   {
    "title": "對大環境信心下滑，卻更看好自家公司？KPMG 調查揭 1400 位 CEO 眼中的頭號風險",
    "url": "https://www.managertoday.com.tw/articles/view/73212",
    "summary": "KPMG 第 12 屆全球 CEO 前瞻調查（2026/8/11–9/21，1,400 位年營收逾 5 億美元企業 CEO）：對自家 3 年成長有信心的從 79% 升到 84%，對全球經濟有信心的卻從 68% 掉到 65%、創 2021 年以來新低。未來 3 年頭號威脅是網路與資料安全（31%），其次經濟不確定性 28%、地緣政治與法規壓力各 26%。人力面：89% 預期員工數仍會成長（62% 認為增幅低於 5%），56% 把員工技能缺口列為首要人力挑戰，52% 要提升員工使用 AI 系統的能力，招募與留任 47%。79% 把 AI 列為未來 3 年投資優先（去年 71%），72% 預計未來一年把超過一成預算投 AI；報告結論是 AI 投資能否轉為價值，取決於治理能力與營運準備程度。",
    "date": "2026-10-31",
-   "category": "人才策略"
+   "category": "人與心理"
   },
   {
    "title": "Microsoft's AI future has fewer jobs",
    "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
    "summary": "微軟對美、英、加、印約 6 萬名員工提出自願離職方案，約占 22.3 萬總人力的四分之一，是該公司首度對這麼大規模的員工提出此方案（先前僅限約 9,000 人的退休方案）。今年 7 月已裁 4,800 人。Nadella 兩年前在播客上的說法被拿來對照：「我們的總人力成本會下降、人均成本會上升、我每位研究員分到的 GPU 會上升。」截至 6 月底總員工數 22.3 萬，比 2025 年的 22.8 萬少 5,000 人，是十年來首次年對年下降。",
    "date": "2026-10-31",
-   "category": "人才策略"
+   "category": "人與心理"
+  },
+  {
+   "title": "會議紀錄整理完，怎麼提建議主管才會聽？3 步驟用 AI 比較方案，讓推薦理由更有說服力",
+   "url": "https://www.managertoday.com.tw/articles/view/73222",
+   "summary": "把「AI 幫你整理會議紀錄」推進到「AI 幫你把建議想清楚」的三步：①先讓各方案回答同一組問題（完成時間／額外支出／內容影響／執行風險），並明確要求「缺少的資料註明待確認，不要把未提供的費用寫成零成本，先不要推薦方案」；②講清楚哪些要求不能退讓（上線日能不能延、哪些內容不能刪、預算上限），再請 AI 提建議；③回頭請 AI 挑出「最多 3 個可能改變建議的問題」，且推測與已知事實要分開。文章強調真正的工作量在「交代判斷條件」與「訂出檢查 AI 分析的方法」，不在下指令。",
+   "date": "2026-10-31",
+   "category": "管理與組織"
   },
   {
    "title": "AI 幫忙揪出河川污染，凱擘智慧監控布局 43 條溪流",
