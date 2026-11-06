@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-05T00:30:36Z",
+  "generatedAt": "2026-11-06T00:30:36Z",
   "periods": {
-    "content": "累計至 2026-11-05；近 30 天＝2026-10-06 起",
-    "health": "2026-10-05 ~ 2026-10-31（27 天）",
+    "content": "累計至 2026-11-06；近 30 天＝2026-10-07 起",
+    "health": "2026-10-06 ~ 2026-10-31（26 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-03（32 天）"
+    "management": "2026-10-03 ~ 2026-11-04（33 天）"
   },
   "headline": [
     {
@@ -19,7 +19,7 @@
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "27 天 × 18 個服務，486/486 次在線"
+      "note": "26 天 × 18 個服務，468/468 次在線"
     },
     {
       "key": "incidents",
@@ -31,21 +31,21 @@
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 41.4,
+      "value": 42.0,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；7/32 天達標"
+      "note": "實驗期 37.1 分；7/33 天達標"
     }
   ],
   "content": {
     "articles": 100,
     "articles30d": 13,
     "newsletters": 30,
-    "videos": 41,
+    "videos": 42,
     "videos30d": 3,
     "igCards": 47,
-    "socialPosts": 76,
-    "scanDays": 137,
-    "competitorReports": 136,
+    "socialPosts": 77,
+    "scanDays": 138,
+    "competitorReports": 137,
     "insights": 19,
     "monthly": [
       {
@@ -74,10 +74,17 @@
       },
       {
         "month": "2026-11",
-        "count": 1
+        "count": 2
       }
     ],
     "articleList": [
+      {
+        "date": "2026-11-05",
+        "title": "用管 AI 的方式管人：授權，還有信任",
+        "slug": "manage-people-like-ai",
+        "url": "/knowledge/manage-people-like-ai",
+        "cat": "管理心理學"
+      },
       {
         "date": "2026-11-03",
         "title": "AI 跑不動，不是模型不夠聰明，是你的系統還沒為它開門",
@@ -139,7 +146,7 @@
         "title": "連摩根大通都不讓它進門：你的 AI 代理，憑什麼代表你？",
         "slug": "ai-agent-liability-transfer",
         "url": "/knowledge/ai-agent-liability-transfer",
-        "cat": "AI 轉型"
+        "cat": "全球趨勢"
       },
       {
         "date": "2026-10-13",
@@ -181,7 +188,7 @@
         "title": "澳洲政府三個月後才知道：AI 事故缺的不是規範，是通報",
         "slug": "ai-incident-notification-gap",
         "url": "/knowledge/ai-incident-notification-gap",
-        "cat": "AI 轉型"
+        "cat": "社會觀察"
       },
       {
         "date": "2026-09-28",
@@ -209,7 +216,7 @@
         "title": "全美九州喊停、紐約暫停核准一年：AI 的瓶頸已經不是晶片，是鄰居",
         "slug": "ai-permitting-bottleneck",
         "url": "/knowledge/ai-permitting-bottleneck",
-        "cat": "AI 轉型"
+        "cat": "社會觀察"
       },
       {
         "date": "2026-09-22",
@@ -350,13 +357,6 @@
         "slug": "ai-fill-labor-gap-not-replace",
         "url": "/knowledge/ai-fill-labor-gap-not-replace",
         "cat": "AI 轉型"
-      },
-      {
-        "date": "2026-08-26",
-        "title": "一人 Scrum Team：AI 落地最短的捷徑，是讓員工自己當產品經理",
-        "slug": "ai-one-person-scrum-team",
-        "url": "/knowledge/ai-one-person-scrum-team",
-        "cat": "AI 轉型"
       }
     ],
     "videoList": [
@@ -384,23 +384,15 @@
       },
       "newsletter": "🦞 榕賀觀點 第 30 期 — 2026-11-02",
       "video": {
-        "title": "策略會議開兩天，為什麼只剩三個選項？把 AI 放進策略規劃的四個階段",
-        "date": "2026-11-02",
-        "url": "https://www.youtube.com/watch?v=dChIyhaG3LM"
+        "title": "他把剪頭髮的動作，賣給了機器人公司",
+        "date": "2026-11-04",
+        "url": "https://www.youtube.com/watch?v=mma8Nptav5k"
       },
       "insight": "2026-W45.md"
     }
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-05",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 74,
-        "restarts": 27
-      },
       {
         "date": "2026-10-06",
         "online": 18,
@@ -610,8 +602,8 @@
         "restarts": 35
       }
     ],
-    "checks": 486,
-    "online": 486,
+    "checks": 468,
+    "online": 468,
     "warningDays": 1,
     "maxDisk": 85,
     "live": [
@@ -620,45 +612,45 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.06
+        "seconds": 0.04
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.09
+        "seconds": 0.11
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.35
+        "seconds": 0.06
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.05
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.04
       },
       {
         "name": "管理後台",
         "url": "https://admin.rong-rise.com/",
         "code": "401",
         "ok": true,
-        "seconds": 0.1
+        "seconds": 0.03
       }
     ],
-    "liveAt": "2026-11-05 00:30 UTC"
+    "liveAt": "2026-11-06 00:30 UTC"
   },
   "schedule": {
     "incidents30d": 34,
@@ -689,7 +681,7 @@
     ],
     "executions": 1001,
     "executionsOk": 1000,
-    "executionsFrom": "2026-11-04T12:20:36",
+    "executionsFrom": "2026-11-05T12:35:36",
     "incidents": [
       {
         "job": "5f91aedd850c",
@@ -1012,16 +1004,16 @@
         "error": "Script exited with code 1"
       }
     ],
-    "jobs": 86,
-    "jobsEnabled": 76
+    "jobs": 89,
+    "jobsEnabled": 79
   },
   "management": {
-    "days": 32,
-    "medianOnline": 41.4,
+    "days": 33,
+    "medianOnline": 42.0,
     "experimentMedian": 37.1,
-    "avgOnline": 51.5,
-    "totalHours": 27.5,
-    "medianVisits": 15.0,
+    "avgOnline": 51.2,
+    "totalHours": 28.2,
+    "medianVisits": 15,
     "perVisit": 3.1,
     "daysUnder30": 7,
     "daily": [
@@ -1184,6 +1176,11 @@
         "date": "2026-11-03",
         "min": 19.0,
         "visits": 11
+      },
+      {
+        "date": "2026-11-04",
+        "min": 42.1,
+        "visits": 13
       }
     ]
   },
@@ -1191,7 +1188,7 @@
     "subscribers": 22,
     "confirmed": 15,
     "pending": 6,
-    "views": 697,
+    "views": 701,
     "channelSubscribers": 17
   }
 }
