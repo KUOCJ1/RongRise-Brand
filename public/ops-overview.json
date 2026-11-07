@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-06T00:30:36Z",
+  "generatedAt": "2026-11-07T00:30:36Z",
   "periods": {
-    "content": "累計至 2026-11-06；近 30 天＝2026-10-07 起",
-    "health": "2026-10-06 ~ 2026-10-31（26 天）",
+    "content": "累計至 2026-11-07；近 30 天＝2026-10-08 起",
+    "health": "2026-10-07 ~ 2026-10-31（25 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-04（33 天）"
+    "management": "2026-10-03 ~ 2026-11-05（34 天）"
   },
   "headline": [
     {
       "key": "content",
       "label": "內容產出",
-      "value": 100,
+      "value": 101,
       "unit": "篇文章",
       "note": "近 30 天新增 13 篇"
     },
@@ -19,7 +19,7 @@
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "26 天 × 18 個服務，468/468 次在線"
+      "note": "25 天 × 18 個服務，450/450 次在線"
     },
     {
       "key": "incidents",
@@ -31,21 +31,21 @@
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 42.0,
+      "value": 41.4,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；7/33 天達標"
+      "note": "實驗期 37.1 分；8/34 天達標"
     }
   ],
   "content": {
-    "articles": 100,
+    "articles": 101,
     "articles30d": 13,
-    "newsletters": 30,
+    "newsletters": 31,
     "videos": 42,
     "videos30d": 3,
     "igCards": 47,
-    "socialPosts": 77,
-    "scanDays": 138,
-    "competitorReports": 137,
+    "socialPosts": 78,
+    "scanDays": 139,
+    "competitorReports": 138,
     "insights": 19,
     "monthly": [
       {
@@ -378,11 +378,11 @@
     ],
     "latest": {
       "article": {
-        "title": "AI 跑不動，不是模型不夠聰明，是你的系統還沒為它開門",
-        "date": "2026-11-03",
-        "url": "/knowledge/ai-system-not-agent-ready"
+        "title": "用管 AI 的方式管人：授權，還有信任",
+        "date": "2026-11-05",
+        "url": "/knowledge/manage-people-like-ai"
       },
-      "newsletter": "🦞 榕賀觀點 第 30 期 — 2026-11-02",
+      "newsletter": "🦞 榕賀觀點 第 31 期 — 2026-11-06",
       "video": {
         "title": "他把剪頭髮的動作，賣給了機器人公司",
         "date": "2026-11-04",
@@ -393,14 +393,6 @@
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-06",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 74,
-        "restarts": 33
-      },
       {
         "date": "2026-10-07",
         "online": 18,
@@ -602,8 +594,8 @@
         "restarts": 35
       }
     ],
-    "checks": 468,
-    "online": 468,
+    "checks": 450,
+    "online": 450,
     "warningDays": 1,
     "maxDisk": 85,
     "live": [
@@ -612,14 +604,14 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.05
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.11
+        "seconds": 0.08
       },
       {
         "name": "AI 落地頁",
@@ -633,7 +625,7 @@
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.04
       },
       {
         "name": "n8n 自動化",
@@ -650,7 +642,7 @@
         "seconds": 0.03
       }
     ],
-    "liveAt": "2026-11-06 00:30 UTC"
+    "liveAt": "2026-11-07 00:30 UTC"
   },
   "schedule": {
     "incidents30d": 34,
@@ -681,7 +673,7 @@
     ],
     "executions": 1001,
     "executionsOk": 1000,
-    "executionsFrom": "2026-11-05T12:35:36",
+    "executionsFrom": "2026-11-06T12:31:36",
     "incidents": [
       {
         "job": "5f91aedd850c",
@@ -1008,14 +1000,14 @@
     "jobsEnabled": 79
   },
   "management": {
-    "days": 33,
-    "medianOnline": 42.0,
+    "days": 34,
+    "medianOnline": 41.4,
     "experimentMedian": 37.1,
-    "avgOnline": 51.2,
-    "totalHours": 28.2,
-    "medianVisits": 15,
+    "avgOnline": 50.6,
+    "totalHours": 28.7,
+    "medianVisits": 15.0,
     "perVisit": 3.1,
-    "daysUnder30": 7,
+    "daysUnder30": 8,
     "daily": [
       {
         "date": "2026-10-03",
@@ -1181,6 +1173,11 @@
         "date": "2026-11-04",
         "min": 42.1,
         "visits": 13
+      },
+      {
+        "date": "2026-11-05",
+        "min": 28.7,
+        "visits": 15
       }
     ]
   },
@@ -1188,7 +1185,7 @@
     "subscribers": 22,
     "confirmed": 15,
     "pending": 6,
-    "views": 701,
+    "views": 723,
     "channelSubscribers": 17
   }
 }
