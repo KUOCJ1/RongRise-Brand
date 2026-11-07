@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n64",
+      "date": "2026-11-07",
+      "category": "資源",
+      "title": "後台紀錄 3：哪些事該交出去，哪些事一定要留在人手上",
+      "summary": "13 天的公開實驗裡，AI 把產出做到每件 28 分鐘人力，瓶頸卻落在人的注意力：一天被叫回來 13 次。用可逆性與回饋速度分成四格，才決定得出什麼交出去、什麼留在手上。",
+      "link": "/knowledge/camino-operation-wrapup",
+      "isNew": true
+    },
+    {
       "id": "n63",
       "date": "2026-11-05",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "AI Agent 最大的效益，不是省下打提示詞的時間",
       "summary": "同一個 POC，有人 30 分鐘就做完。兩場進階工作坊看到的差距，不在工具，在怎麼拆工作。",
       "link": "/knowledge/agent-biggest-benefit-standardization",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n60",

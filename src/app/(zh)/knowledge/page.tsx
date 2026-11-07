@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "camino-operation-wrapup",
+    cat: "AI 轉型",
+    title: "後台紀錄 3：哪些事該交出去，哪些事一定要留在人手上",
+    date: "2026-11-07",
+    readTime: "8 分鐘",
+    excerpt: "13 天的公開實驗裡，AI 把產出做到每件 28 分鐘人力，瓶頸卻落在人的注意力：一天被叫回來 13 次。用可逆性與回饋速度分成四格，才決定得出什麼交出去、什麼留在手上。",
+    tags: ["公開實驗", "AI 員工", "人機協作", "授權設計", "後台紀錄"],
+  },
+  {
     slug: "manage-people-like-ai",
     cat: "管理心理學",
     title: "用管 AI 的方式管人：授權，還有信任",
