@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-11-06T05:23:37Z",
+ "generatedAt": "2026-11-07T05:20:42Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 160
+  "daysRunning": 161
  },
  "stats": {
-  "scanDays": 139,
-  "weekArticles": 68,
+  "scanDays": 140,
+  "weekArticles": 72,
   "articles": 101,
   "newsItems": 63,
   "newsletterIssues": 31,
   "subscribers": 22,
   "confirmedSubscribers": 15,
   "videos": 42,
-  "views": 723,
-  "channelSubscribers": 17,
+  "views": 729,
+  "channelSubscribers": 18,
   "insights": 19,
-  "socialPosts": 78,
+  "socialPosts": 79,
   "igCards": 47,
-  "competitorReports": 138
+  "competitorReports": 139
  },
  "activity": [
-  {
-   "date": "2026-10-31",
-   "count": 8,
-   "topics": []
-  },
   {
    "date": "2026-11-01",
    "count": 7,
@@ -56,6 +51,11 @@
    "date": "2026-11-06",
    "count": 12,
    "topics": []
+  },
+  {
+   "date": "2026-11-07",
+   "count": 12,
+   "topics": []
   }
  ],
  "latest": {
@@ -76,19 +76,19 @@
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 30,
+   "count": 33,
    "momentum": "up"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 29,
+   "count": 28,
    "momentum": "flat"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 23,
+   "count": 24,
    "momentum": "up"
   },
   {
@@ -100,7 +100,7 @@
   {
    "keyword": "企業導入",
    "icon": "🚀",
-   "count": 17,
+   "count": 18,
    "momentum": "up"
   }
  ]
