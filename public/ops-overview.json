@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-07T00:30:36Z",
+  "generatedAt": "2026-11-08T00:30:57Z",
   "periods": {
-    "content": "累計至 2026-11-07；近 30 天＝2026-10-08 起",
-    "health": "2026-10-07 ~ 2026-10-31（25 天）",
+    "content": "累計至 2026-11-08；近 30 天＝2026-10-09 起",
+    "health": "2026-10-08 ~ 2026-10-31（24 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-05（34 天）"
+    "management": "2026-10-03 ~ 2026-11-06（35 天）"
   },
   "headline": [
     {
@@ -12,14 +12,14 @@
       "label": "內容產出",
       "value": 101,
       "unit": "篇文章",
-      "note": "近 30 天新增 13 篇"
+      "note": "近 30 天新增 12 篇"
     },
     {
       "key": "uptime",
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "25 天 × 18 個服務，450/450 次在線"
+      "note": "24 天 × 18 個服務，432/432 次在線"
     },
     {
       "key": "incidents",
@@ -31,21 +31,21 @@
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 41.4,
+      "value": 40.8,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；8/34 天達標"
+      "note": "實驗期 37.1 分；9/35 天達標"
     }
   ],
   "content": {
     "articles": 101,
-    "articles30d": 13,
+    "articles30d": 12,
     "newsletters": 31,
     "videos": 42,
     "videos30d": 3,
     "igCards": 47,
-    "socialPosts": 78,
-    "scanDays": 139,
-    "competitorReports": 138,
+    "socialPosts": 79,
+    "scanDays": 140,
+    "competitorReports": 139,
     "insights": 19,
     "monthly": [
       {
@@ -74,10 +74,17 @@
       },
       {
         "month": "2026-11",
-        "count": 2
+        "count": 3
       }
     ],
     "articleList": [
+      {
+        "date": "2026-11-07",
+        "title": "後台紀錄 3：哪些事該交出去，哪些事一定要留在人手上",
+        "slug": "camino-operation-wrapup",
+        "url": "/knowledge/camino-operation-wrapup",
+        "cat": "AI 轉型"
+      },
       {
         "date": "2026-11-05",
         "title": "用管 AI 的方式管人：授權，還有信任",
@@ -350,13 +357,6 @@
         "slug": "hugging-face-nvidia-129-billion",
         "url": "/knowledge/hugging-face-nvidia-129-billion",
         "cat": "AI 趨勢"
-      },
-      {
-        "date": "2026-08-27",
-        "title": "政府比你的公司還會用 AI：半年省下 3 萬分鐘，靠的是「補人力缺口」不是「取代人」",
-        "slug": "ai-fill-labor-gap-not-replace",
-        "url": "/knowledge/ai-fill-labor-gap-not-replace",
-        "cat": "AI 轉型"
       }
     ],
     "videoList": [
@@ -393,14 +393,6 @@
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-07",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 78,
-        "restarts": 38
-      },
       {
         "date": "2026-10-08",
         "online": 18,
@@ -594,8 +586,8 @@
         "restarts": 35
       }
     ],
-    "checks": 450,
-    "online": 450,
+    "checks": 432,
+    "online": 432,
     "warningDays": 1,
     "maxDisk": 85,
     "live": [
@@ -611,14 +603,14 @@
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.08
+        "seconds": 0.12
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.06
+        "seconds": 0.04
       },
       {
         "name": "職能評測",
@@ -632,7 +624,7 @@
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.05
       },
       {
         "name": "管理後台",
@@ -642,7 +634,7 @@
         "seconds": 0.03
       }
     ],
-    "liveAt": "2026-11-07 00:30 UTC"
+    "liveAt": "2026-11-08 00:30 UTC"
   },
   "schedule": {
     "incidents30d": 34,
@@ -673,7 +665,7 @@
     ],
     "executions": 1001,
     "executionsOk": 1000,
-    "executionsFrom": "2026-11-06T12:31:36",
+    "executionsFrom": "2026-11-07T12:31:36",
     "incidents": [
       {
         "job": "5f91aedd850c",
@@ -1000,14 +992,14 @@
     "jobsEnabled": 79
   },
   "management": {
-    "days": 34,
-    "medianOnline": 41.4,
+    "days": 35,
+    "medianOnline": 40.8,
     "experimentMedian": 37.1,
-    "avgOnline": 50.6,
-    "totalHours": 28.7,
-    "medianVisits": 15.0,
+    "avgOnline": 49.5,
+    "totalHours": 28.9,
+    "medianVisits": 15,
     "perVisit": 3.1,
-    "daysUnder30": 8,
+    "daysUnder30": 9,
     "daily": [
       {
         "date": "2026-10-03",
@@ -1178,6 +1170,11 @@
         "date": "2026-11-05",
         "min": 28.7,
         "visits": 15
+      },
+      {
+        "date": "2026-11-06",
+        "min": 12.8,
+        "visits": 7
       }
     ]
   },
@@ -1185,7 +1182,7 @@
     "subscribers": 22,
     "confirmed": 15,
     "pending": 6,
-    "views": 723,
-    "channelSubscribers": 17
+    "views": 729,
+    "channelSubscribers": 18
   }
 }
