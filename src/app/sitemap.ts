@@ -281,5 +281,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       : []),
   ]);
 
-  return [...staticPages, ...independentPages, ...articlePages, ...newsletterPages, ...researchPages];
+  // 2026-11-09：next.config 設 trailingSlash: true，頁面 canonical 一律帶結尾斜線。
+  // sitemap 若送不帶斜線的網址，Google 會判成「替代頁面（有標準標記）」，
+  // GSC 的 sitemap 索引數因此顯示 0、73 頁被標成 alternate。統一把 url 補成 canonical 形式。
+  const canonical = (entries: MetadataRoute.Sitemap): MetadataRoute.Sitemap =>
+    entries.map((e) => ({ ...e, url: e.url.endsWith("/") ? e.url : `${e.url}/` }));
+
+  return canonical([
+    ...staticPages,
+    ...independentPages,
+    ...articlePages,
+    ...newsletterPages,
+    ...researchPages,
+  ]);
 }
