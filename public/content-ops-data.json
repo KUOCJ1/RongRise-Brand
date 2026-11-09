@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-11-08T05:21:03Z",
+ "generatedAt": "2026-11-09T05:21:04Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 162
+  "daysRunning": 163
  },
  "stats": {
-  "scanDays": 141,
-  "weekArticles": 75,
+  "scanDays": 142,
+  "weekArticles": 77,
   "articles": 102,
   "newsItems": 64,
-  "newsletterIssues": 31,
+  "newsletterIssues": 32,
   "subscribers": 22,
   "confirmedSubscribers": 15,
   "videos": 42,
-  "views": 730,
+  "views": 731,
   "channelSubscribers": 18,
   "insights": 19,
   "socialPosts": 80,
   "igCards": 49,
-  "competitorReports": 140
+  "competitorReports": 141
  },
  "activity": [
-  {
-   "date": "2026-11-02",
-   "count": 9,
-   "topics": []
-  },
   {
    "date": "2026-11-03",
    "count": 10,
@@ -56,6 +51,11 @@
    "date": "2026-11-08",
    "count": 10,
    "topics": []
+  },
+  {
+   "date": "2026-11-09",
+   "count": 11,
+   "topics": []
   }
  ],
  "latest": {
@@ -64,7 +64,7 @@
    "date": "2026-11-07",
    "url": "/knowledge/camino-operation-wrapup"
   },
-  "newsletter": "🦞 榕賀觀點 第 31 期 — 2026-11-06",
+  "newsletter": "🦞 榕賀觀點 第 32 期 — 2026-11-09",
   "video": {
    "title": "他把剪頭髮的動作，賣給了機器人公司",
    "date": "2026-11-04",
@@ -76,31 +76,31 @@
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 39,
+   "count": 40,
    "momentum": "up"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 29,
+   "count": 31,
    "momentum": "flat"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 27,
+   "count": 30,
    "momentum": "up"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 21,
+   "count": 22,
    "momentum": "up"
   },
   {
    "keyword": "治理與法規",
    "icon": "⚖️",
-   "count": 19,
+   "count": 20,
    "momentum": "up"
   }
  ]
