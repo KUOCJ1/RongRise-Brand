@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "ai-replace-or-help",
+    cat: "管理心理學",
+    title: "Z 世代願意約會，卻不肯讓 AI 代寫訊息：AI 的界線在「代替你」還是「幫你」",
+    date: "2026-11-10",
+    readTime: "7 分鐘",
+    excerpt: "彭博調查：Z 世代 34% 願意約會，卻只有剛過一半肯讓 AI 代寫訊息。拉德堡德大學發現，八成受試者沒察覺流暢文筆下的錯誤。AI 的界線在「代替你」還是「幫你」：機器可以提出，人負責按下送出。",
+    tags: ["AI 應用", "人際關係", "溝通", "信任"],
+  },
+  {
     slug: "camino-operation-wrapup",
     cat: "AI 轉型",
     title: "後台紀錄 3：哪些事該交出去，哪些事一定要留在人手上",
