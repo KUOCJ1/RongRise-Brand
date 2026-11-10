@@ -1,6 +1,24 @@
 {
   "videos": [
     {
+      "id": "oSwzbaoqe-I",
+      "title": "換一個膝關節，要動多少層｜AI 導入前，組織得先拆簡單",
+      "date": "2026-11-10",
+      "description": "換一個膝關節，要動多少層。\n\n醫師不會直接把腿鋸掉、裝一條新的。他要先確認感染，把壞掉的組織清掉；把黏住的筋膜一層一層分開；修掉不能用的膝蓋骨；最後才裝人工關節，還要接好血管。\n\n企業這一週在做同一件事：Canva 重整影響 1,271 個",
+      "thumbnail": "https://img.youtube.com/vi/oSwzbaoqe-I/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/oSwzbaoqe-I/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=oSwzbaoqe-I"
+    },
+    {
+      "id": "uWFTQ0UJj5o",
+      "title": "Z 世代願意約會，卻不肯讓 AI 幫他寫第一句話",
+      "date": "2026-11-10",
+      "description": "Z 世代願意約會，卻不肯讓 AI 幫他寫第一句話。\n\n彭博調查 1,000 位美國交友軟體用戶：16 到 28 歲有 34% 正在積極約會，比去年回升；但只有剛過一半願意讓 AI 代寫回覆。千禧世代是七成。\n\n越年輕，越不肯讓 AI 代替自",
+      "thumbnail": "https://img.youtube.com/vi/uWFTQ0UJj5o/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/uWFTQ0UJj5o/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=uWFTQ0UJj5o"
+    },
+    {
       "id": "mma8Nptav5k",
       "title": "他把剪頭髮的動作，賣給了機器人公司",
       "date": "2026-11-04",
@@ -8,25 +26,7 @@
       "thumbnail": "https://img.youtube.com/vi/mma8Nptav5k/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/mma8Nptav5k/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=mma8Nptav5k"
-    },
-    {
-      "id": "dChIyhaG3LM",
-      "title": "策略會議開兩天，為什麼只剩三個選項？把 AI 放進策略規劃的四個階段",
-      "date": "2026-11-02",
-      "description": "策略會議開兩天，六個主管關在同一間會議室，最後只拿到三個選項。多數人以為是市場只有三條路，真正的限制在會議室裡：六顆腦袋，一次只握得住這麼多。\n\n這支影片講清楚三件事：\n一、為什麼 SWOT 剛好四格、BCG 矩陣剛好 2×2、五力剛好五個",
-      "thumbnail": "https://img.youtube.com/vi/dChIyhaG3LM/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/dChIyhaG3LM/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=dChIyhaG3LM"
-    },
-    {
-      "id": "T5e5Ia09QLg",
-      "title": "拿掉 AI 之後，只有老手真的進步：MIT 實驗揭開的判斷力斷代",
-      "date": "2026-10-21",
-      "description": "MIT 經濟學家 David Autor 做了一個三個月的隨機對照實驗：133 位專利律師用 AI 寫草稿，草稿確實變好了；但三個月後把 AI 拿掉，只有執業七年以上的老手真的進步，初階的人一無所獲。這支影片講清楚：為什麼 AI 是「表現平",
-      "thumbnail": "https://img.youtube.com/vi/T5e5Ia09QLg/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/T5e5Ia09QLg/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=T5e5Ia09QLg"
     }
   ],
-  "fetchedAt": "2026-11-04T22:09:42Z"
+  "fetchedAt": "2026-11-10T17:04:09Z"
 }
