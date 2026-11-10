@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "knee-replacement-organization-ai",
+    cat: "策略管理",
+    title: "換一個膝關節，要動多少層",
+    date: "2026-11-10",
+    readTime: "10 分鐘",
+    excerpt: "膝蓋用久了會磨光，組織用久了也會。醫師不會直接鋸掉裝新的，他得先清掉壞的、分開黏住的、修掉不能用的，最後才裝上人工關節。企業這一週動的刀，是同一件事。",
+    tags: ["組織設計", "AI轉型", "裁員", "管理", "組織行為"],
+  },
+  {
     slug: "ai-replace-or-help",
     cat: "管理心理學",
     title: "Z 世代願意約會，卻不肯讓 AI 代寫訊息：AI 的界線在「代替你」還是「幫你」",

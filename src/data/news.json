@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n66",
+      "date": "2026-11-10",
+      "category": "資源",
+      "title": "換一個膝關節，要動多少層",
+      "summary": "膝蓋用久了會磨光，組織用久了也會。醫師不會直接鋸掉裝新的，他得先清掉壞的、分開黏住的、修掉不能用的，最後才裝上人工關節。",
+      "link": "/knowledge/knee-replacement-organization-ai",
+      "isNew": true
+    },
+    {
       "id": "n65",
       "date": "2026-11-10",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "用管 AI 的方式管人：授權，還有信任",
       "summary": "市面都在教「把 AI 當員工管」，但研究發現把 AI 叫成「員工」，經理人揪錯反而少 16%。真正值錢的是反過來：用管 AI 的方法管人。信任是一道算式，驗證成本低於出錯成本。",
       "link": "/knowledge/manage-people-like-ai",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n62",
