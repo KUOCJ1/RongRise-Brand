@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-09T00:30:57Z",
+  "generatedAt": "2026-11-10T00:30:57Z",
   "periods": {
-    "content": "累計至 2026-11-09；近 30 天＝2026-10-10 起",
-    "health": "2026-10-09 ~ 2026-10-31（23 天）",
+    "content": "累計至 2026-11-10；近 30 天＝2026-10-11 起",
+    "health": "2026-10-10 ~ 2026-10-31（22 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-07（36 天）"
+    "management": "2026-10-03 ~ 2026-11-08（37 天）"
   },
   "headline": [
     {
@@ -19,7 +19,7 @@
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "23 天 × 18 個服務，414/414 次在線"
+      "note": "22 天 × 18 個服務，396/396 次在線"
     },
     {
       "key": "incidents",
@@ -31,21 +31,21 @@
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 40.0,
+      "value": 39.2,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；10/36 天達標"
+      "note": "實驗期 37.1 分；11/37 天達標"
     }
   ],
   "content": {
     "articles": 102,
     "articles30d": 12,
-    "newsletters": 31,
+    "newsletters": 32,
     "videos": 42,
     "videos30d": 3,
     "igCards": 49,
     "socialPosts": 80,
-    "scanDays": 141,
-    "competitorReports": 140,
+    "scanDays": 142,
+    "competitorReports": 141,
     "insights": 19,
     "monthly": [
       {
@@ -382,7 +382,7 @@
         "date": "2026-11-07",
         "url": "/knowledge/camino-operation-wrapup"
       },
-      "newsletter": "🦞 榕賀觀點 第 31 期 — 2026-11-06",
+      "newsletter": "🦞 榕賀觀點 第 32 期 — 2026-11-09",
       "video": {
         "title": "他把剪頭髮的動作，賣給了機器人公司",
         "date": "2026-11-04",
@@ -393,14 +393,6 @@
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-09",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 79,
-        "restarts": 44
-      },
       {
         "date": "2026-10-10",
         "online": 18,
@@ -578,8 +570,8 @@
         "restarts": 35
       }
     ],
-    "checks": 414,
-    "online": 414,
+    "checks": 396,
+    "online": 396,
     "warningDays": 1,
     "maxDisk": 85,
     "live": [
@@ -595,14 +587,14 @@
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.13
+        "seconds": 0.07
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.06
       },
       {
         "name": "職能評測",
@@ -626,7 +618,7 @@
         "seconds": 0.03
       }
     ],
-    "liveAt": "2026-11-09 00:30 UTC"
+    "liveAt": "2026-11-10 00:30 UTC"
   },
   "schedule": {
     "incidents30d": 34,
@@ -657,7 +649,7 @@
     ],
     "executions": 1001,
     "executionsOk": 1000,
-    "executionsFrom": "2026-11-08T12:33:56",
+    "executionsFrom": "2026-11-09T12:33:56",
     "incidents": [
       {
         "job": "5f91aedd850c",
@@ -980,18 +972,18 @@
         "error": "Script exited with code 1"
       }
     ],
-    "jobs": 89,
-    "jobsEnabled": 79
+    "jobs": 90,
+    "jobsEnabled": 82
   },
   "management": {
-    "days": 36,
-    "medianOnline": 40.0,
+    "days": 37,
+    "medianOnline": 39.2,
     "experimentMedian": 37.1,
-    "avgOnline": 48.9,
-    "totalHours": 29.3,
-    "medianVisits": 14.0,
+    "avgOnline": 47.9,
+    "totalHours": 29.6,
+    "medianVisits": 13,
     "perVisit": 3.0,
-    "daysUnder30": 10,
+    "daysUnder30": 11,
     "daily": [
       {
         "date": "2026-10-03",
@@ -1172,6 +1164,11 @@
         "date": "2026-11-07",
         "min": 27.5,
         "visits": 11
+      },
+      {
+        "date": "2026-11-08",
+        "min": 13.9,
+        "visits": 8
       }
     ]
   },
@@ -1179,7 +1176,7 @@
     "subscribers": 22,
     "confirmed": 15,
     "pending": 6,
-    "views": 730,
+    "views": 731,
     "channelSubscribers": 18
   }
 }
