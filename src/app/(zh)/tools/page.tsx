@@ -167,6 +167,14 @@ const tools: Tool[] = [
     tag: "自評",
     tagClass: "bg-primary/10 text-primary",
   },
+  {
+    href: "/ai-authorization-level",
+    icon: "🔑",
+    name: "AI 員工授權等級測驗",
+    desc: "這件任務該不該交給 AI？四個維度：資料穩定度、錯誤成本、人工覆核必要性、外部影響範圍，判斷適合 L1 建議、L2 可逆執行、L3 不可逆執行還是 L4 對外代表。",
+    tag: "自評",
+    tagClass: "bg-teal/10 text-teal",
+  },
 ];
 
 export default function ToolsPage() {
