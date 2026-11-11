@@ -106,7 +106,7 @@ export default function AboutPage() {
               <div className="brand-divider mb-6" />
               <div className="space-y-4 text-text-secondary text-body leading-relaxed">
                 <p>
-                  <strong className="text-text-primary">20 年跨國人力資源管理實戰經驗</strong>，歷任 Accenture、Ernst & Young、Watson Wyatt 等國際級管理顧問公司，以及 Chubb Life、Cigna Life 等跨國金融企業人資高階主管，累計協助雇主榮獲 <strong className="text-text-primary">8 座國內外優良職場獎項</strong>。
+                  <strong className="text-text-primary">23 年跨國企業與顧問經驗</strong>——企業人資 15 年（2008–2023，Cigna Life 康健人壽人資長、Chubb Life 安達人壽資深副總裁），管理顧問 8 年（2000–2008，Accenture、Ernst &amp; Young、Watson Wyatt），累計協助雇主榮獲 <strong className="text-text-primary">8 座國內外優良職場獎項</strong>。
                 </p>
                 <blockquote className="border-l-4 border-tertiary bg-tertiary/5 rounded-r-lg px-5 py-4 my-6">
                   <p className="text-text-primary font-medium italic">
@@ -199,7 +199,7 @@ export default function AboutPage() {
               <h3 className="heading-subsection text-text-primary mb-1">郭鎮榕（CJ哥）</h3>
               <p className="text-primary font-semibold text-sm mb-4">創辦人 暨 首席顧問</p>
               <div className="flex flex-wrap justify-center gap-2 mb-4">
-                {["20 年跨國企業經驗", "AI 轉型顧問", "ESG 永續諮詢", "人才策略專家"].map((h) => (
+                {["23 年跨國企業與顧問經驗", "AI 轉型顧問", "ESG 永續諮詢", "人才策略專家"].map((h) => (
                   <span key={h} className="text-xs px-2.5 py-1 rounded-full bg-primary/5 text-primary">{h}</span>
                 ))}
               </div>

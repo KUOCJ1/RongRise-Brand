@@ -192,7 +192,7 @@ export default function HrAiMaturityPage() {
         {step === "intro" && (
           <div className="text-center">
             <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-              <span className="text-sm text-[#2EC4B6] font-semibold">C.J. Kuo × 20 年人資管理實戰</span>
+              <span className="text-sm text-[#2EC4B6] font-semibold">C.J. Kuo × 23 年企業與顧問經驗</span>
             </div>
             <h1 className="text-3xl md:text-5xl font-black leading-tight mb-6">
               你的 HR 部門<br />
@@ -422,7 +422,7 @@ export default function HrAiMaturityPage() {
         {/* Footer */}
         <div className="text-center mt-16">
           <p className="text-white/20 text-xs">
-            此評估基於 CJ 哥 20 年人資管理經驗與 McKinsey 2026 年 HR 研究，僅供參考。
+            此評估基於 CJ 哥 23 年企業與顧問經驗與 McKinsey 2026 年 HR 研究，僅供參考。
             實際導入建議需結合企業具體情境與專業顧問診斷。
           </p>
         </div>

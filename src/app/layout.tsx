@@ -8,7 +8,7 @@ import Script from "next/script";
 const SITE_URL = "https://rong-rise.com";
 const SITE_NAME = "榕耀管顧 RongRise Consulting";
 const SITE_DESCRIPTION =
-  "以管理為本、以 AI 為用。CJ哥 20 年人資管理實戰，從組織設計、人才發展到變革領導，陪企業把 AI 真正落地。聚焦管理策略、人才發展、AI 落地、ESG 永續。";
+  "以管理為本、以 AI 為用。CJ哥 23 年跨國企業與顧問經驗，從組織設計、人才發展到變革領導，陪企業把 AI 真正落地。聚焦管理策略、人才發展、AI 落地、ESG 永續。";
 const OG_IMAGE = `${SITE_URL}/images/og-image-ai.jpg`;
 
 export const metadata: Metadata = {
