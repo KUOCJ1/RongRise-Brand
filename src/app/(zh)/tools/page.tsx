@@ -27,7 +27,7 @@ const tools: Tool[] = [
     href: "/ai-hr-assessment",
     icon: "🧑🏼‍💼",
     name: "HR AI 成熟度評估",
-    desc: "CJ 哥 23 年企業與顧問經驗 × AI 轉型。五大 HR 場景 × 20+ 題，五分鐘找出你的 HR AI 化缺口與優先行動。",
+    desc: "CJ 哥 25 年企業與顧問經驗 × AI 轉型。五大 HR 場景 × 20+ 題，五分鐘找出你的 HR AI 化缺口與優先行動。",
     tag: "自評",
     tagClass: "bg-teal/10 text-teal",
   },

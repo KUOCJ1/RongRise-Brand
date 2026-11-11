@@ -14,7 +14,7 @@ import newsData from "@/data/news.json";
 
 export const metadata = {
   title: "榕耀管顧 RongRise Consulting｜管理為本 · AI 為用",
-  description: "以管理為本、以 AI 為用的企業顧問。CJ哥 23 年跨國企業與顧問經驗，聚焦組織設計、人才發展、變革管理與 AI 落地，陪企業把轉型走完。",
+  description: "以管理為本、以 AI 為用的企業顧問。CJ哥 25 年企業與顧問經驗，聚焦組織設計、人才發展、變革管理與 AI 落地，陪企業把轉型走完。",
   alternates: {
     canonical: "https://rong-rise.com",
     languages: {
@@ -106,7 +106,7 @@ export default function HomePage() {
               <span className="hero-highlight">讓 AI 落地</span>
             </h1>
             <p className="text-body-lg text-white/80 mb-10 animate-fade-in-up animation-delay-200 leading-relaxed">
-              以 23 年跨國企業與顧問經驗為底，從組織設計、人才發展到變革領導，
+              以 25 年企業與顧問經驗為底，從組織設計、人才發展到變革領導，
               讓 AI 成為管理的槓桿，而不只是工具。
             </p>
             <div className="flex flex-wrap gap-4 animate-fade-in-up animation-delay-300">

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "HR AI 化成熟度評估｜5 分鐘找出轉型優先順序 — 榕耀管顧",
     description:
-      "CJ 哥 23 年企業與顧問經驗 × AI 轉型實戰。五大場景 × 20+ 題，立即評估你的 HR AI 化成熟度，獲得優先行動建議。",
+      "CJ 哥 25 年企業與顧問經驗 × AI 轉型實戰。五大場景 × 20+ 題，立即評估你的 HR AI 化成熟度，獲得優先行動建議。",
     images: [{ url: "https://rong-rise.com/images/og-image.jpg", width: 1200, height: 630, alt: "榕耀管顧 RongRise Consulting" }],
   },
 };

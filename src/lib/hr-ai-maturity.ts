@@ -3,7 +3,7 @@
    2026-09-05 開發（第二批 B2-2）
 
    方法論基礎：
-   - CJ哥 20 年人資實戰 × 五層 AI 轉型責任框架
+   - CJ哥 25 年企業與顧問經驗 × 五層 AI 轉型責任框架
    - McKinsey《Your AI Agents Need Performance Management Too》(2026.08)
    - HR 五大場景：招募甄選、績效管理、培訓發展、員工服務、數據決策
 
