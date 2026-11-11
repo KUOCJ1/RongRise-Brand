@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-11-10T05:21:04Z",
+ "generatedAt": "2026-11-11T05:20:14Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 164
+  "daysRunning": 165
  },
  "stats": {
-  "scanDays": 143,
+  "scanDays": 144,
   "weekArticles": 77,
-  "articles": 102,
-  "newsItems": 64,
+  "articles": 104,
+  "newsItems": 66,
   "newsletterIssues": 32,
   "subscribers": 22,
   "confirmedSubscribers": 15,
-  "videos": 42,
+  "videos": 44,
   "views": 732,
   "channelSubscribers": 18,
   "insights": 20,
-  "socialPosts": 80,
+  "socialPosts": 82,
   "igCards": 49,
-  "competitorReports": 142
+  "competitorReports": 143
  },
  "activity": [
-  {
-   "date": "2026-11-04",
-   "count": 10,
-   "topics": []
-  },
   {
    "date": "2026-11-05",
    "count": 12,
@@ -56,19 +51,24 @@
    "date": "2026-11-10",
    "count": 10,
    "topics": []
+  },
+  {
+   "date": "2026-11-11",
+   "count": 10,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "後台紀錄 3：哪些事該交出去，哪些事一定要留在人手上",
-   "date": "2026-11-07",
-   "url": "/knowledge/camino-operation-wrapup"
+   "title": "換一個膝關節，要動多少層",
+   "date": "2026-11-10",
+   "url": "/knowledge/knee-replacement-organization-ai"
   },
   "newsletter": "🦞 榕賀觀點 第 32 期 — 2026-11-09",
   "video": {
-   "title": "他把剪頭髮的動作，賣給了機器人公司",
-   "date": "2026-11-04",
-   "url": "https://www.youtube.com/watch?v=mma8Nptav5k"
+   "title": "換一個膝關節，要動多少層｜AI 導入前，組織得先拆簡單",
+   "date": "2026-11-10",
+   "url": "https://www.youtube.com/watch?v=oSwzbaoqe-I"
   },
   "insight": "2026-W46.md"
  },
@@ -76,19 +76,19 @@
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 42,
+   "count": 45,
    "momentum": "up"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
    "count": 35,
-   "momentum": "up"
+   "momentum": "flat"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 32,
+   "count": 29,
    "momentum": "up"
   },
   {
@@ -100,7 +100,7 @@
   {
    "keyword": "治理與法規",
    "icon": "⚖️",
-   "count": 23,
+   "count": 22,
    "momentum": "up"
   }
  ]
