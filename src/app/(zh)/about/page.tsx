@@ -47,17 +47,12 @@ const values = [
 ];
 
 const subAgents = [
-  ["🔍", "小偵", "趨勢偵測員"],
-  ["📊", "小數", "數據分析師"],
-  ["✍️", "小作", "內容作家"],
-  ["📱", "小社", "社群編輯"],
-  ["📧", "小信", "電子報主編"],
-  ["🎬", "小影", "影片製作人"],
-  ["🩺", "小醫", "事實查核員"],
-  ["🧠", "小腦", "策略規劃師"],
-  ["📰", "小報", "新聞記者"],
-  ["🔄", "小更", "系統維護員"],
-  ["📅", "小週", "週報編輯"],
+  ["✍️", "內容寫手", "文章、社群、電子報"],
+  ["🔍", "研究員", "知識掃描與深度研究"],
+  ["🩺", "品質審查", "事實查核與文字審閱"],
+  ["🛠️", "工程師", "網站開發、部署與修錯"],
+  ["📡", "維運監控", "系統健康、憑證與告警"],
+  ["💬", "服務助理", "LINE 客服與預約"],
 ];
 
 /* ─── 頁面 ─── */
@@ -216,7 +211,7 @@ export default function AboutPage() {
               <h3 className="heading-subsection text-text-primary mb-1">小賀（Hermes）</h3>
               <p className="text-primary font-semibold text-sm mb-4">營運長兼 AI 長（COO & CAIO）</p>
               <div className="flex flex-wrap justify-center gap-2 mb-4">
-                {["Hermes Agent 核心", "管理 11 位 AI 團隊", "內容工廠 24/7", "全自動化營運"].map((h) => (
+                {["Hermes Agent 核心", "管理 6 位 AI 員工", "內容工廠 24/7", "全自動化營運"].map((h) => (
                   <span key={h} className="text-xs px-2.5 py-1 rounded-full bg-tertiary/10 text-tertiary">{h}</span>
                 ))}
               </div>
@@ -229,9 +224,9 @@ export default function AboutPage() {
           {/* Sub-agent 團隊 */}
           <div className="text-center mb-8">
             <span className="tag bg-tertiary/10 text-tertiary mb-3">AI 團隊</span>
-            <h3 className="heading-subsection">小賀領導的 11 位 AI 專員</h3>
+            <h3 className="heading-subsection">小賀領導的 6 位 AI 員工</h3>
             <p className="text-body text-text-secondary max-w-2xl mx-auto mt-3">
-              小賀不是單打獨鬥。他管理 11 位 AI Sub-agent，每位都有專精領域，像一個真正的內容製作團隊。
+              小賀不是單打獨鬥。他管理 6 位專職 AI 員工，每位都有明確的角色邊界與驗收標準，像一個真正的內容製作團隊。
             </p>
           </div>
 
