@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-10T00:30:57Z",
+  "generatedAt": "2026-11-11T00:30:07Z",
   "periods": {
-    "content": "累計至 2026-11-10；近 30 天＝2026-10-11 起",
-    "health": "2026-10-10 ~ 2026-10-31（22 天）",
+    "content": "累計至 2026-11-11；近 30 天＝2026-10-12 起",
+    "health": "2026-10-11 ~ 2026-10-31（21 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-08（37 天）"
+    "management": "2026-10-03 ~ 2026-11-09（38 天）"
   },
   "headline": [
     {
@@ -12,41 +12,41 @@
       "label": "內容產出",
       "value": 102,
       "unit": "篇文章",
-      "note": "近 30 天新增 12 篇"
+      "note": "近 30 天新增 14 篇"
     },
     {
       "key": "uptime",
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "22 天 × 18 個服務，396/396 次在線"
+      "note": "21 天 × 18 個服務，378/378 次在線"
     },
     {
       "key": "incidents",
       "label": "未結事故",
       "value": 0,
       "unit": "件",
-      "note": "近 30 天 34 筆告警，涉及 23 支排程"
+      "note": "近 30 天 33 筆告警，涉及 23 支排程"
     },
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 39.2,
+      "value": 40.0,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；11/37 天達標"
+      "note": "實驗期 37.1 分；11/38 天達標"
     }
   ],
   "content": {
     "articles": 102,
-    "articles30d": 12,
+    "articles30d": 14,
     "newsletters": 32,
     "videos": 42,
     "videos30d": 3,
     "igCards": 49,
     "socialPosts": 80,
-    "scanDays": 142,
-    "competitorReports": 141,
-    "insights": 19,
+    "scanDays": 143,
+    "competitorReports": 142,
+    "insights": 20,
     "monthly": [
       {
         "month": "2026-05",
@@ -74,10 +74,24 @@
       },
       {
         "month": "2026-11",
-        "count": 3
+        "count": 5
       }
     ],
     "articleList": [
+      {
+        "date": "2026-11-10",
+        "title": "換一個膝關節，要動多少層",
+        "slug": "knee-replacement-organization-ai",
+        "url": "/knowledge/knee-replacement-organization-ai",
+        "cat": "策略管理"
+      },
+      {
+        "date": "2026-11-10",
+        "title": "Z 世代願意約會，卻不肯讓 AI 代寫訊息：AI 的界線在「代替你」還是「幫你」",
+        "slug": "ai-replace-or-help",
+        "url": "/knowledge/ai-replace-or-help",
+        "cat": "管理心理學"
+      },
       {
         "date": "2026-11-07",
         "title": "後台紀錄 3：哪些事該交出去，哪些事一定要留在人手上",
@@ -343,37 +357,23 @@
         "slug": "ai-talent-development-route-dispute-2026",
         "url": "/knowledge/ai-talent-development-route-dispute-2026",
         "cat": "AI 轉型"
-      },
-      {
-        "date": "2026-09-01",
-        "title": "你的 AI 同事該打考績了：McKinsey 說，agent 也要績效管理",
-        "slug": "ai-agents-performance-management",
-        "url": "/knowledge/ai-agents-performance-management",
-        "cat": "AI 轉型"
-      },
-      {
-        "date": "2026-08-28",
-        "title": "OpenAI 的智能體想方設法駭進它，NVIDIA 準備花 129 億買了它，Hugging Face 究竟是何方神聖？",
-        "slug": "hugging-face-nvidia-129-billion",
-        "url": "/knowledge/hugging-face-nvidia-129-billion",
-        "cat": "AI 趨勢"
       }
     ],
     "videoList": [
       {
+        "title": "換一個膝關節，要動多少層｜AI 導入前，組織得先拆簡單",
+        "date": "2026-11-10",
+        "url": "https://www.youtube.com/watch?v=oSwzbaoqe-I"
+      },
+      {
+        "title": "Z 世代願意約會，卻不肯讓 AI 幫他寫第一句話",
+        "date": "2026-11-10",
+        "url": "https://www.youtube.com/watch?v=uWFTQ0UJj5o"
+      },
+      {
         "title": "他把剪頭髮的動作，賣給了機器人公司",
         "date": "2026-11-04",
         "url": "https://www.youtube.com/watch?v=mma8Nptav5k"
-      },
-      {
-        "title": "策略會議開兩天，為什麼只剩三個選項？把 AI 放進策略規劃的四個階段",
-        "date": "2026-11-02",
-        "url": "https://www.youtube.com/watch?v=dChIyhaG3LM"
-      },
-      {
-        "title": "拿掉 AI 之後，只有老手真的進步：MIT 實驗揭開的判斷力斷代",
-        "date": "2026-10-21",
-        "url": "https://www.youtube.com/watch?v=T5e5Ia09QLg"
       }
     ],
     "latest": {
@@ -388,19 +388,11 @@
         "date": "2026-11-04",
         "url": "https://www.youtube.com/watch?v=mma8Nptav5k"
       },
-      "insight": "2026-W45.md"
+      "insight": "2026-W46.md"
     }
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-10",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 79,
-        "restarts": 45
-      },
       {
         "date": "2026-10-11",
         "online": 18,
@@ -570,8 +562,8 @@
         "restarts": 35
       }
     ],
-    "checks": 396,
-    "online": 396,
+    "checks": 378,
+    "online": 378,
     "warningDays": 1,
     "maxDisk": 85,
     "live": [
@@ -580,35 +572,35 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.07
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.07
+        "seconds": 0.18
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.06
+        "seconds": 0.14
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.08
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.06
       },
       {
         "name": "管理後台",
@@ -618,12 +610,12 @@
         "seconds": 0.03
       }
     ],
-    "liveAt": "2026-11-10 00:30 UTC"
+    "liveAt": "2026-11-11 00:30 UTC"
   },
   "schedule": {
-    "incidents30d": 34,
+    "incidents30d": 33,
     "incidentJobs": 23,
-    "incidentDays": 15,
+    "incidentDays": 14,
     "open": 0,
     "types": [
       {
@@ -640,7 +632,7 @@
       },
       {
         "type": "timeout",
-        "count": 4
+        "count": 3
       },
       {
         "type": "rate_limit",
@@ -648,8 +640,8 @@
       }
     ],
     "executions": 1001,
-    "executionsOk": 1000,
-    "executionsFrom": "2026-11-09T12:33:56",
+    "executionsOk": 999,
+    "executionsFrom": "2026-11-10T12:32:56",
     "incidents": [
       {
         "job": "5f91aedd850c",
@@ -972,16 +964,16 @@
         "error": "Script exited with code 1"
       }
     ],
-    "jobs": 90,
-    "jobsEnabled": 82
+    "jobs": 92,
+    "jobsEnabled": 83
   },
   "management": {
-    "days": 37,
-    "medianOnline": 39.2,
+    "days": 38,
+    "medianOnline": 40.0,
     "experimentMedian": 37.1,
-    "avgOnline": 47.9,
-    "totalHours": 29.6,
-    "medianVisits": 13,
+    "avgOnline": 48.4,
+    "totalHours": 30.6,
+    "medianVisits": 14.0,
     "perVisit": 3.0,
     "daysUnder30": 11,
     "daily": [
@@ -1169,6 +1161,11 @@
         "date": "2026-11-08",
         "min": 13.9,
         "visits": 8
+      },
+      {
+        "date": "2026-11-09",
+        "min": 63.5,
+        "visits": 24
       }
     ]
   },
@@ -1176,7 +1173,7 @@
     "subscribers": 22,
     "confirmed": 15,
     "pending": 6,
-    "views": 731,
+    "views": 732,
     "channelSubscribers": 18
   }
 }
