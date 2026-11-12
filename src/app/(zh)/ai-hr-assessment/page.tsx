@@ -8,6 +8,7 @@ import {
   type Scenario,
   type AssessmentResult,
 } from "@/lib/hr-ai-maturity";
+import { withUtmPayload } from "@/lib/utm";
 
 /* ============================================
    HR AI 化成熟度評估（HR AI Maturity Assessment）
@@ -89,7 +90,7 @@ export default function HrAiMaturityPage() {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           signal: AbortSignal.timeout(10000),
-          body: JSON.stringify({
+          body: JSON.stringify(withUtmPayload({
             name: name || "HR 量表訪客",
             email,
             company: company || "未填寫",
@@ -98,7 +99,7 @@ export default function HrAiMaturityPage() {
             challenges: ["HR 轉型"],
             source: "ai-hr-assessment",
             subscribed_at: new Date().toISOString(),
-          }),
+          })),
         });
       } catch {
         // silent

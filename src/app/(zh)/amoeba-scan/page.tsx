@@ -8,6 +8,7 @@ import {
   type ScanResult,
   type CustomTaskInput,
 } from "@/lib/amoeba-scan";
+import { withUtmPayload } from "@/lib/utm";
 
 /* ============================================
    任務變形蟲盤點器（Task Amoeba Scanner）
@@ -62,7 +63,7 @@ export default function AmoebaScanPage() {
         const res = await fetch("/api/newsletter/subscribe", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
+          body: JSON.stringify(withUtmPayload({
             name: name || "任務盤點訪客",
             email,
             company: company || "",
@@ -72,7 +73,7 @@ export default function AmoebaScanPage() {
             message: `來自任務變形蟲盤點器（勾選 ${selected.length} 個常見任務 + ${customs.length} 個自訂任務）`,
             source: "amoeba-scan",
             subscribed_at: new Date().toISOString(),
-          }),
+          })),
         });
         if (!res.ok) throw new Error("subscribe failed");
       } catch {

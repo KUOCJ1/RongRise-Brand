@@ -15,6 +15,7 @@ import {
   type CommitmentKey,
   type FitResult,
 } from "@/lib/course-fit";
+import { withUtmPayload } from "@/lib/utm";
 
 /* ============================================
    課程適配度自評（Course Fit Assessment）
@@ -76,7 +77,7 @@ export default function CourseFitPage() {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           signal: AbortSignal.timeout(10000),
-          body: JSON.stringify({
+          body: JSON.stringify(withUtmPayload({
             name: name || "課程適配度自評訪客",
             email,
             company: company || "未填寫",
@@ -86,7 +87,7 @@ export default function CourseFitPage() {
             message: `來自課程適配度自評（建議 ${computed.match.title}）`,
             source: "course-fit",
             subscribed_at: new Date().toISOString(),
-          }),
+          })),
         });
         if (res.ok) setLeadSent(true);
       } catch {

@@ -9,6 +9,7 @@ import {
   type StageResult,
   type DiagnosisResult,
 } from "@/lib/ai-employee-diagnosis";
+import { withUtmPayload } from "@/lib/utm";
 
 /* ============================================
    Agentic AI 員工管理學五階自評
@@ -192,11 +193,11 @@ export default function AIEmployeeDiagnosisPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         signal: controller.signal,
-        body: JSON.stringify({
+        body: JSON.stringify(withUtmPayload({
           name: name.trim() || "五階自評訪客",
           email: email.trim(),
           source: "ai-employee-diagnosis",
-        }),
+        })),
       });
       if (timer) clearTimeout(timer);
 

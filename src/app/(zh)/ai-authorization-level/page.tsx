@@ -7,6 +7,7 @@ import {
   type DimensionKey,
   type AuthLevelResult,
 } from "@/lib/ai-authorization-level";
+import { withUtmPayload } from "@/lib/utm";
 
 /* ============================================
    AI 員工授權等級測驗（B5-2 微型工具）
@@ -117,7 +118,7 @@ export default function AIAuthorizationLevelPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         signal: AbortSignal.timeout(10000),
-        body: JSON.stringify({
+        body: JSON.stringify(withUtmPayload({
           name: name.trim() || "授權等級測驗訪客",
           email: email.trim(),
           company: company.trim() || "未填寫",
@@ -131,7 +132,7 @@ export default function AIAuthorizationLevelPage() {
             .map((g) => g.label)
             .join("、") || "無缺口"}`,
           source: "ai-authorization-level",
-        }),
+        })),
       });
       setLeadError(null);
       pending

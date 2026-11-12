@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { withUtmPayload } from "@/lib/utm";
 
 type Props = {
   slug: string;
@@ -54,7 +55,7 @@ export default function EnrollForm({
       const res = await fetch("/api/courses/enroll", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, slug, source: `website:${slug}` }),
+        body: JSON.stringify(withUtmPayload({ ...form, slug, source: `website:${slug}` })),
       });
       const data = await res.json().catch(() => ({}));
       if (res.ok) {

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { withUtmPayload } from "@/lib/utm";
 
 const API_URL = "/api/newsletter";
 
@@ -26,7 +27,7 @@ export default function InlineSubscribe() {
       const r = await fetch(API_URL + "/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: email.trim(), name: name.trim(), source: "article-inline" }),
+        body: JSON.stringify(withUtmPayload({ email: email.trim(), name: name.trim(), source: "article-inline" })),
       });
       const d = await r.json().catch(() => ({}));
       if (r.ok) {

@@ -9,6 +9,7 @@ import {
   type Dimension,
   type ScanResult,
 } from "@/lib/ai-governance-scan";
+import { withUtmPayload } from "@/lib/utm";
 
 /* ============================================
    AI 治理五檢查自評（AI Governance Five-Check Scan）
@@ -99,7 +100,7 @@ export default function AIGovernanceScanPage() {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             signal: AbortSignal.timeout(10000),
-            body: JSON.stringify({
+            body: JSON.stringify(withUtmPayload({
               name: name || "治理量表訪客",
               email,
               company: company || "未填寫",
@@ -108,7 +109,7 @@ export default function AIGovernanceScanPage() {
               challenges: ["AI 治理"],
               source: "ai-governance-scan",
               subscribed_at: new Date().toISOString(),
-            }),
+            })),
           });
           // 請求確實送出後才顯示「已送出」
           setLeadEmail(email);

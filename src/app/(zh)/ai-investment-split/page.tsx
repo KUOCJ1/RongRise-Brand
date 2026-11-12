@@ -13,6 +13,7 @@ import {
   type SplitResult,
   type StageKey,
 } from "@/lib/ai-investment-split";
+import { withUtmPayload } from "@/lib/utm";
 
 /* ============================================
    AI 投資配置體檢（10-20-70 Split Checkup）
@@ -112,7 +113,7 @@ export default function AIInvestmentSplitPage() {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             signal: AbortSignal.timeout(10000),
-            body: JSON.stringify({
+            body: JSON.stringify(withUtmPayload({
               name: name || "投資配置體檢訪客",
               email,
               company: company || "未填寫",
@@ -124,7 +125,7 @@ export default function AIInvestmentSplitPage() {
               )}）`,
               source: "ai-investment-split",
               subscribed_at: new Date().toISOString(),
-            }),
+            })),
           });
           // 請求確實送出後才顯示「已送出」，避免在送不出去的環境給出假的成功訊息
           setLeadEmail(email);

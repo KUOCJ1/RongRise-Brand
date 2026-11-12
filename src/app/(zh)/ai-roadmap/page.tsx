@@ -14,6 +14,7 @@ import {
   type StageKey,
   type BudgetKey,
 } from "@/lib/ai-roadmap";
+import { withUtmPayload } from "@/lib/utm";
 
 /* ============================================
    AI 轉型路線圖生成器（AI Transformation Roadmap Generator）
@@ -87,7 +88,7 @@ export default function AiRoadmapPage() {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           signal: AbortSignal.timeout(10000),
-          body: JSON.stringify({
+          body: JSON.stringify(withUtmPayload({
             name: name || "路線圖訪客",
             email,
             company: company || "未填寫",
@@ -99,7 +100,7 @@ export default function AiRoadmapPage() {
               .join("、")} · 現況 ${STAGE_META[stageKey].label}）`,
             source: "ai-roadmap",
             subscribed_at: new Date().toISOString(),
-          }),
+          })),
         });
         if (!res.ok) throw new Error("subscribe failed");
       } catch {

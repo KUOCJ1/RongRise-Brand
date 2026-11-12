@@ -10,6 +10,7 @@ import {
   type AlignmentResult,
   type LayerResult,
 } from "@/lib/human-ai-alignment";
+import { withUtmPayload } from "@/lib/utm";
 
 /* ============================================
    人機策略對齊度自評（B5-1 微型工具）
@@ -217,7 +218,7 @@ export default function HumanAIAlignmentPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         signal: AbortSignal.timeout(10000),
-        body: JSON.stringify({
+        body: JSON.stringify(withUtmPayload({
           name: name.trim() || "人機對齊自評訪客",
           email: email.trim(),
           // route.ts 要求 company 必填，空字串會 400
@@ -231,7 +232,7 @@ export default function HumanAIAlignmentPage() {
             result.misalignments[0]?.title ?? "無"
           }）`,
           source: "human-ai-alignment",
-        }),
+        })),
       });
       setLeadError(null);
       pending

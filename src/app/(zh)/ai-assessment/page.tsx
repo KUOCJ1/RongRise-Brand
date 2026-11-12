@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Head from "next/head";
+import { appendUtmToUrl, withUtmPayload } from "@/lib/utm";
 
 /* ============================================
    AI 轉型自我評估 Landing Page
@@ -83,6 +84,12 @@ export default function AIAssessmentLanding() {
   });
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
+  const n8nFormUrl = "https://n8n.rong-rise.com/form/ai-maturity";
+  const [n8nHref, setN8nHref] = useState(n8nFormUrl);
+
+  useEffect(() => {
+    setN8nHref(appendUtmToUrl(n8nFormUrl));
+  }, []);
 
   const handleChallengeToggle = (c: string) => {
     setForm((prev) => ({
@@ -104,7 +111,7 @@ export default function AIAssessmentLanding() {
       const res = await fetch("https://n8n.rong-rise.com/webhook/quick-assessment", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
+        body: JSON.stringify(withUtmPayload({
           name: form.name,
           email: form.email,
           company: form.company,
@@ -114,7 +121,7 @@ export default function AIAssessmentLanding() {
           message: form.message,
           source: "ai-assessment-landing",
           subscribed_at: new Date().toISOString(),
-        }),
+        })),
       });
       if (!res.ok) throw new Error("伺服器錯誤，請稍後再試");
       setStep(2);
@@ -170,7 +177,7 @@ export default function AIAssessmentLanding() {
                   開始免費評估 →
                 </button>
                 <a
-                  href="https://n8n.rong-rise.com/form/ai-maturity"
+                  href={n8nHref}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-4 bg-[#1A6DB5] hover:bg-[#2EC4B6] text-white font-bold rounded-xl text-lg transition-all shadow-lg shadow-[#1A6DB5]/30"
@@ -417,7 +424,7 @@ export default function AIAssessmentLanding() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://n8n.rong-rise.com/form/ai-maturity"
+                href={n8nHref}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-6 py-3 bg-[#1A6DB5] hover:bg-[#2EC4B6] rounded-xl text-white font-medium transition-all"

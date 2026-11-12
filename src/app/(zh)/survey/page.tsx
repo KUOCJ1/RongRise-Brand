@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Script from "next/script";
+import { withUtmPayload } from "@/lib/utm";
 
 const INDUSTRIES = [
   "製造業", "科技/資訊", "金融/保險", "醫療/生技",
@@ -51,7 +52,7 @@ export default function SurveyPage() {
       await fetch("https://rong-rise.com/api/newsletter/survey", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify(withUtmPayload(form)),
       });
     } catch {}
     setSubmitted(true);

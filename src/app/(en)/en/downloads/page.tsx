@@ -64,7 +64,7 @@ const downloadCategories: DownloadCategory[] = [
         type: "PDF",
         size: "61 KB",
         desc: "Free download! Assess enterprise AI maturity across five dimensions.",
-        href: "https://drive.google.com/file/d/12L6UmKRu9rURwF3GZSPxIGAzT6EsmyKs/view?usp=sharing",
+        href: "/resources/ai-maturity-self-assessment.pdf",
         isNew: true,
       },
       {

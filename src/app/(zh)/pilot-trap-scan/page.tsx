@@ -9,6 +9,7 @@ import {
   type PilotTrapResult,
 } from "@/lib/pilot-trap-scan";
 import { encodeScoreCode } from "@/lib/pilot-trap-workshop";
+import { withUtmPayload } from "@/lib/utm";
 
 /* ============================================
    Pilot Trap 診斷量表（Pilot Trap Scanner）
@@ -160,7 +161,7 @@ export default function PilotTrapScanPage() {
         await fetch("/api/newsletter/subscribe", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
+          body: JSON.stringify(withUtmPayload({
             name: name || "Pilot Trap 訪客",
             email,
             company: company || "",
@@ -172,7 +173,7 @@ export default function PilotTrapScanPage() {
             )}%）`,
             source: "pilot-trap-scan",
             subscribed_at: new Date().toISOString(),
-          }),
+          })),
         });
       } catch {
         // 留資失敗不阻擋結果

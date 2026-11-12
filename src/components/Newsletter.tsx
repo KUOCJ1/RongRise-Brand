@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { trackNewsletterSubscribe } from "@/lib/ga4-events";
+import { withUtmPayload } from "@/lib/utm";
 
 const API_URL = "/api/newsletter";
 
@@ -69,11 +70,11 @@ export default function NewsletterSection() {
       const res = await fetch(API_URL + "/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
+        body: JSON.stringify(withUtmPayload({
           email,
           name,
           source: "website",
-        }),
+        })),
       });
 
       const data = await res.json();
@@ -102,7 +103,7 @@ export default function NewsletterSection() {
       const res = await fetch(API_URL + "/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, name, source: "website-resend" }),
+        body: JSON.stringify(withUtmPayload({ email, name, source: "website-resend" })),
       });
       const data = await res.json();
       if (data.success) {

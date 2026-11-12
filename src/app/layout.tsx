@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import QuickChat from "@/components/QuickChat";
 import Script from "next/script";
+import UtmCapture from "@/components/UtmCapture";
 
 const SITE_URL = "https://rong-rise.com";
 const SITE_NAME = "榕耀管顧 RongRise Consulting";
@@ -161,13 +162,15 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${GA4_ID}', {
-              page_path: window.location.pathname,
+              page_path: window.location.pathname + window.location.search,
+              page_location: window.location.href,
               send_page_view: true,
             });
           `}
         </Script>
       </head>
       <body className="min-h-full flex flex-col">
+        <UtmCapture />
         {children}
       </body>
     </html>

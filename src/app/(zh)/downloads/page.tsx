@@ -77,7 +77,7 @@ const downloadCategories: DownloadCategory[] = [
         type: "PDF",
         size: "61 KB",
         desc: "免費下載！五個維度評估企業 AI 成熟度水準。",
-        href: "https://drive.google.com/file/d/12L6UmKRu9rURwF3GZSPxIGAzT6EsmyKs/view?usp=sharing",
+        href: "/resources/ai-maturity-self-assessment.pdf",
         isNew: true,
       },
       {
@@ -153,7 +153,7 @@ const downloadCategories: DownloadCategory[] = [
         type: "PDF",
         size: "61 KB",
         desc: "免費下載！五個維度評估企業 AI 成熟度水準。",
-        href: "https://drive.google.com/file/d/12L6UmKRu9rURwF3GZSPxIGAzT6EsmyKs/view?usp=sharing",
+        href: "/resources/ai-maturity-self-assessment.pdf",
       },
       {
         name: "ESG 現況盤點清單",

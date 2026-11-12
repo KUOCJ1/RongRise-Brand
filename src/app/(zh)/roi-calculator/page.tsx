@@ -9,6 +9,7 @@ import {
   formatRoi,
   type RoiResult,
 } from "@/lib/roi-calculator";
+import { withUtmPayload } from "@/lib/utm";
 
 /* ============================================
    AI 轉型 ROI 估算器
@@ -80,7 +81,7 @@ export default function RoiCalculatorPage() {
         const res = await fetch("/api/newsletter/subscribe", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
+          body: JSON.stringify(withUtmPayload({
             name: form.name || "ROI 估算訪客",
             email: form.email,
             company: form.company || "",
@@ -90,7 +91,7 @@ export default function RoiCalculatorPage() {
             message: "來自 AI 轉型 ROI 估算器",
             source: "roi-calculator",
             subscribed_at: new Date().toISOString(),
-          }),
+          })),
         });
         if (!res.ok) throw new Error("subscribe failed");
       } catch {
