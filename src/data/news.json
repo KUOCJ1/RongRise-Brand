@@ -1,13 +1,22 @@
 {
   "news": [
     {
+      "id": "n68",
+      "date": "2026-11-13",
+      "category": "資源",
+      "title": "連輝達都沒有接班計畫：問題不是找不到人，是沒有選項",
+      "summary": "輝達在 11 月 12 日宣布黃仁勳辭職、財務長暫代執行長，並首度設董事會主席。一家四兆美元的公司用一個上午回答「誰來接」，答案是暫代。台灣中小企業面對的是同一個問題，只是規模小一點、時間少一點。",
+      "link": "/knowledge/nvidia-no-succession-plan",
+      "isNew": true
+    },
+    {
       "id": "n67",
       "date": "2026-11-12",
       "category": "資源",
       "title": "你的客戶對話、SOP、報價，還躺在員工的私人 LINE 裡：AI 最缺的不是模型，是你的資料",
       "summary": "LINE 在台灣有 2,200 萬月活、覆蓋約 94% 人口，工作對話卻留在員工的私人帳號，離職就斷層。AI 時代真正的資產是資料，而資料根本不在公司手上。",
       "link": "/knowledge/data-lives-in-employees-private-line",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n66",
@@ -16,7 +25,7 @@
       "title": "換一個膝關節，要動多少層",
       "summary": "膝蓋用久了會磨光，組織用久了也會。醫師不會直接鋸掉裝新的，他得先清掉壞的、分開黏住的、修掉不能用的，最後才裝上人工關節。",
       "link": "/knowledge/knee-replacement-organization-ai",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n65",
@@ -25,7 +34,7 @@
       "title": "Z 世代願意約會，卻不肯讓 AI 代寫訊息：AI 的界線在「代替你」還是「幫你」",
       "summary": "彭博調查：Z 世代 34% 願意約會，卻只有剛過一半肯讓 AI 代寫訊息。拉德堡德大學發現，八成受試者沒察覺流暢文筆下的錯誤。AI 的界線在「代替你」還是「幫你」：機器可以提出，人負責按下送出。",
       "link": "/knowledge/ai-replace-or-help",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n64",

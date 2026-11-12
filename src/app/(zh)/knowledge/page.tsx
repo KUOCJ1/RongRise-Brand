@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "nvidia-no-succession-plan",
+    cat: "策略管理",
+    title: "連輝達都沒有接班計畫：問題不是找不到人，是沒有選項",
+    date: "2026-11-13",
+    readTime: "6 分鐘",
+    excerpt: "輝達在 11 月 12 日宣布黃仁勳辭職、財務長暫代執行長，並首度設董事會主席。一家四兆美元的公司用一個上午回答「誰來接」，答案是暫代。台灣中小企業面對的是同一個問題，只是規模小一點、時間少一點。",
+    tags: ["接班", "公司治理", "中小企業", "家族企業"],
+  },
+  {
     slug: "data-lives-in-employees-private-line",
     cat: "策略管理",
     title: "你的客戶對話、SOP、報價，還躺在員工的私人 LINE 裡：AI 最缺的不是模型，是你的資料",
