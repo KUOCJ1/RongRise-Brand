@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-11-11T05:20:14Z",
+ "generatedAt": "2026-11-12T05:20:13Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 165
+  "daysRunning": 166
  },
  "stats": {
-  "scanDays": 144,
-  "weekArticles": 77,
+  "scanDays": 145,
+  "weekArticles": 75,
   "articles": 104,
   "newsItems": 66,
   "newsletterIssues": 32,
   "subscribers": 22,
   "confirmedSubscribers": 15,
   "videos": 44,
-  "views": 732,
+  "views": 748,
   "channelSubscribers": 18,
   "insights": 20,
   "socialPosts": 82,
   "igCards": 49,
-  "competitorReports": 143
+  "competitorReports": 144
  },
  "activity": [
-  {
-   "date": "2026-11-05",
-   "count": 12,
-   "topics": []
-  },
   {
    "date": "2026-11-06",
    "count": 12,
@@ -56,6 +51,11 @@
    "date": "2026-11-11",
    "count": 10,
    "topics": []
+  },
+  {
+   "date": "2026-11-12",
+   "count": 10,
+   "topics": []
   }
  ],
  "latest": {
@@ -76,7 +76,7 @@
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 45,
+   "count": 42,
    "momentum": "up"
   },
   {
@@ -88,19 +88,19 @@
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 29,
+   "count": 31,
    "momentum": "up"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 23,
-   "momentum": "up"
+   "count": 20,
+   "momentum": "flat"
   },
   {
    "keyword": "治理與法規",
    "icon": "⚖️",
-   "count": 22,
+   "count": 20,
    "momentum": "up"
   }
  ]
