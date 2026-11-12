@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-12T00:30:07Z",
+  "generatedAt": "2026-11-12T15:32:26Z",
   "periods": {
     "content": "累計至 2026-11-12；近 30 天＝2026-10-13 起",
-    "health": "2026-10-12 ~ 2026-10-31（20 天）",
+    "health": "2026-10-13 ~ 2026-10-31（19 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-10（39 天）"
+    "management": "2026-10-03 ~ 2026-11-11（40 天）"
   },
   "headline": [
     {
@@ -12,14 +12,14 @@
       "label": "內容產出",
       "value": 104,
       "unit": "篇文章",
-      "note": "近 30 天新增 14 篇"
+      "note": "近 30 天新增 16 篇"
     },
     {
       "key": "uptime",
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "20 天 × 18 個服務，360/360 次在線"
+      "note": "19 天 × 18 個服務，342/342 次在線"
     },
     {
       "key": "incidents",
@@ -31,21 +31,21 @@
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 40.8,
+      "value": 41.4,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；11/39 天達標"
+      "note": "實驗期 37.1 分；11/40 天達標"
     }
   ],
   "content": {
     "articles": 104,
-    "articles30d": 14,
+    "articles30d": 16,
     "newsletters": 32,
     "videos": 44,
     "videos30d": 3,
     "igCards": 49,
     "socialPosts": 82,
-    "scanDays": 144,
-    "competitorReports": 143,
+    "scanDays": 145,
+    "competitorReports": 144,
     "insights": 20,
     "monthly": [
       {
@@ -74,10 +74,24 @@
       },
       {
         "month": "2026-11",
-        "count": 5
+        "count": 7
       }
     ],
     "articleList": [
+      {
+        "date": "2026-11-13",
+        "title": "連輝達都沒有接班計畫：問題不是找不到人，是沒有選項",
+        "slug": "nvidia-no-succession-plan",
+        "url": "/knowledge/nvidia-no-succession-plan",
+        "cat": "策略管理"
+      },
+      {
+        "date": "2026-11-12",
+        "title": "你的客戶對話、SOP、報價，還躺在員工的私人 LINE 裡：AI 最缺的不是模型，是你的資料",
+        "slug": "data-lives-in-employees-private-line",
+        "url": "/knowledge/data-lives-in-employees-private-line",
+        "cat": "策略管理"
+      },
       {
         "date": "2026-11-10",
         "title": "換一個膝關節，要動多少層",
@@ -343,20 +357,6 @@
         "slug": "ai-net-efficiency-trap",
         "url": "/knowledge/ai-net-efficiency-trap",
         "cat": "AI 轉型"
-      },
-      {
-        "date": "2026-09-05",
-        "title": "你的績效管理對象多了一群 AI Agent：McKinsey 給 2026 年 HR 的 5 個訊號",
-        "slug": "mckinsey-hr-agent-performance-management",
-        "url": "/knowledge/mckinsey-hr-agent-performance-management",
-        "cat": "AI 轉型"
-      },
-      {
-        "date": "2026-09-03",
-        "title": "一家 AI 公司禁止新人用 AI，另一家全押 AI 大舉徵才——誰對？",
-        "slug": "ai-talent-development-route-dispute-2026",
-        "url": "/knowledge/ai-talent-development-route-dispute-2026",
-        "cat": "AI 轉型"
       }
     ],
     "videoList": [
@@ -393,14 +393,6 @@
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-12",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 74,
-        "restarts": 48
-      },
       {
         "date": "2026-10-13",
         "online": 18,
@@ -554,8 +546,8 @@
         "restarts": 35
       }
     ],
-    "checks": 360,
-    "online": 360,
+    "checks": 342,
+    "online": 342,
     "warningDays": 1,
     "maxDisk": 85,
     "live": [
@@ -564,35 +556,35 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.06
+        "seconds": 0.03
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.23
+        "seconds": 0.13
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.1
+        "seconds": 0.06
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.05
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.08
+        "seconds": 0.07
       },
       {
         "name": "管理後台",
@@ -602,7 +594,7 @@
         "seconds": 0.03
       }
     ],
-    "liveAt": "2026-11-12 00:30 UTC"
+    "liveAt": "2026-11-12 15:32 UTC"
   },
   "schedule": {
     "incidents30d": 32,
@@ -631,9 +623,9 @@
         "count": 2
       }
     ],
-    "executions": 1002,
+    "executions": 1000,
     "executionsOk": 1000,
-    "executionsFrom": "2026-11-11T12:20:06",
+    "executionsFrom": "2026-11-12T03:37:06",
     "incidents": [
       {
         "job": "5f91aedd850c",
@@ -960,12 +952,12 @@
     "jobsEnabled": 82
   },
   "management": {
-    "days": 39,
-    "medianOnline": 40.8,
+    "days": 40,
+    "medianOnline": 41.4,
     "experimentMedian": 37.1,
-    "avgOnline": 48.8,
-    "totalHours": 31.7,
-    "medianVisits": 13,
+    "avgOnline": 48.7,
+    "totalHours": 32.4,
+    "medianVisits": 14.0,
     "perVisit": 3.0,
     "daysUnder30": 11,
     "daily": [
@@ -1163,6 +1155,11 @@
         "date": "2026-11-10",
         "min": 65.6,
         "visits": 13
+      },
+      {
+        "date": "2026-11-11",
+        "min": 43.3,
+        "visits": 19
       }
     ]
   },
@@ -1170,7 +1167,66 @@
     "subscribers": 22,
     "confirmed": 15,
     "pending": 6,
-    "views": 732,
+    "views": 748,
     "channelSubscribers": 18
+  },
+  "rework": {
+    "period": "近 30 天（重工帳本 state/rework_log.jsonl）",
+    "count": 6,
+    "minutes": 31,
+    "byKind": [
+      {
+        "kind": "video",
+        "count": 5
+      },
+      {
+        "kind": "article",
+        "count": 1
+      }
+    ],
+    "items": [
+      {
+        "ts": "2026-11-12 23:32",
+        "kind": "video",
+        "what": "W46 資料主權 v1→v2",
+        "cause": "母片 mono、avatar stereo，concat 後片尾整段靜音 -48dB",
+        "minutes": 8
+      },
+      {
+        "ts": "2026-11-12 23:32",
+        "kind": "video",
+        "what": "片頭台詞重錄（一分鐘→八十秒）",
+        "cause": "成片 80 秒才發現台詞與長度不符",
+        "minutes": 6
+      },
+      {
+        "ts": "2026-11-12 23:32",
+        "kind": "video",
+        "what": "自稱改為 C.J.哥",
+        "cause": "用本名開場，非對外自稱",
+        "minutes": 4
+      },
+      {
+        "ts": "2026-11-12 23:32",
+        "kind": "video",
+        "what": "LINE 數字用語（月活→月活躍用戶）",
+        "cause": "旁白、字卡、說明、文章四處分散",
+        "minutes": 5
+      },
+      {
+        "ts": "2026-11-12 23:32",
+        "kind": "article",
+        "what": "官網文章用語修正後重部署",
+        "cause": "月活、匯報兩處用語",
+        "minutes": 6
+      },
+      {
+        "ts": "2026-11-12 23:32",
+        "kind": "video",
+        "what": "YouTube 封面誤用接班人圖",
+        "cause": "上傳參數複製前一案",
+        "minutes": 2
+      }
+    ]
   }
 }
