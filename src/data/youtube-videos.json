@@ -1,6 +1,15 @@
 {
   "videos": [
     {
+      "id": "zweVxaOkZLs",
+      "title": "連輝達都沒有接班計畫：執行長辭職那天，公司只剩一個選項",
+      "date": "2026-11-12",
+      "description": "11 月 12 日早上，輝達發了一份新聞稿：黃仁勳辭職、即刻生效，財務長 Colette Kress 暫代執行長，董事會第一次設主席（前 Synopsys 執行長 Harvey Jones）。\n\n一家市值四兆美元的公司，用一個上午回答「誰來",
+      "thumbnail": "https://img.youtube.com/vi/zweVxaOkZLs/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/zweVxaOkZLs/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=zweVxaOkZLs"
+    },
+    {
       "id": "Kwn7ucyrnDg",
       "title": "你的客戶對話存在誰的手機？｜台灣 LINE 覆蓋 94%，資料卻不在公司手上",
       "date": "2026-11-12",
@@ -17,16 +26,7 @@
       "thumbnail": "https://img.youtube.com/vi/oSwzbaoqe-I/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/oSwzbaoqe-I/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=oSwzbaoqe-I"
-    },
-    {
-      "id": "uWFTQ0UJj5o",
-      "title": "Z 世代願意約會，卻不肯讓 AI 幫他寫第一句話",
-      "date": "2026-11-10",
-      "description": "Z 世代願意約會，卻不肯讓 AI 幫他寫第一句話。\n\n彭博調查 1,000 位美國交友軟體用戶：16 到 28 歲有 34% 正在積極約會，比去年回升；但只有剛過一半願意讓 AI 代寫回覆。千禧世代是七成。\n\n越年輕，越不肯讓 AI 代替自",
-      "thumbnail": "https://img.youtube.com/vi/uWFTQ0UJj5o/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/uWFTQ0UJj5o/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=uWFTQ0UJj5o"
     }
   ],
-  "fetchedAt": "2026-11-12T15:48:18Z"
+  "fetchedAt": "2026-11-12T16:01:18Z"
 }
