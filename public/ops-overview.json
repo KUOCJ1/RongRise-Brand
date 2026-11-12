@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-11T00:30:07Z",
+  "generatedAt": "2026-11-12T00:30:07Z",
   "periods": {
-    "content": "累計至 2026-11-11；近 30 天＝2026-10-12 起",
-    "health": "2026-10-11 ~ 2026-10-31（21 天）",
+    "content": "累計至 2026-11-12；近 30 天＝2026-10-13 起",
+    "health": "2026-10-12 ~ 2026-10-31（20 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-09（38 天）"
+    "management": "2026-10-03 ~ 2026-11-10（39 天）"
   },
   "headline": [
     {
       "key": "content",
       "label": "內容產出",
-      "value": 102,
+      "value": 104,
       "unit": "篇文章",
       "note": "近 30 天新增 14 篇"
     },
@@ -19,33 +19,33 @@
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "21 天 × 18 個服務，378/378 次在線"
+      "note": "20 天 × 18 個服務，360/360 次在線"
     },
     {
       "key": "incidents",
       "label": "未結事故",
       "value": 0,
       "unit": "件",
-      "note": "近 30 天 33 筆告警，涉及 23 支排程"
+      "note": "近 30 天 32 筆告警，涉及 22 支排程"
     },
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 40.0,
+      "value": 40.8,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；11/38 天達標"
+      "note": "實驗期 37.1 分；11/39 天達標"
     }
   ],
   "content": {
-    "articles": 102,
+    "articles": 104,
     "articles30d": 14,
     "newsletters": 32,
-    "videos": 42,
+    "videos": 44,
     "videos30d": 3,
     "igCards": 49,
-    "socialPosts": 80,
-    "scanDays": 143,
-    "competitorReports": 142,
+    "socialPosts": 82,
+    "scanDays": 144,
+    "competitorReports": 143,
     "insights": 20,
     "monthly": [
       {
@@ -378,29 +378,21 @@
     ],
     "latest": {
       "article": {
-        "title": "後台紀錄 3：哪些事該交出去，哪些事一定要留在人手上",
-        "date": "2026-11-07",
-        "url": "/knowledge/camino-operation-wrapup"
+        "title": "換一個膝關節，要動多少層",
+        "date": "2026-11-10",
+        "url": "/knowledge/knee-replacement-organization-ai"
       },
       "newsletter": "🦞 榕賀觀點 第 32 期 — 2026-11-09",
       "video": {
-        "title": "他把剪頭髮的動作，賣給了機器人公司",
-        "date": "2026-11-04",
-        "url": "https://www.youtube.com/watch?v=mma8Nptav5k"
+        "title": "換一個膝關節，要動多少層｜AI 導入前，組織得先拆簡單",
+        "date": "2026-11-10",
+        "url": "https://www.youtube.com/watch?v=oSwzbaoqe-I"
       },
       "insight": "2026-W46.md"
     }
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-11",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 79,
-        "restarts": 47
-      },
       {
         "date": "2026-10-12",
         "online": 18,
@@ -562,8 +554,8 @@
         "restarts": 35
       }
     ],
-    "checks": 378,
-    "online": 378,
+    "checks": 360,
+    "online": 360,
     "warningDays": 1,
     "maxDisk": 85,
     "live": [
@@ -572,35 +564,35 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.07
+        "seconds": 0.06
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.18
+        "seconds": 0.23
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.14
+        "seconds": 0.1
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.08
+        "seconds": 0.04
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.06
+        "seconds": 0.08
       },
       {
         "name": "管理後台",
@@ -610,12 +602,12 @@
         "seconds": 0.03
       }
     ],
-    "liveAt": "2026-11-11 00:30 UTC"
+    "liveAt": "2026-11-12 00:30 UTC"
   },
   "schedule": {
-    "incidents30d": 33,
-    "incidentJobs": 23,
-    "incidentDays": 14,
+    "incidents30d": 32,
+    "incidentJobs": 22,
+    "incidentDays": 13,
     "open": 0,
     "types": [
       {
@@ -628,7 +620,7 @@
       },
       {
         "type": "unknown",
-        "count": 5
+        "count": 4
       },
       {
         "type": "timeout",
@@ -639,9 +631,9 @@
         "count": 2
       }
     ],
-    "executions": 1001,
-    "executionsOk": 999,
-    "executionsFrom": "2026-11-10T12:32:56",
+    "executions": 1002,
+    "executionsOk": 1000,
+    "executionsFrom": "2026-11-11T12:20:06",
     "incidents": [
       {
         "job": "5f91aedd850c",
@@ -965,15 +957,15 @@
       }
     ],
     "jobs": 92,
-    "jobsEnabled": 83
+    "jobsEnabled": 82
   },
   "management": {
-    "days": 38,
-    "medianOnline": 40.0,
+    "days": 39,
+    "medianOnline": 40.8,
     "experimentMedian": 37.1,
-    "avgOnline": 48.4,
-    "totalHours": 30.6,
-    "medianVisits": 14.0,
+    "avgOnline": 48.8,
+    "totalHours": 31.7,
+    "medianVisits": 13,
     "perVisit": 3.0,
     "daysUnder30": 11,
     "daily": [
@@ -1166,6 +1158,11 @@
         "date": "2026-11-09",
         "min": 63.5,
         "visits": 24
+      },
+      {
+        "date": "2026-11-10",
+        "min": 65.6,
+        "visits": 13
       }
     ]
   },
