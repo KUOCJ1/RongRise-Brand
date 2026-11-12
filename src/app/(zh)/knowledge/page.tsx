@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "data-lives-in-employees-private-line",
+    cat: "策略管理",
+    title: "你的客戶對話、SOP、報價，還躺在員工的私人 LINE 裡：AI 最缺的不是模型，是你的資料",
+    date: "2026-11-12",
+    readTime: "7 分鐘",
+    excerpt: "LINE 在台灣有 2,200 萬月活、覆蓋約 94% 人口，工作對話卻留在員工的私人帳號，離職就斷層。AI 時代真正的資產是資料，而資料根本不在公司手上。",
+    tags: ["資料主權", "AI 轉型", "中小企業", "數位轉型"],
+  },
+  {
     slug: "knee-replacement-organization-ai",
     cat: "策略管理",
     title: "換一個膝關節，要動多少層",

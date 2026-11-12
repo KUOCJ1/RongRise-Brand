@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n67",
+      "date": "2026-11-12",
+      "category": "資源",
+      "title": "你的客戶對話、SOP、報價，還躺在員工的私人 LINE 裡：AI 最缺的不是模型，是你的資料",
+      "summary": "LINE 在台灣有 2,200 萬月活、覆蓋約 94% 人口，工作對話卻留在員工的私人帳號，離職就斷層。AI 時代真正的資產是資料，而資料根本不在公司手上。",
+      "link": "/knowledge/data-lives-in-employees-private-line",
+      "isNew": true
+    },
+    {
       "id": "n66",
       "date": "2026-11-10",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "後台紀錄 3：哪些事該交出去，哪些事一定要留在人手上",
       "summary": "13 天的公開實驗裡，AI 把產出做到每件 28 分鐘人力，瓶頸卻落在人的注意力：一天被叫回來 13 次。用可逆性與回饋速度分成四格，才決定得出什麼交出去、什麼留在手上。",
       "link": "/knowledge/camino-operation-wrapup",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n63",
