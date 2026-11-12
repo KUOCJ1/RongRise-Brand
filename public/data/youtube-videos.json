@@ -1,6 +1,15 @@
 {
   "videos": [
     {
+      "id": "Kwn7ucyrnDg",
+      "title": "你的客戶對話存在誰的手機？｜台灣 LINE 覆蓋 94%，資料卻不在公司手上",
+      "date": "2026-11-12",
+      "description": "你的客戶對話、報價紀錄、SOP，現在存在誰的手機裡？\n\n台灣的 LINE 有 2,200 萬月活躍用戶、覆蓋約 94% 人口。同一個帳號白天談報價，晚上傳家人的照片。但帳號是個人的，檔案幾週就過期，人一走，紀錄跟著消失。\n\n這支影片用一分鐘",
+      "thumbnail": "https://img.youtube.com/vi/Kwn7ucyrnDg/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/Kwn7ucyrnDg/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=Kwn7ucyrnDg"
+    },
+    {
       "id": "oSwzbaoqe-I",
       "title": "換一個膝關節，要動多少層｜AI 導入前，組織得先拆簡單",
       "date": "2026-11-10",
@@ -17,16 +26,7 @@
       "thumbnail": "https://img.youtube.com/vi/uWFTQ0UJj5o/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/uWFTQ0UJj5o/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=uWFTQ0UJj5o"
-    },
-    {
-      "id": "mma8Nptav5k",
-      "title": "他把剪頭髮的動作，賣給了機器人公司",
-      "date": "2026-11-04",
-      "description": "一位印度的理髮師把攝影機戴在頭上，一整天錄下自己怎麼剪頭髮。他把影像賣給機器人公司，用來訓練機器人學會一雙手。\n\n同一段時間，肯塔基大學有位行政主管申請到宗教豁免，可以因為信仰拒絕在工作上使用 AI。他一邊把自己的動作錄成教材，一邊先要一個",
-      "thumbnail": "https://img.youtube.com/vi/mma8Nptav5k/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/mma8Nptav5k/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=mma8Nptav5k"
     }
   ],
-  "fetchedAt": "2026-11-10T17:04:09Z"
+  "fetchedAt": "2026-11-12T15:48:18Z"
 }
