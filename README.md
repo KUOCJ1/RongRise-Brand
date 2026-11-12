@@ -26,10 +26,14 @@
 
 ## 品牌色板
 
-- Primary: `#194A8D` (Deep Blue)
-- Secondary: `#0196EC` (Brighter Blue)
-- Tertiary: `#FF9800` (Vibrant Orange)
-- Success: `#4CAF50` (Sustainable Green)
+- 藏青 Navy `#0D2B4E`（品牌骨架）
+- 藍 Blue `#1A6DB5`（連結、focus）
+- 琥珀 Amber `#E8912A`（此刻／重點）
+- 青綠 Teal `#2EC4B6`（裝飾）
+- 米白 Paper `#FDFCFA`（頁面底色）
+- 榕樹綠 `#147A72`（延伸色：完成、成長；2026-11-12 新增）
+
+正式規範見品牌色彩文件 v1.1。
 
 ## 開發
 
