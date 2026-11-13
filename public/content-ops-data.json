@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-11-12T05:20:13Z",
+ "generatedAt": "2026-11-13T05:20:13Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 166
+  "daysRunning": 167
  },
  "stats": {
-  "scanDays": 145,
-  "weekArticles": 75,
-  "articles": 104,
-  "newsItems": 66,
-  "newsletterIssues": 32,
+  "scanDays": 146,
+  "weekArticles": 72,
+  "articles": 106,
+  "newsItems": 68,
+  "newsletterIssues": 33,
   "subscribers": 22,
   "confirmedSubscribers": 15,
-  "videos": 44,
-  "views": 748,
+  "videos": 46,
+  "views": 750,
   "channelSubscribers": 18,
   "insights": 20,
-  "socialPosts": 82,
-  "igCards": 49,
-  "competitorReports": 144
+  "socialPosts": 83,
+  "igCards": 50,
+  "competitorReports": 145
  },
  "activity": [
-  {
-   "date": "2026-11-06",
-   "count": 12,
-   "topics": []
-  },
   {
    "date": "2026-11-07",
    "count": 12,
@@ -56,19 +51,24 @@
    "date": "2026-11-12",
    "count": 10,
    "topics": []
+  },
+  {
+   "date": "2026-11-13",
+   "count": 9,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "換一個膝關節，要動多少層",
-   "date": "2026-11-10",
-   "url": "/knowledge/knee-replacement-organization-ai"
+   "title": "連輝達都沒有接班計畫：問題不是找不到人，是沒有選項",
+   "date": "2026-11-13",
+   "url": "/knowledge/nvidia-no-succession-plan"
   },
-  "newsletter": "🦞 榕賀觀點 第 32 期 — 2026-11-09",
+  "newsletter": "🦞 榕賀觀點 第 33 期 — 2026-11-12",
   "video": {
-   "title": "換一個膝關節，要動多少層｜AI 導入前，組織得先拆簡單",
-   "date": "2026-11-10",
-   "url": "https://www.youtube.com/watch?v=oSwzbaoqe-I"
+   "title": "連輝達都沒有接班計畫：執行長辭職那天，公司只剩一個選項",
+   "date": "2026-11-12",
+   "url": "https://www.youtube.com/watch?v=zweVxaOkZLs"
   },
   "insight": "2026-W46.md"
  },
@@ -82,13 +82,13 @@
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 35,
+   "count": 34,
    "momentum": "flat"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 31,
+   "count": 30,
    "momentum": "up"
   },
   {
@@ -98,9 +98,9 @@
    "momentum": "flat"
   },
   {
-   "keyword": "治理與法規",
-   "icon": "⚖️",
-   "count": 20,
+   "keyword": "安全與風險",
+   "icon": "🛡️",
+   "count": 18,
    "momentum": "up"
   }
  ]
