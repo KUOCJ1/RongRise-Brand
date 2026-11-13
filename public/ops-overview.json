@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-12T15:32:26Z",
+  "generatedAt": "2026-11-13T00:30:07Z",
   "periods": {
-    "content": "累計至 2026-11-12；近 30 天＝2026-10-13 起",
+    "content": "累計至 2026-11-13；近 30 天＝2026-10-14 起",
     "health": "2026-10-13 ~ 2026-10-31（19 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
     "management": "2026-10-03 ~ 2026-11-11（40 天）"
@@ -12,7 +12,7 @@
       "label": "內容產出",
       "value": 104,
       "unit": "篇文章",
-      "note": "近 30 天新增 16 篇"
+      "note": "近 30 天新增 15 篇"
     },
     {
       "key": "uptime",
@@ -26,7 +26,7 @@
       "label": "未結事故",
       "value": 0,
       "unit": "件",
-      "note": "近 30 天 32 筆告警，涉及 22 支排程"
+      "note": "近 30 天 31 筆告警，涉及 22 支排程"
     },
     {
       "key": "attention",
@@ -38,7 +38,7 @@
   ],
   "content": {
     "articles": 104,
-    "articles30d": 16,
+    "articles30d": 15,
     "newsletters": 32,
     "videos": 44,
     "videos30d": 3,
@@ -361,19 +361,19 @@
     ],
     "videoList": [
       {
+        "title": "連輝達都沒有接班計畫：執行長辭職那天，公司只剩一個選項",
+        "date": "2026-11-12",
+        "url": "https://www.youtube.com/watch?v=zweVxaOkZLs"
+      },
+      {
+        "title": "你的客戶對話存在誰的手機？｜台灣 LINE 覆蓋 94%，資料卻不在公司手上",
+        "date": "2026-11-12",
+        "url": "https://www.youtube.com/watch?v=Kwn7ucyrnDg"
+      },
+      {
         "title": "換一個膝關節，要動多少層｜AI 導入前，組織得先拆簡單",
         "date": "2026-11-10",
         "url": "https://www.youtube.com/watch?v=oSwzbaoqe-I"
-      },
-      {
-        "title": "Z 世代願意約會，卻不肯讓 AI 幫他寫第一句話",
-        "date": "2026-11-10",
-        "url": "https://www.youtube.com/watch?v=uWFTQ0UJj5o"
-      },
-      {
-        "title": "他把剪頭髮的動作，賣給了機器人公司",
-        "date": "2026-11-04",
-        "url": "https://www.youtube.com/watch?v=mma8Nptav5k"
       }
     ],
     "latest": {
@@ -556,7 +556,7 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.03
+        "seconds": 0.08
       },
       {
         "name": "第二大腦",
@@ -570,14 +570,14 @@
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.06
+        "seconds": 0.09
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.06
       },
       {
         "name": "n8n 自動化",
@@ -591,15 +591,15 @@
         "url": "https://admin.rong-rise.com/",
         "code": "401",
         "ok": true,
-        "seconds": 0.03
+        "seconds": 0.04
       }
     ],
-    "liveAt": "2026-11-12 15:32 UTC"
+    "liveAt": "2026-11-13 00:30 UTC"
   },
   "schedule": {
-    "incidents30d": 32,
+    "incidents30d": 31,
     "incidentJobs": 22,
-    "incidentDays": 13,
+    "incidentDays": 12,
     "open": 0,
     "types": [
       {
@@ -620,12 +620,12 @@
       },
       {
         "type": "rate_limit",
-        "count": 2
+        "count": 1
       }
     ],
-    "executions": 1000,
+    "executions": 1001,
     "executionsOk": 1000,
-    "executionsFrom": "2026-11-12T03:37:06",
+    "executionsFrom": "2026-11-12T12:34:06",
     "incidents": [
       {
         "job": "5f91aedd850c",
