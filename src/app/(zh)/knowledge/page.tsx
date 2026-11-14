@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "layers-three-functions",
+    cat: "策略管理",
+    title: "砍了一百年，長回來的是責任層",
+    date: "2026-11-14",
+    readTime: "10 分鐘",
+    excerpt: "一百年來組織砍了又砍，卻越長越大。原因是層級有三種：協調、避責、獎酬。改革砍的通常是協調，長回來的是責任層，而獎酬那一種從來沒被動過。所以層級像野草，春風一吹又長回來。",
+    tags: ["組織設計", "組織層級", "升遷制度", "公司治理"],
+  },
+  {
     slug: "nvidia-no-succession-plan",
     cat: "策略管理",
     title: "連輝達都沒有接班計畫：問題不是找不到人，是沒有選項",
