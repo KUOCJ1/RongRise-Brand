@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-14T00:30:07Z",
+  "generatedAt": "2026-11-15T00:30:46Z",
   "periods": {
-    "content": "累計至 2026-11-14；近 30 天＝2026-10-15 起",
-    "health": "2026-10-14 ~ 2026-10-31（18 天）",
+    "content": "累計至 2026-11-15；近 30 天＝2026-10-16 起",
+    "health": "2026-10-15 ~ 2026-10-31（17 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-12（41 天）"
+    "management": "2026-10-03 ~ 2026-11-13（42 天）"
   },
   "headline": [
     {
@@ -19,21 +19,21 @@
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "18 天 × 18 個服務，324/324 次在線"
+      "note": "17 天 × 18 個服務，306/306 次在線"
     },
     {
       "key": "incidents",
       "label": "未結事故",
       "value": 0,
       "unit": "件",
-      "note": "近 30 天 30 筆告警，涉及 21 支排程"
+      "note": "近 30 天 29 筆告警，涉及 20 支排程"
     },
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 42.0,
+      "value": 41.4,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；11/41 天達標"
+      "note": "實驗期 37.1 分；12/42 天達標"
     }
   ],
   "content": {
@@ -43,9 +43,9 @@
     "videos": 46,
     "videos30d": 3,
     "igCards": 50,
-    "socialPosts": 83,
-    "scanDays": 146,
-    "competitorReports": 145,
+    "socialPosts": 85,
+    "scanDays": 147,
+    "competitorReports": 146,
     "insights": 20,
     "monthly": [
       {
@@ -74,10 +74,17 @@
       },
       {
         "month": "2026-11",
-        "count": 7
+        "count": 8
       }
     ],
     "articleList": [
+      {
+        "date": "2026-11-14",
+        "title": "砍了一百年，長回來的是責任層",
+        "slug": "layers-three-functions",
+        "url": "/knowledge/layers-three-functions",
+        "cat": "策略管理"
+      },
       {
         "date": "2026-11-13",
         "title": "連輝達都沒有接班計畫：問題不是找不到人，是沒有選項",
@@ -350,13 +357,6 @@
         "slug": "middle-managers-ai-pivot",
         "url": "/knowledge/middle-managers-ai-pivot",
         "cat": "AI 轉型"
-      },
-      {
-        "date": "2026-09-08",
-        "title": "AI 的淨效率陷阱：當 65% 白領懷念沒有 AI 的日子，你的 ROI 算對了嗎？",
-        "slug": "ai-net-efficiency-trap",
-        "url": "/knowledge/ai-net-efficiency-trap",
-        "cat": "AI 轉型"
       }
     ],
     "videoList": [
@@ -393,14 +393,6 @@
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-14",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 76,
-        "restarts": 56
-      },
       {
         "date": "2026-10-15",
         "online": 18,
@@ -538,8 +530,8 @@
         "restarts": 35
       }
     ],
-    "checks": 324,
-    "online": 324,
+    "checks": 306,
+    "online": 306,
     "warningDays": 1,
     "maxDisk": 85,
     "live": [
@@ -555,28 +547,28 @@
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.2
+        "seconds": 0.12
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.07
+        "seconds": 0.05
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.03
+        "seconds": 0.04
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.05
       },
       {
         "name": "管理後台",
@@ -586,17 +578,17 @@
         "seconds": 0.04
       }
     ],
-    "liveAt": "2026-11-14 00:30 UTC"
+    "liveAt": "2026-11-15 00:30 UTC"
   },
   "schedule": {
-    "incidents30d": 30,
-    "incidentJobs": 21,
-    "incidentDays": 11,
+    "incidents30d": 29,
+    "incidentJobs": 20,
+    "incidentDays": 10,
     "open": 0,
     "types": [
       {
         "type": "script",
-        "count": 15
+        "count": 14
       },
       {
         "type": "config",
@@ -617,7 +609,7 @@
     ],
     "executions": 1002,
     "executionsOk": 1000,
-    "executionsFrom": "2026-11-13T12:31:06",
+    "executionsFrom": "2026-11-14T12:30:06",
     "incidents": [
       {
         "job": "5f91aedd850c",
@@ -944,14 +936,14 @@
     "jobsEnabled": 82
   },
   "management": {
-    "days": 41,
-    "medianOnline": 42.0,
+    "days": 42,
+    "medianOnline": 41.4,
     "experimentMedian": 37.1,
-    "avgOnline": 48.7,
-    "totalHours": 33.3,
-    "medianVisits": 15,
+    "avgOnline": 47.9,
+    "totalHours": 33.6,
+    "medianVisits": 14.0,
     "perVisit": 3.0,
-    "daysUnder30": 11,
+    "daysUnder30": 12,
     "daily": [
       {
         "date": "2026-10-03",
@@ -1157,6 +1149,11 @@
         "date": "2026-11-12",
         "min": 50.2,
         "visits": 17
+      },
+      {
+        "date": "2026-11-13",
+        "min": 16.4,
+        "visits": 8
       }
     ]
   },
@@ -1164,13 +1161,13 @@
     "subscribers": 22,
     "confirmed": 15,
     "pending": 6,
-    "views": 750,
+    "views": 786,
     "channelSubscribers": 18
   },
   "rework": {
     "period": "近 30 天（重工帳本 state/rework_log.jsonl）",
-    "count": 6,
-    "minutes": 31,
+    "count": 7,
+    "minutes": 86,
     "byKind": [
       {
         "kind": "video",
@@ -1178,6 +1175,10 @@
       },
       {
         "kind": "article",
+        "count": 1
+      },
+      {
+        "kind": "post",
         "count": 1
       }
     ],
@@ -1223,6 +1224,13 @@
         "what": "YouTube 封面誤用接班人圖",
         "cause": "上傳參數複製前一案",
         "minutes": 2
+      },
+      {
+        "ts": "2026-11-14 19:02",
+        "kind": "post",
+        "what": "IG 圖卡 4 組 caption 全部退回重寫",
+        "cause": "humanizer 首輪 39/38 未過 40 門檻（比喻硬套、開頭與數據不一致、四格框架照貼）",
+        "minutes": 55
       }
     ]
   }
