@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "taiwan-baili-lin-wen-an",
+    cat: "社會觀察",
+    title: "每個人都聽過百岳，卻不一定知道林文安",
+    date: "2026-11-15",
+    readTime: "8 分鐘",
+    excerpt: "台灣人熟悉百岳，卻不一定知道挑出那一百座山的人。1972 年名單在羊頭山頂公布，兩年五個月後，林文安死在 3,050 公尺的岩脊上。",
+    tags: ["台灣百岳", "登山", "林文安", "歷史"],
+  },
+  {
     slug: "layers-three-functions",
     cat: "策略管理",
     title: "砍了一百年，長回來的是責任層",

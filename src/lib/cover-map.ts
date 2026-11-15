@@ -82,6 +82,7 @@ export const COVER_MAP: Record<string, string> = {
   "camino-operation-wrapup": "article-camino-operation-wrapup.jpg",
   "knee-replacement-organization-ai": "article-knee-replacement-organization-ai.jpg",
   "layers-three-functions": "article-layers-three-functions.jpg",
+  "taiwan-baili-lin-wen-an": "article-taiwan-baili-lin-wen-an.jpg",
 };
 
 export function coverImg(slug: string): string {
