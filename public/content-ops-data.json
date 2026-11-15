@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-11-14T05:20:13Z",
+ "generatedAt": "2026-11-15T05:20:51Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 168
+  "daysRunning": 169
  },
  "stats": {
-  "scanDays": 147,
+  "scanDays": 148,
   "weekArticles": 68,
-  "articles": 106,
-  "newsItems": 68,
+  "articles": 107,
+  "newsItems": 69,
   "newsletterIssues": 33,
   "subscribers": 22,
   "confirmedSubscribers": 15,
   "videos": 46,
-  "views": 786,
+  "views": 794,
   "channelSubscribers": 18,
   "insights": 20,
   "socialPosts": 85,
-  "igCards": 50,
-  "competitorReports": 146
+  "igCards": 54,
+  "competitorReports": 147
  },
  "activity": [
-  {
-   "date": "2026-11-08",
-   "count": 10,
-   "topics": []
-  },
   {
    "date": "2026-11-09",
    "count": 11,
@@ -56,13 +51,18 @@
    "date": "2026-11-14",
    "count": 8,
    "topics": []
+  },
+  {
+   "date": "2026-11-15",
+   "count": 10,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "連輝達都沒有接班計畫：問題不是找不到人，是沒有選項",
-   "date": "2026-11-13",
-   "url": "/knowledge/nvidia-no-succession-plan"
+   "title": "砍了一百年，長回來的是責任層",
+   "date": "2026-11-14",
+   "url": "/knowledge/layers-three-functions"
   },
   "newsletter": "🦞 榕賀觀點 第 33 期 — 2026-11-12",
   "video": {
@@ -76,13 +76,13 @@
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 42,
+   "count": 39,
    "momentum": "flat"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 34,
+   "count": 36,
    "momentum": "flat"
   },
   {
@@ -94,13 +94,13 @@
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 21,
+   "count": 26,
    "momentum": "flat"
   },
   {
    "keyword": "安全與風險",
    "icon": "🛡️",
-   "count": 19,
+   "count": 22,
    "momentum": "up"
   }
  ]
