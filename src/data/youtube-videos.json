@@ -1,6 +1,15 @@
 {
   "videos": [
     {
+      "id": "z5QxsLUf1Hw",
+      "title": "砍了一百年，長回來的是責任層｜組織層級的三種功能",
+      "date": "2026-11-15",
+      "description": "每一次組織扁平化，砍掉的層級幾年後又長回來。\n\n1911 年泰勒把動作切開，讓人可以被測量；1955 年帕金森數英國海軍，船少了三分之二，管船的人每年還是多將近 6%；1980 年代威爾許拆層級；2010 年代 Holacracy 直接拿掉",
+      "thumbnail": "https://img.youtube.com/vi/z5QxsLUf1Hw/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/z5QxsLUf1Hw/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=z5QxsLUf1Hw"
+    },
+    {
       "id": "zweVxaOkZLs",
       "title": "連輝達都沒有接班計畫：執行長辭職那天，公司只剩一個選項",
       "date": "2026-11-12",
@@ -17,16 +26,7 @@
       "thumbnail": "https://img.youtube.com/vi/Kwn7ucyrnDg/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/Kwn7ucyrnDg/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=Kwn7ucyrnDg"
-    },
-    {
-      "id": "oSwzbaoqe-I",
-      "title": "換一個膝關節，要動多少層｜AI 導入前，組織得先拆簡單",
-      "date": "2026-11-10",
-      "description": "換一個膝關節，要動多少層。\n\n醫師不會直接把腿鋸掉、裝一條新的。他要先確認感染，把壞掉的組織清掉；把黏住的筋膜一層一層分開；修掉不能用的膝蓋骨；最後才裝人工關節，還要接好血管。\n\n企業這一週在做同一件事：Canva 重整影響 1,271 個",
-      "thumbnail": "https://img.youtube.com/vi/oSwzbaoqe-I/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/oSwzbaoqe-I/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=oSwzbaoqe-I"
     }
   ],
-  "fetchedAt": "2026-11-12T16:01:18Z"
+  "fetchedAt": "2026-11-15T05:35:50Z"
 }
