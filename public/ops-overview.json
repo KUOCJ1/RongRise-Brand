@@ -1,51 +1,51 @@
 {
-  "generatedAt": "2026-11-15T00:30:46Z",
+  "generatedAt": "2026-11-16T00:30:46Z",
   "periods": {
-    "content": "累計至 2026-11-15；近 30 天＝2026-10-16 起",
-    "health": "2026-10-15 ~ 2026-10-31（17 天）",
+    "content": "累計至 2026-11-16；近 30 天＝2026-10-17 起",
+    "health": "2026-10-16 ~ 2026-10-31（16 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-13（42 天）"
+    "management": "2026-10-03 ~ 2026-11-14（43 天）"
   },
   "headline": [
     {
       "key": "content",
       "label": "內容產出",
-      "value": 106,
+      "value": 107,
       "unit": "篇文章",
-      "note": "近 30 天新增 15 篇"
+      "note": "近 30 天新增 16 篇"
     },
     {
       "key": "uptime",
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "17 天 × 18 個服務，306/306 次在線"
+      "note": "16 天 × 18 個服務，288/288 次在線"
     },
     {
       "key": "incidents",
       "label": "未結事故",
       "value": 0,
       "unit": "件",
-      "note": "近 30 天 29 筆告警，涉及 20 支排程"
+      "note": "近 30 天 28 筆告警，涉及 20 支排程"
     },
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 41.4,
+      "value": 42.0,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；12/42 天達標"
+      "note": "實驗期 37.1 分；12/43 天達標"
     }
   ],
   "content": {
-    "articles": 106,
-    "articles30d": 15,
+    "articles": 107,
+    "articles30d": 16,
     "newsletters": 33,
     "videos": 46,
     "videos30d": 3,
-    "igCards": 50,
+    "igCards": 54,
     "socialPosts": 85,
-    "scanDays": 147,
-    "competitorReports": 146,
+    "scanDays": 148,
+    "competitorReports": 147,
     "insights": 20,
     "monthly": [
       {
@@ -74,10 +74,17 @@
       },
       {
         "month": "2026-11",
-        "count": 8
+        "count": 9
       }
     ],
     "articleList": [
+      {
+        "date": "2026-11-15",
+        "title": "每個人都聽過百岳，卻不一定知道林文安",
+        "slug": "taiwan-baili-lin-wen-an",
+        "url": "/knowledge/taiwan-baili-lin-wen-an",
+        "cat": "社會觀察"
+      },
       {
         "date": "2026-11-14",
         "title": "砍了一百年，長回來的是責任層",
@@ -350,16 +357,14 @@
         "slug": "agentic-ai-employee-management",
         "url": "/knowledge/agentic-ai-employee-management",
         "cat": "AI 轉型"
-      },
-      {
-        "date": "2026-09-10",
-        "title": "HBR：中階主管決定 AI 成敗——過去說會被取代的那群人，現在成了最關鍵的樞紐",
-        "slug": "middle-managers-ai-pivot",
-        "url": "/knowledge/middle-managers-ai-pivot",
-        "cat": "AI 轉型"
       }
     ],
     "videoList": [
+      {
+        "title": "砍了一百年，長回來的是責任層｜組織層級的三種功能",
+        "date": "2026-11-15",
+        "url": "https://www.youtube.com/watch?v=z5QxsLUf1Hw"
+      },
       {
         "title": "連輝達都沒有接班計畫：執行長辭職那天，公司只剩一個選項",
         "date": "2026-11-12",
@@ -369,18 +374,13 @@
         "title": "你的客戶對話存在誰的手機？｜台灣 LINE 覆蓋 94%，資料卻不在公司手上",
         "date": "2026-11-12",
         "url": "https://www.youtube.com/watch?v=Kwn7ucyrnDg"
-      },
-      {
-        "title": "換一個膝關節，要動多少層｜AI 導入前，組織得先拆簡單",
-        "date": "2026-11-10",
-        "url": "https://www.youtube.com/watch?v=oSwzbaoqe-I"
       }
     ],
     "latest": {
       "article": {
-        "title": "連輝達都沒有接班計畫：問題不是找不到人，是沒有選項",
-        "date": "2026-11-13",
-        "url": "/knowledge/nvidia-no-succession-plan"
+        "title": "砍了一百年，長回來的是責任層",
+        "date": "2026-11-14",
+        "url": "/knowledge/layers-three-functions"
       },
       "newsletter": "🦞 榕賀觀點 第 33 期 — 2026-11-12",
       "video": {
@@ -393,14 +393,6 @@
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-15",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 84,
-        "restarts": 57
-      },
       {
         "date": "2026-10-16",
         "online": 18,
@@ -530,8 +522,8 @@
         "restarts": 35
       }
     ],
-    "checks": 306,
-    "online": 306,
+    "checks": 288,
+    "online": 288,
     "warningDays": 1,
     "maxDisk": 85,
     "live": [
@@ -540,14 +532,14 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.06
+        "seconds": 0.05
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.12
+        "seconds": 0.11
       },
       {
         "name": "AI 落地頁",
@@ -561,29 +553,29 @@
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.03
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.04
       },
       {
         "name": "管理後台",
         "url": "https://admin.rong-rise.com/",
         "code": "401",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.03
       }
     ],
-    "liveAt": "2026-11-15 00:30 UTC"
+    "liveAt": "2026-11-16 00:30 UTC"
   },
   "schedule": {
-    "incidents30d": 29,
+    "incidents30d": 28,
     "incidentJobs": 20,
-    "incidentDays": 10,
+    "incidentDays": 9,
     "open": 0,
     "types": [
       {
@@ -596,7 +588,7 @@
       },
       {
         "type": "unknown",
-        "count": 4
+        "count": 3
       },
       {
         "type": "timeout",
@@ -609,7 +601,7 @@
     ],
     "executions": 1002,
     "executionsOk": 1000,
-    "executionsFrom": "2026-11-14T12:30:06",
+    "executionsFrom": "2026-11-15T12:33:45",
     "incidents": [
       {
         "job": "5f91aedd850c",
@@ -936,12 +928,12 @@
     "jobsEnabled": 82
   },
   "management": {
-    "days": 42,
-    "medianOnline": 41.4,
+    "days": 43,
+    "medianOnline": 42.0,
     "experimentMedian": 37.1,
-    "avgOnline": 47.9,
-    "totalHours": 33.6,
-    "medianVisits": 14.0,
+    "avgOnline": 49.1,
+    "totalHours": 35.2,
+    "medianVisits": 15,
     "perVisit": 3.0,
     "daysUnder30": 12,
     "daily": [
@@ -1154,6 +1146,11 @@
         "date": "2026-11-13",
         "min": 16.4,
         "visits": 8
+      },
+      {
+        "date": "2026-11-14",
+        "min": 98.5,
+        "visits": 17
       }
     ]
   },
@@ -1161,17 +1158,17 @@
     "subscribers": 22,
     "confirmed": 15,
     "pending": 6,
-    "views": 786,
+    "views": 794,
     "channelSubscribers": 18
   },
   "rework": {
     "period": "近 30 天（重工帳本 state/rework_log.jsonl）",
-    "count": 7,
-    "minutes": 86,
+    "count": 8,
+    "minutes": 181,
     "byKind": [
       {
         "kind": "video",
-        "count": 5
+        "count": 6
       },
       {
         "kind": "article",
@@ -1231,6 +1228,13 @@
         "what": "IG 圖卡 4 組 caption 全部退回重寫",
         "cause": "humanizer 首輪 39/38 未過 40 門檻（比喻硬套、開頭與數據不一致、四格框架照貼）",
         "minutes": 55
+      },
+      {
+        "ts": "2026-11-15 13:16",
+        "kind": "video",
+        "what": "組織層級三種功能 v3 重剪（字卡重做＋配音對齊＋Avatar 裁切）",
+        "cause": "v2 字卡用字數比例估時間，實測最大偏移 4.82 秒、平均 +1.16 秒；卡型單一（27 張全是下三分之一）",
+        "minutes": 95
       }
     ]
   }
