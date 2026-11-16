@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-11-15T05:20:51Z",
+ "generatedAt": "2026-11-16T05:20:52Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 169
+  "daysRunning": 170
  },
  "stats": {
-  "scanDays": 148,
+  "scanDays": 149,
   "weekArticles": 68,
-  "articles": 107,
-  "newsItems": 69,
+  "articles": 108,
+  "newsItems": 70,
   "newsletterIssues": 33,
   "subscribers": 22,
   "confirmedSubscribers": 15,
-  "videos": 46,
+  "videos": 48,
   "views": 794,
   "channelSubscribers": 18,
   "insights": 20,
-  "socialPosts": 85,
+  "socialPosts": 86,
   "igCards": 54,
-  "competitorReports": 147
+  "competitorReports": 148
  },
  "activity": [
-  {
-   "date": "2026-11-09",
-   "count": 11,
-   "topics": []
-  },
   {
    "date": "2026-11-10",
    "count": 10,
@@ -56,51 +51,56 @@
    "date": "2026-11-15",
    "count": 10,
    "topics": []
+  },
+  {
+   "date": "2026-11-16",
+   "count": 11,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "砍了一百年，長回來的是責任層",
-   "date": "2026-11-14",
-   "url": "/knowledge/layers-three-functions"
+   "title": "每個人都聽過百岳，卻不一定知道林文安",
+   "date": "2026-11-15",
+   "url": "/knowledge/taiwan-baili-lin-wen-an"
   },
   "newsletter": "🦞 榕賀觀點 第 33 期 — 2026-11-12",
   "video": {
-   "title": "連輝達都沒有接班計畫：執行長辭職那天，公司只剩一個選項",
-   "date": "2026-11-12",
-   "url": "https://www.youtube.com/watch?v=zweVxaOkZLs"
+   "title": "每個人都聽過百岳，卻不一定知道林文安｜那份名單是怎麼來的",
+   "date": "2026-11-16",
+   "url": "https://www.youtube.com/watch?v=q1qxmdKA938"
   },
   "insight": "2026-W46.md"
  },
  "trends": [
   {
-   "keyword": "組織與管理",
-   "icon": "🏢",
-   "count": 39,
-   "momentum": "flat"
-  },
-  {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 36,
+   "count": 40,
    "momentum": "flat"
   },
   {
-   "keyword": "成本與投資",
-   "icon": "💰",
-   "count": 26,
+   "keyword": "組織與管理",
+   "icon": "🏢",
+   "count": 40,
    "momentum": "flat"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 26,
+   "count": 27,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "成本與投資",
+   "icon": "💰",
+   "count": 25,
    "momentum": "flat"
   },
   {
    "keyword": "安全與風險",
    "icon": "🛡️",
-   "count": 22,
+   "count": 24,
    "momentum": "up"
   }
  ]
