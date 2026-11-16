@@ -1,13 +1,13 @@
 {
   "videos": [
     {
-      "id": "q1qxmdKA938",
-      "title": "每個人都聽過百岳，卻不一定知道林文安｜那份名單是怎麼來的（5 分鐘完整版）",
+      "id": "gj2nUNsTCi8",
+      "title": "每個人都聽過百岳，卻不一定知道林文安｜那份名單是怎麼來的",
       "date": "2026-11-16",
-      "description": "1972 年 12 月 5 日，林文安和幾位岳界前輩在羊頭山頂公布那一百座山的名單。兩年五個月後，他死在最愛的三千公尺高山上。這支影片從那份名單往回追：日治時代的三角測量、1971 年六十人的大縱走、1975 年那場雨，以及今天 268 座高山的代價。",
-      "thumbnail": "https://img.youtube.com/vi/q1qxmdKA938/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/q1qxmdKA938/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=q1qxmdKA938"
+      "description": "每個台灣人對百岳一定不陌生，卻不一定知道林文安。1972 年 12 月 5 日，他和幾位岳界前輩在羊頭山頂成立百岳俱樂部，公布那一百座山的名單；兩年五個月後，他失溫死在最愛的三千公尺高山上。這支影片從那份名單往回追：日治時代的三角測量、1971 年六十人的大縱走、1975 年那場雨，以及今天 268 座高山的代價。",
+      "thumbnail": "https://img.youtube.com/vi/gj2nUNsTCi8/maxresdefault.jpg",
+      "thumbnailFallback": "https://img.youtube.com/vi/gj2nUNsTCi8/hqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=gj2nUNsTCi8"
     },
     {
       "id": "z5QxsLUf1Hw",
@@ -26,16 +26,7 @@
       "thumbnail": "https://img.youtube.com/vi/zweVxaOkZLs/maxresdefault.jpg",
       "thumbnailFallback": "https://img.youtube.com/vi/zweVxaOkZLs/hqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=zweVxaOkZLs"
-    },
-    {
-      "id": "Kwn7ucyrnDg",
-      "title": "你的客戶對話存在誰的手機？｜台灣 LINE 覆蓋 94%，資料卻不在公司手上",
-      "date": "2026-11-12",
-      "description": "你的客戶對話、報價紀錄、SOP，現在存在誰的手機裡？\n\n台灣的 LINE 有 2,200 萬月活躍用戶、覆蓋約 94% 人口。同一個帳號白天談報價，晚上傳家人的照片。但帳號是個人的，檔案幾週就過期，人一走，紀錄跟著消失。\n\n這支影片用一分鐘",
-      "thumbnail": "https://img.youtube.com/vi/Kwn7ucyrnDg/maxresdefault.jpg",
-      "thumbnailFallback": "https://img.youtube.com/vi/Kwn7ucyrnDg/hqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=Kwn7ucyrnDg"
     }
   ],
-  "fetchedAt": "2026-11-15T05:35:50Z"
+  "fetchedAt": "2026-11-16T04:15:46Z"
 }

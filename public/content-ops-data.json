@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-16T05:20:52Z",
+ "generatedAt": "2026-11-16T17:11:03Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
@@ -10,13 +10,13 @@
   "weekArticles": 68,
   "articles": 108,
   "newsItems": 70,
-  "newsletterIssues": 33,
+  "newsletterIssues": 34,
   "subscribers": 22,
   "confirmedSubscribers": 15,
   "videos": 48,
-  "views": 794,
-  "channelSubscribers": 18,
-  "insights": 20,
+  "views": 827,
+  "channelSubscribers": 19,
+  "insights": 21,
   "socialPosts": 86,
   "igCards": 54,
   "competitorReports": 148
@@ -64,13 +64,13 @@
    "date": "2026-11-15",
    "url": "/knowledge/taiwan-baili-lin-wen-an"
   },
-  "newsletter": "🦞 榕賀觀點 第 33 期 — 2026-11-12",
+  "newsletter": "🦞 榕賀觀點 第 34 期 — 2026-11-16",
   "video": {
    "title": "每個人都聽過百岳，卻不一定知道林文安｜那份名單是怎麼來的",
    "date": "2026-11-16",
-   "url": "https://www.youtube.com/watch?v=q1qxmdKA938"
+   "url": "https://www.youtube.com/watch?v=gj2nUNsTCi8"
   },
-  "insight": "2026-W46.md"
+  "insight": "2026-W47.md"
  },
  "trends": [
   {
