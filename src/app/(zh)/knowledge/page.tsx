@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "suppliers-invest-in-their-own-customer",
+    cat: "全球趨勢",
+    title: "供應商掏 260 億美元投資自己的客戶：AI 的成長，有多少是彼此投資撐起來的？",
+    date: "2026-11-17",
+    readTime: "6 分鐘",
+    excerpt: "Anthropic 上市，7 家供應商認購 260 億美元，錢再流回去買算力。IMF 統計 14 件循環交易，台積電卻兩邊都押。成長有多少是互相投資撐起來的？中小企業該把預算從「如期」改成「可能遞延」、押結構不押贏家。",
+    tags: ["全球趨勢", "AI 供應鏈", "循環交易", "風險管理"],
+  },
+  {
     slug: "taiwan-baili-lin-wen-an",
     cat: "社會觀察",
     title: "每個人都聽過百岳，卻不一定知道林文安",

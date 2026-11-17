@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n71",
+      "date": "2026-11-17",
+      "category": "資源",
+      "title": "供應商掏 260 億美元投資自己的客戶：AI 的成長，有多少是彼此投資撐起來的？",
+      "summary": "Anthropic 上市，7 家供應商認購 260 億美元，錢再流回去買算力。IMF 統計 14 件循環交易，台積電卻兩邊都押。成長有多少是互相投資撐起來的？中小企業該把預算從「如期」改成「可能遞延」、押結構不押贏家。",
+      "link": "/knowledge/suppliers-invest-in-their-own-customer",
+      "isNew": true
+    },
+    {
       "id": "n70",
       "date": "2026-11-15",
       "category": "資源",
@@ -25,7 +34,7 @@
       "title": "連輝達都沒有接班計畫：問題不是找不到人，是沒有選項",
       "summary": "輝達在 11 月 12 日宣布黃仁勳辭職、財務長暫代執行長，並首度設董事會主席。一家四兆美元的公司用一個上午回答「誰來接」，答案是暫代。台灣中小企業面對的是同一個問題，只是規模小一點、時間少一點。",
       "link": "/knowledge/nvidia-no-succession-plan",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n67",
