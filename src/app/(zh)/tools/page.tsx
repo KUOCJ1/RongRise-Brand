@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "AI 工具箱 — 免費診斷與評估工具 ｜ 榕耀管顧",
   description:
-    "榕耀管顧 AI 工具箱：Pilot Trap 診斷量表、AI 成熟度評測、ROI 估算器、投資配置體檢（10-20-70）、任務變形蟲盤點器、趨勢雷達等免費工具——即開即用，三分鐘見結果。",
-  alternates: { canonical: "https://rong-rise.com/tools" },
+    "榕耀管顧 AI 工具箱：Pilot Trap 診斷量表、AI 成熟度評測、ROI 估算器、投資配置體檢（10-20-70）、任務變形蟲盤點器、AI 轉型離線實驗計算器、趨勢雷達等免費工具——即開即用，三分鐘見結果。",
+  alternates: { canonical: "https://rong-rise.com/tools/" },
   openGraph: {
     type: "website",
     title: "AI 工具箱 — 免費診斷與評估工具 ｜ 榕耀管顧",
-    description: "Pilot Trap 診斷、AI 成熟度評測、ROI 估算、任務盤點、趨勢雷達——全部免費，即開即用。",
-    url: "https://rong-rise.com/tools",
+    description: "Pilot Trap 診斷、AI 成熟度評測、ROI 估算、AI 轉型離線實驗計算器、任務盤點、趨勢雷達——全部免費，即開即用。",
+    url: "https://rong-rise.com/tools/",
   },
 };
 
@@ -131,7 +131,7 @@ const tools: Tool[] = [
     href: "/course-fit",
     icon: "🎓",
     name: "Agentic AI for HR 課程適配度自評",
-    desc: "回答六個問題，判斷你該上 11/14 初階班還是 12/5 進階班，附課前預習清單。",
+    desc: "回答六個問題，判斷你該從初階班還是進階班開始，附課前預習清單。",
     tag: "課程",
     tagClass: "bg-primary/10 text-primary",
   },
@@ -174,6 +174,14 @@ const tools: Tool[] = [
     desc: "這件任務該不該交給 AI？四個維度：資料穩定度、錯誤成本、人工覆核必要性、外部影響範圍，判斷適合 L1 建議、L2 可逆執行、L3 不可逆執行還是 L4 對外代表。",
     tag: "自評",
     tagClass: "bg-teal/10 text-teal",
+  },
+  {
+    href: "/ai-offline-experiment",
+    icon: "🧪",
+    name: "AI 轉型離線實驗計算器",
+    desc: "輸入團隊人數、AI 員工數、預計離線天數與關鍵業務數，以榕耀 13 天公開實驗為基線，計算你需要預留多少檢查窗口、風險熱區與離線檢查清單。",
+    tag: "計算",
+    tagClass: "bg-primary/10 text-primary",
   },
 ];
 
