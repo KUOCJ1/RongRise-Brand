@@ -1,13 +1,13 @@
 {
- "generatedAt": "2026-11-17T03:03:20Z",
+ "generatedAt": "2026-11-17T05:20:53Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
   "daysRunning": 171
  },
  "stats": {
-  "scanDays": 149,
-  "weekArticles": 68,
+  "scanDays": 150,
+  "weekArticles": 69,
   "articles": 108,
   "newsItems": 70,
   "newsletterIssues": 34,
@@ -19,7 +19,7 @@
   "insights": 21,
   "socialPosts": 86,
   "igCards": 54,
-  "competitorReports": 148
+  "competitorReports": 149
  },
  "activity": [
   {
@@ -54,7 +54,7 @@
   },
   {
    "date": "2026-11-17",
-   "count": 0,
+   "count": 11,
    "topics": []
   }
  ],
@@ -67,28 +67,28 @@
   "newsletter": "🦞 榕賀觀點 第 34 期 — 2026-11-16",
   "video": {
    "title": "每個人都聽過百岳，卻不一定知道林文安｜那份名單是怎麼來的",
-   "date": "2026-11-17",
+   "date": "2026-11-16",
    "url": "https://www.youtube.com/watch?v=gj2nUNsTCi8"
   },
   "insight": "2026-W47.md"
  },
  "trends": [
   {
-   "keyword": "人力資源",
-   "icon": "📋",
-   "count": 40,
+   "keyword": "組織與管理",
+   "icon": "🏢",
+   "count": 42,
    "momentum": "flat"
   },
   {
-   "keyword": "組織與管理",
-   "icon": "🏢",
-   "count": 40,
+   "keyword": "人力資源",
+   "icon": "📋",
+   "count": 38,
    "momentum": "flat"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 27,
+   "count": 28,
    "momentum": "flat"
   },
   {
@@ -100,8 +100,8 @@
   {
    "keyword": "安全與風險",
    "icon": "🛡️",
-   "count": 24,
-   "momentum": "up"
+   "count": 21,
+   "momentum": "flat"
   }
  ]
 }
