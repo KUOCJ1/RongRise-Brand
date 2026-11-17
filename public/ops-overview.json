@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-16T00:30:46Z",
+  "generatedAt": "2026-11-17T00:30:46Z",
   "periods": {
-    "content": "累計至 2026-11-16；近 30 天＝2026-10-17 起",
-    "health": "2026-10-16 ~ 2026-10-31（16 天）",
+    "content": "累計至 2026-11-17；近 30 天＝2026-10-18 起",
+    "health": "2026-10-17 ~ 2026-10-31（15 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-14（43 天）"
+    "management": "2026-10-03 ~ 2026-11-15（44 天）"
   },
   "headline": [
     {
       "key": "content",
       "label": "內容產出",
-      "value": 107,
+      "value": 108,
       "unit": "篇文章",
       "note": "近 30 天新增 16 篇"
     },
@@ -19,12 +19,12 @@
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "16 天 × 18 個服務，288/288 次在線"
+      "note": "15 天 × 18 個服務，270/270 次在線"
     },
     {
       "key": "incidents",
       "label": "未結事故",
-      "value": 0,
+      "value": 1,
       "unit": "件",
       "note": "近 30 天 28 筆告警，涉及 20 支排程"
     },
@@ -33,20 +33,20 @@
       "label": "每天在場",
       "value": 42.0,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；12/43 天達標"
+      "note": "實驗期 37.1 分；12/44 天達標"
     }
   ],
   "content": {
-    "articles": 107,
+    "articles": 108,
     "articles30d": 16,
-    "newsletters": 33,
-    "videos": 46,
+    "newsletters": 34,
+    "videos": 49,
     "videos30d": 3,
     "igCards": 54,
-    "socialPosts": 85,
-    "scanDays": 148,
-    "competitorReports": 147,
-    "insights": 20,
+    "socialPosts": 86,
+    "scanDays": 149,
+    "competitorReports": 148,
+    "insights": 21,
     "monthly": [
       {
         "month": "2026-05",
@@ -361,6 +361,11 @@
     ],
     "videoList": [
       {
+        "title": "每個人都聽過百岳，卻不一定知道林文安｜那份名單是怎麼來的",
+        "date": "2026-11-17",
+        "url": "https://www.youtube.com/watch?v=gj2nUNsTCi8"
+      },
+      {
         "title": "砍了一百年，長回來的是責任層｜組織層級的三種功能",
         "date": "2026-11-15",
         "url": "https://www.youtube.com/watch?v=z5QxsLUf1Hw"
@@ -369,38 +374,25 @@
         "title": "連輝達都沒有接班計畫：執行長辭職那天，公司只剩一個選項",
         "date": "2026-11-12",
         "url": "https://www.youtube.com/watch?v=zweVxaOkZLs"
-      },
-      {
-        "title": "你的客戶對話存在誰的手機？｜台灣 LINE 覆蓋 94%，資料卻不在公司手上",
-        "date": "2026-11-12",
-        "url": "https://www.youtube.com/watch?v=Kwn7ucyrnDg"
       }
     ],
     "latest": {
       "article": {
-        "title": "砍了一百年，長回來的是責任層",
-        "date": "2026-11-14",
-        "url": "/knowledge/layers-three-functions"
+        "title": "每個人都聽過百岳，卻不一定知道林文安",
+        "date": "2026-11-15",
+        "url": "/knowledge/taiwan-baili-lin-wen-an"
       },
-      "newsletter": "🦞 榕賀觀點 第 33 期 — 2026-11-12",
+      "newsletter": "🦞 榕賀觀點 第 34 期 — 2026-11-16",
       "video": {
-        "title": "連輝達都沒有接班計畫：執行長辭職那天，公司只剩一個選項",
-        "date": "2026-11-12",
-        "url": "https://www.youtube.com/watch?v=zweVxaOkZLs"
+        "title": "每個人都聽過百岳，卻不一定知道林文安｜那份名單是怎麼來的",
+        "date": "2026-11-17",
+        "url": "https://www.youtube.com/watch?v=gj2nUNsTCi8"
       },
-      "insight": "2026-W46.md"
+      "insight": "2026-W47.md"
     }
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-16",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 79,
-        "restarts": 66
-      },
       {
         "date": "2026-10-17",
         "online": 18,
@@ -522,8 +514,8 @@
         "restarts": 35
       }
     ],
-    "checks": 288,
-    "online": 288,
+    "checks": 270,
+    "online": 270,
     "warningDays": 1,
     "maxDisk": 85,
     "live": [
@@ -539,48 +531,48 @@
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.11
+        "seconds": 0.17
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.09
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.03
+        "seconds": 0.05
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.05
       },
       {
         "name": "管理後台",
         "url": "https://admin.rong-rise.com/",
         "code": "401",
         "ok": true,
-        "seconds": 0.03
+        "seconds": 0.04
       }
     ],
-    "liveAt": "2026-11-16 00:30 UTC"
+    "liveAt": "2026-11-17 00:30 UTC"
   },
   "schedule": {
     "incidents30d": 28,
     "incidentJobs": 20,
     "incidentDays": 9,
-    "open": 0,
+    "open": 1,
     "types": [
       {
         "type": "script",
-        "count": 14
+        "count": 15
       },
       {
         "type": "config",
@@ -601,8 +593,16 @@
     ],
     "executions": 1002,
     "executionsOk": 1000,
-    "executionsFrom": "2026-11-15T12:33:45",
+    "executionsFrom": "2026-11-16T12:32:45",
     "incidents": [
+      {
+        "job": "eaad6d01d85d",
+        "type": "script",
+        "state": "alerted",
+        "first": "2026-11-16 02:00",
+        "closed": "",
+        "error": "Script exited with code 3"
+      },
       {
         "job": "5f91aedd850c",
         "type": "timeout",
@@ -914,26 +914,18 @@
         "first": "2026-09-27 06:00",
         "closed": "2026-09-28 12:13",
         "error": "Script exited with code 1"
-      },
-      {
-        "job": "7cd089691150",
-        "type": "script",
-        "state": "resolved",
-        "first": "2026-09-26 11:30",
-        "closed": "2026-09-28 11:31",
-        "error": "Script exited with code 1"
       }
     ],
-    "jobs": 92,
-    "jobsEnabled": 82
+    "jobs": 93,
+    "jobsEnabled": 83
   },
   "management": {
-    "days": 43,
+    "days": 44,
     "medianOnline": 42.0,
     "experimentMedian": 37.1,
-    "avgOnline": 49.1,
-    "totalHours": 35.2,
-    "medianVisits": 15,
+    "avgOnline": 49.2,
+    "totalHours": 36.1,
+    "medianVisits": 15.0,
     "perVisit": 3.0,
     "daysUnder30": 12,
     "daily": [
@@ -1151,6 +1143,11 @@
         "date": "2026-11-14",
         "min": 98.5,
         "visits": 17
+      },
+      {
+        "date": "2026-11-15",
+        "min": 54.6,
+        "visits": 21
       }
     ]
   },
@@ -1158,17 +1155,17 @@
     "subscribers": 22,
     "confirmed": 15,
     "pending": 6,
-    "views": 794,
-    "channelSubscribers": 18
+    "views": 827,
+    "channelSubscribers": 19
   },
   "rework": {
     "period": "近 30 天（重工帳本 state/rework_log.jsonl）",
-    "count": 8,
-    "minutes": 181,
+    "count": 12,
+    "minutes": 406,
     "byKind": [
       {
         "kind": "video",
-        "count": 6
+        "count": 9
       },
       {
         "kind": "article",
@@ -1176,6 +1173,10 @@
       },
       {
         "kind": "post",
+        "count": 1
+      },
+      {
+        "kind": "deploy",
         "count": 1
       }
     ],
@@ -1235,6 +1236,34 @@
         "what": "組織層級三種功能 v3 重剪（字卡重做＋配音對齊＋Avatar 裁切）",
         "cause": "v2 字卡用字數比例估時間，實測最大偏移 4.82 秒、平均 +1.16 秒；卡型單一（27 張全是下三分之一）",
         "minutes": 95
+      },
+      {
+        "ts": "2026-11-16 09:44",
+        "kind": "video",
+        "what": "百岳片 v2（字卡佈局、段落停頓、三段配樂）",
+        "cause": "首版字卡字級不一、位置貼底，旁白無停頓，BGM 單一",
+        "minutes": 95
+      },
+      {
+        "ts": "2026-11-16 09:44",
+        "kind": "video",
+        "what": "百岳片 v3（小字可讀性）",
+        "cause": "kicker/統計標籤/註解在亮背景不可讀（CJ哥 退件）",
+        "minutes": 75
+      },
+      {
+        "ts": "2026-11-17 01:20",
+        "kind": "video",
+        "what": "百岳片 v4 重傳 v5（gj2nUNsTCi8）",
+        "cause": "配樂三段各播一次造成 254 秒斷音；品牌片頭片尾音軌為空 → 媒體閘門擋下",
+        "minutes": 45
+      },
+      {
+        "ts": "2026-11-17 01:20",
+        "kind": "deploy",
+        "what": "官網影片 ID 換版後二次部署（發布日 11-16→11-17）",
+        "cause": "換版後才發現 YouTube 實際發布日已跨日，站上日期與平台不一致",
+        "minutes": 10
       }
     ]
   }
