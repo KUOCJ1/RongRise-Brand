@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-11-17T05:20:53Z",
+ "generatedAt": "2026-11-18T05:20:54Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 171
+  "daysRunning": 172
  },
  "stats": {
-  "scanDays": 150,
-  "weekArticles": 69,
-  "articles": 108,
-  "newsItems": 70,
+  "scanDays": 151,
+  "weekArticles": 71,
+  "articles": 109,
+  "newsItems": 71,
   "newsletterIssues": 34,
   "subscribers": 22,
   "confirmedSubscribers": 15,
-  "videos": 49,
-  "views": 841,
+  "videos": 48,
+  "views": 978,
   "channelSubscribers": 19,
   "insights": 21,
-  "socialPosts": 86,
+  "socialPosts": 87,
   "igCards": 54,
-  "competitorReports": 149
+  "competitorReports": 150
  },
  "activity": [
-  {
-   "date": "2026-11-11",
-   "count": 10,
-   "topics": []
-  },
   {
    "date": "2026-11-12",
    "count": 10,
@@ -56,13 +51,18 @@
    "date": "2026-11-17",
    "count": 11,
    "topics": []
+  },
+  {
+   "date": "2026-11-18",
+   "count": 12,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "每個人都聽過百岳，卻不一定知道林文安",
-   "date": "2026-11-15",
-   "url": "/knowledge/taiwan-baili-lin-wen-an"
+   "title": "供應商掏 260 億美元投資自己的客戶：AI 的成長，有多少是彼此投資撐起來的？",
+   "date": "2026-11-17",
+   "url": "/knowledge/suppliers-invest-in-their-own-customer"
   },
   "newsletter": "🦞 榕賀觀點 第 34 期 — 2026-11-16",
   "video": {
@@ -74,33 +74,33 @@
  },
  "trends": [
   {
-   "keyword": "組織與管理",
-   "icon": "🏢",
-   "count": 42,
-   "momentum": "flat"
-  },
-  {
    "keyword": "人力資源",
    "icon": "📋",
    "count": 38,
    "momentum": "flat"
   },
   {
-   "keyword": "晶片與算力",
-   "icon": "🔩",
-   "count": 28,
+   "keyword": "組織與管理",
+   "icon": "🏢",
+   "count": 36,
    "momentum": "flat"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 25,
+   "count": 27,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "晶片與算力",
+   "icon": "🔩",
+   "count": 26,
    "momentum": "flat"
   },
   {
    "keyword": "安全與風險",
    "icon": "🛡️",
-   "count": 21,
+   "count": 24,
    "momentum": "flat"
   }
  ]
