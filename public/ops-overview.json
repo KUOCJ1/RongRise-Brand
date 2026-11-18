@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-17T00:30:46Z",
+  "generatedAt": "2026-11-18T00:30:46Z",
   "periods": {
-    "content": "累計至 2026-11-17；近 30 天＝2026-10-18 起",
-    "health": "2026-10-17 ~ 2026-10-31（15 天）",
+    "content": "累計至 2026-11-18；近 30 天＝2026-10-19 起",
+    "health": "2026-10-18 ~ 2026-10-31（14 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-15（44 天）"
+    "management": "2026-10-03 ~ 2026-11-16（45 天）"
   },
   "headline": [
     {
@@ -12,14 +12,14 @@
       "label": "內容產出",
       "value": 108,
       "unit": "篇文章",
-      "note": "近 30 天新增 16 篇"
+      "note": "近 30 天新增 17 篇"
     },
     {
       "key": "uptime",
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "15 天 × 18 個服務，270/270 次在線"
+      "note": "14 天 × 18 個服務，252/252 次在線"
     },
     {
       "key": "incidents",
@@ -31,21 +31,21 @@
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 42.0,
+      "value": 42.1,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；12/44 天達標"
+      "note": "實驗期 37.1 分；12/45 天達標"
     }
   ],
   "content": {
     "articles": 108,
-    "articles30d": 16,
+    "articles30d": 17,
     "newsletters": 34,
     "videos": 49,
     "videos30d": 3,
     "igCards": 54,
     "socialPosts": 86,
-    "scanDays": 149,
-    "competitorReports": 148,
+    "scanDays": 150,
+    "competitorReports": 149,
     "insights": 21,
     "monthly": [
       {
@@ -74,10 +74,17 @@
       },
       {
         "month": "2026-11",
-        "count": 9
+        "count": 10
       }
     ],
     "articleList": [
+      {
+        "date": "2026-11-17",
+        "title": "供應商掏 260 億美元投資自己的客戶：AI 的成長，有多少是彼此投資撐起來的？",
+        "slug": "suppliers-invest-in-their-own-customer",
+        "url": "/knowledge/suppliers-invest-in-their-own-customer",
+        "cat": "全球趨勢"
+      },
       {
         "date": "2026-11-15",
         "title": "每個人都聽過百岳，卻不一定知道林文安",
@@ -350,13 +357,6 @@
         "slug": "luckiest-day-was-the-hardest-problems",
         "url": "/knowledge/luckiest-day-was-the-hardest-problems",
         "cat": "案例分享"
-      },
-      {
-        "date": "2026-09-10",
-        "title": "我一個人管五個 AI 員工：導入 AI 的瓶頸不是技術，是管理",
-        "slug": "agentic-ai-employee-management",
-        "url": "/knowledge/agentic-ai-employee-management",
-        "cat": "AI 轉型"
       }
     ],
     "videoList": [
@@ -385,7 +385,7 @@
       "newsletter": "🦞 榕賀觀點 第 34 期 — 2026-11-16",
       "video": {
         "title": "每個人都聽過百岳，卻不一定知道林文安｜那份名單是怎麼來的",
-        "date": "2026-11-17",
+        "date": "2026-11-16",
         "url": "https://www.youtube.com/watch?v=gj2nUNsTCi8"
       },
       "insight": "2026-W47.md"
@@ -393,14 +393,6 @@
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-17",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 79,
-        "restarts": 67
-      },
       {
         "date": "2026-10-18",
         "online": 18,
@@ -514,8 +506,8 @@
         "restarts": 35
       }
     ],
-    "checks": 270,
-    "online": 270,
+    "checks": 252,
+    "online": 252,
     "warningDays": 1,
     "maxDisk": 85,
     "live": [
@@ -524,28 +516,28 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.04
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.17
+        "seconds": 0.13
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.09
+        "seconds": 0.06
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.04
       },
       {
         "name": "n8n 自動化",
@@ -562,7 +554,7 @@
         "seconds": 0.04
       }
     ],
-    "liveAt": "2026-11-17 00:30 UTC"
+    "liveAt": "2026-11-18 00:30 UTC"
   },
   "schedule": {
     "incidents30d": 28,
@@ -593,7 +585,7 @@
     ],
     "executions": 1002,
     "executionsOk": 1000,
-    "executionsFrom": "2026-11-16T12:32:45",
+    "executionsFrom": "2026-11-17T12:31:45",
     "incidents": [
       {
         "job": "eaad6d01d85d",
@@ -917,15 +909,15 @@
       }
     ],
     "jobs": 93,
-    "jobsEnabled": 83
+    "jobsEnabled": 84
   },
   "management": {
-    "days": 44,
-    "medianOnline": 42.0,
+    "days": 45,
+    "medianOnline": 42.1,
     "experimentMedian": 37.1,
     "avgOnline": 49.2,
-    "totalHours": 36.1,
-    "medianVisits": 15.0,
+    "totalHours": 36.9,
+    "medianVisits": 15,
     "perVisit": 3.0,
     "daysUnder30": 12,
     "daily": [
@@ -1148,6 +1140,11 @@
         "date": "2026-11-15",
         "min": 54.6,
         "visits": 21
+      },
+      {
+        "date": "2026-11-16",
+        "min": 49.9,
+        "visits": 25
       }
     ]
   },
@@ -1155,7 +1152,7 @@
     "subscribers": 22,
     "confirmed": 15,
     "pending": 6,
-    "views": 827,
+    "views": 841,
     "channelSubscribers": 19
   },
   "rework": {
