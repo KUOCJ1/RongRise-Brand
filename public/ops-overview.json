@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-18T00:30:46Z",
+  "generatedAt": "2026-11-19T00:30:46Z",
   "periods": {
-    "content": "累計至 2026-11-18；近 30 天＝2026-10-19 起",
-    "health": "2026-10-18 ~ 2026-10-31（14 天）",
+    "content": "累計至 2026-11-19；近 30 天＝2026-10-20 起",
+    "health": "2026-10-19 ~ 2026-10-31（13 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-16（45 天）"
+    "management": "2026-10-03 ~ 2026-11-17（46 天）"
   },
   "headline": [
     {
       "key": "content",
       "label": "內容產出",
-      "value": 108,
+      "value": 109,
       "unit": "篇文章",
       "note": "近 30 天新增 17 篇"
     },
@@ -19,7 +19,7 @@
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "14 天 × 18 個服務，252/252 次在線"
+      "note": "13 天 × 18 個服務，234/234 次在線"
     },
     {
       "key": "incidents",
@@ -33,19 +33,19 @@
       "label": "每天在場",
       "value": 42.1,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；12/45 天達標"
+      "note": "實驗期 37.1 分；12/46 天達標"
     }
   ],
   "content": {
-    "articles": 108,
+    "articles": 109,
     "articles30d": 17,
     "newsletters": 34,
-    "videos": 49,
+    "videos": 48,
     "videos30d": 3,
     "igCards": 54,
-    "socialPosts": 86,
-    "scanDays": 150,
-    "competitorReports": 149,
+    "socialPosts": 87,
+    "scanDays": 151,
+    "competitorReports": 150,
     "insights": 21,
     "monthly": [
       {
@@ -362,7 +362,7 @@
     "videoList": [
       {
         "title": "每個人都聽過百岳，卻不一定知道林文安｜那份名單是怎麼來的",
-        "date": "2026-11-17",
+        "date": "2026-11-16",
         "url": "https://www.youtube.com/watch?v=gj2nUNsTCi8"
       },
       {
@@ -378,9 +378,9 @@
     ],
     "latest": {
       "article": {
-        "title": "每個人都聽過百岳，卻不一定知道林文安",
-        "date": "2026-11-15",
-        "url": "/knowledge/taiwan-baili-lin-wen-an"
+        "title": "供應商掏 260 億美元投資自己的客戶：AI 的成長，有多少是彼此投資撐起來的？",
+        "date": "2026-11-17",
+        "url": "/knowledge/suppliers-invest-in-their-own-customer"
       },
       "newsletter": "🦞 榕賀觀點 第 34 期 — 2026-11-16",
       "video": {
@@ -393,14 +393,6 @@
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-18",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 81,
-        "restarts": 0
-      },
       {
         "date": "2026-10-19",
         "online": 18,
@@ -506,8 +498,8 @@
         "restarts": 35
       }
     ],
-    "checks": 252,
-    "online": 252,
+    "checks": 234,
+    "online": 234,
     "warningDays": 1,
     "maxDisk": 85,
     "live": [
@@ -516,35 +508,35 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.06
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.13
+        "seconds": 0.17
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.06
+        "seconds": 0.05
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.05
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.08
       },
       {
         "name": "管理後台",
@@ -554,7 +546,7 @@
         "seconds": 0.04
       }
     ],
-    "liveAt": "2026-11-18 00:30 UTC"
+    "liveAt": "2026-11-19 00:30 UTC"
   },
   "schedule": {
     "incidents30d": 28,
@@ -585,7 +577,7 @@
     ],
     "executions": 1002,
     "executionsOk": 1000,
-    "executionsFrom": "2026-11-17T12:31:45",
+    "executionsFrom": "2026-11-18T12:20:45",
     "incidents": [
       {
         "job": "eaad6d01d85d",
@@ -908,16 +900,16 @@
         "error": "Script exited with code 1"
       }
     ],
-    "jobs": 93,
+    "jobs": 92,
     "jobsEnabled": 84
   },
   "management": {
-    "days": 45,
+    "days": 46,
     "medianOnline": 42.1,
     "experimentMedian": 37.1,
-    "avgOnline": 49.2,
-    "totalHours": 36.9,
-    "medianVisits": 15,
+    "avgOnline": 49.6,
+    "totalHours": 38.0,
+    "medianVisits": 15.0,
     "perVisit": 3.0,
     "daysUnder30": 12,
     "daily": [
@@ -1145,6 +1137,11 @@
         "date": "2026-11-16",
         "min": 49.9,
         "visits": 25
+      },
+      {
+        "date": "2026-11-17",
+        "min": 63.6,
+        "visits": 16
       }
     ]
   },
@@ -1152,17 +1149,17 @@
     "subscribers": 22,
     "confirmed": 15,
     "pending": 6,
-    "views": 841,
+    "views": 978,
     "channelSubscribers": 19
   },
   "rework": {
     "period": "近 30 天（重工帳本 state/rework_log.jsonl）",
-    "count": 12,
-    "minutes": 406,
+    "count": 14,
+    "minutes": 441,
     "byKind": [
       {
         "kind": "video",
-        "count": 9
+        "count": 11
       },
       {
         "kind": "article",
@@ -1178,20 +1175,6 @@
       }
     ],
     "items": [
-      {
-        "ts": "2026-11-12 23:32",
-        "kind": "video",
-        "what": "W46 資料主權 v1→v2",
-        "cause": "母片 mono、avatar stereo，concat 後片尾整段靜音 -48dB",
-        "minutes": 8
-      },
-      {
-        "ts": "2026-11-12 23:32",
-        "kind": "video",
-        "what": "片頭台詞重錄（一分鐘→八十秒）",
-        "cause": "成片 80 秒才發現台詞與長度不符",
-        "minutes": 6
-      },
       {
         "ts": "2026-11-12 23:32",
         "kind": "video",
@@ -1261,6 +1244,20 @@
         "what": "官網影片 ID 換版後二次部署（發布日 11-16→11-17）",
         "cause": "換版後才發現 YouTube 實際發布日已跨日，站上日期與平台不一致",
         "minutes": 10
+      },
+      {
+        "ts": "2026-11-18 21:10",
+        "kind": "video",
+        "what": "w47-efficiency-dividend 旁白重錄",
+        "cause": "ASR 校準複驗抓到 Evan 把「下班」唸成近似「下單」（b→d），改寫「回家」",
+        "minutes": 20
+      },
+      {
+        "ts": "2026-11-18 21:10",
+        "kind": "video",
+        "what": "w47-efficiency-dividend B-roll 重壓暗",
+        "cause": "vision 抽幀抓到 3 支 clip 用 -0.55 太暗（場景只剩輪廓）＋1 支金黃底金字對比不足",
+        "minutes": 15
       }
     ]
   }
