@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-11-18T05:20:54Z",
+ "generatedAt": "2026-11-19T05:20:57Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 172
+  "daysRunning": 173
  },
  "stats": {
-  "scanDays": 151,
-  "weekArticles": 71,
+  "scanDays": 152,
+  "weekArticles": 73,
   "articles": 109,
   "newsItems": 71,
   "newsletterIssues": 34,
   "subscribers": 22,
   "confirmedSubscribers": 15,
   "videos": 48,
-  "views": 978,
+  "views": 1275,
   "channelSubscribers": 19,
   "insights": 21,
-  "socialPosts": 87,
+  "socialPosts": 88,
   "igCards": 54,
-  "competitorReports": 150
+  "competitorReports": 151
  },
  "activity": [
-  {
-   "date": "2026-11-12",
-   "count": 10,
-   "topics": []
-  },
   {
    "date": "2026-11-13",
    "count": 9,
@@ -54,6 +49,11 @@
   },
   {
    "date": "2026-11-18",
+   "count": 12,
+   "topics": []
+  },
+  {
+   "date": "2026-11-19",
    "count": 12,
    "topics": []
   }
@@ -86,20 +86,20 @@
    "momentum": "flat"
   },
   {
-   "keyword": "成本與投資",
-   "icon": "💰",
-   "count": 27,
-   "momentum": "flat"
-  },
-  {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 26,
-   "momentum": "flat"
+   "count": 28,
+   "momentum": "up"
   },
   {
    "keyword": "安全與風險",
    "icon": "🛡️",
+   "count": 26,
+   "momentum": "up"
+  },
+  {
+   "keyword": "成本與投資",
+   "icon": "💰",
    "count": 24,
    "momentum": "flat"
   }
