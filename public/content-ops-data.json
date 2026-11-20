@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-11-19T05:20:57Z",
+ "generatedAt": "2026-11-20T05:21:01Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 173
+  "daysRunning": 174
  },
  "stats": {
-  "scanDays": 152,
-  "weekArticles": 73,
+  "scanDays": 153,
+  "weekArticles": 76,
   "articles": 109,
   "newsItems": 71,
-  "newsletterIssues": 34,
+  "newsletterIssues": 35,
   "subscribers": 22,
   "confirmedSubscribers": 15,
   "videos": 48,
-  "views": 1275,
+  "views": 1313,
   "channelSubscribers": 19,
   "insights": 21,
-  "socialPosts": 88,
+  "socialPosts": 89,
   "igCards": 54,
-  "competitorReports": 151
+  "competitorReports": 152
  },
  "activity": [
-  {
-   "date": "2026-11-13",
-   "count": 9,
-   "topics": []
-  },
   {
    "date": "2026-11-14",
    "count": 8,
@@ -56,6 +51,11 @@
    "date": "2026-11-19",
    "count": 12,
    "topics": []
+  },
+  {
+   "date": "2026-11-20",
+   "count": 12,
+   "topics": []
   }
  ],
  "latest": {
@@ -64,7 +64,7 @@
    "date": "2026-11-17",
    "url": "/knowledge/suppliers-invest-in-their-own-customer"
   },
-  "newsletter": "🦞 榕賀觀點 第 34 期 — 2026-11-16",
+  "newsletter": "🦞 榕賀觀點 第 35 期 — 2026-11-19",
   "video": {
    "title": "每個人都聽過百岳，卻不一定知道林文安｜那份名單是怎麼來的",
    "date": "2026-11-16",
@@ -76,19 +76,19 @@
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 38,
+   "count": 37,
    "momentum": "flat"
   },
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 36,
+   "count": 34,
    "momentum": "flat"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 28,
+   "count": 32,
    "momentum": "up"
   },
   {
@@ -100,7 +100,7 @@
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 24,
+   "count": 25,
    "momentum": "flat"
   }
  ]
