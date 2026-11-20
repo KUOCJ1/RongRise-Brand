@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-19T00:30:46Z",
+  "generatedAt": "2026-11-20T00:30:46Z",
   "periods": {
-    "content": "累計至 2026-11-19；近 30 天＝2026-10-20 起",
-    "health": "2026-10-19 ~ 2026-10-31（13 天）",
+    "content": "累計至 2026-11-20；近 30 天＝2026-10-21 起",
+    "health": "2026-10-20 ~ 2026-10-31（12 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-17（46 天）"
+    "management": "2026-10-03 ~ 2026-11-18（47 天）"
   },
   "headline": [
     {
@@ -12,40 +12,40 @@
       "label": "內容產出",
       "value": 109,
       "unit": "篇文章",
-      "note": "近 30 天新增 17 篇"
+      "note": "近 30 天新增 16 篇"
     },
     {
       "key": "uptime",
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "13 天 × 18 個服務，234/234 次在線"
+      "note": "12 天 × 18 個服務，216/216 次在線"
     },
     {
       "key": "incidents",
       "label": "未結事故",
       "value": 1,
       "unit": "件",
-      "note": "近 30 天 28 筆告警，涉及 20 支排程"
+      "note": "近 30 天 27 筆告警，涉及 20 支排程"
     },
     {
       "key": "attention",
       "label": "每天在場",
       "value": 42.1,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；12/46 天達標"
+      "note": "實驗期 37.1 分；12/47 天達標"
     }
   ],
   "content": {
     "articles": 109,
-    "articles30d": 17,
+    "articles30d": 16,
     "newsletters": 34,
     "videos": 48,
     "videos30d": 3,
     "igCards": 54,
-    "socialPosts": 87,
-    "scanDays": 151,
-    "competitorReports": 150,
+    "socialPosts": 88,
+    "scanDays": 152,
+    "competitorReports": 151,
     "insights": 21,
     "monthly": [
       {
@@ -394,14 +394,6 @@
   "health": {
     "days": [
       {
-        "date": "2026-10-19",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 78,
-        "restarts": 1
-      },
-      {
         "date": "2026-10-20",
         "online": 18,
         "total": 18,
@@ -498,8 +490,8 @@
         "restarts": 35
       }
     ],
-    "checks": 234,
-    "online": 234,
+    "checks": 216,
+    "online": 216,
     "warningDays": 1,
     "maxDisk": 85,
     "live": [
@@ -508,50 +500,50 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.06
+        "seconds": 0.05
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.17
+        "seconds": 0.16
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.06
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.03
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.08
+        "seconds": 0.05
       },
       {
         "name": "管理後台",
         "url": "https://admin.rong-rise.com/",
         "code": "401",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.03
       }
     ],
-    "liveAt": "2026-11-19 00:30 UTC"
+    "liveAt": "2026-11-20 00:30 UTC"
   },
   "schedule": {
-    "incidents30d": 28,
+    "incidents30d": 27,
     "incidentJobs": 20,
-    "incidentDays": 9,
+    "incidentDays": 8,
     "open": 1,
     "types": [
       {
@@ -569,15 +561,11 @@
       {
         "type": "timeout",
         "count": 2
-      },
-      {
-        "type": "rate_limit",
-        "count": 1
       }
     ],
     "executions": 1002,
     "executionsOk": 1000,
-    "executionsFrom": "2026-11-18T12:20:45",
+    "executionsFrom": "2026-11-19T12:33:45",
     "incidents": [
       {
         "job": "eaad6d01d85d",
@@ -900,16 +888,16 @@
         "error": "Script exited with code 1"
       }
     ],
-    "jobs": 92,
-    "jobsEnabled": 84
+    "jobs": 93,
+    "jobsEnabled": 85
   },
   "management": {
-    "days": 46,
+    "days": 47,
     "medianOnline": 42.1,
     "experimentMedian": 37.1,
-    "avgOnline": 49.6,
-    "totalHours": 38.0,
-    "medianVisits": 15.0,
+    "avgOnline": 50.3,
+    "totalHours": 39.4,
+    "medianVisits": 15,
     "perVisit": 3.0,
     "daysUnder30": 12,
     "daily": [
@@ -1142,6 +1130,11 @@
         "date": "2026-11-17",
         "min": 63.6,
         "visits": 16
+      },
+      {
+        "date": "2026-11-18",
+        "min": 86.2,
+        "visits": 20
       }
     ]
   },
@@ -1149,7 +1142,7 @@
     "subscribers": 22,
     "confirmed": 15,
     "pending": 6,
-    "views": 978,
+    "views": 1275,
     "channelSubscribers": 19
   },
   "rework": {
