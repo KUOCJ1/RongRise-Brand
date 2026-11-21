@@ -247,18 +247,18 @@ export default function AIGovernanceScanPage() {
   };
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-[#0D2B4E] via-[#0D2B4E] to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
       <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
 
         {/* ===== STEP 1: INTRO ===== */}
         {step === "intro" && (
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-              <span className="text-sm text-[#2EC4B6] font-semibold">榕耀管顧原創 · 治理五檢查框架</span>
+            <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+              <span className="text-sm text-accent font-semibold">榕耀管顧原創 · 治理五檢查框架</span>
             </div>
             <h1 className="text-3xl md:text-5xl font-black leading-tight mb-6">
               你的 AI 用得多，<br />
-              但<span className="text-[#2EC4B6]">治理得好嗎？</span>
+              但<span className="text-accent">治理得好嗎？</span>
             </h1>
             <p className="text-white/70 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
               Pilot Trap 量表測的是「點」——你的試點卡不卡關；
@@ -275,7 +275,7 @@ export default function AIGovernanceScanPage() {
             </div>
             <button
               onClick={() => { setStep("quiz"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-              className="bg-[#E8912A] hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+              className="bg-tertiary hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
             >
               開始自評 →
             </button>
@@ -297,7 +297,7 @@ export default function AIGovernanceScanPage() {
                 aria-valuenow={currentDimIdx + 1}
               >
                 <div
-                  className="h-full bg-[#2EC4B6] rounded-full transition-all"
+                  className="h-full bg-accent rounded-full transition-all"
                   style={{ width: `${((currentDimIdx + 1) / DIMENSIONS.length) * 100}%` }}
                 />
               </div>
@@ -318,7 +318,7 @@ export default function AIGovernanceScanPage() {
               {currentDim.questions.map((q, qi) => (
                 <div key={q.id} className="bg-white/5 border border-white/10 rounded-xl p-5">
                   <p className="text-white font-semibold mb-4">
-                    <span className="text-[#2EC4B6] font-bold">{qi + 1}.</span> {q.text}
+                    <span className="text-accent font-bold">{qi + 1}.</span> {q.text}
                   </p>
                   <div className="space-y-2">
                     {q.options.map((opt) => (
@@ -326,7 +326,7 @@ export default function AIGovernanceScanPage() {
                         key={opt.value}
                         className={`flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-colors ${
                           answers[q.id] === opt.value
-                            ? "bg-[#1A6DB5]/30 border border-[#1A6DB5]/50"
+                            ? "bg-secondary/30 border border-secondary/50"
                             : "bg-white/5 border border-white/5 hover:bg-white/10"
                         }`}
                       >
@@ -336,7 +336,7 @@ export default function AIGovernanceScanPage() {
                           value={opt.value}
                           checked={answers[q.id] === opt.value}
                           onChange={() => setAnswer(q.id, opt.value)}
-                          className="accent-[#E8912A]"
+                          className="accent-tertiary"
                         />
                         <span className="text-white/80 text-sm">{opt.label}</span>
                       </label>
@@ -359,7 +359,7 @@ export default function AIGovernanceScanPage() {
                 <button
                   onClick={() => handleSubmit(true)}
                   disabled={!allAnswered}
-                  className="bg-[#E8912A] hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors shadow-lg"
+                  className="bg-tertiary hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors shadow-lg"
                 >
                   看結果 →
                 </button>
@@ -367,7 +367,7 @@ export default function AIGovernanceScanPage() {
                 <button
                   onClick={goToNextDim}
                   disabled={!currentDimAnswered}
-                  className="bg-[#1A6DB5] hover:bg-[#2680CC] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-secondary hover:bg-[#2680CC] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   下一維度 →
                 </button>
@@ -381,11 +381,11 @@ export default function AIGovernanceScanPage() {
           <div className="max-w-3xl mx-auto">
             {/* Headline */}
             <div className="text-center mb-10">
-              <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-                <span className="text-sm text-[#2EC4B6] font-semibold">AI 治理五檢查自評結果</span>
+              <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+                <span className="text-sm text-accent font-semibold">AI 治理五檢查自評結果</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-black mb-4">
-                治理成熟度 <span className="text-[#2EC4B6]">{result.overallScore.toFixed(1)}</span> 分
+                治理成熟度 <span className="text-accent">{result.overallScore.toFixed(1)}</span> 分
               </h1>
               <div className="flex items-center justify-center gap-3">
                 <LevelBadge level={result.overallLevel} />
@@ -408,7 +408,7 @@ export default function AIGovernanceScanPage() {
                     <div className="flex-1 h-2 bg-white/10 rounded-full overflow-hidden ml-2">
                       <div
                         className={`h-full rounded-full ${
-                          d.status === "紅燈" ? "bg-red-400" : d.status === "黃燈" ? "bg-yellow-400" : "bg-[#2EC4B6]"
+                          d.status === "紅燈" ? "bg-red-400" : d.status === "黃燈" ? "bg-yellow-400" : "bg-accent"
                         }`}
                         style={{ width: `${d.pct}%` }}
                       />
@@ -461,7 +461,7 @@ export default function AIGovernanceScanPage() {
                     </span>
                     <div>
                       <p className="text-white/80 text-sm leading-relaxed">
-                        <strong className="text-[#2EC4B6]">{rec.dim}：</strong>{rec.text}
+                        <strong className="text-accent">{rec.dim}：</strong>{rec.text}
                       </p>
                     </div>
                   </div>
@@ -481,7 +481,7 @@ export default function AIGovernanceScanPage() {
 
             {/* Lead capture */}
             {!leadEmail ? (
-              <div className="bg-gradient-to-br from-[#1A6DB5]/20 to-[#2EC4B6]/10 border border-[#2EC4B6]/30 rounded-2xl p-6 mb-8">
+              <div className="bg-gradient-to-br from-secondary/20 to-accent/10 border border-accent/30 rounded-2xl p-6 mb-8">
                 <h2 className="text-lg font-bold mb-1">📬 想拿到完整治理行動清單？</h2>
                 <p className="text-white/60 text-sm mb-4 leading-relaxed">
                   留下 Email，我們寄送《AI 治理五檢查完整行動指南》，並在 30 天後免費提醒你複測。
@@ -492,7 +492,7 @@ export default function AIGovernanceScanPage() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="姓名（選填）"
-                    className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6]"
+                    className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent"
                     aria-label="姓名"
                   />
                   <input
@@ -500,7 +500,7 @@ export default function AIGovernanceScanPage() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Email（必填）"
-                    className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6]"
+                    className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent"
                     aria-label="Email"
                   />
                 </div>
@@ -509,13 +509,13 @@ export default function AIGovernanceScanPage() {
                   value={company}
                   onChange={(e) => setCompany(e.target.value)}
                   placeholder="公司名稱（選填）"
-                  className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6] mb-4"
+                  className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent mb-4"
                   aria-label="公司名稱"
                 />
                 <button
                   onClick={() => handleSubmit(false)}
                   disabled={!email}
-                  className="bg-[#E8912A] hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-tertiary hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   訂閱並取得指南 →
                 </button>
@@ -530,7 +530,7 @@ export default function AIGovernanceScanPage() {
               <div className="bg-white/5 border border-white/10 rounded-2xl p-5 mb-8" role="status">
                 <p className="text-white/60 text-sm leading-relaxed">
                   已送出 {leadEmail}，行動指南會寄到這個信箱。若一直沒收到，直接
-                  <a href="/about/#contact" className="text-[#2EC4B6] hover:text-[#7FE3D8] font-semibold ml-1">
+                  <a href="/about/#contact" className="text-accent hover:text-[#7FE3D8] font-semibold ml-1">
                     預約免費諮詢
                   </a>
                   比較快。
@@ -548,7 +548,7 @@ export default function AIGovernanceScanPage() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <a
                   href="/ai-roadmap"
-                  className="bg-[#1A6DB5] hover:bg-[#2680CC] text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-secondary hover:bg-[#2680CC] text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   生成 AI 轉型路線圖 →
                 </a>
@@ -560,7 +560,7 @@ export default function AIGovernanceScanPage() {
                 </a>
                 <a
                   href="/about/#contact"
-                  className="text-[#E8912A] hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
+                  className="text-tertiary hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
                 >
                   預約免費諮詢 →
                 </a>

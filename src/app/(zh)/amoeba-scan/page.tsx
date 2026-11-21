@@ -86,18 +86,18 @@ export default function AmoebaScanPage() {
   }, [selected, customs, email, name, company]);
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-[#0D2B4E] via-[#0D2B4E] to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
       <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
         {/* ===== STEP 1: 介紹 ===== */}
         {step === "intro" && (
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-              <span className="text-sm text-[#2EC4B6] font-semibold">任務變形蟲 × 企業 AI 實用工具</span>
+            <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+              <span className="text-sm text-accent font-semibold">任務變形蟲 × 企業 AI 實用工具</span>
             </div>
             <h1 className="text-3xl md:text-5xl font-black leading-tight mb-6">
               你的工作，
               <br />
-              有多少可以<span className="text-[#E8912A]">交給 AI？</span>
+              有多少可以<span className="text-tertiary">交給 AI？</span>
             </h1>
             <p className="text-lg md:text-xl text-[#A0C4E8] max-w-2xl mx-auto mb-8 leading-relaxed">
               勾選你的日常工作任務，立即盤點
@@ -118,13 +118,13 @@ export default function AmoebaScanPage() {
             </div>
             <button
               onClick={() => setStep("form")}
-              className="bg-[#E8912A] hover:bg-[#F0A040] text-[#0D2B4E] font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-[#E8912A]/20"
+              className="bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
             >
               開始盤點 →
             </button>
             <p className="text-xs text-[#5A7A9E] mt-6">
               方法論來自榕耀管顧研究專刊
-              <a href="https://rong-rise.com/research/task-amoeba/" className="text-[#2EC4B6] hover:underline mx-1">
+              <a href="https://rong-rise.com/research/task-amoeba/" className="text-accent hover:underline mx-1">
                 《任務變形蟲 Task Amoeba Model》
               </a>
               ——任務跟著問題走，不讓任務跟著組織走。
@@ -148,7 +148,7 @@ export default function AmoebaScanPage() {
 
             {/* 常見任務 */}
             <div className="mb-8">
-              <label className="block text-sm font-semibold text-[#2EC4B6] mb-3">
+              <label className="block text-sm font-semibold text-accent mb-3">
                 1. 勾選常見任務（可複選）
                 <span className="ml-2 text-xs text-[#5A7A9E] font-normal">已選 {selected.length} 項</span>
               </label>
@@ -161,8 +161,8 @@ export default function AmoebaScanPage() {
                       onClick={() => toggleTask(t.id)}
                       className={`flex items-center gap-3 text-sm px-4 py-3 rounded-lg border transition-all text-left ${
                         active
-                          ? "bg-[#1A6DB5]/30 border-[#2EC4B6] text-white font-semibold"
-                          : "bg-white/5 border-white/10 text-[#A0C4E8] hover:border-[#1A6DB5]"
+                          ? "bg-secondary/30 border-accent text-white font-semibold"
+                          : "bg-white/5 border-white/10 text-[#A0C4E8] hover:border-secondary"
                       }`}
                     >
                       <span className="text-xl">{t.icon}</span>
@@ -174,7 +174,7 @@ export default function AmoebaScanPage() {
                       </span>
                       <span
                         className={`w-5 h-5 rounded-full border-2 flex items-center justify-center text-xs ${
-                          active ? "bg-[#2EC4B6] border-[#2EC4B6] text-[#0D2B4E]" : "border-[#5A7A9E]"
+                          active ? "bg-accent border-accent text-primary" : "border-[#5A7A9E]"
                         }`}
                       >
                         {active ? "✓" : ""}
@@ -187,7 +187,7 @@ export default function AmoebaScanPage() {
 
             {/* 自訂任務 */}
             <div className="mb-8">
-              <label className="block text-sm font-semibold text-[#2EC4B6] mb-3">
+              <label className="block text-sm font-semibold text-accent mb-3">
                 2. 輸入你的其他工作流程（選填）
               </label>
               <div className="flex gap-2 mb-3">
@@ -202,7 +202,7 @@ export default function AmoebaScanPage() {
                       addCustom();
                     }
                   }}
-                  className="flex-1 bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-[#5A7A9E] focus:border-[#2EC4B6] focus:outline-none"
+                  className="flex-1 bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-[#5A7A9E] focus:border-accent focus:outline-none"
                 />
                 <input
                   type="number"
@@ -210,14 +210,14 @@ export default function AmoebaScanPage() {
                   max={80}
                   value={customHours}
                   onChange={(e) => setCustomHours(Math.max(1, Number(e.target.value) || 1))}
-                  className="w-24 bg-white/5 border border-white/10 rounded-lg px-3 py-3 text-sm text-center focus:border-[#2EC4B6] focus:outline-none"
+                  className="w-24 bg-white/5 border border-white/10 rounded-lg px-3 py-3 text-sm text-center focus:border-accent focus:outline-none"
                   title="每週耗時（小時）"
                 />
                 <span className="text-xs text-[#5A7A9E] self-center whitespace-nowrap">小時／週</span>
                 <button
                   onClick={addCustom}
                   disabled={!customName.trim()}
-                  className="bg-[#1A6DB5]/30 border border-[#2EC4B6]/50 text-[#2EC4B6] disabled:opacity-40 font-semibold text-sm px-4 py-3 rounded-lg transition-colors hover:bg-[#1A6DB5]/50 whitespace-nowrap"
+                  className="bg-secondary/30 border border-accent/50 text-accent disabled:opacity-40 font-semibold text-sm px-4 py-3 rounded-lg transition-colors hover:bg-secondary/50 whitespace-nowrap"
                 >
                   ＋ 加入
                 </button>
@@ -227,7 +227,7 @@ export default function AmoebaScanPage() {
                   {customs.map((c, i) => (
                     <span
                       key={i}
-                      className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#1A6DB5]/40 rounded-full px-3 py-1.5 text-sm"
+                      className="inline-flex items-center gap-2 bg-secondary/20 border border-secondary/40 rounded-full px-3 py-1.5 text-sm"
                     >
                       <span>✨ {c.name}</span>
                       <span className="text-xs text-[#5A7A9E]">{c.weeklyHours}h/週</span>
@@ -246,7 +246,7 @@ export default function AmoebaScanPage() {
 
             {/* 留資（選填） */}
             <div className="bg-white/5 border border-white/10 rounded-xl p-5 mb-6">
-              <label className="block text-sm font-semibold text-[#2EC4B6] mb-1">
+              <label className="block text-sm font-semibold text-accent mb-1">
                 3. 留下 Email 取得盤點報告（選填）
               </label>
               <p className="text-xs text-[#5A7A9E] mb-4">填寫後可收到完整盤點結果與 AI 轉型週報。</p>
@@ -256,21 +256,21 @@ export default function AmoebaScanPage() {
                   placeholder="姓名"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-[#5A7A9E] focus:border-[#2EC4B6] focus:outline-none"
+                  className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-[#5A7A9E] focus:border-accent focus:outline-none"
                 />
                 <input
                   type="email"
                   placeholder="Email *"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-[#5A7A9E] focus:border-[#2EC4B6] focus:outline-none"
+                  className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-[#5A7A9E] focus:border-accent focus:outline-none"
                 />
                 <input
                   type="text"
                   placeholder="公司名稱"
                   value={company}
                   onChange={(e) => setCompany(e.target.value)}
-                  className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-[#5A7A9E] focus:border-[#2EC4B6] focus:outline-none"
+                  className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-[#5A7A9E] focus:border-accent focus:outline-none"
                 />
               </div>
             </div>
@@ -284,7 +284,7 @@ export default function AmoebaScanPage() {
             <button
               onClick={handleSubmit}
               disabled={submitting}
-              className="w-full bg-[#E8912A] hover:bg-[#F0A040] disabled:opacity-50 text-[#0D2B4E] font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-[#E8912A]/20"
+              className="w-full bg-tertiary hover:bg-[#F0A040] disabled:opacity-50 text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
             >
               {submitting ? "盤點中…" : "看看我的任務怎麼分類 →"}
             </button>
@@ -303,15 +303,15 @@ export default function AmoebaScanPage() {
 
             {/* 主數字 */}
             <div className="text-center mb-8">
-              <p className="text-[#2EC4B6] font-semibold mb-2">
+              <p className="text-accent font-semibold mb-2">
                 盤點 {result.tasks.length} 個任務 · 每週 {result.totalWeeklyHours} 小時
               </p>
-              <div className="text-5xl md:text-6xl font-black text-[#E8912A] mb-2">
+              <div className="text-5xl md:text-6xl font-black text-tertiary mb-2">
                 {result.totalWeeklySaved} 小時
               </div>
               <p className="text-[#A0C4E8] text-lg">每週可節省工時（保守估計）</p>
-              <div className="inline-flex items-center gap-2 mt-4 bg-[#2EC4B6]/10 border border-[#2EC4B6]/30 rounded-full px-5 py-2">
-                <span className="text-sm text-[#2EC4B6] font-bold">每月約省 {result.totalMonthlySaved} 小時</span>
+              <div className="inline-flex items-center gap-2 mt-4 bg-accent/10 border border-accent/30 rounded-full px-5 py-2">
+                <span className="text-sm text-accent font-bold">每月約省 {result.totalMonthlySaved} 小時</span>
                 <span className="text-[#5A7A9E]">·</span>
                 <span className="text-sm text-[#A0C4E8]">相當於 {Math.max(1, Math.round(result.totalWeeklySaved / 40))} 位全職人力</span>
               </div>
@@ -326,7 +326,7 @@ export default function AmoebaScanPage() {
                     {result.byCategory[cat].count} 個任務
                   </div>
                   <div className="text-sm text-[#A0C4E8] mb-2">{CATEGORY_META[cat].label}</div>
-                  <div className="text-xs text-[#2EC4B6] font-semibold">
+                  <div className="text-xs text-accent font-semibold">
                     每週省 {Math.round(result.byCategory[cat].weeklySaved * 10) / 10} 小時
                   </div>
                 </div>
@@ -354,7 +354,7 @@ export default function AmoebaScanPage() {
                       <div className="flex-1 min-w-0">
                         <div className="font-semibold truncate">
                           {t.label}
-                          {t.isCustom && <span className="text-xs text-[#E8912A] ml-2">自訂</span>}
+                          {t.isCustom && <span className="text-xs text-tertiary ml-2">自訂</span>}
                         </div>
                         <div className="text-xs text-[#5A7A9E]">
                           {t.dept} · {t.weeklyHours} 小時/週 · AI 適用分 {t.aiScore.toFixed(2)} · 變形蟲契合 {t.amoebaFit.toFixed(2)}
@@ -364,7 +364,7 @@ export default function AmoebaScanPage() {
                         {meta.badge} {meta.label}
                       </span>
                       <div className="text-right shrink-0">
-                        <div className="text-[#E8912A] font-bold">−{t.weeklySaved} h</div>
+                        <div className="text-tertiary font-bold">−{t.weeklySaved} h</div>
                         <div className="text-xs text-[#5A7A9E]">每週</div>
                       </div>
                     </div>
@@ -374,7 +374,7 @@ export default function AmoebaScanPage() {
             </div>
 
             {/* 變形蟲契合度 */}
-            <div className="bg-[#1A6DB5]/10 border border-[#1A6DB5]/30 rounded-xl p-5 mb-8">
+            <div className="bg-secondary/10 border border-secondary/30 rounded-xl p-5 mb-8">
               <h3 className="font-bold mb-3">
                 🧬 組織任務型態分析
                 <span className="ml-2 text-sm font-normal text-[#A0C4E8]">變形蟲契合度 {result.amoebaAvg.toFixed(2)}</span>
@@ -399,14 +399,14 @@ export default function AmoebaScanPage() {
               )}
               <a
                 href="https://rong-rise.com/research/task-amoeba/"
-                className="inline-block mt-3 text-sm text-[#2EC4B6] hover:underline"
+                className="inline-block mt-3 text-sm text-accent hover:underline"
               >
                 深入了解任務變形蟲模型 →
               </a>
             </div>
 
             {/* 免責與 CTA */}
-            <div className="bg-[#1A6DB5]/10 border border-[#1A6DB5]/30 rounded-xl p-5 mb-8">
+            <div className="bg-secondary/10 border border-secondary/30 rounded-xl p-5 mb-8">
               <p className="text-xs text-[#A0C4E8] leading-relaxed">
                 <strong className="text-white">模型說明：</strong>本盤點採透明規則引擎——分類依據結構化程度、判斷需求與資料可取得性；省時估算取
                 保守節省率（自動化 60%／協作 30%／人工 5%）並再打 8 折（修錯、監督與維護成本）。
@@ -422,13 +422,13 @@ export default function AmoebaScanPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="/roi-calculator"
-                  className="inline-block bg-[#1A6DB5]/20 border border-[#2EC4B6]/50 text-[#2EC4B6] hover:bg-[#1A6DB5]/40 font-bold text-lg px-8 py-4 rounded-full transition-colors"
+                  className="inline-block bg-secondary/20 border border-accent/50 text-accent hover:bg-secondary/40 font-bold text-lg px-8 py-4 rounded-full transition-colors"
                 >
                   計算 AI 轉型 ROI →
                 </a>
                 <a
                   href="/about/#contact"
-                  className="inline-block bg-[#E8912A] hover:bg-[#F0A040] text-[#0D2B4E] font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-[#E8912A]/20"
+                  className="inline-block bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
                 >
                   預約免費諮詢 →
                 </a>

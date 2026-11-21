@@ -147,7 +147,7 @@ export default function HumanAbsentThirteenDaysPage() {
                 <Link
                   key={p.href}
                   href={p.href}
-                  className="block rounded-2xl border border-border-light bg-white p-6 transition hover:border-[#0D2B4E]/40 hover:shadow-sm"
+                  className="block rounded-2xl border border-border-light bg-white p-6 transition hover:border-primary/40 hover:shadow-sm"
                 >
                   <div className="flex flex-wrap items-center gap-3 text-xs mb-2">
                     <span className="rounded-full px-2.5 py-1 font-bold text-white" style={{ backgroundColor: NAVY }}>

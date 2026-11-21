@@ -191,20 +191,20 @@ export default function PilotTrapScanPage() {
   }, []);
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-[#0D2B4E] via-[#0D2B4E] to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
       <div className="max-w-3xl mx-auto px-4 py-12 md:py-16">
         {/* ===== STEP 1: 介紹 ===== */}
         {step === "intro" && (
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-              <span className="text-sm text-[#2EC4B6] font-semibold">Agent 治理 × 企業 AI 實用工具</span>
+            <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+              <span className="text-sm text-accent font-semibold">Agent 治理 × 企業 AI 實用工具</span>
             </div>
             <h1 className="text-3xl md:text-5xl font-black leading-tight mb-6">
               你的 AI 部隊，
               <br />
-              是在<span className="text-[#E8912A]">鋪路</span>還是卡進
+              是在<span className="text-tertiary">鋪路</span>還是卡進
               <br className="hidden md:block" />
-              <span className="text-[#E8912A]">Pilot 陷阱？</span>
+              <span className="text-tertiary">Pilot 陷阱？</span>
             </h1>
             <p className="text-lg md:text-xl text-[#A0C4E8] max-w-2xl mx-auto mb-8 leading-relaxed">
               25 題，五分鐘，測出你的 AI 應用是在為未來營運鋪路，
@@ -225,21 +225,21 @@ export default function PilotTrapScanPage() {
             </div>
             <button
               onClick={() => setStep("form")}
-              className="bg-[#E8912A] hover:bg-[#F0A040] text-[#0D2B4E] font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-[#E8912A]/20"
+              className="bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
             >
               開始診斷 →
             </button>
             <div className="mt-4">
               <a
                 href="/pilot-trap-workshop/"
-                className="inline-block px-8 py-3 rounded-full border border-[#2EC4B6]/40 text-[#2EC4B6] hover:bg-[#2EC4B6]/10 transition-colors text-sm font-semibold"
+                className="inline-block px-8 py-3 rounded-full border border-accent/40 text-accent hover:bg-accent/10 transition-colors text-sm font-semibold"
               >
                 🏢 團隊工作坊模式（主持人彙總）→
               </a>
             </div>
             <p className="text-xs text-[#5A7A9E] mt-6">
               方法論源自 McKinsey《逃離 Pilot 陷阱》與榕耀管顧
-              <a href="/knowledge/managing-31-ai-agents/" className="text-[#2EC4B6] hover:underline mx-1">
+              <a href="/knowledge/managing-31-ai-agents/" className="text-accent hover:underline mx-1">
                 「我們怎麼管自己的 31 個 AI 員工」
               </a>
               實戰經驗
@@ -258,12 +258,12 @@ export default function PilotTrapScanPage() {
                 <span>{progress}%</span>
               </div>
               <div className="h-2 rounded-full bg-white/10 overflow-hidden">
-                <div className="h-full bg-[#2EC4B6] rounded-full transition-all duration-300" style={{ width: `${progress}%` }} />
+                <div className="h-full bg-accent rounded-full transition-all duration-300" style={{ width: `${progress}%` }} />
               </div>
             </div>
 
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8">
-              <div className="inline-block text-xs font-bold text-[#2EC4B6] bg-[#2EC4B6]/10 rounded-full px-3 py-1 mb-4">
+              <div className="inline-block text-xs font-bold text-accent bg-accent/10 rounded-full px-3 py-1 mb-4">
                 {DIMENSIONS[q.dimension].label} · {DIMENSIONS[q.dimension].sub}
               </div>
               <h2 className="text-xl md:text-2xl font-bold leading-snug mb-6">{q.text}</h2>
@@ -276,8 +276,8 @@ export default function PilotTrapScanPage() {
                       onClick={() => selectOption(opt.score)}
                       className={`w-full text-left px-5 py-4 rounded-xl border transition-all text-base md:text-lg ${
                         selected
-                          ? "bg-[#2EC4B6]/15 border-[#2EC4B6] text-white"
-                          : "bg-white/5 border-white/10 text-[#D6E6F5] hover:border-[#1A6DB5] hover:bg-white/10"
+                          ? "bg-accent/15 border-accent text-white"
+                          : "bg-white/5 border-white/10 text-[#D6E6F5] hover:border-secondary hover:bg-white/10"
                       }`}
                     >
                       {opt.text}
@@ -307,27 +307,27 @@ export default function PilotTrapScanPage() {
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         placeholder="姓名"
-                        className="bg-[#0A1F3A] border border-white/15 rounded-lg px-3 py-2 text-sm text-white placeholder-[#5A7A9E] focus:outline-none focus:border-[#2EC4B6]"
+                        className="bg-[#0A1F3A] border border-white/15 rounded-lg px-3 py-2 text-sm text-white placeholder-[#5A7A9E] focus:outline-none focus:border-accent"
                       />
                       <input
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="Email"
                         type="email"
-                        className="bg-[#0A1F3A] border border-white/15 rounded-lg px-3 py-2 text-sm text-white placeholder-[#5A7A9E] focus:outline-none focus:border-[#2EC4B6]"
+                        className="bg-[#0A1F3A] border border-white/15 rounded-lg px-3 py-2 text-sm text-white placeholder-[#5A7A9E] focus:outline-none focus:border-accent"
                       />
                       <input
                         value={company}
                         onChange={(e) => setCompany(e.target.value)}
                         placeholder="公司"
-                        className="bg-[#0A1F3A] border border-white/15 rounded-lg px-3 py-2 text-sm text-white placeholder-[#5A7A9E] focus:outline-none focus:border-[#2EC4B6]"
+                        className="bg-[#0A1F3A] border border-white/15 rounded-lg px-3 py-2 text-sm text-white placeholder-[#5A7A9E] focus:outline-none focus:border-accent"
                       />
                     </div>
                   </div>
                   <button
                     onClick={handleFinish}
                     disabled={submitting}
-                    className="w-full bg-[#E8912A] hover:bg-[#F0A040] text-[#0D2B4E] font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-[#E8912A]/20 disabled:opacity-50"
+                    className="w-full bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20 disabled:opacity-50"
                   >
                     {submitting ? "計算中…" : "看我的診斷結果 →"}
                   </button>
@@ -380,7 +380,7 @@ export default function PilotTrapScanPage() {
                     <span className="font-bold text-lg text-[#E0503A]">{result.pilotRisk}%</span>
                   </div>
                   <div className="h-2.5 rounded-full bg-white/10 overflow-hidden">
-                    <div className="h-full rounded-full bg-gradient-to-r from-[#E8912A] to-[#E0503A]" style={{ width: `${result.pilotRisk}%` }} />
+                    <div className="h-full rounded-full bg-gradient-to-r from-tertiary to-[#E0503A]" style={{ width: `${result.pilotRisk}%` }} />
                   </div>
                   <p className="text-xs text-[#A0C4E8] mt-2">
                     {result.pilotRisk >= 60
@@ -394,11 +394,11 @@ export default function PilotTrapScanPage() {
             </div>
 
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 mb-10">
-              <h2 className="text-xl font-bold mb-4 text-[#E8912A]">給你的行動建議</h2>
+              <h2 className="text-xl font-bold mb-4 text-tertiary">給你的行動建議</h2>
               <ol className="space-y-3">
                 {result.advice.map((a, i) => (
                   <li key={i} className="flex gap-3 text-[#D6E6F5] leading-relaxed">
-                    <span className="shrink-0 w-6 h-6 rounded-full bg-[#2EC4B6]/20 text-[#2EC4B6] font-bold text-sm flex items-center justify-center mt-0.5">
+                    <span className="shrink-0 w-6 h-6 rounded-full bg-accent/20 text-accent font-bold text-sm flex items-center justify-center mt-0.5">
                       {i + 1}
                     </span>
                     <span>{a}</span>
@@ -407,7 +407,7 @@ export default function PilotTrapScanPage() {
               </ol>
             </div>
 
-            <div className="bg-gradient-to-r from-[#1A6DB5]/15 to-[#2EC4B6]/10 border border-[#2EC4B6]/25 rounded-2xl p-6 md:p-8 mb-10">
+            <div className="bg-gradient-to-r from-secondary/15 to-accent/10 border border-accent/25 rounded-2xl p-6 md:p-8 mb-10">
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-2xl">🏢</span>
                 <div>
@@ -418,7 +418,7 @@ export default function PilotTrapScanPage() {
                 </div>
               </div>
               <div className="flex flex-col md:flex-row gap-3 items-stretch">
-                <code className="flex-1 bg-[#0A1F3A] border border-white/15 rounded-xl px-4 py-3 text-sm text-[#2EC4B6] font-mono break-all">
+                <code className="flex-1 bg-[#0A1F3A] border border-white/15 rounded-xl px-4 py-3 text-sm text-accent font-mono break-all">
                   {encodeScoreCode(name, result.scores)}
                 </code>
                 <button
@@ -438,20 +438,20 @@ export default function PilotTrapScanPage() {
                     }
                     setTimeout(() => setCopied(false), 2000);
                   }}
-                  className="bg-[#E8912A] hover:bg-[#F0A040] text-[#0D2B4E] font-bold px-6 py-3 rounded-xl transition-colors whitespace-nowrap"
+                  className="bg-tertiary hover:bg-[#F0A040] text-primary font-bold px-6 py-3 rounded-xl transition-colors whitespace-nowrap"
                 >
                   {copied ? "✅ 已複製" : "📋 複製分數碼"}
                 </button>
               </div>
               <a
                 href="/pilot-trap-workshop/"
-                className="inline-block mt-4 text-sm text-[#2EC4B6] hover:underline"
+                className="inline-block mt-4 text-sm text-accent hover:underline"
               >
                 ← 我主持人，前往工作坊彙總頁 →
               </a>
             </div>
 
-            <div className="text-center bg-gradient-to-br from-[#1A6DB5]/20 to-[#2EC4B6]/10 border border-[#2EC4B6]/30 rounded-2xl p-8 mb-8">
+            <div className="text-center bg-gradient-to-br from-secondary/20 to-accent/10 border border-accent/30 rounded-2xl p-8 mb-8">
               <h2 className="text-xl md:text-2xl font-bold mb-2">想把診斷變成行動方案？</h2>
               <p className="text-[#A0C4E8] mb-5 max-w-lg mx-auto">
                 榕耀管顧的 Agentic HR 診斷工作坊，幫你在三小時內把這份雷達圖變成
@@ -459,7 +459,7 @@ export default function PilotTrapScanPage() {
               </p>
               <a
                 href="/about#contact"
-                className="inline-block bg-[#E8912A] hover:bg-[#F0A040] text-[#0D2B4E] font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-[#E8912A]/20"
+                className="inline-block bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
               >
                 預約免費諮詢 →
               </a>

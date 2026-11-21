@@ -44,17 +44,17 @@ const ITEMS = [
 
 export default function AIGovernancePage() {
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-[#0D2B4E] via-[#0D2B4E] to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
       <div className="max-w-5xl mx-auto px-4 py-14 md:py-20">
         {/* Hero */}
         <div className="text-center mb-14">
-          <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-            <span className="text-sm text-[#2EC4B6] font-semibold">榕耀管顧 · AI 治理系列</span>
+          <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+            <span className="text-sm text-accent font-semibold">榕耀管顧 · AI 治理系列</span>
           </div>
           <h1 className="text-3xl md:text-5xl font-black leading-tight mb-6">
             AI 用得滿好，
             <br />
-            不等於<span className="text-[#E8912A]">用得健康</span>
+            不等於<span className="text-tertiary">用得健康</span>
           </h1>
           <p className="text-lg md:text-xl text-[#A0C4E8] max-w-2xl mx-auto leading-relaxed">
             沒人治理的 AI 實驗，會把舊流程硬化成無人能解的 code。
@@ -69,15 +69,15 @@ export default function AIGovernancePage() {
             <Link
               key={it.href}
               href={it.href}
-              className="group bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 hover:border-[#2EC4B6]/50 hover:bg-white/10 transition-all"
+              className="group bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 hover:border-accent/50 hover:bg-white/10 transition-all"
             >
               <div className="text-3xl mb-3">{it.icon}</div>
-              <div className="inline-block text-xs font-bold text-[#2EC4B6] bg-[#2EC4B6]/10 rounded-full px-3 py-1 mb-3">
+              <div className="inline-block text-xs font-bold text-accent bg-accent/10 rounded-full px-3 py-1 mb-3">
                 {it.tag}
               </div>
               <h2 className="text-xl md:text-2xl font-bold leading-snug mb-3">{it.title}</h2>
               <p className="text-[#A0C4E8] leading-relaxed mb-4">{it.desc}</p>
-              <span className="text-[#E8912A] font-semibold group-hover:translate-x-1 inline-block transition-transform">
+              <span className="text-tertiary font-semibold group-hover:translate-x-1 inline-block transition-transform">
                 {it.cta}
               </span>
             </Link>
@@ -85,7 +85,7 @@ export default function AIGovernancePage() {
         </div>
 
         {/* 為什麼 AI 治理 */}
-        <div className="bg-gradient-to-br from-[#1A6DB5]/20 to-[#2EC4B6]/10 border border-[#2EC4B6]/30 rounded-2xl p-8 md:p-10 mb-10">
+        <div className="bg-gradient-to-br from-secondary/20 to-accent/10 border border-accent/30 rounded-2xl p-8 md:p-10 mb-10">
           <h2 className="text-2xl font-bold mb-4">為什麼是「治理」？</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-[#D6E6F5]">
             <div>
@@ -120,7 +120,7 @@ export default function AIGovernancePage() {
           </p>
           <Link
             href="/pilot-trap-scan"
-            className="inline-block bg-[#E8912A] hover:bg-[#F0A040] text-[#0D2B4E] font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-[#E8912A]/20"
+            className="inline-block bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
           >
             免費診斷我的 AI 部隊 →
           </Link>

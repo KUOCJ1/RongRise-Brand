@@ -44,7 +44,7 @@ export default function OpsContentPage() {
           ].map(([label, val, unit]) => (
             <div key={String(label)} className="rounded-xl border border-[#E4DDD0] bg-[#FBF8F3] px-4 py-3">
               <div className="text-xs text-[#6B655D]">{label}</div>
-              <div className="mt-1 text-2xl font-bold tabular-nums text-[#0D2B4E]">
+              <div className="mt-1 text-2xl font-bold tabular-nums text-primary">
                 {val}
                 <span className="ml-1 text-xs font-normal text-[#4A4540]">{unit}</span>
               </div>
@@ -57,7 +57,7 @@ export default function OpsContentPage() {
         <div className="flex flex-wrap gap-2">
           {c.monthly.map((m) => (
             <div key={m.month} className="rounded-lg border border-[#E4DDD0] px-3 py-2 text-xs text-[#4A4540]">
-              {m.month} <span className="ml-1 font-bold tabular-nums text-[#0D2B4E]">{m.count}</span>
+              {m.month} <span className="ml-1 font-bold tabular-nums text-primary">{m.count}</span>
             </div>
           ))}
         </div>
@@ -78,7 +78,7 @@ export default function OpsContentPage() {
                 <tr key={a.slug} className="border-b border-[#F0EAE0] last:border-0">
                   <td className="whitespace-nowrap py-2.5 pr-4 tabular-nums text-xs text-[#6B655D]">{a.date}</td>
                   <td className="py-2.5 pr-4">
-                    <a href={a.url} className="text-[#0D2B4E] underline decoration-[#D9D2C6] underline-offset-4 hover:decoration-[#E8912A]">
+                    <a href={a.url} className="text-primary underline decoration-[#D9D2C6] underline-offset-4 hover:decoration-tertiary">
                       {a.title}
                     </a>
                   </td>
@@ -95,7 +95,7 @@ export default function OpsContentPage() {
           {c.videoList.map((v) => (
             <li key={v.url + v.title} className="flex flex-wrap items-baseline gap-x-3">
               <span className="text-xs tabular-nums text-[#6B655D]">{v.date}</span>
-              <a href={v.url} className="text-[#0D2B4E] underline decoration-[#D9D2C6] underline-offset-4 hover:decoration-[#E8912A]">
+              <a href={v.url} className="text-primary underline decoration-[#D9D2C6] underline-offset-4 hover:decoration-tertiary">
                 {v.title}
               </a>
             </li>

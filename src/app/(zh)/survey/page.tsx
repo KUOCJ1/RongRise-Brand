@@ -67,21 +67,21 @@ export default function SurveyPage() {
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white py-20 px-4">
         <div className="max-w-lg mx-auto text-center">
           <div className="text-6xl mb-6">🎉</div>
-          <h1 className="text-2xl font-bold text-[#0D2B4E] mb-3">感謝你的回饋！</h1>
+          <h1 className="text-2xl font-bold text-primary mb-3">感謝你的回饋！</h1>
           <p className="text-slate-500 mb-8">你的每一題回答都會直接影響榕賀觀點和榕耀官網的下一步。</p>
-          <div className="p-6 bg-[#0D2B4E] rounded-2xl text-white mb-6">
+          <div className="p-6 bg-primary rounded-2xl text-white mb-6">
             <p className="text-sm opacity-80 mb-2">📌 附加服務</p>
             <p className="font-semibold mb-3">CJ 哥免費 30 分鐘線上諮詢</p>
             <a
               href="https://calendly.com/cjkuo-rongrise"
               target="_blank"
               rel="noopener"
-              className="inline-block px-6 py-2.5 bg-[#E8912A] rounded-full text-sm font-bold hover:brightness-110 transition-all"
+              className="inline-block px-6 py-2.5 bg-tertiary rounded-full text-sm font-bold hover:brightness-110 transition-all"
             >
               立即預約
             </a>
           </div>
-          <Link href="/" className="text-sm text-[#1A6DB5] hover:underline">← 回到榕耀官網</Link>
+          <Link href="/" className="text-sm text-secondary hover:underline">← 回到榕耀官網</Link>
         </div>
       </div>
     );
@@ -98,7 +98,7 @@ export default function SurveyPage() {
           </div>
           <div className="h-1.5 bg-slate-100 rounded-full overflow-hidden">
             <div
-              className="h-full bg-gradient-to-r from-[#1A6DB5] to-[#2EC4B6] rounded-full transition-all duration-500"
+              className="h-full bg-gradient-to-r from-secondary to-accent rounded-full transition-all duration-500"
               style={{ width: `${progress}%` }}
             />
           </div>
@@ -110,14 +110,14 @@ export default function SurveyPage() {
         {step === 0 && (
           <div className="text-center">
             <div className="text-5xl mb-4">📋</div>
-            <h1 className="text-2xl font-bold text-[#0D2B4E] mb-3">3 分鐘，幫榕賀觀點做得更好</h1>
+            <h1 className="text-2xl font-bold text-primary mb-3">3 分鐘，幫榕賀觀點做得更好</h1>
             <p className="text-slate-500 mb-2 max-w-md mx-auto">
               你的每一題回答，都會直接影響下一期內容和榕耀官網的改版方向。
             </p>
             <p className="text-xs text-slate-400 mb-8">約 10 題 · 匿名 · 資料僅用於內容優化</p>
             <button
               onClick={() => setStep(1)}
-              className="px-8 py-3 bg-[#0D2B4E] text-white rounded-full font-semibold hover:bg-[#1A6DB5] transition-all"
+              className="px-8 py-3 bg-primary text-white rounded-full font-semibold hover:bg-secondary transition-all"
             >
               開始填寫 →
             </button>
@@ -127,7 +127,7 @@ export default function SurveyPage() {
         {/* Step 1: Basic Info */}
         {step === 1 && (
           <div className="space-y-5">
-            <h2 className="text-lg font-bold text-[#0D2B4E]">關於你</h2>
+            <h2 className="text-lg font-bold text-primary">關於你</h2>
             <div>
               <label className="text-sm text-slate-500 mb-1.5 block">你的產業／領域</label>
               <div className="grid grid-cols-2 gap-2">
@@ -137,7 +137,7 @@ export default function SurveyPage() {
                     onClick={() => update("industry", i)}
                     className={`text-sm px-4 py-2.5 rounded-xl border text-left transition-all ${
                       form.industry === i
-                        ? "border-[#1A6DB5] bg-blue-50 text-[#0D2B4E] font-medium"
+                        ? "border-secondary bg-blue-50 text-primary font-medium"
                         : "border-slate-200 text-slate-500 hover:border-slate-300"
                     }`}
                   >
@@ -155,7 +155,7 @@ export default function SurveyPage() {
                     onClick={() => update("role", r)}
                     className={`text-sm px-4 py-2.5 rounded-xl border text-left transition-all ${
                       form.role === r
-                        ? "border-[#1A6DB5] bg-blue-50 text-[#0D2B4E] font-medium"
+                        ? "border-secondary bg-blue-50 text-primary font-medium"
                         : "border-slate-200 text-slate-500 hover:border-slate-300"
                     }`}
                   >
@@ -166,7 +166,7 @@ export default function SurveyPage() {
             </div>
             <div className="flex gap-3 pt-4">
               <button onClick={() => setStep(0)} className="px-5 py-2.5 border border-slate-200 rounded-full text-sm text-slate-500 hover:bg-slate-50">← 上一步</button>
-              <button onClick={() => setStep(2)} className="px-5 py-2.5 bg-[#0D2B4E] text-white rounded-full text-sm font-semibold hover:bg-[#1A6DB5]" disabled={!form.industry || !form.role}>下一步 →</button>
+              <button onClick={() => setStep(2)} className="px-5 py-2.5 bg-primary text-white rounded-full text-sm font-semibold hover:bg-secondary" disabled={!form.industry || !form.role}>下一步 →</button>
             </div>
           </div>
         )}
@@ -174,7 +174,7 @@ export default function SurveyPage() {
         {/* Step 2: Newsletter Preferences */}
         {step === 2 && (
           <div className="space-y-5">
-            <h2 className="text-lg font-bold text-[#0D2B4E]">關於榕賀觀點</h2>
+            <h2 className="text-lg font-bold text-primary">關於榕賀觀點</h2>
             <div>
               <label className="text-sm text-slate-500 mb-1.5 block">你希望增加哪類內容？（可複選）</label>
               <div className="grid grid-cols-2 gap-2">
@@ -184,7 +184,7 @@ export default function SurveyPage() {
                     onClick={() => toggleArray("content_pref", c)}
                     className={`text-sm px-4 py-2.5 rounded-xl border text-left transition-all ${
                       form.content_pref.includes(c)
-                        ? "border-[#1A6DB5] bg-blue-50 text-[#0D2B4E] font-medium"
+                        ? "border-secondary bg-blue-50 text-primary font-medium"
                         : "border-slate-200 text-slate-500 hover:border-slate-300"
                     }`}
                   >
@@ -206,7 +206,7 @@ export default function SurveyPage() {
                     onClick={() => update("length_pref", o.v)}
                     className={`text-sm px-3 py-2.5 rounded-xl border text-center transition-all ${
                       form.length_pref === o.v
-                        ? "border-[#1A6DB5] bg-blue-50 text-[#0D2B4E] font-medium"
+                        ? "border-secondary bg-blue-50 text-primary font-medium"
                         : "border-slate-200 text-slate-500 hover:border-slate-300"
                     }`}
                   >
@@ -224,7 +224,7 @@ export default function SurveyPage() {
                     onClick={() => update("helpfulness", n)}
                     className={`w-12 h-12 rounded-xl border text-lg transition-all ${
                       form.helpfulness === n
-                        ? "border-[#1A6DB5] bg-blue-50 text-[#0D2B4E] font-bold"
+                        ? "border-secondary bg-blue-50 text-primary font-bold"
                         : "border-slate-200 text-slate-400 hover:border-slate-300"
                     }`}
                   >
@@ -239,7 +239,7 @@ export default function SurveyPage() {
             </div>
             <div className="flex gap-3 pt-4">
               <button onClick={() => setStep(1)} className="px-5 py-2.5 border border-slate-200 rounded-full text-sm text-slate-500 hover:bg-slate-50">← 上一步</button>
-              <button onClick={() => setStep(3)} className="px-5 py-2.5 bg-[#0D2B4E] text-white rounded-full text-sm font-semibold hover:bg-[#1A6DB5]">下一步 →</button>
+              <button onClick={() => setStep(3)} className="px-5 py-2.5 bg-primary text-white rounded-full text-sm font-semibold hover:bg-secondary">下一步 →</button>
             </div>
           </div>
         )}
@@ -247,7 +247,7 @@ export default function SurveyPage() {
         {/* Step 3: Website */}
         {step === 3 && (
           <div className="space-y-5">
-            <h2 className="text-lg font-bold text-[#0D2B4E]">關於榕耀官網</h2>
+            <h2 className="text-lg font-bold text-primary">關於榕耀官網</h2>
             <div>
               <label className="text-sm text-slate-500 mb-1.5 block">你希望官網增加什麼功能？（可複選）</label>
               <div className="grid grid-cols-2 gap-2">
@@ -257,7 +257,7 @@ export default function SurveyPage() {
                     onClick={() => toggleArray("website_features", f)}
                     className={`text-sm px-4 py-2.5 rounded-xl border text-left transition-all ${
                       form.website_features.includes(f)
-                        ? "border-[#1A6DB5] bg-blue-50 text-[#0D2B4E] font-medium"
+                        ? "border-secondary bg-blue-50 text-primary font-medium"
                         : "border-slate-200 text-slate-500 hover:border-slate-300"
                     }`}
                   >
@@ -271,13 +271,13 @@ export default function SurveyPage() {
               <textarea
                 value={form.website_value}
                 onChange={(e) => update("website_value", e.target.value)}
-                className="w-full p-3 border border-slate-200 rounded-xl text-sm resize-none h-20 focus:border-[#1A6DB5] focus:ring-1 focus:ring-[#1A6DB5] outline-none"
+                className="w-full p-3 border border-slate-200 rounded-xl text-sm resize-none h-20 focus:border-secondary focus:ring-1 focus:ring-secondary outline-none"
                 placeholder="自由填寫（選填）"
               />
             </div>
             <div className="flex gap-3 pt-4">
               <button onClick={() => setStep(2)} className="px-5 py-2.5 border border-slate-200 rounded-full text-sm text-slate-500 hover:bg-slate-50">← 上一步</button>
-              <button onClick={() => setStep(4)} className="px-5 py-2.5 bg-[#0D2B4E] text-white rounded-full text-sm font-semibold hover:bg-[#1A6DB5]">下一步 →</button>
+              <button onClick={() => setStep(4)} className="px-5 py-2.5 bg-primary text-white rounded-full text-sm font-semibold hover:bg-secondary">下一步 →</button>
             </div>
           </div>
         )}
@@ -286,25 +286,25 @@ export default function SurveyPage() {
         {step === 4 && (
           <div className="space-y-5 text-center">
             <div className="text-5xl mb-2">☕</div>
-            <h2 className="text-lg font-bold text-[#0D2B4E]">免費 30 分鐘線上諮詢</h2>
+            <h2 className="text-lg font-bold text-primary">免費 30 分鐘線上諮詢</h2>
             <p className="text-sm text-slate-500 max-w-sm mx-auto">
               無論是否填寫問卷，你都可以預約 CJ 哥的一對一免費諮詢。
               聊聊 AI 轉型、人才策略、ESG 永續——任何你正在煩惱的議題。
             </p>
-            <div className="p-5 bg-[#0D2B4E] rounded-2xl text-white my-4">
+            <div className="p-5 bg-primary rounded-2xl text-white my-4">
               <p className="text-sm opacity-80 mb-2">📌 附加服務 — 隨時可預約</p>
               <a
                 href="https://calendly.com/cjkuo-rongrise"
                 target="_blank"
                 rel="noopener"
-                className="inline-block px-6 py-2.5 bg-[#E8912A] rounded-full text-sm font-bold hover:brightness-110 transition-all"
+                className="inline-block px-6 py-2.5 bg-tertiary rounded-full text-sm font-bold hover:brightness-110 transition-all"
               >
                 立即預約
               </a>
             </div>
             <div className="flex gap-3 pt-4 justify-center">
               <button onClick={() => setStep(3)} className="px-5 py-2.5 border border-slate-200 rounded-full text-sm text-slate-500 hover:bg-slate-50">← 上一步</button>
-              <button onClick={() => setStep(5)} className="px-5 py-2.5 bg-[#0D2B4E] text-white rounded-full text-sm font-semibold hover:bg-[#1A6DB5]">下一步 →</button>
+              <button onClick={() => setStep(5)} className="px-5 py-2.5 bg-primary text-white rounded-full text-sm font-semibold hover:bg-secondary">下一步 →</button>
             </div>
           </div>
         )}
@@ -312,20 +312,20 @@ export default function SurveyPage() {
         {/* Step 5: Final + Feedback */}
         {step === 5 && (
           <div className="space-y-5">
-            <h2 className="text-lg font-bold text-[#0D2B4E]">最後一題</h2>
+            <h2 className="text-lg font-bold text-primary">最後一題</h2>
             <div>
               <label className="text-sm text-slate-500 mb-1.5 block">有什麼想跟我們說的嗎？</label>
               <textarea
                 value={form.feedback}
                 onChange={(e) => update("feedback", e.target.value)}
-                className="w-full p-3 border border-slate-200 rounded-xl text-sm resize-none h-28 focus:border-[#1A6DB5] focus:ring-1 focus:ring-[#1A6DB5] outline-none"
+                className="w-full p-3 border border-slate-200 rounded-xl text-sm resize-none h-28 focus:border-secondary focus:ring-1 focus:ring-secondary outline-none"
                 placeholder="任何對榕賀觀點或榕耀官網的想法、建議、批評都歡迎⋯⋯"
               />
             </div>
             <div className="pt-4 text-center">
               <button
                 onClick={handleSubmit}
-                className="px-10 py-3 bg-[#0D2B4E] text-white rounded-full font-semibold hover:bg-[#1A6DB5] transition-all"
+                className="px-10 py-3 bg-primary text-white rounded-full font-semibold hover:bg-secondary transition-all"
               >
                 📮 送出問卷
               </button>

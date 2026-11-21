@@ -171,18 +171,18 @@ export default function AIInvestmentSplitPage() {
   };
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-[#0D2B4E] via-[#0D2B4E] to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
       <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
         {/* ===== STEP 1: INTRO ===== */}
         {step === "intro" && (
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-              <span className="text-sm text-[#2EC4B6] font-semibold">10-20-70 · 預算配置體檢</span>
+            <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+              <span className="text-sm text-accent font-semibold">10-20-70 · 預算配置體檢</span>
             </div>
             <h1 className="text-3xl md:text-5xl font-black leading-tight mb-6">
               你的 AI 預算，
               <br />
-              花在<span className="text-[#2EC4B6]">對的地方</span>了嗎？
+              花在<span className="text-accent">對的地方</span>了嗎？
             </h1>
             <p className="text-white/70 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
               AI 轉型最常見的失敗不是「買錯工具」，而是
@@ -199,7 +199,7 @@ export default function AIInvestmentSplitPage() {
                   <div key={key} className="bg-white/5 border border-white/10 rounded-2xl p-5 text-left">
                     <div className="flex items-center justify-between mb-2">
                       <span className="text-2xl">{meta.icon}</span>
-                      <span className="text-2xl font-black text-[#2EC4B6]">{pct}%</span>
+                      <span className="text-2xl font-black text-accent">{pct}%</span>
                     </div>
                     <div className="font-bold text-white/90 mb-1">{meta.label}</div>
                     <div className="text-xs text-white/50 leading-relaxed">{meta.desc}</div>
@@ -213,7 +213,7 @@ export default function AIInvestmentSplitPage() {
                 setStep("form");
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
-              className="bg-[#E8912A] hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+              className="bg-tertiary hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
             >
               開始體檢 →
             </button>
@@ -244,7 +244,7 @@ export default function AIInvestmentSplitPage() {
                 step={10}
                 value={budget}
                 onChange={(e) => setBudget(e.target.value)}
-                className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#2EC4B6]"
+                className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent"
                 aria-describedby="budget-hint"
               />
               <p id="budget-hint" className="text-white/40 text-xs mt-2">
@@ -265,7 +265,7 @@ export default function AIInvestmentSplitPage() {
                       key={key}
                       className={`flex items-start gap-3 p-3 rounded-lg cursor-pointer transition-colors ${
                         stage === key
-                          ? "bg-[#1A6DB5]/30 border border-[#1A6DB5]/50"
+                          ? "bg-secondary/30 border border-secondary/50"
                           : "bg-white/5 border border-white/5 hover:bg-white/10"
                       }`}
                     >
@@ -275,7 +275,7 @@ export default function AIInvestmentSplitPage() {
                         value={key}
                         checked={stage === key}
                         onChange={() => setStage(key)}
-                        className="mt-1 accent-[#E8912A]"
+                        className="mt-1 accent-tertiary"
                       />
                       <span>
                         <span className="block text-white/90 text-sm font-semibold">{STAGE_META[key].label}</span>
@@ -327,7 +327,7 @@ export default function AIInvestmentSplitPage() {
                         step={1}
                         value={value}
                         onChange={(e) => setValue(e.target.value)}
-                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#2EC4B6]"
+                        className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent"
                       />
                     </div>
                   );
@@ -336,7 +336,7 @@ export default function AIInvestmentSplitPage() {
 
               <p
                 className={`text-xs mt-4 font-semibold ${
-                  totalPct === 100 ? "text-[#2EC4B6]" : "text-[#E8912A]"
+                  totalPct === 100 ? "text-accent" : "text-tertiary"
                 }`}
                 role="status"
               >
@@ -358,7 +358,7 @@ export default function AIInvestmentSplitPage() {
                   onChange={(e) => setName(e.target.value)}
                   placeholder="姓名（選填）"
                   aria-label="姓名"
-                  className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6]"
+                  className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent"
                 />
                 <input
                   id="lead-email"
@@ -367,7 +367,7 @@ export default function AIInvestmentSplitPage() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Email（選填）"
                   aria-label="Email"
-                  className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6]"
+                  className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent"
                 />
               </div>
               <label htmlFor="lead-company" className="sr-only">
@@ -379,7 +379,7 @@ export default function AIInvestmentSplitPage() {
                 value={company}
                 onChange={(e) => setCompany(e.target.value)}
                 placeholder="公司名稱（選填）"
-                className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6]"
+                className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent"
               />
             </div>
 
@@ -396,13 +396,13 @@ export default function AIInvestmentSplitPage() {
               <button
                 onClick={() => handleSubmit(true)}
                 disabled={!canSubmit}
-                className="bg-[#E8912A] hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3.5 rounded-full transition-colors shadow-lg"
+                className="bg-tertiary hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3.5 rounded-full transition-colors shadow-lg"
               >
                 看體檢結果 →
               </button>
             </div>
             {!canSubmit && (
-              <p className="text-[#E8912A] text-xs text-right mt-3" role="status">
+              <p className="text-tertiary text-xs text-right mt-3" role="status">
                 請先填入大於 0 的年度預算，以及三桶合計大於 0% 的配置比例。
               </p>
             )}
@@ -414,11 +414,11 @@ export default function AIInvestmentSplitPage() {
           <div className="max-w-3xl mx-auto">
             {/* Headline */}
             <div className="text-center mb-10">
-              <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-                <span className="text-sm text-[#2EC4B6] font-semibold">AI 投資配置體檢結果</span>
+              <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+                <span className="text-sm text-accent font-semibold">AI 投資配置體檢結果</span>
               </div>
               <h1 ref={resultHeadingRef} tabIndex={-1} className="text-3xl md:text-4xl font-black mb-4 focus:outline-none">
-                配置健康分 <span className="text-[#2EC4B6]">{result.healthScore}</span> 分
+                配置健康分 <span className="text-accent">{result.healthScore}</span> 分
               </h1>
               <div className="flex items-center justify-center gap-3 mb-6">
                 <span className={`inline-block px-3 py-1 rounded-full text-sm font-bold border ${GRADE_STYLE[result.gradeColor]}`}>
@@ -478,7 +478,7 @@ export default function AIInvestmentSplitPage() {
                           aria-label={`${b.label}桶建議區間 ${b.targetRange[0]}% 到 ${b.targetRange[1]}%`}
                         >
                           <div
-                            className="absolute inset-y-0 bg-[#2EC4B6]/70 rounded-full"
+                            className="absolute inset-y-0 bg-accent/70 rounded-full"
                             style={{
                               left: `${b.targetRange[0]}%`,
                               width: `${b.targetRange[1] - b.targetRange[0]}%`,
@@ -505,7 +505,7 @@ export default function AIInvestmentSplitPage() {
               <ul className="space-y-3">
                 {result.diagnosis.map((d, i) => (
                   <li key={i} className="text-white/75 text-sm leading-relaxed flex gap-2">
-                    <span className="text-[#2EC4B6] shrink-0">•</span>
+                    <span className="text-accent shrink-0">•</span>
                     <span>{d}</span>
                   </li>
                 ))}
@@ -527,7 +527,7 @@ export default function AIInvestmentSplitPage() {
                     <ul className="space-y-2">
                       {b.actions.map((a, i) => (
                         <li key={i} className="text-white/75 text-sm leading-relaxed flex gap-2">
-                          <span className="text-[#E8912A] shrink-0">→</span>
+                          <span className="text-tertiary shrink-0">→</span>
                           <span>{a}</span>
                         </li>
                       ))}
@@ -539,7 +539,7 @@ export default function AIInvestmentSplitPage() {
 
             {/* 症狀自檢 */}
             {result.symptoms.length > 0 && (
-              <div className="bg-[#E8912A]/10 border border-[#E8912A]/30 rounded-2xl p-6 md:p-8 mb-8">
+              <div className="bg-tertiary/10 border border-tertiary/30 rounded-2xl p-6 md:p-8 mb-8">
                 <h2 className="text-lg font-bold mb-1 text-[#F5A623]">🩺 症狀自檢：有沒有這些情況？</h2>
                 <p className="text-white/50 text-xs mb-5">勾中任何一項，代表那個桶的錢確實花得不夠或花錯了地方。</p>
                 <div className="space-y-5">
@@ -570,7 +570,7 @@ export default function AIInvestmentSplitPage() {
                 {result.releasePhases.map((p) => (
                   <div key={p.label} className="bg-white/5 border border-white/10 rounded-xl p-5">
                     <div className="text-xs text-white/45 mb-1">{p.label}</div>
-                    <div className="text-2xl font-black text-[#2EC4B6] mb-1">{p.pct}%</div>
+                    <div className="text-2xl font-black text-accent mb-1">{p.pct}%</div>
                     <div className="text-sm font-bold text-white/80 mb-3">{p.amount}</div>
                     <p className="text-white/60 text-xs leading-relaxed">{p.gate}</p>
                   </div>
@@ -586,7 +586,7 @@ export default function AIInvestmentSplitPage() {
                   <ul className="space-y-2 mb-4">
                     {c.lines.map((l, i) => (
                       <li key={i} className="text-white/75 text-sm leading-relaxed flex gap-2">
-                        <span className="text-[#2EC4B6] shrink-0">·</span>
+                        <span className="text-accent shrink-0">·</span>
                         <span>{l}</span>
                       </li>
                     ))}
@@ -610,7 +610,7 @@ export default function AIInvestmentSplitPage() {
 
             {/* 留資 */}
             {!leadEmail ? (
-              <div className="bg-gradient-to-br from-[#1A6DB5]/20 to-[#2EC4B6]/10 border border-[#2EC4B6]/30 rounded-2xl p-6 mb-8">
+              <div className="bg-gradient-to-br from-secondary/20 to-accent/10 border border-accent/30 rounded-2xl p-6 mb-8">
                 <h2 className="text-lg font-bold mb-1">📬 想拿到完整配置建議書？</h2>
                 <p className="text-white/60 text-sm mb-4 leading-relaxed">
                   留下 Email，我們寄送《AI 投資配置檢核表》（含各階段建議區間與採購前自問清單）。
@@ -625,7 +625,7 @@ export default function AIInvestmentSplitPage() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="姓名（選填）"
-                    className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6]"
+                    className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent"
                   />
                   <label htmlFor="result-email" className="sr-only">
                     Email
@@ -636,7 +636,7 @@ export default function AIInvestmentSplitPage() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Email（必填）"
-                    className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6]"
+                    className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent"
                   />
                 </div>
                 <label htmlFor="result-company" className="sr-only">
@@ -648,12 +648,12 @@ export default function AIInvestmentSplitPage() {
                   value={company}
                   onChange={(e) => setCompany(e.target.value)}
                   placeholder="公司名稱（選填）"
-                  className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6] mb-4"
+                  className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent mb-4"
                 />
                 <button
                   onClick={() => handleSubmit(false)}
                   disabled={!email}
-                  className="bg-[#E8912A] hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-tertiary hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   訂閱並取得檢核表 →
                 </button>
@@ -668,7 +668,7 @@ export default function AIInvestmentSplitPage() {
               <div className="bg-white/5 border border-white/10 rounded-2xl p-5 mb-8" role="status">
                 <p className="text-white/60 text-sm leading-relaxed">
                   已送出 {leadEmail}，檢核表會寄到這個信箱。若一直沒收到，直接
-                  <a href="/about/#contact" className="text-[#2EC4B6] hover:text-[#7FE3D8] font-semibold ml-1">
+                  <a href="/about/#contact" className="text-accent hover:text-[#7FE3D8] font-semibold ml-1">
                     預約免費諮詢
                   </a>
                   比較快。
@@ -686,7 +686,7 @@ export default function AIInvestmentSplitPage() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <a
                   href="/roi-calculator"
-                  className="bg-[#1A6DB5] hover:bg-[#2680CC] text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-secondary hover:bg-[#2680CC] text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   估算 AI 投資回報 →
                 </a>
@@ -698,7 +698,7 @@ export default function AIInvestmentSplitPage() {
                 </a>
                 <a
                   href="/about/#contact"
-                  className="text-[#E8912A] hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
+                  className="text-tertiary hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
                 >
                   預約免費諮詢 →
                 </a>

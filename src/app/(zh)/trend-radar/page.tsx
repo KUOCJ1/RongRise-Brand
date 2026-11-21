@@ -111,7 +111,7 @@ export default function TrendRadarPage() {
 
   if (loading) {
     return (
-      <div className="min-h-[70vh] bg-gradient-to-b from-[#0D2B4E] via-[#0D2B4E] to-[#0A1F3A] text-white flex items-center justify-center">
+      <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white flex items-center justify-center">
         <div className="text-center">
           <div className="text-4xl mb-4 animate-pulse">📡</div>
           <p className="text-[#A0C4E8]">正在接收產業脈動…</p>
@@ -122,14 +122,14 @@ export default function TrendRadarPage() {
 
   if (error || !data) {
     return (
-      <div className="min-h-[70vh] bg-gradient-to-b from-[#0D2B4E] via-[#0D2B4E] to-[#0A1F3A] text-white flex items-center justify-center">
+      <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white flex items-center justify-center">
         <div className="text-center max-w-md px-6">
           <div className="text-4xl mb-4">📡</div>
           <p className="text-lg mb-2 font-semibold">訊號暫時中斷</p>
           <p className="text-sm text-[#A0C4E8] mb-6">{error}</p>
           <button
             onClick={() => window.location.reload()}
-            className="bg-[#E8912A] hover:bg-[#F0A040] text-[#0D2B4E] font-bold px-6 py-3 rounded-full transition-colors"
+            className="bg-tertiary hover:bg-[#F0A040] text-primary font-bold px-6 py-3 rounded-full transition-colors"
           >
             重新載入
           </button>
@@ -144,15 +144,15 @@ export default function TrendRadarPage() {
   };
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-[#0D2B4E] via-[#0D2B4E] to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
       <div className="max-w-5xl mx-auto px-4 py-12 md:py-16">
         {/* ===== Hero ===== */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-            <span className="text-sm text-[#2EC4B6] font-semibold">📡 每週更新 · 12+ 來源監測</span>
+          <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+            <span className="text-sm text-accent font-semibold">📡 每週更新 · 12+ 來源監測</span>
           </div>
           <h1 className="text-3xl md:text-5xl font-black leading-tight mb-5">
-            AI 轉型<span className="text-[#E8912A]">趨勢雷達</span>
+            AI 轉型<span className="text-tertiary">趨勢雷達</span>
           </h1>
           <p className="text-lg md:text-xl text-[#A0C4E8] max-w-2xl mx-auto leading-relaxed">
             榕耀管顧每天掃描全球 12+ 個產業來源，為你彙整
@@ -167,7 +167,7 @@ export default function TrendRadarPage() {
               { v: `${data.window.from.slice(5)} ~ ${data.window.to.slice(5)}`, l: "觀察窗口" },
             ].map((s) => (
               <div key={s.l} className="bg-white/5 border border-white/10 rounded-xl p-4">
-                <div className="text-xl md:text-2xl font-black text-[#E8912A] mb-1">{s.v}</div>
+                <div className="text-xl md:text-2xl font-black text-tertiary mb-1">{s.v}</div>
                 <div className="text-xs text-[#A0C4E8]">{s.l}</div>
               </div>
             ))}
@@ -192,7 +192,7 @@ export default function TrendRadarPage() {
                     <span className="text-xs font-black text-[#5A7A9E] w-6 text-right">{i + 1}</span>
                     <span className="text-xl">{t.icon}</span>
                     <span className="font-bold">{t.keyword}</span>
-                    <span className="text-xs px-2 py-0.5 rounded-full bg-[#1A6DB5]/20 text-[#7CB8E8] border border-[#1A6DB5]/30">
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-secondary/20 text-[#7CB8E8] border border-secondary/30">
                       {CATEGORY_BADGES[t.category] ?? ""} {t.category}
                     </span>
                     <span className={`ml-auto text-xs px-2.5 py-1 rounded-full border font-semibold whitespace-nowrap ${mom.cls}`}>
@@ -203,11 +203,11 @@ export default function TrendRadarPage() {
                   <div className="flex items-center gap-3 pl-9">
                     <div className="flex-1 h-2 bg-white/5 rounded-full overflow-hidden">
                       <div
-                        className="h-full rounded-full bg-gradient-to-r from-[#1A6DB5] to-[#2EC4B6]"
+                        className="h-full rounded-full bg-gradient-to-r from-secondary to-accent"
                         style={{ width: `${pct}%` }}
                       />
                     </div>
-                    <span className="text-sm font-bold text-[#E8912A] w-14 text-right">×{t.count}</span>
+                    <span className="text-sm font-bold text-tertiary w-14 text-right">×{t.count}</span>
                   </div>
                 </div>
               );
@@ -225,8 +225,8 @@ export default function TrendRadarPage() {
                 onClick={() => setActiveCat(c)}
                 className={`text-sm px-4 py-2 rounded-full border font-semibold transition-colors ${
                   activeCat === c
-                    ? "bg-[#E8912A] border-[#E8912A] text-[#0D2B4E]"
-                    : "bg-white/5 border-white/10 text-[#A0C4E8] hover:border-[#1A6DB5]"
+                    ? "bg-tertiary border-tertiary text-primary"
+                    : "bg-white/5 border-white/10 text-[#A0C4E8] hover:border-secondary"
                 }`}
               >
                 {c === "全部" ? "全部" : `${CATEGORY_BADGES[c] ?? ""} ${c}`}
@@ -239,10 +239,10 @@ export default function TrendRadarPage() {
 
           <div className="space-y-3">
             {visibleArticles.slice(0, 12).map((a) => (
-              <div key={a.url} className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-[#1A6DB5]/60 transition-colors">
+              <div key={a.url} className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-secondary/60 transition-colors">
                 <div className="flex items-center gap-2 mb-2 text-xs">
                   <span className="text-[#5A7A9E]">{a.date}</span>
-                  <span className="text-xs px-2 py-0.5 rounded-full bg-[#1A6DB5]/20 text-[#7CB8E8] border border-[#1A6DB5]/30">
+                  <span className="text-xs px-2 py-0.5 rounded-full bg-secondary/20 text-[#7CB8E8] border border-secondary/30">
                     {CATEGORY_BADGES[a.category] ?? ""} {a.category}
                   </span>
                 </div>
@@ -251,13 +251,13 @@ export default function TrendRadarPage() {
                     href={a.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-bold hover:text-[#2EC4B6] transition-colors leading-snug"
+                    className="font-bold hover:text-accent transition-colors leading-snug"
                   >
                     {a.title}
                   </a>
                   <button
                     onClick={() => copyText(a.url, a.url)}
-                    className="shrink-0 text-xs px-3 py-1.5 rounded-full border border-white/15 text-[#A0C4E8] hover:border-[#2EC4B6] hover:text-[#2EC4B6] transition-colors whitespace-nowrap"
+                    className="shrink-0 text-xs px-3 py-1.5 rounded-full border border-white/15 text-[#A0C4E8] hover:border-accent hover:text-accent transition-colors whitespace-nowrap"
                     aria-label="複製文章連結"
                   >
                     {copied === a.url ? "✓ 已複製" : "🔗 分享"}
@@ -280,7 +280,7 @@ export default function TrendRadarPage() {
             <h2 className="text-2xl md:text-3xl font-bold mb-6">🧭 趨勢觀察</h2>
             <div className="space-y-4">
               {data.insights.map((ins, i) => (
-                <div key={i} className="bg-[#1A6DB5]/10 border border-[#1A6DB5]/30 rounded-xl p-5">
+                <div key={i} className="bg-secondary/10 border border-secondary/30 rounded-xl p-5">
                   <p className="text-sm md:text-base text-[#D6E8F8] leading-relaxed">{ins}</p>
                 </div>
               ))}
@@ -308,13 +308,13 @@ export default function TrendRadarPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/newsletter"
-              className="inline-block bg-[#E8912A] hover:bg-[#F0A040] text-[#0D2B4E] font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-[#E8912A]/20"
+              className="inline-block bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
             >
               訂閱電子報 →
             </a>
             <a
               href="/about/#contact"
-              className="inline-block bg-[#1A6DB5]/20 border border-[#2EC4B6]/50 text-[#2EC4B6] hover:bg-[#1A6DB5]/40 font-bold text-lg px-8 py-4 rounded-full transition-colors"
+              className="inline-block bg-secondary/20 border border-accent/50 text-accent hover:bg-secondary/40 font-bold text-lg px-8 py-4 rounded-full transition-colors"
             >
               預約免費諮詢 →
             </a>

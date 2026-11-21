@@ -42,7 +42,7 @@ export default function OpsAttentionPage() {
           ].map(([k, v]) => (
             <div key={k} className="rounded-xl border border-[#E4DDD0] bg-[#FBF8F3] px-4 py-3">
               <div className="text-xs text-[#6B655D]">{k}</div>
-              <div className="mt-1 text-xl font-bold tabular-nums text-[#0D2B4E]">{v}</div>
+              <div className="mt-1 text-xl font-bold tabular-nums text-primary">{v}</div>
             </div>
           ))}
         </div>

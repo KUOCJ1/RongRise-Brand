@@ -152,7 +152,7 @@ export default function NewsletterSection() {
               width={64}
               height={64}
               className="rounded-full mx-auto"
-              style={{ border: "3px solid #E8912A" }}
+              style={{ border: "3px solid var(--color-tertiary)" }}
             />
           </div>
 

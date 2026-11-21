@@ -107,7 +107,7 @@ export default function ContentOpsPage() {
 
   if (loading) {
     return (
-      <div className="min-h-[70vh] bg-gradient-to-b from-[#0D2B4E] via-[#0D2B4E] to-[#0A1F3A] text-white flex items-center justify-center">
+      <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white flex items-center justify-center">
         <div className="text-center">
           <div className="text-4xl mb-4 animate-pulse">🦞</div>
           <p className="text-[#A0C4E8]">正在彙整營運數據…</p>
@@ -118,14 +118,14 @@ export default function ContentOpsPage() {
 
   if (error || !data) {
     return (
-      <div className="min-h-[70vh] bg-gradient-to-b from-[#0D2B4E] via-[#0D2B4E] to-[#0A1F3A] text-white flex items-center justify-center">
+      <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white flex items-center justify-center">
         <div className="text-center max-w-md px-6">
           <div className="text-4xl mb-4">🦞</div>
           <p className="text-lg mb-2 font-semibold">戰情室暫時離線</p>
           <p className="text-sm text-[#A0C4E8] mb-6">{error}</p>
           <button
             onClick={() => window.location.reload()}
-            className="bg-[#E8912A] hover:bg-[#F0A040] text-[#0D2B4E] font-bold px-6 py-3 rounded-full transition-colors"
+            className="bg-tertiary hover:bg-[#F0A040] text-primary font-bold px-6 py-3 rounded-full transition-colors"
           >
             重新載入
           </button>
@@ -159,19 +159,19 @@ export default function ContentOpsPage() {
   ];
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-[#0D2B4E] via-[#0D2B4E] to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
       <div className="max-w-5xl mx-auto px-4 py-12 md:py-16">
         {/* ===== Hero ===== */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-            <span className="text-sm text-[#2EC4B6] font-semibold">🦞 每日自動更新 · 內容引擎戰情室</span>
+          <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+            <span className="text-sm text-accent font-semibold">🦞 每日自動更新 · 內容引擎戰情室</span>
           </div>
           <h1 className="text-3xl md:text-5xl font-black leading-tight mb-5">
-            一台<span className="text-[#E8912A]">每天自己運作</span>的內容引擎
+            一台<span className="text-tertiary">每天自己運作</span>的內容引擎
           </h1>
           <p className="text-lg md:text-xl text-[#A0C4E8] max-w-2xl mx-auto leading-relaxed">
             「{data.engine.name}」已連續運作{" "}
-            <strong className="text-[#E8912A]">{data.engine.daysRunning} 天</strong>
+            <strong className="text-tertiary">{data.engine.daysRunning} 天</strong>
             ，自動完成產業掃描、趨勢分析、內容產出與數據回饋——這是它的公開戰情室。
           </p>
           {/* 數據列 */}
@@ -182,7 +182,7 @@ export default function ContentOpsPage() {
               { v: fmt(s.weekArticles), l: "本週監測文章" },
             ].map((st) => (
               <div key={st.l} className="bg-white/5 border border-white/10 rounded-xl p-4">
-                <div className="text-xl md:text-2xl font-black text-[#E8912A] mb-1">{st.v}</div>
+                <div className="text-xl md:text-2xl font-black text-tertiary mb-1">{st.v}</div>
                 <div className="text-xs text-[#A0C4E8]">{st.l}</div>
               </div>
             ))}
@@ -194,7 +194,7 @@ export default function ContentOpsPage() {
           <h2 className="text-2xl md:text-3xl font-bold mb-6">⚙️ 核心產能</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {coreCards.map((c) => (
-              <div key={c.label} className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-[#1A6DB5]/60 transition-colors">
+              <div key={c.label} className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-secondary/60 transition-colors">
                 <div className="text-2xl mb-2">{c.icon}</div>
                 <div className="text-2xl md:text-3xl font-black text-white mb-1">{c.value}</div>
                 <div className="text-sm font-semibold text-[#A0C4E8]">{c.label}</div>
@@ -212,9 +212,9 @@ export default function ContentOpsPage() {
             <div className="flex items-end justify-between gap-2 md:gap-4 h-44">
               {data.activity.map((a) => (
                 <div key={a.date} className="flex-1 flex flex-col items-center justify-end h-full gap-2">
-                  <span className="text-xs font-bold text-[#E8912A]">{a.count}</span>
+                  <span className="text-xs font-bold text-tertiary">{a.count}</span>
                   <div
-                    className="w-full max-w-[52px] rounded-t-lg bg-gradient-to-t from-[#1A6DB5] to-[#2EC4B6]"
+                    className="w-full max-w-[52px] rounded-t-lg bg-gradient-to-t from-secondary to-accent"
                     style={{ height: `${Math.max(8, Math.round((a.count / maxCount) * 100))}%` }}
                   />
                   <span className="text-[10px] md:text-xs text-[#5A7A9E]">{a.date.slice(5)}</span>
@@ -229,7 +229,7 @@ export default function ContentOpsPage() {
           <section className="mb-12">
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-2xl md:text-3xl font-bold">🔥 本週熱門話題</h2>
-              <a href="/trend-radar" className="text-sm text-[#2EC4B6] hover:text-white transition-colors">
+              <a href="/trend-radar" className="text-sm text-accent hover:text-white transition-colors">
                 完整趨勢雷達 →
               </a>
             </div>
@@ -241,7 +241,7 @@ export default function ContentOpsPage() {
                     <span className="text-xs font-black text-[#5A7A9E] w-5 text-right">{i + 1}</span>
                     <span className="text-lg">{t.icon}</span>
                     <span className="font-bold flex-1">{t.keyword}</span>
-                    <span className="text-sm font-bold text-[#E8912A]">×{t.count}</span>
+                    <span className="text-sm font-bold text-tertiary">×{t.count}</span>
                     <span className={`text-xs px-2.5 py-1 rounded-full border font-semibold whitespace-nowrap ${mom.cls}`}>
                       {mom.arrow} {mom.label}
                     </span>
@@ -269,19 +269,19 @@ export default function ContentOpsPage() {
           <h3 className="text-lg font-bold text-[#A0C4E8] mb-4">最新產出</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {data.latest.article && (
-              <a href={data.latest.article.url} className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-[#2EC4B6]/50 transition-colors block">
+              <a href={data.latest.article.url} className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-accent/50 transition-colors block">
                 <div className="text-xs text-[#5A7A9E] mb-2">📚 最新文章 · {data.latest.article.date}</div>
-                <div className="font-bold leading-snug hover:text-[#2EC4B6] transition-colors">{data.latest.article.title}</div>
+                <div className="font-bold leading-snug hover:text-accent transition-colors">{data.latest.article.title}</div>
               </a>
             )}
-            <a href="/newsletter" className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-[#2EC4B6]/50 transition-colors block">
+            <a href="/newsletter" className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-accent/50 transition-colors block">
               <div className="text-xs text-[#5A7A9E] mb-2">📬 最新電子報</div>
-              <div className="font-bold leading-snug hover:text-[#2EC4B6] transition-colors">{data.latest.newsletter || "《榕賀觀點》"}</div>
+              <div className="font-bold leading-snug hover:text-accent transition-colors">{data.latest.newsletter || "《榕賀觀點》"}</div>
             </a>
             {data.latest.video && (
-              <a href={data.latest.video.url} target="_blank" rel="noopener noreferrer" className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-[#2EC4B6]/50 transition-colors block">
+              <a href={data.latest.video.url} target="_blank" rel="noopener noreferrer" className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-accent/50 transition-colors block">
                 <div className="text-xs text-[#5A7A9E] mb-2">🎬 最新影片 · {data.latest.video.date}</div>
-                <div className="font-bold leading-snug hover:text-[#2EC4B6] transition-colors">{data.latest.video.title}</div>
+                <div className="font-bold leading-snug hover:text-accent transition-colors">{data.latest.video.title}</div>
               </a>
             )}
             {data.latest.insight && (
@@ -331,13 +331,13 @@ export default function ContentOpsPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/newsletter"
-              className="inline-block bg-[#E8912A] hover:bg-[#F0A040] text-[#0D2B4E] font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-[#E8912A]/20"
+              className="inline-block bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
             >
               訂閱電子報 →
             </a>
             <a
               href="/about/#contact"
-              className="inline-block bg-[#1A6DB5]/20 border border-[#2EC4B6]/50 text-[#2EC4B6] hover:bg-[#1A6DB5]/40 font-bold text-lg px-8 py-4 rounded-full transition-colors"
+              className="inline-block bg-secondary/20 border border-accent/50 text-accent hover:bg-secondary/40 font-bold text-lg px-8 py-4 rounded-full transition-colors"
             >
               預約免費諮詢 →
             </a>

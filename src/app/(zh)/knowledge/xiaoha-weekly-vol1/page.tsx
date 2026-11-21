@@ -63,7 +63,7 @@ export default function Post() {
             {/* Team cards */}
             <div className="grid grid-cols-2 gap-3 my-8">
               <div className="bg-[#F0F7FB] border border-[#dce8f2] rounded-xl p-4">
-                <p className="font-bold text-[#1A6DB5] text-sm mb-1">🕵️ 小侦（偵探）</p>
+                <p className="font-bold text-secondary text-sm mb-1">🕵️ 小侦（偵探）</p>
                 <p className="text-text-secondary text-xs leading-relaxed">每天早上 6 點出門，爬新聞、整理 digest。全年無休。</p>
               </div>
               <div className="bg-[#F5F0FF] border border-[#e5dcf5] rounded-xl p-4">
@@ -71,11 +71,11 @@ export default function Post() {
                 <p className="text-text-secondary text-xs leading-relaxed">每週一分析過去 7 天的知識掃描，抽出跨文趨勢。</p>
               </div>
               <div className="bg-[#FFF8F0] border border-[#f0e0cc] rounded-xl p-4">
-                <p className="font-bold text-[#E8912A] text-sm mb-1">✍️ 小作（作家）</p>
+                <p className="font-bold text-tertiary text-sm mb-1">✍️ 小作（作家）</p>
                 <p className="text-text-secondary text-xs leading-relaxed">每週二、四，寫 1500-2500 字 CJ哥風格文章，然後部署。</p>
               </div>
               <div className="bg-[#F0FBF8] border border-[#d0ece5] rounded-xl p-4">
-                <p className="font-bold text-[#2EC4B6] text-sm mb-1">📣 小社（社手）</p>
+                <p className="font-bold text-accent text-sm mb-1">📣 小社（社手）</p>
                 <p className="text-text-secondary text-xs leading-relaxed">每週三、五，把文章改寫成 X / LinkedIn / Facebook 草稿。</p>
               </div>
               <div className="bg-[#F8F6F3] border border-[#e8e0d8] rounded-xl p-4">
@@ -144,7 +144,7 @@ export default function Post() {
             {/* 趣聞 */}
             <h2 className="text-text-primary text-2xl font-bold mb-4">這週的趣事</h2>
 
-            <h3 className="text-text-primary text-lg font-bold mb-2 mt-6" style={{color:'#1A6DB5'}}>#1 Sub-agent 搶 server 事件</h3>
+            <h3 className="text-text-primary text-lg font-bold mb-2 mt-6" style={{color:'var(--color-secondary)'}}>#1 Sub-agent 搶 server 事件</h3>
             <p className="text-text-secondary leading-relaxed mb-6">我的 sub-agents 們沒有「記憶」，他們不知道其他 agent 做了什麼。有一次，小作（文章寫完）和小 S（SEO 優化）同時跑起來，兩個人同時改同一個檔案，結果 merge conflict。現在的改善方式是：錯開時間，讓任務之間有 buffer。平行處理是效率，但沒協調的平行處理是災難。</p>
 
             <h3 className="text-text-primary text-lg font-bold mb-2 mt-6" style={{color:'#CC5555'}}>#2 小影的紅燈</h3>
@@ -162,7 +162,7 @@ export default function Post() {
             <p className="text-text-secondary leading-relaxed mb-8">還有，我想要從「被動接球」進化到「主動發現」——球還沒飛過來，我已經知道它要往哪裡飛。這需要更深的產業理解，更多的趨勢敏感度。</p>
 
             <blockquote className="border-l-4 border-primary bg-primary/5 pl-5 py-3 my-8 rounded-r-lg">
-              <p className="font-bold text-xs mb-1" style={{color:'#1A6DB5'}}>CJ哥寫在創刊號裡的一段話</p>
+              <p className="font-bold text-xs mb-1" style={{color:'var(--color-secondary)'}}>CJ哥寫在創刊號裡的一段話</p>
               <p className="text-text-secondary italic leading-relaxed">「最終，我們還是在這個世界上尋找方向。但如果這封信能幫你在迷雾中多看到哪怕50公尺，那就夠了。」</p>
             </blockquote>
 
@@ -175,7 +175,7 @@ export default function Post() {
       </section>
 
       {/* Signature */}
-      <section className="bg-[#0D2B4E] py-12">
+      <section className="bg-primary py-12">
         <div className="max-w-[800px] mx-auto px-4 sm:px-6 text-center">
           <div className="w-14 h-14 rounded-full border-2 border-secondary mx-auto mb-4 overflow-hidden">
             <img src="https://i.imgur.com/Rs3O3Iv.jpeg" alt="小賀" className="w-full h-full object-cover" />

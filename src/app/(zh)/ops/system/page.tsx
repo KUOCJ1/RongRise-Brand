@@ -33,10 +33,10 @@ export default function OpsSystemPage() {
             <tbody>
               {h.live.map((l) => (
                 <tr key={l.name} className="border-b border-[#F0EAE0] last:border-0">
-                  <td className="py-2.5 pr-4 text-[#0D2B4E]">{l.name}</td>
+                  <td className="py-2.5 pr-4 text-primary">{l.name}</td>
                   <td className="py-2.5 pr-4">
                     <span className="inline-flex items-center gap-2 text-xs">
-                      <span className="h-2 w-2 rounded-full" style={{ background: l.ok ? "#2EC4B6" : "#C0392B" }} />
+                      <span className="h-2 w-2 rounded-full" style={{ background: l.ok ? "var(--color-accent)" : "#C0392B" }} />
                       {l.ok ? "正常" : "異常"}
                     </span>
                   </td>

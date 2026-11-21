@@ -43,7 +43,7 @@ function Highlight({ text, tokens }: { text: string; tokens: string[] }) {
     <>
       {segments.map((seg, i) =>
         seg.hit ? (
-          <mark key={i} className="bg-[#E8912A]/25 text-text-primary font-semibold rounded px-0.5">
+          <mark key={i} className="bg-tertiary/25 text-text-primary font-semibold rounded px-0.5">
             {seg.text}
           </mark>
         ) : (
@@ -329,7 +329,7 @@ export default function NewsletterArchivePage() {
                               </span>
                             )}
                             {hits > 0 && (
-                              <span className="text-xs px-2.5 py-0.5 rounded-full font-semibold bg-[#2EC4B6]/25 text-text-primary">
+                              <span className="text-xs px-2.5 py-0.5 rounded-full font-semibold bg-accent/25 text-text-primary">
                                 命中 {hits} 處
                               </span>
                             )}

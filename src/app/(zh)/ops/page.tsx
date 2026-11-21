@@ -90,11 +90,11 @@ function KpiCard({ item }: { item: Headline }) {
   return (
     <Link
       href={href ?? "/ops"}
-      className="group block rounded-2xl border border-[#E4DDD0] bg-white p-6 transition hover:border-[#E8912A] hover:shadow-sm"
+      className="group block rounded-2xl border border-[#E4DDD0] bg-white p-6 transition hover:border-tertiary hover:shadow-sm"
     >
       <div className="text-sm font-medium tracking-wide text-[#6B655D]">{item.label}</div>
       <div className="mt-3 flex items-baseline gap-2">
-        <span className="text-4xl font-bold tabular-nums text-[#0D2B4E]">
+        <span className="text-4xl font-bold tabular-nums text-primary">
           {item.value}
           {item.unit === "%" ? "%" : ""}
         </span>
@@ -102,7 +102,7 @@ function KpiCard({ item }: { item: Headline }) {
       </div>
       <div className="mt-2 flex items-center justify-between text-xs leading-relaxed text-[#6B655D]">
         <span>{item.note}</span>
-        <span className="text-[#C9BFAE] transition group-hover:text-[#E8912A]">→</span>
+        <span className="text-[#C9BFAE] transition group-hover:text-tertiary">→</span>
       </div>
     </Link>
   );
@@ -113,7 +113,7 @@ function Stat({ label, value, unit, note }: { label: string; value: number | str
     <div className="rounded-xl border border-[#E4DDD0] bg-[#FBF8F3] px-4 py-3">
       <div className="text-xs text-[#6B655D]">{label}</div>
       <div className="mt-1 flex items-baseline gap-1">
-        <span className="text-2xl font-bold tabular-nums text-[#0D2B4E]">{value}</span>
+        <span className="text-2xl font-bold tabular-nums text-primary">{value}</span>
         {unit && <span className="text-xs text-[#4A4540]">{unit}</span>}
       </div>
       {note && <div className="mt-1 text-[11px] text-[#6B655D]">{note}</div>}
@@ -126,12 +126,12 @@ function SectionTitle({ no, title, sub, href }: { no: string; title: string; sub
     <div className="mb-6 flex items-end justify-between gap-4 border-b border-[#E4DDD0] pb-3">
       <div>
         <div className="text-xs font-semibold tracking-[0.2em] text-[#A9611A]">{no}</div>
-        <h2 className="mt-1 text-2xl font-bold text-[#0D2B4E]">{title}</h2>
+        <h2 className="mt-1 text-2xl font-bold text-primary">{title}</h2>
       </div>
       <p className="max-w-md text-right text-xs leading-relaxed text-[#6B655D]">
         {sub}
         {href && (
-          <Link href={href} className="ml-2 whitespace-nowrap text-[#A9611A] underline decoration-[#E4DDD0] underline-offset-4 hover:decoration-[#E8912A]">
+          <Link href={href} className="ml-2 whitespace-nowrap text-[#A9611A] underline decoration-[#E4DDD0] underline-offset-4 hover:decoration-tertiary">
             查看明細 →
           </Link>
         )}
@@ -155,7 +155,7 @@ export default function OpsPage() {
   const dailyMax = useMemo(() => Math.max(60, ...(data?.management.daily.map((d) => d.min) ?? [60])), [data]);
   const typeMax = useMemo(() => Math.max(1, ...(data?.schedule.types.map((t) => t.count) ?? [1])), [data]);
 
-  if (err) return <main className="mx-auto max-w-3xl px-6 py-24 text-sm text-[#0D2B4E]">營運資料暫時讀不到，請稍後再試。</main>;
+  if (err) return <main className="mx-auto max-w-3xl px-6 py-24 text-sm text-primary">營運資料暫時讀不到，請稍後再試。</main>;
   if (!data) return <main className="mx-auto max-w-3xl px-6 py-24 text-sm text-[#6B655D]">載入營運資料…</main>;
 
   const c = data.content;
@@ -171,7 +171,7 @@ export default function OpsPage() {
         {/* Header */}
         <header className="mb-10">
           <div className="text-xs font-semibold tracking-[0.2em] text-[#A9611A]">內部營運台・不公開索引</div>
-          <h1 className="mt-3 text-4xl font-bold tracking-tight text-[#0D2B4E] sm:text-5xl">營運總覽</h1>
+          <h1 className="mt-3 text-4xl font-bold tracking-tight text-primary sm:text-5xl">營運總覽</h1>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[#4A4540]">
             內容產出、系統健康、排程事故、管理成本與成果，放在同一頁。每個數字都標了統計期間與來源，跨期比較時請以標註為準。
           </p>
@@ -185,7 +185,7 @@ export default function OpsPage() {
               <Link
                 key={href}
                 href={href}
-                className="rounded-full border border-[#D9D2C6] bg-white px-4 py-2 text-[#0D2B4E] transition hover:border-[#E8912A] hover:text-[#A9611A]"
+                className="rounded-full border border-[#D9D2C6] bg-white px-4 py-2 text-primary transition hover:border-tertiary hover:text-[#A9611A]"
               >
                 {label} →
               </Link>
@@ -221,7 +221,7 @@ export default function OpsPage() {
 
           <div className="mt-6 rounded-2xl border border-[#E4DDD0] bg-white p-6">
             <div className="mb-4 flex items-baseline justify-between">
-              <h3 className="text-sm font-semibold text-[#0D2B4E]">每月上線文章</h3>
+              <h3 className="text-sm font-semibold text-primary">每月上線文章</h3>
               <span className="text-[11px] text-[#6B655D]">2026/05 起逐月｜單位：篇</span>
             </div>
             <div className="flex h-40 items-end gap-2 sm:gap-4">
@@ -244,21 +244,21 @@ export default function OpsPage() {
 
           <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-3">
             {c.latest?.article && (
-              <a href={c.latest.article.url} className="rounded-xl border border-[#E4DDD0] bg-white p-4 transition hover:border-[#E8912A]">
+              <a href={c.latest.article.url} className="rounded-xl border border-[#E4DDD0] bg-white p-4 transition hover:border-tertiary">
                 <div className="text-[11px] text-[#6B655D]">最新文章 · {c.latest.article.date}</div>
-                <div className="mt-1 line-clamp-2 text-sm font-medium text-[#0D2B4E]">{c.latest.article.title}</div>
+                <div className="mt-1 line-clamp-2 text-sm font-medium text-primary">{c.latest.article.title}</div>
               </a>
             )}
             {c.latest?.newsletter && (
               <div className="rounded-xl border border-[#E4DDD0] bg-white p-4">
                 <div className="text-[11px] text-[#6B655D]">最新電子報</div>
-                <div className="mt-1 line-clamp-2 text-sm font-medium text-[#0D2B4E]">{c.latest.newsletter}</div>
+                <div className="mt-1 line-clamp-2 text-sm font-medium text-primary">{c.latest.newsletter}</div>
               </div>
             )}
             {c.latest?.video && (
-              <a href={c.latest.video.url} className="rounded-xl border border-[#E4DDD0] bg-white p-4 transition hover:border-[#E8912A]">
+              <a href={c.latest.video.url} className="rounded-xl border border-[#E4DDD0] bg-white p-4 transition hover:border-tertiary">
                 <div className="text-[11px] text-[#6B655D]">最新影片 · {c.latest.video.date}</div>
-                <div className="mt-1 line-clamp-2 text-sm font-medium text-[#0D2B4E]">{c.latest.video.title}</div>
+                <div className="mt-1 line-clamp-2 text-sm font-medium text-primary">{c.latest.video.title}</div>
               </a>
             )}
           </div>
@@ -276,7 +276,7 @@ export default function OpsPage() {
 
           <div className="mt-6 rounded-2xl border border-[#E4DDD0] bg-white p-6">
             <div className="mb-3 flex items-baseline justify-between">
-              <h3 className="text-sm font-semibold text-[#0D2B4E]">每日健康檢查</h3>
+              <h3 className="text-sm font-semibold text-primary">每日健康檢查</h3>
               <span className="text-[11px] text-[#6B655D]">
                 {h.days[0]?.date} ~ {h.days[h.days.length - 1]?.date}｜綠＝全在線、黃＝有警示
               </span>
@@ -307,7 +307,7 @@ export default function OpsPage() {
                 <tbody>
                   {h.live.map((l) => (
                     <tr key={l.name} className="border-b border-[#F0EAE0] last:border-0">
-                      <td className="py-2 pr-4 text-[#0D2B4E]">{l.name}</td>
+                      <td className="py-2 pr-4 text-primary">{l.name}</td>
                       <td className="py-2 pr-4">
                         <span className="inline-flex items-center gap-1.5">
                           <span className="h-1.5 w-1.5 rounded-full" style={{ background: l.ok ? TEAL : "#C0392B" }} />
@@ -338,7 +338,7 @@ export default function OpsPage() {
           </div>
 
           <div className="mt-6 rounded-2xl border border-[#E4DDD0] bg-white p-6">
-            <h3 className="mb-4 text-sm font-semibold text-[#0D2B4E]">事故類型（近 30 天）</h3>
+            <h3 className="mb-4 text-sm font-semibold text-primary">事故類型（近 30 天）</h3>
             <div className="space-y-3">
               {s.types.map((t) => (
                 <div key={t.type} className="flex items-center gap-3">
@@ -346,7 +346,7 @@ export default function OpsPage() {
                   <div className="h-6 flex-1 overflow-hidden rounded bg-[#F0EAE0]">
                     <div className="h-full rounded" style={{ width: `${(t.count / typeMax) * 100}%`, background: t.type === "script" ? GOLD : NAVY }} />
                   </div>
-                  <div className="w-8 text-right text-xs font-semibold tabular-nums text-[#0D2B4E]">{t.count}</div>
+                  <div className="w-8 text-right text-xs font-semibold tabular-nums text-primary">{t.count}</div>
                 </div>
               ))}
             </div>
@@ -370,12 +370,12 @@ export default function OpsPage() {
 
           <div className="mt-6 rounded-2xl border border-[#E4DDD0] bg-white p-6">
             <div className="mb-4 flex items-baseline justify-between">
-              <h3 className="text-sm font-semibold text-[#0D2B4E]">每日在場時間</h3>
+              <h3 className="text-sm font-semibold text-primary">每日在場時間</h3>
               <span className="text-[11px] text-[#6B655D]">橘線＝30 分鐘目標；單位：分鐘</span>
             </div>
             <div className="relative flex h-[140px] items-end gap-1.5">
               <div
-                className="pointer-events-none absolute inset-x-0 border-t-2 border-dashed border-[#E8912A]"
+                className="pointer-events-none absolute inset-x-0 border-t-2 border-dashed border-tertiary"
                 style={{ bottom: `${(30 / dailyMax) * 140}px` }}
               />
               {m.daily.map((d) => (
@@ -413,7 +413,7 @@ export default function OpsPage() {
 
         {/* 定義 */}
         <footer className="rounded-2xl border border-[#E4DDD0] bg-white p-6 text-[11px] leading-relaxed text-[#6B655D]">
-          <div className="mb-2 font-semibold text-[#0D2B4E]">數字怎麼來的</div>
+          <div className="mb-2 font-semibold text-primary">數字怎麼來的</div>
           <ul className="list-disc space-y-1 pl-4">
             <li>內容產出：官網 {`articles.json`} 與 content-ops 聚合檔；影片以 YouTube Data API 回查上傳清單。</li>
             <li>服務可用率：每日健康檢查（13 個 pm2 服務＋5 個對外端點）逐日累計，端點接受 200／301／302／307。</li>

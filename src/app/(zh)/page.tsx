@@ -56,7 +56,7 @@ export default function HomePage() {
       <section className="bg-gradient-hero text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img src="/images/hero-bg.jpg" alt="" className="w-full h-full object-cover object-center" />
-          <div className="absolute inset-0 bg-[#0D2B4E]/60" />
+          <div className="absolute inset-0 bg-primary/60" />
         </div>
         <div className="hero-bg-svg z-10" aria-hidden="true">
           <svg viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">

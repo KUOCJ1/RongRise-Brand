@@ -137,7 +137,7 @@ export default function QuickChat() {
             width={56}
             height={56}
             className="w-full h-full rounded-full object-cover border-2 border-accent"
-            style={{ borderColor: "#E8912A" }}
+            style={{ borderColor: "var(--color-tertiary)" }}
           />
           {/* 在線提示點 */}
           <span className="absolute -bottom-0.5 -right-0.5 w-4 h-4 bg-green-400 rounded-full border-2 border-white">
@@ -163,7 +163,7 @@ export default function QuickChat() {
                     width={36}
                     height={36}
                     className="rounded-full border-2 border-accent flex-shrink-0"
-                    style={{ borderColor: "#E8912A" }}
+                    style={{ borderColor: "var(--color-tertiary)" }}
                   />
                   <div>
                     <p className="font-semibold text-text-primary text-sm">問問小賀 ✨</p>
@@ -214,7 +214,7 @@ export default function QuickChat() {
                       width={28}
                       height={28}
                       className="rounded-full border-2 border-accent"
-                      style={{ borderColor: "#E8912A" }}
+                      style={{ borderColor: "var(--color-tertiary)" }}
                     />
                     <span className="text-sm font-medium text-white">AI 長小賀</span>
                     <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
@@ -318,7 +318,7 @@ export default function QuickChat() {
                       <Link
                         href="/assistant"
                         className="text-xs px-3 py-1.5 rounded-full bg-accent text-primary font-medium hover:bg-primary hover:text-white transition-all"
-                        style={{ backgroundColor: "#E8912A" }}
+                        style={{ backgroundColor: "var(--color-tertiary)" }}
                         onClick={() => { setIsOpen(false); setIsExpanded(false); }}
                       >
                         繼續跟小賀聊 →
@@ -350,7 +350,7 @@ export default function QuickChat() {
                       type="submit"
                       disabled={!input.trim() || isTyping}
                       className="px-4 py-2 rounded-xl bg-accent text-primary text-sm font-medium hover:bg-primary hover:text-white transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-                      style={{ backgroundColor: "#E8912A" }}
+                      style={{ backgroundColor: "var(--color-tertiary)" }}
                     >
                       {isTyping ? "..." : "發送"}
                     </button>

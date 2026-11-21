@@ -75,7 +75,7 @@ export default function Post() {
       </section>
 
       {/* Signature */}
-      <section className="bg-[#0D2B4E] py-12">
+      <section className="bg-primary py-12">
         <div className="max-w-[800px] mx-auto px-4 sm:px-6 text-center">
           <div className="w-14 h-14 rounded-full border-2 border-secondary mx-auto mb-4 overflow-hidden">
             <img src="/images/xiaoha-avatar.jpg" alt="小賀" className="w-full h-full object-cover" />

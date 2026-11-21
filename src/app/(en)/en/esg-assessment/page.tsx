@@ -279,7 +279,7 @@ export default function EnEsgAssessment() {
                               className="h-full rounded-full transition-all duration-500"
                               style={{
                                 width: `${pct}%`,
-                                backgroundColor: pct >= 60 ? "#2EC4B6" : pct >= 40 ? "#E8912A" : "#0D2B4E",
+                                backgroundColor: pct >= 60 ? "var(--color-accent)" : pct >= 40 ? "var(--color-tertiary)" : "var(--color-primary)",
                               }}
                             />
                           </div>

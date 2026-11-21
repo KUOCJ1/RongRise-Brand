@@ -53,7 +53,7 @@ export default function SecondBrainWhitepaper() {
       <div className="max-w-[1000px] mx-auto px-4 sm:px-6 py-14 md:py-20">
 
         {/* Cover */}
-        <section className="bg-gradient-to-br from-[#0D2B4E] via-[#123A66] to-[#1A6DB5] rounded-3xl p-10 md:p-14 text-white relative overflow-hidden mb-10">
+        <section className="bg-gradient-to-br from-primary via-[#123A66] to-secondary rounded-3xl p-10 md:p-14 text-white relative overflow-hidden mb-10">
           <div className="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-teal/25 blur-3xl" />
           <div className="absolute -bottom-32 right-24 w-80 h-80 rounded-full bg-tertiary/20 blur-3xl" />
           <div className="relative">

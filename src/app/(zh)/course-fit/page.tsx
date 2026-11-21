@@ -122,18 +122,18 @@ export default function CourseFitPage() {
   }, [input, result]);
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-[#0D2B4E] via-[#0D2B4E] to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
       <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
         {/* ===== STEP 1: INTRO ===== */}
         {step === "intro" && (
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-              <span className="text-sm text-[#2EC4B6] font-semibold">Agentic AI for HR · 課程適配度自評</span>
+            <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+              <span className="text-sm text-accent font-semibold">Agentic AI for HR · 課程適配度自評</span>
             </div>
             <h1 className="text-3xl md:text-5xl font-black leading-tight mb-6">
               哪一班適合你？
               <br />
-              <span className="text-[#E8912A]">五分鐘</span>測出來
+              <span className="text-tertiary">五分鐘</span>測出來
             </h1>
             <p className="text-white/70 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
               我們開了兩班課：初階班（11/14）帶你完成第一個 AI 員工；進階班（12/5）帶你設計多 AI 員工協作流程。
@@ -153,7 +153,7 @@ export default function CourseFitPage() {
             </div>
             <button
               onClick={() => setStep("quiz")}
-              className="bg-[#E8912A] hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+              className="bg-tertiary hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
             >
               開始自評 →
             </button>
@@ -175,7 +175,7 @@ export default function CourseFitPage() {
 
             {/* 角色 */}
             <div className="mb-8">
-              <label className="block text-sm font-semibold text-[#2EC4B6] mb-3">1. 你的角色？</label>
+              <label className="block text-sm font-semibold text-accent mb-3">1. 你的角色？</label>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                 {ROLES.map((key) => (
                   <button
@@ -183,8 +183,8 @@ export default function CourseFitPage() {
                     onClick={() => setField("role", key)}
                     className={`text-sm px-4 py-3 rounded-lg border transition-all text-left ${
                       input.role === key
-                        ? "bg-[#1A6DB5]/30 border-[#2EC4B6] text-white font-semibold"
-                        : "bg-white/5 border-white/10 text-white/70 hover:border-[#1A6DB5]"
+                        ? "bg-secondary/30 border-accent text-white font-semibold"
+                        : "bg-white/5 border-white/10 text-white/70 hover:border-secondary"
                     }`}
                   >
                     {ROLE_META[key].label}
@@ -195,7 +195,7 @@ export default function CourseFitPage() {
 
             {/* 經驗 */}
             <div className="mb-8">
-              <label className="block text-sm font-semibold text-[#2EC4B6] mb-3">2. 你目前的 AI 使用經驗？</label>
+              <label className="block text-sm font-semibold text-accent mb-3">2. 你目前的 AI 使用經驗？</label>
               <div className="space-y-2">
                 {EXPERIENCES.map((key) => (
                   <button
@@ -203,8 +203,8 @@ export default function CourseFitPage() {
                     onClick={() => setField("experience", key)}
                     className={`w-full text-sm px-4 py-3 rounded-lg border transition-all text-left ${
                       input.experience === key
-                        ? "bg-[#1A6DB5]/30 border-[#2EC4B6] text-white font-semibold"
-                        : "bg-white/5 border-white/10 text-white/70 hover:border-[#1A6DB5]"
+                        ? "bg-secondary/30 border-accent text-white font-semibold"
+                        : "bg-white/5 border-white/10 text-white/70 hover:border-secondary"
                     }`}
                   >
                     {EXPERIENCE_META[key].label}
@@ -216,7 +216,7 @@ export default function CourseFitPage() {
             {/* 準備度三題 */}
             {READY_QUESTIONS.map((q) => (
               <div key={q.key} className="mb-8">
-                <label className="block text-sm font-semibold text-[#2EC4B6] mb-3">{q.label}</label>
+                <label className="block text-sm font-semibold text-accent mb-3">{q.label}</label>
                 <div className="grid grid-cols-3 gap-2">
                   {q.options.map((opt) => (
                     <button
@@ -224,8 +224,8 @@ export default function CourseFitPage() {
                       onClick={() => setField(q.key, opt)}
                       className={`text-sm px-3 py-3 rounded-lg border transition-all ${
                         input[q.key] === opt
-                          ? "bg-[#1A6DB5]/30 border-[#2EC4B6] text-white font-semibold"
-                          : "bg-white/5 border-white/10 text-white/70 hover:border-[#1A6DB5]"
+                          ? "bg-secondary/30 border-accent text-white font-semibold"
+                          : "bg-white/5 border-white/10 text-white/70 hover:border-secondary"
                       }`}
                     >
                       {READINESS_META[opt].label}
@@ -237,7 +237,7 @@ export default function CourseFitPage() {
 
             {/* 可投入時間 */}
             <div className="mb-8">
-              <label className="block text-sm font-semibold text-[#2EC4B6] mb-3">6. 你可以投入的時間？</label>
+              <label className="block text-sm font-semibold text-accent mb-3">6. 你可以投入的時間？</label>
               <div className="space-y-2">
                 {COMMITMENTS.map((key) => (
                   <button
@@ -245,8 +245,8 @@ export default function CourseFitPage() {
                     onClick={() => setField("commitment", key)}
                     className={`w-full text-sm px-4 py-3 rounded-lg border transition-all text-left ${
                       input.commitment === key
-                        ? "bg-[#1A6DB5]/30 border-[#2EC4B6] text-white font-semibold"
-                        : "bg-white/5 border-white/10 text-white/70 hover:border-[#1A6DB5]"
+                        ? "bg-secondary/30 border-accent text-white font-semibold"
+                        : "bg-white/5 border-white/10 text-white/70 hover:border-secondary"
                     }`}
                   >
                     {COMMITMENT_META[key].label}
@@ -265,21 +265,21 @@ export default function CourseFitPage() {
                   placeholder="姓名"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6]"
+                  className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent"
                 />
                 <input
                   type="email"
                   placeholder="Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6]"
+                  className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent"
                 />
                 <input
                   type="text"
                   placeholder="公司（選填）"
                   value={company}
                   onChange={(e) => setCompany(e.target.value)}
-                  className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6]"
+                  className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent"
                 />
               </div>
             </div>
@@ -287,7 +287,7 @@ export default function CourseFitPage() {
             <button
               onClick={handleSubmit}
               disabled={submitting}
-              className="w-full bg-[#E8912A] hover:bg-[#F5A623] disabled:opacity-50 text-white font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg"
+              className="w-full bg-tertiary hover:bg-[#F5A623] disabled:opacity-50 text-white font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg"
             >
               {submitting ? "計算中…" : "看推薦結果 →"}
             </button>
@@ -298,16 +298,16 @@ export default function CourseFitPage() {
         {step === "result" && result && (
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-10">
-              <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-                <span className="text-sm text-[#2EC4B6] font-semibold">課程適配度評估完成</span>
+              <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+                <span className="text-sm text-accent font-semibold">課程適配度評估完成</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-black mb-4">
                 建議你上：
                 <br className="md:hidden" />
-                <span className="text-[#E8912A]">{result.match.title}</span>
+                <span className="text-tertiary">{result.match.title}</span>
               </h1>
               <div className="flex items-center justify-center gap-3 mb-4">
-                <span className="text-4xl font-black text-[#2EC4B6]">{result.readinessScore}</span>
+                <span className="text-4xl font-black text-accent">{result.readinessScore}</span>
                 <span className="text-white/50 text-lg">/ 100</span>
               </div>
               <p className="text-white/70 max-w-2xl mx-auto leading-relaxed">{result.summary}</p>
@@ -317,11 +317,11 @@ export default function CourseFitPage() {
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 mb-8">
               <h2 className="text-lg font-bold mb-3">為什麼這樣建議？</h2>
               <p className="text-white/80 text-sm leading-relaxed mb-5">{result.match.reason}</p>
-              <h3 className="text-sm font-bold text-[#2EC4B6] mb-3">這堂課你會帶走什麼</h3>
+              <h3 className="text-sm font-bold text-accent mb-3">這堂課你會帶走什麼</h3>
               <ul className="space-y-2">
                 {result.match.previewList.map((p, i) => (
                   <li key={i} className="text-white/75 text-sm leading-relaxed flex gap-2">
-                    <span className="text-[#E8912A] shrink-0">{i + 1}.</span>
+                    <span className="text-tertiary shrink-0">{i + 1}.</span>
                     <span>{p}</span>
                   </li>
                 ))}
@@ -343,7 +343,7 @@ export default function CourseFitPage() {
                       <div className="flex items-center gap-3">
                         <div className="flex-1 h-2 bg-white/10 rounded-full overflow-hidden">
                           <div
-                            className="h-full bg-[#2EC4B6] rounded-full"
+                            className="h-full bg-accent rounded-full"
                             style={{ width: `${pct}%` }}
                           />
                         </div>
@@ -361,7 +361,7 @@ export default function CourseFitPage() {
               <ul className="space-y-3">
                 {result.prep.map((p, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm text-white/80">
-                    <span className={`shrink-0 mt-0.5 ${p.done ? "text-[#2EC4B6]" : "text-white/30"}`}>
+                    <span className={`shrink-0 mt-0.5 ${p.done ? "text-accent" : "text-white/30"}`}>
                       {p.done ? "✓" : "□"}
                     </span>
                     <span className={p.done ? "line-through text-white/40" : ""}>{p.text}</span>
@@ -379,7 +379,7 @@ export default function CourseFitPage() {
                   </p>
                   <a
                     href={result.cta.primary}
-                    className="inline-block bg-[#E8912A] hover:bg-[#F5A623] text-white font-bold px-8 py-3.5 rounded-full transition-colors"
+                    className="inline-block bg-tertiary hover:bg-[#F5A623] text-white font-bold px-8 py-3.5 rounded-full transition-colors"
                   >
                     預約免費諮詢 →
                   </a>
@@ -392,7 +392,7 @@ export default function CourseFitPage() {
                   <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                     <a
                       href={result.cta.primary}
-                      className="inline-block bg-[#E8912A] hover:bg-[#F5A623] text-white font-bold px-8 py-3.5 rounded-full transition-colors"
+                      className="inline-block bg-tertiary hover:bg-[#F5A623] text-white font-bold px-8 py-3.5 rounded-full transition-colors"
                     >
                       查看課程詳情 →
                     </a>
@@ -406,7 +406,7 @@ export default function CourseFitPage() {
                     )}
                     <a
                       href="/about/#contact"
-                      className="inline-block text-[#2EC4B6] hover:text-[#7FE3D8] font-semibold px-4 py-3 transition-colors"
+                      className="inline-block text-accent hover:text-[#7FE3D8] font-semibold px-4 py-3 transition-colors"
                     >
                       預約諮詢 →
                     </a>
@@ -421,8 +421,8 @@ export default function CourseFitPage() {
                 onClick={copyReport}
                 className={`inline-flex items-center gap-2 text-sm font-bold px-6 py-3 rounded-full border transition-colors ${
                   copied
-                    ? "bg-[#2EC4B6]/20 border-[#2EC4B6] text-[#2EC4B6]"
-                    : "bg-[#1A6DB5]/20 border-[#2EC4B6]/50 text-[#2EC4B6] hover:bg-[#1A6DB5]/40"
+                    ? "bg-accent/20 border-accent text-accent"
+                    : "bg-secondary/20 border-accent/50 text-accent hover:bg-secondary/40"
                 }`}
               >
                 {copied ? "✓ 已複製報告" : "📋 複製完整報告"}

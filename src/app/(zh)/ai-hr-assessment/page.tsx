@@ -162,7 +162,7 @@ export default function HrAiMaturityPage() {
             {label}
           </text>
         ))}
-        <text x={cx} y={cy} textAnchor="middle" dominantBaseline="middle" className="text-2xl font-bold fill-[#0D2B4E]">
+        <text x={cx} y={cy} textAnchor="middle" dominantBaseline="middle" className="text-2xl font-bold fill-primary">
           {result.overallScore.toFixed(1)}
         </text>
       </svg>
@@ -186,18 +186,18 @@ export default function HrAiMaturityPage() {
   };
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-[#0D2B4E] via-[#0D2B4E] to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
       <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
 
         {/* ===== STEP 1: INTRO ===== */}
         {step === "intro" && (
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-              <span className="text-sm text-[#2EC4B6] font-semibold">C.J. Kuo × 25 年企業與顧問經驗</span>
+            <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+              <span className="text-sm text-accent font-semibold">C.J. Kuo × 25 年企業與顧問經驗</span>
             </div>
             <h1 className="text-3xl md:text-5xl font-black leading-tight mb-6">
               你的 HR 部門<br />
-              <span className="text-[#2EC4B6]">AI 化成熟度</span>在哪裡？
+              <span className="text-accent">AI 化成熟度</span>在哪裡？
             </h1>
             <p className="text-white/70 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
               McKinsey 說 2026 年 HR 的角色正在從人事管家變成混合勞動力總監。
@@ -213,7 +213,7 @@ export default function HrAiMaturityPage() {
             </div>
             <button
               onClick={() => setStep("quiz")}
-              className="bg-[#E8912A] hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+              className="bg-tertiary hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
             >
               開始評估 →
             </button>
@@ -228,7 +228,7 @@ export default function HrAiMaturityPage() {
             <div className="flex items-center gap-3 mb-8">
               <div className="flex-1 h-1.5 bg-white/10 rounded-full overflow-hidden">
                 <div
-                  className="h-full bg-[#2EC4B6] rounded-full transition-all"
+                  className="h-full bg-accent rounded-full transition-all"
                   style={{ width: `${((currentScenarioIdx + 1) / SCENARIOS.length) * 100}%` }}
                 />
               </div>
@@ -249,7 +249,7 @@ export default function HrAiMaturityPage() {
               {currentScenario.questions.map((q, qi) => (
                 <div key={q.id} className="bg-white/5 border border-white/10 rounded-xl p-5">
                   <p className="text-white font-semibold mb-4">
-                    <span className="text-[#2EC4B6] font-bold">{qi + 1}.</span> {q.text}
+                    <span className="text-accent font-bold">{qi + 1}.</span> {q.text}
                   </p>
                   <div className="space-y-2">
                     {q.options.map((opt) => (
@@ -257,7 +257,7 @@ export default function HrAiMaturityPage() {
                         key={opt.value}
                         className={`flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-colors ${
                           answers[q.id] === opt.value
-                            ? "bg-[#1A6DB5]/30 border border-[#1A6DB5]/50"
+                            ? "bg-secondary/30 border border-secondary/50"
                             : "bg-white/5 border border-white/5 hover:bg-white/10"
                         }`}
                       >
@@ -267,7 +267,7 @@ export default function HrAiMaturityPage() {
                           value={opt.value}
                           checked={answers[q.id] === opt.value}
                           onChange={() => setAnswer(q.id, opt.value)}
-                          className="accent-[#E8912A]"
+                          className="accent-tertiary"
                         />
                         <span className="text-white/80 text-sm">{opt.label}</span>
                       </label>
@@ -290,7 +290,7 @@ export default function HrAiMaturityPage() {
                 <button
                   onClick={handleSubmit}
                   disabled={!allAnswered || submitting}
-                  className="bg-[#E8912A] hover:bg-[#F5A623] disabled:bg-gray-500 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-tertiary hover:bg-[#F5A623] disabled:bg-gray-500 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   {submitting ? "計算中..." : "看結果"}
                 </button>
@@ -298,7 +298,7 @@ export default function HrAiMaturityPage() {
                 <button
                   onClick={goToNextScenario}
                   disabled={!currentScenarioAnswered}
-                  className="bg-[#1A6DB5] hover:bg-[#1A6DB5]/80 disabled:bg-gray-500 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-secondary hover:bg-secondary/80 disabled:bg-gray-500 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   下一區 →
                 </button>
@@ -311,12 +311,12 @@ export default function HrAiMaturityPage() {
         {step === "result" && result && (
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-10">
-              <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-                <span className="text-sm text-[#2EC4B6] font-semibold">評估完成</span>
+              <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+                <span className="text-sm text-accent font-semibold">評估完成</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-black mb-4">你的 HR AI 化成熟度結果</h1>
               <div className="flex items-center justify-center gap-3">
-                <span className="text-5xl font-black text-[#E8912A]">{result.overallScore.toFixed(1)}</span>
+                <span className="text-5xl font-black text-tertiary">{result.overallScore.toFixed(1)}</span>
                 <span className="text-white/50 text-lg">/ 5.0</span>
                 <LevelBadge level={result.overallLevel} />
               </div>
@@ -377,7 +377,7 @@ export default function HrAiMaturityPage() {
             </div>
 
             {/* Lead capture */}
-            <div className="bg-white/5 border border-[#E8912A]/30 rounded-xl p-6 mb-8">
+            <div className="bg-white/5 border border-tertiary/30 rounded-xl p-6 mb-8">
               <h3 className="text-white font-bold text-lg mb-2">📩 收到完整報告</h3>
               <p className="text-white/50 text-sm mb-4">填寫 Email，我們將完整評估與建議寄給你（選填）</p>
               <div className="flex flex-col md:flex-row gap-3">
@@ -409,10 +409,10 @@ export default function HrAiMaturityPage() {
             <div className="text-center space-y-4">
               <p className="text-white/60 text-sm">{result.nextStep}</p>
               <div className="flex flex-wrap justify-center gap-4">
-                <a href="/ai-roadmap" className="bg-[#1A6DB5] hover:bg-[#1A6DB5]/80 text-white font-bold px-8 py-3.5 rounded-full transition-colors">
+                <a href="/ai-roadmap" className="bg-secondary hover:bg-secondary/80 text-white font-bold px-8 py-3.5 rounded-full transition-colors">
                   🗺️ 規劃 AI 轉型路線圖
                 </a>
-                <a href="/about/#contact" className="bg-[#E8912A] hover:bg-[#F5A623] text-white font-bold px-8 py-3.5 rounded-full transition-colors">
+                <a href="/about/#contact" className="bg-tertiary hover:bg-[#F5A623] text-white font-bold px-8 py-3.5 rounded-full transition-colors">
                   📧 預約免費諮詢
                 </a>
               </div>

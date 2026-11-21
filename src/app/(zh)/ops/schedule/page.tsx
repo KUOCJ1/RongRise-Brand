@@ -36,10 +36,10 @@ export default function OpsSchedulePage() {
               <div className="h-5 flex-1 overflow-hidden rounded bg-[#F0EAE0]">
                 <div
                   className="h-full rounded"
-                  style={{ width: `${(t.count / typeMax) * 100}%`, background: t.type === "script" ? "#E8912A" : "#0D2B4E" }}
+                  style={{ width: `${(t.count / typeMax) * 100}%`, background: t.type === "script" ? "var(--color-tertiary)" : "var(--color-primary)" }}
                 />
               </div>
-              <div className="w-8 text-right text-xs font-semibold tabular-nums text-[#0D2B4E]">{t.count}</div>
+              <div className="w-8 text-right text-xs font-semibold tabular-nums text-primary">{t.count}</div>
             </div>
           ))}
         </div>

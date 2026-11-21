@@ -67,18 +67,18 @@ export default function AiSkillPathPage() {
   };
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-[#0D2B4E] via-[#0D2B4E] to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
       <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
 
         {/* ===== STEP 1: SELECT ===== */}
         {step === "select" && (
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-              <span className="text-sm text-[#2EC4B6] font-semibold">10-20-70 × 角色化技能養成</span>
+            <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+              <span className="text-sm text-accent font-semibold">10-20-70 × 角色化技能養成</span>
             </div>
             <h1 className="text-3xl md:text-5xl font-black leading-tight mb-6">
               你的部門<br />
-              <span className="text-[#2EC4B6]">90 天 AI 技能路徑</span>
+              <span className="text-accent">90 天 AI 技能路徑</span>
             </h1>
             <p className="text-white/70 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
               AI 轉型的勝負手是「人」。選你的部門和目前 AI 熟度，
@@ -95,7 +95,7 @@ export default function AiSkillPathPage() {
                     onClick={() => setDept(d.key)}
                     className={`p-4 rounded-xl border-2 text-center transition-all ${
                       dept === d.key
-                        ? "bg-[#1A6DB5]/30 border-[#1A6DB5]"
+                        ? "bg-secondary/30 border-secondary"
                         : "bg-white/5 border-white/10 hover:bg-white/10"
                     }`}
                   >
@@ -116,7 +116,7 @@ export default function AiSkillPathPage() {
                     onClick={() => setLevel(l.key)}
                     className={`w-full p-4 rounded-xl border-2 text-left transition-all ${
                       level === l.key
-                        ? "bg-[#1A6DB5]/30 border-[#1A6DB5]"
+                        ? "bg-secondary/30 border-secondary"
                         : "bg-white/5 border-white/10 hover:bg-white/10"
                     }`}
                   >
@@ -129,7 +129,7 @@ export default function AiSkillPathPage() {
             <button
               onClick={handleGenerate}
               disabled={!dept || !level}
-              className="bg-[#E8912A] hover:bg-[#F5A623] disabled:bg-gray-500 disabled:cursor-not-allowed text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+              className="bg-tertiary hover:bg-[#F5A623] disabled:bg-gray-500 disabled:cursor-not-allowed text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
             >
               生成我的 90 天路徑 →
             </button>
@@ -140,8 +140,8 @@ export default function AiSkillPathPage() {
         {step === "result" && result && (
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-10">
-              <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-                <span className="text-sm text-[#2EC4B6] font-semibold">你的 90 天 AI 技能路徑</span>
+              <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+                <span className="text-sm text-accent font-semibold">你的 90 天 AI 技能路徑</span>
               </div>
               <h1 className="text-2xl md:text-3xl font-black mb-2">
                 {result.deptIcon} {result.dept}
@@ -154,9 +154,9 @@ export default function AiSkillPathPage() {
             <div className="space-y-6 mb-8">
               {result.phases.map((phase, pi) => (
                 <div key={phase.id} className="bg-white/5 border border-white/10 rounded-xl overflow-hidden">
-                  <div className="bg-[#1A6DB5]/20 px-6 py-4 border-b border-white/10">
+                  <div className="bg-secondary/20 px-6 py-4 border-b border-white/10">
                     <div className="flex items-center justify-between">
-                      <span className="text-[#2EC4B6] font-bold text-sm">{phase.days}</span>
+                      <span className="text-accent font-bold text-sm">{phase.days}</span>
                       <span className="text-white/40 text-xs">Phase {pi + 1}</span>
                     </div>
                     <h2 className="text-xl font-bold text-white mt-1">{phase.theme}</h2>
@@ -167,7 +167,7 @@ export default function AiSkillPathPage() {
                     <div className="space-y-3 mb-5">
                       {phase.skills.map((skill, si) => (
                         <div key={si} className="flex items-start gap-2">
-                          <span className="text-[#2EC4B6] mt-0.5 flex-shrink-0">▸</span>
+                          <span className="text-accent mt-0.5 flex-shrink-0">▸</span>
                           <div>
                             <span className="text-white font-semibold text-sm">{skill.name}</span>
                             <span className="text-white/60 text-sm"> — {skill.desc}</span>
@@ -178,7 +178,7 @@ export default function AiSkillPathPage() {
                     <div className="flex flex-wrap gap-2 mb-4">
                       <span className="text-white/40 text-xs font-semibold">工具：</span>
                       {phase.tools.map((tool, ti) => (
-                        <span key={ti} className="text-xs px-2 py-0.5 rounded-full bg-[#1A6DB5]/20 text-[#2EC4B6]">
+                        <span key={ti} className="text-xs px-2 py-0.5 rounded-full bg-secondary/20 text-accent">
                           {tool}
                         </span>
                       ))}
@@ -207,16 +207,16 @@ export default function AiSkillPathPage() {
             </div>
 
             {/* Lead capture */}
-            <div className="bg-white/5 border border-[#E8912A]/30 rounded-xl p-6 mb-8">
+            <div className="bg-white/5 border border-tertiary/30 rounded-xl p-6 mb-8">
               <h3 className="text-white font-bold text-lg mb-2">📩 需要更深入的培訓規劃？</h3>
               <p className="text-white/50 text-sm mb-4">
                 這個路徑圖是標準版。我們可以為你的團隊設計客製化 AI 培訓方案，歡迎預約免費諮詢。
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <a href="/about/#contact" className="bg-[#E8912A] hover:bg-[#F5A623] text-white font-bold px-8 py-3.5 rounded-full transition-colors">
+                <a href="/about/#contact" className="bg-tertiary hover:bg-[#F5A623] text-white font-bold px-8 py-3.5 rounded-full transition-colors">
                   📧 預約免費諮詢
                 </a>
-                <a href="/ai-hr-assessment" className="bg-[#1A6DB5] hover:bg-[#1A6DB5]/80 text-white font-bold px-8 py-3.5 rounded-full transition-colors">
+                <a href="/ai-hr-assessment" className="bg-secondary hover:bg-secondary/80 text-white font-bold px-8 py-3.5 rounded-full transition-colors">
                   📊 先做 HR AI 化評估
                 </a>
               </div>

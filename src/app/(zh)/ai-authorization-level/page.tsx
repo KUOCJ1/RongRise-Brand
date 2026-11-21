@@ -178,7 +178,7 @@ export default function AIAuthorizationLevelPage() {
   };
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-[#0D2B4E] via-[#0D2B4E] to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
       <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
         <p className="sr-only" aria-live="polite">
           {step === "intro"
@@ -191,15 +191,15 @@ export default function AIAuthorizationLevelPage() {
         {/* ===== STEP 1: intro ===== */}
         {step === "intro" && (
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-              <span className="text-sm text-[#2EC4B6] font-semibold">
+            <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+              <span className="text-sm text-accent font-semibold">
                 榕耀管顧原創 · 授權悖論四級
               </span>
             </div>
             <h1 className="text-3xl md:text-5xl font-black leading-tight mb-6">
               這件事，
               <br />
-              <span className="text-[#2EC4B6]">AI 該做到什麼程度？</span>
+              <span className="text-accent">AI 該做到什麼程度？</span>
             </h1>
             <p className="text-white/70 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
               不是「能不能」，是「該不該」。
@@ -216,7 +216,7 @@ export default function AIAuthorizationLevelPage() {
                 { l: "L4", n: "對外代表", d: "綁住公司，具名授權" },
               ].map((item) => (
                 <div key={item.l} className="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
-                  <div className="text-2xl font-black text-[#2EC4B6]">{item.l}</div>
+                  <div className="text-2xl font-black text-accent">{item.l}</div>
                   <div className="text-sm font-semibold text-white/90">{item.n}</div>
                   <div className="text-[11px] text-white/55 mt-1">{item.d}</div>
                 </div>
@@ -228,7 +228,7 @@ export default function AIAuthorizationLevelPage() {
                 setStep("quiz");
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
-              className="bg-[#E8912A] hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+              className="bg-tertiary hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
             >
               開始測驗 →
             </button>
@@ -250,7 +250,7 @@ export default function AIAuthorizationLevelPage() {
                 aria-valuenow={answeredCount}
               >
                 <div
-                  className="h-full bg-[#2EC4B6] rounded-full transition-all"
+                  className="h-full bg-accent rounded-full transition-all"
                   style={{ width: `${(answeredCount / TOTAL_QUESTIONS) * 100}%` }}
                 />
               </div>
@@ -270,7 +270,7 @@ export default function AIAuthorizationLevelPage() {
                 onChange={(e) => setTaskDescription(e.target.value)}
                 placeholder="例如：每週三自動給客戶發送週報郵件"
                 rows={3}
-                className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6] resize-none"
+                className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent resize-none"
               />
             </div>
 
@@ -278,7 +278,7 @@ export default function AIAuthorizationLevelPage() {
               {DIMENSIONS.map((dim, idx) => (
                 <fieldset key={dim.key} className="bg-white/5 border border-white/10 rounded-xl p-5">
                   <legend className="text-white font-semibold mb-4">
-                    <span className="text-[#2EC4B6] font-bold">{idx + 1}.</span>{" "}
+                    <span className="text-accent font-bold">{idx + 1}.</span>{" "}
                     <span className="mr-2" aria-hidden="true">
                       {dim.icon}
                     </span>
@@ -295,7 +295,7 @@ export default function AIAuthorizationLevelPage() {
                           aria-pressed={selected}
                           className={`w-full flex items-start gap-3 p-3 rounded-lg text-left transition-colors ${
                             selected
-                              ? "bg-[#1A6DB5]/30 border border-[#2EC4B6]/60"
+                              ? "bg-secondary/30 border border-accent/60"
                               : "bg-white/5 border border-white/5 hover:bg-white/10"
                           }`}
                         >
@@ -303,7 +303,7 @@ export default function AIAuthorizationLevelPage() {
                             aria-hidden="true"
                             className={`shrink-0 w-5 h-5 rounded-full border text-[10px] font-bold flex items-center justify-center mt-0.5 ${
                               selected
-                                ? "border-[#2EC4B6] bg-[#2EC4B6] text-[#0D2B4E]"
+                                ? "border-accent bg-accent text-primary"
                                 : "border-white/30 text-white/40"
                             }`}
                           >
@@ -333,7 +333,7 @@ export default function AIAuthorizationLevelPage() {
               <button
                 onClick={showResult}
                 disabled={!allAnswered}
-                className="bg-[#E8912A] hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors shadow-lg"
+                className="bg-tertiary hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors shadow-lg"
               >
                 看結果 →
               </button>
@@ -345,12 +345,12 @@ export default function AIAuthorizationLevelPage() {
         {step === "result" && result && (
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-10">
-              <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-                <span className="text-sm text-[#2EC4B6] font-semibold">AI 員工授權等級測驗結果</span>
+              <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+                <span className="text-sm text-accent font-semibold">AI 員工授權等級測驗結果</span>
               </div>
               <div className="text-5xl mb-4">{result.icon}</div>
               <h1 className="text-3xl md:text-4xl font-black mb-4">
-                <span className="text-[#2EC4B6]">{result.levelLabel}</span>
+                <span className="text-accent">{result.levelLabel}</span>
               </h1>
               <p className="text-xl text-white/90 font-semibold mb-4">{result.headline}</p>
               <p className="text-white/70 max-w-2xl mx-auto leading-relaxed">{result.summary}</p>
@@ -374,7 +374,7 @@ export default function AIAuthorizationLevelPage() {
                       </div>
                       <div className="h-2 bg-white/10 rounded-full overflow-hidden">
                         <div
-                          className={`h-full rounded-full ${LEVEL_BAR_COLORS[result.level] || "bg-[#2EC4B6]"}`}
+                          className={`h-full rounded-full ${LEVEL_BAR_COLORS[result.level] || "bg-accent"}`}
                           style={{ width: `${pct}%` }}
                         />
                       </div>
@@ -391,8 +391,8 @@ export default function AIAuthorizationLevelPage() {
 
             {/* gaps */}
             {result.gaps.length > 0 && (
-              <div className="bg-[#E8912A]/10 border border-[#E8912A]/40 rounded-2xl p-6 mb-8">
-                <h2 className="text-lg font-bold text-[#E8912A] mb-4">⚠️ 缺口提醒</h2>
+              <div className="bg-tertiary/10 border border-tertiary/40 rounded-2xl p-6 mb-8">
+                <h2 className="text-lg font-bold text-tertiary mb-4">⚠️ 缺口提醒</h2>
                 <ul className="space-y-3">
                   {result.gaps.map((g) => (
                     <li key={g.key} className="text-white/80 text-sm leading-relaxed">
@@ -424,7 +424,7 @@ export default function AIAuthorizationLevelPage() {
               <ul className="space-y-3">
                 {result.audit.map((a, i) => (
                   <li key={i} className="flex gap-3 text-white/80 text-sm leading-relaxed">
-                    <span className="shrink-0 text-[#2EC4B6]">✓</span>
+                    <span className="shrink-0 text-accent">✓</span>
                     {a}
                   </li>
                 ))}
@@ -460,7 +460,7 @@ export default function AIAuthorizationLevelPage() {
                   e.preventDefault();
                   submitLead();
                 }}
-                className="bg-gradient-to-br from-[#1A6DB5]/20 to-[#2EC4B6]/10 border border-[#2EC4B6]/30 rounded-2xl p-6 mb-8"
+                className="bg-gradient-to-br from-secondary/20 to-accent/10 border border-accent/30 rounded-2xl p-6 mb-8"
               >
                 <h2 className="text-lg font-bold mb-1">📨 想追蹤授權四級的實作方法？</h2>
                 <p className="text-white/60 text-sm mb-4 leading-relaxed">
@@ -479,7 +479,7 @@ export default function AIAuthorizationLevelPage() {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       placeholder="怎麼稱呼你"
-                      className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6]"
+                      className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent"
                     />
                   </div>
                   <div>
@@ -495,7 +495,7 @@ export default function AIAuthorizationLevelPage() {
                       placeholder="you@company.com"
                       aria-invalid={email.length > 0 && !emailIsValid}
                       aria-describedby={email.length > 0 && !emailIsValid ? "aal-email-error" : undefined}
-                      className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6]"
+                      className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent"
                     />
                   </div>
                 </div>
@@ -509,7 +509,7 @@ export default function AIAuthorizationLevelPage() {
                     value={company}
                     onChange={(e) => setCompany(e.target.value)}
                     placeholder="公司或單位"
-                    className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6]"
+                    className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent"
                   />
                 </div>
                 {email.length > 0 && !emailIsValid && (
@@ -519,7 +519,7 @@ export default function AIAuthorizationLevelPage() {
                 <button
                   type="submit"
                   disabled={!emailIsValid || leadSubmitting}
-                  className="bg-[#E8912A] hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-tertiary hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   {leadSubmitting ? "送出中..." : "訂閱電子報 →"}
                 </button>
@@ -530,7 +530,7 @@ export default function AIAuthorizationLevelPage() {
                 <p className="text-white/60 text-sm leading-relaxed">
                   已收到 {leadEmail}，之後會把授權四級的實作心得寫進《榕賀觀點》寄到這個信箱（若沒收到，請看垃圾信件匣）。
                   想更快討論你們的授權邊界，直接
-                  <a href="/about/#contact" className="text-[#2EC4B6] hover:text-[#7FE3D8] font-semibold ml-1">
+                  <a href="/about/#contact" className="text-accent hover:text-[#7FE3D8] font-semibold ml-1">
                     預約免費諮詢
                   </a>
                   。
@@ -548,7 +548,7 @@ export default function AIAuthorizationLevelPage() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <a
                   href="/human-ai-alignment"
-                  className="bg-[#1A6DB5] hover:bg-[#2680CC] text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-secondary hover:bg-[#2680CC] text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   人機策略對齊度自評 →
                 </a>
@@ -560,7 +560,7 @@ export default function AIAuthorizationLevelPage() {
                 </a>
                 <a
                   href="/about/#contact"
-                  className="text-[#E8912A] hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
+                  className="text-tertiary hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
                 >
                   預約免費諮詢 →
                 </a>

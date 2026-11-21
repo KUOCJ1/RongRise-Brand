@@ -152,19 +152,19 @@ export default function PilotTrapWorkshopPage() {
   const validCount = entries.length;
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-[#0D2B4E] via-[#0D2B4E] to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
       <div className="max-w-3xl mx-auto px-4 py-12 md:py-16">
         {/* ===== STEP 1: 介紹 ===== */}
         {step === "intro" && (
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-              <span className="text-sm text-[#2EC4B6] font-semibold">Agentic HR 診斷工作坊 · 主持人工具</span>
+            <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+              <span className="text-sm text-accent font-semibold">Agentic HR 診斷工作坊 · 主持人工具</span>
             </div>
             <h1 className="text-3xl md:text-5xl font-black leading-tight mb-6">
               一張雷達圖，
               <br />
               看穿整支團隊的
-              <span className="text-[#E8912A]"> AI 治理體質</span>
+              <span className="text-tertiary"> AI 治理體質</span>
             </h1>
             <p className="text-lg text-[#A0C4E8] max-w-2xl mx-auto mb-8 leading-relaxed">
               工作坊現場，每位成員先完成 25 題個人量表，把結果頁的「分數碼」複製給你。
@@ -185,13 +185,13 @@ export default function PilotTrapWorkshopPage() {
             </div>
             <button
               onClick={() => setStep("input")}
-              className="bg-[#E8912A] hover:bg-[#F0A040] text-[#0D2B4E] font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-[#E8912A]/20"
+              className="bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
             >
               開始彙總 →
             </button>
             <p className="text-xs text-[#5A7A9E] mt-6">
               成員請先完成個人診斷：
-              <a href="/pilot-trap-scan/" className="text-[#2EC4B6] hover:underline mx-1">
+              <a href="/pilot-trap-scan/" className="text-accent hover:underline mx-1">
                 前往 Pilot Trap 診斷量表 →
               </a>
             </p>
@@ -208,25 +208,25 @@ export default function PilotTrapWorkshopPage() {
                   value={wsName}
                   onChange={(e) => setWsName(e.target.value)}
                   placeholder="工作坊名稱（例：XX 公司 AI 治理工作坊）"
-                  className="bg-[#0A1F3A] border border-white/15 rounded-lg px-3 py-2.5 text-sm text-white placeholder-[#5A7A9E] focus:outline-none focus:border-[#2EC4B6]"
+                  className="bg-[#0A1F3A] border border-white/15 rounded-lg px-3 py-2.5 text-sm text-white placeholder-[#5A7A9E] focus:outline-none focus:border-accent"
                 />
                 <input
                   value={wsDate}
                   onChange={(e) => setWsDate(e.target.value)}
                   type="date"
-                  className="bg-[#0A1F3A] border border-white/15 rounded-lg px-3 py-2.5 text-sm text-white focus:outline-none focus:border-[#2EC4B6]"
+                  className="bg-[#0A1F3A] border border-white/15 rounded-lg px-3 py-2.5 text-sm text-white focus:outline-none focus:border-accent"
                 />
               </div>
               <div>
                 <p className="text-sm text-[#A0C4E8] mb-2">
-                  貼入成員分數碼（每行一位，格式：<code className="text-[#2EC4B6]">姓名|45,62,38,70,55</code>，姓名可省略）：
+                  貼入成員分數碼（每行一位，格式：<code className="text-accent">姓名|45,62,38,70,55</code>，姓名可省略）：
                 </p>
                 <textarea
                   value={rawCodes}
                   onChange={(e) => setRawCodes(e.target.value)}
                   rows={8}
                   placeholder={"張經理|45,62,38,70,55\n李主任|52,58,44,66,61\n王專員|38,70,52,48,57"}
-                  className="w-full bg-[#0A1F3A] border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-[#5A7A9E] focus:outline-none focus:border-[#2EC4B6] font-mono"
+                  className="w-full bg-[#0A1F3A] border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-[#5A7A9E] focus:outline-none focus:border-accent font-mono"
                 />
               </div>
               <div className="flex items-center justify-between">
@@ -243,7 +243,7 @@ export default function PilotTrapWorkshopPage() {
                   <button
                     onClick={() => validCount > 0 && setStep("result")}
                     disabled={validCount === 0}
-                    className="bg-[#E8912A] hover:bg-[#F0A040] text-[#0D2B4E] font-bold px-8 py-3 rounded-full transition-colors shadow-lg shadow-[#E8912A]/20 disabled:opacity-40"
+                    className="bg-tertiary hover:bg-[#F0A040] text-primary font-bold px-8 py-3 rounded-full transition-colors shadow-lg shadow-tertiary/20 disabled:opacity-40"
                   >
                     產生團隊報告 →
                   </button>
@@ -266,41 +266,41 @@ export default function PilotTrapWorkshopPage() {
               </button>
               <button
                 onClick={() => window.print()}
-                className="bg-[#E8912A] hover:bg-[#F0A040] text-[#0D2B4E] font-bold px-6 py-2.5 rounded-full transition-colors shadow-lg shadow-[#E8912A]/20 text-sm"
+                className="bg-tertiary hover:bg-[#F0A040] text-primary font-bold px-6 py-2.5 rounded-full transition-colors shadow-lg shadow-tertiary/20 text-sm"
               >
                 🖨️ 列印 / 存成 PDF 報告
               </button>
             </div>
 
             {/* ===== 報告區（列印用，A4） ===== */}
-            <div className="print-area bg-white text-[#0D2B4E] rounded-2xl p-6 md:p-10">
+            <div className="print-area bg-white text-primary rounded-2xl p-6 md:p-10">
               {/* 報告 Header */}
-              <div className="border-b-2 border-[#1A6DB5] pb-4 mb-6 flex items-center justify-between">
+              <div className="border-b-2 border-secondary pb-4 mb-6 flex items-center justify-between">
                 <div>
-                  <div className="text-xs font-bold text-[#1A6DB5] tracking-widest mb-1">榕耀管顧 RONG RISE CONSULTING</div>
+                  <div className="text-xs font-bold text-secondary tracking-widest mb-1">榕耀管顧 RONG RISE CONSULTING</div>
                   <h1 className="text-2xl font-black">Agentic HR 診斷報告</h1>
                 </div>
                 <div className="text-right text-sm text-[#4A6A8E]">
-                  <div className="font-bold text-[#0D2B4E]">{wsName || "AI 治理工作坊"}</div>
+                  <div className="font-bold text-primary">{wsName || "AI 治理工作坊"}</div>
                   <div>{wsDate} ｜ 參與 {team.count} 人</div>
                 </div>
               </div>
 
               {/* 總結 */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
-                <div className="border border-[#1A6DB5]/20 rounded-xl p-3 text-center">
+                <div className="border border-secondary/20 rounded-xl p-3 text-center">
                   <div className="text-2xl font-black" style={{ color: LEVEL_META[team.level].color }}>{team.overall}</div>
                   <div className="text-xs text-[#4A6A8E]">整體健康度 / 100</div>
                 </div>
-                <div className="border border-[#1A6DB5]/20 rounded-xl p-3 text-center">
+                <div className="border border-secondary/20 rounded-xl p-3 text-center">
                   <div className="text-2xl font-black" style={{ color: LEVEL_META[team.level].color }}>{LEVEL_META[team.level].label}</div>
                   <div className="text-xs text-[#4A6A8E]">團隊等級</div>
                 </div>
-                <div className="border border-[#1A6DB5]/20 rounded-xl p-3 text-center">
+                <div className="border border-secondary/20 rounded-xl p-3 text-center">
                   <div className="text-2xl font-black text-[#E0503A]">{team.pilotRisk}%</div>
                   <div className="text-xs text-[#4A6A8E]">平均陷阱深度</div>
                 </div>
-                <div className="border border-[#1A6DB5]/20 rounded-xl p-3 text-center">
+                <div className="border border-secondary/20 rounded-xl p-3 text-center">
                   <div className="text-2xl font-black">{team.count}</div>
                   <div className="text-xs text-[#4A6A8E]">參與人數</div>
                 </div>
@@ -338,7 +338,7 @@ export default function PilotTrapWorkshopPage() {
                     { key: "red" as const, label: "紅燈", color: "#E0503A" },
                   ]
                 ).map((s) => (
-                  <div key={s.key} className="border border-[#1A6DB5]/20 rounded-xl p-4 text-center">
+                  <div key={s.key} className="border border-secondary/20 rounded-xl p-4 text-center">
                     <div className="text-3xl font-black" style={{ color: s.color }}>{team.distribution[s.key]}</div>
                     <div className="text-xs text-[#4A6A8E]">{s.label}人數</div>
                   </div>
@@ -347,7 +347,7 @@ export default function PilotTrapWorkshopPage() {
 
               {/* 解讀與建議 */}
               <div className="mb-8">
-                <h2 className="text-lg font-black mb-3 text-[#1A6DB5]">團隊解讀</h2>
+                <h2 className="text-lg font-black mb-3 text-secondary">團隊解讀</h2>
                 <ul className="space-y-2 text-sm text-[#2A4A6E] leading-relaxed">
                   <li>
                     <span className="font-bold">最弱環節：</span>
@@ -369,11 +369,11 @@ export default function PilotTrapWorkshopPage() {
               </div>
 
               <div>
-                <h2 className="text-lg font-black mb-3 text-[#1A6DB5]">行動建議</h2>
+                <h2 className="text-lg font-black mb-3 text-secondary">行動建議</h2>
                 <ol className="space-y-2.5">
                   {team.advice.map((a, i) => (
                     <li key={i} className="flex gap-2.5 text-sm text-[#2A4A6E] leading-relaxed">
-                      <span className="shrink-0 w-5 h-5 rounded-full bg-[#1A6DB5]/10 text-[#1A6DB5] font-bold text-xs flex items-center justify-center mt-0.5">
+                      <span className="shrink-0 w-5 h-5 rounded-full bg-secondary/10 text-secondary font-bold text-xs flex items-center justify-center mt-0.5">
                         {i + 1}
                       </span>
                       <span>{a}</span>
@@ -382,7 +382,7 @@ export default function PilotTrapWorkshopPage() {
                 </ol>
               </div>
 
-              <div className="border-t border-[#1A6DB5]/20 mt-8 pt-4 text-center text-xs text-[#4A6A8E]">
+              <div className="border-t border-secondary/20 mt-8 pt-4 text-center text-xs text-[#4A6A8E]">
                 本報告由榕耀管顧 Pilot Trap 診斷量表（25 題／五維度）工作坊模式自動產生 ·
                 方法論對齊 McKinsey《逃離 Pilot 陷阱》（2026）與榕耀治理五檢查實務
               </div>

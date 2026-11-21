@@ -189,7 +189,7 @@ export default function ToolsPage() {
   return (
     <main className="min-h-screen bg-bg-alt">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-[#0D2B4E] via-[#123A66] to-[#1A6DB5] text-white relative overflow-hidden">
+      <section className="bg-gradient-to-br from-primary via-[#123A66] to-secondary text-white relative overflow-hidden">
         <div className="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-teal/25 blur-3xl" />
         <div className="absolute -bottom-32 right-40 w-80 h-80 rounded-full bg-tertiary/20 blur-3xl" />
         <div className="relative max-w-[1000px] mx-auto px-4 sm:px-6 py-16 md:py-20">
@@ -239,7 +239,7 @@ export default function ToolsPage() {
         </div>
 
         {/* CTA */}
-        <section className="mt-14 bg-gradient-to-br from-[#0D2B4E] via-[#123A66] to-[#1A6DB5] rounded-3xl p-10 md:p-14 text-white text-center relative overflow-hidden">
+        <section className="mt-14 bg-gradient-to-br from-primary via-[#123A66] to-secondary rounded-3xl p-10 md:p-14 text-white text-center relative overflow-hidden">
           <div className="absolute -left-20 -top-20 w-72 h-72 rounded-full bg-teal/20 blur-3xl" />
           <div className="relative">
             <h2 className="font-display text-2xl md:text-3xl font-extrabold">

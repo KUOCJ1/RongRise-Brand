@@ -255,18 +255,18 @@ export default function AIEmployeeDiagnosisPage() {
   };
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-[#0D2B4E] via-[#0D2B4E] to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
       <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
 
         {/* ===== STEP 1: INTRO ===== */}
         {step === "intro" && (
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-              <span className="text-sm text-[#2EC4B6] font-semibold">榕耀管顧原創·Agentic AI 員工管理學</span>
+            <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+              <span className="text-sm text-accent font-semibold">榕耀管顧原創·Agentic AI 員工管理學</span>
             </div>
             <h1 className="text-3xl md:text-5xl font-black leading-tight mb-6">
               你的 AI，<br />
-              <span className="text-[#2EC4B6]">是被管理的員工嗎？</span>
+              <span className="text-accent">是被管理的員工嗎？</span>
             </h1>
             <p className="text-white/70 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
               導入 AI 的瓶頸不是技術，是管理。
@@ -284,7 +284,7 @@ export default function AIEmployeeDiagnosisPage() {
             </div>
             <button
               onClick={() => { setStep("quiz"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-              className="bg-[#E8912A] hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+              className="bg-tertiary hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
             >
               開始自評 →
             </button>
@@ -306,7 +306,7 @@ export default function AIEmployeeDiagnosisPage() {
                 aria-valuenow={currentStageIdx + 1}
               >
                 <div
-                  className="h-full bg-[#2EC4B6] rounded-full transition-all"
+                  className="h-full bg-accent rounded-full transition-all"
                   style={{ width: `${((currentStageIdx + 1) / STAGES.length) * 100}%` }}
                 />
               </div>
@@ -327,7 +327,7 @@ export default function AIEmployeeDiagnosisPage() {
               {currentStage.questions.map((q, qi) => (
                 <fieldset key={q.id} className="bg-white/5 border border-white/10 rounded-xl p-5">
                   <legend className="text-white font-semibold mb-4">
-                    <span className="text-[#2EC4B6] font-bold">{qi + 1}.</span> {q.text}
+                    <span className="text-accent font-bold">{qi + 1}.</span> {q.text}
                   </legend>
                   <div className="space-y-2">
                     {q.options.map((opt) => (
@@ -335,7 +335,7 @@ export default function AIEmployeeDiagnosisPage() {
                         key={opt.value}
                         className={`flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-colors ${
                           answers[q.id] === opt.value
-                            ? "bg-[#1A6DB5]/30 border border-[#1A6DB5]/50"
+                            ? "bg-secondary/30 border border-secondary/50"
                             : "bg-white/5 border border-white/5 hover:bg-white/10"
                         }`}
                       >
@@ -345,7 +345,7 @@ export default function AIEmployeeDiagnosisPage() {
                           value={opt.value}
                           checked={answers[q.id] === opt.value}
                           onChange={() => setAnswer(q.id, opt.value)}
-                          className="accent-[#E8912A]"
+                          className="accent-tertiary"
                         />
                         <span className="text-white/80 text-sm">{opt.label}</span>
                       </label>
@@ -368,7 +368,7 @@ export default function AIEmployeeDiagnosisPage() {
                 <button
                   onClick={showResult}
                   disabled={!allAnswered}
-                  className="bg-[#E8912A] hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors shadow-lg"
+                  className="bg-tertiary hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors shadow-lg"
                 >
                   看結果 →
                 </button>
@@ -376,7 +376,7 @@ export default function AIEmployeeDiagnosisPage() {
                 <button
                   onClick={goToNextStage}
                   disabled={!currentStageAnswered}
-                  className="bg-[#1A6DB5] hover:bg-[#2680CC] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-secondary hover:bg-[#2680CC] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   下一階段 →
                 </button>
@@ -390,11 +390,11 @@ export default function AIEmployeeDiagnosisPage() {
           <div className="max-w-3xl mx-auto">
             {/* Headline */}
             <div className="text-center mb-10">
-              <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-                <span className="text-sm text-[#2EC4B6] font-semibold">Agentic AI 員工管理學五階自評結果</span>
+              <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+                <span className="text-sm text-accent font-semibold">Agentic AI 員工管理學五階自評結果</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-black mb-4">
-                整體成熟度 <span className="text-[#2EC4B6]">{result.overallScore.toFixed(1)}</span> 分
+                整體成熟度 <span className="text-accent">{result.overallScore.toFixed(1)}</span> 分
               </h1>
               <div className="flex items-center justify-center gap-3">
                 <LevelBadge level={result.overallLevel} />
@@ -417,7 +417,7 @@ export default function AIEmployeeDiagnosisPage() {
                     <div className="flex-1 h-2 bg-white/10 rounded-full overflow-hidden ml-2">
                       <div
                         className={`h-full rounded-full ${
-                          s.status === "紅燈" ? "bg-red-400" : s.status === "黃燈" ? "bg-yellow-400" : "bg-[#2EC4B6]"
+                          s.status === "紅燈" ? "bg-red-400" : s.status === "黃燈" ? "bg-yellow-400" : "bg-accent"
                         }`}
                         style={{ width: `${s.pct}%` }}
                       />
@@ -483,7 +483,7 @@ export default function AIEmployeeDiagnosisPage() {
                     </span>
                     <div>
                       <p className="text-white/80 text-sm leading-relaxed">
-                        <strong className="text-[#2EC4B6]">{rec.stage}：</strong>{rec.text}
+                        <strong className="text-accent">{rec.stage}：</strong>{rec.text}
                       </p>
                     </div>
                   </div>
@@ -503,7 +503,7 @@ export default function AIEmployeeDiagnosisPage() {
 
             {/* Lead capture */}
             {leadStatus !== "success" ? (
-              <div className="bg-gradient-to-br from-[#1A6DB5]/20 to-[#2EC4B6]/10 border border-[#2EC4B6]/30 rounded-2xl p-6 mb-8">
+              <div className="bg-gradient-to-br from-secondary/20 to-accent/10 border border-accent/30 rounded-2xl p-6 mb-8">
                 <h2 className="text-lg font-bold mb-1">📬 訂閱榕賀觀點電子報</h2>
                 <p className="text-white/60 text-sm mb-4 leading-relaxed">
                   每週兩封 AI 轉型觀察與實戰筆記。留下 Email 後，你會先收到一封確認信，點擊信中按鈕才算完成訂閱。
@@ -514,7 +514,7 @@ export default function AIEmployeeDiagnosisPage() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="姓名（選填）"
-                    className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6]"
+                    className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent"
                     aria-label="姓名"
                   />
                   <input
@@ -525,7 +525,7 @@ export default function AIEmployeeDiagnosisPage() {
                       if (leadError) setLeadError(null);
                     }}
                     placeholder="Email（必填）"
-                    className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6]"
+                    className="bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent"
                     aria-label="Email"
                     aria-invalid={email && !emailIsValid ? "true" : "false"}
                   />
@@ -536,7 +536,7 @@ export default function AIEmployeeDiagnosisPage() {
                 <button
                   onClick={submitLead}
                   disabled={!emailIsValid || leadStatus === "loading"}
-                  className="bg-[#E8912A] hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-tertiary hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   {leadStatus === "loading" ? "送出中..." : "訂閱電子報 →"}
                 </button>
@@ -552,7 +552,7 @@ export default function AIEmployeeDiagnosisPage() {
                 </p>
                 <p className="text-white/60 text-sm leading-relaxed mt-2">
                   若有問題，直接
-                  <a href="/about/#contact" className="text-[#2EC4B6] hover:text-[#7FE3D8] font-semibold ml-1">
+                  <a href="/about/#contact" className="text-accent hover:text-[#7FE3D8] font-semibold ml-1">
                     預約免費諮詢
                   </a>
                   比較快。
@@ -569,7 +569,7 @@ export default function AIEmployeeDiagnosisPage() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <a
                   href="/ai-roadmap"
-                  className="bg-[#1A6DB5] hover:bg-[#2680CC] text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-secondary hover:bg-[#2680CC] text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   生成 AI 轉型路線圖 →
                 </a>
@@ -581,7 +581,7 @@ export default function AIEmployeeDiagnosisPage() {
                 </a>
                 <a
                   href="/about/#contact"
-                  className="text-[#E8912A] hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
+                  className="text-tertiary hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
                 >
                   預約免費諮詢 →
                 </a>

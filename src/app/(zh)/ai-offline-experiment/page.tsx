@@ -72,7 +72,7 @@ function NumberField({
           max={max}
           value={value}
           onChange={(e) => onChange(clamp(parseInt(e.target.value || "0", 10), min, max))}
-          className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white text-lg focus:outline-none focus:border-[#2EC4B6]"
+          className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white text-lg focus:outline-none focus:border-accent"
         />
         {unit && <span className="text-white/60 text-sm whitespace-nowrap">{unit}</span>}
       </div>
@@ -206,7 +206,7 @@ export default function AIOfflineExperimentPage() {
   };
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-[#0D2B4E] via-[#0D2B4E] to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
       <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
         <p className="sr-only" aria-live="polite">
           {announcement}
@@ -216,13 +216,13 @@ export default function AIOfflineExperimentPage() {
         {step === "intro" && (
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-10">
-              <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-                <span className="text-sm text-[#2EC4B6] font-semibold">榕耀管顧原創 · 公開實驗方法論</span>
+              <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+                <span className="text-sm text-accent font-semibold">榕耀管顧原創 · 公開實驗方法論</span>
               </div>
               <h1 className="text-3xl md:text-5xl font-black leading-tight mb-6">
                 離開 13 天，
                 <br />
-                <span className="text-[#2EC4B6]">公司還能跑嗎？</span>
+                <span className="text-accent">公司還能跑嗎？</span>
               </h1>
               <p className="text-white/70 text-lg max-w-2xl mx-auto mb-6 leading-relaxed">
                 這不是「AI 取代人」的展示，是「人不在時，管理邊界怎麼畫」的計算器。
@@ -298,7 +298,7 @@ export default function AIOfflineExperimentPage() {
                 </p>
                 <button
                   onClick={calculate}
-                  className="bg-[#E8912A] hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+                  className="bg-tertiary hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
                 >
                   計算風險與檢查清單 →
                 </button>
@@ -307,11 +307,11 @@ export default function AIOfflineExperimentPage() {
 
             <p className="text-center text-white/55 text-sm leading-relaxed">
               背景閱讀：
-              <Link href="/knowledge/human-absent-13-days" className="text-[#2EC4B6] hover:text-[#7FE3D8] font-semibold mx-1">
+              <Link href="/knowledge/human-absent-13-days" className="text-accent hover:text-[#7FE3D8] font-semibold mx-1">
                 我不在公司的 13 天
               </Link>
               、
-              <Link href="/knowledge/ai-operation-experiment" className="text-[#2EC4B6] hover:text-[#7FE3D8] font-semibold mx-1">
+              <Link href="/knowledge/ai-operation-experiment" className="text-accent hover:text-[#7FE3D8] font-semibold mx-1">
                 公開實驗起點
               </Link>
             </p>
@@ -322,8 +322,8 @@ export default function AIOfflineExperimentPage() {
         {step === "result" && result && (
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-10">
-              <div className="inline-flex items-center gap-2 bg-[#1A6DB5]/20 border border-[#2EC4B6]/30 rounded-full px-4 py-1.5 mb-6">
-                <span className="text-sm text-[#2EC4B6] font-semibold">離線實驗計算結果</span>
+              <div className="inline-flex items-center gap-2 bg-secondary/20 border border-accent/30 rounded-full px-4 py-1.5 mb-6">
+                <span className="text-sm text-accent font-semibold">離線實驗計算結果</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-black mb-4">
                 <span
@@ -350,7 +350,7 @@ export default function AIOfflineExperimentPage() {
                 { n: `${result.expectedErrors} 件`, t: "粗估會遇到的錯" },
               ].map((x) => (
                 <div key={x.t} className="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
-                  <div className="text-2xl font-black text-[#2EC4B6]">{x.n}</div>
+                  <div className="text-2xl font-black text-accent">{x.n}</div>
                   <div className="text-xs text-white/60 mt-1">{x.t}</div>
                 </div>
               ))}
@@ -391,7 +391,7 @@ export default function AIOfflineExperimentPage() {
                   if (items.length === 0) return null;
                   return (
                     <div key={phase.key}>
-                      <h3 className="text-sm font-bold text-[#2EC4B6] mb-2">{phase.label}</h3>
+                      <h3 className="text-sm font-bold text-accent mb-2">{phase.label}</h3>
                       <ul className="space-y-2">
                         {items.map((c, i) => (
                           <li key={i} className="flex gap-3 text-white/80 text-sm leading-relaxed">
@@ -422,7 +422,7 @@ export default function AIOfflineExperimentPage() {
                   e.preventDefault();
                   submitLead();
                 }}
-                className="bg-gradient-to-br from-[#1A6DB5]/20 to-[#2EC4B6]/10 border border-[#2EC4B6]/30 rounded-2xl p-6 mb-8"
+                className="bg-gradient-to-br from-secondary/20 to-accent/10 border border-accent/30 rounded-2xl p-6 mb-8"
               >
                 <h2 className="text-lg font-bold mb-1">📬 想把公開實驗的做法帶回公司？</h2>
                 <p className="text-white/60 text-sm mb-4 leading-relaxed">
@@ -440,7 +440,7 @@ export default function AIOfflineExperimentPage() {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       placeholder="怎麼稱呼你"
-                      className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6]"
+                      className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent"
                     />
                   </div>
                   <div>
@@ -456,7 +456,7 @@ export default function AIOfflineExperimentPage() {
                       placeholder="you@company.com"
                       aria-invalid={email.length > 0 && !emailIsValid}
                       aria-describedby={email.length > 0 && !emailIsValid ? "aoe-email-error" : undefined}
-                      className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6]"
+                      className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent"
                     />
                   </div>
                 </div>
@@ -473,14 +473,14 @@ export default function AIOfflineExperimentPage() {
                     value={company}
                     onChange={(e) => setCompany(e.target.value)}
                     placeholder="公司或單位"
-                    className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#2EC4B6]"
+                    className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder-white/40 focus:outline-none focus:border-accent"
                   />
                 </div>
                 {leadError && <p className="text-red-300 text-sm mb-3">{leadError}</p>}
                 <button
                   type="submit"
                   disabled={!emailIsValid || leadSubmitting}
-                  className="bg-[#E8912A] hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-tertiary hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   {leadSubmitting ? "送出中..." : "訂閱電子報 →"}
                 </button>
@@ -490,7 +490,7 @@ export default function AIOfflineExperimentPage() {
               <div className="bg-white/5 border border-white/10 rounded-2xl p-5 mb-8" role="status">
                 <p className="text-white/60 text-sm leading-relaxed">
                   已收到 {leadEmail}，之後會把離線實驗心得寫進《榕賀觀點》寄到這個信箱（若沒收到，請看垃圾信件匣）。想更快討論你們的實驗設計，直接
-                  <Link href="/about/#contact" className="text-[#2EC4B6] hover:text-[#7FE3D8] font-semibold ml-1">
+                  <Link href="/about/#contact" className="text-accent hover:text-[#7FE3D8] font-semibold ml-1">
                     預約免費諮詢
                   </Link>
                   。
@@ -505,7 +505,7 @@ export default function AIOfflineExperimentPage() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <Link
                   href="/human-ai-alignment"
-                  className="bg-[#1A6DB5] hover:bg-[#2680CC] text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-secondary hover:bg-[#2680CC] text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   人機策略對齊度自評 →
                 </Link>
@@ -517,7 +517,7 @@ export default function AIOfflineExperimentPage() {
                 </Link>
                 <Link
                   href="/about/#contact"
-                  className="text-[#E8912A] hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
+                  className="text-tertiary hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
                 >
                   預約免費諮詢 →
                 </Link>
