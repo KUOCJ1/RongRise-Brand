@@ -4,9 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "/usr/bin/python3 scripts/design_lint.py --quiet",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "check:design": "/usr/bin/python3 scripts/design_lint.py",
+    "report:design": "/usr/bin/python3 scripts/design_lint.py --report",
+    "check:tokens": "/usr/bin/python3 scripts/extract_tokens.py --check",
     "test": "node --experimental-strip-types --test src/lib/utm.test.ts"
   },
   "dependencies": {
