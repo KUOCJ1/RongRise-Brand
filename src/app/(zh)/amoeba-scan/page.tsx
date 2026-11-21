@@ -97,7 +97,7 @@ export default function AmoebaScanPage() {
             <h1 className="text-3xl md:text-5xl font-black leading-tight mb-6">
               你的工作，
               <br />
-              有多少可以<span className="text-tertiary">交給 AI？</span>
+              有多少可以<span className="text-gold">交給 AI？</span>
             </h1>
             <p className="text-lg md:text-xl text-[#A0C4E8] max-w-2xl mx-auto mb-8 leading-relaxed">
               勾選你的日常工作任務，立即盤點
@@ -118,7 +118,7 @@ export default function AmoebaScanPage() {
             </div>
             <button
               onClick={() => setStep("form")}
-              className="bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
+              className="bg-gold hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-gold/20"
             >
               開始盤點 →
             </button>
@@ -284,7 +284,7 @@ export default function AmoebaScanPage() {
             <button
               onClick={handleSubmit}
               disabled={submitting}
-              className="w-full bg-tertiary hover:bg-[#F0A040] disabled:opacity-50 text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
+              className="w-full bg-gold hover:bg-[#F0A040] disabled:opacity-50 text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-gold/20"
             >
               {submitting ? "盤點中…" : "看看我的任務怎麼分類 →"}
             </button>
@@ -306,7 +306,7 @@ export default function AmoebaScanPage() {
               <p className="text-accent font-semibold mb-2">
                 盤點 {result.tasks.length} 個任務 · 每週 {result.totalWeeklyHours} 小時
               </p>
-              <div className="text-5xl md:text-6xl font-black text-tertiary mb-2">
+              <div className="text-5xl md:text-6xl font-black text-gold mb-2">
                 {result.totalWeeklySaved} 小時
               </div>
               <p className="text-[#A0C4E8] text-lg">每週可節省工時（保守估計）</p>
@@ -354,7 +354,7 @@ export default function AmoebaScanPage() {
                       <div className="flex-1 min-w-0">
                         <div className="font-semibold truncate">
                           {t.label}
-                          {t.isCustom && <span className="text-xs text-tertiary ml-2">自訂</span>}
+                          {t.isCustom && <span className="text-xs text-gold ml-2">自訂</span>}
                         </div>
                         <div className="text-xs text-[#5A7A9E]">
                           {t.dept} · {t.weeklyHours} 小時/週 · AI 適用分 {t.aiScore.toFixed(2)} · 變形蟲契合 {t.amoebaFit.toFixed(2)}
@@ -364,7 +364,7 @@ export default function AmoebaScanPage() {
                         {meta.badge} {meta.label}
                       </span>
                       <div className="text-right shrink-0">
-                        <div className="text-tertiary font-bold">−{t.weeklySaved} h</div>
+                        <div className="text-gold font-bold">−{t.weeklySaved} h</div>
                         <div className="text-xs text-[#5A7A9E]">每週</div>
                       </div>
                     </div>
@@ -428,7 +428,7 @@ export default function AmoebaScanPage() {
                 </a>
                 <a
                   href="/about/#contact"
-                  className="inline-block bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
+                  className="inline-block bg-gold hover:bg-[#F0A040] text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-gold/20"
                 >
                   預約免費諮詢 →
                 </a>

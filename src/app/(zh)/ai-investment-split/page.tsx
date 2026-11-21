@@ -213,7 +213,7 @@ export default function AIInvestmentSplitPage() {
                 setStep("form");
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
-              className="bg-tertiary hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+              className="bg-gold hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
             >
               開始體檢 →
             </button>
@@ -275,7 +275,7 @@ export default function AIInvestmentSplitPage() {
                         value={key}
                         checked={stage === key}
                         onChange={() => setStage(key)}
-                        className="mt-1 accent-tertiary"
+                        className="mt-1 accent-gold"
                       />
                       <span>
                         <span className="block text-white/90 text-sm font-semibold">{STAGE_META[key].label}</span>
@@ -336,7 +336,7 @@ export default function AIInvestmentSplitPage() {
 
               <p
                 className={`text-xs mt-4 font-semibold ${
-                  totalPct === 100 ? "text-accent" : "text-tertiary"
+                  totalPct === 100 ? "text-accent" : "text-gold"
                 }`}
                 role="status"
               >
@@ -396,13 +396,13 @@ export default function AIInvestmentSplitPage() {
               <button
                 onClick={() => handleSubmit(true)}
                 disabled={!canSubmit}
-                className="bg-tertiary hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3.5 rounded-full transition-colors shadow-lg"
+                className="bg-gold hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3.5 rounded-full transition-colors shadow-lg"
               >
                 看體檢結果 →
               </button>
             </div>
             {!canSubmit && (
-              <p className="text-tertiary text-xs text-right mt-3" role="status">
+              <p className="text-gold text-xs text-right mt-3" role="status">
                 請先填入大於 0 的年度預算，以及三桶合計大於 0% 的配置比例。
               </p>
             )}
@@ -527,7 +527,7 @@ export default function AIInvestmentSplitPage() {
                     <ul className="space-y-2">
                       {b.actions.map((a, i) => (
                         <li key={i} className="text-white/75 text-sm leading-relaxed flex gap-2">
-                          <span className="text-tertiary shrink-0">→</span>
+                          <span className="text-gold shrink-0">→</span>
                           <span>{a}</span>
                         </li>
                       ))}
@@ -539,7 +539,7 @@ export default function AIInvestmentSplitPage() {
 
             {/* 症狀自檢 */}
             {result.symptoms.length > 0 && (
-              <div className="bg-tertiary/10 border border-tertiary/30 rounded-2xl p-6 md:p-8 mb-8">
+              <div className="bg-gold/10 border border-gold/30 rounded-2xl p-6 md:p-8 mb-8">
                 <h2 className="text-lg font-bold mb-1 text-[#F5A623]">🩺 症狀自檢：有沒有這些情況？</h2>
                 <p className="text-white/50 text-xs mb-5">勾中任何一項，代表那個桶的錢確實花得不夠或花錯了地方。</p>
                 <div className="space-y-5">
@@ -653,7 +653,7 @@ export default function AIInvestmentSplitPage() {
                 <button
                   onClick={() => handleSubmit(false)}
                   disabled={!email}
-                  className="bg-tertiary hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-gold hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   訂閱並取得檢核表 →
                 </button>
@@ -698,7 +698,7 @@ export default function AIInvestmentSplitPage() {
                 </a>
                 <a
                   href="/about/#contact"
-                  className="text-tertiary hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
+                  className="text-gold hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
                 >
                   預約免費諮詢 →
                 </a>

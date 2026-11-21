@@ -54,7 +54,7 @@ export default function AIGovernancePage() {
           <h1 className="text-3xl md:text-5xl font-black leading-tight mb-6">
             AI 用得滿好，
             <br />
-            不等於<span className="text-tertiary">用得健康</span>
+            不等於<span className="text-gold">用得健康</span>
           </h1>
           <p className="text-lg md:text-xl text-[#A0C4E8] max-w-2xl mx-auto leading-relaxed">
             沒人治理的 AI 實驗，會把舊流程硬化成無人能解的 code。
@@ -77,7 +77,7 @@ export default function AIGovernancePage() {
               </div>
               <h2 className="text-xl md:text-2xl font-bold leading-snug mb-3">{it.title}</h2>
               <p className="text-[#A0C4E8] leading-relaxed mb-4">{it.desc}</p>
-              <span className="text-tertiary font-semibold group-hover:translate-x-1 inline-block transition-transform">
+              <span className="text-gold font-semibold group-hover:translate-x-1 inline-block transition-transform">
                 {it.cta}
               </span>
             </Link>
@@ -120,7 +120,7 @@ export default function AIGovernancePage() {
           </p>
           <Link
             href="/pilot-trap-scan"
-            className="inline-block bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
+            className="inline-block bg-gold hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-gold/20"
           >
             免費診斷我的 AI 部隊 →
           </Link>

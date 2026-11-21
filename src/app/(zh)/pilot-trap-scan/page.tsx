@@ -202,9 +202,9 @@ export default function PilotTrapScanPage() {
             <h1 className="text-3xl md:text-5xl font-black leading-tight mb-6">
               你的 AI 部隊，
               <br />
-              是在<span className="text-tertiary">鋪路</span>還是卡進
+              是在<span className="text-gold">鋪路</span>還是卡進
               <br className="hidden md:block" />
-              <span className="text-tertiary">Pilot 陷阱？</span>
+              <span className="text-gold">Pilot 陷阱？</span>
             </h1>
             <p className="text-lg md:text-xl text-[#A0C4E8] max-w-2xl mx-auto mb-8 leading-relaxed">
               25 題，五分鐘，測出你的 AI 應用是在為未來營運鋪路，
@@ -225,7 +225,7 @@ export default function PilotTrapScanPage() {
             </div>
             <button
               onClick={() => setStep("form")}
-              className="bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
+              className="bg-gold hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-gold/20"
             >
               開始診斷 →
             </button>
@@ -327,7 +327,7 @@ export default function PilotTrapScanPage() {
                   <button
                     onClick={handleFinish}
                     disabled={submitting}
-                    className="w-full bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20 disabled:opacity-50"
+                    className="w-full bg-gold hover:bg-[#F0A040] text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-gold/20 disabled:opacity-50"
                   >
                     {submitting ? "計算中…" : "看我的診斷結果 →"}
                   </button>
@@ -380,7 +380,7 @@ export default function PilotTrapScanPage() {
                     <span className="font-bold text-lg text-[#E0503A]">{result.pilotRisk}%</span>
                   </div>
                   <div className="h-2.5 rounded-full bg-white/10 overflow-hidden">
-                    <div className="h-full rounded-full bg-gradient-to-r from-tertiary to-[#E0503A]" style={{ width: `${result.pilotRisk}%` }} />
+                    <div className="h-full rounded-full bg-gradient-to-r from-gold to-[#E0503A]" style={{ width: `${result.pilotRisk}%` }} />
                   </div>
                   <p className="text-xs text-[#A0C4E8] mt-2">
                     {result.pilotRisk >= 60
@@ -394,7 +394,7 @@ export default function PilotTrapScanPage() {
             </div>
 
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 mb-10">
-              <h2 className="text-xl font-bold mb-4 text-tertiary">給你的行動建議</h2>
+              <h2 className="text-xl font-bold mb-4 text-gold">給你的行動建議</h2>
               <ol className="space-y-3">
                 {result.advice.map((a, i) => (
                   <li key={i} className="flex gap-3 text-[#D6E6F5] leading-relaxed">
@@ -438,7 +438,7 @@ export default function PilotTrapScanPage() {
                     }
                     setTimeout(() => setCopied(false), 2000);
                   }}
-                  className="bg-tertiary hover:bg-[#F0A040] text-primary font-bold px-6 py-3 rounded-xl transition-colors whitespace-nowrap"
+                  className="bg-gold hover:bg-[#F0A040] text-primary font-bold px-6 py-3 rounded-xl transition-colors whitespace-nowrap"
                 >
                   {copied ? "✅ 已複製" : "📋 複製分數碼"}
                 </button>
@@ -459,7 +459,7 @@ export default function PilotTrapScanPage() {
               </p>
               <a
                 href="/about#contact"
-                className="inline-block bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
+                className="inline-block bg-gold hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-gold/20"
               >
                 預約免費諮詢 →
               </a>

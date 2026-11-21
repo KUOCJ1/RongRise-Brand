@@ -114,7 +114,7 @@ export default function RoiCalculatorPage() {
               <span className="text-sm text-accent font-semibold">企業 AI 轉型實用工具</span>
             </div>
             <h1 className="text-3xl md:text-5xl font-black leading-tight mb-6">
-              AI 轉型，<span className="text-tertiary">值得嗎？</span>
+              AI 轉型，<span className="text-gold">值得嗎？</span>
               <br />
               三分鐘算出你的 ROI
             </h1>
@@ -137,7 +137,7 @@ export default function RoiCalculatorPage() {
             </div>
             <button
               onClick={() => setStep("form")}
-              className="bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
+              className="bg-gold hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-gold/20"
             >
               開始估算 →
             </button>
@@ -273,7 +273,7 @@ export default function RoiCalculatorPage() {
               <button
                 onClick={handleSubmit}
                 disabled={submitting}
-                className="w-full bg-tertiary hover:bg-[#F0A040] disabled:opacity-50 text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
+                className="w-full bg-gold hover:bg-[#F0A040] disabled:opacity-50 text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-gold/20"
               >
                 {submitting ? "計算中…" : "立即計算我的 ROI →"}
               </button>
@@ -296,7 +296,7 @@ export default function RoiCalculatorPage() {
               <p className="text-accent font-semibold mb-2">
                 {INDUSTRIES[form.industry]?.label} · {EMPLOYEE_OPTIONS.find((o) => o.value === form.employees)?.label}
               </p>
-              <div className="text-5xl md:text-6xl font-black text-tertiary mb-2">
+              <div className="text-5xl md:text-6xl font-black text-gold mb-2">
                 {result.netBenefit > 0 ? "+" : ""}
                 {formatNt(result.netBenefit)}
               </div>
@@ -367,7 +367,7 @@ export default function RoiCalculatorPage() {
               </p>
               <a
                 href="/about/#contact"
-                className="inline-block bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
+                className="inline-block bg-gold hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-gold/20"
               >
                 預約免費諮詢 →
               </a>

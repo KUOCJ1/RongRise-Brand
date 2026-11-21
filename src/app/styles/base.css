@@ -9,6 +9,9 @@
   --color-primary: #0D2B4E;
   --color-secondary: #1A6DB5;
   --color-tertiary: #E8912A;
+  /* 深色底專用品牌金（等值別名）：Tailwind 的 text-tertiary 在淺底會被 components.css
+     改成 tertiary-strong（#9E5B0C，為了白底對比）。深色區塊要品牌金原色時用 gold。 */
+  --color-gold: #E8912A;
   --color-tertiary-light: #F5B84A;
   /* 淺底上的橘色文字（標籤／STEP／星等）用深一階的橘，白底對比 ≥4.7:1；
      填色按鈕維持品牌橘 #E8912A 但改深藍字（5.78:1），不稀釋品牌色 */
@@ -84,6 +87,7 @@
   --color-primary: var(--color-primary);
   --color-secondary: var(--color-secondary);
   --color-tertiary: var(--color-tertiary);
+  --color-gold: var(--color-gold);
   --color-tertiary-strong: var(--color-tertiary-strong);
   --color-accent: var(--color-accent);
   --color-accent-strong: var(--color-accent-strong);

@@ -160,7 +160,7 @@ export default function AIAssessmentLanding() {
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
                 你的企業 AI 轉型
                 <br />
-                <span className="text-tertiary">走到哪一步了？</span>
+                <span className="text-gold">走到哪一步了？</span>
               </h1>
 
               <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -172,7 +172,7 @@ export default function AIAssessmentLanding() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
                 <button
                   onClick={() => setStep(1)}
-                  className="px-8 py-4 bg-tertiary hover:bg-[#F5B84A] text-bg-dark font-bold rounded-xl text-lg transition-all shadow-lg shadow-tertiary/20 hover:shadow-tertiary/40"
+                  className="px-8 py-4 bg-gold hover:bg-[#F5B84A] text-bg-dark font-bold rounded-xl text-lg transition-all shadow-lg shadow-gold/20 hover:shadow-gold/40"
                 >
                   開始免費評估 →
                 </button>
@@ -225,7 +225,7 @@ export default function AIAssessmentLanding() {
               {/* 姓名 */}
               <div>
                 <label className="block text-sm font-medium mb-2">
-                  姓名 <span className="text-tertiary">*</span>
+                  姓名 <span className="text-gold">*</span>
                 </label>
                 <input
                   type="text"
@@ -239,7 +239,7 @@ export default function AIAssessmentLanding() {
               {/* Email */}
               <div>
                 <label className="block text-sm font-medium mb-2">
-                  Email <span className="text-tertiary">*</span>
+                  Email <span className="text-gold">*</span>
                 </label>
                 <input
                   type="email"
@@ -253,7 +253,7 @@ export default function AIAssessmentLanding() {
               {/* 公司名稱 */}
               <div>
                 <label className="block text-sm font-medium mb-2">
-                  公司名稱 <span className="text-tertiary">*</span>
+                  公司名稱 <span className="text-gold">*</span>
                 </label>
                 <input
                   type="text"
@@ -267,7 +267,7 @@ export default function AIAssessmentLanding() {
               {/* 產業 */}
               <div>
                 <label className="block text-sm font-medium mb-2">
-                  所屬產業 <span className="text-tertiary">*</span>
+                  所屬產業 <span className="text-gold">*</span>
                 </label>
                 <select
                   value={form.industry}
@@ -286,7 +286,7 @@ export default function AIAssessmentLanding() {
               {/* AI 階段 */}
               <div>
                 <label className="block text-sm font-medium mb-2">
-                  目前 AI 應用階段 <span className="text-tertiary">*</span>
+                  目前 AI 應用階段 <span className="text-gold">*</span>
                 </label>
                 <div className="space-y-3">
                   {AI_STAGES.map((stage) => (
@@ -304,7 +304,7 @@ export default function AIAssessmentLanding() {
                         value={stage.value}
                         checked={form.aiStage === stage.value}
                         onChange={(e) => setForm({ ...form, aiStage: e.target.value })}
-                        className="mt-1 accent-tertiary"
+                        className="mt-1 accent-gold"
                       />
                       <div>
                         <div className="font-medium">{stage.label}</div>
@@ -365,7 +365,7 @@ export default function AIAssessmentLanding() {
               <button
                 onClick={handleSubmit}
                 disabled={submitting}
-                className="w-full px-8 py-4 bg-tertiary hover:bg-[#F5B84A] disabled:bg-gray-600 text-bg-dark font-bold rounded-xl text-lg transition-all shadow-lg shadow-tertiary/20"
+                className="w-full px-8 py-4 bg-gold hover:bg-[#F5B84A] disabled:bg-gray-600 text-bg-dark font-bold rounded-xl text-lg transition-all shadow-lg shadow-gold/20"
               >
                 {submitting ? "提交中..." : "取得我的專屬報告 →"}
               </button>
@@ -383,7 +383,7 @@ export default function AIAssessmentLanding() {
             <div className="text-6xl mb-6">🎉</div>
             <h2 className="text-3xl font-bold mb-4">感謝你完成評估！</h2>
             <p className="text-gray-300 mb-8 text-lg leading-relaxed">
-              你的專屬 AI 轉型建議報告已經寄送到 <span className="text-tertiary font-medium">{form.email}</span>。
+              你的專屬 AI 轉型建議報告已經寄送到 <span className="text-gold font-medium">{form.email}</span>。
               <br />
               請檢查收件匣（可能會在垃圾郵件匣）。
             </p>
@@ -392,28 +392,28 @@ export default function AIAssessmentLanding() {
               <h3 className="font-bold text-lg mb-4">📧 接下來你會收到：</h3>
               <div className="space-y-4">
                 <div className="flex gap-4">
-                  <span className="text-tertiary font-bold">Day 0</span>
+                  <span className="text-gold font-bold">Day 0</span>
                   <div>
                     <div className="font-medium">歡迎信 + 你的評估報告</div>
                     <div className="text-sm text-gray-400">根據你的回答客製化的 AI 轉型建議</div>
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <span className="text-tertiary font-bold">Day 3</span>
+                  <span className="text-gold font-bold">Day 3</span>
                   <div>
                     <div className="font-medium">同行夥伴怎麼做？</div>
                     <div className="text-sm text-gray-400">真實案例分享，讓你看到可能性</div>
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <span className="text-tertiary font-bold">Day 5</span>
+                  <span className="text-gold font-bold">Day 5</span>
                   <div>
                     <div className="font-medium">AI 轉型 3 大地雷</div>
                     <div className="text-sm text-gray-400">避開最常見的錯誤，少走冤枉路</div>
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <span className="text-tertiary font-bold">Day 7</span>
+                  <span className="text-gold font-bold">Day 7</span>
                   <div>
                     <div className="font-medium">選擇 AI 顧問前必問 5 個問題</div>
                     <div className="text-sm text-gray-400">幫你找到最適合的合作夥伴</div>

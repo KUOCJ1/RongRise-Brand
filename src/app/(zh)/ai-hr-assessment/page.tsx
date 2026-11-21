@@ -213,7 +213,7 @@ export default function HrAiMaturityPage() {
             </div>
             <button
               onClick={() => setStep("quiz")}
-              className="bg-tertiary hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+              className="bg-gold hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
             >
               開始評估 →
             </button>
@@ -267,7 +267,7 @@ export default function HrAiMaturityPage() {
                           value={opt.value}
                           checked={answers[q.id] === opt.value}
                           onChange={() => setAnswer(q.id, opt.value)}
-                          className="accent-tertiary"
+                          className="accent-gold"
                         />
                         <span className="text-white/80 text-sm">{opt.label}</span>
                       </label>
@@ -290,7 +290,7 @@ export default function HrAiMaturityPage() {
                 <button
                   onClick={handleSubmit}
                   disabled={!allAnswered || submitting}
-                  className="bg-tertiary hover:bg-[#F5A623] disabled:bg-gray-500 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-gold hover:bg-[#F5A623] disabled:bg-gray-500 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   {submitting ? "計算中..." : "看結果"}
                 </button>
@@ -316,7 +316,7 @@ export default function HrAiMaturityPage() {
               </div>
               <h1 className="text-3xl md:text-4xl font-black mb-4">你的 HR AI 化成熟度結果</h1>
               <div className="flex items-center justify-center gap-3">
-                <span className="text-5xl font-black text-tertiary">{result.overallScore.toFixed(1)}</span>
+                <span className="text-5xl font-black text-gold">{result.overallScore.toFixed(1)}</span>
                 <span className="text-white/50 text-lg">/ 5.0</span>
                 <LevelBadge level={result.overallLevel} />
               </div>
@@ -377,7 +377,7 @@ export default function HrAiMaturityPage() {
             </div>
 
             {/* Lead capture */}
-            <div className="bg-white/5 border border-tertiary/30 rounded-xl p-6 mb-8">
+            <div className="bg-white/5 border border-gold/30 rounded-xl p-6 mb-8">
               <h3 className="text-white font-bold text-lg mb-2">📩 收到完整報告</h3>
               <p className="text-white/50 text-sm mb-4">填寫 Email，我們將完整評估與建議寄給你（選填）</p>
               <div className="flex flex-col md:flex-row gap-3">
@@ -412,7 +412,7 @@ export default function HrAiMaturityPage() {
                 <a href="/ai-roadmap" className="bg-secondary hover:bg-secondary/80 text-white font-bold px-8 py-3.5 rounded-full transition-colors">
                   🗺️ 規劃 AI 轉型路線圖
                 </a>
-                <a href="/about/#contact" className="bg-tertiary hover:bg-[#F5A623] text-white font-bold px-8 py-3.5 rounded-full transition-colors">
+                <a href="/about/#contact" className="bg-gold hover:bg-[#F5A623] text-white font-bold px-8 py-3.5 rounded-full transition-colors">
                   📧 預約免費諮詢
                 </a>
               </div>

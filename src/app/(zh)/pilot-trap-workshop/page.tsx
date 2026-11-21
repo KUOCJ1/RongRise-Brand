@@ -164,7 +164,7 @@ export default function PilotTrapWorkshopPage() {
               一張雷達圖，
               <br />
               看穿整支團隊的
-              <span className="text-tertiary"> AI 治理體質</span>
+              <span className="text-gold"> AI 治理體質</span>
             </h1>
             <p className="text-lg text-[#A0C4E8] max-w-2xl mx-auto mb-8 leading-relaxed">
               工作坊現場，每位成員先完成 25 題個人量表，把結果頁的「分數碼」複製給你。
@@ -185,7 +185,7 @@ export default function PilotTrapWorkshopPage() {
             </div>
             <button
               onClick={() => setStep("input")}
-              className="bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
+              className="bg-gold hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-gold/20"
             >
               開始彙總 →
             </button>
@@ -243,7 +243,7 @@ export default function PilotTrapWorkshopPage() {
                   <button
                     onClick={() => validCount > 0 && setStep("result")}
                     disabled={validCount === 0}
-                    className="bg-tertiary hover:bg-[#F0A040] text-primary font-bold px-8 py-3 rounded-full transition-colors shadow-lg shadow-tertiary/20 disabled:opacity-40"
+                    className="bg-gold hover:bg-[#F0A040] text-primary font-bold px-8 py-3 rounded-full transition-colors shadow-lg shadow-gold/20 disabled:opacity-40"
                   >
                     產生團隊報告 →
                   </button>
@@ -266,7 +266,7 @@ export default function PilotTrapWorkshopPage() {
               </button>
               <button
                 onClick={() => window.print()}
-                className="bg-tertiary hover:bg-[#F0A040] text-primary font-bold px-6 py-2.5 rounded-full transition-colors shadow-lg shadow-tertiary/20 text-sm"
+                className="bg-gold hover:bg-[#F0A040] text-primary font-bold px-6 py-2.5 rounded-full transition-colors shadow-lg shadow-gold/20 text-sm"
               >
                 🖨️ 列印 / 存成 PDF 報告
               </button>

@@ -71,7 +71,7 @@ export default function Post() {
                 <p className="text-text-secondary text-xs leading-relaxed">每週一分析過去 7 天的知識掃描，抽出跨文趨勢。</p>
               </div>
               <div className="bg-[#FFF8F0] border border-[#f0e0cc] rounded-xl p-4">
-                <p className="font-bold text-tertiary text-sm mb-1">✍️ 小作（作家）</p>
+                <p className="font-bold text-gold text-sm mb-1">✍️ 小作（作家）</p>
                 <p className="text-text-secondary text-xs leading-relaxed">每週二、四，寫 1500-2500 字 CJ哥風格文章，然後部署。</p>
               </div>
               <div className="bg-[#F0FBF8] border border-[#d0ece5] rounded-xl p-4">

@@ -76,7 +76,7 @@ export default function SurveyPage() {
               href="https://calendly.com/cjkuo-rongrise"
               target="_blank"
               rel="noopener"
-              className="inline-block px-6 py-2.5 bg-tertiary rounded-full text-sm font-bold hover:brightness-110 transition-all"
+              className="inline-block px-6 py-2.5 bg-gold rounded-full text-sm font-bold hover:brightness-110 transition-all"
             >
               立即預約
             </a>
@@ -297,7 +297,7 @@ export default function SurveyPage() {
                 href="https://calendly.com/cjkuo-rongrise"
                 target="_blank"
                 rel="noopener"
-                className="inline-block px-6 py-2.5 bg-tertiary rounded-full text-sm font-bold hover:brightness-110 transition-all"
+                className="inline-block px-6 py-2.5 bg-gold rounded-full text-sm font-bold hover:brightness-110 transition-all"
               >
                 立即預約
               </a>

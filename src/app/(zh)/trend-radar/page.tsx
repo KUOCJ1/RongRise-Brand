@@ -129,7 +129,7 @@ export default function TrendRadarPage() {
           <p className="text-sm text-[#A0C4E8] mb-6">{error}</p>
           <button
             onClick={() => window.location.reload()}
-            className="bg-tertiary hover:bg-[#F0A040] text-primary font-bold px-6 py-3 rounded-full transition-colors"
+            className="bg-gold hover:bg-[#F0A040] text-primary font-bold px-6 py-3 rounded-full transition-colors"
           >
             重新載入
           </button>
@@ -152,7 +152,7 @@ export default function TrendRadarPage() {
             <span className="text-sm text-accent font-semibold">📡 每週更新 · 12+ 來源監測</span>
           </div>
           <h1 className="text-3xl md:text-5xl font-black leading-tight mb-5">
-            AI 轉型<span className="text-tertiary">趨勢雷達</span>
+            AI 轉型<span className="text-gold">趨勢雷達</span>
           </h1>
           <p className="text-lg md:text-xl text-[#A0C4E8] max-w-2xl mx-auto leading-relaxed">
             榕耀管顧每天掃描全球 12+ 個產業來源，為你彙整
@@ -167,7 +167,7 @@ export default function TrendRadarPage() {
               { v: `${data.window.from.slice(5)} ~ ${data.window.to.slice(5)}`, l: "觀察窗口" },
             ].map((s) => (
               <div key={s.l} className="bg-white/5 border border-white/10 rounded-xl p-4">
-                <div className="text-xl md:text-2xl font-black text-tertiary mb-1">{s.v}</div>
+                <div className="text-xl md:text-2xl font-black text-gold mb-1">{s.v}</div>
                 <div className="text-xs text-[#A0C4E8]">{s.l}</div>
               </div>
             ))}
@@ -207,7 +207,7 @@ export default function TrendRadarPage() {
                         style={{ width: `${pct}%` }}
                       />
                     </div>
-                    <span className="text-sm font-bold text-tertiary w-14 text-right">×{t.count}</span>
+                    <span className="text-sm font-bold text-gold w-14 text-right">×{t.count}</span>
                   </div>
                 </div>
               );
@@ -225,7 +225,7 @@ export default function TrendRadarPage() {
                 onClick={() => setActiveCat(c)}
                 className={`text-sm px-4 py-2 rounded-full border font-semibold transition-colors ${
                   activeCat === c
-                    ? "bg-tertiary border-tertiary text-primary"
+                    ? "bg-gold border-gold text-primary"
                     : "bg-white/5 border-white/10 text-[#A0C4E8] hover:border-secondary"
                 }`}
               >
@@ -308,7 +308,7 @@ export default function TrendRadarPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/newsletter"
-              className="inline-block bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
+              className="inline-block bg-gold hover:bg-[#F0A040] text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-gold/20"
             >
               訂閱電子報 →
             </a>

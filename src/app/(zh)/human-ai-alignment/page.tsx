@@ -321,7 +321,7 @@ export default function HumanAIAlignmentPage() {
                 setStep("quiz");
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
-              className="bg-tertiary hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+              className="bg-gold hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
             >
               開始自評 →
             </button>
@@ -437,7 +437,7 @@ export default function HumanAIAlignmentPage() {
                 <button
                   onClick={showResult}
                   disabled={!allAnswered}
-                  className="bg-tertiary hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors shadow-lg"
+                  className="bg-gold hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors shadow-lg"
                 >
                   看結果 →
                 </button>
@@ -519,7 +519,7 @@ export default function HumanAIAlignmentPage() {
                     key={m.title}
                     className={`rounded-2xl p-6 border ${
                       m.severity === "high"
-                        ? "bg-tertiary/10 border-tertiary/40"
+                        ? "bg-gold/10 border-gold/40"
                         : "bg-white/5 border-white/10"
                     }`}
                   >
@@ -527,13 +527,13 @@ export default function HumanAIAlignmentPage() {
                       <span
                         className={`text-xs font-bold px-2 py-0.5 rounded-full ${
                           m.severity === "high"
-                            ? "bg-tertiary/20 text-tertiary"
+                            ? "bg-gold/20 text-gold"
                             : "bg-white/10 text-white/50"
                         }`}
                       >
                         {m.severity === "high" ? "高優先" : "留意"}
                       </span>
-                      <h3 className={`font-bold ${m.severity === "high" ? "text-tertiary" : "text-white"}`}>
+                      <h3 className={`font-bold ${m.severity === "high" ? "text-gold" : "text-white"}`}>
                         {m.title}
                       </h3>
                     </div>
@@ -568,7 +568,7 @@ export default function HumanAIAlignmentPage() {
                     <span
                       className={`shrink-0 text-xs font-bold px-2 py-1 rounded-full h-fit ${
                         rec.priority === "high"
-                          ? "bg-tertiary/20 text-tertiary"
+                          ? "bg-gold/20 text-gold"
                           : rec.priority === "medium"
                           ? "bg-yellow-500/20 text-yellow-300"
                           : "bg-white/10 text-white/45"
@@ -680,7 +680,7 @@ export default function HumanAIAlignmentPage() {
                 <button
                   type="submit"
                   disabled={!emailIsValid}
-                  className="bg-tertiary hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-gold hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   訂閱電子報 →
                 </button>
@@ -719,7 +719,7 @@ export default function HumanAIAlignmentPage() {
                 </a>
                 <a
                   href="/about/#contact"
-                  className="text-tertiary hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
+                  className="text-gold hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
                 >
                   預約免費諮詢 →
                 </a>

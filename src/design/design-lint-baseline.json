@@ -1,27 +1,11 @@
 {
   "summary": {
     "files_scanned": 168,
-    "hex_unique": 84,
-    "hex_total": 1423,
+    "hex_unique": 83,
+    "hex_total": 618,
     "inline_style_total": 117,
     "arb_font_size_total": 99,
     "top_hex": [
-      [
-        "#2ec4b6",
-        354
-      ],
-      [
-        "#1a6db5",
-        206
-      ],
-      [
-        "#e8912a",
-        206
-      ],
-      [
-        "#0d2b4e",
-        139
-      ],
       [
         "#a0c4e8",
         95
@@ -29,6 +13,14 @@
       [
         "#5a7a9e",
         52
+      ],
+      [
+        "#2ec4b6",
+        46
+      ],
+      [
+        "#e8912a",
+        39
       ],
       [
         "#f5a623",
@@ -45,6 +37,14 @@
       [
         "#4a4540",
         25
+      ],
+      [
+        "#e4ddd0",
+        22
+      ],
+      [
+        "#f0a040",
+        21
       ]
     ]
   },
@@ -52,50 +52,45 @@
     "R1_硬寫色碼": {
       "src/lib/pilot-trap-scan.ts": 5,
       "src/components/CaseNotesPageClient.tsx": 6,
-      "src/components/QuickChat.tsx": 6,
+      "src/components/QuickChat.tsx": 1,
       "src/components/AIFaqClient.tsx": 6,
-      "src/components/Newsletter.tsx": 8,
+      "src/components/Newsletter.tsx": 7,
       "src/app/api/newsletter/subscribe/route.ts": 12,
-      "src/app/(en)/en/esg-assessment/page.tsx": 3,
       "src/app/styles/print.css": 8,
-      "src/app/styles/components.css": 9,
-      "src/app/(zh)/page.tsx": 17,
-      "src/app/(zh)/tools/page.tsx": 7,
-      "src/app/(zh)/survey/page.tsx": 42,
-      "src/app/(zh)/pilot-trap-scan/page.tsx": 83,
-      "src/app/(zh)/ai-investment-split/page.tsx": 70,
-      "src/app/(zh)/pilot-trap-workshop/page.tsx": 75,
-      "src/app/(zh)/trend-radar/page.tsx": 66,
-      "src/app/(zh)/ai-roadmap/page.tsx": 115,
-      "src/app/(zh)/ai-assessment/page.tsx": 56,
-      "src/app/(zh)/esg-assessment/page.tsx": 3,
-      "src/app/(zh)/ai-skill-path/page.tsx": 26,
-      "src/app/(zh)/amoeba-scan/page.tsx": 95,
-      "src/app/(zh)/content-ops/page.tsx": 65,
-      "src/app/(zh)/ai-governance-scan/page.tsx": 43,
-      "src/app/(zh)/ops/_ui.tsx": 14,
-      "src/app/(zh)/ops/page.tsx": 79,
-      "src/app/(zh)/ops/schedule/page.tsx": 15,
-      "src/app/(zh)/ops/content/page.tsx": 20,
-      "src/app/(zh)/ops/attention/page.tsx": 12,
-      "src/app/(zh)/ops/system/page.tsx": 17,
-      "src/app/(zh)/ai-governance/page.tsx": 22,
-      "src/app/(zh)/newsletter/page.tsx": 3,
-      "src/app/(zh)/course-fit/page.tsx": 52,
-      "src/app/(zh)/ai-authorization-level/page.tsx": 43,
-      "src/app/(zh)/human-ai-alignment/page.tsx": 56,
-      "src/app/(zh)/ai-offline-experiment/page.tsx": 33,
-      "src/app/(zh)/knowledge/xiaoha-weekly-vol2/page.tsx": 1,
-      "src/app/(zh)/knowledge/xiaoha-weekly-vol1/page.tsx": 29,
-      "src/app/(zh)/knowledge/human-absent-13-days/page.tsx": 6,
-      "src/app/(zh)/knowledge/xiaoha-weekly-vol3/page.tsx": 1,
+      "src/app/styles/components.css": 3,
+      "src/app/(zh)/page.tsx": 16,
+      "src/app/(zh)/tools/page.tsx": 3,
+      "src/app/(zh)/pilot-trap-scan/page.tsx": 40,
+      "src/app/(zh)/ai-investment-split/page.tsx": 29,
+      "src/app/(zh)/pilot-trap-workshop/page.tsx": 41,
+      "src/app/(zh)/trend-radar/page.tsx": 29,
+      "src/app/(zh)/ai-roadmap/page.tsx": 35,
+      "src/app/(zh)/ai-assessment/page.tsx": 3,
+      "src/app/(zh)/ai-skill-path/page.tsx": 3,
+      "src/app/(zh)/amoeba-scan/page.tsx": 42,
+      "src/app/(zh)/content-ops/page.tsx": 32,
+      "src/app/(zh)/ai-governance-scan/page.tsx": 13,
+      "src/app/(zh)/ops/_ui.tsx": 11,
+      "src/app/(zh)/ops/page.tsx": 56,
+      "src/app/(zh)/ops/schedule/page.tsx": 12,
+      "src/app/(zh)/ops/content/page.tsx": 14,
+      "src/app/(zh)/ops/attention/page.tsx": 11,
+      "src/app/(zh)/ops/system/page.tsx": 15,
+      "src/app/(zh)/ai-governance/page.tsx": 6,
+      "src/app/(zh)/newsletter/page.tsx": 1,
+      "src/app/(zh)/course-fit/page.tsx": 6,
+      "src/app/(zh)/ai-authorization-level/page.tsx": 7,
+      "src/app/(zh)/human-ai-alignment/page.tsx": 13,
+      "src/app/(zh)/ai-offline-experiment/page.tsx": 8,
+      "src/app/(zh)/knowledge/xiaoha-weekly-vol1/page.tsx": 23,
+      "src/app/(zh)/knowledge/human-absent-13-days/page.tsx": 5,
       "src/app/(zh)/knowledge/camino-operation-backstage/page.tsx": 22,
       "src/app/(zh)/knowledge/camino-operation-poc/page.tsx": 23,
       "src/app/(zh)/knowledge/[slug]/page.tsx": 2,
-      "src/app/(zh)/roi-calculator/page.tsx": 69,
-      "src/app/(zh)/ai-hr-assessment/page.tsx": 32,
-      "src/app/(zh)/whitepaper/second-brain/page.tsx": 4,
-      "src/app/(zh)/ai-employee-diagnosis/page.tsx": 42
+      "src/app/(zh)/roi-calculator/page.tsx": 26,
+      "src/app/(zh)/ai-hr-assessment/page.tsx": 8,
+      "src/app/(zh)/whitepaper/second-brain/page.tsx": 2,
+      "src/app/(zh)/ai-employee-diagnosis/page.tsx": 13
     },
     "R2_任意字級": {
       "src/components/CaseNotesPageClient.tsx": 1,

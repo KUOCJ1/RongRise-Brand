@@ -275,7 +275,7 @@ export default function AIGovernanceScanPage() {
             </div>
             <button
               onClick={() => { setStep("quiz"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
-              className="bg-tertiary hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+              className="bg-gold hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
             >
               開始自評 →
             </button>
@@ -336,7 +336,7 @@ export default function AIGovernanceScanPage() {
                           value={opt.value}
                           checked={answers[q.id] === opt.value}
                           onChange={() => setAnswer(q.id, opt.value)}
-                          className="accent-tertiary"
+                          className="accent-gold"
                         />
                         <span className="text-white/80 text-sm">{opt.label}</span>
                       </label>
@@ -359,7 +359,7 @@ export default function AIGovernanceScanPage() {
                 <button
                   onClick={() => handleSubmit(true)}
                   disabled={!allAnswered}
-                  className="bg-tertiary hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors shadow-lg"
+                  className="bg-gold hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors shadow-lg"
                 >
                   看結果 →
                 </button>
@@ -515,7 +515,7 @@ export default function AIGovernanceScanPage() {
                 <button
                   onClick={() => handleSubmit(false)}
                   disabled={!email}
-                  className="bg-tertiary hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-gold hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   訂閱並取得指南 →
                 </button>
@@ -560,7 +560,7 @@ export default function AIGovernanceScanPage() {
                 </a>
                 <a
                   href="/about/#contact"
-                  className="text-tertiary hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
+                  className="text-gold hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
                 >
                   預約免費諮詢 →
                 </a>

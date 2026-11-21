@@ -78,7 +78,7 @@ export default function OpsContentPage() {
                 <tr key={a.slug} className="border-b border-[#F0EAE0] last:border-0">
                   <td className="whitespace-nowrap py-2.5 pr-4 tabular-nums text-xs text-[#6B655D]">{a.date}</td>
                   <td className="py-2.5 pr-4">
-                    <a href={a.url} className="text-primary underline decoration-[#D9D2C6] underline-offset-4 hover:decoration-tertiary">
+                    <a href={a.url} className="text-primary underline decoration-[#D9D2C6] underline-offset-4 hover:decoration-gold">
                       {a.title}
                     </a>
                   </td>
@@ -95,7 +95,7 @@ export default function OpsContentPage() {
           {c.videoList.map((v) => (
             <li key={v.url + v.title} className="flex flex-wrap items-baseline gap-x-3">
               <span className="text-xs tabular-nums text-[#6B655D]">{v.date}</span>
-              <a href={v.url} className="text-primary underline decoration-[#D9D2C6] underline-offset-4 hover:decoration-tertiary">
+              <a href={v.url} className="text-primary underline decoration-[#D9D2C6] underline-offset-4 hover:decoration-gold">
                 {v.title}
               </a>
             </li>

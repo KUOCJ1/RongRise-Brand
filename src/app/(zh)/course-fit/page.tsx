@@ -133,7 +133,7 @@ export default function CourseFitPage() {
             <h1 className="text-3xl md:text-5xl font-black leading-tight mb-6">
               哪一班適合你？
               <br />
-              <span className="text-tertiary">五分鐘</span>測出來
+              <span className="text-gold">五分鐘</span>測出來
             </h1>
             <p className="text-white/70 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
               我們開了兩班課：初階班（11/14）帶你完成第一個 AI 員工；進階班（12/5）帶你設計多 AI 員工協作流程。
@@ -153,7 +153,7 @@ export default function CourseFitPage() {
             </div>
             <button
               onClick={() => setStep("quiz")}
-              className="bg-tertiary hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+              className="bg-gold hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
             >
               開始自評 →
             </button>
@@ -287,7 +287,7 @@ export default function CourseFitPage() {
             <button
               onClick={handleSubmit}
               disabled={submitting}
-              className="w-full bg-tertiary hover:bg-[#F5A623] disabled:opacity-50 text-white font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg"
+              className="w-full bg-gold hover:bg-[#F5A623] disabled:opacity-50 text-white font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg"
             >
               {submitting ? "計算中…" : "看推薦結果 →"}
             </button>
@@ -304,7 +304,7 @@ export default function CourseFitPage() {
               <h1 className="text-3xl md:text-4xl font-black mb-4">
                 建議你上：
                 <br className="md:hidden" />
-                <span className="text-tertiary">{result.match.title}</span>
+                <span className="text-gold">{result.match.title}</span>
               </h1>
               <div className="flex items-center justify-center gap-3 mb-4">
                 <span className="text-4xl font-black text-accent">{result.readinessScore}</span>
@@ -321,7 +321,7 @@ export default function CourseFitPage() {
               <ul className="space-y-2">
                 {result.match.previewList.map((p, i) => (
                   <li key={i} className="text-white/75 text-sm leading-relaxed flex gap-2">
-                    <span className="text-tertiary shrink-0">{i + 1}.</span>
+                    <span className="text-gold shrink-0">{i + 1}.</span>
                     <span>{p}</span>
                   </li>
                 ))}
@@ -379,7 +379,7 @@ export default function CourseFitPage() {
                   </p>
                   <a
                     href={result.cta.primary}
-                    className="inline-block bg-tertiary hover:bg-[#F5A623] text-white font-bold px-8 py-3.5 rounded-full transition-colors"
+                    className="inline-block bg-gold hover:bg-[#F5A623] text-white font-bold px-8 py-3.5 rounded-full transition-colors"
                   >
                     預約免費諮詢 →
                   </a>
@@ -392,7 +392,7 @@ export default function CourseFitPage() {
                   <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                     <a
                       href={result.cta.primary}
-                      className="inline-block bg-tertiary hover:bg-[#F5A623] text-white font-bold px-8 py-3.5 rounded-full transition-colors"
+                      className="inline-block bg-gold hover:bg-[#F5A623] text-white font-bold px-8 py-3.5 rounded-full transition-colors"
                     >
                       查看課程詳情 →
                     </a>

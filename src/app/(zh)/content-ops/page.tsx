@@ -125,7 +125,7 @@ export default function ContentOpsPage() {
           <p className="text-sm text-[#A0C4E8] mb-6">{error}</p>
           <button
             onClick={() => window.location.reload()}
-            className="bg-tertiary hover:bg-[#F0A040] text-primary font-bold px-6 py-3 rounded-full transition-colors"
+            className="bg-gold hover:bg-[#F0A040] text-primary font-bold px-6 py-3 rounded-full transition-colors"
           >
             重新載入
           </button>
@@ -167,11 +167,11 @@ export default function ContentOpsPage() {
             <span className="text-sm text-accent font-semibold">🦞 每日自動更新 · 內容引擎戰情室</span>
           </div>
           <h1 className="text-3xl md:text-5xl font-black leading-tight mb-5">
-            一台<span className="text-tertiary">每天自己運作</span>的內容引擎
+            一台<span className="text-gold">每天自己運作</span>的內容引擎
           </h1>
           <p className="text-lg md:text-xl text-[#A0C4E8] max-w-2xl mx-auto leading-relaxed">
             「{data.engine.name}」已連續運作{" "}
-            <strong className="text-tertiary">{data.engine.daysRunning} 天</strong>
+            <strong className="text-gold">{data.engine.daysRunning} 天</strong>
             ，自動完成產業掃描、趨勢分析、內容產出與數據回饋——這是它的公開戰情室。
           </p>
           {/* 數據列 */}
@@ -182,7 +182,7 @@ export default function ContentOpsPage() {
               { v: fmt(s.weekArticles), l: "本週監測文章" },
             ].map((st) => (
               <div key={st.l} className="bg-white/5 border border-white/10 rounded-xl p-4">
-                <div className="text-xl md:text-2xl font-black text-tertiary mb-1">{st.v}</div>
+                <div className="text-xl md:text-2xl font-black text-gold mb-1">{st.v}</div>
                 <div className="text-xs text-[#A0C4E8]">{st.l}</div>
               </div>
             ))}
@@ -212,7 +212,7 @@ export default function ContentOpsPage() {
             <div className="flex items-end justify-between gap-2 md:gap-4 h-44">
               {data.activity.map((a) => (
                 <div key={a.date} className="flex-1 flex flex-col items-center justify-end h-full gap-2">
-                  <span className="text-xs font-bold text-tertiary">{a.count}</span>
+                  <span className="text-xs font-bold text-gold">{a.count}</span>
                   <div
                     className="w-full max-w-[52px] rounded-t-lg bg-gradient-to-t from-secondary to-accent"
                     style={{ height: `${Math.max(8, Math.round((a.count / maxCount) * 100))}%` }}
@@ -241,7 +241,7 @@ export default function ContentOpsPage() {
                     <span className="text-xs font-black text-[#5A7A9E] w-5 text-right">{i + 1}</span>
                     <span className="text-lg">{t.icon}</span>
                     <span className="font-bold flex-1">{t.keyword}</span>
-                    <span className="text-sm font-bold text-tertiary">×{t.count}</span>
+                    <span className="text-sm font-bold text-gold">×{t.count}</span>
                     <span className={`text-xs px-2.5 py-1 rounded-full border font-semibold whitespace-nowrap ${mom.cls}`}>
                       {mom.arrow} {mom.label}
                     </span>
@@ -331,7 +331,7 @@ export default function ContentOpsPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/newsletter"
-              className="inline-block bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
+              className="inline-block bg-gold hover:bg-[#F0A040] text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-gold/20"
             >
               訂閱電子報 →
             </a>

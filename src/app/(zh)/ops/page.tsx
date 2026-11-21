@@ -90,7 +90,7 @@ function KpiCard({ item }: { item: Headline }) {
   return (
     <Link
       href={href ?? "/ops"}
-      className="group block rounded-2xl border border-[#E4DDD0] bg-white p-6 transition hover:border-tertiary hover:shadow-sm"
+      className="group block rounded-2xl border border-[#E4DDD0] bg-white p-6 transition hover:border-gold hover:shadow-sm"
     >
       <div className="text-sm font-medium tracking-wide text-[#6B655D]">{item.label}</div>
       <div className="mt-3 flex items-baseline gap-2">
@@ -102,7 +102,7 @@ function KpiCard({ item }: { item: Headline }) {
       </div>
       <div className="mt-2 flex items-center justify-between text-xs leading-relaxed text-[#6B655D]">
         <span>{item.note}</span>
-        <span className="text-[#C9BFAE] transition group-hover:text-tertiary">→</span>
+        <span className="text-[#C9BFAE] transition group-hover:text-gold">→</span>
       </div>
     </Link>
   );
@@ -131,7 +131,7 @@ function SectionTitle({ no, title, sub, href }: { no: string; title: string; sub
       <p className="max-w-md text-right text-xs leading-relaxed text-[#6B655D]">
         {sub}
         {href && (
-          <Link href={href} className="ml-2 whitespace-nowrap text-[#A9611A] underline decoration-[#E4DDD0] underline-offset-4 hover:decoration-tertiary">
+          <Link href={href} className="ml-2 whitespace-nowrap text-[#A9611A] underline decoration-[#E4DDD0] underline-offset-4 hover:decoration-gold">
             查看明細 →
           </Link>
         )}
@@ -185,7 +185,7 @@ export default function OpsPage() {
               <Link
                 key={href}
                 href={href}
-                className="rounded-full border border-[#D9D2C6] bg-white px-4 py-2 text-primary transition hover:border-tertiary hover:text-[#A9611A]"
+                className="rounded-full border border-[#D9D2C6] bg-white px-4 py-2 text-primary transition hover:border-gold hover:text-[#A9611A]"
               >
                 {label} →
               </Link>
@@ -244,7 +244,7 @@ export default function OpsPage() {
 
           <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-3">
             {c.latest?.article && (
-              <a href={c.latest.article.url} className="rounded-xl border border-[#E4DDD0] bg-white p-4 transition hover:border-tertiary">
+              <a href={c.latest.article.url} className="rounded-xl border border-[#E4DDD0] bg-white p-4 transition hover:border-gold">
                 <div className="text-[11px] text-[#6B655D]">最新文章 · {c.latest.article.date}</div>
                 <div className="mt-1 line-clamp-2 text-sm font-medium text-primary">{c.latest.article.title}</div>
               </a>
@@ -256,7 +256,7 @@ export default function OpsPage() {
               </div>
             )}
             {c.latest?.video && (
-              <a href={c.latest.video.url} className="rounded-xl border border-[#E4DDD0] bg-white p-4 transition hover:border-tertiary">
+              <a href={c.latest.video.url} className="rounded-xl border border-[#E4DDD0] bg-white p-4 transition hover:border-gold">
                 <div className="text-[11px] text-[#6B655D]">最新影片 · {c.latest.video.date}</div>
                 <div className="mt-1 line-clamp-2 text-sm font-medium text-primary">{c.latest.video.title}</div>
               </a>
@@ -375,7 +375,7 @@ export default function OpsPage() {
             </div>
             <div className="relative flex h-[140px] items-end gap-1.5">
               <div
-                className="pointer-events-none absolute inset-x-0 border-t-2 border-dashed border-tertiary"
+                className="pointer-events-none absolute inset-x-0 border-t-2 border-dashed border-gold"
                 style={{ bottom: `${(30 / dailyMax) * 140}px` }}
               />
               {m.daily.map((d) => (

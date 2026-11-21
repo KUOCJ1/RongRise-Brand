@@ -154,7 +154,7 @@ export default function AiRoadmapPage() {
             <h1 className="text-3xl md:text-5xl font-black leading-tight mb-6">
               知道該導入 AI，
               <br />
-              但<span className="text-tertiary">不知道從哪裡開始？</span>
+              但<span className="text-gold">不知道從哪裡開始？</span>
             </h1>
             <p className="text-lg md:text-xl text-[#A0C4E8] max-w-2xl mx-auto mb-8 leading-relaxed">
               填四個問題——規模、想導入的範圍、目前進度、預算心態——立即生成你專屬的
@@ -175,7 +175,7 @@ export default function AiRoadmapPage() {
             </div>
             <button
               onClick={() => setStep("form")}
-              className="bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
+              className="bg-gold hover:bg-[#F0A040] text-primary font-bold text-lg px-10 py-4 rounded-full transition-colors shadow-lg shadow-gold/20"
             >
               生成我的路線圖 →
             </button>
@@ -356,7 +356,7 @@ export default function AiRoadmapPage() {
             <button
               onClick={handleSubmit}
               disabled={submitting}
-              className="w-full bg-tertiary hover:bg-[#F0A040] disabled:opacity-50 text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
+              className="w-full bg-gold hover:bg-[#F0A040] disabled:opacity-50 text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-gold/20"
             >
               {submitting ? "生成中…" : "生成我的 12 個月路線圖 →"}
             </button>
@@ -397,7 +397,7 @@ export default function AiRoadmapPage() {
               {result.phases.map((p, idx) => (
                 <div key={p.id} className="bg-white/5 border border-white/10 rounded-xl overflow-hidden">
                   <div className="px-5 py-4 border-b border-white/10 flex flex-wrap items-center gap-3">
-                    <span className="inline-block bg-tertiary text-primary text-xs font-black px-3 py-1 rounded-full">
+                    <span className="inline-block bg-gold text-primary text-xs font-black px-3 py-1 rounded-full">
                       PHASE {idx + 1}
                     </span>
                     <span className="font-bold text-accent">{p.months}</span>
@@ -460,7 +460,7 @@ export default function AiRoadmapPage() {
                       </div>
                     </div>
                     {p.warning && (
-                      <div className="mt-4 bg-tertiary/10 border border-tertiary/30 rounded-lg px-4 py-3 text-sm text-[#F5C77E]">
+                      <div className="mt-4 bg-gold/10 border border-gold/30 rounded-lg px-4 py-3 text-sm text-[#F5C77E]">
                         ⚠️ {p.warning}
                       </div>
                     )}
@@ -475,7 +475,7 @@ export default function AiRoadmapPage() {
                 💰 {result.investment.label}
                 <span className="ml-2 text-sm font-normal text-[#A0C4E8]">
                   總預算級距
-                  <span className="text-tertiary font-bold text-lg ml-1">{result.investment.total}</span>
+                  <span className="text-gold font-bold text-lg ml-1">{result.investment.total}</span>
                   （新台幣／年）
                 </span>
               </h3>
@@ -492,7 +492,7 @@ export default function AiRoadmapPage() {
                     <div className="h-2.5 bg-white/10 rounded-full overflow-hidden">
                       <div
                         className={`h-full rounded-full ${
-                          s.name === "人" ? "bg-tertiary" : s.name === "流程" ? "bg-accent" : "bg-secondary"
+                          s.name === "人" ? "bg-gold" : s.name === "流程" ? "bg-accent" : "bg-secondary"
                         }`}
                         style={{ width: `${s.pct}%` }}
                       />
@@ -509,7 +509,7 @@ export default function AiRoadmapPage() {
               <ul className="space-y-2">
                 {result.watchouts.map((w, i) => (
                   <li key={i} className="flex gap-3 text-sm text-[#C9DCEF] leading-relaxed">
-                    <span className="text-tertiary shrink-0">▸</span>
+                    <span className="text-gold shrink-0">▸</span>
                     <span>{w}</span>
                   </li>
                 ))}
@@ -542,7 +542,7 @@ export default function AiRoadmapPage() {
                 </a>
                 <a
                   href="/about/#contact"
-                  className="inline-block bg-tertiary hover:bg-[#F0A040] text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-tertiary/20"
+                  className="inline-block bg-gold hover:bg-[#F0A040] text-primary font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg shadow-gold/20"
                 >
                   預約免費諮詢 →
                 </a>

@@ -228,7 +228,7 @@ export default function AIAuthorizationLevelPage() {
                 setStep("quiz");
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
-              className="bg-tertiary hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+              className="bg-gold hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
             >
               開始測驗 →
             </button>
@@ -333,7 +333,7 @@ export default function AIAuthorizationLevelPage() {
               <button
                 onClick={showResult}
                 disabled={!allAnswered}
-                className="bg-tertiary hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors shadow-lg"
+                className="bg-gold hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors shadow-lg"
               >
                 看結果 →
               </button>
@@ -391,8 +391,8 @@ export default function AIAuthorizationLevelPage() {
 
             {/* gaps */}
             {result.gaps.length > 0 && (
-              <div className="bg-tertiary/10 border border-tertiary/40 rounded-2xl p-6 mb-8">
-                <h2 className="text-lg font-bold text-tertiary mb-4">⚠️ 缺口提醒</h2>
+              <div className="bg-gold/10 border border-gold/40 rounded-2xl p-6 mb-8">
+                <h2 className="text-lg font-bold text-gold mb-4">⚠️ 缺口提醒</h2>
                 <ul className="space-y-3">
                   {result.gaps.map((g) => (
                     <li key={g.key} className="text-white/80 text-sm leading-relaxed">
@@ -519,7 +519,7 @@ export default function AIAuthorizationLevelPage() {
                 <button
                   type="submit"
                   disabled={!emailIsValid || leadSubmitting}
-                  className="bg-tertiary hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-gold hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   {leadSubmitting ? "送出中..." : "訂閱電子報 →"}
                 </button>
@@ -560,7 +560,7 @@ export default function AIAuthorizationLevelPage() {
                 </a>
                 <a
                   href="/about/#contact"
-                  className="text-tertiary hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
+                  className="text-gold hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
                 >
                   預約免費諮詢 →
                 </a>

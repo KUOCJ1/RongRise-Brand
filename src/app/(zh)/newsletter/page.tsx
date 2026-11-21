@@ -43,7 +43,7 @@ function Highlight({ text, tokens }: { text: string; tokens: string[] }) {
     <>
       {segments.map((seg, i) =>
         seg.hit ? (
-          <mark key={i} className="bg-tertiary/25 text-text-primary font-semibold rounded px-0.5">
+          <mark key={i} className="bg-gold/25 text-text-primary font-semibold rounded px-0.5">
             {seg.text}
           </mark>
         ) : (

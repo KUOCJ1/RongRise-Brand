@@ -12,7 +12,7 @@ SRC = os.path.join(ROOT, "src")
 BRIDGE = {
     "#0d2b4e": "primary",
     "#1a6db5": "secondary",
-    "#e8912a": "tertiary",
+    "#e8912a": "gold",  # 深色底品牌金；text-tertiary 會被 components.css 改深，勿用
     "#9e5b0c": "tertiary-strong",
     "#2ec4b6": "accent",
     "#147a72": "accent-strong",
