@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-20T00:30:46Z",
+  "generatedAt": "2026-11-21T00:30:46Z",
   "periods": {
-    "content": "累計至 2026-11-20；近 30 天＝2026-10-21 起",
-    "health": "2026-10-20 ~ 2026-10-31（12 天）",
+    "content": "累計至 2026-11-21；近 30 天＝2026-10-22 起",
+    "health": "2026-10-21 ~ 2026-10-31（11 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-18（47 天）"
+    "management": "2026-10-03 ~ 2026-11-19（48 天）"
   },
   "headline": [
     {
@@ -19,7 +19,7 @@
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "12 天 × 18 個服務，216/216 次在線"
+      "note": "11 天 × 18 個服務，198/198 次在線"
     },
     {
       "key": "incidents",
@@ -31,21 +31,21 @@
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 42.1,
+      "value": 42.7,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；12/47 天達標"
+      "note": "實驗期 37.1 分；12/48 天達標"
     }
   ],
   "content": {
     "articles": 109,
     "articles30d": 16,
-    "newsletters": 34,
+    "newsletters": 35,
     "videos": 48,
     "videos30d": 3,
     "igCards": 54,
-    "socialPosts": 88,
-    "scanDays": 152,
-    "competitorReports": 151,
+    "socialPosts": 89,
+    "scanDays": 153,
+    "competitorReports": 152,
     "insights": 21,
     "monthly": [
       {
@@ -382,7 +382,7 @@
         "date": "2026-11-17",
         "url": "/knowledge/suppliers-invest-in-their-own-customer"
       },
-      "newsletter": "🦞 榕賀觀點 第 34 期 — 2026-11-16",
+      "newsletter": "🦞 榕賀觀點 第 35 期 — 2026-11-19",
       "video": {
         "title": "每個人都聽過百岳，卻不一定知道林文安｜那份名單是怎麼來的",
         "date": "2026-11-16",
@@ -393,14 +393,6 @@
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-20",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 78,
-        "restarts": 3
-      },
       {
         "date": "2026-10-21",
         "online": 18,
@@ -490,8 +482,8 @@
         "restarts": 35
       }
     ],
-    "checks": 216,
-    "online": 216,
+    "checks": 198,
+    "online": 198,
     "warningDays": 1,
     "maxDisk": 85,
     "live": [
@@ -500,35 +492,35 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.06
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.16
+        "seconds": 0.15
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.06
+        "seconds": 0.07
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.03
+        "seconds": 0.05
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.06
       },
       {
         "name": "管理後台",
@@ -538,7 +530,7 @@
         "seconds": 0.03
       }
     ],
-    "liveAt": "2026-11-20 00:30 UTC"
+    "liveAt": "2026-11-21 00:30 UTC"
   },
   "schedule": {
     "incidents30d": 27,
@@ -565,7 +557,7 @@
     ],
     "executions": 1002,
     "executionsOk": 1000,
-    "executionsFrom": "2026-11-19T12:33:45",
+    "executionsFrom": "2026-11-20T12:30:45",
     "incidents": [
       {
         "job": "eaad6d01d85d",
@@ -892,12 +884,12 @@
     "jobsEnabled": 85
   },
   "management": {
-    "days": 47,
-    "medianOnline": 42.1,
+    "days": 48,
+    "medianOnline": 42.7,
     "experimentMedian": 37.1,
     "avgOnline": 50.3,
-    "totalHours": 39.4,
-    "medianVisits": 15,
+    "totalHours": 40.2,
+    "medianVisits": 15.0,
     "perVisit": 3.0,
     "daysUnder30": 12,
     "daily": [
@@ -1135,6 +1127,11 @@
         "date": "2026-11-18",
         "min": 86.2,
         "visits": 20
+      },
+      {
+        "date": "2026-11-19",
+        "min": 48.2,
+        "visits": 16
       }
     ]
   },
@@ -1142,17 +1139,17 @@
     "subscribers": 22,
     "confirmed": 15,
     "pending": 6,
-    "views": 1275,
+    "views": 1313,
     "channelSubscribers": 19
   },
   "rework": {
     "period": "近 30 天（重工帳本 state/rework_log.jsonl）",
-    "count": 14,
-    "minutes": 441,
+    "count": 15,
+    "minutes": 536,
     "byKind": [
       {
         "kind": "video",
-        "count": 11
+        "count": 12
       },
       {
         "kind": "article",
@@ -1168,13 +1165,6 @@
       }
     ],
     "items": [
-      {
-        "ts": "2026-11-12 23:32",
-        "kind": "video",
-        "what": "自稱改為 C.J.哥",
-        "cause": "用本名開場，非對外自稱",
-        "minutes": 4
-      },
       {
         "ts": "2026-11-12 23:32",
         "kind": "video",
@@ -1251,6 +1241,13 @@
         "what": "w47-efficiency-dividend B-roll 重壓暗",
         "cause": "vision 抽幀抓到 3 支 clip 用 -0.55 太暗（場景只剩輪廓）＋1 支金黃底金字對比不足",
         "minutes": 15
+      },
+      {
+        "ts": "2026-11-20 15:24",
+        "kind": "video",
+        "what": "IG/FB AI 工具使用率 23.5s → 重製 48.6s 旁白版",
+        "cause": "外部製作版：字卡『工具』被拆行、六步 7 秒跑完無解釋、無旁白、CTA 只靠留言（API 403 接不到）",
+        "minutes": 95
       }
     ]
   }
