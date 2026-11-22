@@ -79,7 +79,7 @@ export default function Page() {
                 loading="lazy"
               />
               <figcaption className={CAP}>
-                第二天的上課現場。為保護學員，學員臉部已模糊處理。
+                第二天的上課現場。
               </figcaption>
             </figure>
 
@@ -161,7 +161,7 @@ export default function Page() {
                 loading="lazy"
               />
               <figcaption className={CAP}>
-                第二天的成果發表與大合照。為保護學員，學員臉部已模糊處理。
+                第二天的成果發表與大合照。
               </figcaption>
             </figure>
 
@@ -184,7 +184,7 @@ export default function Page() {
                 loading="lazy"
               />
               <figcaption className={CAP}>
-                結訓合影。為保護學員，學員臉部已模糊處理。
+                結訓合影，36 位主管都拿到了結訓證書。
               </figcaption>
             </figure>
 
