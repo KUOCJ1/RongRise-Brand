@@ -67,7 +67,7 @@ export default function AiSkillPathPage() {
   };
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-night text-white">
       <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
 
         {/* ===== STEP 1: SELECT ===== */}
@@ -129,7 +129,7 @@ export default function AiSkillPathPage() {
             <button
               onClick={handleGenerate}
               disabled={!dept || !level}
-              className="bg-gold hover:bg-[#F5A623] disabled:bg-gray-500 disabled:cursor-not-allowed text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+              className="bg-gold hover:bg-amber disabled:bg-gray-500 disabled:cursor-not-allowed text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
             >
               生成我的 90 天路徑 →
             </button>
@@ -213,7 +213,7 @@ export default function AiSkillPathPage() {
                 這個路徑圖是標準版。我們可以為你的團隊設計客製化 AI 培訓方案，歡迎預約免費諮詢。
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <a href="/about/#contact" className="bg-gold hover:bg-[#F5A623] text-white font-bold px-8 py-3.5 rounded-full transition-colors">
+                <a href="/about/#contact" className="bg-gold hover:bg-amber text-white font-bold px-8 py-3.5 rounded-full transition-colors">
                   📧 預約免費諮詢
                 </a>
                 <a href="/ai-hr-assessment" className="bg-secondary hover:bg-secondary/80 text-white font-bold px-8 py-3.5 rounded-full transition-colors">

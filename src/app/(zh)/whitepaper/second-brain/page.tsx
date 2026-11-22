@@ -53,7 +53,7 @@ export default function SecondBrainWhitepaper() {
       <div className="max-w-[1000px] mx-auto px-4 sm:px-6 py-14 md:py-20">
 
         {/* Cover */}
-        <section className="bg-gradient-to-br from-primary via-[#123A66] to-secondary rounded-3xl p-10 md:p-14 text-white relative overflow-hidden mb-10">
+        <section className="bg-gradient-to-br from-primary via-night-soft to-secondary rounded-3xl p-10 md:p-14 text-white relative overflow-hidden mb-10">
           <div className="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-teal/25 blur-3xl" />
           <div className="absolute -bottom-32 right-24 w-80 h-80 rounded-full bg-tertiary/20 blur-3xl" />
           <div className="relative">
@@ -221,7 +221,7 @@ export default function SecondBrainWhitepaper() {
 function Section({ num, title, en, children }: { num: string; title: string; en: string; children: React.ReactNode }) {
   return (
     <section className="bg-white rounded-2xl border border-border p-8 md:p-10 mb-8">
-      <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-tertiary to-[#F5A623] text-white flex items-center justify-center text-xl font-extrabold mb-4">
+      <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-tertiary to-amber text-white flex items-center justify-center text-xl font-extrabold mb-4">
         {num}
       </div>
       <h2 className="font-display text-2xl md:text-3xl font-extrabold text-text-primary">{title}</h2>

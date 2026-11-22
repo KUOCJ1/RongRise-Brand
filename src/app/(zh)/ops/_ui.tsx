@@ -21,7 +21,7 @@ export function useOps<T>() {
 
 export function Shell({ title, sub, children }: { title: string; sub: string; children: React.ReactNode }) {
   return (
-    <main className="bg-[#FBF8F3]">
+    <main className="bg-surface-hover">
       <div className="mx-auto max-w-5xl px-5 py-12 sm:px-8">
         <div className="mb-6 flex items-center gap-3 text-xs text-[#6B655D]">
           <Link href="/ops" className="rounded-full border border-[#D9D2C6] px-3 py-1 transition hover:border-gold">

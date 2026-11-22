@@ -57,7 +57,7 @@ function SectionTitle({ kicker, title }: { kicker: string; title: string }) {
 function PullQuote({ children }: { children: React.ReactNode }) {
   return (
     <blockquote
-      className="my-10 rounded-2xl border-l-4 bg-[#FBF8F3] px-6 py-6 md:px-8"
+      className="my-10 rounded-2xl border-l-4 bg-surface-hover px-6 py-6 md:px-8"
       style={{ borderColor: GOLD }}
     >
       <p className="text-lg md:text-xl font-semibold leading-[1.8]" style={{ color: NAVY }}>
@@ -175,7 +175,7 @@ function FragmentationChart() {
   const yVisit = (v: number) => visitTop + 96 - (v / maxVisits) * 96;
 
   return (
-    <figure className="my-10 rounded-2xl border border-border-light bg-[#FBF8F3] p-5 md:p-7">
+    <figure className="my-10 rounded-2xl border border-border-light bg-surface-hover p-5 md:p-7">
       <figcaption className="mb-4">
         <p className="text-base md:text-lg font-bold text-text-primary">
           13 天：每天介入時間，與每天被叫回來的次數
@@ -280,7 +280,7 @@ function FragmentationChart() {
 function WaitBar() {
   const nightPct = (21.3 / 56.3) * 100;
   return (
-    <figure className="my-10 rounded-2xl border border-border-light bg-[#FBF8F3] p-5 md:p-7">
+    <figure className="my-10 rounded-2xl border border-border-light bg-surface-hover p-5 md:p-7">
       <figcaption className="mb-5">
         <p className="text-base md:text-lg font-bold text-text-primary">工作完成了，流程還在等我</p>
         <p className="mt-1 text-sm text-text-secondary">
@@ -398,11 +398,11 @@ function TierCards() {
             <h3 className="text-xl font-bold text-text-primary">{t.name}</h3>
           </div>
           <div className="mt-4 grid grid-cols-1 gap-3 md:grid-cols-2">
-            <div className="rounded-xl bg-[#FBF8F3] p-4">
+            <div className="rounded-xl bg-surface-hover p-4">
               <p className="text-xs font-bold tracking-widest text-tertiary mb-1">適用條件</p>
               <p className="text-sm text-text-secondary leading-[1.75]">{t.when}</p>
             </div>
-            <div className="rounded-xl bg-[#FBF8F3] p-4">
+            <div className="rounded-xl bg-surface-hover p-4">
               <p className="text-xs font-bold tracking-widest text-tertiary mb-1">人的角色</p>
               <p className="text-sm text-text-secondary leading-[1.75]">{t.human}</p>
             </div>
@@ -561,7 +561,7 @@ export default function Post() {
             </p>
           </div>
 
-          <div className="my-14 rounded-2xl bg-[#FBF8F3] p-6 md:p-8">
+          <div className="my-14 rounded-2xl bg-surface-hover p-6 md:p-8">
             <p className="text-lg md:text-xl font-semibold leading-[1.9]" style={{ color: NAVY }}>
               想到這裡，我反而期待下一輪。
             </p>

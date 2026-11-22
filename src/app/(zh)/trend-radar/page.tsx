@@ -111,10 +111,10 @@ export default function TrendRadarPage() {
 
   if (loading) {
     return (
-      <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white flex items-center justify-center">
+      <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-night text-white flex items-center justify-center">
         <div className="text-center">
           <div className="text-4xl mb-4 animate-pulse">📡</div>
-          <p className="text-[#A0C4E8]">正在接收產業脈動…</p>
+          <p className="text-sky">正在接收產業脈動…</p>
         </div>
       </div>
     );
@@ -122,11 +122,11 @@ export default function TrendRadarPage() {
 
   if (error || !data) {
     return (
-      <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white flex items-center justify-center">
+      <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-night text-white flex items-center justify-center">
         <div className="text-center max-w-md px-6">
           <div className="text-4xl mb-4">📡</div>
           <p className="text-lg mb-2 font-semibold">訊號暫時中斷</p>
-          <p className="text-sm text-[#A0C4E8] mb-6">{error}</p>
+          <p className="text-sm text-sky mb-6">{error}</p>
           <button
             onClick={() => window.location.reload()}
             className="bg-gold hover:bg-[#F0A040] text-primary font-bold px-6 py-3 rounded-full transition-colors"
@@ -144,7 +144,7 @@ export default function TrendRadarPage() {
   };
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-night text-white">
       <div className="max-w-5xl mx-auto px-4 py-12 md:py-16">
         {/* ===== Hero ===== */}
         <div className="text-center mb-12">
@@ -154,7 +154,7 @@ export default function TrendRadarPage() {
           <h1 className="text-3xl md:text-5xl font-black leading-tight mb-5">
             AI 轉型<span className="text-gold">趨勢雷達</span>
           </h1>
-          <p className="text-lg md:text-xl text-[#A0C4E8] max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-sky max-w-2xl mx-auto leading-relaxed">
             榕耀管顧每天掃描全球 12+ 個產業來源，為你彙整
             <strong className="text-white"> 企業 AI 轉型最熱的話題</strong>
             、每週發生的變化，以及值得關注的焦點文章。
@@ -168,7 +168,7 @@ export default function TrendRadarPage() {
             ].map((s) => (
               <div key={s.l} className="bg-white/5 border border-white/10 rounded-xl p-4">
                 <div className="text-xl md:text-2xl font-black text-gold mb-1">{s.v}</div>
-                <div className="text-xs text-[#A0C4E8]">{s.l}</div>
+                <div className="text-xs text-sky">{s.l}</div>
               </div>
             ))}
           </div>
@@ -179,7 +179,7 @@ export default function TrendRadarPage() {
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl md:text-3xl font-bold">
               🔥 本週熱門話題
-              <span className="ml-3 text-sm font-normal text-[#A0C4E8]">依本週文章提及次數排行</span>
+              <span className="ml-3 text-sm font-normal text-sky">依本週文章提及次數排行</span>
             </h2>
           </div>
           <div className="space-y-3">
@@ -189,10 +189,10 @@ export default function TrendRadarPage() {
               return (
                 <div key={t.keyword} className="bg-white/5 border border-white/10 rounded-xl px-5 py-4">
                   <div className="flex items-center gap-3 mb-2">
-                    <span className="text-xs font-black text-[#5A7A9E] w-6 text-right">{i + 1}</span>
+                    <span className="text-xs font-black text-mist w-6 text-right">{i + 1}</span>
                     <span className="text-xl">{t.icon}</span>
                     <span className="font-bold">{t.keyword}</span>
-                    <span className="text-xs px-2 py-0.5 rounded-full bg-secondary/20 text-[#7CB8E8] border border-secondary/30">
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-secondary/20 text-sky-strong border border-secondary/30">
                       {CATEGORY_BADGES[t.category] ?? ""} {t.category}
                     </span>
                     <span className={`ml-auto text-xs px-2.5 py-1 rounded-full border font-semibold whitespace-nowrap ${mom.cls}`}>
@@ -226,7 +226,7 @@ export default function TrendRadarPage() {
                 className={`text-sm px-4 py-2 rounded-full border font-semibold transition-colors ${
                   activeCat === c
                     ? "bg-gold border-gold text-primary"
-                    : "bg-white/5 border-white/10 text-[#A0C4E8] hover:border-secondary"
+                    : "bg-white/5 border-white/10 text-sky hover:border-secondary"
                 }`}
               >
                 {c === "全部" ? "全部" : `${CATEGORY_BADGES[c] ?? ""} ${c}`}
@@ -241,8 +241,8 @@ export default function TrendRadarPage() {
             {visibleArticles.slice(0, 12).map((a) => (
               <div key={a.url} className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-secondary/60 transition-colors">
                 <div className="flex items-center gap-2 mb-2 text-xs">
-                  <span className="text-[#5A7A9E]">{a.date}</span>
-                  <span className="text-xs px-2 py-0.5 rounded-full bg-secondary/20 text-[#7CB8E8] border border-secondary/30">
+                  <span className="text-mist">{a.date}</span>
+                  <span className="text-xs px-2 py-0.5 rounded-full bg-secondary/20 text-sky-strong border border-secondary/30">
                     {CATEGORY_BADGES[a.category] ?? ""} {a.category}
                   </span>
                 </div>
@@ -257,18 +257,18 @@ export default function TrendRadarPage() {
                   </a>
                   <button
                     onClick={() => copyText(a.url, a.url)}
-                    className="shrink-0 text-xs px-3 py-1.5 rounded-full border border-white/15 text-[#A0C4E8] hover:border-accent hover:text-accent transition-colors whitespace-nowrap"
+                    className="shrink-0 text-xs px-3 py-1.5 rounded-full border border-white/15 text-sky hover:border-accent hover:text-accent transition-colors whitespace-nowrap"
                     aria-label="複製文章連結"
                   >
                     {copied === a.url ? "✓ 已複製" : "🔗 分享"}
                   </button>
                 </div>
-                {a.summary && <p className="mt-2 text-sm text-[#A0C4E8] leading-relaxed">{a.summary}</p>}
+                {a.summary && <p className="mt-2 text-sm text-sky leading-relaxed">{a.summary}</p>}
               </div>
             ))}
           </div>
           {visibleArticles.length > 12 && (
-            <p className="text-center text-xs text-[#5A7A9E] mt-4">
+            <p className="text-center text-xs text-mist mt-4">
               顯示前 12 篇，完整 {visibleArticles.length} 篇見每日知識掃描。
             </p>
           )}
@@ -290,7 +290,7 @@ export default function TrendRadarPage() {
 
         {/* ===== 方法說明 ===== */}
         <div className="bg-white/5 border border-white/10 rounded-xl p-5 mb-10">
-          <p className="text-xs text-[#A0C4E8] leading-relaxed">
+          <p className="text-xs text-sky leading-relaxed">
             <strong className="text-white">資料方法：</strong>
             本雷達每週聚合榕耀管顧每日知識掃描（12+ 國際與台灣來源：HBR、MIT Technology Review、McKinsey、BCG、
             TechCrunch、Wired、科技新報、iThome、經理人 等）的最近 {data.window.days} 天內容，
@@ -302,7 +302,7 @@ export default function TrendRadarPage() {
         {/* ===== CTA ===== */}
         <div className="text-center">
           <h3 className="text-xl md:text-2xl font-bold mb-3">讓趨勢雷達每週自動送到你信箱</h3>
-          <p className="text-[#A0C4E8] mb-6 max-w-xl mx-auto">
+          <p className="text-sky mb-6 max-w-xl mx-auto">
             訂閱《榕賀觀點》電子報，每週一收到完整分析——從熱門話題到趨勢觀察，一次讀懂企業 AI 轉型。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

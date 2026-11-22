@@ -25,6 +25,15 @@ BRIDGE = {
     "#faf8f4": "surface-hover",
     "#1a1815": "text-primary",
     "#5c564e": "text-secondary",
+    "#0a1f3a": "night",
+    "#123a66": "night-soft",
+    "#a0c4e8": "sky",
+    "#7cb8e8": "sky-strong",
+    "#5a7a9e": "mist",
+    "#f5a623": "amber",
+    "#fbf8f3": "surface-hover",
+    "#f8f6f3": "surface-hover",
+    "#1e7f76": "accent-strong",
 }
 
 # 只處理 className="..." 與 className={`...`} 兩種最常見形式

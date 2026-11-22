@@ -152,7 +152,7 @@ export default function PilotTrapWorkshopPage() {
   const validCount = entries.length;
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-night text-white">
       <div className="max-w-3xl mx-auto px-4 py-12 md:py-16">
         {/* ===== STEP 1: 介紹 ===== */}
         {step === "intro" && (
@@ -166,7 +166,7 @@ export default function PilotTrapWorkshopPage() {
               看穿整支團隊的
               <span className="text-gold"> AI 治理體質</span>
             </h1>
-            <p className="text-lg text-[#A0C4E8] max-w-2xl mx-auto mb-8 leading-relaxed">
+            <p className="text-lg text-sky max-w-2xl mx-auto mb-8 leading-relaxed">
               工作坊現場，每位成員先完成 25 題個人量表，把結果頁的「分數碼」複製給你。
               你貼進這個頁面，三分鐘得到團隊平均雷達圖、健康分佈與高分歧維度，
               還能直接列印成 A4 診斷報告。
@@ -179,7 +179,7 @@ export default function PilotTrapWorkshopPage() {
               ].map((f) => (
                 <div key={f.label} className="bg-white/5 border border-white/10 rounded-xl p-4">
                   <div className="text-2xl mb-1">{f.icon}</div>
-                  <div className="text-sm text-[#A0C4E8]">{f.label}</div>
+                  <div className="text-sm text-sky">{f.label}</div>
                 </div>
               ))}
             </div>
@@ -189,7 +189,7 @@ export default function PilotTrapWorkshopPage() {
             >
               開始彙總 →
             </button>
-            <p className="text-xs text-[#5A7A9E] mt-6">
+            <p className="text-xs text-mist mt-6">
               成員請先完成個人診斷：
               <a href="/pilot-trap-scan/" className="text-accent hover:underline mx-1">
                 前往 Pilot Trap 診斷量表 →
@@ -208,17 +208,17 @@ export default function PilotTrapWorkshopPage() {
                   value={wsName}
                   onChange={(e) => setWsName(e.target.value)}
                   placeholder="工作坊名稱（例：XX 公司 AI 治理工作坊）"
-                  className="bg-[#0A1F3A] border border-white/15 rounded-lg px-3 py-2.5 text-sm text-white placeholder-[#5A7A9E] focus:outline-none focus:border-accent"
+                  className="bg-night border border-white/15 rounded-lg px-3 py-2.5 text-sm text-white placeholder-mist focus:outline-none focus:border-accent"
                 />
                 <input
                   value={wsDate}
                   onChange={(e) => setWsDate(e.target.value)}
                   type="date"
-                  className="bg-[#0A1F3A] border border-white/15 rounded-lg px-3 py-2.5 text-sm text-white focus:outline-none focus:border-accent"
+                  className="bg-night border border-white/15 rounded-lg px-3 py-2.5 text-sm text-white focus:outline-none focus:border-accent"
                 />
               </div>
               <div>
-                <p className="text-sm text-[#A0C4E8] mb-2">
+                <p className="text-sm text-sky mb-2">
                   貼入成員分數碼（每行一位，格式：<code className="text-accent">姓名|45,62,38,70,55</code>，姓名可省略）：
                 </p>
                 <textarea
@@ -226,17 +226,17 @@ export default function PilotTrapWorkshopPage() {
                   onChange={(e) => setRawCodes(e.target.value)}
                   rows={8}
                   placeholder={"張經理|45,62,38,70,55\n李主任|52,58,44,66,61\n王專員|38,70,52,48,57"}
-                  className="w-full bg-[#0A1F3A] border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-[#5A7A9E] focus:outline-none focus:border-accent font-mono"
+                  className="w-full bg-night border border-white/15 rounded-xl px-4 py-3 text-sm text-white placeholder-mist focus:outline-none focus:border-accent font-mono"
                 />
               </div>
               <div className="flex items-center justify-between">
-                <span className="text-sm text-[#A0C4E8]">
+                <span className="text-sm text-sky">
                   {validCount > 0 ? `✅ 已解析 ${validCount} 位成員` : "尚未解析到有效分數碼"}
                 </span>
                 <div className="flex gap-3">
                   <button
                     onClick={() => setStep("intro")}
-                    className="px-6 py-3 rounded-full border border-white/15 text-[#A0C4E8] hover:bg-white/5 transition-colors"
+                    className="px-6 py-3 rounded-full border border-white/15 text-sky hover:bg-white/5 transition-colors"
                   >
                     ← 返回
                   </button>
@@ -260,7 +260,7 @@ export default function PilotTrapWorkshopPage() {
             <div className="no-print flex flex-wrap items-center justify-between gap-3 mb-6">
               <button
                 onClick={() => setStep("input")}
-                className="px-5 py-2.5 rounded-full border border-white/15 text-[#A0C4E8] hover:bg-white/5 transition-colors text-sm"
+                className="px-5 py-2.5 rounded-full border border-white/15 text-sky hover:bg-white/5 transition-colors text-sm"
               >
                 ← 回上一步
               </button>

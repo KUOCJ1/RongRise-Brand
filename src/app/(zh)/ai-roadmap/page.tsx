@@ -143,7 +143,7 @@ export default function AiRoadmapPage() {
   }));
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-night text-white">
       <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
         {/* ===== STEP 1: 介紹 ===== */}
         {step === "intro" && (
@@ -156,7 +156,7 @@ export default function AiRoadmapPage() {
               <br />
               但<span className="text-gold">不知道從哪裡開始？</span>
             </h1>
-            <p className="text-lg md:text-xl text-[#A0C4E8] max-w-2xl mx-auto mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-sky max-w-2xl mx-auto mb-8 leading-relaxed">
               填四個問題——規模、想導入的範圍、目前進度、預算心態——立即生成你專屬的
               <strong className="text-white"> 12 個月 AI 轉型路線圖</strong>：
               三階段行動清單、試點場景推薦、10-20-70 投資配置建議。
@@ -169,7 +169,7 @@ export default function AiRoadmapPage() {
               ].map((f) => (
                 <div key={f.label} className="bg-white/5 border border-white/10 rounded-xl p-4">
                   <div className="text-2xl mb-1">{f.icon}</div>
-                  <div className="text-sm text-[#A0C4E8]">{f.label}</div>
+                  <div className="text-sm text-sky">{f.label}</div>
                 </div>
               ))}
             </div>
@@ -179,7 +179,7 @@ export default function AiRoadmapPage() {
             >
               生成我的路線圖 →
             </button>
-            <p className="text-xs text-[#5A7A9E] mt-6">
+            <p className="text-xs text-mist mt-6">
               方法論交織榕耀管顧的研究成果：《任務變形蟲》盤點方法、
               McKinsey Pilot Trap 試點陷阱、10-20-70 投資原則與治理五檢查——不是單一框架的套版。
             </p>
@@ -191,12 +191,12 @@ export default function AiRoadmapPage() {
           <div>
             <button
               onClick={() => setStep("intro")}
-              className="text-sm text-[#A0C4E8] hover:text-white mb-6 transition-colors"
+              className="text-sm text-sky hover:text-white mb-6 transition-colors"
             >
               ← 返回
             </button>
             <h2 className="text-2xl md:text-3xl font-bold mb-2">四個問題，一張路線圖</h2>
-            <p className="text-[#A0C4E8] mb-8">約 2 分鐘。答案隨時可以改，生成後也能重新填。</p>
+            <p className="text-sky mb-8">約 2 分鐘。答案隨時可以改，生成後也能重新填。</p>
 
             {/* 1. 企業規模 */}
             <div className="mb-8">
@@ -214,7 +214,7 @@ export default function AiRoadmapPage() {
                       className={`text-sm px-4 py-3 rounded-lg border transition-all text-left ${
                         active
                           ? "bg-secondary/30 border-accent text-white font-semibold"
-                          : "bg-white/5 border-white/10 text-[#A0C4E8] hover:border-secondary"
+                          : "bg-white/5 border-white/10 text-sky hover:border-secondary"
                       }`}
                     >
                       {SIZE_META[k].label}
@@ -222,14 +222,14 @@ export default function AiRoadmapPage() {
                   );
                 })}
               </div>
-              {size && <p className="text-xs text-[#5A7A9E] mt-2">{SIZE_META[size].teamHint}</p>}
+              {size && <p className="text-xs text-mist mt-2">{SIZE_META[size].teamHint}</p>}
             </div>
 
             {/* 2. 導入範圍 */}
             <div className="mb-8">
               <label className="block text-sm font-semibold text-accent mb-3">
                 2. 想導入 AI 的範圍（可複選）
-                <span className="ml-2 text-xs text-[#5A7A9E] font-normal">已選 {areas.length} 項</span>
+                <span className="ml-2 text-xs text-mist font-normal">已選 {areas.length} 項</span>
               </label>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                 {areaOptions.map((a) => {
@@ -242,14 +242,14 @@ export default function AiRoadmapPage() {
                       className={`flex items-center gap-3 text-sm px-4 py-3 rounded-lg border transition-all text-left ${
                         active
                           ? "bg-secondary/30 border-accent text-white font-semibold"
-                          : "bg-white/5 border-white/10 text-[#A0C4E8] hover:border-secondary"
+                          : "bg-white/5 border-white/10 text-sky hover:border-secondary"
                       }`}
                     >
                       <span className="text-xl">{a.icon}</span>
                       <span className="flex-1">{a.label}</span>
                       <span
                         className={`w-5 h-5 rounded-full border-2 flex items-center justify-center text-xs ${
-                          active ? "bg-accent border-accent text-primary" : "border-[#5A7A9E]"
+                          active ? "bg-accent border-accent text-primary" : "border-mist"
                         }`}
                       >
                         {active ? "✓" : ""}
@@ -276,7 +276,7 @@ export default function AiRoadmapPage() {
                       className={`text-sm px-4 py-3 rounded-lg border transition-all text-left ${
                         active
                           ? "bg-secondary/30 border-accent text-white font-semibold"
-                          : "bg-white/5 border-white/10 text-[#A0C4E8] hover:border-secondary"
+                          : "bg-white/5 border-white/10 text-sky hover:border-secondary"
                       }`}
                     >
                       {STAGE_META[k].label}
@@ -302,7 +302,7 @@ export default function AiRoadmapPage() {
                       className={`text-sm px-4 py-3 rounded-lg border transition-all text-left ${
                         active
                           ? "bg-secondary/30 border-accent text-white font-semibold"
-                          : "bg-white/5 border-white/10 text-[#A0C4E8] hover:border-secondary"
+                          : "bg-white/5 border-white/10 text-sky hover:border-secondary"
                       }`}
                     >
                       {BUDGET_META[k].label}
@@ -310,7 +310,7 @@ export default function AiRoadmapPage() {
                   );
                 })}
               </div>
-              {budget && <p className="text-xs text-[#5A7A9E] mt-2">{BUDGET_META[budget].hint}</p>}
+              {budget && <p className="text-xs text-mist mt-2">{BUDGET_META[budget].hint}</p>}
             </div>
 
             {/* 留資（選填） */}
@@ -318,7 +318,7 @@ export default function AiRoadmapPage() {
               <label htmlFor="rr-email" className="block text-sm font-semibold text-accent mb-1">
                 留下 Email 取得路線圖副本（選填）
               </label>
-              <p className="text-xs text-[#5A7A9E] mb-4">填寫後可收到完整路線圖與 AI 轉型週報，隨時可退訂。</p>
+              <p className="text-xs text-mist mb-4">填寫後可收到完整路線圖與 AI 轉型週報，隨時可退訂。</p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                 <input
                   id="rr-name"
@@ -326,7 +326,7 @@ export default function AiRoadmapPage() {
                   placeholder="姓名"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-[#5A7A9E] focus:border-accent focus:outline-none"
+                  className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-mist focus:border-accent focus:outline-none"
                 />
                 <input
                   id="rr-email"
@@ -334,7 +334,7 @@ export default function AiRoadmapPage() {
                   placeholder="Email（選填）"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-[#5A7A9E] focus:border-accent focus:outline-none"
+                  className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-mist focus:border-accent focus:outline-none"
                 />
                 <input
                   id="rr-company"
@@ -342,7 +342,7 @@ export default function AiRoadmapPage() {
                   placeholder="公司名稱"
                   value={company}
                   onChange={(e) => setCompany(e.target.value)}
-                  className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-[#5A7A9E] focus:border-accent focus:outline-none"
+                  className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-mist focus:border-accent focus:outline-none"
                 />
               </div>
             </div>
@@ -368,7 +368,7 @@ export default function AiRoadmapPage() {
           <div>
             <button
               onClick={() => setStep("form")}
-              className="text-sm text-[#A0C4E8] hover:text-white mb-6 transition-colors"
+              className="text-sm text-sky hover:text-white mb-6 transition-colors"
             >
               ← 重新填寫
             </button>
@@ -379,7 +379,7 @@ export default function AiRoadmapPage() {
               <h2 className="text-2xl md:text-3xl font-black leading-snug mb-4 max-w-3xl mx-auto">
                 {result.headline}
               </h2>
-              <p className="text-[#A0C4E8] leading-relaxed max-w-2xl mx-auto mb-6">{result.summary}</p>
+              <p className="text-sky leading-relaxed max-w-2xl mx-auto mb-6">{result.summary}</p>
               <button
                 onClick={copyReport}
                 className={`inline-flex items-center gap-2 text-sm font-bold px-6 py-3 rounded-full border transition-colors ${
@@ -404,7 +404,7 @@ export default function AiRoadmapPage() {
                     <span className="font-bold text-lg">{p.theme}</span>
                   </div>
                   <div className="p-5">
-                    <p className="text-sm text-[#A0C4E8] leading-relaxed mb-5">
+                    <p className="text-sm text-sky leading-relaxed mb-5">
                       <strong className="text-white">目標：</strong>
                       {p.goal}
                     </p>
@@ -413,7 +413,7 @@ export default function AiRoadmapPage() {
                       <ol className="space-y-2">
                         {p.actions.map((a, i) => (
                           <li key={i} className="flex gap-3 text-sm leading-relaxed">
-                            <span className="shrink-0 w-5 h-5 rounded-full bg-secondary/30 border border-secondary/50 text-[#7CB8E8] text-xs font-bold flex items-center justify-center mt-0.5">
+                            <span className="shrink-0 w-5 h-5 rounded-full bg-secondary/30 border border-secondary/50 text-sky-strong text-xs font-bold flex items-center justify-center mt-0.5">
                               {i + 1}
                             </span>
                             <span className="text-[#C9DCEF]">
@@ -452,7 +452,7 @@ export default function AiRoadmapPage() {
                         {p.metrics.map((m) => (
                           <span
                             key={m}
-                            className="text-xs bg-secondary/20 border border-secondary/40 text-[#7CB8E8] px-3 py-1.5 rounded-full"
+                            className="text-xs bg-secondary/20 border border-secondary/40 text-sky-strong px-3 py-1.5 rounded-full"
                           >
                             {m}
                           </span>
@@ -473,7 +473,7 @@ export default function AiRoadmapPage() {
             <div className="bg-secondary/10 border border-secondary/30 rounded-xl p-5 mb-8">
               <h3 className="font-bold mb-1">
                 💰 {result.investment.label}
-                <span className="ml-2 text-sm font-normal text-[#A0C4E8]">
+                <span className="ml-2 text-sm font-normal text-sky">
                   總預算級距
                   <span className="text-gold font-bold text-lg ml-1">{result.investment.total}</span>
                   （新台幣／年）
@@ -485,9 +485,9 @@ export default function AiRoadmapPage() {
                     <div className="flex items-center justify-between text-sm mb-1">
                       <span className="font-semibold">
                         {s.name} <span className="text-accent">{s.pct}%</span>
-                        <span className="text-[#A0C4E8] font-normal ml-2">約 {s.amount}</span>
+                        <span className="text-sky font-normal ml-2">約 {s.amount}</span>
                       </span>
-                      <span className="text-xs text-[#5A7A9E]">{s.desc}</span>
+                      <span className="text-xs text-mist">{s.desc}</span>
                     </div>
                     <div className="h-2.5 bg-white/10 rounded-full overflow-hidden">
                       <div
@@ -500,7 +500,7 @@ export default function AiRoadmapPage() {
                   </div>
                 ))}
               </div>
-              <p className="text-xs text-[#A0C4E8] leading-relaxed mt-4">{result.investment.note}</p>
+              <p className="text-xs text-sky leading-relaxed mt-4">{result.investment.note}</p>
             </div>
 
             {/* 全程注意 */}
@@ -518,13 +518,13 @@ export default function AiRoadmapPage() {
 
             {/* 免責 */}
             <div className="bg-secondary/10 border border-secondary/30 rounded-xl p-5 mb-8">
-              <p className="text-xs text-[#A0C4E8] leading-relaxed">{result.footerNote}</p>
+              <p className="text-xs text-sky leading-relaxed">{result.footerNote}</p>
             </div>
 
             {/* CTA */}
             <div className="text-center mb-6">
               <h3 className="text-xl md:text-2xl font-bold mb-3">有路線圖了，下一步？</h3>
-              <p className="text-[#A0C4E8] mb-6 max-w-xl mx-auto">
+              <p className="text-sky mb-6 max-w-xl mx-auto">
                 路線圖是通用框架，落地要看你的資料條件與產業特性。先做任務盤點、算算 ROI，或直接預約免費 30 分鐘諮詢，把路線圖校準成你的專案。
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">

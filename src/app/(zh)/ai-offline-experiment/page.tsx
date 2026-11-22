@@ -206,7 +206,7 @@ export default function AIOfflineExperimentPage() {
   };
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-night text-white">
       <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
         <p className="sr-only" aria-live="polite">
           {announcement}
@@ -298,7 +298,7 @@ export default function AIOfflineExperimentPage() {
                 </p>
                 <button
                   onClick={calculate}
-                  className="bg-gold hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+                  className="bg-gold hover:bg-amber text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
                 >
                   計算風險與檢查清單 →
                 </button>
@@ -480,7 +480,7 @@ export default function AIOfflineExperimentPage() {
                 <button
                   type="submit"
                   disabled={!emailIsValid || leadSubmitting}
-                  className="bg-gold hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-gold hover:bg-amber disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   {leadSubmitting ? "送出中..." : "訂閱電子報 →"}
                 </button>
@@ -517,7 +517,7 @@ export default function AIOfflineExperimentPage() {
                 </Link>
                 <Link
                   href="/about/#contact"
-                  className="text-gold hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
+                  className="text-gold hover:text-amber font-semibold px-4 py-3 transition-colors"
                 >
                   預約免費諮詢 →
                 </Link>

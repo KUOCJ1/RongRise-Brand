@@ -98,7 +98,7 @@ function RadarChart({ result }: { result: AlignmentResult }) {
           y={cy + labelRadius * Math.sin(angles[i])}
           textAnchor="middle"
           dominantBaseline="middle"
-          className="text-[12px] fill-[#A0C4E8] font-semibold"
+          className="text-[12px] fill-sky font-semibold"
         >
           {label}
         </text>
@@ -276,7 +276,7 @@ export default function HumanAIAlignmentPage() {
   };
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-night text-white">
       <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
         {/* 步驟播報：切換畫面時讓讀屏使用者知道自己在哪裡 */}
         <p className="sr-only" aria-live="polite">
@@ -321,7 +321,7 @@ export default function HumanAIAlignmentPage() {
                 setStep("quiz");
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
-              className="bg-gold hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+              className="bg-gold hover:bg-amber text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
             >
               開始自評 →
             </button>
@@ -437,7 +437,7 @@ export default function HumanAIAlignmentPage() {
                 <button
                   onClick={showResult}
                   disabled={!allAnswered}
-                  className="bg-gold hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors shadow-lg"
+                  className="bg-gold hover:bg-amber disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors shadow-lg"
                 >
                   看結果 →
                 </button>
@@ -680,7 +680,7 @@ export default function HumanAIAlignmentPage() {
                 <button
                   type="submit"
                   disabled={!emailIsValid}
-                  className="bg-gold hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-gold hover:bg-amber disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   訂閱電子報 →
                 </button>
@@ -719,7 +719,7 @@ export default function HumanAIAlignmentPage() {
                 </a>
                 <a
                   href="/about/#contact"
-                  className="text-gold hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
+                  className="text-gold hover:text-amber font-semibold px-4 py-3 transition-colors"
                 >
                   預約免費諮詢 →
                 </a>

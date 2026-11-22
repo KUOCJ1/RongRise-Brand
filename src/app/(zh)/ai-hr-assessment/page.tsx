@@ -186,7 +186,7 @@ export default function HrAiMaturityPage() {
   };
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-night text-white">
       <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
 
         {/* ===== STEP 1: INTRO ===== */}
@@ -213,7 +213,7 @@ export default function HrAiMaturityPage() {
             </div>
             <button
               onClick={() => setStep("quiz")}
-              className="bg-gold hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+              className="bg-gold hover:bg-amber text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
             >
               開始評估 →
             </button>
@@ -290,7 +290,7 @@ export default function HrAiMaturityPage() {
                 <button
                   onClick={handleSubmit}
                   disabled={!allAnswered || submitting}
-                  className="bg-gold hover:bg-[#F5A623] disabled:bg-gray-500 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-gold hover:bg-amber disabled:bg-gray-500 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   {submitting ? "計算中..." : "看結果"}
                 </button>
@@ -412,7 +412,7 @@ export default function HrAiMaturityPage() {
                 <a href="/ai-roadmap" className="bg-secondary hover:bg-secondary/80 text-white font-bold px-8 py-3.5 rounded-full transition-colors">
                   🗺️ 規劃 AI 轉型路線圖
                 </a>
-                <a href="/about/#contact" className="bg-gold hover:bg-[#F5A623] text-white font-bold px-8 py-3.5 rounded-full transition-colors">
+                <a href="/about/#contact" className="bg-gold hover:bg-amber text-white font-bold px-8 py-3.5 rounded-full transition-colors">
                   📧 預約免費諮詢
                 </a>
               </div>

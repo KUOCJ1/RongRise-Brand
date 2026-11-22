@@ -107,10 +107,10 @@ export default function ContentOpsPage() {
 
   if (loading) {
     return (
-      <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white flex items-center justify-center">
+      <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-night text-white flex items-center justify-center">
         <div className="text-center">
           <div className="text-4xl mb-4 animate-pulse">🦞</div>
-          <p className="text-[#A0C4E8]">正在彙整營運數據…</p>
+          <p className="text-sky">正在彙整營運數據…</p>
         </div>
       </div>
     );
@@ -118,11 +118,11 @@ export default function ContentOpsPage() {
 
   if (error || !data) {
     return (
-      <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white flex items-center justify-center">
+      <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-night text-white flex items-center justify-center">
         <div className="text-center max-w-md px-6">
           <div className="text-4xl mb-4">🦞</div>
           <p className="text-lg mb-2 font-semibold">戰情室暫時離線</p>
-          <p className="text-sm text-[#A0C4E8] mb-6">{error}</p>
+          <p className="text-sm text-sky mb-6">{error}</p>
           <button
             onClick={() => window.location.reload()}
             className="bg-gold hover:bg-[#F0A040] text-primary font-bold px-6 py-3 rounded-full transition-colors"
@@ -159,7 +159,7 @@ export default function ContentOpsPage() {
   ];
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-night text-white">
       <div className="max-w-5xl mx-auto px-4 py-12 md:py-16">
         {/* ===== Hero ===== */}
         <div className="text-center mb-12">
@@ -169,7 +169,7 @@ export default function ContentOpsPage() {
           <h1 className="text-3xl md:text-5xl font-black leading-tight mb-5">
             一台<span className="text-gold">每天自己運作</span>的內容引擎
           </h1>
-          <p className="text-lg md:text-xl text-[#A0C4E8] max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-sky max-w-2xl mx-auto leading-relaxed">
             「{data.engine.name}」已連續運作{" "}
             <strong className="text-gold">{data.engine.daysRunning} 天</strong>
             ，自動完成產業掃描、趨勢分析、內容產出與數據回饋——這是它的公開戰情室。
@@ -183,7 +183,7 @@ export default function ContentOpsPage() {
             ].map((st) => (
               <div key={st.l} className="bg-white/5 border border-white/10 rounded-xl p-4">
                 <div className="text-xl md:text-2xl font-black text-gold mb-1">{st.v}</div>
-                <div className="text-xs text-[#A0C4E8]">{st.l}</div>
+                <div className="text-xs text-sky">{st.l}</div>
               </div>
             ))}
           </div>
@@ -197,8 +197,8 @@ export default function ContentOpsPage() {
               <div key={c.label} className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-secondary/60 transition-colors">
                 <div className="text-2xl mb-2">{c.icon}</div>
                 <div className="text-2xl md:text-3xl font-black text-white mb-1">{c.value}</div>
-                <div className="text-sm font-semibold text-[#A0C4E8]">{c.label}</div>
-                <div className="text-xs text-[#5A7A9E] mt-1">{c.sub}</div>
+                <div className="text-sm font-semibold text-sky">{c.label}</div>
+                <div className="text-xs text-mist mt-1">{c.sub}</div>
               </div>
             ))}
           </div>
@@ -207,7 +207,7 @@ export default function ContentOpsPage() {
         {/* ===== 近 7 天營運脈動 ===== */}
         <section className="mb-12">
           <h2 className="text-2xl md:text-3xl font-bold mb-2">📈 近 7 天營運脈動</h2>
-          <p className="text-sm text-[#A0C4E8] mb-6">每日知識掃描收錄的文章數（本週 7 天全勤）</p>
+          <p className="text-sm text-sky mb-6">每日知識掃描收錄的文章數（本週 7 天全勤）</p>
           <div className="bg-white/5 border border-white/10 rounded-xl p-6">
             <div className="flex items-end justify-between gap-2 md:gap-4 h-44">
               {data.activity.map((a) => (
@@ -217,7 +217,7 @@ export default function ContentOpsPage() {
                     className="w-full max-w-[52px] rounded-t-lg bg-gradient-to-t from-secondary to-accent"
                     style={{ height: `${Math.max(8, Math.round((a.count / maxCount) * 100))}%` }}
                   />
-                  <span className="text-[10px] md:text-xs text-[#5A7A9E]">{a.date.slice(5)}</span>
+                  <span className="text-[10px] md:text-xs text-mist">{a.date.slice(5)}</span>
                 </div>
               ))}
             </div>
@@ -238,7 +238,7 @@ export default function ContentOpsPage() {
                 const mom = MOMENTUM_META[t.momentum] ?? MOMENTUM_META.flat;
                 return (
                   <div key={t.keyword} className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3">
-                    <span className="text-xs font-black text-[#5A7A9E] w-5 text-right">{i + 1}</span>
+                    <span className="text-xs font-black text-mist w-5 text-right">{i + 1}</span>
                     <span className="text-lg">{t.icon}</span>
                     <span className="font-bold flex-1">{t.keyword}</span>
                     <span className="text-sm font-bold text-gold">×{t.count}</span>
@@ -259,34 +259,34 @@ export default function ContentOpsPage() {
             {assetCards.map((c) => (
               <div key={c.label} className="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
                 <div className="text-xl font-black text-white">{c.value}</div>
-                <div className="text-xs text-[#A0C4E8] mt-1">
+                <div className="text-xs text-sky mt-1">
                   {c.icon} {c.label}
                 </div>
               </div>
             ))}
           </div>
 
-          <h3 className="text-lg font-bold text-[#A0C4E8] mb-4">最新產出</h3>
+          <h3 className="text-lg font-bold text-sky mb-4">最新產出</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {data.latest.article && (
               <a href={data.latest.article.url} className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-accent/50 transition-colors block">
-                <div className="text-xs text-[#5A7A9E] mb-2">📚 最新文章 · {data.latest.article.date}</div>
+                <div className="text-xs text-mist mb-2">📚 最新文章 · {data.latest.article.date}</div>
                 <div className="font-bold leading-snug hover:text-accent transition-colors">{data.latest.article.title}</div>
               </a>
             )}
             <a href="/newsletter" className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-accent/50 transition-colors block">
-              <div className="text-xs text-[#5A7A9E] mb-2">📬 最新電子報</div>
+              <div className="text-xs text-mist mb-2">📬 最新電子報</div>
               <div className="font-bold leading-snug hover:text-accent transition-colors">{data.latest.newsletter || "《榕賀觀點》"}</div>
             </a>
             {data.latest.video && (
               <a href={data.latest.video.url} target="_blank" rel="noopener noreferrer" className="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-accent/50 transition-colors block">
-                <div className="text-xs text-[#5A7A9E] mb-2">🎬 最新影片 · {data.latest.video.date}</div>
+                <div className="text-xs text-mist mb-2">🎬 最新影片 · {data.latest.video.date}</div>
                 <div className="font-bold leading-snug hover:text-accent transition-colors">{data.latest.video.title}</div>
               </a>
             )}
             {data.latest.insight && (
               <div className="bg-white/5 border border-white/10 rounded-xl p-5">
-                <div className="text-xs text-[#5A7A9E] mb-2">🧭 最新週趨勢分析</div>
+                <div className="text-xs text-mist mb-2">🧭 最新週趨勢分析</div>
                 <div className="font-bold leading-snug">{data.latest.insight}</div>
               </div>
             )}
@@ -302,11 +302,11 @@ export default function ContentOpsPage() {
                 <div className="flex items-center gap-3 mb-3">
                   <span className="text-2xl">{p.icon}</span>
                   <div>
-                    <div className="text-xs text-[#5A7A9E]">STEP {p.step}</div>
+                    <div className="text-xs text-mist">STEP {p.step}</div>
                     <div className="font-bold">{p.title}</div>
                   </div>
                 </div>
-                <p className="text-sm text-[#A0C4E8] leading-relaxed">{p.desc}</p>
+                <p className="text-sm text-sky leading-relaxed">{p.desc}</p>
               </div>
             ))}
           </div>
@@ -314,7 +314,7 @@ export default function ContentOpsPage() {
 
         {/* ===== 方法說明 ===== */}
         <div className="bg-white/5 border border-white/10 rounded-xl p-5 mb-10">
-          <p className="text-xs text-[#A0C4E8] leading-relaxed">
+          <p className="text-xs text-sky leading-relaxed">
             <strong className="text-white">資料方法：</strong>
             本頁數據由榕耀管顧「小哈內容引擎」自動彙整，每日更新。數字直接來自內容引擎的產出記錄（知識掃描、文章、電子報、競對監測）、
             YouTube 頻道公開統計與電子報訂閱資料庫。訂閱數與影片數據為真實統計，非估算值。最後更新：
@@ -325,7 +325,7 @@ export default function ContentOpsPage() {
         {/* ===== CTA ===== */}
         <div className="text-center">
           <h3 className="text-xl md:text-2xl font-bold mb-3">想看引擎每天產出什麼？</h3>
-          <p className="text-[#A0C4E8] mb-6 max-w-xl mx-auto">
+          <p className="text-sky mb-6 max-w-xl mx-auto">
             訂閱《榕賀觀點》電子報，每週一、四自動收到趨勢分析與獨家觀點——你也能擁有自己的 AI 內容引擎。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

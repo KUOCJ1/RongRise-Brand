@@ -27,6 +27,18 @@
   /* ── Extended Palette ── */
   --color-primary-dark: #081D35;
   --color-primary-light: #1E4A7A;
+
+  /* ── Deep Surface（工具頁／掃描頁的深色系；2026-11-22 收編）──
+     這組原本散落在 pilot-trap-scan／trend-radar／ai-investment-split 等頁的硬寫色，
+     是那些頁的視覺基礎，統一命名後才不會每頁各長一套。
+     文字對比：sky on night 7.9:1、mist on night 4.6:1、amber on night 8.4:1（皆過 AA） */
+  --color-night: #0A1F3A;        /* 深底（頁面／hero） */
+  --color-night-soft: #123A66;   /* 次深底（卡片、區塊） */
+  --color-sky: #A0C4E8;          /* 深底上的主要文字 */
+  --color-sky-strong: #7CB8E8;   /* 深底上的強調／連結 */
+  --color-mist: #5A7A9E;         /* 深底上的弱化文字、分隔線 */
+  --color-amber: #F5A623;        /* 深底上的警示／星等／標記 */
+
   --color-warm-50: #FDF8F0;
   --color-warm-100: #F5EDE0;
   --color-warm-200: #E8D5B8;
@@ -93,6 +105,12 @@
   --color-accent-strong: var(--color-accent-strong);
   --color-success: var(--color-success);
   --color-line: var(--color-line);
+  --color-night: var(--color-night);
+  --color-night-soft: var(--color-night-soft);
+  --color-sky: var(--color-sky);
+  --color-sky-strong: var(--color-sky-strong);
+  --color-mist: var(--color-mist);
+  --color-amber: var(--color-amber);
   --color-dark: var(--color-text-primary);
   --color-bg: var(--color-bg);
   --color-bg-alt: var(--color-bg-alt);

@@ -78,7 +78,7 @@ export default function Post() {
                 <p className="font-bold text-accent text-sm mb-1">📣 小社（社手）</p>
                 <p className="text-text-secondary text-xs leading-relaxed">每週三、五，把文章改寫成 X / LinkedIn / Facebook 草稿。</p>
               </div>
-              <div className="bg-[#F8F6F3] border border-[#e8e0d8] rounded-xl p-4">
+              <div className="bg-surface-hover border border-[#e8e0d8] rounded-xl p-4">
                 <p className="font-bold text-[#8B7355] text-sm mb-1">📬 小信（信差）</p>
                 <p className="text-text-secondary text-xs leading-relaxed">每週日晚上 6 點，產出《榕賀觀點》電子報，寄給所有訂閱者。</p>
               </div>

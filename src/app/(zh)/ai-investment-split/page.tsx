@@ -171,7 +171,7 @@ export default function AIInvestmentSplitPage() {
   };
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-night text-white">
       <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
         {/* ===== STEP 1: INTRO ===== */}
         {step === "intro" && (
@@ -213,7 +213,7 @@ export default function AIInvestmentSplitPage() {
                 setStep("form");
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
-              className="bg-gold hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+              className="bg-gold hover:bg-amber text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
             >
               開始體檢 →
             </button>
@@ -396,7 +396,7 @@ export default function AIInvestmentSplitPage() {
               <button
                 onClick={() => handleSubmit(true)}
                 disabled={!canSubmit}
-                className="bg-gold hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3.5 rounded-full transition-colors shadow-lg"
+                className="bg-gold hover:bg-amber disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3.5 rounded-full transition-colors shadow-lg"
               >
                 看體檢結果 →
               </button>
@@ -540,7 +540,7 @@ export default function AIInvestmentSplitPage() {
             {/* 症狀自檢 */}
             {result.symptoms.length > 0 && (
               <div className="bg-gold/10 border border-gold/30 rounded-2xl p-6 md:p-8 mb-8">
-                <h2 className="text-lg font-bold mb-1 text-[#F5A623]">🩺 症狀自檢：有沒有這些情況？</h2>
+                <h2 className="text-lg font-bold mb-1 text-amber">🩺 症狀自檢：有沒有這些情況？</h2>
                 <p className="text-white/50 text-xs mb-5">勾中任何一項，代表那個桶的錢確實花得不夠或花錯了地方。</p>
                 <div className="space-y-5">
                   {result.symptoms.map((s) => (
@@ -653,7 +653,7 @@ export default function AIInvestmentSplitPage() {
                 <button
                   onClick={() => handleSubmit(false)}
                   disabled={!email}
-                  className="bg-gold hover:bg-[#F5A623] disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
+                  className="bg-gold hover:bg-amber disabled:opacity-40 disabled:cursor-not-allowed text-white font-bold px-8 py-3 rounded-full transition-colors"
                 >
                   訂閱並取得檢核表 →
                 </button>
@@ -698,7 +698,7 @@ export default function AIInvestmentSplitPage() {
                 </a>
                 <a
                   href="/about/#contact"
-                  className="text-gold hover:text-[#F5A623] font-semibold px-4 py-3 transition-colors"
+                  className="text-gold hover:text-amber font-semibold px-4 py-3 transition-colors"
                 >
                   預約免費諮詢 →
                 </a>

@@ -44,7 +44,7 @@ const ITEMS = [
 
 export default function AIGovernancePage() {
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-night text-white">
       <div className="max-w-5xl mx-auto px-4 py-14 md:py-20">
         {/* Hero */}
         <div className="text-center mb-14">
@@ -56,7 +56,7 @@ export default function AIGovernancePage() {
             <br />
             不等於<span className="text-gold">用得健康</span>
           </h1>
-          <p className="text-lg md:text-xl text-[#A0C4E8] max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-sky max-w-2xl mx-auto leading-relaxed">
             沒人治理的 AI 實驗，會把舊流程硬化成無人能解的 code。
             我們用親身經驗，把「AI 治理」從抽象名詞變成
             <strong className="text-white">可以檢查、可以計分、可以行動</strong>的方法。
@@ -76,7 +76,7 @@ export default function AIGovernancePage() {
                 {it.tag}
               </div>
               <h2 className="text-xl md:text-2xl font-bold leading-snug mb-3">{it.title}</h2>
-              <p className="text-[#A0C4E8] leading-relaxed mb-4">{it.desc}</p>
+              <p className="text-sky leading-relaxed mb-4">{it.desc}</p>
               <span className="text-gold font-semibold group-hover:translate-x-1 inline-block transition-transform">
                 {it.cta}
               </span>
@@ -115,7 +115,7 @@ export default function AIGovernancePage() {
         {/* CTA */}
         <div className="text-center">
           <h2 className="text-2xl font-bold mb-2">不確定從哪裡開始？</h2>
-          <p className="text-[#A0C4E8] mb-6 max-w-lg mx-auto">
+          <p className="text-sky mb-6 max-w-lg mx-auto">
             先花五分鐘做線上診斷，用雷達圖找到你的最弱維度。
           </p>
           <Link

@@ -66,7 +66,7 @@ function DailyChart() {
   const y = (v: number) => padT + plotH - (v / max) * plotH;
 
   return (
-    <figure className="my-10 rounded-2xl border border-border-light bg-[#FBF8F3] p-5 md:p-7">
+    <figure className="my-10 rounded-2xl border border-border-light bg-surface-hover p-5 md:p-7">
       <figcaption className="mb-4">
         <p className="text-base md:text-lg font-bold text-text-primary">
           每天在場時間，13 天裡只有 2 天在 30 分鐘內
@@ -130,7 +130,7 @@ function HealthBars() {
     { label: "13 天健康報告", value: 12, total: 13, note: "12 天全綠、1 天黃燈" },
   ];
   return (
-    <figure className="my-10 rounded-2xl border border-border-light bg-[#FBF8F3] p-5 md:p-7">
+    <figure className="my-10 rounded-2xl border border-border-light bg-surface-hover p-5 md:p-7">
       <figcaption className="mb-5">
         <p className="text-base md:text-lg font-bold text-text-primary">機器這一層：13 天全部在線</p>
         <p className="mt-1 text-sm text-text-secondary">每天台北時間 12:30 自動檢查一次，13 天沒有缺過。</p>
@@ -173,7 +173,7 @@ function WaitChart() {
   const nightW = (night / wait) * waitW;
   const judgeW = Math.max(4, (judge / wait) * waitW);
   return (
-    <figure className="my-10 rounded-2xl border border-border-light bg-[#FBF8F3] p-5 md:p-7">
+    <figure className="my-10 rounded-2xl border border-border-light bg-surface-hover p-5 md:p-7">
       <figcaption className="mb-5">
         <p className="text-base md:text-lg font-bold text-text-primary">簽核那一關：56.3 小時的等待，不到 10 分鐘的判斷</p>
         <p className="mt-1 text-sm text-text-secondary">10 月兩期電子報，從完稿到點頭。以每次進場 3 分鐘估。</p>
@@ -210,7 +210,7 @@ function IncidentChart() {
   const W = 720;
   const barH = 52;
   return (
-    <figure className="my-10 rounded-2xl border border-border-light bg-[#FBF8F3] p-5 md:p-7">
+    <figure className="my-10 rounded-2xl border border-border-light bg-surface-hover p-5 md:p-7">
       <figcaption className="mb-5">
         <p className="text-base md:text-lg font-bold text-text-primary">7 件錯，6 件是檢查的問題</p>
         <p className="mt-1 text-sm text-text-secondary">只有 1 件是工具真的壞掉。另計排程層 5 次故障，全部自行解除。</p>
@@ -365,7 +365,7 @@ export default function Post() {
               { n: "37.1 分鐘", t: "一天在場，是目標的 1.24 倍" },
               { n: "1 / 7", t: "7 件錯裡只有 1 件是工具壞掉" },
             ].map((x) => (
-              <div key={x.t} className="rounded-2xl border border-border-light bg-[#FBF8F3] p-5">
+              <div key={x.t} className="rounded-2xl border border-border-light bg-surface-hover p-5">
                 <p className="text-2xl font-bold" style={{ color: NAVY }}>
                   {x.n}
                 </p>
@@ -436,7 +436,7 @@ export default function Post() {
 
           <div className="my-14">
             <SectionTitle kicker="06" title="CJ 哥的反思" />
-            <div className="rounded-2xl border-l-4 bg-[#FBF8F3] p-6 md:p-8" style={{ borderColor: GOLD }}>
+            <div className="rounded-2xl border-l-4 bg-surface-hover p-6 md:p-8" style={{ borderColor: GOLD }}>
               <p className="text-text-secondary leading-[1.9] mb-5">
                 這 13 天我在朝聖路上。我原以為要驗的是 AI，結果 AI 一次都沒停，停下來的是我這一關。回頭看，我最常做的決策叫「可以」。
               </p>
@@ -462,7 +462,7 @@ export default function Post() {
             </p>
           </div>
 
-          <div className="my-14 rounded-2xl bg-[#FBF8F3] p-6 md:p-8">
+          <div className="my-14 rounded-2xl bg-surface-hover p-6 md:p-8">
             <p className="text-sm font-bold tracking-widest text-tertiary mb-2">公開實驗</p>
             <p className="text-text-secondary leading-[1.9] mb-4">
               這是〈我不在公司的 13 天〉的後台紀錄第 1 篇，系列第 2 篇。開場寫條件，這一篇寫結果，下一篇寫我們要怎麼改。

@@ -109,7 +109,7 @@ function ScoreBar({ label, sub, score, color }: { label: string; sub: string; sc
       <div className="flex items-baseline justify-between mb-1">
         <span className="text-white font-semibold">
           {label}
-          <span className="text-[#A0C4E8] text-sm font-normal ml-2">{sub}</span>
+          <span className="text-sky text-sm font-normal ml-2">{sub}</span>
         </span>
         <span className="font-bold text-lg" style={{ color }}>{score}</span>
       </div>
@@ -191,7 +191,7 @@ export default function PilotTrapScanPage() {
   }, []);
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-night text-white">
       <div className="max-w-3xl mx-auto px-4 py-12 md:py-16">
         {/* ===== STEP 1: 介紹 ===== */}
         {step === "intro" && (
@@ -206,7 +206,7 @@ export default function PilotTrapScanPage() {
               <br className="hidden md:block" />
               <span className="text-gold">Pilot 陷阱？</span>
             </h1>
-            <p className="text-lg md:text-xl text-[#A0C4E8] max-w-2xl mx-auto mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-sky max-w-2xl mx-auto mb-8 leading-relaxed">
               25 題，五分鐘，測出你的 AI 應用是在為未來營運鋪路，
               還是在把舊流程<span className="text-white font-semibold">硬化成無人治理的 code</span>。
               立即得到五維度健康雷達圖與具體行動建議。
@@ -219,7 +219,7 @@ export default function PilotTrapScanPage() {
               ].map((f) => (
                 <div key={f.label} className="bg-white/5 border border-white/10 rounded-xl p-4">
                   <div className="text-2xl mb-1">{f.icon}</div>
-                  <div className="text-sm text-[#A0C4E8]">{f.label}</div>
+                  <div className="text-sm text-sky">{f.label}</div>
                 </div>
               ))}
             </div>
@@ -237,7 +237,7 @@ export default function PilotTrapScanPage() {
                 🏢 團隊工作坊模式（主持人彙總）→
               </a>
             </div>
-            <p className="text-xs text-[#5A7A9E] mt-6">
+            <p className="text-xs text-mist mt-6">
               方法論源自 McKinsey《逃離 Pilot 陷阱》與榕耀管顧
               <a href="/knowledge/managing-31-ai-agents/" className="text-accent hover:underline mx-1">
                 「我們怎麼管自己的 31 個 AI 員工」
@@ -251,7 +251,7 @@ export default function PilotTrapScanPage() {
         {step === "form" && (
           <div>
             <div className="mb-6">
-              <div className="flex items-center justify-between text-sm text-[#A0C4E8] mb-2">
+              <div className="flex items-center justify-between text-sm text-sky mb-2">
                 <span>
                   第 {qIndex + 1} / {QUESTIONS.length} 題
                 </span>
@@ -291,7 +291,7 @@ export default function PilotTrapScanPage() {
               <button
                 onClick={goBack}
                 disabled={qIndex === 0}
-                className="px-6 py-3 rounded-full border border-white/15 text-[#A0C4E8] disabled:opacity-30 hover:bg-white/5 transition-colors"
+                className="px-6 py-3 rounded-full border border-white/15 text-sky disabled:opacity-30 hover:bg-white/5 transition-colors"
               >
                 ← 上一題
               </button>
@@ -299,7 +299,7 @@ export default function PilotTrapScanPage() {
               {isLast && answeredCount === QUESTIONS.length ? (
                 <div className="flex-1 ml-4">
                   <div className="bg-white/5 border border-white/10 rounded-xl p-4 mb-3">
-                    <p className="text-sm text-[#A0C4E8] mb-2">
+                    <p className="text-sm text-sky mb-2">
                       （選填）留下 Email，我們把診斷結果與後續建議寄給你：
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
@@ -307,20 +307,20 @@ export default function PilotTrapScanPage() {
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         placeholder="姓名"
-                        className="bg-[#0A1F3A] border border-white/15 rounded-lg px-3 py-2 text-sm text-white placeholder-[#5A7A9E] focus:outline-none focus:border-accent"
+                        className="bg-night border border-white/15 rounded-lg px-3 py-2 text-sm text-white placeholder-mist focus:outline-none focus:border-accent"
                       />
                       <input
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         placeholder="Email"
                         type="email"
-                        className="bg-[#0A1F3A] border border-white/15 rounded-lg px-3 py-2 text-sm text-white placeholder-[#5A7A9E] focus:outline-none focus:border-accent"
+                        className="bg-night border border-white/15 rounded-lg px-3 py-2 text-sm text-white placeholder-mist focus:outline-none focus:border-accent"
                       />
                       <input
                         value={company}
                         onChange={(e) => setCompany(e.target.value)}
                         placeholder="公司"
-                        className="bg-[#0A1F3A] border border-white/15 rounded-lg px-3 py-2 text-sm text-white placeholder-[#5A7A9E] focus:outline-none focus:border-accent"
+                        className="bg-night border border-white/15 rounded-lg px-3 py-2 text-sm text-white placeholder-mist focus:outline-none focus:border-accent"
                       />
                     </div>
                   </div>
@@ -333,7 +333,7 @@ export default function PilotTrapScanPage() {
                   </button>
                 </div>
               ) : (
-                <span className="text-sm text-[#5A7A9E]">
+                <span className="text-sm text-mist">
                   {qAnswered ? "已作答，將自動進入下一題" : "請選擇最符合的答案"}
                 </span>
               )}
@@ -356,7 +356,7 @@ export default function PilotTrapScanPage() {
                 {result.level === "attention" && "有些地方在漏，趁早補"}
                 {result.level === "red" && "你正在養一堆沒人管的 pilot"}
               </h1>
-              <p className="text-[#A0C4E8] max-w-xl mx-auto leading-relaxed">{LEVEL_META[result.level].desc}</p>
+              <p className="text-sky max-w-xl mx-auto leading-relaxed">{LEVEL_META[result.level].desc}</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-10">
@@ -375,14 +375,14 @@ export default function PilotTrapScanPage() {
                   <div className="flex items-baseline justify-between mb-1">
                     <span className="text-white font-semibold">
                       Pilot Trap 陷阱深度
-                      <span className="text-[#A0C4E8] text-sm font-normal ml-2">（越高越危險）</span>
+                      <span className="text-sky text-sm font-normal ml-2">（越高越危險）</span>
                     </span>
                     <span className="font-bold text-lg text-[#E0503A]">{result.pilotRisk}%</span>
                   </div>
                   <div className="h-2.5 rounded-full bg-white/10 overflow-hidden">
                     <div className="h-full rounded-full bg-gradient-to-r from-gold to-[#E0503A]" style={{ width: `${result.pilotRisk}%` }} />
                   </div>
-                  <p className="text-xs text-[#A0C4E8] mt-2">
+                  <p className="text-xs text-sky mt-2">
                     {result.pilotRisk >= 60
                       ? "你的 pilot 正在把舊流程硬化成 code。先定義未來藍圖，再決定每個 pilot 的去留。"
                       : result.pilotRisk >= 35
@@ -412,13 +412,13 @@ export default function PilotTrapScanPage() {
                 <span className="text-2xl">🏢</span>
                 <div>
                   <h2 className="text-lg md:text-xl font-bold">團隊工作坊模式</h2>
-                  <p className="text-sm text-[#A0C4E8]">
+                  <p className="text-sm text-sky">
                     正在參加公司的工作坊？把這串分數碼複製給主持人，他會在彙總頁即時產生團隊雷達圖與診斷報告。
                   </p>
                 </div>
               </div>
               <div className="flex flex-col md:flex-row gap-3 items-stretch">
-                <code className="flex-1 bg-[#0A1F3A] border border-white/15 rounded-xl px-4 py-3 text-sm text-accent font-mono break-all">
+                <code className="flex-1 bg-night border border-white/15 rounded-xl px-4 py-3 text-sm text-accent font-mono break-all">
                   {encodeScoreCode(name, result.scores)}
                 </code>
                 <button
@@ -453,7 +453,7 @@ export default function PilotTrapScanPage() {
 
             <div className="text-center bg-gradient-to-br from-secondary/20 to-accent/10 border border-accent/30 rounded-2xl p-8 mb-8">
               <h2 className="text-xl md:text-2xl font-bold mb-2">想把診斷變成行動方案？</h2>
-              <p className="text-[#A0C4E8] mb-5 max-w-lg mx-auto">
+              <p className="text-sky mb-5 max-w-lg mx-auto">
                 榕耀管顧的 Agentic HR 診斷工作坊，幫你在三小時內把這份雷達圖變成
                 「AI 轉型 North Star 一頁圖」與 30/60/90 天行動計畫。
               </p>
@@ -468,7 +468,7 @@ export default function PilotTrapScanPage() {
             <div className="text-center">
               <button
                 onClick={restart}
-                className="px-8 py-3 rounded-full border border-white/15 text-[#A0C4E8] hover:bg-white/5 transition-colors"
+                className="px-8 py-3 rounded-full border border-white/15 text-sky hover:bg-white/5 transition-colors"
               >
                 ↺ 重新測一次
               </button>

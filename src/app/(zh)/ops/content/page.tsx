@@ -42,7 +42,7 @@ export default function OpsContentPage() {
             ["競對報告", c.competitorReports, "份"],
             ["洞察筆記", c.insights, "篇"],
           ].map(([label, val, unit]) => (
-            <div key={String(label)} className="rounded-xl border border-[#E4DDD0] bg-[#FBF8F3] px-4 py-3">
+            <div key={String(label)} className="rounded-xl border border-[#E4DDD0] bg-surface-hover px-4 py-3">
               <div className="text-xs text-[#6B655D]">{label}</div>
               <div className="mt-1 text-2xl font-bold tabular-nums text-primary">
                 {val}

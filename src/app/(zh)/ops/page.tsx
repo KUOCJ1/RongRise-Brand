@@ -110,7 +110,7 @@ function KpiCard({ item }: { item: Headline }) {
 
 function Stat({ label, value, unit, note }: { label: string; value: number | string; unit?: string; note?: string }) {
   return (
-    <div className="rounded-xl border border-[#E4DDD0] bg-[#FBF8F3] px-4 py-3">
+    <div className="rounded-xl border border-[#E4DDD0] bg-surface-hover px-4 py-3">
       <div className="text-xs text-[#6B655D]">{label}</div>
       <div className="mt-1 flex items-baseline gap-1">
         <span className="text-2xl font-bold tabular-nums text-primary">{value}</span>
@@ -166,7 +166,7 @@ export default function OpsPage() {
   const uptime = h.checks ? ((h.online / h.checks) * 100).toFixed(1) : "—";
 
   return (
-    <main className="bg-[#FBF8F3]">
+    <main className="bg-surface-hover">
       <div className="mx-auto max-w-6xl px-5 py-14 sm:px-8">
         {/* Header */}
         <header className="mb-10">

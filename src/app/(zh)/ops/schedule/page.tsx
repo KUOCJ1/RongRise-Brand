@@ -65,7 +65,7 @@ export default function OpsSchedulePage() {
                   <td className="whitespace-nowrap py-2.5 pr-3 text-xs text-[#4A4540]">{it.type}</td>
                   <td className="whitespace-nowrap py-2.5 pr-3 text-xs text-[#4A4540]">
                     {it.state === "resolved" || it.state === "closed" ? (
-                      <span className="text-[#1E7F76]">已解除 {it.closed}</span>
+                      <span className="text-accent-strong">已解除 {it.closed}</span>
                     ) : (
                       <span className="text-[#A9611A]">未結</span>
                     )}

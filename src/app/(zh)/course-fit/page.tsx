@@ -122,7 +122,7 @@ export default function CourseFitPage() {
   }, [input, result]);
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-night text-white">
       <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
         {/* ===== STEP 1: INTRO ===== */}
         {step === "intro" && (
@@ -153,7 +153,7 @@ export default function CourseFitPage() {
             </div>
             <button
               onClick={() => setStep("quiz")}
-              className="bg-gold hover:bg-[#F5A623] text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
+              className="bg-gold hover:bg-amber text-white font-bold px-10 py-4 rounded-full text-lg transition-colors shadow-lg"
             >
               開始自評 →
             </button>
@@ -287,7 +287,7 @@ export default function CourseFitPage() {
             <button
               onClick={handleSubmit}
               disabled={submitting}
-              className="w-full bg-gold hover:bg-[#F5A623] disabled:opacity-50 text-white font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg"
+              className="w-full bg-gold hover:bg-amber disabled:opacity-50 text-white font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-lg"
             >
               {submitting ? "計算中…" : "看推薦結果 →"}
             </button>
@@ -379,7 +379,7 @@ export default function CourseFitPage() {
                   </p>
                   <a
                     href={result.cta.primary}
-                    className="inline-block bg-gold hover:bg-[#F5A623] text-white font-bold px-8 py-3.5 rounded-full transition-colors"
+                    className="inline-block bg-gold hover:bg-amber text-white font-bold px-8 py-3.5 rounded-full transition-colors"
                   >
                     預約免費諮詢 →
                   </a>
@@ -392,7 +392,7 @@ export default function CourseFitPage() {
                   <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                     <a
                       href={result.cta.primary}
-                      className="inline-block bg-gold hover:bg-[#F5A623] text-white font-bold px-8 py-3.5 rounded-full transition-colors"
+                      className="inline-block bg-gold hover:bg-amber text-white font-bold px-8 py-3.5 rounded-full transition-colors"
                     >
                       查看課程詳情 →
                     </a>

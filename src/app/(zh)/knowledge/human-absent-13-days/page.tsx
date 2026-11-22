@@ -124,7 +124,7 @@ export default function HumanAbsentThirteenDaysPage() {
         <div className="max-w-[860px] mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             {NUMBERS.map((x) => (
-              <div key={x.t} className="rounded-2xl border border-border-light bg-[#FBF8F3] p-4">
+              <div key={x.t} className="rounded-2xl border border-border-light bg-surface-hover p-4">
                 <p className="text-2xl font-bold" style={{ color: NAVY }}>
                   {x.n}
                 </p>
@@ -176,7 +176,7 @@ export default function HumanAbsentThirteenDaysPage() {
             </figcaption>
           </figure>
 
-          <div className="my-12 rounded-2xl border border-border-light bg-[#FBF8F3] p-6 md:p-8">
+          <div className="my-12 rounded-2xl border border-border-light bg-surface-hover p-6 md:p-8">
             <h2 className="text-xl font-bold mb-4" style={{ color: NAVY }}>
               這個系列在測什麼
             </h2>

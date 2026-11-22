@@ -40,7 +40,7 @@ export default function OpsAttentionPage() {
             ["每天進場（中位數）", `${m.medianVisits} 次`],
             ["每次停留（中位數）", `${m.perVisit} 分`],
           ].map(([k, v]) => (
-            <div key={k} className="rounded-xl border border-[#E4DDD0] bg-[#FBF8F3] px-4 py-3">
+            <div key={k} className="rounded-xl border border-[#E4DDD0] bg-surface-hover px-4 py-3">
               <div className="text-xs text-[#6B655D]">{k}</div>
               <div className="mt-1 text-xl font-bold tabular-nums text-primary">{v}</div>
             </div>

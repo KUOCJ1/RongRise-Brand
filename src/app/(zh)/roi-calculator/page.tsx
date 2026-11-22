@@ -105,7 +105,7 @@ export default function RoiCalculatorPage() {
   }, [form]);
 
   return (
-    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-[#0A1F3A] text-white">
+    <div className="min-h-[70vh] bg-gradient-to-b from-primary via-primary to-night text-white">
       <div className="max-w-4xl mx-auto px-4 py-12 md:py-16">
         {/* ===== STEP 1: 介紹 ===== */}
         {step === "intro" && (
@@ -118,7 +118,7 @@ export default function RoiCalculatorPage() {
               <br />
               三分鐘算出你的 ROI
             </h1>
-            <p className="text-lg md:text-xl text-[#A0C4E8] max-w-2xl mx-auto mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-sky max-w-2xl mx-auto mb-8 leading-relaxed">
               輸入產業、員工人數與導入範圍，立即估算 AI 轉型的
               <strong className="text-white"> 3 年投資報酬率、節省工時與回收期</strong>。
               採用保守模型，不灌水。
@@ -131,7 +131,7 @@ export default function RoiCalculatorPage() {
               ].map((f) => (
                 <div key={f.label} className="bg-white/5 border border-white/10 rounded-xl p-4">
                   <div className="text-2xl mb-1">{f.icon}</div>
-                  <div className="text-sm text-[#A0C4E8]">{f.label}</div>
+                  <div className="text-sm text-sky">{f.label}</div>
                 </div>
               ))}
             </div>
@@ -141,7 +141,7 @@ export default function RoiCalculatorPage() {
             >
               開始估算 →
             </button>
-            <p className="text-xs text-[#5A7A9E] mt-6">
+            <p className="text-xs text-mist mt-6">
               資料僅用於估算，不會對外揭露。可匿名使用，填寫 Email 可獲得完整報告。
             </p>
           </div>
@@ -152,12 +152,12 @@ export default function RoiCalculatorPage() {
           <div>
             <button
               onClick={() => setStep("intro")}
-              className="text-sm text-[#A0C4E8] hover:text-white mb-6 transition-colors"
+              className="text-sm text-sky hover:text-white mb-6 transition-colors"
             >
               ← 返回
             </button>
             <h2 className="text-2xl md:text-3xl font-bold mb-2">你的企業概況</h2>
-            <p className="text-[#A0C4E8] mb-8">三個問題，我們就能估算你的 AI 轉型投資回報。</p>
+            <p className="text-sky mb-8">三個問題，我們就能估算你的 AI 轉型投資回報。</p>
 
             <div className="space-y-8">
               {/* 產業 */}
@@ -171,7 +171,7 @@ export default function RoiCalculatorPage() {
                       className={`text-sm px-3 py-2.5 rounded-lg border transition-all text-left ${
                         form.industry === key
                           ? "bg-secondary/30 border-accent text-white font-semibold"
-                          : "bg-white/5 border-white/10 text-[#A0C4E8] hover:border-secondary"
+                          : "bg-white/5 border-white/10 text-sky hover:border-secondary"
                       }`}
                     >
                       {ind.label}
@@ -191,7 +191,7 @@ export default function RoiCalculatorPage() {
                       className={`text-sm px-3 py-2.5 rounded-lg border transition-all ${
                         form.employees === opt.value
                           ? "bg-secondary/30 border-accent text-white font-semibold"
-                          : "bg-white/5 border-white/10 text-[#A0C4E8] hover:border-secondary"
+                          : "bg-white/5 border-white/10 text-sky hover:border-secondary"
                       }`}
                     >
                       {opt.label}
@@ -215,14 +215,14 @@ export default function RoiCalculatorPage() {
                         className={`flex items-center gap-3 text-sm px-4 py-3 rounded-lg border transition-all text-left ${
                           active
                             ? "bg-secondary/30 border-accent text-white font-semibold"
-                            : "bg-white/5 border-white/10 text-[#A0C4E8] hover:border-secondary"
+                            : "bg-white/5 border-white/10 text-sky hover:border-secondary"
                         }`}
                       >
                         <span className="text-xl">{sc.icon}</span>
                         <span className="flex-1">{sc.label}</span>
                         <span
                           className={`w-5 h-5 rounded-full border-2 flex items-center justify-center text-xs ${
-                            active ? "bg-accent border-accent text-primary" : "border-[#5A7A9E]"
+                            active ? "bg-accent border-accent text-primary" : "border-mist"
                           }`}
                         >
                           {active ? "✓" : ""}
@@ -238,28 +238,28 @@ export default function RoiCalculatorPage() {
                 <label className="block text-sm font-semibold text-accent mb-1">
                   4. 留下 Email 取得完整報告（選填）
                 </label>
-                <p className="text-xs text-[#5A7A9E] mb-4">填寫後可收到 PDF 版估算報告與 AI 轉型週報。</p>
+                <p className="text-xs text-mist mb-4">填寫後可收到 PDF 版估算報告與 AI 轉型週報。</p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                   <input
                     type="text"
                     placeholder="姓名"
                     value={form.name}
                     onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))}
-                    className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-[#5A7A9E] focus:border-accent focus:outline-none"
+                    className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-mist focus:border-accent focus:outline-none"
                   />
                   <input
                     type="email"
                     placeholder="Email *"
                     value={form.email}
                     onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))}
-                    className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-[#5A7A9E] focus:border-accent focus:outline-none"
+                    className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-mist focus:border-accent focus:outline-none"
                   />
                   <input
                     type="text"
                     placeholder="公司名稱"
                     value={form.company}
                     onChange={(e) => setForm((f) => ({ ...f, company: e.target.value }))}
-                    className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-[#5A7A9E] focus:border-accent focus:outline-none"
+                    className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm placeholder-mist focus:border-accent focus:outline-none"
                   />
                 </div>
               </div>
@@ -286,7 +286,7 @@ export default function RoiCalculatorPage() {
           <div>
             <button
               onClick={() => { setStep("form"); setSubmitted(false); }}
-              className="text-sm text-[#A0C4E8] hover:text-white mb-6 transition-colors"
+              className="text-sm text-sky hover:text-white mb-6 transition-colors"
             >
               ← 重新估算
             </button>
@@ -300,11 +300,11 @@ export default function RoiCalculatorPage() {
                 {result.netBenefit > 0 ? "+" : ""}
                 {formatNt(result.netBenefit)}
               </div>
-              <p className="text-[#A0C4E8] text-lg">3 年淨效益（預估）</p>
+              <p className="text-sky text-lg">3 年淨效益（預估）</p>
               <div className="inline-flex items-center gap-2 mt-4 bg-accent/10 border border-accent/30 rounded-full px-5 py-2">
                 <span className="text-sm text-accent font-bold">3 年 ROI {formatRoi(result.roi)}</span>
-                <span className="text-[#5A7A9E]">·</span>
-                <span className="text-sm text-[#A0C4E8]">
+                <span className="text-mist">·</span>
+                <span className="text-sm text-sky">
                   回收期約 {result.paybackMonths > 0 ? `${result.paybackMonths} 個月` : "超過 3 年"}
                 </span>
               </div>
@@ -320,7 +320,7 @@ export default function RoiCalculatorPage() {
                 <div key={c.label} className="bg-white/5 border border-white/10 rounded-xl p-5 text-center">
                   <div className="text-2xl mb-2">{c.icon}</div>
                   <div className="text-xl font-bold text-white mb-1">{c.value}</div>
-                  <div className="text-sm text-[#A0C4E8]">{c.label}</div>
+                  <div className="text-sm text-sky">{c.label}</div>
                 </div>
               ))}
             </div>
@@ -329,7 +329,7 @@ export default function RoiCalculatorPage() {
             <div className="bg-white/5 border border-white/10 rounded-xl overflow-hidden mb-8">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="bg-secondary/20 text-[#A0C4E8]">
+                  <tr className="bg-secondary/20 text-sky">
                     <th className="px-4 py-3 text-left font-semibold">年度</th>
                     <th className="px-4 py-3 text-right font-semibold">預估效益</th>
                     <th className="px-4 py-3 text-right font-semibold">投入成本</th>
@@ -341,7 +341,7 @@ export default function RoiCalculatorPage() {
                     <tr key={y.year} className="border-t border-white/10">
                       <td className="px-4 py-3 text-white font-medium">第 {y.year} 年</td>
                       <td className="px-4 py-3 text-right text-accent">+{formatNt(y.benefit)}</td>
-                      <td className="px-4 py-3 text-right text-[#A0C4E8]">−{formatNt(y.cost)}</td>
+                      <td className="px-4 py-3 text-right text-sky">−{formatNt(y.cost)}</td>
                       <td className={`px-4 py-3 text-right font-bold ${y.net >= 0 ? "text-white" : "text-red-300"}`}>
                         {y.net >= 0 ? "+" : "−"}{formatNt(Math.abs(y.net))}
                       </td>
@@ -353,7 +353,7 @@ export default function RoiCalculatorPage() {
 
             {/* 免責與 CTA */}
             <div className="bg-secondary/10 border border-secondary/30 rounded-xl p-5 mb-8">
-              <p className="text-xs text-[#A0C4E8] leading-relaxed">
+              <p className="text-xs text-sky leading-relaxed">
                 <strong className="text-white">模型說明：</strong>本估算採用保守模型 — 產業自動化比例參考
                 McKinsey 研究、實際節省率取 30%（低於業界宣稱）、採用率逐年遞增（30% → 60% → 80%）。
                 實際結果會因企業流程、數據品質與執行力而異，本數字僅供決策參考。
@@ -362,7 +362,7 @@ export default function RoiCalculatorPage() {
 
             <div className="text-center">
               <h3 className="text-xl md:text-2xl font-bold mb-3">想讓這份估算變成行動方案？</h3>
-              <p className="text-[#A0C4E8] mb-6 max-w-xl mx-auto">
+              <p className="text-sky mb-6 max-w-xl mx-auto">
                 CJ 哥提供免費 30 分鐘線上諮詢，幫你把 ROI 估算轉成具體的導入藍圖。
               </p>
               <a
