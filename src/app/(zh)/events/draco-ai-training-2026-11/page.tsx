@@ -31,12 +31,29 @@ const jsonLd = {
   },
 };
 
+const videoLd = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: "登泰國際物流 AI 職能提升班：兩天，36 位主管把 AI Agent 做出來",
+  description:
+    "2026 年 11 月 21、22 日，高雄登泰國際物流的兩天 AI 職能提升班。第二天以部門真實題目做黑客松，每組平均做出三到五個能跑的小工具。",
+  thumbnailUrl: "https://i.ytimg.com/vi/gJabiQt9Mvc/maxresdefault.jpg",
+  uploadDate: "2026-11-22",
+  duration: "PT1M13S",
+  embedUrl: "https://www.youtube.com/embed/gJabiQt9Mvc",
+  contentUrl: "https://youtu.be/gJabiQt9Mvc",
+};
+
 export default function Page() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoLd) }}
       />
 
       <section className="bg-gradient-hero text-white">
@@ -70,6 +87,19 @@ export default function Page() {
               課程安排是兩天 12 小時。原本的規劃是第一天建立觀念，第二天教進階技巧。
               但我第一天講完，心裡有點慚愧：我低估了他們。
             </p>
+
+            <div className="my-12 not-prose">
+              <div className="aspect-video w-full overflow-hidden rounded-2xl border border-border-light bg-black/90">
+                <iframe
+                  src="https://www.youtube.com/embed/gJabiQt9Mvc"
+                  title="登泰國際物流 AI 職能提升班：兩天，36 位主管把 AI Agent 做出來"
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+              <p className={CAP}>兩天的課程紀錄，1 分 13 秒。</p>
+            </div>
 
             <figure className="my-10">
               <img
