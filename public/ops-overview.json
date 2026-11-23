@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-22T00:30:40Z",
+  "generatedAt": "2026-11-23T00:30:40Z",
   "periods": {
-    "content": "累計至 2026-11-22；近 30 天＝2026-10-23 起",
-    "health": "2026-10-22 ~ 2026-10-31（10 天）",
+    "content": "累計至 2026-11-23；近 30 天＝2026-10-24 起",
+    "health": "2026-10-23 ~ 2026-10-31（9 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-20（49 天）"
+    "management": "2026-10-03 ~ 2026-11-21（50 天）"
   },
   "headline": [
     {
@@ -19,21 +19,21 @@
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "10 天 × 18 個服務，180/180 次在線"
+      "note": "9 天 × 18 個服務，162/162 次在線"
     },
     {
       "key": "incidents",
       "label": "未結事故",
       "value": 0,
       "unit": "件",
-      "note": "近 30 天 23 筆告警，涉及 17 支排程"
+      "note": "近 30 天 8 筆告警，涉及 6 支排程"
     },
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 43.3,
+      "value": 42.7,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；12/49 天達標"
+      "note": "實驗期 37.1 分；13/50 天達標"
     }
   ],
   "content": {
@@ -42,10 +42,10 @@
     "newsletters": 35,
     "videos": 48,
     "videos30d": 3,
-    "igCards": 54,
+    "igCards": 57,
     "socialPosts": 90,
-    "scanDays": 154,
-    "competitorReports": 153,
+    "scanDays": 155,
+    "competitorReports": 154,
     "insights": 21,
     "monthly": [
       {
@@ -394,14 +394,6 @@
   "health": {
     "days": [
       {
-        "date": "2026-10-22",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 79,
-        "restarts": 23
-      },
-      {
         "date": "2026-10-23",
         "online": 18,
         "total": 18,
@@ -474,8 +466,8 @@
         "restarts": 35
       }
     ],
-    "checks": 180,
-    "online": 180,
+    "checks": 162,
+    "online": 162,
     "warningDays": 1,
     "maxDisk": 85,
     "live": [
@@ -484,14 +476,14 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.04
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.09
+        "seconds": 0.15
       },
       {
         "name": "AI 落地頁",
@@ -505,14 +497,14 @@
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.06
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.06
+        "seconds": 0.07
       },
       {
         "name": "管理後台",
@@ -522,21 +514,17 @@
         "seconds": 0.03
       }
     ],
-    "liveAt": "2026-11-22 00:30 UTC"
+    "liveAt": "2026-11-23 00:30 UTC"
   },
   "schedule": {
-    "incidents30d": 23,
-    "incidentJobs": 17,
-    "incidentDays": 7,
+    "incidents30d": 8,
+    "incidentJobs": 6,
+    "incidentDays": 6,
     "open": 0,
     "types": [
       {
         "type": "script",
-        "count": 14
-      },
-      {
-        "type": "config",
-        "count": 7
+        "count": 6
       },
       {
         "type": "timeout",
@@ -545,7 +533,7 @@
     ],
     "executions": 1002,
     "executionsOk": 1000,
-    "executionsFrom": "2026-11-21T12:33:45",
+    "executionsFrom": "2026-11-22T12:32:39",
     "incidents": [
       {
         "job": "eaad6d01d85d",
@@ -868,18 +856,18 @@
         "error": "Script exited with code 1"
       }
     ],
-    "jobs": 94,
-    "jobsEnabled": 86
+    "jobs": 95,
+    "jobsEnabled": 87
   },
   "management": {
-    "days": 49,
-    "medianOnline": 43.3,
+    "days": 50,
+    "medianOnline": 42.7,
     "experimentMedian": 37.1,
-    "avgOnline": 50.2,
-    "totalHours": 41.0,
-    "medianVisits": 15,
+    "avgOnline": 49.6,
+    "totalHours": 41.4,
+    "medianVisits": 15.0,
     "perVisit": 3.0,
-    "daysUnder30": 12,
+    "daysUnder30": 13,
     "daily": [
       {
         "date": "2026-10-03",
@@ -1125,6 +1113,11 @@
         "date": "2026-11-20",
         "min": 46.1,
         "visits": 16
+      },
+      {
+        "date": "2026-11-21",
+        "min": 21.4,
+        "visits": 9
       }
     ]
   },
@@ -1132,17 +1125,17 @@
     "subscribers": 22,
     "confirmed": 15,
     "pending": 6,
-    "views": 1323,
+    "views": 1349,
     "channelSubscribers": 19
   },
   "rework": {
     "period": "近 30 天（重工帳本 state/rework_log.jsonl）",
-    "count": 15,
-    "minutes": 536,
+    "count": 17,
+    "minutes": 701,
     "byKind": [
       {
         "kind": "video",
-        "count": 12
+        "count": 14
       },
       {
         "kind": "article",
@@ -1158,20 +1151,6 @@
       }
     ],
     "items": [
-      {
-        "ts": "2026-11-12 23:32",
-        "kind": "video",
-        "what": "LINE 數字用語（月活→月活躍用戶）",
-        "cause": "旁白、字卡、說明、文章四處分散",
-        "minutes": 5
-      },
-      {
-        "ts": "2026-11-12 23:32",
-        "kind": "article",
-        "what": "官網文章用語修正後重部署",
-        "cause": "月活、匯報兩處用語",
-        "minutes": 6
-      },
       {
         "ts": "2026-11-12 23:32",
         "kind": "video",
@@ -1241,6 +1220,20 @@
         "what": "IG/FB AI 工具使用率 23.5s → 重製 48.6s 旁白版",
         "cause": "外部製作版：字卡『工具』被拆行、六步 7 秒跑完無解釋、無旁白、CTA 只靠留言（API 403 接不到）",
         "minutes": 95
+      },
+      {
+        "ts": "2026-11-22 21:53",
+        "kind": "video",
+        "what": "登泰客戶版橫式影片（字卡）",
+        "cause": "字卡被評為空洞像 PPT",
+        "minutes": 45
+      },
+      {
+        "ts": "2026-11-22 21:53",
+        "kind": "video",
+        "what": "登泰影片轉場與字級（前幾版）",
+        "cause": "字卡重疊、字太小、結尾出框",
+        "minutes": 120
       }
     ]
   }
