@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-23T00:30:40Z",
+  "generatedAt": "2026-11-24T00:30:51Z",
   "periods": {
-    "content": "累計至 2026-11-23；近 30 天＝2026-10-24 起",
-    "health": "2026-10-23 ~ 2026-10-31（9 天）",
+    "content": "累計至 2026-11-24；近 30 天＝2026-10-25 起",
+    "health": "2026-10-24 ~ 2026-10-31（8 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-21（50 天）"
+    "management": "2026-10-03 ~ 2026-11-22（51 天）"
   },
   "headline": [
     {
@@ -19,33 +19,33 @@
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "9 天 × 18 個服務，162/162 次在線"
+      "note": "8 天 × 18 個服務，144/144 次在線"
     },
     {
       "key": "incidents",
       "label": "未結事故",
-      "value": 0,
+      "value": 2,
       "unit": "件",
-      "note": "近 30 天 8 筆告警，涉及 6 支排程"
+      "note": "近 30 天 10 筆告警，涉及 7 支排程"
     },
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 42.7,
+      "value": 43.3,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；13/50 天達標"
+      "note": "實驗期 37.1 分；13/51 天達標"
     }
   ],
   "content": {
     "articles": 109,
     "articles30d": 15,
     "newsletters": 35,
-    "videos": 48,
+    "videos": 49,
     "videos30d": 3,
     "igCards": 57,
-    "socialPosts": 90,
-    "scanDays": 155,
-    "competitorReports": 154,
+    "socialPosts": 91,
+    "scanDays": 156,
+    "competitorReports": 155,
     "insights": 21,
     "monthly": [
       {
@@ -361,6 +361,11 @@
     ],
     "videoList": [
       {
+        "title": "登泰國際物流｜AI 職能提升班：兩天，36 位主管把 AI Agent 做出來",
+        "date": "2026-11-22",
+        "url": "https://www.youtube.com/watch?v=gJabiQt9Mvc"
+      },
+      {
         "title": "每個人都聽過百岳，卻不一定知道林文安｜那份名單是怎麼來的",
         "date": "2026-11-16",
         "url": "https://www.youtube.com/watch?v=gj2nUNsTCi8"
@@ -369,11 +374,6 @@
         "title": "砍了一百年，長回來的是責任層｜組織層級的三種功能",
         "date": "2026-11-15",
         "url": "https://www.youtube.com/watch?v=z5QxsLUf1Hw"
-      },
-      {
-        "title": "連輝達都沒有接班計畫：執行長辭職那天，公司只剩一個選項",
-        "date": "2026-11-12",
-        "url": "https://www.youtube.com/watch?v=zweVxaOkZLs"
       }
     ],
     "latest": {
@@ -384,23 +384,15 @@
       },
       "newsletter": "🦞 榕賀觀點 第 35 期 — 2026-11-19",
       "video": {
-        "title": "每個人都聽過百岳，卻不一定知道林文安｜那份名單是怎麼來的",
-        "date": "2026-11-16",
-        "url": "https://www.youtube.com/watch?v=gj2nUNsTCi8"
+        "title": "登泰國際物流｜AI 職能提升班：兩天，36 位主管把 AI Agent 做出來",
+        "date": "2026-11-22",
+        "url": "https://www.youtube.com/watch?v=gJabiQt9Mvc"
       },
       "insight": "2026-W47.md"
     }
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-23",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 84,
-        "restarts": 14
-      },
       {
         "date": "2026-10-24",
         "online": 18,
@@ -466,8 +458,8 @@
         "restarts": 35
       }
     ],
-    "checks": 162,
-    "online": 162,
+    "checks": 144,
+    "online": 144,
     "warningDays": 1,
     "maxDisk": 85,
     "live": [
@@ -476,28 +468,28 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.16
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.15
+        "seconds": 0.13
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.06
+        "seconds": 0.04
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.06
+        "seconds": 0.04
       },
       {
         "name": "n8n 自動化",
@@ -511,30 +503,46 @@
         "url": "https://admin.rong-rise.com/",
         "code": "401",
         "ok": true,
-        "seconds": 0.03
+        "seconds": 0.04
       }
     ],
-    "liveAt": "2026-11-23 00:30 UTC"
+    "liveAt": "2026-11-24 00:30 UTC"
   },
   "schedule": {
-    "incidents30d": 8,
-    "incidentJobs": 6,
-    "incidentDays": 6,
-    "open": 0,
+    "incidents30d": 10,
+    "incidentJobs": 7,
+    "incidentDays": 7,
+    "open": 2,
     "types": [
       {
         "type": "script",
-        "count": 6
+        "count": 8
       },
       {
         "type": "timeout",
         "count": 2
       }
     ],
-    "executions": 1002,
+    "executions": 1001,
     "executionsOk": 1000,
-    "executionsFrom": "2026-11-22T12:32:39",
+    "executionsFrom": "2026-11-23T12:34:50",
     "incidents": [
+      {
+        "job": "580906dd60f2",
+        "type": "script",
+        "state": "alerted",
+        "first": "2026-11-23 01:05",
+        "closed": "",
+        "error": "Script exited with code 2"
+      },
+      {
+        "job": "66146e7037b0",
+        "type": "script",
+        "state": "alerted",
+        "first": "2026-11-23 01:00",
+        "closed": "",
+        "error": "Script exited with code 1"
+      },
       {
         "job": "eaad6d01d85d",
         "type": "script",
@@ -838,34 +846,18 @@
         "first": "2026-09-28 02:00",
         "closed": "2026-09-28 12:13",
         "error": "Script exited with code 1"
-      },
-      {
-        "job": "7cd089691150",
-        "type": "script",
-        "state": "resolved",
-        "first": "2026-09-27 11:30",
-        "closed": "2026-09-28 11:31",
-        "error": "Script exited with code 1"
-      },
-      {
-        "job": "3a081fa5350c",
-        "type": "script",
-        "state": "closed",
-        "first": "2026-09-27 06:00",
-        "closed": "2026-09-28 12:13",
-        "error": "Script exited with code 1"
       }
     ],
-    "jobs": 95,
-    "jobsEnabled": 87
+    "jobs": 96,
+    "jobsEnabled": 86
   },
   "management": {
-    "days": 50,
-    "medianOnline": 42.7,
+    "days": 51,
+    "medianOnline": 43.3,
     "experimentMedian": 37.1,
-    "avgOnline": 49.6,
-    "totalHours": 41.4,
-    "medianVisits": 15.0,
+    "avgOnline": 50.5,
+    "totalHours": 43.0,
+    "medianVisits": 15,
     "perVisit": 3.0,
     "daysUnder30": 13,
     "daily": [
@@ -1118,6 +1110,11 @@
         "date": "2026-11-21",
         "min": 21.4,
         "visits": 9
+      },
+      {
+        "date": "2026-11-22",
+        "min": 95.8,
+        "visits": 21
       }
     ]
   },
@@ -1125,7 +1122,7 @@
     "subscribers": 22,
     "confirmed": 15,
     "pending": 6,
-    "views": 1349,
+    "views": 1351,
     "channelSubscribers": 19
   },
   "rework": {
