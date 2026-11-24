@@ -17,6 +17,30 @@ CHANNEL_ID = "UCFfz1iDwqqRfjWgR7GhVMGA"
 OUTPUT = "/opt/data/RongRise-Brand/src/data/youtube-videos.json"
 MAX = 3
 
+def build_summary(text: str, limit: int = 140) -> str:
+    """把 YouTube 說明濃縮成卡片用的摘要。
+
+    規則：段落併成一串，取 limit 字內「最後一個完整句點」收尾，
+    絕不硬切在句子中間（2026-11-24：硬切 120 字讓三張卡片停在半句話，
+    官網 drift 週檢連續失敗）。
+    """
+    t = "".join(seg.strip() for seg in (text or "").split("\n\n") if seg.strip())
+    t = " ".join(t.split())
+    if not t:
+        return ""
+    if len(t) <= limit:
+        return t
+    head = t[:limit]
+    idx = max(head.rfind(p) for p in "。！？")
+    if idx >= 20:
+        return head[:idx + 1]
+    wider = t[:limit + 80]
+    idx2 = max(wider.rfind(p) for p in "。！？")
+    if idx2 >= 20:
+        return wider[:idx2 + 1]
+    return head.rstrip("，、；：,;:") + "。"
+
+
 with open(API_KEY_PATH) as f:
     API_KEY = f.read().strip()
 
@@ -46,7 +70,7 @@ try:
             "id": vid,
             "title": s["title"],
             "date": s["publishedAt"][:10],
-            "description": s.get("description", "")[:120],
+            "description": build_summary(s.get("description", "")),
             "thumbnail": f"https://img.youtube.com/vi/{vid}/maxresdefault.jpg",
             "thumbnailFallback": f"https://img.youtube.com/vi/{vid}/hqdefault.jpg",
             "url": f"https://www.youtube.com/watch?v={vid}",
