@@ -23,6 +23,15 @@ const categories = ["全部", "AI 轉型", "管理心理學", "課程設計", "�
 
 const articles: Article[] = [
   {
+    slug: "change-your-measuring-stick",
+    cat: "策略管理",
+    title: "華碩連幾百元小單都接，靠的不是 AI，是換一把尺",
+    date: "2026-11-24",
+    readTime: "9 分鐘",
+    excerpt: "華碩連幾百元小單都接，靠的不是 AI、是換一把尺：從單筆成交改看客戶終身價值。哈佛商業評論、公平會、哈佛商學院都指向同一件事——AI 攤平成本之後，真正賺到錢的是懂得換尺的人。",
+    tags: ["策略管理", "AI 導入", "衡量指標", "中小企業"],
+  },
+  {
     slug: "suppliers-invest-in-their-own-customer",
     cat: "全球趨勢",
     title: "供應商掏 260 億美元投資自己的客戶：AI 的成長，有多少是彼此投資撐起來的？",

@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "n73",
+      "date": "2026-11-24",
+      "category": "資源",
+      "title": "華碩連幾百元小單都接，靠的不是 AI，是換一把尺",
+      "summary": "華碩用 AI 攤平前期成本後，連幾百元小單都接；關鍵不是 AI，是換掉衡量生意的尺：從單筆成交改看客戶終身價值。哈佛商業評論、公平會、哈佛商學院都指向同一個判斷。",
+      "link": "/knowledge/change-your-measuring-stick",
+      "isNew": true
+    },
+    {
       "id": "n72",
       "date": "2026-11-22",
       "category": "活動",
@@ -25,7 +34,7 @@
       "title": "每個人都聽過百岳，卻不一定知道林文安",
       "summary": "台灣人熟悉百岳，卻不一定知道挑出那一百座山的人。1972 年名單在羊頭山頂公布，兩年五個月後，林文安死在 3,050 公尺的岩脊上。",
       "link": "/knowledge/taiwan-baili-lin-wen-an",
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "n69",
