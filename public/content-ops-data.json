@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-11-23T05:20:58Z",
+ "generatedAt": "2026-11-24T05:21:00Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 177
+  "daysRunning": 178
  },
  "stats": {
-  "scanDays": 156,
-  "weekArticles": 81,
+  "scanDays": 157,
+  "weekArticles": 82,
   "articles": 109,
   "newsItems": 72,
-  "newsletterIssues": 35,
+  "newsletterIssues": 36,
   "subscribers": 22,
   "confirmedSubscribers": 15,
-  "videos": 49,
-  "views": 1351,
+  "videos": 48,
+  "views": 1353,
   "channelSubscribers": 19,
-  "insights": 21,
+  "insights": 22,
   "socialPosts": 91,
   "igCards": 57,
-  "competitorReports": 155
+  "competitorReports": 156
  },
  "activity": [
-  {
-   "date": "2026-11-17",
-   "count": 11,
-   "topics": []
-  },
   {
    "date": "2026-11-18",
    "count": 12,
@@ -56,6 +51,11 @@
    "date": "2026-11-23",
    "count": 11,
    "topics": []
+  },
+  {
+   "date": "2026-11-24",
+   "count": 12,
+   "topics": []
   }
  ],
  "latest": {
@@ -64,25 +64,25 @@
    "date": "2026-11-17",
    "url": "/knowledge/suppliers-invest-in-their-own-customer"
   },
-  "newsletter": "🦞 榕賀觀點 第 35 期 — 2026-11-19",
+  "newsletter": "🦞 榕賀觀點 第 36 期 — 2026-11-23",
   "video": {
    "title": "登泰國際物流｜AI 職能提升班：兩天，36 位主管把 AI Agent 做出來",
    "date": "2026-11-22",
    "url": "https://www.youtube.com/watch?v=gJabiQt9Mvc"
   },
-  "insight": "2026-W47.md"
+  "insight": "2026-W48.md"
  },
  "trends": [
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 35,
+   "count": 37,
    "momentum": "flat"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 34,
+   "count": 33,
    "momentum": "flat"
   },
   {
@@ -92,15 +92,15 @@
    "momentum": "flat"
   },
   {
-   "keyword": "成本與投資",
-   "icon": "💰",
-   "count": 29,
+   "keyword": "安全與風險",
+   "icon": "🛡️",
+   "count": 26,
    "momentum": "flat"
   },
   {
-   "keyword": "安全與風險",
-   "icon": "🛡️",
-   "count": 25,
+   "keyword": "成本與投資",
+   "icon": "💰",
+   "count": 26,
    "momentum": "flat"
   }
  ]
