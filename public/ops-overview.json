@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-24T00:30:51Z",
+  "generatedAt": "2026-11-25T00:30:51Z",
   "periods": {
-    "content": "累計至 2026-11-24；近 30 天＝2026-10-25 起",
-    "health": "2026-10-24 ~ 2026-10-31（8 天）",
+    "content": "累計至 2026-11-25；近 30 天＝2026-10-26 起",
+    "health": "2026-10-25 ~ 2026-10-31（7 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-22（51 天）"
+    "management": "2026-10-03 ~ 2026-11-23（52 天）"
   },
   "headline": [
     {
@@ -12,41 +12,41 @@
       "label": "內容產出",
       "value": 109,
       "unit": "篇文章",
-      "note": "近 30 天新增 15 篇"
+      "note": "近 30 天新增 16 篇"
     },
     {
       "key": "uptime",
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "8 天 × 18 個服務，144/144 次在線"
+      "note": "7 天 × 18 個服務，126/126 次在線"
     },
     {
       "key": "incidents",
       "label": "未結事故",
-      "value": 2,
+      "value": 0,
       "unit": "件",
       "note": "近 30 天 10 筆告警，涉及 7 支排程"
     },
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 43.3,
+      "value": 42.7,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；13/51 天達標"
+      "note": "實驗期 37.1 分；13/52 天達標"
     }
   ],
   "content": {
     "articles": 109,
-    "articles30d": 15,
-    "newsletters": 35,
-    "videos": 49,
+    "articles30d": 16,
+    "newsletters": 36,
+    "videos": 48,
     "videos30d": 3,
     "igCards": 57,
     "socialPosts": 91,
-    "scanDays": 156,
-    "competitorReports": 155,
-    "insights": 21,
+    "scanDays": 157,
+    "competitorReports": 156,
+    "insights": 22,
     "monthly": [
       {
         "month": "2026-05",
@@ -74,10 +74,17 @@
       },
       {
         "month": "2026-11",
-        "count": 10
+        "count": 11
       }
     ],
     "articleList": [
+      {
+        "date": "2026-11-24",
+        "title": "華碩連幾百元小單都接，靠的不是 AI，是換一把尺",
+        "slug": "change-your-measuring-stick",
+        "url": "/knowledge/change-your-measuring-stick",
+        "cat": "策略管理"
+      },
       {
         "date": "2026-11-17",
         "title": "供應商掏 260 億美元投資自己的客戶：AI 的成長，有多少是彼此投資撐起來的？",
@@ -350,13 +357,6 @@
         "slug": "anthropic-fable-5-us-government-ban",
         "url": "/knowledge/anthropic-fable-5-us-government-ban",
         "cat": "AI 轉型"
-      },
-      {
-        "date": "2026-09-12",
-        "title": "那一天最大的幸運，是我們遇到了一大堆難題",
-        "slug": "luckiest-day-was-the-hardest-problems",
-        "url": "/knowledge/luckiest-day-was-the-hardest-problems",
-        "cat": "案例分享"
       }
     ],
     "videoList": [
@@ -382,25 +382,17 @@
         "date": "2026-11-17",
         "url": "/knowledge/suppliers-invest-in-their-own-customer"
       },
-      "newsletter": "🦞 榕賀觀點 第 35 期 — 2026-11-19",
+      "newsletter": "🦞 榕賀觀點 第 36 期 — 2026-11-23",
       "video": {
         "title": "登泰國際物流｜AI 職能提升班：兩天，36 位主管把 AI Agent 做出來",
         "date": "2026-11-22",
         "url": "https://www.youtube.com/watch?v=gJabiQt9Mvc"
       },
-      "insight": "2026-W47.md"
+      "insight": "2026-W48.md"
     }
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-24",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 80,
-        "restarts": 0
-      },
       {
         "date": "2026-10-25",
         "online": 18,
@@ -458,8 +450,8 @@
         "restarts": 35
       }
     ],
-    "checks": 144,
-    "online": 144,
+    "checks": 126,
+    "online": 126,
     "warningDays": 1,
     "maxDisk": 85,
     "live": [
@@ -468,21 +460,21 @@
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.16
+        "seconds": 0.05
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.13
+        "seconds": 0.12
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.07
       },
       {
         "name": "職能評測",
@@ -496,7 +488,7 @@
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.07
+        "seconds": 0.08
       },
       {
         "name": "管理後台",
@@ -506,13 +498,13 @@
         "seconds": 0.04
       }
     ],
-    "liveAt": "2026-11-24 00:30 UTC"
+    "liveAt": "2026-11-25 00:30 UTC"
   },
   "schedule": {
     "incidents30d": 10,
     "incidentJobs": 7,
     "incidentDays": 7,
-    "open": 2,
+    "open": 0,
     "types": [
       {
         "type": "script",
@@ -523,24 +515,24 @@
         "count": 2
       }
     ],
-    "executions": 1001,
+    "executions": 1002,
     "executionsOk": 1000,
-    "executionsFrom": "2026-11-23T12:34:50",
+    "executionsFrom": "2026-11-24T12:31:50",
     "incidents": [
       {
         "job": "580906dd60f2",
         "type": "script",
-        "state": "alerted",
+        "state": "resolved",
         "first": "2026-11-23 01:05",
-        "closed": "",
+        "closed": "2026-11-24 04:44",
         "error": "Script exited with code 2"
       },
       {
         "job": "66146e7037b0",
         "type": "script",
-        "state": "alerted",
+        "state": "resolved",
         "first": "2026-11-23 01:00",
-        "closed": "",
+        "closed": "2026-11-24 04:43",
         "error": "Script exited with code 1"
       },
       {
@@ -848,16 +840,16 @@
         "error": "Script exited with code 1"
       }
     ],
-    "jobs": 96,
-    "jobsEnabled": 86
+    "jobs": 98,
+    "jobsEnabled": 87
   },
   "management": {
-    "days": 51,
-    "medianOnline": 43.3,
+    "days": 52,
+    "medianOnline": 42.7,
     "experimentMedian": 37.1,
-    "avgOnline": 50.5,
-    "totalHours": 43.0,
-    "medianVisits": 15,
+    "avgOnline": 50.3,
+    "totalHours": 43.6,
+    "medianVisits": 15.5,
     "perVisit": 3.0,
     "daysUnder30": 13,
     "daily": [
@@ -1115,6 +1107,11 @@
         "date": "2026-11-22",
         "min": 95.8,
         "visits": 21
+      },
+      {
+        "date": "2026-11-23",
+        "min": 40.2,
+        "visits": 18
       }
     ]
   },
@@ -1122,7 +1119,7 @@
     "subscribers": 22,
     "confirmed": 15,
     "pending": 6,
-    "views": 1351,
+    "views": 1353,
     "channelSubscribers": 19
   },
   "rework": {
