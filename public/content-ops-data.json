@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-11-24T05:21:00Z",
+ "generatedAt": "2026-11-25T05:21:00Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 178
+  "daysRunning": 179
  },
  "stats": {
-  "scanDays": 157,
-  "weekArticles": 82,
-  "articles": 109,
-  "newsItems": 72,
+  "scanDays": 158,
+  "weekArticles": 80,
+  "articles": 110,
+  "newsItems": 73,
   "newsletterIssues": 36,
-  "subscribers": 22,
+  "subscribers": 23,
   "confirmedSubscribers": 15,
   "videos": 48,
-  "views": 1353,
+  "views": 1355,
   "channelSubscribers": 19,
   "insights": 22,
-  "socialPosts": 91,
+  "socialPosts": 92,
   "igCards": 57,
-  "competitorReports": 156
+  "competitorReports": 157
  },
  "activity": [
-  {
-   "date": "2026-11-18",
-   "count": 12,
-   "topics": []
-  },
   {
    "date": "2026-11-19",
    "count": 12,
@@ -56,13 +51,18 @@
    "date": "2026-11-24",
    "count": 12,
    "topics": []
+  },
+  {
+   "date": "2026-11-25",
+   "count": 10,
+   "topics": []
   }
  ],
  "latest": {
   "article": {
-   "title": "供應商掏 260 億美元投資自己的客戶：AI 的成長，有多少是彼此投資撐起來的？",
-   "date": "2026-11-17",
-   "url": "/knowledge/suppliers-invest-in-their-own-customer"
+   "title": "華碩連幾百元小單都接，靠的不是 AI，是換一把尺",
+   "date": "2026-11-24",
+   "url": "/knowledge/change-your-measuring-stick"
   },
   "newsletter": "🦞 榕賀觀點 第 36 期 — 2026-11-23",
   "video": {
@@ -76,31 +76,31 @@
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 37,
+   "count": 39,
    "momentum": "flat"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 33,
-   "momentum": "flat"
+   "count": 36,
+   "momentum": "up"
   },
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 30,
-   "momentum": "flat"
-  },
-  {
-   "keyword": "安全與風險",
-   "icon": "🛡️",
-   "count": 26,
+   "count": 35,
    "momentum": "flat"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 26,
+   "count": 25,
+   "momentum": "flat"
+  },
+  {
+   "keyword": "安全與風險",
+   "icon": "🛡️",
+   "count": 23,
    "momentum": "flat"
   }
  ]
