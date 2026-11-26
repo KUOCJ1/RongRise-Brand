@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T05:20:34Z",
+ "generatedAt": "2026-11-26T05:22:35Z",
  "window": {
   "from": "2026-11-20",
   "to": "2026-11-26",
@@ -24,7 +24,7 @@
    "category": "管理趨勢",
    "count": 41,
    "prevCount": 36,
-   "momentum": "flat"
+   "momentum": "up"
   },
   {
    "keyword": "人力資源",
@@ -40,7 +40,7 @@
    "category": "AI 轉型",
    "count": 35,
    "prevCount": 28,
-   "momentum": "flat"
+   "momentum": "up"
   },
   {
    "keyword": "成本與投資",
@@ -96,7 +96,7 @@
    "category": "人才策略",
    "count": 8,
    "prevCount": 10,
-   "momentum": "flat"
+   "momentum": "down"
   },
   {
    "keyword": "AI Agent",
@@ -112,7 +112,7 @@
    "category": "ESG 永續",
    "count": 7,
    "prevCount": 9,
-   "momentum": "flat"
+   "momentum": "down"
   },
   {
    "keyword": "ESG 揭露",

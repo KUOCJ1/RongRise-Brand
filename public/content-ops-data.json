@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T05:20:38Z",
+ "generatedAt": "2026-11-26T05:22:37Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
@@ -77,7 +77,7 @@
    "keyword": "組織與管理",
    "icon": "🏢",
    "count": 41,
-   "momentum": "flat"
+   "momentum": "up"
   },
   {
    "keyword": "人力資源",
@@ -89,7 +89,7 @@
    "keyword": "晶片與算力",
    "icon": "🔩",
    "count": 35,
-   "momentum": "flat"
+   "momentum": "up"
   },
   {
    "keyword": "成本與投資",
