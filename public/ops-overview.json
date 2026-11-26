@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-25T00:30:51Z",
+  "generatedAt": "2026-11-26T00:30:29Z",
   "periods": {
-    "content": "累計至 2026-11-25；近 30 天＝2026-10-26 起",
-    "health": "2026-10-25 ~ 2026-10-31（7 天）",
+    "content": "累計至 2026-11-26；近 30 天＝2026-10-27 起",
+    "health": "2026-10-26 ~ 2026-10-31（6 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-23（52 天）"
+    "management": "2026-10-03 ~ 2026-11-24（53 天）"
   },
   "headline": [
     {
       "key": "content",
       "label": "內容產出",
-      "value": 109,
+      "value": 110,
       "unit": "篇文章",
       "note": "近 30 天新增 16 篇"
     },
@@ -19,33 +19,33 @@
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "7 天 × 18 個服務，126/126 次在線"
+      "note": "6 天 × 18 個服務，108/108 次在線"
     },
     {
       "key": "incidents",
       "label": "未結事故",
       "value": 0,
       "unit": "件",
-      "note": "近 30 天 10 筆告警，涉及 7 支排程"
+      "note": "近 30 天 9 筆告警，涉及 6 支排程"
     },
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 42.7,
+      "value": 43.3,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；13/52 天達標"
+      "note": "實驗期 37.1 分；13/53 天達標"
     }
   ],
   "content": {
-    "articles": 109,
+    "articles": 110,
     "articles30d": 16,
     "newsletters": 36,
     "videos": 48,
     "videos30d": 3,
     "igCards": 57,
-    "socialPosts": 91,
-    "scanDays": 157,
-    "competitorReports": 156,
+    "socialPosts": 92,
+    "scanDays": 158,
+    "competitorReports": 157,
     "insights": 22,
     "monthly": [
       {
@@ -378,9 +378,9 @@
     ],
     "latest": {
       "article": {
-        "title": "供應商掏 260 億美元投資自己的客戶：AI 的成長，有多少是彼此投資撐起來的？",
-        "date": "2026-11-17",
-        "url": "/knowledge/suppliers-invest-in-their-own-customer"
+        "title": "華碩連幾百元小單都接，靠的不是 AI，是換一把尺",
+        "date": "2026-11-24",
+        "url": "/knowledge/change-your-measuring-stick"
       },
       "newsletter": "🦞 榕賀觀點 第 36 期 — 2026-11-23",
       "video": {
@@ -393,14 +393,6 @@
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-25",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 85,
-        "restarts": 1
-      },
       {
         "date": "2026-10-26",
         "online": 18,
@@ -450,31 +442,31 @@
         "restarts": 35
       }
     ],
-    "checks": 126,
-    "online": 126,
+    "checks": 108,
+    "online": 108,
     "warningDays": 1,
-    "maxDisk": 85,
+    "maxDisk": 84,
     "live": [
       {
         "name": "官網",
         "url": "https://rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.11
       },
       {
         "name": "第二大腦",
         "url": "https://brain.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.12
+        "seconds": 0.14
       },
       {
         "name": "AI 落地頁",
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.07
+        "seconds": 0.06
       },
       {
         "name": "職能評測",
@@ -488,27 +480,27 @@
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.08
+        "seconds": 0.06
       },
       {
         "name": "管理後台",
         "url": "https://admin.rong-rise.com/",
         "code": "401",
         "ok": true,
-        "seconds": 0.04
+        "seconds": 0.03
       }
     ],
-    "liveAt": "2026-11-25 00:30 UTC"
+    "liveAt": "2026-11-26 00:30 UTC"
   },
   "schedule": {
-    "incidents30d": 10,
-    "incidentJobs": 7,
-    "incidentDays": 7,
+    "incidents30d": 9,
+    "incidentJobs": 6,
+    "incidentDays": 6,
     "open": 0,
     "types": [
       {
         "type": "script",
-        "count": 8
+        "count": 7
       },
       {
         "type": "timeout",
@@ -517,7 +509,7 @@
     ],
     "executions": 1002,
     "executionsOk": 1000,
-    "executionsFrom": "2026-11-24T12:31:50",
+    "executionsFrom": "2026-11-25T12:20:28",
     "incidents": [
       {
         "job": "580906dd60f2",
@@ -840,16 +832,16 @@
         "error": "Script exited with code 1"
       }
     ],
-    "jobs": 98,
+    "jobs": 99,
     "jobsEnabled": 87
   },
   "management": {
-    "days": 52,
-    "medianOnline": 42.7,
+    "days": 53,
+    "medianOnline": 43.3,
     "experimentMedian": 37.1,
-    "avgOnline": 50.3,
-    "totalHours": 43.6,
-    "medianVisits": 15.5,
+    "avgOnline": 50.6,
+    "totalHours": 44.7,
+    "medianVisits": 16,
     "perVisit": 3.0,
     "daysUnder30": 13,
     "daily": [
@@ -1112,60 +1104,44 @@
         "date": "2026-11-23",
         "min": 40.2,
         "visits": 18
+      },
+      {
+        "date": "2026-11-24",
+        "min": 64.3,
+        "visits": 17
       }
     ]
   },
   "reach": {
-    "subscribers": 22,
+    "subscribers": 23,
     "confirmed": 15,
     "pending": 6,
-    "views": 1353,
+    "views": 1355,
     "channelSubscribers": 19
   },
   "rework": {
     "period": "近 30 天（重工帳本 state/rework_log.jsonl）",
-    "count": 17,
-    "minutes": 701,
+    "count": 20,
+    "minutes": 751,
     "byKind": [
       {
         "kind": "video",
         "count": 14
       },
       {
-        "kind": "article",
-        "count": 1
+        "kind": "deploy",
+        "count": 3
       },
       {
         "kind": "post",
-        "count": 1
+        "count": 2
       },
       {
-        "kind": "deploy",
+        "kind": "article",
         "count": 1
       }
     ],
     "items": [
-      {
-        "ts": "2026-11-12 23:32",
-        "kind": "video",
-        "what": "YouTube 封面誤用接班人圖",
-        "cause": "上傳參數複製前一案",
-        "minutes": 2
-      },
-      {
-        "ts": "2026-11-14 19:02",
-        "kind": "post",
-        "what": "IG 圖卡 4 組 caption 全部退回重寫",
-        "cause": "humanizer 首輪 39/38 未過 40 門檻（比喻硬套、開頭與數據不一致、四格框架照貼）",
-        "minutes": 55
-      },
-      {
-        "ts": "2026-11-15 13:16",
-        "kind": "video",
-        "what": "組織層級三種功能 v3 重剪（字卡重做＋配音對齊＋Avatar 裁切）",
-        "cause": "v2 字卡用字數比例估時間，實測最大偏移 4.82 秒、平均 +1.16 秒；卡型單一（27 張全是下三分之一）",
-        "minutes": 95
-      },
       {
         "ts": "2026-11-16 09:44",
         "kind": "video",
@@ -1228,6 +1204,27 @@
         "what": "登泰影片轉場與字級（前幾版）",
         "cause": "字卡重疊、字太小、結尾出框",
         "minutes": 120
+      },
+      {
+        "ts": "2026-11-25 18:21",
+        "kind": "deploy",
+        "what": "6 個 worker profile 的 model.provider 改 custom:opencode-go 後全部還原",
+        "cause": "profile config 沒有 providers 條目，custom: 前綴解析不到，會默默掉到 openrouter fallback",
+        "minutes": 12
+      },
+      {
+        "ts": "2026-11-25 19:45",
+        "kind": "post",
+        "what": "change-your-measuring-stick Drive 批次上傳重跑一次",
+        "cause": "上傳腳本被連跑兩次，同一批 6 檔各建了兩份",
+        "minutes": 3
+      },
+      {
+        "ts": "2026-11-25 21:26",
+        "kind": "deploy",
+        "what": "state.db 精簡化（optimize-storage）排程建立後撤除",
+        "cause": "提案前沒先在副本實測；optimize-storage 回報索引已是最精簡 v23 layout，無可回收",
+        "minutes": 35
       }
     ]
   }
