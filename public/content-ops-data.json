@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-11-25T05:21:00Z",
+ "generatedAt": "2026-11-26T05:20:38Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 179
+  "daysRunning": 180
  },
  "stats": {
-  "scanDays": 158,
+  "scanDays": 159,
   "weekArticles": 80,
   "articles": 110,
   "newsItems": 73,
   "newsletterIssues": 36,
   "subscribers": 23,
   "confirmedSubscribers": 15,
-  "videos": 48,
-  "views": 1355,
+  "videos": 49,
+  "views": 1356,
   "channelSubscribers": 19,
   "insights": 22,
-  "socialPosts": 92,
+  "socialPosts": 95,
   "igCards": 57,
-  "competitorReports": 157
+  "competitorReports": 158
  },
  "activity": [
-  {
-   "date": "2026-11-19",
-   "count": 12,
-   "topics": []
-  },
   {
    "date": "2026-11-20",
    "count": 12,
@@ -56,6 +51,11 @@
    "date": "2026-11-25",
    "count": 10,
    "topics": []
+  },
+  {
+   "date": "2026-11-26",
+   "count": 12,
+   "topics": []
   }
  ],
  "latest": {
@@ -74,27 +74,27 @@
  },
  "trends": [
   {
+   "keyword": "組織與管理",
+   "icon": "🏢",
+   "count": 41,
+   "momentum": "flat"
+  },
+  {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 39,
+   "count": 37,
    "momentum": "flat"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 36,
-   "momentum": "up"
-  },
-  {
-   "keyword": "組織與管理",
-   "icon": "🏢",
    "count": 35,
    "momentum": "flat"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 25,
+   "count": 27,
    "momentum": "flat"
   },
   {
