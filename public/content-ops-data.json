@@ -1,32 +1,27 @@
 {
- "generatedAt": "2026-11-26T05:22:37Z",
+ "generatedAt": "2026-11-27T05:20:36Z",
  "engine": {
   "name": "小哈內容引擎",
   "startDate": "2026-05-31",
-  "daysRunning": 180
+  "daysRunning": 181
  },
  "stats": {
-  "scanDays": 159,
+  "scanDays": 160,
   "weekArticles": 80,
   "articles": 110,
   "newsItems": 73,
-  "newsletterIssues": 36,
+  "newsletterIssues": 37,
   "subscribers": 23,
   "confirmedSubscribers": 15,
   "videos": 49,
-  "views": 1356,
+  "views": 1360,
   "channelSubscribers": 19,
   "insights": 22,
   "socialPosts": 95,
   "igCards": 57,
-  "competitorReports": 158
+  "competitorReports": 159
  },
  "activity": [
-  {
-   "date": "2026-11-20",
-   "count": 12,
-   "topics": []
-  },
   {
    "date": "2026-11-21",
    "count": 12,
@@ -56,6 +51,11 @@
    "date": "2026-11-26",
    "count": 12,
    "topics": []
+  },
+  {
+   "date": "2026-11-27",
+   "count": 12,
+   "topics": []
   }
  ],
  "latest": {
@@ -64,7 +64,7 @@
    "date": "2026-11-24",
    "url": "/knowledge/change-your-measuring-stick"
   },
-  "newsletter": "🦞 榕賀觀點 第 36 期 — 2026-11-23",
+  "newsletter": "🦞 榕賀觀點 第 37 期 — 2026-11-26",
   "video": {
    "title": "登泰國際物流｜AI 職能提升班：兩天，36 位主管把 AI Agent 做出來",
    "date": "2026-11-22",
@@ -76,26 +76,26 @@
   {
    "keyword": "組織與管理",
    "icon": "🏢",
-   "count": 41,
+   "count": 44,
    "momentum": "up"
   },
   {
    "keyword": "人力資源",
    "icon": "📋",
-   "count": 37,
+   "count": 39,
    "momentum": "flat"
   },
   {
    "keyword": "晶片與算力",
    "icon": "🔩",
-   "count": 35,
-   "momentum": "up"
+   "count": 33,
+   "momentum": "flat"
   },
   {
    "keyword": "成本與投資",
    "icon": "💰",
-   "count": 27,
-   "momentum": "flat"
+   "count": 29,
+   "momentum": "up"
   },
   {
    "keyword": "安全與風險",
