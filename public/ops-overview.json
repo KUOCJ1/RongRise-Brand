@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-27T00:30:29Z",
+  "generatedAt": "2026-11-28T00:30:29Z",
   "periods": {
-    "content": "累計至 2026-11-27；近 30 天＝2026-10-28 起",
-    "health": "2026-10-27 ~ 2026-10-31（5 天）",
+    "content": "累計至 2026-11-28；近 30 天＝2026-10-29 起",
+    "health": "2026-10-28 ~ 2026-10-31（4 天）",
     "schedule": "事故統計近 30 天；執行紀錄為資料庫保留區間",
-    "management": "2026-10-03 ~ 2026-11-25（54 天）"
+    "management": "2026-10-03 ~ 2026-11-26（55 天）"
   },
   "headline": [
     {
@@ -19,7 +19,7 @@
       "label": "服務可用率",
       "value": 100.0,
       "unit": "%",
-      "note": "5 天 × 18 個服務，90/90 次在線"
+      "note": "4 天 × 18 個服務，72/72 次在線"
     },
     {
       "key": "incidents",
@@ -31,21 +31,21 @@
     {
       "key": "attention",
       "label": "每天在場",
-      "value": 42.7,
+      "value": 42.1,
       "unit": "分鐘（中位數）",
-      "note": "實驗期 37.1 分；14/54 天達標"
+      "note": "實驗期 37.1 分；14/55 天達標"
     }
   ],
   "content": {
     "articles": 110,
     "articles30d": 13,
-    "newsletters": 36,
+    "newsletters": 37,
     "videos": 49,
     "videos30d": 3,
     "igCards": 57,
     "socialPosts": 95,
-    "scanDays": 159,
-    "competitorReports": 158,
+    "scanDays": 160,
+    "competitorReports": 159,
     "insights": 22,
     "monthly": [
       {
@@ -382,7 +382,7 @@
         "date": "2026-11-24",
         "url": "/knowledge/change-your-measuring-stick"
       },
-      "newsletter": "🦞 榕賀觀點 第 36 期 — 2026-11-23",
+      "newsletter": "🦞 榕賀觀點 第 37 期 — 2026-11-26",
       "video": {
         "title": "登泰國際物流｜AI 職能提升班：兩天，36 位主管把 AI Agent 做出來",
         "date": "2026-11-22",
@@ -393,14 +393,6 @@
   },
   "health": {
     "days": [
-      {
-        "date": "2026-10-27",
-        "online": 18,
-        "total": 18,
-        "status": "ok",
-        "disk": 84,
-        "restarts": 18
-      },
       {
         "date": "2026-10-28",
         "online": 18,
@@ -434,8 +426,8 @@
         "restarts": 35
       }
     ],
-    "checks": 90,
-    "online": 90,
+    "checks": 72,
+    "online": 72,
     "warningDays": 1,
     "maxDisk": 84,
     "live": [
@@ -458,31 +450,31 @@
         "url": "https://ai.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.06
+        "seconds": 0.07
       },
       {
         "name": "職能評測",
         "url": "https://assess.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.06
+        "seconds": 0.04
       },
       {
         "name": "n8n 自動化",
         "url": "https://n8n.rong-rise.com/",
         "code": "200",
         "ok": true,
-        "seconds": 0.14
+        "seconds": 0.06
       },
       {
         "name": "管理後台",
         "url": "https://admin.rong-rise.com/",
         "code": "401",
         "ok": true,
-        "seconds": 0.05
+        "seconds": 0.03
       }
     ],
-    "liveAt": "2026-11-27 00:30 UTC"
+    "liveAt": "2026-11-28 00:30 UTC"
   },
   "schedule": {
     "incidents30d": 8,
@@ -499,9 +491,9 @@
         "count": 2
       }
     ],
-    "executions": 1003,
+    "executions": 1001,
     "executionsOk": 1000,
-    "executionsFrom": "2026-11-26T12:32:28",
+    "executionsFrom": "2026-11-27T12:32:28",
     "incidents": [
       {
         "job": "580906dd60f2",
@@ -828,12 +820,12 @@
     "jobsEnabled": 87
   },
   "management": {
-    "days": 54,
-    "medianOnline": 42.7,
+    "days": 55,
+    "medianOnline": 42.1,
     "experimentMedian": 37.1,
-    "avgOnline": 50.2,
-    "totalHours": 45.2,
-    "medianVisits": 15.5,
+    "avgOnline": 49.9,
+    "totalHours": 45.8,
+    "medianVisits": 16,
     "perVisit": 3.0,
     "daysUnder30": 14,
     "daily": [
@@ -1106,6 +1098,11 @@
         "date": "2026-11-25",
         "min": 29.1,
         "visits": 12
+      },
+      {
+        "date": "2026-11-26",
+        "min": 34.1,
+        "visits": 16
       }
     ]
   },
@@ -1113,7 +1110,7 @@
     "subscribers": 23,
     "confirmed": 15,
     "pending": 6,
-    "views": 1356,
+    "views": 1360,
     "channelSubscribers": 19
   },
   "rework": {
